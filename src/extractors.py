@@ -25,6 +25,13 @@ KNOWN_SKILLS = [
     "qualité", "coûts", "délais", "relation client",
     "anglais professionnel",
     "ferroviaire", "aéronautique", "recherche scientifique",
+    "diplôme de chirurgien-dentiste",
+    "omnipraticien",
+    "plateau technique",
+    "assistante dentaire",
+    "réglementation médicale",
+    "langue française",
+    "démarches administratives",
 ]
 
 _SKILL_PATTERNS = [
@@ -45,6 +52,8 @@ SALARY_PATTERNS = [
     re.compile(r"(\d[\d\s]{3,})\s*[-–]\s*(\d[\d\s]{3,})\s*€"),
     re.compile(r"(\d{2,3})\s*[kK]\s*€?"),
     re.compile(r"(\d[\d\s]{3,})\s*€(?:\s*brut)?"),
+    re.compile(r"(?:\d+%?\s*et\s+)*\d+%\s*bruts?/mois"),
+    re.compile(r"(?:\b(?:minimum\s+(?:garanti\s+)?)?\d[\d\s]{3,}\s*€/mois)"),
 ]
 
 LOCATION_PREFIX_PATTERNS = [
@@ -54,6 +63,7 @@ LOCATION_PREFIX_PATTERNS = [
     re.compile(r"lieu\s*:\s*(.+)", re.IGNORECASE),
     re.compile(r"ville\s*:?\s*(.+)", re.IGNORECASE),
     re.compile(r"r[ée]gion\s*:?\s*(.+)", re.IGNORECASE),
+    re.compile(r"situ[ée]\s+(?:a|à)\s+([A-Za-zÀ-ÿ\-]+)", re.IGNORECASE),
 ]
 
 _NON_LOCATION_WORDS = frozenset({
@@ -69,6 +79,28 @@ _NOISE_SECTION_HEADERS = frozenset({
     "Profil recherché", "Vos missions",
     "Pourquoi rejoindre", "Détails de l'emploi",
     "Correspondance entre ce poste et votre profil",
+    "Les missions du poste", "Présentation du poste",
+    "Rémunération", "Description de la structure",
+    "Avantages du poste", "Le profil recherché",
+    "L'entreprise",
+})
+
+_FORBIDDEN_SECTIONS = frozenset({
+    "les missions du poste", "présentation du poste",
+    "rémunération", "description de la structure",
+    "avantages du poste", "le profil recherché",
+    "l'entreprise", "salaire", "type de poste",
+    "lieu", "avantages",
+})
+
+_NON_CITY_WORDS = frozenset({
+    "patients", "soins", "chirurgie", "gestion", "charge", "dossier",
+    "mission", "profil", "poste", "salaire", "rémunération",
+    "diplôme", "formation", "expérience", "compétence",
+    "assistante", "personnel", "administratif", "flux",
+    "prise", "courants", "omni", "praticien", "plateau",
+    "technique", "moderne", "recrute", "cabinet",
+    "langue", "française", "démarches",
 })
 
 _COMPANY_LEGAL_FORMS = re.compile(
@@ -112,24 +144,27 @@ _COMPANY_PREFIX = re.compile(
     r"(?:entreprise|société|societe|employeur)\s*:?\s*(.+)", re.IGNORECASE
 )
 
-# Regex for city-like patterns: "Paris", "Lyon (69)", "Saint-Maur-des-Fossés (94)"
 _CITY_LIKE = re.compile(
     r"^[A-ZÀ-Œ][A-Za-zÀ-ÿ\-]+(?:\s+[A-Za-zÀ-ÿ\-]+)*\s*(?:\(\d{2,3}\))?$"
 )
 
-# Words that when alone or with just one companion word are NOT a title
+_DEPARTMENT_LINE = re.compile(
+    r"^[A-Za-zÀ-ÿ\-]+(?:\s*-\s*\d{2,3})$"
+)
+
+_POSTAL_CODE_LINE = re.compile(
+    r"^[A-Za-zÀ-ÿ\- ]+,\s*\d{5}$"
+)
+
 _SHORT_TITLE_BLACKLIST = frozenset({
     "cdi", "cdd", "stage", "freelance", "alternance", "intérim", "à pourvoir",
     "urgent", "h/f", "temps plein", "temps partiel",
 })
 
+_SECTOR_BULLET = re.compile(r"•|●|▸|›|♦")
+
 
 def clean_text(text: str) -> str:
-    """Normalize and clean a text segment.
-
-    Strips HTML artifacts (``&nbsp;``), non-breaking spaces (\\xa0),
-    useless bullets (•, -, * at line start), and collapses whitespace.
-    """
     t = text.replace("\xa0", " ").replace("&nbsp;", " ")
     t = re.sub(r"^[\s•\-*]+\s*", "", t)
     t = re.sub(r"\s+", " ", t.strip())
@@ -137,36 +172,109 @@ def clean_text(text: str) -> str:
 
 
 def split_offer_into_segments(text: str) -> list[str]:
-    """Split a raw job offer into non-empty cleaned text segments."""
     return [clean_text(line) for line in text.strip().split("\n") if clean_text(line)]
 
 
-def is_noise_segment(segment: str) -> bool:
-    """Return True when *segment* is a section header or generic noise.
-
-    These are headings that appear in structured job offers but carry
-    no extractable value on their own.
-    """
+def is_section_header(segment: str) -> bool:
     s = segment.strip().rstrip(":").strip()
     if s in _NOISE_SECTION_HEADERS:
         return True
+    lower = s.lower()
+    if lower in _FORBIDDEN_SECTIONS:
+        return True
     if s.upper() == s and len(s.split()) <= 4 and len(s) > 2:
-        if any(kw in s.lower() for kw in ("mission", "profil", "description", "poste")):
+        if any(kw in lower for kw in ("mission", "profil", "description", "poste", "rémun", "salaire")):
+            return True
+    return False
+
+
+def is_contract_line(segment: str) -> bool:
+    s = segment.strip().lower()
+    if s in ("cdi", "cdd", "stage", "freelance", "alternance", "intérim", "vié", "vacation"):
+        return True
+    for kw in CONTRACT_KEYWORDS:
+        if s == kw.lower():
+            return True
+    return False
+
+
+def is_degree_line(segment: str) -> bool:
+    s = segment.strip().lower()
+    if re.match(r"^(bac\s*)\+?\d+", s):
+        return True
+    if re.match(r"^(master|doctorat|licence|bts|dut|ingénieur|cap|baccalauréat)", s):
+        return True
+    if re.match(r"^niveau\s+(bac\s*\+?\d+|master|doctorat)", s):
+        return True
+    return False
+
+
+def is_experience_line(segment: str) -> bool:
+    s = segment.strip().lower()
+    if re.match(r"^exp[ée]rience", s):
+        return True
+    if re.match(r"^(exp\.|expérience)\s+\d+", s):
+        return True
+    if re.match(r"^\d+\s*(a|à)\s*\d+\s*ans", s):
+        return True
+    if re.match(r"^(débutant|junior|confirmé|senior)\s*$", s):
+        return True
+    return False
+
+
+def is_sector_line(segment: str) -> bool:
+    s = segment.strip()
+    if _SECTOR_BULLET.search(s):
+        return True
+    lower = s.lower()
+    sector_kw = [
+        "santé", "social", "association", "service", "industrie",
+        "commerce", "informatique", "banque", "assurance", "bâtiment",
+        "transport", "logistique", "agriculture", "énergie",
+        "services aux entreprises",
+    ]
+    for kw in sector_kw:
+        if lower.startswith(kw) or lower == kw:
+            return True
+    return False
+
+
+def is_probable_location(text: str) -> bool:
+    s = text.strip()
+    if not s:
+        return False
+    if re.match(r"^\d{5}\s", s):
+        return True
+    if _DEPARTMENT_LINE.match(s):
+        return True
+    if _CITY_LIKE.match(s):
+        return True
+    lower = s.lower()
+    if any(lower.startswith(p) for p in ("situé", "localisation", "lieu", "poste basé", "ville")):
+        return True
+    return False
+
+
+def is_noise_segment(segment: str) -> bool:
+    s = segment.strip().rstrip(":").strip()
+    if s in _NOISE_SECTION_HEADERS:
+        return True
+    lower = s.lower()
+    if lower in _FORBIDDEN_SECTIONS:
+        return True
+    if s.upper() == s and len(s.split()) <= 4 and len(s) > 2:
+        if any(kw in lower for kw in ("mission", "profil", "description", "poste")):
             return True
     return False
 
 
 def is_probable_company_name(segment: str) -> bool:
-    """Return True when *segment* is likely a company name rather than a title.
-
-    Heuristics
-    ----------
-    * Contains a legal form abbreviation (``SAS``, ``SARL``, …).
-    * Is short (≤3 words) with an ampersand (``&``) and no comma.
-    * Is short, starts with uppercase, and doesn't look like a title.
-    """
     s = segment.strip()
     if not s:
+        return False
+    if _DEPARTMENT_PATTERN.match(s):
+        return False
+    if re.search(r"\(\d{2,3}\)", s):
         return False
     if _COMPANY_LEGAL_FORMS.search(s):
         return True
@@ -181,6 +289,7 @@ def is_probable_company_name(segment: str) -> bool:
             "développeur", "ingénieur", "chef", "responsable", "directeur",
             "chargé", "consultant", "manager", "architecte", "technicien",
             "data", "devops", "lead", "product", "full stack",
+            "chirurgien", "dentiste", "médecin", "infirmier", "pharmacien",
         )
         if not any(lower.startswith(kw) for kw in title_kw):
             return True
@@ -188,13 +297,11 @@ def is_probable_company_name(segment: str) -> bool:
 
 
 def extract_company(text: str) -> str | None:
-    """Extract a company name from a segment via explicit prefixes."""
     m = _COMPANY_PREFIX.search(text)
     return m.group(1).strip() if m else None
 
 
 def extract_salary(text: str) -> str | None:
-    """Extract salary information from text. Returns None if not found."""
     if re.search(r"(taux\s*journalier|horaire|à\s*l['’]heure)", text, re.IGNORECASE):
         return None
     for pattern in SALARY_PATTERNS:
@@ -205,7 +312,6 @@ def extract_salary(text: str) -> str | None:
 
 
 def extract_contract(text: str) -> str | None:
-    """Extract contract type. Returns None if not found."""
     for kw in CONTRACT_KEYWORDS:
         match = re.search(r"\b" + re.escape(kw) + r"\b", text, re.IGNORECASE)
         if match:
@@ -214,7 +320,6 @@ def extract_contract(text: str) -> str | None:
 
 
 def extract_location(text: str) -> str | None:
-    """Extract location. Returns None if not found."""
     exclusion = re.search(
         r"(répondu\s+à|candidatures?\s*[aà]|jours?\s*(?:de|par))", text, re.IGNORECASE
     )
@@ -239,7 +344,6 @@ def extract_location(text: str) -> str | None:
 
 
 def extract_experience(text: str) -> str | None:
-    """Extract experience level. Returns None if not found."""
     for pattern in _EXPERIENCE_PATTERNS:
         match = pattern.search(text)
         if match:
@@ -254,7 +358,6 @@ def extract_experience(text: str) -> str | None:
 
 
 def extract_remote(text: str) -> str | None:
-    """Extract remote-work information. Returns None if not found."""
     for pattern in _REMOTE_PATTERNS:
         match = pattern.search(text)
         if match:
@@ -269,7 +372,6 @@ def extract_remote(text: str) -> str | None:
 
 
 def extract_skills(text: str) -> list[str]:
-    """Extract known domain skills from text. Returns list (possibly empty)."""
     found: list[str] = []
     for pat, name in _SKILL_PATTERNS:
         if pat.search(text):
@@ -285,10 +387,6 @@ def extract_skills(text: str) -> list[str]:
 
 
 def normalize_remote_label(remote_text: str) -> str | None:
-    """Normalize a raw remote string to a canonical label.
-
-    Returns one of ``"télétravail"``, ``"présentiel"``, or ``None``.
-    """
     lower = remote_text.lower()
     for key, norm in _REMOTE_NORM.items():
         if key in lower:
@@ -296,21 +394,11 @@ def normalize_remote_label(remote_text: str) -> str | None:
     return None
 
 
-# ---------------------------------------------------------------------------
-# New public API — called directly by predict.py
-# ---------------------------------------------------------------------------
-
 def deduplicate_keep_order(items: list[str]) -> list[str]:
-    """Remove duplicates while preserving first-occurrence order."""
     return list(dict.fromkeys(items))
 
 
 def sort_skills_by_predefined_order(skills: list[str]) -> list[str]:
-    """Sort skills by their order in ``KNOWN_SKILLS``.
-
-    Skills not present in the predefined list are kept at the end in
-    their original relative order.
-    """
     order = {s: i for i, s in enumerate(KNOWN_SKILLS)}
     known = [s for s in KNOWN_SKILLS if s in skills]
     unknown = [s for s in skills if s not in order]
@@ -318,31 +406,35 @@ def sort_skills_by_predefined_order(skills: list[str]) -> list[str]:
 
 
 _OFFER_NUMBER_PATTERNS = [
-    re.compile(r"(?:r[ée]f[ée]rence|ref|num[ée]ro|n[°])\s*(?:offre\s*)?:?\s*([A-Za-z0-9\-_]+)", re.IGNORECASE),
-    re.compile(r"(?:job\s*)?id\s*:?\s*([A-Za-z0-9\-_]+)", re.IGNORECASE),
-    re.compile(r"in\d{6,}", re.IGNORECASE),
+    re.compile(
+        r"\b(r[ée]f[ée]rence|ref)\s*(?:offre\s*)?:?\s*([A-Za-z0-9\-_]+)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(num[ée]ro|n°)\s*(?:offre\s*)?:?\s*([A-Za-z0-9\-_]+)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(offre\s*n°)\s*:?\s*(\d+)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(job\s*id|id\s*offre)\s*:?\s*([A-Za-z0-9\-_]+)",
+        re.IGNORECASE,
+    ),
 ]
 
 
 def extract_offer_number(text: str) -> str | None:
-    """Extract a job-offer reference number.
-
-    Detects patterns like ``Référence : ABC123``, ``Ref : 2024-DEV-45``,
-    ``Job ID: 98765``, ``INDEED-abc123``.
-    """
     for pat in _OFFER_NUMBER_PATTERNS:
         m = pat.search(text)
         if m:
-            return m.group(1).strip() if m.lastindex else m.group(0).strip()
+            groups = m.groups()
+            return groups[-1].strip()
     return None
 
 
 def extract_salaries(text: str) -> list[str]:
-    """Extract all salary mentions from *text*.
-
-    Returns a deduplicated list of matched strings in order of appearance.
-    Overlapping / nested matches are pruned (the longest wins).
-    """
     raw_matches: list[tuple[int, int, str]] = []
     for pat in SALARY_PATTERNS:
         for m in pat.finditer(text):
@@ -362,7 +454,6 @@ def extract_salaries(text: str) -> list[str]:
             non_overlapping.append(raw)
             last_end = end
         else:
-            # Overlapping: keep the longer one
             if non_overlapping and (end - start) > (last_end - (start if non_overlapping else 0)):
                 non_overlapping[-1] = raw
                 last_end = end
@@ -383,11 +474,6 @@ _REMOTE_MODE_PATTERNS = [
 
 
 def extract_remote_mode(text: str) -> str | None:
-    """Return a canonical remote label for a single text segment.
-
-    Returns one of ``"présentiel"``, ``"télétravail occasionnel"``,
-    ``"télétravail partiel"``, ``"remote"``, or ``None``.
-    """
     lower = text.lower()
     if "présentiel" in lower and "télétravail" not in lower and "remote" not in lower and "distanciel" not in lower:
         return "présentiel"
@@ -414,11 +500,6 @@ _RESOLVE_REMOTE_COMBINED = {
 
 
 def resolve_remote(segment_modes: list[str | None]) -> str | None:
-    """Combine remote-mode labels from several segments into one canonical value.
-
-    ``"présentiel"`` + ``"télétravail occasionnel"`` → ``"hybride"``
-    Otherwise the most specific non-``None`` label wins.
-    """
     present = bool(segment_modes.count("présentiel"))
     has_occasional = any("occasionnel" in (m or "") for m in segment_modes)
     has_remote = any(
@@ -437,8 +518,21 @@ def resolve_remote(segment_modes: list[str | None]) -> str | None:
     return None
 
 
+_TITLE_LIKE_STARTS = (
+    "développeur", "ingénieur", "chef", "responsable", "directeur",
+    "chargé", "consultant", "manager", "architecte", "technicien",
+    "data", "devops", "lead", "product", "full stack",
+    "chirurgien", "dentiste", "médecin",
+)
+
+_NON_GEO_CONTENT = (
+    "contactez", "nous au", "téléphone", "email", "recrute",
+    "cabinet", "patients", "soins", "chirurgie", "gestion", "dossier",
+    "mission", "profil",
+)
+
+
 def _is_likely_location(candidate: str) -> bool:
-    """Return ``True`` if *candidate* looks like a real location."""
     lower = candidate.lower()
     if any(kw in lower for kw in ("domicile", "pourvoir", "gérer", "présentiel",
                                    "télétravail", "distanciel")):
@@ -446,18 +540,43 @@ def _is_likely_location(candidate: str) -> bool:
     first_word = candidate.split()[0].lower() if candidate.split() else ""
     if first_word in _NON_LOCATION_WORDS:
         return False
+    if first_word in _TITLE_LIKE_STARTS:
+        return False
+    if any(lower.startswith(w) for w in _NON_GEO_CONTENT):
+        return False
     if len(candidate.split()) == 1 and first_word in ("en", "à", "au", "aux", "le", "la", "les", "des"):
+        return False
+    words = set(candidate.lower().split())
+    if words & _NON_CITY_WORDS:
         return False
     return True
 
 
-def extract_hiring_locations(text: str) -> list[str]:
-    """Extract all hiring-location mentions from *text*.
+_FORBIDDEN_CONTENT = frozenset({
+    "cdi", "cdd", "stage", "freelance", "alternance", "intérim",
+    "les missions du poste", "présentation du poste",
+    "rémunération", "description de la structure",
+    "avantages du poste", "le profil recherché",
+    "l'entreprise", "salaire", "type de poste",
+    "services aux entreprises",
+    "assistante dentaire dédiée",
+    "personnel administratif compétent",
+    "flux de patients important",
+    "plateau technique moderne",
+    "le profil recherché",
+})
 
-    Detects patterns like ``Paris``, ``Saint-Maur-des-Fossés (94)``,
-    ``Lieu : Bordeaux``, ``Poste basé à Marseille``.
-    """
+_DEPARTMENT_PATTERN = re.compile(
+    r"^[A-Za-zÀ-ÿ\-]+(?:\s*-\s*\d{2,3})$"
+)
+
+
+def extract_hiring_locations(text: str) -> list[str]:
     results: list[str] = []
+
+    lower_text = text.lower()
+    if any(fb in lower_text for fb in _FORBIDDEN_CONTENT):
+        return []
 
     for pat in LOCATION_PREFIX_PATTERNS:
         for m in pat.finditer(text):
@@ -471,34 +590,68 @@ def extract_hiring_locations(text: str) -> list[str]:
         line = line.strip()
         if not line:
             continue
-        if _is_likely_location(line) and _CITY_LIKE.match(line):
+        lower_line = line.lower()
+        if any(fb in lower_line for fb in _FORBIDDEN_CONTENT):
+            continue
+        if _DEPARTMENT_PATTERN.match(line):
+            results.append(line)
+            continue
+        if _POSTAL_CODE_LINE.match(line):
+            results.append(line)
+            continue
+        if _CITY_LIKE.match(line):
+            if (not _is_likely_location(line)
+                    or is_probable_company_name(line)
+                    or is_sector_line(line)):
+                continue
             results.append(line)
 
     return deduplicate_keep_order(results)
 
 
+def normalize_phone_number(raw: str) -> str | None:
+    s = raw.replace("O", "0").replace("o", "0")
+    digits = re.sub(r"[^\d+]", "", s)
+    if not digits:
+        return None
+    for fmt_len, expected_prefix in [(10, "0"), (11, "+33"), (12, "0033")]:
+        if len(digits) == fmt_len:
+            if digits.startswith("0"):
+                pairs = " ".join(digits[i:i+2] for i in range(0, 10, 2))
+                return pairs
+            elif digits.startswith("33") and len(digits) == 11:
+                pairs = " ".join(("0" + digits[2:][i:i+2]) for i in range(0, 9, 2))
+                return pairs
+            elif digits.startswith("0033") and len(digits) == 12:
+                pairs = " ".join(("0" + digits[4:][i:i+2]) for i in range(0, 9, 2))
+                return pairs
+    return None
+
+
 _CONTACT_PATTERNS = [
     re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+"),
-    re.compile(r"0[1-9]\d{8}"),
-    re.compile(r"\+33\s*\d\s*\d{2}\s*\d{2}\s*\d{2}\s*\d{2}"),
-    re.compile(r"01\s*\d{2}\s*\d{2}\s*\d{2}\s*\d{2}"),
     re.compile(r"https?://[^\s,;)]+"),
-    re.compile(r"(?:contact|recruteur|à contacter|interlocuteur)\s*:?\s*(.{3,60}?)(?:\.|,|$)", re.IGNORECASE),
+    re.compile(r"(?:\bcontact\b|recruteur|à contacter|interlocuteur)\s*:?\s*(.{3,60}?)(?:\.|,|$)", re.IGNORECASE),
 ]
 
 
 def extract_contacts(text: str) -> list[str]:
-    """Extract all contact information from *text*.
-
-    Returns emails, French phone numbers, application URLs, and
-    recruiter names in order of appearance.
-    """
     results: list[str] = []
     for pat in _CONTACT_PATTERNS:
         for m in pat.finditer(text):
             candidate = m.group(1).strip() if m.lastindex else m.group(0).strip()
             if candidate:
                 results.append(candidate)
+
+    phone_candidates = re.findall(
+        r"(?:\b[0O])[1-9Oo](?:[\s.-]*[0-9Oo]){7,9}",
+        text,
+    )
+    for raw in phone_candidates:
+        normalized = normalize_phone_number(raw)
+        if normalized:
+            results.append(normalized)
+
     return deduplicate_keep_order(results)
 
 

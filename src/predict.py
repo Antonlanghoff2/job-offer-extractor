@@ -41,8 +41,12 @@ from src.extractors import (
     extract_remote_mode,
     extract_required_skills,
     extract_salaries,
+    is_contract_line,
+    is_degree_line,
+    is_experience_line,
     is_noise_segment,
     is_probable_company_name,
+    is_sector_line,
     resolve_remote,
     sort_skills_by_predefined_order,
     split_offer_into_segments,
@@ -63,6 +67,32 @@ Lieu du poste : En présentiel
 Compétences : IA, imagerie, optique, instrumentation, vision par ordinateur, traitement d'images, gestion de projet
 Travail à domicile occasionnel
 Anglais professionnel courant requis"""
+
+SAMPLE_OFFER_DENTIST = """Chirurgien-Dentiste H/F
+Amélice Conseil
+Loire-Atlantique - 44
+CDI
+Bac +5
+Santé • Social • Association
+Le cabinet est situé à Nantes dans le 44
+Le cabinet recrute un chirurgien-dentiste omnipraticien pour rejoindre une équipe dynamique au sein d'un plateau technique moderne.
+Assistante dentaire dédiée
+Personnel administratif compétent
+Flux de patients important
+Plateau technique moderne
+Rémunération attractive : entre 27% et 30% bruts/mois avec un minimum garanti de 3500€/mois
+Contactez-nous au O6 24 4O O1 67
+Nantes, 44000
+Les missions du poste :
+Prise en charge des patients
+Soins courants et chirurgie
+Gestion du dossier patient
+Le profil recherché :
+Diplôme de chirurgien-dentiste
+Omnipraticien
+Réglementation médicale
+Langue française
+Démarches administratives"""
 
 
 def load_model(path: str = str(MODEL_PATH)) -> Pipeline:
@@ -145,14 +175,6 @@ def post_process_segments(
 
 
 def _clean_title(raw: str) -> str | None:
-    """Apply business rules to extract a clean job title.
-
-    * Strips the ``- job post`` / ``– job post`` suffix.
-    * Removes ``(H/F)``, ``H/F``, ``F/H``, ``M/F`` trailing markers.
-    * Normalises fancy apostrophes.
-    * Returns ``None`` when the result looks like a section header,
-      company name, or generic single word.
-    """
     t = raw.translate(_TITLE_APOS)
     t = re.sub(r"\s*[-–]\s*job\s*post\s*$", "", t, flags=re.IGNORECASE).strip()
     t = re.sub(r"\s*[\(\)]*[HFM]/[HFM][\)]*\s*$", "", t).strip()
@@ -161,6 +183,14 @@ def _clean_title(raw: str) -> str | None:
     if is_noise_segment(t):
         return None
     if is_probable_company_name(t):
+        return None
+    if is_sector_line(t):
+        return None
+    if is_contract_line(t):
+        return None
+    if is_degree_line(t):
+        return None
+    if is_experience_line(t):
         return None
     words = t.split()
     if len(words) <= 2 and t.lower() in (
@@ -306,7 +336,9 @@ def pretty_print_result(result: dict) -> None:
 def main() -> None:
     offer = SAMPLE_OFFER
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    if args and args[0] != "-":
+    if args and args[0] == "dentist":
+        offer = SAMPLE_OFFER_DENTIST
+    elif args and args[0] != "-":
         filepath = args[0]
         try:
             with open(filepath, "r", encoding="utf-8") as fh:
