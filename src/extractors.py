@@ -305,6 +305,18 @@ def deduplicate_keep_order(items: list[str]) -> list[str]:
     return list(dict.fromkeys(items))
 
 
+def sort_skills_by_predefined_order(skills: list[str]) -> list[str]:
+    """Sort skills by their order in ``KNOWN_SKILLS``.
+
+    Skills not present in the predefined list are kept at the end in
+    their original relative order.
+    """
+    order = {s: i for i, s in enumerate(KNOWN_SKILLS)}
+    known = [s for s in KNOWN_SKILLS if s in skills]
+    unknown = [s for s in skills if s not in order]
+    return known + unknown
+
+
 _OFFER_NUMBER_PATTERNS = [
     re.compile(r"(?:r[ée]f[ée]rence|ref|num[ée]ro|n[°])\s*(?:offre\s*)?:?\s*([A-Za-z0-9\-_]+)", re.IGNORECASE),
     re.compile(r"(?:job\s*)?id\s*:?\s*([A-Za-z0-9\-_]+)", re.IGNORECASE),

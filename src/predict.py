@@ -44,6 +44,7 @@ from src.extractors import (
     is_noise_segment,
     is_probable_company_name,
     resolve_remote,
+    sort_skills_by_predefined_order,
     split_offer_into_segments,
 )
 
@@ -241,7 +242,7 @@ def extract_job_offer(text: str, debug: bool = False) -> dict:
     competences_requises: List[str] = []
     for seg in cleaned_segments:
         competences_requises.extend(extract_required_skills(seg["text"]))
-    competences_requises = deduplicate_keep_order(competences_requises)
+    competences_requises = sort_skills_by_predefined_order(competences_requises)
 
     # ── contacts ────────────────────────────────────────────────────
     contacts: List[str] = []
@@ -304,15 +305,16 @@ def pretty_print_result(result: dict) -> None:
 
 def main() -> None:
     offer = SAMPLE_OFFER
-    if len(sys.argv) > 1 and sys.argv[1] != "-":
-        filepath = sys.argv[1]
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    if args and args[0] != "-":
+        filepath = args[0]
         try:
             with open(filepath, "r", encoding="utf-8") as fh:
                 offer = fh.read()
         except FileNotFoundError:
             print(f"Error: file not found '{filepath}'", file=sys.stderr)
             sys.exit(1)
-    elif len(sys.argv) > 1 and sys.argv[1] == "-":
+    elif args and args[0] == "-":
         offer = sys.stdin.read()
 
     debug = "--debug" in sys.argv
