@@ -34,9 +34,11 @@ import joblib
 from sklearn.pipeline import Pipeline
 
 from src.extractors import (
+    _NON_TITLE_STARTS,
     deduplicate_keep_order,
     extract_contacts,
     extract_hiring_locations,
+    extract_location_after_marker,
     extract_offer_number,
     extract_remote_mode,
     extract_required_skills,
@@ -44,6 +46,7 @@ from src.extractors import (
     is_contract_line,
     is_degree_line,
     is_experience_line,
+    is_forbidden_title,
     is_noise_segment,
     is_probable_company_name,
     is_sector_line,
@@ -93,6 +96,19 @@ Omnipraticien
 Réglementation médicale
 Langue française
 Démarches administratives"""
+
+SAMPLE_OFFER_MONTBRISON = """Détails de l'emploi
+Correspondance entre ce poste et votre profil.
+Salaire
+Type de poste
+Lieu
+42600 Montbrison
+Poste en présentiel
+Rémunération : à partir de 1 002,00€ par mois
+Développement et analyse de solutions data
+Sécurité informatique et protection des données
+Vous avez un bon relationnel et êtes capable de travailler en transversal
+Enfin vous êtes sensible aux enjeux de sécurité informatique et de protection des données"""
 
 
 def load_model(path: str = str(MODEL_PATH)) -> Pipeline:
@@ -180,7 +196,12 @@ def _clean_title(raw: str) -> str | None:
     t = re.sub(r"\s*[\(\)]*[HFM]/[HFM][\)]*\s*$", "", t).strip()
     if not t:
         return None
-    if is_noise_segment(t):
+    if is_noise_segment(t) or is_forbidden_title(t):
+        return None
+    if re.match(r"^\d", t):
+        return None
+    first_word = t.split()[0].lower() if t.split() else ""
+    if first_word in _NON_TITLE_STARTS:
         return None
     if is_probable_company_name(t):
         return None
@@ -260,6 +281,7 @@ def extract_job_offer(text: str, debug: bool = False) -> dict:
     lieux_embauche: List[str] = []
     for seg in cleaned_segments:
         lieux_embauche.extend(extract_hiring_locations(seg["text"]))
+    lieux_embauche.extend(extract_location_after_marker(segments))
     lieux_embauche = deduplicate_keep_order(lieux_embauche)
 
     # ── distanciel ──────────────────────────────────────────────────

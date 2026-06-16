@@ -14,7 +14,12 @@ the output against the expected JSON.
 from __future__ import annotations
 
 import json
-from src.predict import extract_job_offer, SAMPLE_OFFER, SAMPLE_OFFER_DENTIST
+from src.predict import (
+    extract_job_offer,
+    SAMPLE_OFFER,
+    SAMPLE_OFFER_DENTIST,
+    SAMPLE_OFFER_MONTBRISON,
+)
 
 
 EXPECTED_RD = {
@@ -49,6 +54,23 @@ EXPECTED_DENTIST = {
     "contacts": ["06 24 40 01 67"],
 }
 
+EXPECTED_MONTBRISON = {
+    "numero_offre": None,
+    "intitule_poste": None,
+    "salaires": ["1 002,00€ par mois"],
+    "lieux_embauche": ["42600 Montbrison"],
+    "distanciel": "présentiel",
+    "competences_requises": [
+        "data",
+        "développement",
+        "analyse",
+        "sécurité informatique",
+        "informatique",
+        "protection des données",
+    ],
+    "contacts": [],
+}
+
 
 def _normalise(result: dict) -> dict:
     """Sort list fields for comparison."""
@@ -72,6 +94,7 @@ def test(name: str, result: dict, expected: dict) -> None:
 def main() -> None:
     test("R&D Vision", extract_job_offer(SAMPLE_OFFER), EXPECTED_RD)
     test("Dentiste", extract_job_offer(SAMPLE_OFFER_DENTIST), EXPECTED_DENTIST)
+    test("Montbrison", extract_job_offer(SAMPLE_OFFER_MONTBRISON), EXPECTED_MONTBRISON)
 
 
 if __name__ == "__main__":

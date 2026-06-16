@@ -32,6 +32,8 @@ KNOWN_SKILLS = [
     "réglementation médicale",
     "langue française",
     "démarches administratives",
+    "développement", "data", "sécurité informatique",
+    "protection des données", "analyse", "informatique",
 ]
 
 _SKILL_PATTERNS = [
@@ -54,6 +56,14 @@ SALARY_PATTERNS = [
     re.compile(r"(\d[\d\s]{3,})\s*€(?:\s*brut)?"),
     re.compile(r"(?:\d+%?\s*et\s+)*\d+%\s*bruts?/mois"),
     re.compile(r"(?:\b(?:minimum\s+(?:garanti\s+)?)?\d[\d\s]{3,}\s*€/mois)"),
+    re.compile(
+        r"\d[\d\s]{3,},?\d*\s*€\s*par\s+mois",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:a|à)\s+partir\s+de\s+\d[\d\s]{3,},?\d*\s*€\s*par\s+mois",
+        re.IGNORECASE,
+    ),
 ]
 
 LOCATION_PREFIX_PATTERNS = [
@@ -93,6 +103,36 @@ _FORBIDDEN_SECTIONS = frozenset({
     "lieu", "avantages",
 })
 
+_FORBIDDEN_TITLES: frozenset = frozenset({
+    "Détails de l'emploi",
+    "Correspondance entre ce poste et votre profil.",
+    "Salaire",
+    "Type de poste",
+    "Lieu",
+    "Avantages",
+    "Extraits de la description complète du poste",
+    "Description du poste",
+    "À propos du poste",
+    "Responsabilités",
+    "Profil recherché",
+    "Type d'emploi",
+    "Rémunération",
+    "Capacité à faire le trajet ou à déménager",
+    "Question(s) de présélection",
+    "Formation",
+    "Langue",
+})
+
+_NON_TITLE_STARTS: frozenset = frozenset({
+    "sécurité", "développement", "protection", "correspondance",
+    "extraits", "description", "à propos", "responsabilités",
+    "profil", "type", "rémunération", "capacité", "question",
+    "formation", "langue", "détails", "salaire", "lieu", "avantages",
+    "poste", "mission", "compétence", "pourquoi",
+    "vous", "enfin", "ce", "cette", "dans", "avec", "pour",
+    "afin", "notre", "leur", "nous", "il", "elle", "qui",
+})
+
 _NON_CITY_WORDS = frozenset({
     "patients", "soins", "chirurgie", "gestion", "charge", "dossier",
     "mission", "profil", "poste", "salaire", "rémunération",
@@ -101,6 +141,9 @@ _NON_CITY_WORDS = frozenset({
     "prise", "courants", "omni", "praticien", "plateau",
     "technique", "moderne", "recrute", "cabinet",
     "langue", "française", "démarches",
+    "développement", "analyse", "solutions", "data",
+    "sécurité", "informatique", "protection", "enjeux",
+    "relationnel", "transversal",
 })
 
 _COMPANY_LEGAL_FORMS = re.compile(
@@ -155,6 +198,12 @@ _DEPARTMENT_LINE = re.compile(
 _POSTAL_CODE_LINE = re.compile(
     r"^[A-Za-zÀ-ÿ\- ]+,\s*\d{5}$"
 )
+
+_POSTAL_CODE_FIRST = re.compile(
+    r"^\d{5}\s+[A-Za-zÀ-ÿ\- ]+$"
+)
+
+_FRENCH_POSTAL_CODE = re.compile(r"\b\d{5}\b")
 
 _SHORT_TITLE_BLACKLIST = frozenset({
     "cdi", "cdd", "stage", "freelance", "alternance", "intérim", "à pourvoir",
@@ -458,7 +507,7 @@ def extract_salaries(text: str) -> list[str]:
                 non_overlapping[-1] = raw
                 last_end = end
 
-    return deduplicate_keep_order(non_overlapping)
+    return deduplicate_keep_order([normalize_salary(s) for s in non_overlapping])
 
 
 _REMOTE_MODE_PATTERNS = [
@@ -549,7 +598,75 @@ def _is_likely_location(candidate: str) -> bool:
     words = set(candidate.lower().split())
     if words & _NON_CITY_WORDS:
         return False
+    lower = candidate.lower()
+    if lower.startswith("vous avez"):
+        return False
+    if any(kw in lower for kw in ("capable de", "sensible aux", "relationnel",
+                                   "protection des données")):
+        return False
+    word_count = len(candidate.split())
+    if word_count > 8 and not _FRENCH_POSTAL_CODE.search(candidate):
+        return False
     return True
+
+
+def is_forbidden_title(text: str) -> bool:
+    s = text.strip().rstrip(":").strip()
+    if s in _FORBIDDEN_TITLES:
+        return True
+    lower = s.lower()
+    for fb in _FORBIDDEN_TITLES:
+        fb_lower = fb.lower().rstrip(".")
+        if lower == fb_lower or lower.startswith(fb_lower):
+            return True
+    return False
+
+
+def has_french_postal_code(text: str) -> bool:
+    return bool(_FRENCH_POSTAL_CODE.search(text))
+
+
+def is_probable_hiring_location(text: str) -> bool:
+    s = text.strip()
+    if not s:
+        return False
+    if _POSTAL_CODE_FIRST.match(s):
+        return True
+    if _DEPARTMENT_PATTERN.match(s):
+        return True
+    if _POSTAL_CODE_LINE.match(s):
+        return True
+    if _CITY_LIKE.match(s) and _is_likely_location(s):
+        return True
+    lower = s.lower()
+    if any(lower.startswith(p) for p in ("situé", "localisation", "lieu",
+                                          "poste basé", "ville")):
+        suffix = re.sub(r"^(?:situ[ée]\s+(?:a|à)\s+|lieu\s+du\s+poste\s*:?\s*"
+                        r"|localisation\s*:?\s*|ville\s*:?\s*|poste\s+bas[ée]\s+(?:a|à|sur)\s+)",
+                        "", s, flags=re.IGNORECASE).strip()
+        if suffix and not re.match(r"\d", suffix) and _is_likely_location(suffix):
+            return True
+    return False
+
+
+def normalize_salary(raw: str) -> str:
+    s = raw.strip()
+    s = re.sub(r"^[Rr][ée]mun[eé]ration\s*:\s*", "", s).strip()
+    s = re.sub(r"^(?:a|à)\s+partir\s+de\s+", "", s, flags=re.IGNORECASE).strip()
+    s = re.sub(r"^(?:minimum\s+)?garanti\s+", "", s, flags=re.IGNORECASE).strip()
+    return s
+
+
+def extract_location_after_marker(lines: list[str]) -> list[str]:
+    results: list[str] = []
+    markers_lower = {"lieu", "localisation", "ville", "région"}
+    for i, line in enumerate(lines):
+        lower = line.strip().lower().rstrip(":").strip()
+        if lower in markers_lower and i + 1 < len(lines):
+            next_line = lines[i + 1].strip()
+            if next_line and is_probable_hiring_location(next_line):
+                results.append(next_line)
+    return deduplicate_keep_order(results)
 
 
 _FORBIDDEN_CONTENT = frozenset({
@@ -574,10 +691,6 @@ _DEPARTMENT_PATTERN = re.compile(
 def extract_hiring_locations(text: str) -> list[str]:
     results: list[str] = []
 
-    lower_text = text.lower()
-    if any(fb in lower_text for fb in _FORBIDDEN_CONTENT):
-        return []
-
     for pat in LOCATION_PREFIX_PATTERNS:
         for m in pat.finditer(text):
             candidate = m.group(1).strip()
@@ -586,12 +699,23 @@ def extract_hiring_locations(text: str) -> list[str]:
             if _is_likely_location(candidate):
                 results.append(candidate)
 
-    for line in text.strip().split("\n"):
+    lines = text.strip().split("\n")
+    for line in lines:
         line = line.strip()
         if not line:
             continue
         lower_line = line.lower()
-        if any(fb in lower_line for fb in _FORBIDDEN_CONTENT):
+
+        if len(line.split()) > 8 and not _FRENCH_POSTAL_CODE.search(line):
+            continue
+        if lower_line.startswith("vous avez"):
+            continue
+        if any(kw in lower_line for kw in ("capable de", "sensible aux",
+                                            "relationnel")):
+            continue
+
+        if _POSTAL_CODE_FIRST.match(line):
+            results.append(line)
             continue
         if _DEPARTMENT_PATTERN.match(line):
             results.append(line)
