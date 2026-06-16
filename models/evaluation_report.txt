@@ -4,9 +4,9 @@
 
   Model        : models/segment_classifier.joblib
   Data         : data/train_segments.csv
-  Samples      : 130
+  Samples      : 396
   Test size    : 0.2
-  Test samples : 26
+  Test samples : 80
   Classes      : 8
 
 --------------------------------------------------------
@@ -15,43 +15,43 @@
 
               precision    recall  f1-score   support
 
-    CONTRACT     1.0000    0.6667    0.8000         3
-  EXPERIENCE     1.0000    1.0000    1.0000         3
-    LOCATION     1.0000    0.3333    0.5000         3
-       OTHER     0.0000    0.0000    0.0000         4
-      REMOTE     0.4000    0.6667    0.5000         3
-      SALARY     1.0000    1.0000    1.0000         3
-      SKILLS     0.5000    0.3333    0.4000         3
-       TITLE     0.3333    0.7500    0.4615         4
+    CONTRACT     1.0000    0.4286    0.6000         7
+  EXPERIENCE     1.0000    0.5000    0.6667         6
+    LOCATION     1.0000    0.3000    0.4615        10
+       OTHER     0.3934    1.0000    0.5647        24
+      REMOTE     1.0000    0.3333    0.5000         6
+      SALARY     1.0000    0.1667    0.2857         6
+      SKILLS     0.0000    0.0000    0.0000         9
+       TITLE     0.8571    0.5000    0.6316        12
 
-    accuracy                         0.5769        26
-   macro avg     0.6542    0.5938    0.5827        26
-weighted avg     0.6167    0.5769    0.5556        26
+    accuracy                         0.5250        80
+   macro avg     0.7813    0.4036    0.4638        80
+weighted avg     0.6841    0.5250    0.4833        80
 
 --------------------------------------------------------
   Aggregated metrics
 --------------------------------------------------------
 
-  Accuracy             : 0.5769
-  Precision (macro)    : 0.6542
-  Precision (weighted) : 0.6167
-  Recall (macro)       : 0.5938
-  Recall (weighted)    : 0.5769
-  F1-score (macro)     : 0.5827
-  F1-score (weighted)  : 0.5556
+  Accuracy             : 0.5250
+  Precision (macro)    : 0.7813
+  Precision (weighted) : 0.6841
+  Recall (macro)       : 0.4036
+  Recall (weighted)    : 0.5250
+  F1-score (macro)     : 0.4638
+  F1-score (weighted)  : 0.4833
 
 --------------------------------------------------------
   Confusion matrix
 --------------------------------------------------------
 
               CONTRACT  EXPERIENCE  LOCATION  OTHER  REMOTE  SALARY  SKILLS  TITLE
-  CONTRACT           2           0         0      0       0       0       0      1
-  EXPERIENCE         0           3         0      0       0       0       0      0
-  LOCATION           0           0         1      0       1       0       0      1
-  OTHER              0           0         0      0       2       0       0      2
-  REMOTE             0           0         0      0       2       0       0      1
-  SALARY             0           0         0      0       0       3       0      0
-  SKILLS             0           0         0      1       0       0       1      1
-  TITLE              0           0         0      0       0       0       1      3
+  CONTRACT           3           0         0      4       0       0       0      0
+  EXPERIENCE         0           3         0      3       0       0       0      0
+  LOCATION           0           0         3      7       0       0       0      0
+  OTHER              0           0         0     24       0       0       0      0
+  REMOTE             0           0         0      4       2       0       0      0
+  SALARY             0           0         0      5       0       1       0      0
+  SKILLS             0           0         0      8       0       0       0      1
+  TITLE              0           0         0      6       0       0       0      6
 
 ========================================================
