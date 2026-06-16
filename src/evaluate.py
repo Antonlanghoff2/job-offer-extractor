@@ -1,135 +1,188 @@
 # Copyright Anton Langhoff <anton@langhoff.fr>
 # SPDX-License-Identifier: MIT
 
-"""Evaluation utilities for the segment classifier."""
+"""Evaluation script for the segment classifier.
+
+Usage
+-----
+    python -m src.evaluate
+
+Loads ``models/segment_classifier.joblib``, reproduces the same
+train/test split used by ``train_classifier.py``, prints per-class
+and overall metrics, and writes a report to
+``models/evaluation_report.txt``.
+"""
 
 from __future__ import annotations
 
-import argparse
-import json
-from typing import Dict, List, Tuple
+import os
+import sys
+from pathlib import Path
+from typing import Tuple
 
-import numpy as np
+import joblib
 import pandas as pd
 from sklearn.metrics import (
+    accuracy_score,
     classification_report,
     confusion_matrix,
     f1_score,
+    precision_score,
+    recall_score,
 )
-
-from src.feature_extraction import build_vectorizer, prepare_data
-
-
-def evaluate_model(
-    csv_path: str = "data/train_segments.csv",
-    cv_folds: int = 5,
-) -> None:
-    """Train and cross-validate, then print detailed metrics.
-
-    Parameters
-    ----------
-    csv_path : str
-        Path to labelled CSV.
-    cv_folds : int
-        Number of cross-validation folds.
-    """
-    from sklearn.linear_model import LogisticRegression
-    from sklearn.model_selection import StratifiedKFold
-
-    vectorizer = build_vectorizer()
-    X, y, classes = prepare_data(csv_path, vectorizer)
-
-    clf = LogisticRegression(
-        C=1.0,
-        solver="lbfgs",
-        max_iter=500,
-        random_state=42,
-    )
-
-    skf = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=42)
-    all_y_true: List[str] = []
-    all_y_pred: List[str] = []
-
-    for train_idx, test_idx in skf.split(X, y):
-        X_train, X_test = X[train_idx], X[test_idx]
-        y_train, y_test = y[train_idx], y[test_idx]
-        clf.fit(X_train, y_train)
-        preds = clf.predict(X_test)
-        all_y_true.extend(y_test)
-        all_y_pred.extend(preds)
-
-    print("\n=== Classification Report ===\n")
-    print(classification_report(all_y_true, all_y_pred, labels=classes))
-
-    cm = confusion_matrix(all_y_true, all_y_pred, labels=classes)
-    cm_df = pd.DataFrame(cm, index=classes, columns=classes)
-    print("=== Confusion Matrix ===\n")
-    print(cm_df)
-
-    macro = f1_score(all_y_true, all_y_pred, average="macro")
-    weighted = f1_score(all_y_true, all_y_pred, average="weighted")
-    print(f"\nMacro   F1 : {macro:.4f}")
-    print(f"Weighted F1 : {weighted:.4f}")
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
 
 
-def predict_on_csv(
-    csv_path: str,
-    model_dir: str = "models",
-) -> List[Tuple[str, str, str]]:
-    """Run prediction on a CSV and return (text, true_label, pred_label) rows.
+DATA_DIR = Path("data")
+MODEL_DIR = Path("models")
+DEFAULT_CSV = DATA_DIR / "train_segments.csv"
+MODEL_PATH = MODEL_DIR / "segment_classifier.joblib"
+REPORT_PATH = MODEL_DIR / "evaluation_report.txt"
+
+RANDOM_STATE = 42
+TEST_SIZE = 0.2
+
+
+def load_dataset(csv_path: str = str(DEFAULT_CSV)) -> Tuple[pd.DataFrame, pd.Series]:
+    """Load text and labels from the training CSV.
 
     Parameters
     ----------
     csv_path : str
-        Path to CSV with ``text`` and ``label`` columns.
-    model_dir : str
-        Directory with persisted artifacts.
+        Path to the CSV file with ``text`` and ``label`` columns.
 
     Returns
     -------
-    List[Tuple[str, str, str]]
-        Triplets for each row.
+    X : pd.DataFrame
+        Texts.
+    y : pd.Series
+        Labels.
     """
-    import joblib
-    from src.feature_extraction import build_feature_matrix
-
-    vectorizer = joblib.load(f"{model_dir}/vectorizer.joblib")
-    classifier = joblib.load(f"{model_dir}/classifier.joblib")
-    classes = joblib.load(f"{model_dir}/classes.joblib")
+    if not os.path.isfile(csv_path):
+        print(f"Error: evaluation file not found at '{csv_path}'", file=sys.stderr)
+        sys.exit(1)
 
     df = pd.read_csv(csv_path)
-    X = build_feature_matrix(vectorizer, df["text"].tolist())
-    preds = classifier.predict(X)
+    if "text" not in df.columns or "label" not in df.columns:
+        print(
+            "Error: CSV must contain 'text' and 'label' columns",
+            file=sys.stderr,
+        )
+        sys.exit(1)
 
-    rows: List[Tuple[str, str, str]] = []
-    for text, true, pred in zip(df["text"], df["label"], preds):
-        rows.append((text, true, pred))
-    return rows
+    return df["text"], df["label"]
 
 
-def compare_datasets(filepath: str, actual_path: str) -> None:
-    """Run evaluation on separate test set and report metrics."""
-    rows = predict_on_csv(filepath)
-    y_true = [r[1] for r in rows]
-    y_pred = [r[2] for r in rows]
-    classes = sorted(set(y_true))
+def load_model(path: str = str(MODEL_PATH)) -> Pipeline:
+    """Load the trained scikit-learn pipeline.
 
-    print("\n=== Evaluation on test set ===\n")
-    print(classification_report(y_true, y_pred, labels=classes))
+    Parameters
+    ----------
+    path : str
+        Path to the ``.joblib`` file.
+
+    Returns
+    -------
+    Pipeline
+        Fitted pipeline.
+    """
+    if not os.path.isfile(path):
+        print(f"Error: model not found at '{path}'", file=sys.stderr)
+        print("Run 'python -m src.train_classifier' first.", file=sys.stderr)
+        sys.exit(1)
+    return joblib.load(path)
+
+
+def evaluate() -> None:
+    """Run the full evaluation workflow."""
+    X, y = load_dataset()
+
+    pipeline = load_model()
+
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y,
+        test_size=TEST_SIZE,
+        random_state=RANDOM_STATE,
+        stratify=y,
+    )
+
+    y_pred = pipeline.predict(X_test)
+
+    labels = sorted(y.unique())
+
+    print("\n=== Classification Report ===\n")
+    print(classification_report(y_test, y_pred, labels=labels, digits=4))
+
+    acc = accuracy_score(y_test, y_pred)
+    prec_macro = precision_score(y_test, y_pred, labels=labels, average="macro", zero_division=0)
+    prec_weighted = precision_score(y_test, y_pred, labels=labels, average="weighted", zero_division=0)
+    rec_macro = recall_score(y_test, y_pred, labels=labels, average="macro", zero_division=0)
+    rec_weighted = recall_score(y_test, y_pred, labels=labels, average="weighted", zero_division=0)
+    f1_macro = f1_score(y_test, y_pred, labels=labels, average="macro", zero_division=0)
+    f1_weighted = f1_score(y_test, y_pred, labels=labels, average="weighted", zero_division=0)
+
+    print("=== Aggregated Metrics ===\n")
+    print(f"  Accuracy             : {acc:.4f}")
+    print(f"  Precision (macro)    : {prec_macro:.4f}")
+    print(f"  Precision (weighted) : {prec_weighted:.4f}")
+    print(f"  Recall (macro)       : {rec_macro:.4f}")
+    print(f"  Recall (weighted)    : {rec_weighted:.4f}")
+    print(f"  F1-score (macro)     : {f1_macro:.4f}")
+    print(f"  F1-score (weighted)  : {f1_weighted:.4f}")
+
+    cm = confusion_matrix(y_test, y_pred, labels=labels)
+    cm_df = pd.DataFrame(cm, index=labels, columns=labels)
+
+    print("\n=== Confusion Matrix ===\n")
+    print(cm_df.to_string())
+
+    lines: list[str] = []
+    lines.append("=" * 56)
+    lines.append("  EVALUATION REPORT — Segment Classifier")
+    lines.append("=" * 56)
+    lines.append("")
+    lines.append(f"  Model        : {MODEL_PATH}")
+    lines.append(f"  Data         : {DEFAULT_CSV}")
+    lines.append(f"  Samples      : {len(X)}")
+    lines.append(f"  Test size    : {TEST_SIZE}")
+    lines.append(f"  Test samples : {len(y_test)}")
+    lines.append(f"  Classes      : {len(labels)}")
+    lines.append("")
+    lines.append("-" * 56)
+    lines.append("  Per-class metrics")
+    lines.append("-" * 56)
+    lines.append("")
+    lines.append(classification_report(y_test, y_pred, labels=labels, digits=4))
+    lines.append("-" * 56)
+    lines.append("  Aggregated metrics")
+    lines.append("-" * 56)
+    lines.append("")
+    lines.append(f"  Accuracy             : {acc:.4f}")
+    lines.append(f"  Precision (macro)    : {prec_macro:.4f}")
+    lines.append(f"  Precision (weighted) : {prec_weighted:.4f}")
+    lines.append(f"  Recall (macro)       : {rec_macro:.4f}")
+    lines.append(f"  Recall (weighted)    : {rec_weighted:.4f}")
+    lines.append(f"  F1-score (macro)     : {f1_macro:.4f}")
+    lines.append(f"  F1-score (weighted)  : {f1_weighted:.4f}")
+    lines.append("")
+    lines.append("-" * 56)
+    lines.append("  Confusion matrix")
+    lines.append("-" * 56)
+    lines.append("")
+    for line in cm_df.to_string().split("\n"):
+        lines.append(f"  {line}")
+    lines.append("")
+    lines.append("=" * 56)
+
+    report = "\n".join(lines)
+
+    os.makedirs(MODEL_DIR, exist_ok=True)
+    with open(REPORT_PATH, "w", encoding="utf-8") as fh:
+        fh.write(report)
+
+    print(f"\nReport saved to '{REPORT_PATH}'")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Evaluate segment classifier")
-    parser.add_argument(
-        "--csv",
-        default="data/train_segments.csv",
-        help="Path to labelled CSV",
-    )
-    parser.add_argument(
-        "--cv-folds",
-        type=int,
-        default=5,
-        help="Number of cross-validation folds",
-    )
-    args = parser.parse_args()
-    evaluate_model(csv_path=args.csv, cv_folds=args.cv_folds)
+    evaluate()
