@@ -50,10 +50,18 @@ SALARY_PATTERNS = [
 LOCATION_PREFIX_PATTERNS = [
     re.compile(r"(?:poste\s+)?bas[ée]\s+(?:a|à|sur)\s+(.+)", re.IGNORECASE),
     re.compile(r"localisation\s*:?\s*(.+)", re.IGNORECASE),
-    re.compile(r"lieu\s*:?\s*(.+)", re.IGNORECASE),
+    re.compile(r"lieu\s+du\s+poste\s*:?\s*(.+)", re.IGNORECASE),
+    re.compile(r"lieu\s*:\s*(.+)", re.IGNORECASE),
     re.compile(r"ville\s*:?\s*(.+)", re.IGNORECASE),
     re.compile(r"r[ée]gion\s*:?\s*(.+)", re.IGNORECASE),
 ]
+
+_NON_LOCATION_WORDS = frozenset({
+    "expérience", "travail", "domicile", "compétence", "anglais",
+    "profil", "mission", "présentiel", "télétravail", "remote",
+    "distanciel", "poste", "salaire", "rémunération", "avantages",
+    "description",
+})
 
 _NOISE_SECTION_HEADERS = frozenset({
     "Salaire", "Type de poste", "Lieu",
@@ -217,8 +225,12 @@ def extract_location(text: str) -> str | None:
         match = pattern.search(text)
         if match:
             candidate = match.group(1).strip()
-            if candidate and not re.match(r"\d", candidate):
-                return candidate
+            if not candidate or re.match(r"\d", candidate):
+                continue
+            first_word = candidate.split()[0].lower() if candidate.split() else ""
+            if first_word in _NON_LOCATION_WORDS:
+                continue
+            return candidate
 
     if _CITY_LIKE.match(text.strip()):
         return text.strip()
@@ -262,7 +274,14 @@ def extract_skills(text: str) -> list[str]:
     for pat, name in _SKILL_PATTERNS:
         if pat.search(text):
             found.append(name)
-    return found
+    result = list(found)
+    if "IA" in found and "intelligence artificielle" not in found:
+        idx = result.index("IA")
+        result.insert(idx + 1, "intelligence artificielle")
+    elif "intelligence artificielle" in found and "IA" not in found:
+        idx = result.index("intelligence artificielle")
+        result.insert(idx + 1, "IA")
+    return result
 
 
 def normalize_remote_label(remote_text: str) -> str | None:
@@ -275,3 +294,200 @@ def normalize_remote_label(remote_text: str) -> str | None:
         if key in lower:
             return norm
     return None
+
+
+# ---------------------------------------------------------------------------
+# New public API — called directly by predict.py
+# ---------------------------------------------------------------------------
+
+def deduplicate_keep_order(items: list[str]) -> list[str]:
+    """Remove duplicates while preserving first-occurrence order."""
+    return list(dict.fromkeys(items))
+
+
+_OFFER_NUMBER_PATTERNS = [
+    re.compile(r"(?:r[ée]f[ée]rence|ref|num[ée]ro|n[°])\s*(?:offre\s*)?:?\s*([A-Za-z0-9\-_]+)", re.IGNORECASE),
+    re.compile(r"(?:job\s*)?id\s*:?\s*([A-Za-z0-9\-_]+)", re.IGNORECASE),
+    re.compile(r"in\d{6,}", re.IGNORECASE),
+]
+
+
+def extract_offer_number(text: str) -> str | None:
+    """Extract a job-offer reference number.
+
+    Detects patterns like ``Référence : ABC123``, ``Ref : 2024-DEV-45``,
+    ``Job ID: 98765``, ``INDEED-abc123``.
+    """
+    for pat in _OFFER_NUMBER_PATTERNS:
+        m = pat.search(text)
+        if m:
+            return m.group(1).strip() if m.lastindex else m.group(0).strip()
+    return None
+
+
+def extract_salaries(text: str) -> list[str]:
+    """Extract all salary mentions from *text*.
+
+    Returns a deduplicated list of matched strings in order of appearance.
+    Overlapping / nested matches are pruned (the longest wins).
+    """
+    raw_matches: list[tuple[int, int, str]] = []
+    for pat in SALARY_PATTERNS:
+        for m in pat.finditer(text):
+            raw = m.group(0).strip()
+            if not raw:
+                continue
+            if re.search(r"(taux\s*journalier|horaire|à\s*l['’]heure)", raw, re.IGNORECASE):
+                continue
+            raw_matches.append((m.start(), m.end(), raw))
+
+    raw_matches.sort(key=lambda x: x[0])
+
+    non_overlapping: list[str] = []
+    last_end = -1
+    for start, end, raw in raw_matches:
+        if start >= last_end:
+            non_overlapping.append(raw)
+            last_end = end
+        else:
+            # Overlapping: keep the longer one
+            if non_overlapping and (end - start) > (last_end - (start if non_overlapping else 0)):
+                non_overlapping[-1] = raw
+                last_end = end
+
+    return deduplicate_keep_order(non_overlapping)
+
+
+_REMOTE_MODE_PATTERNS = [
+    re.compile(r"\b(pr[ée]sentiel)\b", re.IGNORECASE),
+    re.compile(r"\bt[ée]l[ée]travail\s+occasionnel\b", re.IGNORECASE),
+    re.compile(r"\bt[ée]l[ée]travail\s+partiel\b", re.IGNORECASE),
+    re.compile(r"\b100%\s*t[ée]l[ée]travail\b", re.IGNORECASE),
+    re.compile(r"\bt[ée]l[ée]travail\b", re.IGNORECASE),
+    re.compile(r"\bremote\b", re.IGNORECASE),
+    re.compile(r"\bdistanciel\b", re.IGNORECASE),
+    re.compile(r"travail\s+(?:a|à)\s+domicile\s+occasionnel", re.IGNORECASE),
+]
+
+
+def extract_remote_mode(text: str) -> str | None:
+    """Return a canonical remote label for a single text segment.
+
+    Returns one of ``"présentiel"``, ``"télétravail occasionnel"``,
+    ``"télétravail partiel"``, ``"remote"``, or ``None``.
+    """
+    lower = text.lower()
+    if "présentiel" in lower and "télétravail" not in lower and "remote" not in lower and "distanciel" not in lower:
+        return "présentiel"
+    if re.search(r"\bt[ée]l[ée]travail\s+occasionnel\b", lower) or re.search(r"travail\s+(?:a|à)\s+domicile\s+occasionnel", lower):
+        return "télétravail occasionnel"
+    if re.search(r"\bt[ée]l[ée]travail\s+partiel\b", lower):
+        return "télétravail partiel"
+    if re.search(r"\b100%\s*t[ée]l[ée]travail\b", lower) or re.search(r"\bremote\b", lower):
+        return "remote"
+    if re.search(r"\bt[ée]l[ée]travail\b", lower):
+        return "télétravail"
+    if re.search(r"\bdistanciel\b", lower):
+        return "remote"
+    return None
+
+
+_RESOLVE_REMOTE_COMBINED = {
+    "présentiel": "présentiel",
+    "télétravail occasionnel": "télétravail occasionnel",
+    "télétravail partiel": "télétravail partiel",
+    "remote": "remote",
+    "télétravail": "remote",
+}
+
+
+def resolve_remote(segment_modes: list[str | None]) -> str | None:
+    """Combine remote-mode labels from several segments into one canonical value.
+
+    ``"présentiel"`` + ``"télétravail occasionnel"`` → ``"hybride"``
+    Otherwise the most specific non-``None`` label wins.
+    """
+    present = bool(segment_modes.count("présentiel"))
+    has_occasional = any("occasionnel" in (m or "") for m in segment_modes)
+    has_remote = any(
+        m for m in segment_modes
+        if m and m != "présentiel"
+    )
+
+    if present and has_occasional:
+        return "hybride"
+    if present:
+        return "présentiel"
+    if has_remote:
+        for m in segment_modes:
+            if m and m != "présentiel":
+                return m
+    return None
+
+
+def _is_likely_location(candidate: str) -> bool:
+    """Return ``True`` if *candidate* looks like a real location."""
+    lower = candidate.lower()
+    if any(kw in lower for kw in ("domicile", "pourvoir", "gérer", "présentiel",
+                                   "télétravail", "distanciel")):
+        return False
+    first_word = candidate.split()[0].lower() if candidate.split() else ""
+    if first_word in _NON_LOCATION_WORDS:
+        return False
+    if len(candidate.split()) == 1 and first_word in ("en", "à", "au", "aux", "le", "la", "les", "des"):
+        return False
+    return True
+
+
+def extract_hiring_locations(text: str) -> list[str]:
+    """Extract all hiring-location mentions from *text*.
+
+    Detects patterns like ``Paris``, ``Saint-Maur-des-Fossés (94)``,
+    ``Lieu : Bordeaux``, ``Poste basé à Marseille``.
+    """
+    results: list[str] = []
+
+    for pat in LOCATION_PREFIX_PATTERNS:
+        for m in pat.finditer(text):
+            candidate = m.group(1).strip()
+            if not candidate or re.match(r"\d", candidate):
+                continue
+            if _is_likely_location(candidate):
+                results.append(candidate)
+
+    for line in text.strip().split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        if _is_likely_location(line) and _CITY_LIKE.match(line):
+            results.append(line)
+
+    return deduplicate_keep_order(results)
+
+
+_CONTACT_PATTERNS = [
+    re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+"),
+    re.compile(r"0[1-9]\d{8}"),
+    re.compile(r"\+33\s*\d\s*\d{2}\s*\d{2}\s*\d{2}\s*\d{2}"),
+    re.compile(r"01\s*\d{2}\s*\d{2}\s*\d{2}\s*\d{2}"),
+    re.compile(r"https?://[^\s,;)]+"),
+    re.compile(r"(?:contact|recruteur|à contacter|interlocuteur)\s*:?\s*(.{3,60}?)(?:\.|,|$)", re.IGNORECASE),
+]
+
+
+def extract_contacts(text: str) -> list[str]:
+    """Extract all contact information from *text*.
+
+    Returns emails, French phone numbers, application URLs, and
+    recruiter names in order of appearance.
+    """
+    results: list[str] = []
+    for pat in _CONTACT_PATTERNS:
+        for m in pat.finditer(text):
+            candidate = m.group(1).strip() if m.lastindex else m.group(0).strip()
+            if candidate:
+                results.append(candidate)
+    return deduplicate_keep_order(results)
+
+
+extract_required_skills = extract_skills

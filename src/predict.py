@@ -10,15 +10,15 @@ Usage
 Loads the trained pipeline from ``models/segment_classifier.joblib``,
 classifies each line/segment of a raw French job offer, then applies
 rule-based post-processing and extractors to produce a structured
-JSON-compatible dict.
+JSON-compatible dict with the following fields:
 
-Hybrid approach
----------------
-The scikit-learn pipeline provides an initial label for every segment,
-but business rules (noise filtering, company detection, title cleanup,
-remote normalisation) override or refine those predictions.  This keeps
-the system robust on real-world offers without needing infinite
-training data.
+- ``numero_offre``     – reference number
+- ``intitule_poste``   – cleaned job title
+- ``salaires``         – all detected salary mentions
+- ``lieux_embauche``   – all detected hiring locations
+- ``distanciel``       – canonical remote / on-site label
+- ``competences_requises`` – deduplicated list of recognised skills
+- ``contacts``         – emails, phone numbers, application URLs
 """
 
 from __future__ import annotations
@@ -34,16 +34,16 @@ import joblib
 from sklearn.pipeline import Pipeline
 
 from src.extractors import (
-    extract_company,
-    extract_contract,
-    extract_experience,
-    extract_location,
-    extract_remote,
-    extract_salary,
-    extract_skills,
+    deduplicate_keep_order,
+    extract_contacts,
+    extract_hiring_locations,
+    extract_offer_number,
+    extract_remote_mode,
+    extract_required_skills,
+    extract_salaries,
     is_noise_segment,
     is_probable_company_name,
-    normalize_remote_label,
+    resolve_remote,
     split_offer_into_segments,
 )
 
@@ -113,8 +113,8 @@ def post_process_segments(
 
     * Removes segments classified as TITLE when they are actually section
       headers or company names.
-    * Filters out noise segments.
-    * Drops segments whose text is empty after cleaning.
+    * Reclassifies ``Compétences : …`` lines to SKILLS.
+    * Drops empty-text segments.
 
     Parameters
     ----------
@@ -147,12 +147,14 @@ def _clean_title(raw: str) -> str | None:
     """Apply business rules to extract a clean job title.
 
     * Strips the ``- job post`` / ``– job post`` suffix.
+    * Removes ``(H/F)``, ``H/F``, ``F/H``, ``M/F`` trailing markers.
     * Normalises fancy apostrophes.
     * Returns ``None`` when the result looks like a section header,
       company name, or generic single word.
     """
     t = raw.translate(_TITLE_APOS)
     t = re.sub(r"\s*[-–]\s*job\s*post\s*$", "", t, flags=re.IGNORECASE).strip()
+    t = re.sub(r"\s*[\(\)]*[HFM]/[HFM][\)]*\s*$", "", t).strip()
     if not t:
         return None
     if is_noise_segment(t):
@@ -169,102 +171,29 @@ def _clean_title(raw: str) -> str | None:
     return t
 
 
-def _resolve_remote(segments: List[Dict[str, str]]) -> str | None:
-    """Build a canonical remote / télétravail label.
-
-    Rules
-    -----
-    * ``"Travail à domicile occasionnel"`` → ``"occasionnel"``
-    * ``"Lieu du poste : En présentiel"`` → ``"présentiel"``
-    * If both present → ``"présentiel avec télétravail occasionnel"``
-    """
-    remote_labels: List[str] = []
-    for seg in segments:
-        raw = extract_remote(seg["text"])
-        if raw is None:
-            continue
-        norm = normalize_remote_label(raw)
-        if norm == "télétravail":
-            if "occasionnel" in raw.lower():
-                remote_labels.append("télétravail occasionnel")
-            else:
-                remote_labels.append("télétravail")
-        elif norm == "présentiel":
-            remote_labels.append("présentiel")
-
-    has_presentiel = any("présentiel" in r for r in remote_labels)
-    has_remote = any("télétravail" in r for r in remote_labels)
-
-    if has_presentiel and has_remote:
-        remote_detail = [r for r in remote_labels if "occasionnel" in r]
-        if remote_detail:
-            return "présentiel avec télétravail occasionnel"
-        return "présentiel et télétravail"
-    if has_presentiel:
-        return "présentiel"
-    if has_remote:
-        occ = [r for r in remote_labels if "occasionnel" in r]
-        if occ:
-            return "télétravail occasionnel"
-        return "télétravail"
-    return None
-
-
-def _find_company(
-    segments: List[Dict[str, str]],
-    title_idx: int | None,
-) -> str | None:
-    """Find the company name.
-
-    Heuristics (tried in order)
-    1. Any segment with an explicit ``Entreprise : …`` prefix.
-    2. The segment immediately after the title when it looks like a
-       company name.
-    """
-    for seg in segments:
-        company = extract_company(seg["text"])
-        if company:
-            return company
-
-    if title_idx is not None and title_idx + 1 < len(segments):
-        next_seg = segments[title_idx + 1]["text"]
-        if is_probable_company_name(next_seg):
-            return next_seg
-    return None
-
-
-def _find_title(segments: List[Dict[str, str]]) -> tuple[str | None, int | None]:
-    """Find the best job title.
+def _find_title(segments: List[str]) -> str | None:
+    """Find the best job title from a list of cleaned segments.
 
     Strategy
     --------
-    1. Prefer the very first non-empty segment in the offer.
-    2. Fall back to the first segment labelled TITLE.
-    3. Apply ``_clean_title`` to both candidates.
+    Pick the first segment that passes ``_clean_title``.
     """
-    candidates: list[tuple[int, str]] = []
-
-    for idx, seg in enumerate(segments):
-        cleaned = _clean_title(seg["text"])
+    for seg in segments:
+        cleaned = _clean_title(seg)
         if cleaned:
-            candidates.append((idx, cleaned))
-            break  # first real candidate wins
-
-    title_idx = None
-    title_text = None
-    if candidates:
-        title_idx, title_text = candidates[0]
-
-    return title_text, title_idx
+            return cleaned
+    return None
 
 
-def extract_job_offer(text: str) -> dict:
+def extract_job_offer(text: str, debug: bool = False) -> dict:
     """Extract structured information from a raw French job-offer text.
 
     Parameters
     ----------
     text : str
         Raw job-offer text.
+    debug : bool
+        When ``True``, include the ``segments_classes`` entry in the result.
 
     Returns
     -------
@@ -273,89 +202,78 @@ def extract_job_offer(text: str) -> dict:
     """
     segments = split_offer_into_segments(text)
     if not segments:
-        return _empty_result([])
+        return _empty_result()
 
     pipeline = load_model()
     raw_labelled = classify_segments(pipeline, segments)
     cleaned_segments = post_process_segments(raw_labelled)
 
-    intitule_poste, title_idx = _find_title(cleaned_segments)
-    entreprise = _find_company(cleaned_segments, title_idx)
-
-    contrat: str | None = None
-    salaire: str | None = None
-    localisation: str | None = None
-    competences: List[str] = []
-    experience: str | None = None
-
+    # ── numero_offre ────────────────────────────────────────────────
+    numero_offre: str | None = None
     for seg in cleaned_segments:
-        txt = seg["text"]
-        label = seg["label"]
+        val = extract_offer_number(seg["text"])
+        if val is not None:
+            numero_offre = val
+            break
 
-        competences.extend(extract_skills(txt))
-        if contrat is None and label == "CONTRACT":
-            val = extract_contract(txt)
-            if val is not None:
-                contrat = val
-        if salaire is None and label == "SALARY":
-            val = extract_salary(txt)
-            if val is not None:
-                salaire = val
-        if experience is None and label == "EXPERIENCE":
-            val = extract_experience(txt)
-            if val is not None:
-                experience = val
-        if localisation is None and label == "LOCATION":
-            val = extract_location(txt)
-            if val is not None:
-                localisation = val
+    # ── intitule_poste ──────────────────────────────────────────────
+    intitule_poste = _find_title(segments)
 
+    # ── salaires ────────────────────────────────────────────────────
+    salaires: List[str] = []
     for seg in cleaned_segments:
-        txt = seg["text"]
-        if contrat is None:
-            val = extract_contract(txt)
-            if val is not None:
-                contrat = val
-        if salaire is None:
-            val = extract_salary(txt)
-            if val is not None:
-                salaire = val
-        if experience is None:
-            val = extract_experience(txt)
-            if val is not None:
-                experience = val
-        if localisation is None:
-            val = extract_location(txt)
-            if val is not None:
-                localisation = val
+        salaires.extend(extract_salaries(seg["text"]))
+    salaires = deduplicate_keep_order(salaires)
 
-    competences = list(dict.fromkeys(competences))
-    teletravail = _resolve_remote(cleaned_segments)
+    # ── lieux_embauche ──────────────────────────────────────────────
+    lieux_embauche: List[str] = []
+    for seg in cleaned_segments:
+        lieux_embauche.extend(extract_hiring_locations(seg["text"]))
+    lieux_embauche = deduplicate_keep_order(lieux_embauche)
 
-    return {
+    # ── distanciel ──────────────────────────────────────────────────
+    segment_modes: List[str | None] = []
+    for seg in cleaned_segments:
+        segment_modes.append(extract_remote_mode(seg["text"]))
+    distanciel = resolve_remote(segment_modes)
+
+    # ── competences_requises ────────────────────────────────────────
+    competences_requises: List[str] = []
+    for seg in cleaned_segments:
+        competences_requises.extend(extract_required_skills(seg["text"]))
+    competences_requises = deduplicate_keep_order(competences_requises)
+
+    # ── contacts ────────────────────────────────────────────────────
+    contacts: List[str] = []
+    for seg in cleaned_segments:
+        contacts.extend(extract_contacts(seg["text"]))
+    contacts = deduplicate_keep_order(contacts)
+
+    result: dict = {
+        "numero_offre": numero_offre,
         "intitule_poste": intitule_poste,
-        "entreprise": entreprise,
-        "contrat": contrat,
-        "salaire": salaire,
-        "localisation": localisation,
-        "competences": competences,
-        "experience": experience,
-        "teletravail": teletravail,
-        "segments_classes": cleaned_segments,
+        "salaires": salaires,
+        "lieux_embauche": lieux_embauche,
+        "distanciel": distanciel,
+        "competences_requises": competences_requises,
+        "contacts": contacts,
     }
 
+    if debug:
+        result["segments_classes"] = cleaned_segments
 
-def _empty_result(segments: List) -> dict:
+    return result
+
+
+def _empty_result() -> dict:
     return {
+        "numero_offre": None,
         "intitule_poste": None,
-        "entreprise": None,
-        "contrat": None,
-        "salaire": None,
-        "localisation": None,
-        "competences": [],
-        "experience": None,
-        "teletravail": None,
-        "segments_classes": segments,
+        "salaires": [],
+        "lieux_embauche": [],
+        "distanciel": None,
+        "competences_requises": [],
+        "contacts": [],
     }
 
 
@@ -364,28 +282,23 @@ def pretty_print_result(result: dict) -> None:
     print("=" * 48)
     print("  EXTRACTION RÉSULTAT")
     print("=" * 48)
-    for key in ("intitule_poste", "entreprise", "contrat", "salaire", "localisation"):
+    for key in (
+        "numero_offre", "intitule_poste", "distanciel",
+    ):
         val = result.get(key)
         label = key.replace("_", " ").title()
-        if val:
-            print(f"  {label:<20} : {val}")
-        else:
-            print(f"  {label:<20} : (non trouvé)")
-    print(
-        f"  {'Compétences':<20} : "
-        f"{', '.join(result.get('competences', [])) or '(non trouvé)'}"
-    )
-    for key in ("experience", "teletravail"):
-        val = result.get(key)
+        print(f"  {label:<22} : {val or '(non trouvé)'}")
+    for key in ("salaires", "lieux_embauche", "competences_requises", "contacts"):
+        val = result.get(key, [])
         label = key.replace("_", " ").title()
-        if val:
-            print(f"  {label:<20} : {val}")
-        else:
-            print(f"  {label:<20} : (non trouvé)")
-    print("-" * 48)
-    print("  Segments classés :")
-    for seg in result.get("segments_classes", []):
-        print(f"    [{seg['label']:>12}] {seg['text']}")
+        display = ", ".join(val) if val else "(non trouvé)"
+        print(f"  {label:<22} : {display}")
+
+    if "segments_classes" in result:
+        print("-" * 48)
+        print("  Segments classés (debug) :")
+        for seg in result["segments_classes"]:
+            print(f"    [{seg['label']:>12}] {seg['text']}")
     print("=" * 48)
 
 
@@ -402,7 +315,8 @@ def main() -> None:
     elif len(sys.argv) > 1 and sys.argv[1] == "-":
         offer = sys.stdin.read()
 
-    result = extract_job_offer(offer)
+    debug = "--debug" in sys.argv
+    result = extract_job_offer(offer, debug=debug)
     pretty_print_result(result)
     print()
     print(json.dumps(result, ensure_ascii=False, indent=2))
