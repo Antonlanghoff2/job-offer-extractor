@@ -1,54 +1,284 @@
 {
-  "territoire": null,
-  "periode_jours": 30,
   "nombre_offres": 18,
   "competences": {
-    "{'code':'109794','libelle':'Intelligenceartificielle','exigence':'E'}": 3,
-    "{'code':'300067','libelle':'Analyser,exploiter,structurerdesdonnées','exigence':'E'}": 3,
-    "{'code':'300067','libelle':'Analyser,exploiter,structurerdesdonnées','exigence':'S'}": 3,
-    "{'code':'109794','libelle':'Intelligenceartificielle','exigence':'S'}": 2,
-    "{'code':'113798','libelle':'ProgrammationenPython','exigence':'E'}": 2,
-    "{'code':'113798','libelle':'ProgrammationenPython','exigence':'S'}": 2,
-    "{'code':'120323','libelle':'Modéliserunebasededonnées','exigence':'S'}": 2,
-    "{'code':'404167','libelle':'Géreretmaitriserdesbasesdedonnées(SQL/NoSQL)','exigence':'E'}": 2,
-    "{'code':'109763','libelle':\"Systèmed'exploitationLinux\",'exigence':'E'}": 1,
-    "{'code':'110150','libelle':'Anglaistechnique','exigence':'S'}": 1,
-    "{'code':'113255','libelle':\"Utilisationd'outilsBusinessIntelligence(BI)-Informatiquedécisionnelle\",'exigence':'E'}": 1,
-    "{'code':'113317','libelle':'Développeruneapplicationenlienavecunebasededonnées','exigence':'S'}": 1,
-    "{'code':'115531','libelle':'Sélectionner,assembleretintégrerdescomposantsinformatiques(progiciels,basesdedonnées,développementsspécifiques,...)','exigence':'E'}": 1,
-    "{'code':'116349','libelle':'Déploiementdeservicescloud(cloudcomputing)','exigence':'E'}": 1,
-    "{'code':'116349','libelle':'Déploiementdeservicescloud(cloudcomputing)','exigence':'S'}": 1,
-    "{'code':'117691','libelle':'Définirlessolutionsdestockageetdestructurationdesdonnées','exigence':'E'}": 1,
-    "{'code':'117691','libelle':'Définirlessolutionsdestockageetdestructurationdesdonnées','exigence':'S'}": 1,
-    "{'code':'120323','libelle':'Modéliserunebasededonnées','exigence':'E'}": 1,
-    "{'code':'300184','libelle':'Apporteruneassistancetechniqueauxéquipes','exigence':'S'}": 1,
-    "{'code':'300202','libelle':\"Déployer,intégrerunlogiciel,unsystèmed'informations,uneapplication\",'exigence':'E'}": 1,
-    "{'code':'300449','libelle':'Expliqueretfairerespecterlesrèglesetprocédures','exigence':'S'}": 1,
-    "{'code':'300586','libelle':'Concevoiretdévelopperunesolutiondigitale','exigence':'E'}": 1,
-    "{'code':'300664','libelle':\"Rédigerdesdocumentsd'ingénierie(rédactiondesspécificationsfonctionnellesetlivrablestechniquesdessolutions)\",'exigence':'E'}": 1,
-    "{'code':'400707','libelle':'Animerunedémarcheagileetinnovante','exigence':'S'}": 1,
-    "{'code':'400759','libelle':'IntégrerdesoutilsIA/DataScience','exigence':'E'}": 1,
-    "{'code':'400759','libelle':'IntégrerdesoutilsIA/DataScience','exigence':'S'}": 1,
-    "{'code':'404121','libelle':'Dataengineer','exigence':'E'}": 1,
-    "{'code':'404167','libelle':'Géreretmaitriserdesbasesdedonnées(SQL/NoSQL)','exigence':'S'}": 1,
-    "{'code':'404328','libelle':'Assurerlamaintenancepréventiveetlesaméliorationsdesinfrastructuresnumériques','exigence':'E'}": 1,
-    "{'code':'404328','libelle':'Assurerlamaintenancepréventiveetlesaméliorationsdesinfrastructuresnumériques','exigence':'S'}": 1,
-    "{'code':'476759','libelle':'Collaborationinterdisciplinaire','exigence':'S'}": 1,
-    "{'code':'487086','libelle':\"Développerdesalgorithmespourl'analysededonnées\",'exigence':'S'}": 1,
-    "{'code':'492668','libelle':'Connaissanceapprofondieenmathématiques','exigence':'S'}": 1,
-    "{'code':'493946','libelle':\"Développementdeproduitsbaséssurl'IA\",'exigence':'S'}": 1,
-    "{'code':'508617','libelle':\"Optimiserlesperformancesdessystèmesd'IA\",'exigence':'S'}": 1,
-    "{'code':'508618','libelle':\"Développerdesmodèlesprédictifspourl'analysededonnées\",'exigence':'S'}": 1,
-    "{'code':'508628','libelle':\"Documenterlesprocessusetlesarchitecturesd'IA\",'exigence':'S'}": 1,
-    "{'libelle':'AzureCloud','exigence':'E'}": 1,
-    "{'libelle':'CI/CD','exigence':'E'}": 1,
-    "{'libelle':'Docker','exigence':'E'}": 1,
-    "{'libelle':'github','exigence':'E'}": 1,
-    "{'libelle':'React&ReactNative','exigence':'S'}": 1,
-    "{'libelle':'SQL/NoSQL','exigence':'E'}": 1,
-    "{'libelle':'TypeScript/Node.js','exigence':'S'}": 1
+    "Python": 12,
+    "SQL": 8,
+    "Machine Learning": 5,
+    "NLP": 4,
+    "LLM": 4,
+    "Docker": 4,
+    "API": 3,
+    "Data Engineering": 3,
+    "Power BI": 3,
+    "Git": 3,
+    "MLOps": 2,
+    "Deep Learning": 2,
+    "Kubernetes": 2,
+    "TensorFlow": 2,
+    "JavaScript": 2,
+    "RAG": 1,
+    "LangChain": 1,
+    "Hugging Face": 1,
+    "PyTorch": 1,
+    "Linux": 1,
+    "FastAPI": 1
   },
-  "metiers": {},
-  "niveau": {},
-  "contrats": {}
+  "metiers": {
+    "Data engineer": 10,
+    "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 5,
+    "Data scientist": 1,
+    "Ingénieur / Ingénieure d'étude informatique": 1,
+    "Développeur / Développeuse informatique": 1
+  },
+  "niveau": {
+    "senior": 12,
+    "non_precise": 4,
+    "junior": 1,
+    "intermediaire": 1
+  },
+  "territoires": {
+    "78640": 2,
+    "76341": 1,
+    "33281": 1,
+    "01142": 1,
+    "34172": 1,
+    "31555": 1,
+    "67028": 1,
+    "38185": 1,
+    "69266": 1,
+    "06152": 1,
+    "75056": 1,
+    "92025": 1,
+    "07340": 1,
+    "69123": 1,
+    "94067": 1,
+    "44109": 1,
+    "92044": 1
+  },
+  "details_offres": [
+    {
+      "id": "209WNPD",
+      "intitule": "Ingénieur Data & Intelligence Artificielle (H/F)",
+      "metier": "Data engineer",
+      "territoire": "76341",
+      "niveau": "non_precise",
+      "competences": [
+        "SQL",
+        "API",
+        "Machine Learning",
+        "NLP",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "208JRHT",
+      "intitule": "Product Owner Senior - Data Science / Machine Learning (CDI) (H/F)",
+      "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+      "territoire": "33281",
+      "niveau": "senior",
+      "competences": [
+        "SQL",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": "209VHLK",
+      "intitule": "Data Engineer - IA (H/F)",
+      "metier": "Data engineer",
+      "territoire": "01142",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "SQL",
+        "API",
+        "Power BI"
+      ]
+    },
+    {
+      "id": "209MQYD",
+      "intitule": "RESPONSABLE NUMERIQUE DONNEES DE SANTE ET I.A. - RECHERCHE (H/F)",
+      "metier": "Data engineer",
+      "territoire": "34172",
+      "niveau": "senior",
+      "competences": []
+    },
+    {
+      "id": "209HYHX",
+      "intitule": "ALTERNANT IA / DATA & AUTOMATISATION F/H (H/F)",
+      "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+      "territoire": "31555",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "SQL",
+        "API",
+        "LLM",
+        "RAG"
+      ]
+    },
+    {
+      "id": "208FTKN",
+      "intitule": "Ingénieur data - projet IA en alternance F/H/X (H/F)",
+      "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+      "territoire": "67028",
+      "niveau": "junior",
+      "competences": [
+        "Python",
+        "SQL",
+        "Git",
+        "Machine Learning",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "208XSBK",
+      "intitule": "Data Engineer / Expert Data Intégration  - H/F (H/F)",
+      "metier": "Data engineer",
+      "territoire": "38185",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "SQL",
+        "NLP",
+        "MLOps",
+        "Power BI"
+      ]
+    },
+    {
+      "id": "208PGCW",
+      "intitule": "Data Engineer IA & Data Science (H/F)",
+      "metier": "Data engineer",
+      "territoire": "69266",
+      "niveau": "intermediaire",
+      "competences": [
+        "Python",
+        "SQL",
+        "Docker",
+        "Git",
+        "Machine Learning",
+        "Deep Learning",
+        "LLM"
+      ]
+    },
+    {
+      "id": "209SBHT",
+      "intitule": "Ingénieur IA générative (H/F)",
+      "metier": "Data engineer",
+      "territoire": "06152",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "Git",
+        "NLP",
+        "LLM",
+        "LangChain",
+        "Hugging Face",
+        "TensorFlow",
+        "PyTorch",
+        "Data Engineering",
+        "MLOps"
+      ]
+    },
+    {
+      "id": "2854987",
+      "intitule": "Directeur Data & Intelligence Artificielle (F/H)",
+      "metier": "Data scientist",
+      "territoire": "75056",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "Kubernetes",
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "TensorFlow"
+      ]
+    },
+    {
+      "id": "2797239",
+      "intitule": "APPRENTISSAGE - Ingénieur données et Intelligence Artificielle  (H/F)",
+      "metier": "Data engineer",
+      "territoire": "78640",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "JavaScript",
+        "Docker"
+      ]
+    },
+    {
+      "id": "2747533",
+      "intitule": "APPRENTISSAGE - Ingénieur données et Intelligence Artificielle (H/F)",
+      "metier": "Data engineer",
+      "territoire": "78640",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "JavaScript",
+        "Docker"
+      ]
+    },
+    {
+      "id": "2787092",
+      "intitule": "Ingénieur logiciel en IA et sécurité H/F",
+      "metier": "Data engineer",
+      "territoire": "92025",
+      "niveau": "non_precise",
+      "competences": [
+        "Python",
+        "Linux",
+        "LLM"
+      ]
+    },
+    {
+      "id": "2416920",
+      "intitule": "Alternant Data & Intelligence artificielle H/F",
+      "metier": "Data engineer",
+      "territoire": "07340",
+      "niveau": "non_precise",
+      "competences": []
+    },
+    {
+      "id": "3846086",
+      "intitule": "Alternance - Ingénieur Data / IA F/H (H/F)",
+      "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+      "territoire": "69123",
+      "niveau": "non_precise",
+      "competences": [
+        "Power BI"
+      ]
+    },
+    {
+      "id": "0672122",
+      "intitule": "Senior Data Engineer - Innovation IA (H/F/NB)",
+      "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+      "territoire": "94067",
+      "niveau": "senior",
+      "competences": []
+    },
+    {
+      "id": "2297095",
+      "intitule": "Développeur Python Data/Applicatif - F/H",
+      "metier": "Ingénieur / Ingénieure d'étude informatique",
+      "territoire": "44109",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "FastAPI"
+      ]
+    },
+    {
+      "id": "8814379",
+      "intitule": "Azure / Fabric Data Engineer (Microsoft) (H/F)",
+      "metier": "Développeur / Développeuse informatique",
+      "territoire": "92044",
+      "niveau": "senior",
+      "competences": [
+        "Python",
+        "SQL"
+      ]
+    }
+  ]
 }

@@ -18,7 +18,10 @@ job_offer_extractor/
 │   ├── train_classifier.py   # Training pipeline
 │   ├── integrate_series_offres.py # France Travail aggregated series export
 │   ├── trend_aggregation.py   # Reusable market trend aggregation core
+│   ├── offer_normalization.py # Common schema for sources
+│   ├── source_comparison.py   # France Travail vs Indeed comparison
 │   ├── web_app.py            # France Travail dashboard
+│   ├── comparison_web_app.py # France Travail / Indeed comparison dashboard
 │   ├── extractors.py         # Rule-based post-processing
 │   ├── predict.py            # Prediction API & CLI
 │   └── evaluate.py           # Evaluation & reporting
@@ -129,3 +132,35 @@ python -m src.web_app
 ```
 
 Par défaut, l'application écoute sur `http://127.0.0.1:8000`.
+
+
+## Ingestion API
+
+Le client France Travail gère maintenant la pagination par fenêtres `range` et
+peut récupérer plusieurs pages avant d'écrire le snapshot local. La commande
+`src/import_offres.py` accepte `--query`, `--page-size`, `--max-pages` et
+`--max-results`.
+
+Exemple :
+
+```bash
+python -m src.import_offres --query "data python ia" --output data/raw/offres_france_travail.json
+```
+
+## Comparaison France Travail / Indeed
+
+Le comparateur normalise les deux sources dans un schéma commun, puis compare
+les métiers, les compétences, les niveaux et les contrats. Le fichier Indeed
+doit être un export JSON, avec des clés proches de `title`, `location`,
+`skills`, `contract` et `seniority`, ou déjà normalisé dans le format commun.
+
+Commande :
+
+```bash
+python scripts/compare_sources.py \
+  --france-travail data/raw/offres_france_travail.json \
+  --indeed data/samples/offres_indeed_sample.json \
+  --territoire Lyon \
+  --periode 30 \
+  --output data/processed/comparison_ft_indeed.json
+```

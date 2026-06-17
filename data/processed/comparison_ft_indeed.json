@@ -1,0 +1,62 @@
+{
+  "territoire": "Lyon",
+  "periode_jours": 30,
+  "france_travail": {
+    "territoire": "Lyon",
+    "periode_jours": 30,
+    "nombre_offres": 1,
+    "competences": {},
+    "metiers": {
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDD - 12 Mois": 1
+    }
+  },
+  "indeed": {
+    "territoire": "Lyon",
+    "periode_jours": 30,
+    "nombre_offres": 2,
+    "competences": {
+      "Python": 2,
+      "SQL": 2,
+      "FastAPI": 1,
+      "Spark": 1
+    },
+    "metiers": {
+      "Data Engineer": 1,
+      "Ingénieur Data IA": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDD": 1,
+      "CDI": 1
+    }
+  },
+  "comparaison": {
+    "ecart_nombre_offres": -1,
+    "competences_communes": {},
+    "competences_fr_exclusives": {},
+    "competences_indeed_exclusives": {
+      "Python": 2,
+      "SQL": 2,
+      "FastAPI": 1,
+      "Spark": 1
+    },
+    "metiers_communs": {},
+    "contrats_communs": {},
+    "niveau_fr": {
+      "junior": 1
+    },
+    "niveau_indeed": {
+      "junior": 1,
+      "intermediaire": 1
+    }
+  }
+}
