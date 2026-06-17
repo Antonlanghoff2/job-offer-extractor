@@ -24,6 +24,7 @@ RAW_OFFERS_PATH = PROJECT_ROOT / "data" / "raw" / "offres_france_travail.json"
 PROCESSED_TRENDS_PATH = PROJECT_ROOT / "data" / "processed" / "tendances.json"
 PROCESSED_CONTEXT_PATH = PROJECT_ROOT / "data" / "processed" / "metier_context_t3_2025.csv"
 DEFAULT_PERIOD = 30
+DEFAULT_TOP_N = 10
 DEFAULT_PORT = 8000
 DEFAULT_HOST = "127.0.0.1"
 
@@ -65,15 +66,15 @@ def _format_date(value: object) -> str:
 
 
 def _extract_territory(raw_offer: dict[str, Any]) -> str:
-    lieu = raw_offer.get("lieuTravail") or {}
+    lieu = raw_offer.get("lieuTravail")
     if isinstance(lieu, dict):
-        return (
+        territory = (
             lieu.get("libelle")
             or lieu.get("commune")
             or lieu.get("codePostal")
-            or raw_offer.get("intitule")
-            or ""
         )
+        if territory:
+            return territory
     return raw_offer.get("territoire") or raw_offer.get("intitule") or ""
 
 
@@ -182,21 +183,63 @@ def load_market_context_rows(path: Path = PROCESSED_CONTEXT_PATH) -> list[dict[s
     return rows[:12]
 
 
-def build_state(territoire: str | None, periode_jours: int) -> dict[str, Any]:
+def load_trends_snapshot(path: Path = PROCESSED_TRENDS_PATH) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    with path.open("r", encoding="utf-8") as fh:
+        payload = json.load(fh)
+    return payload if isinstance(payload, dict) else None
+
+
+def _format_percentage(count: int, total: int) -> str:
+    if total <= 0:
+        return "0,0 %"
+    return f"{(count / total) * 100:.1f}".replace('.', ',') + " %"
+
+
+def build_ranking_entries(data: dict[str, Any] | None, total_offers: int, limit: int) -> list[dict[str, Any]]:
+    entries: list[dict[str, Any]] = []
+    if not isinstance(data, dict):
+        return entries
+    for label, raw_count in data.items():
+        try:
+            count = int(raw_count)
+        except (TypeError, ValueError):
+            continue
+        if count <= 0:
+            continue
+        entries.append({
+            'nom': str(label),
+            'count': count,
+            'pourcentage': _format_percentage(count, total_offers),
+        })
+    entries.sort(key=lambda item: (-item['count'], _normalize_text(item['nom'])))
+    return entries[:max(limit, 1)]
+
+
+def build_state(territoire: str | None, periode_jours: int, top_n: int = DEFAULT_TOP_N) -> dict[str, Any]:
     raw_offers = load_raw_offers()
     offers = filter_offers(raw_offers, territoire, periode_jours)
     trends = aggregate_trends(offers, territoire=territoire, periode_jours=periode_jours)
+    snapshot = load_trends_snapshot()
+    ranking_source = snapshot if snapshot and not territoire and periode_jours == DEFAULT_PERIOD else trends
     market_context = load_market_context_rows()
     territoire_options = sorted(
         {offer["territoire"] for offer in (normalize_offer(raw) for raw in raw_offers) if offer.get("territoire")},
         key=lambda value: value.lower(),
     )
+    total_offers = int(ranking_source.get("nombre_offres") or trends.get("nombre_offres") or len(offers))
+    top_limit = max(top_n, 1)
     return {
         "territoire": territoire,
         "periode_jours": periode_jours,
+        "top_n": top_limit,
         "nombre_offres_brutes": len(raw_offers),
         "nombre_offres_filtrees": len(offers),
         "trends": trends,
+        "ranking_source": ranking_source,
+        "top_metiers": build_ranking_entries(ranking_source.get("metiers"), total_offers, top_limit),
+        "top_competences": build_ranking_entries(ranking_source.get("competences"), total_offers, top_limit),
         "offers": offers[:20],
         "territoire_options": territoire_options,
         "market_context": market_context,
@@ -327,6 +370,106 @@ HTML_TEMPLATE = """
       align-items: start;
     }
     .panel { padding: 16px; }
+    .trend-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 12px 0 10px;
+    }
+    .detail-section { margin-top: 12px; }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 12px 0 10px;
+    }
+    .trend-panel {
+      background: var(--surface-alt);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .trend-panel h3 {
+      margin: 0;
+      font-size: 15px;
+    }
+    .trend-list {
+      display: grid;
+      gap: 10px;
+    }
+    .trend-row {
+      display: grid;
+      gap: 6px;
+    }
+    .trend-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: baseline;
+    }
+    .trend-label {
+      font-size: 14px;
+      font-weight: 600;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .trend-stats {
+      color: var(--muted);
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .trend-track {
+      height: 10px;
+      border-radius: 999px;
+      background: #e8eef5;
+      overflow: hidden;
+    }
+    .trend-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    }
+    .trend-empty {
+      color: var(--muted);
+      padding: 8px 0 2px;
+    }
+    .rankings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 12px 0 10px;
+    }
+    .ranking-panel {
+      background: var(--surface-alt);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .ranking-panel h3 {
+      margin: 0;
+      font-size: 15px;
+    }
+    .ranking-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .ranking-table th, .ranking-table td {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .ranking-table th {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .ranking-value { text-align: right; font-variant-numeric: tabular-nums; }
+    .ranking-empty { color: var(--muted); padding: 10px 0 2px; }
     .market-context-block { margin-top: 10px; }
     .panel h2 {
       margin: 0 0 12px;
@@ -433,12 +576,15 @@ HTML_TEMPLATE = """
       .filters { grid-template-columns: 1fr 1fr; }
       .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .grid { grid-template-columns: 1fr; }
+      .rankings-grid { grid-template-columns: 1fr; }
+      .detail-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 720px) {
       header, .shell { padding-left: 14px; padding-right: 14px; }
       .filters { grid-template-columns: 1fr; }
       .summary { grid-template-columns: 1fr; }
       .offers table { display: block; overflow-x: auto; }
+      .ranking-table { display: block; overflow-x: auto; }
     }
   </style>
 </head>
@@ -463,6 +609,10 @@ HTML_TEMPLATE = """
         <button type="submit">Actualiser</button>
       </div>
       <div class="field">
+        <label for="top-n">Top affichés</label>
+        <input id="top-n" name="top_n" type="number" min="1" step="1" value="10">
+      </div>
+      <div class="field">
         <label>&nbsp;</label>
         <button type="button" id="reset" style="background:#0f8b8d;">Réinitialiser</button>
       </div>
@@ -476,14 +626,69 @@ HTML_TEMPLATE = """
           <h2>Tendances marché</h2>
           <small id="trends-caption"></small>
         </div>
-        <div class="bars" id="competences"></div>
-        <div style="height: 14px"></div>
-        <div class="bars" id="metiers"></div>
-        <div style="height: 14px"></div>
-        <div class="bars" id="niveaux"></div>
-        <div style="height: 14px"></div>
-        <div class="bars" id="contrats"></div>
-        <div style="height: 14px"></div>
+        <section class="trend-grid">
+          <section class="trend-panel">
+            <div class="subhead">
+              <h3>Tendances marché — Compétences</h3>
+              <small id="trend-competences-caption"></small>
+            </div>
+            <div id="trend-competences"></div>
+          </section>
+          <section class="trend-panel">
+            <div class="subhead">
+              <h3>Tendances marché — Nature des contrats</h3>
+              <small id="trend-contrats-caption"></small>
+            </div>
+            <div id="trend-contrats"></div>
+          </section>
+          <section class="trend-panel">
+            <div class="subhead">
+              <h3>Tendances marché — Ancienneté demandée</h3>
+              <small id="trend-niveaux-caption"></small>
+            </div>
+            <div id="trend-niveaux"></div>
+          </section>
+        </section>
+        <section class="rankings-grid">
+          <section class="ranking-panel">
+            <div class="subhead">
+              <h3>Top intitulés de poste</h3>
+              <small id="metiers-caption"></small>
+            </div>
+            <table class="ranking-table" id="top-metiers"></table>
+          </section>
+          <section class="ranking-panel">
+            <div class="subhead">
+              <h3>Top compétences</h3>
+              <small id="competences-caption"></small>
+            </div>
+            <table class="ranking-table" id="top-competences"></table>
+          </section>
+        </section>
+        <section class="detail-section">
+          <div class="subhead">
+            <h2 style="margin: 0; font-size: 18px;">Aperçu détaillé des tendances</h2>
+            <small>Top 20 par défaut</small>
+          </div>
+          <section class="detail-grid">
+            <section class="trend-panel">
+              <div class="subhead"><h3>Compétences</h3><small></small></div>
+              <div id="detail-competences"></div>
+            </section>
+            <section class="trend-panel">
+              <div class="subhead"><h3>Métiers</h3><small></small></div>
+              <div id="detail-metiers"></div>
+            </section>
+            <section class="trend-panel">
+              <div class="subhead"><h3>Nature des contrats</h3><small></small></div>
+              <div id="detail-contrats"></div>
+            </section>
+            <section class="trend-panel">
+              <div class="subhead"><h3>Ancienneté demandée</h3><small></small></div>
+              <div id="detail-niveaux"></div>
+            </section>
+          </section>
+        </section>
         <section class="market-context-block">
           <h2 style="margin-top: 0;">Contexte marché France Travail</h2>
           <table class="market-table" id="market-context"></table>
@@ -516,14 +721,25 @@ HTML_TEMPLATE = """
 
   <script>
     const summary = document.getElementById('summary');
-    const competences = document.getElementById('competences');
-    const metiers = document.getElementById('metiers');
-    const niveaux = document.getElementById('niveaux');
-    const contrats = document.getElementById('contrats');
+    const trendCompetences = document.getElementById('trend-competences');
+    const trendContrats = document.getElementById('trend-contrats');
+    const trendNiveaux = document.getElementById('trend-niveaux');
+    const detailCompetences = document.getElementById('detail-competences');
+    const detailMetiers = document.getElementById('detail-metiers');
+    const detailContrats = document.getElementById('detail-contrats');
+    const detailNiveaux = document.getElementById('detail-niveaux');
     const marketContext = document.getElementById('market-context');
     const offersBody = document.getElementById('offers-body');
+    const topMetiers = document.getElementById('top-metiers');
+    const topCompetences = document.getElementById('top-competences');
+    const metiersCaption = document.getElementById('metiers-caption');
+    const competencesCaption = document.getElementById('competences-caption');
+    const trendCompetencesCaption = document.getElementById('trend-competences-caption');
+    const trendContratsCaption = document.getElementById('trend-contrats-caption');
+    const trendNiveauxCaption = document.getElementById('trend-niveaux-caption');
     const territoryInput = document.getElementById('territoire');
     const periodInput = document.getElementById('periode');
+    const topNInput = document.getElementById('top-n');
     const territoryList = document.getElementById('territoire-list');
     const trendsCaption = document.getElementById('trends-caption');
     const offersCaption = document.getElementById('offers-caption');
@@ -554,36 +770,99 @@ HTML_TEMPLATE = """
         </div>
       `).join('');
       trendsCaption.textContent = state.territoire ? `Territoire ${state.territoire}` : 'Tous territoires';
+      trendCompetencesCaption.textContent = `Top ${state.top_n}`;
+      trendContratsCaption.textContent = `Top ${state.top_n}`;
+      trendNiveauxCaption.textContent = `Top ${state.top_n}`;
+      metiersCaption.textContent = `Top ${state.top_n}`;
+      competencesCaption.textContent = `Top ${state.top_n}`;
       offersCaption.textContent = `${state.offers.length} offres affichées`;
     }
 
-    function renderBars(container, data, emptyLabel) {
-      const entries = Object.entries(data || {});
+    function sortEntriesByCount(data) {
+      return Object.entries(data || {})
+        .map(([label, count]) => [String(label), Number(count)])
+        .filter(([label, count]) => label.trim() && Number.isFinite(count) && count > 0)
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'fr', { sensitivity: 'base' }));
+    }
+
+    function isLikelyCompetenceNoise(label) {
+      const text = String(label ?? '').trim();
+      if (!text || text.length > 80) return true;
+      if (text.indexOf(String.fromCharCode(10)) >= 0 || text.includes('.') || text.includes('!') || text.includes('?') || text.includes(';') || text.includes(':')) return true;
+      if (text.split(' ').filter(Boolean).length > 12) return true;
+      const lowered = text.toLowerCase();
+      return [
+        'vous apprendrez',
+        'vous serez',
+        'formation',
+        'mission',
+        'objectif',
+        'capacité à',
+        'capacite a',
+        'maîtriser',
+        'maitriser',
+        'savoir faire',
+      ].some(fragment => lowered.includes(fragment));
+    }
+
+    function formatPercentage(count, totalOffers) {
+      return totalOffers > 0 ? ((count / totalOffers) * 100).toFixed(1).replace('.', ',') : '0,0';
+    }
+
+    function renderTrendBlock(title, data, totalOffers, limit) {
+      const isCompetenceBlock = title.toLowerCase().includes('compétences');
+      const entries = sortEntriesByCount(data).filter(([label]) => !isCompetenceBlock || !isLikelyCompetenceNoise(label)).slice(0, Math.max(limit, 1));
       if (!entries.length) {
-        container.innerHTML = `<div class="empty">${emptyLabel}</div>`;
-        return;
+        return '<div class="trend-empty">Aucune donnée disponible pour cette catégorie.</div>';
       }
       const max = Math.max(...entries.map(([, count]) => count));
-      container.innerHTML = entries.slice(0, 12).map(([label, count]) => {
+      const rows = entries.map(([label, count]) => {
         const width = max ? Math.max(8, (count / max) * 100) : 0;
+        const percentage = formatPercentage(count, totalOffers);
         return `
-          <div>
-            <div class="bar-row">
-              <div class="bar-label" title="${escapeHtml(label)}">${escapeHtml(label)}</div>
-              <div class="bar-value">${count}</div>
+          <div class="trend-row">
+            <div class="trend-head">
+              <div class="trend-label" title="${escapeHtml(label)}">${escapeHtml(label)}</div>
+              <div class="trend-stats">${count} offres · ${percentage} %</div>
             </div>
-            <div class="bar-track"><div class="bar-fill" style="width:${width}%"></div></div>
+            <div class="trend-track"><div class="trend-fill" style="width:${width}%"></div></div>
           </div>
         `;
       }).join('');
+      return `<div class="trend-list">${rows}</div>`;
     }
 
-    function renderLevels(levels) {
-      renderBars(niveaux, levels, 'Aucun niveau détecté');
-    }
+    function renderRankingTable(container, data, totalOffers, emptyLabel, limit) {
+      const entries = Object.entries(data || {})
+        .map(([label, count]) => [label, Number(count)])
+        .filter(([, count]) => Number.isFinite(count) && count > 0)
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'fr', { sensitivity: 'base' }))
+        .slice(0, Math.max(limit, 1));
 
-    function renderContracts(data) {
-      renderBars(contrats, data, 'Aucun contrat détecté');
+      if (!entries.length) {
+        container.innerHTML = `<tbody><tr><td colspan="3" class="ranking-empty">${emptyLabel}</td></tr></tbody>`;
+        return;
+      }
+
+      const rows = entries.map(([label, count]) => {
+        const percentage = totalOffers > 0 ? ((count / totalOffers) * 100).toFixed(1).replace('.', ',') : '0,0';
+        return `<tr>
+          <td>${escapeHtml(label)}</td>
+          <td class="ranking-value">${count}</td>
+          <td class="ranking-value">${percentage} %</td>
+        </tr>`;
+      }).join('');
+
+      container.innerHTML = `
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th class="ranking-value">Offres</th>
+            <th class="ranking-value">Part</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      `;
     }
 
     function renderMarketContext(rows) {
@@ -635,14 +914,20 @@ HTML_TEMPLATE = """
       const params = new URLSearchParams();
       if (territoryInput.value.trim()) params.set('territoire', territoryInput.value.trim());
       params.set('periode', periodInput.value || '30');
+      params.set('top_n', topNInput.value || '10');
       const response = await fetch(`/api/state?${params.toString()}`);
       if (!response.ok) throw new Error('Erreur lors du chargement des données');
       const state = await response.json();
       renderSummary(state);
-      renderBars(competences, state.trends.competences || {}, 'Aucune compétence détectée');
-      renderBars(metiers, state.trends.metiers || {}, 'Aucun métier détecté');
-      renderLevels(state.trends.niveau || {});
-      renderContracts(state.trends.contrats || {});
+      trendCompetences.innerHTML = renderTrendBlock('Compétences', state.trends.competences || {}, state.trends.nombre_offres || 0, state.top_n || 10);
+      trendContrats.innerHTML = renderTrendBlock('Nature des contrats', state.trends.contrats || {}, state.trends.nombre_offres || 0, state.top_n || 10);
+      trendNiveaux.innerHTML = renderTrendBlock('Ancienneté demandée', state.trends.niveau || {}, state.trends.nombre_offres || 0, state.top_n || 10);
+      detailCompetences.innerHTML = renderTrendBlock('Compétences', state.trends.competences || {}, state.trends.nombre_offres || 0, Math.max(state.top_n || 10, 20));
+      detailMetiers.innerHTML = renderTrendBlock('Métiers', state.trends.metiers || {}, state.trends.nombre_offres || 0, Math.max(state.top_n || 10, 20));
+      detailContrats.innerHTML = renderTrendBlock('Nature des contrats', state.trends.contrats || {}, state.trends.nombre_offres || 0, Math.max(state.top_n || 10, 20));
+      detailNiveaux.innerHTML = renderTrendBlock('Ancienneté demandée', state.trends.niveau || {}, state.trends.nombre_offres || 0, Math.max(state.top_n || 10, 20));
+      renderRankingTable(topMetiers, state.top_metiers || {}, state.trends.nombre_offres || 0, 'Aucun intitulé de poste disponible', state.top_n || 10);
+      renderRankingTable(topCompetences, state.top_competences || {}, state.trends.nombre_offres || 0, 'Aucune compétence disponible', state.top_n || 10);
       renderMarketContext(state.market_context || []);
       renderOffers(state.offers || []);
       populateTerritories(state.territoire_options || []);
@@ -656,6 +941,7 @@ HTML_TEMPLATE = """
     resetButton.addEventListener('click', async () => {
       territoryInput.value = '';
       periodInput.value = 30;
+      topNInput.value = 10;
       await loadState();
     });
 
@@ -682,7 +968,11 @@ def create_app() -> Flask:
             periode = int(request.args.get("periode", DEFAULT_PERIOD))
         except ValueError:
             periode = DEFAULT_PERIOD
-        state = build_state(territoire, periode)
+        try:
+            top_n = int(request.args.get("top_n", DEFAULT_TOP_N))
+        except ValueError:
+            top_n = DEFAULT_TOP_N
+        state = build_state(territoire, periode, top_n=top_n)
         return jsonify(state)
 
     @app.get("/api/offers")
@@ -692,7 +982,11 @@ def create_app() -> Flask:
             periode = int(request.args.get("periode", DEFAULT_PERIOD))
         except ValueError:
             periode = DEFAULT_PERIOD
-        state = build_state(territoire, periode)
+        try:
+            top_n = int(request.args.get("top_n", DEFAULT_TOP_N))
+        except ValueError:
+            top_n = DEFAULT_TOP_N
+        state = build_state(territoire, periode, top_n=top_n)
         return jsonify(state["offers"])
 
     @app.get("/api/trends")
@@ -702,7 +996,11 @@ def create_app() -> Flask:
             periode = int(request.args.get("periode", DEFAULT_PERIOD))
         except ValueError:
             periode = DEFAULT_PERIOD
-        state = build_state(territoire, periode)
+        try:
+            top_n = int(request.args.get("top_n", DEFAULT_TOP_N))
+        except ValueError:
+            top_n = DEFAULT_TOP_N
+        state = build_state(territoire, periode, top_n=top_n)
         return jsonify(state["trends"])
 
     return app
