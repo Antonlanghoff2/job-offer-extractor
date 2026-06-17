@@ -1,0 +1,8 @@
+python -m src.import_offres --output data/raw/
+  offres_france_travail.json
+  python -m src.import_offres --territory-mode --output data/raw/
+  offres_france_travail.json
+  python -m src.integrate_series_offres
+  python -m src.web_app
+  python -m src.comparison_web_app
+

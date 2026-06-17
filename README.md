@@ -42,6 +42,38 @@ python -m src.train_classifier --csv data/train_segments.csv
 python -m src.predict data/sample_offers.txt --pretty
 ```
 
+
+## Démarrage
+
+Le projet a trois points d'entrée utiles au quotidien:
+
+- `python -m src.import_offres` récupère les offres France Travail via l'API et écrit un snapshot local dans `data/raw/`.
+- `python -m src.web_app` démarre le tableau de bord principal pour lire les offres France Travail, les tendances et le contexte marché.
+- `python -m src.comparison_web_app` démarre le tableau de bord de comparaison France Travail / Indeed.
+
+Ordre conseillé pour repartir d'un snapshot propre:
+
+1. Renseigner `FRANCE_TRAVAIL_CLIENT_ID` et `FRANCE_TRAVAIL_CLIENT_SECRET` dans `.env` si tu veux interroger l'API.
+2. Télécharger ou régénérer les offres:
+
+```bash
+python -m src.import_offres --output data/raw/offres_france_travail.json
+```
+
+3. Ouvrir le tableau de bord principal:
+
+```bash
+python -m src.web_app
+```
+
+4. Ouvrir le tableau de bord de comparaison:
+
+```bash
+python -m src.comparison_web_app
+```
+
+Par défaut, le tableau de bord principal écoute sur `http://127.0.0.1:8000` et le tableau de bord de comparaison sur `http://127.0.0.1:8001`.
+
 ## Labels
 
 | Label      | Meaning                          |
@@ -79,7 +111,7 @@ supervised model from invented labels.
 Generate the processed CSV files with:
 
 ```bash
-python src/integrate_series_offres.py
+python -m src.integrate_series_offres
 ```
 
 The command creates:
@@ -120,10 +152,10 @@ valider le flux de bout en bout sans dépendre des données de production.
 
 ## Interface web
 
-L'interface web affiche les offres France Travail normalisées, les tendances
-calculées à partir du flux d'offres et un petit contexte marché réutilisable
-pour le modèle 2. Elle s'appuie sur le snapshot local dans `data/raw/` et sur
-les agrégations du module `src/trend_aggregation.py`.
+Le tableau de bord principal sert à lire les offres France Travail extraites,
+les tendances calculées à partir de ces offres et le contexte marché T3 2025.
+Il ne réentraîne rien: il agrège des données déjà normalisées et les rend
+exploitables pour le modèle 2.
 
 Lancement :
 
@@ -136,25 +168,46 @@ Par défaut, l'application écoute sur `http://127.0.0.1:8000`.
 
 ## Ingestion API
 
-Le client France Travail gère maintenant la pagination par fenêtres `range` et
-peut récupérer plusieurs pages avant d'écrire le snapshot local. La commande
-`src/import_offres.py` accepte `--query`, `--page-size`, `--max-pages` et
-`--max-results`.
+Le collecteur France Travail interroge maintenant plusieurs requêtes métiers,
+pagine par fenêtres `range` de 150 offres, fusionne les résultats et
+supprime les doublons à partir de l'identifiant France Travail.
 
-Exemple :
+Le script `src/import_offres.py` accepte désormais :
+
+- `--page-size` pour régler la taille des fenêtres API
+- `--max-pages` pour limiter le nombre de pages par requête
+- `--max-results` pour limiter le volume par requête
+- `--territory-mode` pour activer la collecte sur les territoires prédéfinis
+- `--territories` pour fournir une liste personnalisée de territoires
+
+Exemple standard:
 
 ```bash
-python -m src.import_offres --query "data python ia" --output data/raw/offres_france_travail.json
+python -m src.import_offres --output data/raw/offres_france_travail.json
+```
+
+Exemple avec mode territoire:
+
+```bash
+python -m src.import_offres --territory-mode --output data/raw/offres_france_travail.json
 ```
 
 ## Comparaison France Travail / Indeed
 
-Le comparateur normalise les deux sources dans un schéma commun, puis compare
-les métiers, les compétences, les niveaux et les contrats. Le fichier Indeed
-doit être un export JSON, avec des clés proches de `title`, `location`,
-`skills`, `contract` et `seniority`, ou déjà normalisé dans le format commun.
+Le tableau de bord de comparaison charge un export France Travail et un export
+Indeed, puis affiche les écarts entre les deux sources. Il met en avant les
+compétences communes, les compétences exclusives, les métiers et les contrats.
+Le fichier Indeed doit être un JSON de liste, avec des champs proches de
+`title`, `location`, `skills`, `contract` et `seniority`, ou déjà normalisé
+dans le format commun.
 
-Commande :
+Lancement du dashboard :
+
+```bash
+python -m src.comparison_web_app
+```
+
+Comparaison en ligne de commande :
 
 ```bash
 python scripts/compare_sources.py \
