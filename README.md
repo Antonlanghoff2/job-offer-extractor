@@ -16,6 +16,7 @@ job_offer_extractor/
 │   ├── preprocessing.py      # Text cleaning & segmentation
 │   ├── feature_extraction.py # TF-IDF vectoriser + hand-crafted features
 │   ├── train_classifier.py   # Training pipeline
+│   ├── integrate_series_offres.py # France Travail aggregated series export
 │   ├── extractors.py         # Rule-based post-processing
 │   ├── predict.py            # Prediction API & CLI
 │   └── evaluate.py           # Evaluation & reporting
@@ -54,6 +55,32 @@ python -m src.predict data/sample_offers.txt --pretty
 ```bash
 python -m src.evaluate --csv data/train_segments.csv
 ```
+
+
+## France Travail market context
+
+The workbook `data_external/france_travail_series/series_offres_diffusees_T42025.xlsx`
+is an aggregated France Travail source about distributed job offers: monthly
+series, contract types, domains and job families, including T3 2025 data. It is
+not a corpus of raw job ads and must not be used to directly train the model 1
+job-offer extraction classifier.
+
+This source enriches model 2, the future training recommendation layer, with
+market context. It does not replace raw job-offer examples used by model 1.
+Until labelled recommendation outcomes exist, the pipeline only prepares an
+empty future target column named `score_formation`; it does not train a
+supervised model from invented labels.
+
+Generate the processed CSV files with:
+
+```bash
+python src/integrate_series_offres.py
+```
+
+The command creates:
+
+- `data/processed/contrat_long.csv`
+- `data/processed/metier_context_t3_2025.csv`
 
 ## License
 
