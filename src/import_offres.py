@@ -11,7 +11,8 @@ from typing import Iterable
 
 from src.france_travail_client import search_all_offres
 
-DATA_DIR = Path("data/raw")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = PROJECT_ROOT / "data" / "raw"
 DEFAULT_OUTPUT = DATA_DIR / "offres_france_travail.json"
 DEFAULT_PAGE_SIZE = 150
 REQUETES = [

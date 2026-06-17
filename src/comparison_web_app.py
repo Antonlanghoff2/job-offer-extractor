@@ -763,6 +763,10 @@ def create_app() -> Flask:
     def index():
         return render_template_string(HTML_TEMPLATE)
 
+    @app.get("/health")
+    def health():
+        return jsonify({"status": "ok"})
+
     @app.get("/api/state")
     def api_state():
         territoire = request.args.get("territoire") or None

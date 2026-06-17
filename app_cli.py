@@ -6,8 +6,9 @@ from pathlib import Path
 from collections import Counter, defaultdict
 
 
-INPUT_FILE = Path("data/raw/offres_france_travail.json")
-OUTPUT_FILE = Path("data/processed/tendances.json")
+PROJECT_ROOT = Path(__file__).resolve().parent
+INPUT_FILE = PROJECT_ROOT / "data" / "raw" / "offres_france_travail.json"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "processed" / "tendances.json"
 
 
 COMPETENCES_REFERENTIEL = [

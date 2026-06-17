@@ -12,6 +12,8 @@ import json
 import re
 from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 COMPETENCES = [
     "Python", "SQL", "JavaScript", "FastAPI", "Django",
     "Machine Learning", "Deep Learning", "NLP", "LLM",
@@ -56,8 +58,8 @@ def get_lieu(offre: dict) -> str:
 
 
 def analyser_tendances():
-    input_path = Path("data/raw/offres_france_travail.json")
-    output_path = Path("data/processed/tendances.json")
+    input_path = PROJECT_ROOT / "data" / "raw" / "offres_france_travail.json"
+    output_path = PROJECT_ROOT / "data" / "processed" / "tendances.json"
 
     with input_path.open("r", encoding="utf-8") as f:
         offres = json.load(f)

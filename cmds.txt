@@ -1,8 +1,21 @@
-python -m src.import_offres --output data/raw/
-  offres_france_travail.json
-  python -m src.import_offres --territory-mode --output data/raw/
-  offres_france_travail.json
-  python -m src.integrate_series_offres
-  python -m src.web_app
-  python -m src.comparison_web_app
+python -m src.import_offres --output data/raw/offres_france_travail.json
+python -m src.import_offres --territory-mode --output data/raw/offres_france_travail.json
+python -m src.integrate_series_offres
+python -m src.web_app
+python -m src.comparison_web_app
+
+
+A utiliser sur le serveur
+  chmod +x deploy/install_ubuntu.sh deploy/start.sh
+  ./deploy/install_ubuntu.sh
+  nano .env
+  sudo cp deploy/trendradar.service /etc/systemd/system/
+  sudo systemctl daemon-reload
+  sudo systemctl enable --now trendradar
+  sudo cp deploy/nginx-trendradar.conf /etc/nginx/sites-available/
+  trendradar
+  sudo ln -s /etc/nginx/sites-available/trendradar /etc/nginx/sites-
+  enabled/trendradar
+  sudo nginx -t
+  sudo systemctl reload nginx
 

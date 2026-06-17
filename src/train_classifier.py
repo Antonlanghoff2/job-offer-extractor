@@ -28,8 +28,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 
 
-DATA_DIR = Path("data")
-MODEL_DIR = Path("models")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = PROJECT_ROOT / "data"
+MODEL_DIR = PROJECT_ROOT / "models"
 DEFAULT_CSV = DATA_DIR / "train_segments.csv"
 MODEL_PATH = MODEL_DIR / "segment_classifier.joblib"
 

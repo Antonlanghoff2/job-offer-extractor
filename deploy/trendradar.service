@@ -1,0 +1,19 @@
+[Unit]
+Description=TrendRadar IA Web Application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=bibi
+Group=bibi
+WorkingDirectory=/home/bibi/job-offer-extractor
+EnvironmentFile=/home/bibi/job-offer-extractor/.env
+ExecStart=/home/bibi/job-offer-extractor/deploy/start.sh
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
