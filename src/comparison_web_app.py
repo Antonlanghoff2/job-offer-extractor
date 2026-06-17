@@ -71,6 +71,26 @@ def load_json_list(path: Path) -> list[dict[str, Any]]:
     return [item for item in payload if isinstance(item, dict)]
 
 
+def load_json_list_from_payload(payload: object) -> list[dict[str, Any]]:
+    if not isinstance(payload, list):
+        raise ValueError("Le JSON importé doit contenir une liste d'offres.")
+    return [item for item in payload if isinstance(item, dict)]
+
+
+def _load_json_from_file_storage(file_storage) -> tuple[list[dict[str, Any]], str]:
+    filename = getattr(file_storage, "filename", "") or "fichier JSON"
+    raw_bytes = file_storage.read()
+    if not raw_bytes:
+        raise ValueError("Le fichier JSON importé est vide.")
+    try:
+        payload = json.loads(raw_bytes.decode("utf-8"))
+    except UnicodeDecodeError as exc:
+        raise ValueError("Le fichier JSON doit être encodé en UTF-8.") from exc
+    except json.JSONDecodeError as exc:
+        raise ValueError("Le fichier JSON importé est invalide.") from exc
+    return load_json_list_from_payload(payload), filename
+
+
 def load_market_context_rows(path: Path = PROCESSED_CONTEXT_PATH) -> list[dict[str, Any]]:
     if not path.exists():
         return []
@@ -107,17 +127,31 @@ def _top_rows(data: dict[str, int], limit: int = 10) -> list[dict[str, Any]]:
     return [{"label": key, "count": value} for key, value in list(data.items())[:limit]]
 
 
-def build_state(territoire: str | None, periode_jours: int, indeed_path: Path = DEFAULT_INDEED_PATH) -> dict[str, Any]:
+def build_state(
+    territoire: str | None,
+    periode_jours: int,
+    indeed_path: Path = DEFAULT_INDEED_PATH,
+    imported_offers: list[dict[str, Any]] | None = None,
+    source_label: str | None = None,
+) -> dict[str, Any]:
     raw_offers = load_raw_offers()
     france_travail_offers = filter_france_travail_offers(raw_offers, territoire, periode_jours)
     france_travail_trends = compare_sources(france_travail_offers, [], territoire=territoire, periode_jours=periode_jours)["france_travail"]
 
-    indeed_raw = load_json_list(indeed_path)
-    indeed_normalized = normalize_indeed_offers(indeed_raw)
-    indeed_filtered = filter_normalized_offers(indeed_normalized, territoire, periode_jours)
-    indeed_trends = compare_sources([], indeed_filtered, territoire=territoire, periode_jours=periode_jours)["indeed"]
+    if imported_offers is None:
+        source_mode = "indeed"
+        source_label = source_label or str(indeed_path)
+        source_raw = load_json_list(indeed_path)
+    else:
+        source_mode = "local_json"
+        source_label = source_label or "JSON local"
+        source_raw = imported_offers
 
-    comparison = compare_sources(france_travail_offers, indeed_filtered, territoire=territoire, periode_jours=periode_jours)
+    source_normalized = normalize_indeed_offers(source_raw)
+    source_filtered = filter_normalized_offers(source_normalized, territoire, periode_jours)
+    source_trends = compare_sources([], source_filtered, territoire=territoire, periode_jours=periode_jours)["indeed"]
+
+    comparison = compare_sources(france_travail_offers, source_filtered, territoire=territoire, periode_jours=periode_jours)
     market_context = load_market_context_rows()
 
     territoire_options = sorted(
@@ -128,17 +162,19 @@ def build_state(territoire: str | None, periode_jours: int, indeed_path: Path = 
     return {
         "territoire": territoire,
         "periode_jours": periode_jours,
+        "source_mode": source_mode,
+        "source_label": source_label,
         "indeed_path": str(indeed_path),
-        "indeed_count": len(indeed_raw),
+        "indeed_count": len(source_raw),
         "nombre_offres_ft": len(france_travail_offers),
-        "nombre_offres_indeed": len(indeed_filtered),
+        "nombre_offres_indeed": len(source_filtered),
         "france_travail": france_travail_trends,
-        "indeed": indeed_trends,
+        "indeed": source_trends,
         "comparison": comparison,
         "market_context": market_context,
         "territoire_options": territoire_options,
         "offers_ft": france_travail_offers[:20],
-        "offers_indeed": indeed_filtered[:20],
+        "offers_indeed": source_filtered[:20],
     }
 
 
@@ -185,7 +221,7 @@ HTML_TEMPLATE = """
     }
     .filters {
       display: grid;
-      grid-template-columns: 1fr 0.8fr 0.5fr auto;
+      grid-template-columns: 1fr 0.8fr 0.5fr auto auto;
       gap: 12px;
       padding: 14px;
       align-items: end;
@@ -374,12 +410,17 @@ HTML_TEMPLATE = """
         <input id="indeed" value="data/samples/offres_indeed_sample.json">
       </div>
       <div class="field">
+        <label>&nbsp;</label>
+        <button type="button" id="import-json-btn" style="background:#0f8b8d;">Importer JSON</button>
+        <input type="file" id="import-json-file" accept=".json,application/json" style="display:none;">
+      </div>
+      <div class="field">
         <label for="periode">Période en jours</label>
         <input id="periode" type="number" min="1" step="1" value="30">
       </div>
       <div class="field">
         <label>&nbsp;</label>
-        <button type="submit">Actualiser</button>
+        <button type="submit">Charger depuis Indeed</button>
       </div>
     </form>
 
@@ -492,6 +533,8 @@ HTML_TEMPLATE = """
     const territoryList = document.getElementById('territoire-list');
     const form = document.getElementById('filters');
     const offersCaption = document.getElementById('offers-caption');
+    const importJsonButton = document.getElementById('import-json-btn');
+    const importJsonInput = document.getElementById('import-json-file');
 
     const ftCaption = document.getElementById('ft-caption');
     const indeedCaption = document.getElementById('indeed-caption');
@@ -542,9 +585,9 @@ HTML_TEMPLATE = """
       renderMetricRow(summary, 'Écart', state.comparison ? state.comparison.comparaison.ecart_nombre_offres : 0, 'France Travail - Indeed');
       renderMetricRow(summary, 'Contexte', state.market_context.length, 'lignes T3 2025');
       ftCaption.textContent = state.territoire ? `Territoire ${state.territoire}` : 'Tous territoires';
-      indeedCaption.textContent = state.indeed_path;
-      comparisonCaption.textContent = state.territoire ? `Comparaison sur ${state.territoire}` : 'Comparaison globale';
-      offersCaption.textContent = `${state.offers_ft.length} FT / ${state.offers_indeed.length} Indeed affichées`;
+      indeedCaption.textContent = state.source_mode === 'local_json' ? `Import local: ${state.source_label}` : state.indeed_path;
+      comparisonCaption.textContent = state.source_mode === 'local_json' ? `Comparaison sur JSON local` : (state.territoire ? `Comparaison sur ${state.territoire}` : 'Comparaison globale');
+      offersCaption.textContent = `${state.offers_ft.length} FT / ${state.offers_indeed.length} ${state.source_mode === 'local_json' ? 'local' : 'Indeed'} affichées`;
     }
 
     function renderBars(container, data, emptyLabel) {
@@ -634,23 +677,42 @@ HTML_TEMPLATE = """
       territoryList.innerHTML = options.map(value => `<option value="${escapeHtml(value)}"></option>`).join('');
     }
 
-    async function loadState() {
+    async function loadStateFromIndeed() {
       const params = new URLSearchParams();
       if (territoryInput.value.trim()) params.set('territoire', territoryInput.value.trim());
       if (indeedInput.value.trim()) params.set('indeed', indeedInput.value.trim());
       params.set('periode', periodInput.value || '30');
       const response = await fetch(`/api/state?${params.toString()}`);
       if (!response.ok) throw new Error('Erreur lors du chargement des données');
-      const state = await response.json();
+      return response.json();
+    }
+
+    async function loadStateFromUploadedFile(file) {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('periode', periodInput.value || '30');
+      if (territoryInput.value.trim()) formData.append('territoire', territoryInput.value.trim());
+      const response = await fetch('/api/import-json', {
+        method: 'POST',
+        body: formData,
+      });
+      if (!response.ok) {
+        const message = await response.text();
+        throw new Error(message || "Erreur lors de l'import JSON");
+      }
+      return response.json();
+    }
+
+    function applyState(state) {
       renderSummary(state);
       renderBars(ftCompetences, state.france_travail.competences || {}, 'Aucune compétence FT');
       renderBars(ftMetiers, state.france_travail.metiers || {}, 'Aucun métier FT');
       renderBars(ftNiveaux, state.france_travail.niveau || {}, 'Aucun niveau FT');
       renderBars(ftContrats, state.france_travail.contrats || {}, 'Aucun contrat FT');
-      renderBars(indeedCompetences, state.indeed.competences || {}, 'Aucune compétence Indeed');
-      renderBars(indeedMetiers, state.indeed.metiers || {}, 'Aucun métier Indeed');
-      renderBars(indeedNiveaux, state.indeed.niveau || {}, 'Aucun niveau Indeed');
-      renderBars(indeedContrats, state.indeed.contrats || {}, 'Aucun contrat Indeed');
+      renderBars(indeedCompetences, state.indeed.competences || {}, 'Aucune compétence source');
+      renderBars(indeedMetiers, state.indeed.metiers || {}, 'Aucun métier source');
+      renderBars(indeedNiveaux, state.indeed.niveau || {}, 'Aucun niveau source');
+      renderBars(indeedContrats, state.indeed.contrats || {}, 'Aucun contrat source');
       renderComparison(state);
       renderOffers(offersFt, state.offers_ft || []);
       renderOffers(offersIndeed, state.offers_indeed || []);
@@ -658,9 +720,31 @@ HTML_TEMPLATE = """
       populateTerritories(state.territoire_options || []);
     }
 
+    async function loadState() {
+      applyState(await loadStateFromIndeed());
+    }
+
+    async function importLocalJson(file) {
+      applyState(await loadStateFromUploadedFile(file));
+    }
+
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       await loadState();
+    });
+
+    importJsonButton.addEventListener('click', () => {
+      importJsonInput.click();
+    });
+
+    importJsonInput.addEventListener('change', async () => {
+      const file = importJsonInput.files && importJsonInput.files[0];
+      if (!file) return;
+      try {
+        await importLocalJson(file);
+      } finally {
+        importJsonInput.value = '';
+      }
     });
 
     loadState().catch(err => {
@@ -688,6 +772,22 @@ def create_app() -> Flask:
         except ValueError:
             periode = DEFAULT_PERIOD
         return jsonify(build_state(territoire, periode, Path(indeed)))
+
+    @app.post("/api/import-json")
+    def api_import_json():
+        territoire = request.form.get("territoire") or None
+        try:
+            periode = int(request.form.get("periode", DEFAULT_PERIOD))
+        except ValueError:
+            periode = DEFAULT_PERIOD
+        file_storage = request.files.get("file")
+        if file_storage is None:
+            return jsonify({"error": "Aucun fichier JSON fourni."}), 400
+        try:
+            imported_offers, filename = _load_json_from_file_storage(file_storage)
+        except ValueError as exc:
+            return jsonify({"error": str(exc)}), 400
+        return jsonify(build_state(territoire, periode, imported_offers=imported_offers, source_label=filename))
 
     return app
 
