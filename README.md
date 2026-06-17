@@ -17,6 +17,8 @@ job_offer_extractor/
 │   ├── feature_extraction.py # TF-IDF vectoriser + hand-crafted features
 │   ├── train_classifier.py   # Training pipeline
 │   ├── integrate_series_offres.py # France Travail aggregated series export
+│   ├── trend_aggregation.py   # Reusable market trend aggregation core
+│   ├── web_app.py            # France Travail dashboard
 │   ├── extractors.py         # Rule-based post-processing
 │   ├── predict.py            # Prediction API & CLI
 │   └── evaluate.py           # Evaluation & reporting
@@ -86,3 +88,44 @@ The command creates:
 
 Copyright Anton Langhoff <anton@langhoff.fr>  
 SPDX-License-Identifier: MIT
+
+## Agrégation des tendances
+
+Le module d'agrégation transforme des offres extraites et normalisées en
+tendances marché exploitables par le modèle 2 de recommandation de formation.
+La logique réutilisable vit dans `src/trend_aggregation.py` et la commande CLI
+se trouve dans `scripts/aggregate_trends.py`.
+
+Il fonctionne sur un flux ou une liste de JSON déjà structurés, filtre par
+territoire et par fenêtre glissante en jours, puis calcule les fréquences de
+compétences, métiers, niveaux et contrats.
+
+Commande CLI:
+
+```bash
+python scripts/aggregate_trends.py \
+  --input data/processed/offres_extraites.json \
+  --territoire Lyon \
+  --periode 30 \
+  --output data/processed/tendances_lyon_30j.json
+```
+
+Le fichier sample `data/samples/offres_extraites_sample.json` permet de
+valider le flux de bout en bout sans dépendre des données de production.
+
+
+
+## Interface web
+
+L'interface web affiche les offres France Travail normalisées, les tendances
+calculées à partir du flux d'offres et un petit contexte marché réutilisable
+pour le modèle 2. Elle s'appuie sur le snapshot local dans `data/raw/` et sur
+les agrégations du module `src/trend_aggregation.py`.
+
+Lancement :
+
+```bash
+python -m src.web_app
+```
+
+Par défaut, l'application écoute sur `http://127.0.0.1:8000`.

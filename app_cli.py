@@ -1,72 +1,164 @@
-# Copyright Anton Langhoff <anton@langhoff.fr>
-# SPDX-License-Identifier: MIT
-
-"""
-Interactive CLI — paste a French job offer and get extracted JSON.
-
-Usage
------
-    python app_cli.py
-
-Paste the offer text, then type ``END`` on a line by itself to finish.
-The script loads the trained model, runs the full extraction pipeline,
-and prints the result as indented JSON.
-"""
-
-from __future__ import annotations
+# Copyright Anton Langhoff
 
 import json
-import os
-import sys
+import re
+from pathlib import Path
+from collections import Counter, defaultdict
 
-MODEL_PATH = "models/segment_classifier.joblib"
+
+INPUT_FILE = Path("data/raw/offres_france_travail.json")
+OUTPUT_FILE = Path("data/processed/tendances.json")
 
 
-def main() -> None:
-    print("=" * 52)
-    print("  Extracteur d'offres d'emploi")
-    print("=" * 52)
-    print()
-    print("Collez l'offre d'emploi ci-dessous.")
-    print("Terminez la saisie avec une ligne contenant uniquement END.")
-    print()
+COMPETENCES_REFERENTIEL = [
+    "Python",
+    "JavaScript",
+    "SQL",
+    "NoSQL",
+    "FastAPI",
+    "Django",
+    "Flask",
+    "React",
+    "Docker",
+    "Kubernetes",
+    "Git",
+    "Linux",
+    "API",
+    "Machine Learning",
+    "Deep Learning",
+    "NLP",
+    "LLM",
+    "RAG",
+    "LangChain",
+    "OpenAI",
+    "Hugging Face",
+    "TensorFlow",
+    "PyTorch",
+    "Pandas",
+    "NumPy",
+    "Scikit-learn",
+    "Data Engineering",
+    "MLOps",
+    "Power BI",
+    "Tableau",
+]
 
-    if not os.path.isfile(MODEL_PATH):
-        print(
-            f"Erreur : modèle non trouvé dans '{MODEL_PATH}'.",
-            file=sys.stderr,
+
+def normalize_text(value: str) -> str:
+    if not value:
+        return ""
+    return value.lower()
+
+
+def detect_competences(text: str) -> list[str]:
+    found = []
+
+    text_lower = normalize_text(text)
+
+    for competence in COMPETENCES_REFERENTIEL:
+        pattern = r"\b" + re.escape(competence.lower()) + r"\b"
+        if re.search(pattern, text_lower):
+            found.append(competence)
+
+    return found
+
+
+def detect_niveau(text: str) -> str:
+    text_lower = normalize_text(text)
+
+    if any(word in text_lower for word in ["junior", "débutant", "debutant", "0 à 2 ans", "0-2 ans"]):
+        return "junior"
+
+    if any(word in text_lower for word in ["senior", "lead", "expert", "confirmé", "confirme", "5 ans", "7 ans"]):
+        return "senior"
+
+    if any(word in text_lower for word in ["intermédiaire", "intermediaire", "3 ans", "4 ans", "2 à 5 ans"]):
+        return "intermediaire"
+
+    return "non_precise"
+
+
+def get_lieu(offre: dict) -> str:
+    lieu = offre.get("lieuTravail", {})
+
+    if isinstance(lieu, dict):
+        return (
+            lieu.get("commune")
+            or lieu.get("libelle")
+            or lieu.get("codePostal")
+            or "non_precise"
         )
-        print("Exécutez d'abord :  python -m src.train_classifier", file=sys.stderr)
-        sys.exit(1)
 
-    try:
-        from src.predict import extract_job_offer
-    except ImportError as exc:
-        print(f"Erreur d'import : {exc}", file=sys.stderr)
-        print("Assurez-vous que les dépendances sont installées :", file=sys.stderr)
-        print("  pip install -r requirements.txt", file=sys.stderr)
-        sys.exit(1)
+    return "non_precise"
 
-    lines: list[str] = []
-    while True:
-        try:
-            line = input()
-        except EOFError:
-            break
-        if line.strip() == "END":
-            break
-        lines.append(line)
 
-    text = "\n".join(lines).strip()
+def get_metier(offre: dict) -> str:
+    return (
+        offre.get("romeLibelle")
+        or offre.get("intitule")
+        or "non_precise"
+    )
 
-    if not text:
-        print("Erreur : aucun texte saisi.", file=sys.stderr)
-        sys.exit(1)
 
-    result = extract_job_offer(text)
+def analyse_tendances(offres: list[dict]) -> dict:
+    competences_counter = Counter()
+    metiers_counter = Counter()
+    niveaux_counter = Counter()
+    territoires_counter = Counter()
 
-    print()
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+    details_offres = []
+
+    for offre in offres:
+        intitule = offre.get("intitule", "")
+        description = offre.get("description", "")
+        rome_libelle = offre.get("romeLibelle", "")
+
+        texte_total = f"{intitule} {description} {rome_libelle}"
+
+        competences = detect_competences(texte_total)
+        niveau = detect_niveau(texte_total)
+        metier = get_metier(offre)
+        territoire = get_lieu(offre)
+
+        competences_counter.update(competences)
+        metiers_counter.update([metier])
+        niveaux_counter.update([niveau])
+        territoires_counter.update([territoire])
+
+        details_offres.append({
+            "id": offre.get("id"),
+            "intitule": intitule,
+            "metier": metier,
+            "territoire": territoire,
+            "niveau": niveau,
+            "competences": competences,
+        })
+
+    return {
+        "nombre_offres": len(offres),
+        "competences": dict(competences_counter.most_common()),
+        "metiers": dict(metiers_counter.most_common()),
+        "niveau": dict(niveaux_counter.most_common()),
+        "territoires": dict(territoires_counter.most_common()),
+        "details_offres": details_offres,
+    }
+
+
+def main():
+    if not INPUT_FILE.exists():
+        raise FileNotFoundError(f"Fichier introuvable : {INPUT_FILE}")
+
+    with INPUT_FILE.open("r", encoding="utf-8") as f:
+        offres = json.load(f)
+
+    tendances = analyse_tendances(offres)
+
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    with OUTPUT_FILE.open("w", encoding="utf-8") as f:
+        json.dump(tendances, f, ensure_ascii=False, indent=2)
+
+    print(json.dumps(tendances, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
