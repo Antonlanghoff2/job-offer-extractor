@@ -121,7 +121,7 @@ The command creates:
 
 ## License
 
-Copyright Anton Langhoff <anton@langhoff.fr>  
+Copyright Anton Langhoff <antonlanghoff@gmail.com>  
 SPDX-License-Identifier: MIT
 
 ## Agrégation des tendances
@@ -157,13 +157,42 @@ les tendances calculées à partir de ces offres et le contexte marché T3 2025.
 Il ne réentraîne rien: il agrège des données déjà normalisées et les rend
 exploitables pour le modèle 2.
 
-Lancement :
+La recherche est désormais partagée par URL et fonctionne en GET. Les filtres
+principaux sont:
+
+- `mots_cles` pour le mot-clé métier ou technologique recherché
+- `territoire_type` avec les valeurs `commune`, `departement`, `region` ou `all`
+- `territoire` pour le code ou la valeur du territoire ciblé
+- `distance` pour une recherche autour d'une commune
+- `page` et `per_page` pour la pagination des cartes d'offres
+
+Exemples d'URL:
+
+```text
+/?mots_cles=python&territoire_type=departement&territoire=75
+/?mots_cles=data&territoire_type=commune&territoire=69123&distance=20
+/?mots_cles=ia&territoire_type=region&territoire=84
+/?mots_cles=python&territoire_type=all
+```
+
+Signification des codes:
+
+- `commune`: code INSEE de commune, par exemple `69123`
+- `departement`: code départemental, par exemple `75`
+- `region`: code INSEE de région, par exemple `84`
+
+La pagination conserve les filtres courants via `page` et `per_page`.
+Le tableau affiche les statistiques, puis la section **Offres associées** avec
+un bouton cliquable vers l'annonce d'origine quand l'URL est disponible.
+
+Lancement:
 
 ```bash
 python -m src.web_app
 ```
 
 Par défaut, l'application écoute sur `http://127.0.0.1:8000`.
+Si ce port est déjà pris, tu peux lancer un autre port avec `python -m src.web_app --port 8002`.
 
 
 ## Ingestion API
