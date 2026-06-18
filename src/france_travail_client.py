@@ -59,11 +59,66 @@ def _build_headers(token: str) -> dict[str, str]:
     }
 
 
-def _request_offres_page(token: str, mots_cles: str, range_value: str) -> dict[str, Any]:
+def _clean_param_value(value: object) -> str | None:
+    if value is None:
+        return None
+    if isinstance(value, str):
+        cleaned = value.strip()
+        return cleaned or None
+    return str(value)
+
+
+def _build_search_params(
+    mots_cles: str,
+    *,
+    commune: str | None = None,
+    departement: str | None = None,
+    region: str | None = None,
+    distance: int | None = None,
+    range_value: str = "0-149",
+) -> dict[str, Any]:
+    params: dict[str, Any] = {}
+    cleaned_mots = _clean_param_value(mots_cles)
+    cleaned_range = _clean_param_value(range_value)
+    if cleaned_mots:
+        params["motsCles"] = cleaned_mots
+    if cleaned_range:
+        params["range"] = cleaned_range
+    cleaned_commune = _clean_param_value(commune)
+    cleaned_departement = _clean_param_value(departement)
+    cleaned_region = _clean_param_value(region)
+    if cleaned_commune:
+        params["commune"] = cleaned_commune
+    if cleaned_departement:
+        params["departement"] = cleaned_departement
+    if cleaned_region:
+        params["region"] = cleaned_region
+    if distance is not None:
+        params["distance"] = distance
+    return params
+
+
+def _request_offres_page(
+    token: str,
+    mots_cles: str,
+    range_value: str,
+    *,
+    commune: str | None = None,
+    departement: str | None = None,
+    region: str | None = None,
+    distance: int | None = None,
+) -> dict[str, Any]:
     response = requests.get(
         f"{API_BASE_URL}/offres/search",
         headers=_build_headers(token),
-        params={"motsCles": mots_cles, "range": range_value},
+        params=_build_search_params(
+            mots_cles,
+            commune=commune,
+            departement=departement,
+            region=region,
+            distance=distance,
+            range_value=range_value,
+        ),
         timeout=30,
     )
 
@@ -86,9 +141,26 @@ def _request_offres_page(token: str, mots_cles: str, range_value: str) -> dict[s
         )
     return payload
 
-def search_offres(mots_cles: str, range_value: str = "0-149") -> dict[str, Any]:
+
+def search_offres(
+    mots_cles: str,
+    *,
+    commune: str | None = None,
+    departement: str | None = None,
+    region: str | None = None,
+    distance: int | None = None,
+    range_value: str = "0-149",
+) -> dict[str, Any]:
     token = get_access_token()
-    return _request_offres_page(token, mots_cles, range_value)
+    return _request_offres_page(
+        token,
+        mots_cles,
+        range_value,
+        commune=commune,
+        departement=departement,
+        region=region,
+        distance=distance,
+    )
 
 
 def _offer_identifier(offer: dict[str, Any]) -> str:
@@ -112,7 +184,7 @@ def _iter_location_texts(offer: dict[str, Any]) -> Iterable[str]:
             value = lieu.get(key)
             if value:
                 yield str(value)
-    for key in ("territoire", "localisation", "location", "city"):
+    for key in ("territoire", "localisation", "location", "city", "ville"):
         value = offer.get(key)
         if value:
             yield str(value)
@@ -145,9 +217,13 @@ def iter_search_offres(
     page_size: int = DEFAULT_PAGE_SIZE,
     max_pages: int | None = None,
     max_results: int | None = None,
+    *,
+    commune: str | None = None,
+    departement: str | None = None,
+    region: str | None = None,
+    distance: int | None = None,
 ) -> list[dict[str, Any]]:
     """Fetch France Travail search results across range windows."""
-    token = get_access_token()
     seen: set[str] = set()
     results: list[dict[str, Any]] = []
     start = 0
@@ -156,7 +232,14 @@ def iter_search_offres(
 
     while start <= MAX_RANGE_START:
         end = start + effective_page_size - 1
-        payload = _request_offres_page(token, mots_cles, f"{start}-{end}")
+        payload = search_offres(
+            mots_cles,
+            commune=commune,
+            departement=departement,
+            region=region,
+            distance=distance,
+            range_value=f"{start}-{end}",
+        )
         items = payload.get("resultats", [])
         if not isinstance(items, list) or not items:
             break

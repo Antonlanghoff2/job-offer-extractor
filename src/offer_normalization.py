@@ -188,19 +188,85 @@ def _extract_competences_from_fr(raw_offer: dict[str, Any]) -> list[str]:
     return competences
 
 
-def normalize_france_travail_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
+def _extract_france_travail_location(raw_offer: dict[str, Any]) -> dict[str, str]:
+    lieu = raw_offer.get("lieuTravail")
+    if not isinstance(lieu, dict):
+        lieu = {}
+    territoire = (
+        lieu.get("libelle")
+        or raw_offer.get("territoire")
+        or raw_offer.get("localisation")
+        or raw_offer.get("location")
+        or raw_offer.get("city")
+        or ""
+    )
+    ville = (
+        lieu.get("commune")
+        or lieu.get("libelle")
+        or raw_offer.get("ville")
+        or raw_offer.get("city")
+        or ""
+    )
+    code_postal = lieu.get("codePostal") or raw_offer.get("codePostal") or ""
     return {
-        "id_offre": raw_offer.get("id") or raw_offer.get("id_offre") or "",
-        "source": "france_travail",
-        "date": parse_date(raw_offer.get("dateActualisation") or raw_offer.get("dateCreation") or raw_offer.get("date")),
-        "territoire": _extract_territory_from_fr(raw_offer),
+        "territoire": str(territoire or ""),
+        "ville": str(ville or ""),
+        "code_postal": str(code_postal or ""),
+    }
+
+
+def _extract_france_travail_url(raw_offer: dict[str, Any]) -> str | None:
+    origine = raw_offer.get("origineOffre")
+    if isinstance(origine, dict):
+        url = origine.get("urlOrigine")
+        if url:
+            return str(url)
+    identifier = raw_offer.get("id") or raw_offer.get("id_offre") or raw_offer.get("idOffre") or raw_offer.get("idOfr")
+    if identifier not in (None, ""):
+        return f"https://candidat.francetravail.fr/offres/recherche/detail/{identifier}"
+    return None
+
+
+def normalize_france_travail_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
+    location = _extract_france_travail_location(raw_offer)
+    entreprise = raw_offer.get("entreprise")
+    if isinstance(entreprise, dict):
+        entreprise_name = entreprise.get("nom") or entreprise.get("name") or ""
+    else:
+        entreprise_name = entreprise or ""
+    date_creation = parse_date(raw_offer.get("dateCreation") or raw_offer.get("dateActualisation") or raw_offer.get("date"))
+    return {
+        "id": str(raw_offer.get("id") or raw_offer.get("id_offre") or raw_offer.get("idOffre") or raw_offer.get("idOfr") or ""),
+        "intitule": str(raw_offer.get("intitule") or raw_offer.get("appellationlibelle") or raw_offer.get("romeLibelle") or ""),
+        "entreprise": str(entreprise_name or ""),
+        "territoire": location["territoire"],
+        "ville": location["ville"],
+        "code_postal": location["code_postal"],
+        "contrat": str(raw_offer.get("typeContratLibelle") or raw_offer.get("typeContrat") or ""),
+        "date_creation": date_creation,
+        "date": date_creation,
+        "url": _extract_france_travail_url(raw_offer),
+        "description": str(raw_offer.get("description") or ""),
         "metier": _extract_metier_from_fr(raw_offer),
         "niveau": _extract_niveau_from_fr(raw_offer),
-        "contrat": _extract_contrat_from_fr(raw_offer),
         "competences": _extract_competences_from_fr(raw_offer),
-        "titre": raw_offer.get("intitule") or raw_offer.get("appellationlibelle") or raw_offer.get("romeLibelle") or "",
-        "entreprise": (raw_offer.get("entreprise") or {}).get("nom") if isinstance(raw_offer.get("entreprise"), dict) else "",
-        "description": raw_offer.get("description") or "",
+    }
+
+
+def _normalize_france_travail_common(raw_offer: dict[str, Any]) -> dict[str, Any]:
+    normalized = normalize_france_travail_offer(raw_offer)
+    return {
+        "id_offre": normalized["id"],
+        "source": "france_travail",
+        "date": normalized["date_creation"],
+        "territoire": normalized["territoire"] or normalized["ville"],
+        "metier": _extract_metier_from_fr(raw_offer),
+        "niveau": _extract_niveau_from_fr(raw_offer),
+        "contrat": normalized["contrat"] or _extract_contrat_from_fr(raw_offer),
+        "competences": _extract_competences_from_fr(raw_offer),
+        "titre": normalized["intitule"],
+        "entreprise": normalized["entreprise"],
+        "description": normalized["description"],
     }
 
 
@@ -240,7 +306,7 @@ def normalize_indeed_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
         "date": parse_date(_first_present(raw_offer, INDEED_FIELD_ALIASES["date"])),
         "territoire": _normalize_location_generic(raw_offer),
         "metier": str(_first_present(raw_offer, INDEED_FIELD_ALIASES["metier"]) or ""),
-        "niveau": normalize_text(_first_present(raw_offer, INDEED_FIELD_ALIASES["niveau"])) ,
+        "niveau": normalize_text(_first_present(raw_offer, INDEED_FIELD_ALIASES["niveau"])),
         "contrat": str(_first_present(raw_offer, INDEED_FIELD_ALIASES["contrat"]) or ""),
         "competences": _normalize_competences_generic(_first_present(raw_offer, INDEED_FIELD_ALIASES["competences"])),
         "titre": str(_first_present(raw_offer, INDEED_FIELD_ALIASES["titre"]) or ""),
@@ -251,7 +317,7 @@ def normalize_indeed_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
 
 def normalize_offer(raw_offer: dict[str, Any], source: str) -> dict[str, Any]:
     if source == "france_travail":
-        return normalize_france_travail_offer(raw_offer)
+        return _normalize_france_travail_common(raw_offer)
     if source == "indeed":
         return normalize_indeed_offer(raw_offer)
     raise ValueError(f"Source non supportee: {source}")

@@ -14,22 +14,19 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Iterable
 
+from src.offer_normalization import normalize_text
+
 DATE_KEYS = (
     "date",
     "date_offre",
+    "date_creation",
     "date_publication",
     "published_at",
     "created_at",
     "posted_at",
+    "dateActualisation",
+    "dateCreation",
 )
-
-
-def _normalize_text(value: object) -> str:
-    text = "" if value is None else str(value)
-    text = unicodedata.normalize("NFKD", text)
-    text = "".join(ch for ch in text if not unicodedata.combining(ch))
-    text = re.sub(r"\s+", " ", text).strip().lower()
-    return text
 
 
 def _normalize_display_name(value: object) -> str:
@@ -48,7 +45,7 @@ def _normalize_display_name(value: object) -> str:
 
 
 def _normalize_competence_key(value: object) -> str:
-    text = _normalize_text(value)
+    text = normalize_text(value)
     text = text.replace("/", " ")
     text = re.sub(r"[^a-z0-9+#.-]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
@@ -98,16 +95,18 @@ def _parse_date(value: object) -> date | None:
     text = str(value).strip()
     if not text:
         return None
-    candidates = (text, text.replace("/", "-"))
+    candidates = (text, text.replace("/", "-"), text.replace("Z", ""))
     for candidate in candidates:
         try:
             return datetime.fromisoformat(candidate).date()
         except ValueError:
             pass
-    try:
-        return datetime.strptime(text, "%d/%m/%Y").date()
-    except ValueError:
-        return None
+    for fmt in ("%Y-%m-%d", "%d/%m/%Y"):
+        try:
+            return datetime.strptime(text, fmt).date()
+        except ValueError:
+            pass
+    return None
 
 
 def _extract_offer_date(offer: dict[str, Any]) -> date | None:
@@ -119,12 +118,39 @@ def _extract_offer_date(offer: dict[str, Any]) -> date | None:
     return None
 
 
+def _iter_text_values(value: object) -> Iterable[str]:
+    if value is None:
+        return
+    if isinstance(value, dict):
+        for key in ("libelle", "ville", "commune", "codePostal", "territoire", "location", "label", "name", "display_name"):
+            if key in value:
+                yield from _iter_text_values(value.get(key))
+        return
+    if isinstance(value, (list, tuple, set)):
+        for item in value:
+            yield from _iter_text_values(item)
+        return
+    text = str(value).strip()
+    if text:
+        yield text
+
+
 def _territoire_matches(offer: dict[str, Any], territoire: str) -> bool:
-    candidate = _normalize_text(offer.get("territoire"))
-    target = _normalize_text(territoire)
-    if not candidate or not target:
+    candidate = normalize_text(territoire)
+    if not candidate:
         return False
-    return target == candidate or target in candidate or candidate in target
+    parts: list[str] = []
+    for key in ("territoire", "ville", "lieu", "lieux_embauche", "code_postal", "codePostal"):
+        parts.extend(_iter_text_values(offer.get(key)))
+    lieu_travail = offer.get("lieuTravail")
+    if isinstance(lieu_travail, dict):
+        parts.extend(_iter_text_values(lieu_travail.get("libelle")))
+        parts.extend(_iter_text_values(lieu_travail.get("commune")))
+        parts.extend(_iter_text_values(lieu_travail.get("codePostal")))
+    location_blob = normalize_text(" ".join(parts))
+    if not location_blob:
+        return False
+    return candidate in location_blob or location_blob in candidate
 
 
 def _count_values(
@@ -147,8 +173,16 @@ def _count_values(
     return {display_names.get(key, key): count for key, count in ordered}
 
 
+_def_niveau_map = {
+    "junior": "junior",
+    "intermediaire": "intermediaire",
+    "intermediate": "intermediaire",
+    "senior": "senior",
+}
+
+
 def _normalize_niveau(value: object) -> str:
-    text = _normalize_text(value)
+    text = normalize_text(value)
     text = text.replace("niveau ", "")
     text = unicodedata.normalize("NFKD", text)
     text = "".join(ch for ch in text if not unicodedata.combining(ch))
@@ -161,9 +195,43 @@ def _normalize_niveau(value: object) -> str:
         return "junior"
     if text.startswith("sen"):
         return "senior"
-    if text in {"junior", "intermediaire", "senior"}:
-        return text
-    return ""
+    return _def_niveau_map.get(text, "")
+
+
+def _extract_summary_offer(offer: dict[str, Any]) -> dict[str, Any]:
+    id_value = (
+        offer.get("id")
+        or offer.get("id_offre")
+        or offer.get("idOffre")
+        or offer.get("idOfr")
+        or ""
+    )
+    intitule = offer.get("intitule") or offer.get("titre") or offer.get("metier") or ""
+    entreprise = offer.get("entreprise") or ""
+    if isinstance(entreprise, dict):
+        entreprise = entreprise.get("nom") or entreprise.get("name") or ""
+    territoire = offer.get("territoire") or offer.get("ville") or offer.get("lieu") or ""
+    if isinstance(territoire, dict):
+        territoire = territoire.get("libelle") or territoire.get("display_name") or territoire.get("name") or ""
+    date_value = offer.get("date") or offer.get("date_creation") or offer.get("dateCreation") or offer.get("dateActualisation") or ""
+    if isinstance(date_value, (date, datetime)):
+        date_value = date_value.date().isoformat() if isinstance(date_value, datetime) else date_value.isoformat()
+    url = offer.get("url")
+    if not url:
+        origine = offer.get("origineOffre")
+        if isinstance(origine, dict):
+            url = origine.get("urlOrigine") or origine.get("url")
+    if not url and id_value not in (None, ""):
+        url = f"https://candidat.francetravail.fr/offres/recherche/detail/{id_value}"
+    return {
+        "id": str(id_value or ""),
+        "intitule": str(intitule or ""),
+        "entreprise": str(entreprise or ""),
+        "territoire": str(territoire or ""),
+        "contrat": str(offer.get("contrat") or offer.get("typeContratLibelle") or offer.get("typeContrat") or ""),
+        "date": _parse_date(date_value).isoformat() if _parse_date(date_value) else str(date_value or ""),
+        "url": str(url) if url else None,
+    }
 
 
 def aggregate_trends(
@@ -199,15 +267,18 @@ def aggregate_trends(
             if norm and norm not in competences:
                 competences.append(item)
         competences_raw.extend(competences)
-        metiers_raw.extend(_split_values(offer.get("metier")))
+        metiers_raw.extend(_split_values(offer.get("metier") or offer.get("titre") or offer.get("intitule")))
         niveaux_raw.extend(_split_values(offer.get("niveau")))
-        contrats_raw.extend(_split_values(offer.get("contrat")))
+        contrats_raw.extend(_split_values(offer.get("contrat") or offer.get("typeContratLibelle") or offer.get("typeContrat")))
 
     niveau_counts: Counter[str] = Counter()
     for raw in niveaux_raw:
         key = _normalize_niveau(raw)
         if key:
             niveau_counts[key] += 1
+
+    offres = [_extract_summary_offer(offer) for offer in filtered]
+    offres.sort(key=lambda item: item.get("date") or "", reverse=True)
 
     result = {
         "territoire": territoire,
@@ -218,13 +289,15 @@ def aggregate_trends(
             _normalize_competence_key,
             _normalize_competence_display,
         ),
-        "metiers": _count_values(metiers_raw, _normalize_text, _normalize_display_name),
+        "metiers": _count_values(metiers_raw, normalize_text, _normalize_display_name),
         "niveau": {
             key: niveau_counts[key]
             for key in ("junior", "intermediaire", "senior")
             if niveau_counts.get(key)
         },
-        "contrats": _count_values(contrats_raw, _normalize_text, _normalize_display_name),
+        "contrats": _count_values(contrats_raw, normalize_text, _normalize_display_name),
+        "offres": offres,
+        "offers": offres,
     }
     return result
 
