@@ -22,7 +22,7 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Callable, Iterable
 
-from flask import Blueprint, current_app, g, redirect, render_template_string, request, session, url_for
+from flask import Blueprint, current_app, g, redirect, render_template, render_template_string, request, session, send_file, url_for
 from markupsafe import escape
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.utils import secure_filename
@@ -75,48 +75,142 @@ BASE_TEMPLATE = """
   <title>{{ title }} - TrendRadar IA</title>
   <style>
     :root {
-      --bg: #f4f7fb;
+      --bg: #eef3f8;
       --surface: #ffffff;
-      --surface-alt: #eef4fb;
-      --text: #132033;
-      --muted: #5a6a7f;
-      --line: #d7e0ea;
-      --accent: #1866d1;
-      --accent-2: #0f8b8d;
+      --surface-soft: #f5f8fc;
+      --text: #142033;
+      --muted: #5b6b80;
+      --line: #d8e2ec;
+      --accent: #1d63d8;
+      --accent-2: #0d8f8a;
       --danger: #bb3e3e;
       --success: #13795b;
-      --shadow: 0 12px 28px rgba(19, 32, 51, 0.08);
+      --shadow: 0 14px 34px rgba(20, 32, 51, 0.09);
     }
     * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
     body {
-      margin: 0;
-      background: linear-gradient(180deg, #eef4fb 0%, #f7f9fc 100%);
+      background: linear-gradient(180deg, #edf3f9 0%, #f7f9fc 100%);
       color: var(--text);
       font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     }
-    header {
-      padding: 20px 24px 16px;
-      background: linear-gradient(135deg, #123055, #184f8f 65%, #176a9b);
+    a { color: inherit; }
+    .site-header {
+      background: linear-gradient(135deg, #102843 0%, #1b4d84 60%, #16667f 100%);
       color: white;
+      box-shadow: 0 10px 24px rgba(16, 40, 67, 0.18);
     }
-    header h1 { margin: 0; font-size: 28px; line-height: 1.15; }
-    header p { margin: 8px 0 0; color: rgba(255, 255, 255, 0.82); max-width: 940px; }
-    .topnav {
+    .site-header__inner {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 20px 20px 16px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
     }
-    .topnav a {
+    .brand__link {
       color: white;
       text-decoration: none;
-      border: 1px solid rgba(255,255,255,0.28);
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 14px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
     }
-    .shell { padding: 18px 22px 28px; }
+    .brand__subtitle {
+      margin: 4px 0 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.95rem;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .main-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .main-nav__link {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+    .main-nav__link:hover,
+    .main-nav__link.active {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+    .account-menu {
+      position: relative;
+    }
+    .account-menu > summary {
+      list-style: none;
+    }
+    .account-menu > summary::-webkit-details-marker {
+      display: none;
+    }
+    .account-menu__summary {
+      cursor: pointer;
+      user-select: none;
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .account-menu__summary::after {
+      content: '▾';
+      display: inline-block;
+      margin-left: 8px;
+      font-size: 0.72rem;
+      opacity: 0.8;
+    }
+    .account-menu[open] .account-menu__summary,
+    .account-menu__summary:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+    .account-menu__panel {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 10px);
+      min-width: 220px;
+      display: grid;
+      padding: 8px;
+      gap: 4px;
+      background: rgba(16, 40, 67, 0.98);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      box-shadow: 0 18px 38px rgba(7, 20, 34, 0.28);
+      z-index: 20;
+    }
+    .account-menu__panel a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+    .account-menu__panel a:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+    .page-shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 22px 20px 42px;
+    }
     .panel, .status, .card, .list-item {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -199,21 +293,68 @@ BASE_TEMPLATE = """
     @media (max-width: 920px) {
       .grid, .grid-3, .pairs, .dash-grid { grid-template-columns: 1fr; }
     }
+    @media (max-width: 1100px) {
+      .site-header__inner {
+        align-items: flex-start;
+      }
+      .header-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .account-menu__panel {
+        right: auto;
+        left: 0;
+      }
+    }
+    @media (max-width: 720px) {
+      .header-actions {
+        justify-content: flex-start;
+      }
+      .main-nav {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .account-menu {
+        width: 100%;
+      }
+      .account-menu__summary {
+        width: 100%;
+        text-align: center;
+      }
+      .account-menu__panel {
+        width: 100%;
+        position: static;
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>TrendRadar IA</h1>
-    <p>Espace utilisateur privé, recommandations déterministes et import contrôlé du CV.</p>
-    <nav class="topnav">
-      <a href="{{ url_for('user_portal.profile') }}">Mon profil</a>
-      <a href="{{ url_for('user_portal.upload_cv') }}">Mon CV</a>
-      <a href="{{ url_for('user_portal.recommendations') }}">Mes offres</a>
-      <a href="{{ url_for('user_portal.dashboard') }}">Mon tableau de bord</a>
-      <a href="{{ url_for('user_portal.logout') }}">Déconnexion</a>
-    </nav>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">
+        <a class="brand__link" href="{{ url_for('index') }}">TrendRadar IA</a>
+        <p class="brand__subtitle">Espace utilisateur privé, recommandations et import contrôlé du CV</p>
+      </div>
+      <div class="header-actions">
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a class="main-nav__link{% if active_page == 'search' %} active{% endif %}" href="{{ url_for('index') }}">Recherche d'offres</a>
+          <a class="main-nav__link{% if active_page == 'territory_trends' %} active{% endif %}" href="{{ url_for('territory_trends') }}">Tendances par territoire</a>
+        </nav>
+        <details class="account-menu">
+          <summary class="account-menu__summary">Mon compte</summary>
+          <div class="account-menu__panel" role="menu" aria-label="Menu Mon compte">
+            <a role="menuitem" href="{{ url_for('user_portal.profile') }}">Mon profil</a>
+            <a role="menuitem" href="{{ url_for('user_portal.upload_cv') }}">Mon CV</a>
+            <a role="menuitem" href="{{ url_for('user_portal.recommendations') }}">Mes offres</a>
+            <a role="menuitem" href="{{ url_for('user_portal.dashboard') }}">Mon tableau de bord</a>
+            <a role="menuitem" href="{{ url_for('user_portal.logout') }}">Déconnexion</a>
+          </div>
+        </details>
+      </div>
+    </div>
   </header>
-  <main class="shell">
+  <main class="page-shell">
     {% if message %}
     <div class="status {{ message_category or '' }}">{{ message }}</div>
     {% endif %}
@@ -230,6 +371,8 @@ def _ensure_app_config(app) -> None:
         "UPLOAD_FOLDER",
         str(Path(app.instance_path) / UPLOAD_FOLDER_NAME),
     )
+    app.config.setdefault("SESSION_COOKIE_HTTPONLY", True)
+    app.config.setdefault("SESSION_COOKIE_SAMESITE", "Lax")
     secret_key = app.config.get("SECRET_KEY") or os.getenv("SECRET_KEY", "trendradar-dev-secret")
     app.config["SECRET_KEY"] = secret_key
     app.secret_key = secret_key
@@ -387,6 +530,20 @@ def _normalize_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
     from src.services.offer_normalization import normalize_offer_for_matching
 
     return normalize_offer_for_matching(raw_offer, source=raw_offer.get("source") or "France Travail")
+
+
+def _offer_fallback_url(offer: dict[str, Any], offer_identifier: str | None = None) -> str | None:
+    url = offer.get("url_originale") or offer.get("url")
+    if url:
+        return str(url)
+    identifier = offer_identifier or offer.get("source_identifier") or offer.get("id") or offer.get("id_offre")
+    if identifier:
+        identifier_text = str(identifier)
+        source_name = normalize_text(offer.get("source") or "")
+        if source_name in {"", "france travail", "france_travail", "francetravail"}:
+            return f"https://candidat.francetravail.fr/offres/recherche/detail/{identifier_text}"
+        return url_for("user_portal.recommendation_detail", offer_id=identifier_text)
+    return None
 
 
 def _assemble_profile(user_id: int) -> dict[str, Any]:
@@ -628,6 +785,74 @@ def _profile_form(profile: dict[str, Any], desired_jobs_text: str) -> str:
         remote_options=REMOTE_OPTIONS,
         contract_options=CONTRACT_OPTIONS,
         csrf_token=_csrf_token,
+    )
+
+
+def _profile_privacy_block(profile: dict[str, Any]) -> str:
+    return render_template_string(
+        """
+        <section class="panel privacy-panel">
+          <div class="profile-summary__header">
+            <div>
+              <h2>Vie privée et RGPD</h2>
+              <p class="muted">Vous pouvez exporter vos données personnelles ou supprimer définitivement votre compte et toutes les données associées.</p>
+            </div>
+          </div>
+          <div class="actions privacy-panel__actions">
+            <a class="btn secondary" href="{{ url_for('user_portal.export_data') }}">Exporter mes données</a>
+            <form method="post" action="{{ url_for('user_portal.delete_account') }}" onsubmit="return confirm('Supprimer définitivement votre compte et toutes vos données ?');">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button class="btn danger" type="submit">Supprimer mon compte</button>
+            </form>
+          </div>
+          <p class="muted">Sont supprimés: profil, compétences, formations, expériences, CV importé et correspondances enregistrées.</p>
+        </section>
+        """
+    )
+
+
+def _profile_summary_block(profile: dict[str, Any]) -> str:
+    return render_template_string(
+        """
+        <section class="panel profile-summary">
+          <div class="profile-summary__header">
+            <div>
+              <h2>Mes compétences et mes formations</h2>
+              <p class="muted">Résumé en lecture seule des éléments déjà enregistrés.</p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="profile-summary__box">
+              <h3>Compétences</h3>
+              {% if profile.skills %}
+              <div class="chips">
+                {% for skill in profile.skills %}
+                <span class="chip">{{ skill.name or skill.normalized_name }}</span>
+                {% endfor %}
+              </div>
+              {% else %}
+              <div class="muted">Aucune compétence enregistrée.</div>
+              {% endif %}
+            </div>
+            <div class="profile-summary__box">
+              <h3>Formations</h3>
+              {% if profile.diplomas %}
+              <ul class="profile-summary__list">
+                {% for diploma in profile.diplomas %}
+                <li>
+                  <strong>{{ diploma.title }}</strong>
+                  <span class="muted">{{ diploma.level or 'Niveau non renseigné' }}{% if diploma.institution %} · {{ diploma.institution }}{% endif %}</span>
+                </li>
+                {% endfor %}
+              </ul>
+              {% else %}
+              <div class="muted">Aucune formation enregistrée.</div>
+              {% endif %}
+            </div>
+          </div>
+        </section>
+        """,
+        profile=profile,
     )
 
 
@@ -1018,11 +1243,18 @@ def _save_cv_confirmation(user_id: int, pending: dict[str, Any]) -> None:
                 """,
                 (user_id, pending["original_filename"], pending["stored_filename"], pending["mime_type"], now, extracted_text),
             )
+        conn.execute("DELETE FROM user_skills WHERE user_id = ? AND source = ?", (user_id, "cv"))
+        conn.execute("DELETE FROM diplomas WHERE user_id = ? AND source = ?", (user_id, "cv"))
+        conn.execute("DELETE FROM experiences WHERE user_id = ? AND source = ?", (user_id, "cv"))
     structured = pending.get("structured") or {}
     for skill in structured.get("competences", []):
-        _store_skill(user_id, skill.get("nom", ""), skill.get("niveau"), skill.get("annees_experience"), "cv")
-    for diploma in structured.get("diplomes", []):
+        _store_skill(user_id, skill.get("nom", ""), None, None, skill.get("source") or "cv")
+    for formation in structured.get("formations", []):
         now = utcnow_iso()
+        annee = formation.get("annee")
+        if annee is None:
+            date_like = formation.get("date_fin") or formation.get("date_debut")
+            annee = int(str(date_like)[:4]) if isinstance(date_like, str) and len(str(date_like)) >= 4 and str(date_like)[:4].isdigit() else None
         with transaction() as conn:
             conn.execute(
                 """
@@ -1031,18 +1263,18 @@ def _save_cv_confirmation(user_id: int, pending: dict[str, Any]) -> None:
                 """,
                 (
                     user_id,
-                    diploma.get("intitule") or "",
-                    diploma.get("niveau"),
-                    diploma.get("etablissement"),
+                    formation.get("intitule") or "",
+                    formation.get("niveau"),
+                    formation.get("etablissement"),
                     None,
-                    diploma.get("annee"),
-                    diploma.get("description") or "",
+                    annee,
+                    formation.get("description") or "",
                     "cv",
                     now,
                     now,
                 ),
             )
-    for experience in structured.get("experiences", []):
+    for experience in structured.get("experiences_professionnelles", []):
         now = utcnow_iso()
         with transaction() as conn:
             conn.execute(
@@ -1054,9 +1286,9 @@ def _save_cv_confirmation(user_id: int, pending: dict[str, Any]) -> None:
                     user_id,
                     experience.get("poste") or "",
                     experience.get("entreprise"),
-                    None,
-                    _parse_date(experience.get("date_debut")),
-                    _parse_date(experience.get("date_fin")),
+                    experience.get("lieu"),
+                    _normalize_cv_date_value(experience.get("date_debut")),
+                    _normalize_cv_date_value(experience.get("date_fin")),
                     1 if not experience.get("date_fin") else 0,
                     experience.get("description") or "",
                     "cv",
@@ -1076,60 +1308,165 @@ def _clear_cv_file(user_id: int) -> None:
     execute("DELETE FROM user_cvs WHERE user_id = ?", (user_id,))
 
 
+def _extract_indexed_entries(form, collection: str) -> list[dict[str, Any]]:
+    pattern = re.compile(rf"^{re.escape(collection)}\[(\d+)\]\[([^\]]+)\]$")
+    grouped: dict[int, dict[str, Any]] = {}
+    for key in form.keys():
+        match = pattern.match(key)
+        if not match:
+            continue
+        index = int(match.group(1))
+        field = match.group(2)
+        grouped.setdefault(index, {})[field] = form.get(key)
+    return [grouped[index] for index in sorted(grouped)]
+
+
+def _normalize_cv_date_value(value: object) -> str | None:
+    text = _normalize_string(value)
+    if not text:
+        return None
+    if re.fullmatch(r"(19|20)\d{2}", text):
+        return text
+    parsed = _parse_date(text)
+    return parsed or text
+
+
 def _rebuild_cv_payload_from_form(form) -> dict[str, Any]:
-    skills = []
-    skill_names = form.getlist("skill_name")
-    skill_levels = form.getlist("skill_level")
-    skill_years = form.getlist("skill_years")
-    for index, name in enumerate(skill_names):
-        name = _normalize_string(name)
-        if not name:
+    competences = []
+    for item in _extract_indexed_entries(form, "competences"):
+        nom = _normalize_string(item.get("nom"))
+        if not nom:
             continue
-        skills.append({
-            "nom": name,
-            "niveau": _normalize_string(skill_levels[index]) if index < len(skill_levels) else None,
-            "annees_experience": _parse_float(skill_years[index]) if index < len(skill_years) else None,
+        formation_source = _normalize_string(item.get("formation_source"))
+        competences.append({
+            "nom": nom,
+            "categorie": _normalize_string(item.get("categorie")) or None,
+            "source": _normalize_string(item.get("source")) or "explicite",
+            "texte_source": _normalize_string(item.get("texte_source")),
+            "confiance": _parse_float(item.get("confiance")) or 0.0,
+            **({"formation_source": formation_source} if formation_source else {}),
         })
-    diplomas = []
-    diploma_titles = form.getlist("diploma_title")
-    diploma_levels = form.getlist("diploma_level")
-    diploma_schools = form.getlist("diploma_school")
-    diploma_years = form.getlist("diploma_year")
-    for index, title in enumerate(diploma_titles):
-        title = _normalize_string(title)
-        if not title:
+    if not competences:
+        legacy_names = form.getlist("skill_name")
+        legacy_levels = form.getlist("skill_level")
+        legacy_years = form.getlist("skill_years")
+        for index, name in enumerate(legacy_names):
+            clean = _normalize_string(name)
+            if not clean:
+                continue
+            competences.append({
+                "nom": clean,
+                "categorie": _normalize_string(legacy_levels[index]) if index < len(legacy_levels) and _normalize_string(legacy_levels[index]) else None,
+                "source": "explicite",
+                "texte_source": clean,
+                "confiance": 0.0,
+            })
+
+    formations = []
+    for item in _extract_indexed_entries(form, "formations"):
+        intitule = _normalize_string(item.get("intitule"))
+        etablissement = _normalize_string(item.get("etablissement"))
+        niveau = _normalize_string(item.get("niveau"))
+        date_debut = _normalize_cv_date_value(item.get("date_debut"))
+        date_fin = _normalize_cv_date_value(item.get("date_fin"))
+        annee = _parse_int(item.get("annee"), 1900, 2100)
+        description = _normalize_string(item.get("description"))
+        texte_source = _normalize_string(item.get("texte_source"))
+        confiance = _parse_float(item.get("confiance")) or 0.0
+        if not any([intitule, etablissement, niveau, date_debut, date_fin, annee, description, texte_source]):
             continue
-        diplomas.append({
-            "intitule": title,
-            "niveau": _normalize_string(diploma_levels[index]) if index < len(diploma_levels) else None,
-            "etablissement": _normalize_string(diploma_schools[index]) if index < len(diploma_schools) else None,
-            "annee": _parse_int(diploma_years[index], 1900, 2100) if index < len(diploma_years) else None,
-            "description": "",
+        formations.append({
+            "intitule": intitule,
+            "etablissement": etablissement or None,
+            "niveau": niveau or None,
+            "date_debut": date_debut,
+            "date_fin": date_fin,
+            "annee": annee,
+            "description": description or None,
+            "texte_source": texte_source,
+            "confiance": confiance,
         })
+    if not formations:
+        legacy_titles = form.getlist("diploma_title")
+        legacy_levels = form.getlist("diploma_level")
+        legacy_schools = form.getlist("diploma_school")
+        legacy_years = form.getlist("diploma_year")
+        for index, title in enumerate(legacy_titles):
+            clean = _normalize_string(title)
+            if not clean:
+                continue
+            formations.append({
+                "intitule": clean,
+                "etablissement": _normalize_string(legacy_schools[index]) if index < len(legacy_schools) else None,
+                "niveau": _normalize_string(legacy_levels[index]) if index < len(legacy_levels) else None,
+                "date_debut": None,
+                "date_fin": None,
+                "annee": _parse_int(legacy_years[index], 1900, 2100) if index < len(legacy_years) else None,
+                "description": None,
+                "texte_source": clean,
+                "confiance": 0.0,
+            })
+
     experiences = []
-    experience_jobs = form.getlist("experience_job")
-    experience_companies = form.getlist("experience_company")
-    experience_starts = form.getlist("experience_start")
-    experience_ends = form.getlist("experience_end")
-    experience_descs = form.getlist("experience_desc")
-    for index, job_title in enumerate(experience_jobs):
-        job_title = _normalize_string(job_title)
-        if not job_title:
+    for item in _extract_indexed_entries(form, "experiences_professionnelles"):
+        poste = _normalize_string(item.get("poste"))
+        entreprise = _normalize_string(item.get("entreprise"))
+        lieu = _normalize_string(item.get("lieu"))
+        date_debut = _normalize_cv_date_value(item.get("date_debut"))
+        date_fin = _normalize_cv_date_value(item.get("date_fin"))
+        description = _normalize_string(item.get("description"))
+        texte_source = _normalize_string(item.get("texte_source"))
+        confidence = _parse_float(item.get("confiance")) or 0.0
+        raw_associated = _normalize_string(item.get("competences_associees"))
+        competences_associees = [cleaned for cleaned in (_normalize_string(part) for part in re.split(r"[,;\n|]", raw_associated) if raw_associated) if cleaned]
+        if not any([poste, entreprise, lieu, date_debut, date_fin, description, texte_source]):
             continue
         experiences.append({
-            "poste": job_title,
-            "entreprise": _normalize_string(experience_companies[index]) if index < len(experience_companies) else None,
-            "date_debut": _parse_date(experience_starts[index]) if index < len(experience_starts) else None,
-            "date_fin": _parse_date(experience_ends[index]) if index < len(experience_ends) else None,
-            "description": _normalize_string(experience_descs[index]) if index < len(experience_descs) else "",
+            "poste": poste,
+            "entreprise": entreprise or None,
+            "date_debut": date_debut,
+            "date_fin": date_fin,
+            "lieu": lieu or None,
+            "description": description or None,
+            "competences_associees": competences_associees,
+            "texte_source": texte_source,
+            "confiance": confidence,
         })
-    return {
-        "competences": skills,
-        "diplomes": diplomas,
-        "experiences": experiences,
-        "metiers_detectes": [],
-    }
+    if not experiences:
+        legacy_jobs = form.getlist("experience_job")
+        legacy_companies = form.getlist("experience_company")
+        legacy_cities = form.getlist("experience_city")
+        legacy_starts = form.getlist("experience_start")
+        legacy_ends = form.getlist("experience_end")
+        legacy_descs = form.getlist("experience_desc")
+        for index, job_title in enumerate(legacy_jobs):
+            clean = _normalize_string(job_title)
+            if not clean:
+                continue
+            experiences.append({
+                "poste": clean,
+                "entreprise": _normalize_string(legacy_companies[index]) if index < len(legacy_companies) else None,
+                "date_debut": _normalize_cv_date_value(legacy_starts[index]) if index < len(legacy_starts) else None,
+                "date_fin": _normalize_cv_date_value(legacy_ends[index]) if index < len(legacy_ends) else None,
+                "lieu": _normalize_string(legacy_cities[index]) if index < len(legacy_cities) else None,
+                "description": _normalize_string(legacy_descs[index]) if index < len(legacy_descs) else None,
+                "competences_associees": [],
+                "texte_source": clean,
+                "confiance": 0.0,
+            })
 
+    return {
+        "competences": competences,
+        "formations": formations,
+        "experiences_professionnelles": experiences,
+        "sections_detectees": {
+            "formations": bool(formations),
+            "competences": bool(competences),
+            "experiences_professionnelles": bool(experiences),
+        },
+        "texte_brut": _normalize_string(form.get("texte_brut")),
+        "warnings": [],
+    }
 
 def _delete_all_user_data(user_id: int) -> None:
     _clear_cv_file(user_id)
@@ -1193,6 +1530,41 @@ def _current_profile_snapshot(user_id: int) -> dict[str, Any]:
             for item in profile["experiences"]
         ],
         "cv": profile.get("cv"),
+    }
+
+
+def _export_user_data_payload(user_id: int) -> dict[str, Any]:
+    profile = _assemble_profile(user_id)
+    matches = _current_job_matches(user_id)
+    return {
+        "user": {
+            "id": user_id,
+            "profile": _current_profile_snapshot(user_id),
+        },
+        "jobs_wanted": [item["job_title"] for item in profile["desired_jobs"]],
+        "skills": [
+            {
+                "name": row["name"],
+                "normalized_name": row["normalized_name"],
+                "level": row.get("level") or None,
+                "years_experience": row.get("years_experience"),
+                "source": row.get("source"),
+            }
+            for row in profile["skills"]
+        ],
+        "diplomas": [dict(item) for item in profile["diplomas"]],
+        "experiences": [dict(item) for item in profile["experiences"]],
+        "cv": dict(profile["cv"]) if profile.get("cv") else None,
+        "job_matches": [
+            {
+                "offer_identifier": match.get("offer_identifier"),
+                "global_score": match.get("global_score"),
+                "matching_skills": match.get("matching_skills_json") or [],
+                "missing_skills": match.get("missing_skills_json") or [],
+                "calculated_at": match.get("calculated_at"),
+            }
+            for match in matches
+        ],
     }
 
 
@@ -1369,7 +1741,7 @@ def _recommendation_page(matches: list[dict[str, Any]], filters: dict[str, Any],
         for match in matches:
             offer = match["offer"]
             explanation = match.get("explanation", {})
-            url = offer.get("url_originale")
+            url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
             cards.append(
                 f"""
                 <article class="offer-card">
@@ -1516,6 +1888,8 @@ def profile():
                 error = str(exc)
     profile_data = _current_profile_snapshot(user_id)
     content = _profile_form(profile_data, "\n".join(item["job_title"] if isinstance(item, dict) else str(item) for item in profile_data["desired_jobs"]))
+    content += _profile_summary_block(profile_data)
+    content += _profile_privacy_block(profile_data)
     return _render_page("Mon profil", content, message=error)
 
 
@@ -1814,10 +2188,13 @@ def upload_cv():
           {% if cv_row %}
           <hr>
           <p class="muted">CV actuellement enregistré: {{ cv_row['original_filename'] }}</p>
-          <form method="post" action="{{ url_for('user_portal.delete_cv') }}">
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <button class="btn danger" type="submit">Supprimer mon CV</button>
-          </form>
+          <div class="actions">
+            <a class="btn secondary" href="{{ url_for('user_portal.cv_preview') }}">Voir l'aperçu</a>
+            <form method="post" action="{{ url_for('user_portal.delete_cv') }}">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button class="btn danger" type="submit">Supprimer mon CV</button>
+            </form>
+          </div>
           {% endif %}
         </section>
         """,
@@ -1825,6 +2202,71 @@ def upload_cv():
         csrf_token=_csrf_token,
     )
     return _render_page("Mon CV", content, message=message, message_category=message_category)
+
+
+@user_portal_bp.route("/profile/cv/preview")
+@login_required
+def cv_preview():
+    user_id = _current_user_id()
+    assert user_id is not None
+    cv_row = fetch_one("SELECT * FROM user_cvs WHERE user_id = ?", (user_id,))
+    cv_data = dict(cv_row) if cv_row else None
+    if not cv_data:
+        return _render_page("Aperçu CV", "<section class='panel'><h2>Aucun CV enregistré</h2><div class='muted'>Importe d'abord un CV pour le visualiser.</div></section>")
+    path = _uploads_root() / CV_FOLDER_NAME / str(user_id) / cv_data["stored_filename"]
+    if not path.exists():
+        return _render_page("Aperçu CV", "<section class='panel'><h2>CV introuvable</h2><div class='muted'>Le fichier enregistré n'est plus disponible.</div></section>")
+    is_pdf = str(cv_data.get("mime_type") or "").startswith("application/pdf") or str(cv_data.get("original_filename") or "").lower().endswith(".pdf")
+    content = render_template_string(
+        """
+        <section class="panel cv-preview-panel">
+          <div class="actions" style="justify-content: space-between;">
+            <div>
+              <h2>Aperçu de mon CV</h2>
+              <p class="muted">{{ cv_row['original_filename'] }}</p>
+            </div>
+            <div class="actions">
+              <a class="btn secondary" href="{{ url_for('user_portal.cv_file') }}" target="_blank" rel="noopener noreferrer">Ouvrir le fichier</a>
+              <a class="btn secondary" href="{{ url_for('user_portal.upload_cv') }}">Retour</a>
+            </div>
+          </div>
+          {% if is_pdf %}
+          <object class="cv-preview-frame" data="{{ url_for('user_portal.cv_file') }}" type="application/pdf">
+            <p class="muted">La prévisualisation PDF n'est pas disponible dans ce navigateur. Utilise le bouton d'ouverture.</p>
+          </object>
+          {% else %}
+          <div class="cv-preview-text">
+            <h3>Texte extrait</h3>
+            <pre>{{ cv_row['extracted_text'] }}</pre>
+          </div>
+          {% endif %}
+        </section>
+        """,
+        cv_row=cv_data,
+        is_pdf=is_pdf,
+    )
+    return _render_page("Aperçu CV", content)
+
+
+@user_portal_bp.route("/profile/cv/file")
+@login_required
+def cv_file():
+    user_id = _current_user_id()
+    assert user_id is not None
+    cv_row = fetch_one("SELECT * FROM user_cvs WHERE user_id = ?", (user_id,))
+    cv_data = dict(cv_row) if cv_row else None
+    if not cv_data:
+        return redirect(url_for("user_portal.upload_cv"))
+    path = _uploads_root() / CV_FOLDER_NAME / str(user_id) / cv_data["stored_filename"]
+    if not path.exists():
+        return redirect(url_for("user_portal.upload_cv"))
+    return send_file(
+        path,
+        as_attachment=False,
+        download_name=cv_data["original_filename"],
+        mimetype=cv_data.get("mime_type") or None,
+        conditional=True,
+    )
 
 
 @user_portal_bp.route("/profile/cv/delete", methods=["POST"])
@@ -1844,9 +2286,10 @@ def validate_cv():
     assert user_id is not None
     pending = session.get("pending_cv_import")
     if not pending:
-        return _render_page("Valider CV", "<section class='panel'><h2>Validation du CV</h2><div class='muted'>Aucun import en attente.</div></section>")
+        return render_template("cv_validation.html", page_title="Valider CV", active_page="", pending=None, message=None, message_category=None)
     structured = pending.get("structured") or {}
     message = pending.get("message")
+    message_category = None
     if request.method == "POST":
         if _check_csrf():
             pending = dict(pending)
@@ -1855,57 +2298,21 @@ def validate_cv():
             flash("CV validé et importé.", "success")
             return redirect(url_for("user_portal.profile"))
         message = "Jeton CSRF invalide ou manquant."
-    skills = structured.get("competences", [])
-    diplomas = structured.get("diplomes", [])
-    experiences = structured.get("experiences", [])
-    content = render_template_string(
-        """
-        <section class="panel">
-          <h2>Valider les informations extraites</h2>
-          {% if message %}<div class="status error">{{ message }}</div>{% endif %}
-          <form method="post">
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <h3>Compétences</h3>
-            {% for item in skills %}
-            <div class="pairs">
-              <div class="field"><label>Nom</label><input name="skill_name" value="{{ item['nom'] }}"></div>
-              <div class="field"><label>Niveau</label><input name="skill_level" value="{{ item['niveau'] or '' }}"></div>
-              <div class="field"><label>Années</label><input name="skill_years" value="{{ item['annees_experience'] or '' }}"></div>
-            </div>
-            {% endfor %}
-            <h3>Diplômes</h3>
-            {% for item in diplomas %}
-            <div class="pairs">
-              <div class="field"><label>Intitulé</label><input name="diploma_title" value="{{ item['intitule'] }}"></div>
-              <div class="field"><label>Niveau</label><input name="diploma_level" value="{{ item['niveau'] or '' }}"></div>
-              <div class="field"><label>Établissement</label><input name="diploma_school" value="{{ item['etablissement'] or '' }}"></div>
-              <div class="field"><label>Année</label><input name="diploma_year" value="{{ item['annee'] or '' }}"></div>
-            </div>
-            {% endfor %}
-            <h3>Expériences</h3>
-            {% for item in experiences %}
-            <div class="pairs">
-              <div class="field"><label>Poste</label><input name="experience_job" value="{{ item['poste'] }}"></div>
-              <div class="field"><label>Entreprise</label><input name="experience_company" value="{{ item['entreprise'] or '' }}"></div>
-              <div class="field"><label>Date début</label><input name="experience_start" value="{{ item['date_debut'] or '' }}"></div>
-              <div class="field"><label>Date fin</label><input name="experience_end" value="{{ item['date_fin'] or '' }}"></div>
-              <div class="field"><label>Description</label><textarea name="experience_desc">{{ item['description'] or '' }}</textarea></div>
-            </div>
-            {% endfor %}
-            <div class="actions">
-              <button class="btn" type="submit">Confirmer l'import</button>
-              <a class="btn secondary" href="{{ url_for('user_portal.upload_cv') }}">Retour</a>
-            </div>
-          </form>
-        </section>
-        """,
-        skills=skills,
-        diplomas=diplomas,
-        experiences=experiences,
+        message_category = "error"
+    return render_template(
+        "cv_validation.html",
+        page_title="Valider CV",
+        active_page="",
+        pending=pending,
         message=message,
-        csrf_token=_csrf_token,
+        message_category=message_category,
+        formations=structured.get("formations", []),
+        competences=structured.get("competences", []),
+        experiences_professionnelles=structured.get("experiences_professionnelles", []),
+        sections_detectees=structured.get("sections_detectees", {}),
+        texte_brut=structured.get("texte_brut") or "",
+        warnings=structured.get("warnings", []),
     )
-    return _render_page("Valider CV", content)
 
 
 @user_portal_bp.route("/mes-offres")
@@ -1976,7 +2383,10 @@ def dashboard():
     user_id = _current_user_id()
     assert user_id is not None
     matches = _current_job_matches(user_id)
+    if not matches:
+        matches = _compute_recommendations(user_id)
     compatible = [match for match in matches if float(match.get("global_score") or 0) >= DEFAULT_COMPATIBILITY_THRESHOLD]
+    display_matches = compatible[:5] if compatible else matches[:5]
     average = round(sum(float(match.get("global_score") or 0) for match in matches) / len(matches), 2) if matches else 0.0
     best = max(matches, key=lambda item: float(item.get("global_score") or 0), default=None)
     demanded_counter: Counter[str] = Counter()
@@ -1984,7 +2394,7 @@ def dashboard():
     contract_counter: Counter[str] = Counter()
     location_counter: Counter[str] = Counter()
 
-    for match in compatible:
+    for match in compatible or matches:
         explanation = _decoded_explanation(match.get("explanation_json"))
         offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
         for skill in offer.get("competences") or explanation.get("matching_skills", []):
@@ -2003,20 +2413,85 @@ def dashboard():
 
     best_explanation = _decoded_explanation(best.get("explanation_json")) if best else {}
     skills_to_develop = missing_counter.most_common(5)
+    match_cards = []
+    for match in display_matches:
+        explanation = _decoded_explanation(match.get("explanation_json"))
+        offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
+        url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
+        match_cards.append({
+            "title": offer.get("titre") or match.get("offer_identifier") or "Offre sans titre",
+            "company": offer.get("entreprise") or "Entreprise non renseignée",
+            "location": ", ".join(offer.get("lieux") or []) if offer.get("lieux") else "Lieu non renseigné",
+            "contract": offer.get("contrat") or "Contrat non renseigné",
+            "source": offer.get("source") or "Source non renseignée",
+            "score": float(match.get("global_score") or 0),
+            "url": url,
+            "matching_skills": explanation.get("matching_skills", []),
+        })
     content = render_template_string(
         """
         <section class="dash-grid">
-          <div class="metric"><div class="label">Offres compatibles</div><div class="value">{{ compatible_count }}</div></div>
+          <div class="metric"><div class="label">Offres compat.</div><div class="value">{{ compatible_count }}</div></div>
           <div class="metric"><div class="label">Score moyen</div><div class="value">{{ average }}%</div></div>
           <div class="metric"><div class="label">Meilleure offre</div><div class="value">{{ best_score }}%</div></div>
           <div class="metric"><div class="label">Dernier calcul</div><div class="value">{{ last_calculated or '—' }}</div></div>
+        </section>
+        <section class="panel">
+          <div class="actions" style="justify-content: space-between;">
+            <h2>Offres compatibles</h2>
+            {% if compatible_count == 0 %}<span class="muted">Aucune offre au-dessus du seuil, affichage des meilleures correspondances.</span>{% endif %}
+          </div>
+          {% if match_cards %}
+          <div class="offer-grid">
+            {% for card in match_cards %}
+            <article class="offer-card">
+              <h3 class="offer-title">{{ card.title }}</h3>
+              <div class="meta">
+                <span>{{ card.company }}</span>
+                <span>{{ card.location }}</span>
+                <span>{{ card.contract }}</span>
+                <span>{{ card.source }}</span>
+                <span>Score {{ '%.0f'|format(card.score) }}/100</span>
+              </div>
+              {% if card.matching_skills %}
+              <div class="chips">
+                {% for skill in card.matching_skills[:5] %}<span class="chip">{{ skill }}</span>{% endfor %}
+              </div>
+              {% endif %}
+              <div class="actions">
+                {% if card.url %}<a class="btn" href="{{ card.url }}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>{% else %}<span class="muted">Lien indisponible</span>{% endif %}
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="muted">Aucune offre calculée.</div>
+          {% endif %}
         </section>
         <section class="grid">
           <section class="panel">
             <h2>Meilleure offre</h2>
             {% if best %}
-            <p><strong>{{ best['offer_identifier'] }}</strong></p>
-            <p class="muted">{{ best_explanation.get('summary') }}</p>
+            {% set best_offer = best_explanation.get('offer') if best_explanation.get('offer') is mapping else {} %}
+            <article class="offer-card offer-card--highlight">
+              <h3 class="offer-title">{{ best_offer.get('titre') or best['offer_identifier'] }}</h3>
+              <div class="meta">
+                <span>{{ best_offer.get('entreprise') or 'Entreprise non renseignée' }}</span>
+                <span>{{ ', '.join(best_offer.get('lieux') or []) if best_offer.get('lieux') else 'Lieu non renseigné' }}</span>
+                <span>{{ best_offer.get('contrat') or 'Contrat non renseigné' }}</span>
+                <span>Score {{ '%.0f'|format(best['global_score'] or 0) }}/100</span>
+              </div>
+              <p class="muted">{{ best_explanation.get('summary') }}</p>
+              {% if best_explanation.get('matching_skills') %}
+              <div class="chips">
+                {% for skill in best_explanation.get('matching_skills')[:5] %}<span class="chip">{{ skill }}</span>{% endfor %}
+              </div>
+              {% endif %}
+              <div class="actions">
+                {% set best_url = best_offer.get('url_originale') or best_offer.get('url') or url_for('user_portal.recommendation_detail', offer_id=best['offer_identifier']) %}
+                <a class="btn" href="{{ best_url }}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>
+              </div>
+            </article>
             {% else %}
             <div class="muted">Aucune offre calculée.</div>
             {% endif %}
@@ -2063,20 +2538,42 @@ def dashboard():
         demanded_skills=demanded_counter.most_common(5),
         contract_distribution=contract_counter.most_common(),
         location_distribution=location_counter.most_common(5),
+        match_cards=match_cards,
     )
     return _render_page("Tableau de bord utilisateur", content)
 
 
-@user_portal_bp.route("/profile/delete-all", methods=["POST"])
+@user_portal_bp.route("/profile/export-data")
 @login_required
-def delete_all_data():
+def export_data():
+    user_id = _current_user_id()
+    assert user_id is not None
+    payload = _export_user_data_payload(user_id)
+    response = current_app.response_class(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        mimetype="application/json; charset=utf-8",
+    )
+    response.headers["Content-Disposition"] = f'attachment; filename="trendradar-donnees-{user_id}.json"'
+    return response
+
+
+@user_portal_bp.route("/profile/delete-account", methods=["POST"])
+@login_required
+def delete_account():
     user_id = _current_user_id()
     assert user_id is not None
     if _check_csrf():
         _delete_all_user_data(user_id)
         _logout_user()
+        flash("Votre compte et vos données ont été supprimés.", "success")
         return redirect(url_for("user_portal.register"))
     return redirect(url_for("user_portal.profile"))
+
+
+@user_portal_bp.route("/profile/delete-all", methods=["POST"])
+@login_required
+def delete_all_data():
+    return delete_account()
 
 
 def register_user_portal(app) -> None:
