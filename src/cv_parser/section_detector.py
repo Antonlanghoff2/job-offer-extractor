@@ -13,7 +13,7 @@ from .normalizer import normalize_section_title
 SectionKind = Literal["formations", "competences", "experiences_professionnelles", "excluded", "other"]
 
 
-@dataclass(slots=True)
+@dataclass
 class SectionMatch:
     kind: SectionKind
     title: str

@@ -16,7 +16,7 @@ STRONG_JOB_KEYWORDS = ("développeur", "developpeur", "ingénieur", "ingenieur",
 WEAK_JOB_KEYWORDS = ("son", "video", "vidéo", "lumière", "lumiere", "réseau", "reseau")
 
 
-@dataclass(slots=True)
+@dataclass
 class _ExperienceCandidate:
     job_parts: list[str] = field(default_factory=list)
     company_parts: list[str] = field(default_factory=list)

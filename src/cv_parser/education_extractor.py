@@ -15,7 +15,7 @@ DIPLOMA_KEYWORDS = ("cap", "bep", "bac", "bts", "dut", "but", "licence", "bachel
 INSTITUTION_KEYWORDS = ("université", "universite", "école", "ecole", "lycée", "lycee", "institut", "iut", "télécom", "telecom", "centrale", "openclassrooms", "cnam", "ina", "organisme", "campus")
 
 
-@dataclass(slots=True)
+@dataclass
 class _EducationCandidate:
     title_parts: list[str] = field(default_factory=list)
     institution_parts: list[str] = field(default_factory=list)
