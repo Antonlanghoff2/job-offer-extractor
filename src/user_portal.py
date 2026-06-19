@@ -22,7 +22,7 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Callable, Iterable
 
-from flask import Blueprint, current_app, g, redirect, render_template_string, request, session, send_file, url_for
+from flask import Blueprint, current_app, g, redirect, render_template, render_template_string, request, session, send_file, url_for
 from markupsafe import escape
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.utils import secure_filename
@@ -1217,11 +1217,18 @@ def _save_cv_confirmation(user_id: int, pending: dict[str, Any]) -> None:
                 """,
                 (user_id, pending["original_filename"], pending["stored_filename"], pending["mime_type"], now, extracted_text),
             )
+        conn.execute("DELETE FROM user_skills WHERE user_id = ? AND source = ?", (user_id, "cv"))
+        conn.execute("DELETE FROM diplomas WHERE user_id = ? AND source = ?", (user_id, "cv"))
+        conn.execute("DELETE FROM experiences WHERE user_id = ? AND source = ?", (user_id, "cv"))
     structured = pending.get("structured") or {}
     for skill in structured.get("competences", []):
-        _store_skill(user_id, skill.get("nom", ""), skill.get("niveau"), skill.get("annees_experience"), "cv")
-    for diploma in structured.get("diplomes", []):
+        _store_skill(user_id, skill.get("nom", ""), None, None, skill.get("source") or "cv")
+    for formation in structured.get("formations", []):
         now = utcnow_iso()
+        annee = formation.get("annee")
+        if annee is None:
+            date_like = formation.get("date_fin") or formation.get("date_debut")
+            annee = int(str(date_like)[:4]) if isinstance(date_like, str) and len(str(date_like)) >= 4 and str(date_like)[:4].isdigit() else None
         with transaction() as conn:
             conn.execute(
                 """
@@ -1230,18 +1237,18 @@ def _save_cv_confirmation(user_id: int, pending: dict[str, Any]) -> None:
                 """,
                 (
                     user_id,
-                    diploma.get("intitule") or "",
-                    diploma.get("niveau"),
-                    diploma.get("etablissement"),
+                    formation.get("intitule") or "",
+                    formation.get("niveau"),
+                    formation.get("etablissement"),
                     None,
-                    diploma.get("annee"),
-                    diploma.get("description") or "",
+                    annee,
+                    formation.get("description") or "",
                     "cv",
                     now,
                     now,
                 ),
             )
-    for experience in structured.get("experiences", []):
+    for experience in structured.get("experiences_professionnelles", []):
         now = utcnow_iso()
         with transaction() as conn:
             conn.execute(
@@ -1253,9 +1260,9 @@ def _save_cv_confirmation(user_id: int, pending: dict[str, Any]) -> None:
                     user_id,
                     experience.get("poste") or "",
                     experience.get("entreprise"),
-                    None,
-                    _parse_date(experience.get("date_debut")),
-                    _parse_date(experience.get("date_fin")),
+                    experience.get("lieu"),
+                    _normalize_cv_date_value(experience.get("date_debut")),
+                    _normalize_cv_date_value(experience.get("date_fin")),
                     1 if not experience.get("date_fin") else 0,
                     experience.get("description") or "",
                     "cv",
@@ -1275,60 +1282,165 @@ def _clear_cv_file(user_id: int) -> None:
     execute("DELETE FROM user_cvs WHERE user_id = ?", (user_id,))
 
 
+def _extract_indexed_entries(form, collection: str) -> list[dict[str, Any]]:
+    pattern = re.compile(rf"^{re.escape(collection)}\[(\d+)\]\[([^\]]+)\]$")
+    grouped: dict[int, dict[str, Any]] = {}
+    for key in form.keys():
+        match = pattern.match(key)
+        if not match:
+            continue
+        index = int(match.group(1))
+        field = match.group(2)
+        grouped.setdefault(index, {})[field] = form.get(key)
+    return [grouped[index] for index in sorted(grouped)]
+
+
+def _normalize_cv_date_value(value: object) -> str | None:
+    text = _normalize_string(value)
+    if not text:
+        return None
+    if re.fullmatch(r"(19|20)\d{2}", text):
+        return text
+    parsed = _parse_date(text)
+    return parsed or text
+
+
 def _rebuild_cv_payload_from_form(form) -> dict[str, Any]:
-    skills = []
-    skill_names = form.getlist("skill_name")
-    skill_levels = form.getlist("skill_level")
-    skill_years = form.getlist("skill_years")
-    for index, name in enumerate(skill_names):
-        name = _normalize_string(name)
-        if not name:
+    competences = []
+    for item in _extract_indexed_entries(form, "competences"):
+        nom = _normalize_string(item.get("nom"))
+        if not nom:
             continue
-        skills.append({
-            "nom": name,
-            "niveau": _normalize_string(skill_levels[index]) if index < len(skill_levels) else None,
-            "annees_experience": _parse_float(skill_years[index]) if index < len(skill_years) else None,
+        formation_source = _normalize_string(item.get("formation_source"))
+        competences.append({
+            "nom": nom,
+            "categorie": _normalize_string(item.get("categorie")) or None,
+            "source": _normalize_string(item.get("source")) or "explicite",
+            "texte_source": _normalize_string(item.get("texte_source")),
+            "confiance": _parse_float(item.get("confiance")) or 0.0,
+            **({"formation_source": formation_source} if formation_source else {}),
         })
-    diplomas = []
-    diploma_titles = form.getlist("diploma_title")
-    diploma_levels = form.getlist("diploma_level")
-    diploma_schools = form.getlist("diploma_school")
-    diploma_years = form.getlist("diploma_year")
-    for index, title in enumerate(diploma_titles):
-        title = _normalize_string(title)
-        if not title:
+    if not competences:
+        legacy_names = form.getlist("skill_name")
+        legacy_levels = form.getlist("skill_level")
+        legacy_years = form.getlist("skill_years")
+        for index, name in enumerate(legacy_names):
+            clean = _normalize_string(name)
+            if not clean:
+                continue
+            competences.append({
+                "nom": clean,
+                "categorie": _normalize_string(legacy_levels[index]) if index < len(legacy_levels) and _normalize_string(legacy_levels[index]) else None,
+                "source": "explicite",
+                "texte_source": clean,
+                "confiance": 0.0,
+            })
+
+    formations = []
+    for item in _extract_indexed_entries(form, "formations"):
+        intitule = _normalize_string(item.get("intitule"))
+        etablissement = _normalize_string(item.get("etablissement"))
+        niveau = _normalize_string(item.get("niveau"))
+        date_debut = _normalize_cv_date_value(item.get("date_debut"))
+        date_fin = _normalize_cv_date_value(item.get("date_fin"))
+        annee = _parse_int(item.get("annee"), 1900, 2100)
+        description = _normalize_string(item.get("description"))
+        texte_source = _normalize_string(item.get("texte_source"))
+        confiance = _parse_float(item.get("confiance")) or 0.0
+        if not any([intitule, etablissement, niveau, date_debut, date_fin, annee, description, texte_source]):
             continue
-        diplomas.append({
-            "intitule": title,
-            "niveau": _normalize_string(diploma_levels[index]) if index < len(diploma_levels) else None,
-            "etablissement": _normalize_string(diploma_schools[index]) if index < len(diploma_schools) else None,
-            "annee": _parse_int(diploma_years[index], 1900, 2100) if index < len(diploma_years) else None,
-            "description": "",
+        formations.append({
+            "intitule": intitule,
+            "etablissement": etablissement or None,
+            "niveau": niveau or None,
+            "date_debut": date_debut,
+            "date_fin": date_fin,
+            "annee": annee,
+            "description": description or None,
+            "texte_source": texte_source,
+            "confiance": confiance,
         })
+    if not formations:
+        legacy_titles = form.getlist("diploma_title")
+        legacy_levels = form.getlist("diploma_level")
+        legacy_schools = form.getlist("diploma_school")
+        legacy_years = form.getlist("diploma_year")
+        for index, title in enumerate(legacy_titles):
+            clean = _normalize_string(title)
+            if not clean:
+                continue
+            formations.append({
+                "intitule": clean,
+                "etablissement": _normalize_string(legacy_schools[index]) if index < len(legacy_schools) else None,
+                "niveau": _normalize_string(legacy_levels[index]) if index < len(legacy_levels) else None,
+                "date_debut": None,
+                "date_fin": None,
+                "annee": _parse_int(legacy_years[index], 1900, 2100) if index < len(legacy_years) else None,
+                "description": None,
+                "texte_source": clean,
+                "confiance": 0.0,
+            })
+
     experiences = []
-    experience_jobs = form.getlist("experience_job")
-    experience_companies = form.getlist("experience_company")
-    experience_starts = form.getlist("experience_start")
-    experience_ends = form.getlist("experience_end")
-    experience_descs = form.getlist("experience_desc")
-    for index, job_title in enumerate(experience_jobs):
-        job_title = _normalize_string(job_title)
-        if not job_title:
+    for item in _extract_indexed_entries(form, "experiences_professionnelles"):
+        poste = _normalize_string(item.get("poste"))
+        entreprise = _normalize_string(item.get("entreprise"))
+        lieu = _normalize_string(item.get("lieu"))
+        date_debut = _normalize_cv_date_value(item.get("date_debut"))
+        date_fin = _normalize_cv_date_value(item.get("date_fin"))
+        description = _normalize_string(item.get("description"))
+        texte_source = _normalize_string(item.get("texte_source"))
+        confidence = _parse_float(item.get("confiance")) or 0.0
+        raw_associated = _normalize_string(item.get("competences_associees"))
+        competences_associees = [cleaned for cleaned in (_normalize_string(part) for part in re.split(r"[,;\n|]", raw_associated) if raw_associated) if cleaned]
+        if not any([poste, entreprise, lieu, date_debut, date_fin, description, texte_source]):
             continue
         experiences.append({
-            "poste": job_title,
-            "entreprise": _normalize_string(experience_companies[index]) if index < len(experience_companies) else None,
-            "date_debut": _parse_date(experience_starts[index]) if index < len(experience_starts) else None,
-            "date_fin": _parse_date(experience_ends[index]) if index < len(experience_ends) else None,
-            "description": _normalize_string(experience_descs[index]) if index < len(experience_descs) else "",
+            "poste": poste,
+            "entreprise": entreprise or None,
+            "date_debut": date_debut,
+            "date_fin": date_fin,
+            "lieu": lieu or None,
+            "description": description or None,
+            "competences_associees": competences_associees,
+            "texte_source": texte_source,
+            "confiance": confidence,
         })
-    return {
-        "competences": skills,
-        "diplomes": diplomas,
-        "experiences": experiences,
-        "metiers_detectes": [],
-    }
+    if not experiences:
+        legacy_jobs = form.getlist("experience_job")
+        legacy_companies = form.getlist("experience_company")
+        legacy_cities = form.getlist("experience_city")
+        legacy_starts = form.getlist("experience_start")
+        legacy_ends = form.getlist("experience_end")
+        legacy_descs = form.getlist("experience_desc")
+        for index, job_title in enumerate(legacy_jobs):
+            clean = _normalize_string(job_title)
+            if not clean:
+                continue
+            experiences.append({
+                "poste": clean,
+                "entreprise": _normalize_string(legacy_companies[index]) if index < len(legacy_companies) else None,
+                "date_debut": _normalize_cv_date_value(legacy_starts[index]) if index < len(legacy_starts) else None,
+                "date_fin": _normalize_cv_date_value(legacy_ends[index]) if index < len(legacy_ends) else None,
+                "lieu": _normalize_string(legacy_cities[index]) if index < len(legacy_cities) else None,
+                "description": _normalize_string(legacy_descs[index]) if index < len(legacy_descs) else None,
+                "competences_associees": [],
+                "texte_source": clean,
+                "confiance": 0.0,
+            })
 
+    return {
+        "competences": competences,
+        "formations": formations,
+        "experiences_professionnelles": experiences,
+        "sections_detectees": {
+            "formations": bool(formations),
+            "competences": bool(competences),
+            "experiences_professionnelles": bool(experiences),
+        },
+        "texte_brut": _normalize_string(form.get("texte_brut")),
+        "warnings": [],
+    }
 
 def _delete_all_user_data(user_id: int) -> None:
     _clear_cv_file(user_id)
@@ -2112,9 +2224,10 @@ def validate_cv():
     assert user_id is not None
     pending = session.get("pending_cv_import")
     if not pending:
-        return _render_page("Valider CV", "<section class='panel'><h2>Validation du CV</h2><div class='muted'>Aucun import en attente.</div></section>")
+        return render_template("cv_validation.html", page_title="Valider CV", active_page="", pending=None, message=None, message_category=None)
     structured = pending.get("structured") or {}
     message = pending.get("message")
+    message_category = None
     if request.method == "POST":
         if _check_csrf():
             pending = dict(pending)
@@ -2123,57 +2236,21 @@ def validate_cv():
             flash("CV validé et importé.", "success")
             return redirect(url_for("user_portal.profile"))
         message = "Jeton CSRF invalide ou manquant."
-    skills = structured.get("competences", [])
-    diplomas = structured.get("diplomes", [])
-    experiences = structured.get("experiences", [])
-    content = render_template_string(
-        """
-        <section class="panel">
-          <h2>Valider les informations extraites</h2>
-          {% if message %}<div class="status error">{{ message }}</div>{% endif %}
-          <form method="post">
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <h3>Compétences</h3>
-            {% for item in skills %}
-            <div class="pairs">
-              <div class="field"><label>Nom</label><input name="skill_name" value="{{ item['nom'] }}"></div>
-              <div class="field"><label>Niveau</label><input name="skill_level" value="{{ item['niveau'] or '' }}"></div>
-              <div class="field"><label>Années</label><input name="skill_years" value="{{ item['annees_experience'] or '' }}"></div>
-            </div>
-            {% endfor %}
-            <h3>Diplômes</h3>
-            {% for item in diplomas %}
-            <div class="pairs">
-              <div class="field"><label>Intitulé</label><input name="diploma_title" value="{{ item['intitule'] }}"></div>
-              <div class="field"><label>Niveau</label><input name="diploma_level" value="{{ item['niveau'] or '' }}"></div>
-              <div class="field"><label>Établissement</label><input name="diploma_school" value="{{ item['etablissement'] or '' }}"></div>
-              <div class="field"><label>Année</label><input name="diploma_year" value="{{ item['annee'] or '' }}"></div>
-            </div>
-            {% endfor %}
-            <h3>Expériences</h3>
-            {% for item in experiences %}
-            <div class="pairs">
-              <div class="field"><label>Poste</label><input name="experience_job" value="{{ item['poste'] }}"></div>
-              <div class="field"><label>Entreprise</label><input name="experience_company" value="{{ item['entreprise'] or '' }}"></div>
-              <div class="field"><label>Date début</label><input name="experience_start" value="{{ item['date_debut'] or '' }}"></div>
-              <div class="field"><label>Date fin</label><input name="experience_end" value="{{ item['date_fin'] or '' }}"></div>
-              <div class="field"><label>Description</label><textarea name="experience_desc">{{ item['description'] or '' }}</textarea></div>
-            </div>
-            {% endfor %}
-            <div class="actions">
-              <button class="btn" type="submit">Confirmer l'import</button>
-              <a class="btn secondary" href="{{ url_for('user_portal.upload_cv') }}">Retour</a>
-            </div>
-          </form>
-        </section>
-        """,
-        skills=skills,
-        diplomas=diplomas,
-        experiences=experiences,
+        message_category = "error"
+    return render_template(
+        "cv_validation.html",
+        page_title="Valider CV",
+        active_page="",
+        pending=pending,
         message=message,
-        csrf_token=_csrf_token,
+        message_category=message_category,
+        formations=structured.get("formations", []),
+        competences=structured.get("competences", []),
+        experiences_professionnelles=structured.get("experiences_professionnelles", []),
+        sections_detectees=structured.get("sections_detectees", {}),
+        texte_brut=structured.get("texte_brut") or "",
+        warnings=structured.get("warnings", []),
     )
-    return _render_page("Valider CV", content)
 
 
 @user_portal_bp.route("/mes-offres")
