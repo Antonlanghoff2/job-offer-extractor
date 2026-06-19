@@ -24,6 +24,9 @@ job_offer_extractor/
 │   ├── comparison_web_app.py # France Travail / Indeed comparison dashboard
 │   ├── extractors.py         # Rule-based post-processing
 │   ├── predict.py            # Prediction API & CLI
+│   ├── cv_dataset_core.py    # Synthetic CV generation / export / validation core
+│   ├── cv_dataset_generator.py # Synthetic CV dataset CLI
+│   ├── validate_cv_dataset.py # Synthetic CV dataset validator CLI
 │   └── evaluate.py           # Evaluation & reporting
 ├── README.md
 └── requirements.txt
@@ -118,6 +121,99 @@ The command creates:
 
 - `data/processed/contrat_long.csv`
 - `data/processed/metier_context_t3_2025.csv`
+
+
+## Génération du dataset de CV synthétiques
+
+Cette fonctionnalité crée un corpus de CV français entièrement synthétiques, avec annotations NER, pour préparer l'entraînement d'un futur modèle d'extraction.
+
+### Installation des dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+### Génération simple
+
+```bash
+python -m src.cv_dataset_generator
+```
+
+### Génération de 5000 CV
+
+```bash
+python -m src.cv_dataset_generator \
+  --count 5000 \
+  --output data/cv/synthetic_cv_dataset.jsonl \
+  --seed 42
+```
+
+### Seed
+
+L'option `--seed` rend le dataset reproductible à l'identique. Deux exécutions avec les mêmes paramètres produisent les mêmes CV, dans le même ordre.
+
+### Templates
+
+Les templates disponibles sont `classic`, `compact`, `technical`, `academic`, `creative`, `minimal` et `noisy_pdf`.
+
+### Niveaux de bruit
+
+L'option `--noise-level` accepte `0`, `1`, `2` et `3`.
+
+- `0` : texte propre
+- `1` : bruit léger
+- `2` : bruit moyen
+- `3` : bruit important, avec défauts proches d'une extraction PDF imparfaite
+
+### Validation
+
+```bash
+python -m src.validate_cv_dataset \
+  --input data/cv/synthetic_cv_dataset.jsonl
+```
+
+### Exports spaCy
+
+```bash
+python -m src.cv_dataset_generator \
+  --count 100 \
+  --format spacy \
+  --output data/cv/test_spacy.jsonl
+```
+
+Le même dataset JSONL principal peut aussi être converti vers le format spaCy via la fonction `convert_jsonl_dataset_to_spacy`.
+
+### Exports Hugging Face
+
+```bash
+python -m src.cv_dataset_generator \
+  --count 100 \
+  --format huggingface \
+  --output data/cv/test_huggingface.jsonl
+```
+
+Le format Hugging Face exporte des tokens simples et des tags BIO de même longueur.
+
+### Découpage train/validation/test
+
+```bash
+python -m src.cv_dataset_generator \
+  --count 1000 \
+  --split \
+  --train-ratio 0.8 \
+  --validation-ratio 0.1 \
+  --test-ratio 0.1
+```
+
+Le découpage écrit `data/cv/train.jsonl`, `data/cv/validation.jsonl` et `data/cv/test.jsonl` dans le dossier cible dérivé de `--output`.
+
+### Lancement des tests
+
+```bash
+pytest -q
+```
+
+Avertissement: les CV synthétiques ne doivent pas être utilisés seuls pour évaluer la qualité réelle du modèle. Une évaluation finale doit être réalisée sur un jeu de vrais CV anonymisés et annotés manuellement.
 
 ## License
 
