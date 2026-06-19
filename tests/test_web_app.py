@@ -60,6 +60,9 @@ class WebAppTest(unittest.TestCase):
         self.assertIn("page=2", body)
         self.assertIn("selected", body)
         self.assertIn("Développeur Python", body)
+        self.assertIn("Mon compte", body)
+        self.assertIn("Mon profil", body)
+        self.assertIn("Déconnexion", body)
 
     @patch("src.web_app.load_raw_offers", return_value=make_raw_offers("69123"))
     @patch("src.web_app.load_market_context_rows", return_value=[])

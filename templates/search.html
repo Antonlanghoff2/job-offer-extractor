@@ -1,0 +1,218 @@
+# Copyright Anton Langhoff <anton@langhoff.fr>
+# SPDX-License-Identifier: MIT
+
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero card">
+  <div class="hero__content">
+    <p class="eyebrow">Recherche d'offres d'emploi</p>
+    <h1>Recherche d'offres d'emploi</h1>
+    <p class="hero__subtitle">Trouvez les offres correspondant à vos compétences, votre expérience et votre territoire.</p>
+  </div>
+</section>
+
+<section class="card search-card">
+  <form class="search-form" method="get" action="{{ url_for('index') }}">
+    <div class="field">
+      <label for="mots_cles">Compétences / mots-clés</label>
+      <input id="mots_cles" name="mots_cles" value="{{ mots_cles }}" placeholder="Python, SQL, DevOps...">
+    </div>
+    <div class="field">
+      <label for="territoire_type">Type de territoire</label>
+      <select id="territoire_type" name="territoire_type">
+        {% for value, label in territoire_type_options %}
+        <option value="{{ value }}" {% if value == territoire_type %}selected{% endif %}>{{ label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="field">
+      <label for="territoire">Territoire</label>
+      <input id="territoire" name="territoire" list="territoire-list" value="{{ territoire }}" placeholder="Lyon, 69, 84...">
+      <datalist id="territoire-list">
+        {% for option in territoire_options %}
+        <option value="{{ option }}"></option>
+        {% endfor %}
+      </datalist>
+    </div>
+    <div class="field">
+      <label for="distance">Rayon (km)</label>
+      <input id="distance" name="distance" type="number" min="1" step="1" value="{{ distance }}" placeholder="20">
+    </div>
+    <div class="field">
+      <label for="per_page">Par page</label>
+      <input id="per_page" name="per_page" type="number" min="1" max="50" step="1" value="{{ per_page }}">
+    </div>
+    <div class="field field--actions">
+      <label>&nbsp;</label>
+      <button type="submit" class="button button--primary">Rechercher</button>
+    </div>
+    <input type="hidden" name="page" value="1">
+    <input type="hidden" name="periode" value="{{ periode_jours }}">
+    <input type="hidden" name="top_n" value="{{ top_n }}">
+  </form>
+</section>
+
+{% if error_message %}
+<section class="alert alert--error card">{{ error_message }}</section>
+{% elif mots_cles and nombre_offres == 0 %}
+<section class="alert card">Aucune offre ne correspond à cette recherche.</section>
+{% elif mots_cles %}
+<section class="alert card">{{ nombre_offres }} offres trouvées pour {{ territoire_label }}.</section>
+{% else %}
+<section class="alert card">Saisissez des mots-clés pour lancer une recherche France Travail.</section>
+{% endif %}
+
+<section class="stats-grid">
+  <article class="stat card">
+    <p class="stat__label">Offres retenues</p>
+    <p class="stat__value">{{ nombre_offres }}</p>
+    <p class="stat__meta">sur {{ periode_jours }} jours</p>
+  </article>
+  <article class="stat card">
+    <p class="stat__label">Compétences</p>
+    <p class="stat__value">{{ trends.competences|length if trends else 0 }}</p>
+    <p class="stat__meta">fréquences comptées</p>
+  </article>
+  <article class="stat card">
+    <p class="stat__label">Métiers</p>
+    <p class="stat__value">{{ trends.metiers|length if trends else 0 }}</p>
+    <p class="stat__meta">fréquences comptées</p>
+  </article>
+  <article class="stat card">
+    <p class="stat__label">Contrats</p>
+    <p class="stat__value">{{ trends.contrats|length if trends else 0 }}</p>
+    <p class="stat__meta">fréquences comptées</p>
+  </article>
+</section>
+
+<section class="content-grid">
+  <section class="card panel">
+    <div class="panel__head">
+      <div>
+        <p class="eyebrow">Aperçu</p>
+        <h2>Tendances de la recherche</h2>
+      </div>
+      <p class="panel__note">{{ territoire_label }}</p>
+    </div>
+
+    <div class="panel-grid">
+      <div class="subpanel">
+        <div class="subpanel__head">
+          <h3>Compétences</h3>
+          <span>Top {{ top_n }}</span>
+        </div>
+        {% if top_competences %}
+        <table class="ranking-table">
+          <thead>
+            <tr><th>Nom</th><th class="num">Offres</th><th class="num">Part</th></tr>
+          </thead>
+          <tbody>
+            {% for item in top_competences %}
+            <tr>
+              <td>{{ item.nom }}</td>
+              <td class="num">{{ item.count }}</td>
+              <td class="num">{{ item.pourcentage }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% else %}
+        <p class="empty-state">Aucune compétence disponible.</p>
+        {% endif %}
+      </div>
+      <div class="subpanel">
+        <div class="subpanel__head">
+          <h3>Intitulés de poste</h3>
+          <span>Top {{ top_n }}</span>
+        </div>
+        {% if top_metiers %}
+        <table class="ranking-table">
+          <thead>
+            <tr><th>Nom</th><th class="num">Offres</th><th class="num">Part</th></tr>
+          </thead>
+          <tbody>
+            {% for item in top_metiers %}
+            <tr>
+              <td>{{ item.nom }}</td>
+              <td class="num">{{ item.count }}</td>
+              <td class="num">{{ item.pourcentage }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% else %}
+        <p class="empty-state">Aucun intitulé de poste disponible.</p>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="card panel">
+    <div class="panel__head">
+      <div>
+        <p class="eyebrow">Résultats</p>
+        <h2>Offres associées</h2>
+      </div>
+      <p class="panel__note">{{ paged_offers|length }} affichées sur {{ nombre_offres }}</p>
+    </div>
+
+    {% if paged_offers %}
+    <div class="offer-list">
+      {% for offre in paged_offers %}
+      <article class="offer-card">
+        <div class="offer-card__title-row">
+          <div>
+            <h3>{{ offre.intitule }}</h3>
+            <p class="muted">{{ offre.entreprise or 'Entreprise non renseignée' }}</p>
+          </div>
+          {% if offre.match_score is defined and offre.match_score is not none %}
+          <div class="match-badge">
+            <span>Correspondance</span>
+            <strong>{{ offre.match_score }}%</strong>
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="offer-meta">
+          <span>{{ offre.territoire or 'Territoire non renseigné' }}</span>
+          <span>{{ offre.contrat or 'Contrat non renseigné' }}</span>
+          <span>{{ offre.date or 'Date non disponible' }}</span>
+        </div>
+
+        {% if offre.competences %}
+        <div class="chips">
+          {% for skill in offre.competences %}
+          <span class="chip">{{ skill }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if offre.matching_skills %}
+        <p class="offer-note">Compétences communes: {{ offre.matching_skills|join(', ') }}</p>
+        {% endif %}
+
+        {% if offre.url %}
+        <p><a class="button button--secondary" href="{{ offre.url }}" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="pagination">
+      <p class="muted">Page {{ page }} / {{ total_pages if total_pages else 1 }} · {{ per_page }} offres par page</p>
+      <div class="pagination__actions">
+        {% if prev_url %}
+        <a class="button button--secondary" href="{{ prev_url }}">Précédent</a>
+        {% endif %}
+        {% if next_url %}
+        <a class="button button--secondary" href="{{ next_url }}">Suivant</a>
+        {% endif %}
+      </div>
+    </div>
+    {% else %}
+    <p class="empty-state">Aucune offre ne correspond à cette recherche.</p>
+    {% endif %}
+  </section>
+</section>
+{% endblock %}

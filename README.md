@@ -24,6 +24,9 @@ job_offer_extractor/
 │   ├── comparison_web_app.py # France Travail / Indeed comparison dashboard
 │   ├── extractors.py         # Rule-based post-processing
 │   ├── predict.py            # Prediction API & CLI
+│   ├── cv_dataset_core.py    # Synthetic CV generation / export / validation core
+│   ├── cv_dataset_generator.py # Synthetic CV dataset CLI
+│   ├── validate_cv_dataset.py # Synthetic CV dataset validator CLI
 │   └── evaluate.py           # Evaluation & reporting
 ├── README.md
 └── requirements.txt
@@ -119,6 +122,99 @@ The command creates:
 - `data/processed/contrat_long.csv`
 - `data/processed/metier_context_t3_2025.csv`
 
+
+## Génération du dataset de CV synthétiques
+
+Cette fonctionnalité crée un corpus de CV français entièrement synthétiques, avec annotations NER, pour préparer l'entraînement d'un futur modèle d'extraction.
+
+### Installation des dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+### Génération simple
+
+```bash
+python -m src.cv_dataset_generator
+```
+
+### Génération de 5000 CV
+
+```bash
+python -m src.cv_dataset_generator \
+  --count 5000 \
+  --output data/cv/synthetic_cv_dataset.jsonl \
+  --seed 42
+```
+
+### Seed
+
+L'option `--seed` rend le dataset reproductible à l'identique. Deux exécutions avec les mêmes paramètres produisent les mêmes CV, dans le même ordre.
+
+### Templates
+
+Les templates disponibles sont `classic`, `compact`, `technical`, `academic`, `creative`, `minimal` et `noisy_pdf`.
+
+### Niveaux de bruit
+
+L'option `--noise-level` accepte `0`, `1`, `2` et `3`.
+
+- `0` : texte propre
+- `1` : bruit léger
+- `2` : bruit moyen
+- `3` : bruit important, avec défauts proches d'une extraction PDF imparfaite
+
+### Validation
+
+```bash
+python -m src.validate_cv_dataset \
+  --input data/cv/synthetic_cv_dataset.jsonl
+```
+
+### Exports spaCy
+
+```bash
+python -m src.cv_dataset_generator \
+  --count 100 \
+  --format spacy \
+  --output data/cv/test_spacy.jsonl
+```
+
+Le même dataset JSONL principal peut aussi être converti vers le format spaCy via la fonction `convert_jsonl_dataset_to_spacy`.
+
+### Exports Hugging Face
+
+```bash
+python -m src.cv_dataset_generator \
+  --count 100 \
+  --format huggingface \
+  --output data/cv/test_huggingface.jsonl
+```
+
+Le format Hugging Face exporte des tokens simples et des tags BIO de même longueur.
+
+### Découpage train/validation/test
+
+```bash
+python -m src.cv_dataset_generator \
+  --count 1000 \
+  --split \
+  --train-ratio 0.8 \
+  --validation-ratio 0.1 \
+  --test-ratio 0.1
+```
+
+Le découpage écrit `data/cv/train.jsonl`, `data/cv/validation.jsonl` et `data/cv/test.jsonl` dans le dossier cible dérivé de `--output`.
+
+### Lancement des tests
+
+```bash
+pytest -q
+```
+
+Avertissement: les CV synthétiques ne doivent pas être utilisés seuls pour évaluer la qualité réelle du modèle. Une évaluation finale doit être réalisée sur un jeu de vrais CV anonymisés et annotés manuellement.
+
 ## License
 
 Copyright Anton Langhoff <antonlanghoff@gmail.com>  
@@ -194,6 +290,10 @@ python -m src.web_app
 Par défaut, l'application écoute sur `http://127.0.0.1:8000`.
 Si ce port est déjà pris, tu peux lancer un autre port avec `python -m src.web_app --port 8002`.
 
+Lien direct vers la page d'accueil de recherche:
+
+- [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
 
 ## Ingestion API
 
@@ -246,3 +346,131 @@ python scripts/compare_sources.py \
   --periode 30 \
   --output data/processed/comparison_ft_indeed.json
 ```
+
+
+## Espace utilisateur
+
+TrendRadar IA inclut un espace privé pour gérer un profil professionnel, importer un CV et recevoir un classement déterministe des offres. Il est intégré aux deux applications Flask existantes, sans point d'entrée parallèle.
+
+Routes principales:
+
+- `/register`
+- `/login`
+- `/logout`
+- `/profile`
+- `/profile/skills`
+- `/profile/diplomas`
+- `/profile/experiences`
+- `/profile/cv`
+- `/profile/cv/validate`
+- `/mes-offres`
+- `/mes-offres/<offer_id>`
+- `/dashboard-utilisateur`
+
+### Installation
+
+Les dépendances utilisateur et CV sont déclarées dans `requirements.txt`:
+
+- `Flask-Login`
+- `Flask-WTF`
+- `Flask-SQLAlchemy`
+- `Flask-Migrate`
+- `pypdf`
+- `python-docx`
+
+Le portail actuel utilise SQLite et les sessions Flask directement, car le projet n'avait pas encore d'ORM ni d'infrastructure de migration active. `pypdf` et `python-docx` sont utilisés automatiquement lorsqu'ils sont installés; un parseur de repli garde les tests locaux indépendants de ces paquets.
+
+```bash
+pip install -r requirements.txt
+```
+
+### Base et migrations
+
+Par défaut, la base SQLite est créée dans `instance/trendradar.sqlite` au démarrage de l'application.
+
+Pour connecter une base utilisateurs locale: 
+
+1. Copier `.env.example` vers `.env`.
+2. Définir au minimum `SECRET_KEY`, `DATABASE_PATH` et `UPLOAD_FOLDER`.
+3. Créer le dossier de stockage si besoin: `mkdir -p instance/uploads`.
+4. Lancer une fois l'application pour créer le schéma: `python -m src.web_app`.
+5. Si une base existait déjà avant l'ajout du portail, appliquer la migration SQL: 
+
+```bash
+sqlite3 instance/trendradar.sqlite < migrations/001_user_portal.sql
+```
+
+6. Redémarrer l'application et ouvrir `/register` pour créer le premier compte.
+
+Initialisation automatique:
+
+```bash
+python -m src.web_app
+```
+
+Migration SQL versionnée disponible:
+
+```bash
+sqlite3 instance/trendradar.sqlite < migrations/001_user_portal.sql
+```
+
+La migration ajoute `contract_preference` pour les bases créées avant l'ajout du champ. Le helper `init_db()` applique aussi cette colonne de manière idempotente au démarrage.
+
+### CV et uploads
+
+Les CV sont stockés hors du dossier public dans `instance/uploads/` par défaut. Le chemin système n'est pas exposé dans l'interface.
+
+Formats acceptés:
+
+- PDF textuels
+- DOCX
+
+Taille maximale recommandée:
+
+- 8 Mo par défaut via `MAX_CONTENT_LENGTH`
+
+Le fichier importé passe d'abord par `/profile/cv/validate`. Les données détectées ne sont enregistrées qu'après confirmation utilisateur.
+
+### Matching
+
+Le score reste explicable et déterministe:
+
+- compétences: 50 %
+- métier ou intitulé: 15 %
+- expérience: 10 %
+- diplôme: 5 %
+- localisation: 10 %
+- contrat: 5 %
+- télétravail: 5 %
+
+Les champs absents dans une offre sont neutralisés plutôt que pénalisés. Les recommandations affichent le score global, les sous-scores, les compétences communes, les compétences manquantes, la source et l'URL originale lorsqu'elle existe.
+
+### Lancement
+
+```bash
+python -m src.web_app
+python -m src.comparison_web_app
+```
+
+Les deux applications partagent le même portail privé.
+
+### Tests
+
+```bash
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+### Configuration locale
+
+Le fichier `.env.example` documente les variables utiles:
+
+- `SECRET_KEY`
+- `DATABASE_PATH`
+- `UPLOAD_FOLDER`
+- `MAX_CONTENT_LENGTH`
+- `FRANCE_TRAVAIL_CLIENT_ID`
+- `FRANCE_TRAVAIL_CLIENT_SECRET`
+
+### Données personnelles
+
+Les profils et CV contiennent des données personnelles. Ne commite pas `instance/`, `instance/uploads/` ni une base SQLite locale. Le dossier d'upload et la base locale sont exclus par `.gitignore`.

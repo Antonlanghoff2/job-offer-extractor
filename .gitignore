@@ -64,6 +64,8 @@ db.sqlite3-journal
 # Flask stuff:
 instance/
 .webassets-cache
+instance/uploads/
+instance/trendradar.sqlite
 
 # Scrapy stuff:
 .scrapy
@@ -216,4 +218,7 @@ marimo/_lsp/
 __marimo__/
 
 # Streamlit
+
+# Synthetic CV datasets
+data/cv/
 .streamlit/secrets.toml

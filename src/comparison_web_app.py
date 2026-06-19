@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import re
 import unicodedata
 from datetime import date, datetime
@@ -20,6 +21,7 @@ from src.offer_normalization import normalize_offers
 from src.source_comparison import compare_sources
 from src.web_app import filter_offers as filter_france_travail_offers
 from src.web_app import load_raw_offers, normalize_offer
+from src.user_portal import register_user_portal
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -756,8 +758,16 @@ HTML_TEMPLATE = """
 """
 
 
-def create_app() -> Flask:
+def create_app(config_overrides: dict[str, Any] | None = None) -> Flask:
     app = Flask(__name__)
+    if config_overrides:
+        app.config.update(config_overrides)
+    app.config["SECRET_KEY"] = app.config.get("SECRET_KEY") or os.getenv("SECRET_KEY", "trendradar-dev-secret")
+    app.secret_key = app.config["SECRET_KEY"]
+    app.config.setdefault("MAX_CONTENT_LENGTH", 8 * 1024 * 1024)
+    app.config.setdefault("SESSION_COOKIE_HTTPONLY", True)
+    app.config.setdefault("SESSION_COOKIE_SAMESITE", "Lax")
+    register_user_portal(app)
 
     @app.get("/")
     def index():

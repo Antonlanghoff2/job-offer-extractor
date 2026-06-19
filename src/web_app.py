@@ -8,17 +8,25 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import re
 import unicodedata
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 
-from flask import Flask, jsonify, render_template_string, request
+from flask import Flask, flash, jsonify, render_template, request
 
 from src.france_travail_client import iter_search_offres
 from src.offer_normalization import normalize_france_travail_offer
+from src.services.matching_service import compute_match
+from src.services.offer_repository import (
+    build_territory_trends_context,
+    get_available_territories,
+    load_normalized_offers,
+)
 from src.trend_aggregation import aggregate_trends
+from src.user_portal import _current_profile_snapshot, _current_user_id, register_user_portal
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -31,9 +39,6 @@ DEFAULT_PORT = 8000
 DEFAULT_HOST = "127.0.0.1"
 TERRITOIRE_TYPE_OPTIONS = (
     ("all", "Tous les territoires"),
-    ("commune", "Commune"),
-    ("departement", "Département"),
-    ("region", "Région"),
 )
 
 
@@ -312,6 +317,10 @@ def build_live_state(
 ) -> dict[str, Any]:
     errors: list[str] = []
     search_filters, territoire_label, normalized_territoire = _build_search_arguments(territoire_type, territoire, distance)
+    territory_offers, territory_error = load_normalized_offers()
+    territory_options = get_available_territories(territory_offers)
+    if territory_error:
+        errors.append(territory_error)
 
     if not mots_cles.strip():
         return {
@@ -324,7 +333,7 @@ def build_live_state(
             "periode_jours": periode_jours,
             "top_n": top_n,
             "territoire_label": territoire_label,
-            "error_message": "Veuillez saisir des mots-clés pour lancer la recherche.",
+            "error_message": " ".join(errors) if errors else "Veuillez saisir des mots-clés pour lancer la recherche.",
             "nombre_offres": 0,
             "offres": [],
             "offers": [],
@@ -337,7 +346,7 @@ def build_live_state(
             "trends": {"territoire": normalized_territoire or None, "periode_jours": periode_jours, "nombre_offres": 0, "competences": {}, "metiers": {}, "niveau": {}, "contrats": {}, "offres": [], "offers": []},
             "market_context": load_market_context_rows(),
             "market_context_headers": [],
-            "territoire_options": [],
+            "territoire_options": territory_options,
             "trend_competence_items": [],
             "trend_contract_items": [],
             "trend_niveau_items": [],
@@ -382,7 +391,7 @@ def build_live_state(
             "trends": {"territoire": normalized_territoire or None, "periode_jours": periode_jours, "nombre_offres": 0, "competences": {}, "metiers": {}, "niveau": {}, "contrats": {}, "offres": [], "offers": []},
             "market_context": load_market_context_rows(),
             "market_context_headers": [],
-            "territoire_options": [],
+            "territoire_options": territory_options,
             "trend_competence_items": [],
             "trend_contract_items": [],
             "trend_niveau_items": [],
@@ -397,14 +406,36 @@ def build_live_state(
     end_index = start_index + per_page
     paged_offers = trends.get("offres", [])[start_index:end_index] if total_offers else []
 
-    territory_options = sorted(
-        {
-            offer["territoire"]
-            for offer in (normalize_offer(raw) for raw in load_raw_offers())
-            if offer.get("territoire")
-        },
-        key=lambda value: value.lower(),
-    )
+    normalized_by_id = {
+        offer.get("id"): offer
+        for offer in normalized_offers
+        if offer.get("id")
+    }
+    current_profile = None
+    try:
+        user_id = _current_user_id()
+        if user_id:
+            current_profile = _current_profile_snapshot(user_id)
+    except Exception:
+        current_profile = None
+
+    enriched_offers: list[dict[str, Any]] = []
+    for offer in paged_offers:
+        enriched = dict(offer)
+        source_offer = normalized_by_id.get(str(offer.get("id") or offer.get("id_offre") or ""))
+        if source_offer:
+            enriched["competences"] = source_offer.get("competences", [])
+            enriched["ville"] = source_offer.get("ville", "")
+            enriched["code_postal"] = source_offer.get("code_postal", "")
+        if current_profile and source_offer:
+            try:
+                match = compute_match(current_profile, source_offer)
+                enriched["match_score"] = round(float(match.get("global_score") or 0.0), 2)
+                enriched["matching_skills"] = match.get("matching_skills", [])
+            except Exception:
+                enriched["match_score"] = None
+                enriched["matching_skills"] = []
+        enriched_offers.append(enriched)
 
     ranking_source = trends
     total_for_rankings = total_offers
@@ -428,7 +459,7 @@ def build_live_state(
         "nombre_offres": total_offers,
         "offres": trends.get("offres", []),
         "offers": trends.get("offres", []),
-        "paged_offers": paged_offers,
+        "paged_offers": enriched_offers,
         "total_pages": total_pages,
         "page_size": per_page,
         "top_metiers": build_ranking_entries(ranking_source.get("metiers"), total_for_rankings, top_limit),
@@ -637,6 +668,13 @@ HTML_TEMPLATE = """
   <header>
     <h1>TrendRadar IA</h1>
     <p>Recherche territoriale France Travail avec statistiques, tendances et liste des offres associées.</p>
+    <nav class="topnav" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;">
+      <a href="/profile" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Mon profil</a>
+      <a href="/profile/cv" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Mon CV</a>
+      <a href="/mes-offres" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Mes offres</a>
+      <a href="/dashboard-utilisateur" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Mon tableau de bord</a>
+      <a href="/logout" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Déconnexion</a>
+    </nav>
   </header>
   <main class="shell">
     <form class="filters" method="get" action="{{ url_for('index') }}">
@@ -940,22 +978,34 @@ def _build_render_context_from_request() -> dict[str, Any]:
     return state
 
 
+def _build_territory_trends_context_from_request() -> dict[str, Any]:
+    territory = (request.args.get("territoire") or "").strip()
+    offers, error_message = load_normalized_offers()
+    context = build_territory_trends_context(offers, territory or None, limit=DEFAULT_TOP_N)
+    territory_options = get_available_territories(offers)
+    context.update(
+        {
+            "page_title": "TrendRadar IA - Tendances par territoire",
+            "territory_options": territory_options,
+            "error_message": error_message or "",
+        }
+    )
+    return context
+
+
 def build_state(territoire: str | None, periode_jours: int, top_n: int = DEFAULT_TOP_N) -> dict[str, Any]:
-    raw_offers = load_raw_offers()
-    offers = filter_offers(raw_offers, territoire, periode_jours)
+    normalized_offers, _error_message = load_normalized_offers()
+    offers = filter_offers(normalized_offers, territoire, periode_jours)
     trends = aggregate_trends(offers, territoire=territoire, periode_jours=periode_jours)
     market_context = load_market_context_rows()
-    territoire_options = sorted(
-        {offer["territoire"] for offer in (normalize_offer(raw) for raw in raw_offers) if offer.get("territoire")},
-        key=lambda value: value.lower(),
-    )
+    territoire_options = get_available_territories(normalized_offers)
     total_offers = int(trends.get("nombre_offres") or len(offers))
     top_limit = max(top_n, 1)
     return {
         "territoire": territoire,
         "periode_jours": periode_jours,
         "top_n": top_limit,
-        "nombre_offres_brutes": len(raw_offers),
+        "nombre_offres_brutes": len(normalized_offers),
         "nombre_offres_filtrees": len(offers),
         "trends": trends,
         "ranking_source": trends,
@@ -967,13 +1017,35 @@ def build_state(territoire: str | None, periode_jours: int, top_n: int = DEFAULT
     }
 
 
-def create_app() -> Flask:
-    app = Flask(__name__)
+def create_app(config_overrides: dict[str, Any] | None = None) -> Flask:
+    app = Flask(
+        __name__,
+        template_folder=str(PROJECT_ROOT / "templates"),
+        static_folder=str(PROJECT_ROOT / "static"),
+    )
+    if config_overrides:
+        app.config.update(config_overrides)
+    app.config["SECRET_KEY"] = app.config.get("SECRET_KEY") or os.getenv("SECRET_KEY", "trendradar-dev-secret")
+    app.secret_key = app.config["SECRET_KEY"]
+    app.config.setdefault("MAX_CONTENT_LENGTH", 8 * 1024 * 1024)
+    app.config.setdefault("SESSION_COOKIE_HTTPONLY", True)
+    app.config.setdefault("SESSION_COOKIE_SAMESITE", "Lax")
+    register_user_portal(app)
 
     @app.get("/")
     def index():
         context = _build_render_context_from_request()
-        return render_template_string(HTML_TEMPLATE, **context)
+        context["page_title"] = "TrendRadar IA - Recherche d'offres d'emploi"
+        context["active_page"] = "search"
+        context["body_class"] = "page-search"
+        return render_template("search.html", **context)
+
+    @app.get("/tendances")
+    def territory_trends():
+        context = _build_territory_trends_context_from_request()
+        context["active_page"] = "territory_trends"
+        context["body_class"] = "page-trends"
+        return render_template("territory_trends.html", **context)
 
     @app.get("/health")
     def health():

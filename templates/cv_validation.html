@@ -1,0 +1,198 @@
+# Copyright Anton Langhoff <anton@langhoff.fr>
+# SPDX-License-Identifier: MIT
+
+{% extends "base.html" %}
+
+{% macro text_field(name, value, label, input_type='text', placeholder='') -%}
+  <div class="field">
+    <label>{{ label }}</label>
+    {% if input_type == 'textarea' %}
+    <textarea name="{{ name }}" placeholder="{{ placeholder }}">{{ value or '' }}</textarea>
+    {% else %}
+    <input type="{{ input_type }}" name="{{ name }}" value="{{ value or '' }}" placeholder="{{ placeholder }}">
+    {% endif %}
+  </div>
+{%- endmacro %}
+
+{% macro skill_card(item, index) -%}
+<article class="cv-item" data-item>
+  <div class="cv-item__header">
+    <div>
+      <h3>Compétence {{ index + 1 }}</h3>
+      <p class="muted">{{ item.texte_source or 'Issue de l’extraction automatique' }}</p>
+    </div>
+    <button type="button" class="cv-item__remove js-remove-item">Supprimer</button>
+  </div>
+  <div class="cv-item__grid">
+    {{ text_field('competences[%d][nom]' % index, item.nom, 'Nom') }}
+    {{ text_field('competences[%d][categorie]' % index, item.categorie, 'Catégorie') }}
+    {{ text_field('competences[%d][source]' % index, item.source or 'explicite', 'Source') }}
+    {{ text_field('competences[%d][confiance]' % index, item.confiance, 'Confiance', 'number') }}
+    <div class="field cv-item__wide">
+      <label>Texte source</label>
+      <textarea name="competences[%d][texte_source]">{{ item.texte_source or '' }}</textarea>
+    </div>
+    {{ text_field('competences[%d][formation_source]' % index, item.formation_source, 'Formation source') }}
+  </div>
+</article>
+{%- endmacro %}
+
+{% macro formation_card(item, index) -%}
+<article class="cv-item" data-item>
+  <div class="cv-item__header">
+    <div>
+      <h3>Formation {{ index + 1 }}</h3>
+      <p class="muted">{{ item.texte_source or 'Issue de l’extraction automatique' }}</p>
+    </div>
+    <button type="button" class="cv-item__remove js-remove-item">Supprimer</button>
+  </div>
+  <div class="cv-item__grid">
+    {{ text_field('formations[%d][intitule]' % index, item.intitule, 'Intitulé') }}
+    {{ text_field('formations[%d][etablissement]' % index, item.etablissement, 'Établissement') }}
+    {{ text_field('formations[%d][niveau]' % index, item.niveau, 'Niveau') }}
+    {{ text_field('formations[%d][date_debut]' % index, item.date_debut, 'Date de début') }}
+    {{ text_field('formations[%d][date_fin]' % index, item.date_fin, 'Date de fin') }}
+    {{ text_field('formations[%d][annee]' % index, item.annee, 'Année', 'number') }}
+    <div class="field cv-item__wide">
+      <label>Description</label>
+      <textarea name="formations[%d][description]">{{ item.description or '' }}</textarea>
+    </div>
+    <div class="field cv-item__wide">
+      <label>Texte source</label>
+      <textarea name="formations[%d][texte_source]">{{ item.texte_source or '' }}</textarea>
+    </div>
+    {{ text_field('formations[%d][confiance]' % index, item.confiance, 'Confiance', 'number') }}
+  </div>
+</article>
+{%- endmacro %}
+
+{% macro experience_card(item, index) -%}
+<article class="cv-item" data-item>
+  <div class="cv-item__header">
+    <div>
+      <h3>Expérience {{ index + 1 }}</h3>
+      <p class="muted">{{ item.texte_source or 'Issue de l’extraction automatique' }}</p>
+    </div>
+    <button type="button" class="cv-item__remove js-remove-item">Supprimer</button>
+  </div>
+  <div class="cv-item__grid">
+    {{ text_field('experiences_professionnelles[%d][poste]' % index, item.poste, 'Poste') }}
+    {{ text_field('experiences_professionnelles[%d][entreprise]' % index, item.entreprise, 'Entreprise') }}
+    {{ text_field('experiences_professionnelles[%d][lieu]' % index, item.lieu, 'Lieu') }}
+    {{ text_field('experiences_professionnelles[%d][date_debut]' % index, item.date_debut, 'Date de début') }}
+    {{ text_field('experiences_professionnelles[%d][date_fin]' % index, item.date_fin, 'Date de fin') }}
+    {{ text_field('experiences_professionnelles[%d][confiance]' % index, item.confiance, 'Confiance', 'number') }}
+    <div class="field cv-item__wide">
+      <label>Compétences associées</label>
+      <input type="text" name="experiences_professionnelles[%d][competences_associees]" value="{{ item.competences_associees|join(', ') if item.competences_associees else '' }}" placeholder="Python, SQL, Docker">
+    </div>
+    <div class="field cv-item__wide">
+      <label>Description</label>
+      <textarea name="experiences_professionnelles[%d][description]">{{ item.description or '' }}</textarea>
+    </div>
+    <div class="field cv-item__wide">
+      <label>Texte source</label>
+      <textarea name="experiences_professionnelles[%d][texte_source]">{{ item.texte_source or '' }}</textarea>
+    </div>
+  </div>
+</article>
+{%- endmacro %}
+
+{% block content %}
+<section class="card cv-validation">
+  <div class="cv-validation__hero">
+    <div>
+      <p class="eyebrow">Validation du CV</p>
+      <h1>Valider les informations extraites</h1>
+      <p class="hero__subtitle">Vérifie les formations, compétences et expériences avant l’enregistrement. Tu peux ajouter ou supprimer des éléments sans recharger la page.</p>
+    </div>
+    <div class="cv-validation__actions">
+      <a class="button button--secondary" href="{{ url_for('user_portal.upload_cv') }}">Retour au CV</a>
+      <button class="button button--primary" form="cv-validation-form" type="submit">Valider et enregistrer</button>
+    </div>
+  </div>
+
+  {% if message %}
+  <div class="alert alert--error">{{ message }}</div>
+  {% endif %}
+
+  {% if warnings %}
+  <div class="cv-warnings">
+    {% for warning in warnings %}
+    <div class="alert">{{ warning }}</div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="cv-summary-grid">
+    <article class="stat card"><p class="stat__label">Formations détectées</p><p class="stat__value">{{ formations|length }}</p></article>
+    <article class="stat card"><p class="stat__label">Compétences détectées</p><p class="stat__value">{{ competences|length }}</p></article>
+    <article class="stat card"><p class="stat__label">Expériences détectées</p><p class="stat__value">{{ experiences_professionnelles|length }}</p></article>
+  </div>
+
+  <form id="cv-validation-form" method="post" class="cv-form">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <textarea name="texte_brut" hidden>{{ texte_brut or '' }}</textarea>
+
+    <section class="cv-section" id="skills-section" data-collection="competences" data-template="skill-template">
+      <div class="section-header">
+        <div>
+          <h2>Compétences</h2>
+          <p class="muted">Compétences explicites ou déduites que tu peux ajuster.</p>
+        </div>
+        <button type="button" class="button button--secondary js-add-item" data-target="competences">+ Ajouter une compétence</button>
+      </div>
+      <div id="skills-list" class="cv-list">
+        {% for item in competences %}{{ skill_card(item, loop.index0) }}{% endfor %}
+      </div>
+    </section>
+
+    <section class="cv-section" id="education-section" data-collection="formations" data-template="formation-template">
+      <div class="section-header">
+        <div>
+          <h2>Formations</h2>
+          <p class="muted">Les blocs de formation sont regroupés par contexte, pas ligne par ligne.</p>
+        </div>
+        <button type="button" class="button button--secondary js-add-item" data-target="formations">+ Ajouter une formation</button>
+      </div>
+      <div id="education-list" class="cv-list">
+        {% for item in formations %}{{ formation_card(item, loop.index0) }}{% endfor %}
+      </div>
+    </section>
+
+    <section class="cv-section" id="experience-section" data-collection="experiences_professionnelles" data-template="experience-template">
+      <div class="section-header">
+        <div>
+          <h2>Expériences professionnelles</h2>
+          <p class="muted">Chaque bloc peut contenir un poste, une entreprise, des dates et plusieurs missions.</p>
+        </div>
+        <button type="button" class="button button--secondary js-add-item" data-target="experiences_professionnelles">+ Ajouter une expérience</button>
+      </div>
+      <div id="experience-list" class="cv-list">
+        {% for item in experiences_professionnelles %}{{ experience_card(item, loop.index0) }}{% endfor %}
+      </div>
+    </section>
+
+    <section class="cv-raw">
+      <details>
+        <summary>Afficher le texte brut extrait</summary>
+        <pre>{{ texte_brut or '' }}</pre>
+      </details>
+    </section>
+  </form>
+</section>
+
+<template id="skill-template">
+  {{ skill_card({"nom": "", "categorie": "", "source": "explicite", "texte_source": "", "confiance": 0.0, "formation_source": ""}, 0) }}
+</template>
+<template id="formation-template">
+  {{ formation_card({"intitule": "", "etablissement": "", "niveau": "", "date_debut": "", "date_fin": "", "annee": "", "description": "", "texte_source": "", "confiance": 0.0}, 0) }}
+</template>
+<template id="experience-template">
+  {{ experience_card({"poste": "", "entreprise": "", "lieu": "", "date_debut": "", "date_fin": "", "description": "", "competences_associees": [], "texte_source": "", "confiance": 0.0}, 0) }}
+</template>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/cv_validation.js') }}" defer></script>
+{% endblock %}
