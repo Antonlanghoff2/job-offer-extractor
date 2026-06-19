@@ -11,7 +11,7 @@ from .normalizer import split_clean_lines
 from .section_detector import SectionKind, detect_section
 
 
-@dataclass(slots=True)
+@dataclass
 class CVBlock:
     section: SectionKind = "other"
     lines: list[str] = field(default_factory=list)

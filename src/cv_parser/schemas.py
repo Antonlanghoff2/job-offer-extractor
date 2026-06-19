@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 from typing import Any
 
 
-@dataclass(slots=True)
+@dataclass
 class Formation:
     intitule: str
     etablissement: str | None = None
@@ -35,7 +35,7 @@ class Formation:
         }
 
 
-@dataclass(slots=True)
+@dataclass
 class Competence:
     nom: str
     categorie: str | None = None
@@ -57,7 +57,7 @@ class Competence:
         return payload
 
 
-@dataclass(slots=True)
+@dataclass
 class ParsedCV:
     text: str
     structured: dict[str, Any]

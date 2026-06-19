@@ -3,6 +3,8 @@
 Extract structured information from raw French job-offer texts using a lightweight
 machine-learning pipeline (scikit-learn). No LLM required.
 
+Supported Python version: **Python >= 3.8**.
+
 ## Project structure
 
 ```

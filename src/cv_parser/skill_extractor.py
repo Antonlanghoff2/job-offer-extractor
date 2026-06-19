@@ -14,7 +14,7 @@ from .confidence import skill_confidence
 from .normalizer import collapse_spaces, normalize_text
 
 
-@dataclass(slots=True)
+@dataclass
 class SkillMatch:
     nom: str
     categorie: str | None
