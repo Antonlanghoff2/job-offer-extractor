@@ -82,6 +82,17 @@ class UserPortalTest(unittest.TestCase):
         body = client.get(path).get_data(as_text=True)
         return _csrf_from_body(body)
 
+    def test_login_page_uses_shared_navigation(self) -> None:
+        response = self.client.get("/login")
+        body = response.get_data(as_text=True)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Recherche d'offres", body)
+        self.assertIn("Tendances par territoire", body)
+        self.assertIn("Mon compte", body)
+        self.assertIn("Mon profil", body)
+        self.assertIn("Déconnexion", body)
+
     def test_register_and_access_protection(self) -> None:
         response = self.client.get("/profile")
         self.assertEqual(response.status_code, 302)

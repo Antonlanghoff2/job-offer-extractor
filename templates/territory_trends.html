@@ -1,0 +1,109 @@
+# Copyright Anton Langhoff <anton@langhoff.fr>
+# SPDX-License-Identifier: MIT
+
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero card">
+  <div class="hero__content">
+    <p class="eyebrow">Tendances par territoire</p>
+    <h1>Les 10 compétences les plus recherchées</h1>
+    <p class="hero__subtitle">Analyse des offres disponibles pour un territoire sélectionné à partir des données déjà importées dans le projet.</p>
+  </div>
+</section>
+
+<section class="card search-card">
+  <form class="search-form search-form--territory" method="get" action="{{ url_for('territory_trends') }}">
+    <div class="field field--wide">
+      <label for="territoire">Territoire</label>
+      <input id="territoire" name="territoire" list="territoire-list" value="{{ territory_value }}" placeholder="Lyon, 69, 84, Tous les territoires">
+      <datalist id="territoire-list">
+        <option value="Tous les territoires"></option>
+        {% for option in territory_options %}
+        <option value="{{ option }}"></option>
+        {% endfor %}
+      </datalist>
+    </div>
+    <div class="field field--actions">
+      <label>&nbsp;</label>
+      <button type="submit" class="button button--primary">Analyser</button>
+    </div>
+  </form>
+</section>
+
+<section class="card alert">
+  <div class="summary-line">
+    <span><strong>Territoire sélectionné :</strong> {{ selected_territory }}</span>
+    <span><strong>Offres analysées :</strong> {{ total_offers }}</span>
+    {% if period_label %}
+    <span><strong>Période :</strong> {{ period_label }}</span>
+    {% endif %}
+  </div>
+</section>
+
+{% if error_message %}
+<section class="card alert alert--error">{{ error_message }}</section>
+{% endif %}
+
+{% if not has_data %}
+<section class="card empty-block">
+  <p>Aucune compétence n’a été détectée pour ce territoire.</p>
+  <p><a class="button button--secondary" href="{{ url_for('territory_trends') }}">Tous les territoires</a></p>
+</section>
+{% else %}
+<section class="card panel">
+  <div class="panel__head">
+    <div>
+      <p class="eyebrow">Synthèse</p>
+      <h2>Top 10 compétences</h2>
+    </div>
+    <p class="panel__note">{{ selected_territory }}</p>
+  </div>
+
+  <div class="trend-layout">
+    <div class="trend-chart card--soft">
+      {% for item in top_skills %}
+      <div class="trend-bar-row">
+        <div class="trend-bar-row__head">
+          <div class="trend-rank">{{ item.rank }}</div>
+          <div class="trend-skill">{{ item.skill }}</div>
+          <div class="trend-count">{{ item.count }} offres</div>
+          <div class="trend-percent">{{ '%.1f'|format(item.percentage)|replace('.', ',') }} %</div>
+        </div>
+        <div class="trend-track" aria-hidden="true">
+          <span class="trend-fill" style="width: {{ item.percentage }}%"></span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="table-wrap">
+      <table class="ranking-table ranking-table--wide">
+        <thead>
+          <tr>
+            <th>Rang</th>
+            <th>Compétence</th>
+            <th class="num">Nombre d'offres</th>
+            <th class="num">Part des offres</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in top_skills %}
+          <tr>
+            <td>{{ item.rank }}</td>
+            <td>{{ item.skill }}</td>
+            <td class="num">{{ item.count }}</td>
+            <td class="num">{{ '%.1f'|format(item.percentage)|replace('.', ',') }} %</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="empty-state">
+    <a href="{{ url_for('territory_trends', territoire='Tous les territoires') }}">Revenir à « Tous les territoires »</a>
+  </p>
+</section>
+{% endif %}
+{% endblock %}

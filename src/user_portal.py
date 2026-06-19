@@ -75,48 +75,142 @@ BASE_TEMPLATE = """
   <title>{{ title }} - TrendRadar IA</title>
   <style>
     :root {
-      --bg: #f4f7fb;
+      --bg: #eef3f8;
       --surface: #ffffff;
-      --surface-alt: #eef4fb;
-      --text: #132033;
-      --muted: #5a6a7f;
-      --line: #d7e0ea;
-      --accent: #1866d1;
-      --accent-2: #0f8b8d;
+      --surface-soft: #f5f8fc;
+      --text: #142033;
+      --muted: #5b6b80;
+      --line: #d8e2ec;
+      --accent: #1d63d8;
+      --accent-2: #0d8f8a;
       --danger: #bb3e3e;
       --success: #13795b;
-      --shadow: 0 12px 28px rgba(19, 32, 51, 0.08);
+      --shadow: 0 14px 34px rgba(20, 32, 51, 0.09);
     }
     * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
     body {
-      margin: 0;
-      background: linear-gradient(180deg, #eef4fb 0%, #f7f9fc 100%);
+      background: linear-gradient(180deg, #edf3f9 0%, #f7f9fc 100%);
       color: var(--text);
       font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     }
-    header {
-      padding: 20px 24px 16px;
-      background: linear-gradient(135deg, #123055, #184f8f 65%, #176a9b);
+    a { color: inherit; }
+    .site-header {
+      background: linear-gradient(135deg, #102843 0%, #1b4d84 60%, #16667f 100%);
       color: white;
+      box-shadow: 0 10px 24px rgba(16, 40, 67, 0.18);
     }
-    header h1 { margin: 0; font-size: 28px; line-height: 1.15; }
-    header p { margin: 8px 0 0; color: rgba(255, 255, 255, 0.82); max-width: 940px; }
-    .topnav {
+    .site-header__inner {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 20px 20px 16px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
     }
-    .topnav a {
+    .brand__link {
       color: white;
       text-decoration: none;
-      border: 1px solid rgba(255,255,255,0.28);
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 14px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
     }
-    .shell { padding: 18px 22px 28px; }
+    .brand__subtitle {
+      margin: 4px 0 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.95rem;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .main-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .main-nav__link {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+    .main-nav__link:hover,
+    .main-nav__link.active {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+    .account-menu {
+      position: relative;
+    }
+    .account-menu > summary {
+      list-style: none;
+    }
+    .account-menu > summary::-webkit-details-marker {
+      display: none;
+    }
+    .account-menu__summary {
+      cursor: pointer;
+      user-select: none;
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .account-menu__summary::after {
+      content: '▾';
+      display: inline-block;
+      margin-left: 8px;
+      font-size: 0.72rem;
+      opacity: 0.8;
+    }
+    .account-menu[open] .account-menu__summary,
+    .account-menu__summary:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+    .account-menu__panel {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 10px);
+      min-width: 220px;
+      display: grid;
+      padding: 8px;
+      gap: 4px;
+      background: rgba(16, 40, 67, 0.98);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      box-shadow: 0 18px 38px rgba(7, 20, 34, 0.28);
+      z-index: 20;
+    }
+    .account-menu__panel a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+    .account-menu__panel a:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+    .page-shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 22px 20px 42px;
+    }
     .panel, .status, .card, .list-item {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -199,21 +293,68 @@ BASE_TEMPLATE = """
     @media (max-width: 920px) {
       .grid, .grid-3, .pairs, .dash-grid { grid-template-columns: 1fr; }
     }
+    @media (max-width: 1100px) {
+      .site-header__inner {
+        align-items: flex-start;
+      }
+      .header-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .account-menu__panel {
+        right: auto;
+        left: 0;
+      }
+    }
+    @media (max-width: 720px) {
+      .header-actions {
+        justify-content: flex-start;
+      }
+      .main-nav {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .account-menu {
+        width: 100%;
+      }
+      .account-menu__summary {
+        width: 100%;
+        text-align: center;
+      }
+      .account-menu__panel {
+        width: 100%;
+        position: static;
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>TrendRadar IA</h1>
-    <p>Espace utilisateur privé, recommandations déterministes et import contrôlé du CV.</p>
-    <nav class="topnav">
-      <a href="{{ url_for('user_portal.profile') }}">Mon profil</a>
-      <a href="{{ url_for('user_portal.upload_cv') }}">Mon CV</a>
-      <a href="{{ url_for('user_portal.recommendations') }}">Mes offres</a>
-      <a href="{{ url_for('user_portal.dashboard') }}">Mon tableau de bord</a>
-      <a href="{{ url_for('user_portal.logout') }}">Déconnexion</a>
-    </nav>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">
+        <a class="brand__link" href="{{ url_for('index') }}">TrendRadar IA</a>
+        <p class="brand__subtitle">Espace utilisateur privé, recommandations et import contrôlé du CV</p>
+      </div>
+      <div class="header-actions">
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a class="main-nav__link{% if active_page == 'search' %} active{% endif %}" href="{{ url_for('index') }}">Recherche d'offres</a>
+          <a class="main-nav__link{% if active_page == 'territory_trends' %} active{% endif %}" href="{{ url_for('territory_trends') }}">Tendances par territoire</a>
+        </nav>
+        <details class="account-menu">
+          <summary class="account-menu__summary">Mon compte</summary>
+          <div class="account-menu__panel" role="menu" aria-label="Menu Mon compte">
+            <a role="menuitem" href="{{ url_for('user_portal.profile') }}">Mon profil</a>
+            <a role="menuitem" href="{{ url_for('user_portal.upload_cv') }}">Mon CV</a>
+            <a role="menuitem" href="{{ url_for('user_portal.recommendations') }}">Mes offres</a>
+            <a role="menuitem" href="{{ url_for('user_portal.dashboard') }}">Mon tableau de bord</a>
+            <a role="menuitem" href="{{ url_for('user_portal.logout') }}">Déconnexion</a>
+          </div>
+        </details>
+      </div>
+    </div>
   </header>
-  <main class="shell">
+  <main class="page-shell">
     {% if message %}
     <div class="status {{ message_category or '' }}">{{ message }}</div>
     {% endif %}
