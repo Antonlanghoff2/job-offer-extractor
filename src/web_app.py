@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import re
 import unicodedata
 from datetime import date, datetime
@@ -19,6 +20,7 @@ from flask import Flask, jsonify, render_template_string, request
 from src.france_travail_client import iter_search_offres
 from src.offer_normalization import normalize_france_travail_offer
 from src.trend_aggregation import aggregate_trends
+from src.user_portal import register_user_portal
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -637,6 +639,13 @@ HTML_TEMPLATE = """
   <header>
     <h1>TrendRadar IA</h1>
     <p>Recherche territoriale France Travail avec statistiques, tendances et liste des offres associées.</p>
+    <nav class="topnav" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;">
+      <a href="/profile" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Mon profil</a>
+      <a href="/profile/cv" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Mon CV</a>
+      <a href="/mes-offres" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Mes offres</a>
+      <a href="/dashboard-utilisateur" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Mon tableau de bord</a>
+      <a href="/logout" style="color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.28);padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px;">Déconnexion</a>
+    </nav>
   </header>
   <main class="shell">
     <form class="filters" method="get" action="{{ url_for('index') }}">
@@ -967,8 +976,14 @@ def build_state(territoire: str | None, periode_jours: int, top_n: int = DEFAULT
     }
 
 
-def create_app() -> Flask:
+def create_app(config_overrides: dict[str, Any] | None = None) -> Flask:
     app = Flask(__name__)
+    if config_overrides:
+        app.config.update(config_overrides)
+    app.config["SECRET_KEY"] = app.config.get("SECRET_KEY") or os.getenv("SECRET_KEY", "trendradar-dev-secret")
+    app.secret_key = app.config["SECRET_KEY"]
+    app.config.setdefault("MAX_CONTENT_LENGTH", 8 * 1024 * 1024)
+    register_user_portal(app)
 
     @app.get("/")
     def index():
