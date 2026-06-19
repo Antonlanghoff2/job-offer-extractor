@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import io
+import json
 import re
 import tempfile
 import unittest
@@ -390,6 +391,186 @@ class UserPortalTest(unittest.TestCase):
             self.assertIn("Offres compatibles", body)
             self.assertIn("Voir l’offre", body)
             self.assertIn("https://example.com/off-1", body)
+
+    def test_dashboard_uses_internal_fallback_when_offer_url_is_missing(self) -> None:
+        self._register(self.client, "alice@example.com")
+        token = self._profile_token(self.client)
+        self.client.post(
+            "/profile",
+            data={
+                "csrf_token": token,
+                "first_name": "Alice",
+                "last_name": "Martin",
+                "city": "Lyon",
+                "postal_code": "69000",
+                "department": "69",
+                "search_radius_km": "20",
+                "contract_preference": "CDI",
+                "remote_preference": "indifferent",
+                "minimum_salary": "45000",
+                "availability": "Immédiate",
+                "summary": "Développeuse Python",
+                "desired_jobs": "Développeur backend",
+            },
+            follow_redirects=True,
+        )
+        token = self._profile_token(self.client, "/profile/skills")
+        self.client.post(
+            "/profile/skills",
+            data={
+                "csrf_token": token,
+                "name": "Python",
+                "level": "expert",
+                "years_experience": "5",
+                "source": "manual",
+            },
+            follow_redirects=True,
+        )
+
+        offers = [
+            {
+                "id": "off-2",
+                "titre": "Data Analyst",
+                "entreprise": "Beta",
+                "competences": ["SQL"],
+                "contrat": "CDD",
+                "lieux": ["Paris"],
+                "source": "France Travail",
+            },
+        ]
+
+        with patch("src.user_portal._load_local_offers", return_value=offers):
+            response = self.client.get("/dashboard-utilisateur")
+            body = response.get_data(as_text=True)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("Voir l’offre", body)
+            self.assertIn("/mes-offres/off-2", body)
+
+    def test_dashboard_best_offer_displays_full_offer_details(self) -> None:
+        self._register(self.client, "alice@example.com")
+        token = self._profile_token(self.client)
+        self.client.post(
+            "/profile",
+            data={
+                "csrf_token": token,
+                "first_name": "Alice",
+                "last_name": "Martin",
+                "city": "Lyon",
+                "postal_code": "69000",
+                "department": "69",
+                "search_radius_km": "20",
+                "contract_preference": "CDI",
+                "remote_preference": "indifferent",
+                "minimum_salary": "45000",
+                "availability": "Immédiate",
+                "summary": "Développeuse Python",
+                "desired_jobs": "Développeur backend",
+            },
+            follow_redirects=True,
+        )
+        token = self._profile_token(self.client, "/profile/skills")
+        self.client.post(
+            "/profile/skills",
+            data={
+                "csrf_token": token,
+                "name": "Python",
+                "level": "expert",
+                "years_experience": "5",
+                "source": "manual",
+            },
+            follow_redirects=True,
+        )
+
+        offers = [
+            {
+                "id": "off-1",
+                "titre": "Développeur backend Python",
+                "entreprise": "ACME",
+                "competences": ["Python", "Flask", "Docker"],
+                "diplomes_requis": ["Master Informatique"],
+                "contrat": "CDI",
+                "teletravail": "hybride",
+                "lieux": ["Lyon"],
+                "experience_requise": "3 ans",
+                "url_originale": "https://example.com/off-1",
+                "source": "France Travail",
+            },
+        ]
+
+        with patch("src.user_portal._load_local_offers", return_value=offers):
+            response = self.client.get("/dashboard-utilisateur")
+            body = response.get_data(as_text=True)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("Meilleure offre", body)
+            self.assertIn("Développeur backend Python", body)
+            self.assertIn("ACME", body)
+            self.assertIn("Lyon", body)
+            self.assertIn("Score", body)
+            self.assertIn("https://example.com/off-1", body)
+
+    def test_profile_export_returns_json_payload(self) -> None:
+        self._register(self.client, "alice@example.com")
+        token = self._profile_token(self.client)
+        self.client.post(
+            "/profile",
+            data={
+                "csrf_token": token,
+                "first_name": "Alice",
+                "last_name": "Martin",
+                "city": "Lyon",
+                "desired_jobs": "Développeur backend",
+            },
+            follow_redirects=True,
+        )
+        token = self._profile_token(self.client, "/profile/skills")
+        self.client.post(
+            "/profile/skills",
+            data={
+                "csrf_token": token,
+                "name": "Python",
+                "level": "expert",
+                "years_experience": "5",
+                "source": "manual",
+            },
+            follow_redirects=True,
+        )
+        response = self.client.get("/profile/export-data")
+        payload = json.loads(response.get_data(as_text=True))
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(payload["user"]["profile"]["first_name"], "Alice")
+        self.assertEqual(payload["skills"][0]["name"], "Python")
+
+    def test_delete_account_removes_user_and_personal_data(self) -> None:
+        self._register(self.client, "alice@example.com")
+        token = self._profile_token(self.client)
+        self.client.post(
+            "/profile",
+            data={
+                "csrf_token": token,
+                "first_name": "Alice",
+                "last_name": "Martin",
+                "city": "Lyon",
+                "desired_jobs": "Développeur backend",
+            },
+            follow_redirects=True,
+        )
+
+        token = self._profile_token(self.client, "/profile")
+        response = self.client.post(
+            "/profile/delete-account",
+            data={"csrf_token": token},
+            follow_redirects=True,
+        )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Créer un compte", response.get_data(as_text=True))
+        with self.app.app_context():
+            self.assertIsNone(fetch_one("SELECT * FROM users WHERE email = ?", ("alice@example.com",)))
+            self.assertEqual(len(fetch_all("SELECT * FROM user_profiles")), 0)
+            self.assertEqual(len(fetch_all("SELECT * FROM user_skills")), 0)
+            self.assertEqual(len(fetch_all("SELECT * FROM diplomas")), 0)
+            self.assertEqual(len(fetch_all("SELECT * FROM experiences")), 0)
 
     def test_recommendations_and_dashboard_use_original_url(self) -> None:
         self._register(self.client, "alice@example.com")

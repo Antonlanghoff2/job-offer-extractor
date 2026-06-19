@@ -1178,3 +1178,18 @@ a { color: inherit; }
     margin-top: 10px;
   }
 }
+
+
+.offer-card--highlight {
+  border: 1px solid rgba(22, 54, 92, 0.18);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.privacy-panel {
+  border-left: 4px solid #c2410c;
+}
+
+.privacy-panel__actions {
+  align-items: center;
+  flex-wrap: wrap;
+}

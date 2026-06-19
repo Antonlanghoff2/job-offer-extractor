@@ -371,6 +371,8 @@ def _ensure_app_config(app) -> None:
         "UPLOAD_FOLDER",
         str(Path(app.instance_path) / UPLOAD_FOLDER_NAME),
     )
+    app.config.setdefault("SESSION_COOKIE_HTTPONLY", True)
+    app.config.setdefault("SESSION_COOKIE_SAMESITE", "Lax")
     secret_key = app.config.get("SECRET_KEY") or os.getenv("SECRET_KEY", "trendradar-dev-secret")
     app.config["SECRET_KEY"] = secret_key
     app.secret_key = secret_key
@@ -530,16 +532,17 @@ def _normalize_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
     return normalize_offer_for_matching(raw_offer, source=raw_offer.get("source") or "France Travail")
 
 
-def _offer_fallback_url(offer: dict[str, Any]) -> str | None:
+def _offer_fallback_url(offer: dict[str, Any], offer_identifier: str | None = None) -> str | None:
     url = offer.get("url_originale") or offer.get("url")
     if url:
         return str(url)
-    source_name = normalize_text(offer.get("source") or "")
-    identifier = offer.get("source_identifier") or offer.get("id") or offer.get("id_offre")
-    if identifier and source_name in {"", "france travail", "france_travail", "francetravail"}:
-        return f"https://candidat.francetravail.fr/offres/recherche/detail/{identifier}"
+    identifier = offer_identifier or offer.get("source_identifier") or offer.get("id") or offer.get("id_offre")
     if identifier:
-        return f"https://candidat.francetravail.fr/offres/recherche/detail/{identifier}"
+        identifier_text = str(identifier)
+        source_name = normalize_text(offer.get("source") or "")
+        if source_name in {"", "france travail", "france_travail", "francetravail"}:
+            return f"https://candidat.francetravail.fr/offres/recherche/detail/{identifier_text}"
+        return url_for("user_portal.recommendation_detail", offer_id=identifier_text)
     return None
 
 
@@ -782,6 +785,29 @@ def _profile_form(profile: dict[str, Any], desired_jobs_text: str) -> str:
         remote_options=REMOTE_OPTIONS,
         contract_options=CONTRACT_OPTIONS,
         csrf_token=_csrf_token,
+    )
+
+
+def _profile_privacy_block(profile: dict[str, Any]) -> str:
+    return render_template_string(
+        """
+        <section class="panel privacy-panel">
+          <div class="profile-summary__header">
+            <div>
+              <h2>Vie privée et RGPD</h2>
+              <p class="muted">Vous pouvez exporter vos données personnelles ou supprimer définitivement votre compte et toutes les données associées.</p>
+            </div>
+          </div>
+          <div class="actions privacy-panel__actions">
+            <a class="btn secondary" href="{{ url_for('user_portal.export_data') }}">Exporter mes données</a>
+            <form method="post" action="{{ url_for('user_portal.delete_account') }}" onsubmit="return confirm('Supprimer définitivement votre compte et toutes vos données ?');">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button class="btn danger" type="submit">Supprimer mon compte</button>
+            </form>
+          </div>
+          <p class="muted">Sont supprimés: profil, compétences, formations, expériences, CV importé et correspondances enregistrées.</p>
+        </section>
+        """
     )
 
 
@@ -1507,6 +1533,41 @@ def _current_profile_snapshot(user_id: int) -> dict[str, Any]:
     }
 
 
+def _export_user_data_payload(user_id: int) -> dict[str, Any]:
+    profile = _assemble_profile(user_id)
+    matches = _current_job_matches(user_id)
+    return {
+        "user": {
+            "id": user_id,
+            "profile": _current_profile_snapshot(user_id),
+        },
+        "jobs_wanted": [item["job_title"] for item in profile["desired_jobs"]],
+        "skills": [
+            {
+                "name": row["name"],
+                "normalized_name": row["normalized_name"],
+                "level": row.get("level") or None,
+                "years_experience": row.get("years_experience"),
+                "source": row.get("source"),
+            }
+            for row in profile["skills"]
+        ],
+        "diplomas": [dict(item) for item in profile["diplomas"]],
+        "experiences": [dict(item) for item in profile["experiences"]],
+        "cv": dict(profile["cv"]) if profile.get("cv") else None,
+        "job_matches": [
+            {
+                "offer_identifier": match.get("offer_identifier"),
+                "global_score": match.get("global_score"),
+                "matching_skills": match.get("matching_skills_json") or [],
+                "missing_skills": match.get("missing_skills_json") or [],
+                "calculated_at": match.get("calculated_at"),
+            }
+            for match in matches
+        ],
+    }
+
+
 def _offer_matches_filters(offer: dict[str, Any], filters: dict[str, Any], match: dict[str, Any]) -> bool:
     if filters.get("min_score") is not None and match["global_score"] < filters["min_score"]:
         return False
@@ -1680,7 +1741,7 @@ def _recommendation_page(matches: list[dict[str, Any]], filters: dict[str, Any],
         for match in matches:
             offer = match["offer"]
             explanation = match.get("explanation", {})
-            url = _offer_fallback_url(offer)
+            url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
             cards.append(
                 f"""
                 <article class="offer-card">
@@ -1828,6 +1889,7 @@ def profile():
     profile_data = _current_profile_snapshot(user_id)
     content = _profile_form(profile_data, "\n".join(item["job_title"] if isinstance(item, dict) else str(item) for item in profile_data["desired_jobs"]))
     content += _profile_summary_block(profile_data)
+    content += _profile_privacy_block(profile_data)
     return _render_page("Mon profil", content, message=error)
 
 
@@ -2355,7 +2417,7 @@ def dashboard():
     for match in display_matches:
         explanation = _decoded_explanation(match.get("explanation_json"))
         offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
-        url = _offer_fallback_url(offer)
+        url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
         match_cards.append({
             "title": offer.get("titre") or match.get("offer_identifier") or "Offre sans titre",
             "company": offer.get("entreprise") or "Entreprise non renseignée",
@@ -2410,8 +2472,26 @@ def dashboard():
           <section class="panel">
             <h2>Meilleure offre</h2>
             {% if best %}
-            <p><strong>{{ best['offer_identifier'] }}</strong></p>
-            <p class="muted">{{ best_explanation.get('summary') }}</p>
+            {% set best_offer = best_explanation.get('offer') if best_explanation.get('offer') is mapping else {} %}
+            <article class="offer-card offer-card--highlight">
+              <h3 class="offer-title">{{ best_offer.get('titre') or best['offer_identifier'] }}</h3>
+              <div class="meta">
+                <span>{{ best_offer.get('entreprise') or 'Entreprise non renseignée' }}</span>
+                <span>{{ ', '.join(best_offer.get('lieux') or []) if best_offer.get('lieux') else 'Lieu non renseigné' }}</span>
+                <span>{{ best_offer.get('contrat') or 'Contrat non renseigné' }}</span>
+                <span>Score {{ '%.0f'|format(best['global_score'] or 0) }}/100</span>
+              </div>
+              <p class="muted">{{ best_explanation.get('summary') }}</p>
+              {% if best_explanation.get('matching_skills') %}
+              <div class="chips">
+                {% for skill in best_explanation.get('matching_skills')[:5] %}<span class="chip">{{ skill }}</span>{% endfor %}
+              </div>
+              {% endif %}
+              <div class="actions">
+                {% set best_url = best_offer.get('url_originale') or best_offer.get('url') or url_for('user_portal.recommendation_detail', offer_id=best['offer_identifier']) %}
+                <a class="btn" href="{{ best_url }}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>
+              </div>
+            </article>
             {% else %}
             <div class="muted">Aucune offre calculée.</div>
             {% endif %}
@@ -2463,16 +2543,37 @@ def dashboard():
     return _render_page("Tableau de bord utilisateur", content)
 
 
-@user_portal_bp.route("/profile/delete-all", methods=["POST"])
+@user_portal_bp.route("/profile/export-data")
 @login_required
-def delete_all_data():
+def export_data():
+    user_id = _current_user_id()
+    assert user_id is not None
+    payload = _export_user_data_payload(user_id)
+    response = current_app.response_class(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        mimetype="application/json; charset=utf-8",
+    )
+    response.headers["Content-Disposition"] = f'attachment; filename="trendradar-donnees-{user_id}.json"'
+    return response
+
+
+@user_portal_bp.route("/profile/delete-account", methods=["POST"])
+@login_required
+def delete_account():
     user_id = _current_user_id()
     assert user_id is not None
     if _check_csrf():
         _delete_all_user_data(user_id)
         _logout_user()
+        flash("Votre compte et vos données ont été supprimés.", "success")
         return redirect(url_for("user_portal.register"))
     return redirect(url_for("user_portal.profile"))
+
+
+@user_portal_bp.route("/profile/delete-all", methods=["POST"])
+@login_required
+def delete_all_data():
+    return delete_account()
 
 
 def register_user_portal(app) -> None:

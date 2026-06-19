@@ -1028,6 +1028,8 @@ def create_app(config_overrides: dict[str, Any] | None = None) -> Flask:
     app.config["SECRET_KEY"] = app.config.get("SECRET_KEY") or os.getenv("SECRET_KEY", "trendradar-dev-secret")
     app.secret_key = app.config["SECRET_KEY"]
     app.config.setdefault("MAX_CONTENT_LENGTH", 8 * 1024 * 1024)
+    app.config.setdefault("SESSION_COOKIE_HTTPONLY", True)
+    app.config.setdefault("SESSION_COOKIE_SAMESITE", "Lax")
     register_user_portal(app)
 
     @app.get("/")
