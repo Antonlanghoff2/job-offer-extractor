@@ -1,44 +1,103 @@
 # Copyright Anton Langhoff <anton@langhoff.fr>
 # SPDX-License-Identifier: MIT
 
-"""Section detection for French CVs."""
+"""Section detection helpers for CV documents."""
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
-from typing import Literal
+from typing import Dict, Iterable, List, Literal, Optional, Set
 
-from .normalizer import normalize_section_title
 
 SectionKind = Literal["formations", "competences", "experiences_professionnelles", "excluded", "other"]
 
 
-@dataclass
-class SectionMatch:
+@dataclass(frozen=True)
+class DetectedSection:
     kind: SectionKind
-    title: str
     raw: str
 
 
-ALIASES: dict[SectionKind, set[str]] = {
-    "formations": {"formation", "formations", "etudes", "études", "diplomes", "diplômes", "diplomes et formations", "parcours academique", "parcours académique", "parcours scolaire", "certifications"},
-    "competences": {"competences", "compétences", "competences techniques", "compétences techniques", "competences professionnelles", "compétences professionnelles", "technologies", "outils", "savoir faire", "savoir-faire", "expertise", "langages", "frameworks"},
-    "experiences_professionnelles": {"experience", "experiences", "expérience", "expériences", "experiences professionnelles", "expériences professionnelles", "parcours professionnel", "emplois", "missions", "historique professionnel"},
-    "excluded": {"loisirs", "centres interet", "centres d interet", "interets", "intérêts", "references", "références", "contact", "coordonnees", "coordonnées", "langues", "profil", "a propos", "à propos", "presentation", "présentation"},
-    "other": set(),
+@dataclass(frozen=True)
+class SectionBlock:
+    """A detected section block inside a CV."""
+
+    name: str
+    heading: str
+    lines: List[str]
+
+    @property
+    def text(self) -> str:
+        return "\n".join(self.lines).strip()
+
+
+SECTION_ALIASES: Dict[str, Set[str]] = {
+    "identity": {"coordonnees", "coordonnées", "profil", "about", "resume", "résumé", "summary"},
+    "competences": {"competences", "compétences", "skills", "skill set", "technical skills", "tech stack"},
+    "diplomes": {"diplomes", "diplômes", "formation", "education", "etudes", "études", "academique"},
+    "experiences": {
+        "experiences",
+        "expériences",
+        "experience professionnelle",
+        "professional experience",
+        "work experience",
+        "parcours professionnel",
+    },
+    "certifications": {"certifications", "certificats", "licenses", "licences"},
+    "projects": {"projets", "projects"},
 }
 
 
-def detect_section(line: str) -> SectionMatch | None:
-    normalized = normalize_section_title(line)
-    if not normalized:
-        return None
-    for kind in ("formations", "competences", "experiences_professionnelles", "excluded"):
-        if normalized in ALIASES[kind]:
-            return SectionMatch(kind=kind, title=normalized, raw=line)
-    for kind in ("formations", "competences", "experiences_professionnelles", "excluded"):
-        aliases = ALIASES[kind]
-        if any(normalized.startswith(alias) or alias.startswith(normalized) for alias in aliases if alias):
-            if len(normalized.split()) <= 5:
-                return SectionMatch(kind=kind, title=normalized, raw=line)
+def _normalize_heading(text: str) -> str:
+    return re.sub(r"[^a-z]+", " ", text.lower()).strip()
+
+
+def split_lines(text: str) -> List[str]:
+    return [line.strip(" \t-•") for line in text.splitlines() if line.strip()]
+
+
+def detect_section_name(line: str) -> Optional[str]:
+    normalized = _normalize_heading(line)
+    for section, aliases in SECTION_ALIASES.items():
+        if normalized in aliases:
+            return section
     return None
+
+
+def detect_section(line: str) -> Optional[DetectedSection]:
+    kind = detect_section_name(line)
+    if kind is None:
+        return None
+    return DetectedSection(kind=kind, raw=line.strip())
+
+
+def detect_sections(text: str) -> Dict[str, List[str]]:
+    """Group a CV into sections using simple heading detection."""
+
+    lines = split_lines(text)
+    sections: Dict[str, List[str]] = {name: [] for name in SECTION_ALIASES}
+    sections["misc"] = []
+    current = "misc"
+
+    for line in lines:
+        section_name = detect_section_name(line)
+        if section_name:
+            current = section_name
+            continue
+        sections.setdefault(current, []).append(line)
+
+    return sections
+
+
+def iter_section_blocks(text: str) -> List[SectionBlock]:
+    sections = detect_sections(text)
+    blocks: List[SectionBlock] = []
+    for name, lines in sections.items():
+        if lines:
+            blocks.append(SectionBlock(name=name, heading=name, lines=list(lines)))
+    return blocks
+
+
+def first_lines(text: str, limit: int = 12) -> List[str]:
+    return split_lines(text)[: max(limit, 1)]

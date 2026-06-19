@@ -42,7 +42,7 @@
 </section>
 
 {% if error_message %}
-<section class="card alert alert--error">{{ error_message }}</section>
+<section class="card alert alert--error">{{ error_message|safe }}</section>
 {% endif %}
 
 {% if not has_data %}

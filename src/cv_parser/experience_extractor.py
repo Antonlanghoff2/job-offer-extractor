@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
+from typing import Dict, List, Optional
 
 from .confidence import experience_confidence
 from .normalizer import collapse_spaces, normalize_text, parse_date_range
@@ -18,12 +19,12 @@ WEAK_JOB_KEYWORDS = ("son", "video", "vidéo", "lumière", "lumiere", "réseau",
 
 @dataclass
 class _ExperienceCandidate:
-    job_parts: list[str] = field(default_factory=list)
-    company_parts: list[str] = field(default_factory=list)
-    location_parts: list[str] = field(default_factory=list)
-    date_values: list[str] = field(default_factory=list)
-    description_parts: list[str] = field(default_factory=list)
-    source_lines: list[str] = field(default_factory=list)
+    job_parts: List[str] = field(default_factory=list)
+    company_parts: List[str] = field(default_factory=list)
+    location_parts: List[str] = field(default_factory=list)
+    date_values: List[str] = field(default_factory=list)
+    description_parts: List[str] = field(default_factory=list)
+    source_lines: List[str] = field(default_factory=list)
 
     @property
     def warm(self) -> bool:
@@ -54,7 +55,7 @@ class _ExperienceCandidate:
         if cleaned not in self.description_parts:
             self.description_parts.append(cleaned)
 
-    def to_dict(self) -> dict[str, object]:
+    def to_dict(self) -> Dict[str, object]:
         job = collapse_spaces(" ".join(self.job_parts))
         company = collapse_spaces(" ".join(self.company_parts)) or None
         location = collapse_spaces(" ".join(self.location_parts)) or None
@@ -117,7 +118,7 @@ def _looks_like_location(text: str) -> bool:
     return bool(re.search(r"\b(paris|lyon|lille|toulouse|nantes|rennes|marseille|nice|bordeaux|grenoble|strasbourg)\b", lowered))
 
 
-def _split_composite_line(line: str) -> list[str]:
+def _split_composite_line(line: str) -> List[str]:
     if re.search(r"\b(?:19|20)\d{2}\b", line):
         return [collapse_spaces(line)]
     parts = [collapse_spaces(part) for part in re.split(r"\s+[—–-]\s+|\s+\|\s+", line) if collapse_spaces(part)]
@@ -130,7 +131,7 @@ def _split_composite_line(line: str) -> list[str]:
     return [collapse_spaces(line)]
 
 
-def _classify_segment(segment: str, candidate: _ExperienceCandidate | None) -> str:
+def _classify_segment(segment: str, candidate: Optional[_ExperienceCandidate]) -> str:
     if re.search(r"\b(?:19|20)\d{2}\b", segment):
         return "date"
     if _looks_like_job_title(segment):
@@ -149,9 +150,9 @@ def _classify_segment(segment: str, candidate: _ExperienceCandidate | None) -> s
     return "other"
 
 
-def extract_experiences(lines: list[str]) -> list[dict[str, object]]:
-    entries: list[dict[str, object]] = []
-    candidate: _ExperienceCandidate | None = None
+def extract_experiences(lines: List[str]) -> List[Dict[str, object]]:
+    entries: List[Dict[str, object]] = []
+    candidate: Optional[_ExperienceCandidate] = None
     for line in lines:
         for segment in _split_composite_line(line):
             kind = _classify_segment(segment, candidate)

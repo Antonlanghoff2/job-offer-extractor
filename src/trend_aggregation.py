@@ -10,11 +10,12 @@ import json
 import re
 import unicodedata
 from collections import Counter
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
 from src.offer_normalization import normalize_text
+from src.services.matching_service import normalize_skill_name
 
 DATE_KEYS = (
     "date",
@@ -45,10 +46,8 @@ def _normalize_display_name(value: object) -> str:
 
 
 def _normalize_competence_key(value: object) -> str:
-    text = normalize_text(value)
-    text = text.replace("/", " ")
-    text = re.sub(r"[^a-z0-9+#.-]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+    canonical = normalize_skill_name(value)
+    return normalize_text(canonical)
 
 
 def _normalize_competence_display(value: object) -> str:
@@ -57,17 +56,17 @@ def _normalize_competence_display(value: object) -> str:
     if not text:
         return ""
     compact = text.replace(" ", "")
-    if len(compact) <= 4 and compact.replace("+", "").replace("#", "").replace(".", "").isalpha():
-        return compact.upper()
-    if any(ch.isupper() for ch in compact[1:]):
+    if compact.isupper():
         return compact
+    if len(compact) <= 4 and compact.lower() in {"sql", "php", "aws", "api", "git", "html", "css", "json", "xml", "llm", "rag", "nlp", "etl", "ci", "cd"}:
+        return compact.upper()
     return " ".join(
         part if part.isupper() else part[:1].upper() + part[1:].lower()
         for part in text.split(" ")
     )
 
 
-def _split_values(value: object) -> list[object]:
+def _split_values(value: object) -> List[object]:
     if value is None:
         return []
     if isinstance(value, list):
@@ -85,7 +84,7 @@ def _split_values(value: object) -> list[object]:
     return [value]
 
 
-def _parse_date(value: object) -> date | None:
+def _parse_date(value: object) -> Optional[date]:
     if value is None:
         return None
     if isinstance(value, date) and not isinstance(value, datetime):
@@ -109,7 +108,7 @@ def _parse_date(value: object) -> date | None:
     return None
 
 
-def _extract_offer_date(offer: dict[str, Any]) -> date | None:
+def _extract_offer_date(offer: Dict[str, Any]) -> Optional[date]:
     for key in DATE_KEYS:
         if key in offer:
             parsed = _parse_date(offer.get(key))
@@ -135,11 +134,11 @@ def _iter_text_values(value: object) -> Iterable[str]:
         yield text
 
 
-def _territoire_matches(offer: dict[str, Any], territoire: str) -> bool:
+def _territoire_matches(offer: Dict[str, Any], territoire: str) -> bool:
     candidate = normalize_text(territoire)
     if not candidate:
         return False
-    parts: list[str] = []
+    parts: List[str] = []
     for key in ("territoire", "ville", "lieu", "lieux_embauche", "code_postal", "codePostal"):
         parts.extend(_iter_text_values(offer.get(key)))
     lieu_travail = offer.get("lieuTravail")
@@ -153,13 +152,35 @@ def _territoire_matches(offer: dict[str, Any], territoire: str) -> bool:
     return candidate in location_blob or location_blob in candidate
 
 
+def filter_offers_for_trends(
+    offers: Sequence[Dict[str, Any]],
+    territoire: Optional[str] = None,
+    periode_jours: int = 30,
+) -> List[Dict[str, Any]]:
+    """Return offers restricted to the given territory and rolling window."""
+
+    valid_offers = [offer for offer in offers if isinstance(offer, dict)]
+    reference_dates = [d for d in (_extract_offer_date(offer) for offer in valid_offers) if d is not None]
+    reference_date = max(reference_dates) if reference_dates else date.today()
+    cutoff_date = reference_date - timedelta(days=max(periode_jours, 0))
+    filtered: List[Dict[str, Any]] = []
+    for offer in valid_offers:
+        offer_date = _extract_offer_date(offer)
+        if offer_date is not None and offer_date < cutoff_date:
+            continue
+        if territoire is not None and not _territoire_matches(offer, territoire):
+            continue
+        filtered.append(offer)
+    return filtered
+
+
 def _count_values(
     values: Iterable[object],
     key_normalizer,
     display_normalizer,
-) -> dict[str, int]:
-    counts: Counter[str] = Counter()
-    display_names: dict[str, str] = {}
+) -> Dict[str, int]:
+    counts: Counter = Counter()
+    display_names: Dict[str, str] = {}
     for raw in values:
         key = key_normalizer(raw)
         if not key:
@@ -173,7 +194,7 @@ def _count_values(
     return {display_names.get(key, key): count for key, count in ordered}
 
 
-_def_niveau_map = {
+_NIVEAU_MAP = {
     "junior": "junior",
     "intermediaire": "intermediaire",
     "intermediate": "intermediaire",
@@ -195,10 +216,10 @@ def _normalize_niveau(value: object) -> str:
         return "junior"
     if text.startswith("sen"):
         return "senior"
-    return _def_niveau_map.get(text, "")
+    return _NIVEAU_MAP.get(text, "")
 
 
-def _extract_summary_offer(offer: dict[str, Any]) -> dict[str, Any]:
+def _extract_summary_offer(offer: Dict[str, Any]) -> Dict[str, Any]:
     id_value = (
         offer.get("id")
         or offer.get("id_offre")
@@ -234,61 +255,113 @@ def _extract_summary_offer(offer: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _offer_competences(offer: Dict[str, Any]) -> List[str]:
+    competences: List[str] = []
+    for key in ("competences", "competences_requises", "skills", "skillset", "mots_cles"):
+        for item in _split_values(offer.get(key)):
+            if isinstance(item, dict):
+                label = item.get("libelle") or item.get("code") or item.get("name") or item.get("label") or item.get("title")
+            else:
+                label = item
+            text = re.sub(r"\s+", " ", str(label)).strip() if label is not None else ""
+            if text:
+                competences.append(text)
+    normalized: List[str] = []
+    seen = set()
+    for item in competences:
+        key = _normalize_competence_key(item)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        normalized.append(_normalize_competence_display(item) or key)
+    return normalized
+
+
+def _offer_metier(offer: Dict[str, Any]) -> List[str]:
+    return [str(value) for value in _split_values(offer.get("metier") or offer.get("titre") or offer.get("intitule")) if str(value).strip()]
+
+
+def _offer_niveaux(offer: Dict[str, Any]) -> List[str]:
+    return [str(value) for value in _split_values(offer.get("niveau")) if str(value).strip()]
+
+
+def _offer_contrats(offer: Dict[str, Any]) -> List[str]:
+    return [str(value) for value in _split_values(offer.get("contrat") or offer.get("typeContratLibelle") or offer.get("typeContrat")) if str(value).strip()]
+
+
 def aggregate_trends(
-    offers: list[dict],
-    territoire: str | None = None,
+    offers: List[Dict[str, Any]],
+    territoire: Optional[str] = None,
     periode_jours: int = 30,
-) -> dict:
+) -> Dict[str, Any]:
     """Aggregate extracted offers into market trends for model 2."""
-    valid_offers: list[dict[str, Any]] = [offer for offer in offers if isinstance(offer, dict)]
 
-    reference_dates = [d for d in (_extract_offer_date(offer) for offer in valid_offers) if d is not None]
-    reference_date = max(reference_dates) if reference_dates else date.today()
-    cutoff_date = date.fromordinal(reference_date.toordinal() - max(periode_jours, 0))
+    valid_offers = [offer for offer in offers if isinstance(offer, dict)]
+    filtered = filter_offers_for_trends(valid_offers, territoire=territoire, periode_jours=periode_jours)
 
-    filtered: list[dict[str, Any]] = []
-    for offer in valid_offers:
-        offer_date = _extract_offer_date(offer)
-        if offer_date is not None and offer_date < cutoff_date:
-            continue
-        if territoire is not None and not _territoire_matches(offer, territoire):
-            continue
-        filtered.append(offer)
-
-    competences_raw: list[object] = []
-    metiers_raw: list[object] = []
-    niveaux_raw: list[object] = []
-    contrats_raw: list[object] = []
+    competences_raw: List[object] = []
+    metiers_raw: List[object] = []
+    niveaux_raw: List[object] = []
+    contrats_raw: List[object] = []
+    skill_sets: List[List[str]] = []
+    skill_counter: Counter = Counter()
+    skill_display_names: Dict[str, str] = {}
+    cooccurrences: Counter = Counter()
 
     for offer in filtered:
-        competences = []
-        for item in _split_values(offer.get("competences")):
-            norm = _normalize_competence_key(item)
-            if norm and norm not in competences:
-                competences.append(item)
-        competences_raw.extend(competences)
-        metiers_raw.extend(_split_values(offer.get("metier") or offer.get("titre") or offer.get("intitule")))
-        niveaux_raw.extend(_split_values(offer.get("niveau")))
-        contrats_raw.extend(_split_values(offer.get("contrat") or offer.get("typeContratLibelle") or offer.get("typeContrat")))
+        skills = []
+        for skill in _offer_competences(offer):
+            key = _normalize_competence_key(skill)
+            if not key or key in skills:
+                continue
+            skills.append(key)
+            skill_counter[key] += 1
+            skill_display_names.setdefault(key, _normalize_competence_display(skill) or key)
+        if skills:
+            skill_sets.append(skills)
+        competences_raw.extend(skill_display_names.get(key, key) for key in skills)
+        metiers_raw.extend(_offer_metier(offer))
+        niveaux_raw.extend(_offer_niveaux(offer))
+        contrats_raw.extend(_offer_contrats(offer))
+        if len(skills) >= 2:
+            ordered = sorted(set(skills))
+            for index, skill_a in enumerate(ordered):
+                for skill_b in ordered[index + 1:]:
+                    cooccurrences[(skill_a, skill_b)] += 1
 
-    niveau_counts: Counter[str] = Counter()
+    niveau_counts: Counter = Counter()
     for raw in niveaux_raw:
         key = _normalize_niveau(raw)
         if key:
             niveau_counts[key] += 1
 
-    offres = [_extract_summary_offer(offer) for offer in filtered]
-    offres.sort(key=lambda item: item.get("date") or "", reverse=True)
+    offers_summary = [_extract_summary_offer(offer) for offer in filtered]
+    offers_summary.sort(key=lambda item: item.get("date") or "", reverse=True)
+
+    competence_items = []
+    for key, count in sorted(skill_counter.items(), key=lambda item: (-item[1], skill_display_names.get(item[0], item[0]).lower())):
+        percentage = round((count / len(filtered)) * 100.0, 1) if filtered else 0.0
+        competence_items.append({
+            "nom": skill_display_names.get(key, key),
+            "count": count,
+            "percentage": percentage,
+        })
+
+    cooccurrence_items = []
+    for (skill_a, skill_b), count in sorted(cooccurrences.items(), key=lambda item: (-item[1], skill_display_names.get(item[0][0], item[0][0]).lower(), skill_display_names.get(item[0][1], item[0][1]).lower())):
+        cooccurrence_items.append({
+            "competence_a": skill_display_names.get(skill_a, skill_a),
+            "competence_b": skill_display_names.get(skill_b, skill_b),
+            "count": count,
+            "percentage": round((count / len(filtered)) * 100.0, 1) if filtered else 0.0,
+        })
 
     result = {
         "territoire": territoire,
         "periode_jours": periode_jours,
         "nombre_offres": len(filtered),
-        "competences": _count_values(
-            competences_raw,
-            _normalize_competence_key,
-            _normalize_competence_display,
-        ),
+        "competences": _count_values(competences_raw, _normalize_competence_key, _normalize_competence_display),
+        "competences_details": competence_items,
         "metiers": _count_values(metiers_raw, normalize_text, _normalize_display_name),
         "niveau": {
             key: niveau_counts[key]
@@ -296,13 +369,16 @@ def aggregate_trends(
             if niveau_counts.get(key)
         },
         "contrats": _count_values(contrats_raw, normalize_text, _normalize_display_name),
-        "offres": offres,
-        "offers": offres,
+        "cooccurrences": cooccurrence_items,
+        "fiabilite": round(min(1.0, len(filtered) / 40.0) if filtered else 0.0, 3),
+        "skill_sets": skill_sets,
+        "offres": offers_summary,
+        "offers": offers_summary,
     }
     return result
 
 
-def load_offers_json(path: str | Path) -> list[dict]:
+def load_offers_json(path: Union[str, Path]) -> List[Dict[str, Any]]:
     with Path(path).open("r", encoding="utf-8") as fh:
         payload = json.load(fh)
     if not isinstance(payload, list):
@@ -310,7 +386,7 @@ def load_offers_json(path: str | Path) -> list[dict]:
     return [offer for offer in payload if isinstance(offer, dict)]
 
 
-def dump_trends_json(trends: dict, output_path: str | Path) -> None:
+def dump_trends_json(trends: Dict[str, Any], output_path: Union[str, Path]) -> None:
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as fh:

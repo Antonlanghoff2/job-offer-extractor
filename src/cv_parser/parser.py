@@ -9,7 +9,7 @@ import logging
 import re
 import zipfile
 from pathlib import Path
-from typing import Any
+from typing import Any, Dict, List, Optional, Tuple
 from xml.etree import ElementTree as ET
 
 try:
@@ -54,7 +54,7 @@ def _extract_pdf_text(path: Path) -> str:
                 return extracted[:TEXT_LIMIT]
         except Exception:
             logger.exception("Échec d'extraction PDF via pypdf")
-    text_parts: list[str] = []
+    text_parts: List[str] = []
     for match in re.finditer(rb"\(([^\)]{1,500})\)\s*T[Jj]", raw):
         candidate = match.group(1).decode("latin-1", errors="ignore")
         candidate = candidate.replace(r"\n", "\n").replace(r"\r", "\r").replace(r"\t", "\t")
@@ -88,7 +88,7 @@ def _extract_docx_text(path: Path) -> str:
             raise ValueError("Le fichier DOCX est invalide.") from exc
     root = ET.fromstring(data)
     namespace = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
-    paragraphs: list[str] = []
+    paragraphs: List[str] = []
     for paragraph in root.findall(".//w:p", namespace):
         parts = [node.text for node in paragraph.findall(".//w:t", namespace) if node.text]
         line = "".join(parts).strip()
@@ -100,7 +100,7 @@ def _extract_docx_text(path: Path) -> str:
     return text[:TEXT_LIMIT]
 
 
-def extract_text_from_cv(path: str | Path) -> str:
+def extract_text_from_cv(path: Any) -> str:
     path = Path(path)
     suffix = path.suffix.lower()
     if suffix == ".pdf":
@@ -110,7 +110,7 @@ def extract_text_from_cv(path: str | Path) -> str:
     raise ValueError("Format non supporté. Seuls PDF et DOCX sont acceptés.")
 
 
-def _sections_detected(blocks: list[Any]) -> dict[str, bool]:
+def _sections_detected(blocks: List[Any]) -> Dict[str, bool]:
     flags = {"formations": False, "competences": False, "experiences_professionnelles": False}
     for block in blocks:
         section = getattr(block, "section", None)
@@ -119,11 +119,14 @@ def _sections_detected(blocks: list[Any]) -> dict[str, bool]:
     return flags
 
 
-def _dedupe(entries: list[dict[str, Any]], key_fields: tuple[str, ...]) -> list[dict[str, Any]]:
-    seen: set[tuple[str | None, ...]] = set()
-    deduped: list[dict[str, Any]] = []
+def _dedupe(entries: List[Dict[str, Any]], key_fields: Tuple[str, ...]) -> List[Dict[str, Any]]:
+    seen: set = set()
+    deduped: List[Dict[str, Any]] = []
     for entry in entries:
-        key = tuple(normalize_section_title(entry.get(field)) if field in {"intitule", "etablissement", "poste", "entreprise"} else collapse_spaces("" if entry.get(field) is None else str(entry.get(field))) or None for field in key_fields)
+        key = tuple(
+            normalize_section_title(entry.get(field)) if field in {"intitule", "etablissement", "poste", "entreprise"} else collapse_spaces("" if entry.get(field) is None else str(entry.get(field))) or None
+            for field in key_fields
+        )
         if key in seen:
             continue
         seen.add(key)
@@ -131,14 +134,14 @@ def _dedupe(entries: list[dict[str, Any]], key_fields: tuple[str, ...]) -> list[
     return deduped
 
 
-def parse_cv_text(text: str) -> dict[str, Any]:
+def parse_cv_text(text: str) -> Dict[str, Any]:
     cleaned_text = _clean_text(text)
     blocks = build_blocks(cleaned_text)
     sections_detected = _sections_detected(blocks)
-    formations: list[dict[str, Any]] = []
-    experiences: list[dict[str, Any]] = []
-    skills: list[SkillMatch] = []
-    warnings: list[str] = []
+    formations: List[Dict[str, Any]] = []
+    experiences: List[Dict[str, Any]] = []
+    skills: List[SkillMatch] = []
+    warnings: List[str] = []
 
     for block in blocks:
         if block.section == "excluded":
@@ -202,7 +205,7 @@ def parse_cv_text(text: str) -> dict[str, Any]:
     }
 
 
-def parse_cv_file(path: str | Path) -> ParsedCV:
+def parse_cv_file(path: Any) -> ParsedCV:
     extracted = extract_text_from_cv(path)
     structured = parse_cv_text(extracted)
     return ParsedCV(text=extracted, structured=structured)

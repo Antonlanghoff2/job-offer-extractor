@@ -8,7 +8,7 @@ from __future__ import annotations
 import re
 from collections import OrderedDict
 from dataclasses import dataclass
-from typing import Iterable
+from typing import Dict, Iterable, List, Optional, Tuple
 
 from .confidence import skill_confidence
 from .normalizer import collapse_spaces, normalize_text
@@ -17,13 +17,13 @@ from .normalizer import collapse_spaces, normalize_text
 @dataclass
 class SkillMatch:
     nom: str
-    categorie: str | None
+    categorie: Optional[str]
     source: str
     texte_source: str
     confiance: float
-    formation_source: str | None = None
+    formation_source: Optional[str] = None
 
-    def as_dict(self) -> dict[str, object]:
+    def as_dict(self) -> Dict[str, object]:
         payload = {
             "nom": self.nom,
             "categorie": self.categorie,
@@ -36,7 +36,7 @@ class SkillMatch:
         return payload
 
 
-SKILL_CATALOG: dict[str, dict[str, object]] = {
+SKILL_CATALOG: Dict[str, Dict[str, object]] = {
     "Python": {"aliases": {"python"}, "category": "langage"},
     "PyTorch": {"aliases": {"pytorch"}, "category": "framework_ml"},
     "TensorFlow": {"aliases": {"tensorflow"}, "category": "framework_ml"},
@@ -94,7 +94,7 @@ SKILL_CATALOG: dict[str, dict[str, object]] = {
     "Conception de projet numérique": {"aliases": {"conception de projet numérique", "conception de projet numerique"}, "category": "management"},
 }
 
-ALIAS_TO_CANONICAL: dict[str, str] = {}
+ALIAS_TO_CANONICAL: Dict[str, str] = {}
 for canonical, spec in SKILL_CATALOG.items():
     for alias in spec["aliases"]:  # type: ignore[index]
         ALIAS_TO_CANONICAL[normalize_text(alias)] = canonical
@@ -143,19 +143,19 @@ def normalize_skill_name(name: object) -> str:
     return text
 
 
-def _skill_category(name: str) -> str | None:
+def _skill_category(name: str) -> Optional[str]:
     return str(SKILL_CATALOG.get(name, {}).get("category")) if name in SKILL_CATALOG else None
 
 
-def _tokenize_explicit_line(line: str) -> list[str]:
+def _tokenize_explicit_line(line: str) -> List[str]:
     parts = [collapse_spaces(part) for part in EXP_SPLIT_RE.split(line)]
     values = [part.strip(" -–—") for part in parts if part and part.strip(" -–—")]
     return values or [line]
 
 
-def _find_alias_matches(text: str) -> list[tuple[str, str]]:
+def _find_alias_matches(text: str) -> List[Tuple[str, str]]:
     normalized = normalize_text(text)
-    matches: list[tuple[str, str]] = []
+    matches: List[Tuple[str, str]] = []
     for alias in ALIAS_REGEX:
         canonical = ALIAS_TO_CANONICAL[alias]
         if alias in {"c++", "c plus plus"}:
@@ -175,7 +175,7 @@ def _find_alias_matches(text: str) -> list[tuple[str, str]]:
     return matches
 
 
-def _merge_unique(matches: Iterable[SkillMatch]) -> list[SkillMatch]:
+def _merge_unique(matches: Iterable[SkillMatch]) -> List[SkillMatch]:
     ranking = {"explicite": 3, "experience_professionnelle": 2, "deduite_de_formation": 1}
     ordered: OrderedDict[str, SkillMatch] = OrderedDict()
     for item in matches:
@@ -189,8 +189,8 @@ def _merge_unique(matches: Iterable[SkillMatch]) -> list[SkillMatch]:
     return list(ordered.values())
 
 
-def extract_explicit_skills(lines: Iterable[str]) -> list[SkillMatch]:
-    matches: list[SkillMatch] = []
+def extract_explicit_skills(lines: Iterable[str]) -> List[SkillMatch]:
+    matches: List[SkillMatch] = []
     for line in lines:
         for part in _tokenize_explicit_line(line):
             name = normalize_skill_name(part)
@@ -200,9 +200,9 @@ def extract_explicit_skills(lines: Iterable[str]) -> list[SkillMatch]:
     return _merge_unique(matches)
 
 
-def extract_skills_from_text(text: str, *, source: str, formation_source: str | None = None) -> list[SkillMatch]:
-    matches: list[SkillMatch] = []
-    seen: set[str] = set()
+def extract_skills_from_text(text: str, *, source: str, formation_source: Optional[str] = None) -> List[SkillMatch]:
+    matches: List[SkillMatch] = []
+    seen: set = set()
     for canonical, _alias in _find_alias_matches(text):
         key = normalize_text(canonical)
         if key in seen:
@@ -212,8 +212,8 @@ def extract_skills_from_text(text: str, *, source: str, formation_source: str | 
     return matches
 
 
-def merge_skill_matches(*groups: Iterable[SkillMatch]) -> list[SkillMatch]:
-    all_matches: list[SkillMatch] = []
+def merge_skill_matches(*groups: Iterable[SkillMatch]) -> List[SkillMatch]:
+    all_matches: List[SkillMatch] = []
     for group in groups:
         all_matches.extend(group)
     return _merge_unique(all_matches)

@@ -1,22 +1,17 @@
 # Copyright Anton Langhoff <anton@langhoff.fr>
 # SPDX-License-Identifier: MIT
 
-<<<<<<< HEAD
 """Validate synthetic CV datasets produced by ``src.cv_dataset_generator``."""
-=======
-"""Validate a synthetic CV dataset."""
->>>>>>> 5c2ec9682de243a7a10f4df4eeda37509b8341e4
 
 from __future__ import annotations
 
 import argparse
-<<<<<<< HEAD
 import json
 import math
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, List, Optional, Set, Tuple
 
 from src.cv_dataset_generator import ALLOWED_LABELS, CONTACT_LABELS, load_dataset_jsonl
 
@@ -27,9 +22,9 @@ class ValidationReport:
     valid: int = 0
     invalid: int = 0
     total_entities: int = 0
-    label_counts: Counter[str] = field(default_factory=Counter)
-    template_counts: Counter[str] = field(default_factory=Counter)
-    errors: list[str] = field(default_factory=list)
+    label_counts: Counter = field(default_factory=Counter)
+    template_counts: Counter = field(default_factory=Counter)
+    errors: List[str] = field(default_factory=list)
     name_coverage: int = 0
     contact_coverage: int = 0
 
@@ -45,11 +40,11 @@ class ValidationReport:
         return self.name_coverage >= threshold and self.contact_coverage >= threshold
 
 
-def _iter_records(path: Path) -> list[dict[str, Any]]:
+def _iter_records(path: Path) -> List[dict[str, Any]]:
     return load_dataset_jsonl(path)
 
 
-def _validate_entity(entity: dict[str, Any], text: str, previous_end: int, seen: set[tuple[int, int, str, str]]) -> tuple[bool, str | None, int]:
+def _validate_entity(entity: dict[str, Any], text: str, previous_end: int, seen: Set[Tuple[int, int, str, str]]) -> Tuple[bool, Optional[str], int]:
     required_keys = {"start", "end", "label", "text"}
     if not required_keys.issubset(entity):
         return False, "Entité incomplète.", previous_end
@@ -79,7 +74,7 @@ def _validate_entity(entity: dict[str, Any], text: str, previous_end: int, seen:
     return True, None, end
 
 
-def _entity_sort_key(entity: object) -> tuple[int, int]:
+def _entity_sort_key(entity: object) -> Tuple[int, int]:
     if not isinstance(entity, dict):
         return (0, 0)
     try:
@@ -93,13 +88,13 @@ def _entity_sort_key(entity: object) -> tuple[int, int]:
     return start, end
 
 
-def validate_records(records: list[dict[str, Any]]) -> ValidationReport:
+def validate_records(records: List[dict[str, Any]]) -> ValidationReport:
     report = ValidationReport()
     if not records:
         report.errors.append("Le dataset est vide.")
         return report
 
-    ids_seen: set[str] = set()
+    ids_seen: Set[str] = set()
     for index, record in enumerate(records, start=1):
         report.analyzed += 1
         if not isinstance(record, dict):
@@ -135,16 +130,13 @@ def validate_records(records: list[dict[str, Any]]) -> ValidationReport:
             template = str(metadata.get("template") or "unknown")
             report.template_counts[template] += 1
 
-        seen_entities: set[tuple[int, int, str, str]] = set()
+        seen_entities: Set[Tuple[int, int, str, str]] = set()
         previous_end = 0
         has_name = False
         has_contact = False
         record_invalid = False
 
-        ordered_entities = sorted(
-            entities,
-            key=_entity_sort_key,
-        )
+        ordered_entities = sorted(entities, key=_entity_sort_key)
 
         for entity in ordered_entities:
             if not isinstance(entity, dict):
@@ -208,7 +200,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def main(argv: list[str] | None = None) -> int:
+def main(argv: Optional[List[str]] = None) -> int:
     parser = build_argument_parser()
     args = parser.parse_args(argv)
     try:
@@ -227,45 +219,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-=======
-from pathlib import Path
-import sys
-from typing import Iterable
-
-from src.cv_dataset_core import LABELS, iter_jsonl, print_validation_report, validate_dataset
-
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_INPUT = PROJECT_ROOT / "data" / "cv" / "synthetic_cv_dataset.jsonl"
-
-
-def build_parser() -> argparse.ArgumentParser:
-    """Build the validator CLI parser."""
-
-    parser = argparse.ArgumentParser(description="Valider un jeu de données de CV synthétiques.")
-    parser.add_argument("--input", default=str(DEFAULT_INPUT), help="Fichier JSONL à valider.")
-    return parser
-
-
-def main(argv: Iterable[str] | None = None) -> int:
-    """CLI entry point."""
-
-    args = build_parser().parse_args(argv)
-    try:
-        input_path = Path(args.input)
-        records = list(iter_jsonl(input_path))
-        report = validate_dataset(records, set(LABELS))
-        print_validation_report(report)
-        return 1 if report.has_errors else 0
-    except FileNotFoundError:
-        print(f"Erreur: fichier introuvable: {args.input}", file=sys.stderr)
-        return 1
-    except Exception as exc:  # pragma: no cover - exercised through CLI tests.
-        print(f"Erreur: {exc}", file=sys.stderr)
-        return 1
-
-
-if __name__ == "__main__":  # pragma: no cover - CLI entry point.
-    raise SystemExit(main())
-
->>>>>>> 5c2ec9682de243a7a10f4df4eeda37509b8341e4

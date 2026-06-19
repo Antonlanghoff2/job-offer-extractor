@@ -1,0 +1,174 @@
+{# Copyright Anton Langhoff <anton@langhoff.fr> #}
+{% extends "base.html" %}
+
+{% block head %}
+<style>
+  .hero-panel {
+    display: grid;
+    gap: 16px;
+  }
+  .hero-copy h1 {
+    margin: 0 0 8px;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+  }
+  .hero-subtitle {
+    margin: 0;
+    color: var(--muted);
+    max-width: 900px;
+  }
+  .stat__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .stat__value {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="panel hero-panel">
+  <div class="hero-copy">
+    <h1>Recommandation de formation</h1>
+    <p class="hero-subtitle">Une proposition déterministe, fondée sur les tendances du marché et sur les compétences fréquemment associées.</p>
+  </div>
+  <form method="get" class="grid" style="align-items:end;">
+    <div class="field">
+      <label for="territoire">Territoire</label>
+      <select name="territoire" id="territoire">
+        <option value="" {% if not territoire %}selected{% endif %}>Tous les territoires</option>
+        {% for option in territory_options %}
+        <option value="{{ option }}" {% if territoire == option %}selected{% endif %}>{{ option }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="field">
+      <label for="periode_jours">Période d’analyse</label>
+      <input id="periode_jours" name="periode_jours" type="number" min="1" value="{{ period_days }}">
+    </div>
+    <div class="actions">
+      <button class="btn" type="submit">Actualiser</button>
+      <a class="btn secondary" href="{{ url_for('user_portal.training_recommendation') }}">Tous les territoires</a>
+    </div>
+  </form>
+</section>
+
+{% if error_message %}
+<section class="status error">{{ error_message }}</section>
+{% endif %}
+
+{% if recommendation %}
+<section class="grid-3">
+  <article class="card">
+    <div class="stat__label">Score de pertinence</div>
+    <div class="stat__value">{{ '%.0f'|format(recommendation.score_pertinence * 100) }}%</div>
+    <div class="muted">Priorité {{ recommendation.priorite }} · Confiance {{ recommendation.niveau_confiance }}</div>
+  </article>
+  <article class="card">
+    <div class="stat__label">Offres analysées</div>
+    <div class="stat__value">{{ recommendation.nombre_offres_analysees }}</div>
+    <div class="muted">Territoire: {{ recommendation.territoire }}</div>
+  </article>
+  <article class="card">
+    <div class="stat__label">Couverture des signaux</div>
+    <div class="stat__value">{{ '%.0f'|format((recommendation.score_couverture or 0) * 100) }}%</div>
+    <div class="muted">Fiabilité {{ '%.0f'|format((recommendation.score_fiabilite or 0) * 100) }}%</div>
+  </article>
+</section>
+
+<section class="grid">
+  <article class="panel">
+    <h2>{{ recommendation.titre }}</h2>
+    <div class="meta">
+      <span>{{ recommendation.public_cible }}</span>
+      <span>{{ recommendation.territoire }}</span>
+      <span>{{ recommendation.niveau_confiance }}</span>
+    </div>
+    <p>{{ recommendation.justification }}</p>
+    {% if recommendation.limites %}
+    <div class="card" style="margin-top: 12px; background: #f7fbff;">
+      <h3>Limites</h3>
+      <ul>
+        {% for item in recommendation.limites %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    <div class="card" style="margin-top: 12px; background: #f7fbff;">
+      <h3>Compétences ciblées</h3>
+      <div class="chips">
+        {% for skill in recommendation.competences_cibles %}
+        <span class="chip">{{ skill }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="card" style="margin-top: 12px; background: #f7fbff;">
+      <h3>Métiers ciblés</h3>
+      <div class="chips">
+        {% for metier in recommendation.metiers_cibles %}
+        <span class="chip">{{ metier }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+
+  <article class="panel">
+    <h2>Structure pédagogique</h2>
+    <div class="card" style="background: #f7fbff; margin-bottom: 12px;">
+      <h3>Prérequis</h3>
+      <ul>
+        {% for item in recommendation.prerequis %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="card" style="background: #f7fbff; margin-bottom: 12px;">
+      <h3>Objectifs pédagogiques</h3>
+      <ul>
+        {% for item in recommendation.objectifs_pedagogiques %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="card" style="background: #f7fbff;">
+      <h3>Modules</h3>
+      {% if recommendation.modules %}
+      <table>
+        <thead>
+          <tr>
+            <th>Module</th>
+            <th>Durée</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for module in recommendation.modules %}
+          <tr>
+            <td>{{ module.titre }}</td>
+            <td>{{ module.duree_heures }} h</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <div class="muted">Aucun module défini.</div>
+      {% endif %}
+    </div>
+  </article>
+</section>
+{% else %}
+<section class="panel">
+  <h2>Aucune recommandation disponible</h2>
+  <p class="muted">Aucune recommandation fiable n’a pu être produite pour ce territoire et cette période.</p>
+  <div class="actions">
+    <a class="btn secondary" href="{{ url_for('user_portal.training_recommendation') }}">Tous les territoires</a>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

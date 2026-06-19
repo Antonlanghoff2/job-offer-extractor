@@ -1,0 +1,171 @@
+{
+  "domains": [
+    {
+      "id": "ia_generative_rag",
+      "titre": "Développer des applications d’IA générative avec RAG",
+      "aliases": ["ia generative", "ia générative", "rag", "llm", "embeddings", "langchain"],
+      "competences": [
+        {"nom": "Python", "aliases": ["python"]},
+        {"nom": "LLM", "aliases": ["llm", "large language model", "large language models"]},
+        {"nom": "RAG", "aliases": ["rag", "retrieval augmented generation"]},
+        {"nom": "FastAPI", "aliases": ["fastapi"]},
+        {"nom": "Docker", "aliases": ["docker"]},
+        {"nom": "PostgreSQL", "aliases": ["postgresql", "postgres"]}
+      ],
+      "metiers": ["Développeur IA", "Data Scientist", "Ingénieur Machine Learning", "Machine Learning Engineer"],
+      "public_cible": "Développeurs Python et professionnels de la data",
+      "prerequis": ["Bases de Python", "Notions d’API REST"],
+      "objectifs": [
+        "Comprendre le fonctionnement des LLM",
+        "Construire un pipeline RAG",
+        "Évaluer la qualité des réponses",
+        "Déployer une API d’inférence"
+      ],
+      "modules": [
+        {"titre": "Fondamentaux des LLM", "duree_heures": 7},
+        {"titre": "Embeddings et bases vectorielles", "duree_heures": 7},
+        {"titre": "Construction d’un pipeline RAG", "duree_heures": 14},
+        {"titre": "API, Docker et mise en production", "duree_heures": 14}
+      ]
+    },
+    {
+      "id": "backend_python",
+      "titre": "Développer des services backend Python et API REST",
+      "aliases": ["backend python", "api rest", "rest api", "fastapi", "flask", "django"],
+      "competences": [
+        {"nom": "Python", "aliases": ["python"]},
+        {"nom": "FastAPI", "aliases": ["fastapi"]},
+        {"nom": "Flask", "aliases": ["flask"]},
+        {"nom": "REST API", "aliases": ["rest api", "api rest", "rest"]},
+        {"nom": "PostgreSQL", "aliases": ["postgresql", "postgres"]},
+        {"nom": "Docker", "aliases": ["docker"]}
+      ],
+      "metiers": ["Développeur Python", "Développeur backend", "Ingénieur logiciel"],
+      "public_cible": "Développeurs backend et intégrateurs techniques",
+      "prerequis": ["Bases de Python", "Notions de bases de données"],
+      "objectifs": [
+        "Concevoir une API robuste",
+        "Structurer une application web Python",
+        "Persister des données avec PostgreSQL",
+        "Conteneuriser une application"
+      ],
+      "modules": [
+        {"titre": "Architecture backend Python", "duree_heures": 7},
+        {"titre": "API REST avec FastAPI ou Flask", "duree_heures": 14},
+        {"titre": "Persistance et PostgreSQL", "duree_heures": 7},
+        {"titre": "Docker et industrialisation", "duree_heures": 14}
+      ]
+    },
+    {
+      "id": "data_ml",
+      "titre": "Exploiter les données et entraîner des modèles de Machine Learning",
+      "aliases": ["data analyst", "data scientist", "machine learning", "pandas", "numpy", "scikit learn"],
+      "competences": [
+        {"nom": "Python", "aliases": ["python"]},
+        {"nom": "Pandas", "aliases": ["pandas"]},
+        {"nom": "NumPy", "aliases": ["numpy"]},
+        {"nom": "SQL", "aliases": ["sql"]},
+        {"nom": "scikit-learn", "aliases": ["scikit learn", "sklearn", "scikit-learn"]},
+        {"nom": "Machine Learning", "aliases": ["machine learning", "ml"]}
+      ],
+      "metiers": ["Data Analyst", "Data Scientist", "Machine Learning Engineer"],
+      "public_cible": "Analystes, data scientists et profils techniques orientés data",
+      "prerequis": ["Bases de Python", "Manipulation de données tabulaires"],
+      "objectifs": [
+        "Préparer des jeux de données",
+        "Construire des modèles supervisés",
+        "Évaluer des performances",
+        "Présenter des résultats métier"
+      ],
+      "modules": [
+        {"titre": "Préparation des données", "duree_heures": 7},
+        {"titre": "Modélisation avec scikit-learn", "duree_heures": 14},
+        {"titre": "Évaluation et validation", "duree_heures": 7},
+        {"titre": "Communication des résultats", "duree_heures": 7}
+      ]
+    },
+    {
+      "id": "devops_cloud",
+      "titre": "Automatiser le déploiement et l’exploitation d’applications cloud",
+      "aliases": ["devops", "docker", "kubernetes", "terraform", "ansible", "aws", "azure"],
+      "competences": [
+        {"nom": "Linux", "aliases": ["linux"]},
+        {"nom": "Docker", "aliases": ["docker"]},
+        {"nom": "Kubernetes", "aliases": ["kubernetes", "k8s"]},
+        {"nom": "Terraform", "aliases": ["terraform"]},
+        {"nom": "Ansible", "aliases": ["ansible"]},
+        {"nom": "AWS", "aliases": ["aws", "amazon web services"]}
+      ],
+      "metiers": ["Ingénieur DevOps", "Administrateur système"],
+      "public_cible": "Administrateurs système et ingénieurs d’exploitation",
+      "prerequis": ["Bases Linux", "Notions de réseau"],
+      "objectifs": [
+        "Automatiser les déploiements",
+        "Orchestrer des conteneurs",
+        "Décrire une infrastructure as code",
+        "Fiabiliser l’exploitation"
+      ],
+      "modules": [
+        {"titre": "Fondamentaux Linux et conteneurs", "duree_heures": 7},
+        {"titre": "Orchestration avec Kubernetes", "duree_heures": 14},
+        {"titre": "Infrastructure as Code", "duree_heures": 14},
+        {"titre": "Supervision et sécurité opérationnelle", "duree_heures": 7}
+      ]
+    },
+    {
+      "id": "fullstack_js",
+      "titre": "Concevoir une application full-stack moderne",
+      "aliases": ["full stack", "full-stack", "javascript", "typescript", "react", "vue", "node"],
+      "competences": [
+        {"nom": "JavaScript", "aliases": ["javascript", "js"]},
+        {"nom": "TypeScript", "aliases": ["typescript", "ts"]},
+        {"nom": "React", "aliases": ["react", "reactjs"]},
+        {"nom": "Vue.js", "aliases": ["vue", "vuejs", "vue.js"]},
+        {"nom": "REST API", "aliases": ["rest api", "api rest"]},
+        {"nom": "Docker", "aliases": ["docker"]}
+      ],
+      "metiers": ["Développeur full-stack", "Développeur front-end", "Développeur web"],
+      "public_cible": "Développeurs web orientés produit et intégration",
+      "prerequis": ["Bases JavaScript", "Notions d’API REST"],
+      "objectifs": [
+        "Structurer un front-end moderne",
+        "Consommer une API",
+        "Mettre en place une chaîne de livraison",
+        "Industrialiser l’application"
+      ],
+      "modules": [
+        {"titre": "Fondamentaux front-end", "duree_heures": 7},
+        {"titre": "Composants React ou Vue.js", "duree_heures": 14},
+        {"titre": "Consommation d’API REST", "duree_heures": 7},
+        {"titre": "Packaging et déploiement", "duree_heures": 7}
+      ]
+    },
+    {
+      "id": "php_symfony",
+      "titre": "Développer des applications PHP avec Symfony",
+      "aliases": ["php", "symfony", "doctrine"],
+      "competences": [
+        {"nom": "PHP", "aliases": ["php"]},
+        {"nom": "Symfony", "aliases": ["symfony"]},
+        {"nom": "Doctrine", "aliases": ["doctrine"]},
+        {"nom": "MySQL", "aliases": ["mysql"]},
+        {"nom": "Docker", "aliases": ["docker"]}
+      ],
+      "metiers": ["Développeur PHP Symfony", "Développeur web"],
+      "public_cible": "Développeurs PHP et intégrateurs web",
+      "prerequis": ["Bases PHP", "Notions d’architecture web"],
+      "objectifs": [
+        "Construire des applications Symfony",
+        "Modéliser des données métier",
+        "Sécuriser une application PHP",
+        "Préparer un déploiement conteneurisé"
+      ],
+      "modules": [
+        {"titre": "Fondamentaux Symfony", "duree_heures": 14},
+        {"titre": "Doctrine et persistance", "duree_heures": 7},
+        {"titre": "Sécurité et qualité", "duree_heures": 7},
+        {"titre": "Docker et mise en production", "duree_heures": 7}
+      ]
+    }
+  ]
+}

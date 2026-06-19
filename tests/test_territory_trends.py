@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+from typing import Dict, List
+
 import unittest
 from unittest.mock import Mock, patch
 
@@ -10,7 +12,7 @@ from src.services.offer_repository import get_top_skills_by_territory
 from src.web_app import create_app
 
 
-def make_raw_offer(offer_id: str, title: str, territory: str, skills: list[str], date_creation: str = "2026-06-01") -> dict[str, object]:
+def make_raw_offer(offer_id: str, title: str, territory: str, skills: List[str], date_creation: str = "2026-06-01") -> Dict[str, object]:
     return {
         "id": offer_id,
         "intitule": title,
@@ -28,9 +30,9 @@ def make_normalized_offer(
     offer_id: str,
     title: str,
     territory: str,
-    skills: list[str],
+    skills: List[str],
     date_value: str = "2026-06-01",
-) -> dict[str, object]:
+) -> Dict[str, object]:
     return {
         "id": offer_id,
         "intitule": title,
@@ -49,7 +51,7 @@ def make_normalized_offer(
     }
 
 
-def make_top_skill_dataset() -> list[dict[str, object]]:
+def make_top_skill_dataset() -> List[Dict[str, object]]:
     counts = [
         ("Alpha", 5),
         ("Beta", 4),
@@ -64,7 +66,7 @@ def make_top_skill_dataset() -> list[dict[str, object]]:
         ("Lambda", 1),
         ("Mu", 1),
     ]
-    offers: list[dict[str, object]] = []
+    offers: List[Dict[str, object]] = []
     index = 1
     for skill, count in counts:
         for _ in range(count):
@@ -73,7 +75,7 @@ def make_top_skill_dataset() -> list[dict[str, object]]:
     return offers
 
 
-def make_case_fusion_dataset() -> list[dict[str, object]]:
+def make_case_fusion_dataset() -> List[Dict[str, object]]:
     return [
         make_normalized_offer("1", "Développeur Python", "Lyon", ["Python", "python", " PYTHON ", "SQL", " SQL "]),
         make_normalized_offer("2", "Data Analyst", "Lyon", ["PYTHON", "SQL", "SQL", "Docker"]),
@@ -81,7 +83,7 @@ def make_case_fusion_dataset() -> list[dict[str, object]]:
     ]
 
 
-def make_selection_dataset() -> list[dict[str, object]]:
+def make_selection_dataset() -> List[Dict[str, object]]:
     return [
         make_normalized_offer("1", "Développeur Python", "Lyon", ["Python", "SQL"], "2026-06-01"),
         make_normalized_offer("2", "Développeur Go", "Paris", ["Go", "Docker"], "2026-06-02"),

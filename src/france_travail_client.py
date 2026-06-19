@@ -7,7 +7,7 @@ from __future__ import annotations
 import json
 import os
 from collections import Counter
-from typing import Any, Iterable
+from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 import requests
 try:
@@ -52,14 +52,14 @@ def get_access_token() -> str:
     return response.json()["access_token"]
 
 
-def _build_headers(token: str) -> dict[str, str]:
+def _build_headers(token: str) -> Dict[str, str]:
     return {
         "Authorization": f"Bearer {token}",
         "Accept": "application/json",
     }
 
 
-def _clean_param_value(value: object) -> str | None:
+def _clean_param_value(value: object) -> Optional[str]:
     if value is None:
         return None
     if isinstance(value, str):
@@ -71,13 +71,13 @@ def _clean_param_value(value: object) -> str | None:
 def _build_search_params(
     mots_cles: str,
     *,
-    commune: str | None = None,
-    departement: str | None = None,
-    region: str | None = None,
-    distance: int | None = None,
+    commune: Optional[str] = None,
+    departement: Optional[str] = None,
+    region: Optional[str] = None,
+    distance: Optional[int] = None,
     range_value: str = "0-149",
-) -> dict[str, Any]:
-    params: dict[str, Any] = {}
+) -> Dict[str, Any]:
+    params: Dict[str, Any] = {}
     cleaned_mots = _clean_param_value(mots_cles)
     cleaned_range = _clean_param_value(range_value)
     if cleaned_mots:
@@ -103,11 +103,11 @@ def _request_offres_page(
     mots_cles: str,
     range_value: str,
     *,
-    commune: str | None = None,
-    departement: str | None = None,
-    region: str | None = None,
-    distance: int | None = None,
-) -> dict[str, Any]:
+    commune: Optional[str] = None,
+    departement: Optional[str] = None,
+    region: Optional[str] = None,
+    distance: Optional[int] = None,
+) -> Dict[str, Any]:
     response = requests.get(
         f"{API_BASE_URL}/offres/search",
         headers=_build_headers(token),
@@ -145,12 +145,12 @@ def _request_offres_page(
 def search_offres(
     mots_cles: str,
     *,
-    commune: str | None = None,
-    departement: str | None = None,
-    region: str | None = None,
-    distance: int | None = None,
+    commune: Optional[str] = None,
+    departement: Optional[str] = None,
+    region: Optional[str] = None,
+    distance: Optional[int] = None,
     range_value: str = "0-149",
-) -> dict[str, Any]:
+) -> Dict[str, Any]:
     token = get_access_token()
     return _request_offres_page(
         token,
@@ -163,7 +163,7 @@ def search_offres(
     )
 
 
-def _offer_identifier(offer: dict[str, Any]) -> str:
+def _offer_identifier(offer: Dict[str, Any]) -> str:
     for key in ("id", "id_offre", "idOffre", "idOfr", "cle"):
         value = offer.get(key)
         if value not in (None, ""):
@@ -177,7 +177,7 @@ def _normalize_text(value: object) -> str:
     return " ".join(str(value).split()).strip().lower()
 
 
-def _iter_location_texts(offer: dict[str, Any]) -> Iterable[str]:
+def _iter_location_texts(offer: Dict[str, Any]) -> Iterable[str]:
     lieu = offer.get("lieuTravail")
     if isinstance(lieu, dict):
         for key in ("libelle", "commune", "codePostal"):
@@ -190,7 +190,7 @@ def _iter_location_texts(offer: dict[str, Any]) -> Iterable[str]:
             yield str(value)
 
 
-def _territory_matches_offer(offer: dict[str, Any], territoire: str) -> bool:
+def _territory_matches_offer(offer: Dict[str, Any], territoire: str) -> bool:
     target = _normalize_text(territoire)
     if not target:
         return False
@@ -200,9 +200,9 @@ def _territory_matches_offer(offer: dict[str, Any], territoire: str) -> bool:
     return target in location_blob or location_blob in target
 
 
-def _dedupe_offers(offers: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
+def _dedupe_offers(offers: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen: set[str] = set()
-    deduped: list[dict[str, Any]] = []
+    deduped: List[Dict[str, Any]] = []
     for offer in offers:
         identifier = _offer_identifier(offer)
         if identifier in seen:
@@ -215,17 +215,17 @@ def _dedupe_offers(offers: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
 def iter_search_offres(
     mots_cles: str,
     page_size: int = DEFAULT_PAGE_SIZE,
-    max_pages: int | None = None,
-    max_results: int | None = None,
+    max_pages: Optional[int] = None,
+    max_results: Optional[int] = None,
     *,
-    commune: str | None = None,
-    departement: str | None = None,
-    region: str | None = None,
-    distance: int | None = None,
-) -> list[dict[str, Any]]:
+    commune: Optional[str] = None,
+    departement: Optional[str] = None,
+    region: Optional[str] = None,
+    distance: Optional[int] = None,
+) -> List[Dict[str, Any]]:
     """Fetch France Travail search results across range windows."""
     seen: set[str] = set()
-    results: list[dict[str, Any]] = []
+    results: List[Dict[str, Any]] = []
     start = 0
     page_index = 0
     effective_page_size = min(max(page_size, 1), DEFAULT_PAGE_SIZE)
@@ -268,12 +268,12 @@ def iter_search_offres(
 
 
 def search_all_offres(
-    queries: list[str],
+    queries: List[str],
     page_size: int = DEFAULT_PAGE_SIZE,
-    max_pages: int | None = None,
-    max_results: int | None = None,
-    territoires: list[str] | None = None,
-) -> dict[str, Any]:
+    max_pages: Optional[int] = None,
+    max_results: Optional[int] = None,
+    territoires: Optional[List[str]] = None,
+) -> Dict[str, Any]:
     """Collect France Travail offers across multiple queries and optional territories.
 
     The function paginates every query with 150-result windows, merges the
@@ -284,10 +284,10 @@ def search_all_offres(
         raise ValueError("Au moins une requête doit être fournie.")
 
     normalized_territories = [t.strip() for t in territoires or [] if t and t.strip()]
-    all_matches: list[dict[str, Any]] = []
-    by_query: dict[str, int] = {}
+    all_matches: List[Dict[str, Any]] = []
+    by_query: Dict[str, int] = {}
     by_territory: Counter[str] = Counter()
-    per_query_details: list[dict[str, Any]] = []
+    per_query_details: List[Dict[str, Any]] = []
 
     for query in queries:
         query_results = iter_search_offres(

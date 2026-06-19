@@ -8,7 +8,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, Optional, Tuple, Dict, List
 
 from src.offer_normalization import normalize_text
 from src.services.offer_normalization import normalize_offer_for_matching
@@ -59,14 +59,14 @@ def normalize_skill_name(name: object) -> str:
 class ScoreComponent:
     score: float
     applicable: bool
-    details: dict[str, Any]
+    details: Dict[str, Any]
 
 
 def _scale(value: float) -> float:
     return max(0.0, min(100.0, value))
 
 
-def compute_skill_score(profile_skills: list[dict[str, Any]], offer_skills: list[str]) -> ScoreComponent:
+def compute_skill_score(profile_skills: List[Dict[str, Any]], offer_skills: List[str]) -> ScoreComponent:
     profile_map = {normalize_skill_name(item.get("normalized_name") or item.get("name") or item.get("nom")): item for item in profile_skills if item}
     offer_map = {normalize_skill_name(skill): skill for skill in offer_skills if normalize_skill_name(skill)}
     if not profile_map or not offer_map:
@@ -78,7 +78,7 @@ def compute_skill_score(profile_skills: list[dict[str, Any]], offer_skills: list
     return ScoreComponent(total, True, {"matching_skills": matched, "missing_skills": missing, "coverage": round(coverage, 3)})
 
 
-def compute_job_score(profile_job_titles: list[str], profile_experience_titles: list[str], offer_title: str) -> ScoreComponent:
+def compute_job_score(profile_job_titles: List[str], profile_experience_titles: List[str], offer_title: str) -> ScoreComponent:
     profile_titles = [_tokenize(title) for title in profile_job_titles if title]
     profile_titles += [_tokenize(title) for title in profile_experience_titles if title]
     offer_tokens = _tokenize(offer_title)
@@ -98,7 +98,7 @@ def compute_job_score(profile_job_titles: list[str], profile_experience_titles: 
     return ScoreComponent(_scale(best * 100.0), True, {"matched_tokens": sorted(matched_tokens), "coverage": round(best, 3)})
 
 
-def _years_from_profile(profile_experiences: list[dict[str, Any]]) -> float | None:
+def _years_from_profile(profile_experiences: List[Dict[str, Any]]) -> Optional[float]:
     years = 0.0
     found = False
     for experience in profile_experiences:
@@ -117,7 +117,7 @@ def _years_from_profile(profile_experiences: list[dict[str, Any]]) -> float | No
     return years if found else None
 
 
-def compute_experience_score(profile_experiences: list[dict[str, Any]], offer_experience: object) -> ScoreComponent:
+def compute_experience_score(profile_experiences: List[Dict[str, Any]], offer_experience: object) -> ScoreComponent:
     if not offer_experience:
         return ScoreComponent(100.0, False, {"required": None, "profile_years": _years_from_profile(profile_experiences)})
     profile_years = _years_from_profile(profile_experiences)
@@ -137,7 +137,7 @@ def compute_experience_score(profile_experiences: list[dict[str, Any]], offer_ex
     return ScoreComponent(score, True, {"required_years": required_years, "profile_years": round(profile_years, 2)})
 
 
-def compute_diploma_score(profile_diplomas: list[dict[str, Any]], offer_diplomas: list[str]) -> ScoreComponent:
+def compute_diploma_score(profile_diplomas: List[Dict[str, Any]], offer_diplomas: List[str]) -> ScoreComponent:
     profile_titles = {normalize_text(item.get("title") or item.get("intitule")) for item in profile_diplomas if item}
     required_titles = {normalize_text(item) for item in offer_diplomas if item}
     profile_titles.discard("")
@@ -150,7 +150,7 @@ def compute_diploma_score(profile_diplomas: list[dict[str, Any]], offer_diplomas
     return ScoreComponent(_scale(coverage * 100.0), True, {"matching_diplomas": matched, "missing_diplomas": missing, "coverage": round(coverage, 3)})
 
 
-def compute_location_score(profile: dict[str, Any], offer: dict[str, Any]) -> ScoreComponent:
+def compute_location_score(profile: Dict[str, Any], offer: Dict[str, Any]) -> ScoreComponent:
     if not any(profile.get(key) for key in ("city", "postal_code", "department", "search_radius_km")):
         return ScoreComponent(100.0, False, {"reason": "profil sans contrainte locale"})
     offer_locations = [normalize_text(value) for value in offer.get("lieux", []) if value]
@@ -174,7 +174,7 @@ def compute_location_score(profile: dict[str, Any], offer: dict[str, Any]) -> Sc
     return ScoreComponent(40.0, True, {"reason": "localisation partielle"})
 
 
-def compute_contract_score(profile_contract: str | None, offer_contract: str | None) -> ScoreComponent:
+def compute_contract_score(profile_contract: Optional[str], offer_contract: Optional[str]) -> ScoreComponent:
     if not profile_contract or not offer_contract:
         return ScoreComponent(100.0, False, {"reason": "absence de préférence ou de contrat"})
     profile_norm = normalize_text(profile_contract)
@@ -184,7 +184,7 @@ def compute_contract_score(profile_contract: str | None, offer_contract: str | N
     return ScoreComponent(0.0, True, {"reason": "contrat différent", "profile": profile_contract, "offer": offer_contract})
 
 
-def compute_remote_score(profile_remote: str | None, offer_remote: str | None) -> ScoreComponent:
+def compute_remote_score(profile_remote: Optional[str], offer_remote: Optional[str]) -> ScoreComponent:
     if not profile_remote or normalize_text(profile_remote) in {"indifferent", ""}:
         return ScoreComponent(100.0, False, {"reason": "préférence télétravail neutre"})
     profile_norm = normalize_text(profile_remote)
@@ -198,7 +198,7 @@ def compute_remote_score(profile_remote: str | None, offer_remote: str | None) -
     return ScoreComponent(0.0, True, {"reason": "préférence télétravail non respectée"})
 
 
-def _profile_skill_list(profile_skills: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def _profile_skill_list(profile_skills: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     normalized = []
     for item in profile_skills:
         if not isinstance(item, dict):
@@ -209,7 +209,7 @@ def _profile_skill_list(profile_skills: list[dict[str, Any]]) -> list[dict[str, 
     return normalized
 
 
-def compute_match(profile: dict[str, Any], offer_raw: dict[str, Any]) -> dict[str, Any]:
+def compute_match(profile: Dict[str, Any], offer_raw: Dict[str, Any]) -> Dict[str, Any]:
     offer = normalize_offer_for_matching(offer_raw, source=offer_raw.get("source"))
     profile_skills = _profile_skill_list(profile.get("skills", []))
     profile_jobs = []

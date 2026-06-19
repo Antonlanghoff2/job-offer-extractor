@@ -3,13 +3,15 @@
 
 from __future__ import annotations
 
+from typing import Dict, List
+
 import unittest
 from unittest.mock import Mock, patch
 
 from src.web_app import create_app
 
 
-def make_raw_offers(territoire: str) -> list[dict[str, object]]:
+def make_raw_offers(territoire: str) -> List[Dict[str, object]]:
     return [
         {
             "id": "1",

@@ -13,7 +13,7 @@ import re
 import unicodedata
 from datetime import date, datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Dict, List, Optional, Tuple
 
 from flask import Flask, flash, jsonify, render_template, request
 
@@ -39,6 +39,9 @@ DEFAULT_PORT = 8000
 DEFAULT_HOST = "127.0.0.1"
 TERRITOIRE_TYPE_OPTIONS = (
     ("all", "Tous les territoires"),
+    ("commune", "Commune"),
+    ("departement", "Département"),
+    ("region", "Région"),
 )
 
 
@@ -49,7 +52,7 @@ def _normalize_text(value: object) -> str:
     return re.sub(r"\s+", " ", text).strip().lower()
 
 
-def _parse_date(value: object) -> date | None:
+def _parse_date(value: object) -> Optional[date]:
     if value is None:
         return None
     if isinstance(value, datetime):
@@ -78,7 +81,7 @@ def _format_date(value: object) -> str:
     return parsed.isoformat() if parsed else ""
 
 
-def _extract_territory(raw_offer: dict[str, Any]) -> str:
+def _extract_territory(raw_offer: Dict[str, Any]) -> str:
     lieu = raw_offer.get("lieuTravail")
     if isinstance(lieu, dict):
         territory = lieu.get("libelle") or lieu.get("commune") or lieu.get("codePostal")
@@ -91,7 +94,7 @@ def _extract_territory(raw_offer: dict[str, Any]) -> str:
     return str(raw_offer.get("intitule") or "")
 
 
-def _extract_metier(raw_offer: dict[str, Any]) -> str:
+def _extract_metier(raw_offer: Dict[str, Any]) -> str:
     return str(
         raw_offer.get("romeLibelle")
         or raw_offer.get("appellationlibelle")
@@ -100,11 +103,11 @@ def _extract_metier(raw_offer: dict[str, Any]) -> str:
     )
 
 
-def _extract_contrat(raw_offer: dict[str, Any]) -> str:
+def _extract_contrat(raw_offer: Dict[str, Any]) -> str:
     return str(raw_offer.get("typeContratLibelle") or raw_offer.get("typeContrat") or "")
 
 
-def _extract_niveau(raw_offer: dict[str, Any]) -> str:
+def _extract_niveau(raw_offer: Dict[str, Any]) -> str:
     experience = _normalize_text(raw_offer.get("experienceLibelle") or raw_offer.get("experienceExige"))
     if any(token in experience for token in ("senior", "expert", "lead", "5 ans", "6 ans", "7 ans", "8 ans")):
         return "senior"
@@ -115,8 +118,8 @@ def _extract_niveau(raw_offer: dict[str, Any]) -> str:
     return ""
 
 
-def _extract_competences(raw_offer: dict[str, Any]) -> list[str]:
-    competences: list[str] = []
+def _extract_competences(raw_offer: Dict[str, Any]) -> List[str]:
+    competences: List[str] = []
     for item in raw_offer.get("competences") or []:
         if isinstance(item, dict):
             label = item.get("libelle") or item.get("code")
@@ -130,7 +133,7 @@ def _extract_competences(raw_offer: dict[str, Any]) -> list[str]:
     return competences
 
 
-def normalize_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
+def normalize_offer(raw_offer: Dict[str, Any]) -> Dict[str, Any]:
     return {
         "id_offre": str(raw_offer.get("id") or raw_offer.get("id_offre") or ""),
         "date": _format_date(raw_offer.get("dateActualisation") or raw_offer.get("dateCreation") or raw_offer.get("date")),
@@ -145,7 +148,7 @@ def normalize_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def load_raw_offers(path: Path = RAW_OFFERS_PATH) -> list[dict[str, Any]]:
+def load_raw_offers(path: Path = RAW_OFFERS_PATH) -> List[Dict[str, Any]]:
     if not path.exists():
         raise FileNotFoundError(f"Fichier d'offres introuvable: {path}")
     with path.open("r", encoding="utf-8") as fh:
@@ -155,13 +158,13 @@ def load_raw_offers(path: Path = RAW_OFFERS_PATH) -> list[dict[str, Any]]:
     return [offer for offer in payload if isinstance(offer, dict)]
 
 
-def _offer_matches_territory(offer: dict[str, Any], territoire: str | None) -> bool:
+def _offer_matches_territory(offer: Dict[str, Any], territoire: Optional[str]) -> bool:
     if not territoire:
         return True
     target = _normalize_text(territoire)
     if not target:
         return False
-    parts: list[str] = []
+    parts: List[str] = []
     for key in ("territoire", "ville", "lieu", "location", "city", "code_postal"):
         value = offer.get(key)
         if isinstance(value, list):
@@ -178,14 +181,14 @@ def _offer_matches_territory(offer: dict[str, Any], territoire: str | None) -> b
     return bool(offer_territory) and (target in offer_territory or offer_territory in target)
 
 
-def _offer_in_period(offer: dict[str, Any], cutoff: date) -> bool:
+def _offer_in_period(offer: Dict[str, Any], cutoff: date) -> bool:
     parsed = _parse_date(offer.get("date"))
     if parsed is None:
         return True
     return parsed >= cutoff
 
 
-def filter_offers(offers: list[dict[str, Any]], territoire: str | None, periode_jours: int) -> list[dict[str, Any]]:
+def filter_offers(offers: List[Dict[str, Any]], territoire: Optional[str], periode_jours: int) -> List[Dict[str, Any]]:
     normalized = [normalize_offer(offer) for offer in offers]
     reference_dates = [parsed for parsed in (_parse_date(offer.get("date")) for offer in normalized) if parsed is not None]
     reference_date = max(reference_dates) if reference_dates else date.today()
@@ -199,7 +202,7 @@ def filter_offers(offers: list[dict[str, Any]], territoire: str | None, periode_
     return filtered
 
 
-def load_market_context_rows(path: Path = PROCESSED_CONTEXT_PATH) -> list[dict[str, Any]]:
+def load_market_context_rows(path: Path = PROCESSED_CONTEXT_PATH) -> List[Dict[str, Any]]:
     if not path.exists():
         return []
     with path.open("r", encoding="utf-8", newline="") as fh:
@@ -214,8 +217,8 @@ def _format_percentage(count: int, total: int) -> str:
     return f"{(count / total) * 100:.1f}".replace('.', ',') + " %"
 
 
-def build_ranking_entries(data: dict[str, Any] | None, total_offers: int, limit: int) -> list[dict[str, Any]]:
-    entries: list[dict[str, Any]] = []
+def build_ranking_entries(data: Optional[Dict[str, Any]], total_offers: int, limit: int) -> List[Dict[str, Any]]:
+    entries: List[Dict[str, Any]] = []
     if not isinstance(data, dict):
         return entries
     for label, raw_count in data.items():
@@ -271,15 +274,15 @@ def _sanitize_top_n(value: object) -> int:
     return max(parsed, 1)
 
 
-def _sanitize_territory_type(value: str | None) -> str:
+def _sanitize_territory_type(value: Optional[str]) -> str:
     candidate = (value or "all").strip().lower()
     if candidate in {item[0] for item in TERRITOIRE_TYPE_OPTIONS}:
         return candidate
     return "all"
 
 
-def _build_search_arguments(territoire_type: str, territoire: str, distance: object) -> tuple[dict[str, Any], str | None, str]:
-    search_kwargs: dict[str, Any] = {}
+def _build_search_arguments(territoire_type: str, territoire: str, distance: object) -> Tuple[Dict[str, Any], Optional[str], str]:
+    search_kwargs: Dict[str, Any] = {}
     territory_label = None
     territoire = territoire.strip()
     if territoire_type == "commune":
@@ -314,8 +317,8 @@ def build_live_state(
     per_page: int,
     periode_jours: int,
     top_n: int,
-) -> dict[str, Any]:
-    errors: list[str] = []
+) -> Dict[str, Any]:
+    errors: List[str] = []
     search_filters, territoire_label, normalized_territoire = _build_search_arguments(territoire_type, territoire, distance)
     territory_offers, territory_error = load_normalized_offers()
     territory_options = get_available_territories(territory_offers)
@@ -419,7 +422,7 @@ def build_live_state(
     except Exception:
         current_profile = None
 
-    enriched_offers: list[dict[str, Any]] = []
+    enriched_offers: List[Dict[str, Any]] = []
     for offer in paged_offers:
         enriched = dict(offer)
         source_offer = normalized_by_id.get(str(offer.get("id") or offer.get("id_offre") or ""))
@@ -911,7 +914,7 @@ HTML_TEMPLATE = """
 """
 
 
-def _build_query_string(params: dict[str, Any]) -> str:
+def _build_query_string(params: Dict[str, Any]) -> str:
     from urllib.parse import urlencode
 
     filtered = {key: value for key, value in params.items() if value not in (None, "")}
@@ -922,7 +925,7 @@ def _build_page_url(**params: Any) -> str:
     return f"/?{_build_query_string(params)}"
 
 
-def _build_render_context_from_request() -> dict[str, Any]:
+def _build_render_context_from_request() -> Dict[str, Any]:
     mots_cles = (request.args.get("mots_cles") or "").strip()
     territoire_type = _sanitize_territory_type(request.args.get("territoire_type"))
     territoire = (request.args.get("territoire") or "").strip()
@@ -978,7 +981,7 @@ def _build_render_context_from_request() -> dict[str, Any]:
     return state
 
 
-def _build_territory_trends_context_from_request() -> dict[str, Any]:
+def _build_territory_trends_context_from_request() -> Dict[str, Any]:
     territory = (request.args.get("territoire") or "").strip()
     offers, error_message = load_normalized_offers()
     context = build_territory_trends_context(offers, territory or None, limit=DEFAULT_TOP_N)
@@ -993,7 +996,7 @@ def _build_territory_trends_context_from_request() -> dict[str, Any]:
     return context
 
 
-def build_state(territoire: str | None, periode_jours: int, top_n: int = DEFAULT_TOP_N) -> dict[str, Any]:
+def build_state(territoire: Optional[str], periode_jours: int, top_n: int = DEFAULT_TOP_N) -> Dict[str, Any]:
     normalized_offers, _error_message = load_normalized_offers()
     offers = filter_offers(normalized_offers, territoire, periode_jours)
     trends = aggregate_trends(offers, territoire=territoire, periode_jours=periode_jours)
@@ -1017,7 +1020,7 @@ def build_state(territoire: str | None, periode_jours: int, top_n: int = DEFAULT
     }
 
 
-def create_app(config_overrides: dict[str, Any] | None = None) -> Flask:
+def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:
     app = Flask(
         __name__,
         template_folder=str(PROJECT_ROOT / "templates"),
@@ -1066,6 +1069,9 @@ def create_app(config_overrides: dict[str, Any] | None = None) -> Flask:
     return app
 
 
+app = create_app()
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="France Travail offers and trends web dashboard.")
     parser.add_argument("--host", default=DEFAULT_HOST)
@@ -1076,7 +1082,6 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     args = build_parser().parse_args()
-    app = create_app()
     app.run(host=args.host, port=args.port, debug=args.debug)
 
 

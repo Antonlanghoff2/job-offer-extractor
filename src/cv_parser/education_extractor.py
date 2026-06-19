@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
+from typing import Dict, List, Optional
 
 from .confidence import education_confidence
 from .normalizer import collapse_spaces, normalize_text, parse_date_range
@@ -17,12 +18,12 @@ INSTITUTION_KEYWORDS = ("université", "universite", "école", "ecole", "lycée"
 
 @dataclass
 class _EducationCandidate:
-    title_parts: list[str] = field(default_factory=list)
-    institution_parts: list[str] = field(default_factory=list)
-    description_parts: list[str] = field(default_factory=list)
-    date_values: list[str] = field(default_factory=list)
-    level: str | None = None
-    source_lines: list[str] = field(default_factory=list)
+    title_parts: List[str] = field(default_factory=list)
+    institution_parts: List[str] = field(default_factory=list)
+    description_parts: List[str] = field(default_factory=list)
+    date_values: List[str] = field(default_factory=list)
+    level: Optional[str] = None
+    source_lines: List[str] = field(default_factory=list)
 
     @property
     def warm(self) -> bool:
@@ -50,7 +51,7 @@ class _EducationCandidate:
         if cleaned not in self.date_values:
             self.date_values.append(cleaned)
 
-    def to_dict(self) -> dict[str, object]:
+    def to_dict(self) -> Dict[str, object]:
         title = collapse_spaces(" ".join(self.title_parts))
         institution = collapse_spaces(" ".join(self.institution_parts)) or None
         description = collapse_spaces(" ".join(self.description_parts)) or None
@@ -117,14 +118,14 @@ def _looks_like_institution(text: str) -> bool:
     return any(word.isupper() and len(word) > 1 for word in stripped.split())
 
 
-def _split_composite_line(line: str) -> list[str]:
+def _split_composite_line(line: str) -> List[str]:
     if re.search(r"\b(?:19|20)\d{2}\b", line):
         return [collapse_spaces(line)]
     parts = [collapse_spaces(part) for part in re.split(r"\s+[—–-]\s+", line) if collapse_spaces(part)]
     return parts or [collapse_spaces(line)]
 
 
-def _extract_level(text: str) -> str | None:
+def _extract_level(text: str) -> Optional[str]:
     lowered = normalize_text(text)
     mapping = {
         "mastère spécialisé": "Mastère spécialisé",
@@ -170,9 +171,9 @@ def _classify_segment(segment: str, has_candidate: bool) -> str:
     return "other"
 
 
-def extract_educations(lines: list[str]) -> list[dict[str, object]]:
-    entries: list[dict[str, object]] = []
-    candidate: _EducationCandidate | None = None
+def extract_educations(lines: List[str]) -> List[Dict[str, object]]:
+    entries: List[Dict[str, object]] = []
+    candidate: Optional[_EducationCandidate] = None
     for line in lines:
         for segment in _split_composite_line(line):
             kind = _classify_segment(segment, candidate is not None)
