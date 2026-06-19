@@ -22,7 +22,7 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Callable, Iterable
 
-from flask import Blueprint, current_app, g, redirect, render_template_string, request, session, url_for
+from flask import Blueprint, current_app, g, redirect, render_template_string, request, session, send_file, url_for
 from markupsafe import escape
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.utils import secure_filename
@@ -530,6 +530,19 @@ def _normalize_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
     return normalize_offer_for_matching(raw_offer, source=raw_offer.get("source") or "France Travail")
 
 
+def _offer_fallback_url(offer: dict[str, Any]) -> str | None:
+    url = offer.get("url_originale") or offer.get("url")
+    if url:
+        return str(url)
+    source_name = normalize_text(offer.get("source") or "")
+    identifier = offer.get("source_identifier") or offer.get("id") or offer.get("id_offre")
+    if identifier and source_name in {"", "france travail", "france_travail", "francetravail"}:
+        return f"https://candidat.francetravail.fr/offres/recherche/detail/{identifier}"
+    if identifier:
+        return f"https://candidat.francetravail.fr/offres/recherche/detail/{identifier}"
+    return None
+
+
 def _assemble_profile(user_id: int) -> dict[str, Any]:
     profile_row = fetch_one("SELECT * FROM user_profiles WHERE user_id = ?", (user_id,))
     desired_jobs = [
@@ -769,6 +782,51 @@ def _profile_form(profile: dict[str, Any], desired_jobs_text: str) -> str:
         remote_options=REMOTE_OPTIONS,
         contract_options=CONTRACT_OPTIONS,
         csrf_token=_csrf_token,
+    )
+
+
+def _profile_summary_block(profile: dict[str, Any]) -> str:
+    return render_template_string(
+        """
+        <section class="panel profile-summary">
+          <div class="profile-summary__header">
+            <div>
+              <h2>Mes compétences et mes formations</h2>
+              <p class="muted">Résumé en lecture seule des éléments déjà enregistrés.</p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="profile-summary__box">
+              <h3>Compétences</h3>
+              {% if profile.skills %}
+              <div class="chips">
+                {% for skill in profile.skills %}
+                <span class="chip">{{ skill.name or skill.normalized_name }}</span>
+                {% endfor %}
+              </div>
+              {% else %}
+              <div class="muted">Aucune compétence enregistrée.</div>
+              {% endif %}
+            </div>
+            <div class="profile-summary__box">
+              <h3>Formations</h3>
+              {% if profile.diplomas %}
+              <ul class="profile-summary__list">
+                {% for diploma in profile.diplomas %}
+                <li>
+                  <strong>{{ diploma.title }}</strong>
+                  <span class="muted">{{ diploma.level or 'Niveau non renseigné' }}{% if diploma.institution %} · {{ diploma.institution }}{% endif %}</span>
+                </li>
+                {% endfor %}
+              </ul>
+              {% else %}
+              <div class="muted">Aucune formation enregistrée.</div>
+              {% endif %}
+            </div>
+          </div>
+        </section>
+        """,
+        profile=profile,
     )
 
 
@@ -1510,7 +1568,7 @@ def _recommendation_page(matches: list[dict[str, Any]], filters: dict[str, Any],
         for match in matches:
             offer = match["offer"]
             explanation = match.get("explanation", {})
-            url = offer.get("url_originale")
+            url = _offer_fallback_url(offer)
             cards.append(
                 f"""
                 <article class="offer-card">
@@ -1657,6 +1715,7 @@ def profile():
                 error = str(exc)
     profile_data = _current_profile_snapshot(user_id)
     content = _profile_form(profile_data, "\n".join(item["job_title"] if isinstance(item, dict) else str(item) for item in profile_data["desired_jobs"]))
+    content += _profile_summary_block(profile_data)
     return _render_page("Mon profil", content, message=error)
 
 
@@ -1955,10 +2014,13 @@ def upload_cv():
           {% if cv_row %}
           <hr>
           <p class="muted">CV actuellement enregistré: {{ cv_row['original_filename'] }}</p>
-          <form method="post" action="{{ url_for('user_portal.delete_cv') }}">
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <button class="btn danger" type="submit">Supprimer mon CV</button>
-          </form>
+          <div class="actions">
+            <a class="btn secondary" href="{{ url_for('user_portal.cv_preview') }}">Voir l'aperçu</a>
+            <form method="post" action="{{ url_for('user_portal.delete_cv') }}">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button class="btn danger" type="submit">Supprimer mon CV</button>
+            </form>
+          </div>
           {% endif %}
         </section>
         """,
@@ -1966,6 +2028,71 @@ def upload_cv():
         csrf_token=_csrf_token,
     )
     return _render_page("Mon CV", content, message=message, message_category=message_category)
+
+
+@user_portal_bp.route("/profile/cv/preview")
+@login_required
+def cv_preview():
+    user_id = _current_user_id()
+    assert user_id is not None
+    cv_row = fetch_one("SELECT * FROM user_cvs WHERE user_id = ?", (user_id,))
+    cv_data = dict(cv_row) if cv_row else None
+    if not cv_data:
+        return _render_page("Aperçu CV", "<section class='panel'><h2>Aucun CV enregistré</h2><div class='muted'>Importe d'abord un CV pour le visualiser.</div></section>")
+    path = _uploads_root() / CV_FOLDER_NAME / str(user_id) / cv_data["stored_filename"]
+    if not path.exists():
+        return _render_page("Aperçu CV", "<section class='panel'><h2>CV introuvable</h2><div class='muted'>Le fichier enregistré n'est plus disponible.</div></section>")
+    is_pdf = str(cv_data.get("mime_type") or "").startswith("application/pdf") or str(cv_data.get("original_filename") or "").lower().endswith(".pdf")
+    content = render_template_string(
+        """
+        <section class="panel cv-preview-panel">
+          <div class="actions" style="justify-content: space-between;">
+            <div>
+              <h2>Aperçu de mon CV</h2>
+              <p class="muted">{{ cv_row['original_filename'] }}</p>
+            </div>
+            <div class="actions">
+              <a class="btn secondary" href="{{ url_for('user_portal.cv_file') }}" target="_blank" rel="noopener noreferrer">Ouvrir le fichier</a>
+              <a class="btn secondary" href="{{ url_for('user_portal.upload_cv') }}">Retour</a>
+            </div>
+          </div>
+          {% if is_pdf %}
+          <object class="cv-preview-frame" data="{{ url_for('user_portal.cv_file') }}" type="application/pdf">
+            <p class="muted">La prévisualisation PDF n'est pas disponible dans ce navigateur. Utilise le bouton d'ouverture.</p>
+          </object>
+          {% else %}
+          <div class="cv-preview-text">
+            <h3>Texte extrait</h3>
+            <pre>{{ cv_row['extracted_text'] }}</pre>
+          </div>
+          {% endif %}
+        </section>
+        """,
+        cv_row=cv_data,
+        is_pdf=is_pdf,
+    )
+    return _render_page("Aperçu CV", content)
+
+
+@user_portal_bp.route("/profile/cv/file")
+@login_required
+def cv_file():
+    user_id = _current_user_id()
+    assert user_id is not None
+    cv_row = fetch_one("SELECT * FROM user_cvs WHERE user_id = ?", (user_id,))
+    cv_data = dict(cv_row) if cv_row else None
+    if not cv_data:
+        return redirect(url_for("user_portal.upload_cv"))
+    path = _uploads_root() / CV_FOLDER_NAME / str(user_id) / cv_data["stored_filename"]
+    if not path.exists():
+        return redirect(url_for("user_portal.upload_cv"))
+    return send_file(
+        path,
+        as_attachment=False,
+        download_name=cv_data["original_filename"],
+        mimetype=cv_data.get("mime_type") or None,
+        conditional=True,
+    )
 
 
 @user_portal_bp.route("/profile/cv/delete", methods=["POST"])
@@ -2117,7 +2244,10 @@ def dashboard():
     user_id = _current_user_id()
     assert user_id is not None
     matches = _current_job_matches(user_id)
+    if not matches:
+        matches = _compute_recommendations(user_id)
     compatible = [match for match in matches if float(match.get("global_score") or 0) >= DEFAULT_COMPATIBILITY_THRESHOLD]
+    display_matches = compatible[:5] if compatible else matches[:5]
     average = round(sum(float(match.get("global_score") or 0) for match in matches) / len(matches), 2) if matches else 0.0
     best = max(matches, key=lambda item: float(item.get("global_score") or 0), default=None)
     demanded_counter: Counter[str] = Counter()
@@ -2125,7 +2255,7 @@ def dashboard():
     contract_counter: Counter[str] = Counter()
     location_counter: Counter[str] = Counter()
 
-    for match in compatible:
+    for match in compatible or matches:
         explanation = _decoded_explanation(match.get("explanation_json"))
         offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
         for skill in offer.get("competences") or explanation.get("matching_skills", []):
@@ -2144,13 +2274,60 @@ def dashboard():
 
     best_explanation = _decoded_explanation(best.get("explanation_json")) if best else {}
     skills_to_develop = missing_counter.most_common(5)
+    match_cards = []
+    for match in display_matches:
+        explanation = _decoded_explanation(match.get("explanation_json"))
+        offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
+        url = _offer_fallback_url(offer)
+        match_cards.append({
+            "title": offer.get("titre") or match.get("offer_identifier") or "Offre sans titre",
+            "company": offer.get("entreprise") or "Entreprise non renseignée",
+            "location": ", ".join(offer.get("lieux") or []) if offer.get("lieux") else "Lieu non renseigné",
+            "contract": offer.get("contrat") or "Contrat non renseigné",
+            "source": offer.get("source") or "Source non renseignée",
+            "score": float(match.get("global_score") or 0),
+            "url": url,
+            "matching_skills": explanation.get("matching_skills", []),
+        })
     content = render_template_string(
         """
         <section class="dash-grid">
-          <div class="metric"><div class="label">Offres compatibles</div><div class="value">{{ compatible_count }}</div></div>
+          <div class="metric"><div class="label">Offres compat.</div><div class="value">{{ compatible_count }}</div></div>
           <div class="metric"><div class="label">Score moyen</div><div class="value">{{ average }}%</div></div>
           <div class="metric"><div class="label">Meilleure offre</div><div class="value">{{ best_score }}%</div></div>
           <div class="metric"><div class="label">Dernier calcul</div><div class="value">{{ last_calculated or '—' }}</div></div>
+        </section>
+        <section class="panel">
+          <div class="actions" style="justify-content: space-between;">
+            <h2>Offres compatibles</h2>
+            {% if compatible_count == 0 %}<span class="muted">Aucune offre au-dessus du seuil, affichage des meilleures correspondances.</span>{% endif %}
+          </div>
+          {% if match_cards %}
+          <div class="offer-grid">
+            {% for card in match_cards %}
+            <article class="offer-card">
+              <h3 class="offer-title">{{ card.title }}</h3>
+              <div class="meta">
+                <span>{{ card.company }}</span>
+                <span>{{ card.location }}</span>
+                <span>{{ card.contract }}</span>
+                <span>{{ card.source }}</span>
+                <span>Score {{ '%.0f'|format(card.score) }}/100</span>
+              </div>
+              {% if card.matching_skills %}
+              <div class="chips">
+                {% for skill in card.matching_skills[:5] %}<span class="chip">{{ skill }}</span>{% endfor %}
+              </div>
+              {% endif %}
+              <div class="actions">
+                {% if card.url %}<a class="btn" href="{{ card.url }}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>{% else %}<span class="muted">Lien indisponible</span>{% endif %}
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="muted">Aucune offre calculée.</div>
+          {% endif %}
         </section>
         <section class="grid">
           <section class="panel">
@@ -2204,6 +2381,7 @@ def dashboard():
         demanded_skills=demanded_counter.most_common(5),
         contract_distribution=contract_counter.most_common(),
         location_distribution=location_counter.most_common(5),
+        match_cards=match_cards,
     )
     return _render_page("Tableau de bord utilisateur", content)
 

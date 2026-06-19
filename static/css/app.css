@@ -746,3 +746,156 @@ a { color: inherit; }
     border-radius: 16px;
   }
 }
+
+
+.profile-summary {
+  margin-top: 18px;
+}
+
+.profile-summary__header {
+  margin-bottom: 14px;
+}
+
+.profile-summary__box {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.profile-summary__box h3 {
+  margin-top: 0;
+}
+
+.profile-summary__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.profile-summary__list li {
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.cv-preview-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.cv-preview-frame {
+  width: 100%;
+  min-height: 78vh;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f7fbff;
+}
+
+.cv-preview-text pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f7fbff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.page-search .hero {
+  padding: 30px 30px 28px;
+}
+
+.page-search .hero h1 {
+  line-height: 1.04;
+  max-width: 12ch;
+}
+
+.page-search .hero__subtitle {
+  max-width: 70ch;
+  font-size: 1.06rem;
+}
+
+.page-search .search-card {
+  padding: 22px;
+}
+
+.page-search .search-form {
+  grid-template-columns: 1.4fr 0.95fr 1.15fr 0.7fr 0.55fr auto;
+  gap: 14px;
+}
+
+.page-search .field label {
+  letter-spacing: 0.05em;
+}
+
+.page-search .field input,
+.page-search .field select {
+  padding: 13px 14px;
+  border-radius: 14px;
+  border-color: #cfd9e6;
+}
+
+.page-search .stat__value {
+  font-size: 2.15rem;
+}
+
+.page-search .content-grid {
+  grid-template-columns: 1.08fr 0.92fr;
+}
+
+.page-search .panel h2,
+.page-search .panel h3 {
+  line-height: 1.15;
+}
+
+.page-search .offer-card h3 {
+  font-size: 1.1rem;
+}
+
+.page-search .offer-meta {
+  row-gap: 6px;
+}
+
+.page-search .ranking-table th,
+.page-search .ranking-table td {
+  padding: 10px 0;
+}
+
+.page-search .button,
+.page-search .button--primary,
+.page-search .button--secondary {
+  min-height: 42px;
+}
+
+.page-search .alert {
+  font-size: 0.98rem;
+}
+
+@media (max-width: 720px) {
+  .page-search .hero {
+    padding: 22px 20px;
+  }
+
+  .page-search .search-card {
+    padding: 16px;
+  }
+
+  .page-search .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .page-search .hero h1 {
+    max-width: none;
+  }
+
+  .page-search .content-grid {
+    gap: 14px;
+  }
+}

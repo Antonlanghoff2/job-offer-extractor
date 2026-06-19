@@ -181,6 +181,11 @@ class UserPortalTest(unittest.TestCase):
             self.assertEqual(len(fetch_all("SELECT * FROM diplomas")), 1)
             self.assertEqual(len(fetch_all("SELECT * FROM experiences")), 1)
 
+        profile_body = self.client.get("/profile").get_data(as_text=True)
+        self.assertIn("Mes compétences et mes formations", profile_body)
+        self.assertIn("Python", profile_body)
+        self.assertIn("Master Informatique", profile_body)
+
     def test_isolation_between_two_users(self) -> None:
         self._register(self.client, "alice@example.com")
         token = self._profile_token(self.client, "/profile/skills")
@@ -263,8 +268,72 @@ class UserPortalTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn("Mon profil", response.get_data(as_text=True))
 
+        preview_body = self.client.get("/profile/cv/preview").get_data(as_text=True)
+        self.assertEqual(self.client.get("/profile/cv/preview").status_code, 200)
+        self.assertIn("Aperçu de mon CV", preview_body)
+
         with self.app.app_context():
             self.assertIsNotNone(fetch_one("SELECT * FROM user_cvs"))
+
+
+    def test_dashboard_computes_matches_without_preloading_recommendations(self) -> None:
+        self._register(self.client, "alice@example.com")
+        token = self._profile_token(self.client)
+        self.client.post(
+            "/profile",
+            data={
+                "csrf_token": token,
+                "first_name": "Alice",
+                "last_name": "Martin",
+                "city": "Lyon",
+                "postal_code": "69000",
+                "department": "69",
+                "search_radius_km": "20",
+                "contract_preference": "CDI",
+                "remote_preference": "indifferent",
+                "minimum_salary": "45000",
+                "availability": "Immédiate",
+                "summary": "Développeuse Python",
+                "desired_jobs": "Développeur backend",
+            },
+            follow_redirects=True,
+        )
+        token = self._profile_token(self.client, "/profile/skills")
+        self.client.post(
+            "/profile/skills",
+            data={
+                "csrf_token": token,
+                "name": "Python",
+                "level": "expert",
+                "years_experience": "5",
+                "source": "manual",
+            },
+            follow_redirects=True,
+        )
+
+        offers = [
+            {
+                "id": "off-1",
+                "titre": "Développeur backend Python",
+                "entreprise": "ACME",
+                "competences": ["Python", "Flask", "Docker"],
+                "diplomes_requis": ["Master Informatique"],
+                "contrat": "CDI",
+                "teletravail": "hybride",
+                "lieux": ["Lyon"],
+                "experience_requise": "3 ans",
+                "url_originale": "https://example.com/off-1",
+                "source": "France Travail",
+            },
+        ]
+
+        with patch("src.user_portal._load_local_offers", return_value=offers):
+            response = self.client.get("/dashboard-utilisateur")
+            body = response.get_data(as_text=True)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("Offres compatibles", body)
+            self.assertIn("Voir l’offre", body)
+            self.assertIn("https://example.com/off-1", body)
 
     def test_recommendations_and_dashboard_use_original_url(self) -> None:
         self._register(self.client, "alice@example.com")
@@ -332,7 +401,7 @@ class UserPortalTest(unittest.TestCase):
             self.assertEqual(response.status_code, 200)
             self.assertIn("Voir l’offre", body)
             self.assertIn("https://example.com/off-1", body)
-            self.assertIn("Lien indisponible", body)
+            self.assertIn("https://candidat.francetravail.fr/offres/recherche/detail/off-2", body)
             self.assertIn("Sous-scores", body)
             self.assertIn("France Travail", body)
 
