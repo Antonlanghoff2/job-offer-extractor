@@ -45,7 +45,7 @@ def get_connection() -> sqlite3.Connection:
     return conn
 
 
-def close_connection(exc: Exception | None = None) -> None:
+def close_connection(exc: Optional[Exception] = None) -> None:
     conn = g.pop("db_conn", None)
     if conn is not None:
         conn.close()

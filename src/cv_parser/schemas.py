@@ -6,22 +6,22 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Any
+from typing import Any, Dict, List, Optional
 
 
 @dataclass
 class Formation:
     intitule: str
-    etablissement: str | None = None
-    niveau: str | None = None
-    date_debut: str | None = None
-    date_fin: str | None = None
-    annee: int | None = None
-    description: str | None = None
+    etablissement: Optional[str] = None
+    niveau: Optional[str] = None
+    date_debut: Optional[str] = None
+    date_fin: Optional[str] = None
+    annee: Optional[int] = None
+    description: Optional[str] = None
     texte_source: str = ""
     confiance: float = 0.0
 
-    def as_dict(self) -> dict[str, Any]:
+    def as_dict(self) -> Dict[str, Any]:
         return {
             "intitule": self.intitule,
             "etablissement": self.etablissement,
@@ -38,13 +38,13 @@ class Formation:
 @dataclass
 class Competence:
     nom: str
-    categorie: str | None = None
+    categorie: Optional[str] = None
     source: str = "explicite"
     texte_source: str = ""
     confiance: float = 0.0
-    formation_source: str | None = None
+    formation_source: Optional[str] = None
 
-    def as_dict(self) -> dict[str, Any]:
+    def as_dict(self) -> Dict[str, Any]:
         payload = {
             "nom": self.nom,
             "categorie": self.categorie,
@@ -60,5 +60,5 @@ class Competence:
 @dataclass
 class ParsedCV:
     text: str
-    structured: dict[str, Any]
-    message: str | None = None
+    structured: Dict[str, Any]
+    message: Optional[str] = None

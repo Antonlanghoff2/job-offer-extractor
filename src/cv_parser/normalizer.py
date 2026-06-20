@@ -8,6 +8,7 @@ from __future__ import annotations
 import re
 import unicodedata
 from datetime import datetime
+from typing import List, Optional, Tuple
 
 _MULTISPACE_RE = re.compile(r"\s+")
 _ACCENTS_RE = re.compile(r"[\u0300-\u036f]")
@@ -34,9 +35,9 @@ def normalize_section_title(text: object) -> str:
     return re.sub(r"[:：\s]+$", "", value).strip()
 
 
-def split_clean_lines(text: str) -> list[str]:
+def split_clean_lines(text: str) -> List[str]:
     text = text.replace("\r", "\n").replace("\u00a0", " ").replace("\t", " ")
-    lines: list[str] = []
+    lines: List[str] = []
     for raw_line in text.split("\n"):
         line = collapse_spaces(raw_line.strip())
         if line:
@@ -44,7 +45,7 @@ def split_clean_lines(text: str) -> list[str]:
     return lines
 
 
-def parse_date_range(text: object) -> tuple[str | None, str | None, int | None]:
+def parse_date_range(text: object) -> Tuple[Optional[str], Optional[str], Optional[int]]:
     value = collapse_spaces("" if text is None else str(text))
     if not value:
         return None, None, None
@@ -71,7 +72,7 @@ def parse_date_range(text: object) -> tuple[str | None, str | None, int | None]:
     return value, None, None
 
 
-def parse_iso_or_year(value: object) -> str | None:
+def parse_iso_or_year(value: object) -> Optional[str]:
     text = collapse_spaces("" if value is None else str(value))
     if not text:
         return None

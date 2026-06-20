@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from typing import List, Optional
 
 from .normalizer import split_clean_lines
 from .section_detector import SectionKind, detect_section
@@ -14,19 +15,19 @@ from .section_detector import SectionKind, detect_section
 @dataclass
 class CVBlock:
     section: SectionKind = "other"
-    lines: list[str] = field(default_factory=list)
+    lines: List[str] = field(default_factory=list)
     start_line: int = 0
     end_line: int = 0
-    header: str | None = None
+    header: Optional[str] = None
 
     @property
     def text(self) -> str:
         return "\n".join(self.lines)
 
 
-def build_blocks(text: str) -> list[CVBlock]:
+def build_blocks(text: str) -> List[CVBlock]:
     raw_lines = text.replace("\r", "\n").split("\n")
-    blocks: list[CVBlock] = []
+    blocks: List[CVBlock] = []
     current = CVBlock()
     current_section: SectionKind = "other"
 
@@ -60,5 +61,5 @@ def build_blocks(text: str) -> list[CVBlock]:
     return blocks
 
 
-def split_lines_for_block(text: str) -> list[str]:
+def split_lines_for_block(text: str) -> List[str]:
     return split_clean_lines(text)

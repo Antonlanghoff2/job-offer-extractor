@@ -8,7 +8,7 @@ from __future__ import annotations
 import re
 import unicodedata
 from datetime import date, datetime
-from typing import Any
+from typing import Any, Dict, List, Optional, Tuple
 
 
 COMMON_KEYS = (
@@ -92,7 +92,7 @@ def normalize_competence_display(value: object) -> str:
     return clean_label(value)
 
 
-def split_multi_value(value: object) -> list[object]:
+def split_multi_value(value: object) -> List[object]:
     if value is None:
         return []
     if isinstance(value, list):
@@ -134,14 +134,14 @@ def parse_date(value: object) -> str:
     return text
 
 
-def _first_present(raw_offer: dict[str, Any], aliases: tuple[str, ...]) -> object:
+def _first_present(raw_offer: Dict[str, Any], aliases: Tuple[str, ...]) -> object:
     for key in aliases:
         if key in raw_offer and raw_offer.get(key) not in (None, ""):
             return raw_offer.get(key)
     return None
 
 
-def _extract_territory_from_fr(raw_offer: dict[str, Any]) -> str:
+def _extract_territory_from_fr(raw_offer: Dict[str, Any]) -> str:
     lieu = raw_offer.get("lieuTravail") or {}
     if isinstance(lieu, dict):
         return (
@@ -154,15 +154,15 @@ def _extract_territory_from_fr(raw_offer: dict[str, Any]) -> str:
     return raw_offer.get("territoire") or raw_offer.get("intitule") or ""
 
 
-def _extract_metier_from_fr(raw_offer: dict[str, Any]) -> str:
+def _extract_metier_from_fr(raw_offer: Dict[str, Any]) -> str:
     return raw_offer.get("romeLibelle") or raw_offer.get("appellationlibelle") or raw_offer.get("intitule") or ""
 
 
-def _extract_contrat_from_fr(raw_offer: dict[str, Any]) -> str:
+def _extract_contrat_from_fr(raw_offer: Dict[str, Any]) -> str:
     return raw_offer.get("typeContratLibelle") or raw_offer.get("typeContrat") or ""
 
 
-def _extract_niveau_from_fr(raw_offer: dict[str, Any]) -> str:
+def _extract_niveau_from_fr(raw_offer: Dict[str, Any]) -> str:
     experience = normalize_text(raw_offer.get("experienceLibelle") or raw_offer.get("experienceExige"))
     if any(token in experience for token in ("senior", "expert", "lead", "5 ans", "6 ans", "7 ans", "8 ans")):
         return "senior"
@@ -173,22 +173,23 @@ def _extract_niveau_from_fr(raw_offer: dict[str, Any]) -> str:
     return ""
 
 
-def _extract_competences_from_fr(raw_offer: dict[str, Any]) -> list[str]:
-    competences: list[str] = []
-    for item in raw_offer.get("competences") or []:
-        if isinstance(item, dict):
-            label = item.get("libelle") or item.get("code")
-        else:
-            label = item
-        if label is None:
-            continue
-        text = re.sub(r"\s+", " ", str(label)).strip()
-        if text:
-            competences.append(text)
+def _extract_competences_from_fr(raw_offer: Dict[str, Any]) -> List[str]:
+    competences: List[str] = []
+    for key in ("competences", "competences_requises"):
+        for item in raw_offer.get(key) or []:
+            if isinstance(item, dict):
+                label = item.get("libelle") or item.get("code") or item.get("name") or item.get("label")
+            else:
+                label = item
+            if label is None:
+                continue
+            text = re.sub(r"\s+", " ", str(label)).strip()
+            if text:
+                competences.append(text)
     return competences
 
 
-def _extract_france_travail_location(raw_offer: dict[str, Any]) -> dict[str, str]:
+def _extract_france_travail_location(raw_offer: Dict[str, Any]) -> Dict[str, str]:
     lieu = raw_offer.get("lieuTravail")
     if not isinstance(lieu, dict):
         lieu = {}
@@ -215,7 +216,7 @@ def _extract_france_travail_location(raw_offer: dict[str, Any]) -> dict[str, str
     }
 
 
-def _extract_france_travail_url(raw_offer: dict[str, Any]) -> str | None:
+def _extract_france_travail_url(raw_offer: Dict[str, Any]) -> Optional[str]:
     origine = raw_offer.get("origineOffre")
     if isinstance(origine, dict):
         url = origine.get("urlOrigine")
@@ -227,7 +228,7 @@ def _extract_france_travail_url(raw_offer: dict[str, Any]) -> str | None:
     return None
 
 
-def normalize_france_travail_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
+def normalize_france_travail_offer(raw_offer: Dict[str, Any]) -> Dict[str, Any]:
     location = _extract_france_travail_location(raw_offer)
     entreprise = raw_offer.get("entreprise")
     if isinstance(entreprise, dict):
@@ -253,7 +254,7 @@ def normalize_france_travail_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _normalize_france_travail_common(raw_offer: dict[str, Any]) -> dict[str, Any]:
+def _normalize_france_travail_common(raw_offer: Dict[str, Any]) -> Dict[str, Any]:
     normalized = normalize_france_travail_offer(raw_offer)
     return {
         "id_offre": normalized["id"],
@@ -270,8 +271,8 @@ def _normalize_france_travail_common(raw_offer: dict[str, Any]) -> dict[str, Any
     }
 
 
-def _normalize_competences_generic(value: object) -> list[str]:
-    items: list[str] = []
+def _normalize_competences_generic(value: object) -> List[str]:
+    items: List[str] = []
     for item in split_multi_value(value):
         if isinstance(item, dict):
             label = item.get("libelle") or item.get("name") or item.get("label") or item.get("code")
@@ -285,7 +286,7 @@ def _normalize_competences_generic(value: object) -> list[str]:
     return items
 
 
-def _normalize_location_generic(raw_offer: dict[str, Any]) -> str:
+def _normalize_location_generic(raw_offer: Dict[str, Any]) -> str:
     value = _first_present(raw_offer, INDEED_FIELD_ALIASES["territoire"])
     if isinstance(value, dict):
         return (
@@ -299,7 +300,7 @@ def _normalize_location_generic(raw_offer: dict[str, Any]) -> str:
     return str(value or "")
 
 
-def normalize_indeed_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
+def normalize_indeed_offer(raw_offer: Dict[str, Any]) -> Dict[str, Any]:
     return {
         "id_offre": _first_present(raw_offer, INDEED_FIELD_ALIASES["id_offre"]) or "",
         "source": "indeed",
@@ -315,7 +316,7 @@ def normalize_indeed_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def normalize_offer(raw_offer: dict[str, Any], source: str) -> dict[str, Any]:
+def normalize_offer(raw_offer: Dict[str, Any], source: str) -> Dict[str, Any]:
     if source == "france_travail":
         return _normalize_france_travail_common(raw_offer)
     if source == "indeed":
@@ -323,5 +324,5 @@ def normalize_offer(raw_offer: dict[str, Any], source: str) -> dict[str, Any]:
     raise ValueError(f"Source non supportee: {source}")
 
 
-def normalize_offers(raw_offers: list[dict[str, Any]], source: str) -> list[dict[str, Any]]:
+def normalize_offers(raw_offers: List[Dict[str, Any]], source: str) -> List[Dict[str, Any]]:
     return [normalize_offer(offer, source) for offer in raw_offers if isinstance(offer, dict)]

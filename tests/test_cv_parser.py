@@ -127,3 +127,26 @@ Régie son, préparation du matériel, gestion des équipes techniques
     assert parsed["competences"]
     assert parsed["experiences_professionnelles"]
     assert parsed["texte_brut"].startswith("Mastère spécialisé")
+
+
+def test_parser_fallback_extracts_content_from_plain_text_cv() -> None:
+    text = """Jean Dupont
+Développeur backend Python
+Python, Flask, Docker
+Mastère spécialisé Concepteur de Projet Digital
+Télécom ParisTech / INA
+2012 - 2013
+Ingénieur du son
+Théâtre Exemple - Paris
+2018 - 2023
+Régie son, installation, exploitation technique
+"""
+
+    parsed = parse_cv_text(text)
+
+    assert parsed["formations"]
+    assert parsed["competences"]
+    assert parsed["experiences_professionnelles"]
+    assert any(skill["nom"] == "Python" for skill in parsed["competences"])
+    assert any(entry["intitule"].startswith("Mastère spécialisé") for entry in parsed["formations"])
+    assert any(entry["poste"].startswith("Ingénieur du son") for entry in parsed["experiences_professionnelles"])

@@ -3,13 +3,15 @@
 
 from __future__ import annotations
 
+from typing import Dict, List
+
 import unittest
 from unittest.mock import Mock, patch
 
 from src.web_app import create_app
 
 
-def make_raw_offers(territoire: str) -> list[dict[str, object]]:
+def make_raw_offers(territoire: str) -> List[Dict[str, object]]:
     return [
         {
             "id": "1",
@@ -125,6 +127,79 @@ class WebAppTest(unittest.TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertIn("Aucune offre ne correspond à cette recherche", body)
+
+    @patch("src.web_app.compute_match")
+    @patch("src.web_app._current_profile_snapshot")
+    @patch("src.web_app._current_user_id", return_value=1)
+    @patch("src.web_app.load_raw_offers", return_value=[])
+    @patch("src.web_app.load_market_context_rows", return_value=[])
+    @patch("src.web_app.iter_search_offres")
+    def test_search_results_are_sorted_by_best_match_score_first(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_user_id: Mock, mock_profile: Mock, mock_match: Mock) -> None:
+        raw_offers = [
+            {
+                "id": "high",
+                "intitule": "Développeur Python senior",
+                "titre": "Développeur Python senior",
+                "competences": [{"libelle": "Python"}],
+                "typeContratLibelle": "CDI",
+                "lieuTravail": {"libelle": "Lyon", "commune": "Lyon", "codePostal": "69000"},
+                "origineOffre": {"urlOrigine": "https://example.com/high"},
+                "entreprise": {"nom": "ACME"},
+            },
+            {
+                "id": "low",
+                "intitule": "Chef de projet",
+                "titre": "Chef de projet",
+                "competences": [{"libelle": "Excel"}],
+                "typeContratLibelle": "CDD",
+                "lieuTravail": {"libelle": "Paris", "commune": "Paris", "codePostal": "75000"},
+                "origineOffre": {"urlOrigine": "https://example.com/low"},
+                "entreprise": {"nom": "Beta"},
+            },
+        ]
+        mock_search.return_value = raw_offers
+
+        def _match_side_effect(profile, offer, weights=None):
+            score = 92.0 if offer.get("id") == "high" else 18.0
+            return {
+                "global_score": score,
+                "matching_skills": ["Python"] if offer.get("id") == "high" else [],
+                "criterion_scores": {},
+                "criterion_details": {},
+                "matching_weights": weights or {},
+                "offer": offer,
+                "score_global": score,
+                "source": "France Travail",
+                "url_originale": offer.get("origineOffre", {}).get("urlOrigine"),
+                "competences_manquantes": [],
+                "sous_scores": {},
+            }
+
+        mock_match.side_effect = _match_side_effect
+        mock_profile.return_value = {
+            "skills": [{"name": "Python", "normalized_name": "Python", "level": "expert", "years_experience": 5, "source": "manual"}],
+            "desired_jobs": [{"job_title": "Développeur Python", "normalized_job_title": "developpeur python"}],
+            "experiences": [],
+            "diplomas": [],
+            "city": "Lyon",
+            "postal_code": "69000",
+            "department": "69",
+            "search_radius_km": 20,
+            "remote_preference": "indifferent",
+            "minimum_salary": 45000,
+            "contract_preference": "CDI",
+            "summary": "",
+            "availability": "",
+            "first_name": "Alice",
+            "last_name": "Martin",
+            "cv": None,
+        }
+
+        response = self.client.get("/?mots_cles=python&territoire_type=all")
+        body = response.get_data(as_text=True)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertLess(body.index("Développeur Python senior"), body.index("Chef de projet"))
 
 
 if __name__ == "__main__":

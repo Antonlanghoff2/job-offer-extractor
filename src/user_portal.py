@@ -20,7 +20,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
-from typing import Any, Callable, Iterable
+from typing import Any, Callable, Iterable, Dict, List, Optional, Tuple
 
 from flask import Blueprint, current_app, g, redirect, render_template, render_template_string, request, session, send_file, url_for
 from markupsafe import escape
@@ -29,8 +29,11 @@ from werkzeug.utils import secure_filename
 
 from src.db import execute, fetch_all, fetch_one, init_app as init_db_teardown, init_db, transaction, utcnow_iso
 from src.offer_normalization import normalize_text
+from src.matching.weights import DEFAULT_MATCHING_WEIGHTS, MATCHING_WEIGHT_KEYS, validate_matching_weights
 from src.services.cv_parser import parse_cv_file
+from src.services.formation_recommendation import build_recommendation_context
 from src.services.matching_service import compute_match, normalize_skill_name
+from src.services.offer_repository import get_available_territories, load_normalized_offers
 
 try:  # pragma: no cover - imported by Flask when installed
     from flask import flash
@@ -211,6 +214,38 @@ BASE_TEMPLATE = """
       margin: 0 auto;
       padding: 22px 20px 42px;
     }
+    .matching-weights {
+      grid-column: 1 / -1;
+      margin-top: 14px;
+      border: 1px solid rgba(29, 99, 216, 0.12);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      padding: 16px;
+      border-radius: 16px;
+    }
+    .matching-weights__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    .matching-weights__head h2 { margin: 0 0 4px; font-size: 1.05rem; }
+    .matching-weights__total { text-align: right; font-size: 0.92rem; color: var(--muted); }
+    .matching-weights__total strong { display: block; margin-top: 4px; color: var(--text); font-size: 1.15rem; }
+    .matching-weights__message { margin: 10px 0 14px; }
+    .matching-weights__grid { display: grid; gap: 12px; }
+    .weight-row { display: grid; gap: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: white; }
+    .weight-row__label { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+    .weight-row__label label { font-weight: 800; color: var(--text); }
+    .weight-row__label strong { color: var(--accent); font-variant-numeric: tabular-nums; }
+    .weight-row__controls { display: grid; grid-template-columns: minmax(0, 1fr) 92px; gap: 10px; align-items: center; }
+    .weight-row__controls input[type="range"] { width: 100%; }
+    .weight-row__controls input[type="number"] { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; font: inherit; }
+    .matching-weights__actions { margin-top: 14px; display: flex; justify-content: flex-end; }
+    .profile-edit-grid { display: grid; gap: 16px; }
+    .profile-edit-list { margin-top: 16px; }
+    .profile-edit-list .panel { margin-bottom: 0; }
+    .profile-edit-list .panel + .panel { margin-top: 16px; }
     .panel, .status, .card, .list-item {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -347,6 +382,7 @@ BASE_TEMPLATE = """
             <a role="menuitem" href="{{ url_for('user_portal.profile') }}">Mon profil</a>
             <a role="menuitem" href="{{ url_for('user_portal.upload_cv') }}">Mon CV</a>
             <a role="menuitem" href="{{ url_for('user_portal.recommendations') }}">Mes offres</a>
+            <a role="menuitem" href="{{ url_for('user_portal.training_recommendation') }}">Recommandation formation</a>
             <a role="menuitem" href="{{ url_for('user_portal.dashboard') }}">Mon tableau de bord</a>
             <a role="menuitem" href="{{ url_for('user_portal.logout') }}">Déconnexion</a>
           </div>
@@ -360,6 +396,7 @@ BASE_TEMPLATE = """
     {% endif %}
     {{ content|safe }}
   </main>
+  <script src="{{ url_for('static', filename='js/matching_weights.js') }}"></script>
 </body>
 </html>
 """
@@ -388,7 +425,7 @@ def _uploads_root() -> Path:
     return root
 
 
-def _current_user_id() -> int | None:
+def _current_user_id() -> Optional[int]:
     user_id = session.get("user_id")
     if isinstance(user_id, int):
         return user_id
@@ -397,7 +434,7 @@ def _current_user_id() -> int | None:
     return None
 
 
-def _get_user(user_id: int | None = None) -> dict[str, Any] | None:
+def _get_user(user_id: Optional[int] = None) -> Optional[Dict[str, Any]]:
     user_id = user_id if user_id is not None else _current_user_id()
     if not user_id:
         return None
@@ -417,7 +454,7 @@ def _logout_user() -> None:
     session.pop("pending_cv_import", None)
 
 
-def _require_login() -> int | None:
+def _require_login() -> Optional[int]:
     user_id = _current_user_id()
     if not user_id:
         flash("Connectez-vous pour accéder à cet espace.", "error")
@@ -452,7 +489,7 @@ def _check_csrf() -> bool:
     return bool(submitted and submitted == session.get("csrf_token"))
 
 
-def _csrf_error() -> str | None:
+def _csrf_error() -> Optional[str]:
     return None if _check_csrf() else "Jeton CSRF invalide ou manquant."
 
 
@@ -466,7 +503,7 @@ def _normalize_lookup(value: object) -> str:
     return normalize_text(value)
 
 
-def _parse_int(value: object, minimum: int | None = None, maximum: int | None = None) -> int | None:
+def _parse_int(value: object, minimum: Optional[int] = None, maximum: Optional[int] = None) -> Optional[int]:
     if value in (None, ""):
         return None
     try:
@@ -480,7 +517,7 @@ def _parse_int(value: object, minimum: int | None = None, maximum: int | None = 
     return parsed
 
 
-def _parse_float(value: object) -> float | None:
+def _parse_float(value: object) -> Optional[float]:
     if value in (None, ""):
         return None
     try:
@@ -489,7 +526,7 @@ def _parse_float(value: object) -> float | None:
         return None
 
 
-def _parse_date(value: object) -> str | None:
+def _parse_date(value: object) -> Optional[str]:
     text = _normalize_string(value)
     if not text:
         return None
@@ -517,7 +554,7 @@ def _safe_upload_path(user_id: int, filename: str) -> Path:
     return user_dir / f"{uuid.uuid4().hex}-{safe_name}"
 
 
-def _load_local_offers() -> list[dict[str, Any]]:
+def _load_local_offers() -> List[Dict[str, Any]]:
     from src.web_app import load_raw_offers
 
     try:
@@ -526,13 +563,13 @@ def _load_local_offers() -> list[dict[str, Any]]:
         return []
 
 
-def _normalize_offer(raw_offer: dict[str, Any]) -> dict[str, Any]:
+def _normalize_offer(raw_offer: Dict[str, Any]) -> Dict[str, Any]:
     from src.services.offer_normalization import normalize_offer_for_matching
 
     return normalize_offer_for_matching(raw_offer, source=raw_offer.get("source") or "France Travail")
 
 
-def _offer_fallback_url(offer: dict[str, Any], offer_identifier: str | None = None) -> str | None:
+def _offer_fallback_url(offer: Dict[str, Any], offer_identifier: Optional[str] = None) -> Optional[str]:
     url = offer.get("url_originale") or offer.get("url")
     if url:
         return str(url)
@@ -546,7 +583,7 @@ def _offer_fallback_url(offer: dict[str, Any], offer_identifier: str | None = No
     return None
 
 
-def _assemble_profile(user_id: int) -> dict[str, Any]:
+def _assemble_profile(user_id: int) -> Dict[str, Any]:
     profile_row = fetch_one("SELECT * FROM user_profiles WHERE user_id = ?", (user_id,))
     desired_jobs = [
         {
@@ -615,7 +652,7 @@ def _assemble_profile(user_id: int) -> dict[str, Any]:
     return profile
 
 
-def _skill_payload_from_row(row: dict[str, Any]) -> dict[str, Any]:
+def _skill_payload_from_row(row: Dict[str, Any]) -> Dict[str, Any]:
     return {
         "name": row.get("name") or row.get("skill_name") or "",
         "normalized_name": row.get("normalized_name") or normalize_skill_name(row.get("name") or row.get("skill_name") or ""),
@@ -625,7 +662,30 @@ def _skill_payload_from_row(row: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _store_skill(user_id: int, name: str, level: str | None, years_experience: float | None, source: str) -> None:
+def _format_skill_table_item(row: Dict[str, Any]) -> Dict[str, Any]:
+    payload = _skill_payload_from_row(row)
+    name = payload["name"] or payload["normalized_name"] or row.get("nom") or row.get("skill_name") or "Compétence sans nom"
+    years_value = payload["years_experience"]
+    if years_value in (None, ""):
+        years_display = "—"
+    else:
+        try:
+            years_display = str(round(float(years_value), 1)).rstrip("0").rstrip(".")
+        except Exception:
+            years_display = str(years_value)
+    level = payload["level"] or "Niveau non renseigné"
+    source = payload["source"] or "manual"
+    return {
+        **row,
+        "name": name,
+        "level": level,
+        "years_experience": years_display,
+        "source": source,
+        "normalized_name": payload["normalized_name"] or normalize_skill_name(name),
+    }
+
+
+def _store_skill(user_id: int, name: str, level: Optional[str], years_experience: Optional[float], source: str) -> None:
     normalized = normalize_skill_name(name)
     if not normalized:
         return
@@ -680,7 +740,7 @@ def _update_desired_jobs(user_id: int, jobs: Iterable[str]) -> None:
             )
 
 
-def _parse_multi_values(raw_value: object) -> list[str]:
+def _parse_multi_values(raw_value: object) -> List[str]:
     if raw_value in (None, ""):
         return []
     values = []
@@ -691,7 +751,24 @@ def _parse_multi_values(raw_value: object) -> list[str]:
     return values
 
 
-def _render_page(title: str, content: str, *, message: str | None = None, message_category: str | None = None, **context: Any):
+def _current_matching_weights() -> Dict[str, float]:
+    stored = session.get("matching_weights")
+    normalized, error = validate_matching_weights(stored) if isinstance(stored, dict) else (dict(DEFAULT_MATCHING_WEIGHTS), "")
+    if error:
+        return dict(DEFAULT_MATCHING_WEIGHTS)
+    return normalized
+
+
+def _save_matching_weights_from_form(form) -> Optional[str]:
+    candidate = {key: form.get(f"matching_weights_{key}") for key in MATCHING_WEIGHT_KEYS}
+    normalized, error = validate_matching_weights(candidate)
+    if error:
+        return error
+    session["matching_weights"] = normalized
+    return None
+
+
+def _render_page(title: str, content: str, *, message: Optional[str] = None, message_category: Optional[str] = None, **context: Any):
     return render_template_string(
         BASE_TEMPLATE,
         title=title,
@@ -704,7 +781,7 @@ def _render_page(title: str, content: str, *, message: str | None = None, messag
     )
 
 
-def _auth_block(form_action: str, title: str, submit_label: str, next_url: str = "", error: str | None = None) -> str:
+def _auth_block(form_action: str, title: str, submit_label: str, next_url: str = "", error: Optional[str] = None) -> str:
     return render_template_string(
         """
         <section class="auth-wrap panel">
@@ -743,12 +820,12 @@ def _auth_block(form_action: str, title: str, submit_label: str, next_url: str =
     )
 
 
-def _profile_form(profile: dict[str, Any], desired_jobs_text: str) -> str:
+def _profile_form(profile: Dict[str, Any], desired_jobs_text: str, matching_weights: Dict[str, float], matching_weights_error: Optional[str] = None) -> str:
     return render_template_string(
         """
         <section class="panel">
           <h2>Mon profil</h2>
-          <form method="post">
+          <form method="post" class="profile-edit-grid" data-matching-weights-form data-default-weights='{{ default_matching_weights|tojson }}'>
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
             <div class="grid">
               <div class="field"><label>Prénom</label><input name="first_name" value="{{ profile.first_name or '' }}"></div>
@@ -776,7 +853,54 @@ def _profile_form(profile: dict[str, Any], desired_jobs_text: str) -> str:
             <div class="field"><label>Métiers recherchés</label><textarea name="desired_jobs">{{ desired_jobs_text }}</textarea></div>
             <div class="field"><label>Disponibilité</label><input name="availability" value="{{ profile.availability or '' }}"></div>
             <div class="field"><label>Présentation professionnelle</label><textarea name="summary">{{ profile.summary or '' }}</textarea></div>
-            <div class="actions"><button class="btn" type="submit">Enregistrer</button></div>
+
+            <section class="matching-weights" aria-labelledby="matching-weights-title">
+              <div class="matching-weights__head">
+                <div>
+                  <h2 id="matching-weights-title">Personnaliser les critères de matching</h2>
+                  <p class="muted">Ces pondérations s’appliquent aux pages Mes offres et Mon tableau de bord.</p>
+                </div>
+                <div class="matching-weights__total">
+                  <span>Total des pondérations :</span>
+                  <strong data-weights-total>100 %</strong>
+                </div>
+              </div>
+              {% if matching_weights_error %}
+              <div class="matching-weights__message alert alert--error" data-weights-message>{{ matching_weights_error }}</div>
+              {% else %}
+              <div class="matching-weights__message muted" data-weights-message>Le total des pondérations doit être égal à 100 %.</div>
+              {% endif %}
+              <div class="matching-weights__grid">
+                {% set matching_weight_fields = [
+                  ('competences', 'Compétences'),
+                  ('metier', 'Métier ou intitulé'),
+                  ('experience', 'Expérience'),
+                  ('diplome', 'Diplôme'),
+                  ('localisation', 'Localisation'),
+                  ('contrat', 'Contrat'),
+                  ('teletravail', 'Télétravail'),
+                  ('salaire', 'Salaire')
+                ] %}
+                {% for key, label in matching_weight_fields %}
+                {% set value = matching_weights[key] %}
+                <div class="weight-row" data-weight-row data-weight-key="{{ key }}">
+                  <div class="weight-row__label">
+                    <label for="weight-{{ key }}">{{ label }}</label>
+                    <strong><span data-weight-display="{{ key }}">{{ '%.0f'|format(value) }}</span> %</strong>
+                  </div>
+                  <div class="weight-row__controls">
+                    <input id="weight-{{ key }}" type="range" min="0" max="100" step="1" value="{{ '%.0f'|format(value) }}" data-weight-range="{{ key }}">
+                    <input type="number" min="0" max="100" step="1" value="{{ '%.0f'|format(value) }}" data-weight-number="{{ key }}" name="matching_weights_{{ key }}">
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="matching-weights__actions">
+                <button type="button" class="btn secondary" data-weights-reset>Réinitialiser les pondérations</button>
+              </div>
+            </section>
+
+            <div class="actions"><button class="btn" type="submit" data-search-submit>Enregistrer</button></div>
           </form>
         </section>
         """,
@@ -784,11 +908,14 @@ def _profile_form(profile: dict[str, Any], desired_jobs_text: str) -> str:
         desired_jobs_text=desired_jobs_text,
         remote_options=REMOTE_OPTIONS,
         contract_options=CONTRACT_OPTIONS,
+        matching_weights=matching_weights,
+        matching_weights_error=matching_weights_error,
+        default_matching_weights=DEFAULT_MATCHING_WEIGHTS,
         csrf_token=_csrf_token,
     )
 
 
-def _profile_privacy_block(profile: dict[str, Any]) -> str:
+def _profile_privacy_block(profile: Dict[str, Any]) -> str:
     return render_template_string(
         """
         <section class="panel privacy-panel">
@@ -811,7 +938,7 @@ def _profile_privacy_block(profile: dict[str, Any]) -> str:
     )
 
 
-def _profile_summary_block(profile: dict[str, Any]) -> str:
+def _profile_summary_block(profile: Dict[str, Any]) -> str:
     return render_template_string(
         """
         <section class="panel profile-summary">
@@ -856,7 +983,7 @@ def _profile_summary_block(profile: dict[str, Any]) -> str:
     )
 
 
-def _list_section(title: str, items: list[dict[str, Any]], columns: list[tuple[str, str]], add_url: str, empty_label: str) -> str:
+def _list_section(title: str, items: List[Dict[str, Any]], columns: List[Tuple[str, str]], add_url: str, empty_label: str) -> str:
     return render_template_string(
         """
         <section class="panel">
@@ -903,7 +1030,7 @@ def _list_section(title: str, items: list[dict[str, Any]], columns: list[tuple[s
     )
 
 
-def _validate_required_csrf() -> str | None:
+def _validate_required_csrf() -> Optional[str]:
     return _csrf_error()
 
 
@@ -921,7 +1048,7 @@ def _create_or_update_user(email: str, password: str) -> int:
         return int(cursor.lastrowid)
 
 
-def _authenticate_user(email: str, password: str) -> int | None:
+def _authenticate_user(email: str, password: str) -> Optional[int]:
     row = fetch_one("SELECT * FROM users WHERE email = ?", (email,))
     if not row:
         return None
@@ -1003,7 +1130,7 @@ def _save_profile(user_id: int) -> None:
     _update_desired_jobs(user_id, desired_jobs)
 
 
-def _render_skill_form(skill: dict[str, Any] | None = None) -> str:
+def _render_skill_form(skill: Optional[Dict[str, Any]] = None) -> str:
     skill = skill or {"name": "", "level": "", "years_experience": "", "source": "manual"}
     return render_template_string(
         """
@@ -1039,7 +1166,7 @@ def _render_skill_form(skill: dict[str, Any] | None = None) -> str:
     )
 
 
-def _render_diploma_form(diploma: dict[str, Any] | None = None) -> str:
+def _render_diploma_form(diploma: Optional[Dict[str, Any]] = None) -> str:
     diploma = diploma or {"title": "", "level": "", "institution": "", "speciality": "", "graduation_year": "", "description": "", "source": "manual"}
     return render_template_string(
         """
@@ -1072,7 +1199,7 @@ def _render_diploma_form(diploma: dict[str, Any] | None = None) -> str:
     )
 
 
-def _render_experience_form(experience: dict[str, Any] | None = None) -> str:
+def _render_experience_form(experience: Optional[Dict[str, Any]] = None) -> str:
     experience = experience or {"job_title": "", "company": "", "city": "", "start_date": "", "end_date": "", "is_current": 0, "description": "", "source": "manual"}
     return render_template_string(
         """
@@ -1149,12 +1276,26 @@ def _store_experience(user_id: int) -> None:
             )
 
 
-def _list_view_items(user_id: int, table: str) -> list[dict[str, Any]]:
+def _list_view_items(user_id: int, table: str) -> List[Dict[str, Any]]:
     rows = fetch_all(f"SELECT * FROM {table} WHERE user_id = ? ORDER BY created_at DESC", (user_id,))
     return [dict(row) for row in rows]
 
 
-def _item_map(items: list[dict[str, Any]], edit_route: str, delete_route: str) -> list[dict[str, Any]]:
+def _profile_skill_items(user_id: int) -> List[Dict[str, Any]]:
+    rows = fetch_all(
+        """
+        SELECT us.*, s.name, s.normalized_name
+        FROM user_skills us
+        JOIN skills s ON s.id = us.skill_id
+        WHERE us.user_id = ?
+        ORDER BY s.normalized_name ASC
+        """,
+        (user_id,),
+    )
+    return [_format_skill_table_item(dict(row)) for row in rows]
+
+
+def _item_map(items: List[Dict[str, Any]], edit_route: str, delete_route: str) -> List[Dict[str, Any]]:
     mapped = []
     for item in items:
         item = dict(item)
@@ -1169,7 +1310,7 @@ def _delete_owned_row(table: str, item_id: int, user_id: int) -> None:
         conn.execute(f"DELETE FROM {table} WHERE id = ? AND user_id = ?", (item_id, user_id))
 
 
-def _calculate_duration_years(start_date: str | None, end_date: str | None, is_current: int) -> float | None:
+def _calculate_duration_years(start_date: Optional[str], end_date: Optional[str], is_current: int) -> Optional[float]:
     try:
         start = date.fromisoformat(start_date) if start_date else None
         if not start:
@@ -1180,14 +1321,14 @@ def _calculate_duration_years(start_date: str | None, end_date: str | None, is_c
         return None
 
 
-def _profile_dict(user_id: int) -> dict[str, Any]:
+def _profile_dict(user_id: int) -> Dict[str, Any]:
     profile = _assemble_profile(user_id)
     profile_row = {k: profile.get(k) for k in ("first_name", "last_name", "city", "postal_code", "department", "search_radius_km", "remote_preference", "minimum_salary", "availability", "summary")}
     profile_row["desired_jobs_text"] = "\n".join(item["job_title"] for item in profile["desired_jobs"])
     return profile_row
 
 
-def _store_cv(user_id: int, file_storage) -> dict[str, Any]:
+def _store_cv(user_id: int, file_storage) -> Dict[str, Any]:
     if not file_storage or not file_storage.filename:
         raise ValueError("Aucun fichier fourni.")
     filename = secure_filename(file_storage.filename)
@@ -1217,7 +1358,7 @@ def _store_cv(user_id: int, file_storage) -> dict[str, Any]:
     return pending
 
 
-def _save_cv_confirmation(user_id: int, pending: dict[str, Any]) -> None:
+def _save_cv_confirmation(user_id: int, pending: Dict[str, Any]) -> None:
     path = Path(pending["stored_path"])
     if not path.exists():
         raise ValueError("Le fichier du CV est introuvable.")
@@ -1248,7 +1389,7 @@ def _save_cv_confirmation(user_id: int, pending: dict[str, Any]) -> None:
         conn.execute("DELETE FROM experiences WHERE user_id = ? AND source = ?", (user_id, "cv"))
     structured = pending.get("structured") or {}
     for skill in structured.get("competences", []):
-        _store_skill(user_id, skill.get("nom", ""), None, None, skill.get("source") or "cv")
+        _store_skill(user_id, skill.get("nom", ""), None, None, "cv")
     for formation in structured.get("formations", []):
         now = utcnow_iso()
         annee = formation.get("annee")
@@ -1308,9 +1449,9 @@ def _clear_cv_file(user_id: int) -> None:
     execute("DELETE FROM user_cvs WHERE user_id = ?", (user_id,))
 
 
-def _extract_indexed_entries(form, collection: str) -> list[dict[str, Any]]:
+def _extract_indexed_entries(form, collection: str) -> List[Dict[str, Any]]:
     pattern = re.compile(rf"^{re.escape(collection)}\[(\d+)\]\[([^\]]+)\]$")
-    grouped: dict[int, dict[str, Any]] = {}
+    grouped: Dict[int, Dict[str, Any]] = {}
     for key in form.keys():
         match = pattern.match(key)
         if not match:
@@ -1321,7 +1462,7 @@ def _extract_indexed_entries(form, collection: str) -> list[dict[str, Any]]:
     return [grouped[index] for index in sorted(grouped)]
 
 
-def _normalize_cv_date_value(value: object) -> str | None:
+def _normalize_cv_date_value(value: object) -> Optional[str]:
     text = _normalize_string(value)
     if not text:
         return None
@@ -1331,7 +1472,7 @@ def _normalize_cv_date_value(value: object) -> str | None:
     return parsed or text
 
 
-def _rebuild_cv_payload_from_form(form) -> dict[str, Any]:
+def _rebuild_cv_payload_from_form(form) -> Dict[str, Any]:
     competences = []
     for item in _extract_indexed_entries(form, "competences"):
         nom = _normalize_string(item.get("nom"))
@@ -1480,7 +1621,7 @@ def _delete_all_user_data(user_id: int) -> None:
         conn.execute("DELETE FROM users WHERE id = ?", (user_id,))
 
 
-def _current_profile_snapshot(user_id: int) -> dict[str, Any]:
+def _current_profile_snapshot(user_id: int) -> Dict[str, Any]:
     profile = _assemble_profile(user_id)
     desired_jobs = [
         {
@@ -1533,7 +1674,7 @@ def _current_profile_snapshot(user_id: int) -> dict[str, Any]:
     }
 
 
-def _export_user_data_payload(user_id: int) -> dict[str, Any]:
+def _export_user_data_payload(user_id: int) -> Dict[str, Any]:
     profile = _assemble_profile(user_id)
     matches = _current_job_matches(user_id)
     return {
@@ -1568,7 +1709,7 @@ def _export_user_data_payload(user_id: int) -> dict[str, Any]:
     }
 
 
-def _offer_matches_filters(offer: dict[str, Any], filters: dict[str, Any], match: dict[str, Any]) -> bool:
+def _offer_matches_filters(offer: Dict[str, Any], filters: Dict[str, Any], match: Dict[str, Any]) -> bool:
     if filters.get("min_score") is not None and match["global_score"] < filters["min_score"]:
         return False
     if filters.get("contract") and normalize_text(filters["contract"]) not in normalize_text(offer.get("contrat")):
@@ -1592,7 +1733,7 @@ def _offer_matches_filters(offer: dict[str, Any], filters: dict[str, Any], match
     return True
 
 
-def _current_job_matches(user_id: int) -> list[dict[str, Any]]:
+def _current_job_matches(user_id: int) -> List[Dict[str, Any]]:
     rows = fetch_all("SELECT * FROM job_matches WHERE user_id = ? ORDER BY global_score DESC, calculated_at DESC", (user_id,))
     matches = []
     for row in rows:
@@ -1613,7 +1754,7 @@ def _current_job_matches(user_id: int) -> list[dict[str, Any]]:
     return matches
 
 
-def _explanation_with_offer_summary(match: dict[str, Any]) -> dict[str, Any]:
+def _explanation_with_offer_summary(match: Dict[str, Any]) -> Dict[str, Any]:
     explanation = dict(match.get("explanation") or {})
     offer = match.get("offer") or {}
     explanation["offer"] = {
@@ -1624,10 +1765,14 @@ def _explanation_with_offer_summary(match: dict[str, Any]) -> dict[str, Any]:
         "source": offer.get("source"),
         "url_originale": offer.get("url_originale"),
     }
+    explanation["score_global"] = match.get("global_score")
+    explanation["sous_scores"] = match.get("criterion_scores") or {}
+    explanation["matching_weights"] = match.get("matching_weights") or {}
+    explanation["criterion_details"] = match.get("criterion_details") or {}
     return explanation
 
 
-def _decoded_explanation(value: object) -> dict[str, Any]:
+def _decoded_explanation(value: object) -> Dict[str, Any]:
     if isinstance(value, dict):
         return value
     if isinstance(value, str):
@@ -1639,7 +1784,7 @@ def _decoded_explanation(value: object) -> dict[str, Any]:
     return {}
 
 
-def _persist_match(user_id: int, match: dict[str, Any]) -> None:
+def _persist_match(user_id: int, match: Dict[str, Any]) -> None:
     now = utcnow_iso()
     offer_identifier = str(match.get("offer_identifier") or "")
     if not offer_identifier:
@@ -1685,19 +1830,21 @@ def _persist_match(user_id: int, match: dict[str, Any]) -> None:
         )
 
 
-def _compute_recommendations(user_id: int) -> list[dict[str, Any]]:
+def _compute_recommendations(user_id: int) -> List[Dict[str, Any]]:
     profile = _current_profile_snapshot(user_id)
+    weights = _current_matching_weights()
     offers = [_normalize_offer(offer) for offer in _load_local_offers()]
     matches = []
     for raw_offer in offers:
-        result = compute_match(profile, raw_offer)
+        result = compute_match(profile, raw_offer, weights=weights)
         result["offer"] = {**result["offer"], **raw_offer}
         _persist_match(user_id, result)
         matches.append(result)
+    matches.sort(key=lambda item: (-float(item.get("global_score") or 0), item["offer"].get("titre") or ""))
     return matches
 
 
-def _recommendation_filters_from_request() -> dict[str, Any]:
+def _recommendation_filters_from_request() -> Dict[str, Any]:
     return {
         "territoire": _normalize_string(request.args.get("territoire")),
         "min_score": _parse_int(request.args.get("score_min"), 0, 100),
@@ -1711,7 +1858,7 @@ def _recommendation_filters_from_request() -> dict[str, Any]:
     }
 
 
-def _filter_and_paginate_matches(matches: list[dict[str, Any]], filters: dict[str, Any]) -> tuple[list[dict[str, Any]], int, int]:
+def _filter_and_paginate_matches(matches: List[Dict[str, Any]], filters: Dict[str, Any]) -> Tuple[List[Dict[str, Any]], int, int]:
     filtered = []
     for match in matches:
         if _offer_matches_filters(match["offer"], filters, match):
@@ -1727,13 +1874,13 @@ def _filter_and_paginate_matches(matches: list[dict[str, Any]], filters: dict[st
     return filtered[start:end], total, page
 
 
-def _build_query_string(params: dict[str, Any]) -> str:
+def _build_query_string(params: Dict[str, Any]) -> str:
     from urllib.parse import urlencode
 
     return urlencode({key: value for key, value in params.items() if value not in (None, "")})
 
 
-def _recommendation_page(matches: list[dict[str, Any]], filters: dict[str, Any], total: int, page: int) -> str:
+def _recommendation_page(matches: List[Dict[str, Any]], filters: Dict[str, Any], total: int, page: int) -> str:
     if not matches:
         cards_html = "<div class='muted'>Aucune offre ne correspond à cette recherche.</div>"
     else:
@@ -1755,11 +1902,15 @@ def _recommendation_page(matches: list[dict[str, Any]], filters: dict[str, Any],
                     <span>Score {float(match.get('global_score') or 0):.0f}/100</span>
                   </div>
                   <div class="small">
-                    Sous-scores: compétences {float(match.get('skill_score') or 0):.0f}, métier {float(match.get('job_score') or 0):.0f}, expérience {float(match.get('experience_score') or 0):.0f}, diplôme {float(match.get('diploma_score') or 0):.0f}, localisation {float(match.get('location_score') or 0):.0f}, contrat {float(match.get('contract_score') or 0):.0f}, télétravail {float(match.get('remote_score') or 0):.0f}.
+                    Sous-scores: compétences {float(match.get('skill_score') or 0):.0f}, métier {float(match.get('job_score') or 0):.0f}, expérience {float(match.get('experience_score') or 0):.0f}, diplôme {float(match.get('diploma_score') or 0):.0f}, localisation {float(match.get('location_score') or 0):.0f}, salaire {float(match.get('salary_score') or 0):.0f}, contrat {float(match.get('contract_score') or 0):.0f}, télétravail {float(match.get('remote_score') or 0):.0f}.
                     <br>
                     Compétences communes: {escape(', '.join(match.get('matching_skills') or []) or 'aucune')}
                     <br>
                     Compétences manquantes: {escape(', '.join(match.get('missing_skills') or []) or 'aucune')}
+                    <br>
+                    Localisation: {escape((match.get('criterion_details') or {}).get('localisation', {}).get('reason') or 'non précisée')}
+                    <br>
+                    Salaire: {escape((match.get('criterion_details') or {}).get('salaire', {}).get('reason') or 'non précisé')}
                   </div>
                   <div class="explain">
                     {escape(explanation.get('summary') or '')}
@@ -1822,7 +1973,7 @@ def _load_current_user() -> None:
 
 
 @user_portal_bp.context_processor
-def _inject_csrf() -> dict[str, Any]:
+def _inject_csrf() -> Dict[str, Any]:
     return {"csrf_token": _csrf_token}
 
 
@@ -1880,18 +2031,35 @@ def profile():
     if request.method == "POST":
         error = _validate_required_csrf()
         if not error:
+            weight_error = _save_matching_weights_from_form(request.form)
             try:
                 _save_profile(user_id)
-                flash("Profil enregistré.", "success")
-                return redirect(url_for("user_portal.profile"))
+                if weight_error:
+                    error = weight_error
+                else:
+                    flash("Profil enregistré.", "success")
+                    return redirect(url_for("user_portal.profile"))
             except ValueError as exc:
                 error = str(exc)
     profile_data = _current_profile_snapshot(user_id)
-    content = _profile_form(profile_data, "\n".join(item["job_title"] if isinstance(item, dict) else str(item) for item in profile_data["desired_jobs"]))
+    matching_weights = _current_matching_weights()
+    desired_jobs_text = "\n".join(item["job_title"] if isinstance(item, dict) else str(item) for item in profile_data["desired_jobs"])
+    content = _profile_form(profile_data, desired_jobs_text, matching_weights, error)
     content += _profile_summary_block(profile_data)
+    skill_items = _item_map(
+        _profile_skill_items(user_id),
+        "user_portal.edit_skill",
+        "user_portal.delete_skill",
+    )
+    diploma_items = _item_map(
+        _list_view_items(user_id, "diplomas"),
+        "user_portal.edit_diploma",
+        "user_portal.delete_diploma",
+    )
+    content += _list_section("Compétences", skill_items, [("Nom", "name"), ("Niveau", "level"), ("Années", "years_experience"), ("Source", "source")], url_for("user_portal.skills"), "Aucune compétence enregistrée.")
+    content += _list_section("Formations", diploma_items, [("Intitulé", "title"), ("Niveau", "level"), ("Établissement", "institution"), ("Année", "graduation_year"), ("Source", "source")], url_for("user_portal.diplomas"), "Aucune formation enregistrée.")
     content += _profile_privacy_block(profile_data)
     return _render_page("Mon profil", content, message=error)
-
 
 @user_portal_bp.route("/profile/skills", methods=["GET", "POST"])
 @login_required
@@ -1915,7 +2083,7 @@ def skills():
             except ValueError as exc:
                 error = str(exc)
     items = _item_map(
-        _list_view_items(user_id, "user_skills"),
+        _profile_skill_items(user_id),
         "user_portal.edit_skill",
         "user_portal.delete_skill",
     )
@@ -2349,6 +2517,21 @@ def recommendations():
     return _render_page("Mes offres", filter_form + cards_section)
 
 
+@user_portal_bp.route("/recommandation-formation")
+@login_required
+def training_recommendation():
+    territory = _normalize_string(request.args.get("territoire"))
+    period_days = _parse_int(request.args.get("periode_jours"), 1, 365) or 30
+    offers, error_message = load_normalized_offers()
+    context = build_recommendation_context(offers, territoire=territory or None, periode_jours=period_days)
+    context["error_message"] = error_message
+    context["territoire"] = territory or ""
+    context["territory_options"] = get_available_territories(offers)
+    context["period_days"] = period_days
+    context["page_title"] = "Recommandation de formation"
+    context["active_page"] = "training_recommendation"
+    return render_template("training_recommendation.html", **context)
+
 @user_portal_bp.route("/mes-offres/<offer_id>")
 @login_required
 def recommendation_detail(offer_id: str):
@@ -2382,9 +2565,7 @@ def recommendation_detail(offer_id: str):
 def dashboard():
     user_id = _current_user_id()
     assert user_id is not None
-    matches = _current_job_matches(user_id)
-    if not matches:
-        matches = _compute_recommendations(user_id)
+    matches = _compute_recommendations(user_id)
     compatible = [match for match in matches if float(match.get("global_score") or 0) >= DEFAULT_COMPATIBILITY_THRESHOLD]
     display_matches = compatible[:5] if compatible else matches[:5]
     average = round(sum(float(match.get("global_score") or 0) for match in matches) / len(matches), 2) if matches else 0.0
@@ -2397,6 +2578,10 @@ def dashboard():
     for match in compatible or matches:
         explanation = _decoded_explanation(match.get("explanation_json"))
         offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
+        if not offer and isinstance(match.get("offer"), dict):
+            offer = match.get("offer")
+        if not offer and isinstance(match.get("offer"), dict):
+            offer = match.get("offer")
         for skill in offer.get("competences") or explanation.get("matching_skills", []):
             demanded_counter[str(skill)] += 1
         for skill in explanation.get("missing_skills", []):
@@ -2411,12 +2596,17 @@ def dashboard():
             location_label = "Non renseigné"
         location_counter[location_label] += 1
 
-    best_explanation = _decoded_explanation(best.get("explanation_json")) if best else {}
+    best_explanation = best.get("explanation") if best and isinstance(best.get("explanation"), dict) else _decoded_explanation(best.get("explanation_json")) if best else {}
+    if isinstance(best_explanation, dict):
+        best_explanation = dict(best_explanation)
+        best_explanation["criterion_details"] = best.get("criterion_details") or best_explanation.get("criterion_details") or {}
     skills_to_develop = missing_counter.most_common(5)
     match_cards = []
     for match in display_matches:
         explanation = _decoded_explanation(match.get("explanation_json"))
         offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
+        if not offer and isinstance(match.get("offer"), dict):
+            offer = match.get("offer")
         url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
         match_cards.append({
             "title": offer.get("titre") or match.get("offer_identifier") or "Offre sans titre",
@@ -2473,6 +2663,7 @@ def dashboard():
             <h2>Meilleure offre</h2>
             {% if best %}
             {% set best_offer = best_explanation.get('offer') if best_explanation.get('offer') is mapping else {} %}
+            {% if not best_offer and best is mapping and best.get('offer') is mapping %}{% set best_offer = best.get('offer') %}{% endif %}
             <article class="offer-card offer-card--highlight">
               <h3 class="offer-title">{{ best_offer.get('titre') or best['offer_identifier'] }}</h3>
               <div class="meta">
@@ -2482,13 +2673,20 @@ def dashboard():
                 <span>Score {{ '%.0f'|format(best['global_score'] or 0) }}/100</span>
               </div>
               <p class="muted">{{ best_explanation.get('summary') }}</p>
+              {% set best_details = best_explanation.get('criterion_details') if best_explanation.get('criterion_details') is mapping else {} %}
+              {% if best_details %}
+              <div class="muted small">
+                <div>Localisation: {{ best_details.get('localisation', {}).get('reason') or 'non précisée' }}</div>
+                <div>Salaire: {{ best_details.get('salaire', {}).get('reason') or 'non précisé' }}</div>
+              </div>
+              {% endif %}
               {% if best_explanation.get('matching_skills') %}
               <div class="chips">
                 {% for skill in best_explanation.get('matching_skills')[:5] %}<span class="chip">{{ skill }}</span>{% endfor %}
               </div>
               {% endif %}
               <div class="actions">
-                {% set best_url = best_offer.get('url_originale') or best_offer.get('url') or url_for('user_portal.recommendation_detail', offer_id=best['offer_identifier']) %}
+                {% set best_url = best_offer.get('url_originale') or best_offer.get('url') or best.get('url_originale') or best.get('url') or url_for('user_portal.recommendation_detail', offer_id=best['offer_identifier']) %}
                 <a class="btn" href="{{ best_url }}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>
               </div>
             </article>
@@ -2533,7 +2731,7 @@ def dashboard():
         best_score=round(float(best["global_score"]) if best else 0.0, 2),
         best=best,
         best_explanation=best_explanation,
-        last_calculated=max((match.get("calculated_at") for match in matches), default="—"),
+        last_calculated=max((match.get("calculated_at") for match in matches if match.get("calculated_at")), default="—"),
         skills_to_develop=skills_to_develop,
         demanded_skills=demanded_counter.most_common(5),
         contract_distribution=contract_counter.most_common(),

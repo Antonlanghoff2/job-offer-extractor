@@ -1,4 +1,4 @@
-# Copyright Anton Langhoff
+# Copyright Anton Langhoff <anton@langhoff.fr>
 # SPDX-License-Identifier: MIT
 
 """Common offer normalization for matching and recommendation workflows."""
@@ -6,7 +6,7 @@
 from __future__ import annotations
 
 import re
-from typing import Any
+from typing import Any, Dict, List, Optional, Tuple
 
 from src.offer_normalization import normalize_text
 
@@ -19,7 +19,7 @@ def _as_text(value: object) -> str:
     return str(value).strip()
 
 
-def _first_value(raw_offer: dict[str, Any], keys: tuple[str, ...]) -> object:
+def _first_value(raw_offer: Dict[str, Any], keys: Tuple[str, ...]) -> object:
     for key in keys:
         value = raw_offer.get(key)
         if value not in (None, ""):
@@ -27,7 +27,7 @@ def _first_value(raw_offer: dict[str, Any], keys: tuple[str, ...]) -> object:
     return None
 
 
-def _collect_list_values(value: object) -> list[str]:
+def _collect_list_values(value: object) -> List[str]:
     if value is None:
         return []
     if isinstance(value, list):
@@ -36,7 +36,7 @@ def _collect_list_values(value: object) -> list[str]:
         items = list(value)
     else:
         items = [value]
-    out: list[str] = []
+    out: List[str] = []
     for item in items:
         if isinstance(item, dict):
             candidate = item.get("libelle") or item.get("label") or item.get("name") or item.get("title") or item.get("ville") or item.get("commune") or item.get("display_name")
@@ -48,7 +48,7 @@ def _collect_list_values(value: object) -> list[str]:
     return out
 
 
-def _normalize_teletravail(value: object) -> str | None:
+def _normalize_teletravail(value: object) -> Optional[str]:
     text = normalize_text(value)
     if not text:
         return None
@@ -61,7 +61,7 @@ def _normalize_teletravail(value: object) -> str | None:
     return None
 
 
-def _extract_salary(raw_offer: dict[str, Any]) -> tuple[int | None, int | None]:
+def _extract_salary(raw_offer: Dict[str, Any]) -> Tuple[Optional[int], Optional[int]]:
     values = []
     for key in ("salaire", "salary", "salaires", "salaire_min", "salaire_max"):
         value = raw_offer.get(key)
@@ -76,7 +76,7 @@ def _extract_salary(raw_offer: dict[str, Any]) -> tuple[int | None, int | None]:
     return None, None
 
 
-def normalize_offer_for_matching(raw_offer: dict[str, Any], *, source: str | None = None) -> dict[str, Any]:
+def normalize_offer_for_matching(raw_offer: Dict[str, Any], *, source: Optional[str] = None) -> Dict[str, Any]:
     if not isinstance(raw_offer, dict):
         raise TypeError("raw_offer must be a dictionary")
 
@@ -112,6 +112,8 @@ def normalize_offer_for_matching(raw_offer: dict[str, Any], *, source: str | Non
         teletravail = _normalize_teletravail(raw_offer.get("distanciel"))
     salary_min, salary_max = _extract_salary(raw_offer)
     experience_requise = _first_value(raw_offer, ("experience_requise", "experienceLibelle", "experience", "seniority"))
+    diplomes = _collect_list_values(_first_value(raw_offer, ("diplomes_requis", "diplomes", "degrees")))
+    deduped_diplomes = [item for item in dict.fromkeys(_as_text(item) for item in diplomes if _as_text(item))]
     return {
         "id": _as_text(offer_id),
         "titre": _as_text(title),
@@ -124,7 +126,7 @@ def normalize_offer_for_matching(raw_offer: dict[str, Any], *, source: str | Non
         "salaire_min": salary_min,
         "salaire_max": salary_max,
         "experience_requise": _as_text(experience_requise) or None,
-        "diplomes_requis": [item for item in dict.fromkeys(_as_text(item) for item in _collect_list_values(_first_value(raw_offer, ("diplomes_requis", "diplomes", "degrees")))) if item],
+        "diplomes_requis": deduped_diplomes,
         "url_originale": _as_text(url_originale) or None,
         "source": _as_text(source_name) or "France Travail",
         "source_identifier": _as_text(offer_id),
