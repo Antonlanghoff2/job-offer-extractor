@@ -5,23 +5,14 @@
 
 from __future__ import annotations
 
-import json
 import re
 from dataclasses import dataclass
-from typing import Any, Optional, Tuple, Dict, List
+from typing import Any, Dict, List, Optional
 
 from src.offer_normalization import normalize_text
 from src.services.offer_normalization import normalize_offer_for_matching
-
-WEIGHTS = {
-    "skill_score": 0.50,
-    "job_score": 0.15,
-    "experience_score": 0.10,
-    "diploma_score": 0.05,
-    "location_score": 0.10,
-    "contract_score": 0.05,
-    "remote_score": 0.05,
-}
+from src.matching.scoring import build_scoring_result, calculate_weighted_score
+from src.matching.weights import DEFAULT_MATCHING_WEIGHTS, ensure_matching_weights
 
 SKILL_SYNONYMS = {
     "javascript": "javascript",
@@ -66,15 +57,27 @@ def _scale(value: float) -> float:
     return max(0.0, min(100.0, value))
 
 
+def _component_value(component: ScoreComponent) -> Optional[float]:
+    if not component.applicable:
+        return None
+    return round(max(0.0, min(100.0, component.score)) / 100.0, 4)
+
+
 def compute_skill_score(profile_skills: List[Dict[str, Any]], offer_skills: List[str]) -> ScoreComponent:
-    profile_map = {normalize_skill_name(item.get("normalized_name") or item.get("name") or item.get("nom")): item for item in profile_skills if item}
+    profile_map = {
+        normalize_skill_name(item.get("normalized_name") or item.get("name") or item.get("nom")): item
+        for item in profile_skills
+        if item
+    }
     offer_map = {normalize_skill_name(skill): skill for skill in offer_skills if normalize_skill_name(skill)}
     if not profile_map or not offer_map:
         return ScoreComponent(100.0, False, {"matching_skills": [], "missing_skills": [], "coverage": None})
-    matched = sorted({profile_map[key].get("name") or profile_map[key].get("nom") or key for key in profile_map.keys() & offer_map.keys()})
+    matched = sorted(
+        {profile_map[key].get("name") or profile_map[key].get("nom") or key for key in profile_map.keys() & offer_map.keys()}
+    )
     missing = sorted({value for key, value in offer_map.items() if key not in profile_map})
     coverage = len(matched) / max(len(offer_map), 1)
-    total = _scale((coverage * 85.0))
+    total = _scale(coverage * 85.0)
     return ScoreComponent(total, True, {"matching_skills": matched, "missing_skills": missing, "coverage": round(coverage, 3)})
 
 
@@ -209,11 +212,15 @@ def _profile_skill_list(profile_skills: List[Dict[str, Any]]) -> List[Dict[str, 
     return normalized
 
 
-def compute_match(profile: Dict[str, Any], offer_raw: Dict[str, Any]) -> Dict[str, Any]:
-    offer = normalize_offer_for_matching(offer_raw, source=offer_raw.get("source"))
-    profile_skills = _profile_skill_list(profile.get("skills", []))
+def calculate_matching_score(
+    user_profile: Dict[str, Any],
+    job_offer: Dict[str, Any],
+    weights: Optional[Dict[str, float]] = None,
+) -> Dict[str, Any]:
+    offer = normalize_offer_for_matching(job_offer, source=job_offer.get("source"))
+    profile_skills = _profile_skill_list(user_profile.get("skills", []))
     profile_jobs = []
-    for item in profile.get("desired_jobs", []):
+    for item in user_profile.get("desired_jobs", []):
         if isinstance(item, dict):
             title = item.get("job_title") or item.get("title")
         else:
@@ -221,73 +228,90 @@ def compute_match(profile: Dict[str, Any], offer_raw: Dict[str, Any]) -> Dict[st
         if title:
             profile_jobs.append(title)
     profile_experience_titles = []
-    for item in profile.get("experiences", []):
+    for item in user_profile.get("experiences", []):
         if isinstance(item, dict):
             title = item.get("job_title") or item.get("poste")
         else:
             title = item
         if title:
             profile_experience_titles.append(title)
-    profile_diplomas = profile.get("diplomas", [])
+    profile_diplomas = user_profile.get("diplomas", [])
+
     skill_component = compute_skill_score(profile_skills, offer.get("competences", []))
     job_component = compute_job_score(profile_jobs, profile_experience_titles, offer.get("titre") or "")
-    experience_component = compute_experience_score(profile.get("experiences", []), offer.get("experience_requise"))
+    experience_component = compute_experience_score(user_profile.get("experiences", []), offer.get("experience_requise"))
     diploma_component = compute_diploma_score(profile_diplomas, offer.get("diplomes_requis", []))
-    location_component = compute_location_score(profile, offer)
-    contract_component = compute_contract_score(profile.get("contract_preference"), offer.get("contrat"))
-    remote_component = compute_remote_score(profile.get("remote_preference"), offer.get("teletravail"))
+    location_component = compute_location_score(user_profile, offer)
+    contract_component = compute_contract_score(user_profile.get("contract_preference"), offer.get("contrat"))
+    remote_component = compute_remote_score(user_profile.get("remote_preference"), offer.get("teletravail"))
 
-    components = {
-        "skill_score": skill_component,
-        "job_score": job_component,
-        "experience_score": experience_component,
-        "diploma_score": diploma_component,
-        "location_score": location_component,
-        "contract_score": contract_component,
-        "remote_score": remote_component,
+    criterion_components = {
+        "competences": skill_component,
+        "metier": job_component,
+        "experience": experience_component,
+        "diplome": diploma_component,
+        "localisation": location_component,
+        "contrat": contract_component,
+        "teletravail": remote_component,
     }
-    numerator = 0.0
-    denominator = 0.0
-    for key, weight in WEIGHTS.items():
-        component = components[key]
-        if component.applicable:
-            numerator += component.score * weight
-            denominator += weight
-    global_score = _scale(numerator / denominator if denominator else 0.0)
+    criterion_scores = {key: _component_value(component) for key, component in criterion_components.items()}
+    normalized_weights = ensure_matching_weights(weights or DEFAULT_MATCHING_WEIGHTS)
+    weighted_score = calculate_weighted_score(criterion_scores, normalized_weights)
+    scoring_result = build_scoring_result(
+        criterion_scores,
+        normalized_weights,
+        common_skills=skill_component.details.get("matching_skills", []),
+        missing_skills=skill_component.details.get("missing_skills", []),
+        source=str(offer.get("source") or ""),
+        url_originale=str(offer.get("url_originale") or offer.get("url") or ""),
+    )
+
+    explanation_parts = []
     matching_skills = skill_component.details.get("matching_skills", [])
     missing_skills = skill_component.details.get("missing_skills", [])
-    explanation_parts = []
     if skill_component.applicable:
-        explanation_parts.append(f"Vous possédez {len(matching_skills)} compétence(s) commune(s) sur {len(matching_skills) + len(missing_skills)} demandée(s).")
+        explanation_parts.append(
+            "Vous possédez %s compétence(s) commune(s) sur %s demandée(s)."
+            % (len(matching_skills), len(matching_skills) + len(missing_skills))
+        )
         if missing_skills:
-            explanation_parts.append(f"Compétences manquantes: {', '.join(missing_skills[:5])}.")
+            explanation_parts.append("Compétences manquantes: %s." % ", ".join(missing_skills[:5]))
     if job_component.applicable and job_component.score >= 50:
         explanation_parts.append("Votre expérience et vos métiers recherchés correspondent au poste.")
     if location_component.applicable:
-        explanation_parts.append(f"Compatibilité localisation: {location_component.score:.0f}/100.")
+        explanation_parts.append("Compatibilité localisation: %.0f/100." % location_component.score)
     if contract_component.applicable:
-        explanation_parts.append(f"Contrat: {contract_component.score:.0f}/100.")
+        explanation_parts.append("Contrat: %.0f/100." % contract_component.score)
     if remote_component.applicable:
-        explanation_parts.append(f"Télétravail: {remote_component.score:.0f}/100.")
-    explanation = {
-        "summary": f"Cette offre correspond à {global_score:.0f}% à votre profil.",
-        "details": explanation_parts,
-        "matching_skills": matching_skills,
-        "missing_skills": missing_skills,
-        "subscores": {key: component.score for key, component in components.items()},
-    }
-    return {
-        "offer_identifier": offer.get("id"),
-        "offer": offer,
-        "global_score": round(global_score, 2),
-        "skill_score": round(skill_component.score, 2),
-        "job_score": round(job_component.score, 2),
-        "experience_score": round(experience_component.score, 2),
-        "diploma_score": round(diploma_component.score, 2),
-        "location_score": round(location_component.score, 2),
-        "contract_score": round(contract_component.score, 2),
-        "remote_score": round(remote_component.score, 2),
-        "matching_skills": matching_skills,
-        "missing_skills": missing_skills,
-        "explanation": explanation,
-    }
+        explanation_parts.append("Télétravail: %.0f/100." % remote_component.score)
+
+    scoring_result.update(
+        {
+            "offer_identifier": offer.get("id"),
+            "offer": offer,
+            "global_score": weighted_score,
+            "skill_score": round(skill_component.score, 2),
+            "job_score": round(job_component.score, 2),
+            "experience_score": round(experience_component.score, 2),
+            "diploma_score": round(diploma_component.score, 2),
+            "location_score": round(location_component.score, 2),
+            "contract_score": round(contract_component.score, 2),
+            "remote_score": round(remote_component.score, 2),
+            "matching_skills": matching_skills,
+            "missing_skills": missing_skills,
+            "criterion_scores": criterion_scores,
+            "matching_weights": normalized_weights,
+            "explanation": {
+                "summary": "Cette offre correspond à %.0f%% à votre profil." % weighted_score,
+                "details": explanation_parts,
+                "matching_skills": matching_skills,
+                "missing_skills": missing_skills,
+                "subscores": {key: component.score for key, component in criterion_components.items()},
+            },
+        }
+    )
+    return scoring_result
+
+
+def compute_match(profile: Dict[str, Any], offer_raw: Dict[str, Any], weights: Optional[Dict[str, float]] = None) -> Dict[str, Any]:
+    return calculate_matching_score(profile, offer_raw, weights=weights)

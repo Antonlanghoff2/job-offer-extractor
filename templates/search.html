@@ -13,7 +13,7 @@
 </section>
 
 <section class="card search-card">
-  <form class="search-form" method="get" action="{{ url_for('index') }}">
+  <form class="search-form" method="get" action="{{ url_for('index') }}" data-matching-weights-form data-default-weights='{{ default_matching_weights|tojson }}'>
     <div class="field">
       <label for="mots_cles">Compétences / mots-clés</label>
       <input id="mots_cles" name="mots_cles" value="{{ mots_cles }}" placeholder="Python, SQL, DevOps...">
@@ -45,8 +45,54 @@
     </div>
     <div class="field field--actions">
       <label>&nbsp;</label>
-      <button type="submit" class="button button--primary">Rechercher</button>
+      <button type="submit" class="button button--primary" data-search-submit>Rechercher</button>
     </div>
+
+    <section class="matching-weights card" aria-labelledby="matching-weights-title">
+      <div class="matching-weights__head">
+        <div>
+          <h2 id="matching-weights-title">Personnaliser les critères de matching</h2>
+          <p class="muted">Réglez les pondérations. Le total doit rester égal à 100 %.</p>
+        </div>
+        <div class="matching-weights__total">
+          <span>Total des pondérations :</span>
+          <strong data-weights-total>100 %</strong>
+        </div>
+      </div>
+      {% if matching_weights_error %}
+      <div class="matching-weights__message alert alert--error" data-weights-message>{{ matching_weights_error }}</div>
+      {% else %}
+      <div class="matching-weights__message muted" data-weights-message>Le total des pondérations doit être égal à 100 %.</div>
+      {% endif %}
+      <div class="matching-weights__grid">
+        {% set matching_weight_fields = [
+          ('competences', 'Compétences'),
+          ('metier', 'Métier ou intitulé'),
+          ('experience', 'Expérience'),
+          ('diplome', 'Diplôme'),
+          ('localisation', 'Localisation'),
+          ('contrat', 'Contrat'),
+          ('teletravail', 'Télétravail')
+        ] %}
+        {% for key, label in matching_weight_fields %}
+        {% set value = matching_weights[key] %}
+        <div class="weight-row" data-weight-row data-weight-key="{{ key }}">
+          <div class="weight-row__label">
+            <label for="weight-{{ key }}">{{ label }}</label>
+            <strong><span data-weight-display="{{ key }}">{{ '%.0f'|format(value) }}</span> %</strong>
+          </div>
+          <div class="weight-row__controls">
+            <input id="weight-{{ key }}" type="range" min="0" max="100" step="1" value="{{ '%.0f'|format(value) }}" data-weight-range="{{ key }}">
+            <input type="number" min="0" max="100" step="1" value="{{ '%.0f'|format(value) }}" data-weight-number="{{ key }}" name="matching_weights_{{ key }}">
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="matching-weights__actions">
+        <button type="button" class="button button--secondary" data-weights-reset>Réinitialiser les pondérations</button>
+      </div>
+    </section>
+
     <input type="hidden" name="page" value="1">
     <input type="hidden" name="periode" value="{{ periode_jours }}">
     <input type="hidden" name="top_n" value="{{ top_n }}">
@@ -160,6 +206,8 @@
     {% if paged_offers %}
     <div class="offer-list">
       {% for offre in paged_offers %}
+      {% set match_details = offre.match_details if offre.match_details is mapping else {} %}
+      {% set offer_url = offre.url or match_details.get('url_originale') or offre.url_originale %}
       <article class="offer-card">
         <div class="offer-card__title-row">
           <div>
@@ -192,9 +240,34 @@
         <p class="offer-note">Compétences communes: {{ offre.matching_skills|join(', ') }}</p>
         {% endif %}
 
-        {% if offre.url %}
-        <p><a class="button button--secondary" href="{{ offre.url }}" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+        {% if match_details %}
+        <details class="score-details">
+          <summary>Détail du scoring</summary>
+          <div class="score-details__body">
+            <p><strong>Score global :</strong> {{ match_details.score_global }}%</p>
+            <p><strong>Source :</strong> {{ match_details.source or 'Non renseignée' }}</p>
+            <p><strong>URL originale :</strong> {% if match_details.url_originale %}<a href="{{ match_details.url_originale }}" target="_blank" rel="noopener noreferrer">Ouvrir</a>{% else %}Non renseignée{% endif %}</p>
+            <p><strong>Compétences manquantes :</strong> {{ match_details.competences_manquantes|join(', ') if match_details.competences_manquantes else 'Aucune' }}</p>
+            <div class="score-details__grid">
+              {% for critere, details in match_details.sous_scores.items() %}
+              <div class="score-tile">
+                <div class="score-tile__label">{{ critere|capitalize }}</div>
+                <div class="score-tile__value">{{ details.score if details.score is not none else '—' }}%</div>
+                <div class="score-tile__meta">Poids initial {{ '%.1f'|format(details.poids_initial) }} · Poids effectif {{ '%.1f'|format(details.poids_effectif) }} · {{ details.statut }}</div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </details>
         {% endif %}
+
+        <div class="actions offer-card__actions">
+          {% if offer_url %}
+          <a class="button button--secondary" href="{{ offer_url }}" target="_blank" rel="noopener noreferrer">Voir l'offre</a>
+          {% else %}
+          <span class="muted">Lien indisponible</span>
+          {% endif %}
+        </div>
       </article>
       {% endfor %}
     </div>
@@ -215,4 +288,8 @@
     {% endif %}
   </section>
 </section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/matching_weights.js') }}"></script>
 {% endblock %}

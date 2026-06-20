@@ -15,10 +15,11 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-from flask import Flask, flash, jsonify, render_template, request
+from flask import Flask, flash, jsonify, render_template, request, session
 
 from src.france_travail_client import iter_search_offres
 from src.offer_normalization import normalize_france_travail_offer
+from src.matching.weights import DEFAULT_MATCHING_WEIGHTS, MATCHING_WEIGHT_KEYS, validate_matching_weights
 from src.services.matching_service import compute_match
 from src.services.offer_repository import (
     build_territory_trends_context,
@@ -281,6 +282,37 @@ def _sanitize_territory_type(value: Optional[str]) -> str:
     return "all"
 
 
+def _matching_weight_input_name(key: str) -> str:
+    return "matching_weights_%s" % key
+
+
+def _extract_matching_weights_from_request() -> Tuple[Dict[str, float], Optional[str]]:
+    provided = any(_matching_weight_input_name(key) in request.args for key in MATCHING_WEIGHT_KEYS)
+    if not provided:
+        stored = session.get("matching_weights")
+        normalized, error = validate_matching_weights(stored) if isinstance(stored, dict) else (dict(DEFAULT_MATCHING_WEIGHTS), "")
+        if error:
+            return dict(DEFAULT_MATCHING_WEIGHTS), ""
+        return normalized, ""
+
+    candidate = {key: request.args.get(_matching_weight_input_name(key)) for key in MATCHING_WEIGHT_KEYS}
+    normalized, error = validate_matching_weights(candidate)
+    if error:
+        stored = session.get("matching_weights")
+        if isinstance(stored, dict):
+            fallback, fallback_error = validate_matching_weights(stored)
+            if not fallback_error:
+                return fallback, error
+        return dict(DEFAULT_MATCHING_WEIGHTS), error
+
+    session["matching_weights"] = normalized
+    return normalized, ""
+
+
+def _matching_weight_query_params(weights: Dict[str, float]) -> Dict[str, float]:
+    return {_matching_weight_input_name(key): float(weights.get(key, DEFAULT_MATCHING_WEIGHTS[key])) for key in MATCHING_WEIGHT_KEYS}
+
+
 def _build_search_arguments(territoire_type: str, territoire: str, distance: object) -> Tuple[Dict[str, Any], Optional[str], str]:
     search_kwargs: Dict[str, Any] = {}
     territory_label = None
@@ -317,6 +349,7 @@ def build_live_state(
     per_page: int,
     periode_jours: int,
     top_n: int,
+    matching_weights: Dict[str, float],
 ) -> Dict[str, Any]:
     errors: List[str] = []
     search_filters, territoire_label, normalized_territoire = _build_search_arguments(territoire_type, territoire, distance)
@@ -353,6 +386,9 @@ def build_live_state(
             "trend_competence_items": [],
             "trend_contract_items": [],
             "trend_niveau_items": [],
+            "matching_weights": dict(matching_weights),
+            "default_matching_weights": dict(DEFAULT_MATCHING_WEIGHTS),
+            "matching_weights_error": "",
         }
 
     if territoire_type != "all" and not normalized_territoire:
@@ -398,6 +434,9 @@ def build_live_state(
             "trend_competence_items": [],
             "trend_contract_items": [],
             "trend_niveau_items": [],
+            "matching_weights": dict(matching_weights),
+            "default_matching_weights": dict(DEFAULT_MATCHING_WEIGHTS),
+            "matching_weights_error": "",
         }
 
     normalized_offers = [normalize_france_travail_offer(offer) for offer in raw_offers]
@@ -432,9 +471,10 @@ def build_live_state(
             enriched["code_postal"] = source_offer.get("code_postal", "")
         if current_profile and source_offer:
             try:
-                match = compute_match(current_profile, source_offer)
+                match = compute_match(current_profile, source_offer, weights=matching_weights)
                 enriched["match_score"] = round(float(match.get("global_score") or 0.0), 2)
                 enriched["matching_skills"] = match.get("matching_skills", [])
+                enriched["match_details"] = match
             except Exception:
                 enriched["match_score"] = None
                 enriched["matching_skills"] = []
@@ -474,6 +514,9 @@ def build_live_state(
         "market_context": market_context,
         "market_context_headers": market_context_headers,
         "territoire_options": territory_options,
+        "matching_weights": dict(matching_weights),
+        "default_matching_weights": dict(DEFAULT_MATCHING_WEIGHTS),
+        "matching_weights_error": "",
     }
 
 
@@ -935,6 +978,7 @@ def _build_render_context_from_request() -> Dict[str, Any]:
     periode_jours = _sanitize_period(request.args.get("periode"))
     top_n = _sanitize_top_n(request.args.get("top_n"))
 
+    matching_weights, matching_weights_error = _extract_matching_weights_from_request()
     state = build_live_state(
         mots_cles=mots_cles,
         territoire_type=territoire_type,
@@ -944,7 +988,13 @@ def _build_render_context_from_request() -> Dict[str, Any]:
         per_page=per_page,
         periode_jours=periode_jours,
         top_n=top_n,
+        matching_weights=matching_weights,
     )
+    if matching_weights_error:
+        existing_error = state.get("error_message") or ""
+        state["error_message"] = (existing_error + " " + matching_weights_error).strip()
+    state["matching_weights"] = dict(matching_weights)
+    state["matching_weights_error"] = matching_weights_error or ""
 
     prev_url = None
     next_url = None
@@ -958,6 +1008,7 @@ def _build_render_context_from_request() -> Dict[str, Any]:
             per_page=per_page,
             periode=periode_jours,
             top_n=top_n,
+            **_matching_weight_query_params(state["matching_weights"]),
         )
     if state["total_pages"] and state["page"] < state["total_pages"]:
         next_url = _build_page_url(
@@ -969,6 +1020,7 @@ def _build_render_context_from_request() -> Dict[str, Any]:
             per_page=per_page,
             periode=periode_jours,
             top_n=top_n,
+            **_matching_weight_query_params(state["matching_weights"]),
         )
 
     state.update(
