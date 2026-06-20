@@ -153,28 +153,50 @@ def compute_diploma_score(profile_diplomas: List[Dict[str, Any]], offer_diplomas
     return ScoreComponent(_scale(coverage * 100.0), True, {"matching_diplomas": matched, "missing_diplomas": missing, "coverage": round(coverage, 3)})
 
 
+def _extract_department_from_text(text: str) -> Optional[str]:
+    normalized = normalize_text(text)
+    if not normalized:
+        return None
+    match = re.search(r"\b(\d{2})(?:\d{3})?\b", normalized)
+    if match:
+        return match.group(1)
+    if normalized.startswith("97") and len(normalized) >= 3 and normalized[2].isdigit():
+        return normalized[:3]
+    return None
+
+
 def compute_location_score(profile: Dict[str, Any], offer: Dict[str, Any]) -> ScoreComponent:
     if not any(profile.get(key) for key in ("city", "postal_code", "department", "search_radius_km")):
         return ScoreComponent(100.0, False, {"reason": "profil sans contrainte locale"})
     offer_locations = [normalize_text(value) for value in offer.get("lieux", []) if value]
     if not offer_locations and offer.get("lieuTravail"):
         offer_locations.append(normalize_text(offer["lieuTravail"].get("libelle")))
+        offer_locations.append(normalize_text(offer["lieuTravail"].get("commune")))
+        offer_locations.append(normalize_text(offer["lieuTravail"].get("codePostal")))
     offer_locations = [item for item in offer_locations if item]
     if not offer_locations:
         return ScoreComponent(100.0, False, {"reason": "offre sans localisation exploitable"})
     city = normalize_text(profile.get("city"))
     postal = normalize_text(profile.get("postal_code"))
     department = normalize_text(profile.get("department"))
+    offer_departments = []
+    for item in offer_locations:
+        department_from_text = _extract_department_from_text(item)
+        if department_from_text:
+            offer_departments.append(department_from_text)
     if any(city and city in loc for loc in offer_locations):
         return ScoreComponent(100.0, True, {"reason": "ville correspondante"})
     if any(postal and postal in loc for loc in offer_locations):
         return ScoreComponent(100.0, True, {"reason": "code postal correspondant"})
-    if any(department and department in loc for loc in offer_locations):
+    if department and any(department == item or department == item[:2] for item in offer_departments):
         return ScoreComponent(80.0, True, {"reason": "même département"})
-    radius = profile.get("search_radius_km")
-    if radius:
-        return ScoreComponent(60.0, True, {"reason": "proximité déclarée sans géocodage"})
-    return ScoreComponent(40.0, True, {"reason": "localisation partielle"})
+    if postal and any(item.startswith(postal[:2]) for item in offer_locations if len(postal) >= 2):
+        return ScoreComponent(80.0, True, {"reason": "même département postal"})
+    if department and any(department in loc for loc in offer_locations):
+        return ScoreComponent(60.0, True, {"reason": "département partiellement correspondant"})
+    if profile.get("search_radius_km"):
+        return ScoreComponent(0.0, True, {"reason": "localisation éloignée", "offer_locations": offer_locations})
+    return ScoreComponent(20.0, True, {"reason": "localisation non correspondante", "offer_locations": offer_locations})
 
 
 def compute_contract_score(profile_contract: Optional[str], offer_contract: Optional[str]) -> ScoreComponent:

@@ -50,5 +50,38 @@ class MatchingServiceTest(unittest.TestCase):
         self.assertIn("subscores", match["explanation"])
 
 
+    def test_compute_match_penalizes_distant_location(self) -> None:
+        profile = {
+            "skills": [{"name": "Python"}],
+            "desired_jobs": [{"job_title": "Développeur backend"}],
+            "experiences": [{"job_title": "Développeur backend", "duration_years": 4}],
+            "diplomas": [{"title": "Master Informatique"}],
+            "city": "Lyon",
+            "postal_code": "69000",
+            "department": "69",
+            "search_radius_km": 20,
+            "remote_preference": "indifferent",
+            "contract_preference": "CDI",
+        }
+        offer = {
+            "id": "off-remote",
+            "titre": "Développeur backend Python",
+            "entreprise": "ACME",
+            "competences": ["Python"],
+            "diplomes_requis": ["Master Informatique"],
+            "contrat": "CDI",
+            "teletravail": "presentiel",
+            "lieux": ["Paris"],
+            "experience_requise": "3 ans",
+            "url_originale": "https://example.com/of-remote",
+            "source": "France Travail",
+        }
+
+        match = compute_match(profile, offer)
+
+        self.assertLessEqual(match["location_score"], 20)
+        self.assertEqual(match["explanation"]["subscores"]["localisation"], match["location_score"])
+
+
 if __name__ == "__main__":
     unittest.main()
