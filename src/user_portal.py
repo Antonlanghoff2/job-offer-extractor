@@ -29,6 +29,7 @@ from werkzeug.utils import secure_filename
 
 from src.db import execute, fetch_all, fetch_one, init_app as init_db_teardown, init_db, transaction, utcnow_iso
 from src.offer_normalization import normalize_text
+from src.matching.weights import DEFAULT_MATCHING_WEIGHTS, MATCHING_WEIGHT_KEYS, validate_matching_weights
 from src.services.cv_parser import parse_cv_file
 from src.services.formation_recommendation import build_recommendation_context
 from src.services.matching_service import compute_match, normalize_skill_name
@@ -213,6 +214,38 @@ BASE_TEMPLATE = """
       margin: 0 auto;
       padding: 22px 20px 42px;
     }
+    .matching-weights {
+      grid-column: 1 / -1;
+      margin-top: 14px;
+      border: 1px solid rgba(29, 99, 216, 0.12);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      padding: 16px;
+      border-radius: 16px;
+    }
+    .matching-weights__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    .matching-weights__head h2 { margin: 0 0 4px; font-size: 1.05rem; }
+    .matching-weights__total { text-align: right; font-size: 0.92rem; color: var(--muted); }
+    .matching-weights__total strong { display: block; margin-top: 4px; color: var(--text); font-size: 1.15rem; }
+    .matching-weights__message { margin: 10px 0 14px; }
+    .matching-weights__grid { display: grid; gap: 12px; }
+    .weight-row { display: grid; gap: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: white; }
+    .weight-row__label { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+    .weight-row__label label { font-weight: 800; color: var(--text); }
+    .weight-row__label strong { color: var(--accent); font-variant-numeric: tabular-nums; }
+    .weight-row__controls { display: grid; grid-template-columns: minmax(0, 1fr) 92px; gap: 10px; align-items: center; }
+    .weight-row__controls input[type="range"] { width: 100%; }
+    .weight-row__controls input[type="number"] { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; font: inherit; }
+    .matching-weights__actions { margin-top: 14px; display: flex; justify-content: flex-end; }
+    .profile-edit-grid { display: grid; gap: 16px; }
+    .profile-edit-list { margin-top: 16px; }
+    .profile-edit-list .panel { margin-bottom: 0; }
+    .profile-edit-list .panel + .panel { margin-top: 16px; }
     .panel, .status, .card, .list-item {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -363,6 +396,7 @@ BASE_TEMPLATE = """
     {% endif %}
     {{ content|safe }}
   </main>
+  <script src="{{ url_for('static', filename='js/matching_weights.js') }}"></script>
 </body>
 </html>
 """
@@ -694,6 +728,23 @@ def _parse_multi_values(raw_value: object) -> List[str]:
     return values
 
 
+def _current_matching_weights() -> Dict[str, float]:
+    stored = session.get("matching_weights")
+    normalized, error = validate_matching_weights(stored) if isinstance(stored, dict) else (dict(DEFAULT_MATCHING_WEIGHTS), "")
+    if error:
+        return dict(DEFAULT_MATCHING_WEIGHTS)
+    return normalized
+
+
+def _save_matching_weights_from_form(form) -> Optional[str]:
+    candidate = {key: form.get(f"matching_weights_{key}") for key in MATCHING_WEIGHT_KEYS}
+    normalized, error = validate_matching_weights(candidate)
+    if error:
+        return error
+    session["matching_weights"] = normalized
+    return None
+
+
 def _render_page(title: str, content: str, *, message: Optional[str] = None, message_category: Optional[str] = None, **context: Any):
     return render_template_string(
         BASE_TEMPLATE,
@@ -746,12 +797,12 @@ def _auth_block(form_action: str, title: str, submit_label: str, next_url: str =
     )
 
 
-def _profile_form(profile: Dict[str, Any], desired_jobs_text: str) -> str:
+def _profile_form(profile: Dict[str, Any], desired_jobs_text: str, matching_weights: Dict[str, float], matching_weights_error: Optional[str] = None) -> str:
     return render_template_string(
         """
         <section class="panel">
           <h2>Mon profil</h2>
-          <form method="post">
+          <form method="post" class="profile-edit-grid" data-matching-weights-form data-default-weights='{{ default_matching_weights|tojson }}'>
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
             <div class="grid">
               <div class="field"><label>Prénom</label><input name="first_name" value="{{ profile.first_name or '' }}"></div>
@@ -779,7 +830,53 @@ def _profile_form(profile: Dict[str, Any], desired_jobs_text: str) -> str:
             <div class="field"><label>Métiers recherchés</label><textarea name="desired_jobs">{{ desired_jobs_text }}</textarea></div>
             <div class="field"><label>Disponibilité</label><input name="availability" value="{{ profile.availability or '' }}"></div>
             <div class="field"><label>Présentation professionnelle</label><textarea name="summary">{{ profile.summary or '' }}</textarea></div>
-            <div class="actions"><button class="btn" type="submit">Enregistrer</button></div>
+
+            <section class="matching-weights" aria-labelledby="matching-weights-title">
+              <div class="matching-weights__head">
+                <div>
+                  <h2 id="matching-weights-title">Personnaliser les critères de matching</h2>
+                  <p class="muted">Ces pondérations s’appliquent aux pages Mes offres et Mon tableau de bord.</p>
+                </div>
+                <div class="matching-weights__total">
+                  <span>Total des pondérations :</span>
+                  <strong data-weights-total>100 %</strong>
+                </div>
+              </div>
+              {% if matching_weights_error %}
+              <div class="matching-weights__message alert alert--error" data-weights-message>{{ matching_weights_error }}</div>
+              {% else %}
+              <div class="matching-weights__message muted" data-weights-message>Le total des pondérations doit être égal à 100 %.</div>
+              {% endif %}
+              <div class="matching-weights__grid">
+                {% set matching_weight_fields = [
+                  ('competences', 'Compétences'),
+                  ('metier', 'Métier ou intitulé'),
+                  ('experience', 'Expérience'),
+                  ('diplome', 'Diplôme'),
+                  ('localisation', 'Localisation'),
+                  ('contrat', 'Contrat'),
+                  ('teletravail', 'Télétravail')
+                ] %}
+                {% for key, label in matching_weight_fields %}
+                {% set value = matching_weights[key] %}
+                <div class="weight-row" data-weight-row data-weight-key="{{ key }}">
+                  <div class="weight-row__label">
+                    <label for="weight-{{ key }}">{{ label }}</label>
+                    <strong><span data-weight-display="{{ key }}">{{ '%.0f'|format(value) }}</span> %</strong>
+                  </div>
+                  <div class="weight-row__controls">
+                    <input id="weight-{{ key }}" type="range" min="0" max="100" step="1" value="{{ '%.0f'|format(value) }}" data-weight-range="{{ key }}">
+                    <input type="number" min="0" max="100" step="1" value="{{ '%.0f'|format(value) }}" data-weight-number="{{ key }}" name="matching_weights_{{ key }}">
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="matching-weights__actions">
+                <button type="button" class="btn secondary" data-weights-reset>Réinitialiser les pondérations</button>
+              </div>
+            </section>
+
+            <div class="actions"><button class="btn" type="submit" data-search-submit>Enregistrer</button></div>
           </form>
         </section>
         """,
@@ -787,6 +884,9 @@ def _profile_form(profile: Dict[str, Any], desired_jobs_text: str) -> str:
         desired_jobs_text=desired_jobs_text,
         remote_options=REMOTE_OPTIONS,
         contract_options=CONTRACT_OPTIONS,
+        matching_weights=matching_weights,
+        matching_weights_error=matching_weights_error,
+        default_matching_weights=DEFAULT_MATCHING_WEIGHTS,
         csrf_token=_csrf_token,
     )
 
@@ -1154,6 +1254,20 @@ def _store_experience(user_id: int) -> None:
 
 def _list_view_items(user_id: int, table: str) -> List[Dict[str, Any]]:
     rows = fetch_all(f"SELECT * FROM {table} WHERE user_id = ? ORDER BY created_at DESC", (user_id,))
+    return [dict(row) for row in rows]
+
+
+def _profile_skill_items(user_id: int) -> List[Dict[str, Any]]:
+    rows = fetch_all(
+        """
+        SELECT us.*, s.name, s.normalized_name
+        FROM user_skills us
+        JOIN skills s ON s.id = us.skill_id
+        WHERE us.user_id = ?
+        ORDER BY s.normalized_name ASC
+        """,
+        (user_id,),
+    )
     return [dict(row) for row in rows]
 
 
@@ -1627,6 +1741,9 @@ def _explanation_with_offer_summary(match: Dict[str, Any]) -> Dict[str, Any]:
         "source": offer.get("source"),
         "url_originale": offer.get("url_originale"),
     }
+    explanation["score_global"] = match.get("global_score")
+    explanation["sous_scores"] = match.get("criterion_scores") or {}
+    explanation["matching_weights"] = match.get("matching_weights") or {}
     return explanation
 
 
@@ -1690,13 +1807,15 @@ def _persist_match(user_id: int, match: Dict[str, Any]) -> None:
 
 def _compute_recommendations(user_id: int) -> List[Dict[str, Any]]:
     profile = _current_profile_snapshot(user_id)
+    weights = _current_matching_weights()
     offers = [_normalize_offer(offer) for offer in _load_local_offers()]
     matches = []
     for raw_offer in offers:
-        result = compute_match(profile, raw_offer)
+        result = compute_match(profile, raw_offer, weights=weights)
         result["offer"] = {**result["offer"], **raw_offer}
         _persist_match(user_id, result)
         matches.append(result)
+    matches.sort(key=lambda item: (-float(item.get("global_score") or 0), item["offer"].get("titre") or ""))
     return matches
 
 
@@ -1883,18 +2002,35 @@ def profile():
     if request.method == "POST":
         error = _validate_required_csrf()
         if not error:
+            weight_error = _save_matching_weights_from_form(request.form)
             try:
                 _save_profile(user_id)
-                flash("Profil enregistré.", "success")
-                return redirect(url_for("user_portal.profile"))
+                if weight_error:
+                    error = weight_error
+                else:
+                    flash("Profil enregistré.", "success")
+                    return redirect(url_for("user_portal.profile"))
             except ValueError as exc:
                 error = str(exc)
     profile_data = _current_profile_snapshot(user_id)
-    content = _profile_form(profile_data, "\n".join(item["job_title"] if isinstance(item, dict) else str(item) for item in profile_data["desired_jobs"]))
+    matching_weights = _current_matching_weights()
+    desired_jobs_text = "\n".join(item["job_title"] if isinstance(item, dict) else str(item) for item in profile_data["desired_jobs"])
+    content = _profile_form(profile_data, desired_jobs_text, matching_weights, error)
     content += _profile_summary_block(profile_data)
+    skill_items = _item_map(
+        _profile_skill_items(user_id),
+        "user_portal.edit_skill",
+        "user_portal.delete_skill",
+    )
+    diploma_items = _item_map(
+        _list_view_items(user_id, "diplomas"),
+        "user_portal.edit_diploma",
+        "user_portal.delete_diploma",
+    )
+    content += _list_section("Compétences", skill_items, [("Nom", "name"), ("Niveau", "level"), ("Années", "years_experience"), ("Source", "source")], url_for("user_portal.skills"), "Aucune compétence enregistrée.")
+    content += _list_section("Formations", diploma_items, [("Intitulé", "title"), ("Niveau", "level"), ("Établissement", "institution"), ("Année", "graduation_year"), ("Source", "source")], url_for("user_portal.diplomas"), "Aucune formation enregistrée.")
     content += _profile_privacy_block(profile_data)
     return _render_page("Mon profil", content, message=error)
-
 
 @user_portal_bp.route("/profile/skills", methods=["GET", "POST"])
 @login_required
@@ -2356,7 +2492,7 @@ def recommendations():
 @login_required
 def training_recommendation():
     territory = _normalize_string(request.args.get("territoire"))
-    period_days = _parse_int(request.args.get("periode_jours"), 1, 365, 30)
+    period_days = _parse_int(request.args.get("periode_jours"), 1, 365) or 30
     offers, error_message = load_normalized_offers()
     context = build_recommendation_context(offers, territoire=territory or None, periode_jours=period_days)
     context["error_message"] = error_message
@@ -2400,9 +2536,7 @@ def recommendation_detail(offer_id: str):
 def dashboard():
     user_id = _current_user_id()
     assert user_id is not None
-    matches = _current_job_matches(user_id)
-    if not matches:
-        matches = _compute_recommendations(user_id)
+    matches = _compute_recommendations(user_id)
     compatible = [match for match in matches if float(match.get("global_score") or 0) >= DEFAULT_COMPATIBILITY_THRESHOLD]
     display_matches = compatible[:5] if compatible else matches[:5]
     average = round(sum(float(match.get("global_score") or 0) for match in matches) / len(matches), 2) if matches else 0.0
@@ -2558,7 +2692,7 @@ def dashboard():
         best_score=round(float(best["global_score"]) if best else 0.0, 2),
         best=best,
         best_explanation=best_explanation,
-        last_calculated=max((match.get("calculated_at") for match in matches), default="—"),
+        last_calculated=max((match.get("calculated_at") for match in matches if match.get("calculated_at")), default="—"),
         skills_to_develop=skills_to_develop,
         demanded_skills=demanded_counter.most_common(5),
         contract_distribution=contract_counter.most_common(),

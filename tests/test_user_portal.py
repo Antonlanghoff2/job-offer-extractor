@@ -83,6 +83,26 @@ class UserPortalTest(unittest.TestCase):
         body = client.get(path).get_data(as_text=True)
         return _csrf_from_body(body)
 
+    def _save_matching_weights(self, client, token: str, **weights: str) -> None:
+        payload = {
+            "csrf_token": token,
+            "first_name": "Alice",
+            "last_name": "Martin",
+            "city": "Lyon",
+            "postal_code": "69000",
+            "department": "69",
+            "search_radius_km": "20",
+            "contract_preference": "CDI",
+            "remote_preference": "indifferent",
+            "minimum_salary": "45000",
+            "availability": "Immédiate",
+            "summary": "Développeuse Python",
+            "desired_jobs": "Développeur backend",
+        }
+        payload.update(weights)
+        response = client.post("/profile", data=payload, follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+
     def test_login_page_uses_shared_navigation(self) -> None:
         response = self.client.get("/login")
         body = response.get_data(as_text=True)
@@ -507,6 +527,154 @@ class UserPortalTest(unittest.TestCase):
             self.assertIn("Lyon", body)
             self.assertIn("Score", body)
             self.assertIn("https://example.com/off-1", body)
+
+    def test_profile_page_exposes_matching_weights_and_persists_them(self) -> None:
+        self._register(self.client, "alice@example.com")
+        token = self._profile_token(self.client)
+        response = self.client.get("/profile")
+        body = response.get_data(as_text=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Personnaliser les critères de matching", body)
+        self.assertIn("Réinitialiser les pondérations", body)
+
+        self.client.post(
+            "/profile",
+            data={
+                "csrf_token": token,
+                "first_name": "Alice",
+                "last_name": "Martin",
+                "city": "Lyon",
+                "postal_code": "69000",
+                "department": "69",
+                "search_radius_km": "20",
+                "contract_preference": "CDI",
+                "remote_preference": "indifferent",
+                "minimum_salary": "45000",
+                "availability": "Immédiate",
+                "summary": "Développeuse Python",
+                "desired_jobs": "Développeur backend",
+                "matching_weights_competences": "5",
+                "matching_weights_metier": "5",
+                "matching_weights_experience": "10",
+                "matching_weights_diplome": "10",
+                "matching_weights_localisation": "60",
+                "matching_weights_contrat": "5",
+                "matching_weights_teletravail": "5",
+            },
+            follow_redirects=True,
+        )
+        with self.client.session_transaction() as sess:
+            self.assertEqual(sess["matching_weights"]["localisation"], 60.0)
+            self.assertEqual(sess["matching_weights"]["competences"], 5.0)
+
+    def test_profile_lists_skill_names(self) -> None:
+        self._register(self.client, "alice@example.com")
+        token = self._profile_token(self.client)
+        self.client.post(
+            "/profile",
+            data={
+                "csrf_token": token,
+                "first_name": "Alice",
+                "last_name": "Martin",
+                "city": "Lyon",
+                "desired_jobs": "Développeur backend",
+            },
+            follow_redirects=True,
+        )
+        token = self._profile_token(self.client, "/profile/skills")
+        self.client.post(
+            "/profile/skills",
+            data={
+                "csrf_token": token,
+                "name": "Python",
+                "level": "expert",
+                "years_experience": "5",
+                "source": "manual",
+            },
+            follow_redirects=True,
+        )
+
+        body = self.client.get("/profile").get_data(as_text=True)
+        self.assertIn("Python", body)
+        self.assertIn("Compétences", body)
+
+    def test_training_recommendation_page_handles_invalid_period_without_500(self) -> None:
+        self._register(self.client, "alice@example.com")
+        offers = [
+            {
+                "id": "off-1",
+                "titre": "Développeur Python",
+                "competences": ["Python", "Flask"],
+                "metier": "Développeur Python",
+                "territoire": "Lyon",
+                "date_publication": "2026-06-20",
+            }
+        ]
+        with patch("src.user_portal.load_normalized_offers", return_value=(offers, None)):
+            response = self.client.get("/recommandation-formation?periode_jours=abc&territoire=Lyon")
+            body = response.get_data(as_text=True)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("Recommandation de formation", body)
+            self.assertIn("Tous les territoires", body)
+
+    def test_recommendations_and_dashboard_use_profile_weights_for_ranking(self) -> None:
+        self._register(self.client, "alice@example.com")
+        token = self._profile_token(self.client)
+        self.client.post(
+            "/profile",
+            data={
+                "csrf_token": token,
+                "first_name": "Alice",
+                "last_name": "Martin",
+                "city": "Lyon",
+                "postal_code": "69000",
+                "department": "69",
+                "search_radius_km": "20",
+                "contract_preference": "CDI",
+                "remote_preference": "indifferent",
+                "minimum_salary": "45000",
+                "availability": "Immédiate",
+                "summary": "Développeuse Python",
+                "desired_jobs": "Développeur backend",
+                "matching_weights_competences": "100",
+                "matching_weights_metier": "0",
+                "matching_weights_experience": "0",
+                "matching_weights_diplome": "0",
+                "matching_weights_localisation": "0",
+                "matching_weights_contrat": "0",
+                "matching_weights_teletravail": "0",
+            },
+            follow_redirects=True,
+        )
+
+        offers = [
+            {
+                "id": "off-skill",
+                "titre": "Développeur backend Python",
+                "entreprise": "SkillFirst",
+                "competences": ["Python", "Flask"],
+                "contrat": "CDI",
+                "lieux": ["Paris"],
+                "source": "France Travail",
+            },
+            {
+                "id": "off-location",
+                "titre": "Développeur backend généraliste",
+                "entreprise": "LocFirst",
+                "competences": ["Java"],
+                "contrat": "CDI",
+                "lieux": ["Lyon"],
+                "source": "France Travail",
+            },
+        ]
+
+        with patch("src.user_portal._load_local_offers", return_value=offers):
+            recommendations_body = self.client.get("/mes-offres").get_data(as_text=True)
+            self.assertLess(recommendations_body.find("SkillFirst"), recommendations_body.find("LocFirst"))
+
+            dashboard_body = self.client.get("/dashboard-utilisateur").get_data(as_text=True)
+            self.assertIn("SkillFirst", dashboard_body)
+            self.assertIn("Meilleure offre", dashboard_body)
 
     def test_profile_export_returns_json_payload(self) -> None:
         self._register(self.client, "alice@example.com")
