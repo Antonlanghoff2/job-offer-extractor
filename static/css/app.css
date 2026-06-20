@@ -1344,6 +1344,13 @@ a { color: inherit; }
   line-height: 1.35;
 }
 
+.score-tile__detail {
+  margin-top: 6px;
+  color: var(--text);
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
 .offer-card__actions {
   margin-top: 12px;
 }

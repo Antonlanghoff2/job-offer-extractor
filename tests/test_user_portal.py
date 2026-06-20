@@ -160,6 +160,10 @@ class UserPortalTest(unittest.TestCase):
             },
             follow_redirects=True,
         )
+        skills_body = self.client.get("/profile/skills").get_data(as_text=True)
+        self.assertIn("Python", skills_body)
+        self.assertIn("expert", skills_body)
+        self.assertIn("5", skills_body)
 
         token = self._profile_token(self.client, "/profile/diplomas")
         self.client.post(
@@ -352,6 +356,12 @@ class UserPortalTest(unittest.TestCase):
             self.assertEqual(len(fetch_all("SELECT * FROM user_skills WHERE source = 'cv'")), 1)
             self.assertEqual(len(fetch_all("SELECT * FROM experiences WHERE source = 'cv'")), 1)
 
+        profile_body = self.client.get("/profile").get_data(as_text=True)
+        self.assertIn("Python", profile_body)
+        self.assertIn("Master Informatique", profile_body)
+        experience_body = self.client.get("/profile/experiences").get_data(as_text=True)
+        self.assertIn("Développeur backend", experience_body)
+
 
     def test_dashboard_computes_matches_without_preloading_recommendations(self) -> None:
         self._register(self.client, "alice@example.com")
@@ -536,6 +546,7 @@ class UserPortalTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn("Personnaliser les critères de matching", body)
         self.assertIn("Réinitialiser les pondérations", body)
+        self.assertIn("Salaire", body)
 
         self.client.post(
             "/profile",
@@ -557,15 +568,17 @@ class UserPortalTest(unittest.TestCase):
                 "matching_weights_metier": "5",
                 "matching_weights_experience": "10",
                 "matching_weights_diplome": "10",
-                "matching_weights_localisation": "60",
+                "matching_weights_localisation": "50",
                 "matching_weights_contrat": "5",
                 "matching_weights_teletravail": "5",
+                "matching_weights_salaire": "10",
             },
             follow_redirects=True,
         )
         with self.client.session_transaction() as sess:
-            self.assertEqual(sess["matching_weights"]["localisation"], 60.0)
+            self.assertEqual(sess["matching_weights"]["localisation"], 50.0)
             self.assertEqual(sess["matching_weights"]["competences"], 5.0)
+            self.assertEqual(sess["matching_weights"]["salaire"], 10.0)
 
     def test_profile_lists_skill_names(self) -> None:
         self._register(self.client, "alice@example.com")
@@ -643,6 +656,7 @@ class UserPortalTest(unittest.TestCase):
                 "matching_weights_localisation": "0",
                 "matching_weights_contrat": "0",
                 "matching_weights_teletravail": "0",
+                "matching_weights_salaire": "0",
             },
             follow_redirects=True,
         )
@@ -675,6 +689,8 @@ class UserPortalTest(unittest.TestCase):
             dashboard_body = self.client.get("/dashboard-utilisateur").get_data(as_text=True)
             self.assertIn("SkillFirst", dashboard_body)
             self.assertIn("Meilleure offre", dashboard_body)
+            self.assertIn("Localisation:", dashboard_body)
+            self.assertIn("Salaire:", dashboard_body)
 
     def test_profile_export_returns_json_payload(self) -> None:
         self._register(self.client, "alice@example.com")

@@ -199,6 +199,57 @@ def compute_location_score(profile: Dict[str, Any], offer: Dict[str, Any]) -> Sc
     return ScoreComponent(20.0, True, {"reason": "localisation non correspondante", "offer_locations": offer_locations})
 
 
+def compute_salary_score(profile_salary: Optional[object], offer: Dict[str, Any]) -> ScoreComponent:
+    try:
+        requested_salary = float(profile_salary) if profile_salary not in (None, "") else None
+    except (TypeError, ValueError):
+        requested_salary = None
+    if requested_salary is None:
+        return ScoreComponent(100.0, False, {"reason": "préférence salariale non renseignée"})
+
+    offer_min = offer.get("salaire_min")
+    offer_max = offer.get("salaire_max")
+    try:
+        offer_min_value = float(offer_min) if offer_min not in (None, "") else None
+    except (TypeError, ValueError):
+        offer_min_value = None
+    try:
+        offer_max_value = float(offer_max) if offer_max not in (None, "") else None
+    except (TypeError, ValueError):
+        offer_max_value = None
+
+    if offer_min_value is None and offer_max_value is None:
+        return ScoreComponent(100.0, False, {"reason": "salaire non renseigné sur l'offre", "requested_salary": requested_salary})
+    if offer_min_value is None:
+        offer_min_value = offer_max_value
+    if offer_max_value is None:
+        offer_max_value = offer_min_value
+    if offer_min_value is None or offer_max_value is None:
+        return ScoreComponent(100.0, False, {"reason": "salaire non renseigné sur l'offre", "requested_salary": requested_salary})
+
+    if offer_max_value < requested_salary:
+        ratio = offer_max_value / requested_salary if requested_salary else 0.0
+        return ScoreComponent(_scale(ratio * 100.0), True, {
+            "reason": "salaire inférieur au minimum souhaité",
+            "requested_salary": round(requested_salary, 2),
+            "offer_salary_min": round(offer_min_value, 2),
+            "offer_salary_max": round(offer_max_value, 2),
+        })
+    if offer_min_value >= requested_salary:
+        return ScoreComponent(100.0, True, {
+            "reason": "salaire au moins égal au minimum souhaité",
+            "requested_salary": round(requested_salary, 2),
+            "offer_salary_min": round(offer_min_value, 2),
+            "offer_salary_max": round(offer_max_value, 2),
+        })
+    return ScoreComponent(80.0, True, {
+        "reason": "fourchette salariale compatible",
+        "requested_salary": round(requested_salary, 2),
+        "offer_salary_min": round(offer_min_value, 2),
+        "offer_salary_max": round(offer_max_value, 2),
+    })
+
+
 def compute_contract_score(profile_contract: Optional[str], offer_contract: Optional[str]) -> ScoreComponent:
     if not profile_contract or not offer_contract:
         return ScoreComponent(100.0, False, {"reason": "absence de préférence ou de contrat"})
@@ -264,6 +315,7 @@ def calculate_matching_score(
     experience_component = compute_experience_score(user_profile.get("experiences", []), offer.get("experience_requise"))
     diploma_component = compute_diploma_score(profile_diplomas, offer.get("diplomes_requis", []))
     location_component = compute_location_score(user_profile, offer)
+    salary_component = compute_salary_score(user_profile.get("minimum_salary"), offer)
     contract_component = compute_contract_score(user_profile.get("contract_preference"), offer.get("contrat"))
     remote_component = compute_remote_score(user_profile.get("remote_preference"), offer.get("teletravail"))
 
@@ -275,15 +327,18 @@ def calculate_matching_score(
         "localisation": location_component,
         "contrat": contract_component,
         "teletravail": remote_component,
+        "salaire": salary_component,
     }
     criterion_scores = {key: _component_value(component) for key, component in criterion_components.items()}
     normalized_weights = ensure_matching_weights(weights or DEFAULT_MATCHING_WEIGHTS)
     weighted_score = calculate_weighted_score(criterion_scores, normalized_weights)
+    criterion_details = {key: component.details for key, component in criterion_components.items()}
     scoring_result = build_scoring_result(
         criterion_scores,
         normalized_weights,
         common_skills=skill_component.details.get("matching_skills", []),
         missing_skills=skill_component.details.get("missing_skills", []),
+        criterion_details=criterion_details,
         source=str(offer.get("source") or ""),
         url_originale=str(offer.get("url_originale") or offer.get("url") or ""),
     )
@@ -301,7 +356,11 @@ def calculate_matching_score(
     if job_component.applicable and job_component.score >= 50:
         explanation_parts.append("Votre expérience et vos métiers recherchés correspondent au poste.")
     if location_component.applicable:
-        explanation_parts.append("Compatibilité localisation: %.0f/100." % location_component.score)
+        location_reason = location_component.details.get("reason")
+        explanation_parts.append("Compatibilité localisation: %.0f/100.%s" % (location_component.score, (" " + str(location_reason)) if location_reason else ""))
+    if salary_component.applicable:
+        salary_reason = salary_component.details.get("reason")
+        explanation_parts.append("Compatibilité salariale: %.0f/100.%s" % (salary_component.score, (" " + str(salary_reason)) if salary_reason else ""))
     if contract_component.applicable:
         explanation_parts.append("Contrat: %.0f/100." % contract_component.score)
     if remote_component.applicable:
@@ -317,11 +376,13 @@ def calculate_matching_score(
             "experience_score": round(experience_component.score, 2),
             "diploma_score": round(diploma_component.score, 2),
             "location_score": round(location_component.score, 2),
+            "salary_score": round(salary_component.score, 2),
             "contract_score": round(contract_component.score, 2),
             "remote_score": round(remote_component.score, 2),
             "matching_skills": matching_skills,
             "missing_skills": missing_skills,
             "criterion_scores": criterion_scores,
+            "criterion_details": criterion_details,
             "matching_weights": normalized_weights,
             "explanation": {
                 "summary": "Cette offre correspond à %.0f%% à votre profil." % weighted_score,

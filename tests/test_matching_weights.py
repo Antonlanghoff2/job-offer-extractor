@@ -30,10 +30,11 @@ def test_valid_custom_weights_are_accepted() -> None:
         "competences": "10",
         "metier": "15",
         "experience": "10",
-        "diplome": "15",
-        "localisation": "40",
+        "diplome": "10",
+        "localisation": "35",
         "contrat": "5",
         "teletravail": "5",
+        "salaire": "10",
     }
     normalized, error = validate_matching_weights(weights)
     assert error == ""
@@ -82,10 +83,11 @@ def test_absent_field_is_neutralized() -> None:
             "localisation": 1.0,
             "contrat": 1.0,
             "teletravail": None,
+            "salaire": None,
         },
         _default_weights(),
     )
-    assert score == 91.25
+    assert score == 90.67
 
 
 def test_present_but_incompatible_field_gets_zero() -> None:
@@ -98,10 +100,11 @@ def test_present_but_incompatible_field_gets_zero() -> None:
             "localisation": 1.0,
             "contrat": 1.0,
             "teletravail": 0.0,
+            "salaire": 0.0,
         },
         _default_weights(),
     )
-    assert score == 73.0
+    assert score == 68.0
 
 
 def test_weight_redistribution_is_correct() -> None:
@@ -121,17 +124,18 @@ def test_weight_redistribution_is_correct() -> None:
         source="France Travail",
         url_originale="https://example.com",
     )
-    assert result["score_global"] == 91.25
+    assert result["score_global"] == 90.67
     assert result["sous_scores"]["diplome"]["statut"] == "champ_absent"
     assert result["sous_scores"]["diplome"]["poids_effectif"] == 0.0
-    assert result["sous_scores"]["competences"]["poids_effectif"] == 12.5
+    assert result["sous_scores"]["salaire"]["statut"] == "champ_absent"
+    assert result["sous_scores"]["competences"]["poids_effectif"] == 13.33
     assert result["source"] == "France Travail"
     assert result["url_originale"] == "https://example.com"
 
 
 def test_score_remains_bounded() -> None:
     result = calculate_weighted_score(
-        {"competences": 1.0, "metier": 1.0, "experience": 1.0, "diplome": 1.0, "localisation": 1.0, "contrat": 1.0, "teletravail": 1.0},
+        {"competences": 1.0, "metier": 1.0, "experience": 1.0, "diplome": 1.0, "localisation": 1.0, "contrat": 1.0, "teletravail": 1.0, "salaire": 1.0},
         _default_weights(),
     )
     assert 0.0 <= result <= 100.0
@@ -230,14 +234,15 @@ def test_valid_weights_are_kept_in_session(tmp_path) -> None:
 
     query = (
         "/?mots_cles=python&matching_weights_competences=10&matching_weights_metier=15"
-        "&matching_weights_experience=10&matching_weights_diplome=15&matching_weights_localisation=40"
-        "&matching_weights_contrat=5&matching_weights_teletravail=5"
+        "&matching_weights_experience=10&matching_weights_diplome=10&matching_weights_localisation=35"
+        "&matching_weights_contrat=5&matching_weights_teletravail=5&matching_weights_salaire=10"
     )
     with patch("src.web_app.load_raw_offers", return_value=offers), patch("src.web_app.load_market_context_rows", return_value=[]), patch("src.web_app.iter_search_offres", return_value=offers):
         response = client.get(query)
         assert response.status_code == 200
         with client.session_transaction() as sess:
             assert sess["matching_weights"]["competences"] == 10.0
+            assert sess["matching_weights"]["salaire"] == 10.0
 
         response = client.get("/?mots_cles=python")
         body = response.get_data(as_text=True)

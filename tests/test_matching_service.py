@@ -50,6 +50,45 @@ class MatchingServiceTest(unittest.TestCase):
         self.assertIn("subscores", match["explanation"])
 
 
+    def test_compute_match_uses_salary_and_location_details(self) -> None:
+        profile = {
+            "skills": [{"name": "Python"}],
+            "desired_jobs": [{"job_title": "Développeur backend"}],
+            "experiences": [{"job_title": "Développeur backend", "duration_years": 4}],
+            "diplomas": [{"title": "Master Informatique"}],
+            "city": "Lyon",
+            "postal_code": "69000",
+            "department": "69",
+            "search_radius_km": 20,
+            "minimum_salary": 50000,
+            "remote_preference": "indifferent",
+            "contract_preference": "CDI",
+        }
+        offer = {
+            "id": "off-salary",
+            "titre": "Développeur backend Python",
+            "entreprise": "ACME",
+            "competences": ["Python"],
+            "diplomes_requis": ["Master Informatique"],
+            "contrat": "CDI",
+            "teletravail": "hybride",
+            "lieux": ["Paris"],
+            "salaire_min": 42000,
+            "salaire_max": 46000,
+            "experience_requise": "3 ans",
+            "url_originale": "https://example.com/of-salary",
+            "source": "France Travail",
+        }
+
+        match = compute_match(profile, offer)
+
+        self.assertEqual(match["location_score"], 0.0)
+        self.assertEqual(match["explanation"]["subscores"]["localisation"], 0.0)
+        self.assertIn("localisation éloignée", match["criterion_details"]["localisation"]["reason"])
+        self.assertEqual(match["salary_score"], 80.0)
+        self.assertIn("salaire", match["criterion_details"])
+
+
     def test_compute_match_penalizes_distant_location(self) -> None:
         profile = {
             "skills": [{"name": "Python"}],

@@ -441,13 +441,6 @@ def build_live_state(
 
     normalized_offers = [normalize_france_travail_offer(offer) for offer in raw_offers]
     trends = aggregate_trends(normalized_offers, territoire=normalized_territoire or None, periode_jours=periode_jours)
-    total_offers = int(trends.get("nombre_offres") or 0)
-    total_pages = max((total_offers + per_page - 1) // per_page, 1) if total_offers else 0
-    current_page = min(page, total_pages) if total_pages else 1
-    start_index = (current_page - 1) * per_page
-    end_index = start_index + per_page
-    paged_offers = trends.get("offres", [])[start_index:end_index] if total_offers else []
-
     normalized_by_id = {
         offer.get("id"): offer
         for offer in normalized_offers
@@ -462,7 +455,7 @@ def build_live_state(
         current_profile = None
 
     enriched_offers: List[Dict[str, Any]] = []
-    for offer in paged_offers:
+    for offer in trends.get("offres", []):
         enriched = dict(offer)
         source_offer = normalized_by_id.get(str(offer.get("id") or offer.get("id_offre") or ""))
         if source_offer:
@@ -479,6 +472,20 @@ def build_live_state(
                 enriched["match_score"] = None
                 enriched["matching_skills"] = []
         enriched_offers.append(enriched)
+
+    enriched_offers.sort(
+        key=lambda item: (
+            -float(item.get("match_score") if item.get("match_score") is not None else item.get("global_score") or 0),
+            item.get("intitule") or item.get("titre") or "",
+        )
+    )
+
+    total_offers = len(enriched_offers)
+    total_pages = max((total_offers + per_page - 1) // per_page, 1) if total_offers else 0
+    current_page = min(page, total_pages) if total_pages else 1
+    start_index = (current_page - 1) * per_page
+    end_index = start_index + per_page
+    paged_offers = enriched_offers[start_index:end_index] if total_offers else []
 
     ranking_source = trends
     total_for_rankings = total_offers

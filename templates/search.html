@@ -72,7 +72,8 @@
           ('diplome', 'Diplôme'),
           ('localisation', 'Localisation'),
           ('contrat', 'Contrat'),
-          ('teletravail', 'Télétravail')
+          ('teletravail', 'Télétravail'),
+          ('salaire', 'Salaire')
         ] %}
         {% for key, label in matching_weight_fields %}
         {% set value = matching_weights[key] %}
@@ -250,10 +251,14 @@
             <p><strong>Compétences manquantes :</strong> {{ match_details.competences_manquantes|join(', ') if match_details.competences_manquantes else 'Aucune' }}</p>
             <div class="score-details__grid">
               {% for critere, details in match_details.sous_scores.items() %}
+              {% set critere_detail = details.details if details.details is mapping else {} %}
               <div class="score-tile">
                 <div class="score-tile__label">{{ critere|capitalize }}</div>
                 <div class="score-tile__value">{{ details.score if details.score is not none else '—' }}%</div>
                 <div class="score-tile__meta">Poids initial {{ '%.1f'|format(details.poids_initial) }} · Poids effectif {{ '%.1f'|format(details.poids_effectif) }} · {{ details.statut }}</div>
+                {% if critere_detail.reason %}<div class="score-tile__detail">{{ critere_detail.reason }}</div>{% endif %}
+                {% if critere == 'localisation' and critere_detail.offer_locations %}<div class="score-tile__detail">Lieux analysés: {{ critere_detail.offer_locations|join(', ') }}</div>{% endif %}
+                {% if critere == 'salaire' and critere_detail.requested_salary is not none %}<div class="score-tile__detail">Salaire demandé: {{ critere_detail.requested_salary }} {% if critere_detail.offer_salary_min is not none and critere_detail.offer_salary_max is not none %}· Offre: {{ critere_detail.offer_salary_min }} - {{ critere_detail.offer_salary_max }}{% endif %}</div>{% endif %}
               </div>
               {% endfor %}
             </div>

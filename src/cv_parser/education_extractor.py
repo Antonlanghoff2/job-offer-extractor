@@ -79,7 +79,7 @@ class _EducationCandidate:
 
 def _has_diploma_keyword(text: str) -> bool:
     lowered = normalize_text(text)
-    return any(keyword in lowered for keyword in DIPLOMA_KEYWORDS)
+    return any(re.search(rf"\b{re.escape(keyword)}\b", lowered) for keyword in DIPLOMA_KEYWORDS)
 
 
 def _has_institution_keyword(text: str) -> bool:
@@ -99,10 +99,7 @@ def _looks_like_academic_title(text: str) -> bool:
         return False
     if _has_diploma_keyword(stripped):
         return True
-    if re.fullmatch(r"[A-Z0-9][A-Z0-9+/-]{1,8}", stripped):
-        return True
-    capitalized = sum(1 for word in words if word[:1].isupper())
-    return capitalized >= max(1, len(words) - 1)
+    return bool(re.fullmatch(r"[A-Z0-9][A-Z0-9+/-]{1,8}", stripped))
 
 
 def _looks_like_institution(text: str) -> bool:
@@ -128,27 +125,27 @@ def _split_composite_line(line: str) -> List[str]:
 def _extract_level(text: str) -> Optional[str]:
     lowered = normalize_text(text)
     mapping = {
-        "mastère spécialisé": "Mastère spécialisé",
-        "mastere specialise": "Mastère spécialisé",
-        "master": "Master",
-        "mba": "MBA",
-        "doctorat": "Doctorat",
-        "bachelor": "Bachelor",
-        "licence": "Licence",
-        "bts": "BTS",
-        "dut": "DUT",
-        "but": "BUT",
-        "cap": "CAP",
-        "bep": "BEP",
-        "bac": "Bac",
-        "certification": "Certification",
-        "certificat": "Certificat",
-        "mooc": "MOOC",
+        r"mastère spécialisé": "Mastère spécialisé",
+        r"mastere specialise": "Mastère spécialisé",
+        r"master": "Master",
+        r"mba": "MBA",
+        r"doctorat": "Doctorat",
+        r"bachelor": "Bachelor",
+        r"licence": "Licence",
+        r"bts": "BTS",
+        r"dut": "DUT",
+        r"but": "BUT",
+        r"cap": "CAP",
+        r"bep": "BEP",
+        r"bac": "Bac",
+        r"certification": "Certification",
+        r"certificat": "Certificat",
+        r"mooc": "MOOC",
     }
     for keyword, label in mapping.items():
-        if keyword in lowered:
+        if re.search(rf"\b{keyword}\b", lowered):
             return label
-    if "diplome d ingenieur" in lowered or "diplôme d ingénieur" in lowered or "diplôme d'ingénieur" in lowered or "diplome d'ingenieur" in lowered:
+    if re.search(r"\bdiplome d[ '’]?ingenieur\b", lowered) or re.search(r"\bdiplôme d[ '’]?ingénieur\b", lowered):
         return "Diplôme d’ingénieur"
     return None
 
@@ -184,6 +181,15 @@ def extract_educations(lines: List[str]) -> List[Dict[str, object]]:
                 if entry:
                     entries.append(entry)
                 candidate = _EducationCandidate()
+            if kind == "description" and candidate is not None and candidate.title_parts and not candidate.warm:
+                candidate.add_title(segment)
+                continue
+            if kind == "description" and candidate is not None and candidate.date_values:
+                entry = candidate.to_dict()
+                if entry:
+                    entries.append(entry)
+                candidate = None
+                continue
             if candidate is None:
                 if kind == "title":
                     candidate = _EducationCandidate()

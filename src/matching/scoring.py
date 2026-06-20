@@ -46,6 +46,7 @@ def build_scoring_result(
     weights: Optional[Dict[str, float]] = None,
     common_skills: Optional[List[str]] = None,
     missing_skills: Optional[List[str]] = None,
+    criterion_details: Optional[Dict[str, Dict[str, Any]]] = None,
     source: str = "",
     url_originale: str = "",
 ) -> Dict[str, Any]:
@@ -57,6 +58,7 @@ def build_scoring_result(
         if criterion_scores.get(key) is not None
     )
     sous_scores: Dict[str, Dict[str, Any]] = {}
+    details_map = criterion_details or {}
     for key in MATCHING_WEIGHT_KEYS:
         score = criterion_scores.get(key)
         initial = float(normalized_weights.get(key, 0.0))
@@ -66,6 +68,7 @@ def build_scoring_result(
             "poids_initial": initial,
             "poids_effectif": effective,
             "statut": _classify_status(score),
+            "details": dict(details_map.get(key) or {}),
         }
     return {
         "score_global": score_global,

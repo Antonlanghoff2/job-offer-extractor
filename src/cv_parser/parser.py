@@ -185,6 +185,21 @@ def parse_cv_text(text: str) -> Dict[str, Any]:
         for block in blocks:
             if block.section not in {"formations", "experiences_professionnelles", "excluded"}:
                 skills.extend(extract_explicit_skills(block.lines))
+    plain_lines = [line.strip() for line in cleaned_text.splitlines() if line.strip()]
+    if not formations:
+        direct_formations = extract_educations(plain_lines)
+        if direct_formations:
+            formations.extend(direct_formations)
+    if not experiences:
+        direct_experiences = extract_experiences(plain_lines)
+        if direct_experiences:
+            experiences.extend(direct_experiences)
+    if not skills:
+        direct_skills = extract_explicit_skills(plain_lines)
+        if direct_skills:
+            skills.extend(direct_skills)
+    if not skills:
+        skills.extend(extract_skills_from_text(cleaned_text, source="experience_professionnelle"))
 
     formations = _dedupe(formations, ("intitule", "etablissement", "date_debut", "date_fin"))
     experiences = _dedupe(experiences, ("poste", "entreprise", "date_debut", "date_fin"))

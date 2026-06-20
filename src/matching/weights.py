@@ -16,16 +16,18 @@ MATCHING_WEIGHT_KEYS = (
     "localisation",
     "contrat",
     "teletravail",
+    "salaire",
 )
 
 DEFAULT_MATCHING_WEIGHTS = {
     "competences": 10.0,
     "metier": 15.0,
     "experience": 10.0,
-    "diplome": 15.0,
-    "localisation": 40.0,
+    "diplome": 10.0,
+    "localisation": 35.0,
     "contrat": 5.0,
     "teletravail": 5.0,
+    "salaire": 10.0,
 }
 
 WEIGHT_SUM_TOLERANCE = 0.01

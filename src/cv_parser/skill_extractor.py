@@ -103,6 +103,20 @@ ALIAS_REGEX = sorted(ALIAS_TO_CANONICAL.keys(), key=len, reverse=True)
 EXP_SPLIT_RE = re.compile(r"[,;/•|]")
 
 
+def _looks_like_skill_entry(line: str) -> bool:
+    cleaned = collapse_spaces(line)
+    if not cleaned:
+        return False
+    normalized = normalize_text(cleaned)
+    if re.search(r"\b(?:19|20)\d{2}\b", normalized):
+        return False
+    if re.search(r"\b(?:diplome|diplôme|formation|etudes|études|experience|expérience|profil|contact|coordonnees|coordonnées|loisirs|interets|intérêts|universite|université|ecole|école|institut|lycee|lycée|openclassrooms|telecom|télécom|ina|cnam)\b", normalized):
+        return False
+    if re.search(r"[,;/•|]", cleaned):
+        return True
+    return normalized in ALIAS_TO_CANONICAL
+
+
 def normalize_skill_name(name: object) -> str:
     text = collapse_spaces("" if name is None else str(name))
     if not text:
@@ -192,9 +206,13 @@ def _merge_unique(matches: Iterable[SkillMatch]) -> List[SkillMatch]:
 def extract_explicit_skills(lines: Iterable[str]) -> List[SkillMatch]:
     matches: List[SkillMatch] = []
     for line in lines:
+        if not _looks_like_skill_entry(line):
+            continue
         for part in _tokenize_explicit_line(line):
             name = normalize_skill_name(part)
             if not name:
+                continue
+            if normalize_text(name) not in ALIAS_TO_CANONICAL:
                 continue
             matches.append(SkillMatch(nom=name, categorie=_skill_category(name), source="explicite", texte_source=collapse_spaces(line), confiance=skill_confidence("explicite", explicit=True)))
     return _merge_unique(matches)

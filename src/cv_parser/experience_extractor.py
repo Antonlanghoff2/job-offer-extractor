@@ -15,6 +15,8 @@ from .skill_extractor import extract_skills_from_text
 
 STRONG_JOB_KEYWORDS = ("développeur", "developpeur", "ingénieur", "ingenieur", "data", "scientist", "analyst", "analyste", "consultant", "chef de projet", "technicien", "régisseur", "regisseur", "administrateur", "architecte", "responsable", "devops", "machine learning")
 WEAK_JOB_KEYWORDS = ("son", "video", "vidéo", "lumière", "lumiere", "réseau", "reseau")
+EDUCATION_KEYWORDS = ("cap", "bep", "bac", "bts", "dut", "but", "licence", "bachelor", "master", "mastère", "mastere", "mba", "doctorat", "diplome", "diplôme", "certificat", "certification", "mooc", "formation", "cursus", "etudes", "études")
+EDUCATION_INSTITUTIONS = ("université", "universite", "école", "ecole", "lycée", "lycee", "institut", "iut", "télécom", "telecom", "centrale", "openclassrooms", "cnam", "ina", "organisme", "campus")
 
 
 @dataclass
@@ -118,6 +120,17 @@ def _looks_like_location(text: str) -> bool:
     return bool(re.search(r"\b(paris|lyon|lille|toulouse|nantes|rennes|marseille|nice|bordeaux|grenoble|strasbourg)\b", lowered))
 
 
+def _looks_like_education_segment(text: str) -> bool:
+    lowered = normalize_text(text)
+    for keyword in EDUCATION_KEYWORDS:
+        if re.search(rf"\b{re.escape(keyword)}\b", lowered):
+            return True
+    for keyword in EDUCATION_INSTITUTIONS:
+        if re.search(rf"\b{re.escape(keyword)}\b", lowered):
+            return True
+    return False
+
+
 def _split_composite_line(line: str) -> List[str]:
     if re.search(r"\b(?:19|20)\d{2}\b", line):
         return [collapse_spaces(line)]
@@ -155,6 +168,12 @@ def extract_experiences(lines: List[str]) -> List[Dict[str, object]]:
     candidate: Optional[_ExperienceCandidate] = None
     for line in lines:
         for segment in _split_composite_line(line):
+            if candidate is not None and candidate.job_parts and _looks_like_education_segment(segment):
+                entry = candidate.to_dict()
+                if entry:
+                    entries.append(entry)
+                candidate = None
+                continue
             kind = _classify_segment(segment, candidate)
             if kind == "other":
                 continue

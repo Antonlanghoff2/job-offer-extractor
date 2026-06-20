@@ -662,6 +662,29 @@ def _skill_payload_from_row(row: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _format_skill_table_item(row: Dict[str, Any]) -> Dict[str, Any]:
+    payload = _skill_payload_from_row(row)
+    name = payload["name"] or payload["normalized_name"] or row.get("nom") or row.get("skill_name") or "Compétence sans nom"
+    years_value = payload["years_experience"]
+    if years_value in (None, ""):
+        years_display = "—"
+    else:
+        try:
+            years_display = str(round(float(years_value), 1)).rstrip("0").rstrip(".")
+        except Exception:
+            years_display = str(years_value)
+    level = payload["level"] or "Niveau non renseigné"
+    source = payload["source"] or "manual"
+    return {
+        **row,
+        "name": name,
+        "level": level,
+        "years_experience": years_display,
+        "source": source,
+        "normalized_name": payload["normalized_name"] or normalize_skill_name(name),
+    }
+
+
 def _store_skill(user_id: int, name: str, level: Optional[str], years_experience: Optional[float], source: str) -> None:
     normalized = normalize_skill_name(name)
     if not normalized:
@@ -855,7 +878,8 @@ def _profile_form(profile: Dict[str, Any], desired_jobs_text: str, matching_weig
                   ('diplome', 'Diplôme'),
                   ('localisation', 'Localisation'),
                   ('contrat', 'Contrat'),
-                  ('teletravail', 'Télétravail')
+                  ('teletravail', 'Télétravail'),
+                  ('salaire', 'Salaire')
                 ] %}
                 {% for key, label in matching_weight_fields %}
                 {% set value = matching_weights[key] %}
@@ -1268,7 +1292,7 @@ def _profile_skill_items(user_id: int) -> List[Dict[str, Any]]:
         """,
         (user_id,),
     )
-    return [dict(row) for row in rows]
+    return [_format_skill_table_item(dict(row)) for row in rows]
 
 
 def _item_map(items: List[Dict[str, Any]], edit_route: str, delete_route: str) -> List[Dict[str, Any]]:
@@ -1744,6 +1768,7 @@ def _explanation_with_offer_summary(match: Dict[str, Any]) -> Dict[str, Any]:
     explanation["score_global"] = match.get("global_score")
     explanation["sous_scores"] = match.get("criterion_scores") or {}
     explanation["matching_weights"] = match.get("matching_weights") or {}
+    explanation["criterion_details"] = match.get("criterion_details") or {}
     return explanation
 
 
@@ -1877,11 +1902,15 @@ def _recommendation_page(matches: List[Dict[str, Any]], filters: Dict[str, Any],
                     <span>Score {float(match.get('global_score') or 0):.0f}/100</span>
                   </div>
                   <div class="small">
-                    Sous-scores: compétences {float(match.get('skill_score') or 0):.0f}, métier {float(match.get('job_score') or 0):.0f}, expérience {float(match.get('experience_score') or 0):.0f}, diplôme {float(match.get('diploma_score') or 0):.0f}, localisation {float(match.get('location_score') or 0):.0f}, contrat {float(match.get('contract_score') or 0):.0f}, télétravail {float(match.get('remote_score') or 0):.0f}.
+                    Sous-scores: compétences {float(match.get('skill_score') or 0):.0f}, métier {float(match.get('job_score') or 0):.0f}, expérience {float(match.get('experience_score') or 0):.0f}, diplôme {float(match.get('diploma_score') or 0):.0f}, localisation {float(match.get('location_score') or 0):.0f}, salaire {float(match.get('salary_score') or 0):.0f}, contrat {float(match.get('contract_score') or 0):.0f}, télétravail {float(match.get('remote_score') or 0):.0f}.
                     <br>
                     Compétences communes: {escape(', '.join(match.get('matching_skills') or []) or 'aucune')}
                     <br>
                     Compétences manquantes: {escape(', '.join(match.get('missing_skills') or []) or 'aucune')}
+                    <br>
+                    Localisation: {escape((match.get('criterion_details') or {}).get('localisation', {}).get('reason') or 'non précisée')}
+                    <br>
+                    Salaire: {escape((match.get('criterion_details') or {}).get('salaire', {}).get('reason') or 'non précisé')}
                   </div>
                   <div class="explain">
                     {escape(explanation.get('summary') or '')}
@@ -2054,7 +2083,7 @@ def skills():
             except ValueError as exc:
                 error = str(exc)
     items = _item_map(
-        _list_view_items(user_id, "user_skills"),
+        _profile_skill_items(user_id),
         "user_portal.edit_skill",
         "user_portal.delete_skill",
     )
@@ -2567,7 +2596,10 @@ def dashboard():
             location_label = "Non renseigné"
         location_counter[location_label] += 1
 
-    best_explanation = _decoded_explanation(best.get("explanation_json")) if best else {}
+    best_explanation = best.get("explanation") if best and isinstance(best.get("explanation"), dict) else _decoded_explanation(best.get("explanation_json")) if best else {}
+    if isinstance(best_explanation, dict):
+        best_explanation = dict(best_explanation)
+        best_explanation["criterion_details"] = best.get("criterion_details") or best_explanation.get("criterion_details") or {}
     skills_to_develop = missing_counter.most_common(5)
     match_cards = []
     for match in display_matches:
@@ -2641,6 +2673,13 @@ def dashboard():
                 <span>Score {{ '%.0f'|format(best['global_score'] or 0) }}/100</span>
               </div>
               <p class="muted">{{ best_explanation.get('summary') }}</p>
+              {% set best_details = best_explanation.get('criterion_details') if best_explanation.get('criterion_details') is mapping else {} %}
+              {% if best_details %}
+              <div class="muted small">
+                <div>Localisation: {{ best_details.get('localisation', {}).get('reason') or 'non précisée' }}</div>
+                <div>Salaire: {{ best_details.get('salaire', {}).get('reason') or 'non précisé' }}</div>
+              </div>
+              {% endif %}
               {% if best_explanation.get('matching_skills') %}
               <div class="chips">
                 {% for skill in best_explanation.get('matching_skills')[:5] %}<span class="chip">{{ skill }}</span>{% endfor %}
