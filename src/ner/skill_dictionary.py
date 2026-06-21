@@ -94,6 +94,9 @@ SKILL_DICTIONARY: "OrderedDict[str, Dict[str, object]]" = OrderedDict(
         ("TensorFlow", {"aliases": ["tensorflow"], "category": "data_science"}),
         ("REST", {"aliases": ["rest"], "category": "backend"}),
         ("Java", {"aliases": ["java"], "category": "programmation"}),
+        ("Régie son", {"aliases": ["regie son", "régie son", "sound engineering", "sonorisation"], "category": "spectacle"}),
+        ("DMX", {"aliases": ["dmx", "dmx512", "protocole dmx"], "category": "spectacle"}),
+        ("ArtNet", {"aliases": ["artnet", "art-net"], "category": "spectacle"}),
     ]
 )
 
