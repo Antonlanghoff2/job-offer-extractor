@@ -10,22 +10,10 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
 from src.offer_normalization import normalize_text
+from src.ner.skill_normalizer import canonicalize_skill_name
 from src.services.offer_normalization import normalize_offer_for_matching
 from src.matching.scoring import build_scoring_result, calculate_weighted_score
 from src.matching.weights import DEFAULT_MATCHING_WEIGHTS, ensure_matching_weights
-
-SKILL_SYNONYMS = {
-    "javascript": "javascript",
-    "java script": "javascript",
-    "machine learning": "machinelearning",
-    "machinelearning": "machinelearning",
-    "python": "python",
-    "flask": "flask",
-    "sql": "sql",
-    "docker": "docker",
-    "fastapi": "fastapi",
-    "aws": "aws",
-}
 
 
 def _tokenize(value: object) -> set[str]:
@@ -34,16 +22,13 @@ def _tokenize(value: object) -> set[str]:
         return set()
     tokens = set(re.split(r"[^a-z0-9]+", text))
     tokens.discard("")
-    normalized = set()
-    for token in tokens:
-        normalized.add(SKILL_SYNONYMS.get(token, token))
-    return normalized
+    return tokens
 
 
 def normalize_skill_name(name: object) -> str:
-    text = normalize_text(name)
-    compact = re.sub(r"[^a-z0-9]+", "", text)
-    return SKILL_SYNONYMS.get(text, SKILL_SYNONYMS.get(compact, compact or text))
+    """Retourne le nom canonique d'une compétence."""
+
+    return canonicalize_skill_name(name)
 
 
 @dataclass
@@ -73,9 +58,9 @@ def compute_skill_score(profile_skills: List[Dict[str, Any]], offer_skills: List
     if not profile_map or not offer_map:
         return ScoreComponent(100.0, False, {"matching_skills": [], "missing_skills": [], "coverage": None})
     matched = sorted(
-        {profile_map[key].get("name") or profile_map[key].get("nom") or key for key in profile_map.keys() & offer_map.keys()}
+        {profile_map[key].get("normalized_name") or key for key in profile_map.keys() & offer_map.keys()}
     )
-    missing = sorted({value for key, value in offer_map.items() if key not in profile_map})
+    missing = sorted({normalize_skill_name(key) or key for key in offer_map.keys() if key not in profile_map})
     coverage = len(matched) / max(len(offer_map), 1)
     total = _scale(coverage * 85.0)
     return ScoreComponent(total, True, {"matching_skills": matched, "missing_skills": missing, "coverage": round(coverage, 3)})
@@ -280,7 +265,7 @@ def _profile_skill_list(profile_skills: List[Dict[str, Any]]) -> List[Dict[str, 
         if not isinstance(item, dict):
             continue
         name = item.get("name") or item.get("nom") or ""
-        normalized_name = item.get("normalized_name") or normalize_skill_name(name)
+        normalized_name = normalize_skill_name(item.get("normalized_name") or name)
         normalized.append({**item, "name": name, "normalized_name": normalized_name})
     return normalized
 

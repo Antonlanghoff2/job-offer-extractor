@@ -10,9 +10,9 @@ from src.services.matching_service import compute_match, normalize_skill_name
 
 class MatchingServiceTest(unittest.TestCase):
     def test_normalize_skill_name_merges_variants(self) -> None:
-        self.assertEqual(normalize_skill_name("Python"), "python")
-        self.assertEqual(normalize_skill_name("Java Script"), "javascript")
-        self.assertEqual(normalize_skill_name("Machine Learning"), "machinelearning")
+        self.assertEqual(normalize_skill_name("Python"), "Python")
+        self.assertEqual(normalize_skill_name("Java Script"), "JavaScript")
+        self.assertEqual(normalize_skill_name("Machine Learning"), "Machine learning")
 
     def test_compute_match_returns_bounded_score_and_explanation(self) -> None:
         profile = {

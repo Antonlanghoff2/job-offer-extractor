@@ -9,13 +9,13 @@ import argparse
 import json
 import re
 import unicodedata
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple, Union
 
 from src.offer_normalization import normalize_text
-from src.services.matching_service import normalize_skill_name
+from src.ner.skill_normalizer import canonicalize_skill_name, group_skill_variants
 
 DATE_KEYS = (
     "date",
@@ -46,24 +46,11 @@ def _normalize_display_name(value: object) -> str:
 
 
 def _normalize_competence_key(value: object) -> str:
-    canonical = normalize_skill_name(value)
-    return normalize_text(canonical)
+    return canonicalize_skill_name(value)
 
 
 def _normalize_competence_display(value: object) -> str:
-    text = "" if value is None else str(value)
-    text = re.sub(r"\s+", " ", text).strip()
-    if not text:
-        return ""
-    compact = text.replace(" ", "")
-    if compact.isupper():
-        return compact
-    if len(compact) <= 4 and compact.lower() in {"sql", "php", "aws", "api", "git", "html", "css", "json", "xml", "llm", "rag", "nlp", "etl", "ci", "cd"}:
-        return compact.upper()
-    return " ".join(
-        part if part.isupper() else part[:1].upper() + part[1:].lower()
-        for part in text.split(" ")
-    )
+    return canonicalize_skill_name(value)
 
 
 def _split_values(value: object) -> List[object]:
@@ -255,7 +242,7 @@ def _extract_summary_offer(offer: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def _offer_competences(offer: Dict[str, Any]) -> List[str]:
+def _offer_competences(offer: Dict[str, Any]):
     competences: List[str] = []
     for key in ("competences", "competences_requises", "skills", "skillset", "mots_cles"):
         for item in _split_values(offer.get(key)):
@@ -266,15 +253,7 @@ def _offer_competences(offer: Dict[str, Any]) -> List[str]:
             text = re.sub(r"\s+", " ", str(label)).strip() if label is not None else ""
             if text:
                 competences.append(text)
-    normalized: List[str] = []
-    seen = set()
-    for item in competences:
-        key = _normalize_competence_key(item)
-        if not key or key in seen:
-            continue
-        seen.add(key)
-        normalized.append(_normalize_competence_display(item) or key)
-    return normalized
+    return group_skill_variants(competences)
 
 
 def _offer_metier(offer: Dict[str, Any]) -> List[str]:
@@ -299,27 +278,35 @@ def aggregate_trends(
     valid_offers = [offer for offer in offers if isinstance(offer, dict)]
     filtered = filter_offers_for_trends(valid_offers, territoire=territoire, periode_jours=periode_jours)
 
-    competences_raw: List[object] = []
+    competences_raw: List[str] = []
     metiers_raw: List[object] = []
     niveaux_raw: List[object] = []
     contrats_raw: List[object] = []
     skill_sets: List[List[str]] = []
     skill_counter: Counter = Counter()
     skill_display_names: Dict[str, str] = {}
+    skill_variants: Dict[str, Counter] = defaultdict(Counter)
     cooccurrences: Counter = Counter()
 
     for offer in filtered:
-        skills = []
-        for skill in _offer_competences(offer):
-            key = _normalize_competence_key(skill)
-            if not key or key in skills:
+        grouped_skills = _offer_competences(offer)
+        skills: List[str] = []
+        seen_skills = set()
+        for canonical_skill, variants in grouped_skills.items():
+            key = _normalize_competence_key(canonical_skill)
+            if not key or key in seen_skills:
                 continue
+            seen_skills.add(key)
             skills.append(key)
             skill_counter[key] += 1
-            skill_display_names.setdefault(key, _normalize_competence_display(skill) or key)
+            skill_display_names.setdefault(key, _normalize_competence_display(canonical_skill) or canonical_skill)
+            for variant in variants:
+                variant_text = re.sub(r"\s+", " ", str(variant)).strip()
+                if variant_text:
+                    skill_variants[key][variant_text] += 1
         if skills:
             skill_sets.append(skills)
-        competences_raw.extend(skill_display_names.get(key, key) for key in skills)
+            competences_raw.extend(skill_display_names.get(key, key) for key in skills)
         metiers_raw.extend(_offer_metier(offer))
         niveaux_raw.extend(_offer_niveaux(offer))
         contrats_raw.extend(_offer_contrats(offer))
@@ -338,13 +325,15 @@ def aggregate_trends(
     offers_summary = [_extract_summary_offer(offer) for offer in filtered]
     offers_summary.sort(key=lambda item: item.get("date") or "", reverse=True)
 
+    sorted_skill_items = sorted(skill_counter.items(), key=lambda item: (-item[1], skill_display_names.get(item[0], item[0]).lower()))
     competence_items = []
-    for key, count in sorted(skill_counter.items(), key=lambda item: (-item[1], skill_display_names.get(item[0], item[0]).lower())):
+    for key, count in sorted_skill_items:
         percentage = round((count / len(filtered)) * 100.0, 1) if filtered else 0.0
         competence_items.append({
             "nom": skill_display_names.get(key, key),
             "count": count,
             "percentage": percentage,
+            "variants": {name: skill_variants[key][name] for name in sorted(skill_variants.get(key, {}).keys(), key=lambda item: (-skill_variants[key][item], item.lower()))},
         })
 
     cooccurrence_items = []
@@ -360,8 +349,9 @@ def aggregate_trends(
         "territoire": territoire,
         "periode_jours": periode_jours,
         "nombre_offres": len(filtered),
-        "competences": _count_values(competences_raw, _normalize_competence_key, _normalize_competence_display),
+        "competences": {skill_display_names.get(key, key): count for key, count in sorted_skill_items},
         "competences_details": competence_items,
+        "competences_variants": {skill_display_names.get(key, key): dict(skill_variants.get(key, {})) for key, _count in sorted_skill_items},
         "metiers": _count_values(metiers_raw, normalize_text, _normalize_display_name),
         "niveau": {
             key: niveau_counts[key]
