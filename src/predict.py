@@ -54,6 +54,7 @@ from src.extractors import (
     sort_skills_by_predefined_order,
     split_offer_into_segments,
 )
+from src.skill_extraction import extract_skills_from_offer
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -297,6 +298,11 @@ def extract_job_offer(text: str, debug: bool = False) -> dict:
         competences_requises.extend(extract_required_skills(seg["text"]))
     competences_requises = sort_skills_by_predefined_order(competences_requises)
 
+    # ── competences_requises_detaillees (pipeline hybride) ──────────
+    detailed_skills = extract_skills_from_offer(text)
+    competences_requises_detaillees = [skill.to_dict() for skill in detailed_skills]
+    competences_requises_noms = [skill.canonical_name for skill in detailed_skills]
+
     # ── contacts ────────────────────────────────────────────────────
     contacts: List[str] = []
     for seg in cleaned_segments:
@@ -310,6 +316,8 @@ def extract_job_offer(text: str, debug: bool = False) -> dict:
         "lieux_embauche": lieux_embauche,
         "distanciel": distanciel,
         "competences_requises": competences_requises,
+        "competences_requises_detaillees": competences_requises_detaillees,
+        "competences_requises_noms": competences_requises_noms,
         "contacts": contacts,
     }
 
@@ -327,6 +335,8 @@ def _empty_result() -> dict:
         "lieux_embauche": [],
         "distanciel": None,
         "competences_requises": [],
+        "competences_requises_detaillees": [],
+        "competences_requises_noms": [],
         "contacts": [],
     }
 
@@ -347,6 +357,16 @@ def pretty_print_result(result: dict) -> None:
         label = key.replace("_", " ").title()
         display = ", ".join(val) if val else "(non trouvé)"
         print(f"  {label:<22} : {display}")
+
+    detailed = result.get("competences_requises_detaillees", [])
+    if detailed:
+        print("-" * 48)
+        print("  Compétences détaillées (pipeline hybride) :")
+        for skill in detailed:
+            etype = skill.get("extraction_type", "explicit")
+            conf = skill.get("confidence", 1.0)
+            name = skill.get("canonical_name", "")
+            print(f"    [{etype:>8} | {conf:.2f}] {name}")
 
     if "segments_classes" in result:
         print("-" * 48)

@@ -28,6 +28,7 @@ from src.services.offer_repository import (
 )
 from src.trend_aggregation import aggregate_trends
 from src.user_portal import _current_profile_snapshot, _current_user_id, register_user_portal
+from src.skill_extraction import extract_skills_from_offer
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -459,7 +460,19 @@ def build_live_state(
         enriched = dict(offer)
         source_offer = normalized_by_id.get(str(offer.get("id") or offer.get("id_offre") or ""))
         if source_offer:
-            enriched["competences"] = source_offer.get("competences", [])
+            structured_competences = source_offer.get("competences", [])
+            description = source_offer.get("description", "")
+            
+            extracted_skills = extract_skills_from_offer(
+                description,
+                structured_competences=structured_competences,
+            )
+            all_competences = list(dict.fromkeys(skill.canonical_name for skill in extracted_skills))
+            
+            enriched["competences"] = all_competences
+            enriched["competences_explicites"] = [s.canonical_name for s in extracted_skills if s.extraction_type == "explicit"]
+            enriched["competences_semantiques"] = [s.canonical_name for s in extracted_skills if s.extraction_type == "semantic"]
+            enriched["competences_implicites"] = [s.canonical_name for s in extracted_skills if s.extraction_type == "implicit"]
             enriched["ville"] = source_offer.get("ville", "")
             enriched["code_postal"] = source_offer.get("code_postal", "")
         if current_profile and source_offer:
@@ -467,10 +480,14 @@ def build_live_state(
                 match = compute_match(current_profile, source_offer, weights=matching_weights)
                 enriched["match_score"] = round(float(match.get("global_score") or 0.0), 2)
                 enriched["matching_skills"] = match.get("matching_skills", [])
+                enriched["missing_skills"] = match.get("missing_skills", [])
                 enriched["match_details"] = match
+                enriched["match_explanation"] = match.get("explanation", {})
             except Exception:
                 enriched["match_score"] = None
                 enriched["matching_skills"] = []
+                enriched["missing_skills"] = []
+                enriched["match_explanation"] = {}
         enriched_offers.append(enriched)
 
     enriched_offers.sort(

@@ -71,7 +71,7 @@ SKILL_DICTIONARY: "OrderedDict[str, Dict[str, object]]" = OrderedDict(
         ("Azure", {"aliases": ["azure"], "category": "cloud"}),
         ("Terraform", {"aliases": ["terraform"], "category": "devops"}),
         ("Ansible", {"aliases": ["ansible"], "category": "devops"}),
-        ("Machine learning", {"aliases": ["machine learning", "machinelearning", "ml"], "category": "ia"}),
+        ("Machine learning", {"aliases": ["machine learning", "machinelearning", "ml", "apprentissage automatique"], "category": "ia"}),
         ("Deep learning", {"aliases": ["deep learning", "deeplearning", "dl"], "category": "ia"}),
         ("NLP", {"aliases": ["nlp", "traitement du langage naturel"], "category": "ia"}),
         ("LLM", {"aliases": ["llm", "large language model", "large language models"], "category": "ia"}),

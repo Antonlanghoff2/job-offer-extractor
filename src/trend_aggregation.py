@@ -16,6 +16,7 @@ from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple, Union
 
 from src.offer_normalization import normalize_text
 from src.ner.skill_normalizer import canonicalize_skill_name, group_skill_variants
+from src.skill_extraction import extract_skills_from_offer
 
 DATE_KEYS = (
     "date",
@@ -243,16 +244,45 @@ def _extract_summary_offer(offer: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def _offer_competences(offer: Dict[str, Any]):
+    """Extrait les compétences d'une offre en combinant sources structurées et texte.
+
+    Cette fonction combine :
+    1. Les compétences structurées de l'API France Travail (champs competences, etc.)
+    2. Les compétences extraites du texte de description via le pipeline hybride.
+
+    La déduplication se fait par nom canonique pour éviter de compter plusieurs
+    fois la même compétence dans une offre.
+    """
+
     competences: List[str] = []
-    for key in ("competences", "competences_requises", "skills", "skillset", "mots_cles"):
+    for key in ("competences", "competences_requises", "competences_requises_noms", "skills", "skillset", "mots_cles"):
         for item in _split_values(offer.get(key)):
             if isinstance(item, dict):
-                label = item.get("libelle") or item.get("code") or item.get("name") or item.get("label") or item.get("title")
+                label = (
+                    item.get("canonical_name")
+                    or item.get("libelle")
+                    or item.get("code")
+                    or item.get("name")
+                    or item.get("label")
+                    or item.get("title")
+                )
             else:
                 label = item
             text = re.sub(r"\s+", " ", str(label)).strip() if label is not None else ""
             if text:
                 competences.append(text)
+
+    description = offer.get("description") or ""
+    if description and isinstance(description, str) and len(description.strip()) > 50:
+        structured_competences = competences.copy()
+        extracted_skills = extract_skills_from_offer(
+            description,
+            structured_competences=structured_competences,
+        )
+        for skill in extracted_skills:
+            if not skill.negated and skill.confidence >= 0.5:
+                competences.append(skill.canonical_name)
+
     return group_skill_variants(competences)
 
 
