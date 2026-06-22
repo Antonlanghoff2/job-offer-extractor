@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3553159",
+  "value": {
+    "id": "3553159",
+    "intitule": "Ingénieur / Ingénieure génie civil (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 5e Arrondissement",
+    "ville": "69385",
+    "code_postal": "69005",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553159",
+    "description": "Description du poste :\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\nDescription de l'entreprise\nÀ propos de Sopra Steria\nSopra Steria, acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative. Sopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2025, le Groupe a réalisé un chiffre d'affaires de 5,6 milliards d'euros.\nThe world is how we shape it.\n*Le monde est tel que nous le façonnons\nSopra Steria Infrastructure & Security Services est la business unit de Sopra Steria dédiée aux activités d'infrastructures, cloud et cybersécurité. Elle est un acteur clé du end-to-end de Sopra Steria. Forte de ses 3000 collaborateurs, Sopra Steria I2S se distingue par la flexibilité de son modèle de delivery qui associe la proximité clients depuis nos 8 agences et les capacités industrielles avancées de nos centres de services en off-shore.\nDescription du poste\nVous intégrez la division Digital Platform Services (DPS) au sein de l'agence Sopra Steria Lyon composée d'une centaine de collaborateurs.\nTout au long de votre parcours dans le Groupe vous êtes accompagné(e) par votre manager opérationnel , présent en lien de proximité sur votre mission, et qui vous accompagne dans votre évolution de carrière.\nL'esprit d'équipe étant primordial chez Sopra Steria, plusieurs évènements par an sont organisés afin de nous rassembler et partager des moments de convivialité : afterworks, petit déjeuners, compétitions internes, communautés techniques..\nRejoignez un groupe international et intégrez des missions chez nos clients du CAC40 dans des secteurs divers : banque, automobile, sécurité nationale, services publics nationaux.\nPrêt(e) à relever le défi avec nous ? Un challenge s'offre à vous, futur(e) Ingénieur(e) Infrastructure !\nVotre rôle et vos missions :\nDans un environnement de production à haute disponibilité, vous intervenez pour un client majeur et aurez pour mission Vous implémentez les changements d'infrastructures nécessaires au maintien et à l'évolution des environnements\n* Vous répondez aux demandes de projets clients et de production sur différentes technologies de niveau 2 et 3\n* Vous gérez la documentation de l'infrastructure\n* Vous analysez et résolvez les incidents infrastructures\n* Vous managez des composants virtualisation\nSelon vos envies et désirs d'apprentissage, selon les besoins de nos clients, ces missions sont évolutives.\nEnvironnement technique Linux, Windows\n* VMware\n* Scripting Python, Shell\n* Ansible, Docker, Kubernetes, ELK\nVous ne maîtrisez pas toutes les technologies mentionnées ? Pas de panique, grâce à la Sopra Steria Academy et ses nombreuses formations et certifications nous vous accompagnons dans le développement de vos compétences.\nCe que nous vous proposons Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions\n* Un package avantages intéressant : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation\n* Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble\n* Des centaines de formations pour développer vos compétences et évoluer au sein du Groupe\n* Des plateformes de formations en autonomie pour préparer vos certifications et accompagner votre développement personnel\n* La possibilité de s'engager auprès de notre fondation ou de notre partenaire « Vendredi L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore)\nQualifications\nVotre profil :\nDiplômé(e) d'une école d'Ingénieurs ou équivalent, vous avez déjà une expérience significative sur une fonction similaire d'au moins 3 ans.\nInformations supplémentaires\nEmployeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à l",
+    "metier": "Ingénieur / Ingénieure génie civil",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Vision",
+      "API",
+      "Pipelines de données",
+      "Backend"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 3000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Un challenge s'offre à vous, futur(e) Ingénieur(e) Infrastructure !",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:03.649640",
+  "input_hash": "a80b420f00a504d7579db50671331d39889d5ce434933a6273d6995527d4884d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

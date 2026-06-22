@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:3955613",
+  "value": {
+    "id": "3955613",
+    "intitule": "Ingénieur IVV logiciel - 5 ans d'exp (H/F)",
+    "entreprise": "",
+    "territoire": "91 - Massy",
+    "ville": "91377",
+    "code_postal": "91300",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3955613",
+    "description": "TerX est un partenaire stratégique spécialisé dans le conseil en ingénierie et la mise à disposition de compétences techniques pour l'industrie. Né du terrain - des ateliers, laboratoires et bureaux d'études - TerX connecte les meilleures expertises aux enjeux concrets des entreprises industrielles, avec rigueur, méthode et une compréhension fine des réalités opérationnelles. Fondée en 2018, l'entreprise compte aujourd'hui 160 collaborateurs et a réalisé un chiffre d'affaires de 13,5 millions d'euros en 2025, confirmant sa trajectoire de croissance et la confiance de ses clients industriels. Mission : Mobiliser les meilleures compétences pour répondre aux enjeux concrets des entreprises industrielles. Vision : Contribuer à une industrie française et européenne plus autonome, plus exigeante et créatrice de valeur durable. Le poste : OneSide Technologies recherche un ingénieur IVV logiciel qui supervisera les tests de validation et de vérification de la qualité des nouvelles solutions. Ce projet mobilise des technologies de traitement de données massives et d'intelligence artificielle pour les secteurs de la défense, du renseignement et de la sécurité intérieure. Vous accompagnez les équipes dans l'adaptation de l'architecture aux développements et à l'intégration. Vos principales missions : - Contribuer à la conception du plan de tests de la plateforme. - Vérifier l'exécution des tests d'intégration et fonctionnels réalisés par l'équipe projet et assurer leur traçabilité. - Piloter la mise en place et le développement de l'automatisation des tests de non-régression. - Organiser les livraisons vers les projets. - En parallèle, vous veillez à favoriser le partage d'informations et à harmoniser les pratiques en matière d'intégration et de vérification, dans une logique d'amélioration continue. Vos missions transverses : - Contribuer à la définition de la stratégie IVV logicielle, établir les exigences associées et estimer les coûts et délais. - Ajuster l'environnement de validation et vérification qualité (processus, pratiques et outils). - Déployer les méthodologies, métriques et outils nécessaires aux activités de validation et vérification logicielles. - Proposer et garantir la mise en œuvre des scénarios de V&V logicielle. - Améliorer les moyens de production logicielle. Profil recherché : Vous êtes diplômé en qualité d'ingénieur en software ou équivalent. - Langage de scripting (PowerShell, Python) - Maitrise des solutions Cloud Non Protégé (OVH, AWS, Azure) - Maitrise des technologies Kubernetes, Docker, VM Ware - Traitement Big Data - Compréhension du Codage Go, Java, Python - Outil de tests : TestLink - Pratique confirmée des outils de campagne de test ; GIT, JIRA - Documentations techniques et environnement de travail en Anglais",
+    "metier": "Expert / Experte systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Coûts",
+      "Docker",
+      "Délais",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "Python",
+      "Vision",
+      "Intégration continue",
+      "MLOps",
+      "Veille technologique",
+      "Automatisation de pipelines",
+      "Design patterns",
+      "Tests automatisés",
+      "Qualité des données",
+      "Gestion de projet",
+      "Optimisation des performances"
+    ],
+    "salaire_min": 2018,
+    "salaire_max": 2018,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Le poste : OneSide Technologies recherche un ingénieur IVV logiciel qui supervisera les tests de validation et de vérification de la qualité des nouvelles solutions.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 20,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:06.193379",
+  "input_hash": "1fc025103086774c25cdbfc652b80038ee1b0e71257430aa61871872aa8b6ee4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

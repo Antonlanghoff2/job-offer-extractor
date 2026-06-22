@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3551659",
+  "value": {
+    "id": "3551659",
+    "intitule": "Ingénieur GNC Confirmé - Guidage Navigation Contrôle (H/F)",
+    "entreprise": "",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3551659",
+    "description": "Notre client, PME à taille humaine (140 collaborateurs), filiale d'un grand groupe international est spécialisée dans le contrôle du comportement dynamique des plateformes navales, l'hydrodynamique et les drones navals autonomes de surface. Le poste : Au sein du département Guidage Navigation Contrôle (GNC), vous concevez, développez et validez les algorithmes de guidage, navigation et pilotage embarqués. Vos missions principales : - Étudier et concevoir les algorithmes de GNC afin de réaliser les fonctionnalités exigées et d'atteindre la robustesse et les performances visées - Développer les composants logiciels intégrant ces algorithmes et les valider en vue de leur intégration dans les simulateurs et le logiciel embarqué - Participer aux campagnes d'essais - Analyser et résoudre des problèmes techniques GNC en phase de service après-vente - Conduire des études de Recherche & Développement - Contribuer à la rédaction d'offres techniques Le spectre d'algorithmes couvre des sujets aussi variés que le garde-cap, le contrôle en immersion, la planification de trajectoires, le suivi de cible ou le positionnement dynamique de plateformes. Profil recherché : De formation Ingénieur avec une spécialisation en automatique et traitement du signal, vous justifiez d'au moins 5 ans d'expérience sur des problématiques de contrôle-commande GNC (Guidage, Navigation, Contrôle). Compétences requises : - Solide base mathématique - Expérience en pilotage, guidage ou navigation et maîtrise de la théorie du contrôle-commande ou de l'estimation (filtre de Kalman, PID, contrôle robuste, contrôle optimal...) - Expérience en simulation, prototypage et/ou industrialisation de solutions - Expérience dans le développement d'outils de modélisation et d'analyse des systèmes (domaines fréquentiel et temporel, continu et discret) - Maîtrise du développement collaboratif en C, C++, Python ou Matlab Qualités personnelles : - Rigueur, capacité d'analyse et de synthèse - Curiosité intellectuelle et goût pour l'innovation - Esprit d'équipe Atouts appréciés : - Goût pour l'analyse de comportements dynamiques et/ou algorithmiques complexes - Expérience en hydrodynamique ou aérodynamique appliquées aux lois de commande - Connaissance des capteurs de positionnement (IMU, GNSS, optronique, radar, sonar)",
+    "metier": "Technicien / Technicienne de laboratoire d'analyse industrielle",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Vue.js",
+      "Tests automatisés",
+      "Résolution de problèmes",
+      "Qualité des données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "cap",
+        "level": 3,
+        "required": true,
+        "source_sentence": "Vos missions principales : - Étudier et concevoir les algorithmes de GNC afin de réaliser les fonctionnalités exigées et d'atteindre la robustesse et les performances visées - Développer les composants logiciels intégrant ces algorithmes et les valider en vue de leur intégration dans les simulateurs et le logiciel embarqué - Participer aux campagnes d'essais - Analyser et résoudre des problèmes techniques GNC en phase de service après-vente - Conduire des études de Recherche & Développement - Contribuer à la rédaction d'offres techniques Le spectre d'algorithmes couvre des sujets aussi variés que le garde-cap, le contrôle en immersion, la planification de trajectoires, le suivi de cible ou le positionnement dynamique de plateformes.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Profil recherché : De formation Ingénieur avec une spécialisation en automatique et traitement du signal, vous justifiez d'au moins 5 ans d'expérience sur des problématiques de contrôle-commande GNC (Guidage, Navigation, Contrôle).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:04.105677",
+  "input_hash": "04b772aeb58d73cfca60ca8cfbc851d56ff713d55e96f1700d2b0c9a9c415c64",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

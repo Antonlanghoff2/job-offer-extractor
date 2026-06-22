@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:209RZHX",
+  "value": {
+    "id": "209RZHX",
+    "intitule": "ENSEIGNANT/E en GENIE ELECTRONIQUE INFORMATIQUE RESEAU - candidatures DPT 13",
+    "entreprise": "SERVICE DEPARTEMENTAL DE L'EDUCATION NAT",
+    "territoire": "13 - Bouches-du-Rhône",
+    "ville": "13 - Bouches-du-Rhône",
+    "code_postal": "",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-12",
+    "date": "2026-06-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209RZHX",
+    "description": "L'académie d'Aix-Marseille recrute pour l'année scolaire 2026-2027 des enseignants contractuels dans la discipline Génie électrique-électronique informatique réseau dans le département des Bouches-du-Rhône (13) et notamment :\n -2 postes à temps complet (18h) à Marseille.\nSi le métier d'enseignant vous intéresse, vous pouvez nous faire connaître votre profil en candidatant sur cette offre.\nLes professeurs et les personnels d'éducation concourent à la mission première de l'École qui est d'instruire et d'éduquer afin de conduire l'ensemble des élèves à la réussite scolaire. Ils préparent les élèves à l'exercice d'une citoyenneté pleine et entière. Ils transmettent et font partager à ce titre les valeurs de la République. Ils promeuvent l'esprit de responsabilité et la recherche du bien commun, en excluant toute discrimination.\nLes personnels ont un devoir de stricte neutralité politique et religieuse.\nSon activité principale :   \n -Concevoir et mettre en œuvre des situations d'apprentissage ou d'enseignement dans le cadre des programmes nationaux.\n -Transmettre des connaissances disciplinaires\n -Faire acquérir des compétences incluant des capacités, des attitudes et des savoir-faire (méthodologiques et techniques).\n -Concevoir et mettre en œuvre des modalités d'évaluation des acquis des élèves.\n -Assurer un suivi personnalisé des élèves en lien avec les familles.\n -Contribuer au fonctionnement de l'établissement et au travail d'équipe.\n\nConditions particulières d'exercice : \n\nUn poste à temps complet (35h) correspond à 18h devant élèves auxquelles s'ajoutent le temps de préparation des cours/de correction. Les entretiens de recrutement peuvent être organisés en présentiel au sein de l'académie, merci d'en tenir compte lors du dépôt de votre candidature et d'être certain.e que vous pourrez vous rendre disponible le cas échéant.\nConditions : Casier judiciaire compatible avec l'exercice d'une mission d'enseignement\n\nProfil recherché : \n\nConditions de diplôme : Master MEEF ou Bac +3 ou BTS minimum avec 2 ans d'expérience professionnelle (BTS systèmes électroniques).\nSi diplôme obtenu à l'étranger, merci de transmettre une attestation de comparabilité (à demander auprès du CIEP https://www.france-education-international.fr/article/comment-demander-une-attestation?langue=fr)\nConnaissances :    \n -Connaître les attendus disciplinaires et leur didactique.\n -Connaître le programme de l'éducation nationale (https://eduscol.education.fr)\n -Avoir une bonne connaissance des méthodes pédagogiques, d'animation de groupe et de gestion de classe.\nCompétences opérationnelles :\n -Maîtrise des implantations réseau, administration de VLAN et réseaux publics/privés professionnels.\n -Connaissances solides en électrotechnique et électronique.\n -Maîtrise des systèmes numériques, réseaux industriels et cybersécurité appliquée aux dispositifs du Bac Pro CIEL.\n -Compétences en algorithmique, programmation Python et gestion de bases de données.\n -Virtualisation et administration de systèmes multi-OS (Linux, Windows, macOS).\n -Gestion de projets techniques et pédagogiques : planification, suivi et coordination des expérimentations.\n -Connaissance approfondie du monde professionnel et de la branche métier pour aligner les apprentissages sur les exigences du secteur.\n -Préparer les cours et établir la progression pédagogique,\n -Enseigner la matière, suivre et conseiller les élèves dans l'organisation personnelle du travail,\n -Renseigner les supports d'évaluation scolaire\n -Informer le chef d'établissement, les collègues et parents lors des conseils de classe, rencontre parents/professeurs.",
+    "metier": "Professeur / Professeure d'enseignement technologique",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Travail en équipe",
+      "NoSQL",
+      "Analyse de données",
+      "Cybersécurité",
+      "Data Engineering",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": 1934,
+    "salaire_max": 65,
+    "teletravail": "présentiel",
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Conditions de diplôme : Master MEEF ou Bac +3 ou BTS minimum avec 2 ans d'expérience professionnelle (BTS systèmes électroniques).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Conditions de diplôme : Master MEEF ou Bac +3 ou BTS minimum avec 2 ans d'expérience professionnelle (BTS systèmes électroniques).",
+        "confidence": 0.9
+      },
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Conditions de diplôme : Master MEEF ou Bac +3 ou BTS minimum avec 2 ans d'expérience professionnelle (BTS systèmes électroniques).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:06.897960",
+  "input_hash": "46b3d9f419b0f8df8bee2bd34ac6d027f29f1bb163c2acc545b229c7c37ea795",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

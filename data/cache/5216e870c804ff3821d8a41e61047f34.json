@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3948933",
+  "value": {
+    "id": "3948933",
+    "intitule": "Ingénieur robotique H/F",
+    "entreprise": "",
+    "territoire": "53 - Ernée",
+    "ville": "53096",
+    "code_postal": "53500",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3948933",
+    "description": "Notre Agence TEMPORIS FOUGERES recherche pour un de ses clients, spécialiste de solutions techniques pour le secteur agricole, renforce son pôle robotique et recrute un Ingénieur Robotique Embarqué. Vos missions Développement et maintenance de logiciels embarqués Programmation sous ROS 1 (Noetic / Ubuntu) Développement Python / Linux Intégration capteurs & communication Modbus Tests, validation et mise en service à distance (SSH, VPN, NoVNC) Amélioration continue & documentation technique Profil recherché Bac +5 en robotique / automatisme / génie industriel Maîtrise de ROS, Python, Linux Connaissances en systèmes embarqués & automatisme Autonomie, analyse, esprit d’équipe, force de proposition Une première expérience sur un poste similaire serait un plus. Avantages du poste Projets concrets et utiles Forte culture innovation Structure agile, impact réel Télétravail partiel possible Équipe & Perspectives d’évolution Intéressé ? Contactes Clarisse et Stéphanie directement à l'agence ou candidates à l'offre en ligne! Nous attendons ton CV...",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Linux",
+      "Python"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 1000,
+    "teletravail": "télétravail partiel",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Notre Agence TEMPORIS FOUGERES recherche pour un de ses clients, spécialiste de solutions techniques pour le secteur agricole, renforce son pôle robotique et recrute un Ingénieur Robotique Embarqué.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Vos missions Développement et maintenance de logiciels embarqués Programmation sous ROS 1 (Noetic / Ubuntu) Développement Python / Linux Intégration capteurs & communication Modbus Tests, validation et mise en service à distance (SSH, VPN, NoVNC) Amélioration continue & documentation technique Profil recherché Bac +5 en robotique / automatisme / génie industriel Maîtrise de ROS, Python, Linux Connaissances en systèmes embarqués & automatisme Autonomie, analyse, esprit d’équipe, force de proposition Une première expérience sur un poste similaire serait un plus.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:45.079833",
+  "input_hash": "6a5bfc4f16ec562d599f9295c42eecfbd69609ae5482e278cab752f76d7b6d23",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

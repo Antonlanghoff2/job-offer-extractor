@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:3896854",
+  "value": {
+    "id": "3896854",
+    "intitule": "Ingénieur-e Simulation Num méthodes et outils maillage (H/F)",
+    "entreprise": "Safran",
+    "territoire": "77 - Moissy-Cramayel",
+    "ville": "77296",
+    "code_postal": "77550",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3896854",
+    "description": "Votre environnement de travail\nIntégrez la Direction Technique, au sein du département « Méthodologies et Outils du Développement », centre d'expertise reconnu pour la mise en oeuvre des méthodes et outils de simulation numérique. Avec une équipe dynamique alliant experts, développeurs, et spécialistes calcul, contribuez à la performance des modules et pièces moteurs d'avions civils et militaires.\nVous rejoindrez l'unité « méthodes de calculs de structure thermiques et mécaniques », une vingtaine de personnes passionnées par la modélisation avancée, le calcul par éléments finis et l'innovation numérique.\nNotre mission principale : fournir des solutions concrètes clés en main à nos bureaux d'études internes clients pour leur permettre de réaliser leurs calculs de dimensionnement sur les modules/pièces de nos moteurs d'avion.\n\nVos missions :\nAu carrefour de la simulation et de la conception, vous prendrez un rôle central pour concevoir, déployer et maintenir les méthodes et outils de maillage adaptés pour les bureaux d'études internes qui réalisent des calculs par éléments finis.\nPrincipales missions attendues :\n*Recueillir et analyser les besoins des bureaux d'études concepteurs de modules et pièces moteurs en matière de maillage et simulation EF ;\n*Développer, valider et industrialiser des méthodologies et outils de maillage innovants adaptés aux différentes phases de développement produit ;\n*Assurer la montée en compétence des équipes, en formant les utilisateurs et diffusant les bonnes pratiques sur le périmètre maillage/calcul,\n*Benchmarker et challenger les outils du marché, réaliser une veille active sur les méthodes numériques, remonter des axes d'amélioration aux éditeurs logiciels,\n*Participer au support de proximité et animer la communauté des utilisateurs,\n*Collaborer étroitement avec les bureaux d'études internes de la société, les partenaires académiques et autres sociétés du groupe Safran,\n*Structurer, documenter et diffuser les méthodes de maillage, accompagner la capitalisation et l'automatisation au sein du référentiel de l'entreprise.\n\nVos interlocuteurs\nBureaux d'études, équipes essais, partenaires académiques et industriels, éditeurs et prestataires, membres du département méthodes et développement informatique.\nProfil recherché\n*Ingénieur·e généraliste ou mécanique (Bac+5) avec spécialisation calculs de structures/mécanique numérique,\n*Expérience confirmée en milieu industriel sur la génération et l'utilisation de maillages pour les calculs EF (3 à 5 ans minimum),\n*Maitrise des concepts et outils suivants :\noCalculs de structures par éléments finis (ANSYS Workbench) et mailleurs (ANSA, HyperMesh, SpaceClaim, ICEM CFD, etc.) \noMise en oeuvre et validation de maillages adaptés (tétraédrique, hexaédrique, coque, mixte, techniques de blocking.) en fonction des applications concernées.\nExemple : déploiement de méthodes de maillage spécifiques pour des carters de moteur d'avion. \noPré/post-traitement, transverse CAO-calcul, gestion de qualité et robustesse des outils,\n*Appétence pour la veille technologique et le benchmark de solutions logicielles ;\n*Pédagogue, orienté support aux utilisateurs, curieux·se, force de proposition et rigoureux·se dans la formalisation.\nUne expérience dans la génération de maillages hexaédriques complexes et dans le développement d'outils de post-traitement (idéalement Python) sera fortement appréciée.",
+    "metier": "Ingénieur / Ingénieure calcul et structure",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Analyse des besoins",
+      "Data Engineering",
+      "Automatisation de pipelines",
+      "API",
+      "Pipelines de données",
+      "Analyse de données",
+      "Gestion de projet",
+      "Sécurité informatique",
+      "Qualité des données",
+      "Architecture microservices",
+      "Backend",
+      "Déploiement de modèles"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur·e généraliste ou mécanique (Bac+5) avec spécialisation calculs de structures/mécanique numérique,",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Ingénieur·e généraliste ou mécanique (Bac+5) avec spécialisation calculs de structures/mécanique numérique,",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:46.838966",
+  "input_hash": "2150cf85c95921aadab0e4dce4ac1767ce71c45e1ae23a08e78a39af504ff0c6",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

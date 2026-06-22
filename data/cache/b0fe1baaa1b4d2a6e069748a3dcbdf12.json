@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:3765538",
+  "value": {
+    "id": "3765538",
+    "intitule": "Ingénieur en radio logicielle H/F",
+    "entreprise": "",
+    "territoire": "13 - Beaurecueil",
+    "ville": "13012",
+    "code_postal": "13100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3765538",
+    "description": "La mission et responsabilités que l’on vous confie ?    L’Ingénieur(e) Radio Logicielle est impliqué dans chaque phase de projet : conception, réalisation et tests. Elle/Il entreprend notamment les actions suivantes : • Evaluation des SDRs sur étagère afin d’identifier les meilleurs choix selon l’application. • Contribution à la définition sous-système. • Justification des choix de développements (nouveau bloc vs réutilisation de bloc Open Source existant) • Développement de blocs logiciels en C/C++, de scripts en python • Développement de routines de test logicielles afin de contribuer aux tests unitaire et d’intégration des blocs de traitement et de nouvelles fonctionnalités associées à une nouvelle forme d’onde. • Test et validation de blocs fonctionnels à la fois en simulation et sur cible. • Post-traitements pour faciliter les diagnostics et en support à la caractérisation de bugs. • Rédaction et mise à jour de documents de conception détaillée et spécifications des interfaces. • Elaboration et maintenance d’une base de données de signaux radio et d’acquisitions de données. • Veille technologique sur l'écosystème radio logicielle. • En option, travaille à la réalisation de drivers pilotant le front-end RF et d'autres composants électroniques.",
+    "metier": "Ingénieur / Ingénieure télécoms et environnement",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Intelligence artificielle",
+      "Python",
+      "MySQL",
+      "Analyse de données",
+      "Data Engineering"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L’Ingénieur(e) Radio Logicielle est impliqué dans chaque phase de projet : conception, réalisation et tests.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:52.818156",
+  "input_hash": "ad7c900a675dce4d5fea9b3bb5035cee2e65bef1fbfdbd610660a29f73a19c16",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

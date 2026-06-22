@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:3747717",
+  "value": {
+    "id": "3747717",
+    "intitule": "Ingénieur bases de données F/H",
+    "entreprise": "",
+    "territoire": "92 - Bagneux",
+    "ville": "92007",
+    "code_postal": "92220",
+    "contrat": "CDI",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3747717",
+    "description": "Nous recherchons notre Ingénieur bases de données Spécialisé en IA et Automatisation. En tant que DBA (Database Administrator), vous serez responsable de la gestion, optimisation et sécurisation des bases de données de l'entreprise. Vous jouerez un rôle clé dans l'intégration de l'IA générative pour automatiser les tâches répétitives, améliorer les performances et renforcer la sécurité des données. Vous collaborerez avec les équipes Data, DevOps et Sécurité pour garantir la disponibilité, la performance et la conformité des systèmes de données. Vous serez intégré à la Squad SGBD (répartie sur Bagneux et Bordeaux) qui gère, analyse et optimise environ plus de 6000 instances tout environnement confondu, assure un support aux équipes et implémente les différents socles techniques. Vos principales missions : Gestion et Administration des Bases de Données : -Administrer, configurer et optimiser les SGBD traditionnels (Oracle, MySQL, PostgreSQL, MongoDB) -Garantir la disponibilité, performance et sécurité des bases de données. -Assurer les sauvegardes, restaurations et migrations des données. Intégration de l'IA Générative dans l'Administration des Bases de Données automatisation de la Documentation Technique : Générer automatiquement de la documentation technique (schémas de bases de données, procédures de maintenance, runbooks) à partir des logs, scripts SQL ou configurations. Optimisation des Performances et Analyse Prédictive : Utiliser l'IA pour détecter proactivement les goulots d'étranglement (requêtes lentes, saturation des ressources) et proposer des optimisations. Sécurité et Conformité : Détecter automatiquement les vulnérabilités (mots de passe faibles, permissions excessives) et générer des rapports de conformité (RGPD, SOC2). Résolution Accélérée des Incidents : Diagnostiquer automatiquement les incidents (crash, requêtes bloquantes) via l'analyse des logs et proposer des correctifs. Hard skills : - Au moins 2 ans d'expérience sur un poste similaire - Maîtrise des SGBD : PostgreSQL, MariaDB, Oracle. - DevOps et Cloud : Expérience avec les plateformes cloud, connaissance des outils DevOps (Docker, Kubernetes, Terraform). Compétences en IA et automatisation : - Utilisation d'outils d'IA générative (ex : GitHub Copilot) pour automatiser les tâches. - Expérience avec des langages de script (Python, PowerShell, Bash) pour automatiser des tâches via l'IA. - Maîtrise des bonnes pratiques de sécurité (chiffrement, gestion des accès). - Connaissance des enjeux RGPD et des outils d'IA pour la conformité. - Expérience avec les bases de données cloud Azure. - Connaissances SQL Server, MongoDB. Soft Skills : - Esprit d'innovation : Capacité à proposer des solutions créatives utilisant l'IA. - Collaboration : Travailler avec des équipes pluridisciplinaires. - Pédagogie : Former les équipes aux outils d'IA et aux bonnes pratiques. - Résolution de problèmes : Analyser et résoudre des problèmes complexes avec des outils d'IA. Si vous êtes motivé(e) par ce challenge et que vous possédez les compétences requises, nous serions ravis de recevoir votre candidature pour ce poste !",
+    "metier": "Gestionnaire de base de données",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Docker",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "MySQL",
+      "PostgreSQL",
+      "Python",
+      "SQL",
+      "Terraform",
+      "Automatisation de pipelines",
+      "Cybersécurité",
+      "Résolution de problèmes",
+      "Sécurité informatique",
+      "Pipelines de données",
+      "Qualité des données",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Design patterns"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons notre Ingénieur bases de données Spécialisé en IA et Automatisation.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 21,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:54.346190",
+  "input_hash": "276d66d45107c1905a1b27ef17f0972ee32ba53f63050e7bec7541b85bf0a103",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

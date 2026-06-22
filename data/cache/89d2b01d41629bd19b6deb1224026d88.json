@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:2136387",
+  "value": {
+    "id": "2136387",
+    "intitule": "Technicien de Test H/F",
+    "entreprise": "MBDA",
+    "territoire": "41 - Selles-Saint-Denis",
+    "ville": "41241",
+    "code_postal": "41300",
+    "contrat": "CDI",
+    "date_creation": "2025-09-10",
+    "date": "2025-09-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2136387",
+    "description": "POSTE : Technicien de Test H/F\nDESCRIPTION : Participez à l'intégration finale de nos produits en rejoignant notre site de Selles-Saint-Denis, situé au coeur de la Sologne.   \nRejoignez la Direction qui, tout au long du cycle de développement, conçoit, fabrique et teste nos systèmes de missiles, ainsi que les équipements associés !   \nAu sein de la ligne Production Missiles, vous avez pour mission de réaliser les tests, exploiter les résultats en vue d'attester de la conformité du produit et de vous assurer de la fonctionnalité du banc de tests. Vous réalisez et pilotez les tests dans le cadre d'expertises et faites évoluer nos process.  \nGrâce à vos compétences, vous :  \n- Préparez les tests : appréhendez et utilisez les process des opérations de maintenance, vous assurez de la disponibilité et de la fonctionnalité de vos moyens de test, participez à leur maintenance, suivre leurs évolutions, appliquez les procédures de tests validées auprès des services méthodes et qualité,  \n- Réalisez les tests : les intégrez et les menez, alertez en cas de panne produits/bancs et participez à l'analyse des défauts produits/bancs, participez à des expertises techniques, assurez le suivi documentaire en cas de problèmes, utilisez les retours d'expériences, participez aux recettes des produits en présence des clients, alimentez les bases de données,  \n- Participez aux actions \"terrain\" définies en amont dans le cadre de chantier(s) d'amélioration continue, d'installation ou d'évolution du dispositif de test,  \nLe poste est en horaires 2x8.  \n  \nNotre rémunération comporte un salaire fixe et des éléments additionnels individuels (une part variable pour nos salariés cadres et une prime d'ancienneté ainsi qu'une prime annuelle pour nos salariés non-cadres) ou collectifs dépendant de la performance et des résultats de l'entreprise (participation, intéressement).  \nDe nombreux services/avantages sont également proposés : restaurant d'entreprise, épargne salariale (PEG, PERCOL), protection sociale (mutuelle et prévoyance), comité social et économique, infirmerie et service de santé au travail interne\nPROFIL : De formation Bac +2/+3 en électronique, informatique industrielle, mesures physiques ou équivalent, vous avez idéalement une première expérience dans un poste similaire dans un des environnements suivants : défense, aéronautique ou automobile.  \nUne expérience dans l'hyperfréquence serait un plus.  \nVous êtes à l'aise dans les environnements électriques et pyrotechniques.  \nVous faites preuve de rigueur, de patience et de perspicacité.   \nLes défis technologiques de l'industrie de défense vous motivent ? Envoyez-nous votre candidature !",
+    "metier": "Spécialiste test et validation logiciel ou application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Intelligence artificielle",
+      "Vue.js",
+      "Résolution de problèmes",
+      "Gestion de projet",
+      "Tests automatisés",
+      "Code review"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +2",
+        "level": 4,
+        "required": false,
+        "source_sentence": "PROFIL : De formation Bac +2/+3 en électronique, informatique industrielle, mesures physiques ou équivalent, vous avez idéalement une première expérience dans un poste similaire dans un des environnements suivants : défense, aéronautique ou automobile.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:49.995010",
+  "input_hash": "69fd85fe71012605c7b9edf9c6a4c3e3dd3eb639870998a6580dcd01911f7489",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

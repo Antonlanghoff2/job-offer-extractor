@@ -1,0 +1,79 @@
+{
+  "key": "offer_extraction:208KWTZ",
+  "value": {
+    "id": "208KWTZ",
+    "intitule": "Ingénieur DevOps (H/F)",
+    "entreprise": "SOCIETE POUR L'INFORMATIQUE INDUSTRIELLE",
+    "territoire": "06 - VALBONNE",
+    "ville": "06152",
+    "code_postal": "06560",
+    "contrat": "CDI",
+    "date_creation": "2026-05-19",
+    "date": "2026-05-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208KWTZ",
+    "description": "Nous recherchons pour notre agence de Sophia Antipolis un Ingénieur DevOps.\nRattaché(e) à un de nos projets, votre rôle d'ingénieur DevOps recouvrira différents types d'activités :\n\n     - Installer, administrer et faire évoluer les différentes solutions d'automatisation.\n     - Automatiser et orchestrer les différentes chaines d'intégration continue, de compilation et de livraison, et contribuer à l'automatisation des actes d'administration.\n      - Automatiser le déploiement et la configuration des systèmes et la configuration des applications.\n      - Assurer un support aux utilisateurs des plates-formes d'intégration continue et de déploiement.\n      - Documenter les processus mis en place et assurer les formations nécessaires.\n      - Au-delà de vos compétences techniques, vous participerez à la création et à la diffusion d'une culture DevOps et la mise en place de nouvelles méthodes de travail et d'interaction entre production et études.\n\nDe formation Bac +5 ou équivalent spécialisée dans l'informatique, vous possédez une expérience de minimum 3 ans en tant que développeur sur des projets à fortes valeurs ajoutées (C++, JAVA, PHP).\nVous possédez une bonne connaissance des outils d'intégration tels que les systèmes de gestion de configuration, ainsi que les outils d'intégration continue.\nVote relationnel et votre esprit d'équipe vous permettront de vous intégrer rapidement dans l'environnement de ces projets hautement stratégiques.\n\nLes compétences requises sont :\n\n    -  Maîtrise de outils CI/CD : Jenkins, GitHub/GitLab, Jira.\n    -  Maitrise des environnements Cloud (Azure, AWS, Google),\n     - Une pratique du scripting (Shell, Python),\n     - Une expérience sur les outils de déploiement continu comme Docker, Kubernetes, Git, Ansible.\n     - Et une connaissance des langages de programmation (Java, C#,.) qui sera grandement appréciée.\n\nEn tant que #Fungenieur, capacité d'adaptation et sens du service sont les deux qualités qui vous permettent de monter en compétence et d'évoluer.\n\nSi vous aimez les projets techniques et les challenges, n'hésitez plus et postulez !\nUn suivi régulier et personnalisé sera effectué par votre ingénieur commercial. Selon vos compétences, vos aspirations et les opportunités, des responsabilités et des évolutions vous seront proposées. Nos missions s'inscrivent en partenariat avec nos clients sur la durée. Nous aidons dans la mobilité les nouveaux collaborateurs venant d'une autre région.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Docker",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "Python",
+      "CI/CD",
+      "Gestion de projet",
+      "Product Management",
+      "MLOps",
+      "Documentation technique",
+      "Résolution de problèmes",
+      "Cybersécurité",
+      "Intégration continue",
+      "Pipelines de données",
+      "Tests automatisés"
+    ],
+    "salaire_min": 38000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons pour notre agence de Sophia Antipolis un Ingénieur DevOps.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Rattaché(e) à un de nos projets, votre rôle d'ingénieur DevOps recouvrira différents types d'activités :",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac +5 ou équivalent spécialisée dans l'informatique, vous possédez une expérience de minimum 3 ans en tant que développeur sur des projets à fortes valeurs ajoutées (C++, JAVA, PHP).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 20,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:38.418337",
+  "input_hash": "6c487a6d1a943140ebcb61386d61b2c666a73276d901bd269d897472d0e052b8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

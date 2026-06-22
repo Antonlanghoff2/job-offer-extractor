@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:207GRGK",
+  "value": {
+    "id": "207GRGK",
+    "intitule": "ALTERNANCE - INGENIEUR AMELIORATION CONTINUE (H/F)",
+    "entreprise": "FRANCE TRANSFO",
+    "territoire": "57 - ENNERY",
+    "ville": "57193",
+    "code_postal": "57365",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2026-04-21",
+    "date": "2026-04-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/207GRGK",
+    "description": "Vous avez - de 30 ans ou sans condition d'âge si vous êtes travailleur handicapé et vous souhaitez passer un diplôme d'ingénieur Qualité\n\nNous vous proposons d'intégrer les équipes Qualité et Satisfaction client pour des missions hybrides et variées de gestion de la qualité système et qualité fournisseurs. Vous interviendrez aussi sur la gestion des retours clients (non-conformités).\n\nVous évoluerez au sein d'un environnement empreint à l'amélioration continue. \n Vos missions : \n\n Mission 1 :  Support réclamation clients\n\nAssister le responsable qualité client sur le développement de nouveaux outils de gestion (automatisation de tâches sans valeur ajoutée, analyse statistique, intégration IA.)\nAssister le Responsable Satisfaction Clients dans l'analyse des non-conformités remontées, avec suivi de l'implémentation des plans d'action en usine\n\nMission 2 : Support Qualité fournisseurs\n\nAssister le responsable qualité fournisseur sur le développement de nouveaux outils de gestion (automatisation de tâches sans valeur ajoutée, analyse statistique, intégration IA.)\n\nMission 3 : Support Qualité système\n\nAssister le Responsable Qualité Système sur la migration de la base documentaire vers le système Schneider Electric OMNEX puis assurer les formations au personnel\nSuivre les mises à jour documentaires dans la base de données officielle.\nCompétences recherchées :\n\nIntérêt marqué pour l'intelligence artificielle et compréhension des usages appliqués aux métiers (automatisation, analyse, optimisation des processus).\nCompétences avancées en Excel, incluant VBA, création de macros, automatisation de tâches et traitement de données complexes.\nNotions de développement et/ou compréhension d'un ou plusieurs langages de programmation (ex. : Python, SQL, JavaScript), avec capacité à lire, adapter ou produire du code simple.\nExcellente aisance rédactionnelle en français et en anglais (niveau minimum B2), incluant la capacité à structurer des contenus professionnels et à adapter le message à différents interlocuteurs.\nCapacité démontrée à travailler en équipe, en mode collaboratif et transverse, et à communiquer efficacement avec différents départements et parties prenantes.\n",
+    "metier": "Responsable de sécurité industrielle",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "JavaScript",
+      "Python",
+      "SQL",
+      "Automatisation de pipelines",
+      "Gestion de projet",
+      "Product Management",
+      "Data Engineering",
+      "Analyse de données",
+      "Code review",
+      "Qualité des données"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 30000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Vous avez - de 30 ans ou sans condition d'âge si vous êtes travailleur handicapé et vous souhaitez passer un diplôme d'ingénieur Qualité",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:15.777942",
+  "input_hash": "f068baecd0ee1ca6e7c86bc802e9db8835f5b04903f48e2be5dcdf00ba4ac00e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,79 @@
+{
+  "key": "offer_extraction:3785703",
+  "value": {
+    "id": "3785703",
+    "intitule": "Segula Technologies - Ingénieur / Ingénieure en automatismes en industrie (H/F)",
+    "entreprise": "",
+    "territoire": "78 - Vélizy-Villacoublay",
+    "ville": "78640",
+    "code_postal": "78140",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3785703",
+    "description": "Validation et qualification Vérifier la conformité des paramétrages des postes d’enclenchement. Contrôler l’application des règles génériques de signalisation ferroviaire. Préparer et exécuter les campagnes de tests sur environnement hôte et cible. Analyser les résultats et vérifier la conformité des comportements attendus. Participer aux revues de validation et aux activités IVVQ. Gestion des anomalies Identifier et analyser les dysfonctionnements détectés lors des essais. Réaliser les investigations de premier niveau. Rédiger et suivre les Faits Techniques jusqu’à leur clôture. Collaborer avec les équipes de développement pour la résolution des anomalies. Documentation et traçabilité Produire les rapports de validation et comptes rendus d’essais. Rédiger les comptes rendus de bon paramétrage. Maintenir la documentation de traçabilité et les référentiels projet. Assurer la conformité documentaire des activités réalisées. Automatisation des tests Développer des scripts et outils d’automatisation en Python. Automatiser l’exécution des campagnes de tests. Automatiser la collecte et l’analyse des résultats. Mettre en place des indicateurs et rapports automatisés. Participer à l’amélioration continue des processus IVVQ. Vous avez un Bac+5 (École d’Ingénieur ou Master) en informatique, systèmes embarqués, automatisme ou signalisation ferroviaire. Compétences techniques Expérience en signalisation ferroviaire et systèmes d’enclenchement. Maîtrise des activités de Vérification, Validation et Qualification (IVVQ). Développement et automatisation sous Python. Connaissances en C, C++ ou Java. Utilisation des outils Git, Jira, DOORS, ClearCase et PyCharm. Environnements Linux, Windows, RTX ou VxWorks. Connaissances métier Norme EN 50128. Processus qualité applicables aux systèmes critiques. Gestion de configuration et intégration continue. Méthodologies Agile / Scrum.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ferroviaire",
+      "Gestion de projet",
+      "Git",
+      "Java",
+      "Linux",
+      "Python",
+      "Vue.js",
+      "CI/CD",
+      "Définition d'indicateurs",
+      "Tests automatisés",
+      "Qualité des données",
+      "Documentation technique",
+      "Intégration continue",
+      "API",
+      "Analyse de données",
+      "Backend",
+      "Sécurité informatique",
+      "Résolution de problèmes",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous avez un Bac+5 (École d’Ingénieur ou Master) en informatique, systèmes embarqués, automatisme ou signalisation ferroviaire.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous avez un Bac+5 (École d’Ingénieur ou Master) en informatique, systèmes embarqués, automatisme ou signalisation ferroviaire.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Vous avez un Bac+5 (École d’Ingénieur ou Master) en informatique, systèmes embarqués, automatisme ou signalisation ferroviaire.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 20,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:52.126837",
+  "input_hash": "2b9801e1198359d35faf39bb5c0135a7119c4c722291ba860f5eea16fa72c3ce",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

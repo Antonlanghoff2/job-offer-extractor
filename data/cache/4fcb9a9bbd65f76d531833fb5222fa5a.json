@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:4008645",
+  "value": {
+    "id": "4008645",
+    "intitule": "COMMERCIAL SEDENTAIRE CHEZ EDITEUR LOGICIEL (H/F)",
+    "entreprise": "",
+    "territoire": "59 - Lille",
+    "ville": "59350",
+    "code_postal": "59000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4008645",
+    "description": "Pour notre client, un éditeur de Logiciel de GMAO (Gestion de la Maintenance Assistée par Ordinateur) à taille humaine et situé sur la métropole Lilloise, nous recherchons un Commercial Sédentaire (Vente et Conseils par téléphone) afin de venir renforcer l'équipe en place. Après une formation aux logiciels et à leurs fonctionnalités. Vous serez chargé de commercialiser une offre logicielle et formation auprès d'une clientèle constituée essentiellement de PME du monde industriel sur le secteur géographique qui vous sera confiée. Votre base de travail sera constituée de Clients existant et de prospects qualifiés. Des outils modernes sont à votre disposition (CRM) afin de mener des actions commerciales efficaces, ciblées et pertinentes. De formation BAC+2/3 idéalement en Commerce, vous avez une première expérience en tant que Commercial Sédentaire ou télévendeur B to B. Idéalement, vous êtes passionné d'informatique, ou, du moins, vous en avez une bonne compréhension et êtes attiré par ce domaine. Une expérience ou des connaissances en relation avec le monde industriel serait un plus apprécié. A l'aise au téléphone, dynamique, actif, souriant, vos qualités commerciales, votre réparti, votre écoute sont reconnues de tous. Vous avez un bon rédactionnel et un bon esprit d'équipe. Pour les candidats qui le souhaitent, une période d'intégration via une fonction d'Assistant Commercial peut être aménager quelques temps afin de vous préparer au mieux à votre fonction. Le salaire est constitué d'un fixe, d'un variable et de primes.",
+    "metier": "Attaché commercial / Attachée commerciale",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Vision par ordinateur"
+    ],
+    "salaire_min": 25000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC+2",
+        "level": 4,
+        "required": false,
+        "source_sentence": "De formation BAC+2/3 idéalement en Commerce, vous avez une première expérience en tant que Commercial Sédentaire ou télévendeur B to B.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:14.736477",
+  "input_hash": "c370762bf980e0e6e0150824cbde03f423a996bcc2984e739dcc01d383ecfa53",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

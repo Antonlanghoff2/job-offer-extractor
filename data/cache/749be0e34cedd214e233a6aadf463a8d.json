@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:3469464",
+  "value": {
+    "id": "3469464",
+    "intitule": "Gestionnaire de paie, consultant logiciel (H/F)",
+    "entreprise": "ALTO",
+    "territoire": "35 - Chantepie",
+    "ville": "35055",
+    "code_postal": "35135",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3469464",
+    "description": "RESPONSABILITÉS : Pour renforcer son équipe et accompagner ses clients dans la maîtrise de leurs outils et processus RH, vos missions principales seront le support aux clients, le gestion de la paie ainsi que la formation. 1. Support technique (Hotline) – Le lien essentiel entre nos clients et nos solutions • Assurer une assistance technique et fonctionnelle aux utilisateurs. • Diagnostiquer et résoudre les incidents logiciels. • Assurer une veille légale RH pour garantir la conformité de nos solutions. • Gérer les tickets clients et contribuer à l'amélioration continue de notre documentation. 2. Gestion de la paie – L'expertise au cœur de notre activité • Produire la paie dans un environnement multi-conventionnel, en respectant les cadres réglementaires. • Traiter les éléments variables, établir les bulletins de paie et réaliser les déclarations sociales (DSN). • Assurer le suivi administratif du personnel (contrats, absences, soldes de tout compte, etc.). • Maîtrise des logiciels Silae et OpenPaye : un atout majeur ! 3. Conseil & accompagnement – Le partenaire de confiance de nos clients • Présenter et démontrer nos solutions en collaboration avec le service commercial. • Paramétrer les dossiers clients sur les logiciels Silae/OpenPaye. • Conseiller les clients sur l'organisation de leurs processus de paie et les accompagner dans leurs projets RH. 4. Formation – Transmettre et inspirer • Animer des formations en distanciel et en présentiel. • Créer des supports pédagogiques innovants (guides, tutoriels, vidéos). • Assurer un suivi post-formation pour garantir la satisfaction et la montée en compétences des utilisateurs. PROFIL RECHERCHÉ : Vous êtes passionné(e) par la gestion de la paie, le conseil et la formation. Vous aimez allier expertise technique et relation client. Issu(e) d'une formation Bac+2/3 ou titre professionnel en gestion, RH ou paie (type BTS, BUT, licence), Vous avez une bonne maîtrise du pack Office, notamment Excel. Une initiation aux logiciels Silae et OpenPaye sera proposée lors de votre intégration. Une expérience préalable sur ces outils serait un vrai plus. Vous êtes reconnu(e) pour votre rigueur, votre organisation et votre ouverture d'esprit votre pédagogie, sens du service client, discrétion et confidentialité.",
+    "metier": "Gestionnaire paie",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Relation Client",
+      "Documentation technique",
+      "Gestion de projet",
+      "Sécurité informatique",
+      "Qualité des données",
+      "Feature Engineering"
+    ],
+    "salaire_min": 26000,
+    "salaire_max": 0,
+    "teletravail": "remote",
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation Bac+2/3 ou titre professionnel en gestion, RH ou paie (type BTS, BUT, licence), Vous avez une bonne maîtrise du pack Office, notamment Excel.",
+        "confidence": 0.9
+      },
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation Bac+2/3 ou titre professionnel en gestion, RH ou paie (type BTS, BUT, licence), Vous avez une bonne maîtrise du pack Office, notamment Excel.",
+        "confidence": 0.9
+      },
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation Bac+2/3 ou titre professionnel en gestion, RH ou paie (type BTS, BUT, licence), Vous avez une bonne maîtrise du pack Office, notamment Excel.",
+        "confidence": 0.9
+      },
+      {
+        "label": "licence",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation Bac+2/3 ou titre professionnel en gestion, RH ou paie (type BTS, BUT, licence), Vous avez une bonne maîtrise du pack Office, notamment Excel.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:23.854953",
+  "input_hash": "34346c22fd054f6775e2fbe18cbdaa4ceec76ceb620349e894fdc7ba3ff86bc7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

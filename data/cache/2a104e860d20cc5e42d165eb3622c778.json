@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3648381",
+  "value": {
+    "id": "3648381",
+    "intitule": "Ingénieur Logiciel Embarqué (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3648381",
+    "description": "SoHoft est une société de conseil à taille humaine basée à Toulouse. Notre identité s'articule autour de 3 empreintes : SoTech, SoGood, SoOffTheWall SoTech c'est s'engager à proposer la meilleure des expertises techniques à ses collaborateurs et clients. Consultants et Coachs forment une équipe complémentaire prête à relever les enjeux \"tech\". Quand on parle tous le même langage, en général, on se comprend. L'idée ! Grandir ensemble, développer nos compétences, satisfaire nos clients. #TeamDev #TestFactory #DevOps #Infra&Cloud #SafeTeam #DataDriver #LeadMyProject SoGood c'est s'engager à mettre à disposition le meilleur environnement de travail. Une équipe qui se régale techniquement c'est bien mais le faire dans un cadre qui te fait vivre une belle expérience de consultant c'est encore mieux ! Nous avons (re)pensé toutes les étapes clés comme l'onboarding, le parcours... bref on n'est pas parfait mais on est animé par cette volonté de bien faire notre métier... en étant SoGood quoi ! #ConsultantIsKing #GoodVibes #FrenchQualitat #CoachsPassionnés #CousuMain #SoGreen SoOffTheWall c'est s'engager à faire vivre des expériences qui permettent d'aller au-delà. Bien faire son métier c'est bien mais pourquoi s'arrêter là ? Notre volonté est de faire de notre entreprise un instrument d'épanouissement personnel, une invitation à la découverte, une douce parenthèse et pourquoi pas une machine à rêves. #LifeCoach #PersonalInvest #BigEvents #CherryOnTheCake Le poste : Ce poste nécessite l'éligibilité à une habilitation Secret Défense. SoWho !- Si tu aimes développer du logiciel embarqué proche du hardware, optimiser les performances de microcontrôleurs et participer au développement de drones autonomes' alors tu es clairement au bon endroit ! SoWhat !- Pour renforcer les équipes de notre client, acteur innovant dans le domaine des drones professionnels, nous recherchons un Ingénieur Logiciel Embarqué STM32. Tu interviendras sur le développement des briques logicielles critiques des systèmes de vol autonomes, depuis les drivers bas niveau jusqu'aux algorithmes de contrôle. Et pour mener tout ça à bien, tu seras amené à : - Concevoir, développer et maintenir des logiciels embarqués bare-metal ou sous RTOS léger sur microcontrôleurs STM32. - Développer des drivers bas niveau (GPIO, UART, SPI, I2C, CAN, PWM, DMA, timers). - Optimiser les performances des microcontrôleurs et la gestion de la mémoire. - Implémenter et maintenir les lois de commande de vol (stabilisation, navigatin, contrôle d'actionneurs). - Participer au développement d'algorithmes de contrôle (PID) et de fusion de données (filtre de Kalman, estimation d'état). - Intégrer les données issues des capteurs (IMU, GPS, baromètre, magnétomètre). - Réaliser les tests unitaires et les tests d'intégration embarqués. - Effectuer le débogage sur cible via JTAG/SWD. - Participer aux phases de validation sur bancs de tests et aux essais en vol. - Analyser les logs de vol afin d'améliorer les performances et la fiabilité des systèmes. - Documenter les développements réalisés et les choix techniques. - Participer à l'amélioration continue des outils et des méthodes de développement. Profil recherché : Issu d'une formation Bac+5 en systèmes embarqués, électronique, robotique ou automatique, tu justifies d'une expérience d'au moins 5 ans en développement logiciel embarqué bas niveau. - Tu as une expérience confirmée en développement embarqué en C/C++ sur microcontrôleurs (idéalement STM32). - Tu maîtrises les environnements bare-metal ou RTOS (FreeRTOS, Zephyr ou équivalent). - Tu possèdes de bonnes bases en automatique, contrôle commande ou traitement du signal. - Des connaissances en robotique, drones ou systèmes temps réel sont un plus. - Tu es à l'aise avec les protocoles de communication embarqués (SPI, I2C, UART, CAN). - Tu as déjà travaillé avec des toolchains ARM (GCC, clang). - Une expérience avec PX4, ArduPilot ou des environnements de simulation (HIL/SIL) serait appréciée. - Tu fais preuve de rigueur technique, d'autonomie et d'un bon esprit d'analyse. - Tu apprécies travailler sur des systèmes complexes mêlant software, électronique et algorithmique. - Dans le cadre de projets sensibles dans le domaine des systèmes autonomes, ce poste nécessite l'éligibilité à une habilitation Secret Défense. SoHow !- On se prend un café (ou autre), on échange, et ensuite on passe aux choses sérieuses. Of course, ce poste est ouvert aux salariés avec une reconnaissance Travailleurs handicapés",
+    "metier": "Ingénieur / Ingénieure systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Tests automatisés",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Analyse de données",
+      "Cybersécurité"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "SoWhat !- Pour renforcer les équipes de notre client, acteur innovant dans le domaine des drones professionnels, nous recherchons un Ingénieur Logiciel Embarqué STM32.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil recherché : Issu d'une formation Bac+5 en systèmes embarqués, électronique, robotique ou automatique, tu justifies d'une expérience d'au moins 5 ans en développement logiciel embarqué bas niveau. - Tu as une expérience confirmée en développement embarqué en C/C++ sur microcontrôleurs (idéalement STM32). - Tu maîtrises les environnements bare-metal ou RTOS (FreeRTOS, Zephyr ou équivalent). - Tu possèdes de bonnes bases en automatique, contrôle commande ou traitement du signal. - Des connaissances en robotique, drones ou systèmes temps réel sont un plus. - Tu es à l'aise avec les protocoles de communication embarqués (SPI, I2C, UART, CAN). - Tu as déjà travaillé avec des toolchains ARM (GCC, clang). - Une expérience avec PX4, ArduPilot ou des environnements de simulation (HIL/SIL) serait appréciée. - Tu fais preuve de rigueur technique, d'autonomie et d'un bon esprit d'analyse. - Tu apprécies travailler sur des systèmes complexes mêlant software, électronique et algorithmique. - Dans le cadre de projets sensibles dans le domaine des systèmes autonomes, ce poste nécessite l'éligibilité à une habilitation Secret Défense.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:20.986696",
+  "input_hash": "d33b87d414de60fa4a723be5b5c0c8cef8e93c89a415c8a13793ef890b9f67ae",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

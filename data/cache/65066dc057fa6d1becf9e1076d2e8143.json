@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3303903",
+  "value": {
+    "id": "3303903",
+    "intitule": "Développeur matériaux et procédés en industrie f/h",
+    "entreprise": "",
+    "territoire": "13 - Marignane",
+    "ville": "13054",
+    "code_postal": "13700",
+    "contrat": "Intérim - 7 Mois",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3303903",
+    "description": "L'agence de Synergie Marignane Aéronautique et Industrie recrute pour Airbus Helicopters un Ingénieur matériaux et procédés (H/F).Envie de faire décoller votre carrière ? Embarquez avec nous ! Sous la responsabilité du manager, vous intégrerez le département Qualité Industrielle en charge des procédés spéciaux. Vous contribuerez aux activités principales suivantes : industrialisation des procédés spéciaux, réalisation de la documentation, participation à la définition des outillages nécessaire, la mise au point atelier. Vous aurez également à assurer le calcul des temps industriel et à mener les actions correctives et curatives.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Intelligence artificielle",
+      "MLOps"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'agence de Synergie Marignane Aéronautique et Industrie recrute pour Airbus Helicopters un Ingénieur matériaux et procédés (H/F).Envie de faire décoller votre carrière ?",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:09.308542",
+  "input_hash": "bb1546219488646dd44acdcfa20b1d5679f3f8b6d0ece229962a3a6091f406da",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,1232 @@
+{
+  "key": "trends:45 - OLIVET",
+  "value": {
+    "territoire": "45 - OLIVET",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Intelligence artificielle": 2,
+      "Sécurité Informatique": 2,
+      "Analyse de données": 1,
+      "Data engineering": 1,
+      "Django": 1,
+      "Développement web": 1,
+      "Gestion de projet": 1,
+      "Git": 1,
+      "Java": 1,
+      "Model Drift": 1,
+      "Pipelines De Données": 1,
+      "Product Management": 1,
+      "Python": 1,
+      "Qualité Des Données": 1,
+      "Scalabilité": 1,
+      "SQL": 1,
+      "Symfony": 1,
+      "Veille Technologique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Sécurité informatique": 2
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Django",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Django": 1
+        }
+      },
+      {
+        "nom": "Développement web",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Développement web": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Java": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Product Management": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Scalabilité": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Symfony",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Symfony": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Veille technologique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 2
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Django": {
+        "Django": 1
+      },
+      "Développement web": {
+        "Développement web": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Java": {
+        "Java": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Product Management": {
+        "Product Management": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Symfony": {
+        "Symfony": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 1,
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Django",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Django",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Django",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Symfony",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Symfony",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Sécurité Informatique"
+      ],
+      [
+        "Django",
+        "Développement web",
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Python",
+        "SQL",
+        "Symfony",
+        "Analyse de données",
+        "Data engineering",
+        "Pipelines De Données",
+        "Veille Technologique",
+        "Qualité Des Données",
+        "Model Drift",
+        "Product Management",
+        "Sécurité Informatique",
+        "Scalabilité"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4068940",
+        "intitule": "IDEC H/F",
+        "entreprise": "",
+        "territoire": "45 - Olivet",
+        "contrat": "CDI",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4068940"
+      },
+      {
+        "id": "209MTLP",
+        "intitule": "Développeur Informatique (H/F)",
+        "entreprise": "IDDEA",
+        "territoire": "45 - OLIVET",
+        "contrat": "CDI",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209MTLP"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4068940",
+        "intitule": "IDEC H/F",
+        "entreprise": "",
+        "territoire": "45 - Olivet",
+        "contrat": "CDI",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4068940"
+      },
+      {
+        "id": "209MTLP",
+        "intitule": "Développeur Informatique (H/F)",
+        "entreprise": "IDDEA",
+        "territoire": "45 - OLIVET",
+        "contrat": "CDI",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209MTLP"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:03:23.514377",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

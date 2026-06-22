@@ -1,0 +1,625 @@
+{
+  "key": "trends:74 - Montagny-les-Lanches",
+  "value": {
+    "territoire": "74 - Montagny-les-Lanches",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Docker": 2,
+      "Git": 2,
+      "Intelligence artificielle": 2,
+      "Java": 2,
+      "Tests Automatisés": 2,
+      "AWS": 1,
+      "Azure": 1,
+      "Backend": 1,
+      "Data engineering": 1,
+      "Design Patterns": 1,
+      "Intégration Continue": 1,
+      "Kubernetes": 1,
+      "Résolution De Problèmes": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Docker",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Docker": 2
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Git": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Java": 2
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Tests automatisés": 2
+        }
+      },
+      {
+        "nom": "AWS",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "AWS": 1
+        }
+      },
+      {
+        "nom": "Azure",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Azure": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Design Patterns",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Design patterns": 1
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intégration continue": 1
+        }
+      },
+      {
+        "nom": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Kubernetes": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Docker": {
+        "Docker": 2
+      },
+      "Git": {
+        "Git": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Java": {
+        "Java": 2
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 2
+      },
+      "AWS": {
+        "AWS": 1
+      },
+      "Azure": {
+        "Azure": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Design Patterns": {
+        "Design patterns": 1
+      },
+      "Intégration Continue": {
+        "Intégration continue": 1
+      },
+      "Kubernetes": {
+        "Kubernetes": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 1,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 1,
+      "Intérim - 3 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Docker",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Azure",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "AWS",
+        "Azure",
+        "Docker",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Tests Automatisés",
+        "Backend",
+        "Résolution De Problèmes"
+      ],
+      [
+        "Docker",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Kubernetes",
+        "Data engineering",
+        "Tests Automatisés",
+        "Design Patterns",
+        "Intégration Continue"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4039882",
+        "intitule": "Alternance - Développeur/euse Java - Développement régional - Annecy (H/F)",
+        "entreprise": "",
+        "territoire": "74 - Montagny-les-Lanches",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-06-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4039882"
+      },
+      {
+        "id": "3535262",
+        "intitule": "Développeur(euse) Expérimenté(e) - Java et Angular - Développement Régional - Annecy (H/F)",
+        "entreprise": "",
+        "territoire": "74 - Montagny-les-Lanches",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3535262"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4039882",
+        "intitule": "Alternance - Développeur/euse Java - Développement régional - Annecy (H/F)",
+        "entreprise": "",
+        "territoire": "74 - Montagny-les-Lanches",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-06-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4039882"
+      },
+      {
+        "id": "3535262",
+        "intitule": "Développeur(euse) Expérimenté(e) - Java et Angular - Développement Régional - Annecy (H/F)",
+        "entreprise": "",
+        "territoire": "74 - Montagny-les-Lanches",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3535262"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:12.576186",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,75 @@
+{
+  "key": "offer_extraction:3755674",
+  "value": {
+    "id": "3755674",
+    "intitule": "Cegedim - Ingénieur / Ingénieure big data (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Boulogne-Billancourt",
+    "ville": "92012",
+    "code_postal": "92100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3755674",
+    "description": "Fondée en 1969, Cegedim est une entreprise innovante de technologies et de services spécialisée dans la gestion des flux numériques de l’écosystème santé et BtoB, ainsi que dans la conception de logiciels métier destinés aux professionnels de santé et de l’assurance. Cegedim compte plus de 6 700 collaborateurs dans plus de 10 pays et a réalisé un chiffre d’affaires de 654 millions d’euros en 2024. GERS Data est la référence française des données pharmaceutiques, filiale du Groupe Cegedim. Nos plateformes alimentent les outils de pilotage commercial, les études épidémiologiques et les entrepôts de données de santé utilisés par les plus grands laboratoires français et européens. Vous rejoindrez une équipe d’ingénierie Data en pleine transformation, au cœur du passage vers des architectures modernes : Data Platform cloud-native, pipelines scalables. Missions En tant que Data Engineer Senior, vous êtes un pilier technique de la Data Platform de GERS Data. Vos responsabilités couvrent l’ensemble du cycle de vie de la donnée : Concevoir, développer et maintenir des pipelines de données robustes et scalables (ETL/ELT) depuis les sources LGO officinales jusqu’aux datamarts métier Architecturer et optimiser les entrepôts de données (SQL Server, ClickHouse) : modélisation, partitionnement, indexation, performance des requêtes Orchestrer les flux de traitement avec Apache Airflow : définition des DAGs, gestion des dépendances, monitoring et alerting Contribuer à la qualité des données : implémenter des systèmes de détection d’anomalies, de scoring de fiabilité et de réconciliation sur les flux journaliers Participer à la stratégie de migration et d’évolution de la plateforme data (Elasticsearch → ClickHouse, SQL Server, cloud) Collaborer étroitement avec les Product Managers et les équipes d’analyse pour traduire les besoins métier en solutions techniques Contribuer à la culture d’ingénierie : revues de code, documentation, pair programming, mentorat des profils juniors Environnement technique - Bases de données : SQL Server, ClickHouse, Elasticsearch Orchestration : Apache Airflow Langages : Python, SQL, TypeScript/Node.js Infra : Docker, Kubernetes, CI/CD GitLab Outils : Git, Jira, Confluence Ce que nous offrons Un rôle clé dans la modernisation d’une Data Platform traitant des milliards de lignes de données pharmaceutiques Un environnement technique exigeant et stimulant, avec une vraie autonomie Une équipe R&D structurée (Développement, Data Engineering, Product, UX/UI) La sécurité d’un grand groupe (Cegedim) avec l’agilité d’une équipe produit Télétravail partiel, équipement de qualité, mutuelle, tickets restaurant, primes (intéressement, vacances). Vous êtes un ingénieur Data expérimenté, à l’aise aussi bien sur les aspects bas niveau (SQL, optimisation) que sur l’architecture globale des systèmes de données. De formation Bac +5 en Ecole d'ingénieur ou Master Big Data ou équivalent Une expérience de 5 ans minimum sur des missions de Data Engineering (sans compter des stages ou alternances) Compétences techniques SQL avancé : optimisation de requêtes complexes, procédures stockées, tuning sur SQL Server et/ou ClickHouse Python maîtrisé : développement de pipelines, scripting, manipulation de données (pandas, polars, sqlalchemy) Orchestration : Apache Airflow (DAGs, XComs, pools, connexions) Modélisation : expertise DWH et datamart (schémas étoile/flocon, conception de datamarts métier, gestion de l’historisation) Conteneurisation et CI/CD : Docker, Git, pipelines de déploiement Notions Kubernetes appréciées (déploiement, sizing, monitoring) Soft skills Rigueur et sens de la qualité de la donnée Autonomie et capacité à prendre des décisions techniques Curiosité et capacité d’adaptation dans un environnement en évolution rapide Bon communicant, capable d’échanger avec des profils non techniques.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Data engineering",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "JavaScript",
+      "Kubernetes",
+      "Pandas",
+      "Python",
+      "SQL",
+      "TypeScript",
+      "Vue.js",
+      "CI/CD",
+      "Automatisation de pipelines",
+      "Analyse de données",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 1969,
+    "salaire_max": 1969,
+    "teletravail": "télétravail partiel",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous êtes un ingénieur Data expérimenté, à l’aise aussi bien sur les aspects bas niveau (SQL, optimisation) que sur l’architecture globale des systèmes de données.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "De formation Bac +5 en Ecole d'ingénieur ou Master Big Data ou équivalent Une expérience de 5 ans minimum sur des missions de Data Engineering (sans compter des stages ou alternances) Compétences techniques SQL avancé : optimisation de requêtes complexes, procédures stockées, tuning sur SQL Server et/ou ClickHouse Python maîtrisé : développement de pipelines, scripting, manipulation de données (pandas, polars, sqlalchemy) Orchestration : Apache Airflow (DAGs, XComs, pools, connexions) Modélisation : expertise DWH et datamart (schémas étoile/flocon, conception de datamarts métier, gestion de l’historisation) Conteneurisation et CI/CD : Docker, Git, pipelines de déploiement Notions Kubernetes appréciées (déploiement, sizing, monitoring) Soft skills Rigueur et sens de la qualité de la donnée Autonomie et capacité à prendre des décisions techniques Curiosité et capacité d’adaptation dans un environnement en évolution rapide Bon communicant, capable d’échanger avec des profils non techniques.",
+        "confidence": 0.7
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "De formation Bac +5 en Ecole d'ingénieur ou Master Big Data ou équivalent Une expérience de 5 ans minimum sur des missions de Data Engineering (sans compter des stages ou alternances) Compétences techniques SQL avancé : optimisation de requêtes complexes, procédures stockées, tuning sur SQL Server et/ou ClickHouse Python maîtrisé : développement de pipelines, scripting, manipulation de données (pandas, polars, sqlalchemy) Orchestration : Apache Airflow (DAGs, XComs, pools, connexions) Modélisation : expertise DWH et datamart (schémas étoile/flocon, conception de datamarts métier, gestion de l’historisation) Conteneurisation et CI/CD : Docker, Git, pipelines de déploiement Notions Kubernetes appréciées (déploiement, sizing, monitoring) Soft skills Rigueur et sens de la qualité de la donnée Autonomie et capacité à prendre des décisions techniques Curiosité et capacité d’adaptation dans un environnement en évolution rapide Bon communicant, capable d’échanger avec des profils non techniques.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 16,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:28.378119",
+  "input_hash": "1a6cdabd0b1fe3024426ebf95def7e627038bb9da50d6ebfb138b9494726d6b4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

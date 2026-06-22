@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:209JRTM",
+  "value": {
+    "id": "209JRTM",
+    "intitule": "Développeur/Concepteur informatique (H/F)",
+    "entreprise": "BDO PARIS",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JRTM",
+    "description": "Vos missions :\nAu sein du bureau de Grenoble, en tant que développeur/ concepteur informatique vous travaillerez sur :\n- Le développement d'interfaces entre logiciels au moyen d'API, de transferts inter-bases ou de synchronisation de fichiers (Salesforce, Pennylane, SILAE, Akuiteo, GLPI, RCA.).\n- La création d'entrepôts de données.\n- La création, mises à jour de sites et listes Sharepoint.\n- Le développement sur la Power platform de Microsoft.\n- Le développement sur extranet, portails, intranet\n- L'analyse fonctionnelle et technique avec les métiers et les fonctions support.\n- La conception des applications en conformité avec les normes de sécurité des systèmes d'information et la protection des données personnelles en relation avec l'équipe SSI et le DPO.\n- L'assistance au déploiement de flux Mulesoft et à la définition d'API en RAML.\n\nVotre futur environnement de travail :\n- 3 associés et 70 collègues\n- Des locaux récents, facilement accessibles en transports en commun\n- Une ambiance conviviale : afterworks, déjeuners pizzas mensuels, jeux de sociétés, massages...\n- Parcours d'intégration et de formation personnalisé\n- Gymlib : abonnement sport & bien-être\n\nTitulaire d'un diplôme Bac+2 avec une orientation développement et préparant un diplôme Bachelor ou Master avec spécialité développement informatique.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Protection Des Données"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Titulaire d'un diplôme Bac+2 avec une orientation développement et préparant un diplôme Bachelor ou Master avec spécialité développement informatique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "diplôme Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Titulaire d'un diplôme Bac+2 avec une orientation développement et préparant un diplôme Bachelor ou Master avec spécialité développement informatique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Titulaire d'un diplôme Bac+2 avec une orientation développement et préparant un diplôme Bachelor ou Master avec spécialité développement informatique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:23.388510",
+  "input_hash": "cb7566e9b4cbca79817605f8baa7956daf1c3fc698c91e4478e9b3ea9d12e1da",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

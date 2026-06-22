@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:5112736",
+  "value": {
+    "id": "5112736",
+    "intitule": "Développeur / Développeuse web (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2025-11-11",
+    "date": "2025-11-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5112736",
+    "description": "Description du poste :\nIngénieur Études & Développements - C# Full Stack Web (H/F)\nTélétravail possible, avec déplacements réguliers au siège (Metz)\nÀ propos\nVous recherchez un environnement technique stimulant, où l'exigence de qualité s'allie à une forte culture d'équipe ?\nNotre client, entreprise innovante reconnue pour son expertise dans les solutions logicielles de supervision, conjugue l'agilité d'une structure à taille humaine avec l'impact d'un acteur majeur sur des marchés porteurs tels que l'environnement, l'énergie ou les infrastructures intelligentes.\nElle offre à ses équipes un cadre propice à l'innovation, au travail collaboratif et au développement continu des compétences.\nImplantée en France avec une présence internationale, l'entreprise vous propose de rejoindre une équipe passionnée, rigoureuse et investie dans des projets à forte valeur technologique.\nVos missions***Développer, maintenir et faire évoluer des applications web en environnement C#/Angular\n* Participer à l'analyse des besoins fonctionnels et techniques\n* Assurer l'intégration front-end (Angular, Typescript) et back-end (C#, Web API, MVC)\n* Contribuer à l'amélioration continue des outils, de l'architecture et des process\n* Produire une documentation technique claire et structurée\nDescription du profil :\nProfil recherché***Formation Bac +3 à Bac +8 en informatique\n* Expérience préalable en développement Web full stack\n* Maîtrise de C#, Angular, Typescript, HTML5, CSS, JavaScript\n* Connaissances solides en Web API, serveur web, MVC\n* Pratique des tests unitaires\n* Maîtrise des outils de versionning (Git, GitLab)\n* Une sensibilité UX/UI (Figma, Miro) est un plus apprécié\n* Autonomie, rigueur, esprit d'équipe et curiosité technique\n* Travail en environnement agile (SCRUM)\n* Anglais technique\nCe que vous y gagnez***Des projets innovants à fort enjeu technologique dans des secteurs clés\n* Une équipe à taille humaine, bienveillante et investie\n* Une montée en compétences continue sur les technologies Microsoft et web\n* Un encadrement de proximité et une dynamique collaborative forte\n* Un cadre de travail flexible avec la possibilité de full remote\nAvantages***Tickets restaurant\n* CSE avec dotation annuelle avantageuse\n* 5 semaines de congés payés + 11 jours de RTT\n* 1 jour de congé supplémentaire tous les 5 ans\n* Prime de vacances\n* Intéressement et participation",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "CSS",
+      "Développement web",
+      "Gestion de projet",
+      "Git",
+      "JavaScript",
+      "TypeScript",
+      "Vision",
+      "Application web",
+      "MLOps",
+      "API",
+      "Backend",
+      "Intégration continue"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur Études & Développements - C# Full Stack Web (H/F)",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché***Formation Bac +3 à Bac +8 en informatique",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +8",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché***Formation Bac +3 à Bac +8 en informatique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:54:27.012602",
+  "input_hash": "10e3f52217d7202f6dcad1b1c71359e0fa49a4354127332592b33c060adc4266",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:3559047",
+  "value": {
+    "id": "3559047",
+    "intitule": "Ingénieur Électronique H/F",
+    "entreprise": "Page Personnel",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-07",
+    "date": "2026-06-07",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3559047",
+    "description": "En tant qu'Ingénieur Électronique H/F, vous êtes en charge de la conception et du pilotage de projets électroniques en autonomie. Vos missions sont les suivantes : \n * Piloter des projets électroniques en autonomie, de la définition du besoin à la validation finale ;\n * Rédiger les cahiers des charges, spécifications techniques et documents de suivi ;\n * Concevoir et développer des solutions électroniques innovantes ;\n * Coordonner et piloter les sous-traitants et partenaires techniques ;\n * Assurer le reporting régulier et le suivi d'avancement des projets ;\n * Contribuer aux démarches de certification, de normalisation et d'amélioration continue.\n Vous intervenez quotidiennement sur le site de Bezons.\n* Vous êtes issu d'une formation Ingénieur ou Bac +5 en électronique, systèmes embarqués ou équivalent ;\n * Vous avez une solide maîtrise de l'électronique analogique et numérique ;\n * Vous avez une expérience en conception de cartes électroniques et routage ;\n * Vous maîtrisez les environnements embarqués temps réel et les langages C/C++ et Python ;\n * Vous avez des connaissances en FPGA et protocoles de communication industriels ;\n * Vous êtes rigoureux, autonome et doté d'un bon esprit d'analyse ;\n * Vous êtes à l'aise en gestion de projet et en relation avec des sous-traitants.\n* Primes ;\n * Tickets restaurant ;\n * Mutuelle.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Python",
+      "API",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieur Électronique H/F, vous êtes en charge de la conception et du pilotage de projets électroniques en autonomie.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes issu d'une formation Ingénieur ou Bac +5 en électronique, systèmes embarqués ou équivalent ;",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:02.288236",
+  "input_hash": "ca6e60cdc703065ca079f5163c558b5b31e53ef2039c5583a5fb48709ef772b9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

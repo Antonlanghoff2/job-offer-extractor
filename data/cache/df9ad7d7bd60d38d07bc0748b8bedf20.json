@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3621751",
+  "value": {
+    "id": "3621751",
+    "intitule": "Ingénieur Portage Modèles NN (H/F)",
+    "entreprise": "Mercato de l'emploi",
+    "territoire": "92 - Meudon",
+    "ville": "92048",
+    "code_postal": "92190",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3621751",
+    "description": "RESPONSABILITÉS : Nous recherchons un Ingénieur Compilateur IA & Activation de Modèles pour assurer la qualification, la validation et l'amélioration continue de la toolchain de compilation de modèles Vsora. Le rôle porte sur la compilation et la validation d'une large gamme de modèles IA de référence et clients, garantissant la correction fonctionnelle, la précision numérique, la robustesse du compilateur et une exécution optimale sur le matériel Vsora. Responsabilités principales : • Compiler des modèles de référence et clients via la toolchain Vsora et vérifier leur déploiement réussi sur le matériel cible. • Identifier, reproduire et déboguer les échecs de compilation, problèmes de conversion de graphes, opérateurs non supportés, divergences numériques et problèmes d'exécution runtime. • Valider la précision numérique en comparant les outputs de modèles compilés aux résultats de frameworks de référence et aux datasets golden. • Mesurer et analyser l'impact sur la précision résultant de la quantification et des optimisations du compilateur, en identifiant les couches, opérateurs ou architectures particulièrement sensibles à la précision réduite. • Travailler en étroite collaboration avec les développeurs de l'équipe IA pour isoler les causes racines, prioriser les correctifs, valider les améliorations et élargir la couverture de modèles. • Développer des frameworks de régression automatisés pour la validation continue de la fonctionnalité du compilateur, de la compatibilité des modèles, de la précision et des performances. PROFIL RECHERCHÉ : • Solides compétences en programmation Python et/ou C++. • Solide expérience avec les frameworks ML : PyTorch, TensorFlow, ONNX, JAX ou écosystèmes équivalents. • Expérience avec les compilateurs IA, frameworks d'optimisation de graphes, pipelines de conversion de modèles ou toolchains de déploiement. • Familiarité avec des technologies telles que ONNX Runtime, TensorRT, OpenVINO ou infrastructures de compilation similaires. • Solide compréhension des architectures de réseaux de neurones, graphes de calcul, implémentations d'opérateurs et exécution d'inférence. • La familiarité avec les accélérateurs IA, NPU, GPU ou architectures matérielles personnalisées est fortement souhaitée.",
+    "metier": "Chargé / Chargée de méthodes BTP",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "PyTorch",
+      "Python",
+      "TensorFlow",
+      "Résolution de problèmes",
+      "Tests automatisés",
+      "Gestion de projet",
+      "MLOps"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "RESPONSABILITÉS : Nous recherchons un Ingénieur Compilateur IA & Activation de Modèles pour assurer la qualification, la validation et l'amélioration continue de la toolchain de compilation de modèles Vsora.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:00.062505",
+  "input_hash": "9747b3ffa2b8655021336003e355ae5e7f81ffc00e5cfda68ac4d024cfc47d31",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

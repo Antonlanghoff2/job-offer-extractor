@@ -1,0 +1,114 @@
+{
+  "key": "trends:78 - Mantes-la-Ville",
+  "value": {
+    "territoire": "78 - Mantes-la-Ville",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Code Review": 1,
+      "Gestion de projet": 1,
+      "Qualité Des Données": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Code Review",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Code review": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Code Review": {
+        "Code review": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Gestion de projet",
+        "Code Review",
+        "Qualité Des Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "2791244",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "78 - Mantes-la-Ville",
+        "contrat": "CDI",
+        "date": "2026-05-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2791244"
+      }
+    ],
+    "offers": [
+      {
+        "id": "2791244",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "78 - Mantes-la-Ville",
+        "contrat": "CDI",
+        "date": "2026-05-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2791244"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:21.418451",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

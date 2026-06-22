@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:8518658",
+  "value": {
+    "id": "8518658",
+    "intitule": "Data scientist (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-01-31",
+    "date": "2026-01-31",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8518658",
+    "description": "Description du poste :\nL'Expert IA dans le domaine du traitement automatique des langues (TAL/NLP) intègrera une équipe chargée de définir et de piloter la mise en œuvre des outils d'analyse, de traitement et de croisement des données massives. Il apporte une expertise scientifique en matière de modélisation et d'IA et identifie les cas d'usage utiles à la valorisation de la donnée d'intérêt militaire et administrative. Vos principales missions seront de Effectuer une veille permanente des avancées technologiques civiles en IA appliquée à planification ou l'optimisation à grande échelle\n* Collaborer avec les différentes entités et experts métier du Ministère et du monde de la recherche pour identifier les applications pertinentes répondant aux besoins opérationnels Développer, adapter, expérimenter et évaluer des modèles d'IA pour le traitement automatique des langues (TAL/NLP) et en lien avec des applications multimodales Evaluer la qualité et la performance des modèles y compris par la mise en place de cadres évaluatifs prenant en compte le besoin métier et la fonction opérationnelle Travailler en étroite collaboration avec les équipes de développement logiciel pour l'intégration et le déploiement des modèles dans les applications et systèmes étatiques.\n* Contribuer à renforcer les compétences et les connaissances de l'équipe dans le domaine de l'IA et du traitement automatique des langues (TAL/NLP)\nDescription du profil :\nTitulaire d'un master 2 ou d'un doctorat dans le domaine, vous disposez de compétences solides en ML/DL parmi les sujets suivants : apprentissage profond, apprentissage statistique et symbolique, statistiques et traitement du signal, méthodologie d'évaluation de l'IA (confiance, certifiabilité, vulnérabilités), sûreté des systèmes d'IA/NLP.\nVous maîtrisez les langages et les bibliothèques comme python, PyTorch et TensorFlow et les fondamentaux de la science des données. Une expérience en R&D est un plus.",
+    "metier": "Data scientist",
+    "niveau": "intermediaire",
+    "competences": [
+      "Deep learning",
+      "Intelligence artificielle",
+      "Machine learning",
+      "PyTorch",
+      "Python",
+      "TensorFlow",
+      "Cybersécurité",
+      "Déploiement de modèles",
+      "MLOps",
+      "Pipelines de données",
+      "Tests automatisés",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Titulaire d'un master 2 ou d'un doctorat dans le domaine, vous disposez de compétences solides en ML/DL parmi les sujets suivants : apprentissage profond, apprentissage statistique et symbolique, statistiques et traitement du signal, méthodologie d'évaluation de l'IA (confiance, certifiabilité, vulnérabilités), sûreté des systèmes d'IA/NLP.",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Titulaire d'un master 2 ou d'un doctorat dans le domaine, vous disposez de compétences solides en ML/DL parmi les sujets suivants : apprentissage profond, apprentissage statistique et symbolique, statistiques et traitement du signal, méthodologie d'évaluation de l'IA (confiance, certifiabilité, vulnérabilités), sûreté des systèmes d'IA/NLP.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:13.924140",
+  "input_hash": "03997734ce600abf730d41190bf17310119f433a47d3b7a8032aadbcf8580d6e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

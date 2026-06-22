@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:209ZRFX",
+  "value": {
+    "id": "209ZRFX",
+    "intitule": "Data Analyst / BI Analyst - Power BI (H/F)",
+    "entreprise": "BRAIN LOGIC",
+    "territoire": "75 - Paris 10e Arrondissement",
+    "ville": "75110",
+    "code_postal": "75010",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZRFX",
+    "description": "BRAINLOGIC accompagne ses clients dans la réalisation de leurs projets digitaux.  Nous recrutons pour l'un de nos clients un : Data Analyst / BI Analyst - Power BI H/F\nMission :\nAu sein de la Digital Factory, intégré(e) au pôle Data, vous mettez en œuvre des outils informatiques, des techniques analytiques et des méthodes statistiques afin de structurer, synthétiser et valoriser efficacement les données métiers.\nVous êtes responsable de la production et de la fiabilisation des indicateurs de performance permettant d'éclairer les prises de décision stratégiques et opérationnelles.\nLa mission porte principalement sur le pilotage financier et opérationnel d'une activité industrielle liée à la valorisation et au traitement des matières plastiques. Cette activité inclut notamment le suivi des flux issus des centres de tri vers différentes solutions de traitement (dont des unités de surtri), avec pour objectif d'améliorer la performance opérationnelle, la valorisation matière et la maîtrise économique.\nLes travaux porteront notamment sur la structuration, l'analyse et la restitution des données liées aux :\nVolumes traités\nCoûts de reprise\nCoûts de transport et de stockage\nActivités de recyclage\nImpacts financiers associés\nD'autres sujets data viendront compléter la mission en fonction des priorités du programme.\n\nActivités et responsabilités :\nRecueil et analyse des besoins métier\n-Échanger avec les équipes métiers afin de comprendre leurs enjeux de pilotage\n-Formaliser les besoins en indicateurs et tableaux de bord\n-Challenger les demandes avec le Product Owner dans la priorisation du backlog\nConception et développement Power BI\n-Modéliser les données selon des approches dimensionnelles (schéma en étoile / flocon)\n-Concevoir des mesures DAX robustes et optimisées\n-Développer des dashboards performants, ergonomiques et orientés usage métier\n-Administrer les workspaces, les accès et la sécurité (RLS)\nExploitation de l'écosystème Data\n-Consommer les données mises à disposition par les Data Engineers via une architecture Data Fabric (ou équivalent)\n-Garantir la qualité, la fraîcheur et la cohérence des données exploitées\n-Participer à l'amélioration de la gouvernance data\nCollaboration transverse\n-Travailler en étroite collaboration avec les Data Engineers\n-Remonter les anomalies de qualité ou de performance\n-Contribuer à l'évolution des modèles de données partagés\nFonctionnement Agile\n-Participer aux rituels SAFe : PI Planning, sprints, System Demos, rétrospectives\n-Contribuer à l'estimation et à la priorisation des User Stories Data\nDocumentation & gouvernance\n-Documenter les indicateurs, règles de gestion et sources de données\n-Garantir la traçabilité et l'harmonisation des définitions\nAccompagnement des utilisateurs\n-Former les utilisateurs métier à l'usage de Power BI en self-service\n-Diffuser les bonnes pratiques de data visualisation et de gouvernance\nAmélioration continue\n-Optimiser les performances des rapports et dashboards\n-Améliorer la qualité de la chaîne de restitution\n-Assurer une veille active sur l'écosystème Power BI / Data\nProfil recherché :\nFormations\n-Formation Bac+5 (école d'ingénieur, université ou équivalent) en data, informatique, statistiques ou domaine connexe\n-Minimum 3 ans d'expérience en tant que Data Analyst / BI Analyst\n-Expérience confirmée sur Power BI\n-Une expérience en environnement Data Fabric est fortement appréciée\n-Une expérience en environnement Agile à l'échelle (SAFe) constitue un plus\nCompétences techniques attendues\n-Excellente maîtrise de Power BI : Power Query, DAX, modélisation, Service\n-Bonne connaissance d'une architecture Data Fabric ou solution équivalente\n-Solides compétences en SQL\n-Maîtrise de la modélisation dimensionnelle (Kimball, schémas étoile/flocon)\n-Connaissances en gouvernance des données : catalogage, qualité, MDM\n-Bonne compréhension des méthodologies Agile / SAFe",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Coûts",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "SQL",
+      "Power BI",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Architecture microservices",
+      "Backend",
+      "API",
+      "Sécurité informatique",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "MLOps",
+      "Model drift",
+      "Protection des données",
+      "Veille technologique"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation Bac+5 (école d'ingénieur, université ou équivalent) en data, informatique, statistiques ou domaine connexe",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Formation Bac+5 (école d'ingénieur, université ou équivalent) en data, informatique, statistiques ou domaine connexe",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:42.379080",
+  "input_hash": "44382c15cd0b5a391a16b0ab2903ff10f8f104f6819fd117e53a159a9fab4f54",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:3594523",
+  "value": {
+    "id": "3594523",
+    "intitule": "Chargé d'investigation cognitive intracérébrale (H/F)",
+    "entreprise": "Université Claude Bernard Lyon 1",
+    "territoire": "69 - Bron",
+    "ville": "69029",
+    "code_postal": "69500",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3594523",
+    "description": "RESPONSABILITÉS : Vous serez affecté à l'UFR Médecine Lyon Est Claude Bernard Description du poste Le LabEX CORTEX regroupe 23 équipes de recherche en neurosciences dans 6 instituts de recherche à Lyon. Dans ce cadre nous recrutons un ingénieur chargé d'investigation cognitive intracérébrale pour 6 mois. L'ingénieur de recherche fera le lien entre les équipes de recherches en neurosciences cognitives et le service HCL d'épileptologie. Il/elle organisera la collecte de données chez les patients épileptiques implantés, veillera à la qualité des protocoles et des données. Il/elle mettra en place des actions pour améliorer l'utilisation des données d'électroencéphalographie intracrânienne dans les laboratoires de recherche (par ex. uniformisation des données, pré-processing, etc.). Activités : • Collecter des données d'enregistrement cérébral • Analyser des données d'enregistrement cérébral • Améliorer les protocoles et le transfert des données Conditions particulières d'exercice Le poste est principalement basé à l'Hôpital Neurologique de Lyon (59 bd Pinel, 69500 Bron) en lien avec le CRNL (CH Le Vinatier - Bâtiment 462 - Neurocampus, 95 Bd Pinel, 69500 Bron) PROFIL RECHERCHÉ : Connaissances : • Fonctionnement du cerveau humain, • Traitement du signal, • Méthodes d' enregistrement intracrânien Savoir-faire nécessaire : • Programmation informatique en langage python, • Analyse d'enregistrement intracrânien, • Analyse du signal électrophysiologique, • Aisance en milieu hospitalier et qualité relationnelle avec les patients Aptitudes : • Autonome, • Organisé, • Bon communiquant Poste à pouvoir dès que possible ou le 01/07/2026 Le poste est ouvert aux contractuels de catégorie A - IGR Rémunération mensuelle brute: 3012,21€ En rejoignant l'Université Lyon 1, vous pourrez bénéficier de : • 48.5 jours de congés annuels, dès la première année universitaire, aménagement possible du temps de travail sur 4.5 jours, 37h30 / semaine, la possibilité d'avoir des jours de télétravail réguliers et/ou ponctuels, sous conditions, • la participation au remboursement des frais de transport, forfait mobilité durable, aux frais complémentaire santé à hauteur de 15€/mois,... • l'accès à des prestations d'action sociale, accès aux services de la crèche et du centre de loisirs situés sur le campus Lyon Tech La Doua • l'accès aux activités artistiques et sportives de l'université, tarifs préférentiels loisirs, • possibilités de développement professionnel en interne (concours, mobilité, formation continue et parcours professionnel) • restauration sur le campus avec une participation financière de l'université",
+    "metier": "Chargé / Chargée de méthodes BTP",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Analyse de données",
+      "Optimisation des performances",
+      "Qualité des données"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans ce cadre nous recrutons un ingénieur chargé d'investigation cognitive intracérébrale pour 6 mois.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:01.459093",
+  "input_hash": "66a7a32ddd66c0e4d796d7379cd76f8ad8ac00f7c2e822dc941f311f5f6e3ed8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

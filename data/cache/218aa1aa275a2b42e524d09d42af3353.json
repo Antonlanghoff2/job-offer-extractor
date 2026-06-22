@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:3343125",
+  "value": {
+    "id": "3343125",
+    "intitule": "Ingénieur(e) Machine Learning / ML Engineer H/F",
+    "entreprise": "CATIE",
+    "territoire": "33 - Talence",
+    "ville": "33522",
+    "code_postal": "33400",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3343125",
+    "description": "À l’interface entre les laboratoires de recherche et les entreprises, vous travaillez à l'industrialisation et à la mise en production des technologies. Vos principales missions : · Développer et optimiser des modèles d'IA en respectant les standards de qualité logicielle, · Concevoir et gérer les architectures serveurs et cloud pour le déploiement des modèles, · Mettre en œuvre les pipelines de déploiement continu (DevOps/MLOps), · Développer des interfaces (API, Web) pour rendre les modèles utilisables par les clients, · Conseiller les entreprises sur les choix d'infrastructure et chiffrer les réalisations techniques, · Vulgariser vos choix d'architecture et partager vos connaissances en équipe. De formation supérieure en informatique, génie logiciel ou data science (Ecole d’ingénieur ou Master 2), vous disposez de solides compétences en développement logiciel. Vous savez transformer un prototype issu de la recherche en une solution industrielle fiable et scalable. Vous maîtrisez parfaitement Python et les environnements Linux/Serveurs. Vous savez vous adapter à de nombreuses technologies. Expérience souhaitée : 1 an minimum en développement logiciel ou ML Engineering. Connaissances requises : · Python (Clean Code, Design Patterns, Tests unitaires) · IA au sens large (Machine Learning, Deep Learning) · Docker et conteneurisation · Administration de serveurs Linux · Anglais technique Connaissances appréciées : · Cloud (services managés AWS, Azure, GCP, Scaleway ou OVH) · CI/CD et outils MLOps · Git (usage avancé) · Développement web Rigoureux(se), autonome et doté(e) d'un esprit d'ingénierie, vous avez le goût pour la performance et la robustesse logicielle. Vous possédez un bon sens relationnel pour échanger avec nos prospects et clients et savez chiffrer vos travaux. POURQUOI NOUS REJOINDRE ? · Diversité et Sens : Oubliez la monotonie. Vous travaillerez sur des projets variés (industrie 4.0, environnement, défense, santé) avec un impact direct sur le tissu économique régional. · Culture de l'Apprentissage : Nous encourageons la montée en compétences continue. Vous bénéficierez de l’appui de nos seniors experts et d’un accès privilégié à des ressources matérielles de pointe (serveurs GPU type A100). · Environnement Stimulant : Vous évoluerez au cœur d'un écosystème unique, à la croisée des chemins entre l’effervescence de la recherche académique et l'agilité du monde entrepreneurial. · Équilibre de Vie : Nous valorisons le bien-être de nos collaborateurs avec une politique de télétravail flexible et un environnement de travail collaboratif au sein du campus de Talence. · Liberté Technologique : Vous aurez une réelle influence sur le choix des outils et des frameworks utilisés pour construire les architectures de demain. INFORMATIONS COMPLÉMENTAIRES Rémunération : 38 – 46 K€ (selon profil et expérience) Lieu de travail : locaux du CATIE (Talence), télétravail possible (jusqu’à 3 jours de télétravail par semaine). Contrat : · Contrat CDI (36h36 hebdomadaire soit 7h18 par jour) · 25 jours de congés payés + 15 jours de repos compensateurs · Convention Collective Nationale de la Métallurgie Avantages : · Tickets restaurant d’une valeur de 10€ pris en charge à 60% · Remboursement à 75 % des frais de transport en commun de la Métropole de Bordeaux · Mutuelle famille et prévoyance avec un haut niveau de garanties · Compte Épargne Temps (jusqu’à 10 jours) · Formation continue, développement de compétences · T",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Deep learning",
+      "Docker",
+      "Développement web",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "MLOps",
+      "Machine learning",
+      "Python",
+      "CI/CD",
+      "Qualité logicielle",
+      "Déploiement de modèles",
+      "Travail en équipe",
+      "Design patterns",
+      "Data Engineering",
+      "Monitoring de modèles",
+      "Pipelines de données"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 1000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "De formation supérieure en informatique, génie logiciel ou data science (Ecole d’ingénieur ou Master 2), vous disposez de solides compétences en développement logiciel.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "De formation supérieure en informatique, génie logiciel ou data science (Ecole d’ingénieur ou Master 2), vous disposez de solides compétences en développement logiciel.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:58.289422",
+  "input_hash": "b6825225004d10b6c2d8211f70777ecd99f95444bf4bb1d5868bdd76fd0ffe7b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

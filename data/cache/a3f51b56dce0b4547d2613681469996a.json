@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:2872100",
+  "value": {
+    "id": "2872100",
+    "intitule": "Ingénieur système (H/F)",
+    "entreprise": "",
+    "territoire": "95 - Argenteuil",
+    "ville": "95018",
+    "code_postal": "95100",
+    "contrat": "CDI",
+    "date_creation": "2026-05-21",
+    "date": "2026-05-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2872100",
+    "description": "Description du poste Description générale du poste\nDans le cadre dune évolution stratégique de son besoin, notre client recherche un Ingénieur Systèmes Bancs de Test (H/F) capable dintervenir à la fois sur les dimensions hardware et software .\nVous serez responsable de la gestion complète des bancs de test et des produits : développement, validation, maintenance et amélioration continue.\nLe poste combine expertise technique, intervention terrain et collaboration étroite avec les équipes internes et les partenaires industriels Principales missions et responsabilités\nDéveloppement & gestion des bancs de test***Développer de nouveaux bancs de test (partie électronique et logicielle)***Tester, valider et maintenir les bancs existants***Assurer le debugging et loptimisation des performances\nMaintenance & support produit***Assurer la maintenance des produits en phase de production***Intervenir en cas de dysfonctionnement ou dérive technique\nIndustrialisation***Rédiger les gammes de fabrication***Participer à lamélioration continue des processus\nRelation sous-traitants***Se déplacer chez les sous-traitants***Valider, tester ou débuguer les bancs de test sur site\nDescription du profil Profil recherché\nFormation & Expérience***Diplôme dingénieur en systèmes, électronique ou équivalent***Minimum 5 ans dexpérience sur un poste similaire***Expérience en environnement industriel indispensable\nCompétences techniques (Must have)***Excellente maîtrise de lélectronique***Capacité à lire et interpréter un schéma électrique***Maîtrise de Java et Python***Expérience en développement et automatisation de bancs de test***Bonne compréhension des environnements hardware & software\nNice to have***Expérience en PME industrielle***Connaissance denvironnements exigeants (défense, aéronautique)\nSoft skills***Forte capacité danalyse et de résolution de problèmes***Autonomie et rigueur***Capacité à intervenir sur le terrain***Bon relationnel avec équipes internes et partenaires externes",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "Gestion de projet",
+      "Model drift",
+      "Monitoring de modèles",
+      "API",
+      "Backend",
+      "Qualité des données"
+    ],
+    "salaire_min": 48000,
+    "salaire_max": 0,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre dune évolution stratégique de son besoin, notre client recherche un Ingénieur Systèmes Bancs de Test (H/F) capable dintervenir à la fois sur les dimensions hardware et software .",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:20.145804",
+  "input_hash": "a2b95f296068ffda1b3e7d5acba9600fb99f7a3e3c6abc06fb2b95c7acbc1739",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

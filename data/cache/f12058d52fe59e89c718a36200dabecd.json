@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3829276",
+  "value": {
+    "id": "3829276",
+    "intitule": "Développeur BI (H/F)",
+    "entreprise": "",
+    "territoire": "86 - Poitiers",
+    "ville": "86194",
+    "code_postal": "86000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3829276",
+    "description": "Description du poste :\nLHH Recruitment Solutions, cabinet de conseil en recrutement, intérim spécialisé, management de transition, et évaluation d'expert.e.s, cadres et dirigeant.e.s, recherche pour son client (Acteur majeur de la distribution de fournitures industrielles), un Développeur BI / Data H/F, poste basé à Poitiers (86).\nRattaché au Chef de Projet Technique, en étroite collaboration avec le Responsable SI ainsi qu'avec les équipes métiers, votre mission consistera à structurer, fiabiliser et valoriser les données de l'entreprise .\nA ce titre, vous aurez pour missions :\nDéveloppement & Bases de données Concevoir, structurer et faire évoluer la base Data Warehouse Collecter, transformer et consolider les données issues des différentes sources du SI Développer, maintenir et optimiser les flux ETL Créer et maintenir les jobs d'intégration et d'interfaces d'échanges de données Participer aux déploiements sur les différents environnements.\nAnalyse & Accompagnement métier\n· Participer aux ateliers de conception avec le Chef de Projet Fonctionnel et le Responsable SI Contribuer aux analyses fonctionnelles et techniques Documenter les développements dans l'outil de ticketing Réaliser les tests unitaires et assurer le suivi des recettes.\nDescription du profil :\nProfil Recherché :\nDe formation supérieur en informatique, systèmes d'information ou Data (Bac +3 à Bac +5), vous disposez d'une expérience réussie sur un poste orienté en conception de bases de données ou environnement BI / ERP.\nVous êtes reconnu(e) pour votre sens de l'organisation, votre rigueur et votre autonomie. Vous savez travailler en mode projet et êtes orienté résultats.\nDoté d'un excellent relationnel, faites preuve d'esprit d'analyse et avez le goût pour les problématiques métiers.\nCDI, votre rémunération sera fonction de votre parcours professionnel (salaire sur 13 mois + prime sur objectif + participation + PEE).\nPostulez en ligne en joignant votre CV à l'attention de Hugo PRUDENT, bureau LHH Poitiers , en précisant la Réf : 20583846.",
+    "metier": "Développeur / Développeuse décisionnel - Business Intelligence",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Pipelines de données",
+      "Analyse de données",
+      "Data Engineering",
+      "Tests automatisés",
+      "Design patterns",
+      "Méthodologie Agile"
+    ],
+    "salaire_min": 86000,
+    "salaire_max": 86000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation supérieur en informatique, systèmes d'information ou Data (Bac +3 à Bac +5), vous disposez d'une expérience réussie sur un poste orienté en conception de bases de données ou environnement BI / ERP.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation supérieur en informatique, systèmes d'information ou Data (Bac +3 à Bac +5), vous disposez d'une expérience réussie sur un poste orienté en conception de bases de données ou environnement BI / ERP.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:47.413089",
+  "input_hash": "7bf80684bbc681b26fcb80d8088a9b771edc0cbd6a35240efe1431c2daf08cf7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

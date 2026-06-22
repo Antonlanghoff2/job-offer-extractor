@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:8519332",
+  "value": {
+    "id": "8519332",
+    "intitule": "Ingénieur développeur Fullstack (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-01-31",
+    "date": "2026-01-31",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8519332",
+    "description": "Description du poste :\nEn tant que développeur fullstack IA, vous intégrerez une équipe spécialisée en ingénierie logicielle et participerez activement au développement de la plateforme IA du ministère des Armées. Vos principales missions seront de Concevoir et développer des applications web intégrant des modèles d'IA (NLP, vision par ordinateur, etc.) en utilisant des frameworks comme TensorFlow, PyTorch.\n* Développer des APIs performantes pour déployer des modèles d'IA, en optimisant les requêtes et les temps de traitement (utilisation de VLLM, RAY, etc Mettre en place des pipelines de traitement de données adaptés à l'IA (nettoyage, augmentation, annotation) et des solutions de stockage (data lakes, bases de données vectorielles Automatiser les tests et le déploiement de modèles d'IA ou des pipelines de traitement de données, en utilisant des outils comme MLflow, Kubeflow.\nVous participerez à des projets à la pointe de la technologie, où vos compétences en développement et en IA auront un impact direct sur les applications stratégiques du ministère.\nDescription du profil :\nTitulaire d'un master 2 ou d'un diplôme équivalent en développement informatique, vous justifiez d'une expérience significative d'au moins 5 ans dans le développement fullstack avec une expertise en intégration d'IA/ML dans les applications. Vous maîtrisez les technologies backend et frontend, l'optimisation de services et des pipelines de données. Vous menez des veilles actives sur les innovations en IA et développement fullstack.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "PyTorch",
+      "TensorFlow",
+      "Vision",
+      "Application web",
+      "Déploiement de modèles",
+      "Automatisation des tests",
+      "Développement web",
+      "Tests automatisés",
+      "Data Engineering",
+      "Analyse de données",
+      "MLOps",
+      "Model drift",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Titulaire d'un master 2 ou d'un diplôme équivalent en développement informatique, vous justifiez d'une expérience significative d'au moins 5 ans dans le développement fullstack avec une expertise en intégration d'IA/ML dans les applications.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 16,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:26.167145",
+  "input_hash": "8ef73887546b4dd7ea0dcd35c6647538bb21c54b9366c21e2c04cef37009309d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

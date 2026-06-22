@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3130444",
+  "value": {
+    "id": "3130444",
+    "intitule": "Ingénieur Développement Logiciel DO-178B (H/F)",
+    "entreprise": "",
+    "territoire": "56 - Vannes",
+    "ville": "56260",
+    "code_postal": "56000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3130444",
+    "description": "Et si vous embarquiez vers les nouvelles technologies ?\n\nFiliale du groupe industriel ICE, Médiane Système, est une société d'ingénierie innovante spécialisée en électronique, systèmes embarqués et informatique industrielle. Médiane Système a construit son identité sur une expertise technique de haut niveau en proposant à ses clients, des prestations d'accompagnement au travers de ses Départements R&D (DRD) et ConSulting (DCS).\n\nPrésente en France (région Parisienne, Rhône-Alpes, Midi-Pyrénées, PACA, Grand Ouest), en Belgique et en Italie, Médiane Système est partenaire de grands comptes industriels et de nombreuses PME. Du secteur automobile au médical, en passant par l'énergie, le ferroviaire, l'aéronautique ou bien les télécoms. Médiane Système intervient exclusivement sur les métiers de l'ingénierie système (logiciel embarqué, logiciel applicatif pour l'industrie, électronique numérique et analogique, banc de tests) dans des environnements technologiques de pointe.\n\nCréée par des ingénieurs, Médiane Système, est une entreprise technique à taille humaine, proche de ses collaborateurs, qui privilégie depuis plus de 30 ans, le développement des compétences et l'épanouissement de ses salariés.\n\nLe poste : \n\nDans le cadre du développement des activités d'un de nos clients dans le secteur de l'aéronautique et de la défense, nous recherchons un développeur Firmware. \nVous interviendrez sur la conception, le développement et la validation de logiciels embarqués.\nVous aurez en charge de : \n- Concevoir des logiciels embarqués sur des produits de détresse et du positionnement, intégré à une équipe pluridisciplinaire\n- Assurer la veille technologique et participer à l'évolution des standards liés à la détresse\n- S'assurer que les développements firmware respectent la norme DO-178B et les procédures internes de notre client (spécs logiciel embarqué, test firmware sur cible, doc conception logiciel, codage, validation, traçabilité, suivi qualité et certification du code). \n- Participer à la certification des produits \n- Assurer le support du Firmware aux équipes faisant partie ou collaborant avec la R&D (support client, mise en production, ?).,\n\nProfil recherché : \n\nVous êtes diplômés Bac + 5 en électronique numérique et informatique.\nVous avez une expérience minimale de 5 ans dans la programmation bas niveau et dans un environnement certifié de type DO-178B\nVous avez une connaissance et une bonne pratique des bus ARINC et notamment l'AFDX\n\n\nRémunération entre 40K€ et 45K€ selon profil\nTitres restaurant SWILE (10,5 €/Jour travaillé - PEC 60% employeur) \nPossibilité télétravail (Indemnité 2 € /Jour)\nPrise en charge du transport \nJours enfants malades rémunérés\nJours absence rémunérés pour renouveler ou monter son dossier RQTH (référent handicap) \nPrimes de cooptation et d'apporteurs d'affaires\n1 jour de congé supplémentaire tous les 5 ans\nFidélité récompensée (tous les 5 ans carte cadeau)\n1% Logement\nCSE (chèques cadeaux / chèques ANCV / arbres de Noël / billetterie)",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Code review",
+      "Qualité des données",
+      "Gestion de projet",
+      "Architecture microservices",
+      "Backend",
+      "Data Engineering",
+      "Design patterns",
+      "Veille technologique"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 30000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac + 5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes diplômés Bac + 5 en électronique numérique et informatique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:26.815004",
+  "input_hash": "76d6d0acef1cf0dbf79376b8626bcad5f0476d8e58b9cced6999268f1583b0cc",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

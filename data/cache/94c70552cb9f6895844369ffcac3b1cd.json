@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:3054724",
+  "value": {
+    "id": "3054724",
+    "intitule": "Développeur en automatisme et supervision industrielle H/F",
+    "entreprise": "Mercato de l'emploi",
+    "territoire": "59 - Lille",
+    "ville": "59350",
+    "code_postal": "59000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-27",
+    "date": "2026-05-27",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3054724",
+    "description": "RESPONSABILITÉS : \n\nVos missions Rattaché(e) au Responsable Automatismes, vous intervenez en amont des projets sur la conception, le développement et l'amélioration de solutions de supervision pour des machines spéciales.\nEn lien avec les automaticiens, vos missions principales seront :\n\n\n • Recueillir et analyser les besoins fonctionnels clients\n • Rédiger les spécifications techniques\n • Concevoir l'architecture logicielle et matérielle des systèmes de supervision\n • Développer les interfaces (IHM, synoptiques), intégrations et protocoles de communication\n • Assurer l'intégration avec les automates, capteurs, réseaux industriels\n • Installer les systèmes sur site client et assurer leur mise en service\n • Former les utilisateurs et assurer le support technique\n • Participer à l'amélioration continue des solutions logicielles\n\nPROFIL RECHERCHÉ : \n\nProfil recherché\n\nIssu(e) d'une formation technique de type :\n\n\n •  BUT GEII, BTS CIRA, BTS CRSA\n • ou Licence Professionnelle en automatisme, supervision ou informatique industrielle\n •  Vous justifiez d'une expérience en bureau d'études ou sur des projets industriels mêlant supervision et automatisme.\n\nCompétences techniques attendues :\n\n • Supervision : Wonderware InTouch, System Platform, ou équivalents\n • Programmation : TIA Portal, Control Expert (Ladder, Structuré, Littéral)\n • Réseaux industriels : ProfiBus, Modbus, Ethernet/IP\n • Bases de données et intégration automate/supervision\n • Architecture réseau (Switch, routeur, firewall)\n\nVos atouts :\n\n • Autonomie, curiosité technique\n • Sens du service et relation client\n • Rigueur, capacité d'analyse\n • Bon niveau d'anglais technique\n • Permis B obligatoire (déplacements ponctuels)",
+    "metier": "Technicien / Technicienne de maintenance d'installations automatisées",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Optique",
+      "Relation Client",
+      "Vision",
+      "Analyse des besoins",
+      "Design patterns",
+      "Scalabilité",
+      "Analyse de données",
+      "Sécurité informatique",
+      "API",
+      "Data Engineering",
+      "Cybersécurité",
+      "Déploiement de modèles",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 0,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "BUT GEII, BTS CIRA, BTS CRSA",
+        "confidence": 0.9
+      },
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "BUT GEII, BTS CIRA, BTS CRSA",
+        "confidence": 0.9
+      },
+      {
+        "label": "Licence",
+        "level": 6,
+        "required": true,
+        "source_sentence": "ou Licence Professionnelle en automatisme, supervision ou informatique industrielle",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:13.905853",
+  "input_hash": "aa5c79dc3ecdc2442cb6fc5fab1b4d0959cac7fbfc335085c309361af835e50c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

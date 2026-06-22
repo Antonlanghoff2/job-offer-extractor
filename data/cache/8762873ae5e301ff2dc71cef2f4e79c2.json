@@ -1,0 +1,785 @@
+{
+  "key": "trends:59 - Lesquin",
+  "value": {
+    "territoire": "59 - Lesquin",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Data engineering": 2,
+      "Intelligence artificielle": 2,
+      "MLOps": 2,
+      "Qualité Des Données": 2,
+      "Analyse de données": 1,
+      "Déploiement De Modèles": 1,
+      "Gestion de projet": 1,
+      "Git": 1,
+      "Model Drift": 1,
+      "Optimisation De Performance": 1,
+      "Pipelines De Données": 1,
+      "Protection Des Données": 1,
+      "Python": 1,
+      "SQL": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Data engineering",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Data Engineering": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "MLOps": 2
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Qualité des données": 2
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Optimisation de performance": 1,
+          "Optimisation des performances": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Protection des données": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Data engineering": {
+        "Data Engineering": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "MLOps": {
+        "MLOps": 2
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 2
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Optimisation De Performance": {
+        "Optimisation de performance": 1,
+        "Optimisation des performances": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Protection Des Données": {
+        "Protection des données": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Data Engineer": 1,
+      "Data Scientist": 1,
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 1
+    },
+    "niveau": {
+      "junior": 3
+    },
+    "contrats": {
+      "CDI": 2,
+      "CDD - 12 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation De Performance",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation De Performance",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation De Performance",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Protection Des Données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Protection Des Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Protection Des Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Python",
+        "SQL",
+        "MLOps",
+        "Analyse de données",
+        "Data engineering",
+        "Déploiement De Modèles",
+        "Qualité Des Données",
+        "Model Drift",
+        "Protection Des Données"
+      ],
+      [
+        "Intelligence artificielle",
+        "Data engineering",
+        "MLOps",
+        "Vision",
+        "Optimisation De Performance",
+        "Qualité Des Données",
+        "Pipelines De Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3879352",
+        "intitule": "SERVEUR APPRENTISSAGE H/F",
+        "entreprise": "",
+        "territoire": "59 - Lesquin",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3879352"
+      },
+      {
+        "id": "3880493",
+        "intitule": "Data Scientist Confirmé - H/F",
+        "entreprise": "",
+        "territoire": "59 - Lesquin",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3880493"
+      },
+      {
+        "id": "3616394",
+        "intitule": "Ingénieur Data (H/F)",
+        "entreprise": "",
+        "territoire": "59 - Lesquin",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3616394"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3879352",
+        "intitule": "SERVEUR APPRENTISSAGE H/F",
+        "entreprise": "",
+        "territoire": "59 - Lesquin",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3879352"
+      },
+      {
+        "id": "3880493",
+        "intitule": "Data Scientist Confirmé - H/F",
+        "entreprise": "",
+        "territoire": "59 - Lesquin",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3880493"
+      },
+      {
+        "id": "3616394",
+        "intitule": "Ingénieur Data (H/F)",
+        "entreprise": "",
+        "territoire": "59 - Lesquin",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3616394"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T18:59:42.320620",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

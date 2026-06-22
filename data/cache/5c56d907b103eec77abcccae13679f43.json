@@ -1,0 +1,78 @@
+{
+  "key": "offer_extraction:3167587",
+  "value": {
+    "id": "3167587",
+    "intitule": "Ingénieur Métrologie / Freeform (H/F)",
+    "entreprise": "Sophia Conseil",
+    "territoire": "13 - Aix-en-Provence",
+    "ville": "13001",
+    "code_postal": "13080",
+    "contrat": "CDI",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3167587",
+    "description": "Vos Missions Principales\n\nDéveloppement des protocoles et moyens de mesure :\n\n * \n\nDéfinir et concevoir les architectures et les stratégies de métrologie adaptées aux composants optiques complexes (asphériques, freeform, miroirs spécifiques).\n * \n\nDévelopper, modéliser et optimiser les bancs de mesure optique (interférométrie, profilométrie, capteurs de front d'onde, etc.).\n * \n\nRédiger les procédures de test et de calibration, en veillant à la maîtrise des incertitudes de mesure et à la traçabilité des résultats.\n\nOpérations de métrologie et intégration :\n\n * \n\nRéaliser les mesures de précision sur les composants et systèmes intégrés, et analyser les écarts de forme (analyses de surfaces, rugosité, défauts d'onde).\n * \n\nCollaborer étroitement avec les équipes de design optique et de fabrication pour interpréter les résultats et orienter les boucles de correction (polissage optique, ajustements mécaniques).\n * \n\nAssurer l'entretien, le suivi métrologique et la conformité des équipements de pointe du laboratoire.\n\nGestion de projet et Innovation :\n\n * \n\nPiloter le volet métrologie au sein des revues de projet avec les interlocuteurs internes et les partenaires technologiques.\n * \n\nAssurer une veille technologique active sur l'état de l'art mondial concernant le contrôle des surfaces \"Freeform\" et les nouvelles technologies de mesure.\n* \n\nProfil Recherché\n\n * \n\nFormation : Diplôme d'Ingénieur ou Master 2 (Bac+5) spécialisé en Optique, Photonique ou Mesures Physiques (par exemple : Institut d'Optique Graduate School / SupOptique, masters spécialisés). Un PhD dans le domaine de la métrologie optique est un plus.\n * \n\nExpérience : Vous justifiez d'une première expérience réussie (3 à 5 ans minimum, incluant stages/thèse) dans le domaine de la caractérisation optique, idéalement confrontée à des contraintes de géométries complexes ou d'environnements exigeants (spatial, défense, ou recherche de pointe).\n * \n\nCompétences clés :\n\n * \n\nMaîtrise des outils d'interférométrie laser, de profilométrie 3D ou de métrologie géométrique de précision.\n * \n\nSolides connaissances en traitement de données et analyse de surfaces (MATLAB, Python ou logiciels dédiés).\n * \n\nCompréhension fine des budgets d'incertitude et des tolérances opto-mécaniques.\n\n * \n\nQualités : Esprit analytique poussé, rigueur scientifique absolue, goût prononcé pour le travail en laboratoire de haute technologie et aptitude à collaborer au sein d'équipes pluridisciplinaires.\n\nSophia Engineering est engagée dans la lutte contre les discriminations et la promotion de l'égalité des chances.",
+    "metier": "Ajusteur-monteur / Ajusteuse-monteuse",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Optique",
+      "Python",
+      "Vue.js",
+      "Analyse de données",
+      "Data Engineering",
+      "Veille technologique",
+      "Code review",
+      "Qualité des données",
+      "Optimisation des performances",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Formation : Diplôme d'Ingénieur ou Master 2 (Bac+5) spécialisé en Optique, Photonique ou Mesures Physiques (par exemple : Institut d'Optique Graduate School / SupOptique, masters spécialisés).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Formation : Diplôme d'Ingénieur ou Master 2 (Bac+5) spécialisé en Optique, Photonique ou Mesures Physiques (par exemple : Institut d'Optique Graduate School / SupOptique, masters spécialisés).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : Diplôme d'Ingénieur ou Master 2 (Bac+5) spécialisé en Optique, Photonique ou Mesures Physiques (par exemple : Institut d'Optique Graduate School / SupOptique, masters spécialisés).",
+        "confidence": 0.9
+      },
+      {
+        "label": "thèse",
+        "level": 10,
+        "required": false,
+        "source_sentence": "Expérience : Vous justifiez d'une première expérience réussie (3 à 5 ans minimum, incluant stages/thèse) dans le domaine de la caractérisation optique, idéalement confrontée à des contraintes de géométries complexes ou d'environnements exigeants (spatial, défense, ou recherche de pointe).",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "4 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:15.415476",
+  "input_hash": "25e8dc24b01596e7c2af57736cda30a07acd27915247f724742bb41ac674dd22",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

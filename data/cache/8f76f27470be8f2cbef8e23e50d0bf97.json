@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:209KGFJ",
+  "value": {
+    "id": "209KGFJ",
+    "intitule": "Ingénieur-e en Logiciels de Recherche-Plateformes HPC+Simulation (H/F)",
+    "entreprise": "INSTITUT MAX VON LAUE - PAUL LANGEVIN",
+    "territoire": "38 - GRENOBLE",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209KGFJ",
+    "description": "L'Institut Laue-Langevin (ILL), implanté à Grenoble, est un centre international de recherche fondamentale, leader européen en sciences neutroniques. L'ILL accueille chaque année plus de 2000 visites de scientifiques qui viennent réaliser des expériences de haut niveau.\nLe groupe Calcul scientifique (CS) de l'ILL assure le développement et la maintenance des outils logiciels permettant la réduction et l'analyse de données ainsi que des simulations atomistiques. Ces activités sont regroupées au sein d'une plateforme numérique qui intègre des logiciels de dynamique moléculaire classique et de simulation de premiers principes (ab initio, DFT) sur un cluster de calcul haute performance (HPC).\nDans le cadre de la stratégie scientifique de l'ILL, le groupe CS pilote le développement d'une nouvelle plateforme numérique IPAD (Integrated Platform for Analysing Data), qui proposera un environnement unifié conçu pour rationaliser des simulations atomistiques destinées aux utilisateurs et scientifiques de l'ILL. IPAD proposera des modèles de flux de travail pour les simulations courantes, en prenant en charge les aspects techniques complexes (gestion des entrées/sorties, soumission des tâches, suivi du calcul sur le cluster HPC). Les simulations permettront le développement de jumeaux numériques des instruments de l'ILL, ce qui permettra de générer des ensembles de données de haute qualité et ouvrira la voie à une analyse des données neutroniques assistée par l'IA.\nLe groupe CS comprend actuellement huit scientifiques dont quatre développeurs à temps plein et quatre chercheurs en lien direct avec les responsables d'instrument. Pour répondre à la demande croissante d'outils numériques spécialisés, le groupe CS renforce actuellement son équipe.\n\nVos fonctions\nEn tant que membre du groupe CS, vous aurez les fonctions suivantes :\n- Participer au développement de la plateforme IPAD en apportant une bonne compréhension des besoins des scientifiques et des différents aspects en matière de simulations atomistiques.\n- Contribuer au développement de la plateforme logicielle Hylleraas et à son déploiement sur l'architecture informatique de l'ILL, en veillant à son intégration au projet de jumeau numérique (SCI -Service Contrôle des Instruments) et en coordonnant les interactions entre les services IT et SCI de l'ILL.\n- Echanger avec les scientifiques afin d'identifier leurs besoins en matière d'analyse de données en temps réel assistée par l'IA.\n\nVotre profil\n-Titulaire d'un master,  diplôme d'ingénieur ou équivalent en informatique, en génie logiciel ou dans un domaine informatique connexe\n-Expérience dans l'administration de clusters HPC et des systèmes de planification des tâches (par exemple SLURM, PBS)\n-Maîtrise des flux de travail de simulation et des environnements de calcul scientifique\n-Solides compétences en programmation, notamment en Python et/ou en langages de script (Bash, etc.). (Bash, etc.)\n-Expérience dans le déploiement de logiciels et l'intégration de systèmes (API, CI/CD, conteneurisation telle que Docker/Singularity)\n-La connaissance de progiciels de simulation atomistique (dynamique moléculaire classique, DFT) serait un atout\n-Intérêt pour le travail à l'interface entre l'infrastructure informatique et la recherche scientifique\n-Une expérience dans un environnement de recherche ou universitaire serait appréciée.\n\nCela vous semble-t-il intéressant ?\nAlors n'attendez plus et démarrez ce nouveau chapitre avec nous. Vous pouvez postuler en ligne via notre portail de candidature avant le 21/06/2026, en citant le numéro de référence 26/25. Veuillez noter que ce poste est soumis à enquête administrative et que l'aptitude au travail en milieu radioactif et une aptitude médicale sont nécessaires. Nous croyons en l'égalité des chances et à la diversité, nous encourageons donc toutes les personnes dûment qualifiées à postuler.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Docker",
+      "Intelligence artificielle",
+      "Python",
+      "Recherche Scientifique",
+      "Data Engineering",
+      "Cybersécurité",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Titulaire d'un master, diplôme d'ingénieur ou équivalent en informatique, en génie logiciel ou dans un domaine informatique connexe",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Titulaire d'un master, diplôme d'ingénieur ou équivalent en informatique, en génie logiciel ou dans un domaine informatique connexe",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:10.051280",
+  "input_hash": "93d5c15f91887fc7e11d9f46120e95dde64d99a95f87242ce2c8c78a30aa8269",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

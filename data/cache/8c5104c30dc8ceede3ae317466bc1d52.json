@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3117374",
+  "value": {
+    "id": "3117374",
+    "intitule": "INGENIEUR INFORMATIQUE ET FONCTIONNEL EN BIOLOGIE - H/F",
+    "entreprise": "FHF",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3117374",
+    "description": "Descriptif du poste :\nL'ingénieur informatique fonctionnel en biologie assure le déploiement, le suivi et l'optimisation des outils informatiques métiers.\n\nIl accompagne les utilisateurs, structure les données, développe des indicateurs d'activité et est garant des dispositions institutionnelles autour des systèmes d'information en lien avec la Direction du Numérique et la direction des risques Cyber du CHU de Bordeaux.\n\nPRINCIPALES ACTIVITES Accompagnement et expertise du management du Système d'Information du Laboratoire (SIL) du Centre de Ressources Biologiques -Plurithématique Support fonctionnel sur le logiciel MBioLIMS (éditeur Modulbio).\n\nParticipation au processus de validation / qualification des SI :\ncahier des recettes, tests utilisateurs, validation des rapports Contribution aux sélections / évaluations des éditeurs de logiciels métiers entrant dans le périmètre du CRB Interface entre utilisateurs métiers et la direction du numérique (DNUM) du CHU de Bordeaux et éditeur Suivi des évolutions applicatives sur le SIL (Système d'Information Laboratoire) du CRB Développement et gestion d'outils collaboratifs Création / Paramétrage de l'outil TimeTonic au regard des besoins du CRB-P en lien avec le département Numérique et Recherche de la Direction de la Recherche Clinique (DRCI) Accompagnement des utilisateurs dans l'utilisation quotidienne de l'application (suivi et maintenance) Exploitation de la base de données métier (Business Object, Power BI) Exploitation de la base de données du logiciel métier en lien avec la Cellule Data Innovation de la DNUM du CHU de Bordeaux en utilisant des applications informatiques adaptées Accompagnement à la création de contrôles qualité (CQ) automatisés sur les bases de données Amélioration et sécurisation des requêtes déjà existantes pour le reporting des indicateurs d'activité du service Conception de tableaux de bord et indicateurs d'activité du service à des fins de pilotage de l'organisation Amélioration de la visualisation, présentation et analyse des données Projets SI et veille Participation à des groupes de travail nationaux en lien avec la thématique « informatique » du SI dans le cadre de l'activité du CRB Identifier des applications métiers au sein du CHU de Bordeaux qui pourraient être intégrées dans le fonctionnement du service.\n\nTravailler les liens avec l'Entrepôt de Données de Santé (EDS) du CHU de Bordeaux afin de pouvoir répondre aux demandes des utilisateurs des ressources biologiques.\n\nRéaliser une veille technique et réglementaire relative à son domaine d'activité.\n\nParticiper à la complétion du catalogue national des CRB Participation à la mise à jour des données attendues dans le catalogue national des CRB (FrBioNEt / DGOS) Participation à la complétion de tout autre catalogue numérique sur les ressources biologiques Profil recherché :\nSécurité et continuité d'activité Référent de la démarche PRA/PCA (cyberattaque) pour le CRB-P Connaissance les dispositions fonctionnelles / techniques autour de l'informatique (Restauration, Sauvegarde, Suivi qualité des applications, ..) Participer aux plans de continuité et gestion de crise Démarche qualité SI Contribuer à la rédaction des documents qualité en lien avec les SI utilisés par le CRB-P Participer à la rédaction des modèles de PIA (AIPD) en lien avec le coordinateur qualité et gestion des risques du CRB-P et les équipes DPO et DNUM du CHU de Bordeaux Identifier des applications institutionnelles pouvant digitaliser le SMQ Gestion et déploiement d'un logiciel de gestion des stocks de laboratoire Rédiger et formaliser un cahier des charges fonctionnelles et techniques Analyser les besoins :\ngestion des stocks, traçabilité, commandes, inventaires et utilisateurs Piloter la sélection et le déploiement d'une solution conforme aux exigences réglementaires et hospitalières COMPETENCES ATTENDUES Savoir / Savoir faire Connaissance sur le fonctionnement des bases de données Développement de requêtes et automatisation (langage SQL) Outils de BI (Power BI et Business Objects) Gestion d'outils collaboratifs Adaptation aux démarches qualité sur le management des SIMaitrise en Pack Office, SQL Connaissances approfondies en langage de programmation R ou SAS ou Python Connaissances des concepts organisationnels d'infrastructure d'information Savoir être Capacité d'analyse et de synthèse Rigueur et organisation Autonomie Bon relationnel et sens du service Capacité à vulgariser des concepts techniques CDD d'1 an renouvelable Postulez sur le site carrière :\nhttps:\n//chu-bordeaux.softy.pro/offre/208098?idt=159\n\nContrat :\nCDD",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "junior",
+    "competences": [
+      "Cahier des charges",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Analyse des besoins",
+      "MLOps",
+      "Monitoring de modèles",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 1000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'ingénieur informatique fonctionnel en biologie assure le déploiement, le suivi et l'optimisation des outils informatiques métiers.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:16.295778",
+  "input_hash": "b2d882bffbdbd550c2033454bd348e8ee920c76d047c9b3abfba091531301fd7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

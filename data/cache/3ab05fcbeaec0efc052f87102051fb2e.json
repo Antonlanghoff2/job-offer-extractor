@@ -1,0 +1,390 @@
+{
+  "key": "trends:86 - Châtellerault",
+  "value": {
+    "territoire": "86 - Châtellerault",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "API": 1,
+      "Aéronautique": 1,
+      "Data engineering": 1,
+      "Documentation Technique": 1,
+      "Intelligence artificielle": 1,
+      "Model Drift": 1,
+      "Qualité Des Données": 1,
+      "Sécurité Informatique": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "Aéronautique",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Aéronautique": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Documentation Technique",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Documentation technique": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "API": {
+        "API": 1
+      },
+      "Aéronautique": {
+        "Aéronautique": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Documentation Technique": {
+        "Documentation technique": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur informaticien / Ingénieure informaticienne": 1
+    },
+    "niveau": {
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "API",
+        "competence_b": "Aéronautique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Data engineering",
+        "Aéronautique",
+        "Vision",
+        "Documentation Technique",
+        "Sécurité Informatique",
+        "API",
+        "Qualité Des Données",
+        "Model Drift"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "7082871",
+        "intitule": "Pilote procédés spéciaux - usinage et programmation cn  châtellerault (86) f/h",
+        "entreprise": "",
+        "territoire": "86 - Châtellerault",
+        "contrat": "CDI",
+        "date": "2025-12-25",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/7082871"
+      }
+    ],
+    "offers": [
+      {
+        "id": "7082871",
+        "intitule": "Pilote procédés spéciaux - usinage et programmation cn  châtellerault (86) f/h",
+        "entreprise": "",
+        "territoire": "86 - Châtellerault",
+        "contrat": "CDI",
+        "date": "2025-12-25",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/7082871"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:29.802119",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3684725",
+  "value": {
+    "id": "3684725",
+    "intitule": "Développeur C embarqué – Domaine de la cybersécurité (H/F)",
+    "entreprise": "SILKHOM SAS",
+    "territoire": "59 - Lille",
+    "ville": "59350",
+    "code_postal": "59000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3684725",
+    "description": "Description du poste: Vous rejoignez l’équipe R&D « firewall » composée d’une vingtaine de personnes (scrum master, product owner, testeurs et développeurs) et plus précisément une équipe scrum de 7 personnes. Vos missions seront les suivantes : -Suite aux remontées du support informatique vous diagnostiquez chaque problématique clients -Vous reproduisez les problématiques clients et les investiguer -Vous résolvez, en collaboration avec le support technique et les équipes adéquates, les problématiques clients -Vous participez au développement et à l’évolution de fonctionnalités logicielles en langage C embarqué Environnement technologique : C embarqué, Linux, TCP/IP, VPN, FreeBSD Pourquoi rejoindre cette société : -Rejoignez une société française, leader européen sur son marché et reconnue comme un véritable spécialiste dans la cybersécurité -Vous gérerez de véritables cas concrets clients en matière de vulnérabilité et toucherez à l’ensemble des parties du firmware -Société proposant de nombreux avantages tels que : 3 jours de télétravail/semaine après validation de la période d’essai, académie de formation, CE, partenariat crèches, pack Actions, participation et intéressement, etc. Profil recherché: -Vous avez un diplôme en développement informatique, avec une spécialisation en développement embarqué -Vous avez au minimum 5 ans d’expérience en développement C embarqué (hors stage et alternance) -La connaissance du développement temps réel est idéale -La connaissance de l’environnement Linux est souhaitée Compléments: -Lieu : Lille -Contrat : CDI -Salaire : 45 – 55K€ Si votre profil correspond, nous reviendrons vers vous dans les 7 jours à compter de la date d’envoi.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Linux"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Description du poste: Vous rejoignez l’équipe R&D « firewall » composée d’une vingtaine de personnes (scrum master, product owner, testeurs et développeurs) et plus précisément une équipe scrum de 7 personnes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:51.711471",
+  "input_hash": "e8702f5f8c252e8340b24d2b31aafdca64bc2debc50e183a27f4fd7f314c72f5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:3616937",
+  "value": {
+    "id": "3616937",
+    "intitule": "Ingénieur·e production expert·e VTOM (H/F)",
+    "entreprise": "",
+    "territoire": "94 - Charenton-le-Pont",
+    "ville": "94018",
+    "code_postal": "94220",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3616937",
+    "description": "Pour un client Grand Compte sur BRUXELLES, vous êtes un·e Ingénieur·e production expert·e VTOM avec plus de 6 ans d'expérience. Vous intégrerez l'équipe en charge de la fourniture et de la MCO de l'ordonnanceur VTOM :o Mise en place des procédures d'exploitation de l'ordonnanceur (surveillance, installation, upgrade, monté au plan)o Patch management,o Support N3,o Industrialisation des procédures,o Validations des nouvelles versions produits.o Scripting shell, (ansible et Python serait un plus)Compétences requises : VTOM (impératif), Systeme (Linux, Windows, virtualisation), Ksh.L'anglais est indispensable.",
+    "metier": "Ingénieur / Ingénieure développement nucléaire",
+    "niveau": "junior",
+    "competences": [
+      "Ansible",
+      "Intelligence artificielle",
+      "Linux",
+      "Python"
+    ],
+    "salaire_min": 6000,
+    "salaire_max": 6000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Pour un client Grand Compte sur BRUXELLES, vous êtes un·e Ingénieur·e production expert·e VTOM avec plus de 6 ans d'expérience.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:00.336032",
+  "input_hash": "e8e01d2d3b6052cef591fdbbc888423cf800df274eaf206f766247e5a73bf3cf",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

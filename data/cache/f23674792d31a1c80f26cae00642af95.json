@@ -1,0 +1,6124 @@
+{
+  "key": "trends:69 - Lyon 5e Arrondissement",
+  "value": {
+    "territoire": "69 - Lyon 5e Arrondissement",
+    "periode_jours": 365,
+    "nombre_offres": 35,
+    "competences": {
+      "Intelligence artificielle": 30,
+      "Gestion de projet": 18,
+      "Git": 15,
+      "Java": 11,
+      "Vision": 10,
+      "Sécurité Informatique": 9,
+      "Analyse de données": 8,
+      "Backend": 8,
+      "Data engineering": 7,
+      "Design Patterns": 7,
+      "Python": 7,
+      "Déploiement De Modèles": 6,
+      "MLOps": 6,
+      "Résolution De Problèmes": 6,
+      "Vue.js": 6,
+      "API": 5,
+      "Kubernetes": 5,
+      "PostgreSQL": 5,
+      "Tests Automatisés": 5,
+      "AWS": 4,
+      "Aéronautique": 4,
+      "Cahier des charges": 4,
+      "Docker": 4,
+      "Model Drift": 4,
+      "Optimisation Des Performances": 4,
+      "Pipelines De Données": 4,
+      "Qualité Des Données": 4,
+      "Scalabilité": 4,
+      "Anglais Professionnel": 3,
+      "API REST": 3,
+      "Azure": 3,
+      "Code Review": 3,
+      "Intégration Continue": 3,
+      "JavaScript": 3,
+      "Linux": 3,
+      "SQL": 3,
+      "CI/CD": 2,
+      "Coûts": 2,
+      "Cybersécurité": 2,
+      "Documentation Technique": 2,
+      "Délais": 2,
+      "Développement web": 2,
+      "Feature Engineering": 2,
+      "React": 2,
+      "Travail En Équipe": 2,
+      "Acquisition": 1,
+      "Airflow": 1,
+      "Analyse Des Besoins": 1,
+      "Ansible": 1,
+      "Architecture Microservices": 1,
+      "Automatisation De Pipelines": 1,
+      "Computer Vision": 1,
+      "CSS": 1,
+      "FastAPI": 1,
+      "GitHub": 1,
+      "Gitlab CI": 1,
+      "HTML": 1,
+      "Monitoring De Modèles": 1,
+      "MySQL": 1,
+      "Power BI": 1,
+      "Programmation Concurrente": 1,
+      "Protection Des Données": 1,
+      "Relation Client": 1,
+      "Spring": 1,
+      "TypeScript": 1,
+      "Veille Technologique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 30,
+        "percentage": 85.7,
+        "variants": {
+          "Intelligence artificielle": 30
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 18,
+        "percentage": 51.4,
+        "variants": {
+          "Gestion de projet": 18
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 15,
+        "percentage": 42.9,
+        "variants": {
+          "Git": 15
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 11,
+        "percentage": 31.4,
+        "variants": {
+          "Java": 11
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 10,
+        "percentage": 28.6,
+        "variants": {
+          "Vision": 10
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 9,
+        "percentage": 25.7,
+        "variants": {
+          "Sécurité informatique": 8,
+          "Sécurité Informatique": 1
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 8,
+        "percentage": 22.9,
+        "variants": {
+          "Analyse de données": 8
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 8,
+        "percentage": 22.9,
+        "variants": {
+          "Backend": 8
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 7,
+        "percentage": 20.0,
+        "variants": {
+          "Data Engineering": 7
+        }
+      },
+      {
+        "nom": "Design Patterns",
+        "count": 7,
+        "percentage": 20.0,
+        "variants": {
+          "Design patterns": 7
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 7,
+        "percentage": 20.0,
+        "variants": {
+          "Python": 7
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 6,
+        "percentage": 17.1,
+        "variants": {
+          "Déploiement de modèles": 6
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 6,
+        "percentage": 17.1,
+        "variants": {
+          "MLOps": 6
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 6,
+        "percentage": 17.1,
+        "variants": {
+          "Résolution de problèmes": 6
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 6,
+        "percentage": 17.1,
+        "variants": {
+          "Vue.js": 6
+        }
+      },
+      {
+        "nom": "API",
+        "count": 5,
+        "percentage": 14.3,
+        "variants": {
+          "API": 5
+        }
+      },
+      {
+        "nom": "Kubernetes",
+        "count": 5,
+        "percentage": 14.3,
+        "variants": {
+          "Kubernetes": 5
+        }
+      },
+      {
+        "nom": "PostgreSQL",
+        "count": 5,
+        "percentage": 14.3,
+        "variants": {
+          "PostgreSQL": 5
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 5,
+        "percentage": 14.3,
+        "variants": {
+          "Tests automatisés": 5
+        }
+      },
+      {
+        "nom": "AWS",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "AWS": 4
+        }
+      },
+      {
+        "nom": "Aéronautique",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "Aéronautique": 4
+        }
+      },
+      {
+        "nom": "Cahier des charges",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "Cahier des charges": 4
+        }
+      },
+      {
+        "nom": "Docker",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "Docker": 4
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "Model drift": 4
+        }
+      },
+      {
+        "nom": "Optimisation Des Performances",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "Optimisation des performances": 4
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "Pipelines de données": 4
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "Qualité des données": 4
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 4,
+        "percentage": 11.4,
+        "variants": {
+          "Scalabilité": 4
+        }
+      },
+      {
+        "nom": "Anglais Professionnel",
+        "count": 3,
+        "percentage": 8.6,
+        "variants": {
+          "Anglais Professionnel": 3
+        }
+      },
+      {
+        "nom": "API REST",
+        "count": 3,
+        "percentage": 8.6,
+        "variants": {
+          "API REST": 3
+        }
+      },
+      {
+        "nom": "Azure",
+        "count": 3,
+        "percentage": 8.6,
+        "variants": {
+          "Azure": 3
+        }
+      },
+      {
+        "nom": "Code Review",
+        "count": 3,
+        "percentage": 8.6,
+        "variants": {
+          "Code review": 3
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 3,
+        "percentage": 8.6,
+        "variants": {
+          "Intégration continue": 3
+        }
+      },
+      {
+        "nom": "JavaScript",
+        "count": 3,
+        "percentage": 8.6,
+        "variants": {
+          "JavaScript": 3
+        }
+      },
+      {
+        "nom": "Linux",
+        "count": 3,
+        "percentage": 8.6,
+        "variants": {
+          "Linux": 3
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 3,
+        "percentage": 8.6,
+        "variants": {
+          "SQL": 3
+        }
+      },
+      {
+        "nom": "CI/CD",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "CI/CD": 2
+        }
+      },
+      {
+        "nom": "Coûts",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "Coûts": 2
+        }
+      },
+      {
+        "nom": "Cybersécurité",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "Cybersécurité": 2
+        }
+      },
+      {
+        "nom": "Documentation Technique",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "Documentation technique": 2
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "Délais": 2
+        }
+      },
+      {
+        "nom": "Développement web",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "Développement web": 2
+        }
+      },
+      {
+        "nom": "Feature Engineering",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "Feature Engineering": 2
+        }
+      },
+      {
+        "nom": "React",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "React": 2
+        }
+      },
+      {
+        "nom": "Travail En Équipe",
+        "count": 2,
+        "percentage": 5.7,
+        "variants": {
+          "Travail en équipe": 2
+        }
+      },
+      {
+        "nom": "Acquisition",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Acquisition": 1
+        }
+      },
+      {
+        "nom": "Airflow",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Airflow": 1
+        }
+      },
+      {
+        "nom": "Analyse Des Besoins",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Analyse des besoins": 1
+        }
+      },
+      {
+        "nom": "Ansible",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Ansible": 1
+        }
+      },
+      {
+        "nom": "Architecture Microservices",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Architecture microservices": 1
+        }
+      },
+      {
+        "nom": "Automatisation De Pipelines",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Automatisation de pipelines": 1
+        }
+      },
+      {
+        "nom": "Computer Vision",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Computer Vision": 1
+        }
+      },
+      {
+        "nom": "CSS",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "CSS": 1
+        }
+      },
+      {
+        "nom": "FastAPI",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "FastAPI": 1
+        }
+      },
+      {
+        "nom": "GitHub",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "GitHub": 1
+        }
+      },
+      {
+        "nom": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "GitLab CI": 1
+        }
+      },
+      {
+        "nom": "HTML",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "HTML": 1
+        }
+      },
+      {
+        "nom": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Monitoring de modèles": 1
+        }
+      },
+      {
+        "nom": "MySQL",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "MySQL": 1
+        }
+      },
+      {
+        "nom": "Power BI",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Power BI": 1
+        }
+      },
+      {
+        "nom": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Programmation concurrente": 1
+        }
+      },
+      {
+        "nom": "Protection Des Données",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Protection des données": 1
+        }
+      },
+      {
+        "nom": "Relation Client",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Relation Client": 1
+        }
+      },
+      {
+        "nom": "Spring",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Spring": 1
+        }
+      },
+      {
+        "nom": "TypeScript",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "TypeScript": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 2.9,
+        "variants": {
+          "Veille technologique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 30
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 18
+      },
+      "Git": {
+        "Git": 15
+      },
+      "Java": {
+        "Java": 11
+      },
+      "Vision": {
+        "Vision": 10
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 8,
+        "Sécurité Informatique": 1
+      },
+      "Analyse de données": {
+        "Analyse de données": 8
+      },
+      "Backend": {
+        "Backend": 8
+      },
+      "Data engineering": {
+        "Data Engineering": 7
+      },
+      "Design Patterns": {
+        "Design patterns": 7
+      },
+      "Python": {
+        "Python": 7
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 6
+      },
+      "MLOps": {
+        "MLOps": 6
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 6
+      },
+      "Vue.js": {
+        "Vue.js": 6
+      },
+      "API": {
+        "API": 5
+      },
+      "Kubernetes": {
+        "Kubernetes": 5
+      },
+      "PostgreSQL": {
+        "PostgreSQL": 5
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 5
+      },
+      "AWS": {
+        "AWS": 4
+      },
+      "Aéronautique": {
+        "Aéronautique": 4
+      },
+      "Cahier des charges": {
+        "Cahier des charges": 4
+      },
+      "Docker": {
+        "Docker": 4
+      },
+      "Model Drift": {
+        "Model drift": 4
+      },
+      "Optimisation Des Performances": {
+        "Optimisation des performances": 4
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 4
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 4
+      },
+      "Scalabilité": {
+        "Scalabilité": 4
+      },
+      "Anglais Professionnel": {
+        "Anglais Professionnel": 3
+      },
+      "API REST": {
+        "API REST": 3
+      },
+      "Azure": {
+        "Azure": 3
+      },
+      "Code Review": {
+        "Code review": 3
+      },
+      "Intégration Continue": {
+        "Intégration continue": 3
+      },
+      "JavaScript": {
+        "JavaScript": 3
+      },
+      "Linux": {
+        "Linux": 3
+      },
+      "SQL": {
+        "SQL": 3
+      },
+      "CI/CD": {
+        "CI/CD": 2
+      },
+      "Coûts": {
+        "Coûts": 2
+      },
+      "Cybersécurité": {
+        "Cybersécurité": 2
+      },
+      "Documentation Technique": {
+        "Documentation technique": 2
+      },
+      "Délais": {
+        "Délais": 2
+      },
+      "Développement web": {
+        "Développement web": 2
+      },
+      "Feature Engineering": {
+        "Feature Engineering": 2
+      },
+      "React": {
+        "React": 2
+      },
+      "Travail En Équipe": {
+        "Travail en équipe": 2
+      },
+      "Acquisition": {
+        "Acquisition": 1
+      },
+      "Airflow": {
+        "Airflow": 1
+      },
+      "Analyse Des Besoins": {
+        "Analyse des besoins": 1
+      },
+      "Ansible": {
+        "Ansible": 1
+      },
+      "Architecture Microservices": {
+        "Architecture microservices": 1
+      },
+      "Automatisation De Pipelines": {
+        "Automatisation de pipelines": 1
+      },
+      "Computer Vision": {
+        "Computer Vision": 1
+      },
+      "CSS": {
+        "CSS": 1
+      },
+      "FastAPI": {
+        "FastAPI": 1
+      },
+      "GitHub": {
+        "GitHub": 1
+      },
+      "Gitlab CI": {
+        "GitLab CI": 1
+      },
+      "HTML": {
+        "HTML": 1
+      },
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 1
+      },
+      "MySQL": {
+        "MySQL": 1
+      },
+      "Power BI": {
+        "Power BI": 1
+      },
+      "Programmation Concurrente": {
+        "Programmation concurrente": 1
+      },
+      "Protection Des Données": {
+        "Protection des données": 1
+      },
+      "Relation Client": {
+        "Relation Client": 1
+      },
+      "Spring": {
+        "Spring": 1
+      },
+      "TypeScript": {
+        "TypeScript": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 10,
+      "Développeur / Développeuse web": 7,
+      "Data Engineer": 2,
+      "Ingénieur / Ingénieure d'étude informatique": 2,
+      "Ingénieur / Ingénieure DevOps": 2,
+      "Chargé / Chargée d'affaires foncières": 1,
+      "Data Analyst": 1,
+      "Data Scientist": 1,
+      "Développeur / Développeuse décisionnel - Business Intelligence": 1,
+      "Economiste De La Construction": 1,
+      "Expert / Experte en cybersécurité": 1,
+      "Ingénieur / Ingénieure calcul et structure": 1,
+      "Ingénieur / Ingénieure en informatique embarquée": 1,
+      "Ingénieur / Ingénieure génie civil": 1,
+      "Responsable Des Études Et Applications Informatiques": 1,
+      "Responsable Du Développement Commercial": 1,
+      "Technicien / Technicienne de maintenance d'installations automatisées": 1
+    },
+    "niveau": {
+      "junior": 17,
+      "intermediaire": 18
+    },
+    "contrats": {
+      "CDI": 33,
+      "CDD - 12 Mois": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 15,
+        "percentage": 42.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 14,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 10,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 9,
+        "percentage": 25.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 9,
+        "percentage": 25.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 8,
+        "percentage": 22.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 8,
+        "percentage": 22.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Java",
+        "count": 8,
+        "percentage": 22.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 7,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Java",
+        "count": 7,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 7,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 7,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion de projet",
+        "count": 6,
+        "percentage": 17.1
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Intelligence artificielle",
+        "count": 6,
+        "percentage": 17.1
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vue.js",
+        "count": 6,
+        "percentage": 17.1
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Git",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Git",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Git",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Kubernetes",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "PostgreSQL",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Python",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vision",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Kubernetes",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "PostgreSQL",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 5,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Java",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Gestion de projet",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Pipelines De Données",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Git",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Kubernetes",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Gestion de projet",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Git",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Kubernetes",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Résolution De Problèmes",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vision",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vue.js",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Tests Automatisés",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Optimisation Des Performances",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Vision",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Python",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vision",
+        "count": 4,
+        "percentage": 11.4
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Déploiement De Modèles",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "MLOps",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Git",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Pipelines De Données",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Azure",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Gestion de projet",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Git",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Java",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Gestion de projet",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Git",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Git",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "MLOps",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Python",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Sécurité Informatique",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Vision",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Gestion de projet",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Git",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Git",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Java",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Gestion de projet",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Java",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "PostgreSQL",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Vision",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Gestion de projet",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Vision",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Python",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Model Drift",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "PostgreSQL",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "SQL",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Tests Automatisés",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Optimisation Des Performances",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Résolution De Problèmes",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Sécurité Informatique",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Kubernetes",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "PostgreSQL",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Résolution De Problèmes",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Vision",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Tests Automatisés",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Scalabilité",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Vision",
+        "competence_b": "Vue.js",
+        "count": 3,
+        "percentage": 8.6
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Backend",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Cahier des charges",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Optimisation Des Performances",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Vision",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Design Patterns",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Design Patterns",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Cybersécurité",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Optimisation Des Performances",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Design Patterns",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Docker",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Model Drift",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Optimisation Des Performances",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Vue.js",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Design Patterns",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Design Patterns",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Feature Engineering",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Vue.js",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intégration Continue",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "JavaScript",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Optimisation Des Performances",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Scalabilité",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Travail En Équipe",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Travail En Équipe",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Intégration Continue",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "JavaScript",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Linux",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Travail En Équipe",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Scalabilité",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "JavaScript",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Travail En Équipe",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Vision",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Vision",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Vision",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 5.7
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Anglais Professionnel",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Architecture Microservices",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Azure",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Aéronautique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Cybersécurité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Aéronautique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Cybersécurité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Azure",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Ansible",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Automatisation De Pipelines",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Aéronautique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Cybersécurité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "CSS",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "GitHub",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Anglais Professionnel",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "CI/CD",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Cybersécurité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "FastAPI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "GitHub",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "FastAPI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Cybersécurité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "FastAPI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "FastAPI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "GitHub",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "FastAPI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "FastAPI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "FastAPI",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "GitHub",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Gitlab CI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "GitHub",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "GitHub",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "GitHub",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "GitHub",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gitlab CI",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gitlab CI",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gitlab CI",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gitlab CI",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gitlab CI",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Gitlab CI",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Programmation Concurrente",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Programmation Concurrente",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Programmation Concurrente",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Programmation Concurrente",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "React",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "React",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "React",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "React",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Relation Client",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Relation Client",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Spring",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Spring",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Spring",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "Travail En Équipe",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "TypeScript",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 2.9
+      },
+      {
+        "competence_a": "TypeScript",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 2.9
+      }
+    ],
+    "fiabilite": 0.875,
+    "skill_sets": [
+      [
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "CI/CD",
+        "Intégration Continue",
+        "Veille Technologique",
+        "Scalabilité",
+        "Sécurité Informatique"
+      ],
+      [
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Anglais Professionnel",
+        "Sécurité Informatique",
+        "Tests Automatisés"
+      ],
+      [
+        "Gestion de projet",
+        "Intégration Continue",
+        "Sécurité Informatique"
+      ],
+      [
+        "Intelligence artificielle",
+        "Java",
+        "Data engineering",
+        "Vision",
+        "Design Patterns"
+      ],
+      [
+        "Intelligence artificielle"
+      ],
+      [
+        "Intelligence artificielle",
+        "Vue.js",
+        "Data engineering",
+        "Gestion de projet",
+        "Relation Client",
+        "Automatisation De Pipelines",
+        "Qualité Des Données",
+        "Sécurité Informatique",
+        "API",
+        "Backend",
+        "Optimisation Des Performances",
+        "Model Drift",
+        "Programmation Concurrente"
+      ],
+      [
+        "Intelligence artificielle",
+        "Cahier des charges",
+        "Analyse de données",
+        "Data engineering",
+        "Gestion de projet",
+        "Power BI",
+        "Pipelines De Données",
+        "Model Drift",
+        "Architecture Microservices",
+        "Backend",
+        "Sécurité Informatique",
+        "Résolution De Problèmes"
+      ],
+      [
+        "Analyse de données",
+        "Intelligence artificielle",
+        "Data engineering",
+        "Model Drift",
+        "Protection Des Données",
+        "Airflow"
+      ],
+      [
+        "API REST",
+        "Git",
+        "GitHub",
+        "Intelligence artificielle",
+        "PostgreSQL",
+        "Design Patterns",
+        "Backend",
+        "Qualité Des Données",
+        "Sécurité Informatique"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Python",
+        "MLOps",
+        "Aéronautique",
+        "Tests Automatisés",
+        "Cybersécurité",
+        "Déploiement De Modèles",
+        "Optimisation Des Performances",
+        "API",
+        "Backend",
+        "Monitoring De Modèles"
+      ],
+      [
+        "Cahier des charges",
+        "Git",
+        "Intelligence artificielle",
+        "Python",
+        "Anglais Professionnel",
+        "Coûts",
+        "Vision"
+      ],
+      [
+        "Ansible",
+        "Docker",
+        "Git",
+        "Intelligence artificielle",
+        "Kubernetes",
+        "Linux",
+        "Python",
+        "Vision",
+        "API",
+        "Pipelines De Données",
+        "Backend"
+      ],
+      [
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "JavaScript",
+        "Python",
+        "Analyse de données",
+        "MLOps",
+        "Aéronautique",
+        "Travail En Équipe",
+        "Analyse Des Besoins",
+        "Code Review",
+        "Sécurité Informatique",
+        "Cybersécurité",
+        "Déploiement De Modèles",
+        "Qualité Des Données",
+        "Résolution De Problèmes"
+      ],
+      [
+        "Python",
+        "MLOps",
+        "Résolution De Problèmes",
+        "Déploiement De Modèles",
+        "Scalabilité"
+      ],
+      [
+        "Docker",
+        "FastAPI",
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Kubernetes",
+        "Python",
+        "Vue.js",
+        "MLOps",
+        "Vision",
+        "CI/CD",
+        "Gitlab CI",
+        "Code Review",
+        "Design Patterns",
+        "Documentation Technique",
+        "Backend"
+      ],
+      [
+        "Linux",
+        "Python",
+        "Sécurité Informatique",
+        "Vision",
+        "Design Patterns",
+        "Computer Vision"
+      ],
+      [
+        "Intelligence artificielle",
+        "Vue.js",
+        "Gestion de projet",
+        "Coûts",
+        "Délais",
+        "Déploiement De Modèles"
+      ],
+      [
+        "API REST",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "PostgreSQL",
+        "Analyse de données",
+        "Data engineering"
+      ],
+      [
+        "API REST",
+        "CSS",
+        "Développement web",
+        "Gestion de projet",
+        "HTML",
+        "JavaScript",
+        "React"
+      ],
+      [
+        "AWS",
+        "Intelligence artificielle",
+        "Java",
+        "JavaScript",
+        "MySQL",
+        "React",
+        "TypeScript",
+        "Vue.js",
+        "Vision",
+        "Spring"
+      ],
+      [
+        "Docker",
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Kubernetes",
+        "PostgreSQL",
+        "Vision",
+        "Travail En Équipe"
+      ],
+      [
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Analyse de données",
+        "MLOps",
+        "Vision",
+        "Déploiement De Modèles",
+        "API",
+        "Backend",
+        "Pipelines De Données"
+      ],
+      [
+        "AWS",
+        "Azure",
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Kubernetes",
+        "PostgreSQL",
+        "Code Review",
+        "Design Patterns",
+        "Résolution De Problèmes"
+      ],
+      [
+        "Intelligence artificielle",
+        "Acquisition",
+        "Vision"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Aéronautique",
+        "Tests Automatisés",
+        "Design Patterns",
+        "Feature Engineering",
+        "Optimisation Des Performances"
+      ],
+      [
+        "AWS",
+        "Azure",
+        "Docker",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Kubernetes",
+        "Gestion de projet",
+        "Résolution De Problèmes",
+        "Scalabilité"
+      ],
+      [
+        "Cahier des charges",
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "SQL",
+        "Analyse de données",
+        "Documentation Technique",
+        "Tests Automatisés",
+        "Optimisation Des Performances",
+        "Sécurité Informatique"
+      ],
+      [
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Java",
+        "Data engineering",
+        "Analyse de données"
+      ],
+      [
+        "AWS",
+        "Azure",
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "PostgreSQL",
+        "SQL",
+        "Analyse de données",
+        "Data engineering",
+        "MLOps",
+        "Anglais Professionnel",
+        "Déploiement De Modèles",
+        "Model Drift",
+        "Design Patterns",
+        "Feature Engineering"
+      ],
+      [
+        "Intelligence artificielle",
+        "SQL",
+        "Vue.js",
+        "Gestion de projet",
+        "Délais",
+        "Vision"
+      ],
+      [
+        "Intelligence artificielle",
+        "Linux",
+        "Vue.js"
+      ],
+      [
+        "Intelligence artificielle",
+        "API",
+        "Backend",
+        "Pipelines De Données"
+      ],
+      [
+        "Intelligence artificielle",
+        "Intégration Continue",
+        "Résolution De Problèmes",
+        "Scalabilité"
+      ],
+      [
+        "Intelligence artificielle",
+        "Aéronautique"
+      ],
+      [
+        "Développement web",
+        "Git",
+        "Java",
+        "Cahier des charges",
+        "Gestion de projet",
+        "Tests Automatisés",
+        "Qualité Des Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4042298",
+        "intitule": "Data analyst (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4042298"
+      },
+      {
+        "id": "3950384",
+        "intitule": "Ingénieur logiciel embarqué (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3950384"
+      },
+      {
+        "id": "3949936",
+        "intitule": "Data scientist (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3949936"
+      },
+      {
+        "id": "3961391",
+        "intitule": "Data Manager (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3961391"
+      },
+      {
+        "id": "3962756",
+        "intitule": "Développeur ERP (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3962756"
+      },
+      {
+        "id": "3961721",
+        "intitule": "Développeur JAVA (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3961721"
+      },
+      {
+        "id": "3718259",
+        "intitule": "Ingénieur calculs (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3718259"
+      },
+      {
+        "id": "3714987",
+        "intitule": "Economiste de la construction (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3714987"
+      },
+      {
+        "id": "3714547",
+        "intitule": "Développeur mobile (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3714547"
+      },
+      {
+        "id": "3607372",
+        "intitule": "Développeur / Développeuse web (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3607372"
+      },
+      {
+        "id": "3553159",
+        "intitule": "Ingénieur / Ingénieure génie civil (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553159"
+      },
+      {
+        "id": "3552832",
+        "intitule": "Développeur JAVA (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3552832"
+      },
+      {
+        "id": "3553511",
+        "intitule": "Ingénieur développeur JAVA J2EE senior (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553511"
+      },
+      {
+        "id": "3553397",
+        "intitule": "Développeur Full-stack (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553397"
+      },
+      {
+        "id": "3553054",
+        "intitule": "Ingénieur développeur JAVA J2EE senior (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553054"
+      },
+      {
+        "id": "3553044",
+        "intitule": "Développeur foncier (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553044"
+      },
+      {
+        "id": "3552612",
+        "intitule": "Développeur / Développeuse web (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3552612"
+      },
+      {
+        "id": "3544246",
+        "intitule": "Développeur JAVA (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3544246"
+      },
+      {
+        "id": "3443633",
+        "intitule": "Automaticien / Automaticienne d'installation (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3443633"
+      },
+      {
+        "id": "3443582",
+        "intitule": "Développeur back end (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3443582"
+      },
+      {
+        "id": "3444008",
+        "intitule": "Business développeur (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3444008"
+      },
+      {
+        "id": "3327586",
+        "intitule": "Développeur Python (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3327586"
+      },
+      {
+        "id": "3318819",
+        "intitule": "Expert / Experte en cybersécurité (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3318819"
+      },
+      {
+        "id": "3127627",
+        "intitule": "Chef de projet logiciel (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3127627"
+      },
+      {
+        "id": "2986058",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-05-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2986058"
+      },
+      {
+        "id": "2865979",
+        "intitule": "Développeur / Développeuse web (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-05-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2865979"
+      },
+      {
+        "id": "2142631",
+        "intitule": "Architecte logiciel (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2142631"
+      },
+      {
+        "id": "2141862",
+        "intitule": "Architecte logiciel (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2141862"
+      },
+      {
+        "id": "2146647",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2146647"
+      },
+      {
+        "id": "1835913",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1835913"
+      },
+      {
+        "id": "1723747",
+        "intitule": "Développeur commercial (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1723747"
+      },
+      {
+        "id": "1261055",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1261055"
+      },
+      {
+        "id": "1260595",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1260595"
+      },
+      {
+        "id": "1048665",
+        "intitule": "Chef de projet data (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1048665"
+      },
+      {
+        "id": "9312597",
+        "intitule": "Développeur web (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-02-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/9312597"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4042298",
+        "intitule": "Data analyst (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4042298"
+      },
+      {
+        "id": "3950384",
+        "intitule": "Ingénieur logiciel embarqué (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3950384"
+      },
+      {
+        "id": "3949936",
+        "intitule": "Data scientist (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3949936"
+      },
+      {
+        "id": "3961391",
+        "intitule": "Data Manager (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3961391"
+      },
+      {
+        "id": "3962756",
+        "intitule": "Développeur ERP (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3962756"
+      },
+      {
+        "id": "3961721",
+        "intitule": "Développeur JAVA (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3961721"
+      },
+      {
+        "id": "3718259",
+        "intitule": "Ingénieur calculs (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3718259"
+      },
+      {
+        "id": "3714987",
+        "intitule": "Economiste de la construction (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3714987"
+      },
+      {
+        "id": "3714547",
+        "intitule": "Développeur mobile (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3714547"
+      },
+      {
+        "id": "3607372",
+        "intitule": "Développeur / Développeuse web (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3607372"
+      },
+      {
+        "id": "3553159",
+        "intitule": "Ingénieur / Ingénieure génie civil (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553159"
+      },
+      {
+        "id": "3552832",
+        "intitule": "Développeur JAVA (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3552832"
+      },
+      {
+        "id": "3553511",
+        "intitule": "Ingénieur développeur JAVA J2EE senior (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553511"
+      },
+      {
+        "id": "3553397",
+        "intitule": "Développeur Full-stack (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553397"
+      },
+      {
+        "id": "3553054",
+        "intitule": "Ingénieur développeur JAVA J2EE senior (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553054"
+      },
+      {
+        "id": "3553044",
+        "intitule": "Développeur foncier (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553044"
+      },
+      {
+        "id": "3552612",
+        "intitule": "Développeur / Développeuse web (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3552612"
+      },
+      {
+        "id": "3544246",
+        "intitule": "Développeur JAVA (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3544246"
+      },
+      {
+        "id": "3443633",
+        "intitule": "Automaticien / Automaticienne d'installation (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3443633"
+      },
+      {
+        "id": "3443582",
+        "intitule": "Développeur back end (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3443582"
+      },
+      {
+        "id": "3444008",
+        "intitule": "Business développeur (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3444008"
+      },
+      {
+        "id": "3327586",
+        "intitule": "Développeur Python (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3327586"
+      },
+      {
+        "id": "3318819",
+        "intitule": "Expert / Experte en cybersécurité (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3318819"
+      },
+      {
+        "id": "3127627",
+        "intitule": "Chef de projet logiciel (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3127627"
+      },
+      {
+        "id": "2986058",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-05-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2986058"
+      },
+      {
+        "id": "2865979",
+        "intitule": "Développeur / Développeuse web (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-05-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2865979"
+      },
+      {
+        "id": "2142631",
+        "intitule": "Architecte logiciel (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2142631"
+      },
+      {
+        "id": "2141862",
+        "intitule": "Architecte logiciel (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2141862"
+      },
+      {
+        "id": "2146647",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2146647"
+      },
+      {
+        "id": "1835913",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1835913"
+      },
+      {
+        "id": "1723747",
+        "intitule": "Développeur commercial (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1723747"
+      },
+      {
+        "id": "1261055",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1261055"
+      },
+      {
+        "id": "1260595",
+        "intitule": "Développeur / Développeuse informatique (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1260595"
+      },
+      {
+        "id": "1048665",
+        "intitule": "Chef de projet data (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-04-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1048665"
+      },
+      {
+        "id": "9312597",
+        "intitule": "Développeur web (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Lyon 5e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-02-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/9312597"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:09.745387",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

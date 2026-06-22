@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:3443633",
+  "value": {
+    "id": "3443633",
+    "intitule": "Automaticien / Automaticienne d'installation (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 5e Arrondissement",
+    "ville": "69385",
+    "code_postal": "69005",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3443633",
+    "description": "Description du poste :\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Astek recherche actuellement des profils Ce que nous allons accomplir ensemble :\nRejoignez une équipe innovante où votre expertise en automatisation aura un impact direct sur la performance et l'évolution de nos systèmes !\nEn tant qu'ingénieur en automatisation, vous serez chargé de concevoir, optimiser et maintenir nos installations automatisées, tout en pilotant l'amélioration continue de nos processus industriels. Votre rôle sera essentiel pour soutenir l'innovation et renforcer l'efficacité de notre entreprise.\nVotre mission si vous l'acceptez Votre rôle en tant qu'automaticien sera de prendre en charge la conception, le développement et la mise en service de nos applications automates industriels :\n1. Développement des applications automates industriels Elaboration des spécifications logicielles et analyse fonctionnelle en collaboration avec les équipes techniques et métiers\n* Conception générale et détaillée des programmes automates\n* Programmation et codage\n2. Tests et validation***Réalisations de tests : simulation, unitaires et d'intégration.\n* Validation sur machines réelles : exécution de test, analyse résultats.\n3. Analyse et résolution de problèmes techniques sur machines\n4. Réalisation de la documentation technique des logiciels automates : documents de spécification/conception, plans & rapports de tests, rapports d'intervention, notices de réglage et d'utilisation\nVotre Stack de Jeu :\nC C - Python - PLC - Matlab - Simulink - Siemens - Schneider",
+    "metier": "Technicien / Technicienne de maintenance d'installations automatisées",
+    "niveau": "junior",
+    "competences": [
+      "Python",
+      "Résolution de problèmes",
+      "Déploiement de modèles",
+      "MLOps",
+      "Scalabilité"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'ingénieur en automatisation, vous serez chargé de concevoir, optimiser et maintenir nos installations automatisées, tout en pilotant l'amélioration continue de nos processus industriels.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:09.609893",
+  "input_hash": "664026a23d33038db1362c7da3d607a725b63335e8ab9ebbbf1fc329dce7b4a6",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

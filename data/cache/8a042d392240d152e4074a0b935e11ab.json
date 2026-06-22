@@ -1,0 +1,107 @@
+{
+  "key": "offer_extraction:209YVXQ",
+  "value": {
+    "id": "209YVXQ",
+    "intitule": "Professeur/formateur de Physique H/F #TDE2026",
+    "entreprise": "LEP PIERRE ET LOUIS POUTRAIN",
+    "territoire": "05 - ST JEAN ST NICOLAS",
+    "ville": "05145",
+    "code_postal": "05260",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209YVXQ",
+    "description": "*Poste à pourvoir pour la rentrée de septembre dans le cadre de l'ouverture d'un nouveau BTS Cyber Sécurité.\n\nPremière année 5h/semaine tous les 15 jours (environ 100h annualisées) - 90 heures supplémentaires la deuxième année\n\nLe professeur assure un enseignement de physique directement articulé aux compétences professionnelles du référentiel BTS CIEL. Les domaines couverts incluent, en lien avec les compétences C04 à C11 :\n- Mesures et métrologie\n- Électricité et électronique de base\n- Traitement du signal\n- Transmissions et communications\n- Systèmes en boucle fermée\n- Capteurs et actionneurs\n\nLe professeur est impliqué dans le dispositif d'évaluation du BTS CIEL :\n- Contrôle en cours de formation (CCF) : suivi de l'acquisition des compétences, renseignement du\nlivret de suivi individualisé, bilans intermédiaires et finaux.\n- Participation aux épreuves ponctuelles E4 (écrit 6h) et E5 (pratique 3h) : surveillance et correction\nde la partie physique en binôme avec le professeur de STI.\n\nProfil recherché :\n- Diplômes requis (liste indicative)\n- Master (Bac+5) en physique, physique appliquée, électronique, génie électrique, traitement du signal ou domaines connexes\nfortement recommandé\n- Agrégation ou CAPES de physique-chimie ou sciences physiques souhaité pour les titulaires de l'Éducation nationale\n- Doctorat en physique ou sciences de l'ingénieur apprécié\n- Licence professionnelle ou BUT, complété par une expérience professionnelle significative accepté pour des missions de vacataire\n\nExpériences attendues pour un poste d'enseignement supérieur :\n- Expérience pédagogique en enseignement supérieur ou en STS (BTS)\n- Expérience industrielle ou technique souhaitée\n\nCompétences disciplinaires attendues :\n- Maîtrise approfondie des domaines de physique du référentiel : électrocinétique, traitement du signal, CEM, métrologie, transmission.\n- Capacité à relier les lois et modèles physiques aux systèmes technologiques concrets étudiés en BTS.\n- Aptitude à conduire des travaux pratiques en laboratoire (oscilloscopes numériques, GBF, analyseurs de spectre, systèmes embarqués.).\n- Maîtrise d'outils de simulation (LTSpice, Scilab, Python/NumPy.) et de logiciels de traitement de données expérimentales.\n- Lecture aisée de documentation technique en anglais (le référentiel prévoit l'exploitation de notices ou documents scientifiques en langue anglaise lors des épreuves).\n\nCompétences pédagogiques et relationnelles :\n- Aptitude à concevoir des progressions pédagogiques cohérentes sur deux ans en lien avec les compétences professionnelles du référentiel.\n- Maîtrise des outils numériques pour l'enseignement (ENT, Moodle, tablette en TP, outils collaboratifs).\n- Sens de l'écoute, disponibilité et capacité à accompagner un public d'étudiants (Bac+0 à Bac+1) dans l'acquisition de compétences scientifiques exigeantes.\n- Rigueur dans la mise en œuvre des évaluations et la tenue du livret de suivi individualisé des compétences.\n- Esprit d'équipe indispensable pour le travail au quotidien et la participation aux jurys d'examen.\n\nÉléments différenciants (atouts appréciés) :\n- Expérience préalable de l'enseignement en BTS ou en CPGE (classes préparatoires aux grandes écoles).\n- Connaissance des spécificités du BTS CIEL et de son référentiel (option A).\n- Pratique de la pédagogie inversée, de l'enseignement par projets ou de la simulation numérique en TP.\n- Réseau professionnel dans les secteurs de l'industrie numérique, de l'électronique ou des télécommunications, facilitant la contextualisation des enseignements.\n- Expérience de la co-intervention ou de la co-animation pluridisciplinaire.\n\nLes candidatures (lettre de motivation, curriculum vitae détaillé mentionnant l'ensemble des expériences d'enseignement et/ou industrielles, copie des diplômes) sont à adresser à :\nLycée Professionnel Privé POUTRAIN\n1, rue de l'Eglise\n05260 SAINT JEAN SAINT NICOLAS\n\nOu par mail \n\nRéférence à rappeler : RECRUTEMENT - Professeur Physique - BTS CIEL\n",
+    "metier": "Professeur / Professeure d'enseignement technologique",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Intelligence artificielle",
+      "NumPy",
+      "Python",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": 30,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Poste à pourvoir pour la rentrée de septembre dans le cadre de l'ouverture d'un nouveau BTS Cyber Sécurité.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Master (Bac+5) en physique, physique appliquée, électronique, génie électrique, traitement du signal ou domaines connexes",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Master (Bac+5) en physique, physique appliquée, électronique, génie électrique, traitement du signal ou domaines connexes",
+        "confidence": 0.9
+      },
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": false,
+        "source_sentence": "Doctorat en physique ou sciences de l'ingénieur apprécié",
+        "confidence": 0.7
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Doctorat en physique ou sciences de l'ingénieur apprécié",
+        "confidence": 0.7
+      },
+      {
+        "label": "Licence",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Licence professionnelle ou BUT, complété par une expérience professionnelle significative accepté pour des missions de vacataire",
+        "confidence": 0.9
+      },
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Licence professionnelle ou BUT, complété par une expérience professionnelle significative accepté pour des missions de vacataire",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+0",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Sens de l'écoute, disponibilité et capacité à accompagner un public d'étudiants (Bac+0 à Bac+1) dans l'acquisition de compétences scientifiques exigeantes.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+1",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Sens de l'écoute, disponibilité et capacité à accompagner un public d'étudiants (Bac+0 à Bac+1) dans l'acquisition de compétences scientifiques exigeantes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 9,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:03.878660",
+  "input_hash": "b1c49fb316b31ec94cb4f77f5e5610109d2418af2932e4c8f1824670fa964e4f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

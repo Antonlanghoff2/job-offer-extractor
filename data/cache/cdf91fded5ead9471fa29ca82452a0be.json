@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:3637747",
+  "value": {
+    "id": "3637747",
+    "intitule": "Ingénieur réseau expert (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "Intérim - 1 Mois",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3637747",
+    "description": "Actual Talent Metz recherche pour son client, un prestataire informatique, un Ingénieur Réseau Expert - Hybrid Build & Run (H/F) dans le cadre d'une mission d'intérim de longue durée basée à Strasbourg.Informations sur le contrat :- Localisation : Strasbourg - Contrat : Intérim (3 mois renouvelable)- Salaire : 55kEUR à 62kEUR annuel brut selon profil et expérience.- Démarrage : Immédiat- Organisation : Mixte 50% Projet (Build) / 50% Exploitation (Run).Voici les missions qui vous seront confiées :- Pilotage technique et exécution de la migration des infrastructures Meraki (passage de la solution MX vers ION) et connexion des sites distants.- Administration experte des switches Cisco Nexus et gestion avancée des pare-feu Palo Alto (filtrage applicatif, VPN).- Optimisation des protocoles de routage dynamique (BGP/IBGP) et gestion des interconnexions WAN (Orange VPN).- Automatisation de l'exploitation réseau et des déploiements via du scripting Python et une approche DevOps.- Maintien rigoureux de l'IPAM (NetBox) et support de niveau 3 sur les incidents critiques mondiaux.",
+    "metier": "Expert / Experte systèmes et réseaux informatiques",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Actual Talent Metz recherche pour son client, un prestataire informatique, un Ingénieur Réseau Expert - Hybrid Build & Run (H/F) dans le cadre d'une mission d'intérim de longue durée basée à Strasbourg.Informations sur le contrat :- Localisation : Strasbourg - Contrat : Intérim (3 mois renouvelable)- Salaire : 55kEUR à 62kEUR annuel brut selon profil et expérience.- Démarrage : Immédiat- Organisation : Mixte 50% Projet (Build) / 50% Exploitation (Run).Voici les missions qui vous seront confiées :- Pilotage technique et exécution de la migration des infrastructures Meraki (passage de la solution MX vers ION) et connexion des sites distants.- Administration experte des switches Cisco Nexus et gestion avancée des pare-feu Palo Alto (filtrage applicatif, VPN).- Optimisation des protocoles de routage dynamique (BGP/IBGP) et gestion des interconnexions WAN (Orange VPN).- Automatisation de l'exploitation réseau et des déploiements via du scripting Python et une approche DevOps.- Maintien rigoureux de l'IPAM (NetBox) et support de niveau 3 sur les incidents critiques mondiaux.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:59.454942",
+  "input_hash": "62f30c8ce4a1b87e5dc5b16d46f54c7725954cddf00c24629f2b66e9f66962f4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

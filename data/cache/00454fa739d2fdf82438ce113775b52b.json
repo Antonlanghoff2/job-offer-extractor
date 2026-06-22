@@ -1,0 +1,78 @@
+{
+  "key": "offer_extraction:3829320",
+  "value": {
+    "id": "3829320",
+    "intitule": "Développeur / Développeuse web (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3829320",
+    "description": "Description du poste :\nLe CFA INSTA recrute pour le compte de l'une de ses entreprises partenaires un(e) alternant(e) Développeur Web. Intégré(e) à une équipe technique, vous participerez à la conception, au développement et à la maintenance de sites web et d'applications web modernes.\nVos missions principales Participer à la conception de sites et applications web\n* Développer des fonctionnalités front-end et/ou back-end\n* Intégrer des maquettes (HTML, CSS, JavaScript)\n* Développer et consommer des API (REST)\n* Réaliser des tests et corriger les bugs\n* Assurer la maintenance évolutive des projets\n* Optimiser les performances et le référencement (SEO technique)\n* Collaborer avec les équipes design et produit\nDescription du profil Titulaire d'un Bac +2 en informatique (BTS SIO, BUT, ou équivalent)\n* Intérêt marqué pour le développement web\n* Bonne logique et capacité d'analyse\n* Curiosité, rigueur et autonomie\n* Bon esprit d'équipe\nCompétences techniques appréciées Front-end : HTML, CSS, JavaScript\n* Frameworks : React, Vue.js ou Angular\n* Back-end : Node.js, PHP (Laravel), ou autre\n* Bases de données : MySQL, PostgreSQL\n* Outils : Git\n* Notions en API REST",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "CSS",
+      "Développement web",
+      "Git",
+      "HTML",
+      "JavaScript",
+      "MySQL",
+      "PostgreSQL",
+      "React",
+      "Vue.js",
+      "Application web",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Gestion de projet",
+      "API",
+      "Backend",
+      "Data Engineering",
+      "MLOps"
+    ],
+    "salaire_min": 21000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Description du profil Titulaire d'un Bac +2 en informatique (BTS SIO, BUT, ou équivalent)",
+        "confidence": 0.9
+      },
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Description du profil Titulaire d'un Bac +2 en informatique (BTS SIO, BUT, ou équivalent)",
+        "confidence": 0.9
+      },
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Description du profil Titulaire d'un Bac +2 en informatique (BTS SIO, BUT, ou équivalent)",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:47.358926",
+  "input_hash": "1f98f31ef5e2e521d32aa9a22bcf2eb4b0cc0278198d1a72bb8989c39bc44b2d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

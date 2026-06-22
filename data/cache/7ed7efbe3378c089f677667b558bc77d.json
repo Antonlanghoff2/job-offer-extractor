@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:209FSKP",
+  "value": {
+    "id": "209FSKP",
+    "intitule": "(ALTERNANCE) - Ingénieur en traitement des données (H/F)",
+    "entreprise": "AUTOMOTIVE CELLS COMPANY SE",
+    "territoire": "62 - Billy-Berclau",
+    "ville": "62132",
+    "code_postal": "62138",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FSKP",
+    "description": "En rejoignant ACC, vous contribuez à façonner l'avenir de la mobilité électrique : nos batteries équipent déjà les PEUGEOT E-3008 et E-5008, Opel Grandland, DS N°8, Citroën C5 Aircross et Jeep Compass - et bientôt Mercedes !\n\nDescription du poste\n\nDans le périmètre du procédé de fabrication des électrodes :\n\n * Collecter, nettoyer et analyser les données provenant de nos machines, des instruments en ligne et hors ligne, du système MES, etc., afin d'identifier des tendances et des informations pertinentes. En tant que premier projet d'intégration, il/elle devra travailler sur l'étude de l'influence de l'humidité de l'air extérieur sur la qualité du coating.\n * Soutenir les besoins d'analyse des ingénieurs procédés et de l'équipe de production afin de faciliter la montée en cadence de nos gigafactories.\n * Développer des outils permettant d'analyser les lots de production et les indicateurs de défaillance.\n * Assister ou piloter les activités locales liées aux projets data, nécessitant du temps passé sur le terrain (shopfloor).\n * Travailler en collaboration avec d'autres équipes sur des activités data transverses ou couvrant l'ensemble du procédé.\n * Consolider les nouveaux besoins métiers au sein du périmètre.\n * Participer aux réunions d'équipe pour discuter de l'avancement des projets, des prochaines étapes et communiquer les résultats.\n\nVotre profil correspond si :\n\n * Vous êtes orienté data, à l'aise avec la gestion de larges ensembles de données provenant de bases multiples, l'étude de séries temporelles, l'analyse de corrélation, la visualisation de données, les statistiques de base, les méthodes de résolution de problèmes et l'analyse des causes racines. \n * Vous maîtrisez les outils d'analyse de données tels que Python, SQL et PowerBI. Des notions d'Excel VBA et une connaissance de l'environnement Databricks constituent un plus.\n * Vous préparez un diplôme de niveau Bachelor dans un domaine lié aux données (statistiques, informatique, mathématiques, etc.). \n *  Maîtrise du français et de l'anglais (environnement international).\n\nPourquoi nous rejoindre ?\n\n Carte restaurants \n Intéressement \n CSE attractif : cartes cadeaux, chèques vacances, billetterie, sorties organisées...\n Indemnités kilométriques \n Prime cooptation\n 2 offres de livraison repas + frigos connectés\n Environnement multiculturel et inclusif \n Accès à la plateforme goFluent pour développer vos compétences linguistiques\n Equipements récents et de haute technologie",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Python",
+      "SQL",
+      "Qualité des données",
+      "Data Engineering",
+      "API",
+      "Pipelines de données",
+      "Tests automatisés",
+      "Gestion de projet",
+      "Model drift"
+    ],
+    "salaire_min": 3008,
+    "salaire_max": 3008,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous préparez un diplôme de niveau Bachelor dans un domaine lié aux données (statistiques, informatique, mathématiques, etc.).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:18.465308",
+  "input_hash": "25109dd2bb41a762e9858215b8fd0ce37ff5002f9a319921366e27cb85ecad89",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

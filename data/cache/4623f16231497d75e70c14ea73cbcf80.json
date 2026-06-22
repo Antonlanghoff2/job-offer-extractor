@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:3895480",
+  "value": {
+    "id": "3895480",
+    "intitule": "Ingénieur DevOps F/H - Informatique de gestion (H/F)",
+    "entreprise": "AKKODIS FRANCE SAS",
+    "territoire": "16 - Angoulême",
+    "ville": "16015",
+    "code_postal": "16000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3895480",
+    "description": "Descriptif du poste:\n\n\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région et recrute un Ingénieur DevOps H/F pour une mission longue durée. Ce poste s'inscrit dans un contexte de transformation du système d'information vers une architecture distribuée basée sur des microservices Quarkus et des micro front-ends Angular. Vous interviendrez sur des projets à forte valeur ajoutée dans le secteur de l'aéronautique, en participant à la modernisation et à la sécurisation des environnements techniques.\n\n \n\nResponsabilités principales :\n\n\n\nAutomatiser les processus de déploiement et d'intégration continue à l'aide d'outils tels que Jenkins ou GitLab CI.\n\nAssurer la maintenance et l'évolution des infrastructures DevOps, en veillant à leur performance et à leur sécurité.\n\nCollaborer avec les équipes de développement pour optimiser et maintenir les pipelines CI/CD.\n\nGérer la configuration des environnements de production et de test, incluant la gestion des conteneurs avec Docker et Kubernetes.\n\nSurveiller les systèmes à l'aide d'outils comme Prometheus, Grafana, node-exporter et intervenir en cas d'incident.\n\nDocumenter les procédures et configurations techniques afin d'assurer la traçabilité et la pérennité des actions menées.\n\nParticiper à la définition des standards et bonnes pratiques DevOps, et contribuer à leur diffusion au sein des équipes.\n\n \n\nEnvironnement de travail :\n\n\n\nVous évoluerez dans un environnement technique moderne intégrant Java, Angular 21, Quarkus, Kubernetes, C++ (apprécié), ainsi que des technologies Data telles que NiFi, Spark, Dask, bases orientées graphes, JupyterLab, OPC UA, PostgreSQL, timescaledb, Prometheus, CloudBeaver et caddy. La mission débute sur site client puis se poursuit en externalisation à Mérignac. Vous serez impliqué(e) dans la migration d'une application monolithique vers une architecture microservices, ainsi que dans l'intégration avec la plateforme de données du client.\n\nProfil recherché:\nDe formation supérieure en informatique ou équivalent, vous justifiez d'une expérience réussie de minimum 3 ans sur un poste similaire, idéalement dans le secteur aéronautique ou industriel. Vous possédez une maîtrise des environnements Linux, des scripts Shell, de l'intégration continue (Jenkins, GitLab CI), de la gestion de conteneurs (Docker, Kubernetes) et de la configuration (Ansible, Puppet ou Chef). Vous avez des compétences en automatisation (Python, Bash), en monitoring (Prometheus, Grafana, Nagios) et une connaissance des architectures cloud. La connaissance des environnements AWS, Azure ou Google Cloud, des technologies Data (NiFi, Spark, Dask, JupyterLab, bases orientées graphes) ainsi que des outils de gestion de bases de données (PostgreSQL, timescaledb) sera appréciée. Un sens de la communication, une capacité d'analyse et une expérience avec les méthodologies Agile sont attendus.\n\n\n Akkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Aéronautique",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "Linux",
+      "PostgreSQL",
+      "Python",
+      "CI/CD",
+      "Automatisation de pipelines",
+      "Automatisation de processus",
+      "Monitoring système",
+      "Intégration continue",
+      "Analyse de données",
+      "Data Engineering",
+      "Optimisation des performances",
+      "Documentation technique",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Tests automatisés",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 21000,
+    "salaire_max": 21000,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région et recrute un Ingénieur DevOps H/F pour une mission longue durée.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 27,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:47.086918",
+  "input_hash": "a1b851ee5ea549b462c7f75e8c653b8eab5c24793588069a64805108a17ba886",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

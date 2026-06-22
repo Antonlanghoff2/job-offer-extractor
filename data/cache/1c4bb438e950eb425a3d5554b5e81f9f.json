@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:3594195",
+  "value": {
+    "id": "3594195",
+    "intitule": "Apprenti Data Analyst H/F",
+    "entreprise": "PROXISERVE",
+    "territoire": "59 - Lambersart",
+    "ville": "59328",
+    "code_postal": "59130",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3594195",
+    "description": "RESPONSABILITÉS : Votre rôle sera de mettre en place la collecte et la mise à disposition des données au sein de l'entreprise. Vous serez également en charge d'industrialiser et mettre en production des traitements sur les données (exemple : mise à disposition de tableaux de bord... Vos missions seront : • Analyser des données pour remonter les informations auprès des clients. Exemple : anomalies, délais d'interventions • Recueillir les besoins des différentes agences, (accompagner les agences dans la mise en place d'outils les permettant de les rendre « autonomes ») • Travailler les solutions de collecte et de stockage de la donnée • Mettre en place et maintenir les batchs, c'est-à-dire les automatisations d'une série de traitements • Automatiser la création de tableaux de bord aux équipes interne / externe. PROFIL RECHERCHÉ : Futur étudiant en Master/école d'ingénieur en informatique, en data science, ou en statistiques. Vous maîtrisez des bases de données et gestion de bases de données (SQL/NoSQL) Vous maîtrisez les langages de programmation (C++, Scala, Java, Python...) Vous faites preuve de rigueur et d'organisation. Vous avez une certaine aisance relationnelle et une capacité à travailler en équipe. Vous êtes apte à rédiger des notes et livrables clairs et synthétiques.",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Délais",
+      "Intelligence artificielle",
+      "Java",
+      "NoSQL",
+      "Python",
+      "SQL",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Intégration continue",
+      "Qualité des données",
+      "Tests automatisés"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Futur étudiant en Master/école d'ingénieur en informatique, en data science, ou en statistiques.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Futur étudiant en Master/école d'ingénieur en informatique, en data science, ou en statistiques.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:48.037038",
+  "input_hash": "97d528698de92cb1690f97176ca38e15eb6d6ad0b7f09b789a1c8ce602c19b19",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

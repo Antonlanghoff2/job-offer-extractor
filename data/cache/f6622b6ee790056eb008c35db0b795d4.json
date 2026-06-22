@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:204TCHG",
+  "value": {
+    "id": "204TCHG",
+    "intitule": "Développeur / Développeuse logiciel ou d'application (H/F)",
+    "entreprise": "FUJI ELECTRIC FRANCE SA",
+    "territoire": "63 - CLERMONT FERRAND",
+    "ville": "63113",
+    "code_postal": "63000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-03-02",
+    "date": "2026-03-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/204TCHG",
+    "description": "Dans le cadre du renforcement de notre équipe IT, nous recherchons un/une Développeur logiciel .NET pour intervenir sur plusieurs applications utilisées dans un environnement de production industrielle. \nLes applications sont basées sur une architecture serveur avec une base de données centralisée.\n\nVos missions :\nAu sein de l'équipe IT, vous serez amené(e) à :\n- Réaliser les évolutions fonctionnelles et techniques des applications existantes\n- Assurer le maintien en conditions opérationnelles des applications\n- Analyser, diagnostiquer et corriger les incidents applicatifs\n- Intervenir sur du code existant, en proposant des optimisations et améliorations continues\n- Travailler en collaboration étroite avec les équipes IT et métiers afin de garantir l'adéquation des solutions aux besoins opérationnels\n\nVous interviendrez dans un environnement technique industriel , nécessitant une maitrise des langages de programmation ( .NET/ C# ) , la gestion et l'utilisation de bases de données centralisées , ou encore certains environnements de développement avec les langages spécifiques (ex : Lab window CVI). \n\nCompétences clés :\nDéveloppement applicatif .NET / C#\nBases de données : PostgreSQL, Firebird, MySQL, SQL Server\nConnaissances en langage C (LabWindows CVI)\nProtocoles industriels et de communication : MQTT, RS232, autres protocoles\nDéveloppement d'applications Android (framework MAUI) apprécié\n\nProfil recherché :\nIssu(e) d'une formation Bac +5 en informatique\nVous justifiez de minimum 5 ans d'expérience en développement applicatif, sur des systèmes existants et exigeants\nUne expérience en milieu industriel ou de production constitue un véritable atout\nReconnu(e) pour votre autonomie, votre rigueur et votre capacité d'analyse\nVous appréciez le travail collaboratif tout en étant capable d'intervenir de manière autonome sur des bases de code existantes\n\nPrise de poste : Dès que possible\n ",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "MySQL",
+      "PostgreSQL",
+      "SQL",
+      "Résolution de problèmes",
+      "Sécurité informatique",
+      "Analyse de données",
+      "Data Engineering",
+      "MLOps",
+      "Qualité des données"
+    ],
+    "salaire_min": 36000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation Bac +5 en informatique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s) - en développement applicatif",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:00.368324",
+  "input_hash": "6750995b244aa6ce6b038a086f962cdbdacb0efed62f466b42975cdd56274802",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

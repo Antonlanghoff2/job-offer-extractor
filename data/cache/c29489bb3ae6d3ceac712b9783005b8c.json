@@ -1,0 +1,182 @@
+{
+  "key": "trends:18 - Cher",
+  "value": {
+    "territoire": "18 - Cher",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Architecture Microservices": 1,
+      "Backend": 1,
+      "Intelligence artificielle": 1,
+      "Python": 1,
+      "Sécurité Informatique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Architecture Microservices",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Architecture microservices": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Architecture Microservices": {
+        "Architecture microservices": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      }
+    },
+    "metiers": {
+      "Superviseur / Superviseuse de production virtuelle": 1
+    },
+    "niveau": {
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Architecture Microservices",
+        "Backend",
+        "Sécurité Informatique"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4006739",
+        "intitule": "Infographiste 3 D (H/F)",
+        "entreprise": "",
+        "territoire": "18 - Cher",
+        "contrat": "CDI",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4006739"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4006739",
+        "intitule": "Infographiste 3 D (H/F)",
+        "entreprise": "",
+        "territoire": "18 - Cher",
+        "contrat": "CDI",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4006739"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:04.974895",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

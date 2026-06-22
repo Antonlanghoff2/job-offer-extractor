@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:3496265",
+  "value": {
+    "id": "3496265",
+    "intitule": "Ingénieur Logiciel H/F",
+    "entreprise": "Michael Page",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3496265",
+    "description": "L'Ingénieur·e Logiciel Backend - conçoit, développe et maintient les services backend d'une plateforme de connectivité maritime. Le rôle couvre l'architecture logicielle, le développement d'API sécurisées et la supervision des flux, dans un contexte Informatique distribué, orienté performance, fiabilité et sécurité.\nMissions principales \n * Concevoir, développer et maintenir les services backend en Python (framework Flask)\n * Participer aux choix d'architecture logicielle et à l'évolution d'une plateforme micro-services\n * Développer et maintenir des API \n * Intégrer et administrer des bases de données MySQL et InfluxDB (séries temporelles)\n * Mettre en œuvre des mécanismes de monitoring et supervision via Grafana\n * Collaborer avec les équipes frontend, infrastructure et produit pour garantir la cohérence globale de la solution\nProfil recherché : \n * \nDiplôme de niveau Bac+5 en informatique ou ingénierie logicielle\n * Compétences solides en développement backend Python et frameworks associés\n * Maîtrise bases de données MySQL \n * Compréhension des enjeux réseau, sécurité et supervision\n * Pratique DevOps (Git, CI/CD et observabilité)\n * Compétences en IA\n * Esprit d'analyse, autonomie, sens du collectif et capacité de documentation\n * Anglais technique professionnel\nLa rémunération et les avantages pour ce poste sont : \n * Rémunération selon expérience,\n * Titres restaurants (60% employeurs),\n * Intéressement suivant résultats,\n * Mutuelle aux conditions avantageuses et 100% employeurs.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Flask",
+      "Git",
+      "Intelligence artificielle",
+      "MySQL",
+      "Python",
+      "Vision",
+      "Administration de bases de données",
+      "API",
+      "Backend",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Monitoring de modèles",
+      "Pipelines de données"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'Ingénieur·e Logiciel Backend - conçoit, développe et maintient les services backend d'une plateforme de connectivité maritime.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Diplôme de niveau Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplôme de niveau Bac+5 en informatique ou ingénierie logicielle",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:23.573375",
+  "input_hash": "a20d7904c85282a1264ea35cba965c4bf7e1a19d80d7423876ca029acd5e62ab",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

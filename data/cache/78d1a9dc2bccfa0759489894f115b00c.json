@@ -1,0 +1,298 @@
+{
+  "key": "trends:76 - Massy",
+  "value": {
+    "territoire": "76 - Massy",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Intelligence artificielle": 2,
+      "Tests Automatisés": 2,
+      "Analyse de données": 1,
+      "Cahier des charges": 1,
+      "Feature Engineering": 1,
+      "Gestion de projet": 1,
+      "Rédaction De Rapports": 1,
+      "Sécurité Informatique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Tests automatisés": 2
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Cahier des charges",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Cahier des charges": 1
+        }
+      },
+      {
+        "nom": "Feature Engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Feature Engineering": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Rédaction De Rapports",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Rédaction de rapports": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 2
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "Cahier des charges": {
+        "Cahier des charges": 1
+      },
+      "Feature Engineering": {
+        "Feature Engineering": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Rédaction De Rapports": {
+        "Rédaction de rapports": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur / Ingénieure d'étude informatique": 1,
+      "Spécialiste Test Et Validation Logiciel Ou Application": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Rédaction De Rapports",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Rédaction De Rapports",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Rédaction De Rapports",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Rédaction De Rapports",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Cahier des charges",
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Tests Automatisés",
+        "Feature Engineering"
+      ],
+      [
+        "Intelligence artificielle",
+        "Analyse de données",
+        "Rédaction De Rapports",
+        "Sécurité Informatique",
+        "Tests Automatisés"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3855740",
+        "intitule": "Ingénieur Hardware H/F",
+        "entreprise": "",
+        "territoire": "76 - Massy",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3855740"
+      },
+      {
+        "id": "3854707",
+        "intitule": "Technicien de test & validation électronique hardware (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "76 - Massy",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3854707"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3855740",
+        "intitule": "Ingénieur Hardware H/F",
+        "entreprise": "",
+        "territoire": "76 - Massy",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3855740"
+      },
+      {
+        "id": "3854707",
+        "intitule": "Technicien de test & validation électronique hardware (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "76 - Massy",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3854707"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:03:25.895533",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

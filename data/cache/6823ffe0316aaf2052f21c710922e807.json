@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:3760284",
+  "value": {
+    "id": "3760284",
+    "intitule": "Ingénieur.e en développement et déploiement d'applications (H/F)",
+    "entreprise": "Institut d'Études Politiques de Bordeaux",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3760284",
+    "description": "RESPONSABILITÉS : La DSIN est en charge pour Sciences Po Bordeaux de l'organisation et de la gestion du numérique dans sa globalité : poste de travail personnels et étudiants, réseaux, serveurs, applicatifs, audiovisuel, téléphonie. Les missions du service recouvrent l'ensemble des sphères TIC et TICE. La DSIN est centre de service pour l'ensemble de l'établissement y compris les unités mixtes rattachées, et couvre ainsi les aspects administratifs, techniques, recherche et pédagogique. L'ingénieur en développement a pour rôle d'assurer le développement ou l'adaptation de solutions logicielles. Il doit gérer l'ensemble du cycle de développement de l'expression des besoins aux évolutions fonctionnelles. Il participer à une ou plusieurs phases du cycle de vie des logiciels : analyse, développement, qualification, intégration, déploiement dans le respect du cahier des charges, des normes et des règles de sécurité. Il assume des responsabilités de gestion de projet pour tout ou partie d'un projet. Il assure l'assistance fonctionnelle dans les domaines métiers. Relations fonctionnelles en Interne : Responsables applicatifs Développement logiciel · Modéliser, concevoir et/ou paramétrer tout ou partie de la solution logicielle · Réaliser tout ou partie d'un développement logiciel · Définir les clauses techniques d'un cahier des charges · Rédiger la documentation (développeur, utilisateur et exploitation) · Élaborer les jeux d'essai, d'intégration et de résistance à la charge · Concevoir la structure des bases de données · Développer des outils de consultation, d'extraction, de mise à jour des bases de données Déploiement et maintenance d'applications · Assurer le déploiement de l'application · Maintenir l'application et la faire évoluer · Analyser les besoins des utilisateurs et les traduire en spécification techniques Gestion de projet · Prendre en charge tout ou partie de l'activité de gestion de projet (estimer, planifier, suivre) · Assurer une assistance fonctionnelle et/ou technique aux exploitants et aux utilisateurs PROFIL RECHERCHÉ : Connaissances Connaissances techniques : - Connaissance d'une méthode de spécification et de conception - Système de gestion des bases de données employés et langage de requêtes - Outils de programmation - Méthodologie de conduite de projet - Sécurité des systèmes d'information et de communication - Anglais technique Connaissance de la réglementation : - Règlement général de la protection des données (RGPD) Savoir-faire Savoir-faire technique : - Maîtriser une méthode de conception et d'analyse Compétences transversales : - Rédiger et mettre à jour la documentation fonctionnelle et technique - Savoir planifier et répartir les activités - Piloter un projet - Animer une réunion Savoir-être · Capacité d'écoute · Capacités de conceptualisation · Sens relationnel · Capacités de raisonnement analytique · Créativité et sens de l'innovation",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Cahier des charges",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Protection Des Données",
+      "Analyse des besoins",
+      "Pilotage de projet",
+      "Sécurité informatique",
+      "Documentation technique",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Scalabilité"
+    ],
+    "salaire_min": 2400,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'ingénieur en développement a pour rôle d'assurer le développement ou l'adaptation de solutions logicielles.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:41.897953",
+  "input_hash": "1752cb7151043f4e80793319b56697ef0c72ea6522b7417a72d7b106bac8087e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:209DHXQ",
+  "value": {
+    "id": "209DHXQ",
+    "intitule": "Ingénieur Programmation et Robotique (H/F)",
+    "entreprise": "CHEMET-GLI",
+    "territoire": "67 - BISCHWILLER",
+    "ville": "67046",
+    "code_postal": "67240",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209DHXQ",
+    "description": "Intégré au service maintenance l'ingénieur programmation et robotique participe au développement de solutions techniques en lien direct avec la production et les équipes projets. \n\nPrincipales responsabilités :\n- Programmer, configurer et mettre en service des systèmes robotiques industriels (KUKA, FANUC, ABB.)\n- Développer des applications sur automates (Siemens, Schneider, etc.)\n- Assurer les tests, le debug, la validation et l'optimisation des programmes\n- Travailler en lien avec les équipes mécaniques, électriques et projet\n- Être force de proposition sur l'amélioration continue et les nouvelles technologies",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "API",
+      "Backend",
+      "Cybersécurité",
+      "Déploiement de modèles",
+      "Qualité des données",
+      "Gestion de projet",
+      "Tests automatisés",
+      "MLOps",
+      "Data Engineering"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Intégré au service maintenance l'ingénieur programmation et robotique participe au développement de solutions techniques en lien direct avec la production et les équipes projets.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "24 Mois",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:24.446631",
+  "input_hash": "f871c1994e3b57cc6f6fa4873309f1927473d44b9793753fea844204c69eb90f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

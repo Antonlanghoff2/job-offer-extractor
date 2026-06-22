@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:4047117",
+  "value": {
+    "id": "4047117",
+    "intitule": "Ingénieur / Ingénieure système réseau informatique (H/F)",
+    "entreprise": "",
+    "territoire": "35 - Rennes",
+    "ville": "35238",
+    "code_postal": "35000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4047117",
+    "description": "Description du poste :\nLe poste de Administrateur·rice & Intégrateur·rice BlueMind consiste à assurer l'exploitation, l'intégration et la fiabilité des plateformes de messagerie. Ce rôle clé en Informatique couvre la gestion quotidienne, l'intégration de solutions et l'optimisation des environnements BlueMind en production.\nMissions principales***Administrer et maintenir les environnements BlueMind en production (Linux, haute disponibilité)\n* Intégrer et configurer les solutions de messagerie (protocoles SMTP, IMAP, LDAP)\n* Superviser les systèmes via outils de monitoring (Prometheus, Grafana)\n* Diagnostiquer et résoudre les incidents techniques critiques\n* Automatiser les tâches d'exploitation (Bash, Python)\n* Collaborer avec les équipes techniques pour optimiser performance et sécurité\n* Rémunération : 45k - 50k Full remote\n* Environnement technique stimulant et collaboratif\n* Souplesse organisationnelle et autonomie\nDescription du profil Maîtrise des solutions de messagerie type BlueMind***Connaissance des protocoles SMTP, IMAP, LDAP***Compétences en scripting (Bash, Python) appréciées***Capacité à intervenir en production critique***Esprit d'analyse, autonomie, rigueur et communication claire***Formation en Informatique (Bac+3/5 ou équivalent)",
+    "metier": "Expert / Experte systèmes et réseaux informatiques",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Monitoring de modèles",
+      "Scalabilité",
+      "Intégration continue",
+      "Tests automatisés",
+      "Déploiement de modèles",
+      "Optimisation des performances",
+      "MLOps",
+      "Gestion de projet",
+      "Qualité des données",
+      "Veille technologique",
+      "Pipelines de données"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": "remote",
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Description du profil Maîtrise des solutions de messagerie type BlueMind***Connaissance des protocoles SMTP, IMAP, LDAP***Compétences en scripting (Bash, Python) appréciées***Capacité à intervenir en production critique***Esprit d'analyse, autonomie, rigueur et communication claire***Formation en Informatique (Bac+3/5 ou équivalent)",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:38.794739",
+  "input_hash": "394b9a640e1c740bfb9015cd58efcb03e42563e00dfdb2a819e2a2a1d6c97b3b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

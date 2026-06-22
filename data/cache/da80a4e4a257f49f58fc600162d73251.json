@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:7475922",
+  "value": {
+    "id": "7475922",
+    "intitule": "Gestionnaire de la donnée H/F",
+    "entreprise": "B-Human",
+    "territoire": "59 - Lille",
+    "ville": "59350",
+    "code_postal": "59000",
+    "contrat": "CDI",
+    "date_creation": "2026-01-06",
+    "date": "2026-01-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7475922",
+    "description": "Notre client recherche un(e) gestionnaire de la donnée (data steward). Sous la supervision du Responsable Conseil et Assistance Métier et en cohérence avec les objectifs qui lui sont attribués, le gestionnaire de la Donnée F/H (ou Data Stewart) assure un rôle de passerelle entre métiers et techniques sur un domaine d'activité. Il/elle est garant de la qualité de la donnée du domaine d'activité dont il a la charge.\nVotre rôle :\n- Garant de la qualité de la donnée du domaine d'activité dont il a la charge\n- Gouvernance et gestion des données\n- Participer et formaliser les processus de la donnée et la définition des rôles (métier et technique) liés à ces processus\n- Suivre la bonne application de cette gouvernance\n- Garant de la gestion et qualité de la donnée\n- S'assurer de la conformité et sécurité de la donnée (contrôle d'accès ...)\n- Définir avec les métiers les règles de gestion des données (format, nomenclature, règle de validation)\n- Contrôler la qualité des données : détection d'anomalies, doublons, incohérences, valeurs manquantes.\n- Mettre en place des indicateurs de qualité (complétude, exactitude, cohérence, fraîcheur).\n- Proposer et suivre les plans de remédiation pour corriger les problèmes de qualité.\n- Collaborer avec les équipes techniques pour améliorer les processus d'intégration et de nettoyage des données.\n- Gestion documentaire de la donnée\n- Maintenir la documentation de la donnéeGlossaire\n- Dictionnaire\n- Cartographie des données avec l'architecture\n- Processus métiers (référentiels)\n- Reporting de suivi qualité de la donnée et des évolutions\n- Acculturation de l'entreprise à la gouvernance de la donnée\n- Participer activement à la démarche d'acculturation\n- Animer la revue de processus de la gestion de la donnée de son domaine\n- Former et sensibiliser les utilisateurs à la bonne utilisation et à la qualité des données.\n- Amélioration continue\n- Contribuer à l'évolution du modèle de gouvernance et des processus de gestion de données.\n- Participer aux projets de transformation numérique liés à la donnée (data lake, BI, data catalog, etc.).\n- Surveiller les tendances et bonnes pratiques en matière de data management.\nDe formation supérieure Bac +4/5 vous disposez de minimum 3 à 5 ans d'expérience sur un poste similaire.\nVous avez une bonne maîtrise de la gestion de la donnée, une expérience en gestion de projets ainsi qu'une connaissance générique des métiers. \nVous connaissez également les techniques liées à la mise en œuvre des architectures Data d'un système d'information.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Vision",
+      "Vue.js",
+      "Product Management",
+      "Définition d'indicateurs",
+      "Documentation technique",
+      "Design patterns",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Monitoring de modèles",
+      "Intégration continue",
+      "Qualité des données",
+      "Git"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation supérieure Bac +4/5 vous disposez de minimum 3 à 5 ans d'expérience sur un poste similaire.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:41.046485",
+  "input_hash": "43fda29c9d7b11ab12f6504874781f5eafef8e56219f684046e58ba4be6e38ac",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:3615407",
+  "value": {
+    "id": "3615407",
+    "intitule": "Ingénieur calculateur / Ingénieure calculatrice en industrie (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDD - 4 Mois",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3615407",
+    "description": "Mission : L'ingénieur de recherche (H/F), recruté sur 4 mois sera impliqué sur le prototypage et évaluation d'un pipeline séquençant des briques logicielles de perception 3D sur données radar en environnement extérieur. L'objectif est de lever des alarmes pour anticiper des collisions entre un engin manipulateur-mobile et les agents mobiles (piétons, obstacles, autres véhicules) lorsque ce dernier exécute ses tâches de navigation. Ces briques portent sur la perception de l'environnement au voisinage immédiat de l'engin mobile (détection, suivi et classification des obstacles perçus) à partir d'un système multi-radars embarqué sur l'engin. Les capteurs proprioceptifs de l'engin seront également considérés pour prévoir ses mouvements spatiotemporels et ainsi mieux prédire les éventuelles collisions. Le pipeline sera tout d'abord évaluée sur une banque de données pré-enregistrées en contexte réel. Activités : Acquisition, manipulation (rosbags) et labellisation de données capteurs extéroceptifs. Développement d'algorithmes de perception 3D en C/C++/Python. Machine learning sur données radar. Intégration de briques logicielles de perception 3D sur calculateur NVIDIA. Intégration et démonstration sur robot mobile du laboratoire (facultatif).",
+    "metier": "Editeur / Editrice",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": 4000,
+    "salaire_max": 4000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Mission : L'ingénieur de recherche (H/F), recruté sur 4 mois sera impliqué sur le prototypage et évaluation d'un pipeline séquençant des briques logicielles de perception 3D sur données radar en environnement extérieur.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:02.987934",
+  "input_hash": "7904dd6dcb890ce68223ab2f30413477efd538648eb2076eafaba13b6a9f17a3",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

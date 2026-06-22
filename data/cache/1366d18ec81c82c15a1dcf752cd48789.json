@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:209DKHT",
+  "value": {
+    "id": "209DKHT",
+    "intitule": "Apprenti(e) - Technicien(ne) Informatique (H/F)",
+    "entreprise": "COMPAGNIE DE SAINT-GOBAIN",
+    "territoire": "60 - Rantigny",
+    "ville": "60524",
+    "code_postal": "60290",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209DKHT",
+    "description": "Pourquoi a-t-on besoin de vous?\nLe Centre de Recherche et d'Innovation de Rantigny SAINT GOBAIN ISOVER, situé au Nord de Paris et accessible par les transports en commun, recrute aujourd'hui un(e) :\n\nApprenti(e) - Technicien(ne) Informatique\n\n2 ans\n\nA pourvoir pour septembre 2026\n\nPoste basé à Rantigny dans l'Oise (60)\n\nRattaché au Responsable IT du centre R&D et en étroite collaboration avec la technicienne informatique de proximité du site, vous travaillerez sur les différentes misions suivantes : \n\nGérer un parc informatique bureautique et industriel\nSécuriser le patrimoine IT du site\nTraiter l'obsolescence des équipements informatiques\nAssister les utilisateurs\nGérer les incidents et les dépannages\nRelais avec le support IT Groupe\nRéférencement et mise en conformité des applications via outils Groupe à disposition\nDévelopper des applications locales (exemple : powershell, python)\nParticiper au déploiement de projets Groupe (LAN, VOIP, Serveurs, Applications etc...)\nVeille technologique\nTraiter les irritants rencontrés au quotidien par nos utilisatrices et utilisateurs\nCe poste est-il fait pour vous ?\nFormation : Vous préparez un diplôme de type BTS ou DUT/BUT en informatique en alternance\n\nLangues : Une bonne maitrise de l'anglais serait un plus\n\n\nCompétences et aptitudes (requises) :\n\nMaîtrise des systèmes d'exploitation Windows\nBonne connaissance des solutions Office 365\nDynamique et autonome dans la gestion des missions\nBon relationnel et sens du service\nCuriosité et capacité d'apprentissage\nRigoureux et organisé",
+    "metier": "Technicien / Technicienne d'exploitation informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Déploiement de modèles",
+      "Sécurité informatique",
+      "API",
+      "Backend",
+      "Cybersécurité",
+      "Data Engineering"
+    ],
+    "salaire_min": 1200,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Formation : Vous préparez un diplôme de type BTS ou DUT/BUT en informatique en alternance",
+        "confidence": 0.9
+      },
+      {
+        "label": "DUT",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Formation : Vous préparez un diplôme de type BTS ou DUT/BUT en informatique en alternance",
+        "confidence": 0.9
+      },
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Formation : Vous préparez un diplôme de type BTS ou DUT/BUT en informatique en alternance",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:11.774662",
+  "input_hash": "9e3b51de7bf22230a824e5d1cd9d8e2379f9c48eb7f66ebe44906fd8a088ae32",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

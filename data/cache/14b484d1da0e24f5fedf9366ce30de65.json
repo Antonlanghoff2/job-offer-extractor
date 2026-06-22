@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:3112921",
+  "value": {
+    "id": "3112921",
+    "intitule": "Ingénieur systèmes & automatisation industrielle H/F",
+    "entreprise": "LEA Recrutement",
+    "territoire": "13 - Aix-en-Provence",
+    "ville": "13001",
+    "code_postal": "13080",
+    "contrat": "CDI",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3112921",
+    "description": "LEA Recrutement présente une nouvelle offre d'emploi : CDI chez client final.\n\n \n\nNotre client, acteur innovant en forte croissance dans le secteur ENR et proche d'Aix-en-Provence, recrute un Ingénieur systèmes & automatisation industrielle H/F.\n\n \n\nCe poste stratégique vise à concevoir des solutions globales mêlant logiciel, automatisme, communication entre équipements et performance industrielle.\nVotre rôle et missions :\n\n * Analyser les besoins fonctionnels et participer aux cahiers des charges.\n * Auditer les solutions existantes et proposer des améliorations.\n * Concevoir des solutions systèmes intégrant software, automatisme et équipements industriels.\n * Développer des applications, outils métiers et interfaces techniques.\n * Garantir la communication entre les différentes technologies et systèmes.\n * Participer aux tests, validations et mises en production.\n * Rédiger la documentation technique et supports utilisateurs.\n * Accompagner les équipes internes sur les nouveaux développements.\n\n \n\nLes avantages côté entreprise :\n\n \n\n * Environnement innovant et international.\n * Culture d'entreprise dynamique et collaborative.\n * Avantages internes (flexibilité, bien-être, cohésion)\n\nRémunération : de 45000€ à 50000€ \n\n \n\nPostulez !\n\n \n\n#learecrutement\nCe qui nous attendons de vous : \n\n * Bac+5 en informatique industrielle, automatisme, systèmes embarqués ou génie électrique.\n * Expérience confirmée en développement systèmes industriels.\n * Maîtrise de langages type Python, JavaScript ou équivalent.\n * Bonne compréhension automatismes, réseaux industriels et architectures globales.\n * Vision produit, esprit d'analyse et autonomie.\n * Anglais professionnel apprécié.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Anglais Professionnel",
+      "JavaScript",
+      "Python",
+      "Vision",
+      "Analyse des besoins",
+      "Conception de solutions",
+      "Scalabilité",
+      "API",
+      "Cahier des charges",
+      "Cybersécurité",
+      "Analyse de données",
+      "Méthodologie Agile",
+      "Sécurité informatique",
+      "Architecture microservices",
+      "Backend",
+      "Data Engineering",
+      "Veille technologique"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 50000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Notre client, acteur innovant en forte croissance dans le secteur ENR et proche d'Aix-en-Provence, recrute un Ingénieur systèmes & automatisation industrielle H/F.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac+5 en informatique industrielle, automatisme, systèmes embarqués ou génie électrique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:16.493907",
+  "input_hash": "0d8313a736731b381b19aa7197d5954266d9479ca419ea2b1cbabb1427984c05",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

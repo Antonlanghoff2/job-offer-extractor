@@ -1,0 +1,182 @@
+{
+  "key": "trends:94 - Chevilly-Larue",
+  "value": {
+    "territoire": "94 - Chevilly-Larue",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Git": 1,
+      "Intelligence artificielle": 1,
+      "Intégration Continue": 1,
+      "MLOps": 1,
+      "Monitoring De Modèles": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intégration continue": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Monitoring de modèles": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Git": {
+        "Git": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Intégration Continue": {
+        "Intégration continue": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 1
+      }
+    },
+    "metiers": {
+      "Chef / Cheffe de projet étude et développement informatique": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDD - 12 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Git",
+        "Intelligence artificielle",
+        "MLOps",
+        "Intégration Continue",
+        "Monitoring De Modèles"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3611090",
+        "intitule": "Chef(fe) de projet Déploiement GMAO (H/F)",
+        "entreprise": "",
+        "territoire": "94 - Chevilly-Larue",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3611090"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3611090",
+        "intitule": "Chef(fe) de projet Déploiement GMAO (H/F)",
+        "entreprise": "",
+        "territoire": "94 - Chevilly-Larue",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3611090"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:07.582204",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

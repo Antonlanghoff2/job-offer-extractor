@@ -1,0 +1,317 @@
+{
+  "key": "trends:78 - Yvelines",
+  "value": {
+    "territoire": "78 - Yvelines",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Cahier des charges": 2,
+      "Cybersécurité": 2,
+      "Tests Automatisés": 2,
+      "Déploiement De Modèles": 1,
+      "Git": 1,
+      "Intelligence artificielle": 1,
+      "MLOps": 1,
+      "Vue.js": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Cahier des charges",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Cahier des charges": 2
+        }
+      },
+      {
+        "nom": "Cybersécurité",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Cybersécurité": 2
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Tests automatisés": 2
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Vue.js": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Cahier des charges": {
+        "Cahier des charges": 2
+      },
+      "Cybersécurité": {
+        "Cybersécurité": 2
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 2
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Vue.js": {
+        "Vue.js": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 1,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Cybersécurité",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Tests Automatisés",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Cahier des charges",
+        "Git",
+        "Vue.js",
+        "Tests Automatisés",
+        "Cybersécurité"
+      ],
+      [
+        "Cahier des charges",
+        "Intelligence artificielle",
+        "MLOps",
+        "Tests Automatisés",
+        "Cybersécurité",
+        "Déploiement De Modèles"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "9968696",
+        "intitule": "Développeur / Développeuse web (H/F)",
+        "entreprise": "",
+        "territoire": "78 - Yvelines",
+        "contrat": "CDI",
+        "date": "2025-07-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/9968696"
+      },
+      {
+        "id": "9962758",
+        "intitule": "Développeur C++ (H/F)",
+        "entreprise": "",
+        "territoire": "78 - Yvelines",
+        "contrat": "CDI",
+        "date": "2025-07-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/9962758"
+      }
+    ],
+    "offers": [
+      {
+        "id": "9968696",
+        "intitule": "Développeur / Développeuse web (H/F)",
+        "entreprise": "",
+        "territoire": "78 - Yvelines",
+        "contrat": "CDI",
+        "date": "2025-07-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/9968696"
+      },
+      {
+        "id": "9962758",
+        "intitule": "Développeur C++ (H/F)",
+        "entreprise": "",
+        "territoire": "78 - Yvelines",
+        "contrat": "CDI",
+        "date": "2025-07-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/9962758"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:01:21.912585",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

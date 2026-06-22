@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3537719",
+  "value": {
+    "id": "3537719",
+    "intitule": "Ingénieur robotique (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3537719",
+    "description": "Description du poste :\nNotre client, ETI spécialisée dans la conception, la production et l'assemblage d'appareils et de réservoirs sous pression, recherche dans le cadre d'un remplacement, un :\nIngénieur Automatisme et Robotique (H/F)\nPoste situé près de Strasbourg (67)\nCDI\nFINALITE DE LA FONCTION\nProgrammer les robots et automates équipant la ligne de production (l'une des plus innovantes au monde avec 32 robots de soudure).\nENJEUX\nAccompagner la fiabilisation d'une nouvelle ligne de production particulièrement innovante afin d'assurer la production du site ayant des perspectives de croissance significatives.\nMISSIONS PRINCIPALES\n* Programmer les contrôleurs PLC (Program Logic Controller)\n* Programmer les panneaux IHM (Interface Homme-Machine)\n* Mettre en service, configurer et programmer les robots\n* Tester et implémenter des logiciels\n* Créer une nouvelle documentation technique et modifier l'existante\n* Participer à la mise en place de nouveaux produits et procédés\n* Participer à l'optimisation des processus de production\n* Travailler avec des schémas électriques et de la documentation technique\n* Travailler en étroite collaboration avec l'ingénieur soudage, le responsable maintenance, le responsable amélioration continue et les équipes techniques en France et à l'international\nPerspectives d'évolution et d'élargissement des missions selon le profil.\nPROFIL RECHERCHE\nDe formation supérieure en robotique/mécatronique, nous recherchons un profil doté de 5 ans d'expérience et plus acquise dans le secteur industriel.\nCompétences recherchées Programmation d'automates et de pupitres IHM (B&R)\n* Programmation de robots industriels (FANUC, ABB Programmation C/C++, C#, Pascal, autres.\n* Maîtrise de l'Anglais opérationnel\nQualités attendues : fiabilité, sens des responsabilités\nDescription du profil :\nDe formation supérieure en robotique/mécatronique, nous recherchons un profil doté de 5 ans d'expérience et plus acquise dans le secteur industriel.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "API",
+      "Déploiement de modèles",
+      "MLOps",
+      "Gestion de projet",
+      "Code review",
+      "Qualité des données"
+    ],
+    "salaire_min": 55000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur Automatisme et Robotique (H/F)",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Travailler en étroite collaboration avec l'ingénieur soudage, le responsable maintenance, le responsable amélioration continue et les équipes techniques en France et à l'international",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:43.716754",
+  "input_hash": "c64361aad5381df20fa05f0ddd79a59a7db77ac5dc6f2a800fd9a9e1d81723ca",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

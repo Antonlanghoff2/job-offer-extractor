@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:2997208",
+  "value": {
+    "id": "2997208",
+    "intitule": "Ingénieur NETOPS / DEVOPS Senior (H/F)",
+    "entreprise": "",
+    "territoire": "78 - Neauphle-le-Château",
+    "ville": "78442",
+    "code_postal": "78640",
+    "contrat": "Profession libérale",
+    "date_creation": "2026-05-25",
+    "date": "2026-05-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2997208",
+    "description": "Dans le cadre du renforcement des équipes infrastructure et réseau, nous recherchons un Ingénieur NETOPS / DEVOPS Senior disposant d'une forte expertise réseau ainsi que de solides compétences en automatisation.\n\nLe consultant interviendra sur des environnements critiques et contribuera à l'exploitation, l'optimisation et l'automatisation des infrastructures réseau.\n\nLe poste : \n\nMissions principales\nExploitation et support réseau\nGestion des incidents réseau\nAnalyse de flux et diagnostics avancés\nTroubleshooting niveau 2 / 3\nSupervision et monitoring des infrastructures\nCapacity planning et optimisation des performances réseau\nAdministration et évolution des infrastructures\nGestion du backbone MPLS / BGP\nAdministration des équipements LAN\nGestion des firewalls et politiques de sécurité\nGestion des solutions de load balancing\nParticipation aux projets d'évolution d'infrastructure\nAutomatisation & DEVOPS réseau\nDéploiement automatisé de configurations réseau\nDéveloppement de scripts d'automatisation en Python\nIndustrialisation des opérations réseau via Ansible\nMise en place et maintien des pipelines CI/CD réseau\nGestion et mise à jour de la CMDB / NetBox\nContribution à l'amélioration continue et à la standardisation des process\nCompétences techniques requises\nRéseau\nCisco\nJuniper\nPalo Alto\nLAN\nMPLS / BGP\nFirewalling\nLoad Balancing\nAutomatisation / DEVOPS\nPython\nAnsible\nGitLab CI/CD\nNetBox\nGestion de configuration et automatisation réseau\nCompétence appréciée\nArista\n\nProfil recherché : \n\nSolide expertise réseau en environnement critique\nForte culture automatisation et industrialisation\nCapacité à intervenir en autonomie\nExcellentes capacités d'analyse et de résolution d'incidents\nBon relationnel et esprit d'équipe\nApproche orientée amélioration continue\n\nRéseau\nCisco\nJuniper\nPalo Alto\nArista\nDEVOPS / Automatisation\nPython\nAnsible\nGitLab CI/CD\nNetBox",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Vision",
+      "CI/CD",
+      "Automatisation de pipelines",
+      "Résolution de problèmes",
+      "Data Engineering"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre du renforcement des équipes infrastructure et réseau, nous recherchons un Ingénieur NETOPS / DEVOPS Senior disposant d'une forte expertise réseau ainsi que de solides compétences en automatisation.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:18.417106",
+  "input_hash": "1d5cf31809a0a5b443eb71987d2eaad892af7052ee6b613c5da439b110630da5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:1741657",
+  "value": {
+    "id": "1741657",
+    "intitule": "Surveyor - ingénieur essais (H/F)",
+    "entreprise": "SILKHOM SAS",
+    "territoire": "44 - Carquefou",
+    "ville": "44026",
+    "code_postal": "44470",
+    "contrat": "CDI",
+    "date_creation": "2026-04-21",
+    "date": "2026-04-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1741657",
+    "description": "Description du poste:\nAu sein d’un bureau d’études de 9 personnes (électronique, traitement du signal, logiciel embarqué et électromagnétisme) et directement rattaché au responsable technique, vous dirigerez l’organisation des essais en mer des capteurs électromagnétiques de la société, la conduite de ces essais et l’analyse des données obtenues.\nVos missions seront les suivantes :\n- Organisation matérielle et logistique des différents essais (en mer ou en piscine)\n- Définition des plans d’essais et de qualification\n- Conduite des essais\n- Analyse des données de mesure (altimètre, sonde de conductivité, température…)\n- Rédaction de rapport en interne ou pour le client\n- Création d’automatisation de test (Matlab, Python)\n\n\nVous serez amené à vous déplacer 3 à 4 fois dans l’année en France ou à l’étranger sur des périodes de 2 à 3 semaines (environ 30% du temps sur l’année).\n\nPourquoi rejoindre cette entreprise ?\n- Rejoignez une société en croissance qui a triplé son CA en 2 ans.\n- Intégrez une société lauréate d’un concours national d’innovation en 2019.\n- Travaillez sur un poste alliant terrain, test, analyse, innovation.\n- Vous avez la possibilité d’évoluer sur un poste managérial ou chef de projet.\n\nProfil recherché:\n- Vous avez une formation (bac+3, bac+5) spécialisée en océanographie, hydrographie, surveyor ou géophysique\n- Vous avez au minimum 3 ans d’expérience sur un poste similaire de conduite d’essais géophysique dans un milieu marin.\n- Des connaissances dans l’électromagnétisme et l’inversion de données sont un plus.\n\nCompléments:\n- Lieu :  Nantes (44)\n- Contrat : CDI\n- Salaire : 45k – 55k€ selon profil\n\n\n Si votre profil correspond, nous reviendrons vers vous dans les 7 jours à compter de la date d’envoi.",
+    "metier": "Cartographe",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Data Engineering",
+      "Analyse de données",
+      "Gestion de projet",
+      "Model drift",
+      "Protection des données",
+      "Optimisation des performances"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous avez une formation (bac+3, bac+5) spécialisée en océanographie, hydrographie, surveyor ou géophysique",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous avez une formation (bac+3, bac+5) spécialisée en océanographie, hydrographie, surveyor ou géophysique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:27.812401",
+  "input_hash": "8e98add2166f4cc75425cbd819f407442aad353bca2c57d46065837dd72e9d64",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

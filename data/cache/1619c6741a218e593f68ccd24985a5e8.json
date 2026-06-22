@@ -1,0 +1,480 @@
+{
+  "key": "trends:63 - Cournon-d'Auvergne",
+  "value": {
+    "territoire": "63 - Cournon-d'Auvergne",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Azure": 2,
+      "Design Patterns": 2,
+      "Docker": 2,
+      "Git": 2,
+      "Intelligence artificielle": 2,
+      "Java": 2,
+      "Kubernetes": 2,
+      "Tests Automatisés": 2,
+      "Backend": 1,
+      "Résolution De Problèmes": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Azure",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Azure": 2
+        }
+      },
+      {
+        "nom": "Design Patterns",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Design patterns": 2
+        }
+      },
+      {
+        "nom": "Docker",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Docker": 2
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Git": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Java": 2
+        }
+      },
+      {
+        "nom": "Kubernetes",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Kubernetes": 2
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Tests automatisés": 2
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Azure": {
+        "Azure": 2
+      },
+      "Design Patterns": {
+        "Design patterns": 2
+      },
+      "Docker": {
+        "Docker": 2
+      },
+      "Git": {
+        "Git": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Java": {
+        "Java": 2
+      },
+      "Kubernetes": {
+        "Kubernetes": 2
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 2
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 1,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Azure",
+        "competence_b": "Design Patterns",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Docker",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Docker",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Kubernetes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Azure",
+        "Docker",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Kubernetes",
+        "Tests Automatisés",
+        "Design Patterns",
+        "Backend"
+      ],
+      [
+        "Azure",
+        "Docker",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Kubernetes",
+        "Design Patterns",
+        "Tests Automatisés",
+        "Résolution De Problèmes"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3145144",
+        "intitule": "Développeur Web Expérimenté (H/F)",
+        "entreprise": "",
+        "territoire": "63 - Cournon-d'Auvergne",
+        "contrat": "CDI",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3145144"
+      },
+      {
+        "id": "3030788",
+        "intitule": "Développeur Expérimenté (H/F)",
+        "entreprise": "",
+        "territoire": "63 - Cournon-d'Auvergne",
+        "contrat": "CDI",
+        "date": "2026-05-26",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3030788"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3145144",
+        "intitule": "Développeur Web Expérimenté (H/F)",
+        "entreprise": "",
+        "territoire": "63 - Cournon-d'Auvergne",
+        "contrat": "CDI",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3145144"
+      },
+      {
+        "id": "3030788",
+        "intitule": "Développeur Expérimenté (H/F)",
+        "entreprise": "",
+        "territoire": "63 - Cournon-d'Auvergne",
+        "contrat": "CDI",
+        "date": "2026-05-26",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3030788"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:25.455107",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

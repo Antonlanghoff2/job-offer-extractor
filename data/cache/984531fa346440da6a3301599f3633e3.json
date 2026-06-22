@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:3941310",
+  "value": {
+    "id": "3941310",
+    "intitule": "Alternance - Data Scientist et Digitalisation H/F",
+    "entreprise": "LFB",
+    "territoire": "91 - Ulis",
+    "ville": "91692",
+    "code_postal": "91940",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3941310",
+    "description": "QUELLES MISSIONS VOUS SERONT CONFIEES ?\n \nAu sein de la Direction Industrielle et Qualité Ulis du groupe LFB et sous la responsabilité du responsable du pôle Data et Digitalisation, vous participerez à la transformation numérique du site des Ulis en intégrant des solutions innovantes afin de développer le Manufacturing 4.0.\n \nL'objectif est d'optimiser la performance, la qualité des opérations, l'ergonomie des outils utilisés et l'utilisation de la données issues de l'agrégation de systèmes isolés.\n \nA ce titre, vous participerez et monterez en compétences sur les missions suivantes :\n \n\n * Contribuer à développer des outils digitaux en s'appuyant sur des langages de programmation (Python, Javascript, Typescript, C#)\n * Aider à maintenir les optimiser les applications développées (Mise en service de nouvelles fonctionnalité, refactoring, débuggage)\n * Participer à de l'analyse de données, des études statistiques et présenter les résultats aux différents services\n * Explorer des pistes basées sur le Machine Learning et l'Intelligence Artificielle\n * Proposer des idées d'améliorations afin de soutenir la partie Industrielle et Qualité\n\n \nQUELS AVANTAGES LIES A CE POSTE ? \n \n\n * Accord de télétravail : jusqu'à 1 jour par semaine dès 4 mois d'ancienneté et en fonction de l'éligibilité du poste\n * Participation aux frais de transport : prise en charge à 50% de la carte de transport ou forfait mensuel en fonction du lieu d'habitation\n * Mutuelle, CE, PEG/PERCO, prime d'intéressement\n * Restaurant d'entreprise, salle de sport\nQUEL PROFIL POUR CETTE OPPORTUNITE ?\n\nVous préparez une formation de niveau Ingénieur/bac+5 avec une spécialité en Data Science avec une compétence en Software Development, vous disposez idéalement d'une première expérience dans le domaine concerné. Vous possédez les compétences suivantes :\n\n * Appétence pour la programmation informatique, l'analyse de données avec quelques notions de system design\n * Anglais professionnel exigé, maîtrise du PackOffice\n * Maîtrise dans une langage de programmation et connaissance des API REST\n * Bonne communication écrite et orale, rigueur, sens de l'organisation, esprit d'équipe, curiosité, rigueur et esprit analytique, force de proposition et autonomie\n\nQUELLES CONDITIONS DE TRAVAIL ?\n\n * Poste à pourvoir en alternance dès septembre 2026\n * Le poste est basé sur le site des Ulis\n * Durée souhaitée : 1 à 2 ans\n * 35 heures hebdomadaire",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "Analyse de données",
+      "Anglais Professionnel",
+      "Git",
+      "Intelligence artificielle",
+      "JavaScript",
+      "Machine learning",
+      "Python",
+      "TypeScript",
+      "Airflow",
+      "Qualité des données",
+      "Data Engineering",
+      "Optimisation des performances",
+      "Sécurité informatique",
+      "Pipelines de données",
+      "Model drift",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Vous préparez une formation de niveau Ingénieur/bac+5 avec une spécialité en Data Science avec une compétence en Software Development, vous disposez idéalement d'une première expérience dans le domaine concerné.",
+        "confidence": 0.7
+      },
+      {
+        "label": "bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Vous préparez une formation de niveau Ingénieur/bac+5 avec une spécialité en Data Science avec une compétence en Software Development, vous disposez idéalement d'une première expérience dans le domaine concerné.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:00.272516",
+  "input_hash": "aea07f411ec766d45e79dfb28289049d24d53660f14814200638ed4e6c60b589",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

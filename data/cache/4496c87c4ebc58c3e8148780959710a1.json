@@ -1,0 +1,300 @@
+{
+  "key": "trends:92 - Garches",
+  "value": {
+    "territoire": "92 - Garches",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Déploiement De Modèles": 2,
+      "Intelligence artificielle": 2,
+      "Java": 2,
+      "MLOps": 2,
+      "Tests Automatisés": 2,
+      "JavaScript": 1,
+      "SQL": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Déploiement de modèles": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Java": 2
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "MLOps": 2
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Tests automatisés": 2
+        }
+      },
+      {
+        "nom": "JavaScript",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "JavaScript": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "SQL": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Java": {
+        "Java": 2
+      },
+      "MLOps": {
+        "MLOps": 2
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 2
+      },
+      "JavaScript": {
+        "JavaScript": 1
+      },
+      "SQL": {
+        "SQL": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 1,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Java",
+        "MLOps",
+        "Déploiement De Modèles",
+        "Tests Automatisés"
+      ],
+      [
+        "Intelligence artificielle",
+        "Java",
+        "JavaScript",
+        "SQL",
+        "MLOps",
+        "Déploiement De Modèles",
+        "Tests Automatisés"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3855044",
+        "intitule": "Developpeur Java (H/F)",
+        "entreprise": "",
+        "territoire": "92 - Garches",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3855044"
+      },
+      {
+        "id": "3762694",
+        "intitule": "Developpeur Java F/H - Informatique de gestion (H/F)",
+        "entreprise": "MICHAEL PAGE INTERNATIONAL FRANCE",
+        "territoire": "92 - Garches",
+        "contrat": "CDI",
+        "date": "2026-06-15",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3762694"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3855044",
+        "intitule": "Developpeur Java (H/F)",
+        "entreprise": "",
+        "territoire": "92 - Garches",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3855044"
+      },
+      {
+        "id": "3762694",
+        "intitule": "Developpeur Java F/H - Informatique de gestion (H/F)",
+        "entreprise": "MICHAEL PAGE INTERNATIONAL FRANCE",
+        "territoire": "92 - Garches",
+        "contrat": "CDI",
+        "date": "2026-06-15",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3762694"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:01:54.232570",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

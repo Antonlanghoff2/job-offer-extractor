@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:3950921",
+  "value": {
+    "id": "3950921",
+    "intitule": "Technicien support logiciel (H/F)",
+    "entreprise": "",
+    "territoire": "34 - Montpellier",
+    "ville": "34172",
+    "code_postal": "34000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3950921",
+    "description": "Description du poste :\nSMAG est un éditeur de logiciel qui participe à l'émergence d'une 3ième voie en agriculture qui sera durable, positive et agroécologique pour les Hommes et notre planète.\nAujourd'hui nous sommes 130 collaborateurs passionnés, regroupés autour de valeurs fédératrices de convivialité, d'écoute et de l'Agilité. Au service de nos clients et de notre ambition de devenir le leader international du Farm Management Software (FMS) et participer à la transformation numérique de l'agri food chain.\nPour renforcer nos équipes, nous recrutons pour notre solution destinée aux agro-industriels Agréo un(e Technicien support logiciels N2 (H/F)\nVous aurez pour missions Prise en compte des tickets support Niv 2 et suivi interne Qualification des anomalies, paramétrages de correctifs, tests et validation avant delivery Support fonctionnel et applicatif de la solution auprès des utilisateurs Participation à la recette fonctionnelle et technique de la solution.\nVous aimez le contact clients et vous souhaitez vous inscrire dans un process de satisfaction client global.\nDescription du profil :\nDe formation Technicien en Informatique (bac+2/bac+3), vous avez de solides compétences dans la gestion de base de données SQL.\nVous avez une première expérience réussie dans un poste équivalent au sein d'un éditeur de logiciel.\nVous êtes organisé(e), pragmatique et faites preuve d'initiatives. Votre autonomie et votre sens du service client vont permettront de réussir dans les projets qui vont seront confiés.\nLa connaissance du monde agricole serait un plus.\nUn bon niveau d'anglais est exigé.\nPoste Basé à Montpellier dans un cadre de travail agréable et convivial. Possibilité de télétravail 50/60 %",
+    "metier": "Conseiller / Conseillère support technique informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL",
+      "Gestion de projet",
+      "Analyse de données",
+      "Data Engineering"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Technicien en Informatique (bac+2/bac+3), vous avez de solides compétences dans la gestion de base de données SQL.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Technicien en Informatique (bac+2/bac+3), vous avez de solides compétences dans la gestion de base de données SQL.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:16.156285",
+  "input_hash": "4ef053b7652633c9199142cf6a8a395fbb03b3c08812b3a5caf2c8de85dae377",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

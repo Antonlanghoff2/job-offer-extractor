@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:2347947",
+  "value": {
+    "id": "2347947",
+    "intitule": "Développeur mobile C# / MAUI @supply chain F/H",
+    "entreprise": "Externatic",
+    "territoire": "85 - Herbiers",
+    "ville": "85109",
+    "code_postal": "85500",
+    "contrat": "CDI",
+    "date_creation": "2026-05-06",
+    "date": "2026-05-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2347947",
+    "description": "L'entreprise accompagnée et les missions:\nActeur international du monde des transports,  cette entreprise  développe des solutions sur mesure destinées à la logistique de grands groupes.\n\nLa DSI dispose de 3 Hubs dédiés à l'IT en Europe dont 1 basé en Vendée.\n\nDans le cadre d'un programme majeur visant à la modernisation des socles techniques, le hub vendée lance une importante phase de recrutement. C'est dans ce contexte qu'elle recherche son \"ingénieur solutions métiers / mobilité\"  en charge d'assurer la mise en place de nouvelles applications basées sur .net  (tablette PC) alimentées par API depuis le SI orienté sur le monde JAVA.\n\nEn lien avec le SI les autres directions Europe notamment avec l'Allemagne, vous interviendrez sur les  solutions mobiles à destination des différents métiers de l'entreprise allant des fonctions supports (RH, finances) jusqu'aux opérationnelles terrains exigeant des modes durcis et déconnectés (chauffeurs, agent de quai, logisticien, ...)\n\n\nEn tant que ingénieur conception et développement , vous jouez un rôle central à la fois technique et organisationnel :\n\n- Participation aux phases de cadrage de besoin en lien avec les équipes internationales\n- Etude de solutions fonctionnelles et techniques basées sur l'architecture en place mais aussi sur les futures (react native, ...)\n- Développement des fonctionnalités mobiles en environnement .net / MAUI et interfacage via API avec le SI  (asynchrone, ...)\n- Optimisation des performances \n- Test et intégration des applications \n- Expertise N3 sur les anomalies majeures\n- relation avec les équipes des hubs internationaux gérant le SI consommé par API\n\nProfil:\nDe formation supérieure, vous disposez d'une expérience significative en conception et développement sur des environnements C#/.Net.\n\nVous possédez des compétences sur la gestion d'API et sur les composants .Net / MAUI.\n\nVous avez idéalement une première expérience ou une appétence pour les technlogies de type React native (potentielle cible à termes) et/ou sur les environnements JAVA/springboot avec lesquels vos solutions devront s'interfacer.\n\nVéritable ingénieur, votre approche est agnostique : la technique est un moyen de répondre aux utilisateurs et pas une fin en soi + les concepts objets répondent à 80% des problématiques , il ne reste que les 10/20% à \"inventer\".\n\nLes échanges avec les autres Hubs européeen impose un niveau d'anglais minimum.\n\nAvantages:\nCe que vous y gagnez :\n\nUn environnement international, \nDes projets en cours et à venir conséquents,\n- Un management réellement bienveillant et visant la progression des équipes\nUne entreprise avec des valeurs fortes (durabilité, innovation, engagement, respect).\nUn équilibre vie pro / vie perso (télétravail, souplesse, équipe bienveillante).\nDes opportunités d’évolution dans un groupe stable et en croissance.\n- Télétravail possible : 2 jours/semaine.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Java",
+      "React",
+      "Déploiement de modèles",
+      "MLOps",
+      "Gestion de projet",
+      "Scalabilité"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "C'est dans ce contexte qu'elle recherche son \"ingénieur solutions métiers / mobilité\" en charge d'assurer la mise en place de nouvelles applications basées sur .net (tablette PC) alimentées par API depuis le SI orienté sur le monde JAVA.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:54:18.510332",
+  "input_hash": "302a5ab62b2abfdb0668cc2b5b55e4cc1c3a2381705e7b642e9435e55dbcfa21",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

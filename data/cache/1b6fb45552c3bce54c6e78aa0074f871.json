@@ -1,0 +1,75 @@
+{
+  "key": "offer_extraction:2587802",
+  "value": {
+    "id": "2587802",
+    "intitule": "Alternance Administrateur Sécurité Informatique - Nantes (H/F)",
+    "entreprise": "",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-13",
+    "date": "2026-05-13",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2587802",
+    "description": "Description :\nL'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, une FinTech française, un(e) Administrateur Sécurité Informatique , en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).\nOptez pour l'alternance nouvelle génération avec l'ISCOD !\n\nMissions :\nAssurer le maintien en condition opérationnelle des solutions de sécurité\nParticiper à l'intégration de nouveaux outils de sécurité dans le SI Nickel\nAssurer le bon niveau de performance des outils et piloter les équipes pour maintenir la bonne santé des indicateurs \nContribuer aux initiatives d'amélioration des process et des outils afin de renforcer la qualité et l'efficacité opérationnelle\nProfil :\n- Vous justifiez d'une première expérience en alternance dans l'administration des systèmes et/ou de solutions de sécurité\n- Vous avez de bonnes connaissances en administration des systèmes d'exploitation (RedHat, Windows)\n- Vous êtes à l'aise avec la réalisation de scripts (connaissance Python appréciée)\n- Vous avez un bon niveau en anglais pour échanger avec nos fournisseurs et équipes internationales\n",
+    "metier": "Administrateur / Administratrice sécurité informatique",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Sécurité Informatique",
+      "Cybersécurité",
+      "Gestion de projet",
+      "Qualité des données",
+      "Résolution de problèmes",
+      "Feature Engineering"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, une FinTech française, un(e) Administrateur Sécurité Informatique , en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, une FinTech française, un(e) Administrateur Sécurité Informatique , en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, une FinTech française, un(e) Administrateur Sécurité Informatique , en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, une FinTech française, un(e) Administrateur Sécurité Informatique , en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:22.569889",
+  "input_hash": "5977c694f406c9e0533e0a81a40e40b18813d3bd99fdb43166701154ef3a8c71",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:208RVVF",
+  "value": {
+    "id": "208RVVF",
+    "intitule": "Alternant Ingénieur Intelligence Artificielle / IA (H/F)",
+    "entreprise": "KAISCHOOL",
+    "territoire": "Île-de-France",
+    "ville": "Île-de-France",
+    "code_postal": "",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-25",
+    "date": "2026-05-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208RVVF",
+    "description": "Missions :\nAccompagner les clients dans leurs projets IA et transformation digitale\nIdentifier les besoins métiers et proposer des solutions adaptées\nParticiper aux ateliers, études de cadrage et démonstrations IA\nMettre en place des solutions IA générative et agents IA\nRéaliser une veille technologique et concurrentielle sur l'IA\n\nPrérequis essentiels\nÉtudiant(e) en Bac+3/4/5 en informatique, management, transformation digitale ou Data\nCapacité d'analyse et de synthèse\nBonne communication écrite et orale\n\nCompétences appréciées\nIntérêt pour l'innovation et les nouvelles technologies\nEsprit d'équipe et capacité d'adaptation\n\nInformations pratiques\nLieu\nÎle-de-France - présentiel\nType de contrat\nAlternance - 12 mois\nDémarrage\nSelon la disponibilité du candidat\nFrais de scolarité\nPris en charge à 100 %\nÉcole\nLibre choix du candidat\n \nDébouchés à l'issue de l'alternance\nSalaire démarrant à partir de 70 000 € brut / an\nLes profils formés en IA générative et conseil digital figurent parmi les plus recherchés du marché. À l'issue de cette alternance, vous serez positionné(e) sur des postes à forte valeur ajoutée : consultant IA, ingénieur IA, chef de projet transformation digitale.",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Intégration continue",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 70000,
+    "salaire_max": 70000,
+    "teletravail": "présentiel",
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Étudiant(e) en Bac+3/4/5 en informatique, management, transformation digitale ou Data",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Les profils formés en IA générative et conseil digital figurent parmi les plus recherchés du marché. À l'issue de cette alternance, vous serez positionné(e) sur des postes à forte valeur ajoutée : consultant IA, ingénieur IA, chef de projet transformation digitale.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:49:57.135532",
+  "input_hash": "85169b8b89eae9a34c54820c407a4a462cb56ba60b1dbf6d616538e0020d7850",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:3656419",
+  "value": {
+    "id": "3656419",
+    "intitule": "Lead Data Scientist Senior (GenAI) F/H",
+    "entreprise": "",
+    "territoire": "92 - Châtillon",
+    "ville": "92020",
+    "code_postal": "92320",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3656419",
+    "description": "Orange Wholesale, leader en Europe dans les infrastructures, réseaux et services de connectivité pour les opérateurs et acteurs numériques mondiaux, compte 3 500 collaborateurs dans 30 pays, avec un chiffre d'affaires de près de 6 milliards d'euros. Sa mission est de concevoir, exploiter et sécuriser des infrastructures globales, allant des câbles sous-marins aux satellites, pour assurer résilience, performance et innovation, notamment dans un contexte de transformation digitale et d'intelligence artificielle. La direction OINIS (Orange International Networks Infrastructures & Services), forte de plus de 1500 salariés, est responsable de la conception, planification, déploiement et exploitation des réseaux internationaux et longue distance. Travailler chez OINIS offre un environnement international, dynamique et innovant, propice à l'évolution des jeunes talents. Une équipe dédiée à l'IA et à l'IA générative (GenAI) conçoit des solutions de bout en bout, utilisant des plateformes cloud et on-premise pour industrialiser rapidement les cas d'usage. Les missions clés incluent la livraison de solutions IA/GenAI pour divers métiers, l'accélération de cas à forte valeur ajoutée (copilotes, assistants, extraction, classification) et la construction de composants réutilisables (RAG, orchestrateurs, outils d'évaluation). Le Skill Center GenAI, pôle d'expertise, définit les standards techniques, accompagne les projets et anime la communauté des data scientists. Votre mission : En tant que référent·e GenAI, vous aidez Orange Wholesale à passer du prototype à la production, en garantissant la qualité technique, la sécurité et la création de valeur. Définir et porter les bonnes pratiques Data Science / GenAI (RAG, agents, évaluation, LLMOps). Concevoir et challenger les architectures des solutions GenAI (cloud et onpremise) avec les équipes IT et produit. Industrialiser des composants réutilisables (moteur RAG, orchestrations d'agents, outillage d'observabilité et de coûts). Animer la communauté des data scientists : partage, coaching, montée en compétences, standards de delivery. Vous travaillez dans un cadre structuré (sécurité, protection des données, éthique) avec une forte exigence de qualité et de mise en production. Responsabilités : Au quotidien, vos responsabilités s'articulent autour de 5 axes : Architecture & expertise GenAI : choix des modèles/approches, patterns (RAG, agents), revues techniques, sécurisation des solutions. Delivery de bout en bout : cadrage, POC, MVP, mise en production, mesure de la valeur, amélioration continue. Industrialisation (LLMOps/MLOps) : CI/CD, observabilité, évaluation, monitoring, qualité et performance en production. Optimisation des coûts : recommandations coûts/performance (usage LLM, ressources cloud), bonnes pratiques FinOps. Communauté & mentoring : animation de sessions, coaching, capitalisation, onboarding des data scientists. Diplômé(e) Bac+5 en data, IA, informatique ou mathématiques appliquées, avec plus de 7 ans d'expérience en data science, spécialisé(e) en IA générative (LLM, RAG, agents). Expérience confirmée en livraison de solutions IA en production, respectant exigences de qualité, sécurité et performance. Maîtrise de Python, pandas, scikit-learn, et bonnes pratiques de codage. Expertise en GenAI/LLM : sélection, déploiement, prompt engineering, gestion des garde-fous. Compétences en RAG et agents : vectorisation, retrieval, orchestration (LangChain, Hugging Face). Connaissance approfondie en MLOps/LLMOps : CI/CD, monitoring, traçabilité, observabilité. Bonne compréhension des architectures cloud (idéalement GCP), APIs, microservices, intégration SI. Sensibilité à l'optimisation des coûts liés aux LLM et cloud. Engagement pour la sécurité, la confidentialité, l'éthique et la conformité. Capacité à prendre des décisions techniques, à challenger et sécuriser des choix complexes, tout en fédérant et vulgarisant. Orienté valeur, pragmatique, axé sur la mise en production. Autonome, rigoureux(se), curieux(se) et esprit de capitalisation. Maîtrise du français courant et de l'anglais opérationnel.",
+    "metier": "Data scientist",
+    "niveau": "intermediaire",
+    "competences": [
+      "Coûts",
+      "Git",
+      "Intelligence artificielle",
+      "LangChain",
+      "MLOps",
+      "Pandas",
+      "Protection Des Données",
+      "Python",
+      "Vue.js",
+      "scikit-learn",
+      "CI/CD",
+      "Anglais professionnel",
+      "Résolution de problèmes",
+      "Architecture microservices",
+      "Backend",
+      "Code review",
+      "Documentation technique"
+    ],
+    "salaire_min": 3500,
+    "salaire_max": 3500,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé(e) Bac+5 en data, IA, informatique ou mathématiques appliquées, avec plus de 7 ans d'expérience en data science, spécialisé(e) en IA générative (LLM, RAG, agents).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "7 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:12.795571",
+  "input_hash": "973191f170a4de60a31ad4919568f9cb6ccd67f9e2a0c64e3e999f3cb53dca3a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

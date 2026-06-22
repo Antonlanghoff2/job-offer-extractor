@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:209RTMT",
+  "value": {
+    "id": "209RTMT",
+    "intitule": "Alternance - Programmateur des interventions électriques (H/F)",
+    "entreprise": "ENEDIS",
+    "territoire": "58 - GARCHIZY",
+    "ville": "58121",
+    "code_postal": "58600",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-12",
+    "date": "2026-06-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209RTMT",
+    "description": "La programmation des interventions clientèle et réseau est un enjeu de performance quotidien pour Enedis.\n\nVous apprendrez à programmer des activités complexes selon différents paramètres (gestion des priorités, des disponibilités, des matériels, des compétences des Techniciens, de la localisation)\n\nLes différentes activités que vous réaliserez au cours de votre alternance en appui avec votre tuteur :\n- Collecter et analyser les demandes d'interventions\n- Programmer l'activité des préparateurs de chantiers, parfois avec plusieurs équipes\n- Assister les techniciens lors des interventions.\n\nVous préparez un diplôme BTS Support à l'Action Managériale ou Management Commercial Opérationnel.\n Merci de joindre à votre candidature votre CV, accompagné de vos bulletins de notes des 2 dernières années.\n\n Vos Atouts :\nVous avez un fort esprit de sécurité, capable de travailler en autonomie tout en collaborant efficacement en équipe. Vous faites preuve de rigueur et d'organisation, avec un sens prononcé du service et de la satisfaction client. Vous possédez également la capacité de rendre compte de manière claire, tant à l'oral qu'à l'écrit.\n\nAssurez-vous d'avoir le diplôme correspondant à l'offre pour postuler.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 820,
+    "salaire_max": 36,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Vous préparez un diplôme BTS Support à l'Action Managériale ou Management Commercial Opérationnel.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:29.837975",
+  "input_hash": "1615ad9aabe7bd760eb8d6ef9e20d2ee751aa78c98ffdc80cfea3bb995fd892e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

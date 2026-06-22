@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:2297366",
+  "value": {
+    "id": "2297366",
+    "intitule": "Apprenti/e ingénieur/e en développement d'outils de prétraitement des simulations aérodynamiques F/H",
+    "entreprise": "DASSAULT AVIATION",
+    "territoire": "92 - Saint-Cloud",
+    "ville": "92064",
+    "code_postal": "92210",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-05-06",
+    "date": "2026-05-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2297366",
+    "description": "Notre organisation : Dans sa mission, au sein de la Direction Technique de l'Ingénierie de l'Avion et des Emports, le service Modélisation Méthodes et Outils se place au service de l'ingénieur, qui, lors de la conception d'un avion Dassault Aviation, est amené à étudier de nombreux phénomènes physiques complexes pour concevoir des formes extérieures d'avion optimales. Pour l'aider dans sa tâche, il a à sa disposition de nombreux outils numériques de maillage / calcul / post-traitement pour caractériser le plus fidèlement possible les formes étudiées. Le service est en charge du développement et de la mise en place de l'ensemble de ces outils. Vous rejoignez notre équipe de 15 personnes spécialisée dans le développement d'outils pour la simulation, basée à Saint-Cloud, au sein d'une direction technique de 150 personnes. Nous vous confions les missions suivantes : Vous contribuerez à concevoir et optimiser des outils logiciels dédiés aux étapes de prétraitement (paramétrage de formes, génération de maillages). Vous explorerez des méthodologies innovantes pour automatiser ces processus en intégrant des approches en lien avec l'intelligence artificielle telle que l'optimisation, la recherche opérationnelle ou le machine learning. L'intérêt de cet apprentissage : Cette mission d'apprentissage vous permettra de vous familiariser avec le processus de conception aérodynamique des avions et d'approfondir vos connaissances en développement informatique et méthodes mathématiques. Le parcours d'intégration : A votre arrivée, nous vous proposerons un dispositif d’accueil pour vous permettre de mieux connaître votre entité, Dassault Aviation et ses enjeux, et de rencontrer d'autres apprentis. Vous êtes en cours de formation dans une école d'ingénieur généraliste ou préparez un master 2 et vous êtes à la recherche d'une alternance avec une mission à forte composante mathématique avec une application industrielle. De solides bases en mathématiques et des notions en développement informatique sont nécessaires pour cette mission. Des connaissances en intelligence artificielle serait un plus. Vous êtes reconnu(e) pour vos facultés d'adaptation, votre autonomie, votre esprit d'initiative et votre créativité. Toutes ces qualités vous permettront de réussir votre mission. Etablissement soumis à enquête administrative. Localisation France, Ile de France, 92 - Saint-Cloud Domaine professionnel / métier Conception générale Type de contrat C. apprentissage Durée du contrat 24 mois Langues Anglais B2 intermédiaire - avancé Compétences Aérodynamique Référence de l'offre 2026-15318 Nombre de postes 1 MERCI DE POSTULER SUR CE LIEN :https://aviationjobs.fr/consult.php?offre=ce8a17768427550932&amp;job=764",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "Déploiement de modèles",
+      "MLOps",
+      "Optimisation des performances",
+      "Architecture microservices",
+      "Backend",
+      "Feature Engineering"
+    ],
+    "salaire_min": 2026,
+    "salaire_max": 15318,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Notre organisation : Dans sa mission, au sein de la Direction Technique de l'Ingénierie de l'Avion et des Emports, le service Modélisation Méthodes et Outils se place au service de l'ingénieur, qui, lors de la conception d'un avion Dassault Aviation, est amené à étudier de nombreux phénomènes physiques complexes pour concevoir des formes extérieures d'avion optimales.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Vous êtes en cours de formation dans une école d'ingénieur généraliste ou préparez un master 2 et vous êtes à la recherche d'une alternance avec une mission à forte composante mathématique avec une application industrielle.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:08.296575",
+  "input_hash": "91dc173074540642194c5cdb21a64b30642b65d69fdc3cd007b6d181f8e43d3f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

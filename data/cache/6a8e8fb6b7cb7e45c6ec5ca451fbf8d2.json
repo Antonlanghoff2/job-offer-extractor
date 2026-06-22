@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3771541",
+  "value": {
+    "id": "3771541",
+    "intitule": "Physical Implementation Engineer - Semi Conducteur - IDF (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Nanterre",
+    "ville": "92050",
+    "code_postal": "92000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3771541",
+    "description": "Contexte du poste Nous sommes un acteur reconnu du secteur des semi-conducteurs, spécialisé dans la conception de circuits intégrés complexes destinés à des applications exigeantes (automobile, industrie, systèmes embarqués). Dans un contexte de croissance soutenue, nous renforçons notre département Back-End / Implémentation Physique, responsable de la réalisation physique complète de nos circuits. Basé(e) en Ile de France (92), vous rejoindrez une équipe d'experts travaillant sur des projets variés, allant de technologies 350 nm à 22 nm, au sein d'un environnement multiculturel. Vous interviendrez sur des circuits à signaux mixtes intégrant des blocs digitaux critiques (DFT, mémoires, interfaces), en interaction directe avec les équipes analogiques, front-end et layout. Ce rôle clé vous permettra de contribuer au développement de puces innovantes et d'améliorer nos flows internes Back-End & Front-End, tout en travaillant dans un environnement stimulant et collaboratif. Le poste : Missions Missions principales ? Réaliser l'implémentation physique complète des blocs digitaux : du RTL au GDSII. ? Mener les activités de Place & Route, CTS, routage, STA, EMIR, DFM, en garantissant la qualité et les objectifs PPA (Puissance / Performance / Surface). ? Participer à la définition, optimisation et automatisation des flows back-end et front-end (TCL, scripts internes). ? Échanger au quotidien avec les équipes analogiques, DFT, architecture, CAO et layout. ? Assurer la robustesse des designs en environnement complexe (qualité, fiabilité, normes). Missions annexes ? Participer aux revues d'architecture et proposer des adaptations d'implantation. ? Contribuer à l'amélioration continue des flows Cadence. ? Supporter les équipes sur les analyses de retours clients et adaptations post-silicon. ? Évaluer et comparer différents n'uds technologiques (22 nm - 350 nm). ? Aider à la montée en compétence du pôle digital sur les bonnes pratiques d'implémentation. Profil recherché : Profil recherché Formation ? Diplôme d'ingénieur Bac+5 ou PhD en microélectronique, électronique ou équivalent. Expérience ? 10 à 15 ans d'expérience en implémentation physique. ? Très bonne maîtrise du Full Flow Cadence. ? Expérience Synopsys acceptée, avec capacité à migrer vers Cadence. Compétences techniques essentielles ? Implémentation physique digitale complète (RTL - GDSII). ? Place & Route, CTS, routage, intégrité du signal. ? Analyse complète STA (timing closure). ? DFT / scan / testabilité. ? EMIR, IR drop, DFM, intégrité de l'alimentation. ? Bonne compréhension du RTL Verilog pour le debug. ? Langages de scripting : TCL (indispensable), Python. Soft skills ? Autonome, proactif, force de proposition. ? Très bon communicant. ? Capacité à travailler en environnement hybride. Langues ? Anglais courant (interactions techniques complexes). ? Le français est un plus mais pas obligatoire. Environnement technique global ? Full Flow Cadence. ? Synthèse RTL, logique combinatoire & séquentielle. ? Place & Route + STA complète. ? Tcl scripting, Python, automatisation interne. ? Management de projets sur process 22 nm - 350 nm (majoritairement 180/190 nm).",
+    "metier": "Conducteur / Conductrice super poids lourd de l'armée",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Vue.js",
+      "Qualité des données",
+      "Code review",
+      "Gestion de projet"
+    ],
+    "salaire_min": 10000,
+    "salaire_max": 15000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplôme d'ingénieur Bac+5 ou PhD en microélectronique, électronique ou équivalent.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplôme d'ingénieur Bac+5 ou PhD en microélectronique, électronique ou équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "9 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:52.583839",
+  "input_hash": "4b22da5ab1e4b471cb3b2ca59ff94a9f68197c6563d53a6deab5bd6dd932229b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,46 @@
+{
+  "key": "offer_extraction:209SHGH",
+  "value": {
+    "id": "209SHGH",
+    "intitule": "Charge(e) d'enseignement - Mathematiques & Statistiques (H/F)",
+    "entreprise": "EMINENCE BUSINESS ECOLE DE PARIS",
+    "territoire": "75 - PARIS 08",
+    "ville": "75108",
+    "code_postal": "75008",
+    "contrat": "Profession libérale",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209SHGH",
+    "description": "A PROPOS DU POSTE\nEtablissement : Eminence Business Ecole de Paris - 1 Cour du Havre, 75008 Paris\nRef : EBEP-S1-B / Contrat : Freelance / Debut : Derniere semaine septembre 2026\nJours : Deux Jours Par Semaine / Mode : Hybride (presentiel + en ligne)\nLangue : Anglais + Francais / Remuneration : a partir de 25 EUR/h\n\nMATIERES - Semestre 1\n- BSc Informatique Annee 1 : Mathematiques Discretes - 47h\n- MSc Informatique Annee 1 : Algebre Lineaire + Probabilites & Statistiques - 62h\nTotal Semestre 1 : Jusqu'a 109 heures de contact\n\nPROFIL RECHERCHE\n- Diplome en Mathematiques, Statistiques, Physique ou domaine quantitatif (tout niveau)\n- Solides bases en maths discretes et algebre lineaire / probabilites\n- Anglais niveau B2 - C1\n- Jeunes diplomes, Master / Doctorants, data scientists et universitaires bienvenus\n- Experience pedagogique anterieure prioritaire\n\nCE QUE NOUS OFFRONS\n- Remuneration a partir de 25 EUR/h - negociable selon profil et experience\n- Planning flexible : Deux Jours d'enseignement par semaine\n- Enseignement hybride : presentiel sur le campus Paris 75008 et cours en ligne\n- Environnement bilingue : anglais + francais\n- Petits groupes d'etudiants - experience d'enseignement privilegiee\n- Collaboration long terme : les enseignants performants continuent sur tous les semestres\n\nCOMMENT POSTULER\nObjet : (Code de reference 'FRANCE TRAVAIL') - Indiquer le poste et Votre nom\nJoindre : CV en anglais (PDF) + lettre de motivation max 300 mots\nEntretiens : mi-Juin jusqu'a fin du mois de Juillet 2026 / Prise de poste : derniere semaine de septembre 2026",
+    "metier": "Professeur / Professeure d'enseignement technologique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 1000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Jeunes diplomes, Master / Doctorants, data scientists et universitaires bienvenus",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 1,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:54.572362",
+  "input_hash": "cb7302ef272f3bb09134cee8538fe4501f9da4b406fc166edc6e9ef2155c2334",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

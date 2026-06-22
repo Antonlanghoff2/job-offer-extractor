@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:4048008",
+  "value": {
+    "id": "4048008",
+    "intitule": "Data manager (H/F)",
+    "entreprise": "",
+    "territoire": "40 - Mont-de-Marsan",
+    "ville": "40192",
+    "code_postal": "40000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4048008",
+    "description": "Description du poste :\nEn tant que Scientifique de la donnée confirmé, vous évoluez au sein de la division valorisation data, à la tête de la section intelligence artificielle.\nÀ ce titre, vous contribuez à l'analyse, à l'exploitation et à la valorisation des données, en mettant en œuvre des méthodes statistiques avancées, des approches de machine learning et d'intelligence artificielle.\nDans ce cadre, vous serez chargé :\n-De manager la section IA;\n-De concevoir et mettre en œuvre des analyses de données avancées et des modèles de machine learning et d'intelligence artificielle ;\n-De définir des stratégies d'exploitation et de valorisation des données à partir de gisements de données hétérogènes ;\n-De constituer, préparer et qualifier les jeux de données nécessaires aux traitements analytiques (nettoyage, normalisation, constitution de corpus De garantir la qualité, la pertinence et l'interprétabilité des analyses et des modèles développés ;\n-De contribuer à l'industrialisation des solutions d'intelligence artificielle en lien avec les équipes techniques ;\n-De travailler en étroite collaboration avec le pôle expertise, les divisions architecture data, maitrise data ainsi que les métiers ;\n-D'assurer une veille technologique dans le domaine de la data science, de l'intelligence artificielle et de l'analyse avancée des données.\nDescription du profil :\nTitulaire d'un diplôme de niveau Bac+5 (école d'ingénieur ou université) en data science, mathématiques, statistiques ou informatique, vous justifiez d'une expérience dans les domaines de l'analyse de données, du machine learning et de l'intelligence artificielle, incluant idéalement la mise en œuvre de projets à fort enjeu.\nVous maîtrisez les méthodes avancées d'analyse statistique, de modélisation et d'apprentissage automatique, ainsi que les outils associés (Python, bibliothèques de data science, environnements de traitement de données). Vous êtes en capacité de concevoir et de mettre en œuvre des solutions d'analyse et des modèles d'intelligence artificielle sur des problématiques complexes, depuis la préparation des données jusqu'à leur exploitation. Vous disposez d'une expérience dans la structuration, la qualification et l'exploitation de jeux de données hétérogènes, et êtes particulièrement attentif à la qualité, à la pertinence et à la possibilité d'interprétation des analyses produites. Vous contribuez à l'industrialisation des solutions développées en lien avec les équipes techniques.\nReconnu pour vos compétences avancées, vous intervenez en tant que référent sur les sujets d'intelligence artificielle, réalisez des projets complexes et accompagnez les collaborateurs dans leur montée en compétence et la diffusion des bonnes pratiques.\nÀ l'aise dans un environnement transverse, vous collaborez étroitement avec les équipes data, techniques et métiers afin de valoriser les données et de répondre aux besoins opérationnels. Vous possédez une bonne compréhension des enjeux de gouvernance, de réglementation et d'éthique liés à l'utilisation des données et de l'intelligence artificielle, et assurez une veille technologique active dans votre domaine.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Vision",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Pipelines de données",
+      "Qualité des données",
+      "Veille technologique",
+      "MLOps",
+      "Model drift",
+      "Protection des données",
+      "Monitoring de modèles",
+      "Airflow"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Titulaire d'un diplôme de niveau Bac+5 (école d'ingénieur ou université) en data science, mathématiques, statistiques ou informatique, vous justifiez d'une expérience dans les domaines de l'analyse de données, du machine learning et de l'intelligence artificielle, incluant idéalement la mise en œuvre de projets à fort enjeu.",
+        "confidence": 0.7
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Titulaire d'un diplôme de niveau Bac+5 (école d'ingénieur ou université) en data science, mathématiques, statistiques ou informatique, vous justifiez d'une expérience dans les domaines de l'analyse de données, du machine learning et de l'intelligence artificielle, incluant idéalement la mise en œuvre de projets à fort enjeu.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:58.763144",
+  "input_hash": "b8da75b76e205ee7abb2a639e71118fc3bd7930994fe4278372eb1fed3914092",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

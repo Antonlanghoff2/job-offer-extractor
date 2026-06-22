@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3179826",
+  "value": {
+    "id": "3179826",
+    "intitule": "Stage Business Analyst Data/Business Intelligence H/F H/F",
+    "entreprise": "",
+    "territoire": "75 - Paris 8e Arrondissement",
+    "ville": "75108",
+    "code_postal": "75008",
+    "contrat": "CDD - 6 Mois",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3179826",
+    "description": "La Direction Études, Tarification et Data de Groupama Assurances Mutuelles recherche un(e) Business Analyst Data pour intervenir sur le périmètre des métiers de l'assurance IARD. Vous serez principalement en charge d'accompagner la migration des applications QlikView vers Qlik Sense et de concevoir de nouvelles applications dédiées au pilotage des sinistres et des recours en automobile. Vous devrez travailler sur : . Préparer les différents environnements techniques nécessaires à la migration des applications QlikView vers Qlik Sense. . Collecter, nettoyer et structurer les données d'entrée, requises pour le bon fonctionnement des nouvelles applications. . Développer et adapter les fonctionnalités afin d'assurer une migration optimale des applications QlikView vers Qlik Sense, tout en maintenant la qualité et la sécurité des données. . Analyser, exploiter et optimiser les performances ainsi que les temps de calcul des applications migrées, en proposant des axes d'amélioration si nécessaire. . Rédiger les cahi Vous suivez une formation Bac+5 en école d'ingénieurs ou master, axée sur l'informatique décisionnelle. Vous connaissez les logiciels de data visualisation QlikView, Qlik Sense et vous maitriser les outils bureautiques (PowerPoint, Word, Excel, ...). Des connaissances en assurance IARD seraient un plus. Vous êtes rigoureux(se), fiable, et doté(e) d'un bon esprit d'analyse et de synthèse. Le poste est ouvert aux personnes en situation de handicap.",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Cybersécurité",
+      "Data Engineering",
+      "Model drift",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Architecture microservices",
+      "Backend",
+      "Scalabilité"
+    ],
+    "salaire_min": 1200,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Rédiger les cahi Vous suivez une formation Bac+5 en école d'ingénieurs ou master, axée sur l'informatique décisionnelle.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Rédiger les cahi Vous suivez une formation Bac+5 en école d'ingénieurs ou master, axée sur l'informatique décisionnelle.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:49.975485",
+  "input_hash": "f9ac618164de04742ed1bdb69d899356872b69751251f39e7e3eb7388486bb73",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

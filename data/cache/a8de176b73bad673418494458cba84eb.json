@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:3533881",
+  "value": {
+    "id": "3533881",
+    "intitule": "Alternance-Assistant(e) Chef de Projet-Dév. Logiciel (H/F)",
+    "entreprise": "Safran",
+    "territoire": "65 - Bordes",
+    "ville": "65101",
+    "code_postal": "65190",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3533881",
+    "description": "Au sein de l'équipe Solutions Logicielles, rattaché(e) à un(e) Team Leader expérimenté(e), l'alternant(e) participera activement au pilotage de projets de développement logiciel en environnement aéronautique sur une durée d'au moins 2 ans. \n\nSes missions incluront : \n* Assistance au suivi de projet : avancement, indicateurs, tableaux de bord, points d'état et revues projet \n* Coordination avec des équipes pluridisciplinaires et des partenaires internationaux (échanges réguliers en anglais avec des équipes basées en Inde) \n* Contribution à la gestion documentaire : comptes-rendus, spécifications fonctionnelles, notes de synthèse \n* Participation aux rituels d'équipe et à la vie du service \n* Contribution technique : réalisation de tâches de développement logiciel confiées selon les besoins et le profil de l'alternant(e)\n* Étudiant(e) en école d'ingénieur, filière informatique ou génie logiciel, avec une orientation gestion de projet\n* Bonnes bases en développement logiciel (C/C++, .NET/C# ou équivalent) \n* Niveau d'anglais professionnel courant exigé (B2 minimum, C1 souhaité) \n* Appétence pour le secteur aéronautique appréciée \n* Rigueur, sens de l'organisation, autonomie progressive \n* Bonne communication écrite et orale, aisance relationnelle",
+    "metier": "Chef / Cheffe de projet étude et développement informatique",
+    "niveau": "junior",
+    "competences": [
+      "Anglais Professionnel",
+      "Aéronautique",
+      "Cahier des charges",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Vue.js"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Étudiant(e) en école d'ingénieur, filière informatique ou génie logiciel, avec une orientation gestion de projet",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:23.496679",
+  "input_hash": "34ae378fffb2bb5cc39adff4afacb08a6d72b21d562594647d443f44568a7e6d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

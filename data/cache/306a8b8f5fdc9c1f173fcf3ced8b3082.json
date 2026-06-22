@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3429816",
+  "value": {
+    "id": "3429816",
+    "intitule": "Ingénieur Mesures Nucléaires F/H (H/F)",
+    "entreprise": "Orano SA",
+    "territoire": "50 - Cherbourg-en-Cotentin",
+    "ville": "50129",
+    "code_postal": "50100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3429816",
+    "description": "Au sein du service de « Contrôle Nucléaire du Procédé » de la Direction Technique Ingénierie d'Orano Projets, vous interviendrez en tant qu'ingénieur d'études en mesures nucléaires sur des projets de maintien en conditions opérationnelles, des projets de nouvelles installations ou sur des sujets d'assistance technique.\n\n Vos missions seront :\n * Elaborer et vérifier des documents techniques (plans, notes techniques, algorithmes de traitement, analyses fonctionnelles, documents et programmes d'essais, de contrôles et de qualification)\n * Concevoir, faire installer et tester des systèmes de mesures nucléaires pour assurer le bon fonctionnement du procédé, la sûreté-criticité des installations et la caractérisation des déchets en vue de leur transport et stockage\n * Participer et/ou réaliser les essais, logiciels et matériels avec/chez les fournisseurs\n * Réaliser des essais sur le site de La Hague ou d'autres sites industriels d'Orano (réglages des électroniques, étalonnages des détecteurs, etc.)\n * Interpréter les résultats de mesures diverses (spectrométrie gamma, débit de dose .)\n\n Des déplacements ponctuels pourront être demandés dans le cadre des projets.\nConnaissances :\n\n * Bac+5 ou plus en physique nucléaire, instrumentation, génie atomique ou interactions rayonnements matière\n * La maîtrise des outils de calcul et de simulation (déterministes, Monte Carlo, MCNP, Serpent, .)\n * La maitrise des différents langages informatiques (VBA, Python, C++.) serait un plus\n * Un bon niveau d'anglais serait apprécié\n\n Compétences :\n\n * Analyse, Interprétation, modélisation\n * Une expérience significative dans le domaine technique décrit est requise",
+    "metier": "Chef / Cheffe d'équipe en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Instrumentation",
+      "Python",
+      "Vue.js",
+      "Scalabilité",
+      "Backend",
+      "Gestion de projet"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Au sein du service de « Contrôle Nucléaire du Procédé » de la Direction Technique Ingénierie d'Orano Projets, vous interviendrez en tant qu'ingénieur d'études en mesures nucléaires sur des projets de maintien en conditions opérationnelles, des projets de nouvelles installations ou sur des sujets d'assistance technique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac+5 ou plus en physique nucléaire, instrumentation, génie atomique ou interactions rayonnements matière",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:09.873046",
+  "input_hash": "e8b3bd8b63402bb2abce18cd994884e273a4d27eeb241a7adc7bc9d54b70cc94",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

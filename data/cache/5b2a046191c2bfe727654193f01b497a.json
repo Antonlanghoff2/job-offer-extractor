@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:2347924",
+  "value": {
+    "id": "2347924",
+    "intitule": "Référent intégration logiciel – Secteur Domotique (H/F)",
+    "entreprise": "SILKHOM SAS",
+    "territoire": "83 - Toulon",
+    "ville": "83137",
+    "code_postal": "83000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-06",
+    "date": "2026-05-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2347924",
+    "description": "Description du poste: Rattaché(e) au Directeur Contrôle et Support, vous intégrerez une équipe composée d’un développeur full stack, d’un ingénieur automaticien/informatique industrielle et 1 apprenti ingénieur bancs de tests. Vous serez le référent de l’intégration logiciel de la société et superviserez techniquement l’équipe en place. Les missions principales sont : -Maintenir l’architecture d’intégration entre les différentes briques logicielles. -Définir les interfaces et flux de données (APIs, protocoles de communication) -Mise en place des chaînes CI/CD (Git, Docker, Jenkins) pour l’automatisation des tests. -Assurer l’interface auprès de la production, pour les mises à jour logicielles et les outils de test. -Développement des outils d’intégration et de supervision -Rédaction de scripts de tests en langage Python et JavaScript Environnement technologique : C/C++, Python, JavaScript,Node-RED, Modbus, Ethernet, Linux, Yocto, MySQL, Git, Docker. Pourquoi rejoindre cette entreprise ? -Vous rejoignez une entreprise engagée dans une démarche de développement durable et de souveraineté industrielle, avec une politique de relocalisation de sa production et de sa sous-traitance depuis 2019. -Vous participerez à la R&D des systèmes GTB/GTC, en travaillant sur des alternatives aux systèmes de badges hôteliers, comme des capteurs de mouvement et de détection de sommeil. -Vous êtes le référent en matière d’intégration logiciel, ce rôle vous confère de l’autonomie dans la structuration de la chaîne d’intégration logiciel. Vous accompagnez les ingénieurs dans leur montée en compétences. Profil recherché: -Vous avez au minimum 5 ans d’expérience en intégration de logiciel embarqué au sein de l’environnement Linux. (Hors stages et alternance) -La connaissance des langages de programmation : C/C++, Python et Javascript est idéal. -La maîtrise des protocoles de communication inter-machines (Ethernet, Modbus, Zigbee, BacNet) est un plus. Compléments: -Lieu : Toulon -Contrat : CDI -Salaire : 55-60K € (en fonction du profil et de l’expérience, hors primes) Si votre profil correspond, nous reviendrons vers vous dans les 7 jours à compter de la date d’envoi.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Docker",
+      "Git",
+      "JavaScript",
+      "Linux",
+      "MySQL",
+      "Python",
+      "Vision",
+      "Travail en équipe",
+      "Intégration continue",
+      "Cybersécurité",
+      "Data Engineering",
+      "MLOps",
+      "Qualité des données"
+    ],
+    "salaire_min": 55000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Description du poste: Rattaché(e) au Directeur Contrôle et Support, vous intégrerez une équipe composée d’un développeur full stack, d’un ingénieur automaticien/informatique industrielle et 1 apprenti ingénieur bancs de tests.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:30.750743",
+  "input_hash": "d98a6dbcc7639dd696e9255377b7e61cb259edffb18e51b73eb95b8a3790e60d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

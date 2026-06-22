@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3610086",
+  "value": {
+    "id": "3610086",
+    "intitule": "Technicien Linux (H/F)",
+    "entreprise": "",
+    "territoire": "87 - Limoges",
+    "ville": "87085",
+    "code_postal": "87000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3610086",
+    "description": "SCC est la division « technologie » du Groupe Rigby. Premier groupe informatique privé en Europe, SCC est un acteur majeur de l'intégration et des services informatiques d'infrastructure. L'ambition de SCC est de fournir à ses clients des solutions technologiques et des services intégrés pour assurer l'efficacité financière et opérationnelle de leur outil informatique et supporter leur compétitivité. Partenaire incontournable, SCC répond à l'ensemble des besoins clients, des plus simples aux plus complexes, grâce à l'étendue de son offre et de sa couverture géographique, son expertise tant généraliste que spécialisée et la portée de ses centres de service. SCC est avant tout une aventure humaine. Ses collaborateurs sont sa principale richesse. Ensemble, ils sont réunis autour de cinq valeurs d'entreprise?: l'esprit d'entreprendre, le professionnalisme, l'esprit d'équipe, l'engagement et les diversités. Présente sur tout le territoire national, SCC compte plus de 5 000 clients, 3 300 collaborateurs et d'un chiffre d'affaires de 2,7 Milliard d'EUR en France au 31/03/2024. Chez SCC, nous valorisons la diversité et l'inclusion. Chaque talent compte, indépendamment du genre, du handicap ou de toute autre distinction. Le poste : Mission 1 - Infrastructure Data Center Lycées : Infrastructure hébergeant les ressources des lycées ainsi que les machines virtuelles. Objectif : mettre à jour les systèmes vers Debian 13. Situation actuelle : Debian 10, 11 et 12. Environ 200 machines virtuelles concernées par la migration. Le processus est déjà identifié et documenté, la mission est donc relativement répétitive. Environ 175 VM entreront dans le processus standard : planification, réalisation des mises à jour, tests avant et après migration. L'objectif est de conserver uniquement deux versions majeures : Debian 12 et 13. Priorité donnée aux serveurs encore en Debian 10. Certaines plateformes resteront en Debian 12 pour répondre aux besoins de certains prestataires. Mission 2 - Monitoring des serveurs : Les équipes ont déjà déployé des agents Zabbix. L'objectif est de migrer vers Zabbix Agent 2 et de généraliser son déploiement pour que l'ensemble remonte correctement dans les outils de supervision. Périmètre : ensemble des VM, environ 300 VM à migrer vers Agent 2. Le processus est déjà défini mais la mission reste chronophage. Un collaborateur dédié à cette activité a été absent pendant une longue période, ce qui a créé un besoin de mise à jour et d'actualisation. Ils recherchent une personne capable de gérer la documentation, d'actualiser l'existant et d'être force de proposition sur les processus. Besoin moins orienté exécution pure que sur la première mission. Mission 3 - Refonte de l'orchestration des VM et gestion des logs : Les équipes souhaitent mener une refonte globale de l'orchestration des VM avec un besoin autour de la gestion des conteneurs Docker. Environ 50% des choix ont déjà été réalisés. Ils souhaitent que la future ressource participe à la réflexion et aux prises de décision , profil type Dimitri. Concernant la gestion des logs, ils recherchent quelqu'un avec un regard critique, capable d'être force de proposition et pouvant participer à la mise en œuvre si le temps de mission le permet. Ne recherchent pas un référent technique, mais ne souhaitent pas non plus un profil passif. Profil recherché : bonne maîtrise de Linux, technicien expert. Sujet transverse - Alertes de sécurité : Participation au traitement des alertes de sécurité : prise en compte, analyse et traitement. Outils évoqués : Palo Alto Cortex + Orange Cyberdefense. À ce jour le volume d'alertes côté infrastructure lycées reste limité, mais pourrait augmenter à l'avenir. Pas de full distanciel. Le quotidien l'impose : ils travaillent avec l'Éducation Nationale et les lycées, ce qui peut amener à être réactifs. Le présentiel est donc très important et indispensable. 2-3 profils de stagiaires très méritants vont être envoyés pour prise de connaissance. Aussi, il y a 2 services. Le premier regroupe Antoine et Guillaume et couvre le data center et l'interconnexion des lycées. Le second est orienté informatique plus classique pour les communautés de communes etc etc, avec du support et du MCO etc etc. Il y a déjà quelqu'un de SCC sur ce service. Ils cherchent un profil sur du Microsoft. Profil recherché : - Mettre à jour les systèmes vers Debian 13 - Monitoring des serveurs : Les équipes ont déjà déployé des agents Zabbix. L'objectif est de migrer vers Zabbix Agent 2 - Linux - Refonte de l'orchestration des VM et gestion des logs Confirmé (4 à 10 ans dans la fonction) Maîtrise technique sur les thématiques de la prestation Bonne autonomie Bonne adaptabilité et capacité à rendre compte Exploitation se serveur : supervision, MCO, MCS",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "junior",
+    "competences": [
+      "Docker",
+      "Intelligence artificielle",
+      "Linux",
+      "Vision",
+      "Cybersécurité",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "MLOps",
+      "Sécurité informatique",
+      "Documentation technique",
+      "Optimisation des performances"
+    ],
+    "salaire_min": 11000,
+    "salaire_max": 12000,
+    "teletravail": "remote",
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:43.182299",
+  "input_hash": "3a97dca4a3c7d2c4ab7da3e17b60de5afdbc7b16c95b9645df371a48d665d530",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

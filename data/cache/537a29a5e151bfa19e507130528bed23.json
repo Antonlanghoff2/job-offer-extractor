@@ -1,0 +1,74 @@
+{
+  "key": "offer_extraction:209XLLZ",
+  "value": {
+    "id": "209XLLZ",
+    "intitule": "Développeur Java Sénior / Cloud GCP - DevOps (H/F) - CDI (H/F)",
+    "entreprise": "INFOKAPPA",
+    "territoire": "91 - PALAISEAU",
+    "ville": "91477",
+    "code_postal": "91120",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209XLLZ",
+    "description": "L'entreprise :\nINFOKAPPA est une société de conseil en systèmes informatiques basée à Palaiseau, au cœur de l'écosystème Paris-Saclay. Fondée en 2005, elle compte 9 collaborateurs et intervient auprès de grands groupes industriels (automobile, aéronautique, énergie) sur des missions longues à haute\nvaleur technique.\nSes atouts : esprit d'équipe, bon climat social, évolution professionnelle constante et tutorat à la prise de poste.\n\nLe poste en CDI - hybride 35 h - 50 000 à 60 000 € brut/an :\nVous assurez le développement, le déploiement et la gestion des outils liés aux bases de données NoSQL (priorité) et relationnelles, principalement sur GCP, ponctuellement sur AWS et Azure.\n\nMissions principales :\n- Développer et maintenir les outils d'exploitation des bases de données client\n- Gérer et optimiser les bases de données NoSQL et relationnelles (scripting, fiabilité, performance)\n- Concevoir l'architecture cloud (réseau, sécurité) et assurer les déploiements CI/CD sur GCP\n\nProfil recherché :\n- Bac+5 (ingénieur / master informatique ou équivalent)\n- 5 ans d'expérience minimum en développement Java et environnements cloud\n- Expérience concrète sur GCP en environnement de production (pas uniquement théorique)\n- Curiosité technique et appétence pour l'apprentissage continu\n - Autonomie, sens de l'organisation et de la priorisation\n - Esprit d'équipe et bon relationnel - vous évoluez dans une structure à taille humaine\n - Envie de progresser : l'entreprise accompagne l'évolution professionnelle de ses collaborateurs\n - Anglais technique courant - documentation, outils et environnements majoritairement en anglais",
+    "metier": "Ingénieur / Ingénieure Cloud computing",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Aéronautique",
+      "Intelligence artificielle",
+      "Java",
+      "NoSQL",
+      "SQL",
+      "CI/CD",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "API",
+      "Pipelines de données",
+      "Documentation technique",
+      "Intégration continue"
+    ],
+    "salaire_min": 60000,
+    "salaire_max": 60000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac+5 (ingénieur / master informatique ou équivalent)",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Bac+5 (ingénieur / master informatique ou équivalent)",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Bac+5 (ingénieur / master informatique ou équivalent)",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 3,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:19.295551",
+  "input_hash": "fdd7b8148da4a71b8c5b968218ca36d874d51127cc37a358249a785e8ab77474",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

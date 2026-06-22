@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:3841439",
+  "value": {
+    "id": "3841439",
+    "intitule": "Data analyst (H/F)",
+    "entreprise": "",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3841439",
+    "description": "Description du poste :\nData builder & analyste métier***Créer et maintenir des tableaux de bord pour la finance et les opérations.***Structurer, croiser et fiabiliser les données pour qu'elles deviennent exploitables et pertinentes.***Soutenir les équipes commerciales, techniques et financières dans l'interprétation et l'usage des données.\nCréateur de valeur et d'autonomie***Alimenter les comités de pilotage clients avec des données consolidées issues des plateformes.***Automatiser la collecte, la consolidation et la présentation des données multi-plateformes.***Identifier et éliminer les tâches argentiques pour libérer du temps à forte valeur ajoutée.***Participer à la mise en place d'un robot conversationnel support : collecte des informations de premier niveau, routage intelligent des tickets, amélioration de l'expérience client.\nFormation : Mastère Intelligence Artificielle\nDescription du profil Appétence pour les données et l'automatisation, dans des environnements hybrides (cloud + on-premise Compétences de base : Excel / Power BI, notions SQL, CSharp.***Curiosité pour Make, Airtable, Zapier et les scripts simples (Python, PowerShell, Bash Bonus : intérêt pour les chatbots / robot conversationnel et la cybersécurité.***BAC +3 validé ou en cours de validation\nPour rappel : dans le cadre de ce partenariat, cette offre n'est accessible qu'aux étudiants de l'école NEXA.\nPAS DE FRAIS DE CANDIDATURE.",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Power BI",
+      "Data Engineering",
+      "Analyse de données",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "BAC +3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Description du profil Appétence pour les données et l'automatisation, dans des environnements hybrides (cloud + on-premise Compétences de base : Excel / Power BI, notions SQL, CSharp.***Curiosité pour Make, Airtable, Zapier et les scripts simples (Python, PowerShell, Bash Bonus : intérêt pour les chatbots / robot conversationnel et la cybersécurité.***BAC +3 validé ou en cours de validation",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:46.352256",
+  "input_hash": "bd4a11b79655e09e4da24a094e5eed75874969294ff6030690fa718e85485584",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,862 @@
+{
+  "key": "trends:90 - Belfort",
+  "value": {
+    "territoire": "90 - Belfort",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Analyse de données": 3,
+      "Data engineering": 3,
+      "Intelligence artificielle": 3,
+      "Model Drift": 3,
+      "MySQL": 3,
+      "PostgreSQL": 3,
+      "Analyse Des Besoins": 2,
+      "Gestion De Bases De Données": 2,
+      "Git": 2,
+      "Java": 2,
+      "Kubernetes": 2,
+      "Pipelines De Données": 2,
+      "React": 2,
+      "SQL": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Analyse de données",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Analyse de données": 3
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Data Engineering": 3
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 3
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Model drift": 3
+        }
+      },
+      {
+        "nom": "MySQL",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "MySQL": 3
+        }
+      },
+      {
+        "nom": "PostgreSQL",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "PostgreSQL": 3
+        }
+      },
+      {
+        "nom": "Analyse Des Besoins",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Analyse des besoins": 2
+        }
+      },
+      {
+        "nom": "Gestion De Bases De Données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Gestion de bases de données": 2
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Git": 2
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Java": 2
+        }
+      },
+      {
+        "nom": "Kubernetes",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Kubernetes": 2
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Pipelines de données": 2
+        }
+      },
+      {
+        "nom": "React",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "React": 2
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Analyse de données": {
+        "Analyse de données": 3
+      },
+      "Data engineering": {
+        "Data Engineering": 3
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 3
+      },
+      "Model Drift": {
+        "Model drift": 3
+      },
+      "MySQL": {
+        "MySQL": 3
+      },
+      "PostgreSQL": {
+        "PostgreSQL": 3
+      },
+      "Analyse Des Besoins": {
+        "Analyse des besoins": 2
+      },
+      "Gestion De Bases De Données": {
+        "Gestion de bases de données": 2
+      },
+      "Git": {
+        "Git": 2
+      },
+      "Java": {
+        "Java": 2
+      },
+      "Kubernetes": {
+        "Kubernetes": 2
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 2
+      },
+      "React": {
+        "React": 2
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 1,
+      "Développeur / Développeuse logiciel ou d'application": 1,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDD - 12 Mois": 1,
+      "CDI": 1,
+      "Intérim - 3 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "MySQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "PostgreSQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MySQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "PostgreSQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MySQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "PostgreSQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "MySQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "PostgreSQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "PostgreSQL",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion De Bases De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Analyse de données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Data engineering",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Gestion De Bases De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Model Drift",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "MySQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse Des Besoins",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion De Bases De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "Model Drift",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "MySQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion De Bases De Données",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Model Drift",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MySQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Kubernetes",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Model Drift",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "MySQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Model Drift",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "MySQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Kubernetes",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "React",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "MySQL",
+        "PostgreSQL",
+        "SQL",
+        "Analyse de données",
+        "Data engineering",
+        "Vision",
+        "Model Drift"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Kubernetes",
+        "MySQL",
+        "PostgreSQL",
+        "React",
+        "Analyse de données",
+        "Data engineering",
+        "Analyse Des Besoins",
+        "Gestion De Bases De Données",
+        "Pipelines De Données",
+        "Model Drift"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Kubernetes",
+        "MySQL",
+        "PostgreSQL",
+        "React",
+        "Analyse de données",
+        "Data engineering",
+        "Analyse Des Besoins",
+        "Gestion De Bases De Données",
+        "Pipelines De Données",
+        "Model Drift"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3736785",
+        "intitule": "Développeuse / Développeur Java - Alternance (H/F)",
+        "entreprise": "",
+        "territoire": "90 - Belfort",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3736785"
+      },
+      {
+        "id": "3700503",
+        "intitule": "Développeuse / Développeur Java - Alternance (H/F)",
+        "entreprise": "",
+        "territoire": "90 - Belfort",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3700503"
+      },
+      {
+        "id": "3601284",
+        "intitule": "Administrateur applications informatiques (h/f)",
+        "entreprise": "Grand Belfort",
+        "territoire": "90 - Belfort",
+        "contrat": "CDI",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3601284"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3736785",
+        "intitule": "Développeuse / Développeur Java - Alternance (H/F)",
+        "entreprise": "",
+        "territoire": "90 - Belfort",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3736785"
+      },
+      {
+        "id": "3700503",
+        "intitule": "Développeuse / Développeur Java - Alternance (H/F)",
+        "entreprise": "",
+        "territoire": "90 - Belfort",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3700503"
+      },
+      {
+        "id": "3601284",
+        "intitule": "Administrateur applications informatiques (h/f)",
+        "entreprise": "Grand Belfort",
+        "territoire": "90 - Belfort",
+        "contrat": "CDI",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3601284"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:00:54.459848",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

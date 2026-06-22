@@ -1,0 +1,377 @@
+{
+  "key": "trends:13 - SALON DE PROVENCE",
+  "value": {
+    "territoire": "13 - SALON DE PROVENCE",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Gestion de projet": 2,
+      "Intelligence artificielle": 2,
+      "Analyse de données": 1,
+      "Code Review": 1,
+      "Data engineering": 1,
+      "Git": 1,
+      "PostgreSQL": 1,
+      "Qualité Des Données": 1,
+      "Veille Technologique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Code Review",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Code review": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "PostgreSQL",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "PostgreSQL": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Veille technologique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "Code Review": {
+        "Code review": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "PostgreSQL": {
+        "PostgreSQL": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      }
+    },
+    "metiers": {
+      "Conseiller / Conseillère support technique informatique": 1,
+      "Développeur / Développeuse informatique": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Veille Technologique"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "PostgreSQL",
+        "Analyse de données",
+        "Data engineering",
+        "Gestion de projet",
+        "Code Review",
+        "Qualité Des Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209NGTC",
+        "intitule": "Développeur NET  (H/F)",
+        "entreprise": "DAYOS",
+        "territoire": "13 - SALON de  PROVENCE",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NGTC"
+      },
+      {
+        "id": "209FHNY",
+        "intitule": "Support Technique logiciels (H/F)",
+        "entreprise": "GEST ON LINE",
+        "territoire": "13 - SALON DE PROVENCE",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FHNY"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209NGTC",
+        "intitule": "Développeur NET  (H/F)",
+        "entreprise": "DAYOS",
+        "territoire": "13 - SALON de  PROVENCE",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NGTC"
+      },
+      {
+        "id": "209FHNY",
+        "intitule": "Support Technique logiciels (H/F)",
+        "entreprise": "GEST ON LINE",
+        "territoire": "13 - SALON DE PROVENCE",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FHNY"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:38.210859",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

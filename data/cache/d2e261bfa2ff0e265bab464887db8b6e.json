@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:209TQSF",
+  "value": {
+    "id": "209TQSF",
+    "intitule": "Chercheur.se en télédétection (H/F)",
+    "entreprise": "CIRAD",
+    "territoire": "34 - MONTPELLIER",
+    "ville": "34172",
+    "code_postal": "34090",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209TQSF",
+    "description": "Description du poste / de la mission\nL'UMR TETIS mène des recherches relatives au développement de méthodes innovantes de production, d'analyse et d'usage de l'information spatiale - en particulier à partir de données de télédétection, pour accompagner les territoires ruraux dans leurs transitions. Au sein de l'unité, le Groupe Observation de la Terre et indicateurs spatio-temporels (GOST) vise à développer des approches basées sur les données d'observation de la Terre multi-capteurs existantes ou à venir pour la caractérisation des surfaces terrestres et le développement d'indicateurs et de produits thématiques utiles à la communauté scientifique et aux acteurs des territoires.\nL'un des domaines d'application de ces développements est la caractérisation des systèmes agraires et de leurs évolutions dans les Pays du Sud, sous les effets conjugués de multiples facteurs.\n\nLe ou la titulaire du poste contribuera, par ses approches méthodologiques, techniques et thématiques, aux enjeux de production d'information de l'unité sur les transitions agraires (dont les transitions agro-écologiques), la durabilité des systèmes alimentaires, les effets du changement climatique et l'aménagement des territoires.\nCes travaux seront menés en intégrant la dynamique actuelle des recherches en télédétection (disponibilité grandissante d'images, nouveaux outils informatiques libres, puissance de calcul, nouvelles approches et méthodes de traitement des données - dont l'IA, etc.), qui offre de nouvelles opportunités pour l'extraction de nouvelles variables essentielles sur les systèmes agraires et les paysages.\n\n Plus particulièrement, le/la titulaire aura pour activités :\n-        L'identification/création et l'extraction d'indicateurs (temporels, spatiaux, paysagers / directs ou indirects / génériques ou spécifiques) à partir d'images satellite pour caractériser les agroécosystèmes ruraux dans les pays du Sud et leurs évolutions\n-        L'identification des principaux déterminants (climatiques, environnementaux et/ou socio-économiques) de ces indicateurs et l'analyse de leur trajectoire\n-        La sélection ou l'adaptation des couples « données (de télédétection, de terrain, d'enquêtes) / méthodes » pertinents pour répondre aux contraintes et problématiques locales\n-        La mise en place d'approches multi-indicateurs (indicateurs composites, convergence de preuves) pour éclairer un diagnostic sur les pratiques culturales, la structuration du paysage agricole, et leurs dynamiques\n-        L'évaluation du domaine de validité, notamment géographique et thématique, des indicateurs développés ainsi que de leur niveau de précision\n\n Les travaux seront menés dans une démarche intégratrice à l'interface entre plusieurs disciplines (géographie, agronomie, socio-économie, science des données)\nIls tiendront compte des particularités des terrains du Sud afin d'identifier des solutions libres adaptées et transférables aux partenaires.\n\nProfil souhaité\n-        Doctorat en télédétection spatiale appliquée aux socio-agro-écosystèmes\n-        Expériences et/ou compétences avérées dans les thématiques suivantes : agronomie, économie/géographie rurale et en particulier en lien avec le développement au Sud (agroécologie, transitions agricoles, etc.)\n-        Expérience solide dans le traitement et l'analyse de séries temporelles d'images satellite\n-        Maîtrise des outils informatiques et de programmation pour l'application des méthodes de traitement, d'apprentissage et d'analyse des données de télédétection (QGIS, OTB, R, Python et bibliothèques dédiées, .), connaissance des standards pour l'exploitation des ressources partagées en ligne (STAC, Cloud Optimized Geotiff, Cloud Native Formats.) et adoption d'une démarche de science ouverte (dépôts Git)\n-        Expérience en montage et/ou coordination de projets",
+    "metier": "Ingénieur / Ingénieure d'études et de recherche agricoles",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Feature Engineering"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Doctorat en télédétection spatiale appliquée aux socio-agro-écosystèmes",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "4 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:06.194140",
+  "input_hash": "d68d624888b336c69418a789655e1963846b69210249679e2ad97a135dcc2777",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

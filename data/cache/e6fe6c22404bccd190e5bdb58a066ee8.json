@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:2556683",
+  "value": {
+    "id": "2556683",
+    "intitule": "APPRENTI-E EN BIO-INFORMATIQUE - H/F",
+    "entreprise": "Inserm",
+    "territoire": "69 - Lyon 8e Arrondissement",
+    "ville": "69388",
+    "code_postal": "69008",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-05-12",
+    "date": "2026-05-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2556683",
+    "description": "Description : L’alternant·e data scientist sera intégré·e d'une équipe de recherche au sein de l’Institut MeLiS et contribuera activement au développement d’outils computationnels appliqués à des questions de biologie fondamentale et de neurosciences pour l’unité Melis. Le poste offre une immersion dans un environnement de recherche de pointe, au sein d’une unité mixte Inserm/Université/CNRS, et permettra à l’alternant·e de dialoguer avec des biologistes, de traduire leurs questions expérimentales en problèmes analytiques, et de mettre en œuvre des méthodes de machine learning, deep learning et d’intelligence artificielle (modèles de fondation, outils agentiques) sur des données biologiques multimodales. ACTIVITÉS PRINCIPALES : Développer des pipelines d’analyse d’images biologiques (microscopie, imagerie cellulaire et tissulaire), en s’appuyant sur des approches classiques de traitement d’image et sur des modèles de deep learning (segmentation, classification, modèles de fondation pour la microscopie) Contribuer au traitement de signaux physiologiques, en particulier l’analyse de données d’imagerie calcique (extraction de signaux, détection d’événements, modélisation) Analyser des données de génomique fonctionnelle, avec un focus sur le séquençage d’ARN en cellule unique (single-cell RNA-seq / single-nucleus RNA-seq) : pré-traitement, intégration multi-jeux de données, annotation cellulaire, analyse de trajectoires Co-animer un groupe de travail transversal dédié au développement d’outils bioinformatiques à l’échelle de l’unité : organisation de sessions de partage de méthodes, mutualisation des bonnes pratiques, contribution à une culture computationnelle commune Documenter les analyses (notebooks, rapports reproductibles) et présenter les résultats lors de réunions d’équipe et de séminaires de l’institut Expérimenter avec les outils d’IA récents (LLMs, assistants de code, workflows agentiques) pour accélérer les analyses et la production scientifique Profil recherché : Connaissances : Formation théorique en data science et en machine learningCuriosité pour les applications en sciences du vivant (aucune formation biologique préalable n’est requise)Maîtrise de l’anglais scientifique : lecture, communication écrite. Savoir-faire : Maîtrise opérationnelle de R et/ou Python.Familiarité avec les frameworks de deep learning appréciée-Bonnes pratiques de développement : Git, environnements reproductibles (conda, renv, Docker), notebooksGoût pour l’expérimentation avec les outils d’IA récents (LLMs, assistants de code, workflows agentiques)Capacité à structurer un projet d’analyse, à documenter son code et à présenter ses résultats Aptitudes : Autonomie, CURIOSITÉ SCIENTIFIQUE et rigueurCapacité à travailler en équipe pluridisciplinaire et à communiquer avec des interlocuteurs non-informaticiensGoût pour le dialogue avec les biologistes et la traduction de questions expérimentales en problèmes analytiquesIntérêt marqué pour le machine learning, le deep learning et l’émergence des outils d’intelligence artificielleSens du collectif et envie de contribuer à une culture computationnelle partagée au sein de l’unité",
+    "metier": "Ingénieur / Ingénieure calcul et structure",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Deep learning",
+      "Docker",
+      "Git",
+      "Imagerie",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Data Engineering",
+      "Pipelines de données",
+      "MLOps",
+      "Model drift"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:07.280711",
+  "input_hash": "a56794bb7939e89e14be3b65ac8a7313bcfce2078e5bbc7281aae09e2272c0d8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:3950401",
+  "value": {
+    "id": "3950401",
+    "intitule": "Ingénieur de développement logiciel (H/F)",
+    "entreprise": "",
+    "territoire": "78 - Vélizy-Villacoublay",
+    "ville": "78640",
+    "code_postal": "78140",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3950401",
+    "description": "Description du poste :\nLieu : Vélizy-Villacoublay, France\nConstruisons ensemble un avenir de confiance\nThales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels que l'IA, la cybersécurité, le quantique, les technologies du cloud et la 6G. Thales compte près de 85 000 collaborateurs dans 65 pays.\nNos engagements, vos avantages***Une réussite portée par notre excellence technologique, votre expérience et notre ambition partagée***Un package de rémunération attractif***Un développement des compétences en continu : parcours de formation, académies et communautés internes***Un environnement inclusif, bienveillant et respectant l'équilibre des collaborateurs***Un engagement sociétal et environnemental reconnu\nVotre quotidien\nRejoignez-nous sur le campus Vélizy qui héberge une grande diversité d'activités Thales, aéro, défense, civile A l'ouest de Paris, ce site offre un environnement de travail équipé des dernières innovations technologiques et propose des services permettant de concilier vie professionnelle et personnelle.\nVous rejoignez le Service Développement Logiciel du Centre de Compétence \"Radars Processing Embarqué\" (CC REP).\nDans le cadre du développement de nos radars, vous intégrez les équipes REP pour participer au développement de solutions innovantes en matière d'outils de simulation et d'analyse de la performance radar.\nVotre première affectation se fera au sein de l'équipe Backend SR3DNG, en charge du développement et du maintien de la solution logicielle Backend pour les radars de la famille Multi Fonctions. Vous intégrerez ainsi une section de développement dynamique de 40 personnes organisée en sous-équipes de 5 à 10 personnes en charge des développements Backend d'un radar.\nLe logiciel Backend, cœur du traitement du radar, se compose de 3 chaines de traitement. Le command & control fait l'interface entre l'opérateur et le système. Le séquencement, garant du temps radar, pilote l'antenne pour l'ensemble des modes d'émission. La chaine de détection, constituée du traitement de signal et du traitement de données, extrait depuis les signaux numérisés les caractéristiques des objets évoluant dans l'espace aérien.\nVous participerez aux différentes activités en charge de l'équipe Backend, à savoir Développement d'évolution logicielle Backend\n- Analyse et correction de fait technique\n- Développement de test d'intégration\n- Analyse de nouveau besoins fonctionnels et identification de solution en coingénierie avec les équipes radar\nA ce titre, vous aurez pour missions Participer aux développements d'évolutions logiciel pour le produit Backend SR3DNG Développement ADA & C d'algorithmes pour la solution Backend sous un environnement Linux et IDE GPS Développement de tests unitaires des algortihmes\n* Participer aux développements de tests d'intégration et de vérification du Backend SR3DNG Développement de tests ADA sous un environnement Linux et IDE GPS Analyse des résultats de tests via l'outil AdaPP\n* Participer avec l'équipe aux analyses de problématiques remontées par les équipes d'intégration radar et processing Analyse des logs composants et des enregistrements Analyse du code sources des composants Backend pour identification de la problématique Proposition et développement d'une correction validée par le responsable du composant Backend impliqué\n* Participer au maintien du plan de test et de vérification du produit Backend Mise à jour du plan de test Backend (Ajout et modification de tests Gestion de la traçabilité amont/aval avec les documents de spécifications SRS des composants Backend Participation au revues Backend\nVotre profil\nVous avez l'ambition et l'envie de vous épanouir au cœur du développement logiciel ?\nVous disposez d'un diplôme d'ingénieur ou équivalent Bac+5 dans le domaine de l'informatique et Vous maîtrisez les langages de programmation C et /ou ADA sous Linux et vous avez une bonne connaissance des langages généralistes type Bash ou python.\n* Vous êtes à l'aise avec les outils de gestion de configuration GIT (Gerrit, gitk), la suite Office, Gitlab, Jenkins\n* Par ailleurs, une expérience d'intégration sur un système temps réel complexe est souhaitée.\nLe dynamisme, l'esprit d'équipe et la perséverance sont des atouts que l'on vous reconnait ?\nAlors rejoignez- nous !\nThales, entreprise Handi-Engagée, reconnait tous les talents. La diversité est notre meilleur atout. Pos",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Aéronautique",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Vue.js",
+      "Tests automatisés",
+      "Travail en équipe",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 10000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous disposez d'un diplôme d'ingénieur ou équivalent Bac+5 dans le domaine de l'informatique et Vous maîtrisez les langages de programmation C et /ou ADA sous Linux et vous avez une bonne connaissance des langages généralistes type Bash ou python.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous disposez d'un diplôme d'ingénieur ou équivalent Bac+5 dans le domaine de l'informatique et Vous maîtrisez les langages de programmation C et /ou ADA sous Linux et vous avez une bonne connaissance des langages généralistes type Bash ou python.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:16.277583",
+  "input_hash": "4dee3054b8524aeb1440288952bdfe9cc480405750f863e8d36a00866932d95a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

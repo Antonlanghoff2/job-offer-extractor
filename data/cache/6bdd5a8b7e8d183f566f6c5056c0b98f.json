@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:209XTCP",
+  "value": {
+    "id": "209XTCP",
+    "intitule": "Ingénieur systèmes embarqués (H/F)",
+    "entreprise": "SERMA INGENIERIE",
+    "territoire": "38 - GRENOBLE",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209XTCP",
+    "description": "Contexte de la mission :\n\nDans le cadre du développement de produits innovants intégrant des fonctionnalités avancées de traitement de données et d'intelligence artificielle embarquée, notre client, acteur majeur de l'industrie, recherche un(e) Ingénieur Développement Logiciel Embarqué C / IA.\n\nVous intégrerez une équipe multidisciplinaire en charge de la conception et du développement de logiciels embarqués pour des systèmes à fortes contraintes temps réel, de sûreté de fonctionnement et de performance.\n\nVos missions :\n\nConcevoir, développer et maintenir des logiciels embarqués en langage C.\nParticiper à l'architecture logicielle des systèmes embarqués.\nDévelopper et intégrer des algorithmes d'intelligence artificielle sur plateformes embarquées.\nOptimiser les performances CPU, mémoire et consommation énergétique.\nRéaliser les tests unitaires, d'intégration et de validation.\nParticiper aux revues de code et aux analyses de qualité logicielle.\nCollaborer avec les équipes systèmes, électronique, IA et validation.\nAssurer la traçabilité et la documentation des développements.\nContribuer à l'industrialisation et à l'amélioration continue des processus de développement.\n\nEnvironnement technique :\nDéveloppement embarqué\nLangage C (obligatoire)\nC embarqué temps réel\nLinux embarqué\nRTOS (FreeRTOS, Zephyr, VxWorks ou équivalent)\nDrivers et couches basses\nProtocoles de communication (CAN, UART, SPI, I2C, Ethernet)\nIA embarquée\nMachine Learning embarqué\nTinyML\nTensorFlow Lite Micro\nONNX Runtime\nOptimisation et déploiement de modèles IA sur cibles contraintes\nOutils\nGit\nJenkins / GitLab CI\nDocker\nCMake\nGDB\nJIRA\nSonarQube",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "CMake",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Machine learning",
+      "TensorFlow",
+      "Vue.js",
+      "Qualité logicielle",
+      "Tests automatisés",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Gestion de projet",
+      "Documentation technique",
+      "MLOps",
+      "Monitoring de modèles",
+      "Cybersécurité",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": 37000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre du développement de produits innovants intégrant des fonctionnalités avancées de traitement de données et d'intelligence artificielle embarquée, notre client, acteur majeur de l'industrie, recherche un(e) Ingénieur Développement Logiciel Embarqué C / IA.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 20,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:29.356793",
+  "input_hash": "6a333cfc1e9fe8caab17f9dc65343551ecaec4a54e7bfcd8e784165fca97b732",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

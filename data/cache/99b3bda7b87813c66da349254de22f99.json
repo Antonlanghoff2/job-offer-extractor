@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:209DCNL",
+  "value": {
+    "id": "209DCNL",
+    "intitule": "Technicien réseaux informatiques (F/H)",
+    "entreprise": "EXPECTRA",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "Intérim - 3 Mois",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209DCNL",
+    "description": "En tant que Packageur / Technicien Packaging (F/H), vos missions seront les suivantes :\n- Gestion du packaging applicatif : validation des packages, mise en production, diffusion, Reporting, patch management\n- Création de packages (avec le séquenceur APP-V 5 SP1)\n- Rédaction de procédures\n- Packaging des postes de travail (intégration d'applications métiers et bureautiques)\n- Support niveau 3\n- Administration et déploiement automatisé des applications et des patchs de sécurité\n- Mettre à jour les packer existants\n\nCompétences techniques : \n- Connaissance Python, Powershell, SCCM et IDEALEMENT WAPT\n\nCe poste, basé à BORDEAUX est à pourvoir dans le cadre d'une mission d'une durée de 3 mois.\n\nLa rémunération brute annuelle est de 32 000 €  à 35 000 € négocier selon votre expérience.\n\nDe formation Bac+2, vous justifiez d'une expérience de 4 années minimum.\n\nVous êtes autonome et polyvalent ? \nVous savez vous adapter rapidement à un nouvel environnement de travail ?",
+    "metier": "Technicien / Technicienne réseaux informatiques et télécoms",
+    "niveau": "intermediaire",
+    "competences": [
+      "Python",
+      "Déploiement de modèles",
+      "Cybersécurité"
+    ],
+    "salaire_min": 32000,
+    "salaire_max": 35000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac+2, vous justifiez d'une expérience de 4 années minimum.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "4 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:11.910053",
+  "input_hash": "5e94be270c681806c7b0c4a1d5fda437289e76a73705402795e3248e0f5a8c61",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

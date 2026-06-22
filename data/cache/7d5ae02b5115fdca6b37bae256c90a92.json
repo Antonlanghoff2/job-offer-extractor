@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:206YZVV",
+  "value": {
+    "id": "206YZVV",
+    "intitule": "Consultant senior actuariat santé prévoyance BtoB (H/F)",
+    "entreprise": "AOPS CONSEIL",
+    "territoire": "75 - Paris",
+    "ville": "75 - Paris",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-04-15",
+    "date": "2026-04-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/206YZVV",
+    "description": "AOPS Conseil, cabinet spécialisé à taille humaine basé à Paris (17ème), recherche un Consultant en actuariat expérimenté (H/F) spécialisé en protection sociale complémentaire (santé et prévoyance) BtoB justifiant d'au moins 8 ans d'expérience en entreprise (organisme de Sécurité sociale, mutuelle, groupe de protection sociale ou d'assurance, courtier) ou en cabinet de conseil. \n\nLes missions : \n- Conseil et recommandations en lien direct avec les clients suivis\n- Etudes actuarielles et statistiques de garanties risques santé et prévoyance\n- Mesure d'impact des évolutions réglementaires sur les régimes\n- Contrôle de comptes de résultats clients pour le risque frais de santé, à partir de données interne ou externe, accompagnés de l'analyse et consolidation technique\n- Projection de sinistralité des risques santé et prévoyance\n- Mise en place et suivi d'appels d'offres\n\nVous travaillerez en lien avec des consultants juniors et intermédiaires au sein du cabinet ainsi qu'avec les équipes techniques d'organismes assureurs.\n\nCe que nous attendons de vous :\n- Titulaire d'un Bac+4/5 Mathématiques/Statistiques/Assurance, vous justifiez d'une expérience de minimum 6 ans sur des fonctions similaires en assurances collectives, en cabinet de courtage ou en compagnie d'assurance avec une orientation BtoB.\n- Vous avez des connaissances solides de l'environnement technique et comptable, des règlementations de la Prévoyance, Santé et Retraite complémentaire. \n- Compétences techniques : Vous maîtrisez le pack office, vous avez de l'appétence pour VBA, Alteryx, Power BI ; Power Query, Python\n- Vous faites preuve d'une bonne organisation, de rigueur et vous êtes capable de travailler en autonomie au sein d'une équipe.\n- Votre esprit d'analyse et de synthèse, votre capacité d'argumentation, votre sens du service clients sont des atouts \n\nLes profils actuaires ou data scientists sont acceptés si connaissance du marché.",
+    "metier": "Actuaire",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Analyse de données"
+    ],
+    "salaire_min": 90000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Titulaire d'un Bac+4/5 Mathématiques/Statistiques/Assurance, vous justifiez d'une expérience de minimum 6 ans sur des fonctions similaires en assurances collectives, en cabinet de courtage ou en compagnie d'assurance avec une orientation BtoB.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "8 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:15.975375",
+  "input_hash": "237e164e8e25b9728c6f709fd926104b0e4587d298787561e18c0b0174c18f68",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:2391131",
+  "value": {
+    "id": "2391131",
+    "intitule": "Architecte Data (H/F)",
+    "entreprise": "",
+    "territoire": "83 - Toulon",
+    "ville": "83137",
+    "code_postal": "83000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-07",
+    "date": "2026-05-07",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2391131",
+    "description": "Description du poste :\nAu cœur de la stratégie data, l'Architecte Data joue un rôle clé dans la valorisation des données de la CNMSS. Sa mission : concevoir des architectures performantes permettant de collecter, structurer, exploiter et sécuriser des volumes de données toujours plus importants, qu'elles soient internes ou externes.\nEn lien étroit avec les équipes métiers et techniques, il/elle analyse les besoins, identifie les enjeux et propose des solutions innovantes, robustes et évolutives pour répondre efficacement aux usages.\nVéritable chef d'orchestre, il/elle pilote la mise en œuvre et l'industrialisation des solutions data (collecte, traitement, stockage), tout en garantissant leur performance, leur fiabilité et leur maîtrise des coûts.\nÀ l'affût des dernières innovations, il/elle s'appuie sur une veille technologique active pour intégrer les meilleures pratiques et technologies Big Data. Il/elle veille également au respect des normes et réglementations en matière de gestion des données.\nPourquoi nous rejoindre ?\nRejoindre la CNMSS, c'est contribuer à des projets à fort impact, au sein d'un environnement stimulant où la donnée est un levier stratégique d'innovation et de performance.\nDescription du profil :\nVous disposez d'une solide expérience dans la gestion des données et faites preuve d'une réelle curiosité technique, avec l'envie constante de développer vos compétences.\nMéthodique et rigoureux(se), vous appréciez le travail en équipe et savez collaborer efficacement avec des interlocuteurs variés.\nForce de proposition, vous contribuez activement à la conception de solutions techniques innovantes et adaptées aux enjeux métiers.\nVous êtes titulaire d'un Master (Bac+5) avec une spécialisation en data ou informatique, tel que :\nInformatique\nData Science / Big Data\nÉcole d'ingénieur avec spécialisation en data, informatique ou domaines connexes",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Coûts",
+      "Intelligence artificielle",
+      "Data Engineering",
+      "Pipelines de données",
+      "Déploiement de modèles",
+      "MLOps",
+      "Model drift"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Vous êtes titulaire d'un Master (Bac+5) avec une spécialisation en data ou informatique, tel que :",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes titulaire d'un Master (Bac+5) avec une spécialisation en data ou informatique, tel que :",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "École d'ingénieur avec spécialisation en data, informatique ou domaines connexes",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "6 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:37.621563",
+  "input_hash": "ca77440a820e29082aed437dbd00e809a874a5d636b0e2b43a873cc98a7b6330",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

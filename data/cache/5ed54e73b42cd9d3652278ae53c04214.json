@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:3190315",
+  "value": {
+    "id": "3190315",
+    "intitule": "ALTERNANCE - DATA SCIENTIST - DEEP LEARNING ET INNOVATION GÉOSPATIALE - H/F",
+    "entreprise": "CLS",
+    "territoire": "31 - Ramonville-Saint-Agne",
+    "ville": "31446",
+    "code_postal": "31520",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3190315",
+    "description": "Description : Le DataLab de CLS est une structure interne d’innovation transverse au sein du groupe CLS, constituée de data scientists, de développeurs et d’ingénieurs Big Data. Son objectif principal est de concevoir des produits pour enrichir et valoriser la donnée dans les solutions CLS et de développer les pratiques data/IA. Dans ce contexte, l’équipe Data de CLS recherche un(e) alternant(e) souhaitant mettre en pratique ses compétences sur le sujet suivant Les modèles de fondation géospatiaux représentent une avancée majeure dans l’exploitation de données spatiales à grande échelle. Pré-entraînés sur des données massives et souvent multi-modales, ils permettent de créer des représentations riches et générales (les embeddings), de généraliser plus facilement sur différents territoires. Ces technologies visent à démocratiser l'utilisation des données d'Observation de la Terre (EO), rendant l'analyse avancée accessible sans expertise spécialisée en apprentissage automatique ou en SIG L’objectif de l’alternance est de concevoir un prototype d’exploration de donnée géospatiales en utilisant les embeddings, afin d’évaluer la maturité, les difficultés et ls opportunités liées à cette nouvelle modalité dans les différentes métiers géospatiaux de CLS. Vous serez amené(e) à : RÉALISER UNE ÉTUDE BIBLIOGRAPHIQUE ET PRATIQUE des approches des derniers modèles de fondation géospatiaux (Clay, AEF, Tessera...) et des Vision Language Models, tels que SkyCLIP, RemoteCLIP, DescribeEarth,... CADRER DES PREMIERS CAS D’USAGE avec l’équipe Datalab et les équipes métier de CLS, parmi : * La détection de changement sémantique : comparer les vecteurs dans le temps pour déterminer la nature du changement en langage naturel (par exemple, une forêt transformée en champ de culture) * L'interrogation d’images EO : permet de rechercher des images satellites et leurs géolocalisations en utilisant des requêtes textuelles complexes. * La recherche de similarité : permet de rechercher des images satellites ou de la recherche de similarité sémantique. L’intégration de ces modèles fondations et embeddings dans des workflow agentiques, afin de fournir une interface conversationnelle à l’utilisateur. CONCEVOIR, IMPLÉMENTER PLUSIEURS PROTOTYPES de bout en bout, depuis l’ingestion des données jusqu’à une interface utilisateur. EVALUER LES PERFORMANCES, LIMITATIONS ET AXES D’AMÉLIORATIONS PRÉSENTER ET DOCUMENTER vos travaux au sein de l’équipe Data et aux équipes métier. Profil recherché : Etudiant(e) en école d’ingénieurs ou en Master avec une spécialisation en DATA SCIENCE, INTELLIGENCE ARTIFICIELLE, MACHINE LEARNING ou MATHÉMATIQUES APPLIQUÉES, vous souhaitez mettre en application vos connaissances à travers des projets dans un domaine stimulant et porteur de sens. COMPÉTENCES ET CONNAISSANCES SOUHAITÉES : · Solides bases en apprentissage automatique et profond (Machine Learning et Deep Learning) ; · Solides bases des langages et bibliothèques de data science, en particulier Python, scikit-learn, PyTorch, pandas, numpy, geopandas, matplotlib, etc. QUALITÉS ATTENDUES : · Curiosité scientifique et goût pour l’expérimentation · Esprit analytique, rigueur, sens de l’organisation et autonomie · Bonnes capacités de communication écrite et orale pour présenter et valoriser vos résultats.",
+    "metier": "Ingénieur / Ingénieure calcul et structure",
+    "niveau": "junior",
+    "competences": [
+      "Deep learning",
+      "Intelligence artificielle",
+      "Machine learning",
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "Python",
+      "Vision",
+      "scikit-learn",
+      "Déploiement de modèles",
+      "Analyse de données",
+      "Data Engineering",
+      "MLOps",
+      "Model drift",
+      "Pipelines de données",
+      "API",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "remote",
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Profil recherché : Etudiant(e) en école d’ingénieurs ou en Master avec une spécialisation en DATA SCIENCE, INTELLIGENCE ARTIFICIELLE, MACHINE LEARNING ou MATHÉMATIQUES APPLIQUÉES, vous souhaitez mettre en application vos connaissances à travers des projets dans un domaine stimulant et porteur de sens.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:05.164703",
+  "input_hash": "867a73f85bcb611a36d05cbfea69cd4a45b90fdd01290170c39e7b15722edf25",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

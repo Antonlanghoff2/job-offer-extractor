@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:209JMZT",
+  "value": {
+    "id": "209JMZT",
+    "intitule": "Ingénieur Full Stack Java React JS (H/F)",
+    "entreprise": "AK RECRUTEMENT",
+    "territoire": "69 - LYON",
+    "ville": "69383",
+    "code_postal": "69003",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JMZT",
+    "description": "Notre client est un éditeur de logiciel dans le domaine de l'assurance. \nIntégré à notre équipe technique, votre rôle de développeur vous permettra de travailler dans un contexte moderne, en lien avec les dernières technologies. \n\nMissions : \nDéveloppement de fonctionnalités : Au sein de nos équipes de développement, et sous la supervision d'un Lead Développeur et d'un Product Owner, vous contribuerez au développement de nouvelles fonctionnalités pour la plateforme. Vous réaliserez en autonomie les développements back (JAVA), front (ReactJS) et leur interconnexion, en respectant les normes de codage et de sécurité de l'entreprise.\nRevue de code : afin de garantir la qualité du code, toute production est soumise à une relecture et une évaluation par un autre développeur. Vous serez donc amené à faire relire votre code et à participer à la relecture de celui de vos collègues.\nOpérations RUN : en tant que solution SaaS, une maintenance continue est nécessaire. Bien qu'une équipe support gère les incidents de niveaux 1 et 2, la correction des anomalies plus complexes incombe à l'équipe de développement. Vous serez donc régulièrement amené à intervenir pour résoudre ces problèmes.\nRefacto / Optimisation : Dans un souci constant d'évolution, de consolidation et de sécurisation, vous contribuerez à l'analyse et à l'optimisation du code existant.\n\nCompétences souhaitables :\n\nJAVA 16 ou supérieur\nReactJS 17 ou supérieur\nGIT / Gitlab CI\nRedis et ElasticSearch seraient un plus.\nConditions de poste :\n\nContrat CDI statut cadre\nSalaire : 40K à 48K brut annuel (négociable en fonction du profil) \nTélétravail possible 2 jours par semaine\nAvantages : RTT, mutuelle, primes individuelles\n\nProfil recherché : \nDiplôme de niveau Bac + 3/5 en informatique (école d'ingénieur, master universitaire ou équivalent).\nExpérience significative (minimum 2 années) en développement Fullstack.\nSolide expertise en développement back-end avec JAVA et au moins un framework majeur (Spring, Hibernate, etc.).\nMaîtrise avancée du développement front-end avec ReactJS et son écosystème (Redux, Hooks, Context API, etc.).\nBonne connaissance des principes de conception d'APIs RESTful.\nFamiliarité avec les bases de données relationnelles (MySQL)\nConnaissance des outils de gestion de versions (Git).\nCompréhension des principes de tests unitaires et d'intégration.\nIntérêt pour les problématiques de performance et de sécurité.\nCapacité à travailler en équipe et à communiquer efficacement.\nAutonomie, rigueur et proactivité.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "MySQL",
+      "React",
+      "Vision",
+      "Vue.js",
+      "Product Management",
+      "Gestion de projet",
+      "Code review"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Diplôme de niveau Bac + 3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplôme de niveau Bac + 3/5 en informatique (école d'ingénieur, master universitaire ou équivalent).",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplôme de niveau Bac + 3/5 en informatique (école d'ingénieur, master universitaire ou équivalent).",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Diplôme de niveau Bac + 3/5 en informatique (école d'ingénieur, master universitaire ou équivalent).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 3,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:30.776826",
+  "input_hash": "45d6fe70d94179616698d21c8ca461c8bad43ea2419dbf3cc9d3a87429f4122b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

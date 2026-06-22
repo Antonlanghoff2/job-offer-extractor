@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:1481899",
+  "value": {
+    "id": "1481899",
+    "intitule": "ADMINISTRATEUR SYSTÈMES & RÉSEAUX LINUX JUNIOR (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "33 - Pessac",
+    "ville": "33318",
+    "code_postal": "33600",
+    "contrat": "CDI",
+    "date_creation": "2026-04-15",
+    "date": "2026-04-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1481899",
+    "description": "Dans le cadre d'une création de poste, notre client, une entreprise spécialisée en cybersécurité, recherche un Administrateur / Technicien Systèmes & Réseaux Linux pour renforcer son équipe. Sous la responsabilité du Responsable Informatique, vous participez au déploiement et la maintenance de l'infrastructure de l'entreprise. Vous agissez également en tant que support de Niveau 2 pour les aspects techniques des produits, tout en assurant aussi la performance, la sécurité et la fiabilité des opérations internes, avec une interaction limitée avec les clients.Vos missions principales : Gestion de l'infrastructure : Participer à la configuration, au déploiement et à la maintenance des serveurs, des réseaux et des systèmes de stockage. A la fois sur des sujets On premise et cloud. Support technique : Assurer la résolution des incidents techniques de Niveau 2 liés aux produits. Sécurité et conformité : Mettre en place et veiller au respect des protocoles de sécurité. Documentation : Maintenir à jour une documentation technique claire et détaillée des systèmes, des configurations et des procédures. Amélioration continue : Proposer et mettre en uvre des améliorations pour optimiser nos opérations IT et notre infrastructure, en veillant à ce qu'elles respectent les normes du secteur. De formation Bac +3 à Bac +5 en informatique, vous justifiez d'au moins 2 ans d'expérience sur un poste similaire (administration systèmes/réseaux, exploitation ou supervision) sur des environnements Linux. Compétences techniques : Systèmes Linux : Maîtrise de Debian/Ubuntu et Red Hat/CentOS, scripting Shell et Python. Réseaux & Sécurité : Maîtrise des protocoles TCP/IP, configuration de pare-feu (iptables) et de VPN. Cloud & Virtualisation : Connaissance d'un cloud public (AWS, Azure) et des technologies de virtualisation (VMware). Services : Administration de serveurs web (Apache, Nginx), bases de données (MySQL) et services système (DNS, DHCP). Monitoring & Automatisation : Utilisation d'outils comme Prometheus/Grafana et expérience avec Ansible ou Terraform.",
+    "metier": "Administrateur / Administratrice de systèmes d'information (SI)",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Intelligence artificielle",
+      "Linux",
+      "MySQL",
+      "Python",
+      "Terraform",
+      "Vision",
+      "Réseaux informatiques",
+      "Déploiement de modèles",
+      "Résolution de problèmes",
+      "Cybersécurité",
+      "Sécurité informatique",
+      "Documentation technique",
+      "Qualité des données",
+      "Gestion de projet",
+      "Intégration continue",
+      "Optimisation des performances",
+      "Scalabilité"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac +3 à Bac +5 en informatique, vous justifiez d'au moins 2 ans d'expérience sur un poste similaire (administration systèmes/réseaux, exploitation ou supervision) sur des environnements Linux.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac +3 à Bac +5 en informatique, vous justifiez d'au moins 2 ans d'expérience sur un poste similaire (administration systèmes/réseaux, exploitation ou supervision) sur des environnements Linux.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 20,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:28.631203",
+  "input_hash": "125602ffded732bab734fb75973c6547b0c04575dbb5dfdab08ac833c3865bde",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

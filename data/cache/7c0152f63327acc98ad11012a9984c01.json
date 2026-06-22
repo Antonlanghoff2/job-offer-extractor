@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:3101660",
+  "value": {
+    "id": "3101660",
+    "intitule": "ALTERNANCE DÉVELOPPEMENT FIRMWARE IOT  MODULE SATELLITE - H/F",
+    "entreprise": "Kineis",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-27",
+    "date": "2026-05-27",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3101660",
+    "description": "Description :\n\n\nIntégré·e au sein de notre équipe de R&D, vous participerez activement au développement de nos solutions innovantes. Accompagné·e par un tuteur expérimenté, vos missions s'articuleront autour de quatre grands axes\nDÉVELOPPEMENT LOGICIEL EMBARQUÉ :\n\n\t* Dévellopement de logiciels embarqués en LANGAGE C sur microcontrôleurs (ARM Cortex-M, STM32, SiliconLab ou équivalent).\n\t* Optimisation du code pour les contraintes de temps réel et de basse consommation.\n\nTRAITEMENT DU SIGNAL & RADIO LOGICIELLE (SDR) :\n\n\t* Implémentation et test d'algorithmes de traitement du signal (filtrage, modulation/démodulation, FFT).\n\t* Utilisation et configuration de plateformes SDR (Software Defined Radio) pour la réception/transmission de données.\n\nFIABILISATION & AUTOMATISATION (DEVOPS EMBARQUÉ) :\n\n\t* Conception et mise en place de bancs de tests automatisés (unitaires et d'intégration).\n\t* Participation à l'amélioration continue des processus de déploiement (CI/CD).\n\nINVESTIGATION & DEBUG :\n\n\t* Analyse des comportements système et résolution de bugs complexes.\n\t* Utilisation d'outils de laboratoire (oscilloscope, analyseur logique, analyseur de spectre, sondes JTAG/SWD).\n\n \nVous évoluerez dans un écosystème moderne et formateur :\n\n\t* LANGAGES : C (maîtrise requise), Python (pour le scripting et le traitement de données/SDR).\n\t* OUTILS & MÉTHODOLOGIES : Git / GitLab (Versionning et CI/CD), plateformes SDR (GNU Radio), IDE embarqués.\n\t* MATÉRIEL : Microcontrôleurs variés, instrumentation de mesure électronique.\n\n\n\t\t\n\t\t\nProfil recherché :\n\t\t\n\t\t\nVOTRE PROFIL\n\n\t* Étudiant·e en école d'Ingénieur ou Master spécialisé en Électronique, Systèmes Embarqués, Informatique Industrielle ou Télécoms, vous recherchez un contrat d'alternance.\n\nHARDSKILLS :\n\n\t* Bonne maîtrise du langage C et des concepts de l'embarqué.\n\t* Bases solides en traitement du signal et curiosité pour l'univers de la radio logicielle (SDR).\n\t* Utilisation fluide de Git.\n\nSOFTSKILLS :\n\n\t* Curiosité et esprit d'investigation : Vous aimez chercher \"le pourquoi du comment\" lors du debug.\n\t* Rigueur : Essentielle pour la mise en place de tests fiables.\n\t* Autonomie et esprit d'équipe : Vous savez avancer sur vos sujets tout en communiquant efficacement avec vos collègues.\n\n",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Instrumentation",
+      "Intelligence artificielle",
+      "Python",
+      "CI/CD",
+      "Tests automatisés",
+      "Déploiement de modèles",
+      "Résolution de problèmes",
+      "Data Engineering"
+    ],
+    "salaire_min": 32000,
+    "salaire_max": 32000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Étudiant·e en école d'Ingénieur ou Master spécialisé en Électronique, Systèmes Embarqués, Informatique Industrielle ou Télécoms, vous recherchez un contrat d'alternance.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Étudiant·e en école d'Ingénieur ou Master spécialisé en Électronique, Systèmes Embarqués, Informatique Industrielle ou Télécoms, vous recherchez un contrat d'alternance.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:16.917624",
+  "input_hash": "dcd1f94dc45f5346e4b02f1f01e7200fba839fb122731f5e4a08729c64e5b1d4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

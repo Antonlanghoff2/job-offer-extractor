@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:4003337",
+  "value": {
+    "id": "4003337",
+    "intitule": "Ingénieur Système & Réseaux (H/F)",
+    "entreprise": "SOLUTEC",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4003337",
+    "description": "Vous cherchez à rejoindre une équipe dynamique sur Toulouse ? Travailler dans un environnement Start Up avec les avantages d'une structure en pleine croissance telle que AUBAY SOLUTEC ? Ce poste est fait pour vous ! Nous recherchons des Ingénieurs systèmes et réseaux H/F. Au sein de l'équipe système et réseaux de l'un de nos clients grands comptes, vous interviendrez sur :\n\nLa partie réseaux :\n\n * La configuration et le maintien en condition opérationnelle de l'infrastructure réseau (équipements réseaux et télécomstélécoms)\n * Gestion des projets LANLAN et WAN\n * WANPlanification et gestion des évolutions.\n * Support N2/N2 N3 N3sur l'infrastructure\n * Rédaction des documents d'infrastructure et mise à jour du fond documentaire\n\nLa partie système :\n\n * L'installation, la configuration et l'exploitation quotidienne de l'ensemble des serveurs\n * Le maintien en conditions opérationnelles et la sécurité de ces derniers.\n * Les projets de migration et de déploiement\n * L'étude et intégration de nouveaux services\n * Le conseil et l'assistance de l'équipe informatique sur les questions d'architectures\n * La veille technologique dans le domaine des serveurs et des systèmes d'exploitation\nIssu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4 /Bac+5), vous justifiez d'une première expérience en administration d'infrastructures systèmes et réseaux.\n\nIngénieur réseaux, vous avez travaillé sur des infrastructures LAN / WLAN / Wifi /Sécurité et Firewall. Ingénieur systèmes, vous déjà avez déjà travaillé sur des environnements Microsoft et/ou LINUX (installation, configuration, déploiement, supervision, support N3, virtualisation...)\n\nDébutant ou confirmé, vous souhaitez mettre en valeur votre expérience dans cet environnement technique et développer votre esprit d'équipe. Votre facilité d'adaptation, votre réactivité et votre autonomie vous permettront de mener à bien et de satisfaire les exigences des projets qui vous seront confiés.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Linux",
+      "Vision"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4 /Bac+5), vous justifiez d'une première expérience en administration d'infrastructures systèmes et réseaux.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4 /Bac+5), vous justifiez d'une première expérience en administration d'infrastructures systèmes et réseaux.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4 /Bac+5), vous justifiez d'une première expérience en administration d'infrastructures systèmes et réseaux.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur réseaux, vous avez travaillé sur des infrastructures LAN / WLAN / Wifi /Sécurité et Firewall.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:28.814416",
+  "input_hash": "c84db01d064d290b01aa18d7ac49020438b010ae091380e5ab66b43ac48ac46d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

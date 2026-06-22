@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3532881",
+  "value": {
+    "id": "3532881",
+    "intitule": "Enseignant-chercheur Contractuel F/H - PAC - Informatique / Génie informatique",
+    "entreprise": "",
+    "territoire": "74 - Haute-Savoie",
+    "ville": "74 - Haute-Savoie",
+    "code_postal": "",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3532881",
+    "description": "RESPONSABILITÉS : Référence emploi : PACINFO Spécialité : Informatique / Génie informatique Affectation : Polytech Annecy-Chambéry - 5 chemin de Bellevue - 74940 Annecy - Laboratoire LISTIC Obligations de service : Le service statutaire est calculé sur une base annuelle de 1 607 heures pour un temps plein, avec la répartition suivante : • une activité d'enseignement de 192 heures « équivalent travaux dirigés (*) » en présence des étudiants, et tâches liées aux heures d'enseignement (préparation des cours, corrections des copies d'examens, surveillances des examens) ou à caractère péri-pédagogique (participation à la vie de l'équipe d'enseignement, réunions pédagogiques, suivi de stages, etc.) ; • pour le complément, à une activité de recherche au sein du Laboratoire LISTIC de l'Université Savoie Mont Blanc. (*) 1 heure cours magistral = 1,5 heure travaux dirigés ; 1 heure travaux pratiques = 1 heure travaux dirigés Pour les questions relatives à la fonction et aux missions du poste, ou pour des renseignements administratifs, télécharger l'offre d'emploi complète en cliquant ICI PROFIL RECHERCHÉ : I. Profil : • Profil pédagogique : La personne recrutée prendra en charge des TD, TP et projets dans le domaine de l'informatique : C, Python, Java, Base de données. Selon ses compétences, elle pourra également intégrer des modules en intelligence artificielle ou BigData. • Profil recherche : La personne recrutée s'insèrera au sein du Laboratoire d'Informatique, Systèmes, Traitement de l'Information et de la Connaissance (LISTIC). Le LISTIC développe des méthodes de traitement et de gestion des données dans le domaine de l'Intelligence Artificielle (IA) avec des applications notamment pour l'observation de la Terre et l'analyse du comportement humain dans différentes organisations et systèmes (habitats, montagne, etc). II. Conditions d'emploi Le recrutement est ouvert aux personnes titulaires d'un doctorat délivré par une université française, ou d'un diplôme reconnu équivalent par une commission spécifique de l'université, notamment un doctorat ou PhD délivré par une université étrangère et ayant une qualification/expérience professionnelle dans le domaine d'enseignement de la spécialité. Contrat à durée déterminée de 12 mois du 01/09/26 au 31/08/27 à temps plein, le premier mois du contrat sera considéré comme période d'essai. III. Comment candidater Transmettre les documents suivants par mail dans un fichier pdf unique nommé PACINFO_NOM PRENOM : • Curriculum Vitae • Lettre de motivation • Copie(s) du ou des diplômes • Rapport de soutenance de thèse • Annexe complétée (à télécharger ICI ) Les auditions se dérouleront entre le 1er et le 10 juillet",
+    "metier": "Professeur / Professeure des écoles",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "Vue.js"
+    ],
+    "salaire_min": 2638,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Conditions d'emploi Le recrutement est ouvert aux personnes titulaires d'un doctorat délivré par une université française, ou d'un diplôme reconnu équivalent par une commission spécifique de l'université, notamment un doctorat ou PhD délivré par une université étrangère et ayant une qualification/expérience professionnelle dans le domaine d'enseignement de la spécialité.",
+        "confidence": 0.9
+      },
+      {
+        "label": "thèse",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Comment candidater Transmettre les documents suivants par mail dans un fichier pdf unique nommé PACINFO_NOM PRENOM : • Curriculum Vitae • Lettre de motivation • Copie(s) du ou des diplômes • Rapport de soutenance de thèse • Annexe complétée (à télécharger ICI ) Les auditions se dérouleront entre le 1er et le 10 juillet",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:06.931750",
+  "input_hash": "ca71a90eacac6641991355e533792c86d19248e5ef628f4e6fc9eaa15ab8369d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

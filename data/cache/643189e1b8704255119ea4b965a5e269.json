@@ -1,0 +1,43 @@
+{
+  "key": "offer_extraction:3349592",
+  "value": {
+    "id": "3349592",
+    "intitule": "Administrateur Cloudera & Kubernetes H/F",
+    "entreprise": "JEMS",
+    "territoire": "92 - Levallois-Perret",
+    "ville": "92044",
+    "code_postal": "92300",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3349592",
+    "description": "RESPONSABILITÉS : Nous recherchons un(e) Administrateur Expérimenté(e), passionné(e) par la technologie, pour travailler directement chez nos clients, en étant au cœur de leurs défis numériques. Si vous souhaitez participer à des projets d'envergure, continuer à apprendre et évoluer dans votre carrière, c'est l'occasion rêvée ! Vous aurez la charge des missions de Build et Run : RUN : • Administration et maintien en conditions opérationnelles de la plateforme Cloudera CDP • Gestion des clusters Hadoop (HDFS, YARN, Hive, Impala, Spark) via Cloudera Manager • Supervision, performance, gestion des incidents (niveau 3) • Gestion de la haute disponibilité (géo-cluster) et de la sécurité • Exploitation de Dataiku (optionnel) • Orchestration des workloads via Kubernetes BUILD : • Industrialisation des déploiements (automatisation, CI/CD) • Contribution aux évolutions d'architecture du socle Data • Mise en place et optimisation de pipelines data (Spark, Hive, Impala) • Intégration avec les environnements cloud (Azure / hybride) • Contribution au socle IA (Dataiku sur Outscale) PROFIL RECHERCHÉ : Vous avez 8 ans d'expérience en administration Big Data / Data Platform Vous possédez une expérience confirmée en environnement Run et Build et la capacité à évoluer en contexte Agile et critique Vous assurez la stabilité, la sécurité et la scalabilité de la plateforme data, tout en contribuant à son évolution et à son industrialisation. Vos compétences • Cloudera CDP (core + Data Services) • Administration Hadoop (HDFS, YARN, Spark, Hive, Impala) • Kubernetes (orchestration, troubleshooting) • Linux, scripting, automatisation • Environnements critiques (HA, sécurité, performance) • Dataiku • Databricks / Azure • Environnements sécurisés (type SecNumCloud)",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Vision"
+    ],
+    "salaire_min": 75000,
+    "salaire_max": 0,
+    "teletravail": "hybrid",
+    "diplomes_requis": [],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:41.578579",
+  "input_hash": "65c1d4170cb1b91dcb7af8b5120364422a571f88d2a01c1f7263d0f196ab8ba4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,143 @@
+{
+  "key": "trends:72 - Allonnes",
+  "value": {
+    "territoire": "72 - Allonnes",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Documentation Technique": 1,
+      "Intelligence artificielle": 1,
+      "Qualité Des Données": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Documentation Technique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Documentation technique": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Qualité des données": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Documentation Technique": {
+        "Documentation technique": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      }
+    },
+    "metiers": {
+      "Contrôleur / Contrôleuse technique en métallurgie": 1,
+      "Technicien / Technicienne de maintenance industrielle": 1,
+      "Technicien / Technicienne qualité produit et métrologie en mécanique et travail des métaux": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 3
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Intelligence artificielle"
+      ],
+      [
+        "Qualité Des Données",
+        "Documentation Technique"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3984680",
+        "intitule": "Technicien Métrologie / Programmation 3D - Connectique Industrielle (H/F)",
+        "entreprise": "SILKHOM SAS",
+        "territoire": "72 - Allonnes",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3984680"
+      },
+      {
+        "id": "3655428",
+        "intitule": "TECHNICIEN METROLOGIE EN PROGRAMMATION 3D - NUIT H/F",
+        "entreprise": "",
+        "territoire": "72 - Allonnes",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3655428"
+      },
+      {
+        "id": "3343074",
+        "intitule": "Technicien Métrologie en Programmation 3D H/F - Equipe de nuit",
+        "entreprise": "SYSTEMES ET CONNECTIQUE DU MANS",
+        "territoire": "72 - Allonnes",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3343074"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3984680",
+        "intitule": "Technicien Métrologie / Programmation 3D - Connectique Industrielle (H/F)",
+        "entreprise": "SILKHOM SAS",
+        "territoire": "72 - Allonnes",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3984680"
+      },
+      {
+        "id": "3655428",
+        "intitule": "TECHNICIEN METROLOGIE EN PROGRAMMATION 3D - NUIT H/F",
+        "entreprise": "",
+        "territoire": "72 - Allonnes",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3655428"
+      },
+      {
+        "id": "3343074",
+        "intitule": "Technicien Métrologie en Programmation 3D H/F - Equipe de nuit",
+        "entreprise": "SYSTEMES ET CONNECTIQUE DU MANS",
+        "territoire": "72 - Allonnes",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3343074"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T18:59:39.586953",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

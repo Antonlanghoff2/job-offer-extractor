@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:3532788",
+  "value": {
+    "id": "3532788",
+    "intitule": "Technicien expérimenté en traitement thermique (H/F)",
+    "entreprise": "",
+    "territoire": "78 - Versailles",
+    "ville": "78646",
+    "code_postal": "78000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3532788",
+    "description": "RESPONSABILITÉS : Intégré.e au sein de la plateforme EPROM, vous travaillerez en collaboration avec des ingénieurs et des techniciens, dans un environnement de recherche associant enseignants-chercheurs et étudiants, du cycle ingénieur jusqu'aux doctorants. Vous serez sous la responsabilité de la responsable de plateforme. PROFIL RECHERCHÉ : Parlons de vous !... Pour ce poste, les principales compétences recherchées sont : Savoirs et savoir-faire : - Formation en mesures physiques, fabrication additive, procédés ou BTS Traitement des matériaux, BTS Maintenance industrielle, BUT GMP / Mesures Physiques / Science des matériaux, licence professionnelle ou diplôme d'ingénieur avec expérience significative en traitement thermique ; - Expérience souhaitée de 3 à 5 ans minimum en traitement thermique industriel, exploitation ou maintenance de fours - Compétences appréciées : conception, traitement (Logiciel CAO, Excel, Python, LabView) et fabrication additive ; - Rigueur, curiosité, persévérance, autonomie, goût pour l'innovation et les défis technologiques. Savoir-être : - Bonne communication à l'écrit et à l'oral ; - Sait travailler en équipe. Et de nous ! Travailler à Mines Paris, c'est aussi : - Rejoindre une institution prestigieuse et chargée d'histoire ; - Être acteur de la transition numérique et de la transition vers la neutralité carbone pour faire face à l'urgence climatique ; - Appartenir à un établissement de l'Université PSL, 41ème au classement mondial de Shanghai.",
+    "metier": "Technicien / Technicienne support client en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "RESPONSABILITÉS : Intégré.e au sein de la plateforme EPROM, vous travaillerez en collaboration avec des ingénieurs et des techniciens, dans un environnement de recherche associant enseignants-chercheurs et étudiants, du cycle ingénieur jusqu'aux doctorants.",
+        "confidence": 0.9
+      },
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": false,
+        "source_sentence": "Pour ce poste, les principales compétences recherchées sont : Savoirs et savoir-faire : - Formation en mesures physiques, fabrication additive, procédés ou BTS Traitement des matériaux, BTS Maintenance industrielle, BUT GMP / Mesures Physiques / Science des matériaux, licence professionnelle ou diplôme d'ingénieur avec expérience significative en traitement thermique ; - Expérience souhaitée de 3 à 5 ans minimum en traitement thermique industriel, exploitation ou maintenance de fours - Compétences appréciées : conception, traitement (Logiciel CAO, Excel, Python, LabView) et fabrication additive ; - Rigueur, curiosité, persévérance, autonomie, goût pour l'innovation et les défis technologiques.",
+        "confidence": 0.7
+      },
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": false,
+        "source_sentence": "Pour ce poste, les principales compétences recherchées sont : Savoirs et savoir-faire : - Formation en mesures physiques, fabrication additive, procédés ou BTS Traitement des matériaux, BTS Maintenance industrielle, BUT GMP / Mesures Physiques / Science des matériaux, licence professionnelle ou diplôme d'ingénieur avec expérience significative en traitement thermique ; - Expérience souhaitée de 3 à 5 ans minimum en traitement thermique industriel, exploitation ou maintenance de fours - Compétences appréciées : conception, traitement (Logiciel CAO, Excel, Python, LabView) et fabrication additive ; - Rigueur, curiosité, persévérance, autonomie, goût pour l'innovation et les défis technologiques.",
+        "confidence": 0.7
+      },
+      {
+        "label": "licence",
+        "level": 6,
+        "required": false,
+        "source_sentence": "Pour ce poste, les principales compétences recherchées sont : Savoirs et savoir-faire : - Formation en mesures physiques, fabrication additive, procédés ou BTS Traitement des matériaux, BTS Maintenance industrielle, BUT GMP / Mesures Physiques / Science des matériaux, licence professionnelle ou diplôme d'ingénieur avec expérience significative en traitement thermique ; - Expérience souhaitée de 3 à 5 ans minimum en traitement thermique industriel, exploitation ou maintenance de fours - Compétences appréciées : conception, traitement (Logiciel CAO, Excel, Python, LabView) et fabrication additive ; - Rigueur, curiosité, persévérance, autonomie, goût pour l'innovation et les défis technologiques.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:07.014763",
+  "input_hash": "92d5a999ee62104294161bf4e5b8632c3638cac06d8456d1889435cb3baa8e61",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

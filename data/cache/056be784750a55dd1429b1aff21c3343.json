@@ -1,0 +1,74 @@
+{
+  "key": "offer_extraction:208YWZG",
+  "value": {
+    "id": "208YWZG",
+    "intitule": "Alternance - Développeur  H/F (H/F)",
+    "entreprise": "LA PLATEFORME",
+    "territoire": "75 - Paris 19e Arrondissement",
+    "ville": "75119",
+    "code_postal": "75019",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-05-30",
+    "date": "2026-05-30",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208YWZG",
+    "description": "Pourquoi a-t-on besoin de vous?\nDans le cadre du programme stratégique de refonte du Système d'Information, nous recherchons un(e) développeur(se) en alternance pour rejoindre notre équipe IT. Vous participerez aux travaux de migration et de reprise de données, ainsi qu'aux évolutions et à la maintenance applicative autour de la solution Microsoft Dynamics 365 Finance & Operations (FinOps). Missions principales 1. Contribution au programme de refonte du SI : Reprises et mise en qualité des données - Participer au développement des flux de reprises de données dans le cadre des migrations vers le nouveau SI. - Implémenter des mécanismes d'intégration et de transformation de données via C# ou PHP. - Contribuer à la qualité des données : développement des contrôles, des corrections, validation des imports. - Participer aux tests techniques et fonctionnels liés aux reprises. 2. Développement et Maintenance autour de Dynamics 365 FinOps - Développer ou adapter des composants nécessaires à la maintenance évolutive et corrective du SI dans la solution D365 Finops. - Résoudre les anomalies et contribuer aux analyses d'incidents. - Documenter les développements et contribuer à la capitalisation technique. Technologies & Environnement : - Langages : C#, PHP - ERP : Microsoft Dynamics 365 Finance & Operations - Bases de données : SQL Server, MySQL - Outils Dev : Git, Azure DevOps, Visual Studio Compétences attendues Techniques : - Développement orienté objet (C#). - Développement web/API (PHP). - SQL et modèles de données. Transverses : - Analyse, rigueur et communication. - Capacité à travailler en équipe. - Autonome pour rechercher des éléments techniques non maitrisés.\nCe poste est-il fait pour vous ?\nÉtudiant(e) en licence pro, bachelor ou master informatique. Vous avez des connaissances en C#, PHP, et un Intérêt pour l'intégration et la qualité des données. Vous êtes curieux, réactif.ve, autonome et vous avez le sens du résultat, n'attendez plus, ce poste est fait pour vous !",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Azure",
+      "Développement web",
+      "Git",
+      "Intelligence artificielle",
+      "MySQL",
+      "SQL",
+      "Qualité des données",
+      "Tests automatisés",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "API",
+      "Backend",
+      "Documentation technique"
+    ],
+    "salaire_min": 1121,
+    "salaire_max": 4,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "licence",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Étudiant(e) en licence pro, bachelor ou master informatique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Étudiant(e) en licence pro, bachelor ou master informatique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Étudiant(e) en licence pro, bachelor ou master informatique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:19.309148",
+  "input_hash": "0bfb79404c9fe3e3403ebf3918cae6e1c3b3db7a5c093731c50253ec23329f73",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

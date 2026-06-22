@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3621070",
+  "value": {
+    "id": "3621070",
+    "intitule": "Ingénieur Systèmes & Réseaux (H/F)",
+    "entreprise": "Efrei Paris",
+    "territoire": "94 - Villejuif",
+    "ville": "94076",
+    "code_postal": "94800",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3621070",
+    "description": "RESPONSABILITÉS : À l'Efrei, nous ne recrutons pas simplement un ingénieur infrastructure. Nous recrutons un pilier technique capable de soutenir et d'accélérer le développement d'une institution académique reconnue, au cœur des enjeux numériques. Aujourd'hui, nos infrastructures doivent être à la hauteur de cette ambition : • toujours disponibles • toujours sécurisées • toujours en évolution C'est dans ce contexte exigeant que nous ouvrons ce poste. Au sein de la DSI, vous intervenez sur des infrastructures critiques, hybrides et multi-sites, avec un niveau d'exigence élevé en matière de performance et de sécurité. Vous êtes directement impliqué dans : • la fiabilité opérationnelle du SI • sa modernisation progressive • l'élévation continue de notre posture cybersécurité Ce poste s'adresse à un ingénieur capable de prendre de la hauteur sans perdre la maîtrise opérationnelle. 1. Garantir un SI robuste et résilient (RUN) : • Piloter l'administration des environnements Microsoft (AD, Entra ID, M365). • Maintenir en conditions opérationnelles des infrastructures critiques (Windows / Linux). • Gérer des incidents complexes avec un haut niveau d'autonomie. • Contribuer à une exigence forte de disponibilité et de performance. 2. Transformer et moderniser (BUILD) : • Participer à des projets structurants (cloudisation, refonte, sécurisation). • Automatiser, industrialiser, simplifier. • Contribuer aux choix d'architecture et d'évolution. 3. Maîtriser les fondamentaux réseau : • Intervenir sur les environnements réseau (VLAN, VPN, firewall). • Comprendre et résoudre les problématiques transverses. • Contribuer à une logique d'infrastructure globale cohérente. 4. Intégrer la sécurité dans chaque décision : • Déployer et renforcer les dispositifs de sécurité. • Participer aux audits, analyses de vulnérabilités et remédiations. • Intégrer la cybersécurité comme réflexe opérationnel quotidien. Ici, la sécurité n'est pas un sujet annexe — elle fait partie intégrante de l'infrastructure. Stack technique (niveau attendu : maîtrise opérationnelle) : Systèmes & Cloud : • Windows Server, Linux (Debian / Ubuntu) • Active Directory, GPO, Entra ID • Microsoft 365 • Virtualisation (VMware) Réseaux : • TCP/IP, VLAN, VPN, DNS, DHCP • Firewalling (Fortinet, Cisco...) Sécurité : • MFA, IAM • EDR / XDR • SIEM • PKI, bastion, PAM Automatisation et supervision : • PowerShell, Bash, Python • Outils de supervision (PRTG) PROFIL RECHERCHÉ : Nous recherchons un ingénieur systèmes et réseaux disposant d'une solide formation en informatique (Bac+5 ou équivalent) et justifiant d'une expérience significative en environnement hybride et multi-sites, lui permettant d'intervenir avec aisance aussi bien sur des problématiques de production que sur des projets d'évolution structurants. Vous avez développé une expertise robuste sur les environnements systèmes, complétée par une bonne compréhension des enjeux réseaux, vous permettant d'appréhender les infrastructures dans leur globalité et d'intervenir efficacement sur des sujets transverses. Au-delà de vos compétences techniques, vous vous distinguez par votre capacité à travailler en autonomie, à prendre en charge des incidents complexes comme des projets, et à inscrire vos actions dans une logique d'amélioration continue du système d'information. Nous serons particulièrement attentifs à votre posture : vous êtes un ingénieur fiable en production, impliqué dans vos sujets, capable de prendre du recul tout en restant opérationnel, et à l'aise dans des environnements techniques variés. Votre polyvalence, votre pragmatisme et votre sens des priorités vous permettent de contribuer efficacement à la performance globale des infrastructures. Enfin, vous portez un intérêt réel aux problématiques de réseaux et de cybersécurité, que vous intégrez naturellement dans votre approche des systèmes et des infrastructures, sans nécessairement être un expert ultra spécialisé dans ces domaines.",
+    "metier": "Ingénieur / Ingénieure systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Vision",
+      "Windows Server",
+      "Data Engineering",
+      "Méthodologie Agile",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 0,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "RESPONSABILITÉS : À l'Efrei, nous ne recrutons pas simplement un ingénieur infrastructure.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Stack technique (niveau attendu : maîtrise opérationnelle) : Systèmes & Cloud : • Windows Server, Linux (Debian / Ubuntu) • Active Directory, GPO, Entra ID • Microsoft 365 • Virtualisation (VMware) Réseaux : • TCP/IP, VLAN, VPN, DNS, DHCP • Firewalling (Fortinet, Cisco...) Sécurité : • MFA, IAM • EDR / XDR • SIEM • PKI, bastion, PAM Automatisation et supervision : • PowerShell, Bash, Python • Outils de supervision (PRTG) PROFIL RECHERCHÉ : Nous recherchons un ingénieur systèmes et réseaux disposant d'une solide formation en informatique (Bac+5 ou équivalent) et justifiant d'une expérience significative en environnement hybride et multi-sites, lui permettant d'intervenir avec aisance aussi bien sur des problématiques de production que sur des projets d'évolution structurants.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:00.236118",
+  "input_hash": "6474272508ac492e3a20ebbc2fbea3bafc72e401aec5c8b648297684553345eb",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

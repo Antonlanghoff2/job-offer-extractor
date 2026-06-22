@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:3549171",
+  "value": {
+    "id": "3549171",
+    "intitule": "Ingénieur production (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Bouches-du-Rhône",
+    "ville": "13 - Bouches-du-Rhône",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3549171",
+    "description": "Description du poste :\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Atos recherche actuellement des profils Le poste en quelques mots :\nNous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l'exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré. Vous interviendrez sur des plateformes industrialisées intégrant Kubernetes et des solutions d'automatisation.\nCe que vous allez faire si vous nous rejoignez Assurer la production des applications et leur maintien en conditions opérationnelles***Gérer les mises en production et coordonner les déploiements***Appliquer les bonnes pratiques ITIL pour la gestion des incidents, changements et problèmes***Administrer et superviser les environnements basés sur Kubernetes***Automatiser les tâches opérationnelles via Shell et Python***Surveiller la performance et la disponibilité des applications***Rédiger et maintenir la documentation technique et les procédures d'exploitation***Collaborer avec les équipes DevOps et développement pour améliorer la stabilité des plateformes",
+    "metier": "Responsable d'unité de production industrielle",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Python",
+      "Documentation technique",
+      "Gestion de projet",
+      "Déploiement de modèles",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l'exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:04.260914",
+  "input_hash": "61492598ad46a46897aff3888e31e84da182ed2b78df271df8d99289b3085fb8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

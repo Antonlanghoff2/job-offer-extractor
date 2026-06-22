@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:3759033",
+  "value": {
+    "id": "3759033",
+    "intitule": "Ingénieur Structure Bois - Logiciel ACORD F/H",
+    "entreprise": "",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDI",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3759033",
+    "description": "Les missions du poste: #çamatchentrenous ✅ - Un outil industriel numérique unique en Europe ✅ - Des projets d'envergure ✅ - De réelles perspectives d'évolution interne Passionné(e) par la haute technicité ? Rejoignez un bureau d'études basé dans le Haut-Doubs pour concevoir des structures bois uniques ! Votre potentiel permettra de : 👉 - Modéliser avec précision : Réalisez les calculs sur le logiciel ACORD. 👉 - Assurer la conformité : Maîtrisez les Eurocodes (EC5, EC3, EC2, EC8). 👉 - Collaborer en synergie : Travaillez en binôme avec les dessinateurs et l'atelier. 👉 - Propulser l'international : Analysez les marchés complexes à l'export. Profil recherché: Votre envie de nous rejoindre Vos talents : 👉 - Expert en calculs, vous maîtrisez ACORD, les Eurocodes et l'anglais. 👉 - Rigoureux, vous aimez l'esprit d'équipe et les défis techniques d'envergure. Ce qui vous anime : 👉 - Relever des défis sur des charpentes d'exception. 👉 - Voir vos calculs prendre vie grâce à l'usine sur site. Votre parcours : 👉 - Ingénieur Structure/Génie Civil, spécialisé bois, autonome, avec idéalement 3 ans d'expérience. Avantages: 💰Rémunération et conditions : CDI - Forfait Jour (Cadre). 35K€-42K€ (junior) ou 50K€-60K€ bruts/an (expérimenté).",
+    "metier": "Ingénieur / Ingénieure calcul et structure",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Architecture microservices",
+      "Backend",
+      "Gestion de projet"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Votre parcours : 👉 - Ingénieur Structure/Génie Civil, spécialisé bois, autonome, avec idéalement 3 ans d'expérience.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:19.125288",
+  "input_hash": "b05dd4cb1af2825d1d888206159eb01053a959916b3e02524931af74de388436",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

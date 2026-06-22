@@ -1,0 +1,114 @@
+{
+  "key": "trends:76 - Eslettes",
+  "value": {
+    "territoire": "76 - Eslettes",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Linux": 1,
+      "Python": 1,
+      "Réseaux Informatiques": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Linux",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Linux": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Réseaux Informatiques",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Réseaux informatiques": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Linux": {
+        "Linux": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Réseaux Informatiques": {
+        "Réseaux informatiques": 1
+      }
+    },
+    "metiers": {
+      "Administrateur / Administratrice de systèmes d'information (SI)": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Linux",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Réseaux Informatiques",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Réseaux Informatiques",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Linux",
+        "Python",
+        "Réseaux Informatiques"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209NHVP",
+        "intitule": "Administrateur Système et Réseau H/F (H/F)",
+        "entreprise": "SERINYA TELECOM",
+        "territoire": "76 - Eslettes",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NHVP"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209NHVP",
+        "intitule": "Administrateur Système et Réseau H/F (H/F)",
+        "entreprise": "SERINYA TELECOM",
+        "territoire": "76 - Eslettes",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NHVP"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:00:29.546974",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

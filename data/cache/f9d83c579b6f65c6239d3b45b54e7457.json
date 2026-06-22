@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:205YHSJ",
+  "value": {
+    "id": "205YHSJ",
+    "intitule": "Technicien logiciel (H/F)",
+    "entreprise": "INCOTEC",
+    "territoire": "67 - ILLKIRCH GRAFFENSTADEN",
+    "ville": "67218",
+    "code_postal": "67400",
+    "contrat": "CDI",
+    "date_creation": "2026-03-25",
+    "date": "2026-03-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/205YHSJ",
+    "description": "Votre mission \nEn tant que technicien logiciel (H/F), vous accompagnerez les clients dans leur utilisation quotidienne de notre outil et vous contribuerez aux installations et mises à jour nécessaires.\n\nVous intégrerez l'équipe du service clients d'Incotec, composée de dix personnes à fort esprit collaboratif dont l'objectif est de répondre au mieux aux demandes croissantes de nos clients.\n\nPour ce faire, vous assurerez les fonctions principales suivantes :\n-Assistance : après analyse, vous traiterez les demandes techniques et fonctionnelles des clients.\n-Paramétrage : si nécessaire, vous ajusterez le paramétrage du logiciel.\n-Déploiement : vous réaliserez des opérations d'installation et de mise à jour de notre solution à distance de chez nos clients.\n-Conseil : fort de votre expérience vous guiderez nos clients dans l'optimisation de leur usage du logiciel.\n-Evolution produit : vous participerez à notre démarche d'innovation et d'amélioration continue grâce à votre connaissance du logiciel.\n\nVos compétences\n-De formation Bac+2 à Bac+4\n-Vous jouissez idéalement d'une première expérience en informatique et vous avez un intérêt dans la résolution de problématique et l'assistance technique aux utilisateurs.\n-Vous avez des connaissances en SQL, vous maîtrisez la logique de programmation et vous êtes à l'aise avec l'environnement Windows Server.\n-Rigoureux.se, motivé.e et doté.e d'un excellent relationnel, vous souhaitez tirer avantage de ces qualités. Alors rejoignez notre équipe du service clients !\n\nSachez qu'en rejoignant notre structure, vous profiterez de multiples avantages :\n-Ambiance conviviale au sein d'une équipe enthousiaste et passionnée.\n-Travail stimulant et enrichissant.\n-Moments conviviaux et événements team building.\n-Diverses primes (de vacances, intéressement, PPV...) et titres restaurant.\n-Locaux dans un environnement au vert et à proximité des commodités.\n-Horaires flexibles et télétravail.",
+    "metier": "Conseiller / Conseillère support technique informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac+2 à Bac+4",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac+2 à Bac+4",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:12.640581",
+  "input_hash": "06eb34d8e0a93038f0b07c7b96ea273517f896835a14a895436a340d910cce4e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

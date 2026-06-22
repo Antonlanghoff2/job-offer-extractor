@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:206YWTZ",
+  "value": {
+    "id": "206YWTZ",
+    "intitule": "Data Ingénieur informatique (H/F)",
+    "entreprise": "ESI ORLEANS",
+    "territoire": "45 - Orléans",
+    "ville": "45234",
+    "code_postal": "45000",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2026-04-15",
+    "date": "2026-04-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/206YWTZ",
+    "description": "Vous travaillerez comme Data Ingénieur et Chef de projet dans l'équipe de Développement de l'Etablissement de Services informatiques  ESI Orléans (45)\nL'équipe de Dev est composée actuellement de 2 personnes qui réalisent le développement, les tests de recette et d'intégration d'application dans des environnements Cloud, Datalake Dataviz de la DGFIP.\nCette équipe de développement accroît son activité en 2026.\n\nEn tant que Data Ingénieur/Chef de projet \nVous apporterez votre expertise technique, vous réaliserez le développement, les tests de recette et d'intégration des applications. Vous serez l'interlocuteur de la MOA sur ces projets (animation de réunion de suivi, gestion des plannings, .)\nVous veillerez à la qualité de vos livrables, vous contribuerez à la mutualisation et à l'enrichissement d'une base de connaissances, à identifier et partager les bonnes pratiques.\n\nVous devrez vous approprier le contexte organisationnel et technique de la DGFiP.\n\nEn nous rejoignant, il vous faudra :\n- assurer la coordination de nos travaux avec l'ensemble de nos partenaires\n- réaliser les développement et tests de recette\n- veiller à la bonne marche des projets de manière générale\n- assister aux différentes instances, savoir rendre compte, et alerter\n- assurer la gestion de projet \n- piloter/encadrer des développeurs de l'ESI45\n\nCe poste exige un très bon relationnel, de la diplomatie, de la rigueur, une grande capacité de communication orale et écrite, d'anticipation et de réactivité. Il devra savoir rendre compte, alerter et être synthétique.\n\n\nEnvironnement technique et applicatif :\n\n- Cloud et Datalake DGFIP pour ensuite alimenter Tableau via Dataviz\n- Serveur x86 virtualisé sous Linux.\n- Réalisation de programme en mode batch en Python environnement Spark\ndéveloppement de requête SQL.\n- Recette en environnement IIA (intégration inter applicative) et en Intex/qualification.\n- Outils : Gitlab, Jira, gestion de la documentation avec confluence, Intégration continu avec Jenkins\n\nSavoir-être\n    - Culture de la collaboration et de la transparence\n    - Travail en équipe\n    - Capitalisation des connaissances\n    - Grande adaptabilité\n    - Pédagogie & écoute\n    - Proactivité \n    - Réactivité\n    - Bonne communication orale et écrite, capacité de synthèse \n    - Pragmatisme\n\nSavoir-faire\n    - Savoir développer les traitements applicatifs en fonction des besoins métiers, des modèles de données. Définir les tests de recette avec la MOA et réaliser des tests de recette et d'intégration.\n    - Savoir planifier des travaux, ajuster les calendriers, et prendre en compte les contraintes métier. Capacité d'analyse et de synthèse.\n    - Capacité à travailler en équipe et avec des partenaires multiples (MOA applicatives, service architecture et exploitant ,...)\n    - Aisance à l'écrit et à l'oral, capacité à rendre compte\n      \n\n\nCompétences techniques requises\n    - Maîtrise de Spark et SQL et connaissance en Python\n    - Connaissance OS Linux\n    - Connaissance Gitlab, Jenkins, Jira\n      \nLe poste s'adresse à des candidats minimum BAC+3 en informatique ayant une expérience de Data Ingénieur, de développement en environnement Spark.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "SQL",
+      "Product Management",
+      "Tests automatisés",
+      "MLOps",
+      "Monitoring de modèles",
+      "Qualité des données",
+      "Data Engineering",
+      "Déploiement de modèles"
+    ],
+    "salaire_min": 39000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous travaillerez comme Data Ingénieur et Chef de projet dans l'équipe de Développement de l'Etablissement de Services informatiques ESI Orléans (45)",
+        "confidence": 0.9
+      },
+      {
+        "label": "BAC+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Le poste s'adresse à des candidats minimum BAC+3 en informatique ayant une expérience de Data Ingénieur, de développement en environnement Spark.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "18 Mois",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:17.946842",
+  "input_hash": "9343b89e547e338153a446c8626380780ee1283f6d0a98f2e346ddd92f27f12e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,761 @@
+{
+  "key": "trends:76 - Port-Jérôme-sur-Seine",
+  "value": {
+    "territoire": "76 - Port-Jérôme-sur-Seine",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Data engineering": 2,
+      "Analyse de données": 1,
+      "API": 1,
+      "Backend": 1,
+      "Docker": 1,
+      "Déploiement De Modèles": 1,
+      "Git": 1,
+      "Intégration Continue": 1,
+      "MLOps": 1,
+      "Model Drift": 1,
+      "MySQL": 1,
+      "Scalabilité": 1,
+      "SQL": 1,
+      "Sécurité Informatique": 1,
+      "Veille Technologique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Data engineering",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Data Engineering": 2
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Docker",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Docker": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intégration continue": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "MySQL",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "MySQL": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Scalabilité": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Veille technologique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Data engineering": {
+        "Data Engineering": 2
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "API": {
+        "API": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Docker": {
+        "Docker": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Intégration Continue": {
+        "Intégration continue": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "MySQL": {
+        "MySQL": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse logiciel ou d'application": 1,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Docker",
+        "Git",
+        "MySQL",
+        "SQL",
+        "MLOps",
+        "Analyse de données",
+        "Data engineering",
+        "Déploiement De Modèles",
+        "Sécurité Informatique",
+        "Model Drift",
+        "Intégration Continue",
+        "Scalabilité",
+        "Veille Technologique"
+      ],
+      [
+        "Data engineering",
+        "API",
+        "Backend"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3867146",
+        "intitule": "Développeur confirmé H/F",
+        "entreprise": "",
+        "territoire": "76 - Port-Jérôme-sur-Seine",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3867146"
+      },
+      {
+        "id": "209FFCT",
+        "intitule": "Développeur confirmé H/F",
+        "entreprise": "CRIT INTERIM",
+        "territoire": "76 - Port-Jérôme-sur-Seine",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FFCT"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3867146",
+        "intitule": "Développeur confirmé H/F",
+        "entreprise": "",
+        "territoire": "76 - Port-Jérôme-sur-Seine",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3867146"
+      },
+      {
+        "id": "209FFCT",
+        "intitule": "Développeur confirmé H/F",
+        "entreprise": "CRIT INTERIM",
+        "territoire": "76 - Port-Jérôme-sur-Seine",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FFCT"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:00:54.299270",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:8813111",
+  "value": {
+    "id": "8813111",
+    "intitule": "Planificateur logiciel Coplann en gestion de projet ferroviaire H/F",
+    "entreprise": "",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "Intérim - 1 Mois",
+    "date_creation": "2026-02-06",
+    "date": "2026-02-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8813111",
+    "description": "Votre future équipe&#xa0;:Sous la responsabilité de Sylvain, Ingénieur d'affaires au sein d'Assystem Project Management, vous rejoignez les équipes en charge du planning chez notre client ferroviaire.Assystem Project Management&#xa0;recherche un&#xa0;Ingénieur(e) planning ou planificateur&#xa0;Sous la responsabilité du Responsable Planning, vos tâches principales seront de :? Mettre en place, suivre et piloter le planning des activités de préparation&#xa0;chantier? Mettre en place et suivre les indicateurs de pilotage&#xa0;de l'avancement de ces activités,? Participer aux différentes instances de pilotage et être un soutien au chef de projet,? Aider à l'analyse et au REX sur le projetPourquoi rejoindre la communauté des Switchers&#xa0;??Assystem dispose de plus de 55 ans d'expérience dans le nucléaire. Nous sommes dans le top 3 des plus grandes entreprises d'ingénierie nucléaire.?Contribuer à la transition énergétique et à la lutte contre le dérèglement climatique?Un socle social avantageux&#xa0;: 1 à 2 jours de télétravail, primes vacances, prime de participation .?Un institut de formation dédié au project management : nous rejoindre c'est donc vous former et progresser tout au long de votre carrière.?Des opportunités de carrières infinies : 70% de nos managers sont issus de la promotion interne#LI-Hybrid",
+    "metier": "Caténairiste",
+    "niveau": "junior",
+    "competences": [
+      "Ferroviaire",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Monitoring de modèles",
+      "Intégration continue"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Votre future équipe&#xa0;:Sous la responsabilité de Sylvain, Ingénieur d'affaires au sein d'Assystem Project Management, vous rejoignez les équipes en charge du planning chez notre client ferroviaire.Assystem Project Management&#xa0;recherche un&#xa0;Ingénieur(e) planning ou planificateur&#xa0;Sous la responsabilité du Responsable Planning, vos tâches principales seront de :?",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:33.544442",
+  "input_hash": "47d33252fe0f2f5f65eaad6d950b378f5012bfc3a3148cf79d2711f3c0850b1c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

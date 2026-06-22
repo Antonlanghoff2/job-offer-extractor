@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:2297528",
+  "value": {
+    "id": "2297528",
+    "intitule": "Apprenti(e) Consultant(e) Technique  H/F",
+    "entreprise": "ALCATEL - LUCENT ENTERPRISE",
+    "territoire": "29 - Guipavas",
+    "ville": "29075",
+    "code_postal": "29490",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2026-05-06",
+    "date": "2026-05-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2297528",
+    "description": "Activités du service / projet : Au sein de l'équipe Service Delivery France basé à Brest (29), de l'organisation CES d’ALE, vous contribuez aux activités de déploiement et de réalisation de POC (proof of concept) de nos solutions réseau LAN ou WLAN disponible grâce à la gamme de produits WLAN OmniAccess Stellar, la gamme complète d’OmniSwitch LAN et aux systèmes de gestion réseau (Network Management System) OmniVista 2500 et Omnivista Cirrus, Omnivista Terra proposés par ALE. Nous nous appuyons sur une organisation performante (laboratoire, simulateur réseaux, échanges quotidiens avec notre R&amp;D basée en France ou à l'étranger) pour apporter des solutions adaptées et efficaces au fonctionnement et à l'exploitation des réseaux de communication de données LAN et WLAN de nos clients finaux. Notre objectif est de vous permettre de monter en compétence sur les technologies des réseaux LAN et WLAN, les concepts de sécurisation des réseaux, proposées par toute la gamme des produits ALE. Acteur essentiel de notre politique de satisfaction-client, nous travaillons en étroite collaboration avec nos équipes support, R&amp;D et les équipes commerciales et marketing. Ce qu’on attendra de vous à ce poste c’est : Dans le cadre de sa mission l'apprenti(e) (H/F) sera amené à interagir avec l'ensemble de l'équipe Service Delivery France (multisite) et parfois avec des clients finaux. Sa mission consistera et de manière non exhaustive à : - Conception, développement et installation de proof of concept. - Rédaction de spécification et documentation technique. - Développement, mise en place, maintenance de maquettes ou de Bancs de Tests. - Développement, mise en place d'outils destinés aux équipes Poste-Sales de l'organisation CES Delivery France. Profil recherché Vous préparez un Bac+5 en école d’Ingénieur ou autre école spécialisé dans les télécommunications et les réseaux. Vous avez acquis des compétences/connaissances dans les protocoles de télécommunications et Réseaux de niveau 2 et niveau 3 LAN/WLAN que vous souhaitez développer. Les connaissances dans les domaines suivants seraient un plus; programmation en Python, OS LINUX et Windows server, Active Directory, serveurs ldap et radius. Vous êtes reconnu pour votre bon sens relationnel et vous appréciez travailler en équipe. Vous avez une bonne maîtrise de l’Anglais. Votre capacité d’organisation, votre rigueur, votre autonomie et votre esprit analytique vous permettent de mener à bien vos missions. Vous êtes passionné, curieux, persévérant, doté d’un esprit critique et capable de communiquer facilement avec les membres de votre équipe ou les membres d'autres organisations.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "API",
+      "Backend",
+      "Pipelines de données"
+    ],
+    "salaire_min": 29000,
+    "salaire_max": 29000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché Vous préparez un Bac+5 en école d’Ingénieur ou autre école spécialisé dans les télécommunications et les réseaux.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Profil recherché Vous préparez un Bac+5 en école d’Ingénieur ou autre école spécialisé dans les télécommunications et les réseaux.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:47.829125",
+  "input_hash": "ddae8c404d49b0aef780916176584acd92c1c998dcbc7bfc7860664168bb0240",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

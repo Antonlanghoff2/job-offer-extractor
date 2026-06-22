@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3409219",
+  "value": {
+    "id": "3409219",
+    "intitule": "Développeur / Développeuse web (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Rillieux-la-Pape",
+    "ville": "69286",
+    "code_postal": "69140",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3409219",
+    "description": "Description du poste : En tant qu’alternant(e) développeur(se), tu travailleras en étroite collaboration avec notre responsable technique et l’équipe technique pour Participer à la conception et au développement de nouvelles fonctionnalités sur nos plateformes (application mobile, SaaS, outils data Contribuer à la structuration et à l’optimisation de la base de données pour améliorer ses performances et sa scalabilité Intégrer différentes sources de données et applications tierces (systèmes de caisse, terminaux connectés) avec nos systèmes internes Participer à l’amélioration continue des performances techniques et des processus DevOps Découvrir et intervenir à la fois sur le backend * Stack Back-end : Python (FastAPI) et API RESTFul***Base de données : MongoDB et Migration vers PostreSQL envisagée***Front : ReactJS + redux pour la partie Web, React Native pour le mobile et NextJS***Outils : Pytest, Github, Docker, Qovery et AWS Description du profil Le savoir être avant le savoir-faire\", telle est notre devise chez XEFI. Nous recherchons donc des personnes issu d’un bac + 2 profil informaticien avec expérience en programmation (en cours de validation, ou déjà validé Curieuses Dynamiques Proactives Souriantes",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Docker",
+      "FastAPI",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Python",
+      "React",
+      "SQL"
+    ],
+    "salaire_min": 588,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac + 2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Nous recherchons donc des personnes issu d’un bac + 2 profil informaticien avec expérience en programmation (en cours de validation, ou déjà validé Curieuses Dynamiques Proactives Souriantes",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:10.752117",
+  "input_hash": "4a0a1503d86293fd9821e60a073496841d217592784e015489c1de647c9f6a21",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

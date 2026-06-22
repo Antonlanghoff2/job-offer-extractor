@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:1045772",
+  "value": {
+    "id": "1045772",
+    "intitule": "Data manager (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-04-02",
+    "date": "2026-04-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1045772",
+    "description": "Description du poste :\nL'ingénieur data, spécialiste HR Access, intervient en tant qu'expert technique interfaces et échanges entre le PGI RENOIRH et l'environnement OPERHA HUB. Il contribue à l'analyse, la sécurisation et l'optimisation des flux en apportant une compréhension fine des contraintes propres à l'écosystème RENOIRH développé par le CISIRH (Paris).\nIl assure également un appui de haut niveau au futur centre de maintenance PGI (basé à Tours) pour qualifier les incidents, analyser l'origine des dysfonctionnements, proposer des solutions et anticiper les risques liés aux évolutions ou aux montées de version.\nIl documente les mécanismes d'échanges (API, web services, flux fichiers), explicite les contraintes techniques du SI et accompagne les équipes métier ou techniques dans la compréhension des limites, dépendances ou impacts.\nIl participe aux travaux d'intégration avec API For You, contribue à l'amélioration de la qualité des données, à la fiabilité des synchronisations et au pilotage des flux vers OPERHA HUB.\nIl peut intervenir sur des phases de conception, de recette ou d'urbanisation des interfaces, et apporte une expertise transverse permettant d'améliorer la cohérence, la robustesse et la performance de l'écosystème data RH du CISIRH et plus généralement de l'écosystème OPERHA.\nDescription du profil :\nIngénieur data confirmé, disposant d'une solide expertise HR Access (architecture, tables, modules, structures internes, moteur de règles, traitements batch et interfaces externes). Le candidat doit maîtriser les flux de données RH et leurs contraintes opérationnelles, tant en termes d'intégrité, de volumétrie que de performance. Il possède une bonne connaissance des mécanismes d'échanges entre systèmes (API REST/SOAP, web services, flux SFTP, orchestrations), ainsi que des pratiques de contrôle et de sécurisation des données.\nUne expérience démontrée dans API For You est attendue, notamment sur la compréhension des schémas d'exposition, des limites techniques, des contraintes de sécurité et des bonnes pratiques d'intégration en environnement ministériel. Le candidat doit être capable d'expliquer clairement les contraintes propres à l'architecture RENOIRH et leurs impacts sur les échanges vers OPERHA HUB : points de dépendance, règles de transformation, limites de charge, latences, séquencement des traitements ou contraintes de synchronisation.\nUne capacité à analyser rapidement les incidents, à proposer des solutions réalistes et à documenter l'existant est indispensable. Le profil doit être autonome, rigoureux et capable d'interagir avec des équipes pluridisciplinaires : développeurs, exploitants, métiers, urbanistes, chefs de projets et support fonctionnel. Il doit être à l'aise pour vulgariser des sujets techniques complexes, produire des schémas clairs et formuler des recommandations compréhensibles.\nUne bonne connaissance des architectures modulaires SI RH, des enjeux de qualité de données, du versioning applicatif et des environnements sécurisés est requise. La capacité à travailler en mode appui ou expertise opérationnelle, en soutien du centre de maintenance, constitue un élément clé du poste. L'ingénieur doit également démontrer un sens du service, de la pédagogie et une forte capacité d'adaptation dans un environnement institutionnel exigeant, avec des contraintes calendaires fortes.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Intelligence artificielle",
+      "Analyse de données",
+      "Cybersécurité",
+      "Data Engineering",
+      "Model drift",
+      "Documentation technique",
+      "Résolution de problèmes",
+      "Sécurité informatique"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'ingénieur data, spécialiste HR Access, intervient en tant qu'expert technique interfaces et échanges entre le PGI RENOIRH et l'environnement OPERHA HUB.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur data confirmé, disposant d'une solide expertise HR Access (architecture, tables, modules, structures internes, moteur de règles, traitements batch et interfaces externes).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:39.295720",
+  "input_hash": "8656b515245e01966d96943bf7bbf8380e8e0163fdde2ad6115bbf9dc9160cf0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

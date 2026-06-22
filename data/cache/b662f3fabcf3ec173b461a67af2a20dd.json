@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3349625",
+  "value": {
+    "id": "3349625",
+    "intitule": "Ingénieur Développement Cobol (F/H)",
+    "entreprise": "ALTECA",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3349625",
+    "description": "RESPONSABILITÉS : En coordination avec les équipes, vos missions seront les suivantes : • Analyse des besoins utilisateurs et rédaction des spécifications techniques détaillées, incluant étude de faisabilité et recommandations techniques. • Développement en COBOL, rédaction de la documentation technique associée et mise en place de tests unitaires pour garantir la qualité et la robustesse des applications. • Maintenance corrective et évolutive des applications existantes, optimisation des performances et correction des anomalies. • Participation à la modernisation et à l'optimisation du code. • Contribution à la transmission des connaissances auprès des équipes, pour assurer la continuité et la pérennité des applications critiques. PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+3 à Bac+5 en informatique (Ingénieur ou Universitaire). Tu as au moins 2,ans d'expérience en développement COBOL. Ta connaissance des environnements mainframe, bases de données associées et des bonnes pratiques de développement (tests, documentation, maintenance) sera ton principal atout sur ce poste. Ta personnalité : tu es une personne organisée, rigoureux(se), force de proposition, tu disposes d'un bon relationnel et tu aimes le travail en équipe. Tu apprécies et contribues à développer un contexte de travail bienveillant et qui favorise le partage de connaissances. Enfin, tu sais aussi être force de proposition sur les améliorations qualités à apporter. Type de contrat proposé : temps plein | Niveau de poste : confirmé Le process de recrutement : ν Noémie de l'équipe recrutement EST te contactera pour un premier échange téléphonique, puis elle te reçevra dans le cadre d'un entretien RH. ν Si cet entretien est validé, tu rencontreras alors, la Responsable d'agence, pour un entretien technique. Nos avantages : Transport pris en charge à 75% | Tickets resto pris en charge à 60% | Mutuelle prise en charge à 60% 10 jours de RTT en plus des 25 jours de CP | Mode de travail : hybride | Accès au CSE (billetterie, voyages) En tant que signataire de la charte de diversité en entreprise, Alteca favorise un environnement de travail inclusif et respectueux de tous. A compétences égales, tous nos postes sont ouverts aux personnes en situation de handicap.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Tests automatisés",
+      "Code review",
+      "Documentation technique",
+      "Cahier des charges",
+      "Qualité des données"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+3 à Bac+5 en informatique (Ingénieur ou Universitaire).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+3 à Bac+5 en informatique (Ingénieur ou Universitaire).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+3 à Bac+5 en informatique (Ingénieur ou Universitaire).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:27.682642",
+  "input_hash": "eddf5111b3a3367ce5d4c07740c5033edf08a42f423dd60918e20874c4150b58",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

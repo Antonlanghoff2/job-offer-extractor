@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:209LXCS",
+  "value": {
+    "id": "209LXCS",
+    "intitule": "Ingénieur en Optimisation R&D (H/F)",
+    "entreprise": "OCTIME",
+    "territoire": "75 - Paris (Dept.)",
+    "ville": "75 - Paris (Dept.)",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209LXCS",
+    "description": "A propos de Qoia\nDepuis 2010, Qoia s'impose comme un éditeur de référence de la Gestion des Temps et des Activités, alliant expertise et innovation. Qoia accompagne aussi bien les grandes entreprises (banque, assurance, industrie, retail .) que les établissements de santé et les collectivités territoriales, en les aidant à sécuriser et optimiser leurs processus RH dans des environnements réglementaires et organisationnels complexes. Basé à Paris et Grenoble, Qoia compte 53 collaborateurs, plus de 450 clients et 300 000 utilisateurs. En 2026, Qoia rejoint le Groupe Octime, leader français dans l'édition de solutions de planning, de gestion des temps et des remplacements. En intégrant Qoia, vous rejoignez une aventure collective et un projet durable, fondé sur des valeurs partagées : le respect, l'exigence et la performance.\n\nLe poste\nDans le cadre du développement du module eOptim, solution de planification automatique du groupe Octime, vous rejoignez l'équipe R&D pour concevoir et améliorer des algorithmes d'optimisation de planning.\neOptim enrichit l'outil de gestion des temps eConnection en permettant de générer des plannings optimisés en fonction des contraintes réglementaires et des réalités métier (santé, distribution, restauration.), à partir de données stratégiques, tactiques et opérationnelles.\n\nEn tant qu'Ingénieur(e) en optimisation R&D, vous aurez pour missions :\n- Analyser les besoins clients et formuler des problèmes d'optimisation\n- Concevoir et développer des modèles mathématiques et des algorithmes d'optimisation intégrés à eOptim\n- Tester et valider les modèles développés\n- Contribuer aux travaux de recherche de l'équipe eOptim, notamment en optimisation combinatoire et participer à l'amélioration continue des solutions proposées\n\nVotre profil\nIngénieur(e) ou docteur(e), vous disposez de solides compétences en optimisation combinatoire et en modélisation mathématique, ainsi que d'une expérience en développement.\nVous maîtrisez :\n- Les méthodes d'aide à la décision et les techniques d'optimisation (heuristiques, programmation mathématique)\n- Langages : C#, Python\nLa connaissance des solveurs et des algorithmes de recherche est un atout important.\n\nRigoureux(se), autonome et doté(e) d'un bon esprit d'analyse, vous appréciez le travail en équipe et les environnements techniques stimulants.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Analyse des besoins",
+      "Développement de modèles",
+      "Analyse de données",
+      "Tests automatisés",
+      "API",
+      "Backend",
+      "Gestion de projet",
+      "Optimisation des performances",
+      "Sécurité informatique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 2010,
+    "salaire_max": 2010,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieur(e) en optimisation R&D, vous aurez pour missions :",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:36.231224",
+  "input_hash": "ac9581e284ccd989748b45b758b3dfc5815315d023f01fb66b563c8231d604a1",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

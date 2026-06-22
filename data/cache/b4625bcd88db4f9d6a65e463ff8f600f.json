@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3195621",
+  "value": {
+    "id": "3195621",
+    "intitule": "DCS GROUP - Ingénieur / Ingénieure en Intelligence Artificielle (IA) (H/F)",
+    "entreprise": "",
+    "territoire": "63 - Clermont-Ferrand",
+    "ville": "63113",
+    "code_postal": "63000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3195621",
+    "description": "Dans le cadre du développement de la plateforme d’IA dédiée aux opérations IT, nous recherchons un(e) Ingénieur IA & Plateforme pour contribuer à la conception, l’industrialisation et l’exploitation de solutions d’Agentic AI intégrées au SI. Vous rejoindrez une équipe à la croisée de l’IA, du développement backend, du DevOps et des opérations, avec pour objectif d’automatiser l’investigation et la résolution d’incidents grâce aux technologies LLM et aux architectures multi-agents. Vos principales missions : Concevoir et développer des agents IA et workflows multi-agents Mettre en œuvre des solutions RAG exploitant les bases de connaissances Intégrer les agents avec les outils du SI (ServiceNow, Splunk, Grafana, etc.) Développer et maintenir les services backend en Python Concevoir et exposer des API REST Industrialiser les déploiements via GitLab CI/CD Déployer et exploiter les applications sur Kubernetes Mettre en place les outils d’observabilité et de monitoring Participer au RUN, au support avancé et à l'amélioration continue de la plateforme. Et si on parlait de vous ? Vous disposez de 3 à 5 ans d’expérience minimum en développement backend, DevOps ou ingénierie plateforme, idéalement dans des environnements à forte criticité. Vous êtes à l’aise dans des contextes techniques complexes et appréciez les sujets mêlant développement, automatisation et exploitation. Les compétences techniques attendues : Maîtrise avancée de Python Frameworks IA / LLM (LangChain, Agentic AI, Microsoft Agent Framework...) Kubernetes, Docker, Helm GitLab CI/CD APIs REST Observabilité : Grafana, Prometheus, OpenTelemetry Intégration avec les outils d’exploitation et de supervision Les petits plus : Azure, AI Foundry, AKS Architectures multi-agents Approche RAG Culture SRE (SLI, SLO) Expérience des environnements IT Ops Le profil que nous recherchons : Un profil curieux, autonome et orienté automatisation, capable de contribuer aussi bien au développement qu’à l’industrialisation et à l’exploitation d’une plateforme moderne. Vous partagez une forte culture DevOps, qualité logicielle et amélioration continue, et appréciez le travail en collaboration avec les équipes support et opérations. Envie de construire des solutions d’IA concrètes au service des opérations IT ? Rejoignez-nous !",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Azure",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "LangChain",
+      "Python",
+      "Vision",
+      "Monitoring de modèles",
+      "API",
+      "Backend",
+      "Intégration continue",
+      "Data Engineering",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 55,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre du développement de la plateforme d’IA dédiée aux opérations IT, nous recherchons un(e) Ingénieur IA & Plateforme pour contribuer à la conception, l’industrialisation et l’exploitation de solutions d’Agentic AI intégrées au SI.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:01.129934",
+  "input_hash": "e74fd6f32dcb1931c6381ef93a89102aaa6f3d4d5c973cf6f87ddf2677e2b279",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

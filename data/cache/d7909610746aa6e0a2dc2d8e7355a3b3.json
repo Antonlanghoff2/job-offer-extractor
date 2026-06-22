@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:3459908",
+  "value": {
+    "id": "3459908",
+    "intitule": "Chef de Projet Bancs de Test (secteur auto) - Toulouse, France (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3459908",
+    "description": "Ce que nous allons accomplir ensemble :  Vous interviendrez au sein de la division Mechatronics Sensors, en charge du développement de bancs de test critiques pour la validation de systèmes innovants.  Votre mission (...si vous lacceptezstrong>  Garantir le développement, la maintenance et la validation de bancs de test mécatroniques destinés à la R&D, dans un environnement exigeant et à fort enjeu technique. Votre quotidien sera rythmé par : Gestion de projets bancs de test :  Pilotage du développement mécanique et logiciel Intégration et évolution de la baie de test Validation fonctionnelle Conception orientée certification CE Suivi du développement software/hardware Recette et validation   Développement & maintenance des outils de test :  Développement et maintien des boîtes de test Gonogo & Monitoring Suivi des projets existants et reporting Coordination avec les équipes R&D des autres sites  Votre Stack de Jeu :   Compétences requises :  Langage C (confirmé) impératif LabView (confirmé) impératif Électronique analogique (confirmé) important Mécanique (confirmé) important Anglais courant impératif (environnement international)    Vous avez le goût du travail en équipe, et avez la capacittre constructif et à vous adaptez aux contraintes. Votre rigueur, votre organisation, votre capacité à partager vos connaissances, votre adaptabilité et votre autonomie complètent votre portrait.   Vous : Ingénieur confirmé, doté dune solide expertise en développement de bancs de test et en gestion de projets techniques. Vous êtes autonome, structuré, et à laise dans les environnements multidisciplinaires et internationaux.",
+    "metier": "Spécialiste test et validation logiciel ou application",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Vision",
+      "Product Management",
+      "Documentation technique",
+      "Git"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous : Ingénieur confirmé, doté dune solide expertise en développement de bancs de test et en gestion de projets techniques.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:44.943032",
+  "input_hash": "d431058201c8f2304b494274d42d870358ac863627d8db7cce8bba0f5fe315dd",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

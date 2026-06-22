@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:1698575",
+  "value": {
+    "id": "1698575",
+    "intitule": "Ingénieur(e) développement logiciel (f/h)",
+    "entreprise": "",
+    "territoire": "26 - Pierrelatte",
+    "ville": "26235",
+    "code_postal": "26700",
+    "contrat": "CDI",
+    "date_creation": "2026-04-21",
+    "date": "2026-04-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1698575",
+    "description": "Job Description: Intitulé du poste : Ingénieur(e) Développement Logiciel (F/H) Qui sommes-nous ? Depuis 1996, Survey Copter est installée à Pierrelatte, au coeur de la Drôme, et rassemble une équipe d’environ 60 collaborateurs. L’entreprise conçoit, fabrique et assure le maintien en conditions opérationnelles de systèmes de drones tactiques légers, destinés à des missions militaires et civiles. Elle couvre l’ensemble du cycle de vie de ses systèmes, offrant à chacun la possibilité de contribuer pleinement à des projets technologiques et concrets. Filiale à 100% du groupe Airbus depuis 2011, Survey Copter est le centre d’expertise drones d’Airbus Helicopters, alliant agilité et esprit d’innovation. Rejoindre Survey Copter, c’est intégrer une PME à taille humaine et des équipes passionnées, tout en profitant d’un cadre de vie privilégié en Drôme, territoire dynamique et ensoleillé. Ce que nous pouvons accomplir ensemble : Au sein du service Ingénierie Logicielle du bureau d’étude, vous aurez pour missions principales de développer et maintenir les logiciels des systèmes sols comprenant entre autres : Les stations sol pour le pilotage et la supervision de drones et de leurs charges utiles ; Les simulateurs associés ; Les outils (gestion de la liaison de données, etc.) Pour cela, il faudra : Concevoir les interfaces homme-machine (IHM) pour le contrôle des systèmes (planification de mission, télémétrie, visualisation des données) ; Implémenter les protocoles de communication avec les cartes électroniques (autopilote, tracking sol, charge utile, ...) ; Assurer l’intégration des flux de données (vidéo, télémétrie, capteurs) en temps réel ; Développer des modules logiciels pour la gestion des missions (navigation, suivi de trajectoire, gestion des charges utiles) ; Participer à l’architecture logicielle globale des systèmes sol ; Assurer la compatibilité et l’interopérabilité avec les systèmes embarqués ; Rédiger la documentation technique (spécifications, conception, manuels utilisateurs) ; Développer et exécuter les tests logiciels (unitaires, intégration, validation) ; Participer aux essais terrain et aux campagnes de validation ; Mettre en place, exécuter et maintenir des campagnes de tests de non-régression ; Assurer la couverture fonctionnelle des tests sur les différentes configurations produits ; Analyser les anomalies, proposer des correctifs et assurer le suivi des faits techniques ; Collaborer avec les équipes électroniques, systèmes et opérations. Ce poste nécessite une habilitation de sécurité ou nécessite d’être éligible à une habilitation par les autorités reconnues. Qui êtes-vous ? De formation ingénieur ou titulaire d’un Master avec une spécialisation en informatique, vous justifiez d’au moins 3 ans d’expérience dans un domaine similaire. Ce que l’on reconnait chez vous : Vos solides compétences en développement logiciel principalement en langage C++ ; Votre expérience en développement d’IHM (Qt, QML ou frameworks similaires) ; Votre bonne maîtrise des architectures logicielles et des systèmes distribués ; Vos connaissances en communication réseau (UDP, TCP/IP, liaisons série, MQTT) ; Vos connaissances des systèmes drones ou de la robotique, fortement appréciées ; Vos notions en traitement de données en temps réel (vidéo, télémétrie) ; Votre utilisation des outils de développement logiciel (Git, SVN, tests automatisés) ; Votre capacité d’analyse, votre rigueur et votre autonomie ; Votre bon esprit d’équipe et de communication ; Votre maîtrise de l’anglais technique. Parce que nous prenons soin de vous : Bien-être / santé : complémentaire santé et prévoyance santé / décès financées à hauteur de 100 % par Survey Copter, Team Building. Avantages financiers : accord d’intéressement, politique salariale annuelle, plan d'épargne salariale abondé par Airbus, salaire sur 13 mois. Type de contrat : CDI - Cadre Horaire de travail : Forfait 218 jours This job requires an awareness of any potential compliance risks and a commitment to act with integrity, as the foundation for the Company’s success, reputation and sustainable growth. Company: Survey Copter SAS Employment Type: Permanent ------- Experience Level: Professional Job Family: Software Engineering By submitting your CV or application you are consenting to Airbus using and storing information about you for monitoring purposes relating to your application or future employment. This information will only be used by Airbus. Airbus is committed to achieving workforce diversity and creating an inclusive working environment. We welcome all applications irrespective of social and cultural background, age, gender, disability, sexual orientation or religious belief. Airbus is, and always has been, committed to equal opportunities for all. As such, we will never ask for any",
+    "metier": "Chef / Cheffe de projet étude et développement informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Vision",
+      "Anglais professionnel",
+      "Data Engineering",
+      "Qualité logicielle",
+      "Design patterns",
+      "Tests automatisés",
+      "Analyse de données",
+      "Cybersécurité",
+      "Model drift"
+    ],
+    "salaire_min": 1996,
+    "salaire_max": 1996,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Job Description: Intitulé du poste : Ingénieur(e) Développement Logiciel (F/H) Qui sommes-nous ?",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "De formation ingénieur ou titulaire d’un Master avec une spécialisation en informatique, vous justifiez d’au moins 3 ans d’expérience dans un domaine similaire.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:32.431185",
+  "input_hash": "3b2cf6d828ce896ce5aae7d1aeb798c390bab349e2e16c04fa2227c57c303abb",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

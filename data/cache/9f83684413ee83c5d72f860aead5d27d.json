@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3349665",
+  "value": {
+    "id": "3349665",
+    "intitule": "Ingénieur en développement .NET / C# (F/H)",
+    "entreprise": "ALTECA",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3349665",
+    "description": "RESPONSABILITÉS : En coordination avec les équipes diversifiées (secteurs Banque, Industrie ou Transport), tes missions seront les suivantes : • Analyse des besoins utilisateurs et rédaction des spécifications fonctionnelles et techniques détaillées, incluant recommandations et étude de faisabilité. • Développement sous environnement.NET / C#, rédaction de la documentation technique associée et suivi des bonnes pratiques de codage. • Recette applicative : conception et mise en place de tests unitaires pour garantir la qualité et la fiabilité des livrables. • Maintenance corrective et évolutive des applications existantes, optimisation des performances et résolution des anomalies. • Participation à l' amélioration continue des applications et des processus de développement, partage de bonnes pratiques au sein de l'équipe. PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+5 en Informatique (Université ou Ecole d'Ingénieur). Tu as au moins 3 ans d'expérience en.NET, C# et tu disposes d'une maîtrise des bonnes pratiques de développement, tests et documentation. Ta personnalité : tu es une personne organisée, rigoureux(se), force de proposition, tu disposes d'un bon relationnel et tu aimes le travail en équipe. Tu apprécies et contribues à développer un contexte de travail bienveillant et qui favorise le partage de connaissances. Enfin, tu sais aussi être force de proposition sur les améliorations qualités à apporter. Type de contrat proposé : temps plein | Niveau de poste : confirmé Le process de recrutement : • Noémie de l'équipe recrutement EST te contactera pour un premier échange téléphonique, puis elle te recevra dans le cadre d'un entretien RH. • Si cet entretien est validé, tu rencontreras alors le Responsable de notre Pôle Digital, pour un entretien technique. NOS AVANTAGES Transport pris en charge à 75% | Tickets resto pris en charge à 60% | Mutuelle prise en charge à 60% 10 jours de RTT en plus des 25 jours de CP | Mode de travail : hybride | Accès au CSE (billetterie, voyages) En tant que signataire de la charte de diversité en entreprise, Alteca favorise un environnement de travail inclusif et respectueux de tous. A compétences égales, tous nos postes sont ouverts aux personnes en situation de handicap.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Cahier des charges",
+      "Git",
+      "Intelligence artificielle",
+      "Tests automatisés",
+      "Design patterns",
+      "Documentation technique"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+5 en Informatique (Université ou Ecole d'Ingénieur).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+5 en Informatique (Université ou Ecole d'Ingénieur).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "4 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:27.626466",
+  "input_hash": "1dc6465871772304f271d09539300d91cbe3c8d03eda62357f959e3442fb3359",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

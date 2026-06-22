@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3551562",
+  "value": {
+    "id": "3551562",
+    "intitule": "Développeur Python (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3551562",
+    "description": "STEP UP est une société d'ingénierie experte en pilotage de projets industriels et informatiques (+ 250 collaborateurs sur 11 agences en France), plaçant le potentiel humain comme 1er vecteur d'excellence et de performance en entreprise. Oubliez les sociétés d'ingénierie qui ne valorisent que vos seules compétences, chez STEP UP, nous visons également l'adéquation entre votre personnalité et la culture d'entreprise de nos clients. Cela se traduit pour vous par une différence fondamentale en termes de bien être, d'épanouissement au travail et de succès dans vos missions. Ce que nous vous proposons : - Un cadre de travail épanouissant, stimulant et collaboratif, nous sommes certifiés entreprise où il fait bon vivre ! - Des projets innovants et variés. - La possibilité de se perfectionner continuellement avec des formations internes. - Des perspectives d'évolution de carrière. - Un accompagnement individualisé avec un programme de développement du potentiel humain. - Un programme de cooptation. Et bien sûr, nous prenons en charge 70% de votre mutuelle santé et encourageons financièrement la mobilité douce. Le poste : Le poste s'articule autour de plusieurs activités : - Activités de Développement . Rationalisation et industrialisation de scripts Python existants : reprise de développements métiers avec amélioration de la robustesse (gestion avancée des exceptions), refactorisation pour une meilleure maintenabilité, enrichissement documentaire (commentaires et bonnes pratiques de codage). . Conception et développement d'applications Python dédiées à la valorisation des données : mise en place d'outils facilitant la visualisation, l'analyse et l'exploitation opérationnelle des données. . Optimisation et mutualisation des composants logiciels : factorisation du code entre plusieurs applications afin de standardiser et réutiliser les briques techniques d'import/export de données vers le Système d'Information Industriel. . Mise en œuvre de processus de qualité logicielle : réalisation de revues de code croisées garantissant la conformité aux standards, la fiabilité et la pérennité des développements. . Automatisation des tests : implémentation de tests unitaires pour sécuriser les évolutions et assurer la non-régression des fonctionnalités. . Livrables : Code source structuré, documenté, testé et prêt à être exploité en environnement industriel. - Activités DevOps . Industrialisation des déploiements applicatifs : mise en production des solutions sur les environnements d'intégration et de production, en assurant leur stabilité et leur performance. . Maintien et évolution des pipelines de déploiement : mise à jour continue des scripts et processus de déploiement dans une logique d'intégration et de livraison continues (CI/CD). . Livrables : Applications opérationnelles, accessibles et fiables pour les utilisateurs finaux. - Activités transverses . Support technique utilisateurs : intervention ponctuelle en support afin de résoudre des problématiques techniques et garantir la continuité d'usage. . Contribution à la planification des projets : estimation des charges et des efforts nécessaires pour les futurs développements, en alignement avec les enjeux métier. . Livrables : Comptes rendus d'activité et recommandations formalisées. Profil recherché : Vous avez un Bac + 3 ou 4 en développement informatique. Les compétences recherchées sont une solide maîtrise de Python ainsi que de son écosystème scientifique, incluant notamment les bibliothèques de référence telles que NumPy, Pandas, SciPy et Plotly, permettant l'analyse, le traitement et la visualisation de données à forte valeur ajoutée. Une expérience sur un framework de développement web est attendue (type Flask, Django ou FastAPI), avec une sensibilité à la création d'applications interactives. La connaissance de Streamlit constitue un atout différenciant dans le cadre de projets orientés data apps. Le candidat devra également être à l'aise avec les outils et pratiques standard du développement : - Utilisation avancée de Jupyter Notebook pour le prototypage et l'analyse exploratoire - Maîtrise de Git dans un environnement collaboratif - Connaissances opérationnelles des environnements Linux",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Django",
+      "Développement web",
+      "FastAPI",
+      "Flask",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "NumPy",
+      "Pandas",
+      "Python",
+      "Vue.js",
+      "Gestion de projet",
+      "Product Management",
+      "Tests automatisés",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Sécurité informatique",
+      "Documentation technique"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac + 3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché : Vous avez un Bac + 3 ou 4 en développement informatique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:53.219427",
+  "input_hash": "200a72a5328a2de3bbbe400c130cb2a27bcd1ea96e5133d7bb18c22a933cb43d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

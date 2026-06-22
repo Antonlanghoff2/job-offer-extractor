@@ -1,0 +1,550 @@
+{
+  "key": "trends:73 - Avrieux",
+  "value": {
+    "territoire": "73 - Avrieux",
+    "periode_jours": 365,
+    "nombre_offres": 5,
+    "competences": {
+      "Aéronautique": 5,
+      "Python": 5,
+      "Analyse de données": 4,
+      "Data engineering": 4,
+      "Pipelines De Données": 4,
+      "Qualité Des Données": 3,
+      "API": 2,
+      "Backend": 2,
+      "Model Drift": 1,
+      "Optimisation Des Performances": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Aéronautique",
+        "count": 5,
+        "percentage": 100.0,
+        "variants": {
+          "Aéronautique": 5
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 5,
+        "percentage": 100.0,
+        "variants": {
+          "Python": 5
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 4,
+        "percentage": 80.0,
+        "variants": {
+          "Analyse de données": 4
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 4,
+        "percentage": 80.0,
+        "variants": {
+          "Data Engineering": 4
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 4,
+        "percentage": 80.0,
+        "variants": {
+          "Pipelines de données": 4
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 3,
+        "percentage": 60.0,
+        "variants": {
+          "Qualité des données": 3
+        }
+      },
+      {
+        "nom": "API",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "API": 2
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Backend": 2
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Optimisation des performances": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Aéronautique": {
+        "Aéronautique": 5
+      },
+      "Python": {
+        "Python": 5
+      },
+      "Analyse de données": {
+        "Analyse de données": 4
+      },
+      "Data engineering": {
+        "Data Engineering": 4
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 4
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 3
+      },
+      "API": {
+        "API": 2
+      },
+      "Backend": {
+        "Backend": 2
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Optimisation Des Performances": {
+        "Optimisation des performances": 1
+      }
+    },
+    "metiers": {
+      "Technicien / Technicienne de laboratoire de recherche-développement": 2,
+      "Développeur / Développeuse informatique": 1,
+      "Ingénieur / Ingénieure calcul et structure": 1,
+      "Technicien / Technicienne R&D": 1
+    },
+    "niveau": {
+      "junior": 5
+    },
+    "contrats": {
+      "CDD - 18 Mois": 3,
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Python",
+        "count": 5,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Aéronautique",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Pipelines De Données",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Data engineering",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Pipelines De Données",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Python",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Backend",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Analyse de données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Aéronautique",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Data engineering",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Backend",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      }
+    ],
+    "fiabilite": 0.125,
+    "skill_sets": [
+      [
+        "Python",
+        "Analyse de données",
+        "Data engineering",
+        "Aéronautique",
+        "Qualité Des Données",
+        "Pipelines De Données"
+      ],
+      [
+        "Python",
+        "Aéronautique"
+      ],
+      [
+        "Python",
+        "Analyse de données",
+        "Data engineering",
+        "Aéronautique",
+        "Qualité Des Données",
+        "Optimisation Des Performances",
+        "API",
+        "Backend",
+        "Pipelines De Données"
+      ],
+      [
+        "Python",
+        "Analyse de données",
+        "Data engineering",
+        "Aéronautique",
+        "Pipelines De Données",
+        "Model Drift",
+        "API",
+        "Backend"
+      ],
+      [
+        "Python",
+        "Analyse de données",
+        "Data engineering",
+        "Aéronautique",
+        "Qualité Des Données",
+        "Pipelines De Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3967442",
+        "intitule": "Technicien calculs données essais soufflerie F/H (H/F)",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3967442"
+      },
+      {
+        "id": "2758641",
+        "intitule": "Ingénieur programmeur 18 mois f/h",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDD - 18 Mois",
+        "date": "2026-05-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2758641"
+      },
+      {
+        "id": "2758629",
+        "intitule": "Technicien calculs/données d'essais 18 mois f/h",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDD - 18 Mois",
+        "date": "2026-05-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2758629"
+      },
+      {
+        "id": "2758577",
+        "intitule": "Technicien calculs données essais soufflerie f/h",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDI",
+        "date": "2026-05-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2758577"
+      },
+      {
+        "id": "0798676",
+        "intitule": "Technicien calculs/données d'essais 18 mois F/H (H/F)",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDD - 18 Mois",
+        "date": "2026-03-26",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0798676"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3967442",
+        "intitule": "Technicien calculs données essais soufflerie F/H (H/F)",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3967442"
+      },
+      {
+        "id": "2758641",
+        "intitule": "Ingénieur programmeur 18 mois f/h",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDD - 18 Mois",
+        "date": "2026-05-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2758641"
+      },
+      {
+        "id": "2758629",
+        "intitule": "Technicien calculs/données d'essais 18 mois f/h",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDD - 18 Mois",
+        "date": "2026-05-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2758629"
+      },
+      {
+        "id": "2758577",
+        "intitule": "Technicien calculs données essais soufflerie f/h",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDI",
+        "date": "2026-05-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2758577"
+      },
+      {
+        "id": "0798676",
+        "intitule": "Technicien calculs/données d'essais 18 mois F/H (H/F)",
+        "entreprise": "",
+        "territoire": "73 - Avrieux",
+        "contrat": "CDD - 18 Mois",
+        "date": "2026-03-26",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0798676"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:15.639052",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

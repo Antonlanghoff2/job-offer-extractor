@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3872307",
+  "value": {
+    "id": "3872307",
+    "intitule": "Ingénieur développement logiciel embarqué H/F",
+    "entreprise": "",
+    "territoire": "79 - Mauléon",
+    "ville": "79079",
+    "code_postal": "79700",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3872307",
+    "description": "Notre client, acteur industriel reconnu dans son secteur, recherche dans le cadre de son développement un Ingénieur développement logiciel embarqué pour renforcer ses équipes basées à Rorthais (79).Intégré à l'équipe Technologie &amp; Digital, vous intervenez sur des projets de personnalisation de logiciels embarqués dédiés aux véhicules électriques, dans un environnement industriel innovant et international.\n \nÀ partir des cahiers des charges clients et des données fournisseurs, vous assurez le développement et la validation des programmes embarqués.\n \nPour cela, vos principales missions sont les suivantes :\nAnalyser les demandes techniques et étudier leur faisabilité en matière de programmation ;\nValider les données d'entrée et proposer, si nécessaire, des solutions alternatives ;\nConcevoir et développer des solutions logicielles adaptées aux besoins clients ;\nGarantir la cohérence des développements software pour les différents projets ;\nPiloter ou superviser les développements réalisés par les sous-traitants ;\nRéaliser les tests et validations des programmes sur banc d'essais et directement sur véhicules ;\nAccompagner les équipes méthodes et production lors des essais en ligne ;\nParticiper aux phases de pré-réception et de réception client ;\nDéfinir les moyens techniques nécessaires à la validation des programmes ;\nAssurer la mise à jour des bases de données techniques et de la documentation associée ;\nParticiper aux réunions projets et alerter les responsables en cas de points bloquants.\nVous évoluez dans un environnement technique mêlant logiciels embarqués, automatisme et industrialisation.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Monitoring de modèles",
+      "Qualité des données",
+      "Analyse de données",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Sécurité informatique",
+      "MLOps",
+      "Code review",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 79000,
+    "salaire_max": 79000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Notre client, acteur industriel reconnu dans son secteur, recherche dans le cadre de son développement un Ingénieur développement logiciel embarqué pour renforcer ses équipes basées à Rorthais (79).Intégré à l'équipe Technologie &amp; Digital, vous intervenez sur des projets de personnalisation de logiciels embarqués dédiés aux véhicules électriques, dans un environnement industriel innovant et international.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:17.416779",
+  "input_hash": "8fd8d202e9725dd64d2c7b59b7674c6d910f85d87e69df38393085b6179675ea",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

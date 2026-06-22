@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:209ZWHP",
+  "value": {
+    "id": "209ZWHP",
+    "intitule": "Développeur Junior - Technicien Support Applicatif - H/F (H/F)",
+    "entreprise": "MATEN",
+    "territoire": "69 - Lyon 9e Arrondissement",
+    "ville": "69389",
+    "code_postal": "69009",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZWHP",
+    "description": "Vous êtes développeur junior et souhaitez acquérir une vision plus globale des applications en production vous souhaitez évoluer sur un poste mêlant support, analyse et environnement de développement ?\n\n Ce poste est fait pour vous. Nous recherchons un profil disposant de bases en développement, souhaitant évoluer sur un rôle hybride mêlant analyse technique et support applicatif.\n\nIl ne s'agit pas d'un poste de développement pur, mais vous interviendrez au cœur des applications métiers, en lien étroit avec les équipes techniques, pour comprendre, analyser et résoudre les incidents.\n\nVous intégrerez une entreprise de services numériques et interviendrez auprès d'un client majeur sur des applications métiers.\n\nMissions principales\n\nSupport et relation utilisateur\n- Réception des demandes utilisateurs (tickets, mails, téléphone).\n- Prise en charge des incidents et demandes liés aux applications métiers.\n- Accompagnement des utilisateurs dans la résolution de leurs problématiques.\n\nAnalyse et résolution des incidents\n- Diagnostic des dysfonctionnements applicatifs.\n- Identification de l'origine des incidents (fonctionnelle ou technique).\n- Résolution des incidents de niveau 1 et 2.\n\nDimension technique (orientée dev)\n- Analyse technique des anomalies applicatives.\n- Lecture et exploitation de requêtes SQL.\n- Vérification et correction de données si nécessaire.\n- Compréhension du code et échanges avec les équipes de développement.\n\nGestion et suivi\n- Suivi des incidents de leur ouverture jusqu'à leur résolution.\n- Communication avec les utilisateurs sur l'avancement.\n- Priorisation des demandes.\n\nCollaboration avec les équipes techniques\n- Escalade des incidents complexes vers les développeurs.\n- Participation à l'analyse des correctifs.\n- Interaction régulière avec les équipes de développement et d'exploitation.\n\nDocumentation et amélioration continue\n- Rédaction et mise à jour de la documentation technique.\n- Enrichissement de la base de connaissances.\n\nProfil recherché\n\nExpérience\n- Formation Bac+2 à Bac+5 en informatique.\n- Ou première expérience en support IT, développement ou stage significatif.\n- Ou développeur junior souhaitant évoluer sur un rôle plus transverse.\n\nCompétences\n- Notions en SQL.\n- Bases en développement (Java, .NET, PHP, ou autre).\n- Compréhension des environnements applicatifs.\n- Connaissances de base en systèmes (Windows, Linux).\n- Capacité à analyser et comprendre des anomalies techniques.\n\nSavoir-être\n- Sens du service et bon relationnel.\n- Esprit analytique et logique.\n- Rigueur et organisation.\n- Envie de monter en compétences techniquement.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Linux",
+      "SQL",
+      "Vision",
+      "Résolution de problèmes",
+      "Analyse de données",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 26000,
+    "salaire_max": 0,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation Bac+2 à Bac+5 en informatique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation Bac+2 à Bac+5 en informatique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:17.896532",
+  "input_hash": "5a459d9194854df6ac6c9b978d942f88392600ac5f27ebdcf6c0c3919c0c6314",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

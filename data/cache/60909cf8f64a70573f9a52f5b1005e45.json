@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3934277",
+  "value": {
+    "id": "3934277",
+    "intitule": "Ingénieur Mécanique Spatiale H/F",
+    "entreprise": "KHEA CONCEPT",
+    "territoire": "94 - Saint-Maur-des-Fossés",
+    "ville": "94068",
+    "code_postal": "94100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3934277",
+    "description": "RESPONSABILITÉS : Dans le cadre de projet de l'un de nos clients pour le secteur aéronautique/spatial/défense, nous recherchons un Ingénieur Mécanique Spatiale (H/F). Vous venez renforcer les équipes techniques et vous participerez au développement d'algorithmes, de modèles dynamiques et d'outils divers. Si ce challenge vous tente, vous serez en charge de : - Développer et valider des modèles de dynamique orbitale - Réaliser des analyses de trajectoires - Concevoir et améliorer des algorithmes - Exploiter des données issues de capteurs - Participer aux études de performance des systèmes de surveillance - Collaborer avec les équipes logiciel, data science et opérations PROFIL RECHERCHÉ : - Issu d'un bac+5 ou école d'ingénieur en mécanique spatiale - Expérience de 2 à 5 ans - Maîtrise de la mécanique orbitale - Expérience en programmation scientifique (Python, C++, MATLAB, etc.) - Bonne compréhension des méthodes numériques et statistiques - Niveau d'anglais professionnel",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Anglais Professionnel",
+      "Aéronautique",
+      "Intelligence artificielle",
+      "Python",
+      "Qualité des données",
+      "Data Engineering",
+      "Pipelines de données",
+      "Gestion de projet"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "RESPONSABILITÉS : Dans le cadre de projet de l'un de nos clients pour le secteur aéronautique/spatial/défense, nous recherchons un Ingénieur Mécanique Spatiale (H/F).",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Si ce challenge vous tente, vous serez en charge de : - Développer et valider des modèles de dynamique orbitale - Réaliser des analyses de trajectoires - Concevoir et améliorer des algorithmes - Exploiter des données issues de capteurs - Participer aux études de performance des systèmes de surveillance - Collaborer avec les équipes logiciel, data science et opérations PROFIL RECHERCHÉ : - Issu d'un bac+5 ou école d'ingénieur en mécanique spatiale - Expérience de 2 à 5 ans - Maîtrise de la mécanique orbitale - Expérience en programmation scientifique (Python, C++, MATLAB, etc.) - Bonne compréhension des méthodes numériques et statistiques - Niveau d'anglais professionnel",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:45.738981",
+  "input_hash": "f430c77198108c1518c155e264db33d24f13eb2f7c82e4bf936c3883e2940149",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

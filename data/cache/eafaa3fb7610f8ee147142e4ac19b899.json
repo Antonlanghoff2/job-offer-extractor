@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:209MTLP",
+  "value": {
+    "id": "209MTLP",
+    "intitule": "Développeur Informatique (H/F)",
+    "entreprise": "IDDEA",
+    "territoire": "45 - OLIVET",
+    "ville": "45232",
+    "code_postal": "45160",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209MTLP",
+    "description": "Dans le cadre de son développement, la société IDDEA, recherche un(e) ingénieur(e) de données, pour son siège d'Orléans (45). \nSous la responsabilité d'un expert technique et fonctionnel, vous êtes amené(e) à :\n\n- maintenir nos outils existants. Ces outils basés sur Excel/VBA permettent d'automatiser les compilations, mises en forme et interprétation de données de qualité des milieux ;\n- concevoir de nouveaux outils d'automatisation de traitement de données scientifiques : définition du besoin, choix d'outils pérennes et définition d'architecture ;\n- gérer les projets : priorisation des tâches, suivi de réalisation, développement, livraison ;\n- participer à l'encadrement d'un(e) alternant(e) avec l'appui de l'expert en poste.\n- développer l'interopérabilité par l'usage d'API et de webservices ;\n- développer la digitalisation des procédures relatives aux synthèses, à la mise en forme, au traitement et à l'interprétation des données traitées dans le cadre de nos études environnementales liées aux sites et sols pollués par exemple au travers de la mise en place d'un ETL (Talend, .).\n\nA ce titre, il vous est demandé, selon les priorités définies par la Direction, de :\n\n- vous approprier les outils existants pour être en mesure d'assister les équipes utilisatrices ;\n- recueillir l'expression des besoins des équipes métiers ;\n- développer les outils en collaboration avec notre expert et les utilisateurs :\no concevoir la solution la mieux à même de répondre à la problématique ;\no élaborer des prototypes en concertation avec l'équipe d'ingénieurs ; \no développer les outils dans une logique pragmatique et opérationnelle terrain ;\n- élaborer des passerelles entre nos systèmes informatiques et ceux de nos partenaires fournisseurs ;\n\n- sur la base de votre expertise, être force de proposition sur les possibilités de digitalisation et d'automatisation de nos process de production pour la génération, par exemple, de rapports d'études.\n\nDoté(e) d'une appétence pour les sciences de la terre, vous avez une expertise solide d'au moins 5 ans en programmation, développement d'outils informatiques et en gestion de projets. À ce titre :\n- Vous maîtrisez plusieurs langages de programmation dont idéalement Python et Visual Basic pour Applications (VBA). VBA est utilisé pour nos applications Excel et Access, et serait utile pour la maintenance de nos outils ;\n- Vous avez une culture informatique et data vous permettant d'accompagner vos collaborateurs à l'adoption de bonnes pratiques. Vous avez une appétence pour les nouvelles technologies, en particulier en matière d'IA. Vous aurez pour mission d'explorer l'application de ces technologies pour la génération automatique de rapports d'étude et pour l'aide à la décision lors des interprétations.\n- Le développement d'interfaces (maquettage, technologies web, principes d'ergonomie) fait partie de vos compétences ;\n- Vous êtes pluridisciplinaire, polyvalent, autonome;\n- Vous avez un attrait pour les données géographiques et les outils associés (QGIS) ;\n- Vous avez une démarche centrée utilisateur et êtes soucieux de l'expérience utilisateur (UX) ;\n- Pragmatique, vous choisissez les solutions techniques maintenables et pérennes.\n\nVotre créativité, votre rigueur et votre organisation sont de véritables atouts pour réussir à ce poste.\nCompétences techniques\n- Programmation : Python, Java, VBA, R\n- Excel : création de Dashboard, programmation de macros\n- SQL (niveau intermédiaire)\n- Connaissance d'un ETL\n- Méthodologie Agile (SCRUM)\n- Maquettage : Figma / Balsamiq / .\n- Connaissance d'un Framework de développement web (Django / Symfony / .)\n- La maitrise de SharePoint serait un plus\n\nPourquoi nous rejoindre\n- Vous intègrerez une équipe dynamique et en développement ;\n- Vous collaborerez avec un expert qui participera à votre montée en compétence et vous accompagnera dans votre inté",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Django",
+      "Développement web",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "SQL",
+      "Symfony",
+      "Pipelines de données",
+      "Veille technologique",
+      "Qualité des données",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Product Management",
+      "Sécurité informatique",
+      "Scalabilité"
+    ],
+    "salaire_min": 34000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre de son développement, la société IDDEA, recherche un(e) ingénieur(e) de données, pour son siège d'Orléans (45).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:08.877101",
+  "input_hash": "fe51a643b0553bc1514732fa7f11d39efc614da9ab7674356b4a59a45bef5599",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

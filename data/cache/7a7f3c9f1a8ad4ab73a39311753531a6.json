@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:205LVJW",
+  "value": {
+    "id": "205LVJW",
+    "intitule": "Ingénieur sécurité cloud (H/F)",
+    "entreprise": "BRAIN LOGIC",
+    "territoire": "75 - Paris 13e Arrondissement",
+    "ville": "75113",
+    "code_postal": "75013",
+    "contrat": "CDI",
+    "date_creation": "2026-03-16",
+    "date": "2026-03-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/205LVJW",
+    "description": "BRAINLOGIC accompagne ses clients dans la réalisation de leurs projets digitaux. Depuis toutes ces années, riches en évolutions et en transformations, nous avons su rester à la pointe de la technologie et de l'innovation avec la même ambition : satisfaire nos clients en leur apportant nos conseils, nos expertises pour pouvoir les accompagner au mieux.\n\nContexte\nAu sein d'une équipe d'experts en sécurité Cloud public, nous recherchons un Ingénieur sécurité cloud  H/F opérationnel-le et autonome, capable de gérer et d'optimiser la gestion des identités et des accès (IAM) sur plusieurs plateformes cloud, tout en participant à l'automatisation et à l'amélioration continue des infrastructures dans un environnement bancaire exigeant.\n\nObjectif global\nAccompagner la sécurisation du Cloud public dans le secteur bancaire, en garantissant la conformité et la robustesse des environnements cloud (GCP, Azure, AWS).\n\nMissions principales\n- Élaborer et mettre en œuvre une stratégie IAM adaptée aux besoins du secteur bancaire et conforme aux règles de sécurité.\n- Évaluer les configurations IAM existantes sur Azure, AWS et GCP, identifier les vulnérabilités et proposer des améliorations.\n- Implémenter les meilleures pratiques et contrôles IAM via des outils tels que AWS SCP, GCP Deny Policy, et autres.\n- Accompagner les équipes projet sur les concepts IAM et les outils associés, et promouvoir une culture de la sécurité.\n- Documenter les processus, configurations et politiques mises en place.\n- Participer aux audits internes et externes, et appliquer les recommandations pour la mise en conformité.\n- Maintenir en conditions opérationnelles les infrastructures de sécurité (supervision, résolution d'incidents, installation et configuration).\n- Proposer des solutions innovantes pour améliorer la sécurité, la qualité, les performances et optimiser les coûts.\n- Assurer une veille technologique constante sur les sujets cloud et sécurité.\n\nProfil recherché\n\nCompétences techniques :\n- IAM GCP - Expert (impératif)\n- IAM Azure - Expert (impératif)\n- Terraform & Python - Confirmé (impératif)\n- IAM AWS - Junior (souhaitable)\n\nCompétences complémentaires \n- Mise en application et contrôle de la Politique de Sécurité.\n- Expérience dans la rédaction de guides et standards de sécurité.\n- Capacité à donner un avis expert sur l'implémentation de solutions de sécurité.\n\nLangues \n- Anglais professionnel - impératif\n\nCe que nous offrons\n- Un environnement stimulant au sein d'une équipe experte en sécurité cloud dans le secteur bancaire.\n- La possibilité de travailler sur des projets innovants et stratégiques pour l'entreprise.\n- Une opportunité de développer vos compétences IAM et cloud sur plusieurs plateformes majeures.",
+    "metier": "Ingénieur / Ingénieure sécurité informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Anglais Professionnel",
+      "Azure",
+      "Coûts",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Terraform",
+      "Vision",
+      "Optimisation des coûts",
+      "Optimisation des performances",
+      "Veille technologique",
+      "Qualité des données",
+      "API",
+      "Gestion de projet",
+      "Sécurité informatique"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Au sein d'une équipe d'experts en sécurité Cloud public, nous recherchons un Ingénieur sécurité cloud H/F opérationnel-le et autonome, capable de gérer et d'optimiser la gestion des identités et des accès (IAM) sur plusieurs plateformes cloud, tout en participant à l'automatisation et à l'amélioration continue des infrastructures dans un environnement bancaire exigeant.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 16,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:02.658703",
+  "input_hash": "9b94f6515c2cc9c8fbc71a810bb767a3ef65d756fd3f95a23c8e00ac710730ef",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

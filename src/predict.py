@@ -28,7 +28,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Tuple
 
 import joblib
 from sklearn.pipeline import Pipeline
@@ -54,6 +54,7 @@ from src.extractors import (
     sort_skills_by_predefined_order,
     split_offer_into_segments,
 )
+from src.offer_field_extractors import extract_diplomas_from_text
 from src.skill_extraction import extract_skills_from_offer
 
 
@@ -303,6 +304,20 @@ def extract_job_offer(text: str, debug: bool = False) -> dict:
     competences_requises_detaillees = [skill.to_dict() for skill in detailed_skills]
     competences_requises_noms = [skill.canonical_name for skill in detailed_skills]
 
+    # ── diplomes_requis ─────────────────────────────────────────────
+    diplomes_requis: List[Dict[str, Any]] = []
+    for seg in cleaned_segments:
+        diplomes_requis.extend(extract_diplomas_from_text(seg["text"]))
+    # Dédupliquer par label
+    seen_diplomas = set()
+    unique_diplomas = []
+    for diploma in diplomes_requis:
+        label = diploma.get("label", "")
+        if label and label not in seen_diplomas:
+            seen_diplomas.add(label)
+            unique_diplomas.append(diploma)
+    diplomes_requis = unique_diplomas
+
     # ── contacts ────────────────────────────────────────────────────
     contacts: List[str] = []
     for seg in cleaned_segments:
@@ -318,6 +333,7 @@ def extract_job_offer(text: str, debug: bool = False) -> dict:
         "competences_requises": competences_requises,
         "competences_requises_detaillees": competences_requises_detaillees,
         "competences_requises_noms": competences_requises_noms,
+        "diplomes_requis": diplomes_requis,
         "contacts": contacts,
     }
 
@@ -337,6 +353,7 @@ def _empty_result() -> dict:
         "competences_requises": [],
         "competences_requises_detaillees": [],
         "competences_requises_noms": [],
+        "diplomes_requis": [],
         "contacts": [],
     }
 

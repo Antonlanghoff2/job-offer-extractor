@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:3499370",
+  "value": {
+    "id": "3499370",
+    "intitule": "Développeur Expert Java/Python H/F",
+    "entreprise": "",
+    "territoire": "18 - Bourges",
+    "ville": "18033",
+    "code_postal": "18000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3499370",
+    "description": "Au sein de Groupama Supports et Services, vous rejoignez l'équipe en charge des expertises techniques afin de contribuer à l'intégration des capacités d'intelligence artificielle dans nos pratiques de développement. Vous participerez à la conception de notre forge logicielle, au déploiement de nos frameworks internes et à l'accompagnement des équipes dans leurs usages IA. Votre rôle s'inscrit pleinement dans la modernisation et l'évolution de notre écosystème applicatif. Vos missions seront : Assurer une veille technologique continue sur les avancées IA/ML/LLM et proposer des évolutions adaptées à nos besoins internes. Participer à la conception et à l'amélioration de solutions transverses soutenant l'intégration des bonnes pratiques IA tout au long du cycle de développement (pipelines ML, frameworks internes, automatisation...). Concevoir, expérimenter et optimiser notre plateforme IA agentique : préparation des données, entraînement, tests de performance, explicabilité, monitoring et observabilité des modèles. Définir, documenter et promouvoir les standards techniques liés aux technologies IA/Data, en veillant à leur intégration cohérente dans les environnements existants. Accompagner et conseiller les équipes projets dans la conception, le développement et l'exploitation de leurs solutions IA métier, ainsi que dans la structuration et la valorisation de leurs données. Ingénieur(e) ou titulaire d'un Master en informatique, intelligence artificielle ou data science, avec une expérience confirmée en développement d'applications intégrant des modèles IA. Maîtrise du développement applicatif Java ou Python (API, microservices, intégration modèle) et des environnements DevSecOps (GitLab, Docker, Kubernetes...). Compétences sur les technologies d'IA agentique : LangChain, LangGraph, Spec Driven Developement... Connaissance des architectures et outils IA : RAG, agentique, pipelines ML, MLOps, vector databases, monitoring, data versioning Compréhension des pratiques IA en entreprise et du cadre réglementaire associé (AI Act, gouvernance...). Pourquoi nous rejoindre ? Chez Groupama Supports et Services, nous nous engageons à offrir à nos collaborateurs(trices) un environnement de travail équilibré : Nous proposons un accès au télétravail (jusqu'à 2 jours par semaine). Nos salariés bénéficient pour une année pleine de 28 jours de congés payés et de 23 jours de RTT par an en moyenne. Il est possible de constituer un Compte épargne temps. Ils bénéficient aussi de ticket restaurant à hauteur de 11euros ou d'un RIE et d'une mutuelle qui assure l'ensemble du foyer sans surcoût. Nous valorisons également l'engagement de nos équipes à travers un système d'intéressement et d'abondement. Nous accordons une grande importance à l'intégration et à la formation de nos collaborateurs(trices), avec un parcours d'intégration complet (Welcom'app, Promotion, Point RH et Manager régulier) et un accès à des formations continues. Acteur engagé et labellisé AFNOR, la RSE est au coeur de nos actions, intégrant des initiatives d'éco-conception, d'éco-utilisation, d'achats responsables, de décarbonisation, de diversité et d'inclusion, ainsi que des mesures pour l'économie d'énergie. Rejoignez-nous sur LinkedIn : https://urlz.fr/rdSd Dans le cadre de notre politique de diversité, toutes nos offres sont ouvertes aux personnes en situation de handicap #Groupama #G2S #Li-Hybrid #LangChain #Kubernetes #DevSecOps",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "LangChain",
+      "MLOps",
+      "Machine learning",
+      "Python",
+      "Déploiement de modèles",
+      "Data Engineering",
+      "Pipelines de données",
+      "Veille technologique"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur(e) ou titulaire d'un Master en informatique, intelligence artificielle ou data science, avec une expérience confirmée en développement d'applications intégrant des modèles IA.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Ingénieur(e) ou titulaire d'un Master en informatique, intelligence artificielle ou data science, avec une expérience confirmée en développement d'applications intégrant des modèles IA.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "7 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:34.530271",
+  "input_hash": "a8dfdf482f580d862f7cf1c43136805235083ac4e4366b7ee9d809289feb7581",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:2769341",
+  "value": {
+    "id": "2769341",
+    "intitule": "Data manager (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Colomiers",
+    "ville": "31149",
+    "code_postal": "31770",
+    "contrat": "CDI",
+    "date_creation": "2026-05-19",
+    "date": "2026-05-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2769341",
+    "description": "Description du poste :\nVous avez envie de faire décoller votre carrière ?\nNous recherchons notre futur(e)\nChef de projet Data / Data Engineer (H/F)\nType de contrat\nCDI\nQui sommes-nous ?\nAvionneur, industriel, prestataire de services industriels et logisticien, Daher compte aujourd'hui environ 14 000 collaborateurs pour un chiffre d'affaires de 1,8 milliard d'euros en 2024. Fort de son actionnariat familial, Daher est tourné vers l'innovation depuis sa création en 1863. Avec des implantations dans une quinzaine de pays, en Europe, en Amérique du Nord et en Asie, Daher conçoit et développe des solutions à valeur ajoutée pour ses clients et partenaires aéronautiques et industriels.\nNos engagements\nDaher vous offre la possibilité d'évoluer au sein du groupe à travers la politique de mobilités internes et passerelles entre métiers, en France et à l'International.\nTravailler chez Daher, c'est s'inscrire dans un environnement de travail inclusif où la diversité est un atout pour le collectif et essentiel pour relever les défis de demain.\nEvoluer dans un cadre où l'innovation et la décarbonation sont au cœur de nos activités pour un avenir durable.\nL'environnement du poste\n1. Spécifications fonctionnelles et conception d'outils***Recueillir les besoins des équipes opérationnelles (méthodes, production, qualité, etc Formaliser les spécifications fonctionnelles et maquettes d'outils digitaux (formulaires, tableaux de bord, applications internes, automatisations, etc Traduire les besoins métiers en exigences claires pour la DSI ou les développeurs (internes ou prestataires)\n* Contribuer à la priorisation du backlog et au suivi des développements\n2. Suivi de développement & coordination***Participer aux revues de développement / tests / recettes fonctionnelles\n* Rédiger les plans de test et valider les livrables\n* Coordonner avec la DSI et les utilisateurs pour assurer la conformité des solutions livrées\n* Piloter les corrections et évolutions (tickets, versioning, documentation)\n3. Accompagnement au changement***Préparer les supports de formation et de communication utilisateurs\n* Animer des sessions de formation et de prise en main des outils\n* Assurer un support de niveau 1 fonctionnel au déploiement\n* Capitaliser sur les retours utilisateurs pour améliorer les outils\n4. Analyse et exploitation de données (Power BI)***Construire et maintenir des rapports Power BI pour le suivi des activités de service industriel performance opérationnelle suivi des qualifications / habilitations suivi des non-conformités / maintenance\n* Automatiser l'alimentation en données depuis SharePoint, Excel, ou SQL\n* Garantir la qualité, la cohérence et la traçabilité des données Compétences techniques recherchées***Maîtrise de Power BI (modélisation, DAX, visualisation)\n* Bonne connaissance des outils Microsoft 365 (Excel, SharePoint, Power Automate, Power Apps)\n* Connaissance du cycle de vie d'un développement applicatif (Agile, itératif)\n* Bonne culture des process opérations industrielles / qualité aéronautique\nCompétences comportementales***Excellente capacité d'écoute et de traduction des besoins métiers\n* Rigueur et sens de la méthode (documentation, suivi)\n* Esprit d'analyse et goût pour les données\n* Pédagogie et aisance relationnelle (formation, conduite du changement)\n* Autonomie, sens de l'initiative, curiosité pour le digital\nProfil / expérience souhaitée***Bac+3 à Bac+5 en informatique industrielle , méthodes , ingénierie de production ou transformation digitale\n* 3 à 5 ans d'expérience dans un poste similaire (business analyst, chef de projet digital, data analyst industriel)\n* Une expérience dans l' aéronautique ou les services industriels est un réel plus\n* Anglais professionnel (documentation, échanges avec partenaires techniques)\nAllez-vous OSER l'aventure avec nous ? Venez nous rejoindre et libérez votre potentiel !",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Anglais Professionnel",
+      "Aéronautique",
+      "Cahier des charges",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "SQL",
+      "Vue.js",
+      "Power BI",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Qualité des données",
+      "Model drift",
+      "MLOps",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil / expérience souhaitée***Bac+3 à Bac+5 en informatique industrielle , méthodes , ingénierie de production ou transformation digitale",
+        "confidence": 0.7
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil / expérience souhaitée***Bac+3 à Bac+5 en informatique industrielle , méthodes , ingénierie de production ou transformation digitale",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:29.590280",
+  "input_hash": "fefc16ca044e2e4caa646ceb11ac2b163a71b75fea4ec708267959df80de0272",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

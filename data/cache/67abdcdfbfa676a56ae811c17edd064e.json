@@ -1,0 +1,114 @@
+{
+  "key": "trends:38 - Charancieu",
+  "value": {
+    "territoire": "38 - Charancieu",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Code Review": 1,
+      "Monitoring De Modèles": 1,
+      "Qualité Des Données": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Code Review",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Code review": 1
+        }
+      },
+      {
+        "nom": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Monitoring de modèles": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Code Review": {
+        "Code review": 1
+      },
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Qualité Des Données",
+        "Code Review",
+        "Monitoring De Modèles"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3953773",
+        "intitule": "Ingénieur / Ingénieure machine learning (H/F)",
+        "entreprise": "",
+        "territoire": "38 - Charancieu",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3953773"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3953773",
+        "intitule": "Ingénieur / Ingénieure machine learning (H/F)",
+        "entreprise": "",
+        "territoire": "38 - Charancieu",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3953773"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:05.166294",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

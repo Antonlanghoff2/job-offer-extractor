@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:207ZFQS",
+  "value": {
+    "id": "207ZFQS",
+    "intitule": "Clause sociale - Apprenti ingénieur administration réseau IT- F/H",
+    "entreprise": "ENSEMBLE PARIS EMPLOI COMPETENCES",
+    "territoire": "78 - Élancourt",
+    "ville": "78208",
+    "code_postal": "78990",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-07",
+    "date": "2026-05-07",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/207ZFQS",
+    "description": "Référence ALT 1594\n*** Ouvert au public éligible aux Clauses sociales *** \nVous pouvez vérifier votre éligibilité auprès d'un conseiller France Travail.\n\nLe pôle Clauses Sociales de l'EPEC mobilise la commande publique et les marchés privés du territoire parisien pour mettre en œuvre un dispositif d'accès à l'emploi durable pour les personnes qui en sont le plus éloignées.\n\nCe pôle recrute pour le compte d'un grand Groupe de construction aéronautique européen, un Apprenti ingénieur administration réseau IT- F/H\n\nL'apprenti sera amené à exploiter et analyser les données sources :\n- Soutenir l'équipe projet dans la gestion des réseaux et la maintenance des plateformes.\n- Déployer des compléments d'architecture et des simulateurs (WAN, sondes réseau).\n- Maintenir à jour les configurations et l'inventaire des équipements réseau (matrices de flux, plans IP, plans de brassage).\n- Participer à la mise en oeuvre de solutions réseau et à leur optimisation.\n- Collaborer avec les autres membres de l'équipe pour assurer la cohérence et la sécurité des infrastructures.\n\nPrérequis\n- Formation en cours en école d'ingénieur ou en université avec une spécialisation en réseaux et télécommunications.\n- Intérêt marqué pour les technologies réseau et les environnements Cisco.\n- Une expérience préalable en administration réseau ou en gestion de projets serait un plus.\n\nCompétences techniques :\n- Maîtrise des environnements Cisco (routage, commutation, sécurité)\n- Connaissance des systèmes d'exploitation Linux et Windows\n- Maîtrise des outils de gestion de configuration (Ansible) et de scripting (bash, Python)\n- Connaissance des outils de gestion de versions (Git) et de CI/CD.",
+    "metier": "Ingénieur / Ingénieure systèmes, réseaux et sécurité informatique",
+    "niveau": "junior",
+    "competences": [
+      "Ansible",
+      "Aéronautique",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "CI/CD",
+      "Analyse de données",
+      "Cybersécurité",
+      "Déploiement de modèles",
+      "Product Management",
+      "Qualité des données",
+      "Sécurité informatique",
+      "MLOps",
+      "Data Engineering",
+      "Pipelines de données"
+    ],
+    "salaire_min": 1594,
+    "salaire_max": 1594,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ce pôle recrute pour le compte d'un grand Groupe de construction aéronautique européen, un Apprenti ingénieur administration réseau IT- F/H",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:15.401009",
+  "input_hash": "49517382ade2fc66dd9d7fb5d2586b5e3f45cff0aecd5f35d6bc4d18569f6261",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

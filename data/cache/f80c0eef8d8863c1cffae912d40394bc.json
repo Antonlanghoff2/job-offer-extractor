@@ -1,0 +1,76 @@
+{
+  "key": "offer_extraction:2563955",
+  "value": {
+    "id": "2563955",
+    "intitule": "Développeur Talend – Intégration & Architecture Événementielle F/H - Groupe Or en Cash",
+    "entreprise": "Groupe Or en Cash",
+    "territoire": "69 - Lyon 6e Arrondissement",
+    "ville": "69386",
+    "code_postal": "69006",
+    "contrat": "CDI",
+    "date_creation": "2026-05-12",
+    "date": "2026-05-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2563955",
+    "description": "Rattaché(e) aux équipes techniques, vous participez à la conception, au développement et à l’évolution des échanges inter-applicatifs du groupe.\n \nVous contribuez activement à la mise en place d’une architecture moderne, robuste, découplée et orientée événements.\n \nVotre rôle sera central dans la fiabilisation des flux, l’interopérabilité des systèmes et l’amélioration continue des pratiques d’intégration.\n \n Intégration inter-applicative \n- Concevoir et développer des flux d’intégration avec Talend (batch et temps réel) \n- Mettre en place des échanges de données entre applications (API, fichiers, messaging) \n- Assurer la maintenance évolutive et corrective des interfaces \n- Gérer l’orchestration et les dépendances entre flux \n Architecture événementielle & messaging \n- Développer des communications asynchrones entre applications \n- Exploiter des solutions de messagerie telles que RabbitMQ ou ActiveMQ \n- Mettre en place des architectures publish/subscribe \n- Gérer les mécanismes de retry, reprise et traitement des erreurs \n Conception technique \n- Participer à la définition des architectures d’intégration (ETL, APIs, messaging) \n- Concevoir des flux robustes, performants et scalables \n- Définir les formats et contrats d’échange (JSON, XML) \n- Garantir la qualité, la cohérence et la traçabilité des données \n APIs & interopérabilité \n- Développer et consommer des APIs REST/SOAP \n- Mettre en œuvre des échanges hybrides synchrones et asynchrones \n- Intégrer des systèmes tiers et partenaires \n Support BI & Data \n- Accompagner ponctuellement les équipes BI sur les traitements ETL \n- Participer à l’analyse et à la résolution d’incidents liés à la donnée \n- Optimiser les flux alimentant les outils décisionnels \n Supervision & qualité \n- Mettre en place des outils de monitoring et d’alerting \n- Assurer la gestion des incidents et la reprise des flux \n- Garantir la performance et la fiabilité des échanges \n Collaboration & amélioration continue \n- Collaborer étroitement avec les équipes métiers et techniques \n- Être force de proposition sur les choix techniques \n- Participer à l’amélioration continue des pratiques d’intégrationCompétences techniques \n- Maîtrise de Talend Data Integration \n- Expérience en intégration inter-applicative \n- Bonne connaissance des systèmes de messaging (RabbitMQ, ActiveMQ…) \n- Bonne maîtrise de SQL et des bases de données relationnelles \n- Expérience avec les APIs REST/SOAP et les formats JSON/XML \n- Compréhension des architectures distribuées et orientées événements \n- Sensibilité aux problématiques BI / Data appréciée \n- Des notions cloud constituent un plus \n Qualités personnelles \n- Esprit d’analyse et capacité à appréhender des systèmes complexes \n- Rigueur et sens de la qualité \n- Polyvalence et autonomie \n- Bon relationnel et esprit d’équipe \n- Curiosité technique et force de proposition \n Formation & expérience \n- Formation Bac+3 à Bac+5 en informatique ou équivalent \n- Expérience de 3 à 5 ans sur des projets Talend / intégration \n- Une expérience en environnement multi-applicatif est fortement appréciée \n\nAvantages\n- Semaine en 4 jours \n- Des projets variés mêlant intégration, architecture et data",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Intelligence artificielle",
+      "SQL",
+      "Vision",
+      "Monitoring de modèles",
+      "Intégration de systèmes",
+      "Scalabilité",
+      "Tests automatisés",
+      "API",
+      "Backend",
+      "Qualité des données",
+      "Intégration continue",
+      "Gestion de projet",
+      "Résolution de problèmes",
+      "Sécurité informatique",
+      "Optimisation des performances",
+      "Analyse de données",
+      "Cybersécurité",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "Pipelines de données",
+      "Veille technologique",
+      "MLOps"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation Bac+3 à Bac+5 en informatique ou équivalent",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation Bac+3 à Bac+5 en informatique ou équivalent",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 24,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:40.724907",
+  "input_hash": "64dfbda5f659d13adeace1e4c0c364df986df396940264e8413ccd35e4ee0619",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

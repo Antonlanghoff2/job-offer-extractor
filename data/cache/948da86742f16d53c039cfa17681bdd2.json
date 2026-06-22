@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:0533357",
+  "value": {
+    "id": "0533357",
+    "intitule": "Data Engineer @IoT - H/F",
+    "entreprise": "Externatic",
+    "territoire": "85 - Roche-sur-Yon",
+    "ville": "85191",
+    "code_postal": "85000",
+    "contrat": "CDI",
+    "date_creation": "2026-03-20",
+    "date": "2026-03-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/0533357",
+    "description": "L'entreprise accompagnée et les missions:\nL'entreprise\nNous accompagnons un acteur industriel, reconnu mondialement pour ses équipements et fortement engagé dans la conception de solutions bas-carbone.\nAu sein de leur pôle dédié à l'électronique et à la connectivité (environ 220 collaborateurs), rattaché à un  site de production réunissant près de 950 personnes, l'innovation technologique est au cœur des enjeux.\n\nPour accompagner l'évolution de ses produits connectés et valoriser les informations générées, le groupe mandate Externatic pour recruter son futur Développeur / Ingénieur Data  (H/F) suite à un départ en retraite.\n\nVos missions\nIntégré(e) au sein d'équipes projets pluridisciplinaires, vous êtes le garant technique de l'exploitation des données issues de l'écosystème IoT.\nVous intervenez de la conception jusqu'au maintien en conditions opérationnelles.\n\nVos responsabilités s'articulent autour des axes suivants :\n- Spécifier et créer les briques techniques permettant d'extraire, de nettoyer et de structurer la donnée des produits connectés,\n- Développer les algorithmes, services et applications répondant aux cas d'usage métiers,\n- Valider l'intégration des solutions dans l'écosystème, en garantissant leur performance, leur pérennité et la maîtrise des coûts associés,\n- Assurer le support technique auprès des équipes Data Science, Marketing et R&D pour les aider à exploiter efficacement la donnée,\n- Étudier les données des tests terrain (field tests) et investiguer les incidents impactant la production,\n- Maintenir une veille technologique active sur l'Intelligence Artificielle et la Data.\n\nTechnos principales / environnement : Python, SQL, Cloud Azure\n\nConditions de travail\n- Salaire : 45 000 à 60 000€ / an pour le profil attendu + package attractif\n- Remote : 1 jour par semaine\n- Localisation : La Roche sur Yon, proche gare\n\nProfil:\nCe que vous apportez\nNous recherchons un(e) expert(e) de la donnée, capable de faire le pont entre la technique pure et les besoins métiers complexes.\nDe formation supérieure spécialisée en Informatique, Data ou IA, vous justifiez d'au moins 3 ans d'expérience dans l'ingénierie Data, idéalement dans un environnement industriel ou IoT.\nVous avez de bonnes connaissances sur Python et des bases de données SQL.\nLe plus : une expérience sur les environnements cloud (Azure, GCP ou AWS).\n\n\nLe process\n- Traitement candidature et RDV avec Alexandre URIEN\n- RDV avec le manager\n- RDV sur site avec l’équipe technique\n\nAvantages:\nLes \"+\" du poste\n\n- Entreprise mobilisée pour la décarbonation\n- Challenge technique (grosse volumétrie de données, ...)\n- Package attractif avec de nombreux avantages\n- Formation et évolution en interne\n- Bien-être au travail\n- Turnover très faible",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Coûts",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Veille technologique",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Sécurité informatique",
+      "Gestion de projet",
+      "Qualité des données",
+      "Backend",
+      "Feature Engineering"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 60000,
+    "teletravail": "remote",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Pour accompagner l'évolution de ses produits connectés et valoriser les informations générées, le groupe mandate Externatic pour recruter son futur Développeur / Ingénieur Data (H/F) suite à un départ en retraite.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:26.948208",
+  "input_hash": "69fbed976e48a08242ad472991f9ff90d2a6620bca2b6687609b9a3797ecc560",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

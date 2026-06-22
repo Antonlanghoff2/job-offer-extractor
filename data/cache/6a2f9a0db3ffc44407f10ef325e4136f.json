@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:4051912",
+  "value": {
+    "id": "4051912",
+    "intitule": "Développeur Java (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4051912",
+    "description": "Qui sommes-nous ? Depuis 2006, chez Versusmind, nous accompagnons les PME et ETI dans leur transformation digitale forts de l'expertise de nos consultants IT. Nous misons sur l'innovation, la collaboration, et l'excellence technique pour créer des solutions sur mesure. Notre promesse : Te proposer des projets stimulants, un cadre bienveillant, et les outils pour grandir techniquement. ________________________________________ Pourquoi nous choisir ? - Impact concret : Tes solutions influencent directement la transformation digitale de nos clients. - Environnement technique riche : Projets variés, outils modernes, et une culture de l'innovation. - Équilibre vie pro/perso : Télétravail jusqu'à 2 jours/semaine, 37 jours de repos/an, et des avantages sociaux complets. Le poste : Le poste Où - À Strasbourg (67). Contrat : CDI - Cadre - Temps plein. Salaire : selon ton expérience. Expérience : 5 ans minimum - Diplôme : BAC+5. Tes missions - Analyser les besoins utilisateurs et être force de proposition dans la conception des solutions. - Concevoir, développer et tester les applications (tests unitaires, d'intégration et de charge) jusqu'à la mise en production. - Garantir la qualité du code et rédiger la documentation technique associée. - Assurer la maintenance corrective et évolutive des applications ainsi que le support utilisateurs. - Partager ton expertise technique et contribuer activement à la dynamique de l'équipe. ________________________________________ Profil recherché : Ton profil - Bac+5 en informatique avec 5 ans d'expérience minimum en développement Java. - Bonne maîtrise de Java, Spring Boot et des architectures microservices. - Connaissance d'un framework JavaScript et expérience avec RabbitMQ, Kafka ou JMS. - À l'aise avec SQL Server ou MongoDB, ainsi que Git, JUnit, IntelliJ, Maven, Sonar, Jenkins, Ansible. - Autonome, rigoureux(se) et respectueux(se) des bonnes pratiques de développement. ________________________________________",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "JavaScript",
+      "SQL",
+      "Tests automatisés",
+      "Analyse des besoins",
+      "Code review",
+      "Documentation technique"
+    ],
+    "salaire_min": 2006,
+    "salaire_max": 2006,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Expérience : 5 ans minimum - Diplôme : BAC+5.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:36.362324",
+  "input_hash": "fbae7a481f8d57aa70a0cfe845f499b19fa5852adb50b90b0c84a4edcfe46f7b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

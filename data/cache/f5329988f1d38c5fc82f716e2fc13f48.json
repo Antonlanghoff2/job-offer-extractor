@@ -1,0 +1,43 @@
+{
+  "key": "offer_extraction:2653953",
+  "value": {
+    "id": "2653953",
+    "intitule": "Senior Data Engineer Snowflake F/H (H/F)",
+    "entreprise": "",
+    "territoire": "59 - Lille",
+    "ville": "59350",
+    "code_postal": "59000",
+    "contrat": "Intérim - 1 Mois",
+    "date_creation": "2026-05-14",
+    "date": "2026-05-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2653953",
+    "description": "Vos missionsRattaché à notre entité Data Driven, vous accompagnez l'un de nos clients dans la modernisation de sa stack technologique. Vos missions principales sont les suivantes :Conception de modèles de données adaptés aux besoins d'analyse (schémas en étoile) et spécification des besoins en collaboration avec les Data Analysts ?Transformation des données brutes en modèles organisés via dbt (SQL) pour faciliter l'exploitation et la lecture des informationsp>Mise en œuvre de la gouvernance pour garantir la fiabilité et la sécurité des données (Snowflake RBAC, gestion des PII, contrôles QA) ?Démocratisation de l'accès aux données par la mise en place de modèles sémantiques et le support aux outils de BI comme Power BI ?Pilotage de la migration vers l'ELT et gestion des pipelines CI/CD (Git, Gitflow, Orchestration) pour assurer la qualité des déploiements ?",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "SQL",
+      "CI/CD",
+      "Qualité des données",
+      "Data Engineering"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:25.349632",
+  "input_hash": "0e6b97a10ba982132c36930a0703fcd58f75924d8a61ec547e3a62611208ce70",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

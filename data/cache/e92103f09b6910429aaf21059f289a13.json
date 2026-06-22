@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:209BKLN",
+  "value": {
+    "id": "209BKLN",
+    "intitule": "Data scientist (H/F)",
+    "entreprise": "AMILTONE",
+    "territoire": "44 - ST HERBLAIN",
+    "ville": "44162",
+    "code_postal": "44800",
+    "contrat": "CDI",
+    "date_creation": "2026-06-01",
+    "date": "2026-06-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209BKLN",
+    "description": "Qui sommes-nous ?\n\nNous sommes passionnés par les nouvelles technologies, et vous ? \n\nRejoindre Amiltone, c'est intégrer des équipes dynamiques et soudées dans le cadre de projets novateurs et ambitieux. Nous relevons les challenges techniques de nos clients et les accompagnons dans leur transformation digitale.\n\nPourquoi choisir Amiltone ? \n\n Amiltone, plus qu'une entreprise, un état d'esprit !\n\nNotre objectif ? Votre épanouissement professionnel !\n\nNous avons à cœur de :\n\nVous accompagner au mieux au travers d'un suivi personnalisé\nVous faire monter en compétences en vous proposant des formations tout au long de votre carrière\nComprendre vos besoins et respecter nos engagements\nVous proposer des missions de qualité avec des technologies innovantes\nCultiver votre potentiel grâce à notre programme de développement personnel Addvise\n\n\nVotre bien-être passe aussi par des activités extraprofessionnelles, c'est pourquoi nous vous proposons des séances sportives animées par nos coachs, soirées pour se retrouver et animations (à l'agence ou en visio), Gaming nights...\n\n\nVos missions ? \n\nEn tant que Data Scientist (H/F), vous serez en charge des missions suivantes :\n\n -  Collecter et préparer des données\n -  Nettoyer, transformer et structurer les données pour les rendre exploitables\n -  Gérer la qualité des données \n -   Construire des modèles prédictifs et des algorythmes de machine learning\n-  Veiller à l'amélioration continue des performances des modèles\n-  Suivre les avancées en data science, machine learning et intelligence artificielle\n\nStack technique:\n-ML Ops (GitLab CI/CD)\n-Python \n-MySQL\n-Flask\n-Tableau/ Power BI\n\nAlors ? Prêt à devenir Amiltonien ?\n\nN'hésitez pas à postuler si vous vous reconnaissez :\n\n- Diplômé d'un bac+5 (école d'ingénieur ou master), vous avez 3 ans d'expérience en tant que Data scienctist.\n\n- Vous aimez découvrir de nouveaux contextes fonctionnels et comprendre les objectifs des applications que vous développez.\n\n- A l'aise dans une organisation agile, vous faites preuve de rigueur et appliquez les standards de qualité Amiltone durant toute la durée des développements.\n\nOutre vos compétences techniques, nous nous intéressons également à votre potentiel et votre motivation.\n\nNos postes sont ouverts aux personnes en situation de handicap.",
+    "metier": "Data scientist",
+    "niveau": "intermediaire",
+    "competences": [
+      "Flask",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Machine learning",
+      "MySQL",
+      "Python",
+      "Data Engineering",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Déploiement de modèles",
+      "MLOps",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 33000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé d'un bac+5 (école d'ingénieur ou master), vous avez 3 ans d'expérience en tant que Data scienctist.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplômé d'un bac+5 (école d'ingénieur ou master), vous avez 3 ans d'expérience en tant que Data scienctist.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Diplômé d'un bac+5 (école d'ingénieur ou master), vous avez 3 ans d'expérience en tant que Data scienctist.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:57.246250",
+  "input_hash": "d1aec40ca8e316f30d6bad0cee55d7b46cc249cb0c18803815a56ef1b94857ed",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

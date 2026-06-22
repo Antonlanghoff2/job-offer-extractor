@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:2997250",
+  "value": {
+    "id": "2997250",
+    "intitule": "Ingénieur Computer Vision (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDI",
+    "date_creation": "2026-05-25",
+    "date": "2026-05-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2997250",
+    "description": "Vous souhaitez contribuer à des technologies de pointe mêlant intelligence artificielle, mathématiques appliquées et traitement avancé de l'image ?\nNotre client, société technologique française reconnue pour son expertise en imagerie numérique et ses innovations logicielles, renforce ses équipes R&D et recherche un(e) Ingénieur en Computer Vision (H/F).\n\n\nLe poste : \n\nVous évoluerez dans un environnement collaboratif réunissant ingénieurs, chercheurs et spécialistes du traitement de l'image autour de projets à forte dimension technologique.\nVotre mission :\nAu sein de l'équipe dédiée au coeur algorithmique des produits, vous participez à la conception, l'évaluation et l'optimisation d'algorithmes avancés de traitement d'image.\nVos principales responsabilités :\n\n- Assurer une veille technologique active en traitement d'image, computer vision et IA\n - Concevoir et prototyper de nouveaux algorithmes pour les futures générations de produits\n - Évaluer différentes approches techniques (traitement du signal classique, deep learning, méthodes hybrides')\n - Participer à l'amélioration des performances et de la qualité visuelle des solutions existantes\n - Contribuer à l'évolution des outils et méthodologies de développement algorithmique\n - Collaborer étroitement avec les équipes R&D, software et produit\n \nExemples de sujets traités :\n\n- Reconstruction et amélioration d'images à partir de données brutes\n - Réduction du bruit et correction d'artefacts\n - Segmentation intelligente et analyse de contenus visuels\n - Optimisation de modèles de deep learning appliqués à l'image\n - Développement de pipelines de traitement haute performance\n \n\n\nProfil recherché : \n\nVotre formation :\nDiplôme d'ingénieur ou Doctorat en : traitement d'image, machine learning ou computer vision.\n10 ans d'expérience en computer vision / image processing / machine learning\nCompétences attendues :\n\n- Solides bases en traitement d'image et/ou deep learning\n - Bonne compréhension des approches mathématiques et algorithmiques\n - Capacité à expérimenter, comparer et optimiser différentes solutions techniques\n - Intérêt fort pour l'innovation et la recherche appliquée\n - Python, Git (indispensables)\n - PyTorch/TensorFlow, C++, ONNX, Core ML\n - Anglais courant\n \nQualités personnelles :\n\n- Curiosité scientifique\n - Goût pour les problématiques complexes\n - Esprit analytique et rigueur\n - Capacité à travailler en équipe dans un environnement exigeant et collaboratif\n \nPourquoi rejoindre ce projet ?\n\n- Des problématiques techniques stimulantes et concrètes\n - Un environnement R&D reconnu pour son excellence\n - Une forte culture de l'innovation\n - Des équipes expertes et passionnées\n - La possibilité de contribuer à des technologies utilisées à l'international\n \nLe poste est à pourvoir en CDI.\n2 jours de télétravail.\n",
+    "metier": "Opérateur / Opératrice de prise de vues",
+    "niveau": "intermediaire",
+    "competences": [
+      "Deep learning",
+      "Git",
+      "Imagerie",
+      "Intelligence artificielle",
+      "Machine learning",
+      "PyTorch",
+      "Python",
+      "TensorFlow",
+      "Vision",
+      "Veille technologique",
+      "Automatisation de pipelines",
+      "Data Engineering",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 10000,
+    "salaire_max": 10000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Notre client, société technologique française reconnue pour son expertise en imagerie numérique et ses innovations logicielles, renforce ses équipes R&D et recherche un(e) Ingénieur en Computer Vision (H/F).",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplôme d'ingénieur ou Doctorat en : traitement d'image, machine learning ou computer vision.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Diplôme d'ingénieur ou Doctorat en : traitement d'image, machine learning ou computer vision.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:05.851115",
+  "input_hash": "fbf7ca47cee66ca2ba1d363ca83c3b5f499116f7ad41a5da0f07bb72867b8f85",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

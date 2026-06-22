@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:2146647",
+  "value": {
+    "id": "2146647",
+    "intitule": "Développeur / Développeuse informatique (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 5e Arrondissement",
+    "ville": "69385",
+    "code_postal": "69005",
+    "contrat": "CDI",
+    "date_creation": "2026-04-30",
+    "date": "2026-04-30",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2146647",
+    "description": "Description du poste :\nRejoindre Fiducial, c'est faire partie d'une entreprise reconnue pour sa stabilité et sa croissance, tout en bénéficiant d'une opportunité unique de travailler dans un contexte multi secteurs, grâce à notre présence dans des environnements riches et variés (expertise comptable, audit, banque, fournitures de bureau, conseil, informatique, cloud, sécurité, média Nous recherchons un(e) Ingénieur Études et Développement, dans un contexte d'évolution des applicatifs du SI : mise en production de SAP très prochainement, évolution de l'écosystème en conséquence.\nLes missions seront les suivantes En collaboration étroite avec le Chef de Projet intégration Applicatifs & MCO Appréhender le fonctionnement de notre SI et ses applications Accompagner les adaptations et évolutions nécessaires dans le cadre de l'intégration de SAP et des autres applicatifs de notre SI Proposer des solutions d'interface à l'aide d'un ETL - Pentaho privilégié. Montée en compétences Pentaho possible dans le cadre de ce poste S'adapter à la situation et proposer des solutions Garantir la livraison de ses tâches dans les délais convenus.\nDescription du profil :\nProfil recherché Profil Ingénieur Études - bac+5 une première expérience réussie dans des fonctions similaires. La maîtrise du langage SQL (T_SQL) est indispensable Avoir pratiqué le déploiement de solutions dans différents environnements dans le cycle de développement Intégrer le monitoring et la supervision de ces interfaces dans des outils comme Grafana, Kibana et Nagios D'un point de vue savoir-être, nous serons attentifs à votre rigueur, à votre sens du service, à votre curiosité et à votre réactivité.\nTous nos postes sont ouverts aux personnes en situation de handicap.\nLe poste est basé à Lyon (quartier Gorge de Loup), en CDI, à proximité des transports en communs / parking disponible.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Délais",
+      "Intelligence artificielle",
+      "SQL",
+      "Vision",
+      "Vue.js",
+      "Gestion de projet"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Rejoindre Fiducial, c'est faire partie d'une entreprise reconnue pour sa stabilité et sa croissance, tout en bénéficiant d'une opportunité unique de travailler dans un contexte multi secteurs, grâce à notre présence dans des environnements riches et variés (expertise comptable, audit, banque, fournitures de bureau, conseil, informatique, cloud, sécurité, média Nous recherchons un(e) Ingénieur Études et Développement, dans un contexte d'évolution des applicatifs du SI : mise en production de SAP très prochainement, évolution de l'écosystème en conséquence.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché Profil Ingénieur Études - bac+5 une première expérience réussie dans des fonctions similaires.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:19.392909",
+  "input_hash": "e4b6468912875da50ba9605a4e82ac5a52aa9e256b229c5ec9497d43e9c4c4dd",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

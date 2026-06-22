@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:3534922",
+  "value": {
+    "id": "3534922",
+    "intitule": "Ingénieur Production Applicative (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Beaurecueil",
+    "ville": "13012",
+    "code_postal": "13100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3534922",
+    "description": "Le poste en quelques mots :Nous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l’exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré. Vous interviendrez sur des plateformes industrialisées intégrant Kubernetes et des solutions d’automatisation. Ce que vous allez faire si vous nous rejoignez : Assurer la production des applications et leur maintien en conditions opérationnelles Gérer les mises en production et coordonner les déploiements Appliquer les bonnes pratiques ITIL pour la gestion des incidents, changements et problèmes Administrer et superviser les environnements basés sur Kubernetes Automatiser les tâches opérationnelles via Shell et Python Surveiller la performance et la disponibilité des applications Rédiger et maintenir la documentation technique et les procédures d’exploitation Collaborer avec les équipes DevOps et développement pour améliorer la stabilité des plateformes",
+    "metier": "Responsable d'unité de production industrielle",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Python",
+      "Documentation technique",
+      "Gestion de projet",
+      "Monitoring de modèles",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Le poste en quelques mots :Nous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l’exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:06.562027",
+  "input_hash": "da6057f6dc000ca3cafdfa57ccd4086b02e0b6ca4078c82bb17cdc2eccfa71f6",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

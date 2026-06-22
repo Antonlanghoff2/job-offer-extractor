@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:209SZLF",
+  "value": {
+    "id": "209SZLF",
+    "intitule": "Développeur commercial APPRENTI H/F",
+    "entreprise": "CFI FORMATION",
+    "territoire": "63 - Vic-le-Comte",
+    "ville": "63457",
+    "code_postal": "63270",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209SZLF",
+    "description": "Rejoins CFI Formation à Clermont-Ferrand et propulse ta carrière avec nos formations en alternance : BTS, Bachelors, Mastères et certifications professionnelles, toutes reconnues par l'État ! L'opportunité idéale pour allier apprentissage et expérience professionnelle.\n\nTu souhaites préparer un Bachelor commercial tout en te formant sur le terrain ? Nous avons le poste qu'il te faut !\n\nNous recrutons pour une entreprise un.e apprenti.e developpeur.euse commercial  H/F\n\nAux côtés du dirigeant et accompagné(e) dans votre montée en compétences, vous participerez activement au développement de l'entreprise autour de trois axes : le développement commercial, le suivi et la structuration commerciale ainsi que la communication et la valorisation de la marque.\nL'objectif est de construire progressivement une démarche commerciale structurée, durable et efficace.\nDéveloppement commercial\n- Identifier et prospecter de nouveaux clients professionnels\n- Développer et suivre un portefeuille clients\n- Réaliser des relances commerciales\n- Participer à la fidélisation des clientsw existants\n- Préparer des rendez-vous et actions commerciales\n- Participer à des salons et événements professionnels \nSuivi et structuration commerciale\n- Mettre à jour les fichiers clients et outils de suivi\n- Participer au pilotage de l'activité commerciale\n- Suivre les actions de prospection et les retours clients\n- Contribuer à la mise en place d'outils simples de suivi et d'organisation commerciale\nCommunication & valorisation de la marque\n- Participer à la valorisation des produits et de l'image de marque\n- Contribuer aux actions de communication digitale et commerciale\n- Participer à la mise en avant des nouveautés et offres comme\n\nQualités recherchées\nBon relationnel\nAisance téléphonique\nÉnergie et envie d'apprendre\nSens de l'organisation\nCapacité à être autonome progressivement\nCuriosité commerciale\nCapacité à s'adapter à différents interlocuteurs\nSensibilité aux produits artisanaux et premium",
+    "metier": "Responsable du développement commercial",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Rejoins CFI Formation à Clermont-Ferrand et propulse ta carrière avec nos formations en alternance : BTS, Bachelors, Mastères et certifications professionnelles, toutes reconnues par l'État !",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Tu souhaites préparer un Bachelor commercial tout en te formant sur le terrain ?",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:21.058997",
+  "input_hash": "5cf6f0ffd6378c8bd20ae3146596224db940e9a7b03d4ca99e115c0d663cbbec",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

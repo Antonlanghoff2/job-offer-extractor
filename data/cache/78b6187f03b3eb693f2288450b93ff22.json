@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3130473",
+  "value": {
+    "id": "3130473",
+    "intitule": "Ingénieur Développement Logiciel Sénior (H/F)",
+    "entreprise": "",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3130473",
+    "description": "Et si vous embarquiez vers les nouvelles technologies ?\n\nFiliale du groupe industriel ICE, Médiane Système, est une société d'ingénierie innovante spécialisée en électronique, systèmes embarqués et informatique industrielle. Médiane Système a construit son identité sur une expertise technique de haut niveau en proposant à ses clients, des prestations d'accompagnement au travers de ses Départements R&D (DRD) et ConSulting (DCS).\n\nPrésente en France (région Parisienne, Rhône-Alpes, Midi-Pyrénées, PACA, Grand Ouest), en Belgique et en Italie, Médiane Système est partenaire de grands comptes industriels et de nombreuses PME. Du secteur automobile au médical, en passant par l'énergie, le ferroviaire, l'aéronautique ou bien les télécoms. Médiane Système intervient exclusivement sur les métiers de l'ingénierie système (logiciel embarqué, logiciel applicatif pour l'industrie, électronique numérique et analogique, banc de tests) dans des environnements technologiques de pointe.\n\nCréée par des ingénieurs, Médiane Système, est une entreprise technique à taille humaine, proche de ses collaborateurs, qui privilégie depuis plus de 30 ans, le développement des compétences et l'épanouissement de ses salariés.\n\nLe poste : \n\nDans le cadre du développement des activités d'un de nos clients dans le secteur de l'industrie, nous recherchons un développeur Firmware expérimenté, ayant déjà piloter une activité ou un projet. \nVous interviendrez sur la conception, le développement et la validation de logiciels embarqués.\n\nVous aurez en charge de : \n- Concevoir des logiciels embarqués sur des produits intégré à une équipe pluridisciplinaire\n- Assurer la veille technologique et participer à l'évolution des produits\n- S'assurer que les développements firmware respectent les procédures internes de notre client (spécs logiciel embarqué, test firmware sur cible, doc conception logiciel, codage, validation, traçabilité, suivi qualité)\n- Assurer le support du Firmware aux équipes (support client, mise en production, ?).\n\nProfil recherché : \n\nVous êtes de formation informatique embarqué, vous disposez d'un diplôme Bac + 5 en génie électrique et informatique\nVous avez une expérience de 10 ans minimum dans la programmation bas niveau et le lead technique \nVous connaissez les bonnes pratiques ainsi que le mise en œuvre des protocoles de communication\n\nRémunération entre 50K€ et 55K€ selon profil\nTitres restaurant SWILE (10,5 €/Jour travaillé - PEC 60% employeur) \nPossibilité télétravail (Indemnité 2 € /Jour)\nPrise en charge du transport \nJours enfants malades rémunérés\nJours absence rémunérés pour renouveler ou monter son dossier RQTH (référent handicap) \nPrimes de cooptation et d'apporteurs d'affaires\n1 jour de congé supplémentaire tous les 5 ans\nFidélité récompensée (tous les 5 ans carte cadeau)\n1% Logement\nCSE (chèques cadeaux / chèques ANCV / arbres de Noël / billetterie)",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Gestion de projet",
+      "Déploiement de modèles",
+      "Qualité des données",
+      "Architecture microservices",
+      "Backend",
+      "MLOps",
+      "Design patterns",
+      "Veille technologique"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 30000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "diplôme Bac + 5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes de formation informatique embarqué, vous disposez d'un diplôme Bac + 5 en génie électrique et informatique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "9 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:26.387929",
+  "input_hash": "2b3449a6d7f3795a1bce91b4ec8e6c5c8fd178727a7373f5cb51dede7e4173bc",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

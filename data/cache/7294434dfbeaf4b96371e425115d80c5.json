@@ -1,0 +1,306 @@
+{
+  "key": "trends:65 - Bordes",
+  "value": {
+    "territoire": "65 - Bordes",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Gestion de projet": 2,
+      "Intelligence artificielle": 2,
+      "Anglais Professionnel": 1,
+      "Aéronautique": 1,
+      "Cahier des charges": 1,
+      "Pilotage D'activités": 1,
+      "Python": 1,
+      "Vue.js": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Anglais Professionnel",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Anglais Professionnel": 1
+        }
+      },
+      {
+        "nom": "Aéronautique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Aéronautique": 1
+        }
+      },
+      {
+        "nom": "Cahier des charges",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Cahier des charges": 1
+        }
+      },
+      {
+        "nom": "Pilotage D'activités",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Pilotage d'activités": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Vue.js": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Anglais Professionnel": {
+        "Anglais Professionnel": 1
+      },
+      "Aéronautique": {
+        "Aéronautique": 1
+      },
+      "Cahier des charges": {
+        "Cahier des charges": 1
+      },
+      "Pilotage D'activités": {
+        "Pilotage d'activités": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Vue.js": {
+        "Vue.js": 1
+      }
+    },
+    "metiers": {
+      "Chef / Cheffe de projet étude et développement informatique": 1,
+      "Ingénieur / Ingénieure R&D en industrie": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDD - 24 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Aéronautique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Pilotage D'activités",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pilotage D'activités",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Pilotage D'activités",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Cahier des charges",
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Vue.js",
+        "Anglais Professionnel",
+        "Aéronautique"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Gestion de projet",
+        "Pilotage D'activités"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3950630",
+        "intitule": "Ingénieur calculateur / Ingénieure calculatrice en industrie (H/F)",
+        "entreprise": "",
+        "territoire": "65 - Bordes",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3950630"
+      },
+      {
+        "id": "3533881",
+        "intitule": "Alternance-Assistant(e) Chef de Projet-Dév. Logiciel (H/F)",
+        "entreprise": "Safran",
+        "territoire": "65 - Bordes",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3533881"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3950630",
+        "intitule": "Ingénieur calculateur / Ingénieure calculatrice en industrie (H/F)",
+        "entreprise": "",
+        "territoire": "65 - Bordes",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3950630"
+      },
+      {
+        "id": "3533881",
+        "intitule": "Alternance-Assistant(e) Chef de Projet-Dév. Logiciel (H/F)",
+        "entreprise": "Safran",
+        "territoire": "65 - Bordes",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3533881"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:00:40.961778",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

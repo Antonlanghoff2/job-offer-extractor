@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:3711130",
+  "value": {
+    "id": "3711130",
+    "intitule": "Ingénieur Informatique Industrielle F/H - Informatique industrielle (H/F)",
+    "entreprise": "AKKODIS DIGITAL SAS",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-11",
+    "date": "2026-06-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3711130",
+    "description": "Descriptif du poste:\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Grand Est et recrute un Ingénieur Informatique Industrielle H/F en CDI à Strasbourg. Ce poste s'inscrit dans le secteur Healthcare & Medical, au sein d'un bureau d'études dynamique, où vous contribuez à la conception, au développement et à la mise en œuvre de solutions informatiques industrielles pour des environnements de production exigeants.\n\n\n \n\nResponsabilités principales :\n\n\n* Concevoir et développer des systèmes informatiques industriels adaptés aux besoins de production du secteur médical.\n* Installer des serveurs et réaliser l'étude fonctionnelle des systèmes, incluant la rédaction de la documentation technique.\n* Intégrer et configurer des automates programmables (PLC) et des systèmes SCADA, en utilisant notamment Tia Portal et des outils tels que Intouch, Wonderware, FTview, PCvue, Win CC.\n* Superviser la maintenance, l'optimisation et la validation des équipements informatiques industriels.\n* Participer à la gestion de projets techniques en collaboration avec des équipes pluridisciplinaires.\n* Analyser les données de production pour améliorer la performance et garantir la conformité aux normes de sécurité.\n* Assurer le support technique et accompagner les utilisateurs dans l'environnement industriel.\n\n \n\nEnvironnement de travail :\n\nVous évoluerez au sein d'un bureau d'études de Strasbourg, dans une équipe pluridisciplinaire, avec une forte interaction entre les différents intervenants techniques et clients. L'environnement technique intègre des solutions d'automatisation, de contrôle-commande et d'interface homme-machine (IHM/HMI), avec des méthodologies orientées projet et une exigence de documentation et de validation. La communication, la rigueur et la capacité d'adaptation sont valorisées pour répondre aux enjeux du secteur médical.\n\n\n\n\nProfil recherché:\nDe formation Bac+5 ou équivalent, idéalement diplômé(e) d'une école d'ingénieurs spécialisée en informatique industrielle, automatisme ou contrôle-commande, vous justifiez de minimum 3 ans d'expérience sur un poste similaire, de préférence dans le secteur des process pharmaceutiques ou médicaux. Vous maîtrisez les langages de programmation industriels (Ladder, Structured Text, C), les automates programmables, les systèmes SCADA et les outils comme Tia Portal, Intouch, Wonderware, FTview, PCvue, Win CC. Des compétences en réseaux industriels (Modbus, Profibus, Ethernet/IP), en gestion de projet et en respect des normes de sécurité sont attendues. Une aisance relationnelle, une rigueur organisationnelle et une curiosité technique seront appréciées. Un anglais courant est indispensable pour évoluer dans un contexte international et collaboratif.\n\n\n Akkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Vue.js",
+      "Analyse de données",
+      "Scalabilité",
+      "Cybersécurité",
+      "Data Engineering",
+      "Model drift",
+      "Monitoring de modèles",
+      "Pipelines de données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Grand Est et recrute un Ingénieur Informatique Industrielle H/F en CDI à Strasbourg.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "De formation Bac+5 ou équivalent, idéalement diplômé(e) d'une école d'ingénieurs spécialisée en informatique industrielle, automatisme ou contrôle-commande, vous justifiez de minimum 3 ans d'expérience sur un poste similaire, de préférence dans le secteur des process pharmaceutiques ou médicaux.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:42.227309",
+  "input_hash": "c22251fb4ef4fbaf5a736b76fc66233511c07c57cf57f7d4ef4f9cb8a6441e42",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:3460103",
+  "value": {
+    "id": "3460103",
+    "intitule": "Automaticien - Grenoble, France (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3460103",
+    "description": "Ce que nous allons accomplir ensemble :  Nous recherchons un ingénieur passionné par les technologies d'automatisation pour intégrer notre équipe et jouer un rôle clé dans la conception, l'optimisation et la maintenance de nos systèmes automatisés. Au sein dun environnement dynamique et en constante évolution, vous aurez lopportunité de travailler sur des projets innovants, en collaboration avec une équipe dexperts multidisciplinaires.  Vous serez responsable de l'amélioration continue de nos processus industriels, de la gestion de nos installations automatisées et contribuerez activement à l'innovation et à la performance globale de notre entreprise.  Votre mission (...si vous lacceptezstrong>  Votre rôle en tant qu'Automaticien sera de prendre en charge la conception, le développement et la mise en service de nos applications automates industriels :  Développement des applications automates industriels :   Elaboration des spécifications logicielles et analyse fonctionnelle en collaboration avec les équipes techniques et métiers Conception générale et détaillée des programmes automates Programmation et codage  2. Tests et validation  Réalisations de tests : simulation, unitaires et d'intégration. Validation sur machines réelles : exécution de test, analyse résultats.  3. Analyse et résolution de problèmes techniques sur machines 4. Réalisation de la documentation technique des logiciels automates : documents de spécification/conception, plans & rapports de tests, rapports dintervention, notices de réglage et dutilisation Votre Stack de Jeu :  C++ - C - Python - PLC - Matlab - Simulink - Siemens - Schneider  Vous :  Diplômé d'une école d'ingénieurs ou d'une formation Bac+5 en automatisme, vous possédez minimum 2 ans d'expériences en automatisme dans le domaine de l'industrie (machines spéciales, automatisation de ligne de production, etc...) Vous êtes méthodique, organisé et autonome Vous possédez un bon esprit de synthèse ainsi que de bonnes qualités relationnelles",
+    "metier": "Taxidermiste",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ce que nous allons accomplir ensemble : Nous recherchons un ingénieur passionné par les technologies d'automatisation pour intégrer notre équipe et jouer un rôle clé dans la conception, l'optimisation et la maintenance de nos systèmes automatisés.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Réalisation de la documentation technique des logiciels automates : documents de spécification/conception, plans & rapports de tests, rapports dintervention, notices de réglage et dutilisation Votre Stack de Jeu : C++ - C - Python - PLC - Matlab - Simulink - Siemens - Schneider Vous : Diplômé d'une école d'ingénieurs ou d'une formation Bac+5 en automatisme, vous possédez minimum 2 ans d'expériences en automatisme dans le domaine de l'industrie (machines spéciales, automatisation de ligne de production, etc...) Vous êtes méthodique, organisé et autonome Vous possédez un bon esprit de synthèse ainsi que de bonnes qualités relationnelles",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:08.833424",
+  "input_hash": "ff3645daae052fd5091bb7225febb249031722609b555cedf04b79f0a0585d8c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

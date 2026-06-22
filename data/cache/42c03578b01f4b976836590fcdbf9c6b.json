@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:4037633",
+  "value": {
+    "id": "4037633",
+    "intitule": "CDD - Auditeur-trice interne data et Coordinateur-rice - F/H (H/F)",
+    "entreprise": "Banque Populaire Nord",
+    "territoire": "59 - Marcq-en-Barœul",
+    "ville": "59378",
+    "code_postal": "59700",
+    "contrat": "CDD - 6 Mois",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4037633",
+    "description": "Poste et missions\n\nLa Banque Populaire du Nord, recherche un(e) collaborateur(rice) talentueux(euse) et polyvalent(e) pour renforcer son équipe d'Audit Interne.\n\nCette opportunité unique s'adresse à un(e) professionnel(le) passionné(e), capable de conjuguer expertise technique et compréhension des enjeux métiers.\n\nVotre rôle sera double : apporter un support aux missions d'audit interne dans l'exploitation de la data et jouer un rôle clé dans la gestion de projets liés à une migration de système d'information.\n\nVos missions principales (50% Audit Interne / 50% Gestion de Projet SI) :\n\nSupport aux missions d'audit interne :\n\n * Au-delà du développement et maintien de requêtes : Vous contribuerez directement et activement aux analyses préparatoires des missions d'audit interne et aux travaux d'investigation, par le développement et la mise à jour de requêtes\n * Support à la documentation et au reporting : Vous contribuerez à la rédaction des rapports d'audit et à la communication des conclusions auprès des différentes parties prenantes.\n * Maintien des outils et tableaux de bord : Vous interviendrez dans le maintien des outils de pilotage de la direction en étant force de proposition sur leur optimisation et leur documentation.\n\nGestion de Projet SI (Migration) : En tant que créateur-trice de lien, vous serez un véritable appui transverse aux équipes GTM (Groupe de Travail Métier) et interviendrez en facilitateur pour apporter de la méthodologie.\n\n * Structurer et cadrer les travaux des GTM (méthodes, outils, planning)\n\n * Piloter les reportings et suivre l'avancement des actions avec le responsable de GTM\n * Assurer la coordination et la transversalité entre les différents GTM et les thèmes transverses\n * Accompagner les équipes métiers dans l'appropriation des méthodes et bonnes pratiques\n * Contribuer à fluidifier les échanges et à libérer les experts métiers pour qu'ils se concentrent sur leur cœur d'expertise\n* \n\nLe portrait du profil recherché :\n\n * Tu es diplômé(e) de l'enseignement supérieur de niveau Bac + 4/5 (Université, école de commerce, école d'ingénieur) ou justifies d'un niveau équivalent\n * Tu disposes idéalement d'une première expérience dans un établissement bancaire, en gestion de projet ou en data analyse\n * Tu es parfaitement à l'aise avec les outils bureautiques, notamment Excel et PowerBi Desktop\n * Tu disposes de compétences en matière de traitement, de requêtage d'analyse et de synthèse de données (SQL, VBA, Python)\n * Tu es rigoureux(euse) et organisé(e)\n * Tu sais adapter ton discours à tes interlocuteurs\n * Ta force de proposition et ton sens de l'esprit d'équipe seront des atouts essentiels\n * Ton sens du résultat et ta rigueur te permettent d'atteindre les objectifs qui te sont fixés tout en respectant les délais impartis",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Délais",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Analyse de données",
+      "Data Engineering",
+      "Monitoring de modèles",
+      "Veille technologique"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 50000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac + 4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Tu es diplômé(e) de l'enseignement supérieur de niveau Bac + 4/5 (Université, école de commerce, école d'ingénieur) ou justifies d'un niveau équivalent",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Tu es diplômé(e) de l'enseignement supérieur de niveau Bac + 4/5 (Université, école de commerce, école d'ingénieur) ou justifies d'un niveau équivalent",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:53.641399",
+  "input_hash": "453374117b2292e50ba19f75ea23a03edf6ce1823f8413ed3d3c24adeae26f63",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

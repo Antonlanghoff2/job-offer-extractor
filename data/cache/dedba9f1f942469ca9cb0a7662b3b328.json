@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:209ZLVD",
+  "value": {
+    "id": "209ZLVD",
+    "intitule": "Ingénieur Data / ETL (H/F)",
+    "entreprise": "ROSARA",
+    "territoire": "21 - Dijon",
+    "ville": "21231",
+    "code_postal": "21000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZLVD",
+    "description": "ROSARA est un cabinet de conseil en ressources humaines qui accompagne les entreprises dans leurs recrutements stratégiques. Nous sommes mandatés par notre client, une entreprise innovante dans le secteur de l'IT spécialisé dans l'environnement, pour dénicher leur futur talent.\n\nNotre client est leader sur son marché, avec une équipe de 50 personnes et une dynamique de croissance. Il se distingue par une excellente ambiance de travail, un cadre de travail agréable et des valeurs humaines fortes. Leurs projets ont une réelle utilité publique en contribuant à la gestion et à l'optimisation des ressources environnementales.\n\nVOTRE MISSION\n\nAfin de les accompagner dans le développement de leur pôle dédié au traitement des données, nous recherchons un Ingénieur Data (H/F), pour compléter une équipe composée d'une dizaine de personnes. Vous évoluerez sur un poste équilibré entre technique et relation client. Vous serez le garant du traitement d'intégration et d'exportation des données dans le logiciel métier via SSIS.\n\nVos missions :\n- Développer et maintenir des flux ETL pour gérer les données d'import et d'export\n- Être en contact régulier avec les clients (téléphone, visio) afin d'accompagner les clients dans la mise en forme de leurs données\n- Produire et automatiser des reportings pour optimiser l'analyse des données   \n- Collaborer avec les équipes internes pour garantir la fluidité des processus d'intégration de nouveau client\n- Maintenir la documentation technique des scripts SSIS\n\n\nLe profil recherché\n\nNous recherchons un profil à l'aise aussi bien sur la technique que dans la relation client. Que vous soyez junior ou expérimenté, votre capacité à comprendre les enjeux métier et à interagir avec les clients sera essentielle.\n\nVous avez déjà travaillé avec un ETL (SSIS, Talend, Informatica. peu importe lequel !) et maîtrisez SQL. Vous avez une première expérience en reporting et êtes capable de structurer des analyses de données pertinentes. Votre sens du service et votre esprit d'équipe vous permettent d'échanger efficacement avec les clients et les équipes internes.\n\nPOURQUOI POSTULER ?\n\nRejoindre cette entreprise, c'est intégrer une équipe dynamique et bienveillante, où la bonne ambiance n'est pas un vain mot. Ici, pas d'open-space bruyant : chaque collaborateur dispose d'un bureau spacieux, partagé avec seulement deux ou trois collègues, au sein d'un cadre de travail de 300m2 pensé pour le bien-être de tous.\n\nVous bénéficierez d'un rythme de travail équilibré avec une organisation en 39h par semaine, accompagnée de RTT.\n\nCôté rémunération, l'entreprise propose un Plan d'Épargne Entreprise attractif et une Prime d'intéressement égalitaire pour tous ses collaborateurs. Les avantages sociaux sont pensés pour votre bien-être : une excellente mutuelle prenant en charge votre famille à 100%, une prime vacances, ainsi que des tickets restaurant.\n\nSon faible turn-over est le reflet d'une culture d'entreprise solide, où chacun trouve sa place et s'investit sur le long terme. D'ailleurs, 90% des salariés sont déjà actionnaires, et vous aurez peut-être l'opportunité de rejoindre cette aventure !\n\nEnfin, son emplacement en centre-ville de Dijon (21), proche des transports en commun, vous garantit un accès facile et rapide, et surtout vous serez proche de tout !",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Relation Client",
+      "SQL",
+      "Documentation technique",
+      "Data Engineering",
+      "Qualité des données",
+      "Analyse de données",
+      "Déploiement de modèles",
+      "Model drift",
+      "Protection des données",
+      "Sécurité informatique",
+      "Pipelines de données",
+      "Tests automatisés",
+      "MLOps"
+    ],
+    "salaire_min": 32000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Afin de les accompagner dans le développement de leur pôle dédié au traitement des données, nous recherchons un Ingénieur Data (H/F), pour compléter une équipe composée d'une dizaine de personnes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:17.838309",
+  "input_hash": "e0d9243a2c8ea7408e6151264827beb084813ea1cc3923727e1fc0df34a13074",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

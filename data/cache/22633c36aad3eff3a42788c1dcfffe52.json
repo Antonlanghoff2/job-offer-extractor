@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:3130455",
+  "value": {
+    "id": "3130455",
+    "intitule": "INGENIEUR V&V FONCTIONNEL (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 1er Arrondissement",
+    "ville": "69381",
+    "code_postal": "69001",
+    "contrat": "CDI",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3130455",
+    "description": "Et si vous embarquiez vers les nouvelles technologies ?\n\nFiliale du groupe industriel ICE, Médiane Système, est une société d'ingénierie innovante spécialisée en électronique, systèmes embarqués et informatique industrielle. Médiane Système a construit son identité sur une expertise technique de haut niveau en proposant à ses clients, des prestations d'accompagnement au travers de ses départements R&D (DRD) et ConSulting (DCS).\n\nPrésente en France (région Parisienne, Rhône-Alpes, Midi-Pyrénées, PACA) et en Belgique, Médiane Système est partenaire de grands comptes industriels et de nombreuses PME. Du secteur automobile au médical, en passant par l'énergie, le ferroviaire, l'aéronautique ou bien les télécoms. Médiane Système intervient exclusivement sur les métiers de l'ingénierie système (logiciel embarqué, logiciel applicatif pour l'industrie, électronique numérique et analogique, banc de tests) dans des environnements technologiques de pointe.\n\nCréée par des ingénieurs, Médiane Système, est une entreprise technique à taille humaine, proche de ses collaborateurs, qui privilégie depuis plus de 30 ans, le développement des compétences et l'épanouissement de ses salariés.\n\nLe poste : \n\nNous recherchons pour notre client un Ingénieur V&V fonctionnel F/H dont l'activité principale portera sur un produit d'acquisition et de traitement vidéo qui vise à détecter l'état de la signalisation latérale de voies ferrées non équipées de système de signalisation communicant.\n\nLa stratégie de validation que vous devrez mettre en place sera basée en grande partie sur de la massification des tests et de la simulation de l'environnement par imagerie 3D.\n\nA ce titre, vous devrez définir la stratégie de validation, imaginer les cas de tests (avec identification des classes d'équivalences et des catégories de tests), comprendre et adapter l'environnement de tests (maitrise de python et idéalement TestStand) afin d'automatiser la majorité des tests.\n\nVous serez également en charge de la mise jour documentaire (cas de tests et rapports de tests), de l'identification et la formalisation des anomalies, ainsi que des investigations.\n\nVous serez amené à travailler sur des équipements embarqué temps réel avec des aspects réseaux (CAN, Ethernet, UDP, TCP?) importants. Une expérience dans la validation d'applications logicielles critiques et/ou sécuritaires ferroviaires (SIL4/EN50128) est un plus.\n\nProfil recherché : \n\nDe profil Bac+5 dans le domaine industriel, vous avez au moins 3 ans d'expérience dans la validation système avec des compétences en flux vidéos (acquisition / traitements) et en développement pour l'automatisation des tests.\n\nVous êtes reconnu pour votre rigueur, votre curiosité technique et votre autonomie.\n\nLa maitrise du langage Python facilitera votre intégration dans le poste.\n\nVous avez envie d'intégrer une entreprise (championne 2022 du pôle systématic) forte de ses valeurs qui valorise ses collaborateurs par la proximité de son management, la formation, une politique RSE développée (médaille platinium Ecovadis 2021), une politique Qualité de Vie au Travail au cœur de ses préoccupations. Par l'adhésion à nos valeurs, vous aurez à cœur de représenter notre entreprise auprès de votre entourage.\n\nEn retour, nous inscrirons Médiane Système de façon significative sur votre chemin de carrière.",
+    "metier": "Ingénieur / Ingénieure systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Acquisition",
+      "Aéronautique",
+      "Ferroviaire",
+      "Imagerie",
+      "Intelligence artificielle",
+      "Python",
+      "Tests automatisés",
+      "Intégration continue",
+      "Gestion de projet"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 30000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons pour notre client un Ingénieur V&V fonctionnel F/H dont l'activité principale portera sur un produit d'acquisition et de traitement vidéo qui vise à détecter l'état de la signalisation latérale de voies ferrées non équipées de système de signalisation communicant.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De profil Bac+5 dans le domaine industriel, vous avez au moins 3 ans d'expérience dans la validation système avec des compétences en flux vidéos (acquisition / traitements) et en développement pour l'automatisation des tests.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:16.196598",
+  "input_hash": "66fbb887412f6892fe8fdcc9c34e9ce460b00078a87c1b450bb26755ecb256cc",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

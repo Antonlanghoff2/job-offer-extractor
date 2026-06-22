@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:209FFCT",
+  "value": {
+    "id": "209FFCT",
+    "intitule": "Développeur confirmé H/F",
+    "entreprise": "CRIT INTERIM",
+    "territoire": "76 - Port-Jérôme-sur-Seine",
+    "ville": "76476",
+    "code_postal": "76170",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FFCT",
+    "description": "Dans le cadre du développement de son activité, nous recherchons pour notre client, un développeur confirmé.\n\nVous rejoignez une équipe dynamique pour concevoir, faire évoluer et optimiser nos applications, tout en contribuant activement à l'amélioration de notre environnement technique.\n\nVos missions\nOptimiser et faire évoluer la chaîne de développement (CI/CD)\nConcevoir, architecturer et développer de nouvelles fonctionnalités (de l'idée à la mise en production)\nParticiper à la refonte des applications existantes\nContribuer aux projets en cours et aux évolutions techniques\nAccompagner et faire monter en compétence les développeurs *Profil recherché*\n- Diplômé(e) d'un Bac+5 en Informatique, avec au moins 5 ans d'expérience sur un poste similaire\n- Autonome, organisé(e) et capable de gérer les priorités\n- Esprit d'équipe, sens du service et orientation client\n\nCompétences techniques\n- Maîtrise des langages C# et Angular\n- Bonne connaissance des bases de données (SQL Server, MySQL...)\n- Expérience en CI/CD (GitLab) et intégration d'outils type SonarQube, Checkmarx\n- Maîtrise de Docker\n- Sensibilité à la veille technologique et aux bonnes pratiques de développement.\n\nRejoignez une entreprise dynamique et innovante, où vos compétences techniques seront mises à profit pour contribuer au succès de projets ambitieux.\n",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Git",
+      "MySQL",
+      "SQL",
+      "Déploiement de modèles",
+      "MLOps",
+      "Sécurité informatique",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Intégration continue",
+      "Scalabilité",
+      "Veille technologique"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'un Bac+5 en Informatique, avec au moins 5 ans d'expérience sur un poste similaire",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:50.574126",
+  "input_hash": "224a7ca2dad52ded63dde2b4389f6b841c7585548e81d4519daaae84ab1d361d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

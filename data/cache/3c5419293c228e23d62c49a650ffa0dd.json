@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:3594301",
+  "value": {
+    "id": "3594301",
+    "intitule": "Data Engineer H/F",
+    "entreprise": "JEMS",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3594301",
+    "description": "RESPONSABILITÉS : Nous recherchons un(e) Data Engineer capable de trouver des solutions innovantes et robustes à l'ensemble des problématiques Data. Vous aurez la charge de : • Participer à la conception et réalisation d'une solution Data depuis l'acquisition jusqu'à l'exploitation de la donnée en accompagnant la réflexion des directions métiers • Identifier, collecter et intégrer les données nécessaires à la résolution de problématiques métier et opérationnelles • Garantir la qualité des données en mettant en place les outils de mesure et de suivi adéquats en appliquant les règles de Data Gouvernance et de Data Management • Transcrire des besoins métier en règles de gestion data • Industrialiser le déploiement de vos réalisations à travers l'implémentation de tests unitaires, d'intégration et de non-régression PROFIL RECHERCHÉ : En tant que Data Engineer vous maîtrisez : • Le langage SQL • Un langage objet (Python, JAVA, Scala) • Un framework de calcul distribué • L'intégration continue (Git, JUnit, SonarQube, Jenkins) • Un cloud provider (AWS, GCP, Azure) ou une distribution Big Data (Hortonworks, Cloudera, Datastax) • Les concepts de la modélisation relationnelle et non-relationnelle Diplômé(e) d'une école d'ingénieur ou d'une université, vous justifiez d'au minimum 3 ans d'expérience professionnelle dans un contexte projet Data. Rigoureux(se), proactif(ve) et autonome vous restez en veille technologique et êtes force de proposition. Vous êtes capable de prendre de la hauteur et vous adapter aux enjeux du projet.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Acquisition",
+      "Azure",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "SQL",
+      "Tests automatisés",
+      "Qualité des données",
+      "Résolution de problèmes",
+      "Intégration continue"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous aurez la charge de : • Participer à la conception et réalisation d'une solution Data depuis l'acquisition jusqu'à l'exploitation de la donnée en accompagnant la réflexion des directions métiers • Identifier, collecter et intégrer les données nécessaires à la résolution de problématiques métier et opérationnelles • Garantir la qualité des données en mettant en place les outils de mesure et de suivi adéquats en appliquant les règles de Data Gouvernance et de Data Management • Transcrire des besoins métier en règles de gestion data • Industrialiser le déploiement de vos réalisations à travers l'implémentation de tests unitaires, d'intégration et de non-régression PROFIL RECHERCHÉ : En tant que Data Engineer vous maîtrisez : • Le langage SQL • Un langage objet (Python, JAVA, Scala) • Un framework de calcul distribué • L'intégration continue (Git, JUnit, SonarQube, Jenkins) • Un cloud provider (AWS, GCP, Azure) ou une distribution Big Data (Hortonworks, Cloudera, Datastax) • Les concepts de la modélisation relationnelle et non-relationnelle Diplômé(e) d'une école d'ingénieur ou d'une université, vous justifiez d'au minimum 3 ans d'expérience professionnelle dans un contexte projet Data.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:22.886820",
+  "input_hash": "37b74d0a5ca9e3a27ef88d9ac1a760114b296268f98b5c3db540dc1e47dca2a2",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

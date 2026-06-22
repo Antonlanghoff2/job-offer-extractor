@@ -1,0 +1,79 @@
+{
+  "key": "offer_extraction:3429034",
+  "value": {
+    "id": "3429034",
+    "intitule": "Ingénieur développement logiciel H/F",
+    "entreprise": "AKKODIS",
+    "territoire": "56 - Lorient",
+    "ville": "56121",
+    "code_postal": "56100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3429034",
+    "description": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Bretagne et recrute un Ingénieur développement logiciel H/F en CDI à Lorient. Ce poste s'adresse à des ingénieur(e)s passionné(e)s par le développement logiciel dans le secteur défense, souhaitant contribuer à des projets innovants au sein d'un environnement technique exigeant.\n\n \n\nResponsabilités principales :\n\n * Développer et maintenir des applications logicielles selon les spécifications des projets.\n * Collaborer avec des équipes pluridisciplinaires pour définir et implémenter des solutions logicielles adaptées.\n * Effectuer des revues de code et garantir le respect des standards de développement.\n * Participer à la conception et à l'architecture des systèmes logiciels.\n * Diagnostiquer et résoudre les anomalies ou défauts logiciels.\n * Rédiger et mettre à jour la documentation technique associée aux développements.\n * Réaliser des tests unitaires et d'intégration pour assurer la qualité des livrables.\n * Assurer une veille technologique et proposer des axes d'amélioration continue.\n\n \n\nEnvironnement de travail :\n\nVous évoluerez au sein d'une équipe dynamique dans un contexte industriel lié à la défense, en interaction avec des expert(e)s techniques et des chefs de projet. La méthodologie de travail privilégie l'agilité, la collaboration et l'innovation technique. L'utilisation de frameworks Agile, de pratiques DevOps et d'outils de gestion de version fait partie intégrante du quotidien. La gestion de projets complexes et la capacité d'adaptation sont essentielles dans cet environnement stimulant.\nProfil du candidat\nDiplômé(e) d'un master en ingénierie ou d'une école d'ingénieur, vous justifiez de 3 à 5 ans d'expérience en développement logiciel, idéalement dans le secteur défense ou industriel. Vous maîtrisez les langages Java, C++ ou Python, ainsi que les systèmes de gestion de versions tels que Git. Vous avez une solide connaissance des méthodologies de développement, du cycle de vie logiciel, des bases de données SQL et des systèmes Linux ou Unix. Une expérience en gestion de projets Agile, CI/CD, et sur des plateformes cloud (AWS, Azure) serait appréciée. Votre capacité à résoudre des problèmes complexes, à travailler en équipe et à communiquer efficacement sont des atouts majeurs. Une première expérience en management opérationnel est recherchée.\n\n \n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Linux",
+      "Python",
+      "SQL",
+      "Vue.js",
+      "Tests automatisés",
+      "Maintenance applicative",
+      "Code review",
+      "Qualité des données",
+      "Veille technologique",
+      "Cybersécurité",
+      "API",
+      "Backend",
+      "Sécurité informatique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Bretagne et recrute un Ingénieur développement logiciel H/F en CDI à Lorient.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'un master en ingénierie ou d'une école d'ingénieur, vous justifiez de 3 à 5 ans d'expérience en développement logiciel, idéalement dans le secteur défense ou industriel.",
+        "confidence": 0.7
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'un master en ingénierie ou d'une école d'ingénieur, vous justifiez de 3 à 5 ans d'expérience en développement logiciel, idéalement dans le secteur défense ou industriel.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 20,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:24.288082",
+  "input_hash": "c40c515a2797ae4dc4d9bc5dabed3abf1a6282ab38e70b983a423d312bd003c3",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

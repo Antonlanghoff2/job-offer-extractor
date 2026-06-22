@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3314583",
+  "value": {
+    "id": "3314583",
+    "intitule": "Software Architect - Calibration & Orchestration (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 15e Arrondissement",
+    "ville": "75115",
+    "code_postal": "75015",
+    "contrat": "CDI",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3314583",
+    "description": "Alice & Bob développe le premier ordinateur quantique universel tolérant aux fautes, capable de résoudre les problèmes les plus complexes au monde. L'ordinateur quantique que nous concevons repose sur un nouveau type de qubit supraconducteur : le qubit de Schrödinger « cat » ?. Comparés aux autres plateformes supraconductrices, les qubits cat ont la capacité remarquable d'implémenter la correction d'erreurs quantiques de manière autonome. Nous sommes une équipe diverse de plus de 140 talents issus de plus de 20 pays, réunis autour d'un objectif commun : révolutionner l'informatique grâce à une machine quantique tolérante aux fautes et réellement exploitable. Êtes-vous prêt à relever des défis sans précédent et à contribuer à transformer la technologie - Rejoignez-nous et participons ensemble à la construction du futur de l'informatique quantique. L'équipe Calibration automatise les calibrations de notre Quantum Processing Unit (QPU) à qubits cat afin d'en maximiser les performances et de maintenir le processeur en condition opérationnelle. En tant que Calibration Software Architect, vous êtes responsable de la conception de haut niveau et de l'évolution de la stack logicielle de calibration automatique. Vous définissez les interfaces avec les logiciels de mesure et la base de données de calibration, établissez des standards de fiabilité et d'observabilité, et veillez à ce que la stack puisse évoluer des prototypes de laboratoire vers un usage en production. Vous travaillez en étroite collaboration avec les physiciens référents, les ingénieurs en automatisation et les équipes plateforme afin de traduire des besoins scientifiques en architectures logicielles robustes et maintenables. Le poste : - Définir et maintenir l'architecture logicielle globale pour l'orchestration des calibrations, le stockage, les contrôles qualité et les outils opérateurs. - Concevoir des interfaces claires entre les blocs de calibration, le contrôleur d'orchestration / DAG, le matériel d'acquisition et la base de données de calibration. - Définir des standards d'API afin que les blocs de calibration automatique soient composables, versionnés, simples d'utilisation et reproductibles. - Piloter l'intégration transverse avec les équipes plateforme, firmware et logiciels de mesure. - Mettre en place des patterns de tests et de déploiement pour le CI/CD, les releases et les stratégies de rollback. - Accompagner les ingénieurs lors des revues de conception, des arbitrages d'architecture et de la définition des roadmaps techniques long terme. Profil recherché : - Plus de 5 ans d'expérience en ingénierie logicielle, dont au moins 3 ans dans des rôles d'architecture logicielle ou système. - Solide expérience dans la conception de systèmes distribués et de patterns d'intégration pour le contrôle matériel ou l'instrumentation. - Expérience avérée dans la définition et la mise en oeuvre d'architectures claires et efficaces. - Maîtrise de Python et des environnements CI/CD. - Excellentes compétences en communication et expérience de coordination d'équipes pluridisciplinaires.",
+    "metier": "Consultant fonctionnel / Consultante fonctionnelle des systèmes d'information",
+    "niveau": "intermediaire",
+    "competences": [
+      "Acquisition",
+      "Instrumentation",
+      "Intelligence artificielle",
+      "Python",
+      "Vue.js",
+      "CI/CD",
+      "Déploiement de modèles",
+      "Design patterns",
+      "Intégration continue",
+      "Data Engineering",
+      "Optimisation des performances"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:12.282935",
+  "input_hash": "47de1c4edc1c313bc3edec93406e6476258ca511f2e4213d27ce67b50676c44d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:2868940",
+  "value": {
+    "id": "2868940",
+    "intitule": "Manager (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-05-21",
+    "date": "2026-05-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2868940",
+    "description": "Description du poste Assurer le pilotage quotidien de la liquidité des fonds Evergreen (fonds ouverts) avec une vision court / moyen terme***Développer et mettre en place des modèles (approche probabiliste) pour suivre performance, risques de liquidité et scénarios de stress***Définir les méthodes de suivi, KPIs et tableaux de bord pour un monitoring robuste et actionnable***Mettre en place et animer un comité de pilotage des fonds Evergreen (préparation, supports, suivi des décisions)***Réaliser une veille de marché sur les produits Evergreen : tendances, structurations, pratiques, innovations***Contribuer à la mise en place / structuration de nouveaux véhicules d'investissement, en coordination avec les équipes concernées***Optimiser la trésorerie des fonds (multi-stratégies / multi-fonds) et proposer des axes d'amélioration***Coordonner avec les responsables d'équipes d'investissement et la direction financière pour fluidifier les arbitrages et sécuriser l'exécution\nDescription du profil :\nFormation & expérience***Bac +5 (école de commerce, ingénieur, université ou équivalent)***7 ans minimum d'expérience réussie en contrôle financier, Risk, modélisation, ou fonctions proches dans l'asset management / private markets\nCompétences \"must-have\"***Solide compréhension des fonds ouverts (souscriptions/rachats) et des enjeux de liquidité***Expérience en modélisation appliquée à des fonds d'investissement (prévision, scénarios, stress tests, probabilités Capacité à structurer une approche data / KPI / dashboards pour le pilotage opérationnel***Anglais courant (écrit + oral)***Rigueur, sens de l'organisation, capacité à prioriser et à sécuriser les échéances\nAtouts \"nice-to-have\"***Connaissance d'outils Private Equity / fonds : eFront, iLEVEL, BO ou équivalents***Sensibilité aux modèles opérationnels de gestion de fonds et à l'expérience / satisfaction investisseurs***Aisance dans des environnements multi-interlocuteurs (investissement, finance, ops)\nSoft skills***Proactivité, autonomie, dynamisme***Très bonne aisance rédactionnelle & capacité à produire des supports clairs pour la gouvernance\nSalaire: 80-95k€ (selon expérience) + variable + intéressement et participation",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Vision",
+      "Anglais professionnel",
+      "Déploiement de modèles",
+      "MLOps",
+      "Analyse de données",
+      "Intégration continue"
+    ],
+    "salaire_min": 80000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation & expérience***Bac +5 (école de commerce, ingénieur, université ou équivalent)***7 ans minimum d'expérience réussie en contrôle financier, Risk, modélisation, ou fonctions proches dans l'asset management / private markets",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Formation & expérience***Bac +5 (école de commerce, ingénieur, université ou équivalent)***7 ans minimum d'expérience réussie en contrôle financier, Risk, modélisation, ou fonctions proches dans l'asset management / private markets",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "6 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:40.578814",
+  "input_hash": "8cabb5922864fa0e54a3ebb7dc1f2a7cfdcaf514f36d5f9b01c2d6276bb944e3",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

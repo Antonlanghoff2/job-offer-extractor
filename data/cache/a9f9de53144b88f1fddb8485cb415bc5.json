@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:209WFNB",
+  "value": {
+    "id": "209WFNB",
+    "intitule": "Ingénieur Développement Logiciel Embarqué Temps Réel (H/F)",
+    "entreprise": "CARE TECHNOLOGY CONSULTING",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209WFNB",
+    "description": "Contexte\nDans le cadre de ses projets spatiaux innovants, le client recherche un(e) Ingénieur(e) Développement Logiciel Embarqué Temps Réel expérimenté(e) afin de renforcer ses équipes en phase d'exécution.\n\nVous interviendrez sur le développement, l'intégration et la maintenance de logiciels embarqués critiques dans un environnement Linux temps réel, en collaboration étroite avec les équipes systèmes, électronique et logiciel.\n\nMissions principales\nDéveloppement logiciel embarqué\nConcevoir et développer des logiciels embarqués temps réel en langage C.\nParticiper à l'architecture logicielle des systèmes embarqués.\nDévelopper et maintenir les couches basses du système.\nRéaliser les tests unitaires, d'intégration et de validation.\nEnvironnement Linux embarqué\nDévelopper et intégrer des distributions Linux embarquées.\nConfigurer et maintenir les environnements Yocto et Buildroot.\nParticiper à l'optimisation des performances et de la robustesse des systèmes.\nAssurer le portage logiciel sur différentes plateformes matérielles.\nBootloader et intégration système\nConfigurer et adapter U-Boot.\nParticiper aux activités de démarrage, chargement et mise à jour des systèmes embarqués.\nRéaliser les phases d'intégration matérielle et logicielle.\nValidation et support technique\nAnalyser et corriger les anomalies.\nParticiper aux campagnes de tests et de qualification.\nAssurer le support technique auprès des équipes projet.\nContribuer à l'amélioration continue des processus de développement.\n\nProfil recherché\nFormation\nDiplôme d'Ingénieur ou Bac+5 en Informatique Industrielle, Systèmes Embarqués, Électronique ou équivalent.\nExpérience\nMinimum 5 ans d'expérience en développement logiciel embarqué.\nExpérience significative dans des environnements temps réel.\nUne expérience dans les secteurs spatial, aéronautique, défense ou industriel critique est fortement appréciée.\n\nCompétences techniques indispensables\nDéveloppement embarqué en C\nLinux embarqué\nSystèmes temps réel\nYocto Project\nBuildroot\nU-Boot\nIntégration logicielle embarquée\nDébogage bas niveau\nCompétences appréciées\nScripts Shell / Bash\nGit\nIntégration continue\nDrivers Linux\nArchitecture ARM\nProtocoles de communication embarqués\n\nQualités personnelles\nRigueur et autonomie.\nEsprit d'analyse et de résolution de problèmes.\nCapacité à travailler dans un environnement technique exigeant.\nBon relationnel et esprit d'équipe.\nForce de proposition.\n\nConditions\nMission en phase d'exécution.\nPrésence requise à temps plein sur site client (Full Insitu).\nDémarrage : dès que possible.\nDurée : à définir selon projet.\n\nPrérequis\nProfil habilitable.\nNationalité compatible avec les contraintes d'accès aux projets sensibles.\nDisponibilité pour travailler en environnement sécurisé.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Résolution de problèmes",
+      "Tests automatisés",
+      "Développement logiciel",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Cybersécurité",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Data Engineering",
+      "Qualité des données"
+    ],
+    "salaire_min": 38000,
+    "salaire_max": 0,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre de ses projets spatiaux innovants, le client recherche un(e) Ingénieur(e) Développement Logiciel Embarqué Temps Réel expérimenté(e) afin de renforcer ses équipes en phase d'exécution.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplôme d'Ingénieur ou Bac+5 en Informatique Industrielle, Systèmes Embarqués, Électronique ou équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:10.094903",
+  "input_hash": "595f0a34904d871dc35b19519c95df2838b36cf41380aa6a6693fa95e9a54d8d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

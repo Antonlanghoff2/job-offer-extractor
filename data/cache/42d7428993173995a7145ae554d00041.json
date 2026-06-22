@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:3972087",
+  "value": {
+    "id": "3972087",
+    "intitule": "Ingénieur Software industriel (H/F)",
+    "entreprise": "",
+    "territoire": "91 - Orsay",
+    "ville": "91471",
+    "code_postal": "91400",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3972087",
+    "description": "Notre client est l'un des leaders dans le domaine des infrastructures de radiocommunications numériques\nEn tant qu'Ingénieur Software, voici vos missionsAssurer la continuité et l'amélioration de la ligne de produits existants \n- Programmer en langage C et intervenir sur des architectures FPGA Xilinx (VHDL, Vivado).\n- Contribuer à la conception, à l'intégration et à l'optimisation de fonctionnalités en temps réel.\n- Participer aux différentes phases du cycle de développement : étude, conception, prototypage, tests, validation et mise en service.\n- Collaborer étroitement avec les équipes internes (ingénierie, déploiement, support, SAV) pour garantir la qualité et la performance des solutionsSalaire selon profil :  K € bruts/an\n- Prime d'intéressementbruts/an)\n- Prime plan d'épargne\n- Cadre Forfait jours : 218j/an\n- 1 jour de télétravail par semaine \n- Tickets restaurant",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Feature Engineering",
+      "Qualité des données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieur Software, voici vos missionsAssurer la continuité et l'amélioration de la ligne de produits existants",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:40.450492",
+  "input_hash": "133f32b8fc7a85e6f31eaec1e89dcac354507b90ffd0e530ce5df98e96de4163",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

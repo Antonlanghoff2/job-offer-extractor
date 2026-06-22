@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:3746439",
+  "value": {
+    "id": "3746439",
+    "intitule": "Alternance - Développeur Web (H/F)",
+    "entreprise": "",
+    "territoire": "14 - Marolles",
+    "ville": "14403",
+    "code_postal": "14100",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3746439",
+    "description": "Vous souhaitez intégrer une formation en digital IT au sein de l'E2SE Business School de Caen et vous êtes à la recherche d'une alternance en BTS Services Informatiques aux Organisations ou bien en BAC+3 Chef de Projet Systèmes, Réseaux et Sécurité ? Un fournisseur près de Lisieux (14) recherche un Développeur Web (H/F) en alternance. Missions : Préparation et configuration des postes informatiques (ordinateurs, imprimantes, périphériques) Installation et mise à jour des logiciels et équipements Maintenance et supervision du réseau informatique Diagnostic et dépannage des incidents matériels et logiciels Assistance et support aux utilisateurs au quotidien Accompagnement des collaborateurs dans l'utilisation de l'ERP et des outils métiers Gestion des comptes utilisateurs et des accès Participation à l'amélioration continue de l'infrastructure informatique Rédaction de procédures et documentation technique Rigoureux Sens des responsabilités Fiabilité dans l'exécution des tâches Écoute active Capacité à garder son calme face aux imprévus",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Vision",
+      "Documentation technique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 15000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": false,
+        "source_sentence": "Vous souhaitez intégrer une formation en digital IT au sein de l'E2SE Business School de Caen et vous êtes à la recherche d'une alternance en BTS Services Informatiques aux Organisations ou bien en BAC+3 Chef de Projet Systèmes, Réseaux et Sécurité ?",
+        "confidence": 0.7
+      },
+      {
+        "label": "BAC+3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Vous souhaitez intégrer une formation en digital IT au sein de l'E2SE Business School de Caen et vous êtes à la recherche d'une alternance en BTS Services Informatiques aux Organisations ou bien en BAC+3 Chef de Projet Systèmes, Réseaux et Sécurité ?",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:49.086827",
+  "input_hash": "8c3f0a46a038c0f6e0d2caf6f5bcc4d9baa2e3f5b323a359952fe4e5c9a6bd02",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:3615337",
+  "value": {
+    "id": "3615337",
+    "intitule": "Développeur C# H/F",
+    "entreprise": "",
+    "territoire": "75 - Paris 13e Arrondissement",
+    "ville": "75113",
+    "code_postal": "75013",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3615337",
+    "description": "Description: Accompagné(e) par nos chefs de projets informatiques et en lien direct avec les équipes métiers, vous interviendrez sur l'ensemble du cycle de vie des projets : - Conception : Recueil des besoins auprès des utilisateurs et proposition de solutions techniques robustes en coordination avec l'équipe. - Développement : Implémentation propre, performante et respectueuse des bonnes pratiques de code. - Qualité & Déploiement : Tests, accompagnement des utilisateurs lors de la recette et mise en production. - Évolution : Participation à des projets transverses d'envergure au sein du groupe, vous offrant une forte montée en compétences. Exigences: De formation informatique (Master ou école d'ingénieur) vous justifiez d'une expérience de 1 à 3 ans sur un poste similaire demandant une grande technicité (stage et alternance inclus) Les compétences techniques indispensables: C#, .NET Core, Javascript, SQL, Git, Entity Framework. Nous recherchons une personne dynamique, ayant de compétences techniques solides mais avec une forte capacité à monter en compétences. Socle technique : Profil avec des bases théoriques et pratiques solides, structurées autour des environnements suivants : 1. Backend & Base de données - Langage & Framework : Maîtrise de C# et de l'écosystème .NET Core. - Architecture : Conception et développement de Web API (REST). - Persistance : Utilisation d'Entity Framework et maîtrise des requêtes SQL Server. 2. Frontend & Environnements Modernes - Frameworks : Pratique de React (ou forte appétence pour basculer dessus) et de Node.js. - Langages : Maîtrise de JavaScript / TypeScript. 3. DevOps, Industrialisation & CI/CD - Versionning : Utilisation quotidienne de GitHub (gestion des branches, PR, code review). - Culture DevOps : Sensibilité aux pratiques DevOps, idéalement avec l'utilisation d'outils comme Azure DevOps ou des notions sur Kubernetes. Avantages: 13ème mois + Participation + CE + RIE/TR",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "Azure",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "JavaScript",
+      "Kubernetes",
+      "React",
+      "SQL",
+      "TypeScript",
+      "Déploiement de modèles",
+      "Gestion de projet",
+      "Product Management",
+      "Travail en équipe",
+      "MLOps"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Exigences: De formation informatique (Master ou école d'ingénieur) vous justifiez d'une expérience de 1 à 3 ans sur un poste similaire demandant une grande technicité (stage et alternance inclus) Les compétences techniques indispensables: C#, .NET Core, Javascript, SQL, Git, Entity Framework.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Exigences: De formation informatique (Master ou école d'ingénieur) vous justifiez d'une expérience de 1 à 3 ans sur un poste similaire demandant une grande technicité (stage et alternance inclus) Les compétences techniques indispensables: C#, .NET Core, Javascript, SQL, Git, Entity Framework.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:53.517551",
+  "input_hash": "c804dd205553babf3f2fe4cc30ea3522bb002f2f16c16320519986027b7e77c0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

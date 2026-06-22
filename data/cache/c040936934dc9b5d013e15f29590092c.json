@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3208523",
+  "value": {
+    "id": "3208523",
+    "intitule": "DATA ANALYST F/H - Système, réseaux, données (H/F)",
+    "entreprise": "PROMAN",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-05-30",
+    "date": "2026-05-30",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3208523",
+    "description": "Descriptif du poste:\n\n \n\nContexte du recrutement :\n\nAujourd'hui, nos systèmes (ERP métier, CRM, outils RH, paie, finance, outils terrain, plateformes VMS de commande intérim) contiennent une mine d'informations.\n\nVotre mission : transformer cette donnée en levier concret d'amélioration de la performance pour le réseau d'agences et les fonctions support.Vous serez le point de contact privilégié des opérationnels, directeurs régionaux, responsables d'agence, managers métier, pour leur donner accès à une donnée fiable, lisible et actionnable.\n\nVos missions :\n\nVous interviendrez de bout en bout sur la chaîne analytique :\n\nComprendre le besoin métier :\n\nVous échangez avec les opérations pour identifier les irritants, les zones d'angle mort et les opportunités d'amélioration (productivité agence, taux de transformation, fidélisation intérimaires, marge, délais de placement, etc.).\n\nAller chercher la donnée partout :\n\nVous explorez nos différents systèmes pour rassembler les sources pertinentes, qualifier la donnée et la croiser. Cela inclut notamment l'interrogation de nos plateformes VMS via leurs API REST pour récupérer les données de commande intérim de nos grands comptes.\n\nConstruire des analyses et des dashboards :\n\nVous produisez des tableaux de bord et analyses ad hoc sur notre socle MyReport, et vous contribuez activement à la réflexion sur l'évolution de notre stack de reporting.\n\nAccompagner l'adoption :\n\nVous formez et embarquez les utilisateurs métier, animez des points de restitution, et vous assurez que les outils livrés sont réellement utilisés au quotidien.\n\nMesurer l'impact : \n\nVous suivez les effets concrets de vos travaux sur les KPI opérationnels et itérez en conséquence.\n\n\n\nNotre rencontre :\n\nUn premier entretien téléphonique avec notre équipe recrutement, puis une rencontre avec notre Direction Opérationnelle.\n\nCe que nous vous offrons : \n\nUne mutuelle et un Comité d'entreprise\n\nUne carte restaurant ( SWILE )\n\nUn programme de formation digital et présentiel\n\nTous nos postes sont ouverts aux personnes en situation de handicap.\n \n\nProfil recherché:\n\n \n\nCe qu'il vous faut pour réussir :\n\nVous justifiez de minimum 5 ans d'expérience en analyse de données, idéalement dans un environnement multi-sources et orienté business (services, RH, distribution, retail, travail temporaire).\n\nCôté technique, vous êtes solide sur :\n\nSQL avancé (jointures complexes, fonctions analytiques, optimisation)\n\nLa consommation d'API REST pour récupérer de la donnée depuis des systèmes tiers (authentification, pagination, gestion des erreurs).Un ou plusieurs outils de dataviz : une expérience sur MyReport est un vrai plus, une maîtrise de Power BI est appréciée et sera un atout pour faire évoluer notre stack ; une expérience sur Sisense est également un plus.La modélisation de données et la compréhension des architectures décisionnelles.La manipulation de données avec Python est un plus appréciable.\n\nAu-delà de la technique, vous êtes reconnu pour :\n\nVotre capacité à dialoguer avec des interlocuteurs non techniques et à traduire un besoin flou en analyse exploitable.\n\nVotre esprit de synthèse et votre rigueur.\n\nVotre autonomie et votre orientation résultats.\n\nVotre envie de comprendre le métier en profondeur, pas seulement d'enchaîner des requêtes\n\nUne connaissance du secteur du travail temporaire, du recrutement ou des RH est un atout, mais n'est pas indispensable.\n ",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Analyse de données",
+      "Délais",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Power BI",
+      "Data Engineering",
+      "Feature Engineering",
+      "Airflow"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": "présentiel",
+    "diplomes_requis": [],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:49.778052",
+  "input_hash": "9912770cfaa96d8309c74e33934a2c4a1e5b41caea127c2e0eaf835febf2b689",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

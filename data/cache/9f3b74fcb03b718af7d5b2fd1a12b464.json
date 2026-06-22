@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:4043649",
+  "value": {
+    "id": "4043649",
+    "intitule": "Data management & governance specialist - 66370 - 66870 (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "Intérim - 1 Mois",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4043649",
+    "description": "Dans le cadre de ses besoins, Airbus recherche deux profils spécialisés en gestion et structuration de la donnée afin de renforcer ses équipes sur des enjeux de modélisation, qualité et gouvernance des données. Les deux profils sont : Business Data Modeler – Manufacturing Engineering & Master Data Improvement Specialist.Ces opportunités s’inscrivent dans un objectif commun de fiabilisation, structuration et valorisation des données au service des opérations. Missions communes aux deux postes : Collecter, structurer et analyser des données issues de systèmes multiples Participer à la définition et à l’amélioration des modèles de données Garantir la qualité, la cohérence et la disponibilité des données Traduire les besoins métiers en solutions data (modèles, standards, règles) Participer à des projets transverses en lien avec la data (IT, métiers, digital) Contribuer à l’amélioration continue des pratiques de gestion des données Spécificités des postes :Business Data Modeler – Manufacturing Engineering Conception et évolution de modèles de données liés aux activités industrielles Interaction forte avec les équipes Manufacturing / Engineering Utilisation de SAP et contribution à des data products Master Data Improvement Specialist Mise en place et suivi des standards de gouvernance des données Amélioration de la qualité et de la cohérence des référentiels (master data) Contribution à la stratégie data et à des initiatives transverses groupe",
+    "metier": "Yield manager",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Qualité des données",
+      "Analyse de données",
+      "Déploiement de modèles",
+      "MLOps",
+      "Design patterns"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Les deux profils sont : Business Data Modeler – Manufacturing Engineering & Master Data Improvement Specialist.Ces opportunités s’inscrivent dans un objectif commun de fiabilisation, structuration et valorisation des données au service des opérations.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:53.583041",
+  "input_hash": "08b26dd65cd010feee4850a0aaf98d510fd492883bbd213fb2e1be3bfcc9409a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

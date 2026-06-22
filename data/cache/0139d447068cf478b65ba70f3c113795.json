@@ -1,0 +1,89 @@
+{
+  "key": "offer_extraction:3842610",
+  "value": {
+    "id": "3842610",
+    "intitule": "Développeur intelligence artificielle (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3842610",
+    "description": "Description du poste :\nMissions***Participer au développement et à l'amélioration d'algorithmes de machine learning simples (classification, régression)***Contribuer au nettoyage, traitement et analyse de données (data preprocessing, visualisation)***Aider à l' entraînement et à l'évaluation de modèles existants***Participer au déploiement de modèles via des API simples (ex : endpoints REST)***Contribuer à l' optimisation basique des performances (paramètres, temps de calcul)***Réaliser une veille technologique encadrée sur les outils et tendances en IA***Appliquer les bonnes pratiques de gestion et de protection des données\nCompétences techniques***Bonnes bases en Python***Connaissances introductives en machine learning (Scikit-learn, notions de TensorFlow ou PyTorch)***Bases en bases de données (SQL, notions NoSQL)***Notions en développement d'API (Flask ou FastAPI)***Sensibilisation aux outils comme Docker (un plus, non obligatoire)***Notions générales en cloud et data appréciées\nDescription du profil Étudiant(e) en fin de BAC+2 (BTS, BUT, prépa, etc.) intégrant un Bachelor (BAC+3) orienté informatique / data / IA***Curieux(se), motivé(e) par l'intelligence artificielle et le développement***Capacité à apprendre rapidement et à travailler en équipe\nPourquoi rejoindre NEXA Bootcamp technique offert avant la rentrée***Accompagnement personnalisé pour trouver ton alternance***Coaching CV & entretiens***Job dating avec nos entreprises partenaires",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "Analyse de données",
+      "Docker",
+      "FastAPI",
+      "Flask",
+      "Intelligence artificielle",
+      "Machine learning",
+      "NoSQL",
+      "Protection Des Données",
+      "PyTorch",
+      "Python",
+      "SQL",
+      "TensorFlow",
+      "scikit-learn",
+      "Data Engineering",
+      "MLOps"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Description du profil Étudiant(e) en fin de BAC+2 (BTS, BUT, prépa, etc.) intégrant un Bachelor (BAC+3) orienté informatique / data / IA***Curieux(se), motivé(e) par l'intelligence artificielle et le développement***Capacité à apprendre rapidement et à travailler en équipe",
+        "confidence": 0.9
+      },
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Description du profil Étudiant(e) en fin de BAC+2 (BTS, BUT, prépa, etc.) intégrant un Bachelor (BAC+3) orienté informatique / data / IA***Curieux(se), motivé(e) par l'intelligence artificielle et le développement***Capacité à apprendre rapidement et à travailler en équipe",
+        "confidence": 0.9
+      },
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Description du profil Étudiant(e) en fin de BAC+2 (BTS, BUT, prépa, etc.) intégrant un Bachelor (BAC+3) orienté informatique / data / IA***Curieux(se), motivé(e) par l'intelligence artificielle et le développement***Capacité à apprendre rapidement et à travailler en équipe",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Description du profil Étudiant(e) en fin de BAC+2 (BTS, BUT, prépa, etc.) intégrant un Bachelor (BAC+3) orienté informatique / data / IA***Curieux(se), motivé(e) par l'intelligence artificielle et le développement***Capacité à apprendre rapidement et à travailler en équipe",
+        "confidence": 0.9
+      },
+      {
+        "label": "BAC+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Description du profil Étudiant(e) en fin de BAC+2 (BTS, BUT, prépa, etc.) intégrant un Bachelor (BAC+3) orienté informatique / data / IA***Curieux(se), motivé(e) par l'intelligence artificielle et le développement***Capacité à apprendre rapidement et à travailler en équipe",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 16,
+      "diplomes_count": 5,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:00.704514",
+  "input_hash": "daab9d5f6ef80cf36b66b0f6fb15de53956bd7c9d3c9eb8458cee8cef3be3014",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

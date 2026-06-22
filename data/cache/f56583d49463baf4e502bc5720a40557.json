@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:5766132",
+  "value": {
+    "id": "5766132",
+    "intitule": "INGENIEUR  DÉVELOPPEUR FULL STACK (JAVA SPRING BOOT) (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 7e Arrondissement",
+    "ville": "75107",
+    "code_postal": "75007",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2025-11-25",
+    "date": "2025-11-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5766132",
+    "description": "Nous recrutons  pour le compte de notre client, l'Assemblée nationale, un Ingénieur développeur fullstack spécialisé sur les technologies JAVA SPRING BOOT (H/F).Au sein d'une équipe constituée d'un chef de projet et de d'un développeurs , vous travaillerez sur plusieurs applications pour le domaine métier législatif. Dans ce cadre, vous partagerez votre temps entre le développement de nouvelles fonctionnalités full stack et la maintenance des applications existantes. Vous participerez à la conception technique et assurerez la traduction technique des spécifications fonctionnelles. Vous pourrez avancer en autonomie sur vos sujets grâce à une proximité de la maîtrise d'ouvrage. Vous participerez à la qualité du code et aux bonnes pratiques de programmation telles que les tests unitaires, les revues de code.\nVous devrez porter une attention particulière à la fiabilité, la performance, et la maintenabilité de votre code. Vous ferez part de vos idées, des difficultés rencontrées, de l'avancement des projets individuels et des résultats avec l'équipe et les managers.\nL'environnement technologique existant est le suivant : Java, Spring boot, Angular, ExtJs, Oracle/PostgreSQL, Gitlab /APIs rest.\nVous pourrez accéder à une plateforme de formation de type UDEMY.\n\n\nCe poste, basé dans le 7 e arrondissement de PARIS, est à pourvoir dans un premier temps en CDD de 3 ans, renouvelable. Un Contrat à durée indéterminé  pourrait le cas échéant vous être proposé à l'issue du premier ou du second CDD. Possibilité de télétravail à hauteur de 2 jours par semaine (après période d'essai).\nLa rémunération annuelle brute est à définir sur une fourchette comprise entre 60 et 70 K€ brut annuel en fonction de l'expérience .",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Cahier des charges",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "PostgreSQL",
+      "Vue.js",
+      "Spring"
+    ],
+    "salaire_min": 60000,
+    "salaire_max": 70000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recrutons pour le compte de notre client, l'Assemblée nationale, un Ingénieur développeur fullstack spécialisé sur les technologies JAVA SPRING BOOT (H/F).Au sein d'une équipe constituée d'un chef de projet et de d'un développeurs , vous travaillerez sur plusieurs applications pour le domaine métier législatif.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:54:26.875683",
+  "input_hash": "a6ec621474f8b81af5d8df38bf3b512b6e9362f712503ad0f2cd6a56dab206c8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3841840",
+  "value": {
+    "id": "3841840",
+    "intitule": "Ingénieur / Ingénieure systèmes industriels (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3841840",
+    "description": "Description du poste :\nAu sein de l'entreprise partenaire, tu participeras à Concevoir et déployer des architectures systèmes et réseaux sécurisées***Contribuer au déploiement du SMSI (SecOps & gouvernance sécurité)***Apporter une expertise cybersécurité au SI : SOC, IAM, forensique, gestion des incidents***Participer à l'amélioration continue de la posture de sécurité\n(Missions évolutives selon ton profil et ton projet professionnel.)\nDescription du profil Bac+3/4/5 informatique ou cybersécurité***Bonnes connaissances en réseaux (TCP/IP, DNS, DHCP)***Environnements Linux/Windows Server***Notions cloud (AWS, Azure) et virtualisation appréciées***Intérêt pour les normes de sécurité (ISO 27001, gouvernance IT)\nLes compétences en scripting (Bash, PowerShell ou Python) et une première expérience en cybersécurité sont un plus.\nEsprit d'analyse, rigueur et travail en équipe seront essentiels pour réussir Pourquoi rejoindre NEXA Bootcamp technique avant la rentrée***Accompagnement personnalisé pour décrocher ton alternance***Coaching CV & préparation aux entretiens***Job dating avec nos entreprises partenaires",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Réseaux informatiques",
+      "Scalabilité",
+      "Backend",
+      "Qualité des données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Description du profil Bac+3/4/5 informatique ou cybersécurité***Bonnes connaissances en réseaux (TCP/IP, DNS, DHCP)***Environnements Linux/Windows Server***Notions cloud (AWS, Azure) et virtualisation appréciées***Intérêt pour les normes de sécurité (ISO 27001, gouvernance IT)",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:48.878646",
+  "input_hash": "5688e94e0cf665ac76783e7d6f24b088d2334ccc95174458331bfd45ede004cd",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

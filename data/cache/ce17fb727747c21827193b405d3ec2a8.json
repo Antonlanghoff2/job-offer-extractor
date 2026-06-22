@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:3938394",
+  "value": {
+    "id": "3938394",
+    "intitule": "Lead Tech Full-Stack Cybersécurité (SIEM + Outil de Veille Vulnérabilités) - Défense & Sécurité - Rennes (H/F)",
+    "entreprise": "",
+    "territoire": "35 - Rennes",
+    "ville": "35238",
+    "code_postal": "35000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3938394",
+    "description": "Description de l'entrepriseSopra Steria, acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d’activité et des technologies à une approche collaborative. Sopra Steria place l’humain au cœur de son action et s’engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2025, le Groupe a réalisé un chiffre d’affaires de 5,6 milliards d’euros. The world is how we shape it  Description du posteLe secteur Défense et Sécurité doit relever de nombreux défis : assurer l'efficacité opérationnelle de nos clients, Concevoir et mettre à disposition des forces des solutions sécurisées et souveraines dans un contexte où l’excellence et l’innovation font le succès de nos projets année après année.Notre équipe, dynamique et soudée œuvre dans un but commun : accompagner le ministère des Armées, le ministère de la Justice ou le ministère de l’Intérieur pour répondre à ses enjeux capacitaires et stratégiques (Identité numérique, sécurité routière, soutien logistique et numérique des différentes armées, contrôle aux frontières, forces de l’ordre, civil, pénal, pénitentiaire, cybersécurité…) avec des outils à la pointe de la technologie.Au sein de l'entité spécialisée dans la Cyberdéfense et le Renseignement (environ 150 collaborateurs, répartis entre nos sites de Rennes et de Paris), nos équipes interviennent sur de nombreux types d'activités. Ainsi, dans le domaine de la cybersécurité, nos projets adressent les métiers du conseil SSI (analyses de risques et homologations), du développement sécurisé (certifie par l'ANSSI) de solutions de cybersécurité, de l'évaluation de solutions de lutte informatique défensive, de pentests et de sécurisation de solutions.Votre rôle et missions :Vous êtes le Lead Technologique d’un double projet stratégique :1. L’évolution, le déploiement et le maintien d’un SIEM basé sur Elasticsearch/Kibana/OpenSearch pour la détection d’intrusions et la gestion des alertes ;2. Le développement d’un outil interne de veille et d’analyse de vulnérabilités, intégrant bases de données graphiques, API REST et interface web interactive.Vous pilotez l’architecture technique, l’automatisation, la qualité du code et la livraison continue des deux systèmes, en binôme avec une équipe de 3 à 5 ingénieurs. Votre rôle est à la fois technique, architecturale et managérial— vous êtes le pont entre la sécurité, le développement et les opérations.50% – SIEM & Sécurité des Systèmes :· Piloter l’architecture, l’optimisation et la scalabilité du SIEM (Elasticsearch, Kibana, OpenSearch).· Concevoir et maintenir des règles de détection avancées (corrélation, ML, MITRE ATT&CK).· Gérer l’ingestion, la normalisation et le routage des logs (Beats, Logstash, Syslog, EDR, Cloud).· Automatiser les alertes et les workflows avec des outils SOAR (TheHive, webhooks, etc.).50% – Outil de Veille Vulnérabilités : · Concevoir et développer une application web moderne avec React + FastAPI pour visualiser, analyser et prioriser les vulnérabilités.· Intégrer des bases de données orientées graphe (Neo4j) avec Cypher pour modéliser les dépendances, les chaînes d’attaque et les risques.· Construire des API REST robustes pour alimenter l’outil depuis des sources externes (CVE, NVD, scanners, Jira, Tenable, etc.).· Mettre en place un pipeline GitLab CI/CD automatisé pour le déploiement continu (Docker, Nginx, Unix/Bash).· Assurer la qualité du code, les tests (unitaires/intégration), et les bonnes pratiques DevSecOps.Commun aux 2 projets : · Piloter l’équipe technique (revues de code, revues d’architecture, mentoring).· Documenter les architectures, les processus et les procédures de déploiement.· Collaborer avec les équipes SOC, IT, DevOps et compliance (RGPD, ISO 27001, NIST).· Proposer des améliorations technologiques et des choix d’architecture (cloud/on-prem, open-source/propriétaire).Environnement Technique : · Dev Web Full-Stack: React (hooks, state management), JavaScript/TypeScript, FastAPI (Python)· API & Microservices : REST, OpenAPI/Swagger, authentification (JWT, OAuth2)· Infrastructure & DevOps : Docker, Nginx, GitLab CI/CD, Unix/Bash, déploiement automatisé· Bases de données graphiques : Neo4j, Cypher (modélisation de risques, chaînes d’attaque)· SIEM & Sécurité : Elasticsearch, Kibana, OpenSearch, Wazuh, Suricata, ingestion de logs, règles de détection, CTI, IOCQualificationsDiplômé/e d'une école d'Ingénieurs ou équivalent Universitaire, vous avez 5 ans d’expérience minimum en développement logiciel et/ou sécurité informatique, avec un passage avéré en rôle de lead technique.Vous vous intéressez au m...",
+    "metier": "Ingénieur / Ingénieure systèmes, réseaux et sécurité informatique",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "Application web",
+      "Docker",
+      "FastAPI",
+      "Git",
+      "Intelligence artificielle",
+      "JavaScript",
+      "Machine learning",
+      "Python",
+      "React",
+      "Sécurité Informatique",
+      "TypeScript",
+      "Vue.js",
+      "CI/CD",
+      "GitLab CI",
+      "Code review",
+      "Data Engineering",
+      "Qualité des données",
+      "Analyse de données",
+      "Cybersécurité",
+      "Gestion de projet",
+      "Backend",
+      "Optimisation des performances"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "The world is how we shape it Description du posteLe secteur Défense et Sécurité doit relever de nombreux défis : assurer l'efficacité opérationnelle de nos clients, Concevoir et mettre à disposition des forces des solutions sécurisées et souveraines dans un contexte où l’excellence et l’innovation font le succès de nos projets année après année.Notre équipe, dynamique et soudée œuvre dans un but commun : accompagner le ministère des Armées, le ministère de la Justice ou le ministère de l’Intérieur pour répondre à ses enjeux capacitaires et stratégiques (Identité numérique, sécurité routière, soutien logistique et numérique des différentes armées, contrôle aux frontières, forces de l’ordre, civil, pénal, pénitentiaire, cybersécurité…) avec des outils à la pointe de la technologie.Au sein de l'entité spécialisée dans la Cyberdéfense et le Renseignement (environ 150 collaborateurs, répartis entre nos sites de Rennes et de Paris), nos équipes interviennent sur de nombreux types d'activités.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "0 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 23,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:45.458099",
+  "input_hash": "38ffe032ea29b3ed768315e4312914a6bc8b56a02f7232185d632132f34b5034",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,45 @@
+{
+  "key": "offer_extraction:3644364",
+  "value": {
+    "id": "3644364",
+    "intitule": "Consultant Senior en Sécurité Offensive / auditeur technique (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Levallois-Perret",
+    "ville": "92044",
+    "code_postal": "92300",
+    "contrat": "Intérim - 1 Mois",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3644364",
+    "description": "Nous recherchons un nouveau talent pour intervenir en tant qu'Auditeur Sécurité Technique Senior, avec une forte orientation architecture sécurisée et tests d'intrusion. Si vous êtes passionné(e) par l'offensive comme par la sécurisation des systèmes (on-prem &amp; cloud), c'est le moment de nous rejoindre !\nEn tant que Senior, vous aurez une double fonction : réaliser des missions d'audit techniques de bout en bout et agir comme référent technique auprès des consultants/auditeurs (méthodo, outillage, qualité des livrables, accompagnement).\nResponsabilités principales\nRéalisation d'audits d'architecture sécurité (revue de conception, analyse de menaces, recommandations de durcissement, patterns sécurité).\nConduite de tests d'intrusion (web, API, mobile, interne/externe, AD, cloud) et, selon contexte, activités red team/purple team.\nEncadrement méthodologique : définition du périmètre, règles d'engagement (RoE), scénarios d'attaque, gestion des risques de test.\nRédaction de rapports d'audit actionnables (constats, preuves, criticité, recommandations, plan de remédiation priorisé).\nRestitution aux parties prenantes (techniques et métiers), suivi de remédiation et retest.\nContribution à l'amélioration continue : playbooks, templates, capitalisation, veille, R&amp;D outillage, partage en communauté.\nVos missions détaillées\nAudits d'intrusion :\nWeb &amp; API (OWASP Top 10, authN/authZ, logique métier, SSRF, XSS, injection, etc.)\nInfrastructure (externe/interne), Active Directory, mouvements latéraux, élévation de privilèges\nAudit de configuration et durcissement (OS, middleware, Kubernetes, reverse proxy, WAF, IAM.)\nCloud (AWS/Azure/GCP) : revue IAM, exposition, stockage, secrets, posture, scénarios d'attaque\nAudits d'architecture :\nRevue de conception (flux, trust boundaries, chiffrement, gestion des secrets, journalisation, HA, etc.)\nRecommandations \"secure by design\" et validation de la mise en œuvre\nAccompagnement &amp; leadership :\nCoaching des profils plus juniors, revues de livrables, amélioration des pratiques et de la qualité\nAnimation d'ateliers (restitution, sensibilisation technique, retours d'expérience)\nSuivi :\nCoordination avec équipes produit/infra/sécu, priorisation, plan de remédiation, retest et clôture\nQualifications\nCompétences requises\nPentest / intrusion : excellente maîtrise des approches et méthodologies (OSSTMM / PTES / OWASP, etc.), capacité à construire des scénarios réalistes et maîtrisés.\nArchitecture &amp; sécurité : capacité à analyser une architecture, identifier les faiblesses structurelles, proposer des contre-mesures pragmatiques et priorisées.\nAD &amp; environnements hybrides : compréhension solide des mécaniques Kerberos, GPO, délégations, chemins d'attaque (ADCS, LAPS, etc. selon contexte).\nWeb/API : compréhension des mécanismes d'authentification (OAuth2/OIDC, JWT, SSO), contrôle d'accès, segmentation, sécurité applicative.\nCloud (AWS/Azure/GCP) : IAM, réseau, stockage, services managés, pratiques de sécurité et risques d'exposition.\nOutillage : Burp Suite, Nmap, Metasploit, Nessus/Qualys/OpenVAS (selon mission), outils AD, fuzzing, outils cloud et K8s.\nScripting / automatisation : Python, Bash, PowerShell (automation, parsing, PoC, tooling).\nReporting &amp; restitution : produire des rapports clairs, exploitables, avec preuves, criticité, recommandations et plan d'action ; aisance à présenter à différents niveaux.\n&#xa0;",
+    "metier": "Evaluateur / Evaluatrice sécurité des systèmes et produits informatiques",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Python",
+      "Vue.js",
+      "Analyse de données",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 10000,
+    "salaire_max": 10000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:59.342502",
+  "input_hash": "6a8381fab80c8a4b257ea601994f945243c16ffbcb01f8dc01e0a6d6fc766f7b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

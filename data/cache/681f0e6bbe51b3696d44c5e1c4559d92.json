@@ -1,0 +1,114 @@
+{
+  "key": "trends:77 - Poigny",
+  "value": {
+    "territoire": "77 - Poigny",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Intelligence artificielle": 1,
+      "Python": 1,
+      "SQL": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "SQL": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "SQL": {
+        "SQL": 1
+      }
+    },
+    "metiers": {
+      "Evaluateur / Evaluatrice sécurité des systèmes et produits informatiques": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "Intérim - 18 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Python",
+        "SQL"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "208XHNH",
+        "intitule": "Testeur Fonctionnel (h/f)",
+        "entreprise": "LHH RECRUITMENT SOLUTIONS",
+        "territoire": "77 - Poigny",
+        "contrat": "Intérim - 18 Mois",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208XHNH"
+      }
+    ],
+    "offers": [
+      {
+        "id": "208XHNH",
+        "intitule": "Testeur Fonctionnel (h/f)",
+        "entreprise": "LHH RECRUITMENT SOLUTIONS",
+        "territoire": "77 - Poigny",
+        "contrat": "Intérim - 18 Mois",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208XHNH"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:02:34.809817",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:208QNKJ",
+  "value": {
+    "id": "208QNKJ",
+    "intitule": "Ingénieur(e)IA / Test et Validation (H/F)",
+    "entreprise": "BASSETTI GROUP",
+    "territoire": "93 - DRANCY",
+    "ville": "93029",
+    "code_postal": "93700",
+    "contrat": "CDI",
+    "date_creation": "2026-05-22",
+    "date": "2026-05-22",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208QNKJ",
+    "description": "Bassetti Talent Pool recherche : pour la DSI d'une structure basée à Drancy (93), un(e) Ingénieur(e) IA / Test et Validation\nVous intégrez une équipe R&D dans un contexte de digitalisation majeur.\nL'objectif est de transformer le processus de validation de produits automobiles innovants (phase pré-série).\nVotre rôle est de construire de A à Z une solution industrialisable d'automatisation des tests basée sur l'Intelligence Artificielle (LLM).\n\n- Orchestration d'IA Générative & Automatisation\n\n- Automatiser la création, la revue et la maintenance de 5 000 à 6 000 cas de test à partir des exigences fonctionnelles. \n Concevoir le moteur intelligent : Sélectionner et configurer le modèle (Mistral, LLM...) adapté aux contraintes de sécurité. \n\n- Définir l'infrastructure d'hébergement (locale vs cloud) pour protéger les données confidentielles. \n Mettre en place l'environnement de développement (ex: Jupyter pour les tests exploratoires).\nDéveloppement & Scripting (Python/PowerShell)\n\n- Développer des scripts robustes (Python, PowerShell) pour lier les exigences aux plateformes de test. \nApprendre à l'IA la syntaxe spécifique des outils internes pour générer du code exécutable sans erreur. \n\n- Assurer l'injection correcte des données dans les simulateurs (Software in the Loop).\nIntégration, Qualité & Performance\n\n- Intégrer la solution IA dans le workflow existant (CI/CD) et la connecter aux bases de données d'exigences (Teexma). \nMettre en place des règles de vérification automatique (linting) pour les scripts générés. \nGarantir la traçabilité complète (Exigence > Résultat) pour identifier les causes d'échec.",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Vue.js",
+      "Data Engineering",
+      "Intégration continue",
+      "Model drift",
+      "Protection des données",
+      "Qualité des données",
+      "Sécurité informatique",
+      "API",
+      "Pipelines de données",
+      "Backend",
+      "Tests automatisés",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Bassetti Talent Pool recherche : pour la DSI d'une structure basée à Drancy (93), un(e) Ingénieur(e) IA / Test et Validation",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:49:57.634053",
+  "input_hash": "a53e885c8000df3f4579a37188e1b8bc0e38508be09389f69480a2100626ed7f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

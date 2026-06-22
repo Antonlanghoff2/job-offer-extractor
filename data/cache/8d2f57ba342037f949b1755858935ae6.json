@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3621779",
+  "value": {
+    "id": "3621779",
+    "intitule": "Ingénieur Compilateur IA (H/F)",
+    "entreprise": "Mercato de l'emploi",
+    "territoire": "92 - Meudon",
+    "ville": "92048",
+    "code_postal": "92190",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3621779",
+    "description": "RESPONSABILITÉS : Nous recherchons un(e) Ingénieur Compilateur IA hautement qualifié(e) et motivé(e) pour prendre en charge le développement de la prochaine génération de chaîne de compilation pour la famille de puces VSORA. Il s'agit d'un rôle de leadership opérationnel : vous rejoindrez une équipe d'ingénieurs talentueux, piloterez les décisions d'architecture et contribuerez directement à l'implémentation d'optimisations de compilateur et de techniques de fusion innovantes. Vous travaillerez à l'intersection de l'IA et des systèmes, contribuant à façonner l'avenir des charges de travail IA haute performance sur le matériel VSORA. Missions principales : • Participer à la conception et au développement de la chaîne de compilation IA pour la famille de puces VSORA • Concevoir et implémenter des techniques avancées de fusion de graphes et d'optimisation • Collaborer avec les architectes matériel, les équipes frameworks ML et les ingénieurs runtime • Piloter l'analyse de performance et l'optimisation sur des modèles et benchmarks ML • Assurer une veille active sur les compilateurs IA, les frameworks ML et l'accélération matérielle PROFIL RECHERCHÉ : Profil et compétences requis : • Solides compétences en programmation C++ et Python • Maîtrise approfondie des internals de compilateurs, des représentations intermédiaires (IR) et des pipelines d'optimisation • Expérience pratique avec MLIR, TVM, OpenVINO, IREE, XLA • Bonne connaissance de PyTorch, TensorFlow, ONNX ou d'autres frameworks ML • Expérience en optimisation des performances et en optimisation système bas niveau • Excellentes capacités de communication et de collaboration Atouts appréciés : • Expérience avec des architectures NPU, GPU ou autres accélérateurs IA • Contributions à des projets open source dans le domaine des compilateurs ou du ML • Expérience en apprentissage automatique ou en calcul numérique • Maîtrise des outils de développement logiciel (Git, CI/CD, profileurs, débogueurs)",
+    "metier": "Chargé / Chargée de méthodes BTP",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Machine learning",
+      "PyTorch",
+      "Python",
+      "TensorFlow",
+      "Déploiement de modèles",
+      "Pipelines de données",
+      "Scalabilité",
+      "Documentation technique",
+      "Feature Engineering"
+    ],
+    "salaire_min": 65000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "RESPONSABILITÉS : Nous recherchons un(e) Ingénieur Compilateur IA hautement qualifié(e) et motivé(e) pour prendre en charge le développement de la prochaine génération de chaîne de compilation pour la famille de puces VSORA.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:57.989016",
+  "input_hash": "05853715ee7d7d3e51b03815970c6bea561529f7508bf02cffc2e730bf276b5c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

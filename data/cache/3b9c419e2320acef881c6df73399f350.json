@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:4039972",
+  "value": {
+    "id": "4039972",
+    "intitule": "Ingénieur Data Confirmé (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Marseille 1er Arrondissement",
+    "ville": "13201",
+    "code_postal": "13001",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4039972",
+    "description": "Job Description En tant qu'Ingénieur Data, vos missions seront les suivantes : Mener les analyses fonctionnelles destinées à traduire les besoins du client Participer à la mise en production des modèles Développement de pipelines de données Adopter des outils innovants, notamment autour de la data, du cloud et de l’intelligence artificielle, afin de rester à la pointe des usages et d’apporter toujours plus de valeur à nos clients",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Data Engineering",
+      "Analyse de données",
+      "Model drift"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Job Description En tant qu'Ingénieur Data, vos missions seront les suivantes : Mener les analyses fonctionnelles destinées à traduire les besoins du client Participer à la mise en production des modèles Développement de pipelines de données Adopter des outils innovants, notamment autour de la data, du cloud et de l’intelligence artificielle, afin de rester à la pointe des usages et d’apporter toujours plus de valeur à nos clients",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:30.891829",
+  "input_hash": "0428508f394bb1a073e0eaf7981522dd3528a01b36b3f65814e278efb2f163c7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

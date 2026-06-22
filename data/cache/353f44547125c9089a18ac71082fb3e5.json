@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:2326628",
+  "value": {
+    "id": "2326628",
+    "intitule": "Data Engineer Spark/Scala - Services Financiers F/H h/f",
+    "entreprise": "",
+    "territoire": "75 - Paris",
+    "ville": "75 - Paris",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-05-06",
+    "date": "2026-05-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2326628",
+    "description": "Data Engineer Spark/Scala - Services Financiers F/H Description de poste Big Data, Data Science, Data analyse, Data architecture, IA ... Ça n’a pas de secret pour vous? Que vous commenciez votre carrière professionnelle ou que vous soyez spécialiste de l’une de ces disciplines, intégrer notre communauté Data, c’est l’assurance de progresser, innover, partager, vous certifier et rendre service à nos clients. Si vous souhaitez intégrer nos équipes à Paris et accompagner les plus grands acteurs de la banque et de l'assurance, cette annonce est susceptible de vous intéresser. Kafka, Spark, MapR, Cloudera, Hadoop, Scala... Fonctions et responsabilités - Concevoir, développer et déployer des pipelines de transformations de données en environnement Big Data - Définir des solutions globales permettant de répondre aux besoins métiers en prenant en compte les problématiques de performances, d’industrialisation, d’exploitation et de sécurité. - Paramétrer et maintenir des clusters Big Data (MapR, Cloudera), ou des composants connexes (Nifi, Kafka, …) - Faire des prototypes sur des technologies et de la veille technologique sur le Big Data - Accompagner & supporter les équipes projet en coaching et expertise - Animer et faire progresser des juniors et stagiaires - Assurer le rôle de Lead Tech dans une équipe En nous rejoignant, vous bénéficiez notamment des avantages suivants : - Offre complète de formations : techniques, métiers, développement personnel - Qualité de vie au travail : jusqu’à 3 jours de télétravail par semaine, 27 jours de congés payés, RTT, congés ancienneté et enfant malade, programme santé & bien-être - Avantages sociaux : régime d’achats d’actions, participation, PEE, Compte Epargne Temps Et bien d'autres encore ! Qualités requises pour réussir dans ce rôle De formation Bac+5 option informatique en école d’Ingénieurs ou équivalent, vous avez une expérience d'au moins 4 ans en conception et développement en environnement Big Data. Vos compétences sont les suivantes : - Solution Hadoop (HDFS, YARN, Hive, Hue, Oozie…) et outillage associé - PySpark, Python, Scala, Spark - Bases NoSQL (Mongo, HBase, Couchbase, Marklogic…) - Anglais niveau B2 - Compétences de Tech Lead appréciées : une capacité à coacher des juniors voire d’encadrer une équipe Le poste requiert aussi : - Une excellente organisation - Un sens des priorités CGI est un employeur inclusif et attentif aux candidatures des personnes en situation de handicap, à l’évolution de carrières des hommes et des femmes et au bien-être de nos salariés LGBT+. Dans un souci d’accessibilité et de clarté, le point médian n’est pas utilisé dans cette annonce. Tous les termes employés se réfèrent aussi bien au genre féminin que masculin. Ensemble, en tant que propriétaires, mettons notre savoir-faire à l’œuvre. La vie chez CGI est ancrée dans l’actionnariat, le travail d’équipe, le respect et un sentiment d’appartenance. Chez nous, vous pourrez exploiter votre plein potentiel parce que… Nous vous invitons à devenir propriétaire dès le jour 1 alors que nous travaillons ensemble à faire de notre rêve une réalité. C’est pourquoi nous nous désignons comme associés de CGI, plutôt que comme employés. Nous tirons profit des retombées de notre succès collectif et contribuons activement à l’orientation et à la stratégie de notre entreprise. Votre travail crée de la valeur. Vous élaborerez des solutions novatrices et développerez des relations durables avec vos collègues et clients, tout en ayant accès à des capacités mondiales pour concrétiser vos idées, saisir de nouvelles opportunités, et bénéficier d’une expertise sectorielle et technologique de pointe. Vous ferez évoluer votre carrière en vous joignant à une entreprise bâtie pour croître et durer. Vous serez soutenus par des leaders qui ont votre santé et bien-être à cœur et qui vous permettront de saisir des occasions afin de parfaire vos compétences et élargir les horizons. Joignez-vous à nous, l’une des plus importantes entreprises de conseil en technologie de l’information (TI) et en management au monde.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "NoSQL",
+      "Python",
+      "SQL",
+      "Travail en équipe",
+      "Pipelines de données",
+      "Qualité des données"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Qualités requises pour réussir dans ce rôle De formation Bac+5 option informatique en école d’Ingénieurs ou équivalent, vous avez une expérience d'au moins 4 ans en conception et développement en environnement Big Data.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:25.646336",
+  "input_hash": "f121ed23875dff419a1be3b4c37b24b70cffb5298a7854bb6eac025fc0a98f38",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

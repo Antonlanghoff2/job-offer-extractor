@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:2844236",
+  "value": {
+    "id": "2844236",
+    "intitule": "Alternant Ingénieur test et validation logiciel H/F",
+    "entreprise": "INTUIS SERVICES",
+    "territoire": "02 - Laon",
+    "ville": "02408",
+    "code_postal": "02000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-21",
+    "date": "2026-05-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2844236",
+    "description": "Nous recrutons un(e) Ingénieur Test et Validation Logiciel Électronique H/F pour une alternance sur notre site de Laon (02) pour une durée de 1 à 2 ans selon profil. L'objectif est d'automatiser des outils de test et de validation des logiciels embarqués des produits intuis. Missions : • Etat de l'art des outils de test et de validation • Revue des tests de validation fait chez intuis (tests fonctionnels de thermostat, connectivité / smart-home, IHM – interface homme-machine) • Identification des tâches automatisables • Prototypage d'outils automatisés à l'aide des outils : automatismes, vision par ordinateur, intelligence artificielle • Validation du prototype et mise en service Formation et/ou expérience : de formation BAC +5 - Profil master / école d'ingénieur généraliste, informatique ou électronique embarquée. Bonne connaissance des outils d'IA, vision industrielle, langages de programmation informatique C, C++, python Compétences métiers/techniques : Maîtrise du Pack Office. Compétences relationnelles : Réactivité et rigueur. Sens de l'écoute. Bonne communication. Esprit d'équipe. Le groupe intuis réaffirme son attachement au principe d'égalité professionnelle entre les femmes et les hommes. Tous nos métiers sont ouverts aux personnes en situation de handicap. Le groupe intuis favorise l'intégration de ses collaborateurs, prône la diversité et les accompagne dans leur évolution de carrière. Vous êtes prêt à relever le challenge à nos côtés ? Alors rencontrons nous !",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Vision",
+      "Vue.js",
+      "Tests automatisés"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recrutons un(e) Ingénieur Test et Validation Logiciel Électronique H/F pour une alternance sur notre site de Laon (02) pour une durée de 1 à 2 ans selon profil.",
+        "confidence": 0.9
+      },
+      {
+        "label": "BAC +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Missions : • Etat de l'art des outils de test et de validation • Revue des tests de validation fait chez intuis (tests fonctionnels de thermostat, connectivité / smart-home, IHM – interface homme-machine) • Identification des tâches automatisables • Prototypage d'outils automatisés à l'aide des outils : automatismes, vision par ordinateur, intelligence artificielle • Validation du prototype et mise en service Formation et/ou expérience : de formation BAC +5 - Profil master / école d'ingénieur généraliste, informatique ou électronique embarquée.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Missions : • Etat de l'art des outils de test et de validation • Revue des tests de validation fait chez intuis (tests fonctionnels de thermostat, connectivité / smart-home, IHM – interface homme-machine) • Identification des tâches automatisables • Prototypage d'outils automatisés à l'aide des outils : automatismes, vision par ordinateur, intelligence artificielle • Validation du prototype et mise en service Formation et/ou expérience : de formation BAC +5 - Profil master / école d'ingénieur généraliste, informatique ou électronique embarquée.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:08.096296",
+  "input_hash": "f60f07985ef067df624378b413828a0d29db25bb38f2a4695c55054b13be6688",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

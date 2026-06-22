@@ -1,0 +1,586 @@
+{
+  "key": "trends:84 - PERTUIS",
+  "value": {
+    "territoire": "84 - PERTUIS",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Analyse de données": 2,
+      "Data engineering": 2,
+      "Intelligence artificielle": 2,
+      "Airflow": 1,
+      "Anglais Professionnel": 1,
+      "Backend": 1,
+      "Monitoring De Modèles": 1,
+      "Programmation Concurrente": 1,
+      "Python": 1,
+      "Qualité Des Données": 1,
+      "Résolution De Problèmes": 1,
+      "Scalabilité": 1,
+      "SQL": 1,
+      "Sécurité Informatique": 1,
+      "Windows Server": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Analyse de données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Analyse de données": 2
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Data Engineering": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Airflow",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Airflow": 1
+        }
+      },
+      {
+        "nom": "Anglais Professionnel",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Anglais Professionnel": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Monitoring de modèles": 1
+        }
+      },
+      {
+        "nom": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Programmation concurrente": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Scalabilité": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Windows Server",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Windows Server": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Analyse de données": {
+        "Analyse de données": 2
+      },
+      "Data engineering": {
+        "Data Engineering": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Airflow": {
+        "Airflow": 1
+      },
+      "Anglais Professionnel": {
+        "Anglais Professionnel": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 1
+      },
+      "Programmation Concurrente": {
+        "Programmation concurrente": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Windows Server": {
+        "Windows Server": 1
+      }
+    },
+    "metiers": {
+      "Conseiller / Conseillère support technique informatique": 2,
+      "Data Engineer": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 2,
+      "Intérim - 77 Jour(s)": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Programmation Concurrente",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Programmation Concurrente",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Programmation Concurrente",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Programmation Concurrente",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Programmation Concurrente",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Analyse de données",
+        "Windows Server",
+        "Sécurité Informatique",
+        "Scalabilité",
+        "Résolution De Problèmes",
+        "Monitoring De Modèles",
+        "Programmation Concurrente"
+      ],
+      [
+        "Python",
+        "SQL",
+        "Data engineering",
+        "Anglais Professionnel",
+        "Qualité Des Données",
+        "Backend"
+      ],
+      [
+        "Analyse de données",
+        "Intelligence artificielle",
+        "Data engineering",
+        "Airflow"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3363028",
+        "intitule": "Analyste de données H/F",
+        "entreprise": "",
+        "territoire": "84 - Pertuis",
+        "contrat": "Intérim - 77 Jour(s)",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3363028"
+      },
+      {
+        "id": "3319173",
+        "intitule": "Data Engineer(H/F)",
+        "entreprise": "",
+        "territoire": "84 - Pertuis",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3319173"
+      },
+      {
+        "id": "208ZRTJ",
+        "intitule": "Technicien Support Applicatif Niveau 1/2 - Logiciel Médical (H/F)",
+        "entreprise": "SANOTEK",
+        "territoire": "84 - PERTUIS",
+        "contrat": "CDI",
+        "date": "2026-06-01",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208ZRTJ"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3363028",
+        "intitule": "Analyste de données H/F",
+        "entreprise": "",
+        "territoire": "84 - Pertuis",
+        "contrat": "Intérim - 77 Jour(s)",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3363028"
+      },
+      {
+        "id": "3319173",
+        "intitule": "Data Engineer(H/F)",
+        "entreprise": "",
+        "territoire": "84 - Pertuis",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3319173"
+      },
+      {
+        "id": "208ZRTJ",
+        "intitule": "Technicien Support Applicatif Niveau 1/2 - Logiciel Médical (H/F)",
+        "entreprise": "SANOTEK",
+        "territoire": "84 - PERTUIS",
+        "contrat": "CDI",
+        "date": "2026-06-01",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208ZRTJ"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:07:46.412917",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

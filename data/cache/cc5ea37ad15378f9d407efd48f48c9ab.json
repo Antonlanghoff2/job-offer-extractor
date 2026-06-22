@@ -1,0 +1,78 @@
+{
+  "key": "offer_extraction:1069871",
+  "value": {
+    "id": "1069871",
+    "intitule": "INGÉNIEUR INFRAOPS  R&D CLOUD (H/F) - H/F",
+    "entreprise": "WALLIX",
+    "territoire": "75 - Paris 8e Arrondissement",
+    "ville": "75108",
+    "code_postal": "75008",
+    "contrat": "CDI",
+    "date_creation": "2026-04-02",
+    "date": "2026-04-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1069871",
+    "description": "Description :\n\n\nIntégré(e) à l'équipe InfraOps au sein du département R&D, vous êtes au cœur des infrastructures qui font tourner les développements produit : GCP, Azure, AWS, vSphere, Proxmox. Vous intervenez sur le déploiement, la configuration, la surveillance et la remédiation, avec de vrais défis techniques en matière de disponibilité, performance et sécurité.\n\nVOS RESPONSABILITÉS\n\nINFRASTRUCTURE & DÉVELOPPEMENT\n\n\t* Développer et maintenir les infrastructures cloud R&D en réponse aux besoins des équipes de développement\n\nMONITORING & OBSERVABILITÉ\n\n\t* Monitorer les environnements et garantir une couverture d'incident efficace (Azure Monitor, Prometheus, OpenTelemetry)\n\nREMÉDIATION & QUALITÉ DE SERVICE\n\n\t* Remédier aux incidents de production, assurer une excellente qualité de service, être le point de contact R&D pour la résolution des problèmes\n\nADMINISTRATION & GESTION DES ACCÈS\n\n\t* Gérer les droits des utilisateurs sur les services communs R&D — cohérence et fluidité de gestion\n\nAMÉLIORATION CONTINUE\n\n\t* Documenter et maintenir les procédures d'administration des infrastructures\n\t* Préparer et exécuter les opérations de maintenance avec un impact minimal sur les équipes\n\t* Maintenir un processus MCO/MCS détaillé et opérationnel\n\n\n\t\t\n\t\t\nProfil recherché :\n\t\t\n\t\t\n\t* Bac+5 (Master, école d'ingénieur) ou équivalent avec expérience prouvée\n\t* 2+ ans minimum en opérations et infrastructures cloud\n\t* Administration des plateformes cloud Azure et/ou vSphere\n\t* Orchestration et conteneurisation : Kubernetes, Docker\n\t* IaC & automatisation : Terraform, Ansible, Packer, GitLab-CI\n\t* Compétences réseau : IPv6, routage, configuration réseau Linux\n\t* Monitoring : Azure Monitor, Prometheus, OpenTelemetry\n\t* Scripting : Bash, Python\n\t* Sécurité OS & Cloud (OWASP Top 10, Microsoft Sentinel) — un vrai plus\n\nSOFT SKILLS\n\n\t* Proactif(ve), force de proposition, curieux/curieuse technologiquement\n\t* Bon(ne) communicant(e), esprit d'équipe, rigueur\n\t* Passion pour la résolution de problèmes techniques complexes\n\n",
+    "metier": "Expert / Experte systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Terraform",
+      "Qualité des données",
+      "Documentation technique",
+      "Monitoring de modèles",
+      "Sécurité informatique",
+      "API",
+      "Backend",
+      "MLOps",
+      "Gestion de projet",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac+5 (Master, école d'ingénieur) ou équivalent avec expérience prouvée",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Bac+5 (Master, école d'ingénieur) ou équivalent avec expérience prouvée",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Bac+5 (Master, école d'ingénieur) ou équivalent avec expérience prouvée",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:30.158738",
+  "input_hash": "f349561031f1f6052c74479d33c433f80f4c4028b5048cd91e7ad16f67299598",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

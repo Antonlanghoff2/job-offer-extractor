@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3820705",
+  "value": {
+    "id": "3820705",
+    "intitule": "Chef de Projet Certif Professionnels de Santé F/H - Informatique de gestion (H/F)",
+    "entreprise": "FYTE",
+    "territoire": "75 - Paris 15e Arrondissement",
+    "ville": "75115",
+    "code_postal": "75015",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3820705",
+    "description": "Descriptif du poste:\n\n\nAfin d'accompagner ce projet structurant, l'ANS recrute un(e) Chef/Cheffe de Projet Confirmé(e) qui, au sein de l'équipe projet et en appui au Directeur de Programme, contribue au pilotage fonctionnel du dispositif numérique de certification périodique et assure la coordination entre les parties prenantes institutionnelles et les équipes produit.\n \n Pilotage du projet et animation des instances\n* Préparer, animer et suivre les instances de gouvernance du projet (comités de pilotage, comités opérationnels, ateliers inter-partenaires).\n* Produire les supports associés : notes de cadrage, ordres du jour, comptes rendus, plans d'action.\n* Assurer un reporting régulier auprès des parties prenantes institutionnelles.\n* Suivre les risques, arbitrages et dépendances du projet.\n\nCoordination des parties prenantes\n* Assurer le lien opérationnel entre les acteurs du projet : ministères, institutions partenaires, ordres professionnels et équipes internes.\n* Faciliter la traduction des besoins métiers vers les équipes produit et techniques.\n* Contribuer à la bonne articulation entre les orientations stratégiques, les besoins fonctionnels et les développements.\n\nContribution fonctionnelle et pilotage produit\n* Participer au recueil et à la formalisation des besoins métiers.\n* Contribuer à la rédaction des spécifications fonctionnelles (EPIC, user stories, règles de gestion).\n* Appuyer le Product Owner dans la priorisation du backlog et la clarification des exigences fonctionnelles.\n* Participer aux rituels Agile et au suivi de l'avancement des développements.\n\nQualité, recette et déploiement\n* Participer aux phases de recette fonctionnelle et à la validation des développements.\n* Suivre les anomalies et contribuer à leur résolution avec les équipes techniques.\n* Accompagner le déploiement du service et contribuer à l'animation de la communauté d'utilisateurs.\n* Participer aux actions d'accompagnement et de formation des utilisateurs.\n\nProfil recherché:\n\n* Formation supérieure Bac+5 (école d'ingénieur, université ou équivalent) en systèmes d'information, gestion de projet ou domaine connexe.\n* Expérience professionnelle d'au moins 4 ans en pilotage fonctionnel, AMOE, chefferie de projet ou coordination de produit numérique.\n* Bonne connaissance du secteur de la santé et des systèmes d'information de santé.\n* Expérience du pilotage de projets impliquant de multiples parties prenantes, idéalement en environnement institutionnel ou public.\n* Capacité à formaliser des processus métier et des spécifications fonctionnelles.\n* Connaissance des méthodologies Agile / Scrum et des outils de gestion de backlog (Jira, Azure DevOps ou équivalent).\n* Capacité à animer des ateliers, instances de gouvernance et groupes de travail.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Cahier des charges",
+      "Gestion de projet",
+      "Cybersécurité",
+      "Product Management",
+      "Git"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation supérieure Bac+5 (école d'ingénieur, université ou équivalent) en systèmes d'information, gestion de projet ou domaine connexe.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Formation supérieure Bac+5 (école d'ingénieur, université ou équivalent) en systèmes d'information, gestion de projet ou domaine connexe.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "4 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:31.243884",
+  "input_hash": "0dcbc30653881b46551b3de8a501f51d8877dc0722a1d78121fa793a2e860a41",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3971625",
+  "value": {
+    "id": "3971625",
+    "intitule": "Ingénieur QA Testeur Logiciel (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "64 - Pau",
+    "ville": "64445",
+    "code_postal": "64000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3971625",
+    "description": "Notre client, leader sur son segment, souhaite aggrandir son équipe et recherche ainsi un Ingénieur QA Testeur Logiciel (F/H). Vous contribuez à la qualité et à la fiabilité d'une plateforme SaaS de gestion RH à fort impact. Vous jouez un rôle central dans la définition des stratégies de test et l'amélioration continue en collaboration avec les équipes produit et techniques.\nLe poste est en CDI et basé à Pau.En tant qu'Ingénieur QA Testeur Logiciel (F/H), vous garantissez la fiabilité des solutions SaaS et contribuez à une démarche Quality by Design. Vos missions :\nDéfinir et piloter la stratégie de tests (fonctionnels, techniques, performance, sécurité) en cohérence avec les objectifs produits et les standards qualité.\nDévelopper et maintenir des tests automatisés (Cypress, Playwright, SeleniumMettre en place des indicateurs de qualité logicielle (taux de couverture, temps de réponse, stabilité,dette technique) et assurer leur suivi ;\nCollaborer étroitement avec les équipes produit, dev et support pour optimiser l'expérience utilisateur ;\nParticiper activement au cycle de développement (revues, validation des user stories, intégration continue et déploiement continu CI/CD)\nAssurer une veille technologique : IA, observabilité, test cloud, chaos engineering\nProcessus de recrutement rapide ; \nSystème de covoiturage ;\n2 jours de télétravail / semaine ; \nEnvironnement international, collaboratif et tourné vers l'innovation ;\nIngénieur QA Testeur Logiciel (F/H)",
+    "metier": "Spécialiste test et validation logiciel ou application",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Vue.js",
+      "Tests automatisés",
+      "Définition d'indicateurs",
+      "Veille technologique",
+      "Gestion de projet",
+      "Product Management",
+      "Optimisation des performances",
+      "API",
+      "Backend",
+      "Git"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Notre client, leader sur son segment, souhaite aggrandir son équipe et recherche ainsi un Ingénieur QA Testeur Logiciel (F/H).",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:15.419182",
+  "input_hash": "beca8c31623079f6eb0de065ec13fd57f3a3d6c949f07eb4ab43d4e5de746e2e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

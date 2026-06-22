@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3270273",
+  "value": {
+    "id": "3270273",
+    "intitule": "Ingénieur Conception SoC  H/F",
+    "entreprise": "Microchip Technology Rousset",
+    "territoire": "13 - Rousset",
+    "ville": "13087",
+    "code_postal": "13790",
+    "contrat": "CDI",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3270273",
+    "description": "En tant qu’Ingénieur conception SoC au sein du groupe MPU, vous travaillerez avec notre équipe mondiale de développement silicium répartie sur plusieurs sites pour la conception et le développement de SoC complexes. Le travail comprendra l’intégration de la conception SoC, la microarchitecture, la vérification de conception, ainsi que le support à la mise en route post-silicium. Responsabilités: - Conception et intégration d’IP complexes et de sous-systèmes dans un SoC - Compréhension des exigences SoC et des spécifications d’architecture - Comprendre les spécifications des IP et travailler avec les équipes IP/architecture/applications afin d’intégrer correctement les IP dans les SoC, en respectant les exigences au niveau puce. - Réaliser le codage RTL - Exécuter les vérifications RTL – Lint, CDC, RDC - Développer le plan de vérification pour les sous-systèmes / le SoC - Collaborer avec des équipes pluridisciplinaires pour l’architecture et l’évaluation des IP, les performances, l’analyse de puissance, ainsi que la validation pré- et post-silicium - Relever les défis de conception, contribuer à l’atteinte des objectifs de vérification et fournir un support au débogage - Animer des revues de spécifications, des revues de code, des analyses de couverture, etc., afin d’atteindre les objectifs qualité - Contribuer au développement des contraintes de timing et à la synthèse - Estimation et analyse de la consommation Qualifications / Exigences - Bonne compréhension des fondamentaux de l’architecture SoC et de la conception numérique - Expérience pratique du codage RTL en Verilog/SystemVerilog - Compréhension des protocoles de bus ARM AMBA - Connaissance et exposition au flux complet de développement SoC, du RTL au GDS jusqu’à la livraison silicium - Maîtrise d’au moins un langage de script couramment utilisé (Perl, Python, TCL) - Connaissance des outils de gestion de versions tels que SVN, GIT, etc. -Familiarité avec les outils de développement assistés par l’IA (par ex. Claude Code, Codex) pour la génération / revue de code, avec une bonne compréhension de leur utilisation responsable (vérification, IP/confidentialité et conformité aux politiques de l’entreprise) -Excellentes compétences en communication écrite et orale Compétences souhaitées : -Expérience dans le développement de SoC basés sur des processeurs ARM ou RISC-V -Expérience pratique du C/System-C -Expérience / compréhension de la vérification avec UVM Formation requise : -Diplôme minimum de type BSEE, MSEE souhaité.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Vue.js",
+      "Gestion de projet",
+      "Product Management",
+      "Data Engineering",
+      "Code review",
+      "Tests automatisés"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu’Ingénieur conception SoC au sein du groupe MPU, vous travaillerez avec notre équipe mondiale de développement silicium répartie sur plusieurs sites pour la conception et le développement de SoC complexes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:13.085395",
+  "input_hash": "08ad59dc3927562d76be38864c97e07acdf7ab38353a01d57f3a4fe4b7893a37",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

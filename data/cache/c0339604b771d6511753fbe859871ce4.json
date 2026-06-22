@@ -1,0 +1,231 @@
+{
+  "key": "trends:13 - LA CIOTAT",
+  "value": {
+    "territoire": "13 - LA CIOTAT",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Intelligence artificielle": 2,
+      "Python": 2,
+      "Anglais Professionnel": 1,
+      "Feature Engineering": 1,
+      "Linux": 1,
+      "Rédaction De Rapports": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Python": 2
+        }
+      },
+      {
+        "nom": "Anglais Professionnel",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Anglais Professionnel": 1
+        }
+      },
+      {
+        "nom": "Feature Engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Feature Engineering": 1
+        }
+      },
+      {
+        "nom": "Linux",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Linux": 1
+        }
+      },
+      {
+        "nom": "Rédaction De Rapports",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Rédaction de rapports": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Python": {
+        "Python": 2
+      },
+      "Anglais Professionnel": {
+        "Anglais Professionnel": 1
+      },
+      "Feature Engineering": {
+        "Feature Engineering": 1
+      },
+      "Linux": {
+        "Linux": 1
+      },
+      "Rédaction De Rapports": {
+        "Rédaction de rapports": 1
+      }
+    },
+    "metiers": {
+      "Contrôleur / Contrôleuse technique en électricité-électronique": 1,
+      "Ingénieur / Ingénieure R&D en industrie": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Feature Engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Rédaction De Rapports",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Rédaction De Rapports",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Rédaction De Rapports",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Rédaction De Rapports",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Linux",
+        "Python"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Anglais Professionnel",
+        "Rédaction De Rapports",
+        "Feature Engineering"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "208PVWW",
+        "intitule": "Ingénieur Hydrodynamique (H/F)",
+        "entreprise": "AIS BARDOT",
+        "territoire": "13 - LA CIOTAT",
+        "contrat": "CDI",
+        "date": "2026-05-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208PVWW"
+      },
+      {
+        "id": "206VPCD",
+        "intitule": "Technicien de Production - Electronique H/F (H/F)",
+        "entreprise": "",
+        "territoire": "13 - LA CIOTAT",
+        "contrat": "CDI",
+        "date": "2026-04-13",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/206VPCD"
+      }
+    ],
+    "offers": [
+      {
+        "id": "208PVWW",
+        "intitule": "Ingénieur Hydrodynamique (H/F)",
+        "entreprise": "AIS BARDOT",
+        "territoire": "13 - LA CIOTAT",
+        "contrat": "CDI",
+        "date": "2026-05-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208PVWW"
+      },
+      {
+        "id": "206VPCD",
+        "intitule": "Technicien de Production - Electronique H/F (H/F)",
+        "entreprise": "",
+        "territoire": "13 - LA CIOTAT",
+        "contrat": "CDI",
+        "date": "2026-04-13",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/206VPCD"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:05:09.519328",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

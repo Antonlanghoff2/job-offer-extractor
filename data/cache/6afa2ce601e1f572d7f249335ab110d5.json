@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:9278140",
+  "value": {
+    "id": "9278140",
+    "intitule": "Analyste d'étude informatique (H/F)",
+    "entreprise": "",
+    "territoire": "79 - Niort",
+    "ville": "79191",
+    "code_postal": "79000",
+    "contrat": "CDI",
+    "date_creation": "2026-02-19",
+    "date": "2026-02-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/9278140",
+    "description": "Description du poste :\nVotre rôle : un maillon essentiel entre métier et technique\nEn tant que Business Analyst Technique, vous serez au cœur des projets pour transformer les besoins métiers en solutions performantes et adaptées.\nVos missions Comprendre et structurer : Recueillir les besoins, rédiger des spécifications techniques et fonctionnelles, modéliser les processus.\n* Concevoir et piloter : Élaborer des solutions techniques, rédiger des user stories, gérer un backlog produit.\n* Coordonner et tester : Assurer l'interface entre les métiers et les développeurs, suivre les développements, valider les livrables.\n* Optimiser et innover : Analyser les performances et proposer des évolutions pour améliorer les process.\nDescription du profil :\nCe que nous recherchons\nFormation et Expérience : Bac+5 apprécié, certifications bienvenues (PSPO, SAFe, ISTQB). Une première expérience en tant que Business Analyst technique est demandée. Une expérience dans le secteur de la banque ou de l'assurance serait un plus.\nCompétences techniques Architecture logicielle et API REST\n* Modélisation UML/BPMN\n* Méthodologies Agile (Scrum)\n* Bases de données (SQL, NoSQL)\n* Expérience en développement (Java, Spring Boot, ReactJS, Python) est un plus\n* Outils de gestion de projet (JIRA, Confluence, Trello)\nCompétences fonctionnelles et soft skills Esprit analytique et capacité de synthèse\n* Excellent relationnel et aptitude à vulgariser\n* Organisation et gestion multi-projets\n* Une connaissance du domaine de l'assurance est un plus\n* Curiosité, autonomie, sens du service et joie de vivre obligatoire\nPourquoi nous rejoindre Avantages sociaux : Titres restaurant, mutuelle prise en charge à 100%\n* Un cadre de travail chaleureux : Bureaux situés dans une maison familiale, offrant un environnement convivial et propice aux échanges.\n* Un esprit d'équipe fort : Afterworks mensuels, temps déchange réguliers pour souder les équipes\n* Accessibilité : Parking facile, transports en commun gratuits\nEnvie de nous rejoindre ?\nEnvoyez votre CV et discutons ensemble de votre avenir dans une équipe qui vous ressemble !",
+    "metier": "Analyste d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Java",
+      "NoSQL",
+      "Python",
+      "React",
+      "SQL",
+      "Analyse de performance",
+      "Rédaction de spécifications",
+      "Optimisation des performances",
+      "Résolution de problèmes",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Backend",
+      "Qualité des données",
+      "Veille technologique"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Formation et Expérience : Bac+5 apprécié, certifications bienvenues (PSPO, SAFe, ISTQB).",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:32.740020",
+  "input_hash": "5772813e9773aedb09acea457faa0d7efed815ef009eabdba2770746043f8ed7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

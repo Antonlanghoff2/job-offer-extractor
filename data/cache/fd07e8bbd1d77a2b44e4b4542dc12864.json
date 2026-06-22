@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:7225459",
+  "value": {
+    "id": "7225459",
+    "intitule": "Data analyst (H/F)",
+    "entreprise": "",
+    "territoire": "83 - Toulon",
+    "ville": "83137",
+    "code_postal": "83000",
+    "contrat": "CDI",
+    "date_creation": "2025-12-30",
+    "date": "2025-12-30",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7225459",
+    "description": "Description du poste :\nContrôler les données sous ARHMONIE au vu des pièces justificatives du dossier authentique du militaire. Appliquer ou faire appliquer les mesures correctives identifiées.\nEffectuer ou faire réaliser les saisies et les corrections « carrière-pension » (RISAC/RISUB, NBI historiques, fiches BEP Traiter les demandes de rachat d'années d'études, de validation de services civils.\nSuivre l'intégration conforme et complète des données pensions sans SOURCEWEB.\nÉchanger avec les acteurs RH de proximité pour recueillir les pièces justificatives aux données ayant un impact pension (bonifications, OPEX et les fiabiliser.\nMettre à jour et suivre les échéanciers. Veiller au respect des délais.\nRespecter les indicateurs stratégiques de la division et ceux du SPRP.\n- Participer en soutien aux activités des autres sections de la division.\n- Suivre les ENCOURS, relancer les Bureaux du Personnel/Cellules du Personnel du SSA.\n- Procéder à l'archivage des pièces justificatives pension dans le SI Source DEMAT.\nDescription du profil :\nFonctions similaires ou équivalentes à un gestionnaire pension du personnel militaire.",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Délais",
+      "Intelligence artificielle",
+      "Vision"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BEP",
+        "level": 3,
+        "required": true,
+        "source_sentence": "Effectuer ou faire réaliser les saisies et les corrections « carrière-pension » (RISAC/RISUB, NBI historiques, fiches BEP Traiter les demandes de rachat d'années d'études, de validation de services civils.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:52.636694",
+  "input_hash": "979a487797131ffb8e611b3e832c63778c6571548ebca8259cc3a64dbd8cf226",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

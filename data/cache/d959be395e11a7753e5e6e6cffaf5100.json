@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3759243",
+  "value": {
+    "id": "3759243",
+    "intitule": "ALTERNANT - Développeur Microsoft BI H/F",
+    "entreprise": "LIMA",
+    "territoire": "01 - Villebois",
+    "ville": "01444",
+    "code_postal": "01150",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3759243",
+    "description": "Au sein du service informatique situé à Saint Vulbas (01), nous recrutons un(e) alternant(e) pour une durée de 12 ou 24 mois à partir de septembre 2026. Vos missions : Concevoir et développer de nouveaux rapports Microsoft BI et de nouvelles applications industrielles (VBA, SQL...) selon les besoins utilisateurs. Écriture des plans de test. Tester et débugger les applications pour garantir leur fiabilité et leur efficacité. Documenter les procédures de développement pour faciliter la maintenance et les mises à jour. Participer au support informatique (dépannage informatique industrielle, aide, gestion des tickets...) Vous préparez un diplôme de niveau Bac+3 dans le domaine informatique. La réactivité, l’autonomie ainsi que la rigueur seront de réels atouts pour réussir dans les missions confiées. Prendre des initiatives, être force de proposition, savoir travailler en équipe et avoir un excellent relationnel sont des qualités essentielles. La connaissance de Microsoft BI et SQL est nécessaire. Une appétence pour le dépannage de matériels ou logiciels informatiques est un plus. Ces missions vous intéressent ? N'hésitez pas, postulez dès maintenant et nos équipes en charge du recrutement vous recontacterons rapidement. \"Dans notre politique de recrutement, nous respectons la singularité de chaque candidature. Nos postes sont ouverts à tout le monde\".",
+    "metier": "Technicien / Technicienne d'exploitation informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 1000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Participer au support informatique (dépannage informatique industrielle, aide, gestion des tickets...) Vous préparez un diplôme de niveau Bac+3 dans le domaine informatique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:48.696707",
+  "input_hash": "d9055e73b86fdd43b11f8afc5139efc0f1fd101c25357dacfa7403fe2ec82a75",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

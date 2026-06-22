@@ -1,0 +1,715 @@
+{
+  "key": "trends:35 - Lillemer",
+  "value": {
+    "territoire": "35 - Lillemer",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Gestion de projet": 2,
+      "Intelligence artificielle": 2,
+      "Tests Automatisés": 2,
+      "Vue.js": 2,
+      "Analyse de données": 1,
+      "API REST": 1,
+      "Code Review": 1,
+      "Data engineering": 1,
+      "Java": 1,
+      "Maintenance Applicative": 1,
+      "Model Drift": 1,
+      "Optimisation De Performance": 1,
+      "Scalabilité": 1,
+      "Spring": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Tests automatisés": 2
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Vue.js": 2
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "API REST",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "API REST": 1
+        }
+      },
+      {
+        "nom": "Code Review",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Code review": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Java": 1
+        }
+      },
+      {
+        "nom": "Maintenance Applicative",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Maintenance applicative": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Optimisation de performance": 1,
+          "Optimisation des performances": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Scalabilité": 1
+        }
+      },
+      {
+        "nom": "Spring",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Spring": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 2
+      },
+      "Vue.js": {
+        "Vue.js": 2
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "API REST": {
+        "API REST": 1
+      },
+      "Code Review": {
+        "Code review": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Java": {
+        "Java": 1
+      },
+      "Maintenance Applicative": {
+        "Maintenance applicative": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Optimisation De Performance": {
+        "Optimisation de performance": 1,
+        "Optimisation des performances": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      },
+      "Spring": {
+        "Spring": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse web": 2
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "Intérim - 1 Mois": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vue.js",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vue.js",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Tests Automatisés",
+        "competence_b": "Vue.js",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Maintenance Applicative",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Maintenance Applicative",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Maintenance Applicative",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Maintenance Applicative",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Maintenance Applicative",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Optimisation De Performance",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Optimisation De Performance",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Optimisation De Performance",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Optimisation De Performance",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Optimisation De Performance",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Spring",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Spring",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Spring",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Vue.js",
+        "Tests Automatisés",
+        "Maintenance Applicative",
+        "Code Review"
+      ],
+      [
+        "API REST",
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Java",
+        "Vue.js",
+        "Data engineering",
+        "Analyse de données",
+        "Spring",
+        "Optimisation De Performance",
+        "Scalabilité",
+        "Tests Automatisés",
+        "Model Drift"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4058507",
+        "intitule": "Développeur .Net / C# (H/F)",
+        "entreprise": "",
+        "territoire": "35 - Lillemer",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-06-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4058507"
+      },
+      {
+        "id": "3872282",
+        "intitule": "Développeur Java (H/F)",
+        "entreprise": "",
+        "territoire": "35 - Lillemer",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3872282"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4058507",
+        "intitule": "Développeur .Net / C# (H/F)",
+        "entreprise": "",
+        "territoire": "35 - Lillemer",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-06-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4058507"
+      },
+      {
+        "id": "3872282",
+        "intitule": "Développeur Java (H/F)",
+        "entreprise": "",
+        "territoire": "35 - Lillemer",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3872282"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:03:22.778134",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

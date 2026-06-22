@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:3871548",
+  "value": {
+    "id": "3871548",
+    "intitule": "Analytics engineer H/F",
+    "entreprise": "JEMS",
+    "territoire": "92 - Levallois-Perret",
+    "ville": "92044",
+    "code_postal": "92300",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3871548",
+    "description": "RESPONSABILITÉS : Nous recherchons un(e) analytics engineer confirmé(e) capable d'accompagner les métiers dans l'aide à la décision. Vous aurez la charge de : • Guider / recommander le Métier dans l'exploitation et la valorisation des multiples sources de données et identifier des leviers d'optimisation et d'amélioration des processus Business • Être l‘intermédiaire entre le Métier et la DSI • Accroître la connaissance de la clientèle d'une entreprise, conduire des études sur les bases de données, suivre les outils datamining pour analyser l'impact des actions marketing • Mener et conduire des études (coordination/pilotage) PROFIL RECHERCHÉ : En tant que analytics engineer vous maitrisez : • MS Office • Le requêtage SQL • Des outils BI Fonction Expertise sur les données du Métier • Des solutions Analytiques (Data Science ou Data Mining / BI) • Des outils de datavisualisation • La préparation de données • DBT, Snowflake et SQL • Anglais fluent Vous êtes diplômé(e) d'une école d'ingénieur ou d'un parcours universitaire technique. Vous justifiez d'au minimum 3 ans d'expérience professionnelle en tant que Data Analyst.",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL",
+      "Analyse de données",
+      "Data Engineering",
+      "Feature Engineering",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous aurez la charge de : • Guider / recommander le Métier dans l'exploitation et la valorisation des multiples sources de données et identifier des leviers d'optimisation et d'amélioration des processus Business • Être l‘intermédiaire entre le Métier et la DSI • Accroître la connaissance de la clientèle d'une entreprise, conduire des études sur les bases de données, suivre les outils datamining pour analyser l'impact des actions marketing • Mener et conduire des études (coordination/pilotage) PROFIL RECHERCHÉ : En tant que analytics engineer vous maitrisez : • MS Office • Le requêtage SQL • Des outils BI Fonction Expertise sur les données du Métier • Des solutions Analytiques (Data Science ou Data Mining / BI) • Des outils de datavisualisation • La préparation de données • DBT, Snowflake et SQL • Anglais fluent Vous êtes diplômé(e) d'une école d'ingénieur ou d'un parcours universitaire technique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:27.421660",
+  "input_hash": "43d33bf274665dd18b8c8f4e18aa8588494b96da0fbb9815a1a97f3ab895ede0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

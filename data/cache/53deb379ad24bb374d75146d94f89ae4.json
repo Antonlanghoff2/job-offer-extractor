@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:4005003",
+  "value": {
+    "id": "4005003",
+    "intitule": "Ingénieur études & Développement Full Stack (H/F)",
+    "entreprise": "SOLUTEC",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4005003",
+    "description": "Vous cherchez à rejoindre une équipe dynamique sur Toulouse ? Travailler dans un environnement Start Up avec les avantages d'une structure en pleine croissance telle que AUBAY SOLUTEC ? Ce poste est fait pour vous ! Nous recherchons un(e) Ingénieur d'Etudes & Développement Full Stack. Rattaché(e) au chef de projet chez un de nos clients grands comptes, vous interviendrez sur l'ensemble du cycle de vie d'un projet.\n\nVous serez notamment en charge de :\n\n * Clarification des besoins / Chiffrage\n * La rédaction des spécifications techniques détaillées\n * La conception et le développement d'applications Web Responsive\n * La réalisation des tests unitaires et d'intégration\n * La maintenance corrective et évolutive\n * Veille technologique\n\nÉvolution à terme vers des postes d'AMOA, de chef de projet ou encore d'expert technique.\nIssu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4 /Bac+5), vous justifiez d'une première expérience de développement en environnement Java / Angular. Vous possédez idéalement des connaissances sur les SGBD (Oracle, SQL Server ou autres BDD).\n\nDébutant(e) ou confirmé(e), vous souhaitez mettre en valeur votre expérience dans cet environnement technique et développer votre esprit d'équipe. Votre facilité d'adaptation, votre réactivité et votre autonomie vous permettront de mener à bien et de satisfaire les exigences des projets qui vous seront confiés.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Java",
+      "SQL",
+      "Application web",
+      "Tests automatisés"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons un(e) Ingénieur d'Etudes & Développement Full Stack.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4 /Bac+5), vous justifiez d'une première expérience de développement en environnement Java / Angular.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4 /Bac+5), vous justifiez d'une première expérience de développement en environnement Java / Angular.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4 /Bac+5), vous justifiez d'une première expérience de développement en environnement Java / Angular.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:28.649736",
+  "input_hash": "cb4b98b7f14b84c036cceab36114cad9d227c9f67deee49a2dc31ef53d21712b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

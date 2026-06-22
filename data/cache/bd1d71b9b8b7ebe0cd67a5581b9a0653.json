@@ -1,0 +1,79 @@
+{
+  "key": "offer_extraction:210BFNM",
+  "value": {
+    "id": "210BFNM",
+    "intitule": "Alternance - Ingénieur IA Générative - LLM, RAG & Agents IA (H/F)",
+    "entreprise": "LSEHL",
+    "territoire": "69 - VENISSIEUX",
+    "ville": "69259",
+    "code_postal": "69200",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210BFNM",
+    "description": "L'IA générative transforme profondément la manière dont les entreprises traitent l'information et automatisent leurs processus. Le Groupe Carso lance plusieurs initiatives pour intégrer ces technologies au cœur de ses opérations : agents IA, systèmes de RAG (Retrieval-Augmented Generation), et automatisation intelligente des flux de travail.\n\nNous recherchons un(e) alternant(e) passionné(e) par ces sujets pour contribuer activement à la conception, au développement et au déploiement de ces solutions, en lien étroit avec les équipes métiers.\n\n\n\nAu sein de l'équipe IA / Data, vous prendrez part à plusieurs projets concrets :\n\n1. Projet phare - Catégorisation automatique et préparation de réponses email (Outlook)\n\nConcevoir et développer un système de classification automatique des emails entrants par catégorie, priorité et intention.\nIntégrer la solution à Microsoft Outlook (via Microsoft Graph API ou add-ins Office).\nGénérer automatiquement des propositions de réponses contextualisées, prêtes à être validées par les utilisateurs.\nMesurer la qualité du modèle (précision, rappel, taux d'acceptation) et itérer avec les utilisateurs métiers.\n\n2. Développement d'agents IA\n\nConcevoir des agents autonomes capables d'orchestrer plusieurs outils et sources de données (function calling, tool use, MCP).\nImplémenter des workflows multi-étapes avec gestion de la mémoire et du contexte conversationnel.\nGarantir la fiabilité, la traçabilité et la sécurité des agents en production.\n\n3. Solutions RAG et LLM appliqués\n\nConstruire des pipelines de RAG sur des corpus internes (documentation, procédures, bases de connaissances).\nOptimiser les stratégies de chunking, d'embedding et de re-ranking pour maximiser la pertinence des réponses.\nÉvaluer et comparer différents modèles (open-source et propriétaires) selon les cas d'usage.\n\n4. Veille, prototypage et transfert de compétences\n\nAssurer une veille active sur les avancées de l'écosystème IA générative.\nRéaliser des POC pour valider de nouvelles approches avant industrialisation.\nDocumenter et présenter vos travaux pour favoriser l'acculturation des équipes.\n\nVous préparez un diplôme de niveau Bac+5 (Master 2 ou dernière année d'école d'ingénieur) en Informatique, Data Science, Intelligence Artificielle ou équivalent.\n\nCompétences techniques attendues\nTrès bonne maîtrise de Python et des bonnes pratiques de développement (Git, tests, environnements virtuels).\nPremière expérience pratique avec des LLM (OpenAI, Anthropic, Mistral, Llama.) via API ou en local.\nConnaissance des frameworks d'orchestration : LangChain, LlamaIndex, ou équivalents.\nFamiliarité avec les bases vectorielles (Pinecone, Weaviate, Qdrant, ChromaDB, FAISS) et les techniques d'embeddings.\nNotions de NLP classique : tokenisation, TF-IDF, classification supervisée, évaluation de modèles.\nÀ l'aise avec les API REST et la manipulation de données structurées / non structurées (JSON, CSV, Markdown, PDF).\nAtout : connaissance de l'écosystème Microsoft (Graph API, Office 365, Azure OpenAI).\nSavoir-être\nCuriosité et autonomie : vous aimez explorer, tester, apprendre vite.\nRigueur : vous documentez, vous mesurez, vous itérez.\nAisance relationnelle : vous savez vulgariser vos travaux auprès d'interlocuteurs non techniques.\nEsprit produit : vous gardez toujours en tête l'utilisateur final et la valeur métier.\nStack technique\nLangages : Python (principal), JavaScript/TypeScript (bonus)\nFrameworks IA : LangChain, LlamaIndex, LangGraph, Pydantic AI\nVector DB : Qdrant\nIntégrations : Microsoft Graph API (Outlook, Teams, SharePoint), MCP (Model Context Protocol), Power Automate, web app pour POC\nOutils : Gitlab, Docker, FastAPI, VS Code\n\nAu sein Groupe Carso, nous respectons et valorisons la diversité de nos collaborateurs, leurs parcours et leurs expériences dans un objectif d'égalité des chances pour tous. Dans le cadre de son engagement diversité,",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "Azure",
+      "Docker",
+      "FastAPI",
+      "Git",
+      "Intelligence artificielle",
+      "JavaScript",
+      "LangChain",
+      "Python",
+      "TypeScript",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "MLOps",
+      "Sécurité informatique",
+      "API",
+      "Backend",
+      "Pipelines de données",
+      "Optimisation des performances",
+      "Model drift",
+      "Veille technologique"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous préparez un diplôme de niveau Bac+5 (Master 2 ou dernière année d'école d'ingénieur) en Informatique, Data Science, Intelligence Artificielle ou équivalent.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Vous préparez un diplôme de niveau Bac+5 (Master 2 ou dernière année d'école d'ingénieur) en Informatique, Data Science, Intelligence Artificielle ou équivalent.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous préparez un diplôme de niveau Bac+5 (Master 2 ou dernière année d'école d'ingénieur) en Informatique, Data Science, Intelligence Artificielle ou équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 20,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:49:57.379144",
+  "input_hash": "fafd505ac902c517439e3345242b1e4194ecb0f640324851714c3f4eadda9ad2",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:3606551",
+  "value": {
+    "id": "3606551",
+    "intitule": "Développeur JAVA (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris",
+    "ville": "75 - Paris",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3606551",
+    "description": "Description du poste :\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\nDescription de l'entreprise\nSopra Steria , acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative. Sopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2024, le Groupe a réalisé un chiffre d'affaires de 5,8 milliards d'euros.\nThe world is how we shape it*\nDescription du poste\nRejoindre une équipe d'ingénierie senior pour intervenir sur des architectures distribuées à haute volumétrie, en environnement microservices. Le rôle est focalisé sur l'expertise technique, la conception, l'industrialisation et la qualité du code.\nBackend & Core Java***Java 17 minimum (idéalement 21) - maîtrise complète JVM, GC tuning, Stream API, Concurrency.\n* Spring Boot 3.x + Spring Framework 6 : compréhension interne (context, lifecycle, AOP Spring Data JPA , Spring Cloud , Spring Batch .\nArchitecture & Conception***Conception microservices stateless , patterns avancés Circuit Breaker, Retry, Bulkhead, Event Sourcing, CQRS.\n* Excellente maîtrise Hexagonal / DDD / Clean Architecture .\nAPI & Intégration***API REST niveau senior (HATEOAS, versioning, idempotence Maîtrise GraphQL ou gRPC.\n* Handling inter-service : Kafka indispensable (topic design, partitions, consumer groups, exactly-once).\nPerformance & Scalabilité***Analyse et optimisation de Latence, throughput, contention Memory leak, heap dump, thread dump.\n* Expérience sur des applications à haute volumétrie > 500 TPS .\nBase de Données***Expertise PostgreSQL ou Oracle Indexation avancée, execution plan, partitionnement.\n* Une expérience NoSQL obligatoire : MongoDB ou Redis (cache distribué).\nCI/CD & Qualité***Pipelines GitLab CI ou Jenkins maîtrisés.\n* Tests automatisés obligatoires JUnit 5 , Testcontainers , WireMock , Cucumber Pratique réelle du TDD Code > 80% coverage réel (pas Sonar inflation).\nCloud & Containers***Docker niveau expert.\n* Kubernetes (HPA, liveness/readiness probes, ConfigMap, Helm obligatoire Cloud public : AWS ou GCP , avec maîtrise de au moins 4 services (EC2/EKS/RDS/SQS/SNS ou équivalents GCP).\nRESPONSABILITÉS PRINCIPALES***Conception et développement de microservices complexes haute performance.\n* Structuration du code selon les principes Clean/Hexagonal.\n* Mise en place des standards de développement, code reviews exigeantes.\n* Optimisation des performances backend (scalabilité, temps de réponse Industrialisation CI/CD et intégration des tests avancés.\n* Contribution à l'architecture cible et participation aux guildes techniques.\n* Encadrement technique ponctuel des développeurs intermédiaires/seniors.\n* Interventions de niveau expert sur incidents complexes (root cause analysis).\nQualifications\nVous êtes diplômé(e) d'une école d'Ingénieur ou d'une formation Universitaire ou équivalent.***8 ans d'expérience minimum exclusivement sur du backend Java Historique de projets à forte complexité technique.\n* Capacité à challenger des choix d'architecture et à défendre des orientations techniques.\n* Culture de la qualité : code craft, Clean Code, SOLID, lisibilité irréprochable.\nInformations supplémentaires\n* Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n* Un package avantages intéressant : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation.\n* Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.\n* Plusieurs centaines de formations accessibles en toute autonomie avec Sopra Steria Academy.\n* La possibilité de s'engager auprès de notre fondation ou de notre partenaire « Vendredi L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore Employeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est p",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "AWS",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "NoSQL",
+      "PostgreSQL",
+      "SQL"
+    ],
+    "salaire_min": 51000,
+    "salaire_max": 51000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous êtes diplômé(e) d'une école d'Ingénieur ou d'une formation Universitaire ou équivalent.***8 ans d'expérience minimum exclusivement sur du backend Java Historique de projets à forte complexité technique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "6 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:54.213712",
+  "input_hash": "29a7ef4a26306048dcae91239c4e5485a2ed570540b8d44c3bc739e11999680e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

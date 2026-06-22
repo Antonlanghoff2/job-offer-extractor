@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:3684936",
+  "value": {
+    "id": "3684936",
+    "intitule": "BI & Data Manager H/F",
+    "entreprise": "RAGNI",
+    "territoire": "06 - Gaude",
+    "ville": "06065",
+    "code_postal": "06610",
+    "contrat": "CDI",
+    "date_creation": "2026-06-11",
+    "date": "2026-06-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3684936",
+    "description": "En rejoignant notre équipe, vous contribuerez à bâtir un système data moderne et évolutif, répondant aux besoins de plusieurs entités et services de l’entreprise. Vous aurez pour missions principales : - Mettre en place les process et workflow \"Master Data\" en étroite collaboration avec des keys users - Etre garant de la qualité de la donnée tout au long de son cycle de vie, notamment grâce aux outils appropriés - Construire et faire évoluer le reporting et KPI dans PowerBI (Microsoft). Gérer les priorités, mettre en place le RACI des droits utilisateurs/destinataires. Gérer des actifs, espace de travail... - Construire la Date Warehouse / Data Lake (agrégation des données) sur Snowflake et organiser la migration vers Microsoft Fabric. - Administrer un ETL sur Talend. - Construire la vision de la donnée IA. - Fournir les requêtes SQL selon le besoin des métiers. - Garantir la conformité RGPD en étroite collaboration avec les DPO entités. De formation Bac +3/+5 de type Business Intelligence, Data Analyst, PowerBI. Vous disposez de bases solides en connaissances SQL. La connaissance de l'outil PowerBI est un prérequis. Vous avez déjà construit un environnement de stockage de données de type Data Warehouse, Data Lake... Vous avez géré la diffusion des reporting/KPI avec l'aide de Pack Office 365. Vous disposez d'une expérience réussie d'environ 5 ans sur un poste similaire ou en ESN spécialisée.",
+    "metier": "Data scientist",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL",
+      "Vision",
+      "Gestion de projet",
+      "Sécurité informatique",
+      "Intégration continue",
+      "Model drift",
+      "Data Engineering",
+      "Qualité des données"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Vous aurez pour missions principales : - Mettre en place les process et workflow \"Master Data\" en étroite collaboration avec des keys users - Etre garant de la qualité de la donnée tout au long de son cycle de vie, notamment grâce aux outils appropriés - Construire et faire évoluer le reporting et KPI dans PowerBI (Microsoft).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac +3/+5 de type Business Intelligence, Data Analyst, PowerBI.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:14.285776",
+  "input_hash": "dd59e5bdf4dfeec5f117383770f5703bcb33970be5a6e48059aaf9ea765bc697",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

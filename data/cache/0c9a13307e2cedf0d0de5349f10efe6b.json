@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:8988437",
+  "value": {
+    "id": "8988437",
+    "intitule": "STAGE DÉVELOPPEUR IA - H/F",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-02-11",
+    "date": "2026-02-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8988437",
+    "description": "Nous recherchons un(e) stagiaire Développeur(se) IA passionné(e) par l'intelligence artificielle et l'écosystème Java pour rejoindre notre équipe dynamique.\nVous intégrerez une équipe composée d'un chef de projet et de 3 développeurs, collaborant au quotidien avec les représentants des utilisateurs (leader fonctionnel, support et recette interne).\nVotre mission principale consistera à concevoir et mettre en place un Chat IA intelligent destiné aux utilisateurs de nos solutions logicielles. Cet assistant virtuel aura pour but de faciliter l'accès à l'information et d'assister les utilisateurs dans leurs tâches quotidiennes.\nEncadré(e) par des développeurs seniors, vous participerez activement aux phases suivantes :\nAnalyse et Conception : Étudier les besoins fonctionnels pour l'intégration du chat dans nos différentes applications (Mobile, Web et Client lourd).\nDéveloppement IA & Backend :\nSpécialisation du modèle (Fine-tuning) : Entraîner et adapter le modèle Gemini spécifiquement au contexte Devinlec en exploitant nos jeux de données (catalogue produits, procédures internes, historique).\nIntégration Cloud : Déployer et configurer les services d'IA sur Google Cloud Platform (GCP / Vertex AI).\nOrchestration Backend : Développer l'API en Java Spring Boot assurant le pont technique sécurisé entre le moteur d'IA et nos applications.\nIntégration Front-end & Multi-plateformes :\nImplémenter l'interface du chat dans nos environnements existants : applications lourdes (Java FX, Swing), applications Web (Angular, JSF, J2EE) et mobile (Android).\nQualité et Méthodologie :\nParticiper aux revues de code et garantir la qualité des livrables.\nAdhérer aux principes de développement agile de l'équipe et participer aux cérémonies.\nDisponibilité : Dès que possible\nGratification : Selon profil et législation en vigueur",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Java",
+      "Vue.js",
+      "Google Cloud",
+      "Code review",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Déploiement de modèles",
+      "MLOps",
+      "Intégration continue"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Cet assistant virtuel aura pour but de faciliter l'accès à l'information et d'assister les utilisateurs dans leurs tâches quotidiennes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:02.788946",
+  "input_hash": "4f8fe7ec5132a30e7d9841f038a0940c3b9808669a6032458fd78e505c5f0ef6",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

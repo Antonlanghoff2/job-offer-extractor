@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:3426491",
+  "value": {
+    "id": "3426491",
+    "intitule": "Responsable métier éléctromécanique F/H - Informatique industrielle (H/F)",
+    "entreprise": "Vulcain Services",
+    "territoire": "69 - Lyon 2e Arrondissement",
+    "ville": "69382",
+    "code_postal": "69002",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3426491",
+    "description": "Descriptif du poste:\n\n\n\n* Piloter et encadrer les études électromécaniques (machines tournantes, moteurs, alternateurs, systèmes d'entraînement et équipements associés).\n\n \n* Définir les orientations techniques, valider les choix de conception et assurer la standardisation des pratiques métier.\n\n \n* Superviser les dimensionnements, notes de calcul et analyses techniques en lien avec les contraintes projets.\n\n \n* Assurer la gestion des interfaces entre les disciplines (mécanique, électricité, automatisme) et garantir la cohérence globale des systèmes.\n\n \n* Accompagner les équipes projets en tant qu'expert métier et assurer le support technique tout au long du cycle de vie des projets.\n\n \n* Participer aux phases d'appels d'offres : analyse des besoins, validation des solutions techniques et évaluation des offres fournisseurs.\n\n \n* Suivre l'exécution des études et des réalisations, analyser les écarts et mettre en place les actions correctives.\n\n \n* Superviser les essais (FAT, SAT), la mise en service et garantir la performance des installations.\n\n \n* Contribuer à l'amélioration continue des méthodes, outils et référentiels du métier.\n\nProfil recherché:\n\n* Ingénieur(e) en électromécanique, génie électrique, mécanique ou équivalent.\n\n \n* minimum 8 ans d'expérience en électromécanique industrielle, dont une expérience significative en pilotage technique ou en référent métier.\n\n \n* Solides compétences en machines électriques, mécanique appliquée et systèmes industriels complexes.\n\n \n* Expérience en gestion d'équipes techniques ou coordination transverse appréciée.\n\n \n* Forte capacité d'analyse, rigueur, leadership technique et esprit de synthèse.\n\n \n* Excellentes qualités relationnelles et aptitude à travailler en environnement multidisciplinaire.\n\n \n* Vous vous reconnaissez dans les valeurs d'ouverture, d'esprit d'équipe, de bienveillance et de performance, chères au Groupe.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Design patterns",
+      "Intégration continue",
+      "Analyse de données",
+      "Gestion de projet",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Documentation technique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 8000,
+    "salaire_max": 8000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur(e) en électromécanique, génie électrique, mécanique ou équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "10 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:45.175543",
+  "input_hash": "4a9a68c8dbb4189fad3e1842e7046e215ac2b4a473e95767ec315e0cd1704edb",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

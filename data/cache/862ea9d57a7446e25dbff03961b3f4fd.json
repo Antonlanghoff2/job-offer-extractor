@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:1344205",
+  "value": {
+    "id": "1344205",
+    "intitule": "Devops platform aws f/h",
+    "entreprise": "",
+    "territoire": "92 - Malakoff",
+    "ville": "92046",
+    "code_postal": "92240",
+    "contrat": "CDI",
+    "date_creation": "2026-04-11",
+    "date": "2026-04-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1344205",
+    "description": "Safran est un groupe international de haute technologie opérant dans les domaines de l'aéronautique (propulsion, équipements et intérieurs), de l'espace et de la défense. Sa mission : contribuer durablement à un monde plus sûr, où le transport aérien devient toujours plus respectueux de l'environnement, plus confortable et plus accessible. Implanté sur tous les continents, le Groupe emploie 100 000 collaborateurs pour un chiffre d'affaires de 27,3 milliards d'euros en 2024, et occupe, seul ou en partenariat, des positions de premier plan mondial ou européen sur ses marchés. Safran est la 2ème entreprise du secteur aéronautique et défense du classement « World's Best Companies 2024 » du magazine TIME. Parce que nous sommes persuadés que chaque talent compte, nous valorisons et encourageons les candidatures de personnes en situation de handicap pour nos opportunités d'emploi Descriptif missionContexte : Safran Analytics est l'IA Factory du Groupe Safran spécialisée dans le traitement de données tabulaires, time series et données texte. Les équipes de Safran Analytics travaillent avec les ingénieurs et responsables de produits et services des sociétés du Groupe pour développer des solutions innovantes à base de Analytics, Machine Learning et IA à base de modèles fondation. En tant qu'Ingénieur DevOps Platform AWS, vous intégrez la Direction Technique de Safran Analytics. Missions principales : o Concevoir, développer et maintenir des modules Infrastructure as Code (IaC) et des templates standardisés, pour accélérer l'arrivée de nouveaux projets IA sur la plateforme o Développer et maintenir des modules d'infrastructure as code (IaC) et des templates standardisés pour accélérer l'accostage des projets Cloud IA sur la plateforme : - Concevoir et maintenir les architectures Cloud AWS (multi-comptes, VPC, sous-réseaux, sécurité réseau, IAM). - Mettre en oeuvre l'Infrastructure as Code (Terraform, CloudFormation ou équivalent) pour standardiser et automatiser les déploiements. - Garantir la scalabilité, la disponibilité et l'optimisation des coûts (approche FinOps) des environnements IA. - S'assurer que les Squads exploitent correctement les services Cloud mis à disposition par la DSI Groupe o Industrialiser les déploiements cloud via l'automatisation (Terraform, CloudFormation, Ansible...) et orchestrer les environnements (Docker, Kubernetes...) pour assurer agilité et robustess o Accompagner les squads et projets métiers : support technique, sensibilisation aux outils DevOps/SecOps/FinOps, suivi opérationnel, transferts de compétences o Contribuer à la stratégie d'adoption Cloud en animant des sessions de partage, en participant à l'outillage de la forge DevOps Groupe, et en diffusant les bonnes pratiques DevSecOps au sein des équipes IT. o Automatiser les déploiements sur les environnements (développement, intégration, pré-production, production). o Intégrer la sécurité dans les pipelines CI/CD et les bonnes pratiques de sécurité AWS : - Analyse de vulnérabilités des images Docker, - Scan de configuration IaC, - Contrôles de conformité automatisés - Gestion des identités et des accès (IAM, rôles, politiques de moindre privilège), chiffrement des données (KMS, gestion des secrets) o Standardiser les usages Cloud : - Création et alimentation des pattern Data/IA fondationnels permettant l'accostage des projet IA de safran sur la landing zone AWS - Amélioration du socle Landing Zone AWS du Groupe : assurer l'évolutivité, la sécurité, et l'industrialisation du socle AWS, en intégrant les meilleures pratiques et retours d'expérience du marché",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Aéronautique",
+      "Coûts",
+      "Docker",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Machine learning",
+      "Terraform",
+      "Automatisation des déploiements",
+      "Sécurité informatique",
+      "Pipelines de données",
+      "Backend",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 100000,
+    "salaire_max": 100000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieur DevOps Platform AWS, vous intégrez la Direction Technique de Safran Analytics.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:09.660179",
+  "input_hash": "f334ff6d20c67bec6f9ade4ed371765bd948bea1ee12e0635cf337e5dd1acf0e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

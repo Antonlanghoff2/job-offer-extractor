@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:2938904",
+  "value": {
+    "id": "2938904",
+    "intitule": "DATA MANAGER/DATA INGÉNIEUR - H/F",
+    "entreprise": "CHU de Reims",
+    "territoire": "51 - Reims",
+    "ville": "51454",
+    "code_postal": "51100",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-22",
+    "date": "2026-05-22",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2938904",
+    "description": "Description : L’institut d’Intelligence Artificielle en Santé (IIAS.fr) est une structure de recherche et de valorisation sous la tutelle du CHU de Reims et de l’Université de Reims Champagne-Ardenne. L’IIAS a pour missions : la promotion et sensibilisation à l’IA en Santé, la formation et l’accompagnement à la recherche sur l’IA en Santé et la valorisation des projets d’IA en Santé au travers de son incubateur en Santé Numérique et IA en Santé PETILLANTeS en partenariat avec Quest for Health et Innovact. L’IIAS et PETILLANTeS sont lauréats d’un Tiers-Lieux d’Expérimentation au service des entreprise et startups. En tant que Data Manager, vous serez en charge de l’Entrepôt de Données de Santé (EDS) au sein de l’IIAS et coordonnerez les projets de recherche. Vous serez rattaché(e) hiérarchiquement au Directeur de l’IIAS et fonctionnellement au responsable scientifique de l’IIAS. ABRÉVIATIONS - SQL : Structured Query Language : langage permettant de communiquer avec une base de données. - EDS : Entrepôt de Données de Santé - IIAS : Institut de l’Intelligence Artificielle en Santé - CHADS : Centre d’Hébergement et d’Analyse des Données de Santé MISSIONS - Analyser les sources de données et réaliser les mappings vers le modèle cible de l’EDS - S’assurer de la bonne mise à jour et de la maintenance EDS. - Assurer la traçabilité et la qualité des données tout au long du pipeline. - Extraction de données de l’EDS et mise en forme des données pour mettre à disposition des utilisateurs. - Participation à l’historisation et mise à jour des nomenclatures et tables de valeurs - Coordination des projets de recherche soumis à l’IIAS (suivi projets) - Collaboration aux projets de recherche de l’IIAS, participation ponctuelle à la production de statistique - Participation aux développements technologiques de l’IIAS - Rédaction de documentations liées aux activités réalisées - Développer des pipelines ETL/ELT robustes et scalables avec Python et Dagster. CARACTÉRISTIQUE DU POSTE - CDD de projet d'un an (rouvelable en fonction des besoins du projet) - Poste à temps plein, basé sur le site du CHU de Reims POURQUOI NOUS REJOINDRE ? - Opportunité d’évoluer dans un environnement innovant et stimulant. - Collaboration avec des startups en plein développement. - Formation et participation à des événements clés du secteur. Profil recherché : FORMATION ET EXPÉRIENCE - Formation de niveau Bac +3 à Bac +5 : compétence en ingénierie et traitement des données. - Expérience souhaitée (mais non exigée) dans un environnement similaire (santé numérique, startups, incubateurs, innovation). COMPÉTENCES REQUISES - Anglais scientifique - Développement informatique / analyse et programmation - Maitrise des langages et technologies suivantes : *SQL *Python *Dagster (optionnel) COMPÉTENCES APPRÉCIÉES - Connaissance des données des systèmes d’information hospitaliers - Connaissance de l’écosystème des données de santé SAVOIR – FAIRE - Bureautique - Gestion de données relatives à son domaine - Informatique / Système d’information SAVOIR – ÊTRE - Être doté(e) d’un grand esprit de synthèse - Organisé(e) et rigoureux / se - Savoir travailler aussi bien en pleine autonomie qu’en équipe",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 2400,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil recherché : FORMATION ET EXPÉRIENCE - Formation de niveau Bac +3 à Bac +5 : compétence en ingénierie et traitement des données. - Expérience souhaitée (mais non exigée) dans un environnement similaire (santé numérique, startups, incubateurs, innovation).",
+        "confidence": 0.7
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil recherché : FORMATION ET EXPÉRIENCE - Formation de niveau Bac +3 à Bac +5 : compétence en ingénierie et traitement des données. - Expérience souhaitée (mais non exigée) dans un environnement similaire (santé numérique, startups, incubateurs, innovation).",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:19.520913",
+  "input_hash": "3cdef0f77e84ee8c83e3fc37693df12a7113b28d3905a28be8430cd439184c80",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

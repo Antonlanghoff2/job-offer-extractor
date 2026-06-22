@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3759168",
+  "value": {
+    "id": "3759168",
+    "intitule": "INGENIEUR  TESTS ENGINEERING CONFIRME H/F",
+    "entreprise": "LYNRED",
+    "territoire": "38 - Veurey-Voroize",
+    "ville": "38540",
+    "code_postal": "38113",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3759168",
+    "description": "? Rejoignez une équipe innovante au cœur des technologies infrarouges ! Vous souhaitez contribuer à des solutions de pointe dans un environnement technologique stimulant ? Vous aimez concevoir, tester et améliorer des systèmes complexes ? Cette opportunité est faite pour vous. ? Qui sommes-nous ? L’Unité Produits Modules (UPM) est une organisation récente, agile et en forte croissance, dédiée à démocratiser l’usage des technologies infrarouges et à ouvrir de nouveaux marchés. Nous concevons des modules optroniques avancés intégrant détecteurs infrarouges, optiques, électronique embarquée et algorithmes de traitement. Dans ce contexte de croissance, notre équipe VVQT (Vérification, Validation, Qualification &amp; Test) se renforce ! ? Votre mission En tant qu’Ingénieur(e) Test Engineering, vous êtes au cœur de la qualité et de la performance de nos produits. Votre rôle : concevoir et piloter des solutions de test innovantes, de leur définition jusqu’à leur mise en production. ? Vos responsabilités En collaboration étroite avec les équipes R&amp;D, Validation et Production : Participer à la définition des stratégies et spécifications de test (fonctionnels, performances, robustesse, capacité industrielle) Concevoir, développer et qualifier des bancs de test (interne ou sous-traitance) Mettre en production de nouveaux équipements de test Adapter et améliorer les solutions existantes pour accompagner nos nouveaux produits Analyser les résultats, identifier les défaillances et piloter les plans d’actions Assurer le support technique second niveau et garantir la conformité des tests Rédiger et maintenir la documentation technique Former et accompagner les équipes Support Contribuer activement à l’amélioration continue des outils et méthodes Diplôme d’ingénieur ou équivalent (électronique, instrumentation, systèmes embarqués) Expérience en développement de bancs de test en environnement industriel ? Compétences clés : Électronique analogique/numérique &amp; interfaces (I2C, SPI, UART, CameraLink, USB, MIPI CSI…) Développement logiciel (Python, Matlab, VBA, C/C++) Instrumentation (oscilloscopes, générateurs, caméras IR…) Connaissance des environnements de test industriels (qualité, traçabilité, automatisation) ? Vous êtes reconnu(e) pour votre rigueur, votre esprit d’analyse, votre autonomie et votre capacité à travailler en équipe. ? Pourquoi nous rejoindre ? Un environnement high-tech et innovant Des projets à fort impact technologique Une équipe passionnée et collaborative Des perspectives d’évolution au sein d’un groupe en croissance ? Localisation : Veurey-Voroize (proche Grenoble) ? Contrat : CDI ? Langues : Français cou",
+    "metier": "Ingénieur / Ingénieure méthodes et process",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Instrumentation",
+      "Optique",
+      "Python",
+      "Scalabilité",
+      "Documentation technique",
+      "Architecture microservices",
+      "Backend",
+      "Cahier des charges",
+      "Tests automatisés",
+      "MLOps"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Votre mission En tant qu’Ingénieur(e) Test Engineering, vous êtes au cœur de la qualité et de la performance de nos produits.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:53.902440",
+  "input_hash": "4c6fc79407bb01d1a7c0d21b0e81bf6114d7e5416c7330cd6daa29c175151c03",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

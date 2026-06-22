@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3903437",
+  "value": {
+    "id": "3903437",
+    "intitule": "Ingénieur Systèmes et Réseaux (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 11e Arrondissement",
+    "ville": "75111",
+    "code_postal": "75011",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3903437",
+    "description": "L'équipe Talents IT s'engage à être réactive et présente pour répondre à vos demandes. Nos consultants ont pour vocation de vous accompagner dans la recherche de vos futurs experts IT, en CDI et en CDD, quel que soit votre secteur d'activité. Talents IT est un cabinet de recrutement national spécialisé dans les MÉTIERS DE L'IT ET DU DIGITAL, NOUS VOUS PROPOSONS RÉGULIÈREMENT DES OFFRES D'EMPLOI DANS CES DOMAINES : DÉVELOPPEMENT, SÉCURITÉ, INFRASTRUCTURE, R&D, DATA, PROJET, PRODUIT... Nos consultants expérimentés vous offrent un ACCOMPAGNEMENT PERSONNALISÉ et des conseils avisés pour vous aider à évoluer dans votre carrière. Zoom sur vos missions ! Le poste est polyvalent, mais la priorité actuelle est clairement portée sur les sujets RÉSEAUX ET SÉCURITÉ, notamment dans un contexte de déploiement de plusieurs sites en France et de demandes croissantes côté international et services internes. Au sein de l'équipe INFRASTRUCTURES SYSTÈMES ET RÉSEAUX, vous intervenez sur un poste polyvalent, avec une forte dominante RÉSEAUX / SÉCURITÉ. Vos missions principales seront : * Assurer le support Niveau 2 / 2bis sur les incidents infrastructures complexes * Participer aux projets d'évolution de l'infrastructure * Contribuer aux déploiements réseaux en France * Intervenir sur les sujets LAN, WLAN, firewall, NAC * Assurer le MCO / MCS des services d'infrastructure * Administrer les environnements Microsoft, systèmes, virtualisation et Linux * Rédiger la documentation technique La répartition du poste sera d'environ 40 % PROJETS, 30 % CHANGEMENTS / ÉVOLUTIONS et le reste en RUN / SUPPORT AVANCÉ. CE POSTE EST FAIT POUR VOUS SI... Vous êtes issu d'une formation BAC +5 / INGÉNIEUR et justifiez d'au moins 3/5 ANS D'EXPÉRIENCE hors alternance sur des environnements infrastructures. Vous avez une vraie posture ingénieur : capacité d'analyse, prise de recul, diagnostic, communication et capacité à rendre un sujet technique compréhensible. Vous avez des compétences sur tout ou partie de ces environnements : * Réseaux / sécurité : IP, routage, NAT, Proxy, UTM, filtrage, DHCP, DNS, VLAN, WLAN * Technologies : Fortinet, Palo Alto, Stormshield, Aruba * Scripting / monitoring : SNMP, API, PowerShell, Python, Git * Systèmes : AD CS, AD DS, VMware, Hyper-V, Linux Debian / Ubuntu RÉMUNÉRATION ENTRE 45KEUR ET 55KEUR (HORS PRIMES) ; TÉLÉTRAVAIL POSSIBLE APRÈS PÉRIODE D'ESSAI, JUSQU'À 2 JOURS/SEMAINE SELON ACTIVITÉ",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Documentation technique",
+      "Gestion de projet"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "BAC +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes issu d'une formation BAC +5 / INGÉNIEUR et justifiez d'au moins 3/5 ANS D'EXPÉRIENCE hors alternance sur des environnements infrastructures.",
+        "confidence": 0.9
+      },
+      {
+        "label": "INGÉNIEUR",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous êtes issu d'une formation BAC +5 / INGÉNIEUR et justifiez d'au moins 3/5 ANS D'EXPÉRIENCE hors alternance sur des environnements infrastructures.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:46.363672",
+  "input_hash": "ab411b6738e9c71feeddb5322dca97aee22b0937767b5761504c1dbee8d54197",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:4008236",
+  "value": {
+    "id": "4008236",
+    "intitule": "Technicien microsystèmes intégration F/H",
+    "entreprise": "",
+    "territoire": "91 - Palaiseau",
+    "ville": "91477",
+    "code_postal": "91120",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4008236",
+    "description": "Dans le Département Physique, Instrumentation, Environnement Espace (DPHY) de l'ONERA, vous rejoindrez l'unité CMT (Capteurs et Micro-Technologie) qui développe des micro-capteurs haute performance destinés aux applications aérospatiales. Il s'agit notamment des capteurs de type MEMS résonants (Micro Electro Mechanical System): accéléromètres, gyromètres, base de temps, capteur de gaz photo acoustique, ainsi que des capteurs élaborés à partir de couches minces micrométriques et de matériaux 2D (graphène, nitrure de bore). Les parties sensibles de ces capteurs sont élaborées dans les salles blanches du département. Vous serez chargé de la réalisation et la caractérisation de ces microsystèmes, notamment : La participation à la conception des prototypes : CAO de pièces mécaniques, Layout de cartes électroniques ; La participation à la réalisation des prototypes de capteurs, en particulier leur intégration : mécanique, collages, connectique, wire bonding, mise sous vide, mesures optiques et électriques ; La participation à la caractérisation des prototypes : automatisation et exploitation des bancs de mesures, réalisation de campagnes de mesures et mise en forme des résultats. La maîtrise de tout ou partie de ces outils informatiques serait appréciée : logiciel de CAO mécanique, logiciel de layout de cartes électroniques, langage python pour l'automatisation des bancs de mesure. Ce travail sera mené en lien direct avec les ingénieurs, techniciens, et doctorants de l'équipe, dans le cadre de projets internes à l'ONERA et de projets collaboratifs en partenariat avec les industriels et les laboratoires de recherche du domaine, ainsi que les agences comme le CNES, l'ESA et la DGA. Votre rigueur et précision, votre curiosité technique, votre aptitude à acquérir de nouveaux savoir-faire et votre goût du travail en équipe seront des atouts pour ce poste. Technicien supérieur en mesures physiques ou électronique (BUT/BTS/Licence Pro Électronique ou Mesures Physiques) ; Débutant ou avec une expérience en réalisation et caractérisation de capteurs.",
+    "metier": "Technicien / Technicienne installation et maintenance électronique",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Instrumentation",
+      "Intelligence artificielle",
+      "Optique",
+      "Python",
+      "Déploiement de modèles",
+      "MLOps",
+      "Design patterns",
+      "Scalabilité"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Technicien supérieur en mesures physiques ou électronique (BUT/BTS/Licence Pro Électronique ou Mesures Physiques) ; Débutant ou avec une expérience en réalisation et caractérisation de capteurs.",
+        "confidence": 0.9
+      },
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Technicien supérieur en mesures physiques ou électronique (BUT/BTS/Licence Pro Électronique ou Mesures Physiques) ; Débutant ou avec une expérience en réalisation et caractérisation de capteurs.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Licence",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Technicien supérieur en mesures physiques ou électronique (BUT/BTS/Licence Pro Électronique ou Mesures Physiques) ; Débutant ou avec une expérience en réalisation et caractérisation de capteurs.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:40.824281",
+  "input_hash": "9beea7cbcc4f89d374fb614ba36d84be89235afaf2028aed8ef9dadfdf785a72",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

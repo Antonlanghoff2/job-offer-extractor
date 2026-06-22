@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:4004617",
+  "value": {
+    "id": "4004617",
+    "intitule": "Ingénieur DevSecOps F/H - Informatique de gestion (H/F)",
+    "entreprise": "SOLUTEC",
+    "territoire": "13 - Aix-en-Provence",
+    "ville": "13001",
+    "code_postal": "13080",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4004617",
+    "description": "Descriptif du poste:\n\n\nVous cherchez à rejoindre une équipe dynamique sur Aix-en-Provence ? Travailler dans un environnement Start Up avec les avantages d'une structure en pleine croissance telle que AUBAY SOLUTEC ? Alors ce poste est fait pour vous !\n\nNous recherchons pour notre agence Toulousaine  un(e) DevSecOps . Vous aurez pour missions au sein du pôle Sécurité de l'un de nos clients grands comptes :\n* Déployer et automatiser les tests du nouveau Centre de Sécurité d'une infrastructure à forte criticité.\n* Mettre en place la chaîne d'intégration continue/DevOps.\n* Accompagnement des équipes systèmes\n* Tests d'intégration\n* Correction d'anomalie\n\nEn tant que consultant, votre rôle comprendra également des aspects plus globaux, comme la veille technologique et le conseil auprès du client sur de nouveaux outils.\n\nProfil recherché:\n\n\nIssu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4/Bac +5), vous avez un vrai attrait pour le DevOps et la Sécurité. Vous avez dans l'idéal une bonne connaissance sur les aspects Infrastructure / DevOps : Linux/Windows, Lan, DNS, DHCP, Gitlab CI, Docker, Kubernetes, Ansible, Scripting, Vmware, etc... Votre facilité d'adaptation, votre réactivité et votre autonomie vous permettront de mener à bien et de satisfaire les exigences des projets qui vous seront confiés.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Linux",
+      "CI/CD",
+      "Automatisation des tests",
+      "Tests automatisés",
+      "Cybersécurité",
+      "Intégration continue",
+      "Pipelines de données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4/Bac +5), vous avez un vrai attrait pour le DevOps et la Sécurité.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4/Bac +5), vous avez un vrai attrait pour le DevOps et la Sécurité.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation ingénieur ou d'un cursus universitaire (Bac+4/Bac +5), vous avez un vrai attrait pour le DevOps et la Sécurité.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:28.733479",
+  "input_hash": "736f89cf181efbff715ce8bd68a91b390b19b9bd34330ede797baf4c963152c7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

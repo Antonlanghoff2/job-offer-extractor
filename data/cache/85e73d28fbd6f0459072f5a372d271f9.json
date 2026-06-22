@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3158364",
+  "value": {
+    "id": "3158364",
+    "intitule": "Ingénieur en Bioinformatique  (H/F)",
+    "entreprise": "Université Claude Bernard Lyon 1",
+    "territoire": "69 - Villeurbanne",
+    "ville": "69266",
+    "code_postal": "69100",
+    "contrat": "CDD - 6 Mois",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3158364",
+    "description": "RESPONSABILITÉS : Descriptif du service L'université Lyon 1 et la plateforme PRABI / FR BioEEnviS est partenaire du projet cloud4SAMS financé par le PEPR SAMS porté par l'INRAE et l'Institut Français de Bioinformatique. Le PRABI recrute un Ingénieur d'Etude en Bioinformatique qui sera en charge du développement des pipelines de métagénomique virale et des bases de données de références associées qui seront déployées dans le cadre du projet cloud4SAMS. Description du poste La mission principale de l'ingénieur d'étude en bioinformatique sera le développement de pipeline de métagénomique virale (assignation taxonomique, assemblage, prédiction des hôtes potentiels... ) et la mise a disposition de bases de données de référence de génomique virale utilisées. La personne recrutée développera plus particulièrement des chaines de traitement bioinformatique reproductibles (snakemake ou nextflow) qui auront vocation a être déployé sur le cloud académique de l'IFB et plus particulièrement dans un environnement sécurisé pour permettre le traitement des données associées au projets du PEPR SAMS. La mission secondaire concernera la formation des utilisateurs à l'utilisation des pipelines mises à disposition. Activités principales de l'agent : • Développement de pipelines a l'aide de Snakemake / Nextflow • Construction de bases de données de référence • Déploiement de pipeline sur les cloud • Conseiller et former aux techniques et outils développés • Rédiger et mettre à niveau les documentations techniques et fonctionnelles. • Assurer une veille scientifique et technologique dans son domaine d'activité • Participer à des réseaux professionnels Logiciels ou matériels spécifiques utilisés : OpenStack, Pyarrow, S3, Google RPC, Notebook Jupyter, Docker, Python, R, Kubernetes PROFIL RECHERCHÉ : Expérience professionnelle souhaitée dans le domaine : entre 1 et 3 ans Compétences attendues : • Maîtrise des environnements Linux et des langages système (shell/bash). • Maîtrise des outils de gestion de versions des codes source (git, gitlab). • Maitrise des techniques Cloud et virtualisation (OpenStack, Docker, Kubernetes). • Maitrise souhaitable des outils de gestion de pipelines en Bio-informatique (Nextflow, Snakemake). • Maitrise souhaitable des outils d'analyse statistiques multivariées sous R ou python. • Compétence (appréciable) dan l'utilisation des outils de machine learning sous R ou python. • Compréhension de l'anglais oral et écrit. Connaissances : • Connaissance des méthodes bio-informatiques d'assignation taxonomique. • Connaissance des protocoles et des méthodes de séquençage en métagénomique. • Connaissance des formats de données de métagénomique. • Connaissances des bases de données en bio-informatique. • Connaissance (appréciable) en microbiologie / virologie moléculaire • Connaissance générale des procédures de sécurité informatique. Savoir être : • Capacité à travailler en mode projet avec une équipe pluridisciplinaire • Réactivité, autonomie, initiative, rigueur. • Sens de l'organisation. • Esprit d'équipe et sens de la collaboration. • Capacité à travailler en réseau, avec les outils numériques modernes. Poste à pouvoir le 01/06/2026 Le poste est ouvert aux contractuels de catégorie A IGE Rémunération mensuelle brute: 2534,14€ En rejoignant l'Université Lyon 1, vous pourrez bénéficier de : • 48.5 jours de congés annuels, dès la première année universitaire, aménagement possible du temps de travail sur 4.5 jours, 37h30 / semaine, la possibilité d'avoir des jours de télétravail réguliers et/ou ponctuels, sous conditions, • la participation au remboursement des frais de transport, forfait mobilité durable, aux frais complémentaire santé à hauteur de 15€/mois,... • l'accès à des prestations d'action sociale, accès aux services de la crèche et du centre de loisirs situés sur le campus Lyon Tech La Doua • l'accès aux activités artistiques et sportives de l'université, tarifs préférentiels loisirs, • possibilités de développement professionnel en interne (concours, mobilité, formation continue et parcours professionnel) • restauration sur le campus avec une participation financière de l'université",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Machine learning",
+      "Python",
+      "Sécurité Informatique",
+      "Gestion de projet",
+      "Product Management",
+      "Analyse de données",
+      "Data Engineering",
+      "MLOps",
+      "Model drift",
+      "Pipelines de données"
+    ],
+    "salaire_min": 2500,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Le PRABI recrute un Ingénieur d'Etude en Bioinformatique qui sera en charge du développement des pipelines de métagénomique virale et des bases de données de références associées qui seront déployées dans le cadre du projet cloud4SAMS.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:05.348290",
+  "input_hash": "24619c6971dc8644d3f88ef33e01bed2759dcbaacbc51ed5c4b0081d61cf9d7c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3428188",
+  "value": {
+    "id": "3428188",
+    "intitule": "Data Scientist (H/F)",
+    "entreprise": "Banque de France",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3428188",
+    "description": "Présentation de la direction générale et du service\n\nLa Banque de France recrute un « Data Scientist H/F » pour renforcer ses équipes. Vous rejoindrez le Service de l'Épargne Financière et de la Titrisation (SEFT) de la Direction Générale des Statistiques, des Études et de l'International (DGSEI).\n\nLa DGSEI a pour missions principales de contribuer à alimenter la prise de décision du gouvernement de la Banque de France en matière monétaire et financière, élaborer et diffuser les positions de la Banque de France en matière de stabilité monétaire et financière et exploiter, analyser et diffuser des statistiques dans un grand nombre de domaines (statistiques monétaires et financières, enquête de conjoncture, balance des paiements).\n\nAu sein de la DGSEI, Le SEFT élabore les statistiques relatives aux sociétés d'assurance, aux fonds de pension, aux fonds d'investissement et aux organismes de titrisation. Il produit des études et des analyses sur les comportements de placement et de financement de ces acteurs.\n\n \n\nDescriptif de mission\n\nVous serez rattaché(e) au pôle « Assurances » du SEFT qui a comme principale mission la production et l'analyse des statistiques des assurances destinées aux organisations internationales (BCE, OCDE, ...), aux utilisateurs nationaux (INSEE, DGT, chercheurs, ...) et au gouvernement de la Banque. Il entretient des relations avec des interlocuteurs divers (ACPR, Direction de la Stabilité Financière, associations professionnelles), traite des dossiers dans le cadre de groupes de travail de la BCE et produit de nombreuses études sur des sujets d'actualité touchant au monde de l'assurance.\n\nVous serez notamment chargé(e) de :\n\n * Réaliser les productions des statistiques trimestrielles et annuelles des assurances pour la BCE et gérer les interactions afférentes avec la BCE et l'ACPR ;\n * Mettre en œuvre les évolutions des processus et des chaines de production du pôle dans le cadre des changements des règlements BCE sur les assurances, de l'implémentation de nouveaux mécanismes de traitement des données, et des activités de maintenance : suivi des projets, développement de programmes informatiques de traitement et de contrôle de la qualité statistique des données, . ;\n * Proposer des améliorations et des automatisations des procédés de production et de diffusion des données, et participer à leur élaboration ;\n * Représenter le pôle dans les groupes de travail de la BCE relatifs aux évolutions des méthodologies de production des statistiques des assurances ;\n * Réaliser les travaux de migration des programmes SAS du pôle en R ou Python ;\n * Participer aux études et analyses du pôle et à la rédaction des notes afférentes\nDiplômé(e) d'une école d'ingénieur ou d'études supérieures (Master 2) avec une spécialisation en sciences des données ou statistiques, vous maitrisez les langages de programmation R ou Python, et avez une expérience du logiciel SAS.\n\nVous disposez de connaissances confirmées en informatique et en statistiques. Vous avez des compétences ou un intérêt pour la comptabilité des assurances, ainsi qu'une bonne compréhension des principaux concepts économiques et financiers.\n\nAutonome, vous faites preuve de rigueur, de réactivité et d'initiative. Doté d'un bon relationnel, vous appréciez travailler en équipe.\n\nVous avez le niveau B2 d'anglais.",
+    "metier": "Data scientist",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Data Engineering",
+      "Analyse de données",
+      "Model drift",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'une école d'ingénieur ou d'études supérieures (Master 2) avec une spécialisation en sciences des données ou statistiques, vous maitrisez les langages de programmation R ou Python, et avez une expérience du logiciel SAS.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'une école d'ingénieur ou d'études supérieures (Master 2) avec une spécialisation en sciences des données ou statistiques, vous maitrisez les langages de programmation R ou Python, et avez une expérience du logiciel SAS.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:13.015138",
+  "input_hash": "92881e562a8f5915f3146ce947de59cdb760a91d429a65c923cb683843e7a2d1",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

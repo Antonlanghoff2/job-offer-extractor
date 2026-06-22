@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3542641",
+  "value": {
+    "id": "3542641",
+    "intitule": "Data analyst (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3542641",
+    "description": "Description du poste :\nSous l'autorité du chef de section effectifs, contrôle interne et maitrise de la donnée, le chargé d'études traitement de la donnée RH / data scientist développe des programmes permettant de s'appuyer sur la fouille de données, les statistiques, les méthodes de référencement, l'apprentissage automatique et la visualisation de données, dans le but d'aider à la prise de décision.\nAu sein d'une équipe de 7 personnes, dont 3 spécialisées sur le traitement de la donnée, vous trouvez les sources de données pertinentes modélisez les chaînes de collecte, de stockage, de traitement et de restitution des données identifiez et développez les référentiels et outils essentiels à la bonne manipulation des données, tout en assurant leur intégrité et leur qualité élaborez des modèles afin d'anticiper l'évolution des données et des tendances concevez les modèles statistiques organisez les tests ou l'apprentissage statistique pour soutenir la prise de décision concevez et organisez les bases de données pour permettre leur analyse et contribuer à la prise de décision modélisez des résultats d'analyse des données afin de les rendre lisibles et exploitables par les décideurs accompagnez les acteurs métier dans l'utilisation des outils de visualisation développés.\nDescription du profil :\nTitulaire d'un BAC+5 lié au développement informatique et/ou aux sciences des données, vous êtes doté de solides compétences techniques autour de solution de traitement de la donnée (Talend, Dataiku,.) et d'une excellente maîtrise technique des outils de datavisualisation (Qlik, Business Intelligence,.) et disposez capacité à construire des solutions opérationnelles.\nCurieux, rigoureux, autonome, vous avez des qualités d'analyse, de synthèse et de rédaction et de très bonnes capacités interpersonnelles et de communication, ce qui vous permet de vous adapter à vos différents interlocuteurs (métier, data",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 7000,
+    "salaire_max": 7000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Sous l'autorité du chef de section effectifs, contrôle interne et maitrise de la donnée, le chargé d'études traitement de la donnée RH / data scientist développe des programmes permettant de s'appuyer sur la fouille de données, les statistiques, les méthodes de référencement, l'apprentissage automatique et la visualisation de données, dans le but d'aider à la prise de décision.",
+        "confidence": 0.9
+      },
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Titulaire d'un BAC+5 lié au développement informatique et/ou aux sciences des données, vous êtes doté de solides compétences techniques autour de solution de traitement de la donnée (Talend, Dataiku,.) et d'une excellente maîtrise technique des outils de datavisualisation (Qlik, Business Intelligence,.) et disposez capacité à construire des solutions opérationnelles.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:48.361120",
+  "input_hash": "c28da09197bf034b52919f6570255998e68a6713a29e8596e31b64221181b688",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

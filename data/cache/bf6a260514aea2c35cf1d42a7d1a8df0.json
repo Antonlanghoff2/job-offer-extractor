@@ -1,0 +1,182 @@
+{
+  "key": "trends:67 - Molsheim",
+  "value": {
+    "territoire": "67 - Molsheim",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Acquisition": 1,
+      "Analyse de données": 1,
+      "Déploiement De Modèles": 1,
+      "Intelligence artificielle": 1,
+      "Résolution De Problèmes": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Acquisition",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Acquisition": 1
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Acquisition": {
+        "Acquisition": 1
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      }
+    },
+    "metiers": {
+      "Data Analyst": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Analyse de données",
+        "Intelligence artificielle",
+        "Acquisition",
+        "Déploiement De Modèles",
+        "Résolution De Problèmes"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "2703484",
+        "intitule": "TECHNICIEN SUPPORT ANALYSE (H/F/D)",
+        "entreprise": "BUGATTI AUTOMOBILES SAS",
+        "territoire": "67 - Molsheim",
+        "contrat": "CDI",
+        "date": "2026-05-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2703484"
+      }
+    ],
+    "offers": [
+      {
+        "id": "2703484",
+        "intitule": "TECHNICIEN SUPPORT ANALYSE (H/F/D)",
+        "entreprise": "BUGATTI AUTOMOBILES SAS",
+        "territoire": "67 - Molsheim",
+        "contrat": "CDI",
+        "date": "2026-05-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2703484"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:20.953174",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

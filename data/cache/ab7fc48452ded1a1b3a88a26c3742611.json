@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:209ZVHN",
+  "value": {
+    "id": "209ZVHN",
+    "intitule": "INGÉNIEUR DÉVELOPPEUR Full Stack (H/F)",
+    "entreprise": "INFORMATIS TECHNOLOGY SYSTM",
+    "territoire": "86 - Vivonne",
+    "ville": "86293",
+    "code_postal": "86370",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZVHN",
+    "description": "Rattaché-e à la Directrice générale, vous rejoignez l'équipe Développement composée d'une quinzaine de personnes.\nEn tant qu'ingénieur développement full Stack, vous interviendrez comme expert technique logiciel, avec les responsabilités suivantes :\nResponsabilités\nEn tant qu'ingénieur développement full Stack, vous interviendrez comme expert technique logiciel, avec les responsabilités suivantes :\n- Développement logiciel : réaliser des développements sur des projets clients, mais aussi participer aux activités de R&D autour de la solution développé\n- Création et exécution de tests unitaires : garantir la qualité et la robustesse des évolutions apportées.\n- Rédaction de documentation technique : produire et maintenir les documents nécessaires à la compréhension et à la maintenance du code et des solutions développées.\n- Collaboration interdisciplinaire : travailler étroitement avec les équipes fonctionnelles internes, en expliquant clairement les aspects techniques.\n- Échanges avec les clients : participer à des réunions à distance pour comprendre leurs besoins et adapter les développements en conséquence.\n\n\nCompétences requises :\nVous êtes titulaire d'un diplôme Bac+5 minimum en informatique ou développement de logiciels,\nVous bénéficiez d'au moins 5 ans d'expérience professionnelle démontrant vos compétences en développement full Stack, aussi bien en front-end qu'en back-end.\nDoté(e) d'un solide bagage technique, vous avez l'habitude d'intervenir sur l'ensemble du cycle de développement logiciel et de vous adapter à des environnements technologiques variés. Vous savez travailler efficacement au sein d'équipes pluridisciplinaires et êtes à l'aise pour échanger avec des interlocuteurs non techniques.\nLa maîtrise de l'anglais à un niveau courant, tant à l'oral qu'à l'écrit, est indispensable pour ce poste, notamment pour la communication avec des clients internationaux et la rédaction de documentation technique.\nConnaissances techniques : - Langages de programmation Front-end : HTML, CSS, JavaScript - Connaissance des frameworks Front-end : Réact, Angular, Vue - Langages de programmation back-end : Python, PHP, JAVA) - Connaissance : Eclipse, VSCode + Gitlab",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "CSS",
+      "Git",
+      "HTML",
+      "Java",
+      "JavaScript",
+      "Python",
+      "React",
+      "Vue.js",
+      "Anglais professionnel",
+      "Documentation technique",
+      "Tests automatisés",
+      "Qualité des données",
+      "Code review"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'ingénieur développement full Stack, vous interviendrez comme expert technique logiciel, avec les responsabilités suivantes :",
+        "confidence": 0.9
+      },
+      {
+        "label": "diplôme Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes titulaire d'un diplôme Bac+5 minimum en informatique ou développement de logiciels,",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:03.138926",
+  "input_hash": "85f145c21e032d70cb088d3669afea258ec42f1573f21bc17616a63a6549b197",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

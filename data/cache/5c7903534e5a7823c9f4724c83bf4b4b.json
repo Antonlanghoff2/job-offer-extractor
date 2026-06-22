@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3073827",
+  "value": {
+    "id": "3073827",
+    "intitule": "Analyste qualité des données (404275) (H/F)",
+    "entreprise": "VILMORIN-MIKADO",
+    "territoire": "49 - Ménitré",
+    "ville": "49201",
+    "code_postal": "49250",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-27",
+    "date": "2026-05-27",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3073827",
+    "description": "Finalité du poste\n\nLe service Commercial Excellence a pour objectif d’améliorer l’expérience client en optimisant l’efficacité des ventes. Pour cela notre objectif est d’identifier les actions nécessaires à la couverture commerciale de nos marchés internationaux (12 filiales en Asie, Amérique, EMEA), en s’appuyant sur l’analyse des données capturées dans nos différents outils, CRM, ERP et spécifiques métiers.\nLe ou la futur(e) alternant(e) contribuera à la capture des données en quantité et qualité, puis les analysera pour identifier les plans d’actions à faire implémenter par les ventes.\n\n\n\n\nVos Missions\n\n  *  Analyser les datas existantes et manquantes de la CRM avec nos outil BI Micro Strategy puis Power BI (transition en 2027)\n  *  Appeler les vendeurs, sinon les sales managers (maîtrise minimum de l’anglais, l’Espagnol est un plus, autres langues VMK bienvenues) pour nettoyer les datas incohérentes et assurer la qualité de la data\n  *  Analyser les datas obtenues pour orienter les plans d’actions opérationnels auprès des filiales : priorités de couvertures marchés et clients, identification des réservoirs de croissance (prospects, produits…)…\n  *  Construire les dashboard de pilotage de l’activité dans nos outils BI (Power BI)\n\n\n\nNiveau BAC +5 commerce ou ingénieur\nBonne maîtrise de la BI (Power BI) et intérêt marqué pour le traitement de données\nMaîtrise du Français et de l’Anglais au minimum\nQualités requises : rigoureux, enthousiaste, sociable\nGoût pour le travail en équipe",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Power BI",
+      "Data Engineering",
+      "Qualité des données",
+      "Analyse de données",
+      "Model drift",
+      "Protection des données",
+      "Feature Engineering",
+      "Sécurité informatique",
+      "Gestion de projet",
+      "Code review",
+      "Veille technologique"
+    ],
+    "salaire_min": 12000,
+    "salaire_max": 12000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Niveau BAC +5 commerce ou ingénieur",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Niveau BAC +5 commerce ou ingénieur",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:41.733079",
+  "input_hash": "bc3c89abdf42767270740b33b3302ae3b65bc038e9deed4a90dcb3bd4481f859",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

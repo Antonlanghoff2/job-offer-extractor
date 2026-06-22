@@ -1,0 +1,76 @@
+{
+  "key": "offer_extraction:7914591",
+  "value": {
+    "id": "7914591",
+    "intitule": "INGÉNIEUR QUALITÉ DE VOL ET LOIS DE PILOTAGE (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Blagnac",
+    "ville": "31069",
+    "code_postal": "31700",
+    "contrat": "CDI",
+    "date_creation": "2026-01-15",
+    "date": "2026-01-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7914591",
+    "description": "Nous recherchons pour le compte de notre client, acteur mondial de l'ingénierie, intervenant dans le domaine de l'Aéronautique, un INGENIEUR DYNAMIQUE / QUALITE DE VOL et LOIS DE PILOTAGE (F/H).Sur votre périmètre et selon l'étendue de vos responsabilités, vos missions sont : - Suivre des essais en vol ou sur simulateur - Réaliser des simulations sur simulateur de bureau - Développer des outils de post-traitement et d'analyse de données - Réaliser des études Qualités de vol (dimensionnement de domaine de vol, de surfaces de contrôle ; analyse de cas de pannes ou d'incidents ; spécification et validation de fonctions internes aux calculateurs de commandes de vol) - Identifier des modèles de la boucle de vol (Modèle Aérodynamique/Liaison au Sol) - Rédiger des rapports d'analyse (notes techniques ou fiche de certification) La rémunération est à définir en fonction du niveau d'expérience. Issu(e) d'une formation Bac+5 en aéronautique ou diplômé(e) d'une école d'ingénieur, vous justifiez d'au moins 3 ans d'expérience dans le domaine des essais et/ou de la qualités de Vol. Compétences dans l'un des domaines suivants en plus de la connaissance théorique de la dynamique du vol : - schéma fonctionnel lois de pilotage - Identification de modèles aérodynamiques - Analyses d'essais Vous maîtrisez l'anglais (oral et écrit) Vous avez déjà utilisé les langages Python, Matlab. Vous avez des qualités rédactionnelle et faites preuve de rigueur. La licence de pilote est appréciée. Le poste requiert de la flexibilité en fonction des plannings.",
+    "metier": "Contrôleur / Contrôleuse de la circulation et de la défense aérienne",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Aéronautique",
+      "Intelligence artificielle",
+      "Python",
+      "Rédaction de rapports",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift",
+      "Pipelines de données",
+      "MLOps"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "INGENIEUR",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Nous recherchons pour le compte de notre client, acteur mondial de l'ingénierie, intervenant dans le domaine de l'Aéronautique, un INGENIEUR DYNAMIQUE / QUALITE DE VOL et LOIS DE PILOTAGE (F/H).Sur votre périmètre et selon l'étendue de vos responsabilités, vos missions sont : - Suivre des essais en vol ou sur simulateur - Réaliser des simulations sur simulateur de bureau - Développer des outils de post-traitement et d'analyse de données - Réaliser des études Qualités de vol (dimensionnement de domaine de vol, de surfaces de contrôle ; analyse de cas de pannes ou d'incidents ; spécification et validation de fonctions internes aux calculateurs de commandes de vol) - Identifier des modèles de la boucle de vol (Modèle Aérodynamique/Liaison au Sol) - Rédiger des rapports d'analyse (notes techniques ou fiche de certification) La rémunération est à définir en fonction du niveau d'expérience.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation Bac+5 en aéronautique ou diplômé(e) d'une école d'ingénieur, vous justifiez d'au moins 3 ans d'expérience dans le domaine des essais et/ou de la qualités de Vol.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation Bac+5 en aéronautique ou diplômé(e) d'une école d'ingénieur, vous justifiez d'au moins 3 ans d'expérience dans le domaine des essais et/ou de la qualités de Vol.",
+        "confidence": 0.9
+      },
+      {
+        "label": "licence",
+        "level": 6,
+        "required": false,
+        "source_sentence": "La licence de pilote est appréciée.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:33.465286",
+  "input_hash": "8c4ec0517ce859e8d073cd39cff7695d683143556f8c83808f3ca8475ae3feeb",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

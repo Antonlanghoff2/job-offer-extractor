@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3701538",
+  "value": {
+    "id": "3701538",
+    "intitule": "Développeur Fullstack Typescript Nodejs SQL Hmtl H/F",
+    "entreprise": "Astek",
+    "territoire": "29 - Brest",
+    "ville": "29019",
+    "code_postal": "29200",
+    "contrat": "CDI",
+    "date_creation": "2025-10-11",
+    "date": "2025-10-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3701538",
+    "description": "POSTE : Développeur Fullstack Typescript Nodejs SQL Hmtl H/F\nDESCRIPTION : Au sein d'une société brestoise à taille humaine et en face de la mer, vous serez en charge de l'évolution d'outils destinés à des entreprises du domaine du transport.\nCe que nous allons accomplir ensemble :\n \nAu sein d'une société brestoise à taille humaine et en face de la mer, vous serez en charge de l'évolution d'outils destinés à des entreprises du domaine du transport.\n \nVotre mission (si vous l'acceptez !) :\n \nRejoignez une équipe motivée et dynamique de 8 ingénieurs informatiques et en tant que développeur fullstack, vous serez en charge de  :\n \n- Participer à l'amélioration d'une application permettant aux employés de planifier leurs congés, de gérer leurs absences\n \n- Faire évoluer l'outil en y ajoutant de nouvelles fonctionnalités\n \n- Collaborer avec les équipes de test pour garantir la qualité du code\n \nVotre Stack de Jeu :\n \nJavaScript, Typescript, NodeJS, HTML, CSS\nRencontrons-nous !\n \nVous vous êtes reconnu sur l'annonce et Astek vous plaît ?\n \nPostulez directement sur cette annonce, afin qu' Enora notre Talent Acquisition Officer, puisse vous contacter pour un premier échange.\nPROFIL : \nVous :\n \n- Vous êtes diplomé d'une école d'ingénieur ou équivalent de niveau Bac +5\n- Vous avez au moins 2 ans d'expériences dans un rôle similaire\n- Vous maitrisez Javascript, Typescript, NodeJS, HTML, CSS\n- Vous faites preuve d'un véritable esprit d'équipe et vous êtes autonome\n- Votre rigueur, votre sens de l'organisation et votre dynamisme sont vos principaux atouts",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Acquisition",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "SQL",
+      "TypeScript",
+      "Code review",
+      "Méthodologie Agile"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous êtes diplomé d'une école d'ingénieur ou équivalent de niveau Bac +5",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes diplomé d'une école d'ingénieur ou équivalent de niveau Bac +5",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:27.255768",
+  "input_hash": "ed6737a38e63197518de9cf3686b48f9a0d1b3aeaa8e0ac4ef843933b9f49a9c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:208VJYL",
+  "value": {
+    "id": "208VJYL",
+    "intitule": "Doctorant en Intelligence Artificielle pour la prévision hydro (H/F)",
+    "entreprise": "VORTEX.IO",
+    "territoire": "31 - TOULOUSE",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2026-05-27",
+    "date": "2026-05-27",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208VJYL",
+    "description": "L'objectif scientifique central est de concevoir, développer et évaluer des architectures de deep learning capables de produire des prévisions hydrologiques fiables et transférables à différents bassins versants (régionalisation), y compris non jaugés, en France comme à l'échelle internationale. Vous couvrez toute la chaîne - de l'exploration des données à la mise en production - et contribuez directement aux systèmes de prévision opérationnelle de vorteX-io.\n\nVous êtes intégré-e à l'équipe Produits hydrologiques à valeur ajoutée de vorteX-io. le CTO sera le responsable scientifique côté industriel. L'encadrement académique est assuré par les chercheurs du CERFACS Sébastien Villon et Sophie Ricci. Conformément au cadre CIFRE, le temps de travail est réparti entre vorteX-io et le CERFACS. En début de thèse, la répartition sera de 50 % au CERFACS et 50 % chez vorteX-io. Cette répartition pourra évoluer au cours des années suivantes en fonction de l'avancement du travail doctoral.\n\nConception et développement de modèles de deep learning\n- Concevoir, entraîner et comparer plusieurs architectures pour la modélisation pluie-débit multi-bassins (LSTM, EALSTM, modèles hybrides CNN-LSTM, Transformers pour séries temporelles)\n- Intégrer l'information spatiale des bassins versants (topographie, occupation du sol, géologie, pédologie), notamment via des encodeurs convolutifs appliqués à des données raster\n- Optimiser les stratégies d'apprentissage : hyperparamètres, fonctions de coût adaptées aux crues, étiages et variabilité saisonnière, gestion de l'hétérogénéité des bassins et du déséquilibre des données\n\nDonnées météorologiques et hydrologiques\n- Identifier et évaluer les sources de données météorologiques et leur impact sur les performances : réanalyses globales (ERA5), produits satellitaires, prévisions numériques globales (ECMWF), et produits régionaux à plus haute résolution (COMEPHORE, modèle AROME)\n- Constituer des jeux de données multi-bassins pour tester la généralisation sur des bassins non jaugés\n- Réaliser des analyses de sensibilité et d'interprétabilité pour comprendre l'influence des variables d'entrée et des attributs de bassin\n\nValidation, incertitudes et opérationnalité\n- Évaluer les modèles avec des métriques hydrologiques (NSE, KGE, biais) en portant une attention particulière aux crues et situations extrêmes\n- Quantifier les incertitudes des prévisions (ensembles de modèles, Monte Carlo dropout, régression quantile)\n- Valider les modèles sur des régions prioritaires : Europe, Maroc (bassins alimentant les barrages Al Wahda et Idriss 1er), Cambodge (bassin du Mékong)\n- Garantir la compatibilité avec une solution opérationnelle : pas de temps de prédiction adapté au contexte hydrologique, coût de calcul et de stockage maîtrisés\n\nRecherche et valorisation scientifique\n- Rédiger des articles scientifiques et participer à des conférences internationales\n - Assurer une veille active sur les avancées en hydrologie computationnelle et IA appliquée\n- Contribuer à l'intégration des résultats de recherche dans les produits vorteX-io",
+    "metier": "Hydrologue",
+    "niveau": "junior",
+    "competences": [
+      "Deep learning",
+      "Intelligence artificielle",
+      "Vision",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "Protection des données",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Veille technologique"
+    ],
+    "salaire_min": 2500,
+    "salaire_max": 0,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "thèse",
+        "level": 10,
+        "required": true,
+        "source_sentence": "En début de thèse, la répartition sera de 50 % au CERFACS et 50 % chez vorteX-io.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:49:57.093513",
+  "input_hash": "132136daf21a29ad88495cd8f87a8156f92485228862cad6d78c1b8c9b8e18bf",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

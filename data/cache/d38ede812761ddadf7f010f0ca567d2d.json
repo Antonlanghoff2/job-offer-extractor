@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:1665999",
+  "value": {
+    "id": "1665999",
+    "intitule": "Ingénieur logiciel embarqué (H/F)",
+    "entreprise": "SILKHOM SAS",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDI",
+    "date_creation": "2026-04-20",
+    "date": "2026-04-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1665999",
+    "description": "Description du poste:\nAu sein du pôle R&D, dans une équipe de 6 personnes, vous serez en charge de développer et améliorer les systèmes et fonctionnalités d’une nouvelle gamme de produits.\nVos missions principales seront les suivantes :\n\n- La création et mise à jour des BSP sur différents types d’architectures (SoC FPGA, ARM, X86)\n- Le support des BSP sur distribution Yocto\n- Le développement de drivers linux et nouvelles fonctionnalités en C / C++\n- L’intégration de logiciels open source linux pour différents besoins\n- La mise à jour et amélioration de la documentation technique\nEnvironnement technologique : C, C++, Linux, Ethernet, PCI Express, Kernel, Yocto, OSPF\nPourquoi rejoindre cette société ?\n- Rejoignez une entreprise internationale présente sur un marché de niche en pleine évolution technologique (technologie 8K).\n- Intégrez une entreprise en pleine croissance (+10m d’€ en 2 ans) qui développe une nouvelle gamme de produits.\n- Travaillez sur des produits from scratch.\n- Vous avez des perspectives d’évolution. Ex : Chef de projet technique\n\nProfil recherché:\n- Vous avez un Bac+5 dans le domaine des logiciels embarqués\n- Vous avez 5 ans d’expérience dans le développement C embarqué\n- Vous une première expérience en environnement linux embarqué et en développement C++\n\nCompléments:\n- Lieu : Nantes\n- Contrat : CDI\n- Salaire : 40 à 60K€ selon profil\n- Autres avantages : TR (10.5€), Participation (environ 2.5x salaire mensuel), 11 RTT, CSE 2 jours de télétravail\nSi votre profil correspond, nous reviendrons vers vous dans les 7 jours à compter de la date d’envoi.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Linux",
+      "Gestion de projet",
+      "Scalabilité",
+      "Optimisation des performances"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous avez un Bac+5 dans le domaine des logiciels embarqués",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:32.546728",
+  "input_hash": "ca1ddcdab15c94bd265964fc9414dc10489d26f3da383fbbaf1de6822702ed40",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

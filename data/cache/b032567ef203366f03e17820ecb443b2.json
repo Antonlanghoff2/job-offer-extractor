@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:2416797",
+  "value": {
+    "id": "2416797",
+    "intitule": "Ingénieur en conception Pixel CMOS (H/F)",
+    "entreprise": "PYXALIS",
+    "territoire": "38 - Moirans",
+    "ville": "38239",
+    "code_postal": "38430",
+    "contrat": "CDI",
+    "date_creation": "2026-05-08",
+    "date": "2026-05-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2416797",
+    "description": "Nous recherchons un(e) Ingénieur(e) en conception Pixel CMOS pour pour soutenir notre croissance et augmenter notre capacité à développer de nouveaux capteurs et systèmes. Tu seras garant(e) de la conception de Pixel CMOS et, à ce titre, tes missions principales seront les suivantes : 1) Concevoir un pixel * Choisir une architecture de pixel adaptée au cahier des charges : Choisir parmi les différentes architectures pixel CMOS existantes Identifier de nouvelles architectures de pixel innovantes Assembler la matrice de pixels d’un capteur d’image CMOS * Appliquer les méthodes de conception et mettre en œuvre les outils de CAO : Estimer les performances des pixels selon la technologie employée Réaliser le \"layout\" des pixels CMOS Effectuer les simulations électriques des pixels et des matrices de pixels Assurer la conformité du dessin aux règles technologiques (DRC, LVS) Réaliser des simulations électro-optiques par éléments finis (construire et mailler les dispositifs semi-conducteurs) * Réaliser les livrables attendus : Rédiger la documentation technique en rapport avec le pixel Fournir les spécifications de mise en œuvre * Connaître les techniques de caractérisation électro-optique afin d’assurer un support : Vérifier la cohérence entre les résultats de caractérisation et le dessin du pixel Etre familiarisé(e) avec les montages optiques Superviser les mesures de performances électro-optiques Rechercher le point de fonctionnement optimal du pixel 2) Effectuer le reporting technique * Présenter des résultats/méthodes de mesure (supports et outils adaptés, clarté, synthèse, …) * Suivre l’évolution des méthodes nécessaires à l’efficacité opérationnelle et rester à l’état de l’art de son métier * Contribuer au développement du savoir-faire de la société dans son domaine de compétence Pour t'intégrer au sein de la team Pyxalis, il te faudra : * une forte appétence pour l’innovation, * une inclination pour les technologies disruptives, * une adhésion forte aux valeurs Pyxalis et à la tenue des engagements, * une envie de travailler dans une structure à taille humaine où la coopération est clé. Tu devras être en mesure de prendre des décisions techniques en toute autonomie dans le respect du contour projet : spécification, estimation et tenue des délais, maîtrise du risque technique, recherche de l’efficience. De formation ingénieur(e), bac + 5 ou docteur en micro-électronique, doté(e) d’une expérience d’au moins 5 ans dans le domaine de la conception des capteurs d’images, tu devras avoir une bonne maîtrise des aspects suivants : * Physique et technologie des semi-conducteurs (diagrammes en potentiel, champs électriques, zone de charge d’espace), * Design de circuits électriques, * Connaissance des interactions photon-matière, * Connaissances élémentaires en statistique, * Outils de simulation à élément finis (TCAD Synopsis Sentaurus), * Maitrise des outils de conception en micro-électronique (Cadence virtuoso), * Informatique (unix) et outils bureautiques, * Méthodologie de simulation par élément finis, * Méthodologie de caractérisation électro-optique d’un pixel CMOS, * Procédés de fabrication en technologie CMOS (empilement optique, méthodes de caractérisation physique), * Notions en optique géométrique, * Connaitre les langages Scheme, TCL et Python serait un plus, * Anglais technique courant à l’écrit comme à l’oral.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Cahier des charges",
+      "Délais",
+      "Intelligence artificielle",
+      "Optique",
+      "Python",
+      "Électronique",
+      "Documentation technique",
+      "Veille technologique",
+      "Design patterns",
+      "MLOps"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons un(e) Ingénieur(e) en conception Pixel CMOS pour pour soutenir notre croissance et augmenter notre capacité à développer de nouveaux capteurs et systèmes.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac + 5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "De formation ingénieur(e), bac + 5 ou docteur en micro-électronique, doté(e) d’une expérience d’au moins 5 ans dans le domaine de la conception des capteurs d’images, tu devras avoir une bonne maîtrise des aspects suivants : * Physique et technologie des semi-conducteurs (diagrammes en potentiel, champs électriques, zone de charge d’espace), * Design de circuits électriques, * Connaissance des interactions photon-matière, * Connaissances élémentaires en statistique, * Outils de simulation à élément finis (TCAD Synopsis Sentaurus), * Maitrise des outils de conception en micro-électronique (Cadence virtuoso), * Informatique (unix) et outils bureautiques, * Méthodologie de simulation par élément finis, * Méthodologie de caractérisation électro-optique d’un pixel CMOS, * Procédés de fabrication en technologie CMOS (empilement optique, méthodes de caractérisation physique), * Notions en optique géométrique, * Connaitre les langages Scheme, TCL et Python serait un plus, * Anglais technique courant à l’écrit comme à l’oral.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:23.495461",
+  "input_hash": "4d25d7449437fb3964f5000803aaef2d532deee67a37c236c41df34288bbc14d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

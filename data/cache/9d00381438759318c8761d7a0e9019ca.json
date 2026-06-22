@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:4057886",
+  "value": {
+    "id": "4057886",
+    "intitule": "Data Scientist (F/H)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4057886",
+    "description": "Le Crédit Mutuel : un employeur différent Comment ? Par son organisation décentralisée qui fait de lui la seule banque coopérative non cotée en bourse de France. Ce qui compte d'abord au Crédit Mutuel, c'est la qualité de la relation avec nos clients qui sont les propriétaires de notre Groupe. Cet objectif fait du Crédit Mutuel la marque préférée des français dans le domaine bancaire depuis 14 ans. Le Crédit Mutuel se singularise également par des valeurs qui constituent l'ADN de l'entreprise depuis plus de 130 ans : une forte autonomie au quotidien avec de réels pouvoirs de décision, de vraies responsabilités. Une entreprise dans laquelle exigence rime avec bienveillance, dans laquelle le mérite par la promotion interne est reconnu et qui offre de véritables perspectives de carrières. Intégrer le Crédit Mutuel, c'est faire partie d'un collectif qui veut réinventer l'expérience client dans de nombreux domaines : la banque, l'assurance, la téléphonie, la location de véhicules ou de vélos, la commercialisation de biens immobiliers, l'informatique, la logistique, ... Autant d'activités dans lesquelles vos idées et vos compétences seront mises en valeur. Rejoindre un Groupe fort de ses marques telles que Crédit Mutuel, CIC, la BECM, Cofidis, Euro Information, ..., c'est faire partie d'une aventure humaine et technologique dans laquelle vous prendrez toute votre place pour construire avec nous le monde de demain. La Direction des Risques du Contrôle Permanent et de la Conformité (DRCC) du Crédit Mutuel Alliance Fédérale est une équipe multidisciplinaire en contact étroit avec les organes exécutifs et délibérants du groupe Crédit Mutuel Alliance Fédérale et de ses filiales ainsi qu'avec les autorités de supervision, plus particulièrement les équipes de la Banque Centrale Européenne. Au sein de la Direction des Risques, vous intégrez la structure Validation des modèles et Projets transverses au sein du Domaine Risque de Crédit en charge notamment de la validation des modèles IFRS9 et ICAAP des filiales du Crédit Mutuel Alliance Fédérale. Le pôle est également responsable du suivi de ces modèles et réalise, dans ce cadre, les études d'impact nécessaires au pilotage du risque, à destination des comités ad hoc. Vous interviendrez comme Ingénieur Statisticien Risque / data scientist Sénior et vous contribuerez à l'amélioration permanente du dispositif de maitrise du risque de crédit de l'ensemble des entités du Crédit Mutuel Alliance Fédérale. Vos principales missions consisteront à : - Valider des modèles statistiques ; - Travailler en étroite collaboration avec les filiales et les équipes statistiques nationales ; - Réaliser des études d'impacts ; - Participer à la rédaction et à l'évolution des guides méthodologiques et des procédures-cadres de la structure à destination des deuxièmes lignes des filiales ; - Assurer une veille méthodologique et réglementaire ; - Assurer la formation et la montée en compétence des juniors ; ... De formation supérieure en statistique (Bac +5 type Ecole d'ingénieurs ou équivalent universitaire), vous justifiez d'une expérience minimale de 4 à 5 ans en modélisation du risque de crédit (hors stages et alternance). Vous justifiez d'une première expérience en modélisation des modèles IFRS9 forward-looking ou ICAAP Vous maîtrisez la modélisation statistique (scorings, analyse de données, Machine Learning), les outils de programmation (SAS, Python) ainsi que les systèmes d'informations décisionnels (Architecture, SQL.) Rigoureux et méthodique, vous êtes doté d'un véritable esprit d'équipe. Vous avez un niveau d'anglais courant ou opérationnel. Force de proposition, . Votre capacité à analyser et à synthétiser, alliée à votre capacité d'adaptation seront des atouts pour réussir sur ce poste.",
+    "metier": "Conducteur / Conductrice d'engins d'exploitation forestière",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "SQL",
+      "Vision",
+      "Anglais professionnel",
+      "Data Engineering",
+      "MLOps",
+      "Monitoring de modèles",
+      "Qualité des données",
+      "Airflow"
+    ],
+    "salaire_min": 60000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous interviendrez comme Ingénieur Statisticien Risque / data scientist Sénior et vous contribuerez à l'amélioration permanente du dispositif de maitrise du risque de crédit de l'ensemble des entités du Crédit Mutuel Alliance Fédérale.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation supérieure en statistique (Bac +5 type Ecole d'ingénieurs ou équivalent universitaire), vous justifiez d'une expérience minimale de 4 à 5 ans en modélisation du risque de crédit (hors stages et alternance).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:58.440360",
+  "input_hash": "adb7def197758f7a1fb8230c982d99b5ba89c75c884582c4208ba8f3ec6c6a20",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

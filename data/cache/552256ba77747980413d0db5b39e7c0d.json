@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:3491870",
+  "value": {
+    "id": "3491870",
+    "intitule": "Alternance Développeur Full Stack - Hermes (H/F)",
+    "entreprise": "",
+    "territoire": "60 - Berthecourt",
+    "ville": "60065",
+    "code_postal": "60370",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3491870",
+    "description": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, un(e) Développeur Full Stack pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 6 à niveau 7 (Bachelor Bac+3 Mastère/Bac+5). Optez pour l'alternance nouvelle génération avec l'ISCOD LES MISSIONS Développer des fonctionnalités sur nos applications web et mobiles Participer à la conception et à l'évolution de nos outils métier Collaborer sur des sujets transverses liés aux outils à destination de nos commerciaux Proposer des améliorations et partager vos idées au sein de l'équipe PROFIL RECHERCHE Compétences techniques JavaScript : bonnes bases, ES6+ Bases de données : notions de SQL (requêtes, modélisation) Un plus PHP, Symfony et/ou Laravel Développement iOS avec Swift ou SwiftUI Git et notions de CI/CD L'essentiel, c?est la curiosité et l'envie d'apprendre. Nous sommes là pour vous accompagner sur les points que vous ne maîtrisez pas encore. Savoir-être Curieux(se) : vous aimez comprendre comment les choses fonctionnent Communicant(e) : vous posez des questions, vous signalez les blocages, vous ne restez pas bloqué(e) seul(e) Force de proposition : vous osez partager vos idées, même en début d'alternance Esprit d'équipe : vous apprenez des autres et contribuez à une bonne dynamique collective",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "JavaScript",
+      "SQL",
+      "Symfony",
+      "CI/CD",
+      "Data Engineering",
+      "Design patterns",
+      "Model drift"
+    ],
+    "salaire_min": 6000,
+    "salaire_max": 6000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, un(e) Développeur Full Stack pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 6 à niveau 7 (Bachelor Bac+3 Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, un(e) Développeur Full Stack pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 6 à niveau 7 (Bachelor Bac+3 Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, un(e) Développeur Full Stack pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 6 à niveau 7 (Bachelor Bac+3 Mastère/Bac+5).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:05.457071",
+  "input_hash": "f6e33f62ba38fe2ae666cee34aa90ece4de25bb42049651ed75eecf4bce00af9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

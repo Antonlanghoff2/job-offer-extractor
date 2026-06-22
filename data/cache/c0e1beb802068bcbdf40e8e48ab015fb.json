@@ -1,0 +1,934 @@
+{
+  "key": "trends:91 - Longjumeau",
+  "value": {
+    "territoire": "91 - Longjumeau",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Intelligence artificielle": 3,
+      "Git": 2,
+      "MLOps": 2,
+      "Data engineering": 1,
+      "Déploiement De Modèles": 1,
+      "Gestion de projet": 1,
+      "Model Drift": 1,
+      "Monitoring De Modèles": 1,
+      "Pipelines De Données": 1,
+      "Power BI": 1,
+      "Product Management": 1,
+      "Python": 1,
+      "Qualité Des Données": 1,
+      "Scalabilité": 1,
+      "SQL": 1,
+      "Sécurité Informatique": 1,
+      "Veille Technologique": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 3
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Git": 2
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "MLOps": 2
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Data engineering": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Déploiement de modèles": 1,
+          "Développement de modèles": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Monitoring de modèles": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Power BI",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Power BI": 1
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Product Management": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Scalabilité": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Veille technologique": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 3
+      },
+      "Git": {
+        "Git": 2
+      },
+      "MLOps": {
+        "MLOps": 2
+      },
+      "Data engineering": {
+        "Data engineering": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1,
+        "Développement de modèles": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Power BI": {
+        "Power BI": 1
+      },
+      "Product Management": {
+        "Product Management": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Attaché commercial / Attachée commerciale": 1,
+      "Data Engineer": 1,
+      "Data Scientist": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 3
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Python",
+        "SQL",
+        "MLOps",
+        "Vision",
+        "Power BI",
+        "Déploiement De Modèles",
+        "Scalabilité"
+      ],
+      [
+        "Data engineering",
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "MLOps",
+        "Git",
+        "Monitoring De Modèles",
+        "Qualité Des Données",
+        "Pipelines De Données",
+        "Veille Technologique",
+        "Product Management",
+        "Sécurité Informatique",
+        "Model Drift"
+      ],
+      [
+        "Intelligence artificielle"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3896245",
+        "intitule": "Développeur Commercial Professionnels - H/F",
+        "entreprise": "Banque Populaire Rives Paris",
+        "territoire": "91 - Longjumeau",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3896245"
+      },
+      {
+        "id": "2320511",
+        "intitule": "Architecte Data H/F",
+        "entreprise": "",
+        "territoire": "91 - Longjumeau",
+        "contrat": "CDI",
+        "date": "2026-05-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2320511"
+      },
+      {
+        "id": "1741679",
+        "intitule": "Lead Data Scientist – INTERSPORT (H/F)",
+        "entreprise": "SILKHOM SAS",
+        "territoire": "91 - Longjumeau",
+        "contrat": "CDI",
+        "date": "2026-04-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1741679"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3896245",
+        "intitule": "Développeur Commercial Professionnels - H/F",
+        "entreprise": "Banque Populaire Rives Paris",
+        "territoire": "91 - Longjumeau",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3896245"
+      },
+      {
+        "id": "2320511",
+        "intitule": "Architecte Data H/F",
+        "entreprise": "",
+        "territoire": "91 - Longjumeau",
+        "contrat": "CDI",
+        "date": "2026-05-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2320511"
+      },
+      {
+        "id": "1741679",
+        "intitule": "Lead Data Scientist – INTERSPORT (H/F)",
+        "entreprise": "SILKHOM SAS",
+        "territoire": "91 - Longjumeau",
+        "contrat": "CDI",
+        "date": "2026-04-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1741679"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:01:18.952650",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

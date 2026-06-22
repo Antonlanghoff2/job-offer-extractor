@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:206YQCM",
+  "value": {
+    "id": "206YQCM",
+    "intitule": "Testeur - Testeuse informatique (H/F)",
+    "entreprise": "ARCESI ARA",
+    "territoire": "69 - LYON 07",
+    "ville": "69387",
+    "code_postal": "69007",
+    "contrat": "CDD - 18 Mois",
+    "date_creation": "2026-04-15",
+    "date": "2026-04-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/206YQCM",
+    "description": "Poste ouvert aux personnes éligibles au CDD Tremplin : offre réservée aux personnes titulaires d'un titre de BOETH (ex : RQTH) \n\nMISSIONS PRINCIPALES :\n- Concevoir, rédiger et exécuter des plans de tests (fonctionnels et techniques)\n- Automatiser les tests lorsque cela est pertinent\n- Vérifier la conformité des développements aux spécifications fonctionnelles et techniques\n- Collaborer étroitement avec les développeurs pour comprendre les fonctionnalités et anticiper les risques\n\nCOMPETENCES TECHNIQUES : \n- Maîtrise des outils de gestion de tests et de suivi de bugs (ex : Jira, TestRail.)\n- Connaissances en automatisation de tests (Selenium, Cypress, etc.)\n- Expérience en développement (Java, Python, JavaScript ou autre)\n- Bonne connaissance des bases de données (SQL, modélisation, requêtes)\n- Capacité à lire et comprendre du code\n- Notions d'API testing (Postman, REST)\n- Bonne compréhension des cycles de développement (Agile, Scrum)\n\nSAVOIR-ETRE\n- Rigueur et sens du détail\n- Esprit analytique\n- Capacité à communiquer avec des profils techniques et fonctionnels\n- Organisation et gestion des priorités\n- Esprit d'équipe : Travail en équipe avec développeurs, chefs de projet et product owners.\n\nPROFIL : \nBac+3 Informatique et systèmes d'information souhaité\n2 ans d'expérience exigé\n\nCONDITIONS :\nCSE - Prime vacances Syntec - Participation - Evènements d'entreprise",
+    "metier": "Evaluateur / Evaluatrice sécurité des systèmes et produits informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Cahier des charges",
+      "Gestion de projet",
+      "Java",
+      "JavaScript",
+      "Python",
+      "SQL",
+      "Automatisation des tests",
+      "Tests automatisés",
+      "Intégration continue",
+      "Pipelines de données",
+      "Analyse de données",
+      "Automatisation de pipelines",
+      "Data Engineering",
+      "Model drift",
+      "Product Management",
+      "Backend",
+      "Git"
+    ],
+    "salaire_min": 26000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Bac+3 Informatique et systèmes d'information souhaité",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:16.027979",
+  "input_hash": "96dbdb41b2294f4338927d53578539d0e6abf9a246dd40400dbc9b5236ac9fcb",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

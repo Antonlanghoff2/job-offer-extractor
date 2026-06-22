@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:4051972",
+  "value": {
+    "id": "4051972",
+    "intitule": "Ingénieur de production (H/F)",
+    "entreprise": "",
+    "territoire": "54 - Nancy",
+    "ville": "54395",
+    "code_postal": "54000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4051972",
+    "description": "Qui sommes-nous ? Depuis 2006, chez Versusmind, nous accompagnons les PME et ETI dans leur transformation digitale forts de l'expertise de nos consultants IT. Nous misons sur l'innovation, la collaboration, et l'excellence technique pour créer des solutions sur mesure. Notre promesse : Te proposer des projets stimulants, un cadre bienveillant, et les outils pour grandir techniquement. ________________________________________ Pourquoi nous choisir ? - Impact concret : Tes solutions influencent directement la transformation digitale de nos clients. - Environnement technique riche : Projets variés, outils modernes, et une culture de l'innovation. - Équilibre vie pro/perso : Télétravail jusqu'à 2 jours/semaine, 37 jours de repos/an, et des avantages sociaux complets. Le poste : Où - À Nancy - Télétravail jusqu'à 2 jours/semaine. Contrat : CDI - Cadre - Temps plein. Salaire : 35 à 40k€ selon ton expérience. Expérience : 2 ans minimum - Diplôme : BAC+5. Tes missions Au sein du département production de la DSI, tu auras pour mission de : - Participer au design et à la mise en place des infrastructures et applications - Garantir la cohérence du SI (résilience, scalabilité, sécurité) - Assurer l'administration des infrastructures et le support de production niveau 3 (N3+) - Contribuer aux projets techniques internes et transverses (patching, obsolescence logicielle, évolutions) - Participer au pilotage opérationnel (tableaux de bord, sécurité opérationnelle) La Répartition De L'activité : - 25% assurer le dernier niveau de support (N3+) - 75% définir et mettre en place les infrastructures et les applications Profil recherché : Ton profil - Expertise en conteneurisation (Docker / Kubernetes) et environnements GNU/Linux (Debian/Ubuntu) - Bonne maîtrise des architectures réseau et des principes de sécurité (TLS, AAA) - Expérience avec Git et au moins un outil Infrastructure as Code (Terraform, Ansible, Puppet?) - Compétences en observabilité, scripting (Bash, Python) et environnements de production critiques - Connaissances des architectures hautement disponibles, CI/CD et d'au moins un SGBD (MySQL, PostgreSQL, MongoDB)",
+    "metier": "Expert / Experte systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "MySQL",
+      "PostgreSQL",
+      "Python",
+      "Terraform",
+      "CI/CD",
+      "Cybersécurité",
+      "Analyse de données",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 40000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Expérience : 2 ans minimum - Diplôme : BAC+5.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:37.433121",
+  "input_hash": "b21065a78c55e1676d6de0b121b7284c1d8707c2a467afc052f045764ae5c00f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

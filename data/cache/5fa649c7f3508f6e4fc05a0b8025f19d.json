@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:3820794",
+  "value": {
+    "id": "3820794",
+    "intitule": "Développeur FullStack H/F",
+    "entreprise": "AKKODIS",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3820794",
+    "description": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région et recrute un Développeur FullStack H/F en CDI à Bordeaux. Ce poste s'adresse à des professionnels passionné(e)s par le développement d'applications web dans le secteur de l'aéronautique et des systèmes d'information complexes. Vous interviendrez sur des projets innovants, en assurant la conception, le développement et l'optimisation de solutions techniques performantes.\n\nResponsabilités principales :\n\n * Concevoir et développer des applications web côté client et serveur en utilisant C#, Java et Angular\n * Assurer la maintenance et l'évolution des applications existantes, en intégrant de nouvelles fonctionnalités selon les besoins\n * Collaborer avec les équipes produit et design pour définir les spécifications techniques et fonctionnelles\n * Intégrer des API tierces et des services externes, notamment pour la gestion des droits et des groupes via Active Directory\n * Garantir la qualité du code par la mise en place de tests unitaires et fonctionnels, et participer aux revues de code\n * Optimiser les performances des applications web et assurer la gestion des bases de données relationnelles\n * Participer à l'amélioration continue des processus de développement dans un environnement Agile\n\nEnvironnement de travail :\n\nVous évoluerez dans un contexte technique exigeant, utilisant des technologies modernes telles que C#, Java, Angular, RESTful APIs, et Active Directory. La méthodologie Agile favorise l'innovation et la collaboration entre équipes multidisciplinaires. Les interactions avec les équipes produit, design et infrastructure sont fréquentes, et la gestion des versions via Git ainsi que la pratique du DevOps (Docker, CI/CD) sont intégrées au quotidien.\nProfil du candidat\nIssu(e) d'une formation supérieure (Bac+5 ou équivalent), vous justifiez d'au moins 5 ans d'expérience sur un poste similaire en développement fullstack, idéalement dans l'aéronautique ou les systèmes d'information complexes. Vous maîtrisez C#, Java et Angular, la gestion des droits et groupes via Active Directory, les bases de données relationnelles (SQL), ainsi que Git, RESTful APIs, et les frameworks front-end. Une expérience en méthodologie Agile, la connaissance de Docker, des services cloud (AWS, Azure) et des notions de sécurité informatique sont appréciées. Vous êtes reconnu(e) pour vos compétences en communication, votre autonomie et votre esprit d'initiative. Un anglais courant est indispensable pour évoluer dans un environnement international.\n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Aéronautique",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "SQL",
+      "Sécurité Informatique",
+      "Vue.js",
+      "Application web",
+      "Tests automatisés",
+      "Développement web",
+      "Intégration d'API",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Backend",
+      "Code review",
+      "Analyse de données",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "API",
+      "Architecture microservices",
+      "MLOps",
+      "Qualité des données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Issu(e) d'une formation supérieure (Bac+5 ou équivalent), vous justifiez d'au moins 5 ans d'expérience sur un poste similaire en développement fullstack, idéalement dans l'aéronautique ou les systèmes d'information complexes.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 27,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:47.965662",
+  "input_hash": "26d2b0dced46c76994c06edbecd7aa900e2809514fdb1405bcd347a0ae2a59fe",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

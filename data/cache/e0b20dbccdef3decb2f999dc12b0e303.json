@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:3429540",
+  "value": {
+    "id": "3429540",
+    "intitule": "Ingénieur SLI F/H - Logistique (H/F)",
+    "entreprise": "AKKODIS DIGITAL SAS",
+    "territoire": "29 - Brest",
+    "ville": "29019",
+    "code_postal": "29200",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3429540",
+    "description": "Descriptif du poste:\n\n\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Bretagne et recrute un Ingénieur SLI H/F en CDI à Brest. Ce poste s'adresse à des professionnel(le)s souhaitant contribuer au développement de solutions logicielles pour des systèmes industriels dans le secteur défense. Vous serez au cœur de projets innovants, impliquant la conception, l'évolution et la maintenance de logiciels embarqués.\n\n \n\nResponsabilités principales :\n\n\n* Concevoir et développer des solutions logicielles intégrées pour les systèmes industriels.\n* Assurer la maintenance et l'évolution des applications existantes.\n* Collaborer avec les équipes techniques pour définir les spécifications fonctionnelles et techniques.\n* Réaliser des tests unitaires et d'intégration pour garantir la qualité des livrables.\n* Participer à la mise en production et au déploiement des solutions.\n* Documenter les développements et les procédures associées.\n* Assurer le support technique et la résolution des incidents.\n* Veiller au respect des normes de sécurité et de qualité dans les développements.\n\n \n\nEnvironnement de travail :\n\n\n\nVous évoluerez dans un environnement industriel exigeant, axé sur la défense, où la collaboration et l'agilité sont essentielles. Les projets sont menés en équipe pluridisciplinaire, avec une forte interaction entre les développeur(se)s, les architectes et les responsables projets. L'utilisation de méthodologies agiles, d'outils de gestion de versions et d'intégration continue est au cœur des pratiques quotidiennes. La qualité, la sécurité et l'amélioration continue des processus sont des valeurs partagées.\n\nProfil recherché:\n\n\nDiplômé(e) d'une formation Bac+3 ou équivalent, vous justifiez de minimum 5 ans d'expérience sur des fonctions similaires, idéalement dans le secteur industriel ou défense. Vous maîtrisez les langages de programmation dédiés aux systèmes industriels (ex. C, C++, Python), les architectures logicielles, et les systèmes embarqués. Vous avez une expérience en gestion de projet, méthodologies agiles, et êtes à l'aise avec les outils de gestion de versions (Git, SVN) et d'intégration continue (Jenkins, GitLab CI). Votre capacité à rédiger une documentation technique, à analyser des problèmes complexes et à travailler en équipe est reconnue. Des compétences en automatisation des tests, en protocoles de communication industrielle, ainsi qu'un sens de l'organisation et une autonomie dans la gestion des priorités sont appréciés.\n\n \n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Ingénieur / Ingénieure logistique",
+    "niveau": "junior",
+    "competences": [
+      "Cahier des charges",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "CI/CD",
+      "Déploiement de modèles",
+      "Tests automatisés",
+      "Scalabilité",
+      "Qualité des données",
+      "Résolution de problèmes",
+      "Cybersécurité",
+      "Travail en équipe",
+      "API",
+      "Backend",
+      "MLOps",
+      "Intégration continue"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Bretagne et recrute un Ingénieur SLI H/F en CDI à Brest.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'une formation Bac+3 ou équivalent, vous justifiez de minimum 5 ans d'expérience sur des fonctions similaires, idéalement dans le secteur industriel ou défense.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "10 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:09.970747",
+  "input_hash": "dc350c10d36ce5823505f58a71d938e338e2875470c5d1e39433477d58bd1bf2",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:4052198",
+  "value": {
+    "id": "4052198",
+    "intitule": "Data analyst (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4052198",
+    "description": "Description du poste :\nChef(fe) de la section « Parcours professionnel et conditions de vie », vous serez responsable d'une équipe de 2 chargés d'études (data scientists ou analystes de données), en charge de la réalisation de statistiques et études nationales ou territorialisées sur les thèmes du parcours professionnel et des conditions de vie du personnel du Minarm. Vous apporterez un soutien méthodologique aux agents de la section en mobilisant des techniques statistiques avancées : économétrie, analyse de données, mesure de l'effet des politiques publiques. Vous conduirez des études en propre sur des bases de données complexes : données de gestion et de rémunération, fichiers de données administratives ou données d'enquêtes de la statistique publique, en mobilisant les logiciels statistiques R ou Python. Ces travaux permettront de répondre aux demandes internes du ministère et de réaliser des publications dans la collection Ecodef. En lien avec la cheffe de bureau, vous entretiendrez les liens avec les commanditaires internes du Minarm ainsi qu'avec les partenaires du système statistique public (Insee, services statistiques des autres ministères etc Description du profil :\nTitulaire d'un diplôme de niveau Master 2 ou équivalent dans le domaine de l'analyse de données (statistiques, data science.). Vous avez une expérience d'au moins 5 ans en tant que data analyst ou data scientist. Vous maitrisez les outils d'analyse (R indispensable, Python apprécié). Votre pédagogie, vos qualités relationnelles et votre sens du travail en équipe sont indispensables à l'exercice de ces missions. Une expérience professionnelle réussie au Minarm serait fortement appréciée.",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Python",
+      "Data Engineering",
+      "Airflow"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Titulaire d'un diplôme de niveau Master 2 ou équivalent dans le domaine de l'analyse de données (statistiques, data science.).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:45.360790",
+  "input_hash": "b0bbb700eafb4673e7969c9003755a438cbee9c61243f1151eb7fcacce12a50c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

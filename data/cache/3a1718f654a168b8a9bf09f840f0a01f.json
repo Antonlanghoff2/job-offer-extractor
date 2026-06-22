@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:2050330",
+  "value": {
+    "id": "2050330",
+    "intitule": "Cegedim - Architecte logiciel (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Boulogne-Billancourt",
+    "ville": "92012",
+    "code_postal": "92100",
+    "contrat": "CDI",
+    "date_creation": "2026-04-28",
+    "date": "2026-04-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2050330",
+    "description": "À propos de Cegedim :\nFondé en 1969, Cegedim est un Groupe innovant de technologies et de services spécialisé dans la gestion des flux numériques de l’écosystème santé et BtoB, ainsi que dans la conception de logiciels métier destinés aux professionnels de santé et de l’assurance. Cegedim compte près de 6 500 collaborateurs dans plus de 10 pays et a réalisé un chiffre d’affaires de 649,2 millions d’euros en 2025.\nPour en savoir plus : www.cegedim.fr\nEt suivez Cegedim sur Twitter : @CegedimGroup, LinkedIn et Facebook.\nLoin de l’informatique traditionnelle, cegedim.cloud incarne cette innovation, en fournissant à ses clients, tant internes Groupe qu’externes, des services Cloud souverains en mode self-service, comprenant notamment une collection de middleware (PaaS) prête à l’emploi, ainsi qu’un accompagnement allant jusqu’au design thinking des applications. Le tout, reposant sur une infrastructure « best of breed », dans un cadre sécurisé et robuste, certifié ISO 20000/27001/HDS, au sein de nos datacenters situés en France.\nAu sein de l'équipe Profesional Services de Cegedim.cloud, l'Architecte IT a pour mission de proposer et d'implémenter (ou faire implémenter) de nouvelles architectures disponibles, performantes, sécurisées, économiques, et adaptées aux besoins exprimés par les Clients, en collaboration avec l'équipe Product Factory. Il intervient :\n\nEn phase d'avant-vente pour définir la solution qui répond aux besoins du Client,\nEn phase de transition pour implémenter les solutions et assurer le transfert de compétences vers les équipes de Run selon le cadencement défini par le Transition Manager,\nEn phase de Run pour identifier, concevoir et implémenter les évolutions des solutions\n\nVos missions : Comprendre les besoins clients- Analyser le contexte technique et les enjeux des nouveaux clients\n\nIdentifier les besoins non couverts par le catalogue de services existant\nProposer des architectures cloud adaptées (disponibilité, performance, sécurité, coût)\n\nConcevoir des solutions cloud- Définir des architectures techniques répondant aux exigences clients\n\nProposer des solutions innovantes en collaboration avec le Product Owner\nContribuer à la feuille de route des produits cloud\n\nImplémenter les solutions- Concevoir et déployer les nouvelles solutions cloud\n\nPiloter ou coordonner les équipes techniques impliquées\nMettre à jour la documentation et le catalogue de services\n\nParticiper aux phases client- Contribuer aux discussions d’architecture lors des phases : d’avant-vente, de transition et d’exploitation\n\nPromouvoir la valeur des solutions auprès des clients\n\nContribuer au développement des offres- Participer à la rédaction de guides d’implémentation\n\nContribuer à des présentations techniques et documents d’expertise (guides, white papers)\nPartager les bonnes pratiques avec les équipes internes\n\nFormation : Bac+5 en informatique (École d'ingénieur ou Master) Expérience :\n\n10 ans d'expérience en architecture cloud / infrastructure\nExpérience dans des projets techniques transverses au sein d’une DSI ou d’un environnement cloud\n\nExpertise technique: - Architecture Cloud (public, privé ou hybride)\n\nSystèmes et réseaux (niveau expert)\nArchitecture SI\nConception d’infrastructures hautement disponibles et sécurisées\n\nConnaissances techniques :- Technologies cloud et virtualisation\n\nInfrastructure IT (compute, réseau, stockage)\nProcessus ITIL\nSécurité et bonnes pratiques d’architectures\n\nMéthodes et savoir-faire- Gestion de projets techniques\n\nConception d’architectures cloud\nAnimation d’équipes techniques transverses\nRelation client et accompagnement technique\n",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Relation Client",
+      "Conception de solutions",
+      "MLOps",
+      "Architecture microservices",
+      "Data Engineering",
+      "Pipelines de données",
+      "Backend",
+      "Analyse de données",
+      "Veille technologique",
+      "Sécurité informatique",
+      "Feature Engineering",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 1969,
+    "salaire_max": 1969,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : Bac+5 en informatique (École d'ingénieur ou Master) Expérience :",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Formation : Bac+5 en informatique (École d'ingénieur ou Master) Expérience :",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Formation : Bac+5 en informatique (École d'ingénieur ou Master) Expérience :",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "10 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:31.391625",
+  "input_hash": "4dde7b7ba246b60194c7f6034a45059499da298f87c7e9551ef022b9cd73188c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

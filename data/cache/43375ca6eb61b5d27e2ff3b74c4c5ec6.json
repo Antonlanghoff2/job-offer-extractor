@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:209NQDN",
+  "value": {
+    "id": "209NQDN",
+    "intitule": "Ingénieur DevOps Cloud (H/F)",
+    "entreprise": "KINGFISHER INFORMATION TECHNOLOGY SERVIC",
+    "territoire": "59 - TEMPLEMARS",
+    "ville": "59585",
+    "code_postal": "59175",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NQDN",
+    "description": "Nous sommes Kingfisher, une équipe de plus de 74 000 collaborateurs passionnés qui font vivre Kingfisher ainsi que l'ensemble de nos enseignes : B&Q, Screwfix, Brico Dépôt, Castorama et Koçtas.\n\nGuidés par notre raison d'être Better Homes. Better Lives. For Everyone., nous sommes convaincus qu'un monde meilleur commence par des foyers meilleurs, et nous œuvrons chaque jour pour transformer cette ambition en réalité.\n\nRejoignez-nous et contribuez à façonner l'avenir de l'amélioration de l'habitat.\n\nNous recherchons actuellement un Ingénieur DevOps Cloud H/F en CDI sur notre site de Templemars (59) ou de Longpont-sur-Orge (91).\n\nRôle clé DevOps : mise en œuvre, automatisation et exploitation des environnements techniques au service des produits digitaux de la Digital Factory.\nCI/CD & IaC : conception et optimisation des pipelines (GitLab CI, Jenkins.), déploiement d'infrastructure as code pour accélérer et fiabiliser les livraisons.\nCloud & infrastructure : gestion des environnements (AWS, Docker, Kubernetes, serveurs) avec un focus performance, scalabilité et optimisation des coûts (FinOps).\nProduction & supervision : garantie de la disponibilité des plateformes (e-commerce, apps), monitoring (Datadog, Grafana.) et gestion des incidents (ITIL).\nSécurité & conformité : application des standards DevSecOps Kingfisher, gestion des accès, secrets et participation aux audits sécurité.\nCollaboration & amélioration continue : travail étroit avec les équipes Produit, Dev et sécurité, alignement avec Group Tech et contribution aux pratiques agiles.\n\n\n\n\nSoft skills clés : forte capacité d'analyse et de résolution de problèmes, avec une orientation qualité et amélioration continue\nTravail collaboratif : aisance en transverse avec des équipes variées (Développement, Produit, Sécurité, Group Tech) et très bonne communication, avec capacité à vulgariser\nAutonomie et rigueur : esprit d'initiative, sens de l'organisation et efficacité dans un environnement agile exigeant\nExpertise technique DevOps : maîtrise des outils CI/CD (GitLab CI, Jenkins.), de l'infrastructure as code (Terraform, Ansible), du scripting (Bash, Python) et des environnements Cloud (AWS, Docker, Kubernetes)\nFormation et environnement : diplôme IT, anglais courant, certifications (ITIL / AWS) appréciées, connaissance e-commerce et des outils Jira / Confluence appréciée",
+    "metier": "Technicien / Technicienne Cloud",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Coûts",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Python",
+      "Terraform",
+      "Vision",
+      "CI/CD",
+      "GitLab CI",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 74000,
+    "salaire_max": 74000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons actuellement un Ingénieur DevOps Cloud H/F en CDI sur notre site de Templemars (59) ou de Longpont-sur-Orge (91).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:08.107996",
+  "input_hash": "295278e5daec96a5c04a77bfda55d7f290191d74e604d5b9a1a510db329a1d7e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,294 @@
+{
+  "key": "trends:69 - Saint-Priest",
+  "value": {
+    "territoire": "69 - Saint-Priest",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Cybersécurité": 1,
+      "Git": 1,
+      "Intelligence artificielle": 1,
+      "JavaScript": 1,
+      "Product Management": 1,
+      "Relation Client": 1,
+      "TypeScript": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Cybersécurité",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Cybersécurité": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "JavaScript",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "JavaScript": 1
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Product Management": 1
+        }
+      },
+      {
+        "nom": "Relation Client",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Relation Client": 1
+        }
+      },
+      {
+        "nom": "TypeScript",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "TypeScript": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Cybersécurité": {
+        "Cybersécurité": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "JavaScript": {
+        "JavaScript": 1
+      },
+      "Product Management": {
+        "Product Management": 1
+      },
+      "Relation Client": {
+        "Relation Client": 1
+      },
+      "TypeScript": {
+        "TypeScript": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse logiciel ou d'application": 1,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Relation Client",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Git",
+        "Intelligence artificielle",
+        "JavaScript",
+        "TypeScript",
+        "Relation Client",
+        "Product Management",
+        "Cybersécurité"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3870096",
+        "intitule": "ONSITE MANAGER (F/H) - DAR1 (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Saint-Priest",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3870096"
+      },
+      {
+        "id": "209VXMV",
+        "intitule": "Développeur Sage X3 (H/F)",
+        "entreprise": "4 CAD PLM",
+        "territoire": "69 - Saint-Priest",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209VXMV"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3870096",
+        "intitule": "ONSITE MANAGER (F/H) - DAR1 (H/F)",
+        "entreprise": "",
+        "territoire": "69 - Saint-Priest",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3870096"
+      },
+      {
+        "id": "209VXMV",
+        "intitule": "Développeur Sage X3 (H/F)",
+        "entreprise": "4 CAD PLM",
+        "territoire": "69 - Saint-Priest",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209VXMV"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:02:36.401541",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

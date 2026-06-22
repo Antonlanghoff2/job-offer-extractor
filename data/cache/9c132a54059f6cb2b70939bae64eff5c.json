@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:3710437",
+  "value": {
+    "id": "3710437",
+    "intitule": "Data Engineer F/H/X",
+    "entreprise": "Keolis",
+    "territoire": "75 - Paris",
+    "ville": "75056",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-11",
+    "date": "2026-06-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3710437",
+    "description": "Data Engineer F/H/X Systèmes d'Information Inspirer et mettre en mouvement une mobilité responsable. KISIO Services et Consulting offre aux collectivités, aux opérateurs de transports et aux entreprises une approche experte, multidisciplinaire et sur-mesure de la mobilité Au quotidien, nous allions conseil et services opérationnels et œuvrons à la transition sociétale, environnementale et énergétique, en agissant en faveur d'une mobilité durable au service des citoyens. Nous sommes une filiale française du groupe Keolis, fruit du rapprochement de plusieurs entités expertes en 2015. Ce que nous pouvons accomplir ensemble : Au sein de la DSI, concevez, développez et maintienez les infrastructures de données et les solutions de Business Intelligence (BI). Vous jouerez un rôle clé dans la transformation des données brutes en informations fiables et exploitables, au service des équipes métiers et de la stratégie globale. Votre rôle : Leadership Technique : Définir les meilleures pratiques et les standards de développement. Mentorer et former les dev-users pour améliorer leurs compétences techniques. Conception et Développement : Concevoir et développer des solutions BI robustes et évolutives. Créer et maintenir des pipelines de données ETL/ELT. Développer des tableaux de bord et des rapports interactifs pour les parties prenantes. Gestion des Données : Assurer la qualité, la sécurité et la conformité des données. Optimiser les performances des bases de données et des entrepôts de données. Gérer les intégrations de données provenant de diverses sources. Collaboration Inter-équipes : Collaborer avec les équipes métiers pour comprendre leurs besoins et fournir des solutions adaptées. Veille Technologique : Rester à jour avec les dernières tendances et technologies en matière de BI et de data engineering. Proposer et implémenter des améliorations continues dans nos processus et outils. Votre profil : Vous êtes de formation Bac +5 en informatique, statistiques, mathématiques ou dans un domaine connexe. Vous avez une expérience de 2/3 ans en tant que Data Engineer ou dans un rôle similaire Vous maitrisez des langages de programmation tels que Python, SQL, et des outils BI comme Tableau, Power BI, ou Looker. Vous avez des compétences en gestion de projet, communication, et avez des capacités à travailler dans un environnement agile et à gérer plusieurs projets simultanément. Vous avez de l'expérience avec les technologies de big data comme Hadoop, Spark, et les bases de données NoSQL. Ce que nous vous proposons: Rémunération 50k + 10% variable Un cadre de travail agréable et dynamique, où les idées seront écoutées et valorisées. Un environnement collaboratif, avec des animations, des partages d'expérience et des actualités régulières Nos engagements RSE : créer de la valeur pour nos clients et territoires, mettre l'humain au cœur de nos priorités, protéger la planète et garantir une croissance durable De nombreux avantages : télétravail (jusqu'à 3 jours), CSE, épargne salariale, Forfait Mobilité Durable, remboursement de 75 % des frais de transport, engagement solidaire (Kisio offre à chaque collaborateur l'opportunité de consacrer 0.5 jour par an à une mission à fort impact social) Processus de recrutement : 1- Si votre candidature est présélectionnée, vous serez contacté(e) pour un premier échange RH. Si votre profil n'est pas retenu pour cette offre, vous recevrez une réponse par mail. 2- Si votre candidature est retenue à la suite de la préqualification, vous rencontrez votre futur manager et éventuellement d'autres membres de l'équipe. 3- Votre candidature est validée ? Vous serez contacté(e) par l'équipe RH afin de vous transmettre une offre de contrat. Si vous n'êtes pas retenu(e) suite aux entretiens, vous en serez informé(e) dans les meilleurs délais. Dans un souci de lisibilité et d'accessibilité, cette offre est rédigée au masculin générique, sans préférence de genre. Kisio cultive la diversité et l'inclusion au sein de ses équipes, sans distinction d'origine, d'expérience, d'âge, de genre, d'orientation sexuelle, de religion ou de situation de handicap.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Data engineering",
+      "Délais",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "NoSQL",
+      "Python",
+      "SQL",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Pipelines de données",
+      "Code review",
+      "Analyse de données",
+      "Model drift",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Feature Engineering"
+    ],
+    "salaire_min": 2015,
+    "salaire_max": 2015,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Votre profil : Vous êtes de formation Bac +5 en informatique, statistiques, mathématiques ou dans un domaine connexe.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:22.335452",
+  "input_hash": "a4e0e78d696cc2abdbcd3c2b95a13c55810645caf9bf490d703493a1433189e7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

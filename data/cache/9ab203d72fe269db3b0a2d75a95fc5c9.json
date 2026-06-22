@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:2416739",
+  "value": {
+    "id": "2416739",
+    "intitule": "Ingénieur Systèmes Méthodes H/F",
+    "entreprise": "ELNO",
+    "territoire": "95 - Argenteuil",
+    "ville": "95018",
+    "code_postal": "95100",
+    "contrat": "CDI",
+    "date_creation": "2026-05-08",
+    "date": "2026-05-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2416739",
+    "description": "Description des activités significatives de l'emploi : Rattaché au Responsable indus et méthodes, vous serez en charge de : Ø Conception et développement de bancs de test : définir, spécifier, concevoir et assembler des bancs de mesure pour micros, écouteurs, haut-parleurs, etc. Ø Fabrication et intégration : câblage, montage mécanique/électronique et mise en place des instruments de mesure. Ø Mise en production : qualification des bancs de test (mesures de répétabilité et de reproductibilité), rédaction des procédures d’utilisation, formation des opérateurs. Ø Validation et optimisation : vérifier la conformité des bancs aux spécifications, améliorer leur fiabilité et réduire les temps de test. Ø Maintenance et support : assurer le suivi, la calibration et la réparation des bancs de test en production. Ø Collaboration interservices : travailler avec la R&amp;D, la production et la qualité pour garantir la pertinence et la robustesse des solutions de test. Compétences techniques : Ø Automatisation &amp; logiciels : maîtrise d’outils de pilotage de tests, programmation basique pour automatiser les séquences de mesure. Java, python et labview Compétences transverses Ø Capacité à analyser et résoudre des problèmes techniques. Ø Rigueur, organisation et sens du détail. Ø Esprit d’équipe et bonne communication avec les ingénieurs et les opérateurs. Ø Autonomie et adaptabilité face aux évolutions des besoins de test. Profil recherché : Diplôme ingénieur électronique - maitrise de l'environnement système (soft et hard)",
+    "metier": "Ingénieur / Ingénieure en informatique embarquée",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "Automatisation de pipelines",
+      "Qualité logicielle",
+      "Tests automatisés",
+      "Résolution de problèmes",
+      "Gestion de projet",
+      "MLOps",
+      "Qualité des données",
+      "Intégration continue",
+      "Pipelines de données",
+      "Architecture microservices",
+      "Backend",
+      "Scalabilité"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Diplôme ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Profil recherché : Diplôme ingénieur électronique - maitrise de l'environnement système (soft et hard)",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:23.662986",
+  "input_hash": "0fa86175fbf1e9967f2dd3f3d569ad6be7be04b3987bbca2456d425c2baaa999",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

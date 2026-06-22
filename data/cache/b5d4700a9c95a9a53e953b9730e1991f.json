@@ -1,0 +1,44 @@
+{
+  "key": "offer_extraction:3166491",
+  "value": {
+    "id": "3166491",
+    "intitule": "TECHNICIEN QUALIFICATION LOGICIEL (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Marignane",
+    "ville": "13054",
+    "code_postal": "13700",
+    "contrat": "Intérim - 8 Mois",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3166491",
+    "description": "descriptif du posteVous êtes en charge de la qualification logiciel pour les utilisateurs. Vous avez la responsabilité de tester le logiciel et le valider avant son installation. Vous rédigez également de la documentation , des tutoriels pour la bonne prise en main des utilisateurs. Vous êtes l'interlocuteur privilégié des utilisateurs  pour identifier leurs demandes et suivre les différents étapes avant installation.profil recherchéDe formation Bac+2, vou",
+    "metier": "Qualiticien / Qualiticienne logiciel en informatique",
+    "niveau": "junior",
+    "competences": [],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes l'interlocuteur privilégié des utilisateurs pour identifier leurs demandes et suivre les différents étapes avant installation.profil recherchéDe formation Bac+2, vou",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 0,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:25.942933",
+  "input_hash": "ae346ac5a4ff6a497a27065f172aca30caf45f1b142c09d9678fc62c7bb7d3c5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

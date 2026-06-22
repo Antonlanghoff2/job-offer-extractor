@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:208CYJN",
+  "value": {
+    "id": "208CYJN",
+    "intitule": "Expert IA Agentique (H/F)",
+    "entreprise": "",
+    "territoire": "75 - PARIS 17",
+    "ville": "75117",
+    "code_postal": "75017",
+    "contrat": "CDI",
+    "date_creation": "2026-05-11",
+    "date": "2026-05-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208CYJN",
+    "description": "Startup deeptech spécialisée dans les systèmes d'agents IA critiques pour les environnements enterprise \nNos solutions s'adressent à des environnements à fortes contraintes opérationnelles et réglementaires (call-centers, ITSM, finance, support métier), où performance, résilience et explicabilité sont essentielles. \n\nExpert(e) IA Agentique - Voice - RASA - LLM - Enterprise Automation \n\nVous rejoignez Inquizyt à un moment clé de sa croissance pour concevoir, développer et opérer des agents IA temps réel dédiés aux call-centers, à l'ITSM et aux opérations financières. \n\nResponsabilités \n\n- Développement backend Python & C# (agents IA, micro-services, APIs) \n- Architectures RASA avancées (NLU, Core, policies, custom actions) \n- IA générative & LLM : RAG, multi-agents, tool calling \n- Voice temps réel : STT, TTS, téléphonie, CCaaS, opérateur virtuel \n- Frontend & supervision : React, dashboards \n- API Gateway & intégration enterprise \n- Observabilité des agents IA: logs, métriques, traces \n- Explainable AI : traçabilité, audit, conformité \n- DevOps & Cloud : Terraform, CI/CD \n\nProfil recherché / Expected Profile \n\nFormation minimale Bac+3 (Licence, Bachelor ou équivalent) en informatique avec de l'IA. \nExpérience professionnelle significative (10+ ans) en développement logiciel avec del'IA. \nExpertise RASA obligatoire en environnement de production. \nMaîtrise de Python et C#. \nMaîtrise React, Cloud, DevOps et Terraform. \nMaitrise des opérateurs virtuels \nMaîtrise professionnelle du français et de l'anglais (écrit et oral). ",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "React",
+      "Terraform",
+      "Vision",
+      "API",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation minimale Bac+3 (Licence, Bachelor ou équivalent) en informatique avec de l'IA.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Licence",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Formation minimale Bac+3 (Licence, Bachelor ou équivalent) en informatique avec de l'IA.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation minimale Bac+3 (Licence, Bachelor ou équivalent) en informatique avec de l'IA.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "10 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:49:58.361248",
+  "input_hash": "e1d9c816fa77ddd4add00648605dac2a1cac5234cf8a7d8a97bdfa028f7956ec",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

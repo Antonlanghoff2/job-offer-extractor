@@ -1,0 +1,580 @@
+{
+  "key": "trends:44 - Vieillevigne",
+  "value": {
+    "territoire": "44 - Vieillevigne",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Python": 3,
+      "API REST": 2,
+      "Maintenance Applicative": 2,
+      "Sécurité Informatique": 2,
+      "API": 1,
+      "Azure": 1,
+      "Backend": 1,
+      "Data engineering": 1,
+      "Intelligence artificielle": 1,
+      "MLOps": 1,
+      "Optimisation Des Performances": 1,
+      "PostgreSQL": 1,
+      "Scalabilité": 1,
+      "SQL": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Python",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Python": 3
+        }
+      },
+      {
+        "nom": "API REST",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "API REST": 2
+        }
+      },
+      {
+        "nom": "Maintenance Applicative",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Maintenance applicative": 2
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Sécurité informatique": 2
+        }
+      },
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "Azure",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Azure": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Optimisation des performances": 1
+        }
+      },
+      {
+        "nom": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "PostgreSQL": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Scalabilité": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "SQL": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Python": {
+        "Python": 3
+      },
+      "API REST": {
+        "API REST": 2
+      },
+      "Maintenance Applicative": {
+        "Maintenance applicative": 2
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 2
+      },
+      "API": {
+        "API": 1
+      },
+      "Azure": {
+        "Azure": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Optimisation Des Performances": {
+        "Optimisation des performances": 1
+      },
+      "PostgreSQL": {
+        "PostgreSQL": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      },
+      "SQL": {
+        "SQL": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 2,
+      "Gestionnaire De Parc Informatique": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 3
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "API REST",
+        "competence_b": "Maintenance Applicative",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Maintenance Applicative",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "API REST",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Maintenance Applicative",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Maintenance Applicative",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Maintenance Applicative",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Maintenance Applicative",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Maintenance Applicative",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Maintenance Applicative",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Maintenance Applicative",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Maintenance Applicative",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "API REST",
+        "Python",
+        "Maintenance Applicative",
+        "API",
+        "Backend",
+        "Sécurité Informatique"
+      ],
+      [
+        "Azure",
+        "Intelligence artificielle",
+        "Python",
+        "Scalabilité",
+        "Sécurité Informatique"
+      ],
+      [
+        "API REST",
+        "PostgreSQL",
+        "Python",
+        "SQL",
+        "Data engineering",
+        "MLOps",
+        "Maintenance Applicative",
+        "Optimisation Des Performances"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3984106",
+        "intitule": "DEVELOPPEUR INFOTRMATIQUE C# (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "44 - Vieillevigne",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3984106"
+      },
+      {
+        "id": "3353157",
+        "intitule": "GESTIONNAIRE INFORMATIQUE (  ) (H/F)",
+        "entreprise": "",
+        "territoire": "44 - Vieillevigne",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3353157"
+      },
+      {
+        "id": "3353150",
+        "intitule": "DEVELOPPEUR INFOTRMATIQUE C# (H/F)",
+        "entreprise": "",
+        "territoire": "44 - Vieillevigne",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3353150"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3984106",
+        "intitule": "DEVELOPPEUR INFOTRMATIQUE C# (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "44 - Vieillevigne",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3984106"
+      },
+      {
+        "id": "3353157",
+        "intitule": "GESTIONNAIRE INFORMATIQUE (  ) (H/F)",
+        "entreprise": "",
+        "territoire": "44 - Vieillevigne",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3353157"
+      },
+      {
+        "id": "3353150",
+        "intitule": "DEVELOPPEUR INFOTRMATIQUE C# (H/F)",
+        "entreprise": "",
+        "territoire": "44 - Vieillevigne",
+        "contrat": "CDI",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3353150"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:01:15.191308",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,618 @@
+{
+  "key": "trends:57 - FLORANGE",
+  "value": {
+    "territoire": "57 - FLORANGE",
+    "periode_jours": 365,
+    "nombre_offres": 4,
+    "competences": {
+      "Intelligence artificielle": 3,
+      "Qualité Des Données": 2,
+      "API REST": 1,
+      "Automatisation De Pipelines": 1,
+      "Azure": 1,
+      "Cahier des charges": 1,
+      "Documentation Technique": 1,
+      "Déploiement De Modèles": 1,
+      "Gestion de projet": 1,
+      "Git": 1,
+      "MLOps": 1,
+      "Résolution De Problèmes": 1,
+      "SQL": 1,
+      "Sécurité Informatique": 1,
+      "Veille Technologique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 75.0,
+        "variants": {
+          "Intelligence artificielle": 3
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 2,
+        "percentage": 50.0,
+        "variants": {
+          "Qualité des données": 2
+        }
+      },
+      {
+        "nom": "API REST",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "API REST": 1
+        }
+      },
+      {
+        "nom": "Automatisation De Pipelines",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Automatisation de pipelines": 1
+        }
+      },
+      {
+        "nom": "Azure",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Azure": 1
+        }
+      },
+      {
+        "nom": "Cahier des charges",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Cahier des charges": 1
+        }
+      },
+      {
+        "nom": "Documentation Technique",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Documentation technique": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Veille technologique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 3
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 2
+      },
+      "API REST": {
+        "API REST": 1
+      },
+      "Automatisation De Pipelines": {
+        "Automatisation de pipelines": 1
+      },
+      "Azure": {
+        "Azure": 1
+      },
+      "Cahier des charges": {
+        "Cahier des charges": 1
+      },
+      "Documentation Technique": {
+        "Documentation technique": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      }
+    },
+    "metiers": {
+      "Qualiticien / Qualiticienne logiciel en informatique": 2,
+      "Conseiller / Conseillère support technique informatique": 1,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 4
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "API REST",
+        "competence_b": "Azure",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Automatisation De Pipelines",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Azure",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 25.0
+      }
+    ],
+    "fiabilite": 0.1,
+    "skill_sets": [
+      [
+        "Intelligence artificielle"
+      ],
+      [
+        "Gestion de projet",
+        "Intelligence artificielle"
+      ],
+      [
+        "Intelligence artificielle",
+        "Automatisation De Pipelines",
+        "Sécurité Informatique",
+        "Veille Technologique",
+        "Résolution De Problèmes",
+        "Déploiement De Modèles",
+        "Qualité Des Données"
+      ],
+      [
+        "API REST",
+        "Azure",
+        "Cahier des charges",
+        "Git",
+        "SQL",
+        "MLOps",
+        "Documentation Technique",
+        "Qualité Des Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "210BBCN",
+        "intitule": "Technicien Informatique et Maintenance-Infrastructures et IA (H/F)",
+        "entreprise": "",
+        "territoire": "57 - FLORANGE",
+        "contrat": "CDI",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/210BBCN"
+      },
+      {
+        "id": "3738554",
+        "intitule": "Développeur Full Stack Angular C# .Net (H/F)",
+        "entreprise": "Amanora Technologies",
+        "territoire": "57 - Florange",
+        "contrat": "CDI",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3738554"
+      },
+      {
+        "id": "0673512",
+        "intitule": "[Alternance] - Technicien QSE H/F",
+        "entreprise": "",
+        "territoire": "57 - Florange",
+        "contrat": "CDI",
+        "date": "2026-03-24",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0673512"
+      },
+      {
+        "id": "0391284",
+        "intitule": "[Alternance] Technicien QSE H/F",
+        "entreprise": "",
+        "territoire": "57 - Florange",
+        "contrat": "CDI",
+        "date": "2026-03-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0391284"
+      }
+    ],
+    "offers": [
+      {
+        "id": "210BBCN",
+        "intitule": "Technicien Informatique et Maintenance-Infrastructures et IA (H/F)",
+        "entreprise": "",
+        "territoire": "57 - FLORANGE",
+        "contrat": "CDI",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/210BBCN"
+      },
+      {
+        "id": "3738554",
+        "intitule": "Développeur Full Stack Angular C# .Net (H/F)",
+        "entreprise": "Amanora Technologies",
+        "territoire": "57 - Florange",
+        "contrat": "CDI",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3738554"
+      },
+      {
+        "id": "0673512",
+        "intitule": "[Alternance] - Technicien QSE H/F",
+        "entreprise": "",
+        "territoire": "57 - Florange",
+        "contrat": "CDI",
+        "date": "2026-03-24",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0673512"
+      },
+      {
+        "id": "0391284",
+        "intitule": "[Alternance] Technicien QSE H/F",
+        "entreprise": "",
+        "territoire": "57 - Florange",
+        "contrat": "CDI",
+        "date": "2026-03-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0391284"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:01.445392",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

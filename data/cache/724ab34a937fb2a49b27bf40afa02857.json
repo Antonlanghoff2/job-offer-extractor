@@ -1,0 +1,81 @@
+{
+  "key": "offer_extraction:3800094",
+  "value": {
+    "id": "3800094",
+    "intitule": "Une/Un Data Scientist confirmé(e) (H/F)",
+    "entreprise": "ARCOM",
+    "territoire": "75 - Paris 12e Arrondissement",
+    "ville": "75112",
+    "code_postal": "75012",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3800094",
+    "description": "RESPONSABILITÉS : -Concevoir et valider, de bout en bout, des méthodologies d'analyse au service de la régulation (pluralisme, audiences, équilibres économiques, risques liés aux plateformes numériques...). -Capitaliser sur l'état de l'art et les acteurs du monde académique pour proposer des solutions répondant aux besoins du régulateur. -Conduire la modélisation quantitative et statistique des données audiovisuelles et numériques. -Concevoir les briques d'analyse automatique du langage et les protocoles de validation associés. -Garantir des résultats reproductibles et opposables. -Contribuer à la doctrine technique du département. -Assurer une veille sur l'état de l'art en apprentissage automatique et en analyse du langage appliqués à la régulation numérique. PROFIL RECHERCHÉ : -Diplôme de grande école d'ingénieur, d'école normale supérieure ou master recherche (Bac+5 à Bac+8) en mathématiques appliquées, physique, informatique, science des données ou discipline connexe. Un doctorat est valorisé. -Au moins 3 ans d'expérience en science des données et intelligence artificielle (apprentissage automatique, apprentissage profond), ou parcours de recherche de haut niveau -Compétences en traitement automatique du langage naturel : segmentation thématique, annotation assistée par modèle, représentations vectorielles (embeddings). -Expérience pratique des grands modèles de langage et de l'intelligence artificielle générative. -Maîtrise de la modélisation quantitative et statistique : statistiques, séries temporelles, économétrie, modèles de systèmes complexes. -Maîtrise de Python et des bibliothèques associées (PyTorch, Hugging Face). -Rigueur scientifique et expérimentale : conception de protocoles d'évaluation, métriques, mesure d'accord inter-annotateurs, reproductibilité, capacité à rendre une méthodologie défendable scientifiquement et juridiquement -Esprit de recherche, autonomie, aisance rédactionnelle, capacité à synthétiser et à vulgariser. -La connaissance des environnements de déploiement (conteneurs, orchestration) serait un plus",
+    "metier": "Data scientist",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "PyTorch",
+      "Python",
+      "Déploiement de modèles",
+      "Qualité des données",
+      "Data Engineering",
+      "Pipelines de données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : -Diplôme de grande école d'ingénieur, d'école normale supérieure ou master recherche (Bac+5 à Bac+8) en mathématiques appliquées, physique, informatique, science des données ou discipline connexe.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : -Diplôme de grande école d'ingénieur, d'école normale supérieure ou master recherche (Bac+5 à Bac+8) en mathématiques appliquées, physique, informatique, science des données ou discipline connexe.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : -Diplôme de grande école d'ingénieur, d'école normale supérieure ou master recherche (Bac+5 à Bac+8) en mathématiques appliquées, physique, informatique, science des données ou discipline connexe.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+8",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : -Diplôme de grande école d'ingénieur, d'école normale supérieure ou master recherche (Bac+5 à Bac+8) en mathématiques appliquées, physique, informatique, science des données ou discipline connexe.",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": false,
+        "source_sentence": "Un doctorat est valorisé. -Au moins 3 ans d'expérience en science des données et intelligence artificielle (apprentissage automatique, apprentissage profond), ou parcours de recherche de haut niveau -Compétences en traitement automatique du langage naturel : segmentation thématique, annotation assistée par modèle, représentations vectorielles (embeddings). -Expérience pratique des grands modèles de langage et de l'intelligence artificielle générative. -Maîtrise de la modélisation quantitative et statistique : statistiques, séries temporelles, économétrie, modèles de systèmes complexes. -Maîtrise de Python et des bibliothèques associées (PyTorch, Hugging Face). -Rigueur scientifique et expérimentale : conception de protocoles d'évaluation, métriques, mesure d'accord inter-annotateurs, reproductibilité, capacité à rendre une méthodologie défendable scientifiquement et juridiquement -Esprit de recherche, autonomie, aisance rédactionnelle, capacité à synthétiser et à vulgariser. -La connaissance des environnements de déploiement (conteneurs, orchestration) serait un plus",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 5,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:12.589660",
+  "input_hash": "22c47f91764cd2d3d097a1f3c23c12831fa22e8f54509c8ab7c033de9822871e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

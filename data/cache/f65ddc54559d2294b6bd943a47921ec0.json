@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:209YHVD",
+  "value": {
+    "id": "209YHVD",
+    "intitule": "Technicien(ne) Informatique en développement logiciels H/F",
+    "entreprise": "LABO INTERPRO LAITIER NORMANDIE",
+    "territoire": "50 - SAINT-LO",
+    "ville": "50502",
+    "code_postal": "50000",
+    "contrat": "CDD - 6 Mois",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209YHVD",
+    "description": "Dans le cadre de sa croissance, LILANO renforce son équipe informatique et recherche un profil autonome, polyvalent et rapidement opérationnel, avec une appétence pour le développement logiciel et la gestion des données.\nVous serez en charge du développement d'outils internes ainsi que de la maintenance des solutions existantes. Vous contribuerez également à l'automatisation des processus et à l'évolution de notre environnement informatique. Des compétences en gestion de projet seraient un plus.\nVos missions :\n- Développement & automatisation\no Développer et maintenir des scripts, outils métiers et automatisations internes (langages Python, VBA, SQL, C#, WinDev)\no Automatiser des tâches et processus afin d'optimiser le fonctionnement des services\no Participer à l'amélioration continue des outils et workflows internes\n- Bases de données & gestion des données\no Concevoir, maintenir et optimiser des bases de données et requêtes SQL\no Participer au traitement, à l'analyse, à l'extraction et à la fiabilisation des données\no Assurer la cohérence, la qualité et la sécurisation des données exploitées\n- Système d'information & support technique\no Contribuer au support technique et à la résolution d'incidents\no Participer à l'évolution et à la maintenance du système d'information\no Assurer la gestion du SI\no Rédiger et maintenir la documentation technique\n- Cybersécurité et accompagnement aux bonnes pratiques\nUne sensibilité aux enjeux de cybersécurité est indispensable :\no Suivi des mises à jour, sauvegardes et protections des systèmes\no Gestion et contrôle des accès utilisateurs\no Protection et confidentialité des données\no Sensibilisation des utilisateurs aux risques informatiques\nProfil recherché\n - Expérience significative en informatique (> 5 ans), niveau BAC+2 en développement logiciel\n - Profil avec excellent niveau technique\n - Bonne maîtrise de Python, SQL, VBA ou autres langages de script\n - Bonne compréhension des bases de données, des environnements Windows et des réseaux\n - Capacité à travailler en autonomie et à proposer des solutions concrètes\n - Rigueur, réactivité et esprit d'initiative\n - Appétence pour l'optimisation et la résolution de problèmes\nSalaire selon profil (13ème mois, prime de vacances, mutuelle avantageuse, remboursement frais de transport public, avantages CSE.)",
+    "metier": "Technicien / Technicienne d'exploitation informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Qualité des données",
+      "Documentation technique",
+      "Pipelines de données",
+      "Code review",
+      "Data Engineering",
+      "Model drift",
+      "Product Management",
+      "Protection des données",
+      "API",
+      "Backend",
+      "Git"
+    ],
+    "salaire_min": 12,
+    "salaire_max": 31,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Expérience significative en informatique (> 5 ans), niveau BAC+2 en développement logiciel",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:04.162129",
+  "input_hash": "97faee230307bb057178a932edad475bf289de4a2d806e049a23d547ae59c49f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

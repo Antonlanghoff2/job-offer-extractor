@@ -1,0 +1,74 @@
+{
+  "key": "offer_extraction:8745672",
+  "value": {
+    "id": "8745672",
+    "intitule": "Data scientist (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-02-05",
+    "date": "2026-02-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8745672",
+    "description": "Description du poste :\nLe Data Scientist intègre l'équipe en tant que référent technique/ scientifique, il est chargé d'accompagner les juniors dans leur montée en compétences tout en participant à la réalisation des projets data 360 et IA. Il est également en charge de l'utilisation des technologies Big Data et IA, dans le but d'aider à la prise de décision et faire de la veille technologique sur les architectures Big Data et IA.\nVous aurez la responsabilité de Analyser des données pour traduire une problématique métier en problème mathématique statistique, et réciproquement\n- Anticiper avantages/inconvénients de différents modèles ou méthodes calcul dans environnement métier après comparaison et évaluation de ces modèles\n- Apporter expertise pour exploration/analyse complexe de données au moyen techniques variées : statistiques, analyse texte, comportementale, images\n- Caractériser des données (qualité, richesse, contenu) en vue de leur intégration dans le système d'information cible du métier et créer des algorithmes de recherche de données permettant d'explorer les données utiles\n- Produire des rapports et des représentations graphiques à partir des données pertinentes afin de synthétiser et traduire des informations pour faciliter la prise de décision.\nDescription du profil :\nDe formation BAC +5, Ingénieur diplômé d'une école spécialisée (ENSAE, ENSAI, Polytechnique.) ou d'un master en data science, vous justifiez de 5 ans d'expérience sur un poste similaire.\nVous êtes doté de solides compétences techniques autour de Python et packages adaptés, Docker, Git.\nVous avez également de très bonnes capacités interpersonnelles et de communication dans le travail quotidien.",
+    "metier": "Data scientist",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Vue.js",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Il est également en charge de l'utilisation des technologies Big Data et IA, dans le but d'aider à la prise de décision et faire de la veille technologique sur les architectures Big Data et IA.",
+        "confidence": 0.9
+      },
+      {
+        "label": "BAC +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation BAC +5, Ingénieur diplômé d'une école spécialisée (ENSAE, ENSAI, Polytechnique.) ou d'un master en data science, vous justifiez de 5 ans d'expérience sur un poste similaire.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "De formation BAC +5, Ingénieur diplômé d'une école spécialisée (ENSAE, ENSAI, Polytechnique.) ou d'un master en data science, vous justifiez de 5 ans d'expérience sur un poste similaire.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "De formation BAC +5, Ingénieur diplômé d'une école spécialisée (ENSAE, ENSAI, Polytechnique.) ou d'un master en data science, vous justifiez de 5 ans d'expérience sur un poste similaire.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:13.878895",
+  "input_hash": "a870e97396b8ab621c551758440d088662fe9ecb4664efdda4b5e242647578ab",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

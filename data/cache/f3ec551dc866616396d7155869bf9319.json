@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:208PGCW",
+  "value": {
+    "id": "208PGCW",
+    "intitule": "Data Engineer IA & Data Science (H/F)",
+    "entreprise": "OPTEVEN ASSURANCES",
+    "territoire": "69 - VILLEURBANNE",
+    "ville": "69266",
+    "code_postal": "69100",
+    "contrat": "CDI",
+    "date_creation": "2026-05-21",
+    "date": "2026-05-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208PGCW",
+    "description": "Avec 1 200 collaborateurs et un chiffre d'affaires de 345 millions d'euros, Opteven est un des acteurs majeurs de l'Assistance et de la Garantie Panne Mécanique en France et en Europe. Notre croissance régulière depuis plus de 10 ans repose sur un haut niveau de qualité de service reconnu par nos clients professionnels de l'automobile et de l'assurance.\nRejoindre Opteven, c'est intégrer un groupe qui voit en la diversité une richesse et un moteur de l'égalité des chances (plus de 45 nationalités représentées, Index Égalité Femmes-Hommes de 98/100), qui s'attache à offrir à ses équipes les conditions nécessaires à leur épanouissement (salle de sport, salle de sieste, prévention des risques psycho-sociaux, etc.) et à leur réussite au sein de l'entreprise (au moins 1 formation par an pour chaque collaborateur, politique de mobilité et promotion interne).\n\nCes différentes composantes représentent un axe fort de notre démarche RSE qui se traduit également par des engagements environnementaux ambitieux que nous avons définis à l'issue de notre parcours au sein de la Convention des Entreprises pour le Climat : trajectoire bas carbone en adéquation avec la SBTi, développement de l'économie circulaire, nouveaux services en faveur d'une mobilité moins émissive. \n\nDans le cadre d'un remplacement, OPTEVEN recrute un/e Data Engineer IA & Data Science F/H pour l'équipe Data au sein de la DSI du groupe Opteven. Son rôle est d'être garant(e) de la conception, de la mise en place et du maintien en condition opérationnelle de solutions data essentielles à l'entraînement, au déploiement et à la supervision de modèles d'intelligence artificielle. \n\nAinsi vous :\n- Concevez et mettez en place l'architecture Data\n- Maintenez en condition opérationnelle les systèmes en place  \n- Assurez la qualité, la fiabilité et la cartographie des données mises à disposition\n- Collaborer et accompagner les métiers en analysant et formalisant les besoins des utilisateurs métiers\n- Définissez et implémentez les flux de données d'alimentation des systèmes (ODS, DWH, Datamart) à l'aide des solutions middlewares utilisées par la société OPTEVEN\n- Automatisez les processus ETL/ELT pour garantir la fiabilité, l'évolutivité et la traçabilité des flux et traitements\n\nProfil recherché:\nVous avez un Bac+5 ou plus en Informatique avec une spécialisation IA & Data Science et vous avez 3 ans d'expériences minimum. \n\nCompétences recherchées:\nMaitrise du langage Python, PySpark / Spark SQL\nMaîtrise du langage d'interrogation et de manipulations des données (SQL/Postgresql)\nCompétence sur Gitlab CI-CD, Git, Docker  \nCompétence IA / LLM : Modèle LLM, prompt engineering , architecture IA\nConnaissance des solutions Azure :  Service Bus, Container Apps, AI Foundry, Storage, Monitor Data Factory, Databricks\nConnaissance des langages, des outils de traitements et d'échanges de données (ETL)\nConnaissance des techniques de Machine Learning & Deep Learning\nCompétence dans les algorithmies et gestion des bases de données\nCompréhension des SI exploités, avoir des connaissances des matériels, des logiciels, des normes de fichiers, des systèmes d'exploitation, des applications et des liaisons inter applications.\nGestion de projet\n\nQualités requises :\nAvoir le sens du relationnel et orienté client\nFaire preuve d'initiative, autonome et force de proposition\nAvoir des capacités à travailler en transverse\nAvoir une bonne capacité d'adaptation\nÊtre curieux(se)\nÊtre rigoureux\nGérer des priorités et des engagements\n\nEn rejoignant Opteven, vous bénéficiez également des avantages suivants :\nAugmentation annuelle indexée sur votre investissement, votre comportement au quotidien et vos objectifs professionnels\nAutres primes récompensant votre engagement (assiduité, cooptation)\nRémunération variable comprenant respectivement la participation, l'intéressement et l'abondement sur le PERECO\nJusqu'à 10 jours de télétravail par mois (2 jours de présence obligatoire sur site /semaine)\n...",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Deep learning",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Machine learning",
+      "PostgreSQL",
+      "Python",
+      "SQL",
+      "Vision",
+      "CI/CD",
+      "Data Engineering",
+      "GitLab CI",
+      "Analyse de données",
+      "Déploiement de modèles",
+      "MLOps",
+      "Model drift"
+    ],
+    "salaire_min": 1200,
+    "salaire_max": 1200,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous avez un Bac+5 ou plus en Informatique avec une spécialisation IA & Data Science et vous avez 3 ans d'expériences minimum.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:49:59.751717",
+  "input_hash": "9765a85f95065923c48c5682635c424da53008dde393095294f950aa1e2bdafd",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

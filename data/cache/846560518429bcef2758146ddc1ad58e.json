@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3314585",
+  "value": {
+    "id": "3314585",
+    "intitule": "Calibration Data Infrastructure Engineer (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 15e Arrondissement",
+    "ville": "75115",
+    "code_postal": "75015",
+    "contrat": "CDI",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3314585",
+    "description": "Alice & Bob développe le premier ordinateur quantique universel tolérant aux fautes, destiné à résoudre certains des problèmes parmi les plus complexes au monde. L'ordinateur quantique que nous concevons repose sur un nouveau type de qubit supraconducteur : le qubit de Schrödinger « cat » ?. Comparée aux autres plateformes supraconductrices, cette technologie permet une correction d'erreurs quantiques autonome, ouvrant la voie à des systèmes plus fiables et plus scalables. Nous sommes une équipe internationale de plus de 140 talents issus de plus de 20 pays, réunis autour d'un objectif commun : révolutionner l'informatique grâce à une machine quantique tolérante aux fautes et réellement exploitable. Êtes-vous prêt à relever des défis sans précédent et à contribuer à façonner l'avenir du calcul quantique ? Contexte du poste: L'équipe Calibration automatise les calibrations de notre Quantum Processing Unit (QPU) à qubits cat afin d'en maximiser les performances et de maintenir le processeur en conditions opérationnelles. Ces calibrations automatiques génèrent de grands volumes de données : résultats de calibration, logs d'erreurs, métriques de performance et diagnostics matériels. Aujourd'hui, répondre à des questions simples telles que « Quel est le taux de succès des recalibrations nocturnes sur le dernier mois et où surviennent les échecs - » nécessite encore une collecte manuelle fastidieuse des logs. En tant que Calibration Data Infrastructure Engineer, vous concevez et implémentez l'infrastructure de données qui rend ce type de questions triviales à analyser. Vous construisez des systèmes permettant de stocker, organiser et interroger les résultats de calibration, afin de faciliter des analyses transverses sur les performances, les défaillances matérielles et les problématiques d'analyse. Votre travail est central pour quantifier l'exécution des calibrations à plusieurs niveaux et accélérer la fiabilité opérationnelle du QPU. Le poste : - Concevoir et implémenter des systèmes robustes de stockage et de restitution des données de calibration, logs d'erreurs et métriques de performance. - Développer des pipelines permettant de collecter, normaliser et indexer automatiquement les sorties de calibration pour faciliter les requêtes et les analyses globales. - Construire des outils et des APIs permettant aux scientifiques et ingénieurs de répondre rapidement à des questions opérationnelles (taux de succès, points de défaillance, dérives temporelles). - Mettre en place des frameworks d'analyse de séries temporelles afin de suivre la dynamique des calibrations, détecter les anomalies et générer des rapports. - Définir des standards pour les schémas de données, la traçabilité, la rétention et la reproductibilité des résultats de calibration. - Apporter de la visibilité via des rapports automatisés sur les performances de calibration, la fiabilité matérielle et la qualité des analyses. - Accompagner les ingénieurs et contribuer à la stratégie long terme de l'infrastructure de données de calibration. Profil recherché : - Minimum 5 ans d'expérience en ingénierie back-end, infrastructure data ou DevOps sur des systèmes en production. - Excellente maîtrise de Python et expérience avec des frameworks de data engineering (Pandas, SQLAlchemy, Spark ou équivalents). - Expertise sur les bases de données de séries temporelles (TimescaleDB, InfluxDB, Prometheus) et les systèmes d'agrégation de logs (ELK, Grafana ou équivalents). - Expérience avérée dans la conception de pipelines de données scalables et d'APIs pour des données scientifiques ou liées à du matériel. - Bonne connaissance des stacks d'observabilité (métriques, logs, traces) et de la création de dashboards pour des utilisateurs techniques. - Familiarité avec l'analyse statistique et la détection d'anomalies, avec une capacité à collaborer avec des scientifiques sur l'intégration de modèles. - Solide compréhension des environnements CI/CD, des stratégies de test et de la reproductibilité dans des contextes scientifiques ou hardware-in-the-loop. - Excellentes compétences en communication et capacité à traduire des besoins opérationnels en solutions techniques.",
+    "metier": "Architecte base de données",
+    "niveau": "intermediaire",
+    "competences": [
+      "Data engineering",
+      "Intelligence artificielle",
+      "Pandas",
+      "Python",
+      "SQL",
+      "Pipelines de données",
+      "Backend",
+      "Automatisation de pipelines",
+      "Analyse de données",
+      "Model drift",
+      "Optimisation des performances"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:24.545313",
+  "input_hash": "ded2efb316db9ccd1d913cf9924a8e1a818288748427f27aef6511a43a539a9c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

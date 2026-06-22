@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:2949304",
+  "value": {
+    "id": "2949304",
+    "intitule": "Ingénieur(e) FPGA– IA embarquée & Architectures numériques avancées H/F",
+    "entreprise": "CATIE",
+    "territoire": "33 - Talence",
+    "ville": "33522",
+    "code_postal": "33400",
+    "contrat": "CDI",
+    "date_creation": "2026-05-23",
+    "date": "2026-05-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2949304",
+    "description": "Vous rejoignez une équipe R&amp;D impliquée dans un programme ambitieux de conception d’ASIC dédié à l’intelligence artificielle embarquée, mené avec deux partenaires industriels. Ce projet vise le développement d’une architecture intégrant un processeur RISC-V et des accélérateurs matériels d’inférence IA optimisés pour la performance énergétique et le traitement temps réel. Votre rôle sera central : - Concevoir et faire évoluer un ’accélérateur matériel vers une implémentation robuste et industrialisable, en s’appuyant sur des travaux de recherche déjà initiés au CATIE ; - Contribuer aux choix d’architecture, aux stratégies d’implémentation et à la validation des performances, avec une forte autonomie technique. En complément de ce programme structurant, vous interviendrez de manière transversale pour : - explorer et démontrer de nouvelles approches d’accélération matérielle et de systèmes embarqués avancés, par l’apport de votre expertise FPGA, dans le cadre de projets d’innovation menés avec des entreprises partenaires - piloter la dynamique interne autour des technologies FPGA : - coordonner des travaux de recherche, - structurer des bonnes pratiques - participer à la définition des orientations technologiques futures. Ingénieur(e) ou docteur(e) en électronique numérique, systèmes embarqués ou architectures matérielles, vous : - Disposez d’une expérience significative en conception FPGA ; - Maîtrisez les principales étapes du développement FPGA : description RTL, simulation, intégration, mise au point sur carte et analyse des performances. ; - Possédez une compréhension approfondie des architectures numériques et des compromis associés (latence, débit, consommation, complexité). Une expérience en accélération matérielle, traitement du signal, architectures RISC-V, intelligence artificielle embarquée ou systèmes contraints serait un atout supplémentaire. Curieux(se) et impliqué(e), vous aimez comprendre en profondeur les systèmes que vous concevez. Vous appréciez les environnements où l’autonomie technique, la prise d’initiative et la créativité sont valorisées et où les ingénieurs participent directement aux choix d’architecture. VOS COMPETENCES Expertises techniques attendues : - Maîtrise complète du flow de conception FPGA/SoC (de la spécification à la validation) - Expérience en VHDL ou Verilog - Compétences en synthèse, simulation, intégration, tests et validation - Pratique des outils Xilinx Vivado Design Suite ou Intel Quartus - Anglais technique Atouts techniques supplémentaires : - Architecture Zynq - Traitement du signal (algorithmes, Matlab) - Développement C/C++ et Linux embarqué - Notions ou intérêt en Machine Learning Savoir-faire transversaux : - Assurer une veille scientifique et technologique active sur les architectures numériques, FPGA et accélération matérielle - Construire et formaliser des états de l’art permettant d’orienter les choix techniques et stratégiques - Intervenir en mode projet, de l’analyse du besoin jusqu’à la validation technique des solutions développées - Contribuer aux échanges techniques avec partenaires industriels et académiques Savoir-être : - Rigueur et exigence technique ; souci de la qualité des conceptions, engagement dans la robustesse des solutions - Respect des contraintes : temps, performance, fiabilité - Implication et motivation : intérêt marqué pour les problématiques techniques complexes, engagement dans les projets et contribution active à la dynamique collective - Esprit de collaboration technique : partage des connaissances, échanges constructifs sur les choix d’architecture et travail en interface avec des profils hardware, software et système - Autonomie, sens des responsabilités : capacité à structurer son travail, prioriser les sujets",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Linux",
+      "Machine learning",
+      "Veille technologique",
+      "Design patterns",
+      "Documentation technique"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur(e) ou docteur(e) en électronique numérique, systèmes embarqués ou architectures matérielles, vous : - Disposez d’une expérience significative en conception FPGA ; - Maîtrisez les principales étapes du développement FPGA : description RTL, simulation, intégration, mise au point sur carte et analyse des performances. ; - Possédez une compréhension approfondie des architectures numériques et des compromis associés (latence, débit, consommation, complexité).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:06.226691",
+  "input_hash": "ad7390a5f38e843e7b2174c5769c04d57e5597f7089c9958754fabc656a9073c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

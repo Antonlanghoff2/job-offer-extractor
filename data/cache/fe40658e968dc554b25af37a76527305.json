@@ -1,0 +1,166 @@
+{
+  "key": "trends:28 - Lèves",
+  "value": {
+    "territoire": "28 - Lèves",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Intelligence artificielle": 2,
+      "API": 1,
+      "Backend": 1,
+      "Scalabilité": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Scalabilité": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "API": {
+        "API": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 2
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle"
+      ],
+      [
+        "Intelligence artificielle",
+        "API",
+        "Backend",
+        "Scalabilité"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3493858",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "28 - Lèves",
+        "contrat": "CDI",
+        "date": "2026-06-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3493858"
+      },
+      {
+        "id": "8890557",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "28 - Lèves",
+        "contrat": "CDI",
+        "date": "2026-02-07",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8890557"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3493858",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "28 - Lèves",
+        "contrat": "CDI",
+        "date": "2026-06-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3493858"
+      },
+      {
+        "id": "8890557",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "28 - Lèves",
+        "contrat": "CDI",
+        "date": "2026-02-07",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8890557"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T18:59:21.048181",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

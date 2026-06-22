@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:208PHKV",
+  "value": {
+    "id": "208PHKV",
+    "intitule": "Data Engineer Pole BI (H/F)",
+    "entreprise": "OPTEVEN ASSURANCES",
+    "territoire": "69 - VILLEURBANNE",
+    "ville": "69266",
+    "code_postal": "69100",
+    "contrat": "CDI",
+    "date_creation": "2026-05-21",
+    "date": "2026-05-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208PHKV",
+    "description": "Avec 1 200 collaborateurs et un chiffre d'affaires de 345 millions d'euros, Opteven est un des acteurs majeurs de l'Assistance et de la Garantie Panne Mécanique en France et en Europe. Notre croissance régulière depuis plus de 10 ans repose sur un haut niveau de qualité de service reconnu par nos clients professionnels de l'automobile et de l'assurance.\nRejoindre Opteven, c'est intégrer un groupe qui voit en la diversité une richesse et un moteur de l'égalité des chances (plus de 45 nationalités représentées, Index Égalité Femmes-Hommes de 98/100), qui s'attache à offrir à ses équipes les conditions nécessaires à leur épanouissement (salle de sport, salle de sieste, prévention des risques psycho-sociaux, etc.) et à leur réussite au sein de l'entreprise (au moins 1 formation par an pour chaque collaborateur, politique de mobilité et promotion interne).\n\nCes différentes composantes représentent un axe fort de notre démarche RSE qui se traduit également par des engagements environnementaux ambitieux que nous avons définis à l'issue de notre parcours au sein de la Convention des Entreprises pour le Climat : trajectoire bas carbone en adéquation avec la SBTi, développement de l'économie circulaire, nouveaux services en faveur d'une mobilité moins émissive. \n\nRattaché directement au responsable Data, Le/la Data Engineer BI accompagne les directions métiers et les différents services en fournissant des données fiables et exploitables, grâce à une vision transverse et globale des données de l'entreprise.\n\nLe/la Data Engineer BI est responsable de la conception, du déploiement et de la maintenance des solutions de mise à disposition de données destinées aux clients et aux équipes métiers d'Opteven.\nIl/elle garantit la disponibilité, la qualité et l'évolution cohérente des données de l'entreprise dans le respect des objectifs stratégiques.\n\nAinsi vous:\n- Concevez et mettez en place l'architecture Data\n- Maintenez en condition opérationnelle les systèmes en place  \n- Assurez la qualité, la fiabilité et la cartographie des données mises à disposition\n- Collaborer et accompagner les métiers en analysant et formalisant les besoins des utilisateurs métiers\n- Définissez et implémentez les flux de données d'alimentation des systèmes (ODS, DWH, Datamart) à l'aide des solutions middlewares utilisées par la société OPTEVEN\n- Automatisez les processus ETL/ELT pour garantir la fiabilité, l'évolutivité et la traçabilité des flux et traitements\n\nProfil recherché\nDiplômé Bac+5, avec une formation supérieure en informatique décisionnelle, vous justifiez d'au moins 8 ans d'expérience sur une fonction similaire\n  \nCompétence recherchées :\nMaîtrise des outils ETL/ELT (Pentaho et/ou autres), des bases de données (postgres), des entrepôts de données (on premise ou cloud) et des solutions de DataViz (Tableau).\nConnaissance des bonnes pratiques en modélisation de données, optimisation de requêtes et gestion des performances.\nExpérience avec les environnements cloud (Azure) et les architectures modernes (data lake, data mesh, etc.).\nConnaissance de Git, Docker\n\nQualité requises  :\nFaire preuve de leadership\nAvoir le sens du relationnel et orienté client\nÊtre capable de d'adapter à différents interlocuteurs\nFaire preuve d'initiative, autonome et force de proposition\n\nEn rejoignant Opteven, vous bénéficiez également des avantages suivants :\nAugmentation annuelle indexée sur votre investissement, votre comportement au quotidien et vos objectifs professionnels\nAutres primes récompensant votre engagement (assiduité, cooptation)\nRémunération variable comprenant respectivement la participation, l'intéressement et l'abondement sur le PERECO\nJusqu'à 10 jours de télétravail par mois (2 jours de présence obligatoire sur site /semaine)\n...",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "PostgreSQL",
+      "Vision",
+      "Data Engineering",
+      "Analyse de données",
+      "Model drift"
+    ],
+    "salaire_min": 1200,
+    "salaire_max": 1200,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé Bac+5, avec une formation supérieure en informatique décisionnelle, vous justifiez d'au moins 8 ans d'expérience sur une fonction similaire",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "8 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:17.585481",
+  "input_hash": "86f9a04349bd8baeaff3cb60e6e3bbf7a98c82e9d7fc566385246f088d9ec608",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

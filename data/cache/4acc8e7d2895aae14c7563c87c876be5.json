@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3941151",
+  "value": {
+    "id": "3941151",
+    "intitule": "Testeur logiciel H/F",
+    "entreprise": "UEM",
+    "territoire": "57 - Metz",
+    "ville": "57463",
+    "code_postal": "57000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3941151",
+    "description": "L'environnement de l'informatique et du digital vous inspire ? Le métier de testeur software à efluid est fait pour vous !\nRecruté(e) en CDI, vous serez accompagné(e) durant plusieurs mois dans l'acquisition des compétences et des connaissances techniques du métier de Testeur.\n\nVos compétences techniques et méthodologiques consolidées, vous interviendrez sur la qualification et l'amélioration du progiciel dans un environnement innovant et dynamique.\n\n \nQui sommes-nous ? \n\n \nefluid SAS, société affiliée au groupe UEM, développe depuis plusieurs années une solution informatique unique dédiée au monde de l'énergie, le progiciel efluid.\n\nDéjà utilisé par de nombreuses entreprises françaises pour la gestion de la distribution et de la fourniture d'énergies et d'eau, efluid poursuit son développement commercial en France et à l'international.\n \n \nVos responsabilités :\n \nAu sein d'une équipe d'analystes et de recetteurs, vous intervenez sur la suite logicielle efluid (centré sur l'application efluid, progiciel de référence utilisé par des distributeurs et fournisseurs d'énergies et d'eau) :\nDiagnostic d'anomalies / bugs, aide à la correction des bugs en lien avec les équipes de développement et les analystes\nRecette (test) des nouvelles fonctionnalités / nouveaux modules fonctionnels développés dans des contextes projets variés \nSpécifications de cahiers de recette / plan de tests en lien avec votre recette\nDiagnostic des anomalies remontant des clients \nMise en oeuvre de prestations chez des clients, généralement par travaux de paramétrage\nImplication sur des projets d'intégration \nFormation à l'externe auprès des clients et formation en interne (des nouveaux arrivants)\nImplication sur les autres travaux en lien avec la formation : rédaction de supports de formation, de cahiers d'exercices, ou encore aider à fabriquer les contextes applicatifs utilisés pendant les formations\nDe formation Bac +2 à Bac +3, vous êtes méthodique, rigoureux, avec un bon esprit d'analyse et de synthèse.\n\nVous recherchez un poste pérenne, avec une activité variée et de réelles opportunités d'évolution ? Vous aimez le travail en équipe et êtes motivé(e) pour vous investir dans un projet ambitieux et dynamique ?\nAlors venez participer à la croissance de notre entreprise !\n\nConditions et Avantages\n\nAvantage en nature énergies\nIntéressement et Participation\nCouverture prévoyance\nCouverture Supplémentaire Maladie\nActivités sociales et associations sportives\nComplément familial\nPrise en charge de 50% des frais de transport en commun .\n\nTous nos postes sont ouverts aux candidats en situation de handicap.",
+    "metier": "Evaluateur / Evaluatrice sécurité des systèmes et produits informatiques",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Git",
+      "Intelligence artificielle",
+      "Cahier des charges"
+    ],
+    "salaire_min": 31000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac +2 à Bac +3, vous êtes méthodique, rigoureux, avec un bon esprit d'analyse et de synthèse.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac +2 à Bac +3, vous êtes méthodique, rigoureux, avec un bon esprit d'analyse et de synthèse.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:16.541819",
+  "input_hash": "0f8798dd463d1e9a842e7ac43fb16567a002fd6c2f1b4b097596812e07360c5c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

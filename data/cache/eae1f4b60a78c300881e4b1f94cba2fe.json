@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3743831",
+  "value": {
+    "id": "3743831",
+    "intitule": "Ingénieur Développement C++ Sénior (H/F)",
+    "entreprise": "",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3743831",
+    "description": "TerX est un partenaire stratégique spécialisé dans le conseil en ingénierie et la mise à disposition de compétences techniques pour l'industrie. Né du terrain - des ateliers, laboratoires et bureaux d'études - TerX connecte les meilleures expertises aux enjeux concrets des entreprises industrielles, avec rigueur, méthode et une compréhension fine des réalités opérationnelles. Fondée en 2018, l'entreprise compte aujourd'hui 160 collaborateurs et a réalisé un chiffre d'affaires de 13,5 millions d'euros en 2025, confirmant sa trajectoire de croissance et la confiance de ses clients industriels. Mission : Mobiliser les meilleures compétences pour répondre aux enjeux concrets des entreprises industrielles. Vision : Contribuer à une industrie française et européenne plus autonome, plus exigeante et créatrice de valeur durable. Le poste : Dans le cadre du développement et de l'évolution de systèmes critiques à forte dimension temps réel, nous recherchons un(e) Ingénieur Développement C++ Sénior afin d'intervenir sur des applications stratégiques au sein d'un environnement industriel international exigeant. Vous rejoindrez une équipe experte en charge de la conception, du développement et de la maintenance évolutive de solutions logicielles embarquées et applicatives utilisées dans des infrastructures de transmission à haute disponibilité. L 'environnement technique implique des enjeux forts de performance, de robustesse et de qualité logicielle. Vos missions : Participer au développement et à la maintenance évolutive des applications Concevoir des architectures logicielles orientées objet Développer des fonctionnalités en C++ dans un environnement Linux Réaliser les phases d'analyse technique et de conception UML Optimiser les traitements multithread et les performances applicatives Participer aux revues de code et aux activités de qualification logicielle Collaborer avec les équipes systèmes, validation et intégration Assurer un haut niveau de qualité et de fiabilité des développements Profil recherché : Vous disposez de 5 à 10 ans d'expérience en développement logiciel C++ dans un environnement industriel complexe. Environnement technique : - C++ / STL - Programmation orientée objet - UML - Linux RedHat - Multithreading - Python - XML / SQL - MySQL / MariaDB - Git - Eclipse - TotalView",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "MySQL",
+      "Python",
+      "SQL",
+      "Vision",
+      "Vue.js",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Tests automatisés"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 10000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Le poste : Dans le cadre du développement et de l'évolution de systèmes critiques à forte dimension temps réel, nous recherchons un(e) Ingénieur Développement C++ Sénior afin d'intervenir sur des applications stratégiques au sein d'un environnement industriel international exigeant.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:54.387797",
+  "input_hash": "a44b261048ce71fcf6919859246dc4420556539080b594ac6f17539191232fc7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

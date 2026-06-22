@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3318794",
+  "value": {
+    "id": "3318794",
+    "intitule": "Data scientist (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3318794",
+    "description": "Description du poste :\nAu sein d'une équipe data, vous participerez à La collecte, le traitement et l'analyse de données***Le développement de modèles d'intelligence artificielle***L'entraînement et l'optimisation d'algorithmes***L'intégration de solutions IA dans des applications existantes***La création de tableaux de bord et outils d'aide à la décision***La veille technologique sur les innovations en IA\nDescription du profil Vous souhaitez intégrer un Bachelor Intelligence Artificielle***Vous avez un intérêt marqué pour la data et les nouvelles technologies***Vous possédez une logique analytique développée***Vous êtes curieux(se), autonome et rigoureux(se)***Vous appréciez le travail en équipe projet",
+    "metier": "Data scientist",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Travail en équipe"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Description du profil Vous souhaitez intégrer un Bachelor Intelligence Artificielle***Vous avez un intérêt marqué pour la data et les nouvelles technologies***Vous possédez une logique analytique développée***Vous êtes curieux(se), autonome et rigoureux(se)***Vous appréciez le travail en équipe projet",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:13.033426",
+  "input_hash": "caf435f14b43f080d3fc767861e6c112ff7101c38509856b7ec2457f8065e23a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

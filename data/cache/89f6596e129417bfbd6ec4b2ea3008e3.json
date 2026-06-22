@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:2785845",
+  "value": {
+    "id": "2785845",
+    "intitule": "INGÉNIEUR CONCEPTION DE LOGICIELS NUMÉRIQUES ET EMBARQUÉS (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-19",
+    "date": "2026-05-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2785845",
+    "description": "Nous recherchons pour le compte de notre client, start-up, spécialisée dans la conception, la fabrication et la commercialisation d'antennes pour satellites, un Ingénieur Conception de Logiciels Numériques et Embarqués (F/H).En tant qu'Ingénieur, vous participerez à toutes les phases des projets, depuis l'appel d'offres jusqu'à la recette en orbite, avec un focus particulier sur les architectures logicielles embarquées, les FPGA et les microcontrôleurs. Mission principale : - concevoir et valider les architectures logicielles embarquées pour la gestion des données satellites, en assurant leur performance, fiabilité et intégration dans le système global. - participer aux réponses aux appels d'offres en proposant des solutions techniques adaptées. Le niveau de rémunération est à définir en fonction de l'expérience. De formation Bac+5 avec une spécialisation en informatique embarquée, électronique ou systèmes embarqués., vous justifiez d'une expérience de 10 années minimum en logiciel embarqué, en conception de sous-systèmes satellites, et en architecture FPGA. Vous maîtrisez des outils de conception FPGA (VHDL, Verilog) et microcontrôleurs (ARM, PIC, etc.). Une expérience en architecture de sous-systèmes embarqués et optimisation des performances est demandée. La connaissance des environnements de développement et outils de simulation (ModelSim, Vivado, Keil) est souhaitée. Un niveau d'anglais courant est requis pour ce poste.",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Qualité des données",
+      "Résolution de problèmes",
+      "Feature Engineering"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons pour le compte de notre client, start-up, spécialisée dans la conception, la fabrication et la commercialisation d'antennes pour satellites, un Ingénieur Conception de Logiciels Numériques et Embarqués (F/H).En tant qu'Ingénieur, vous participerez à toutes les phases des projets, depuis l'appel d'offres jusqu'à la recette en orbite, avec un focus particulier sur les architectures logicielles embarquées, les FPGA et les microcontrôleurs.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac+5 avec une spécialisation en informatique embarquée, électronique ou systèmes embarqués., vous justifiez d'une expérience de 10 années minimum en logiciel embarqué, en conception de sous-systèmes satellites, et en architecture FPGA.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:47.055418",
+  "input_hash": "d7af3326441a594e49b213dad02ae184facd519a269b4f490108d4a47d0bc022",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,419 @@
+{
+  "key": "trends:14 - Lisieux",
+  "value": {
+    "territoire": "14 - Lisieux",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Analyse de données": 2,
+      "Qualité Des Données": 2,
+      "Sécurité Informatique": 2,
+      "Data engineering": 1,
+      "Déploiement De Modèles": 1,
+      "Gestion de projet": 1,
+      "Intelligence artificielle": 1,
+      "MLOps": 1,
+      "Optimisation Des Performances": 1,
+      "Résolution De Problèmes": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Analyse de données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Analyse de données": 2
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Qualité des données": 2
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Sécurité informatique": 2
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Optimisation des performances": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Analyse de données": {
+        "Analyse de données": 2
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 2
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 2
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Optimisation Des Performances": {
+        "Optimisation des performances": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      }
+    },
+    "metiers": {
+      "Data Analyst": 1,
+      "Data Engineer": 1,
+      "Développeur / Développeuse informatique": 1
+    },
+    "niveau": {
+      "junior": 3
+    },
+    "contrats": {
+      "CDI": 2,
+      "CDD - 24 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Analyse de données",
+        "Data engineering",
+        "Qualité Des Données",
+        "Sécurité Informatique"
+      ],
+      [
+        "Intelligence artificielle"
+      ],
+      [
+        "Analyse de données",
+        "Gestion de projet",
+        "MLOps",
+        "Sécurité Informatique",
+        "Déploiement De Modèles",
+        "Optimisation Des Performances",
+        "Résolution De Problèmes",
+        "Qualité Des Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209TWTR",
+        "intitule": "PROGRAMMEUR LASER H/F",
+        "entreprise": "CRIT INTERIM",
+        "territoire": "14 - Lisieux",
+        "contrat": "CDI",
+        "date": "2026-06-15",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209TWTR"
+      },
+      {
+        "id": "3269959",
+        "intitule": "Data analyst H/F",
+        "entreprise": "KNORR BREMSE",
+        "territoire": "14 - Lisieux",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3269959"
+      },
+      {
+        "id": "2559138",
+        "intitule": "ALTERNANT(E) EN ANALYSE DE DONNÉES - H/F",
+        "entreprise": "",
+        "territoire": "14 - Lisieux",
+        "contrat": "CDI",
+        "date": "2026-05-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2559138"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209TWTR",
+        "intitule": "PROGRAMMEUR LASER H/F",
+        "entreprise": "CRIT INTERIM",
+        "territoire": "14 - Lisieux",
+        "contrat": "CDI",
+        "date": "2026-06-15",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209TWTR"
+      },
+      {
+        "id": "3269959",
+        "intitule": "Data analyst H/F",
+        "entreprise": "KNORR BREMSE",
+        "territoire": "14 - Lisieux",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3269959"
+      },
+      {
+        "id": "2559138",
+        "intitule": "ALTERNANT(E) EN ANALYSE DE DONNÉES - H/F",
+        "entreprise": "",
+        "territoire": "14 - Lisieux",
+        "contrat": "CDI",
+        "date": "2026-05-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2559138"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:05:16.255283",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

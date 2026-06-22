@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:1045377",
+  "value": {
+    "id": "1045377",
+    "intitule": "Expert intelligence artificielle (H/F)",
+    "entreprise": "",
+    "territoire": "91 - Palaiseau",
+    "ville": "91477",
+    "code_postal": "91120",
+    "contrat": "CDI",
+    "date_creation": "2026-04-02",
+    "date": "2026-04-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1045377",
+    "description": "Description du poste :\nEn qualité de chargé de recherche en IA au sein du pôle recherche de l'AMIAD, vos principales missions seront :\n-Identifier des verrous scientifiques de la problématique ;\n-Structurer votre périmètre de recherche\n-Développer des travaux de recherche originaux ;\n-Animer votre communauté scientifique ;\n-Identifier et / ou constituer des corpus de données ;\n-Mener une étude bibliographique ;\n-Développer une solution logicielle originale.\n-Encadrer des doctorants\n-Dans le cadre du rayonnement de l'agence, mener des actions de formation, de sensibilisation ou d'informations sur l'IA\nDescription du profil :\nTitulaire d'un doctorat en informatique et IA, vous êtes spécialisé d'une part en IA de confiance, notamment sur la détection non supervisée de biais, et, d'autre part sur la robustesse et l'efficacité de l'IA, notamment dans le cadre de développement d'architectures pour des systèmes embarqués. Possédant une expérience postdoctorale de recherche significative dans des milieux académiques de renom, vous avez également une expérience dans l'encadrement de chercheurs du niveau doctorant. Vous candidatez comme chargé de recherche dans le domaine de l'IA sur des sujets structurant pour la défense. Ayant publié des articles dans des revues scientifiques de premier plan, vous avez une solide expérience dans la recherche académique. Possédant la rigueur scientifique indispensable à une recherche académique de haut niveau, vous savez communiquer des résultats complexes à des publics variés, à l'écrit ou à l'oral, en français et en anglais. Une expérience à l'internationale dans des comités de sélection, de relecteur pour des conférences ou des journaux serait un atout.",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Vue.js",
+      "API",
+      "Pipelines de données",
+      "Backend",
+      "Cybersécurité"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Titulaire d'un doctorat en informatique et IA, vous êtes spécialisé d'une part en IA de confiance, notamment sur la détection non supervisée de biais, et, d'autre part sur la robustesse et l'efficacité de l'IA, notamment dans le cadre de développement d'architectures pour des systèmes embarqués.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:01.454095",
+  "input_hash": "0434709727075d90098ac41d6797d55a1611924a741d0cef44705b8c264015a8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

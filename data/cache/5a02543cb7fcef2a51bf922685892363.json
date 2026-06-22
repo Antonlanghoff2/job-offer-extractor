@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:3820938",
+  "value": {
+    "id": "3820938",
+    "intitule": "Développeur back-end python F/H - Informatique de gestion (H/F)",
+    "entreprise": "Hays France",
+    "territoire": "38 - Meylan",
+    "ville": "38229",
+    "code_postal": "38240",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3820938",
+    "description": "Descriptif du poste:\n\nResponsabilités principales\n\n* Participer activement au développement de la plateforme (Java, Python, Kotlin.)\n* Collaborer avec l'équipe R&D sur les spécifications fonctionnelles et techniques\n* Diagnostiquer et résoudre les problématiques techniques complexes\n* Assurer une veille technologique continue et appliquer les meilleures pratiques\n\nProfil recherché:\nCompétences et profil recherché\nCompétences techniques\n\n* Solide expérience en développement Back-End Python\n* Connaissance appréciée des frameworks de machine learning :\nscikit-learn, spaCy, Flair, PyTorch, Transformers.\n* Maîtrise de Git\n* Capacité d'analyse, rigueur, sens de la résolution de problèmesQualifications\n\n* Diplôme d'ingénieur ou équivalent en informatique / génie logiciel\n* Minimum 3 ans d'expérience en développement Back-End\n* Confort dans les environnements agiles",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Cahier des charges",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Machine learning",
+      "PyTorch",
+      "Python",
+      "scikit-learn",
+      "Veille technologique",
+      "MLOps"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplôme d'ingénieur ou équivalent en informatique / génie logiciel",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "4 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:01.491355",
+  "input_hash": "f203c8672adcd3b3d623f41300eda052794ce602f170e16832acb1126f3bb1ed",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

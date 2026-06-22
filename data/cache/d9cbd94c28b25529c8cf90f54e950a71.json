@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:0699888",
+  "value": {
+    "id": "0699888",
+    "intitule": "TECHNICIEN SUPPORT NIVEAU 2 (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "64 - Hendaye",
+    "ville": "64260",
+    "code_postal": "64700",
+    "contrat": "CDI",
+    "date_creation": "2026-03-25",
+    "date": "2026-03-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/0699888",
+    "description": "Nous recherchons pour le compte de notre client, une entreprise en pleine croissance, nous recherchons un(e) Technicien(ne) Supérieur Système et Réseaux.Rattaché(e) au Responsable Support, vous êtes la première ligne de contact avec nos clients. Vous jouez un rôle essentiel dans le maintien de la satisfaction client en assurant un dépannage rapide et efficace des incidents, à distance ou sur site. Vos Missions Clés : Gestion du Support Client : Prendre en charge les appels téléphoniques et les e-mails de demande de support. Résolution d'Incidents : Dépanner les clients à distance ou sur site, et assurer le suivi des dossiers jusqu'à leur résolution. Reporting et Suivi : Assurer le reporting de l'état d'avancement des dossiers auprès de votre responsable et la réalisation des fiches d'interventions. Documentation : Contribuer activement à l'enrichissement de la base de données technique (tutoriels, modes opératoires, schémas d'installation) et documenter les dossiers traités. Logistique et Sécurité : Participer au suivi logistique du matériel (commande, stock) et veiller à l'application et au respect des procédures de sécurité (PSSI, charte informatique) pour garantir le bon fonctionnement du SI. De formation Bac+2/+3, vous justifiez d'une expérience de 3 années minimum dans le support technique et déploiement de solutions/postes à distance ou sur site. Connaissances techniques : Windows serveur et services liés (bureau à distance, contrôleur de domaine, DNS, DHCP, etc...) Linux (CentOS, DEBIAN), installation de distribution et packages applicatifs Réseau (LAN, WAN, multi-sites, VPN, WIFI) Postes de travail (Windows 7, 10, 11) Virtualisation (Proxmox, ESX) VOIP (Xivo, 3CX)",
+    "metier": "Conseiller / Conseillère support technique informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Linux",
+      "Analyse de données",
+      "Data Engineering",
+      "Gestion de projet",
+      "Résolution de problèmes",
+      "Qualité des données",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac+2/+3, vous justifiez d'une expérience de 3 années minimum dans le support technique et déploiement de solutions/postes à distance ou sur site.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:49.203906",
+  "input_hash": "b8da672446f0174d7a134b2e80e7c35ca91b3fe358ad3bdda14abd6b6ad1ad03",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

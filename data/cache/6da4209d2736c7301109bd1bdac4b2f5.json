@@ -1,0 +1,387 @@
+{
+  "key": "trends:19 - Brive-la-Gaillarde",
+  "value": {
+    "territoire": "19 - Brive-la-Gaillarde",
+    "periode_jours": 365,
+    "nombre_offres": 5,
+    "competences": {
+      "Intelligence artificielle": 5,
+      "Aéronautique": 4,
+      "Cybersécurité": 3,
+      "Git": 3,
+      "Data engineering": 2,
+      "Documentation Technique": 2,
+      "Pipelines De Données": 2,
+      "Délais": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 5,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 5
+        }
+      },
+      {
+        "nom": "Aéronautique",
+        "count": 4,
+        "percentage": 80.0,
+        "variants": {
+          "Aéronautique": 4
+        }
+      },
+      {
+        "nom": "Cybersécurité",
+        "count": 3,
+        "percentage": 60.0,
+        "variants": {
+          "Cybersécurité": 3
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 3,
+        "percentage": 60.0,
+        "variants": {
+          "Git": 3
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Data Engineering": 2
+        }
+      },
+      {
+        "nom": "Documentation Technique",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Documentation technique": 2
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Pipelines de données": 2
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Délais": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 5
+      },
+      "Aéronautique": {
+        "Aéronautique": 4
+      },
+      "Cybersécurité": {
+        "Cybersécurité": 3
+      },
+      "Git": {
+        "Git": 3
+      },
+      "Data engineering": {
+        "Data Engineering": 2
+      },
+      "Documentation Technique": {
+        "Documentation technique": 2
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 2
+      },
+      "Délais": {
+        "Délais": 1
+      }
+    },
+    "metiers": {
+      "Spécialiste Test Et Validation Logiciel Ou Application": 2,
+      "Data Analyst": 1,
+      "Expert / Experte systèmes et réseaux informatiques": 1,
+      "Yield Manager": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 4
+    },
+    "contrats": {
+      "Intérim - 6 Mois": 3,
+      "Intérim - 7 Mois": 1,
+      "Intérim - 99 Jour(s)": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Cybersécurité",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Documentation Technique",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 20.0
+      }
+    ],
+    "fiabilite": 0.125,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Aéronautique",
+        "Cybersécurité"
+      ],
+      [
+        "Intelligence artificielle",
+        "Aéronautique",
+        "Délais",
+        "Cybersécurité"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Aéronautique",
+        "Cybersécurité"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Data engineering",
+        "Aéronautique",
+        "Pipelines De Données",
+        "Documentation Technique"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Data engineering",
+        "Pipelines De Données",
+        "Documentation Technique"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "1620025",
+        "intitule": "Opérateur de Tests Production et Réparation - Thales(H/F)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-04-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1620025"
+      },
+      {
+        "id": "1577310",
+        "intitule": "Technicien Intégration et Tests Production/Réparation - Thales (H/F)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-04-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1577310"
+      },
+      {
+        "id": "1577304",
+        "intitule": "Data Analyst Industriel - Thales (H/F)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-04-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1577304"
+      },
+      {
+        "id": "8720540",
+        "intitule": "Data analyst (f/h)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 7 Mois",
+        "date": "2026-02-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8720540"
+      },
+      {
+        "id": "8702324",
+        "intitule": "DATA ANALYST (H/F)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 99 Jour(s)",
+        "date": "2026-02-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8702324"
+      }
+    ],
+    "offers": [
+      {
+        "id": "1620025",
+        "intitule": "Opérateur de Tests Production et Réparation - Thales(H/F)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-04-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1620025"
+      },
+      {
+        "id": "1577310",
+        "intitule": "Technicien Intégration et Tests Production/Réparation - Thales (H/F)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-04-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1577310"
+      },
+      {
+        "id": "1577304",
+        "intitule": "Data Analyst Industriel - Thales (H/F)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-04-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1577304"
+      },
+      {
+        "id": "8720540",
+        "intitule": "Data analyst (f/h)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 7 Mois",
+        "date": "2026-02-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8720540"
+      },
+      {
+        "id": "8702324",
+        "intitule": "DATA ANALYST (H/F)",
+        "entreprise": "",
+        "territoire": "19 - Brive-la-Gaillarde",
+        "contrat": "Intérim - 99 Jour(s)",
+        "date": "2026-02-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8702324"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:03:23.069110",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

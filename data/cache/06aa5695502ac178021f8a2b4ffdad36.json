@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:0747940",
+  "value": {
+    "id": "0747940",
+    "intitule": "Ingénieur DevOps CI-CD  @IoT H/F",
+    "entreprise": "Externatic",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDI",
+    "date_creation": "2026-03-25",
+    "date": "2026-03-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/0747940",
+    "description": "L'entreprise accompagnée et les missions:\nAccompagnée par Externatic, cette entreprise nantaise innovante et travaillant à l'international développe des solutions logicielles destinées à l'IOT (montres connectées, compteurs intelligents, ...)\n\nA l'instar de l'environnement Android, ses produits basés sur une JVM permettent une abstraction des aspects hardware mais également l'intégration et le développement d'applications  et services en lien avec l'object connecté (Store d'apps, SDK/framework,...).\n\nPrésente à Nantes et aux USA, elle compte près 70 collaborateurs et recrute en CDI un Ingénieur DevOps / Intégration Continue pour renforcer le support transversale à ses équipes engineering.\n\nVos missions\n\nRattaché(e) à l’équipe R&D, vous jouerez un rôle central dans la mise en place, l’évolution et la maintenance des environnements d’intégration continue et de déploiement automatisé.\n\nVos principales responsabilités :\n\n- Faire évoluer et maintenir les environnements CI/CD (Jenkins, GitLab, Artifactory, Sonar, Docker, Linux, Windows)\n- Optimiser les performances des pipelines : parallélisation des tâches, réduction des temps de build, automatisation des tests\n- Proposer et implémenter des solutions renforçant la résilience et la scalabilité des systèmes\n- Développer des outils internes pour simplifier le quotidien des développeurs et accroître leur productivité\n- Documenter les environnements et les procédures pour favoriser le partage de connaissances\n- Expertise et support auprès des développeurs\n\nProfil:\nCe que vous apportez \n\nDe formation supérieure en informatique, vous possédez un profil \"hybride\" alliant développement logiciel et ingénierie système. Vous avez idéalement travaillé dans des contextes composés de matériel et logiciel.\n\n\nVos atouts techniques :\n\n- Gestion de Systèmes notamment autour du monde Linux \n- Expérience ou background en développement Logiciel \n- Appétence pour l'automatisation / industrialisation notamment au travers de scripting efficaces :Bash, Python, ....\n- Expérience de la mise en place et gestion de pipeline CI/CD  : Jenkins, GitLab, Artifactory, Sonar, Docker, Git, Gradle, Ivy\n\nIntervenant à l'international, vous possédez un niveau d'anglais suffisant vous permettant d'échanger à l'oral et à l'écrit.\n\nAvantages:\nLes conditions de travail\n\n- Contexte R&D sur des produits que vous côtoierez dans le commerce (montres connectées,...)\n- Environnement international (présence au CES Las Vegas, Bureaux an Amérique du  Nord,...)\n- Jusqu’à 50 % de télétravail par mois\n- 11 jours de RTT par an\n- Programme d’intégration complet pour découvrir les différents pôles de l’entreprise (R&D, produit, support, marketing, etc.)\n- Formations continues : anglais, agilité, conférences techniques\n- Espaces modernes et conviviaux \n- Locaux situés à Nantes, facilement accessibles en transports en commun ou voiture (parking à disposition)",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "CI/CD",
+      "Déploiement de modèles",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Cybersécurité",
+      "API",
+      "Documentation technique",
+      "Résolution de problèmes",
+      "Data Engineering",
+      "Pipelines de données",
+      "Backend",
+      "Intégration continue"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Présente à Nantes et aux USA, elle compte près 70 collaborateurs et recrute en CDI un Ingénieur DevOps / Intégration Continue pour renforcer le support transversale à ses équipes engineering.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:31.363804",
+  "input_hash": "7ce36e0d0e7f894ad4f42b8c74e46aef939cccc6131260cc69bd690e907350e6",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

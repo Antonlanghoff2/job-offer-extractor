@@ -1,0 +1,45 @@
+{
+  "key": "offer_extraction:209HRHV",
+  "value": {
+    "id": "209HRHV",
+    "intitule": "Ingénieur(e) Analyse & Débogage Logiciel - Automobile H/F (H/F)",
+    "entreprise": "ACCA",
+    "territoire": "78 - Poissy",
+    "ville": "78498",
+    "code_postal": "78300",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209HRHV",
+    "description": "En intégrant nos équipes logicielles à Poissy, vous deviendrez un-e acteur-rice clé dans la fiabilité, la performance et la stabilité des systèmes embarqués multi-OS au sein de véhicules toujours plus connectés et intelligents.\n\nAnalyse et triage des anomalies logicielles : \nReproduction, catégorisation, priorisation et coordination avec les équipes développement et intégration pour garantir une résolution rapide et fiable.\n\nCollecte et analyse des logs :\nAndroid : lecture et interprétation de logcat, ANR, crash dumps pour identifier les causes racines des pannes.\nQNX : étude des syslogs, dumpers et traces temps réel pour déboguer le middleware et le système d'exploitation.\nMicrocontrôleurs : analyse des journaux SOC/MCU pour identifier les erreurs système embarqué.\n\nDébogage avancé :\nInvestigation en profondeur avec GDB, Lauterbach, ADB et JTAG pour isoler des défaillances complexes.\n\nSuivi des performances :\nDétection des goulets d'étranglement et instabilités système à l'aide d'outils de profilage.\n\nValidation et test :\nReproduction de scénarios, vérification des entrées/sorties, alignement avec les exigences fonctionnelles des versions livrées.\n\nAnalyse d'interfaces logicielles :\nRevue des interfaces (IP, IPC) pour garantir la cohérence et la robustesse des échanges entre modules logiciels.\n\nCollaboration internationale :\nParticipation à des réunions techniques, coordination avec des équipes situées en Europe, Amérique et Asie.\n\nSupport technique stratégique :\nRésolution rapide des incidents critiques et suivi des solutions intégrées.\n\nAtouts :\n- Expertise confirmée en débogage logiciel multi-OS (Android, QNX, MCU).\n- Bonne compréhension des architectures cockpit automobile et des protocoles réseau (Ethernet, Some/IP, CAN).\n- Maîtrise des outils de développement et d'intégration (Git, Jenkins, JIRA, Lauterbach, GDB).\n- Aisance en environnement international Agile/Scrum et collaboration multisites.\n- Forte appétence pour les technologies embarquées innovantes.\n\nCompétences techniques :\n- Solides bases en C/C++/Java/Kotlin/Python.\n- Maîtrise des environnements Android, QNX, Linux, RTOS et des architectures multi-OS.\n- Expérience avec Git, Gerrit, Jenkins, JIRA, GDB, ADB, JTAG, Lauterbach.\n- Excellente connaissance des protocoles Ethernet, Some/IP et CAN.\n- Anglais professionnel (B2/C1) - utilisation quotidienne à l'écrit et à l'oral pour les réunions techniques et la coordination internationale.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Anglais Professionnel",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Linux",
+      "Python",
+      "Vue.js"
+    ],
+    "salaire_min": 55000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:10.833572",
+  "input_hash": "7137341caab3357cb20ce9a17eb83dc6b68128193d5688bf8c8706a417656172",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:1128660",
+  "value": {
+    "id": "1128660",
+    "intitule": "ALTERNANCE - SYSTÈMES IT - STOCKAGE & SAUVEGARDE - H/F",
+    "entreprise": "CLS",
+    "territoire": "31 - Ramonville-Saint-Agne",
+    "ville": "31446",
+    "code_postal": "31520",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-04-03",
+    "date": "2026-04-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1128660",
+    "description": "Description :\n\n\nCE QUE TU VAS FAIRE SI TU NOUS REJOINS :\n\nIntégré(e) à l'équipe IT Métiers, tu auras pour missions d‘étudier, automatiser et superviser les plateformes de stockage (Pure Storage & Scality) ainsi que le système de sauvegarde basé sur Veeam. Tu développeras des outils, réaliseras des tableaux de bord Grafana, et contribueras à l’industrialisation des tâches récurrentes sur l’ensemble de ces périmètres.\n\n \n\n# STOCKAGE\n\n## Étude de la température des données : \n\n\t* Évaluation des outils existants pour classifier la température des données,\n\t* Développement d’outils internes si nécessaire (Bash, API),\n\t* Réalisation d’un test sur 2 volumes : Pure Storage et Scality,\n\t* Livrables : rapport d’étude + résultats des tests, outil fonctionnel intégré dans un tableau de bord Grafana.\n\n \n\n## Création d’un tableau de bord Grafana du stockage :\n\nTableau de bord regroupant pour Pure Storage & Scality :\n\n\t* Taux d’occupation,\n\t* Utilisation CPU, nombre d’IOPS (read/write),\n\t* Bande passante,\n\t* Liste des volumes non accédés depuis > 6 mois (avec dernier accès),\n\t* Livrable : tableau de bord Grafana complet et documenté.\n\n \n\n## Industrialisation des tâches récurrentes (Stockage)\n\n\t* Création / modification / suppression de volumes NFS et buckets S3,\n\t* Automatisation via API, scripts ou Ansible (selon pertinence),\n\t* Livrable : outil d’automatisation fonctionnel et documenté.\n\n \n\n# SAUVEGARDE\n\n## Création d’un tableau de bord Veeam, sous format Grafana comprenant :\n\n\t* Licences Veeam utilisées,\n\t* Capacité occupée & disponible sur les repositories,\n\t* Volume de données transférées sur les dernières 24h,\n\t* Erreurs des dernières 24h,\n\t* Sauvegardes âgées de plus de 60 jours,\n\t* Top 10 ranking des sauvegardes (volumineuses, lentes, rapides, …)\n\n \n\n## Industrialisation des tâches récurrentes (Veeam) : \n\n\t* Création / modification / suppression de jobs Veeam,\n\t* Automatisation via API Rest Veeam ou scripts dédiés.\n\n\n\t\t\n\t\t\nProfil recherché :\n\t\t\n\t\t\nFormation :\n\n\t* Tu prépares un bac +5 en école d'ingénieur ou cursus universitaire,\n\t* Un bon niveau d’anglais est requis pour mener à bien ta mission\n\nSavoir-être :\n\n\t* Tu as le goût du travail en équipe,\n\t* Tu es curieux(se), rigoureux(se) et autonome pour mener à bien les missions qui te seront confiées,\n\t* Capacité à analyser, structurer et restituer des données techniques complexes,\n\t* Autonomie, rigueur et curiosité technique indispensables.\n\nLes compétences techniques attendues :\n\n\t* Linux (Debian, Rocky Linux),\n\t* Notions Windows Server,\n\t* Scripting Bash,\n\t* Utilisation d’API (REST notamment),\n\t* Grafana ou outil équivalent de visualisation.\n\nCompétences appréciées :\n\n\t* Connaissances en stockage (SAN, NAS, Object Storage),\n\t* Familiarité avec Pure Storage ou Scality,\n\t* Containerisation : Docker / Kubernetes (notions),\n\t* Bases en Python.\n\n",
+    "metier": "Ingénieur / Ingénieure systèmes et réseaux informatiques",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "Ansible",
+      "Docker",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "MLOps",
+      "Analyse de données",
+      "Data Engineering",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Intégration continue",
+      "Tests automatisés"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Tu prépares un bac +5 en école d'ingénieur ou cursus universitaire,",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Tu prépares un bac +5 en école d'ingénieur ou cursus universitaire,",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:29.944988",
+  "input_hash": "044cab107925e6607e1c2bdce1876fb124a33a3f4ea79dd3badbbe2abe38662a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

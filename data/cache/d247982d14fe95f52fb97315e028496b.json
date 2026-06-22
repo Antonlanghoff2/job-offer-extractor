@@ -1,0 +1,44 @@
+{
+  "key": "offer_extraction:3646213",
+  "value": {
+    "id": "3646213",
+    "intitule": "Expert(e) Hypervision / Stack ELK  - Services Financiers - Île-de-France (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Courbevoie",
+    "ville": "92026",
+    "code_postal": "92400",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3646213",
+    "description": "Votre futur environnement de travail :Rattaché(e) à Sopra Steria I2S, vous intégrez la division Digital Platform Services (DPS).Vous rejoignez une agence dynamique qui compte plus de 370 collaborateurs répartis sur toute la région parisienne.\nSuivant les missions qui vous sont confiées, vous évoluez au sein d'équipes internes Sopra Steria dans des prestations de type Infogérance, ou vous êtes directement intégré(e) à des équipes client en tant qu'expert(e) technique.L'agence commercialise ses activités auprès de clients Grands Comptes, principalement issus des secteurs de la Banque et de l'Assurance.Prêt(e) à relever le défi avec nous ?\nUn challenge s'offre à vous : devenez notre prochain(e) Expert(e) Hypervision / Stack ELK !Votre rôle et vos missions :En tant qu'Expert(e) Hypervision, vous intervenez sur des projets d'envergure autour de la collecte, du traitement et de la supervision des logs issus d'infrastructures complexes à forte volumétrie.À ce titre, vous :Contribuez à la collecte de logs de l'ensemble des assets (serveurs, bases de données, VPN, postes de travail, équipements réseau, etc.) dans un objectif de supervision et de sécurité (détection et sauvegarde réglementaire).Utilisez la stack ELK (Elastic Agents, Logstash, Elasticsearch, Kibana) comme ossature de l'architecture de collecte et de supervision.Administrez et optimisez une infrastructure traitant des volumes de données dépassant 30 To par jour, en veillant à la scalabilité et la résilience du système.Configurez Logstash pour le parsing, l'enrichissement et la normalisation des flux de logs.Intégrez et exploitez un bus Kafka pour fiabiliser et bufferiser les échanges entre les composants.Déployez des solutions WEC/WEF (Windows Event Collector / Forwarder) pour centraliser les événements Windows.Participez à la mise en place d'un monitoring avancé, intégrant des scénarios basés sur l'intelligence artificielle et des tableaux de bord OpenSearch.Assurez le maintien en condition opérationnelle (MCO) 24/7 des environnements d'hypervision.Rédigez et mettez à jour la documentation technique, les procédures d'exploitation et les guides utilisateurs.Collaborez avec les équipes Data, Sécurité et Exploitation dans un contexte Agile et anglophone.Votre environnement technique peut être composé de :&#xa0;Stack ELK : Elastic Agents, Logstash, Elasticsearch, KibanaOutils complémentaires : OpenSearch, OpenSearch Dashboards (intégration IA)Message broker : KafkaCollecte Windows : WEC / WEFSystèmes : LinuxLangages et outils : Shell, Python, GitMéthodologie : Agile / DevOpsCe que nous vous proposons :&#xa0;Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.Un package avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accord&#xa0;d'intéressement, des primes vacances et cooptation.Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.Des centaines de formations pour développer vos compétences et évoluer au sein du GroupeDes plateformes de formations en autonomie pour préparer vos certifications et accompagner votre développement personnel&#xa0;La possibilité de s'engager auprès de notre fondation ou de notre partenaire « Vendredi ».L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore.)",
+    "metier": "Analyste SOC (Security Operations Center)",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Vision",
+      "Déploiement de modèles"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "télétravail",
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:59.185470",
+  "input_hash": "8eaf9c37a41ddd97a6a030fe796d4b03c2a21370eef2cb3408e96f2496d7e3fb",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

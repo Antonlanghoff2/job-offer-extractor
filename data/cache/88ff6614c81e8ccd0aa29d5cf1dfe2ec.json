@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:209RGCY",
+  "value": {
+    "id": "209RGCY",
+    "intitule": "Développeur Informatique en Alternance (H/F)",
+    "entreprise": "MEWO",
+    "territoire": "57 - Saint-Julien-lès-Metz",
+    "ville": "57616",
+    "code_postal": "57070",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-12",
+    "date": "2026-06-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209RGCY",
+    "description": "Les missions du poste\n\nNous recherchons actuellement un développeur informatique (h/f). Ce poste est ouvert dans le cadre d'un contrat d'apprentissage ou de professionnalisation, d'une durée de 24 mois, débutant en octobre 2026.\n\nVous serez 4 jours au sein de l'entreprise pour la pratique et 1 jour en formation afin de vous former au métier d'Expert en Architecture et Développement Logiciel, au campus Mewo situé à Metz Technopôle (à 10 minutes de la Gare de Metz via le Mettis Ligne B - arrêt Graham Bell) afin d'obtenir le titre de \"Expert en Architecture et Développement Logiciel\" - Titre RNCP de niveau 7 / Bac +5.\n\nÀ noter que votre formation est entièrement prise en charge (vous n'avez aucun frais), de plus vous percevrez un salaire mensuel compris entre 43% et 100% du SMIC.\n\nA ce titre, vous aurez l'opportunité de travailler sur des projets innovants et de contribuer au développement de solutions logicielles de pointe. Au sein d'une équipe dynamique, vous aurez comme missions :\n\n- Mettre en place une veille technologique, normative, et législative\n- Analyser les besoins des utilisateurs et des parties prenantes\n- Étudier et évaluer la faisabilité du projet\n- Concevoir l'architecture logicielle\n- Sélectionner les technologies et outils les plus adaptés pour le développement\n- Créer des diagrammes et modèles de données\n- Collaborer activement à la rédaction du cahier des charges\n- Planifier et conduire le projet numérique\n- Coordonner les équipes de projet\n- Optimiser les développements et Structurer l'application en code\n- Mettre en place, rédiger et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe\n- Intégrer et mettre en oeuvre des technologies blockchain\n- Concevoir l'architecture d'entrepôts de données décisionnelles\n- Automatiser les tâches répétitives en utilisant des technologies RPA\n- Optimiser les processus de décision\n- Assurer la surveillance et la maintenance des systèmes automatisés\n- Rédiger la documentation de support\n- Mesurer l'impact des solutions d'automatisation sur les processus métiers et les performances de l'organisation",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "junior",
+    "competences": [
+      "Cahier des charges",
+      "Intelligence artificielle",
+      "Analyse des besoins",
+      "Optimisation de processus",
+      "Design patterns",
+      "Documentation technique",
+      "Veille technologique",
+      "Pipelines de données",
+      "Qualité des données",
+      "Gestion de projet",
+      "Model drift",
+      "Sécurité informatique",
+      "Optimisation des performances",
+      "Tests automatisés",
+      "Analyse de données",
+      "Cybersécurité",
+      "Data Engineering",
+      "Intégration continue",
+      "Monitoring de modèles",
+      "MLOps",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 802,
+    "salaire_max": 82,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Titre RNCP",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous serez 4 jours au sein de l'entreprise pour la pratique et 1 jour en formation afin de vous former au métier d'Expert en Architecture et Développement Logiciel, au campus Mewo situé à Metz Technopôle (à 10 minutes de la Gare de Metz via le Mettis Ligne B - arrêt Graham Bell) afin d'obtenir le titre de \"Expert en Architecture et Développement Logiciel\" - Titre RNCP de niveau 7 / Bac +5.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous serez 4 jours au sein de l'entreprise pour la pratique et 1 jour en formation afin de vous former au métier d'Expert en Architecture et Développement Logiciel, au campus Mewo situé à Metz Technopôle (à 10 minutes de la Gare de Metz via le Mettis Ligne B - arrêt Graham Bell) afin d'obtenir le titre de \"Expert en Architecture et Développement Logiciel\" - Titre RNCP de niveau 7 / Bac +5.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 21,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:21.816356",
+  "input_hash": "b925837cf0a43eb4b6c1f145e244ba96a8eea5e22d54d01e75d9fb2e1749a69f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

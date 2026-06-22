@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3820915",
+  "value": {
+    "id": "3820915",
+    "intitule": "Ingénieur développement logiciel C++/Qt H/F",
+    "entreprise": "AKKODIS",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3820915",
+    "description": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région bordelaise et recrute un(e) Ingénieur Développement C++/Qt H/F dans le secteur de l'aéronautique et de l'aviation.\n\nResponsabilités principales :\n\n * Concevoir et développer des applications en C++ sous Windows, en utilisant le framework Qt\n * Assurer la maintenance et l'évolution des logiciels existants, incluant la correction des anomalies remontées par les équipes et les clients\n * Collaborer avec les équipes de conception pour définir les spécifications techniques et la documentation associée\n * Réaliser des tests unitaires et d'intégration pour garantir la qualité et la fiabilité du code\n * Optimiser les performances des applications et gérer les versions via des outils de gestion de configuration (Git, SVN)\n * Déployer le logiciel sur les stations en usine et sur site client, incluant la configuration des équipements\n * Analyser et résoudre les problèmes techniques liés aux protocoles de communication (Ethernet, TCP/IP, UDP, ModBus, FTP, SNMP, NMEA, RS UART)\n\n \n\nEnvironnement de travail :\n\nVous évoluez dans un contexte industriel à forte technicité, au sein d'équipes pluridisciplinaires, sur des architectures client-serveur. La gestion de projet se fait selon des méthodes Agile, avec une forte interaction entre les équipes de développement, de validation et les clients. L'utilisation de design patterns et la modélisation UML sont encouragées pour structurer les solutions techniques et garantir la robustesse des applications.\nProfil du candidat\nVous êtes diplômé(e) d'une formation supérieure en informatique, électronique ou équivalent, et vous justifiez d'une expérience d'au moins cinq ans en développement logiciel C++ et Qt dans un contexte industriel, idéalement dans le secteur aéronautique ou des systèmes embarqués. Vous maîtrisez la programmation orientée objet, les outils de gestion de version (Git, SVN), le développement multi-threading et la gestion de la concurrence. Vous possédez des compétences en optimisation de code, en rédaction de documentation technique, et en intégration continue. Une connaissance des protocoles de communication et des architectures client-serveur est requise. La capacité à travailler en équipe, à communiquer efficacement et à gérer les priorités est indispensable.\n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Cahier des charges",
+      "Product Management",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Code review",
+      "Tests automatisés",
+      "Design patterns",
+      "Résolution de problèmes",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Sécurité informatique",
+      "MLOps",
+      "Qualité des données",
+      "Analyse de données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région bordelaise et recrute un(e) Ingénieur Développement C++/Qt H/F dans le secteur de l'aéronautique et de l'aviation.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:18.430097",
+  "input_hash": "bd59e187f7a5717572c22c2c152688302eb2902eab9e09f11216b7a67eeb332d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

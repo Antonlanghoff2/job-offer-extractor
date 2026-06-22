@@ -1,0 +1,445 @@
+{
+  "key": "trends:67 - Achenheim",
+  "value": {
+    "territoire": "67 - Achenheim",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Analyse de données": 3,
+      "Data engineering": 3,
+      "Déploiement De Modèles": 3,
+      "Model Drift": 3,
+      "Airflow": 2,
+      "Intelligence artificielle": 2,
+      "SQL": 2,
+      "Git": 1,
+      "Pipelines De Données": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Analyse de données",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Analyse de données": 3
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Data Engineering": 3
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Déploiement de modèles": 3
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Model drift": 3
+        }
+      },
+      {
+        "nom": "Airflow",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Airflow": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "SQL": 2
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Analyse de données": {
+        "Analyse de données": 3
+      },
+      "Data engineering": {
+        "Data Engineering": 3
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 3
+      },
+      "Model Drift": {
+        "Model drift": 3
+      },
+      "Airflow": {
+        "Airflow": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "SQL": {
+        "SQL": 2
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      }
+    },
+    "metiers": {
+      "Data Analyst": 2,
+      "Data Engineer": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDD - 12 Mois": 1,
+      "CDD - 24 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Déploiement De Modèles",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Déploiement De Modèles",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Model Drift",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Analyse de données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Data engineering",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Model Drift",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Analyse de données",
+        "Data engineering",
+        "Déploiement De Modèles",
+        "Model Drift"
+      ],
+      [
+        "Analyse de données",
+        "Intelligence artificielle",
+        "SQL",
+        "Data engineering",
+        "Déploiement De Modèles",
+        "Model Drift",
+        "Airflow"
+      ],
+      [
+        "Analyse de données",
+        "Git",
+        "Intelligence artificielle",
+        "SQL",
+        "Data engineering",
+        "Model Drift",
+        "Déploiement De Modèles",
+        "Pipelines De Données",
+        "Airflow"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3821330",
+        "intitule": "Alternant(e) en Master Data Visualisation /  (BI) - (F/H) (H/F)",
+        "entreprise": "Wienerberger AG",
+        "territoire": "67 - Achenheim",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3821330"
+      },
+      {
+        "id": "3209834",
+        "intitule": "Chargé(e) de projets Data / BI  (F/H) (H/F)",
+        "entreprise": "Wienerberger AG",
+        "territoire": "67 - Achenheim",
+        "contrat": "CDI",
+        "date": "2026-05-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3209834"
+      },
+      {
+        "id": "9854575",
+        "intitule": "Alternance Chargé de Data Visualisation / Business Intelligence (BI) - Achenheim (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "67 - Achenheim",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-03-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/9854575"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3821330",
+        "intitule": "Alternant(e) en Master Data Visualisation /  (BI) - (F/H) (H/F)",
+        "entreprise": "Wienerberger AG",
+        "territoire": "67 - Achenheim",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3821330"
+      },
+      {
+        "id": "3209834",
+        "intitule": "Chargé(e) de projets Data / BI  (F/H) (H/F)",
+        "entreprise": "Wienerberger AG",
+        "territoire": "67 - Achenheim",
+        "contrat": "CDI",
+        "date": "2026-05-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3209834"
+      },
+      {
+        "id": "9854575",
+        "intitule": "Alternance Chargé de Data Visualisation / Business Intelligence (BI) - Achenheim (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "67 - Achenheim",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-03-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/9854575"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:01.170736",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

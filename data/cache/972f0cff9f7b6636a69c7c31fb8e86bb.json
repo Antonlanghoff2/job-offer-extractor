@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:209LKLT",
+  "value": {
+    "id": "209LKLT",
+    "intitule": "Architecte cloud",
+    "entreprise": "ITS GROUP",
+    "territoire": "92 - BOULOGNE-BILLANCOURT",
+    "ville": "92012",
+    "code_postal": "92100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209LKLT",
+    "description": "Un grand acteur du secteur des médias nous confie des projets de transformation autour du Cloud et de la modernisation des infrastructures IT. Ces missions s'inscrivent dans des environnements complexes, critiques et fortement évolutifs, avec des enjeux de performance, de sécurité et d'optimisation des coûts.\n\nDans ce cadre, nous recherchons des Architectes Cloud capables d'accompagner nos clients dans la définition, la mise en œuvre et l'évolution de leurs architectures cloud.\n\nObjectifs du poste :\nAccompagner les clients dans la définition de leur stratégie cloud\nConcevoir des architectures cloud robustes, sécurisées et évolutives\nPiloter ou contribuer aux projets de migration vers le cloud\nGarantir la performance, la résilience et la sécurité des environnements\nOptimiser les coûts et les usages des solutions cloud\nDiffuser les bonnes pratiques et assurer une veille technologique continue\n\nMissions principales :\nAnimer des ateliers pour recueillir et cadrer les besoins métiers\nDéfinir les architectures cibles (cloud public, privé ou hybride)\nÉlaborer les plans de migration et stratégies de déploiement\nRédiger les dossiers d'architecture et spécifications techniques\nMettre en œuvre et industrialiser les solutions cloud\nGarantir la sécurité, la gouvernance et la conformité des architectures\nMettre en place des outils d'automatisation et de monitoring\nAccompagner et former les équipes clientes sur les bonnes pratiques cloud\nLes profils recrutés interviendront directement chez nos clients, en collaboration avec les équipes techniques, projets et métiers.\n\nL'objectif est d'assurer un rôle transverse, alliant conseil, expertise technique et accompagnement au changement, dans des contextes de transformation à fort enjeu.\n\nVous disposez des compétences suivantes :\nCloud public : AWS, Azure, GCP\nArchitectures hybrides et interconnexions\nInfrastructure as Code : Terraform, Ansible\nConteneurisation : Docker, Kubernetes\nScripting : Python, Bash\nSystèmes : Linux\nSécurité : politiques SSI, sécurisation des architectures cloud\nOutils de supervision et de monitoring\n\nVotre profil\nDiplômé d'une école d'ingénieurs ou équivalent BAC+5 universitaire\nVous justifiez d'une expérience réussie de minimum 7 ans en tant que Architecte Cloud.\nVous êtes curieux et motivé.\n\nNos avantages\nChez nous :\nOn coopte : prime de cooptation de 2000 €\nOn transmet : communauté d'experts\nOn partage : évènements et afterworks\nOn évolue : Management technique de proximité et formations\n\nMais aussi :\nAccords RTT (1 jour/ mois) et Télétravail (2 à 3 jours/ semaine)\nPrise en charge pour moitié du titre de transport et de la mutuelle\nCarte titres restaurants Edenred\n\nChez ITS Services, nous célébrons la diversité et nous nous engageons à créer un environnement inclusif pour nos collaborateurs.\nHandi-bienveillante, ITS Services accueille des collaborateurs en situation de handicap.",
+    "metier": "Architecte cloud",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Coûts",
+      "Docker",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Terraform",
+      "Vision",
+      "Monitoring de modèles",
+      "Optimisation des coûts",
+      "Veille technologique",
+      "Architecture microservices",
+      "Backend",
+      "Optimisation des performances",
+      "Sécurité informatique",
+      "Automatisation de pipelines",
+      "Intégration continue",
+      "Résolution de problèmes",
+      "Design patterns",
+      "MLOps",
+      "Qualité des données"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé d'une école d'ingénieurs ou équivalent BAC+5 universitaire",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 24,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:09.557100",
+  "input_hash": "d3b4362663a907009b1ab3833a0d00bb1a264709fdcd6251138cd33690064591",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

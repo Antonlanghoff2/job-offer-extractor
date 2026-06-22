@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:8762845",
+  "value": {
+    "id": "8762845",
+    "intitule": "DATA ANALYST (H/F)",
+    "entreprise": "",
+    "territoire": "49 - Cholet",
+    "ville": "49099",
+    "code_postal": "49300",
+    "contrat": "Intérim - 12 Mois",
+    "date_creation": "2026-02-06",
+    "date": "2026-02-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8762845",
+    "description": "Dans le cadre de la transformation digitale de l'industrie, nous recherchons un DATA ANALYST- INGENIEUR SYSTEMES D'INFORMATION INDUSTRIELS (F/H) pour la mise en place de solutions de traitement des données pour l'industrie et la Supply Chain.Vous intégrez le service Performance des Flux Industriels sur les prestations de gestion des flux d'informations. Vos misisons principales : - Collecter, structurer et modéliser les données issues des différents systèmes industriels (ERP, MES, etc.) - Définir et construire des modèles de données adaptés aux besoins de reporting et d'analyse - Concevoir et maintenir des dashboards dynamiques sur Power BI (ou tout autre outil équivalent de data visualisation) afin de restituer les indicateurs clés de performance (KPI) aux équipes métiers - Participer à la mise en place de flux de données automatisés via des outils ETL (Talend de préférence) pour garantir la fiabilité et la disponibilité des informations - Accompagner les équipes opérationnelles dans la compréhension et l'utilisation des analyses produites - Identifier les axes d'amélioration, proposer des solutions innovantes et contribuer à la transformation digitale du site industriel - Rédiger la documentation des modèles, processus et outils déployés. Vous évoluerez dans un environnement industriel exigeant, au cœur des enjeux stratégiques de transformation digitale et d'excellence opérationnelle de la société. Votre contribution permettra d'accroître la compétitivité et la réactivité de l'entité face aux défis du secteur. Cette tâche, d'une longue durée, est à pourvoir à CHOLET (49). Le salaire est à définir en fonction de votre formation et de votre expérience.",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Pipelines de données",
+      "Data Engineering",
+      "Analyse de données",
+      "Model drift"
+    ],
+    "salaire_min": 49000,
+    "salaire_max": 49000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "INGENIEUR",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Dans le cadre de la transformation digitale de l'industrie, nous recherchons un DATA ANALYST- INGENIEUR SYSTEMES D'INFORMATION INDUSTRIELS (F/H) pour la mise en place de solutions de traitement des données pour l'industrie et la Supply Chain.Vous intégrez le service Performance des Flux Industriels sur les prestations de gestion des flux d'informations.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:52.533809",
+  "input_hash": "48108995c84bd5957580b4bb53e72b8c9c61eedb514a3ed9e326e27647fe2378",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

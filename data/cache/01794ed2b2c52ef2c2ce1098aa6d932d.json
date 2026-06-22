@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:2172008",
+  "value": {
+    "id": "2172008",
+    "intitule": "Développeur Java Sénior (H/F)",
+    "entreprise": "ALTECA",
+    "territoire": "34 - Montpellier",
+    "ville": "34172",
+    "code_postal": "34000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-01",
+    "date": "2026-05-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2172008",
+    "description": "RESPONSABILITÉS : CONCEPTION & ANALYSE • Réaliser la conception technique et/ou fonctionnelle en autonomie. • Participer aux estimations et chiffrages des solutions. • Être force de proposition pour faire évoluer le socle technique et les solutions applicatives. DEVELOPPEMENT ET INTEGRATION • Développer en Java / Java EE, Spring, API REST dans le cadre du nouveau portail Web. • Intégrer les composants applicatifs dans l'architecture existante. • Respecter les normes de développement, la qualité de code et les bonnes pratiques (Quality First). TESTS & QUALITE • Réaliser les tests unitaires (Junit). • Effectuer les tests de validation des composants et applications. • Participer à la gestion, analyse et correction des anomalies. • Contribuer à l'amélioration continue du produit et des pratiques de développement. DOCUMENTATION & COLLABORATION • Rédiger et maintenir la documentation technique. • Participer activement aux rituels Agile / Scrum (daily, sprint planning, review, rétro...). Environnement technique: Java, Spring, API REST, JUnit, Postman, SQL (MySQL, DB2), MongoDB, Redis, Maven, Git, Jenkins, Eclipse, Sonar, ELK ou Kafka selon les équipes PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+5 en Informatique (Université ou Ecole d'Ingénieur), tu as au moins 3 ans d'expérience sur Java, tu sais évoluer en environnement Agile. Ta personnalité : tu es une personne organisée, rigoureux(se), force de proposition, tu disposes d'un bon relationnel et tu aimes le travail en équipe. Tu apprécies et contribues à développer un contexte de travail bienveillant et qui favorise le partage de connaissances. Enfin, tu sais aussi être force de proposition sur les améliorations qualités à apporter. Type de contrat proposé : temps plein | Niveau de poste : Sénior Le process de recrutement : ν Maïwenn te contactera pour un premier échange téléphonique, puis elle te recevra dans le cadre d'un entretien RH. ν Si cet entretien est validé, tu rencontreras alors Mathieu, le Responsable d'Agence, et/ou le référent technique, pour un entretien technique. NOS AVANTAGES Transport pris en charge à 75% | Tickets restaurants pris en charge à 60% | Mutuelle prise en charge à 60% 10 jours de RTT en plus des 25 jours de CP | Mode de travail : hybride | Accès au CSE (billetterie, voyages...) Des parcours de formations personnalisés (75% de nos collaborateurs ont suivis au moins 1 formation en 2022) Votre chance c'est votre talent, la nôtre c'est de le développer : rejoignez-nous ! En tant que signataire de la charte de diversité en entreprise, Alteca favorise un environnement de travail inclusif et respectueux de tous. A compétences égales, tous nos postes sont ouverts aux personnes en situation de handicap.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Gestion de projet",
+      "Git",
+      "Java",
+      "MySQL",
+      "SQL",
+      "Tests automatisés",
+      "Code review",
+      "Product Management",
+      "Design patterns",
+      "Documentation technique",
+      "API",
+      "Backend",
+      "Scalabilité"
+    ],
+    "salaire_min": 42000,
+    "salaire_max": 0,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Environnement technique: Java, Spring, API REST, JUnit, Postman, SQL (MySQL, DB2), MongoDB, Redis, Maven, Git, Jenkins, Eclipse, Sonar, ELK ou Kafka selon les équipes PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+5 en Informatique (Université ou Ecole d'Ingénieur), tu as au moins 3 ans d'expérience sur Java, tu sais évoluer en environnement Agile.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Environnement technique: Java, Spring, API REST, JUnit, Postman, SQL (MySQL, DB2), MongoDB, Redis, Maven, Git, Jenkins, Eclipse, Sonar, ELK ou Kafka selon les équipes PROFIL RECHERCHÉ : Ton profil : diplômé(e) d'un Bac+5 en Informatique (Université ou Ecole d'Ingénieur), tu as au moins 3 ans d'expérience sur Java, tu sais évoluer en environnement Agile.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:19.295751",
+  "input_hash": "af6325bd694ba2e564f29ff13eaad59c9c6240dcc0301f45c35062084128f2b5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

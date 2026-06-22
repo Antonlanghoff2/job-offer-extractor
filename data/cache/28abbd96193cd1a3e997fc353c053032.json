@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:2877339",
+  "value": {
+    "id": "2877339",
+    "intitule": "Ingénieur Cloud Azure (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Meyreuil",
+    "ville": "13060",
+    "code_postal": "13590",
+    "contrat": "CDI",
+    "date_creation": "2026-05-21",
+    "date": "2026-05-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2877339",
+    "description": "SCC est la division « technologie » du Groupe Rigby. Premier groupe informatique privé en Europe, SCC est un acteur majeur de l'intégration et des services informatiques d'infrastructure.\n\nL'ambition de SCC est de fournir à ses clients des solutions technologiques et des services intégrés pour assurer l'efficacité financière et opérationnelle de leur outil informatique et supporter leur compétitivité.\n\nPartenaire incontournable, SCC répond à l'ensemble des besoins clients, des plus simples aux plus complexes, grâce à l'étendue de son offre et de sa couverture géographique, son expertise tant généraliste que spécialisée et la portée de ses centres de service.\n\nSCC est avant tout une aventure humaine. Ses collaborateurs sont sa principale richesse. Ensemble, ils sont réunis autour de cinq valeurs d'entreprise?: l'esprit d'entreprendre, le professionnalisme, l'esprit d'équipe, l'engagement et les diversités.\n\nPrésente sur tout le territoire national, SCC compte plus de 5 000 clients, 3 300 collaborateurs et d'un chiffre d'affaires de 2,7 Milliard d'EUR en France au 31/03/2024.\n\nChez  SCC, nous valorisons la diversité et l'inclusion. Chaque talent compte, indépendamment du genre, du handicap ou de toute autre distinction. \n\nLe poste : \n\nDans le cadre du renforcement de son pôle infrastructure, l'entreprise évolue dans un environnement majoritairement cloud (?90% Azure), avec très peu d'hybridation.\nVous intégrez une équipe de 8 personnes (Support + Infra) et bénéficiez d'un passage de relais avec l'ingénieur actuellement en poste.\n\nEn tant qu'Ingénieur Microsoft / Cloud Azure, vous intervenez sur la conception, l'optimisation et l'exploitation des environnements cloud Microsoft.\nVous jouez un rôle clé dans la fiabilité des infrastructures (RUN) tout en contribuant activement aux projets de transformation (BUILD), notamment autour des migrations et de l'intégration de nouvelles entités.\n\nMissions principales :\nRun / MCO (?70%) :\nGarantir la disponibilité, la performance et la sécurité des environnements Azure et Microsoft 365\nAssurer le maintien en conditions opérationnelles (supervision, troubleshooting avancé)\nGérer les identités et accès (Azure AD / Entra ID)\nOptimiser les coûts, les performances et l'architecture cloud\n\nBuild & projets (?30%) :\nParticiper à la conception d'architectures cloud Azure\nGérer les projets d'intégration de nouvelles sociétés (environnements IT, M365, workplace)\nPiloter ou contribuer aux projets de migration vers le cloud\nDéployer et structurer les solutions Intune (modern workplace, device management)\nParticiper à l'amélioration continue et à la roadmap infra\n\nCompétences techniques :\nIndispensables:\nExpertise Microsoft 365 & Azure (niveau ingénieur)\nAzure AD / Entra ID (IAM, sécurité, gouvernance)\nIntune (gestion des endpoints, sécurité, déploiement)\nArchitecture cloud Azure (IaaS / PaaS)\nExpérience significative en environnement production\n\nAppréciées:\nAutomatisation (PowerShell, scripts)\nSécurité Cloud Microsoft\nExpérience en migration cloud / transformation IT\nBonnes pratiques FinOps / optimisation Azure\n\nPositionnement du poste :\nProfil ingénieur à forte valeur ajoutée, combinant expertise technique et vision globale des infrastructures Cloud Microsoft. Vous êtes un acteur clé de la transformation cloud, garantissant à la fois la stabilité des environnements et leur évolution vers des architectures modernes et scalables.\n\n\n\n\nProfil recherché : \n\nBac+5 (école d'ingénieur ou université) en informatique\n\nExpérience :\n5 ans minimum sur un poste similaire (RUN / production / Cloud)\nExpérience significative sur AWS en environnement de production\n\nCompétences techniques :\nTrès bonne maîtrise des services Azure\nConnaissance approfondie des problématiques RUN (incident, supervision, MCO)\nExpérience en environnement cloud-first et projets de transformation\nCompétences en scripting (Python, Bash)\nBonne connaissance réseau (VPC, DNS, load balancing)\nNotions de sécurité cloud\n\nSoft skills :\nCapacité d'analyse et vision d'architecture\nApproche orientée solution et amélioration continue\nAutonomie et sens des responsabilités\nCapacité à travailler en équipe transverse (Support / Infra / Projets)",
+    "metier": "Architecte cloud",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Coûts",
+      "Intelligence artificielle",
+      "Python",
+      "Vision",
+      "Optimisation des coûts",
+      "Documentation technique",
+      "Sécurité informatique",
+      "Optimisation des performances",
+      "Scalabilité",
+      "Veille technologique"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous intégrez une équipe de 8 personnes (Support + Infra) et bénéficiez d'un passage de relais avec l'ingénieur actuellement en poste.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieur Microsoft / Cloud Azure, vous intervenez sur la conception, l'optimisation et l'exploitation des environnements cloud Microsoft.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac+5 (école d'ingénieur ou université) en informatique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:19.984184",
+  "input_hash": "20c7668289b18db6b4f58083470a1489d9ac96834bcaa1582fb5b70df9400b86",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

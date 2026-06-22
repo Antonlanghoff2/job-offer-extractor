@@ -1,0 +1,515 @@
+{
+  "key": "trends:94 - Villejuif",
+  "value": {
+    "territoire": "94 - Villejuif",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Gestion de projet": 2,
+      "Intelligence artificielle": 2,
+      "Linux": 2,
+      "Anglais Professionnel": 1,
+      "Cybersécurité": 1,
+      "Data engineering": 1,
+      "Git": 1,
+      "Python": 1,
+      "SQL": 1,
+      "Sécurité Informatique": 1,
+      "Vision": 1,
+      "Windows Server": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 1,
+          "Méthodologie Agile": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Linux",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Linux": 2
+        }
+      },
+      {
+        "nom": "Anglais Professionnel",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Anglais Professionnel": 1
+        }
+      },
+      {
+        "nom": "Cybersécurité",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Cybersécurité": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Vision": 1
+        }
+      },
+      {
+        "nom": "Windows Server",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Windows Server": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Méthodologie Agile": 1,
+        "Gestion de projet": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Linux": {
+        "Linux": 2
+      },
+      "Anglais Professionnel": {
+        "Anglais Professionnel": 1
+      },
+      "Cybersécurité": {
+        "Cybersécurité": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Vision": {
+        "Vision": 1
+      },
+      "Windows Server": {
+        "Windows Server": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur / Ingénieure systèmes et réseaux informatiques": 1,
+      "Ingénieur concepteur / Ingénieure conceptrice informatique": 1
+    },
+    "niveau": {
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Linux",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Linux",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Cybersécurité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Vision",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Linux",
+        "Python",
+        "Data engineering",
+        "Gestion de projet",
+        "Vision",
+        "Windows Server",
+        "Sécurité Informatique"
+      ],
+      [
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Linux",
+        "SQL",
+        "Anglais Professionnel",
+        "Cybersécurité"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3744136",
+        "intitule": "Solution Analyst - Intégration & MCO UNICA (H/F)",
+        "entreprise": "",
+        "territoire": "94 - Villejuif",
+        "contrat": "CDI",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3744136"
+      },
+      {
+        "id": "3621070",
+        "intitule": "Ingénieur Systèmes & Réseaux (H/F)",
+        "entreprise": "Efrei Paris",
+        "territoire": "94 - Villejuif",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3621070"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3744136",
+        "intitule": "Solution Analyst - Intégration & MCO UNICA (H/F)",
+        "entreprise": "",
+        "territoire": "94 - Villejuif",
+        "contrat": "CDI",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3744136"
+      },
+      {
+        "id": "3621070",
+        "intitule": "Ingénieur Systèmes & Réseaux (H/F)",
+        "entreprise": "Efrei Paris",
+        "territoire": "94 - Villejuif",
+        "contrat": "CDI",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3621070"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:01:36.421351",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

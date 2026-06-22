@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:209ZQBK",
+  "value": {
+    "id": "209ZQBK",
+    "intitule": "Ingénieur Logiciel (H/F)",
+    "entreprise": "EQUANS",
+    "territoire": "95 - NEUVILLE SUR OISE",
+    "ville": "95450",
+    "code_postal": "95000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZQBK",
+    "description": "La Division Transport d'Equans France offre des solutions techniques innovantes pour accompagner la digitalisation et la décarbonisation des transports urbains et ferroviaires en France et dans le monde. Les expertises du marché transport sont : la catenaire, la signalisation ferroviaire, la ventilation des tunnels, les systèmes de transport intelligents, les Systèmes d'Aide à l'Exploitation et à l'Information Voyageurs (SAEIV), les solutions de connectivité à bord (Wi-Fi).Nos expertises sont rassemblées dans 7 filiales comptant 2 700 salariés : INEO Scle Ferroviaire, Powerlines, INEO UTS, Axima Tunnel, Systrans, et Icomera.\n\n\nNous vous proposons de rejoindre Systrans, notre filiale spécialisée dans les Systèmes et Services de Transport Intelligents. \nSystrans, une société d'Equans, conçoit et développe des Systèmes de Transport Intelligents pour améliorer la performance et l'efficacité des réseaux de transport public.\n\nForte de plus de 40 ans d'expertise, notre équipe accompagne les autorités organisatrices et opérateurs de transport public avec des solutions évolutives, adaptées à leurs enjeux opérationnels. De l'information voyageurs en temps réel à la supervision du réseau, nous fournissons des outils complets pour faciliter la gestion de flotte et améliorer l'expérience des conducteurs et des usagers.\n\nNotre solution phare, le SAEIV NAVINEO, est déployée sur plus de 60 000 véhicules dans le monde, dans les bus, tramways et trains, et aide chaque jour les territoires à rendre leurs mobilités plus fluides et connectées.\n\nNotre vision : Construire ensemble le voyage de demain pour une meilleure qualité de ville.\n\nhttps://systrans.com/fr/ \n\n\n\nVotre mission\nVous êtes techniquement responsable des développements qui vous sont confiés et de la maintenance associée.\n\n- Vous analysez la spécification système.\n\n- Vous concevez les fonctions à développer et évaluez la charge globale du développement.\n- Vous rédigez ou mettez à jour les documents de conception sous-système.\n- Vous réalisez le développement.\n- Vous testez la conformité du développement réalisé avec les spécifications système.\n- Vous corrigez les anomalies indiquées par le responsable sous-système.\n- Vous mettez à jour l'état d'avancement de votre développement.\n- Vous investiguez sur des anomalies en usine ou sur site.\n- Vous effectuez ou revoyez des estimations de charges de travail.\n\nVotre profil \nDiplômé d'une école d'ingénieur( BAC+5), vous justifiez d'une expérience en développement logiciel, idéalement acquise dans des secteurs techniques tels que l'industrie, le transport ferroviaire, l'aéronautique ou l'automobile.\n\nVous êtes un ingénieur développeur logiciel expérimenté, spécialisé dans le développement mobile sous Android, avec une excellente maîtrise de Kotlin et Java.\n \nVous possédez également une solide expertise en langages systèmes, notamment C (y compris la norme C11) et C++, ainsi qu'une bonne maîtrise de Python.\n \nVotre compréhension des protocoles réseau tels que TCP/IP et UDP est approfondie, et vous êtes à l'aise avec les liaisons série.\n \nVous avez une bonne connaissance des design patterns et une expérience en programmation multithreads .\n\nNotre environnement de travail\nUn environnement stimulant dans un grand groupe innovant.\nLa possibilité de participer à des projets stratégiques pour l'entreprise.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Ferroviaire",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "Vision"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Diplômé d'une école d'ingénieur( BAC+5), vous justifiez d'une expérience en développement logiciel, idéalement acquise dans des secteurs techniques tels que l'industrie, le transport ferroviaire, l'aéronautique ou l'automobile.",
+        "confidence": 0.7
+      },
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Diplômé d'une école d'ingénieur( BAC+5), vous justifiez d'une expérience en développement logiciel, idéalement acquise dans des secteurs techniques tels que l'industrie, le transport ferroviaire, l'aéronautique ou l'automobile.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "24 Mois",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:09.496861",
+  "input_hash": "d21f0017e67125e099bfb61925d2012af8a10cf801c7bd15d7ca1187307fe4fc",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,999 @@
+{
+  "key": "trends:59 - ESCAUDAIN",
+  "value": {
+    "territoire": "59 - ESCAUDAIN",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Intelligence artificielle": 2,
+      "MLOps": 2,
+      "Code Review": 1,
+      "CSS": 1,
+      "Délais": 1,
+      "Déploiement De Modèles": 1,
+      "Gestion de projet": 1,
+      "Git": 1,
+      "HTML": 1,
+      "Intégration Continue": 1,
+      "JavaScript": 1,
+      "Monitoring De Modèles": 1,
+      "Qualité Des Données": 1,
+      "Qualité Logicielle": 1,
+      "Relation Client": 1,
+      "SQL": 1,
+      "Tests Automatisés": 1,
+      "Veille Technologique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "MLOps": 2
+        }
+      },
+      {
+        "nom": "Code Review",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Code review": 1
+        }
+      },
+      {
+        "nom": "CSS",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "CSS": 1
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Délais": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "HTML",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "HTML": 1
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intégration continue": 1
+        }
+      },
+      {
+        "nom": "JavaScript",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "JavaScript": 1
+        }
+      },
+      {
+        "nom": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Monitoring de modèles": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Qualité logicielle": 1
+        }
+      },
+      {
+        "nom": "Relation Client",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Relation Client": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Tests automatisés": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Veille technologique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "MLOps": {
+        "MLOps": 2
+      },
+      "Code Review": {
+        "Code review": 1
+      },
+      "CSS": {
+        "CSS": 1
+      },
+      "Délais": {
+        "Délais": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "HTML": {
+        "HTML": 1
+      },
+      "Intégration Continue": {
+        "Intégration continue": 1
+      },
+      "JavaScript": {
+        "JavaScript": 1
+      },
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Qualité Logicielle": {
+        "Qualité logicielle": 1
+      },
+      "Relation Client": {
+        "Relation Client": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      }
+    },
+    "metiers": {
+      "Cadre Technico-commercial / CadreTechnico-commerciale": 1,
+      "Développeur / Développeuse informatique": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDD - 6 Mois": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Relation Client",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Qualité Logicielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Logicielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Logicielle",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Logicielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Tests Automatisés",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "CSS",
+        "Git",
+        "HTML",
+        "Intelligence artificielle",
+        "JavaScript",
+        "SQL",
+        "Gestion de projet",
+        "MLOps",
+        "Délais",
+        "Tests Automatisés",
+        "Qualité Logicielle",
+        "Code Review",
+        "Qualité Des Données",
+        "Intégration Continue",
+        "Veille Technologique"
+      ],
+      [
+        "Intelligence artificielle",
+        "MLOps",
+        "Relation Client",
+        "Déploiement De Modèles",
+        "Monitoring De Modèles"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "207KKHL",
+        "intitule": "Développeur Informatique (H/F)",
+        "entreprise": "SASU SLUSARSKI",
+        "territoire": "59 - ESCAUDAIN",
+        "contrat": "CDD - 6 Mois",
+        "date": "2026-04-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/207KKHL"
+      },
+      {
+        "id": "205FJBW",
+        "intitule": "Développeur Commercial (H/F)",
+        "entreprise": "SASU SLUSARSKI",
+        "territoire": "59 - ESCAUDAIN",
+        "contrat": "CDD - 6 Mois",
+        "date": "2026-03-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/205FJBW"
+      }
+    ],
+    "offers": [
+      {
+        "id": "207KKHL",
+        "intitule": "Développeur Informatique (H/F)",
+        "entreprise": "SASU SLUSARSKI",
+        "territoire": "59 - ESCAUDAIN",
+        "contrat": "CDD - 6 Mois",
+        "date": "2026-04-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/207KKHL"
+      },
+      {
+        "id": "205FJBW",
+        "intitule": "Développeur Commercial (H/F)",
+        "entreprise": "SASU SLUSARSKI",
+        "territoire": "59 - ESCAUDAIN",
+        "contrat": "CDD - 6 Mois",
+        "date": "2026-03-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/205FJBW"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:16.950872",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

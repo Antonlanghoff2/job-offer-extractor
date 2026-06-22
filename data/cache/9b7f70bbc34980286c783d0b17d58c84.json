@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:3740323",
+  "value": {
+    "id": "3740323",
+    "intitule": "Ingénieur DevOps et Intégrateur Edge (Automatisation et Observabilité) F/H",
+    "entreprise": "",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDI",
+    "date_creation": "2026-06-12",
+    "date": "2026-06-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3740323",
+    "description": "Au sein de notre société de conseil en informatique, nous accompagnons nos partenaires dans le déploiement et l'optimisation de leurs infrastructures industrielles de pointe. Dans le cadre de l'évolution de plateformes Edge Computing, nous recherchons un(e) Ingénieur(e) DevOps / Intégrateur Edge orienté(e) vers la mise en oeuvre pratique, l'automatisation et l'observabilité de solutions critiques. Vos Missions : Rattaché(e) aux équipes d'ingénierie et de réalisation, vous êtes le/la garant(e) de l'intégration, du déploiement continu et de la supervision des environnements : Déploiement et Automatisation : Mettre en oeuvre, automatiser, tester et documenter les plateformes techniques ainsi que les workloads conteneurisés. Intégration Continue (CI/CD) : Développer, optimiser et maintenir les mécanismes de déploiement automatisés et les pipelines d'intégration/déploiement continu. Observabilité et Monitoring : Mettre en place et administrer la gestion des logs, des métriques et concevoir les tableaux de bord (dashboards) nécessaires au suivi opérationnel. Documentation et Traçabilité : Rédiger et maintenir à jour les procédures techniques rigoureuses (installation, diagnostic, rollback, exploitation) et développer les outils de traçabilité des résultats. Votre Profil : Vous justifiez d'une expérience concrète en ingénierie DevOps et possédez une forte appétence pour les architectures distribuées aux frontières du réseau (Edge Computing). Formation : Diplôme d'Ingénieur ou Master 2 A minima 3 ans d'expérience dans une fonction similaire Vos Atouts Indispensables (Critères rédhibitoires) : - Système : Maîtrise des environnements Linux (idéalement RHEL ou distribution équivalente). - Conteneurisation : Solide expérience pratique avec Docker, Docker Compose et LXC. (La connaissance de Kubernetes est un plus apprécié). - Gestion de code : Maîtrise avancée de Git et GitLab (versioning de configurations, gestion des branches, tags, changelog). - Infrastructure as Code (IaC) : Capacité avérée à automatiser les déploiements via des scripts ou des outils tels qu'Ansible ou Terraform. - Supervision : Capacité autonome à implémenter des solutions complètes de monitoring (remontée de logs, métriques et création de dashboards). Vos Compétences : - Stack Observabilité : Maîtrise des outils de la stack analytique tels qu'InfluxDB, Telegraf, Grafana, syslog et Prometheus. - Environnements Spécifiques : Une expérience sur l'environnement Cisco IOx, la manipulation de routeurs industriels ou la gestion d'équipements matériels contraints constituera un réel avantage pour ce poste.",
+    "metier": "Analyste d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Terraform",
+      "Vision",
+      "Automatisation des déploiements",
+      "Intégration continue",
+      "Analyse de données",
+      "MLOps",
+      "Optimisation des performances",
+      "API",
+      "Documentation technique",
+      "Architecture microservices",
+      "Backend",
+      "Tests automatisés"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre de l'évolution de plateformes Edge Computing, nous recherchons un(e) Ingénieur(e) DevOps / Intégrateur Edge orienté(e) vers la mise en oeuvre pratique, l'automatisation et l'observabilité de solutions critiques.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Formation : Diplôme d'Ingénieur ou Master 2 A minima 3 ans d'expérience dans une fonction similaire Vos Atouts Indispensables (Critères rédhibitoires) : - Système : Maîtrise des environnements Linux (idéalement RHEL ou distribution équivalente). - Conteneurisation : Solide expérience pratique avec Docker, Docker Compose et LXC. (La connaissance de Kubernetes est un plus apprécié). - Gestion de code : Maîtrise avancée de Git et GitLab (versioning de configurations, gestion des branches, tags, changelog). - Infrastructure as Code (IaC) : Capacité avérée à automatiser les déploiements via des scripts ou des outils tels qu'Ansible ou Terraform. - Supervision : Capacité autonome à implémenter des solutions complètes de monitoring (remontée de logs, métriques et création de dashboards).",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:31.930577",
+  "input_hash": "e2d5224a49245c80f07ac2ad02009663351857c89255a99df3d614207211cc13",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

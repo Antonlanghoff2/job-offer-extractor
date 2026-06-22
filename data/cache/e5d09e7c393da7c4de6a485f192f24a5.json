@@ -1,0 +1,145 @@
+{
+  "key": "trends:65 - Barbazan-Debat",
+  "value": {
+    "territoire": "65 - Barbazan-Debat",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Intelligence artificielle": 1,
+      "MLOps": 1,
+      "Qualité Des Données": 1,
+      "Veille Technologique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Veille technologique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      }
+    },
+    "metiers": {
+      "Technicien / Technicienne méthodes": 1
+    },
+    "niveau": {
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "MLOps",
+        "Qualité Des Données",
+        "Veille Technologique"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3270278",
+        "intitule": "Méthodes Programmation TOPSOLID (H/F)",
+        "entreprise": "Société nouvelle lafourcade",
+        "territoire": "65 - Barbazan-Debat",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3270278"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3270278",
+        "intitule": "Méthodes Programmation TOPSOLID (H/F)",
+        "entreprise": "Société nouvelle lafourcade",
+        "territoire": "65 - Barbazan-Debat",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3270278"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:02:34.749739",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:1473873",
+  "value": {
+    "id": "1473873",
+    "intitule": "TECHNICIEN LOGICIEL BILINGUE ANGLAIS / ESPAGNOL (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Aix-en-Provence",
+    "ville": "13001",
+    "code_postal": "13080",
+    "contrat": "CDI",
+    "date_creation": "2026-04-15",
+    "date": "2026-04-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1473873",
+    "description": "Nous recherchons pour le compte de notre client, éditeur de logiciel basé sur les Milles, UN (E) TECHNICIEN (NE) SUPPORT LOGICIEL Bilingue anglais (H/F).Rattaché (e) à l'équipe support, vous êtes en charge de la résolution des incidents de niveau 1 portant sur le logiciel. Une formation vous sera transmise sur le logiciel. Vous êtes en charge du paramétrage et de l'installation des modules à distance pour les clients. Vous avez de bonnes connaissances sur SQL et votre soif d'évoluer sur des problématiques concrètes vous stimulent professionnellement. De formation Bac+2, vous justifiez d'une expérience de 1 année minimum sur un poste en hotline, vous êtes très à l'aise par téléphone. Vous savez gérer la pression et avez un bon niveau d'écoute clients. Vous aimez apporter des solutions clients et garantir un bon niveau de satisfaction. Vous avez des connaissances en informatique de base ( Windows). Vous maîtrisez les requêtes sql. Envie d'apporter votre implication, votre motivation au sein d'une équipe dynamique ? N'hésitez pas à postulez !",
+    "metier": "Standardiste",
+    "niveau": "junior",
+    "competences": [
+      "SQL",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 1000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac+2, vous justifiez d'une expérience de 1 année minimum sur un poste en hotline, vous êtes très à l'aise par téléphone.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:32.600419",
+  "input_hash": "8ef135cc5fc647341f3c15a10f40e17a517c7e85d8f61e5759be0d1bd3da6964",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

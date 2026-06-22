@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:209CNBQ",
+  "value": {
+    "id": "209CNBQ",
+    "intitule": "Architecte logiciel (H/F)",
+    "entreprise": "LES INTERIMAIRES PROFESSIONNELS TERTIAIR",
+    "territoire": "38 - Meylan",
+    "ville": "38229",
+    "code_postal": "38240",
+    "contrat": "CDI",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209CNBQ",
+    "description": "En tant qu'architecte logiciel, vous allez travailler en collaboration avec nos directeurs de projets et nos Data Scientists à l'intégration des modèles d'Intelligence Artificielle dans des solutions industrielles (basées sur des techno web, Big Data, Cloud Native).\n\nAu sein de notre équipe technique, vous aurez pour rôle la conception/architecture, le développement ainsi que la maintenance de ces solutions, en adéquation avec les exigences de nos clients. Vous interviendrez en collaboration avec les autres architectes, Data Engineers et vous contribuerez à l'animation technique de la communauté (veille technologique, partage de connaissances, bonnes pratiques)\n               \nVous êtes autonome, bienveillant(e), curieux(se) et rigoureux(se)\nVous avez une solide culture technique\nVous aimez travailler en équipe\nVous avez une bonne communication orale et écrite\nVous avez de bonnes capacités de communication avec les clients\nQualifications :\nIngénieur en informatique ou équivalent (Bac+5 minimum)\nExpérience de 10 ans minimum\n\nCompétences requises :\nNiveau confirmé en architecture : recueillir le besoin client, proposer une architecture, la mettre en œuvre et en être garant\nMaitriser au moins un langage de programmation objet (Python, C++, Java, Scala)\nAvoir une bonne capacité de monter en compétences sur d autres langages\nExpériences significatives avec des SGBD SQL et NoSQL\nCulture DevOps : Docker, Ansible, Gitlab-CI\n\nCompétences appréciées : \nTechnologies Big Data (Spark, Hadoop, Kafka, ELK)\nDéveloppement web : frameworks JavaScript, API REST\nOrchestration : Kubernetes, Docker Swarm\nMaitriser les concepts liés au Cloud Native (AWS, Azure)",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Docker",
+      "Développement web",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "JavaScript",
+      "Kubernetes",
+      "NoSQL",
+      "Python",
+      "SQL"
+    ],
+    "salaire_min": 55000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur en informatique ou équivalent (Bac+5 minimum)",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Ingénieur en informatique ou équivalent (Bac+5 minimum)",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:00.304957",
+  "input_hash": "d73dfa777709c9cd47c0d3ad97af248b66713bb614a63d018fb70db3188c2962",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

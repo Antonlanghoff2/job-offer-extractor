@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3975371",
+  "value": {
+    "id": "3975371",
+    "intitule": "INGÉNIEUR - MACHINES SPÉCIALES / DEV C++ CDI CLIENT FINAL (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Rousset",
+    "ville": "13087",
+    "code_postal": "13790",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3975371",
+    "description": "Nous recherchons pour le compte de notre client spécialisé dans le secteur industriel basé à Rousset, un Ingénieur informatique industrielle (F/H)Nous recherchons un(e) Ingénieur(e) en informatique industrielle pour rejoindre notre équipe au sein du bureau d'étude Software. Vous êtes en charge de développer, améliorer et maintenir les logiciels. Vous travaillez en étroite collaboration avec les services automatisme, mise en service et support client. Selon votre profil, nous pourrons vous proposer un rôle complémentaire de team leader. Missions principales sont de : - Concevoir et développer des logiciels stables et évolutifs, étudier des cahiers des charges clients et participer à la définition de spécifications, débugger et qualifier les logiciels sur machine, assurer le support technique et la maintenance des logiciels existants. - Rédiger des rapports techniques et participer à la rédaction des notices, suivre les évolutions technologiques et les bonnes pratiques dans le domaine du développement logiciel. Diplôme d'Ingénieur en informatique industrielle (Bac +5), vous avez une expérience de 5 années minimum dans un poste similaire. Leader d'équipe serait plus. Compétences techniques souhaitées, connaissance des langages : C++, C#, Visual Basic Outils de développement : Visual studio, Git, Azure Protocoles de communication (TCP/IP, RS232 ...) Pilotage et surveillance de périphériques tels que : Robots, Camera, Lecteur RFID... Maîtrise de l'anglais (communication écrite et conversation téléphonique). Est un plus : Travail dans un environnement normalisé, idéalement le semi-conducteur SECS/GEM. Qualités personnelles : Esprit d'analyse et de synthèse. Rigueur(se), sens de l'organisation et capacité à travailler en équipe. Bonne capacité de communication, à la fois écrite et orale. Proactivité et capacité à résoudre des problèmes complexes. Tickets restaurant, mutuelle, 14 RTT/an (semaine de 37h40) Déplacements occasionnels à l'international.",
+    "metier": "Responsable des systèmes d'information (SI)",
+    "niveau": "junior",
+    "competences": [
+      "Azure",
+      "Git",
+      "Intelligence artificielle",
+      "Cahier des charges",
+      "Monitoring de modèles",
+      "Développement logiciel",
+      "Rédaction de rapports",
+      "Documentation technique",
+      "Optimisation des performances",
+      "Scalabilité",
+      "Design patterns",
+      "Backend"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons pour le compte de notre client spécialisé dans le secteur industriel basé à Rousset, un Ingénieur informatique industrielle (F/H)Nous recherchons un(e) Ingénieur(e) en informatique industrielle pour rejoindre notre équipe au sein du bureau d'étude Software.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplôme d'Ingénieur en informatique industrielle (Bac +5), vous avez une expérience de 5 années minimum dans un poste similaire.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:29.460291",
+  "input_hash": "f9c4bd505b4e9d35f0b149528c62dab6f393441a246d324a6aaa18ed7f11afde",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

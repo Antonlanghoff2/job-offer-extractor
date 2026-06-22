@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:3881669",
+  "value": {
+    "id": "3881669",
+    "intitule": "Développeur JAVA (H/F)",
+    "entreprise": "",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3881669",
+    "description": "Rejoignez une entreprise dynamique au cur de la transformation digitale, où linnovation et lagilité sont au centre des projets. En tant que développeur Java, vous participerez à la conception et à lévolution dapplications de paiement, en apportant votre expertise sur des solutions modernes et performantes. Vous évoluerez dans un environnement collaboratif, favorisant léchange et lamélioration continue, au sein dune équipe agile.   Vous serez en charge de :   Participer à l'analyse des besoins métiers   Contribuer à la définition des critères d'acceptance et à la validation des fonctionnalités   Développer les fonctionnalités qui vous sont confiées dans le respect des exigences techniques   Rédiger une documentation technique complète et claire ; respecter les règles du clean code   Participer à lautomatisation des déploiements.     Vos connaissances techniques :  Back-end: Java JEE, Spring Boot Frontend : Angular API : Connaissance des API REST. CI/CD : Gitlab, Gitflow. Bases de données : MongoDB (NoSQL), PostgreSQL. Langues : Maîtrise de langlais appréciée.   Vous :  De formation ingénieur ou Bac+5, vous justifiez de plusieurs expériences concluantes dans le développement web. En tant que Développeur java, vous savez faire preuve d'autonomie, et êtes force de proposition, avec un excellent sens du relationnel vous permettant déchanger facilement avec l'ensemble de vos interlocuteurs.   Vous souhaitez intervenir sur des projets ambitieux au sein dune équipe réactive ? Postulez dès maintenant !",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "Développement web",
+      "Gestion de projet",
+      "Git",
+      "Java",
+      "NoSQL",
+      "PostgreSQL",
+      "SQL",
+      "Documentation technique",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous : De formation ingénieur ou Bac+5, vous justifiez de plusieurs expériences concluantes dans le développement web.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous : De formation ingénieur ou Bac+5, vous justifiez de plusieurs expériences concluantes dans le développement web.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:44.683586",
+  "input_hash": "1543f23ed044f3bba249c22b26e355bc35f36f6f274505ba3699d8ed5dd026fa",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

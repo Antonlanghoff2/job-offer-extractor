@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:3612187",
+  "value": {
+    "id": "3612187",
+    "intitule": "Ingénieur réseau expert (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "Intérim - 6 Mois",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3612187",
+    "description": "Actual Talent Metz recherche pour son client, un prestataire informatique, un Ingénieur Réseau Expert - Hybrid Build & Run (H/F) dans le cadre d'une mission d'intérim de longue durée basée à Strasbourg. Informations sur le contrat : - Localisation : Strasbourg - Contrat : Intérim (3 mois renouvelable) - Salaire : 55kEUR à 62kEUR annuel brut selon profil et expérience. - Démarrage : Immédiat - Organisation : Mixte 50% Projet (Build) / 50% Exploitation (Run). Voici les missions qui vous seront confiées : - Pilotage technique et exécution de la migration des infrastructures Meraki (passage de la solution MX vers ION) et connexion des sites distants. - Administration experte des switches Cisco Nexus et gestion avancée des pare-feu Palo Alto (filtrage applicatif, VPN). - Optimisation des protocoles de routage dynamique (BGP/IBGP) et gestion des interconnexions WAN (Orange VPN). - Automatisation de l'exploitation réseau et des déploiements via du scripting Python et une approche DevOps. - Maintien rigoureux de l'IPAM (NetBox) et support de niveau 3 sur les incidents critiques mondiaux. Profil recherché- Bac+5 spécialisé en Réseaux et Télécoms. - 8 à 10 ans d'expérience minimum sur des réseaux d'envergure internationale. - Maîtrise confirmée de l'écosystème Cisco Meraki, des technologies Cisco Nexus et de la sécurité Palo Alto. - Capacité réelle à automatiser en Python et solide culture du routage BGP. - Vision stratégique alliée à une rigueur opérationnelle, capacité à documenter des architectures complexes et aisance relationnelle avec les partenaires externes.",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Vision"
+    ],
+    "salaire_min": 55000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Actual Talent Metz recherche pour son client, un prestataire informatique, un Ingénieur Réseau Expert - Hybrid Build & Run (H/F) dans le cadre d'une mission d'intérim de longue durée basée à Strasbourg.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché- Bac+5 spécialisé en Réseaux et Télécoms. - 8 à 10 ans d'expérience minimum sur des réseaux d'envergure internationale. - Maîtrise confirmée de l'écosystème Cisco Meraki, des technologies Cisco Nexus et de la sécurité Palo Alto. - Capacité réelle à automatiser en Python et solide culture du routage BGP. - Vision stratégique alliée à une rigueur opérationnelle, capacité à documenter des architectures complexes et aisance relationnelle avec les partenaires externes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:00.406865",
+  "input_hash": "c468433ca5689b4537f6c0f6dbd39b4af9607fb28b2691b5a8bb3e597dd0b3f5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

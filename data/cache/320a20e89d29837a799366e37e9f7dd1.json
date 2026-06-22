@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:1835913",
+  "value": {
+    "id": "1835913",
+    "intitule": "Développeur / Développeuse informatique (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 5e Arrondissement",
+    "ville": "69385",
+    "code_postal": "69005",
+    "contrat": "CDI",
+    "date_creation": "2026-04-23",
+    "date": "2026-04-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1835913",
+    "description": "Description du poste :\nRejoindre Fiducial, c'est faire partie d'une entreprise reconnue pour sa stabilité et sa croissance, tout en bénéficiant d'une opportunité unique de travailler dans un contexte multi secteurs, grâce à notre présence dans des environnements riches et variés (expertise comptable, audit, banque, fournitures de bureau, conseil, informatique, cloud, sécurité, média Nous recherchons un(e) Ingénieur Études et Développement avec une valeur ajoutée pour la MOA Finances, dans un contexte de mise en production de SAP très prochainement.\nAu sein de l'équipe SI Finances, composée de 6 personnes, dont 1 Chef de Projet, vos principales missions seront les suivantes Evolution et corrections autour de l'application LIGIS (gestion du recouvrement des impayés Déploiement et évolution des interfaces autour de SAP (SAP AIF, ESB, API, ETL Automatisation des traitements financiers Support N2/N3 sur des incidents utilisateurs Support fonctionnel pour les relations éditeurs/utilisateurs Maintien en Condition Opérationnelle des différents outils du SI Finance (Fiscalité, Consolidation, Flux Bancaires dont montées de version, passage de patch Description du profil :\nProfil recherché Profil Ingénieur Études - bac+5 3 ans d'expérience minimum, avec une première expérience SI dans le domaine de la Finance Une première expérience autour du développement / maintenance d'interfaces (ESB, ETL ou API Une appétence pour apprendre et paramétrer un langage spécifique métier (LIGIS Connaissance SAP optionnelle Connaissances techniques (Windows/Linux) appréciées D'un point de vue savoir-être, nous serons attentifs à votre aisance relationnelle, à votre esprit d'équipe et à votre curiosité\nTous nos postes sont ouverts aux personnes en situation de handicap.\nLe poste est basé à Lyon (quartier Gorge de Loup), en CDI, à proximité des transports en communs / parking disponible.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Linux",
+      "Vue.js"
+    ],
+    "salaire_min": 6000,
+    "salaire_max": 6000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Rejoindre Fiducial, c'est faire partie d'une entreprise reconnue pour sa stabilité et sa croissance, tout en bénéficiant d'une opportunité unique de travailler dans un contexte multi secteurs, grâce à notre présence dans des environnements riches et variés (expertise comptable, audit, banque, fournitures de bureau, conseil, informatique, cloud, sécurité, média Nous recherchons un(e) Ingénieur Études et Développement avec une valeur ajoutée pour la MOA Finances, dans un contexte de mise en production de SAP très prochainement.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil recherché Profil Ingénieur Études - bac+5 3 ans d'expérience minimum, avec une première expérience SI dans le domaine de la Finance Une première expérience autour du développement / maintenance d'interfaces (ESB, ETL ou API Une appétence pour apprendre et paramétrer un langage spécifique métier (LIGIS Connaissance SAP optionnelle Connaissances techniques (Windows/Linux) appréciées D'un point de vue savoir-être, nous serons attentifs à votre aisance relationnelle, à votre esprit d'équipe et à votre curiosité",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:20.413658",
+  "input_hash": "9f0100009ddf1b79972279d58a9416b818fa16bc37430a46e36daec7d7eaf6fd",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

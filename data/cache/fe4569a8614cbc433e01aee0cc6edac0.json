@@ -1,0 +1,180 @@
+{
+  "key": "trends:92 - Vanves",
+  "value": {
+    "territoire": "92 - Vanves",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Déploiement De Modèles": 1,
+      "Gestion de projet": 1,
+      "Intelligence artificielle": 1,
+      "MLOps": 1,
+      "Vue.js": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Vue.js": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Vue.js": {
+        "Vue.js": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse web": 1,
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDD - 24 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle"
+      ],
+      [
+        "Gestion de projet",
+        "Vue.js",
+        "MLOps",
+        "Déploiement De Modèles"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3311408",
+        "intitule": "Développeur informatique junior (H/F/X)",
+        "entreprise": "Association de Moyens du Groupe Audiens",
+        "territoire": "92 - Vanves",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3311408"
+      },
+      {
+        "id": "2079654",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "92 - Vanves",
+        "contrat": "CDI",
+        "date": "2026-04-29",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2079654"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3311408",
+        "intitule": "Développeur informatique junior (H/F/X)",
+        "entreprise": "Association de Moyens du Groupe Audiens",
+        "territoire": "92 - Vanves",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3311408"
+      },
+      {
+        "id": "2079654",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "92 - Vanves",
+        "contrat": "CDI",
+        "date": "2026-04-29",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2079654"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:07:31.166625",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

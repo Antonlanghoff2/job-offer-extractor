@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:3703189",
+  "value": {
+    "id": "3703189",
+    "intitule": "Analyste technique H/F",
+    "entreprise": "Fraikin",
+    "territoire": "92 - Colombes",
+    "ville": "92025",
+    "code_postal": "92700",
+    "contrat": "CDI",
+    "date_creation": "2026-06-11",
+    "date": "2026-06-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3703189",
+    "description": "FRAIKIN France recherche un :\n\nAnalyste Technique (H/F) - CDI \n\nRattaché(e) au Directeur Technique, l'Analyste Technique a pour mission d'exploiter, analyser et valoriser les données techniques et opérationnelles afin d'accompagner la prise de décision et l'amélioration de la performance des flottes en mettant à disposition du réseau les indicateurs et informations clés de la Direction Technique.\n\nÀ ce titre, vous serez notamment amené(e) à :\n\nProduire et analyser les reportings périodiques (hebdomadaires, mensuels, annuels) ;\n\nGarantir la fiabilité et la cohérence des données exploitées ;\n\nIdentifier les tendances, anomalies et axes d'amélioration ;\n\nMise à jour et optimisation des programmes d'entretien\n\nRéaliser des études et analyses sur les coûts d'entretien, l'immobilisation des véhicules, la performance des ateliers ou encore les sinistres ;\n\nFormuler des recommandations et participer à la mise en place de plans d'actions ;\n\nCréer et faire évoluer les bases de données, tableaux de bord et outils de reporting ;\n\nParticiper au développement et à l'exploitation des données télématiques ;\n\nRelation avec les constructeurs au sujet des campagnes de rappels\nFormation supérieure Bac+5 en Data, Statistiques, Informatique Décisionnelle, Ingénierie ou équivalent ;\nPremière expérience réussie en tant que Data Analyst, Analyste de données ou fonction similaire ;\nMaîtrise avancée d'Excel et appétence pour les outils d'analyse et de reporting ;\nBonne maîtrise des techniques statistiques et du traitement de données ;\nCapacité à analyser, synthétiser et interpréter des données complexes ;\nRigueur, curiosité, esprit d'analyse et sens du travail en équipe ;\nUne connaissance du secteur industriel, de la maintenance ou de la location de véhicules serait appréciée.\n\nLieu : Colombes (92)\nRémunération : Selon profil et expérience + avantages sociaux (, mutuelle/ prévoyance).\nDate de prise de poste : Dès que possible",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Coûts",
+      "Intelligence artificielle",
+      "Travail en équipe",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Analyse de données",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "Protection des données",
+      "MLOps",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation supérieure Bac+5 en Data, Statistiques, Informatique Décisionnelle, Ingénierie ou équivalent ;",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:54.264197",
+  "input_hash": "4871c64118c09e0195e6335a03a358c9dd5a8ac19b843a0ea074003525a6acb7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

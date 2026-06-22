@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:2305003",
+  "value": {
+    "id": "2305003",
+    "intitule": "Ingénieur logiciel HPC (H/F)",
+    "entreprise": "Mercato de l'emploi",
+    "territoire": "92 - Meudon",
+    "ville": "92048",
+    "code_postal": "92190",
+    "contrat": "CDI",
+    "date_creation": "2026-05-06",
+    "date": "2026-05-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2305003",
+    "description": "RESPONSABILITÉS : Au sein d'une équipe de 4 personnes, vos missions seront les suivantes : · Conception de Kernels de Calcul : Développer et optimiser les fonctions mathématiques fondamentales pour une architecture innovante exploitant plusieurs centaines d'unités arithmétiques en simultané. · Gestion Multi-cœur : Concevoir et implémenter des primitives d'algèbre linéaire (opérations matricielles) hautement parallélisées pour maximiser le débit de données. · Optimisation : Atteindre les limites théoriques de performance du processeur par l'analyse fine des flux d'exécution et la résolution de compromis complexes (latence vs bande passante). · Automatisation & Outillage : Contribuer au développement de générateurs de code automatisés pour simplifier l'exploitation de l'architecture. · Interopérabilité & Écosystème : Assurer le portage et l'accélération de bibliothèques standards (OpenCV, Apollo ADAS) sur notre stack propriétaire, garantissant ainsi une adoption fluide par nos clients. · Stratégie Open Source : Documentation et structuration du code dans l'objectif de porter notre stack vers la communauté Open Source à moyen terme (2-4 ans). PROFIL RECHERCHÉ : • BAC+5 ingénieur logiciel • Expertise en C/C++ orienté performance et programmation de bas niveau. • Solides connaissances en architecture des processeurs (pipelines, hiérarchie mémoire, SIMD/VLIW). • Maîtrise des concepts de calcul parallèle et d'optimisation de kernels. • Une expérience ou un fort intérêt pour le traitement du signal ou les architectures de réseaux de neurones. • Bilingue anglais",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Data Engineering",
+      "Pipelines de données",
+      "Qualité des données"
+    ],
+    "salaire_min": 60000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : • BAC+5 ingénieur logiciel • Expertise en C/C++ orienté performance et programmation de bas niveau. • Solides connaissances en architecture des processeurs (pipelines, hiérarchie mémoire, SIMD/VLIW). • Maîtrise des concepts de calcul parallèle et d'optimisation de kernels. • Une expérience ou un fort intérêt pour le traitement du signal ou les architectures de réseaux de neurones. • Bilingue anglais",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : • BAC+5 ingénieur logiciel • Expertise en C/C++ orienté performance et programmation de bas niveau. • Solides connaissances en architecture des processeurs (pipelines, hiérarchie mémoire, SIMD/VLIW). • Maîtrise des concepts de calcul parallèle et d'optimisation de kernels. • Une expérience ou un fort intérêt pour le traitement du signal ou les architectures de réseaux de neurones. • Bilingue anglais",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:30.884212",
+  "input_hash": "d3b92d3cb7c649d3ca5083085f14667f656634d102e206ecd0103bbcb0a6341e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

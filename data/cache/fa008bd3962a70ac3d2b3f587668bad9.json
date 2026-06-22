@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:3743823",
+  "value": {
+    "id": "3743823",
+    "intitule": "Ingénieur Systèmes et Réseaux Linux (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3743823",
+    "description": "Qui sommes-nous ? Depuis 2006, chez Versusmind, nous accompagnons les PME et ETI dans leur transformation digitale forts de l'expertise de nos consultants IT. Nous misons sur l'innovation, la collaboration, et l'excellence technique pour créer des solutions sur mesure. Notre promesse : Te proposer des projets stimulants, un cadre bienveillant, et les outils pour grandir techniquement. ________________________________________ Pourquoi nous choisir ? - Impact concret : Tes solutions influencent directement la transformation digitale de nos clients. - Environnement technique riche : Projets variés, outils modernes, et une culture de l'innovation. - Équilibre vie pro/perso : Télétravail jusqu'à 2 jours/semaine, 37 jours de repos/an, et des avantages sociaux complets. Le poste : Le poste Où - À Strasbourg (67). Contrat : CDI - Cadre - Temps plein. Salaire : entre 38 K€ à 42 K€. Expérience : 5 ans minimum - Diplôme : Bac+5. Tes missions - Concevoir, déployer et faire évoluer les architectures Linux (RedHat) ainsi que les solutions associées - Assurer le maintien en conditions opérationnelles (MCO) de niveau 2/3 sur l'ensemble du périmètre systèmes et réseaux - Automatiser les déploiements et optimiser l'exploitation des infrastructures (scripting, outils d'automatisation) - Contribuer aux choix technologiques, aux analyses d'impacts et aux évolutions d'architecture - Garantir la sécurité et la résilience des systèmes en traitant les remédiations, les incidents complexes et en participant à l'amélioration continue ________________________________________ Profil recherché : Ton profil - Expertise confirmée en systèmes Linux/RedHat et en conception d'architectures infrastructures (serveurs, virtualisation, réseau) - Maîtrise des outils d'automatisation (Ansible, scripting Bash/Python) et des environnements d'exploitation - Solides compétences en sécurité des infrastructures (firewalling, normes IT, outils type Palo Alto/Stormshield) - Expérience en gestion de projets techniques et coordination avec des prestataires externes - Niveau Bac+5 ou équivalent, avec minimum 5 ans d'expérience en ingénierie systèmes & réseaux, rigueur, sens de l'analyse et capacité à piloter un projet de bout en bout ________________________________________",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Automatisation des déploiements",
+      "Pilotage de projet"
+    ],
+    "salaire_min": 2006,
+    "salaire_max": 2006,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Expérience : 5 ans minimum - Diplôme : Bac+5.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:54.419580",
+  "input_hash": "a0ec874608bb2400d6055b40ad96df7d7930733341382528647dcc862a3880c8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3590979",
+  "value": {
+    "id": "3590979",
+    "intitule": "Ingénieur Logiciel (f/h)",
+    "entreprise": "",
+    "territoire": "49 - Angers",
+    "ville": "49007",
+    "code_postal": "49000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3590979",
+    "description": "Description: Notre client, éditeur et intégrateur de logiciel, nous mandate pour le recrutement d'un(e) Ingénieur Logiciel (f/h) pour un poste en CDI sur la région angevine. Au sein de l'équipe déploiement (10 personnes), vous êtes en charge de l'intégration d'une solution métier. Votre positionnement vous amène à : - Recueillir le besoins Client, - Analyser et traduire les besoins dans la solution en challengeant en bonne intelligence les besoins exprimés, - Concevoir / adapter le modèle de données applicatif, - Identifier les sources de données et SI connexes à exploiter (Reprise de données, Flux / API,...). - Designer et paramétrer les écrans / formulaires / workflows / tableaux de bord dans le respect des principes ergonomiques de référence et dans le souci de l'expérience utilisateur, Echanger régulièrement en interne pour tirer le meilleure partie de la solution et/ou la faire évoluer (PO, Direction de projet, chefs de projets,...). Selon votre appétence et vos réalisations, le poste sera amené à évoluer sur du pilotage de projets (planning, charge, jalons,...) Exigences: Idéalement de formation technique BAC+5 (type Ingénieur en informatique), vous êtes rigoureux(se), à l'écoute de vos interlocuteurs et doté(e) d'une bonne capacité d'analyse. Vous justifiez d'une expérience d'au moins 2/3 ans sur du design d'application Métier (Dév ou Paramétrage avancé). Curieux(se), intéressé(e) par un poste polyvalent (analyse du besoin, paramétrage, SQL, test,...) vous privilégiez le fonctionnement en petite équipe. De bonnes connaissances en SQL sont attendues. Un anglais courant est un plus. Processus de recrutement : Pré-selection sur CV > Qualification téléphonique > Entretien EOSIUM > Prise de références / Tests > 2/3 entretiens CLIENT. Avantages: Rémunération Fixe : 40-50 K€ (selon profil) Contrat : CDI (statut Cadre) Congés/Repos : 25 j de CP Autres avantages : Epargne salariale + Tickets restaurants Sur site et Télétravail",
+    "metier": "Consultant décisionnel / Consultante décisionnelle - Business Intelligence",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Pipelines de données"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Description: Notre client, éditeur et intégrateur de logiciel, nous mandate pour le recrutement d'un(e) Ingénieur Logiciel (f/h) pour un poste en CDI sur la région angevine.",
+        "confidence": 0.9
+      },
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Selon votre appétence et vos réalisations, le poste sera amené à évoluer sur du pilotage de projets (planning, charge, jalons,...) Exigences: Idéalement de formation technique BAC+5 (type Ingénieur en informatique), vous êtes rigoureux(se), à l'écoute de vos interlocuteurs et doté(e) d'une bonne capacité d'analyse.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:09.076402",
+  "input_hash": "163658e62271ea0fcb7d1922d2514543828291fa06e542461ca79fe97e6dd598",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}
