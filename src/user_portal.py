@@ -34,6 +34,15 @@ from src.services.cv_parser import parse_cv_file
 from src.services.formation_recommendation import build_recommendation_context
 from src.services.matching_service import compute_match, normalize_skill_name
 from src.services.offer_repository import get_available_territories, load_normalized_offers
+from src.cache_reader import (
+    get_precomputed_offers,
+    get_precomputed_matches,
+    get_precomputed_trends,
+    get_territory_options as get_cached_territory_options,
+    get_cache_status,
+    has_precomputed_data,
+    get_last_refresh_time,
+)
 
 try:  # pragma: no cover - imported by Flask when installed
     from flask import flash
@@ -1932,6 +1941,54 @@ def _persist_match(user_id: int, match: Dict[str, Any]) -> None:
 
 
 def _compute_recommendations(user_id: int) -> List[Dict[str, Any]]:
+    """Retourne les recommandations pour un utilisateur.
+
+    Lit les matchings précalculés par src.jobs.refresh_all si disponibles,
+    sinon retombe sur le calcul en direct (compatibilité tests).
+
+    Args:
+        user_id: Identifiant de l'utilisateur.
+
+    Returns:
+        Liste des matchings, triés par score décroissant.
+    """
+    if has_precomputed_data():
+        cached_matches, error = get_precomputed_matches(user_id)
+        if not error and cached_matches:
+            offers, _ = get_precomputed_offers()
+            offers_by_id = {}
+            for offer in offers:
+                offer_id = str(offer.get("id") or offer.get("id_offre") or "")
+                if offer_id:
+                    offers_by_id[offer_id] = offer
+
+            matches = []
+            for cached in cached_matches:
+                offer_id = str(cached.get("offer_id") or cached.get("offer_identifier") or "")
+                offer = offers_by_id.get(offer_id, {})
+                details = cached.get("details") or {}
+
+                match = {
+                    "offer_identifier": offer_id,
+                    "global_score": float(cached.get("score") or details.get("global_score") or 0),
+                    "skill_score": float(details.get("skill_score") or 0),
+                    "job_score": float(details.get("job_score") or 0),
+                    "experience_score": float(details.get("experience_score") or 0),
+                    "diploma_score": float(details.get("diploma_score") or 0),
+                    "location_score": float(details.get("location_score") or 0),
+                    "contract_score": float(details.get("contract_score") or 0),
+                    "remote_score": float(details.get("remote_score") or 0),
+                    "matching_skills": cached.get("matching_skills") or details.get("matching_skills") or [],
+                    "missing_skills": cached.get("missing_skills") or details.get("missing_skills") or [],
+                    "explanation": details.get("explanation") or {},
+                    "criterion_details": details.get("criterion_details") or {},
+                    "offer": offer,
+                }
+                matches.append(match)
+
+            matches.sort(key=lambda item: (-float(item.get("global_score") or 0), item.get("offer", {}).get("titre") or ""))
+            return matches
+
     profile = _current_profile_snapshot(user_id)
     weights = _current_matching_weights()
     offers = [_normalize_offer(offer) for offer in _load_local_offers()]
@@ -2044,7 +2101,7 @@ def _render_score_bars(match: Dict[str, Any]) -> str:
             f"{reason_html}"
             f"</div>"
         )
-    return '<div class="score-detail-grid">' + "".join(rows) + "</div>"
+    return '<div style="margin:10px 0 6px"><strong style="font-size:0.9rem;">Sous-scores</strong></div><div class="score-detail-grid">' + "".join(rows) + "</div>"
 
 
 def _render_skills_tags(matching: List[str], missing: List[str]) -> str:
@@ -2084,7 +2141,7 @@ def _render_offer_card(match: Dict[str, Any], show_detail_link: bool = True) -> 
 
     url_html = ""
     if url:
-        url_html = f'<a class="btn" href="{escape(url)}" target="_blank" rel="noopener noreferrer">Voir l\'offre</a>'
+        url_html = f'<a class="btn" href="{escape(url)}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>'
     else:
         url_html = '<span class="muted">Lien indisponible</span>'
 
@@ -2688,9 +2745,31 @@ def recommendations():
     assert user_id is not None
     filters = _recommendation_filters_from_request()
     matches = _compute_recommendations(user_id)
+    cache_status = get_cache_status()
     page_matches, total, page = _filter_and_paginate_matches(matches, filters)
+
+    cache_notice = ""
+    if not has_precomputed_data():
+        cache_notice = (
+            '<div class="status error">Aucun précalcul disponible. '
+            "Lancez <code>python -m src.jobs.refresh_all</code> pour générer les données.</div>"
+        )
+    elif not matches:
+        last_refresh = get_last_refresh_time()
+        if last_refresh:
+            cache_notice = (
+                f'<div class="status">Dernière actualisation: {last_refresh}. '
+                "Aucune offre recommandée pour votre profil.</div>"
+            )
+        else:
+            cache_notice = (
+                '<div class="status">Aucun matching précalculé pour votre profil. '
+                "Les données seront disponibles après la prochaine actualisation.</div>"
+            )
+
     filter_form = render_template_string(
         """
+        {{ cache_notice|safe }}
         <section class="panel">
           <h2>Mes offres</h2>
           <p class="muted">{{ total }} offres triées par score décroissant.</p>
@@ -2710,6 +2789,7 @@ def recommendations():
         """,
         filters=filters,
         total=total,
+        cache_notice=cache_notice,
     )
     cards_section = _recommendation_page(page_matches, filters, total, page)
     return _render_page("Mes offres", filter_form + cards_section)
@@ -2720,14 +2800,23 @@ def recommendations():
 def training_recommendation():
     territory = _normalize_string(request.args.get("territoire"))
     period_days = _parse_int(request.args.get("periode_jours"), 1, 365) or 30
-    offers, error_message = load_normalized_offers()
+
+    if has_precomputed_data():
+        offers, error_message = get_precomputed_offers()
+        territory_options = get_cached_territory_options()
+    else:
+        offers, error_message = load_normalized_offers()
+        territory_options = get_available_territories(offers)
+
     context = build_recommendation_context(offers, territoire=territory or None, periode_jours=period_days)
     context["error_message"] = error_message
     context["territoire"] = territory or ""
-    context["territory_options"] = get_available_territories(offers)
+    context["territory_options"] = territory_options
     context["period_days"] = period_days
     context["page_title"] = "Recommandation de formation"
     context["active_page"] = "training_recommendation"
+    if has_precomputed_data():
+        context["cache_status"] = get_cache_status()
     return render_template("training_recommendation.html", **context)
 
 @user_portal_bp.route("/mes-offres/<offer_id>")
@@ -2775,7 +2864,7 @@ def recommendation_detail(offer_id: str):
     ring_class = _score_ring_class(global_score)
     url_html = ""
     if offer_url:
-        url_html = f'<a class="btn" href="{escape(offer_url)}" target="_blank" rel="noopener noreferrer">Voir l\'offre originale</a>'
+        url_html = f'            <a class="btn" href="{escape(offer_url)}" target="_blank" rel="noopener noreferrer">Voir l’offre originale</a>'
     else:
         url_html = '<span class="muted">Lien indisponible</span>'
 
