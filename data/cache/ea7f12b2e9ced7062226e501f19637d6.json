@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:0722548",
+  "value": {
+    "id": "0722548",
+    "intitule": "Data Engineer Snowflake F/H h/f",
+    "entreprise": "",
+    "territoire": "75 - Paris",
+    "ville": "75 - Paris",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-03-25",
+    "date": "2026-03-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/0722548",
+    "description": "Data Engineer Snowflake F/H Description de poste Big Data, Data Science, Data analyse, Data architecture,IA ... Ça n’a pas de secret pour vous? Que vous commenciez votre carrière professionnelle ou que vous soyez spécialiste de l’une de ces disciplines, intégrer notre communauté Data, c’est l’assurance de progresser, innover, partager, vous certifier et rendre service à nos clients. Rejoignez notre centre d’excellence en innovation à Paris et rendez unique l’expérience digitale de nos clients en travaillant sur des sujets tels que le marketing digital, User eXperience, RPA, data, développement web et mobile, API management ou encore cybersécurité. Fonctions et responsabilités En tant que Data Engineer Snowflake, vous accompagnerez nos clients dans leur transformation data et cloud, en participant à la conception et au déploiement de plateformes analytiques de nouvelle génération sur Snowflake. Votre mission consistera à : -comprendre les enjeux métier et identifier les besoins en transformation de données -modéliser et optimiser les architectures data (Data Warehouse, Data Lakehouse) -développer et industrialiser des pipelines de données ELT performants sur Snowflake -mettre en œuvre des stratégies d’optimisation du stockage, de la réplication et des performances -déployer et superviser des solutions en production en adoptant une approche DevOps -contribuer à la montée en compétences de l’équipe et à la communauté Data interne. En rejoignant CGI, vous bénéficiez notamment d’une offre complète de formations (techniques, métiers, développement personnel,…), de flexibilité grâce à notre accord télétravail (jusqu’à 3 jours de télétravail par semaine), d’une politique de congés avantageuse (27 jours de congés payés, RTT, congés ancienneté et enfant malade,…) et d’un package d’avantages intéressant (régime d’achats d’actions, participation, CSE,...). Qualités requises pour réussir dans ce rôle Profil Bac +5 en informatique / data avec au moins 2 ans d’expérience sur des projets Data Engineering en environnement cloud. Compétences techniques essentielles : -expertise sur Snowflake (optimisation des requêtes, SnowSQL, Snowpipe) -maîtrise d’une ou plusieurs pipelines de données ELT et des outils associés serait un plus (DBT, Fivetran, Matillion, etc.) -maîtrise d’un ou plusieurs outils d’intégration de données serait un plus (Talend, Informatica cloud, Tibco, etc.) -solide expérience SQL et Python pour le développement et l’optimisation des traitements -connaissance des services Cloud (AWS, Azure, GCP) et intégration avec Snowflake -expérience en CI/CD et DevOps (GitLab, Jenkins, Terraform). Serait un plus : -Certifications Snowflake (SnowPro Core, Advanced) -Expérience avec Spark / Scala pour des traitements distribués -Notions avancées en gouvernance et sécurité des données (RBAC, Data Sharing, Masking). CGI est un employeur inclusif et attentif aux candidatures des personnes en situation de handicap, à l’évolution de carrières des hommes et des femmes et au bien-être de nos salariés LGBT+. Notre engagement en faveur de la diversité et de l’inclusion a été reconnu par l’obtention du label recrutement inclusif, décerné par Job in Live, acteur spécialisé dans le recrutement inclusif. Dans un souci d’accessibilité et de clarté, le point médian n’est pas utilisé dans cette annonce. Tous les termes employés se réfèrent aussi bien au genre féminin que masculin. Ensemble, en tant que propriétaires, mettons notre savoir-faire à l’œuvre. La vie chez CGI est ancrée dans l’actionnariat, le travail d’équipe, le respect et un sentiment d’appartenance. Chez nous, vous pourrez exploiter votre plein potentiel parce que… Nous vous invitons à devenir propriétaire dès le jour 1 alors que nous travaillons ensemble à faire de notre rêve une réalité. C’est pourquoi nous nous désignons comme associés de CGI, plutôt que comme employés. Nous tirons profit des retombées de notre succès collectif et contribuons activement à l’orientation et à la stratégie de notre entreprise. Votre travail crée de la valeur. Vous élaborerez des solutions novatrices et développerez des relations durables avec vos collègues et clients, tout en ayant accès à des capacités mondiales pour concrétiser vos idées, saisir de nouvelles opportunités, et bénéficier d’une expertise sectorielle et technologique de pointe. Vous ferez évoluer votre carrière en vous joignant à une entreprise bâtie pour croître et durer. Vous serez soutenus par des leaders qui ont votre santé et bien-être à cœur et qui vous permettront de saisir des occasions afin de parfaire vos compétences et élargir les horizons. Joignez-vous à nous, l’une des plus importantes entreprises de conseil en technologie de l’information (TI) et en management au monde.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Data engineering",
+      "Développement web",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Terraform",
+      "Travail en équipe",
+      "Optimisation des performances",
+      "Analyse de données",
+      "MLOps"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Qualités requises pour réussir dans ce rôle Profil Bac +5 en informatique / data avec au moins 2 ans d’expérience sur des projets Data Engineering en environnement cloud.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:26.710634",
+  "input_hash": "fc65fb1ab1b3fc07a2ba2ac9fbc2f537c434a9550d5cd4009f0acbc49a834d55",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:3202337",
+  "value": {
+    "id": "3202337",
+    "intitule": "Ingénieur développeur C# .net F/H",
+    "entreprise": "Externatic",
+    "territoire": "56 - Lorient",
+    "ville": "56121",
+    "code_postal": "56100",
+    "contrat": "CDI",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3202337",
+    "description": "L'entreprise accompagnée et les missions: Acteur reconnu de l’ingénierie industrielle, cette entreprise conçoit depuis plusieurs décennies des solutions technologiques destinées à optimiser et automatiser les flux logistiques et industriels. Ses équipes imaginent et déploient des systèmes innovants permettant de piloter des unités de production, plateformes logistiques et centres de distribution, en combinant informatique industrielle, automatisation et robotique. Dans le cadre de sa croissance et pour renforcer sonbureau d’études logiciel, l’entreprise recrute un Ingénieur développeur C# .net F/H en CDI à Lorient, avec l’accompagnement du cabinet de recrutement Externatic, spécialiste des métiers IT Vos missions Intégré à une équipe projet au sein du bureau d’études logiciel, vous contribuez à la conception et à l’évolution d’applications informatiques utilisées dans des environnements industriels et logistiques. Vos responsabilités incluent notamment : - Participer au développement et au paramétrage d’applications autour d’un progiciel métier (gestion d’entrepôt, gestion des expéditions, GPAO, gestion commerciale…). - Concevoir et maintenir les composants logiciels et bases de données nécessaires au bon fonctionnement des solutions. - Réaliser les tests techniques et fonctionnels des applications développées. - Contribuer à l’intégration des solutions informatiques chez les clients et accompagner les phases de mise en service. - Collaborer avec les équipes projets (automatisme, informatique industrielle, chefs de projets…) afin de garantir la cohérence globale des systèmes. Des déplacements à la semaine sont à prévoir dans le cadre des projets (30% du temps du travail) Profil: Vous êtes diplômé d’une formation en informatique (Bac+3 à Bac+5) et disposez idéalement d’une première expérience de 2 à 3 ans dans le développement logiciel ou l’informatique industrielle. Sur le plan technique, vous avez une bonne maîtrise de plusieurs environnements parmi : Bases de données et développement SQL, avec une connaissance d’Oracle et PL/SQL. Écosystème Microsoft .NET Outils et technologies complémentaires appréciés : Oracle Forms, Crystal Reports, UML. Technologies web telles que Java / JEE, HTML5, CSS3, Web Services. Des compétences équivalentes dans des environnements proches seront également étudiées. Au-delà des aspects techniques, vous vous distinguez par : votre capacité d’analyse et de synthèse, votre rigueur dans la conduite de projets, votre esprit d’équipe, ainsi que votre sens du service client, essentiel dans des contextes projets industriels. Avantages: Rejoindre cette entreprise, c’est intégrer un groupe industriel international offrant des perspectives d’évolution et la possibilité de travailler sur des projets technologiques variés. Vous bénéficierez notamment de : Un environnement technique stimulant, au cœur de projets d’automatisation et de digitalisation industrielle. Des perspectives d’évolution et de mobilité au sein d’un groupe présent à l’international Un équilibre vie professionnelle / personnelle facilité par un mode de travail hybride. Des dispositifs d’accompagnement et de formation favorisant le développement des compétences. Un package attractif : entre 45Ke et 50Ke comprenant notamment mutuelle, tickets restaurant, primes de mobilité, aides au logement et autres avantages sociaux. L’entreprise mène également une politique active en faveur de la diversité et de l’inclusion, et veille à garantir l’égalité des chances dans ses recrutements.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "SQL",
+      "Pipelines de données",
+      "Analyse de données",
+      "Data Engineering",
+      "Documentation technique",
+      "Résolution de problèmes",
+      "Optimisation des performances",
+      "Tests automatisés",
+      "MLOps"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre de sa croissance et pour renforcer sonbureau d’études logiciel, l’entreprise recrute un Ingénieur développeur C# .net F/H en CDI à Lorient, avec l’accompagnement du cabinet de recrutement Externatic, spécialiste des métiers IT Vos missions Intégré à une équipe projet au sein du bureau d’études logiciel, vous contribuez à la conception et à l’évolution d’applications informatiques utilisées dans des environnements industriels et logistiques.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Des déplacements à la semaine sont à prévoir dans le cadre des projets (30% du temps du travail) Profil: Vous êtes diplômé d’une formation en informatique (Bac+3 à Bac+5) et disposez idéalement d’une première expérience de 2 à 3 ans dans le développement logiciel ou l’informatique industrielle.",
+        "confidence": 0.7
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Des déplacements à la semaine sont à prévoir dans le cadre des projets (30% du temps du travail) Profil: Vous êtes diplômé d’une formation en informatique (Bac+3 à Bac+5) et disposez idéalement d’une première expérience de 2 à 3 ans dans le développement logiciel ou l’informatique industrielle.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 3,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:11.152100",
+  "input_hash": "0aeb94ec65fbc563341252d9d77911a7792c84ca268cba0571a7ddaed779a652",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

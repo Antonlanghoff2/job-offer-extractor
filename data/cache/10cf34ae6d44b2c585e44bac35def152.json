@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3142222",
+  "value": {
+    "id": "3142222",
+    "intitule": "ALTERNANT(E) DATA SCIENTIST - H/F",
+    "entreprise": "COMPAGNIE DES ALPES",
+    "territoire": "73 - Chambéry",
+    "ville": "73065",
+    "code_postal": "73000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3142222",
+    "description": "Description : CONTEXTE : La Compagnie des Alpes Business Unit « Domaines Skiables et Activités Outdoor » a construit depuis 2019 un DATALAKE ÉVOLUTIF qui centralise principalement des DONNÉES MARKETING ET FINANCIÈRES. Celui-ci est progressivement enrichi avec de nouvelles sources (exploitation, énergie, météo) afin d’élargir la vision globale de l’activité et améliorer l’analyse et la prise de décision. Initialement centrée sur le marketing, l’équipe data s’oriente désormais vers des ENJEUX PLUS LARGES COMME LA PERFORMANCE OPÉRATIONNELLE ET ÉNERGÉTIQUE, en exploitant de grands volumes de données au service des stations et de leur exploitation et en accélérant sur l’utilisation de l’IA. Pour accompagner cette dynamique, la CDA recrute un/une Data Scientist en contrat d’alternance. Le/la Data Scientist rejoindra notre équipe basée à Chambéry (73) et reportera à la Responsable Data Science & IA. MISSIONS : * RÉALISER DES ANALYSES DATA ET DES ÉTUDES DE DATA SCIENCE permettant d’éclairer les métiers sur des enjeux marketing, opérationnels et énergétiques. Vous transformerez les grands volumes de données du datalake en insights concrets au service de la performance des stations de ski. * MODÉLISER ET ENRICHIR LES FONCTIONNALITÉS AVANCÉES DU DATALAKE, en co‑construisant avec l’équipe Data les briques analytiques structurantes : segmentation marketing enrichie, indicateurs prédictifs, scoring métier, modélisations exploitation/énergie… * COLLABORER ÉTROITEMENT AVEC LES DATA ENGINEERS, DATA SCIENTISTS ET LES MÉTIERS pour cadrer les besoins, structurer les données nécessaires, concevoir des pipelines analytiques robustes (MLOps) et valoriser les résultats auprès des équipes opérationnelles. * PARTICIPER À DES PROJETS DE TYPE R&D en développant des modèles de machine learning à fort ROI ou en prototypant l’IA générative : prévision d’activité (CA, journées ski), anticipation de comportements clients, optimisation opérationnelle, analyse énergétique, … Vous contribuerez directement à la feuille de route IA de la BU. Vous êtes apte à intervenir dans un environnement challengeant et dynamique, immergé/e au sein d’équipes pluridisciplinaires (Data Science, Marketing, Big Data, Finances, Opérationnel …) auxquelles vous souhaitez faire bénéficier de votre connaissance technique et fonctionnelle. Profil recherché : PROFIL * Vous préparez un Master 2 avec une spécialité : Mathématiques appliquées et Statistiques ou Data Science * Compétences sur les langages : Python, SQL * Une première expérience (alternance ou stages) dans le domaine de la donnée appliquée au marketing serait appréciée, * Appétence pour le marketing. COMPÉTENCES * Rigueur, autonomie, * Très bonnes qualités relationnelles et d’expressions écrite et orale, * Capacités d’analyse et synthèse. Capacités à expliquer la data auprès de personnes non techniques. Notre dynamisme et les projets innovants sur lesquels nous évoluons vous offrirons des opportunités motivantes. Nous saurons vous accompagner dans votre évolution. Déplacement professionnels ponctuels et de courte durée (journée) pour des sessions de travail à Paris ou dans les stations de ski.",
+    "metier": "Data scientist",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "MLOps",
+      "Machine learning",
+      "Python",
+      "SQL",
+      "Vision",
+      "Analyse de données",
+      "Pipelines de données",
+      "Data Engineering"
+    ],
+    "salaire_min": 2019,
+    "salaire_max": 2019,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Profil recherché : PROFIL * Vous préparez un Master 2 avec une spécialité : Mathématiques appliquées et Statistiques ou Data Science * Compétences sur les langages : Python, SQL * Une première expérience (alternance ou stages) dans le domaine de la donnée appliquée au marketing serait appréciée, * Appétence pour le marketing.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:05.443192",
+  "input_hash": "9dbe6101fd23dd5b3a8b8c047a3347baff2120993bd5c41dd76dbf33fabce8d8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

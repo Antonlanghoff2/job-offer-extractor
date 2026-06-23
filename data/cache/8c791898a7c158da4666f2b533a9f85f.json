@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:2141862",
+  "value": {
+    "id": "2141862",
+    "intitule": "Architecte logiciel (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 5e Arrondissement",
+    "ville": "69385",
+    "code_postal": "69005",
+    "contrat": "CDI",
+    "date_creation": "2026-04-30",
+    "date": "2026-04-30",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2141862",
+    "description": "Description du poste :\nFIDUCIAL est le leader des services pluridisciplinaires aux petites entreprises, artisans, commerçants, professions libérales dans les métiers du droit, expertise comptable, banque, conseil financier, informatique, fourniture de bureau et sécurité.\nDans le cadre d'une création de poste, nous recrutons un Architecte logiciel Middleware (h/f) à Lyon 9e en CDI.\nRattaché au DSI, vous travaillez au sein de l'équipe de 5 collaborateurs (3 développeurs, 1 devops et 1 chef de projet). Vos missions sont les suivantes Concevoir et faire évoluer l'architecture des plateformes TIBCO BusinessWorks 6, API manager (Kong) et ETL (Pentaho) en cohérence avec les besoins métiers et les standards de l'entreprise Garantir l'utilisation optimale de ces outils notamment dans le cadre de la facturation électronique et notamment vis à vis du haut niveau de service requis Piloter la maintenance, la supervision et l'optimisation des flux d'intégration Garantir la robustesse, la performance et la sécurité de la plateforme Encadrer et accompagner les équipes de développement sur les outils (support technique, bonnes pratiques, transfert de compétences Assurer une veille technologique sur les solutions d'intégration et proposer des axes d'amélioration Contribuer ponctuellement au développement Java sur des projets spécifiques ou dédiés (ex. outil de suivi des flux)\nDescription du profil :\nTitulaire d'une formation Ingénieur informatique ou généraliste, vous avez une solide expérience professionnelle dans le développement logiciel sur base d'interfaces et à fort trafic (ESB, EDI, Tibco, ETL Vous avez une expérience de 5 ans minimum en développement en Java si possible sur la base d'une architecture micro-services.\nVous avez des capacités à diagnostiquer et à résoudre des problématiques complexes sur la plateforme.\nVous êtes reconnu pour vos compétences relationnelles, pédagogue, capacité à vulgariser et à accompagner les équipes.\nVous êtes curieux, autonome, rigoureux dans vos analyses et vous avez le sens du service.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Java",
+      "Vision",
+      "Data Engineering",
+      "Design patterns"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Titulaire d'une formation Ingénieur informatique ou généraliste, vous avez une solide expérience professionnelle dans le développement logiciel sur base d'interfaces et à fort trafic (ESB, EDI, Tibco, ETL Vous avez une expérience de 5 ans minimum en développement en Java si possible sur la base d'une architecture micro-services.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:31.282635",
+  "input_hash": "85ca611f083c6b23f90c823913b9fc7de78185a4cbc97f79265f70604e48ada7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:1306907",
+  "value": {
+    "id": "1306907",
+    "intitule": "INGÉNIEUR(E) D'EXPLOITATION IT - H/F",
+    "entreprise": "DGA Tech France Travail",
+    "territoire": "33 - Pessac",
+    "ville": "33318",
+    "code_postal": "33600",
+    "contrat": "CDI",
+    "date_creation": "2026-04-10",
+    "date": "2026-04-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1306907",
+    "description": "Description :\n\n\nLES CHALLENGES À RELEVER AVEC VOTRE ÉQUIPE 🚀\n\nMotivé(e) à l’idée de relever un nouveau challenge, vous intégrerez le département « Exploitation » de la Direction « Observabilité Sécurité et Production » qui a pour activité le suivi des traitements applicatifs en production des applicatifs de France Travail.\n\nVous serez dans une équipe composée de 9 ingénieurs de production répartis sur les sites de Castelnau-le-Lez et Pessac.\n\n \n\nLes défis qui vous attendent sont variés et passionnants :\n\n\t* Assurer l'exploitabilité, le suivi et rendre compte du fonctionnement des traitements applicatifs en production (BATCH Legacy et Open)\n\t* Participer à l’amélioration en continu de la stabilité, de la performance et de l’observabilité des traitements applicatifs\n\t* Organiser, planifier et réaliser les opérations techniques et fonctionnelles (sécurisation jalons critiques, weekend technique, weekend de mensuelles)\n\t* Favoriser la synergie en construisant les tableaux de bord avec les équipes Produits et l’équipe Exploitation\n\t* Analyser efficacement les incidents liés aux traitements applicatifs, en identifiant les causes racines et en proposant des solutions durables en collaboration avec les équipes techniques et Produits\n\t* Inscrire les activités du pôle dans la démarche produit de l’entreprise\n\t* Assurer une veille technologique en participant aux instances du programme de Transformation du SI\n\n\n\t\t\n\t\t\nProfil recherché :\n\t\t\n\t\t\nNOUS ATTENDONS VOTRE CANDIDATURE AVEC IMPATIENCE 😍\n\n\t* Vous êtes diplômé(e) d'une formation de niveau Bac+3 à Bac+5\n\t* Vous disposez d'une expérience réussie de 3 à 5 années, sur un poste similaire \n\t* Vous maîtrisez les principes d’intégration continue (Jenkins, Concourse, Gitlab CI/CD) et les technologies Cloud Native (Docker, Kubernetes)\n\t* Vous maîtrisez le scripting Shell, Python et les solutions d'orchestrations de traitements batch\n\t* Vous avez une bonne connaissance de l’écosystème du développement d’application WEB (Java JEE, Javascript/Angular, API REST), des bases de données (SQL, Oracle, Postgre, REDIS, Elastic) et des outils d’observabilité (Grafana, Kibana, Dynatrace)\n\t* Vous êtes à l'aise pour communiquer, vous avez l'habitude d'animer des réunions et ateliers \n\t* Vous êtes autonome et rigoureux(se) \n\t* Vous êtes persévérant(e), force de proposition et de négociation \n\n \n\nVous souhaitez nous rejoindre mais n'avez pas encore développé toutes ces compétences ? Votre envie de contribuer à notre projet et de progresser peut faire la différence. Contactez-nous !\n\n \n\nRéférence offre : 2026-86325\n\n \n\nPLUS QUE QUELQUES ÉTAPES POUR NOUS REJOINDRE ✨\n\n\t* Après nous avoir transmis vos CV et lettre de motivation\n\t* Vous rencontrerez nos managers opérationnels puis notre équipe recrutement\n\nVous êtes curieux(se) ? Motivé(e) par de nouveaux défis ? N'attendez plus et rejoignez vite les femmes et les hommes de la DGA Tech France Travail !\n\nLa DGA Tech de France Travail s’engage pour la diversité : ainsi tous nos postes sont ouverts aux personnes en situation de handicap.\n",
+    "metier": "Analyste d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Application web",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "JavaScript",
+      "Kubernetes",
+      "Python",
+      "SQL",
+      "CI/CD",
+      "Développement web",
+      "Résolution de problèmes",
+      "Veille technologique",
+      "Gestion de projet",
+      "MLOps",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Data Engineering"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes diplômé(e) d'une formation de niveau Bac+3 à Bac+5",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes diplômé(e) d'une formation de niveau Bac+3 à Bac+5",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:29.363954",
+  "input_hash": "3605eddc934440500e5a673d77840a59c3d6dd72a47085f47774f94e79ff8675",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

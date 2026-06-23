@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:3551454",
+  "value": {
+    "id": "3551454",
+    "intitule": "Développeur Java senior (H/F)",
+    "entreprise": "",
+    "territoire": "57 - Metz",
+    "ville": "57463",
+    "code_postal": "57000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3551454",
+    "description": "Qui sommes-nous ? Depuis 2006, chez Versusmind, nous accompagnons les PME et ETI dans leur transformation digitale forts de l'expertise de nos consultants IT. Nous misons sur l'innovation, la collaboration, et l'excellence technique pour créer des solutions sur mesure. Notre promesse : Te proposer des projets stimulants, un cadre bienveillant, et les outils pour grandir techniquement. ________________________________________ Pourquoi nous choisir ? - Impact concret : Tes solutions influencent directement la transformation digitale de nos clients. - Environnement technique riche : Projets variés, outils modernes, et une culture de l'innovation. - Équilibre vie pro/perso : Télétravail jusqu'à 2 jours/semaine, 37 jours de repos/an, et des avantages sociaux complets. Le poste : Où - Metz - Télétravail jusqu'à 2 jours/semaine. Contrat : CDI - Cadre - Temps plein. Salaire : 38 à 42k€. Expérience : 5 ans minimum - Diplôme : BAC+5 ou équivalent. Tes missions - Développer et maintenir des applications Java backend : conception et évolution de fonctionnalités sur des applications métier à forte volumetrie, exposition d'API REST, optimisation de requêtes SQL sur PostgreSQL. - Reprendre et faire évoluer du code legacy : analyser rapidement un existant applicatif important, comprendre les architectures héritées et proposer des solutions pragmatiques sans refonte systématique. - Garantir la qualité du code : participer aux revues de code (Gerrit), appliquer les bonnes pratiques et contribuer à la réduction de la dette technique. - S'intégrer à la chaîne CI/CD : travailler avec Jenkins et Git dans un environnement structuré (cycle en V, certification ISO 27001), avec des processus de mise en production rigoureux. - Assurer une veille technologique sur les évolutions de l'écosystème Java et contribuer à l'amélioration continue des pratiques de l'équipe. Profil recherché : - Tes compétences techniques : maîtrise de Java (17 minimum, Java 21/25 apprécié), Spring Boot, API REST, PostgreSQL (optimisation SQL sur volumes importants), Git, Jenkins, Gerrit. - Ton expérience : 5 ans minimum en développement Java backend en production, avec une vraie expérience sur des applications à fort historique. - Ton autonomie : capable de prendre en main rapidement un périmètre applicatif inconnu, de proposer des solutions sans avoir besoin d'un encadrement quotidien. - Ton confort avec les environnements structurés : à l'aise avec un cycle en V, une documentation rigoureuse et des processus de sécurité stricts. - Un plus : expérience dans des contextes ISO 27001 ou des secteurs réglementés (eau, énergie, industrie, utilities).",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "PostgreSQL",
+      "SQL",
+      "Vue.js",
+      "Maintenance applicative",
+      "Code review",
+      "Design patterns",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": 38000,
+    "salaire_max": 42000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Expérience : 5 ans minimum - Diplôme : BAC+5 ou équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:58.464916",
+  "input_hash": "363fe3e97b6d14c4d11ce0c2002d0204e45cb95090a6a86e5a405080dbbe26a8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

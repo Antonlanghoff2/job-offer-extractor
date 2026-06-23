@@ -1,0 +1,224 @@
+{
+  "key": "trends:39 - Dole",
+  "value": {
+    "territoire": "39 - Dole",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Intelligence artificielle": 2,
+      "Résolution De Problèmes": 2,
+      "Déploiement De Modèles": 1,
+      "Intégration Continue": 1,
+      "MLOps": 1,
+      "Travail En Équipe": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Résolution de problèmes": 2
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intégration continue": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Travail En Équipe",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Travail en équipe": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 2
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Intégration Continue": {
+        "Intégration continue": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Travail En Équipe": {
+        "Travail en équipe": 1
+      }
+    },
+    "metiers": {
+      "Conseiller / Conseillère support technique informatique": 1,
+      "Intégrateur / Intégratrice logiciels métiers": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "MLOps",
+        "Intégration Continue",
+        "Résolution De Problèmes"
+      ],
+      [
+        "Intelligence artificielle",
+        "Travail En Équipe",
+        "Déploiement De Modèles",
+        "Résolution De Problèmes"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4066573",
+        "intitule": "Consultant logiciel ERP H/F",
+        "entreprise": "",
+        "territoire": "39 - Dole",
+        "contrat": "CDI",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4066573"
+      },
+      {
+        "id": "209TBSL",
+        "intitule": "Technicien support et déploiement ERP (F/H) (H/F)",
+        "entreprise": "KALICO INFORMATIQUE",
+        "territoire": "39 - DOLE",
+        "contrat": "CDI",
+        "date": "2026-06-15",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209TBSL"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4066573",
+        "intitule": "Consultant logiciel ERP H/F",
+        "entreprise": "",
+        "territoire": "39 - Dole",
+        "contrat": "CDI",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4066573"
+      },
+      {
+        "id": "209TBSL",
+        "intitule": "Technicien support et déploiement ERP (F/H) (H/F)",
+        "entreprise": "KALICO INFORMATIQUE",
+        "territoire": "39 - DOLE",
+        "contrat": "CDI",
+        "date": "2026-06-15",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209TBSL"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:05:19.136645",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

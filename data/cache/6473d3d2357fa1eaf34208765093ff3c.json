@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:2969179",
+  "value": {
+    "id": "2969179",
+    "intitule": "Analyste scientifique des données (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 8e Arrondissement",
+    "ville": "75108",
+    "code_postal": "75008",
+    "contrat": "CDI",
+    "date_creation": "2026-05-23",
+    "date": "2026-05-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2969179",
+    "description": "PRÉSENTATION DE L’ORGANISATION\n\nIntégrez une équipe dynamique et engagée dans la transition énergétique. Rejoignez les 48 agents qui mettent leur expertise au service des 192 collectivités adhérentes, et qui contribuent à faire du Sigeif un acteur public de référence des énergies en Île-de-France.\n\n**Chaque jour, agissez à nos côtés pour un territoire plus durable !**\n\nDESCRIPTION DES MISSIONS\n\nSous l’autorité du Directeur des services techniques, vous assurez la mise en œuvre de la stratégie d’analyse et de visualisation des données internes et externes du Syndicat (hors cartographie).\n\n- Analyser et traiter des données pour construire et diffuser des rapports\n\nEn collaboration avec les collègues du service numérique, vous exploitez les données stockées au sein de l’entrepôt de données du Syndicat. Vous construisez et automatisez les différents traitements de données et accompagnez les services opérationnels dans la définition de leurs besoins auxquels vous serez amené à répondre. Afin d’aider à la prise de décision en interne et en externe, vous élaborez des analyses de jeux de données, en vous assurant de produire des rapports aussi bien esthétiques que pédagogiques.\n\n- Procéder à une amélioration continue des outils numériques\n\nPour mener à bien le déploiement de la datavisualisation, vous administrez et faites évoluer les outils tout en prenant en compte les spécificités du Sigeif et de son territoire. En collaboration avec l’administrateur de données, la géomaticienne et le responsable informatique, vous contribuez à intégrer d’éventuels nouveaux outils au sein du système d’information du Syndicat.\n\nEn parallèle, vous veillez également à automatiser les processus de sauvegarde et de restauration afin de garantir la sécurité et l’intégrité des données.\n\nPROFIL RECHERCHÉ\n\n- Titulaire d’un bac + 5 en analyse de données, vous maîtrisez notamment les techniques statistiques, les techniques d’exploration de données et l’informatique décisionnelle (DigDash et/ou Tableau). Vous possédez également des notions juridiques et réglementaires en matière de gestion des données (usage, délais, durée de vie…).\n\n- Vous pratiquez sur des bases de données relationnelles, et plus particulièrement\nPostgreSql,PostGis, 4D, et êtes à l’aise avec les langages informatiques tels que SQL, Python et JavaScript.\n\n- Vous êtes dotés d’un esprit analytique et de synthèse.\n\n- Vous faîtes preuve d’une aisance relationnelle et rédactionnelle. Vous êtes rigoureux, réactif et force de proposition.\n\n- Des connaissances du logiciel FME (ou autre ETL) seraient appréciées.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Délais",
+      "JavaScript",
+      "PostgreSQL",
+      "Python",
+      "SQL",
+      "Automatisation de processus",
+      "Airflow",
+      "Pipelines de données",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 48000,
+    "salaire_max": 48000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac + 5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Titulaire d’un bac + 5 en analyse de données, vous maîtrisez notamment les techniques statistiques, les techniques d’exploration de données et l’informatique décisionnelle (DigDash et/ou Tableau).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:41.811126",
+  "input_hash": "7740d48bdb4c689eaa8e0bca47a9a60613ba9c613e609b4ed328a90bb4f7eb1f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

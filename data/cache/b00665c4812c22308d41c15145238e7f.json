@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:0886234",
+  "value": {
+    "id": "0886234",
+    "intitule": "Ingénieur / Ingénieure système réseau informatique (H/F)",
+    "entreprise": "",
+    "territoire": "94 - Kremlin-Bicêtre",
+    "ville": "94043",
+    "code_postal": "94270",
+    "contrat": "CDI",
+    "date_creation": "2026-03-28",
+    "date": "2026-03-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/0886234",
+    "description": "Description du poste :\nEn tant que Lead SRE Plateforme, vous concevez, déployez et opérez l'offre de services qui rend la plateforme utilisable. Vos missions incluent :\n-Isolation & performances : garantir l'isolation multi-tenant, la résilience et les performances de la plateforme en production ;\n-Catalogue de services managés : bases de données, caches, queues, secrets - déploiement régional puis extension multi-régions en collaboration avec en collaboration avec les équipes Storage et Compute ;\n-Landing zone multi-tenant : namespaces, quotas, RBAC, templates, CI/CD - régional puis multi-régions ;\n-Automatisation : industrialiser la plateforme pour garantir la reproductibilité des déploiements et réduire la charge d'exploitation ;\n-Services transverses : mettre en œuvre observabilité as a service (métriques, logs, traces) et secrets as a service ;\n-Gestion d'incidents : participation niveau N3/N4 et astreintes ;\n-Pilotage : conduire l'exploitation par les SLO, error budgets et RETEX ;\n-Équipe : encadrer techniquement les ingénieurs plateforme ; contribuer au recrutement et à la montée en compétences ;\n-Documentation & formation : rédiger la documentation et accompagner les équipes utilisatrices.\nDescription du profil :\nNous cherchons SRE plateforme (10+ ans d'expérience), capable de construire et opérer des services managés robustes et d'offrir une expérience développeur de qualité.\nVous possédez de l'expérience professionnelle :\n-Exploitation SRE de plateforme cloud à l'échelle : gestion d'incidents, astreintes, pilotage par SLO/SLI, RETEX ;\n-Ingénierie plateforme : conception et exploitation de services managés sur Kubernetes (operators, Helm, Kustomize), CI/CD (GitLab CI, ArgoCD ou équivalents), landing zones multi-tenant ;\n-Déploiements multi-sites avec approche automatisée et reproductible.\nVous disposez également des compétences techniques suivantes :\n-Expertise d'au moins un langage d'infrastructure-as-code (e.g., Terraform Expertise d'une stack d'observabilité (Prometheus, Grafana, Loki ou équivalent), et des outils/méthodes de métrologies ;\n-Maîtrise d'au moins un langage de programmation (Go, Python ou équivalent), capacité à contribuer aux operators et à l'outillage plateforme ;\n-Très bonne compréhension des enjeux de systèmes distribués multi-regions (cohérence, consensus, réplication, CAP) et capacité à dialoguer avec une équipe experte ;\n-Très bonne connaissance des questions de sécurité, capacité à dialoguer avec une chaîne SSI.\nVous êtes :\n-Rigoureux : Capacité à concevoir et maintenir des infrastructures critiques avec une attention méticuleuse aux détails, particulièrement dans les aspects de sécurité et de reproductibilité ;\n-Innovant : Capacité à proposer des solutions techniques avancées et à implémenter des bonnes pratiques ;\n-Ancré dans une culture d'analyse factuelle et d'amélioration continue ;\nAtouts appréciés :\n-Expérience d'environnements multi-sites / multi-régions ;\n-Expérience avec des environnements air-gapped ;\n-Connaissance de SecNumCloud et IGI 1300 ;\n-Contributions open source.",
+    "metier": "Expert / Experte systèmes et réseaux informatiques",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Python",
+      "Terraform",
+      "Cybersécurité",
+      "Résolution de problèmes",
+      "API",
+      "Optimisation des performances",
+      "Architecture microservices",
+      "Sécurité informatique",
+      "Data Engineering",
+      "Design patterns",
+      "Backend"
+    ],
+    "salaire_min": 4000,
+    "salaire_max": 4000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "CAP",
+        "level": 3,
+        "required": true,
+        "source_sentence": "Très bonne compréhension des enjeux de systèmes distribués multi-regions (cohérence, consensus, réplication, CAP) et capacité à dialoguer avec une équipe experte ;",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "11 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:30.454340",
+  "input_hash": "2af43810003363ff2f654aad7250c3add8cfebabf1c21e629edd742d69e25494",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

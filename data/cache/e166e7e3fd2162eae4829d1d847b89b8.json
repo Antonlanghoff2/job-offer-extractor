@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:2816578",
+  "value": {
+    "id": "2816578",
+    "intitule": "Alternance Développeur - Saint-Laurent-du-Var (H/F)",
+    "entreprise": "",
+    "territoire": "06 - Saint-Laurent-du-Var",
+    "ville": "06123",
+    "code_postal": "06700",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-20",
+    "date": "2026-05-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2816578",
+    "description": "Description :\nL'ISCOD, un des leaders dans la formation en Digital Learning, recherche pour une ESN, un(e) développeur (H/F)en contrat d'apprentissage. Ce poste vous permettra de développer des compétences clés tout en préparant l'une de nos formations diplômantes, reconnues par l'État, de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3, ou Mastère/Bac+5).\nMissions :\nDévelopper et optimiser nos solutions ERP sous WindevAssurer la maintenance et l'évolution des applications existantesCollaborer avec les équipes métiers pour répondre aux besoins spécifiquesGérer des projets en toute autonomie, de l'analyse à la mise en production\nProfil :\nExpérience confirmée en développement ERPMaîtrise de Windev et SQLAutonomie, rigueur et sens de l'organisationCapacité à travailler en équipe et force de propositionPourquoi Rejoindre l'ISCOD ?\nÉtudes financées : Formation prise en charge à 100% par l'entreprise.\nRémunération : Selon votre niveau d'études et votre âge.\nEnvironnement de travail stimulant : Intégrez une équipe dynamique qui valorise l'agilité et l'innovation.\nDéveloppement professionnel : Bénéficiez d'un parcours d'intégration complet, d'accompagnements personnalisés et d'opportunités de formations continues.\nVous êtes intéressé(e) par cette offre d'emploi en alternance ?\nPostulez dès maintenant et rejoignez nous !\n\n",
+    "metier": "Aquaculteur / Aquacultrice",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "SQL",
+      "Déploiement de modèles",
+      "MLOps",
+      "API",
+      "Backend",
+      "Pipelines de données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Ce poste vous permettra de développer des compétences clés tout en préparant l'une de nos formations diplômantes, reconnues par l'État, de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3, ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Ce poste vous permettra de développer des compétences clés tout en préparant l'une de nos formations diplômantes, reconnues par l'État, de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3, ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Ce poste vous permettra de développer des compétences clés tout en préparant l'une de nos formations diplômantes, reconnues par l'État, de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3, ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Ce poste vous permettra de développer des compétences clés tout en préparant l'une de nos formations diplômantes, reconnues par l'État, de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3, ou Mastère/Bac+5).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:16.097734",
+  "input_hash": "676b111942433eceae14e8d85a2d2909428b491eb37c13a83e9f49b4e502f8e5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

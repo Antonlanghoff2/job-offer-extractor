@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3553978",
+  "value": {
+    "id": "3553978",
+    "intitule": "Data manager (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3553978",
+    "description": "Description du poste :\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\nDescription de l'entreprise\nSopra Steria , acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative. Sopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2024, le Groupe a réalisé un chiffre d'affaires de 5,8 milliards d'euros.\nThe world is how we shape it*\nDescription du poste\nVous intégrez le domaine DATA, un service dynamique en forte expansion dans notre vertical Aeroline regroupant nos grands comptes aéronautique et spatial.\nVous contribuez à apporter de la valeur à nos clients en adoptant une posture de partenaire et en répondant aux besoins métiers grâce à des projets E2E allant de la définition du besoin et l'inception, aux conseils techniques.\nVotre rôle et vos missions\nVous participez à des projets datas innovants en ayant un réel impact client et en fonction de vos qualifications, Développeur, Architecte, Business Analyst, chef de projet, Scrum Master, Data Engineer ou Data Scientist, vous réalisez les activités suivantes Participation aux phases de développement d'applications Big Data (ETL, création de pipelines, développement de dashboards, gestion et administration des flux de données)\n- Traitement des problématiques full-stack sur des technologies JAVA\n- Conception architectures innovantes, basées sur AWS ou Azure\n- Encadrement une équipe, assurer l'amélioration continue du projet et de ses membres\n- Travailler avec des méthodologies : SAFe, DevOps\nQualifications\nDiplômé(e) d'une Ecole d'Ingénieurs ou équivalent, idéalement avec une spécialisation dans le domaine de la data, vous avez plusieurs expériences en ingénierie de la donnée.\nVous maîtrisez différentes technologies telles que Python, Elastic Search, Hadoop, Spark, Google Cloud Al Platform ou encore Java.\nVous avez le sens du collectif, vous aimez partager et créer des synergies au sein de votre équipe.\nVous êtes autonome, curieux(se) et proactif(ve).\nVous savez vous exprimer aisément en Anglais dans un environnement professionnel.\nInformations supplémentaires\n* Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n* Un package avantages intéressant : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation.\n* Un accompagnement individualisé avec un mentor.\n* Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.\n* Plusieurs centaines de formations accessibles en toute autonomie depuis l'app mobile avec Sopra Steria Academy.\n* L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore Employeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les profils.***",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Aéronautique",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "Elasticsearch",
+      "Data Engineering",
+      "Google Cloud",
+      "Analyse de données",
+      "Model drift"
+    ],
+    "salaire_min": 51000,
+    "salaire_max": 51000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Vous participez à des projets datas innovants en ayant un réel impact client et en fonction de vos qualifications, Développeur, Architecte, Business Analyst, chef de projet, Scrum Master, Data Engineer ou Data Scientist, vous réalisez les activités suivantes Participation aux phases de développement d'applications Big Data (ETL, création de pipelines, développement de dashboards, gestion et administration des flux de données)",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:28.893698",
+  "input_hash": "126fbe0f8eeba70565e2fff326621a52ec727e2eafb4d7293d223f0121dacc26",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -34,6 +34,15 @@ from src.services.cv_parser import parse_cv_file
 from src.services.formation_recommendation import build_recommendation_context
 from src.services.matching_service import compute_match, normalize_skill_name
 from src.services.offer_repository import get_available_territories, load_normalized_offers
+from src.cache_reader import (
+    get_precomputed_offers,
+    get_precomputed_matches,
+    get_precomputed_trends,
+    get_territory_options as get_cached_territory_options,
+    get_cache_status,
+    has_precomputed_data,
+    get_last_refresh_time,
+)
 
 try:  # pragma: no cover - imported by Flask when installed
     from flask import flash
@@ -327,6 +336,107 @@ BASE_TEMPLATE = """
     .pairs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
     @media (max-width: 920px) {
       .grid, .grid-3, .pairs, .dash-grid { grid-template-columns: 1fr; }
+    }
+    .score-ring {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      color: white;
+    }
+    .score-ring--high { background: linear-gradient(135deg, #13795b, #1a9d74); }
+    .score-ring--mid { background: linear-gradient(135deg, #c78a1e, #e0a82e); }
+    .score-ring--low { background: linear-gradient(135deg, #bb3e3e, #d45555); }
+    .score-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 12px 0;
+    }
+    .score-bar-item {
+      display: grid;
+      gap: 4px;
+    }
+    .score-bar-item__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.85rem;
+    }
+    .score-bar-item__label {
+      font-weight: 700;
+      color: var(--text);
+    }
+    .score-bar-item__value {
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+    }
+    .score-bar-track {
+      height: 8px;
+      border-radius: 999px;
+      background: #e8eef5;
+      overflow: hidden;
+    }
+    .score-bar-fill {
+      height: 100%;
+      border-radius: inherit;
+      transition: width 0.3s ease;
+    }
+    .score-bar-fill--high { background: linear-gradient(90deg, #13795b, #1a9d74); }
+    .score-bar-fill--mid { background: linear-gradient(90deg, #c78a1e, #e0a82e); }
+    .score-bar-fill--low { background: linear-gradient(90deg, #bb3e3e, #d45555); }
+    .score-bar-fill--absent { background: #d8e2ec; }
+    .skill-tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .skill-tag--match {
+      background: #e8f7f0;
+      color: #13795b;
+      border: 1px solid #b8e4d0;
+    }
+    .skill-tag--missing {
+      background: #fdf0f0;
+      color: #bb3e3e;
+      border: 1px solid #f0c4c4;
+    }
+    .offer-card__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .offer-card__header-text {
+      flex: 1;
+      min-width: 0;
+    }
+    .offer-card__detail-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+    .offer-card__detail-link:hover {
+      text-decoration: underline;
+    }
+    .criterion-reason {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-style: italic;
     }
     @media (max-width: 1100px) {
       .site-header__inner {
@@ -1831,6 +1941,54 @@ def _persist_match(user_id: int, match: Dict[str, Any]) -> None:
 
 
 def _compute_recommendations(user_id: int) -> List[Dict[str, Any]]:
+    """Retourne les recommandations pour un utilisateur.
+
+    Lit les matchings précalculés par src.jobs.refresh_all si disponibles,
+    sinon retombe sur le calcul en direct (compatibilité tests).
+
+    Args:
+        user_id: Identifiant de l'utilisateur.
+
+    Returns:
+        Liste des matchings, triés par score décroissant.
+    """
+    if has_precomputed_data():
+        cached_matches, error = get_precomputed_matches(user_id)
+        if not error and cached_matches:
+            offers, _ = get_precomputed_offers()
+            offers_by_id = {}
+            for offer in offers:
+                offer_id = str(offer.get("id") or offer.get("id_offre") or "")
+                if offer_id:
+                    offers_by_id[offer_id] = offer
+
+            matches = []
+            for cached in cached_matches:
+                offer_id = str(cached.get("offer_id") or cached.get("offer_identifier") or "")
+                offer = offers_by_id.get(offer_id, {})
+                details = cached.get("details") or {}
+
+                match = {
+                    "offer_identifier": offer_id,
+                    "global_score": float(cached.get("score") or details.get("global_score") or 0),
+                    "skill_score": float(details.get("skill_score") or 0),
+                    "job_score": float(details.get("job_score") or 0),
+                    "experience_score": float(details.get("experience_score") or 0),
+                    "diploma_score": float(details.get("diploma_score") or 0),
+                    "location_score": float(details.get("location_score") or 0),
+                    "contract_score": float(details.get("contract_score") or 0),
+                    "remote_score": float(details.get("remote_score") or 0),
+                    "matching_skills": cached.get("matching_skills") or details.get("matching_skills") or [],
+                    "missing_skills": cached.get("missing_skills") or details.get("missing_skills") or [],
+                    "explanation": details.get("explanation") or {},
+                    "criterion_details": details.get("criterion_details") or {},
+                    "offer": offer,
+                }
+                matches.append(match)
+
+            matches.sort(key=lambda item: (-float(item.get("global_score") or 0), item.get("offer", {}).get("titre") or ""))
+            return matches
+
     profile = _current_profile_snapshot(user_id)
     weights = _current_matching_weights()
     offers = [_normalize_offer(offer) for offer in _load_local_offers()]
@@ -1880,48 +2038,145 @@ def _build_query_string(params: Dict[str, Any]) -> str:
     return urlencode({key: value for key, value in params.items() if value not in (None, "")})
 
 
+def _score_bar_class(score: float) -> str:
+    if score >= 70:
+        return "high"
+    if score >= 40:
+        return "mid"
+    return "low"
+
+
+def _score_ring_class(score: float) -> str:
+    if score >= 70:
+        return "score-ring--high"
+    if score >= 40:
+        return "score-ring--mid"
+    return "score-ring--low"
+
+
+_CRITERION_LABELS = {
+    "competences": "Compétences",
+    "metier": "Métier",
+    "experience": "Expérience",
+    "diplome": "Diplôme",
+    "localisation": "Localisation",
+    "salaire": "Salaire",
+    "contrat": "Contrat",
+    "teletravail": "Télétravail",
+}
+
+
+def _render_score_bars(match: Dict[str, Any]) -> str:
+    sous_scores = match.get("sous_scores") or {}
+    criterion_details = match.get("criterion_details") or {}
+    if not sous_scores:
+        sous_scores = {}
+        for key in _CRITERION_LABELS:
+            score_val = float(match.get(f"{key}_score") or 0)
+            sous_scores[key] = {"score": score_val, "statut": "evalue" if score_val else "champ_absent"}
+    rows = []
+    for key, label in _CRITERION_LABELS.items():
+        info = sous_scores.get(key, {})
+        score = info.get("score")
+        statut = info.get("statut", "evalue")
+        details = (criterion_details.get(key) or {})
+        reason = details.get("reason") or ""
+        if score is None or statut == "champ_absent":
+            bar_class = "absent"
+            value_display = "—"
+            width = 0
+        else:
+            score_f = float(score)
+            bar_class = _score_bar_class(score_f)
+            value_display = f"{score_f:.0f}/100"
+            width = max(0, min(100, score_f))
+        reason_html = f'<div class="criterion-reason">{escape(reason)}</div>' if reason else ""
+        rows.append(
+            f'<div class="score-bar-item">'
+            f'<div class="score-bar-item__head">'
+            f'<span class="score-bar-item__label">{escape(label)}</span>'
+            f'<span class="score-bar-item__value">{value_display}</span>'
+            f"</div>"
+            f'<div class="score-bar-track"><div class="score-bar-fill score-bar-fill--{bar_class}" style="width:{width}%"></div></div>'
+            f"{reason_html}"
+            f"</div>"
+        )
+    return '<div style="margin:10px 0 6px"><strong style="font-size:0.9rem;">Sous-scores</strong></div><div class="score-detail-grid">' + "".join(rows) + "</div>"
+
+
+def _render_skills_tags(matching: List[str], missing: List[str]) -> str:
+    parts = []
+    if matching:
+        parts.append('<div style="margin-bottom:6px"><strong style="font-size:0.85rem;color:var(--success)">Compétences communes</strong></div>')
+        parts.append('<div class="chips">')
+        for skill in matching:
+            parts.append(f'<span class="skill-tag skill-tag--match">{escape(skill)}</span>')
+        parts.append("</div>")
+    if missing:
+        parts.append('<div style="margin:8px 0 6px"><strong style="font-size:0.85rem;color:var(--danger)">Compétences manquantes</strong></div>')
+        parts.append('<div class="chips">')
+        for skill in missing[:10]:
+            parts.append(f'<span class="skill-tag skill-tag--missing">{escape(skill)}</span>')
+        parts.append("</div>")
+    return "".join(parts)
+
+
+def _render_offer_card(match: Dict[str, Any], show_detail_link: bool = True) -> str:
+    offer = match.get("offer") or {}
+    explanation = match.get("explanation") or {}
+    global_score = float(match.get("global_score") or 0)
+    score_int = int(round(global_score))
+    ring_class = _score_ring_class(global_score)
+    url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
+    offer_id = str(match.get("offer_identifier") or "")
+    detail_url = url_for("user_portal.recommendation_detail", offer_id=offer_id) if offer_id else None
+    matching_skills = match.get("matching_skills") or explanation.get("matching_skills") or []
+    missing_skills = match.get("missing_skills") or explanation.get("missing_skills") or []
+    summary = explanation.get("summary") or ""
+    detail_parts = explanation.get("details") or []
+
+    detail_link_html = ""
+    if show_detail_link and detail_url:
+        detail_link_html = f'<a class="offer-card__detail-link" href="{escape(detail_url)}">Voir le détail du match →</a>'
+
+    url_html = ""
+    if url:
+        url_html = f'<a class="btn" href="{escape(url)}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>'
+    else:
+        url_html = '<span class="muted">Lien indisponible</span>'
+
+    return (
+        f'<article class="offer-card">'
+        f'<div class="offer-card__header">'
+        f'<div class="score-ring {ring_class}">{score_int}</div>'
+        f'<div class="offer-card__header-text">'
+        f'<h3 class="offer-title">{escape(offer.get("titre") or "Offre sans titre")}</h3>'
+        f'<div class="meta">'
+        f'<span>{escape(offer.get("entreprise") or "Entreprise non renseignée")}</span>'
+        f'<span>{escape(offer.get("lieux") and ", ".join(offer.get("lieux")) or "Lieu non renseigné")}</span>'
+        f'<span>{escape(offer.get("contrat") or "Contrat non renseigné")}</span>'
+        f'<span>{escape(offer.get("teletravail") or "Télétravail non renseigné")}</span>'
+        f'<span>{escape(offer.get("source") or "Source non renseignée")}</span>'
+        f"</div>"
+        f"{detail_link_html}"
+        f"</div>"
+        f"</div>"
+        f'{_render_score_bars(match)}'
+        f'{_render_skills_tags(matching_skills, missing_skills)}'
+        f'<div class="explain" style="margin-top:10px">'
+        f'<p>{escape(summary)}</p>'
+        f'{"".join(f"<p>{escape(part)}</p>" for part in detail_parts) if detail_parts else ""}'
+        f"</div>"
+        f'<div class="actions" style="margin-top:12px">{url_html}</div>'
+        f"</article>"
+    )
+
+
 def _recommendation_page(matches: List[Dict[str, Any]], filters: Dict[str, Any], total: int, page: int) -> str:
     if not matches:
         cards_html = "<div class='muted'>Aucune offre ne correspond à cette recherche.</div>"
     else:
-        cards = []
-        for match in matches:
-            offer = match["offer"]
-            explanation = match.get("explanation", {})
-            url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
-            cards.append(
-                f"""
-                <article class="offer-card">
-                  <h3 class="offer-title">{escape(offer.get('titre') or 'Offre sans titre')}</h3>
-                  <div class="meta">
-                    <span>{escape(offer.get('entreprise') or 'Entreprise non renseignée')}</span>
-                    <span>{escape(offer.get('lieux') and ', '.join(offer.get('lieux')) or 'Lieu non renseigné')}</span>
-                    <span>{escape(offer.get('contrat') or 'Contrat non renseigné')}</span>
-                    <span>{escape(offer.get('teletravail') or 'Télétravail non renseigné')}</span>
-                    <span>{escape(offer.get('source') or 'Source non renseignée')}</span>
-                    <span>Score {float(match.get('global_score') or 0):.0f}/100</span>
-                  </div>
-                  <div class="small">
-                    Sous-scores: compétences {float(match.get('skill_score') or 0):.0f}, métier {float(match.get('job_score') or 0):.0f}, expérience {float(match.get('experience_score') or 0):.0f}, diplôme {float(match.get('diploma_score') or 0):.0f}, localisation {float(match.get('location_score') or 0):.0f}, salaire {float(match.get('salary_score') or 0):.0f}, contrat {float(match.get('contract_score') or 0):.0f}, télétravail {float(match.get('remote_score') or 0):.0f}.
-                    <br>
-                    Compétences communes: {escape(', '.join(match.get('matching_skills') or []) or 'aucune')}
-                    <br>
-                    Compétences manquantes: {escape(', '.join(match.get('missing_skills') or []) or 'aucune')}
-                    <br>
-                    Localisation: {escape((match.get('criterion_details') or {}).get('localisation', {}).get('reason') or 'non précisée')}
-                    <br>
-                    Salaire: {escape((match.get('criterion_details') or {}).get('salaire', {}).get('reason') or 'non précisé')}
-                  </div>
-                  <div class="explain">
-                    {escape(explanation.get('summary') or '')}
-                    {"<br>" + escape(' '.join(explanation.get('details') or [])) if explanation.get('details') else ''}
-                  </div>
-                  <div class="actions" style="margin-top: 10px;">
-                    {f"<a class='btn' href='{escape(url)}' target='_blank' rel='noopener noreferrer'>Voir l’offre</a>" if url else "<span class='muted'>Lien indisponible</span>"}
-                  </div>
-                </article>
-                """
-            )
+        cards = [_render_offer_card(match) for match in matches]
         cards_html = "".join(cards)
     total_pages = max((total + filters["per_page"] - 1) // filters["per_page"], 1) if total else 0
     prev_url = None
@@ -2490,9 +2745,31 @@ def recommendations():
     assert user_id is not None
     filters = _recommendation_filters_from_request()
     matches = _compute_recommendations(user_id)
+    cache_status = get_cache_status()
     page_matches, total, page = _filter_and_paginate_matches(matches, filters)
+
+    cache_notice = ""
+    if not has_precomputed_data():
+        cache_notice = (
+            '<div class="status error">Aucun précalcul disponible. '
+            "Lancez <code>python -m src.jobs.refresh_all</code> pour générer les données.</div>"
+        )
+    elif not matches:
+        last_refresh = get_last_refresh_time()
+        if last_refresh:
+            cache_notice = (
+                f'<div class="status">Dernière actualisation: {last_refresh}. '
+                "Aucune offre recommandée pour votre profil.</div>"
+            )
+        else:
+            cache_notice = (
+                '<div class="status">Aucun matching précalculé pour votre profil. '
+                "Les données seront disponibles après la prochaine actualisation.</div>"
+            )
+
     filter_form = render_template_string(
         """
+        {{ cache_notice|safe }}
         <section class="panel">
           <h2>Mes offres</h2>
           <p class="muted">{{ total }} offres triées par score décroissant.</p>
@@ -2512,6 +2789,7 @@ def recommendations():
         """,
         filters=filters,
         total=total,
+        cache_notice=cache_notice,
     )
     cards_section = _recommendation_page(page_matches, filters, total, page)
     return _render_page("Mes offres", filter_form + cards_section)
@@ -2522,14 +2800,23 @@ def recommendations():
 def training_recommendation():
     territory = _normalize_string(request.args.get("territoire"))
     period_days = _parse_int(request.args.get("periode_jours"), 1, 365) or 30
-    offers, error_message = load_normalized_offers()
+
+    if has_precomputed_data():
+        offers, error_message = get_precomputed_offers()
+        territory_options = get_cached_territory_options()
+    else:
+        offers, error_message = load_normalized_offers()
+        territory_options = get_available_territories(offers)
+
     context = build_recommendation_context(offers, territoire=territory or None, periode_jours=period_days)
     context["error_message"] = error_message
     context["territoire"] = territory or ""
-    context["territory_options"] = get_available_territories(offers)
+    context["territory_options"] = territory_options
     context["period_days"] = period_days
     context["page_title"] = "Recommandation de formation"
     context["active_page"] = "training_recommendation"
+    if has_precomputed_data():
+        context["cache_status"] = get_cache_status()
     return render_template("training_recommendation.html", **context)
 
 @user_portal_bp.route("/mes-offres/<offer_id>")
@@ -2544,18 +2831,139 @@ def recommendation_detail(offer_id: str):
         explanation = json.loads(match["explanation_json"] or "{}")
     except json.JSONDecodeError:
         explanation = {}
+    offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
+    if not offer and isinstance(match.get("offer"), dict):
+        offer = match.get("offer")
+    offer_url = _offer_fallback_url(offer, offer_id)
+    global_score = float(explanation.get("global_score") or match.get("global_score") or 0)
+    matching_skills = explanation.get("matching_skills") or []
+    missing_skills = explanation.get("missing_skills") or []
+    summary = explanation.get("summary") or ""
+    detail_lines = explanation.get("details") or []
+    criterion_details = explanation.get("criterion_details") or {}
+    sous_scores = explanation.get("subscores") or {}
+    weights = explanation.get("weights") or {}
+
+    match_dict = {
+        "offer": offer,
+        "global_score": global_score,
+        "explanation": explanation,
+        "matching_skills": matching_skills,
+        "missing_skills": missing_skills,
+        "criterion_details": criterion_details,
+        "sous_scores": {},
+    }
+    for key, label in _CRITERION_LABELS.items():
+        score_val = sous_scores.get(key)
+        if score_val is not None:
+            match_dict["sous_scores"][key] = {"score": float(score_val), "statut": "evalue"}
+        else:
+            match_dict["sous_scores"][key] = {"score": None, "statut": "champ_absent"}
+
+    score_int = int(round(global_score))
+    ring_class = _score_ring_class(global_score)
+    url_html = ""
+    if offer_url:
+        url_html = f'            <a class="btn" href="{escape(offer_url)}" target="_blank" rel="noopener noreferrer">Voir l’offre originale</a>'
+    else:
+        url_html = '<span class="muted">Lien indisponible</span>'
+
+    weight_rows = []
+    for key, label in _CRITERION_LABELS.items():
+        w = weights.get(key)
+        if w is not None:
+            weight_rows.append(f'<tr><td>{escape(label)}</td><td style="text-align:right;font-variant-numeric:tabular-nums">{float(w):.0f}%</td></tr>')
+    weight_table = ""
+    if weight_rows:
+        weight_table = (
+            '<table style="width:100%;border-collapse:collapse;font-size:0.9rem;margin-top:8px">'
+            + "".join(weight_rows)
+            + "</table>"
+        )
+
     content = render_template_string(
         """
         <section class="panel">
-          <h2>Détail de la recommandation</h2>
-          <p class="muted">{{ explanation.get('summary') }}</p>
-          <pre style="white-space: pre-wrap; background: #f7fbff; border: 1px solid var(--line); padding: 12px; border-radius: 8px;">{{ explanation|tojson(indent=2) }}</pre>
-          <div class="actions">
-            <a class="btn secondary" href="{{ url_for('user_portal.recommendations') }}">Retour</a>
+          <div class="offer-card__header">
+            <div class="score-ring {{ ring_class }}">{{ score_int }}</div>
+            <div class="offer-card__header-text">
+              <h2 style="margin:0 0 6px">{{ offer_title }}</h2>
+              <div class="meta">
+                <span>{{ offer_company }}</span>
+                <span>{{ offer_location }}</span>
+                <span>{{ offer_contract }}</span>
+                <span>{{ offer_source }}</span>
+              </div>
+              <p class="muted" style="margin:8px 0 0">{{ summary }}</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Détail du score</h2>
+          {{ score_bars|safe }}
+        </section>
+
+        <section class="grid">
+          <section class="panel">
+            <h2>Compétences communes</h2>
+            {% if matching_skills %}
+            <div class="chips">
+              {% for skill in matching_skills %}<span class="skill-tag skill-tag--match">{{ skill }}</span>{% endfor %}
+            </div>
+            {% else %}
+            <div class="muted">Aucune compétence commune détectée.</div>
+            {% endif %}
+          </section>
+          <section class="panel">
+            <h2>Compétences manquantes</h2>
+            {% if missing_skills %}
+            <div class="chips">
+              {% for skill in missing_skills %}<span class="skill-tag skill-tag--missing">{{ skill }}</span>{% endfor %}
+            </div>
+            {% else %}
+            <div class="muted">Aucune compétence manquante.</div>
+            {% endif %}
+          </section>
+        </section>
+
+        {% if detail_lines %}
+        <section class="panel">
+          <h2>Explications</h2>
+          <ul>
+            {% for line in detail_lines %}<li>{{ line }}</li>{% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+
+        {% if weight_table %}
+        <section class="panel">
+          <h2>Poids des critères</h2>
+          {{ weight_table|safe }}
+        </section>
+        {% endif %}
+
+        <section class="panel">
+          <div class="actions" style="justify-content: space-between;">
+            {{ url_html|safe }}
+            <a class="btn secondary" href="{{ url_for('user_portal.recommendations') }}">Retour aux offres</a>
           </div>
         </section>
         """,
-        explanation=explanation,
+        ring_class=ring_class,
+        score_int=score_int,
+        offer_title=offer.get("titre") or "Offre sans titre",
+        offer_company=offer.get("entreprise") or "Entreprise non renseignée",
+        offer_location=", ".join(offer.get("lieux") or []) if offer.get("lieux") else "Lieu non renseigné",
+        offer_contract=offer.get("contrat") or "Contrat non renseigné",
+        offer_source=offer.get("source") or "Source non renseignée",
+        summary=summary,
+        score_bars=_render_score_bars(match_dict),
+        matching_skills=matching_skills,
+        missing_skills=missing_skills,
+        detail_lines=detail_lines,
+        weight_table=weight_table,
+        url_html=url_html,
     )
     return _render_page("Détail offre", content)
 
@@ -2608,6 +3016,8 @@ def dashboard():
         if not offer and isinstance(match.get("offer"), dict):
             offer = match.get("offer")
         url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
+        offer_id = str(match.get("offer_identifier") or "")
+        detail_url = url_for("user_portal.recommendation_detail", offer_id=offer_id) if offer_id else None
         match_cards.append({
             "title": offer.get("titre") or match.get("offer_identifier") or "Offre sans titre",
             "company": offer.get("entreprise") or "Entreprise non renseignée",
@@ -2616,7 +3026,13 @@ def dashboard():
             "source": offer.get("source") or "Source non renseignée",
             "score": float(match.get("global_score") or 0),
             "url": url,
+            "detail_url": detail_url,
             "matching_skills": explanation.get("matching_skills", []),
+            "missing_skills": explanation.get("missing_skills", []),
+            "sub_scores": {
+                key: float(explanation.get("subscores", {}).get(key) or 0)
+                for key in _CRITERION_LABELS
+            },
         })
     content = render_template_string(
         """

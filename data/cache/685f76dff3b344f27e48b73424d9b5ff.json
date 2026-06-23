@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:209GPPW",
+  "value": {
+    "id": "209GPPW",
+    "intitule": "DEVELOPPEUR TEST FONCTIONNEL (H/F)",
+    "entreprise": "SCHAEFFLER FRANCE",
+    "territoire": "31 - BOUSSENS",
+    "ville": "31084",
+    "code_postal": "31360",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209GPPW",
+    "description": "Vos responsabilités quotidiennes :\n\nAu sein de l'équipe Test Engineering rattachée à l'entité Industrial Engineering, vous assurez le développement de programmes et l'implémentation de moyens de tests fonctionnels pour la production de calculateurs et capteurs pour véhicules thermiques, hybrides ou électriques (prototypes et grande série). Vous serez rattaché au site de Boussens. Des déplacements intersites sont à prévoir (Foix, Toulouse).\n\n- Participer à la rédaction du cahier des charges des testeurs fonctionnels.\n- Développer des programmes de tests fonctionnels sur la base des spécifications fournies.\n- Définir et effectuer la recette des équipements et interfaces de test.\n- Mettre au point et vérifier les programmes en laboratoire.\n- Installer et valider les programmes sur les machines de production.\n- Assurer la maintenance des programmes en production (évolution produits ou machines, augmentation couverture de test, réduction temps de test).\n- Réaliser l'analyse des données statistiques (MSA).\n\n\nProfil recherché :\n- De formation supérieure en électronique, électrotechnique, automatismes, ou titulaire d'un diplôme d'Ingénieur généraliste à dominante électronique.\n- Vous justifiez de 3 à 5 ans d'expérience sur un poste similaire dans l'industrie automobile, aeronautique ou férroviaire.\n- Autonomie, rigueur\n- Bon relationnel et capacité à interagir avec des équipes pluridisciplinaires\n- Capacité à résoudre des problèmes\n- Force de proposition de solutions innovantes\n- Anglais courant exigé \n- Outil Informatique : Langage C, Visual C++, C#, TestStand / TestExec SL\n\nPossibilités de télétravail 1-2 jours/semaine",
+    "metier": "Spécialiste test et validation logiciel ou application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Cahier des charges",
+      "Intelligence artificielle",
+      "Analyse de données",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "API",
+      "Pipelines de données",
+      "Tests automatisés",
+      "Gestion de projet",
+      "MLOps"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "De formation supérieure en électronique, électrotechnique, automatismes, ou titulaire d'un diplôme d'Ingénieur généraliste à dominante électronique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:37.019972",
+  "input_hash": "c51c7d30be68665ffd948ca42695723a539a3c886ac6be3bffd220a78ce3d41c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

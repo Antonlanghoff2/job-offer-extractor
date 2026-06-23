@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3594390",
+  "value": {
+    "id": "3594390",
+    "intitule": "Ingénieur Logiciel embarqué C++ (H/F)",
+    "entreprise": "Astridsen AZUR",
+    "territoire": "83 - Toulon",
+    "ville": "83137",
+    "code_postal": "83000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3594390",
+    "description": "RESPONSABILITÉS : Vous rejoignez une équipe agile et pluridisciplinaire. • Développer un moteur de planification et de trajectographie pour drones, avec optimisation en temps réel selon de nombreux paramètres (capteurs, environnement, menaces, contraintes opérationnelles). • Prendre en charge un ou plusieurs modules du logiciel, depuis la conception jusqu'à la livraison. • Développer de nouvelles fonctionnalités en lien étroit avec l'analyste fonctionnel et la QA. • Assurer le suivi et la correction des anomalies détectées en tests d'intégration ou en production. • Mettre en place des tests unitaires et des tests de non-régression avant chaque livraison (qualité algorithmique critique). PROFIL RECHERCHÉ : Profil recherché • Bac+5 (école d'ingénieur ou équivalent). • Développement logiciel : C++ (niveau intermédiaire à confirmé). • Solide socle en mathématiques appliquées, algorithmique, optimisation. • Rigueur, autonomie, esprit critique et proactivité. • Expérience en maintenance de code en production. • Maîtrise des tests unitaires (automatisés ou non).",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Tests automatisés",
+      "Intégration continue",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Profil recherché • Bac+5 (école d'ingénieur ou équivalent). • Développement logiciel : C++ (niveau intermédiaire à confirmé). • Solide socle en mathématiques appliquées, algorithmique, optimisation. • Rigueur, autonomie, esprit critique et proactivité. • Expérience en maintenance de code en production. • Maîtrise des tests unitaires (automatisés ou non).",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Profil recherché • Bac+5 (école d'ingénieur ou équivalent). • Développement logiciel : C++ (niveau intermédiaire à confirmé). • Solide socle en mathématiques appliquées, algorithmique, optimisation. • Rigueur, autonomie, esprit critique et proactivité. • Expérience en maintenance de code en production. • Maîtrise des tests unitaires (automatisés ou non).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:21.742894",
+  "input_hash": "a51a6be81db00d263fc134f75b559d00560afaa6de73f2f56f7d5485837c5e42",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

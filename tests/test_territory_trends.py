@@ -109,8 +109,9 @@ class TerritoryTrendsTest(unittest.TestCase):
         self.assertIn("Tendances par territoire", body)
         self.assertIn("class=\"main-nav__link active\"", body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_normalized_offers", return_value=(make_selection_dataset(), None))
-    def test_territory_route_returns_200_and_respects_selection(self, _mock_offers: Mock) -> None:
+    def test_territory_route_returns_200_and_respects_selection(self, _mock_offers: Mock, _mock_cache: Mock) -> None:
         response = self.client.get("/tendances?territoire=Lyon")
         body = response.get_data(as_text=True)
 
@@ -121,8 +122,9 @@ class TerritoryTrendsTest(unittest.TestCase):
         self.assertIn("SQL", body)
         self.assertIn("100,0 %", body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_normalized_offers", return_value=(make_selection_dataset(), None))
-    def test_territory_selection_changes_results(self, _mock_offers: Mock) -> None:
+    def test_territory_selection_changes_results(self, _mock_offers: Mock, _mock_cache: Mock) -> None:
         lyon_response = self.client.get("/tendances?territoire=Lyon")
         paris_response = self.client.get("/tendances?territoire=Paris")
 
@@ -158,8 +160,9 @@ class TerritoryTrendsTest(unittest.TestCase):
         self.assertEqual(docker_row["count"], 2)
         self.assertAlmostEqual(sql_row["percentage"], 66.7)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_normalized_offers", return_value=([], None))
-    def test_empty_state_is_rendered_without_error(self, _mock_offers: Mock) -> None:
+    def test_empty_state_is_rendered_without_error(self, _mock_offers: Mock, _mock_cache: Mock) -> None:
         response = self.client.get("/tendances?territoire=Berlin")
         body = response.get_data(as_text=True)
 
@@ -167,8 +170,9 @@ class TerritoryTrendsTest(unittest.TestCase):
         self.assertIn("Aucune compétence n’a été détectée pour ce territoire.", body)
         self.assertIn("Tous les territoires", body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_normalized_offers", return_value=([], "Le fichier d'offres est invalide."))
-    def test_invalid_data_does_not_trigger_http_500(self, _mock_offers: Mock) -> None:
+    def test_invalid_data_does_not_trigger_http_500(self, _mock_offers: Mock, _mock_cache: Mock) -> None:
         response = self.client.get("/tendances?territoire=Lyon")
         body = response.get_data(as_text=True)
 

@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:4026543",
+  "value": {
+    "id": "4026543",
+    "intitule": "Ingénieur logiciel F/H - M-Extend France",
+    "entreprise": "M-Extend France",
+    "territoire": "35 - Acigné",
+    "ville": "35001",
+    "code_postal": "35690",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4026543",
+    "description": "Au sein de notre Direction Produit, nous concevons des solutions embarquées innovantes pour le secteur agricole. Notre ambition : proposer des produits fiables, performants et évolutifs, au cœur des enjeux technologiques d’aujourd’hui et de demain. Dans ce cadre, nous renforçons notre Bureau d’Études Systèmes Embarqués et recrutons un(e) Concepteur(trice) HW/SW. Intégré(e) au sein d'une équipe à taille humaine (8 développeurs passionnés), vous intervenez sur l'ensemble du cycle de vie des produits systèmes embarqués. Votre quotidien s'articulera autour de 4 grands piliers : - Conception & Architecture : Traduire les besoins de notre Roadmap en solutions logicielles robustes. Vous évaluez la faisabilité technique des futurs produits et participez aux choix technologiques (de la couche basse aux API connectées). - Développement embarqué : Produire un code C/C++ hautement performant sur nos calculateurs et microcontrôleurs. Vous intégrez dès le premier jour les enjeux de sécurité fonctionnelle (normes ISO 25119, Directive Machine) - Développement Web : Concevoir des services Web afin de répondre aux besoins de nos utilisateurs dans le respect des règles de cybersécurité - Automatisation & Validation : Concevoir des stratégies de test automatisées et pipelines CI/CD pour garantir des releases régulières, stables et sans régression. L’environnement technique - Système embarqué : C / C++, Microcontrôleurs, Calculateurs, protocoles de communication (CAN), Bare metal - Web & Outils : React, Express, Python, SQL. - Écosystème : GitLab CI, Méthodologies Agiles / Scrum. - Normatif : Directive/règlementation machine, ISO 25119, CRA (Cyber Resilience Act). Ce que nous vous offrons - Un projet à fort impact où votre code pilote de vraies machines complexes sur le terrain. - Une véritable culture produit : ici, l'ingénierie logicielle est au cœur des ambitions de l'entreprise. - Une ambiance de travail collaborative en mode Agile, où l'initiative et le partage de compétences (revues de code, veille) font partie de notre ADN.Issu(e) d'une formation supérieure (niveau Bac +5 / Ingénieur), vous justifiez d'une expérience confirmée d'au moins 5 ans en développement logiciel embarqué. Vous maitrisez le développement C/C++ dans un environnement embarqué et savez diagnostiquer un bug complexe au plus près du matériel, idéalement dans un environnement Agile A propos de vous : - La rigueur normative : Vous avez conscience qu'un bon code est un code sûr, documenté et testé - Soft Skills : vous êtes autonome, avec un esprit d’équipe, pragmatique et orienté(e) résultats. Les Plus : - Vous avez déjà endossé le rôle de Scrum Master / Coach Agile (ou que vous souhaitez le faire), c'est un réel plus pour l'équipe. - DevOps & Cybersécurité : une sensibilité aux pipelines CI/CD et aux contraintes de cybersécurité - Fullstack : L'écosystème Web (React, Express) vous intéresse et vous aimez comprendre comment la donnée transite de la machine jusqu'à l'utilisateur final.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Développement web",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "React",
+      "SQL",
+      "Vue.js",
+      "Pipelines de données",
+      "Backend"
+    ],
+    "salaire_min": 8000,
+    "salaire_max": 8000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Ce que nous vous offrons - Un projet à fort impact où votre code pilote de vraies machines complexes sur le terrain. - Une véritable culture produit : ici, l'ingénierie logicielle est au cœur des ambitions de l'entreprise. - Une ambiance de travail collaborative en mode Agile, où l'initiative et le partage de compétences (revues de code, veille) font partie de notre ADN.Issu(e) d'une formation supérieure (niveau Bac +5 / Ingénieur), vous justifiez d'une expérience confirmée d'au moins 5 ans en développement logiciel embarqué.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ce que nous vous offrons - Un projet à fort impact où votre code pilote de vraies machines complexes sur le terrain. - Une véritable culture produit : ici, l'ingénierie logicielle est au cœur des ambitions de l'entreprise. - Une ambiance de travail collaborative en mode Agile, où l'initiative et le partage de compétences (revues de code, veille) font partie de notre ADN.Issu(e) d'une formation supérieure (niveau Bac +5 / Ingénieur), vous justifiez d'une expérience confirmée d'au moins 5 ans en développement logiciel embarqué.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Les Plus : - Vous avez déjà endossé le rôle de Scrum Master / Coach Agile (ou que vous souhaitez le faire), c'est un réel plus pour l'équipe. - DevOps & Cybersécurité : une sensibilité aux pipelines CI/CD et aux contraintes de cybersécurité - Fullstack : L'écosystème Web (React, Express) vous intéresse et vous aimez comprendre comment la donnée transite de la machine jusqu'à l'utilisateur final.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:14.704878",
+  "input_hash": "cbd98ecd115b2b421fca6485788563f89b15ff704a05c85d6dba820c5810696c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

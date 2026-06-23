@@ -1,0 +1,567 @@
+{
+  "key": "trends:95 - Roissy-en-France",
+  "value": {
+    "territoire": "95 - Roissy-en-France",
+    "periode_jours": 365,
+    "nombre_offres": 5,
+    "competences": {
+      "Intelligence artificielle": 4,
+      "Analyse de données": 2,
+      "Gestion de projet": 2,
+      "Python": 2,
+      "Qualité Des Données": 2,
+      "Acquisition": 1,
+      "Cahier des charges": 1,
+      "Data engineering": 1,
+      "Git": 1,
+      "MLOps": 1,
+      "Power BI": 1,
+      "Sécurité Informatique": 1,
+      "Veille Technologique": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 80.0,
+        "variants": {
+          "Intelligence artificielle": 4
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Analyse de données": 2
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Python": 2
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Qualité des données": 2
+        }
+      },
+      {
+        "nom": "Acquisition",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Acquisition": 1
+        }
+      },
+      {
+        "nom": "Cahier des charges",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Cahier des charges": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Power BI",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Power BI": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Veille technologique": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 4
+      },
+      "Analyse de données": {
+        "Analyse de données": 2
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Python": {
+        "Python": 2
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 2
+      },
+      "Acquisition": {
+        "Acquisition": 1
+      },
+      "Cahier des charges": {
+        "Cahier des charges": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Power BI": {
+        "Power BI": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Automaticien / Automaticienne en bureau d'études": 1,
+      "Chef / Cheffe de projet Web": 1,
+      "Data Analyst": 1,
+      "Data Engineer": 1,
+      "Responsable Commercial / Commerciale": 1
+    },
+    "niveau": {
+      "junior": 4,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDD - 12 Mois": 3,
+      "CDD - 24 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 20.0
+      }
+    ],
+    "fiabilite": 0.125,
+    "skill_sets": [
+      [
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Sécurité Informatique"
+      ],
+      [
+        "Intelligence artificielle",
+        "Analyse de données",
+        "Power BI",
+        "Qualité Des Données",
+        "Veille Technologique"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Analyse de données",
+        "Data engineering",
+        "Acquisition",
+        "Vision"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Python",
+        "Gestion de projet",
+        "MLOps",
+        "Qualité Des Données"
+      ],
+      [
+        "Cahier des charges"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3733455",
+        "intitule": "Chargé(e) de marketing opérationnel et merchandising (H/F) - Alternance",
+        "entreprise": "PROJECT X PARIS",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3733455"
+      },
+      {
+        "id": "3086873",
+        "intitule": "Manager Air Traffic Development F/H",
+        "entreprise": "",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDI",
+        "date": "2026-05-27",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3086873"
+      },
+      {
+        "id": "2433206",
+        "intitule": "Alternance Chef de projet digital & innovation - Roissy-en-France (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-05-08",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2433206"
+      },
+      {
+        "id": "2313037",
+        "intitule": "Alternance Développeur Automatisation - Roissy-en-France (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-05-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2313037"
+      },
+      {
+        "id": "1735453",
+        "intitule": "Alternance Data analyst H/F - Roissy-en-France (F/H)",
+        "entreprise": "",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-04-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1735453"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3733455",
+        "intitule": "Chargé(e) de marketing opérationnel et merchandising (H/F) - Alternance",
+        "entreprise": "PROJECT X PARIS",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3733455"
+      },
+      {
+        "id": "3086873",
+        "intitule": "Manager Air Traffic Development F/H",
+        "entreprise": "",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDI",
+        "date": "2026-05-27",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3086873"
+      },
+      {
+        "id": "2433206",
+        "intitule": "Alternance Chef de projet digital & innovation - Roissy-en-France (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-05-08",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2433206"
+      },
+      {
+        "id": "2313037",
+        "intitule": "Alternance Développeur Automatisation - Roissy-en-France (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-05-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2313037"
+      },
+      {
+        "id": "1735453",
+        "intitule": "Alternance Data analyst H/F - Roissy-en-France (F/H)",
+        "entreprise": "",
+        "territoire": "95 - Roissy-en-France",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-04-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1735453"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:03:25.754208",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

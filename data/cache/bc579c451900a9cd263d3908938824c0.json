@@ -1,0 +1,44 @@
+{
+  "key": "offer_extraction:208QPBG",
+  "value": {
+    "id": "208QPBG",
+    "intitule": "Data Engineer IA Copilot Studio & Automatisation IA (H/F)",
+    "entreprise": "BASSETTI GROUP",
+    "territoire": "75 - Paris (Dept.)",
+    "ville": "75 - Paris (Dept.)",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-05-22",
+    "date": "2026-05-22",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208QPBG",
+    "description": "Votre rôle se décline en 4 missions.\n\n1. Architecte d'Agents IA (Copilot Studio & RAG) : \n\n- Conception d'agents conversationnels évolués : Développer des copilotes capables de comprendre des contextes métiers complexes (réservations, logistique, support client).\n- Maîtrise du RAG (Retrieval-Augmented Generation) : Connecter les agents aux bases de connaissances internes via Azure AI Search pour garantir des réponses précises, sourcées et sécurisées.\n- Optimisation LLM : Intégrer et paramétrer les modèles via Azure OpenAI (GPT-4o, etc.) en mettant l'accent sur le Prompt Engineering de haut niveau.\n\n2. Orchestration & Automatisation \"Agentique\" : \n\n- Workflows Actionnables : Utiliser Power Automate pour permettre aux copilotes de déclencher des actions réelles (mise à jour de CRM, envoi de rapports, validation de workflows).\n- Interconnexion : Développer des connecteurs personnalisés pour lier la Power Platform aux APIs propriétaires du groupe.\n\n3. Ingénierie de Données pour l'IA : \n\n- Pipelines Data : Industrialiser les flux d'ingestion (Batch/Real-time) via Azure Data Factory pour alimenter les moteurs d'indexation.\n- Gouvernance & Qualité : Structurer les données non structurées (PDF, wikis, bases documentaires) pour maximiser la pertinence des systèmes RAG.\n\n4. Innovation et acculturation : \n\n- Cadrage métier : Animer des ateliers avec les directions opérationnelles pour identifier les cas d'utilisation à ROI immédiat.\n- MVP & Scale : Passer rapidement du prototype à une solution robuste, surveillée et sécurisée (AI Guardrails).",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Intelligence artificielle",
+      "Sécurité informatique",
+      "API",
+      "Backend",
+      "Design patterns",
+      "Data Engineering"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:17.496664",
+  "input_hash": "97133ed3932b466b7157550c08c9ab553bbb7e046d46211015612675a7df1c52",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

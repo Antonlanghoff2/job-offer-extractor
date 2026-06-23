@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:3418975",
+  "value": {
+    "id": "3418975",
+    "intitule": "CHARGÉ DE MISSION DATA F/H",
+    "entreprise": "",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3418975",
+    "description": "Entreprise : Intégrer les Chambres d'agriculture de Normandie, c'est faire partie d'un groupe composé de 500 collaborateurs, qui accompagne les agriculteurs. Nous rejoindre, c'est devenir acteur d’une alimentation durable, de la pérennité économique et sociale des entreprises agricoles, de l'aménagement des territoires, de la production d'énergies, et de la préservation des ressources. Donnez du sens à votre métier, en étant sur le terrain, aux côtés des femmes et des hommes qui font l'agriculture et dessinent les paysages normands de demain. Notre groupe dynamique et innovant vous accompagne dans votre intégration au sein d’une équipe de proximité, dans la prise en main de vos missions et dans votre épanouissement professionnel. Missions : Au sein de la Direction Innovation, Recherche et Développement des Chambres d’agriculture de Normandie, vous contribuez à la structuration et à la valorisation des données au service : des travaux en économie agricole, de l’expérimentation technique et de R&D. Vous apportez un appui méthodologique et technique aux équipes sur les questions de collecte, structuration, exploitation et valorisation des données. Après un accompagnement personnalisé composé de formations et de tutorat pour faciliter la prise de fonction, vous aurez pour missions de : Contribuer à la structuration des bases de données ; Améliorer la fiabilité, la lisibilité et la pérennité des jeux de données ; Faciliter l’exploitation des données ; Contribuer à la production de tableaux de bord et autres outils de visualisation ; Participer à la valorisation des résultats. Formation supérieure (Bac +5) en data, traitement des données, statistiques… Gestion et structuration de bases de données Traitement et analyse de données Maîtrise d’outils de visualisation de données (Power BI, Superset…) Maîtrise d’outils de programmation (SQL, Python…) Intérêt pour les problématiques agricoles Capacité d’autonomie, rigueur et sens de l’organisation Esprit d’initiative et curiosité Titulaire du permis B",
+    "metier": "Ingénieur / Ingénieure d'études et de recherche agricoles",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Power BI",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": 500,
+    "salaire_max": 500,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation supérieure (Bac +5) en data, traitement des données, statistiques… Gestion et structuration de bases de données Traitement et analyse de données Maîtrise d’outils de visualisation de données (Power BI, Superset…) Maîtrise d’outils de programmation (SQL, Python…) Intérêt pour les problématiques agricoles Capacité d’autonomie, rigueur et sens de l’organisation Esprit d’initiative et curiosité Titulaire du permis B",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:10.491401",
+  "input_hash": "0b3fc11591d4e47414b32e3db8d24dd162096daa26485abe937d21354e63d53f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

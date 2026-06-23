@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:2347923",
+  "value": {
+    "id": "2347923",
+    "intitule": "Technicien de maintenance CVC - Secteur énergétique (H/F)",
+    "entreprise": "SILKHOM SAS",
+    "territoire": "69 - Vénissieux",
+    "ville": "69259",
+    "code_postal": "69200",
+    "contrat": "CDI",
+    "date_creation": "2026-05-06",
+    "date": "2026-05-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2347923",
+    "description": "Description du poste:\nVous rejoindre l’agence Rhône Habitat composée de techniciens de maintenance et de chargés de clientèle. Vous serez supervisé par le responsable de l’agence.\nVous serez affecté à un parc d’affaire composé d’une quarantaine de sites autour de Lyon. Votre projet consiste à réaliser 3 actions sur ces sites : la maintenance préventive et curative des installations (chaufferie d’immeuble, caisson de VMC en toiture etc), vous positionnez en tant que référent sur ces machines et vous montrez force de proposition dans le but d’améliorer les pannes. \n\nAu quotidien, vos différentes missions seront les suivantes : \n\n-Diagnostiquer les pannes du parc machine\n-Assurer et anticiper les pannes des équipements \n-Maintenir les équipements du parc machines (chaudières, groupes froid…) \n-Assurer une veille technologique des différents outils \nVous serez d’astreinte une fois toutes les 6 semaines du vendredi au vendredi. Vos horaires de travail sont de 8h à 12h et de 14h à 17h45 (le vendredi vous terminez à 17h).\n\nPourquoi rejoindre cette entreprise ?\n\n-Rejoignez une entreprise dont l’intérêt est de réduire les émissions de CO2 : en 2023, c’est plus de 4 millions de tonnes de réduction d’émissions de CO2.\n-Intégrez une société avec un volet formation très développé : bénéficiez d’un accompagnent personnalisé dès le processus de recrutement (e-learning, welcome box…) \n-Bénéficiez d’un poste où vous avez une visibilité sur votre carrière grâce à une forte politique de mobilité interne.\n\nProfil recherché:\n-Vous êtes issu d’une formation en maintenance industrielle \n-Vous avez au moins 3 ans d’expérience sur de la maintenance collective (chauffage collectif, groupe froid, chaudière)\n-Vous savez lire un schéma électrique (CAO, plans, armoires électriques…)\n\nCompléments:\nLieu : Vénissieux \nSalaire : 28k€ - 35k€ selon profil \nCompléments : prime d’astreinte : 300€, prime vacances (750€), intéressement / participation 1500€ en moyenne / an, le choix du contrat entre 0, 5 et 17 RTT\n\n\nSi votre profil correspond, nous reviendrons vers vous dans les 7 jours à compter de la date d’envoi.",
+    "metier": "Technicien / Technicienne support client en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Veille technologique",
+      "Qualité des données"
+    ],
+    "salaire_min": 1500,
+    "salaire_max": 1500,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Votre projet consiste à réaliser 3 actions sur ces sites : la maintenance préventive et curative des installations (chaufferie d’immeuble, caisson de VMC en toiture etc), vous positionnez en tant que référent sur ces machines et vous montrez force de proposition dans le but d’améliorer les pannes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:08.108160",
+  "input_hash": "a3e1a05a593128da387606158e726fb9152ead14650bfc6254d187b1f167b38b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

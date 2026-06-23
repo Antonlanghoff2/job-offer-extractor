@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:3922286",
+  "value": {
+    "id": "3922286",
+    "intitule": "Groupe Lesage - Développeur / Développeuse web (H/F)",
+    "entreprise": "",
+    "territoire": "68 - Mulhouse",
+    "ville": "68224",
+    "code_postal": "68100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3922286",
+    "description": "Vous souhaitez devenir acteur dans une entreprise bas carbone innovante et contribuer à l'évolution des modes de construction de demain Labellisée “Engagé RSE exemplaire ***”, nous vous offrons un environnement innovant, durable et stimulant. Avec 17 sites, 1150 collaborateurs et un chiffre d'affaires de 300 M€, notre entreprise familiale valorise l'humain, la formation et le bien-être au travail. Nous recrutons en CDI pour notre siège à Mulhouse (68), un : Développeur Full Stack Confirmé Java H/F Vous participez à l'ensemble du cycle de vie des applications : Analyse et compréhension des besoins métiers ; Conception technique des solutions ; Développement des composants back-end et front-end ; Réalisation des tests et validation des développements ; Mise en production et accompagnement des déploiements ; Maintenance corrective et évolutive des applications. Vous contribuez également à : L'évolution de l'architecture applicative ; La modernisation des outils et technologies ; L'amélioration continue des pratiques de développement ; La diffusion des bonnes pratiques techniques au sein de l'équipe. En étroite collaboration avec les différents métiers de l'entreprise (Supply Chain, Commerce, Ressources Humaines, Finance, Production, etc.), vous transformez les besoins fonctionnels en solutions fiables, performantes et pérennes. Diplômé d'une formation supérieure en informatique (Bac+5, école d'ingénieur, université ou formation spécialisée), vous justifiez d'une expérience réussie dans le développement d'applications d'entreprise. Vous êtes reconnu pour : Votre autonomie et votre sens des responsabilités ; Votre rigueur et votre exigence de qualité ; Votre capacité d'analyse et de résolution de problèmes ; Votre aptitude à travailler en équipe et à collaborer avec des interlocuteurs variés ; Votre curiosité technique et votre volonté d'apprendre et de progresser. Force de proposition, vous aimez comprendre les enjeux métiers et contribuer activement à la réussite des projets et à la transformation du système d'information. La maîtrise de l'anglais est nécessaire. Avantages : Prime de fin année équivalent à 1 mois Prime de vacances Mutuelle d’entreprise avantageuse Prime d'Intéressement et de Participation Tickets Restaurant Télétravail Processus de recrutement ! Votre candidature est présélectionnée Vous êtes contacté(e) pour un premier échange téléphonique Vous rencontrez les équipes RH et les opérationnels lors de 2 entretiens (visio ou présentiel) Votre candidature est retenue Bienvenue chez Rector ! \"Ensemble construisons notre réussite\" Rector Lesage, entreprise handi-accueillante.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Java",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 17000,
+    "salaire_max": 17000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé d'une formation supérieure en informatique (Bac+5, école d'ingénieur, université ou formation spécialisée), vous justifiez d'une expérience réussie dans le développement d'applications d'entreprise.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplômé d'une formation supérieure en informatique (Bac+5, école d'ingénieur, université ou formation spécialisée), vous justifiez d'une expérience réussie dans le développement d'applications d'entreprise.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:43.633012",
+  "input_hash": "e774f90a3c40ce461c88e5c8ecfcc2b82bc9da991d8b71bd52b22d1290082f7b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

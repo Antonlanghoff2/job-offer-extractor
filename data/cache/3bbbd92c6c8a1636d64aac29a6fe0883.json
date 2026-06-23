@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:0388304",
+  "value": {
+    "id": "0388304",
+    "intitule": "INGÉNIEUR INFORMATICIEN EN BIOLOGIE - H/F",
+    "entreprise": "Inserm",
+    "territoire": "75 - Paris 15e Arrondissement",
+    "ville": "75115",
+    "code_postal": "75015",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-03-17",
+    "date": "2026-03-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/0388304",
+    "description": "Description :\n\n\n______________________ UMR 1151- INSTITUT NECKER‑ENFANTS MALADES (EQUIPE SINGH)  _______________________________\n\nLe laboratoire développe un programme de recherche interdisciplinaire à l’interface entre biologie computationnelle, génomique fonctionnelle et immunologie. Les travaux portent sur le rôle des rétrovirus endogènes humains (HERVs) et autres éléments mobiles du génome dans la régulation de l’immunité humaine et des fonctions génomiques, en conditions physiologiques et pathologiques.\n\nLes projets s’appuient sur des approches de pointe incluant le single‑cell et le spatial multi‑omics, l’intégration de cohortes à grande échelle, ainsi que le développement de modèles statistiques et d’apprentissage profond.\n\nMISSION PRINCIPALE\n\nLa personne recrutée conduira des recherches en biologie computationnelle et bioinformatique, en étroite interaction avec des biologistes expérimentaux, afin d’analyser et d’intégrer des données single‑cell, multi‑omics et spatiales, et de développer des modèles permettant de décrypter la régulation génique médiée par les éléments rétrotransposables.\n\nACTIVITÉS PRINCIPALES \n\n\t* Analyse de données single‑cell multi‑omics (scRNA‑seq, scATAC‑seq, multiome) issues de cellules immunitaires et cérébrales.\n\t* Intégration de données de transcriptomique spatiale et d’imagerie avec des atlas single‑cell.\n\t* Analyses à l’échelle d’atlas et intégration de cohortes publiques et internes.\n\t* Développement de modèles statistiques et d’apprentissage profond pour l’étude de la régulation génomique et des éléments transposables.\n\t* Développement, optimisation et maintenance de pipelines reproductibles (R, Python, Nextflow/Snakemake).\n\t* Contribution à la rédaction d’articles scientifiques et à la valorisation des résultats.\n\nSPÉCIFICITÉ(S) ET ENVIRONNEMENT DU POSTE\n\n\t* Fort environnement interdisciplinaire et collaboratif.\n\t* Accès à des jeux de données à grande échelle (single‑cell, multi‑omics, spatial).\n\t*  Accès à des infrastructures de calcul intensif (HPC).\n\t*  Laboratoire situé au centre de Paris, avec un environnement de travail attractif.\n\nDATE DE PRISE DE FONCTION:    Entre 01/04/2026 et 01/05/2026\n\nCDD de 24 mois\n\nCONGÉS ANNUELS ET RTT:   32 CA et 12 RTT\n\nTemps plein\n38 h30 hebdomadaires, télétravail partiel possible selon l’organisation du projet.\n\nRÉMUNÉRATION: rémunération brute mensuelle selon l’expérience professionnelle et le niveau du/de la candidat,\n\n conformément aux grilles Inserm : entre 2 985€ BRUT et 3 254€ brut\n\nEnvoyer un CV, une lettre de motivation et les coordonnées de 2–3 références.\n\n \n\n\t\t\n\t\t\nProfil recherché :\n\t\t\n\t\t\nCONNAISSANCES\n\n•    Bioinformatique et biologie computationnelle.\n•    Analyse de données single cell et multi omics.\n•    Statistiques, apprentissage automatique et/ou deep learning.\n\nSAVOIR-FAIRE\n\n•    Excellente maîtrise de R et Python.\n•    Développement de code propre, reproductible et documenté.\n•    Utilisation d’outils de gestion de versions (git).\n•    Expérience avec des pipelines de calcul (Nextflow, Snakemake ou équivalent)\n\nAPTITUDES\n\n\t* Forte curiosité scientifique et autonomie.\n\t* Capacité à travailler en équipe interdisciplinaire.\n\t* Rigueur scientifique, sens de l’organisation et esprit collaboratif.\n\nEXPÉRIENCE(S) SOUHAITÉ(S)\n\n•    Expérience confirmée en analyses single cell.\n•    Une expérience en données spatiales et/ou en deep learning constitue un atout fort.\n\nNIVEAU DE DIPLÔME ET FORMATION(S)\n\n•    Doctorat (PhD) en biologie computationnelle, bioinformatique, physique, mathématiques ou discipline équivalente avec forte composante computationnelle.\n\n \n",
+    "metier": "Bioinformaticien / Bioinformaticienne en études, recherche et développement",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Deep learning",
+      "Git",
+      "Imagerie",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Automatisation de pipelines",
+      "Gestion de projet",
+      "Product Management",
+      "Développement de modèles",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "Protection des données",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 2985,
+    "salaire_max": 3254,
+    "teletravail": "télétravail partiel",
+    "diplomes_requis": [
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Doctorat (PhD) en biologie computationnelle, bioinformatique, physique, mathématiques ou discipline équivalente avec forte composante computationnelle.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:32.184588",
+  "input_hash": "ff2116be4c5806cbdd03b400fa53ff815ce57a277f95b498eee3b216ab34ee05",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

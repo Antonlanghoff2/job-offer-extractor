@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:3821283",
+  "value": {
+    "id": "3821283",
+    "intitule": "Ingénieur IVVQ F/H - Test, essai, validation, expertise (H/F)",
+    "entreprise": "AKKODIS DIGITAL SAS",
+    "territoire": "78 - Guyancourt",
+    "ville": "78297",
+    "code_postal": "78280",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3821283",
+    "description": "Descriptif du poste:\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Île-de-France et recrute un Ingénieur IVVQ H/F en CDI à Guyancourt. Ce poste offre l'opportunité d'intégrer un environnement dynamique dans le secteur de l'aérospatial et de la défense, où vous serez acteur(trice) clé des activités d'intégration, validation et vérification qualité sur des produits embarqués.\n\n\n \n\nResponsabilités principales :\n\n\n* Concevoir et planifier les campagnes d'intégration, validation et vérification qualité (IVVQ) des produits embarqués.\n* Définir les critères et les méthodes de test pour garantir la conformité aux spécifications et exigences du secteur aéronautique/défense.\n* Élaborer des plans de tests, rédiger des scripts de test automatisés et exécuter les tests de validation et de vérification des logiciels.\n* Analyser les résultats des tests, assurer la gestion des anomalies et proposer des actions correctives en cas de non-conformité.\n* Collaborer étroitement avec les équipes de développement pour intégrer les exigences qualité dès la conception et résoudre les problèmes signalés.\n* Rédiger les rapports de validation, assurer la traçabilité des tests réalisés et coordonner les activités de validation avec les fournisseurs et partenaires externes.\n* Contribuer à l'amélioration continue des processus IVVQ et des outils associés, en identifiant les opportunités d'automatisation et en proposant des améliorations.\n\n \n\nEnvironnement de travail :\n\nVous évoluerez dans un contexte technique exigeant, au sein d'équipes multidisciplinaires et en interaction avec des experts du secteur aérospatial/défense. La méthodologie IVVQ, la gestion rigoureuse des priorités et l'utilisation d'outils avancés de gestion de tests et d'automatisation seront au cœur de vos missions. La collaboration avec des partenaires internationaux et la communication technique en anglais font partie intégrante du poste.\n\n\n\n\nProfil recherché:\nVous êtes diplômé(e) d'un Bac+5 en école d'ingénieur ou équivalent, avec une spécialisation en systèmes embarqués, informatique ou électronique. Vous justifiez de minimum 3 ans d'expérience sur un poste similaire, idéalement dans le contexte de la défense ou de l'aéronautique, et sur des activités d'intégration et/ou de vérification de produits embarqués. Vous maîtrisez les méthodologies IVVQ, les outils de gestion de tests et de suivi des anomalies (ex : Jira, Quality Center), et avez des compétences en langages de programmation (Python, C/C++) et en automatisation de tests. Votre sens de l'organisation, votre rigueur et votre capacité à travailler en équipe sont reconnus. Un anglais courant est indispensable pour évoluer dans un environnement international et lire la documentation technique.\n\n\n Akkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Intelligence artificielle",
+      "Python",
+      "Qualité logicielle",
+      "Automatisation de pipelines",
+      "Tests automatisés",
+      "Backend",
+      "Gestion de projet",
+      "Documentation technique",
+      "Sécurité informatique",
+      "Qualité des données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Île-de-France et recrute un Ingénieur IVVQ H/F en CDI à Guyancourt.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes diplômé(e) d'un Bac+5 en école d'ingénieur ou équivalent, avec une spécialisation en systèmes embarqués, informatique ou électronique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous êtes diplômé(e) d'un Bac+5 en école d'ingénieur ou équivalent, avec une spécialisation en systèmes embarqués, informatique ou électronique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:50.958386",
+  "input_hash": "a3fb3528125ffde6c81113391f1a523b48721f3dd4228fcf2e4014c6e2adaf9a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

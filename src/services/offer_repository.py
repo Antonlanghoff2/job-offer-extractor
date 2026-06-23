@@ -18,7 +18,7 @@ from src.trend_aggregation import aggregate_trends
 
 logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_RAW_OFFERS_PATH = PROJECT_ROOT / "data" / "raw" / "offres_france_travail.json"
+DEFAULT_RAW_OFFERS_PATH = PROJECT_ROOT / "data" / "processed" / "offres_enrichies.json"
 
 
 def load_normalized_offers(path: Path = DEFAULT_RAW_OFFERS_PATH) -> Tuple[List[Dict[str, Any]], Optional[str]]:

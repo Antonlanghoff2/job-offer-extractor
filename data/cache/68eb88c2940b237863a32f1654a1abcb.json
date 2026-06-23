@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:3521466",
+  "value": {
+    "id": "3521466",
+    "intitule": "Ingénieur Systèmes et Logiciels (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Mure",
+    "ville": "38269",
+    "code_postal": "38350",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3521466",
+    "description": "Mission : Au sein du Bureau d’études, vous participez à la conception et au développement de logiciels embarqués. Vous intervenez dans les phases de spécification, conception, définition des tests unitaires et plan de tests ainsi que dans le suivi et la maintenance des logiciels embarqués et des applications associées. Activités : · Conception de logiciel et/ou Firmware appliqués au domaine du temps/fréquence et de la synchronisation horaire. · Maintenance de code et évolution des logiciels embarqués dans les produits existants (serveur de temps, horloge…). · Développement des outils de tests et supervision sur PC : GUI, Superviseur, monitoring. · Prise en compte des contraintes de cybersécurité dans les applications. · Vos interventions garantiront la conformité des produits, dans le respect des procédures qualité, et dans le respect des plannings définis. Interactions : L’Ingénieur(e) Systèmes et Logiciels est en interne en lien avec l’équipe du bureau d’études, le service support, le service QSE et le service production. En externe, il est en relation avec les clients en soutien du service après-vente. Maitrise des domaines suivants : · Langage de programmation : C, C++, Python, JavaScript, Shell, Bash. · Operating System : Linux (système/pilote/device tree), Windows, FreeRTOS, Bare-Metal, secure boot · Outils : Git, Gitlab, Mantis, Testlink, Yocto, Buildroot, Intégration Continue (CI Gitlab), Docker · Cybersécurité : 802.1x/Radius, AD/LDAP, PAM, RAUC, Certificat X.509, AES, TLS, IEC 62443 · Réseau : IP, TCP, UDP, SNMP, SSH, FTPS, Syslog · Communication : I2C, UART, SPI, USB, Wifi, Bluetooth · Architectures microcontrôleurs : STM32, ARM… Compétences requises : · Posséder un diplôme d’ingénieur ou équivalent en Informatique Industrielle ou Génie Logiciel. · Débutant(e) accepté(e) selon expérience de stage/projet/apprentissage. · Être curieux(se), autonome et faire preuve de capacités d’adaptation. · Maîtriser l’Anglais (bon niveau). · Avoir un esprit d’équipe avec de bonnes capacités de communication. · Être rigoureux(se) et organisé(e). Spécificités du poste : · Contrat à durée indéterminée à temps plein · Statut cadre · Participation avantageuse de l’employeur à la mutuelle d’entreprise (75 %) · Basé à La Mure d’Isère · Rémunération selon profil · Poste à pourvoir dès que possible.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Git",
+      "JavaScript",
+      "Linux",
+      "Python",
+      "Vision",
+      "Code review",
+      "Design patterns",
+      "Gestion de projet",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 0,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Interactions : L’Ingénieur(e) Systèmes et Logiciels est en interne en lien avec l’équipe du bureau d’études, le service support, le service QSE et le service production.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:07.067885",
+  "input_hash": "e9920e57addfa9f674a0d83be7e2fce4247f5f3a2b9c9fb8fccdb015366230df",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

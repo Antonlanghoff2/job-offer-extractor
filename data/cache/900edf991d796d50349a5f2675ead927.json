@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:0738781",
+  "value": {
+    "id": "0738781",
+    "intitule": "Ingénieur Supervision F/H - ORSENNA",
+    "entreprise": "ORSENNA",
+    "territoire": "78 - Maisons-Laffitte",
+    "ville": "78358",
+    "code_postal": "78600",
+    "contrat": "CDI",
+    "date_creation": "2026-03-25",
+    "date": "2026-03-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/0738781",
+    "description": "Votre rôle? Rejoignez nos équipes en tant qu'ingénieur supervision au sein de nos locaux basés à Maisons Laffite (78). Vous évoluez au sein de notre pôle technique, composé d’ingénieurs spécialisés sur la thématique Supervision et Observabilité (Réseau, Applicatifs, Cloud ,…) et/ou Sécurité (AD, bastion, Logs/SIEM,...). Vos missions sont les suivantes : - Participer à la phase d’avant-vente : en collaboration avec l’équipe commerciale, présenter les axes sur lesquels vous allez pouvoir accompagner les clients, - Réaliser le déploiement de la solution sur le périmètre client : de l'audit à l'intégration matériel et/ou logiciel, - Rédiger la documentation associée à chaque projet, - Accompagner les équipes/ les utilisateurs dans la prise en main du produit via un transfert de compétences, - Assurer le traitement et le suivi des incidents techniques auprès des clients. Environnement technique : - Réseaux et applicatifs - Logiciel de gestion des assets OpenSource ou Proriétaire / ITSM - Protocoles de supervision (SNMP, NRPE, WMI, Syslog, Netflow ...) - Solutions de Supervision et d’Observabilité (Solarwinds,Zabbix, Centreon, WhatsUp Gold, PRTG, ManageEngine, EVObserve, Datagog, Dynatrace,...) - Administration et configuration de Grafana - Développement Python pour l’automatisation et l’intégration avec d’autres outils. - Plateformes Linux, Windows (administration & Scripting) - Technologies Cloud (Amazon, Azure, GCP, Kubernetes) Des déplacements sont à prévoir environ 20% du temps pour effectuer les missions chez nos clients.- Bac +5 école ingénieur ou mastère spécialisé système et réseau ou similaire, - Vous avez une première expérience réussie incluant stage/alternance ou vous avez effectué une première mission d'environ 1 an, - Vous êtes capable d’échanger en anglais (avec les clients et éditeurs), - Vous pouvez structurer, synthétiser et formaliser les besoins des clients, - Vous êtes consciencieux et avez un bon relationnel. Carte restaurant: 9,5€ par jour, Télétravail: Possible après validation de la période d'essai, Cadre de travail : open-space, avec un espace de restauration / cuisine.",
+    "metier": "Ingénieur / Ingénieure systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Vision",
+      "Travail en équipe",
+      "Documentation technique",
+      "Intégration continue",
+      "Gestion de projet"
+    ],
+    "salaire_min": 78000,
+    "salaire_max": 78000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Rejoignez nos équipes en tant qu'ingénieur supervision au sein de nos locaux basés à Maisons Laffite (78).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Environnement technique : - Réseaux et applicatifs - Logiciel de gestion des assets OpenSource ou Proriétaire / ITSM - Protocoles de supervision (SNMP, NRPE, WMI, Syslog, Netflow ...) - Solutions de Supervision et d’Observabilité (Solarwinds,Zabbix, Centreon, WhatsUp Gold, PRTG, ManageEngine, EVObserve, Datagog, Dynatrace,...) - Administration et configuration de Grafana - Développement Python pour l’automatisation et l’intégration avec d’autres outils. - Plateformes Linux, Windows (administration & Scripting) - Technologies Cloud (Amazon, Azure, GCP, Kubernetes) Des déplacements sont à prévoir environ 20% du temps pour effectuer les missions chez nos clients.- Bac +5 école ingénieur ou mastère spécialisé système et réseau ou similaire, - Vous avez une première expérience réussie incluant stage/alternance ou vous avez effectué une première mission d'environ 1 an, - Vous êtes capable d’échanger en anglais (avec les clients et éditeurs), - Vous pouvez structurer, synthétiser et formaliser les besoins des clients, - Vous êtes consciencieux et avez un bon relationnel.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:31.419074",
+  "input_hash": "cdcc052efb33b4f1ac5c51336cac747fdd8a658f68fab4e36d1e6fca7ca9d686",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

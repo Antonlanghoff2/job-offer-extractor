@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:208DSQG",
+  "value": {
+    "id": "208DSQG",
+    "intitule": "Alternant excellence opérationnelle (H/F)",
+    "entreprise": "APTAR OYONNAX",
+    "territoire": "01 - OYONNAX",
+    "ville": "01283",
+    "code_postal": "01100",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-05-12",
+    "date": "2026-05-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208DSQG",
+    "description": "Rattaché(e) au Manager excellence opérationnelle, nous recherchons un(e) alternant(e) en horaires variables de journée pour deux ans.\n\nVous aurez notamment pour missions :\nCollecter, traiter et analyser des données pour identifier des opportunités d'amélioration\nDévelopper le tableau de bord et des rapports pour suivre les indicateurs de performance\nParticiper à des projets d'amélioration continue en utilisant des méthodologies Lean et Six Sigma\nCollaborer avec les différentes équipes pour comprendre leurs besoins et proposer des solutions adaptées.\n\nNous recherchons un(e) alternant(e) pour un cursus en Master ou en école d'ingénieur avec une spécialisation en data science, business intelligence ou équivalent à partir de septembre 2026.\n\nLes atouts nécessaires pour réussir dans ces missions sont :\nDisposer de bonnes capacités d'analyse, de communication et de travail en équipe\nConnaître les méthodologies d'excellence opérationnelle (Lean, Six Sigma)\nMaîtriser Power BI et Power Apps\nMaîtriser les langages de programmation (Python, R), les bases de données (SQL, NoSQL) et la modélisation des données\nAnglais requis\n",
+    "metier": "Analyste décisionnel - Business Intelligence",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "NoSQL",
+      "Python",
+      "SQL",
+      "Power BI",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Qualité des données",
+      "Sécurité informatique",
+      "API",
+      "Monitoring de modèles",
+      "Pipelines de données"
+    ],
+    "salaire_min": 2026,
+    "salaire_max": 2026,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Nous recherchons un(e) alternant(e) pour un cursus en Master ou en école d'ingénieur avec une spécialisation en data science, business intelligence ou équivalent à partir de septembre 2026.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons un(e) alternant(e) pour un cursus en Master ou en école d'ingénieur avec une spécialisation en data science, business intelligence ou équivalent à partir de septembre 2026.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:15.265788",
+  "input_hash": "6af22f12b19fc58d9754b0bae92f201fb0076489383e375822be1c3d375986b2",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:209YFBT",
+  "value": {
+    "id": "209YFBT",
+    "intitule": "Data analyst (H/F)",
+    "entreprise": "DAVIDSON PACA",
+    "territoire": "06 - VALBONNE",
+    "ville": "06152",
+    "code_postal": "06560",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209YFBT",
+    "description": "Rejoindre Davidson, ce n'est pas seulement intégrer un groupe de 3000 consultants dans 6 pays et 2 continents, c'est intégrer LA société qui a été élue par ses salariés Great Place To Work France et Europe pendant 4 ans mais aussi une des plus grandes B Corp de France, nommée Best of the World dans la catégorie \"collaborateurs\" en 2022 ! (Les \"B Corp\" formant une communauté de sociétés qui ont décidé d'être non pas les meilleures du monde mais les meilleures POUR le monde).\n\nParce que notre développement repose sur des principes forts :\n\nUn profond respect de l'ensemble de nos parties prenantes : consultant(e)s, clients et fournisseurs. Car si le travail \"ne fait pas le bonheur\", il peut cependant \"faire le malheur\". Nous nous engageons donc à écouter et agir avec honnêteté.\nUne égalité des chances dans le traitement de nos candidatures et dans la gestion de carrière de nos salarié(e)s. Nous croyons en un milieu de travail où équité F/H, inclusion et diversité sont la norme.\nUne empreinte environnementale minimale, et sociétale maximale. C'est pourquoi, au-delà des missions que vous réaliserez, vous pourrez également contribuer à des projets que Davidson soutient : missions de solidarité internationale (avec Planète Urgence), bénévolat auprès d'associations (chaque Davidsonien(ne) dispose de 3 jours par an pour intervenir à leurs côtés), accompagnement d'étudiant(e)s issus de milieux peu favorisés (avec Article 1), investissement dans des startups développant des solutions innovantes, actions collectives et individuelles pour la réduction de notre impact carbone.\nUn Management adhocratique basé sur la mise en œuvre des principes de \"l'entreprise horizontale\" et du \"management tribal\". Sur ce dernier point une précision d'importance : le bien-être au travail est un luxe qu'il faut pouvoir s'offrir en étant une entreprise \"sol\n\nDans un contexte technique et innovant, vous intégrerez notre équipe Data pour accompagner nos clients dans la valorisation de leurs données et le développement de solutions décisionnelles à forte valeur ajoutée.\n\nVos missions principales seront :\n\nConception et développement : Créer, optimiser et maintenir des tableaux de bord interactifs sous Power BI répondant aux exigences métiers.\nAnalyse et qualité des données : Collaborer avec les métiers pour définir des règles de qualité, mettre en évidence les anomalies et faciliter leur résolution.\nDocumentation et accompagnement : Documenter les développements réalisés et former les utilisateurs pour leur assurer autonomie et compréhension des outils.\nVeille et innovation : Participer activement à la veille technologique sur Power BI et les technologies associées pour proposer des solutions innovantes.\nGestion de projets : Conduire des projets de bout en bout, de la compréhension des besoins métier à la mise en production des solutions.\nTechnologies utilisées\n\nLangages & outils : Power BI (DAX, Power Query, Power BI Service), SQL, Python.\nPlateformes et frameworks : Power Platform (Power Automate, Power Apps), Azure, GitLab.\nConception et design : UI/UX pour des rapports ergonomiques et intuitifs.\nCompétences requises\n\nFormation : Bac +5 minimum, spécialisation en Data Engineering, BI ou équivalent.\nExpérience : 2 à 3 ans d'expérience sur des projets BI avec une expertise en Power BI.\nCompétences techniques :\nMaîtrise avancée de Power BI (DAX, Power Query, gestion des espaces de travail).\nCompétence en modélisation de données et utilisation avancée de SQL.\nConnaissance des outils Cloud Microsoft tels qu'Azure et Power Platform.\nNotions en Python pour des besoins complémentaires d'analyse ou de développement.\nAptitudes personnelles :\nEsprit analytique et rigueur.\nCapacité à communiquer avec des interlocuteurs variés, techniques et fonctionnels.\nPassion pour les nouvelles technologies et l'innovation dans le domaine de la Data.\nAutonomie et sens de l'organisation.",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Azure",
+      "Data engineering",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Power BI",
+      "Analyse de données",
+      "Design patterns",
+      "Feature Engineering"
+    ],
+    "salaire_min": 36000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : Bac +5 minimum, spécialisation en Data Engineering, BI ou équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:42.571017",
+  "input_hash": "be6769c921f6845241bce809b54ef691d578eef804c5af03e0d2cff273c5dd2b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

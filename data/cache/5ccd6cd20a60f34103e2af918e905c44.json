@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:3828940",
+  "value": {
+    "id": "3828940",
+    "intitule": "Développeur informatique junior (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3828940",
+    "description": "Description du poste :\nLe CFA INSTA recrute pour le compte de l'une de ses entreprises partenaires un(e) alternant(e) en BTS SIO option SLAM. Vous intégrerez une équipe de développement et participerez à la conception, au développement et à la maintenance d'applications métiers ou web.\nVos missions principales Participer à l'analyse des besoins utilisateurs\n* Concevoir et développer des applications (web, mobile ou logiciel)\n* Réaliser des tests et corriger les anomalies\n* Assurer la maintenance évolutive et corrective des applications\n* Rédiger la documentation technique\n* Participer aux réunions de suivi de projet\n* Collaborer avec les équipes techniques et métiers\nDescription du profil Titulaire (ou en cours d'obtention) d'un Bac (général, technologique ou professionnel)***Intérêt marqué pour le développement informatique***Logique, rigueur et capacité d'analyse***Curiosité et envie d'apprendre***Bon esprit d'équipe",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Application web",
+      "Gestion de projet",
+      "Qualité des données",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "MLOps"
+    ],
+    "salaire_min": 21000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Le CFA INSTA recrute pour le compte de l'une de ses entreprises partenaires un(e) alternant(e) en BTS SIO option SLAM.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:47.601254",
+  "input_hash": "97ad722f9d46e4c6056365de2a21ad749ad23fcc38f6c35f79b1729587148589",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

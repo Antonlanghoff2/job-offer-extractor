@@ -1,0 +1,225 @@
+{
+  "key": "trends:84 - Vaucluse",
+  "value": {
+    "territoire": "84 - Vaucluse",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Gestion de projet": 1,
+      "Git": 1,
+      "HTML": 1,
+      "Intelligence artificielle": 1,
+      "Java": 1,
+      "Travail En Équipe": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "HTML",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "HTML": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Java": 1
+        }
+      },
+      {
+        "nom": "Travail En Équipe",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Travail en équipe": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "HTML": {
+        "HTML": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Java": {
+        "Java": 1
+      },
+      "Travail En Équipe": {
+        "Travail en équipe": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Gestion de projet",
+        "Git",
+        "HTML",
+        "Intelligence artificielle",
+        "Java",
+        "Travail En Équipe"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4045365",
+        "intitule": "Développeur JAVA (H/F)",
+        "entreprise": "",
+        "territoire": "84 - Vaucluse",
+        "contrat": "CDI",
+        "date": "2026-06-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4045365"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4045365",
+        "intitule": "Développeur JAVA (H/F)",
+        "entreprise": "",
+        "territoire": "84 - Vaucluse",
+        "contrat": "CDI",
+        "date": "2026-06-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4045365"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:07:54.518881",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

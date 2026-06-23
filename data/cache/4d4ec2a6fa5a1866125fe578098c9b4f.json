@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:9072322",
+  "value": {
+    "id": "9072322",
+    "intitule": "ARCHITECTE SYSTÈME (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Entzheim",
+    "ville": "67124",
+    "code_postal": "67960",
+    "contrat": "CDI",
+    "date_creation": "2026-02-13",
+    "date": "2026-02-13",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/9072322",
+    "description": "Nous sommes à la recherche d'un Architecte Système (F/H) passionné.e pour rejoindre les équipes de notre client basé au sud de Strasbourg.En tant qu'Architecte Système (F/H) vous serez au cur de la stratégie technique de l'entreprise : -Définir les solutions techniques adaptées aux besoins exprimés par les clients -Accompagner les commerciaux dans la conception technique des solutions proposées -Soutenir les ingénieurs dans la mise en oeuvre -Assurer l'évolution et l'analyse des impacts techniques des infrastructures -Rédiger les documentations techniques claires -Réaliser une veille active sur les nouvelles solutions Microsoft d'infrastructure Sur le pôle utilisateurs Microsoft : -Gestion des identités (AD, Azure AD) -Outils Microsoft : Exchange Online, SharePoint Online, Intune, Copilot -Sécurité Sur le pôle données & infrastructures -Windows Server et Linux -VMWare ESXi, vSphere, Hyper-V -NAS, SAN -Veeam, Commvault -DNS, DHCP -PowerShell, Bash, Python Nous recherchons quelqu'un avec un esprit d'analyse structuré, et une forte proactivité. Excellente communication pédagogique (essentielle pour vulgariser les concepts techniques) avec un sens aigu de la coopération, de l'innovation et de l'orientation résultat, faisant preuve de résilience face aux environnements exigeants. Profil bac+4 en informatique avec 5 ans d'expérience (alternance comprise).",
+    "metier": "Architecte systèmes et réseaux",
+    "niveau": "junior",
+    "competences": [
+      "Azure",
+      "Intelligence artificielle",
+      "Linux",
+      "Python"
+    ],
+    "salaire_min": 4000,
+    "salaire_max": 4000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil bac+4 en informatique avec 5 ans d'expérience (alternance comprise).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:32.759347",
+  "input_hash": "24c95d418ee6be6de738a50f797831f7aad28e22133cb731361c39b6a6247a95",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

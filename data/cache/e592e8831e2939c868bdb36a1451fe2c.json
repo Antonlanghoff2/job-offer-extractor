@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:3353280",
+  "value": {
+    "id": "3353280",
+    "intitule": "Automaticien - Grenoble, France (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3353280",
+    "description": "Ce que nous allons accomplir ensemble : Nous recherchons un ingénieur passionné par les technologies d'automatisation pour intégrer notre équipe et jouer un rôle clé dans la conception, l'optimisation et la maintenance de nos systèmes automatisés. Au sein d’un environnement dynamique et en constante évolution, vous aurez l’opportunité de travailler sur des projets innovants, en collaboration avec une équipe d’experts multidisciplinaires. Vous serez responsable de l'amélioration continue de nos processus industriels, de la gestion de nos installations automatisées et contribuerez activement à l'innovation et à la performance globale de notre entreprise. Votre tâche (...si vous l’acceptez !) : Votre rôle en tant qu'Automaticien sera de prendre en charge la conception, le développement et la mise en service de nos applications automates industriels : Développement des applications automates industriels : Elaboration des spécifications logicielles et analyse fonctionnelle en collaboration avec les équipes techniques et métiers Conception générale et détaillée des programmes automates Programmation et codage 2. Tests et validation Réalisations de tests : simulation, unitaires et d'intégration. Validation sur machines réelles : exécution de test, analyse résultats. 3. Analyse et résolution de problèmes techniques sur machines 4. Réalisation de la documentation technique des logiciels automates : documents de spécification/conception, plans & rapports de tests, rapports d’intervention, notices de réglage et d’utilisation Votre Stack de Jeu : C++ - C - Python - PLC - Matlab - Simulink - Siemens - Schneider",
+    "metier": "Technicien / Technicienne de maintenance d'installations automatisées",
+    "niveau": "intermediaire",
+    "competences": [
+      "Python",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ce que nous allons accomplir ensemble : Nous recherchons un ingénieur passionné par les technologies d'automatisation pour intégrer notre équipe et jouer un rôle clé dans la conception, l'optimisation et la maintenance de nos systèmes automatisés.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:11.293329",
+  "input_hash": "3caaba79c843193c40bd706be3173fb2490248b949e3fd1c7fdc579e13cd9d4a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

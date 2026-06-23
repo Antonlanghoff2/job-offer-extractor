@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:3039875",
+  "value": {
+    "id": "3039875",
+    "intitule": "Ingénieur / Ingénieure d'étude logiciel informatique (H/F)",
+    "entreprise": "",
+    "territoire": "94 - Val-de-Marne",
+    "ville": "94 - Val-de-Marne",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-05-26",
+    "date": "2026-05-26",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3039875",
+    "description": "Vous êtes un(e) expert(e) en supervision et souhaitez contribuer à des projets innovants dans un environnement dynamique et collaboratif ? Rejoignez SEMERU, filiale de Fayat Énergie Services, et participez à la conception de solutions qui façonnent un avenir durable et connecté.\n\nQui sommes-nous ?\n\nSEMERU conçoit, intègre et maintient des systèmes d'information technologiques dans des secteurs stratégiques tels que l'environnement, les bâtiments connectés, la gestion de l'eau et le transport intelligent. Nous faisons partie du Groupe Fayat, reconnu pour ses innovations et ses solutions durables.\n\nVos missions :En tant qu'Ingénieur d'Études Système, vous jouerez un rôle central dans la conception et la mise en place de systèmes de supervision avancés (Panorama E2, PC Vue).\n\nVous serez en charge de :\n\n\n\n\t- Concevoir et configurer des architectures de supervision adaptées aux besoins des clients, en utilisant Panorama E2 et PC Vue.\n\t- Développer des applications de supervision sur mesure, en tenant compte des spécifications techniques et fonctionnelles.\n\t- Assurer les tests et la mise en service des installations de supervision sur site.\n\t- Rédiger la documentation technique (cahiers des charges, rapports de conception, manuels utilisateurs).\n\t- Assurer le support technique auprès des clients, et contribuer à la maintenance évolutive des systèmes.\n\t- Collaborer avec les équipes projet pour garantir la livraison des solutions dans les délais et avec la qualité attendue",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Délais",
+      "Intelligence artificielle",
+      "Vision",
+      "Vue.js",
+      "Cybersécurité",
+      "Déploiement de modèles",
+      "API",
+      "Pipelines de données",
+      "Qualité des données",
+      "Documentation technique",
+      "Gestion de projet",
+      "Tests automatisés",
+      "Architecture microservices",
+      "Backend",
+      "MLOps",
+      "Data Engineering",
+      "Design patterns"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vos missions :En tant qu'Ingénieur d'Études Système, vous jouerez un rôle central dans la conception et la mise en place de systèmes de supervision avancés (Panorama E2, PC Vue).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:27.627860",
+  "input_hash": "7c2459ba95eed7aef30a750473609d666c680a1745b7f13caee31f4d6c2d8e41",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

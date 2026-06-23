@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:209MBNM",
+  "value": {
+    "id": "209MBNM",
+    "intitule": "Data Analyst (H/F)",
+    "entreprise": "CAISSE PRIMAIRE D ASSURANCE MALADIE EURE",
+    "territoire": "27 - EVREUX",
+    "ville": "27229",
+    "code_postal": "27000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209MBNM",
+    "description": "L'assurance Maladie de l'Eure (CPAM) recherche 1 Data Analyst (H/F) dans le cadre d'un CDI à pourvoir sur notre site d'Evreux.\n\nAu sein de la Direction du pilotage des moyens et des ressources, le service Pilotage de la Performance et Analyse des Données est composé de 2 statisticiens, d'un manager d'activité également contrôleur de gestion et d'un manager stratégique.\n\nEn tant que Data Analyst, vous serez chargé de concevoir et déployer des solutions informatiques innovantes (ex: visualisation, automatisation), ainsi que de mettre en œuvre, en collaboration avec l'équipe de statisticiens, des méthodes d'analyse de données avancées. Vous serez affecté sur des projets transverses, avec une dominante sur les domaines du contrôle de gestion et la lutte contrôle la fraude. Vos travaux permettront :\n-  D'automatiser et sécuriser la production et l'analyse de données,\n-  D'éclairer les décisions de pilotage de la CPAM,\n-  De renforcer l'efficacité des dispositifs de lutte contre la fraude.\n\nVos missions : \n- Développer et améliorer les outils (automatisation, application, etc.)\n- Appliquer des règles de nettoyage et de structuration des données, s'assurer de la cohérence des données multi-sources,\n- Accompagner les managers / pilotes de processus dans la compréhension et le pilotage de leurs indicateurs (modalités de calcul, outils de suivi, élaboration d'un plan d'action, etc.),\n- Participer aux travaux sur l'adéquation charges/ressources par la collecte et l'analyse de données,\n- Participer au déploiement et au suivi des objectifs contractualisés entre la CNAM et la CPAM,\n- Élaborer et adapter des guides méthodologiques,\n- Clarifier et analyser les demandes (étude, analyse statistiques, extraction de données) et proposer une méthodologie adaptée\n- Adapter et construire des outils de reporting ou de pilotage (automatisation de traitements via Power Query, Power BI, VBA et restitution/mise en forme),\n- Réaliser des requêtes sur les bases (SQL), exploiter les données, en produire des analyses, des synthèses,\n- Contribuer à la fiabilisation et à la remontée des données à la CNAM,\n- Assurer une fonction de support/conseil dans son domaine,\n- Assurer une veille dans son domaine d'expertise.\nLe candidat retenu devra se conformer aux exigences de la Politique de Sécurité des Systèmes d'Information de l'organisme et sera tenu au secret professionnel.\n\nCe poste est à pourvoir sur notre site d'Evreux dans le cadre d'un contrat de 39h par semaine du lundi au vendredi.\n\nFormation : Diplôme égal ou supérieur au Bac +3 dans le domaine du traitement, de l'analyse de données, exigé.\n\nCompétences : Maîtrise impérative de Power Query, Power BI et SQL. Vous êtes reconnu pour votre esprit collaboratif, votre rigueur, votre capacité d'analyse, vos qualités pédagogiques et facultés d'adaptation. Lors de votre prise de fonction, vous serez accompagné par un parcours d'intégration comportant formations, immersions et parrainage.",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "SQL",
+      "Automatisation de pipelines",
+      "Déploiement de modèles",
+      "Déploiement de solutions",
+      "Qualité des données",
+      "Pipelines de données",
+      "Monitoring de modèles",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Veille technologique",
+      "Optimisation des performances",
+      "Airflow"
+    ],
+    "salaire_min": 32492,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : Diplôme égal ou supérieur au Bac +3 dans le domaine du traitement, de l'analyse de données, exigé.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "6 Mois",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:43.130457",
+  "input_hash": "6146597dde0c1084fb2dcf2e1af6c9d3b546c9d768d82f2901f08c46c1f1a8a0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

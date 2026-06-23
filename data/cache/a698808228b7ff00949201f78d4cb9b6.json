@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:209XHNY",
+  "value": {
+    "id": "209XHNY",
+    "intitule": "Administrateur Systèmes et Réseaux Multisite (H/F)",
+    "entreprise": "APK CONSEIL EN RECRUTEMENT",
+    "territoire": "69 - Villeurbanne",
+    "ville": "69266",
+    "code_postal": "69100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209XHNY",
+    "description": "Nous recrutons pour notre client, un Administrateur Systèmes et Réseaux multisite. \nRattaché au DSI, votre mission est de contribuer à la conception du Système d'Information, à sa disponibilité, son accessibilité, sa sécurité et son intégrité au sein des infrastructures centrales ou distantes, en lien avec les enjeux croissants de l'entreprise.\n\nVos missions principales :\n\nCréer, maintenir et faire évoluer le système d'information.\nAutomatiser les traitements : batchs, déploiements, patching.\nRéaliser l'installation et le paramétrage des équipements et logiciels.\nDéfinir le plan d'exploitation, de sauvegarde et de secours en cas de défaillance du système.\nRédiger et mettre à jour les procédures et documentations nécessaires à l'administration et l'exploitation du SI.\n\nAssurer le support aux utilisateurs et la maintenance :\nMaintenir les services en conditions opérationnelles, analyser et résoudre les anomalies, assurer le support niveau 3.\nMettre en place et maintenir les environnements nécessaires aux projets.\n\nCompétences demandées:\nConnaître et exploiter les serveurs physiques et virtuels, le SAN, le système de sauvegarde, les LAN & WAN.\nConnaissance de VMWare/VCenter et de son administration.\nConnaissances dans l'administration des réseaux (routeurs, firewall, switchs, wifi .).\nConnaissances des systèmes Windows et Linux.\nMaîtrise d'un langage de Scripting (Python, PowerShell, Shell ..) pour l'automatisation.\nConnaissance des bases de données (MSSQL, MySQL, Oracle.).\nConnaissance des normes et procédures de sécurité et des outils et technologies qui s'y rapportent : firewall, antivirus, serveurs  d'authentification, filtrages d'URL.\n\nAnglais technique est demandé .\nPoste en journée, en présentiel sur site.\n\nVous êtes ingénieur en informatique, avec une spécialisation en Administration Réseaux et disposez d'une solide expérience de 3 ans minimum dans un environnement industriel exigé.",
+    "metier": "Administrateur / Administratrice de systèmes d'information (SI)",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Linux",
+      "MySQL",
+      "Python",
+      "SQL",
+      "Intégration continue",
+      "Tests automatisés",
+      "Gestion de projet",
+      "Analyse de données",
+      "Cybersécurité",
+      "Data Engineering",
+      "Model drift",
+      "Sécurité informatique",
+      "Pipelines de données",
+      "Code review",
+      "Qualité des données"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "présentiel",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous êtes ingénieur en informatique, avec une spécialisation en Administration Réseaux et disposez d'une solide expérience de 3 ans minimum dans un environnement industriel exigé.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 16,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:04.798404",
+  "input_hash": "31b1833991a387af17c6b91fb14c55bcdb240597395a6d984148809f175936c1",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

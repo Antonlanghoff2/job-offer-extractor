@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3342982",
+  "value": {
+    "id": "3342982",
+    "intitule": "Expert / Experte en cybersécurité (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3342982",
+    "description": "Chez Thales, nous sommes fiers de travailler ensemble pour imaginer des solutions innovantes qui contribuent à construire un avenir plus sûr, plus vert et plus inclusif. Un avenir de confiance. Mais ces technologies ne viennent pas de nulle part. L'intelligence humaine est le moteur derrière la technologie qui fait la renommée de Thales. Les projets que nous conduisons sont complexes et nos clients exigeants. Pour répondre aux besoins actuels et futurs de nos clients, nous maîtrisons plus d’une centaine de disciplines, de l’optique à la physique quantique, du traitement du signal à la connectivité et à l’intelligence artificielle. Rejoindre Thales, c’est repousser les limites de la technologie et la mettre au service du progrès et du développement durable de nos sociétés. C’est donc être au cœur d’une formidable aventure technique. Une attention portée à l’équilibre des collaborateurs au service de leur réussite. C’est pourquoi, notamment, nous nous efforçons de créer un environnement de travail accueillant et d’accorder la flexibilité nécessaire à l’équilibre entre vie professionnelle et vie personnelle. Nous savons que cet équilibre est essentiel à votre épanouissement et à la réussite des projets que nous vous confierons. Des parcours professionnels riches. Chez Thales, nous jouons collectif. Ce qui signifie travailler en équipe, côtoyer des experts et donc apprendre et développer ses compétences en permanence tout en faisant bénéficier le Groupe de son savoir-faire. C’est aussi la possibilité d’évoluer, de changer de fonction ou d’activité, voire de pays. QUI SOMMES-NOUS ? S3NS est né du partenariat industriel entre Thales, leader mondial de la cyber sécurité, et Google Cloud, leader mondial des solutions cloud. Nous avons pour ambition d’offrir le meilleur des deux mondes à l’ensemble des organisations soucieuses de protéger leurs données sensibles (institutions publiques, OIV, OSE…). C’est-à-dire une solution équivalente à Google Cloud Platform (incluant à la fois les services IaaS et PaaS de GCP) et respectant les exigences du label SecNumCloud. Une première offre, ‘Contrôles locaux avec S3NS’, est déjà disponible depuis février 2023 pour permettre à nos clients de bénéficier d’un premier niveau de transparence et contrôles additionnels, et d'accélérer la trajectoire vers le cloud de confiance. QUI ETES-VOUS ? Vous êtes passionné par l’innovation technologique, le Cloud et les déploiements de services et d’infrastructure “as code” ? Vous aimez opérer des systèmes critiques de grande envergure ? Diplômé (e) d’école d’ingénieur vous justifiez d'une expérience reconnue sur des marchés régulés (secteur bancaire/médical…) avec une exposition internationale. Vous justifiez de 3 ans d'expérience minimum dans le software engineering, l’automatisation, et le développement (Sécurité et conformité, Automatisation, Résolution de problèmes). Vous première expérience de migration d’infrastructure privée ou hybride vers le cloud est un atout. Vos compétences : * Maîtrise d'un ou plusieurs des langages de programmation suivants : C, C++, Java, Python, Go * Bonnes connaissances des technologies de containerisation (ex. Docker, Kata Containers) et d’orchestration (ex. Kubernetes, Swarm) * Pratique a minima des services d’un cloud public (ex. GCP) * Bonnes connaissances des technologies d‘hébergement Open Source (Linux, Docker, Kubernetes, Openstack) * Solides connaissances en OS Linux / Unix et langages de scripting shell * Pratique du SRE (Infra-As-Code, Git, Continuous Deployment, Terraform, Ansible) * Capacité à débugger, à optimiser le code et à automatiser les tâches de routine * Bonne connaissance des services d’Identité et de Sécurité du cloud sur les aspects : + Fonctionnels : o Gestion des services d’identité ex. Contrôle d’accès, Identité, Authentification o Gestion des services de sécurité ex. gestion des clés, gestion des secrets, sécurisation des accès/Zéro Trust, Audit Logs + Techniques : o IAM, OpenID connect, OAuth2 o KMS, HSM o Bastion Zero Trust ex. BeyondCorp, Boundary o Outils collaboratifs ex. Jitsi, Guacamole + Opérationnels : o Maintien en Conditions Opérationnelles, de Sécurité et de Modernité de la solution o Intégrité, confidentialité, haute disponibilité, élasticité, utilisabilité CE QUE NOUS POUVONS ACCOMPLIR ENSEMBLE En intégrant l’équipe, vous serez dans un premier temps contributeur de la construction de services d’identité et de sécurité du Cloud de Confiance (ex. gestion des accès, des clés, des identités, des sessions d’administration) : design, définition SLO/SLI, mise en œuvre des services, tests, etc. Vous bénéficierez d’une latitude importante quant aux choix effectués dans ces phases de design et d'implémentation. Vous bénéficiez...",
+    "metier": "Expert / Experte en cybersécurité",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "Linux",
+      "Optique",
+      "Python",
+      "Terraform",
+      "Travail en équipe",
+      "Data Engineering",
+      "Optimisation des performances",
+      "Sécurité informatique",
+      "Tests automatisés"
+    ],
+    "salaire_min": 2023,
+    "salaire_max": 2023,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplômé (e) d’école d’ingénieur vous justifiez d'une expérience reconnue sur des marchés régulés (secteur bancaire/médical…) avec une exposition internationale.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:11.688708",
+  "input_hash": "32912bb8c4438572819313ae4121dee4d0c200896f577319d9e1d4c9951a33cf",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

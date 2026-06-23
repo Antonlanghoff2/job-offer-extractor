@@ -1,0 +1,472 @@
+{
+  "key": "trends:72 - Sablé-sur-Sarthe",
+  "value": {
+    "territoire": "72 - Sablé-sur-Sarthe",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Git": 2,
+      "Intelligence artificielle": 2,
+      "Ansible": 1,
+      "Automatisation De Processus": 1,
+      "Documentation Technique": 1,
+      "Déploiement De Modèles": 1,
+      "Intégration Continue": 1,
+      "Python": 1,
+      "Sécurité Informatique": 1,
+      "Tests Automatisés": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Git",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Git": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Ansible",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Ansible": 1
+        }
+      },
+      {
+        "nom": "Automatisation De Processus",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Automatisation de processus": 1,
+          "Automatisation des tests": 1
+        }
+      },
+      {
+        "nom": "Documentation Technique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Documentation technique": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intégration continue": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Tests automatisés": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Git": {
+        "Git": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Ansible": {
+        "Ansible": 1
+      },
+      "Automatisation De Processus": {
+        "Automatisation de processus": 1,
+        "Automatisation des tests": 1
+      },
+      "Documentation Technique": {
+        "Documentation technique": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Intégration Continue": {
+        "Intégration continue": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Administrateur / Administratrice de systèmes d'information (SI)": 1,
+      "Analyste De La Performance Sportive": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDD - 24 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Automatisation De Processus",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ansible",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Automatisation De Processus",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Automatisation De Processus",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Automatisation De Processus",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Automatisation De Processus",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Automatisation De Processus",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Automatisation De Processus",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Automatisation De Processus",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Vision",
+        "Déploiement De Modèles"
+      ],
+      [
+        "Ansible",
+        "Git",
+        "Intelligence artificielle",
+        "Python",
+        "Automatisation De Processus",
+        "Intégration Continue",
+        "Sécurité Informatique",
+        "Tests Automatisés",
+        "Documentation Technique"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3953597",
+        "intitule": "Administrateur / Administratrice d'infrastructure (H/F)",
+        "entreprise": "",
+        "territoire": "72 - Sablé-sur-Sarthe",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3953597"
+      },
+      {
+        "id": "3720011",
+        "intitule": "Data analyst de la performance (405222) (H/F)",
+        "entreprise": "Groupe Bel",
+        "territoire": "72 - Sablé-sur-Sarthe",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3720011"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3953597",
+        "intitule": "Administrateur / Administratrice d'infrastructure (H/F)",
+        "entreprise": "",
+        "territoire": "72 - Sablé-sur-Sarthe",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3953597"
+      },
+      {
+        "id": "3720011",
+        "intitule": "Data analyst de la performance (405222) (H/F)",
+        "entreprise": "Groupe Bel",
+        "territoire": "72 - Sablé-sur-Sarthe",
+        "contrat": "CDD - 24 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3720011"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:41.184578",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:3660452",
+  "value": {
+    "id": "3660452",
+    "intitule": "Data AI Engineer F/H - Système, réseaux, données (H/F)",
+    "entreprise": "AKKODIS FRANCE SAS",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3660452",
+    "description": "Descriptif du poste:\n\n\n \n\n \n\nMissions\n\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région et recrute un Data AI Engineer en CDI dans le secteur Healthcare & Medical. Ce poste s'inscrit dans la stratégie de déploiement de solutions d'intelligence artificielle à fort impact et à grande échelle, intégrant des technologies avancées telles que l'IA générative et les LLM, au sein d'un environnement multi-pays et multi-métiers.\n\nResponsabilités principales :\n\n\n* Concevoir, développer et déployer des solutions d'IA générative (assistants, chatbots, agents IA) adaptées aux besoins métiers.\n* Construire et optimiser des pipelines RAG incluant ingestion de documents, chunking, embeddings et retrieval.\n* Intégrer les solutions IA dans les applications existantes via APIs et services, en assurant scalabilité et maintenabilité.\n* Garantir la performance, la sécurité et l'optimisation des coûts des systèmes IA déployés.\n* Participer à l'industrialisation des capacités IA et à l'évolution de la plateforme IA (multi-LLM, agents, orchestration).\n* Contribuer à des POCs rapides, à l'innovation et à l'amélioration continue des solutions IA.\n* Collaborer étroitement avec les équipes Produit, Data Platform, Architecture, IT et métiers pour assurer l'alignement avec les standards d'entreprise.\n\nEnvironnement de travail :\n\n\n\nVous évoluerez dans un contexte technique avancé, utilisant des frameworks IA (LangChain, LlamaIndex), plateformes data (Snowflake), environnements cloud (Azure, AWS, GCP), et architectures microservices/API. L'équipe travaille en mode collaboratif avec une forte orientation delivery, dans un environnement international, multi-métiers et multi-systèmes, où la gouvernance IA et l'innovation sont au cœur des pratiques.\n\nProfil recherché:\nDiplômé(e) d'un Bac+5 en informatique, Data Science ou équivalent, vous justifiez d'au moins 5 ans d'expérience en ingénierie IA, développement logiciel ou Data Engineering, idéalement dans le secteur Healthcare & Medical. Vous maitrisez Python, SQL, frameworks IA (TensorFlow, PyTorch, LangChain), gestion de données volumineuses, bases de données relationnelles et NoSQL, ainsi que les environnements cloud. Une expérience confirmée avec les LLM, le prompt engineering, les architectures RAG et le développement backend est attendue. Vous possédez un esprit analytique, une forte autonomie, des compétences en communication et une capacité à travailler dans des environnements complexes et internationaux. La connaissance des normes RGPD et des pratiques de sécurité des données est un atout.\n \nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Administrateur / Administratrice de systèmes d'information (SI)",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Coûts",
+      "Data engineering",
+      "Intelligence artificielle",
+      "LangChain",
+      "NoSQL",
+      "PyTorch",
+      "Python",
+      "SQL",
+      "TensorFlow",
+      "Déploiement de modèles",
+      "Déploiement de solutions",
+      "Analyse de données",
+      "Model drift",
+      "Documentation technique",
+      "Résolution de problèmes",
+      "Sécurité informatique",
+      "Pipelines de données",
+      "API",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'un Bac+5 en informatique, Data Science ou équivalent, vous justifiez d'au moins 5 ans d'expérience en ingénierie IA, développement logiciel ou Data Engineering, idéalement dans le secteur Healthcare & Medical.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 22,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:22.545537",
+  "input_hash": "271061f86592963b637b51dcd2177fc4131fbe0eabfacec876c74b35a21f2ae3",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

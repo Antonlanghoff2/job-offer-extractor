@@ -1,0 +1,294 @@
+{
+  "key": "trends:52 - Saint-Dizier",
+  "value": {
+    "territoire": "52 - Saint-Dizier",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "API": 1,
+      "Aéronautique": 1,
+      "Backend": 1,
+      "Cahier des charges": 1,
+      "Ferroviaire": 1,
+      "Intelligence artificielle": 1,
+      "Pipelines De Données": 1
+    },
+    "competences_details": [
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "Aéronautique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Aéronautique": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Cahier des charges",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Cahier des charges": 1
+        }
+      },
+      {
+        "nom": "Ferroviaire",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Ferroviaire": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "API": {
+        "API": 1
+      },
+      "Aéronautique": {
+        "Aéronautique": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Cahier des charges": {
+        "Cahier des charges": 1
+      },
+      "Ferroviaire": {
+        "Ferroviaire": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur / Ingénieure d'étude informatique": 1,
+      "Patronnier / Patronnière": 1
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 1,
+      "Intérim - 1 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "API",
+        "competence_b": "Aéronautique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Ferroviaire",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Ferroviaire",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Ferroviaire",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Ferroviaire",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Cahier des charges",
+        "Intelligence artificielle",
+        "Aéronautique",
+        "Ferroviaire",
+        "API",
+        "Pipelines De Données",
+        "Backend"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4076544",
+        "intitule": "DESSINATEUR LOGICIEL DAO/CAO H/F",
+        "entreprise": "",
+        "territoire": "52 - Saint-Dizier",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4076544"
+      },
+      {
+        "id": "1741637",
+        "intitule": "Ingénieur logiciel embarqué – Domaine automobile (H/F)",
+        "entreprise": "SILKHOM SAS",
+        "territoire": "52 - Saint-Dizier",
+        "contrat": "CDI",
+        "date": "2026-04-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1741637"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4076544",
+        "intitule": "DESSINATEUR LOGICIEL DAO/CAO H/F",
+        "entreprise": "",
+        "territoire": "52 - Saint-Dizier",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4076544"
+      },
+      {
+        "id": "1741637",
+        "intitule": "Ingénieur logiciel embarqué – Domaine automobile (H/F)",
+        "entreprise": "SILKHOM SAS",
+        "territoire": "52 - Saint-Dizier",
+        "contrat": "CDI",
+        "date": "2026-04-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1741637"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:03:20.835084",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

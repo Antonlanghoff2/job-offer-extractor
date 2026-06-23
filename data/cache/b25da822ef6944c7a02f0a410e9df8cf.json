@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:3496411",
+  "value": {
+    "id": "3496411",
+    "intitule": "Technicien méthodes maintenance analyse des données (H/F)",
+    "entreprise": "Orano SA",
+    "territoire": "26 - Pierrelatte",
+    "ville": "26235",
+    "code_postal": "26700",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3496411",
+    "description": "Au sein du Service Méthodes Centrales de Maintenance (SMC), rattaché au Département Maintenance Transverse (MTR) de la Direction Technique (DTE), le Pôle GMAO recrute un technicien méthodes maintenance spécialisé en traitement et analyse de données.\n\n Votre mission principale consiste à contribuer à l'optimisation de la maintenance industrielle du site du Tricastin en assurant la collecte, la structuration, l'analyse et la fiabilisation des données issues de multiples sources.\n\n Dans ce cadre, vos missions sont les suivantes : \n\n * Gérer le référentiel technique dans la GMAO :\ncréation, modification et suppression des équipements et postes techniques, ainsi que l'enrichissement des arborescences SAP et des plans de maintenance associés, sur la base des demandes utilisateurs ou dans une logique d'amélioration continue\n * Collecter, structurer et analyser les données de maintenance :\ngarantir leur qualité, leur cohérence et leur homogénéité dans la GMAO, en assurant leur mise à jour, leur harmonisation et leur complétude dans le respect des standards définis (équipements, gammes, plans d'entretien, documentation, etc.)\n * Veiller au respect des référentiels et des exigences :\nappliquer et faire évoluer les règles de gestion liées au paramétrage et à l'utilisation de la GMAO\n * Participer à l'amélioration continue des processus :\nmettre à jour les procédures et documents de référence, notamment ceux relatifs à la gestion des modifications\n * Contribuer au pilotage de la performance maintenance :\nparticiper à la définition, à la mise en place et au suivi des indicateurs de performance\nDe formation BAC+2 à BAC+3, vous maîtrisez le module GMAO PM de SAP et avez des connaissances des modules WCM (autorisations de travail) et MM (pour la gestion des pièces de rechange et du circuit de réparation). \n\nVous possédez des compétences dans l'analyse et le traitement de gros volumes de données issues de la GMAO ou d'autres sources. Pour cela, vous utilisez avec aisance des outils de requêtage et de mise en forme de calculs sur les données (par exemple, Python, R, SQL, outils Microsoft ACCESS, PowerBI, EXCEL-PowerPivot, EXCEL-PowerQuery). \n\nVous êtes reconnu pour votre autonomie, votre rigueur, votre sens de la communication ainsi que votre esprit d'initiative. \n\nVous avez des qualités rédactionnelles et relationnelles confirmées. \n\nUne bonne connaissance des installations de la plate-forme ORANO Tricastin serait un plus.\n\n \n\nMerci de joindre une lettre de motivation à votre dossier de candidature.",
+    "metier": "Technicien / Technicienne d'exploitation nucléaire",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Data Engineering",
+      "Pipelines de données",
+      "Gestion de projet",
+      "Model drift",
+      "Programmation concurrente",
+      "Qualité des données",
+      "Documentation technique"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation BAC+2 à BAC+3, vous maîtrisez le module GMAO PM de SAP et avez des connaissances des modules WCM (autorisations de travail) et MM (pour la gestion des pièces de rechange et du circuit de réparation).",
+        "confidence": 0.9
+      },
+      {
+        "label": "BAC+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation BAC+2 à BAC+3, vous maîtrisez le module GMAO PM de SAP et avez des connaissances des modules WCM (autorisations de travail) et MM (pour la gestion des pièces de rechange et du circuit de réparation).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:07.776885",
+  "input_hash": "8d83bf65356d0d371fe3f7b3cd2a702040ce5905f299da7c270827dbc9339c5a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

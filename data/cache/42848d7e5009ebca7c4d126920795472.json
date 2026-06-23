@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:3734210",
+  "value": {
+    "id": "3734210",
+    "intitule": "DEVELOPPEUR SENIOR FULLSTACK .NET CORE - ANGULAR - COMPTABILITE (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Nanterre",
+    "ville": "92050",
+    "code_postal": "92000",
+    "contrat": "Profession libérale",
+    "date_creation": "2026-06-12",
+    "date": "2026-06-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3734210",
+    "description": "PROPULSE IT accompagne ses clients grands comptes et PME dans la mise en œuvre des projets It et digitaux. PROPULSE IT est un réseau de consultants à forte valeurs ajoutées, complètement associé à notre démarche qualité de suivi des besoins et projets de nos clients. A ce jour, le réseau de freelance PROPULSE IT comporte plus de 30 000 consultants sur toute la France, et couvre l'ensemble des besoins IT et digitaux. En constituant ce réseau par cooptation de clients ou de consultants, nous avons privilégié la constance dans le savoir-faire technique et le savoir-être, pour devenir un véritable partenaire privilégié de nos clients. Parallèlement, nous avons développé un réseau de partenaires sélectionnés pour leur expertise technique, et l'adhésion aux valeurs de notre entreprise. Aujourd'hui PROPULSE IT est une société en pleine croissance organique, Champion de la Croissance du journal Les Echos 5 années consécutives. Ce développement s'appuie sur la qualité et la pérennité des missions réalisées. La satisfaction client est ainsi liée à l'épanouissement des consultants ! Alors, n'hésitez pas à postuler ! Le poste : PÉRIMÈTRE Concevoir, réaliser et déployer une nouvelle solution de gestion du métier pour remplacer les 2 systèmes existants. Pays 45 et utilisateurs >3000 RÔLE Le développeur est responsable du développement et des tests unitaires d'un module de comptabilité qui fera partie de l'écosystème technique. Ce rôle implique le développement, y compris des API pour interconnecter le module et des tests unitaires, mais il peut inclure des spécifications techniques si nécessaire. Le profil doit être agile et prêt à accompagner les équipes pour accélérer la livraison du module technique dont il est responsable. Principales allocations : 1. Calculateur de taxes indirectes et TVA - La matrice fiscale permettra de gérer l'application ou non de la TVA et/ou d'un impôt indirect, en fonction de plusieurs facteurs. o Ces facteurs varient d'un pays à l'autre. Afin de permettre un traitement générique, une grille tarifaire a été définie. Il comprend toutes les dimensions (de tous pays) susceptibles d'impacter la détermination de la TVA connue à ce jour. - Entrée de la matrice : o Une famille de taxes HCC, ainsi que les valeurs associées aux dimensions d'entrée. o Consultez le fichier de référence pour obtenir la liste des dimensions disponibles et des valeurs possibles pour chacune d'elles. - Sortie d'une ligne de la matrice : o Un code TVA à appliquer, et éventuellement un ou plusieurs codes des impôts indirects. o Pour un pays donné, chaque matrice doit contenir une colonne de sortie pour le code TVA, et éventuellement une ou plusieurs colonnes de sortie correspondant aux impôts indirects applicables dans ce pays. 2. Convertisseurs Comptables - Le module « Convertisseur Comptable » a plusieurs missions essentielles dans le processus de gestion comptable. Voici un résumé de ses principales fonctions : o Paramétrage comptable : Le module vous permet de configurer les paramètres comptables nécessaires au traitement des écritures. o Commande d'écritures comptables : Il gère la création et l'envoi des écritures comptables aux systèmes comptables. o Transformation des données : Le module convertit les données comptables dans les formats requis par les systèmes financiers, tels que SUN et SAP. o Gestion des limites de crédit et des conditions de paiement : S'assure que les limites de crédit et les conditions de paiement sont respectées lors de la comptabilité. o Confirmation de la reconnaissance : Le module confirme que les écritures comptables ont été correctement enregistrées dans les systèmes comptables. - Ces missions sont cruciales pour s'assurer que toutes les transactions financières sont correctement enregistrées et traitées, ce qui est essentiel pour la gestion financière de l'entreprise. Profil recherché : Anglais indispensable Technologies requises : - .NET Core (C#) - Angular - REST API - Azure PaaS - Azure DevOps - MSSQL - CI/CD Compétences techniques : - Solide connaissance du Clean Code et des principes SOLID - Expérience avec les frameworks de tests unitaires (NUnit ou XUnit) - Capacité à produire une documentation technique de haute qualité - Familiarité avec les méthodologies Agile Compétences générales : bonne bases en comptabilité (flux, TVA, etc) - Solides compétences en matière de collaboration d'équipe - Capacité à travailler de manière autonome et à s'approprier les tâches - Proactif dans la proposition de solutions et d'améliorations Responsabilités: - Conception, développement et implémentation de nouvelles fonctionnalités - Maintenance et correction de bugs - Écriture et exécution de tests unitaires - Réalisation de revues de code - Assurer une livraison de haute qualité grâce aux pipelines CI/CD",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Azure",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "SQL",
+      "Vue.js",
+      "Cybersécurité",
+      "Qualité des données",
+      "Data Engineering",
+      "Feature Engineering"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 30000,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "9 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:49.810954",
+  "input_hash": "e994096ab5de9a5da3a1fb0ef0114f0081131f4e4f6bbca1899983a1e968cb0c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

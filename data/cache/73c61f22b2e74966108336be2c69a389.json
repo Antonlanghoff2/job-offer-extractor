@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:3235012",
+  "value": {
+    "id": "3235012",
+    "intitule": "Ingénieur(e) Systèmes F/H h/f",
+    "entreprise": "",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-31",
+    "date": "2026-05-31",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3235012",
+    "description": "Ingénieur(e) Systèmes F/H Description de poste Vous rejoignez CGI, leader mondial du conseil et des services numériques à Bordeaux et accompagnez nos clients bancaire. A Bordeaux, nos équipes accompagnent nos clients grands comptes et mid market dans la mise en œuvre de leurs projets stratégiques de la région sur l’ensemble des métiers dans les secteurs finance, industrie, retail, énergie et télécommunications. Fonctions et responsabilités Intégré à l'équipe Compute, vous interviendrez sur les activités suivantes: Validation des expressions de besoin avec les clients. -Proposition de solution serveurs pour les clients. -Gestion des livraisons des serveurs en DC ou hors DC avec les transporteurs et les équipes DC. -Gestion des urbanisations serveurs avec les urbanistes DC. -Gestion des demandes de rackage et câblage avec les de proximité DC -Suivi des dates de fin de support des serveurs physiques. -Gestion des demandes de décommissionnement des serveurs physiques. -Validation des matrices de compatibilité Firmware / drivers. -Suivi et réalisation des upgrades des équipements HPE, DELL et Cisco. -Participation à des audit de sécurité. -Application des recommandations des équipes sécurité. -Rédaction et maintien de la documentation technique et procédure. -Assurer le support et résolution des incidents escalader par le N1, N2 et N3. En nous rejoignant, vous bénéficiez notamment des avantages suivants : - Offre complète de formations : techniques, métiers, développement personnel - Qualité de vie au travail : jusqu’à 3 jours de télétravail par semaine, 27 jours de congés payés, RTT, congés ancienneté et enfant malade, programme santé & bien-être - Avantages sociaux : régime d’achats d’actions, participation, PEE, Compte Epargne Temps Et bien d'autres encore ! Qualités requises pour réussir dans ce rôle De formation Bac+2 à Bac+5 (Formation Universitaire, Ecoles d’ingénieurs, ou équivalent), vous avez une expérience d’au moins 3 ans sur un poste similaire. Vous êtes familier avec les outils suivants : -Cisco UCS : Intersight, UCS Manager et Fabric Interconnect -DELL : PowerEdge, Open Manage Entreprise -HPE : SYNERGY, C7000, Proliant, OneView -Compétences en scripting : PowerShell, Python. Le poste requiert aussi : - Anglais B2 - Aisance relationnelle - Adaptabilité Ensemble, en tant que propriétaires, mettons notre savoir-faire à l’œuvre. La vie chez CGI est ancrée dans l’actionnariat, le travail d’équipe, le respect et un sentiment d’appartenance. Chez nous, vous pourrez exploiter votre plein potentiel parce que… Nous vous invitons à devenir propriétaire dès le jour 1 alors que nous travaillons ensemble à faire de notre rêve une réalité. C’est pourquoi nous nous désignons comme associés de CGI, plutôt que comme employés. Nous tirons profit des retombées de notre succès collectif et contribuons activement à l’orientation et à la stratégie de notre entreprise. Votre travail crée de la valeur. Vous élaborerez des solutions novatrices et développerez des relations durables avec vos collègues et clients, tout en ayant accès à des capacités mondiales pour concrétiser vos idées, saisir de nouvelles opportunités, et bénéficier d’une expertise sectorielle et technologique de pointe. Vous ferez évoluer votre carrière en vous joignant à une entreprise bâtie pour croître et durer. Vous serez soutenus par des leaders qui ont votre santé et bien-être à cœur et qui vous permettront de saisir des occasions afin de parfaire vos compétences et élargir les horizons. Joignez-vous à nous, l’une des plus importantes entreprises de conseil en technologie de l’information (TI) et en management au monde.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Cybersécurité",
+      "Documentation technique",
+      "Gestion de projet",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur(e) Systèmes F/H Description de poste Vous rejoignez CGI, leader mondial du conseil et des services numériques à Bordeaux et accompagnez nos clients bancaire.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Qualités requises pour réussir dans ce rôle De formation Bac+2 à Bac+5 (Formation Universitaire, Ecoles d’ingénieurs, ou équivalent), vous avez une expérience d’au moins 3 ans sur un poste similaire.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Qualités requises pour réussir dans ce rôle De formation Bac+2 à Bac+5 (Formation Universitaire, Ecoles d’ingénieurs, ou équivalent), vous avez une expérience d’au moins 3 ans sur un poste similaire.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:13.597898",
+  "input_hash": "4e02a775d03f86e47b022b531f5090b4e8be6dabac163d59f0079f0250b46b99",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

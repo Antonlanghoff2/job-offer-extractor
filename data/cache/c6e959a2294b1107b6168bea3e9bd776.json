@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:3427443",
+  "value": {
+    "id": "3427443",
+    "intitule": "ASSISTANT DATA ANALYTICS (F/H) - EN ALTERNANCE (H/F)",
+    "entreprise": "Groupe TDF",
+    "territoire": "92 - Montrouge",
+    "ville": "92049",
+    "code_postal": "92120",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3427443",
+    "description": "En tant qu'alternant(e) en data analytics au sein de la Business Unit Télécom (BUT) de TDF, vous participerez activement au développement et à la maintenance des chaînes de création de données, ainsi que les outils analytiques de prise de décision. Vous travaillerez en soutien de la DIPE, et en étroite collaboration avec les équipes DSI pour répondre aux enjeux business de TDF.\n \nMissions principales :\n\n * Développer des solutions techniques pour la mise à jour et la maintenance des dashboards (PowerBI)\n * Développer des solutions techniques pour la mise à jour et la maintenance des pipelines de collecte, d'ingestion, de transformation et d'orchestration de la donnée (dagster, dbt, snowflake)\n\n * Générer de la donnée sur-mesure en langage SQL pour répondre aux demandes ad-hoc des clients internes \n\n * Piloter des projets en assurant le suivi des délais, la bonne adéquation entre la solution technique et les besoins clients\n * Participer à la rédaction de la documentation technique des outils analytiques en production\nProfil recherché :\n\n * Étudiant(e) en école d'ingénieur, de commerce ou université équivalente proposant un parcours en informatique, mathématiques appliquées, statistiques ou data science\n * Bonne compréhension des bases de données (SQL) et maîtrise d'un langage de programmation analytique (Python ou R)\n * Bonne compréhension de l'architecture des bases de données\n * Esprit analytique rigoureux, goût pour la résolution de problèmes complexes\n * Capacité à communiquer efficacement les résultats à des interlocuteurs non techniques\n * Maîtrise du français, l'anglais est un plus.\n\n Environnement technique\n\n * Stack : Trino-SQL, Python, Airflow, DBT, starburst, Power BI, snowflake \n\n * Sources de données : PostgreSQL, Iceberg, duckdb, Snowflake, sharepoint\n\n * Pilotage de projet : Jira\n * Gestion des versions : Gitlab, Jenkins\n \nPourquoi nous rejoindre ?\n\n * Environnement stimulant : Intégrez une équipe agile et innovante au sein d'une entreprise majeure des télécommunications en France\n *  Développement professionnel : Bénéficiez d'un accompagnement personnalisé et de nombreuses opportunités de formation.\n *  Impact : Contribuez à des projets stratégiques et à la croissance de notre business unit télécom.\nLieu : Montrouge, France\nType de contrat : Alternance\nDurée : 12 à 24 mois\nDate de début : Septembre 2026",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Délais",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "PostgreSQL",
+      "Python",
+      "SQL",
+      "Pipelines de données",
+      "Résolution de problèmes",
+      "Data Engineering",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": 12000,
+    "salaire_max": 24000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "En tant qu'alternant(e) en data analytics au sein de la Business Unit Télécom (BUT) de TDF, vous participerez activement au développement et à la maintenance des chaînes de création de données, ainsi que les outils analytiques de prise de décision.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Étudiant(e) en école d'ingénieur, de commerce ou université équivalente proposant un parcours en informatique, mathématiques appliquées, statistiques ou data science",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:54.797367",
+  "input_hash": "76d120a3443c8f5ced6407d44a5b787ae3d7d379a904c76b7137e16878d0e486",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

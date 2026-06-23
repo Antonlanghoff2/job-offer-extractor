@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:2638835",
+  "value": {
+    "id": "2638835",
+    "intitule": "Ingénieur d'essais (H/F)",
+    "entreprise": "",
+    "territoire": "40 - Biscarrosse",
+    "ville": "40046",
+    "code_postal": "40600",
+    "contrat": "CDI",
+    "date_creation": "2026-05-14",
+    "date": "2026-05-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2638835",
+    "description": "Description du poste :\nAu sein de DGA Essais de missiles site Landes, vous serez intégré dans une équipe technique en charge d'activités de sauvegarde (méthodes, études, expertise, formation, définition) relatives à des dispositifs d'essais en vol de missile.\nVous aurez en charge, en tant qu'ingénieur étude, la réalisation et la supervision des activités, principalement en amont de l'essai, concernant la sauvegarde liée aux engins en expérimentation (essai en vol), et l'évaluation des risques associés aux essais, si besoin en temps réel pendant les essais..\nCes activités consistent en l'analyse (faisabilité, risque, conception, SdF.), la conception (dossier d'exigences, suivi de définition.), la validation de systèmes, sous-systèmes (sol et embarqué) de dispositif de sauvegarde en vol, ainsi que la réalisation/validation d'études de sauvegarde liées au vol de missile.\nVous participerez aussi au développement de nouvelles méthodes, nouveaux outils et moyens de sauvegarde (prototypage, évaluation, conception, qualification).\nDes compétences en programmation et en développement de systèmes et de logiciels sont bienvenues.\nEn fonction des problématiques abordées, ce poste est principalement en relation avec les directeurs d'essais (responsables techniques des essais), des ingénieurs essais de différents départements (radar, calcul, cible.) et des industriels de l'armement.\nLa prise de fonction de ce poste fera l'objet d'une formation interne.\nDescription du profil :\nFormation : BAC+5 ou plus et équivalent, ingénieur généraliste ou axé informatique, mathématique, aéronautique\nTrès bonne aptitude au travail en équipe, autonomie, rigueur, capacité d'adaptation, capacité de rédaction et d'analyse, motivation pour la défense nationale.Compétence programmation informatique souhaitable (python par ex).",
+    "metier": "Ingénieur / Ingénieure méthodes et process",
+    "niveau": "junior",
+    "competences": [
+      "Aéronautique",
+      "Python",
+      "Vision"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous aurez en charge, en tant qu'ingénieur étude, la réalisation et la supervision des activités, principalement en amont de l'essai, concernant la sauvegarde liée aux engins en expérimentation (essai en vol), et l'évaluation des risques associés aux essais, si besoin en temps réel pendant les essais..",
+        "confidence": 0.9
+      },
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : BAC+5 ou plus et équivalent, ingénieur généraliste ou axé informatique, mathématique, aéronautique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:22.148299",
+  "input_hash": "6f1512f6c87b0afb51272b5375c55fc323616d9d0a2d33a58a5d47c28d482ef9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,75 @@
+{
+  "key": "offer_extraction:209VNMC",
+  "value": {
+    "id": "209VNMC",
+    "intitule": "RESPONSABLE INGÉNIEUR SYSTÈME RESEAUX - PROJET ALLIANCE (H/F)",
+    "entreprise": "CHU de MONTPELLIER",
+    "territoire": "34 - MONTPELLIER CEDEX 5",
+    "ville": "34172",
+    "code_postal": "34295",
+    "contrat": "CDD - 6 Mois",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209VNMC",
+    "description": "Grade Grille de référence: IH\nType de contrat: Contractuels acceptés\nPourcentage d'activité: 100%\n\nDÉFINITION : \nL'ingénieur systèmes et réseaux spécialisé en infrastructure IA conçoit, déploie et exploite des plateformes techniques dédiées aux projets d'intelligence artificielle (IA) du CHU de Montpellier. Il intervient sur des environnements hybrides (on-premise / cloud), avec une forte orientation DevOps, conteneurisation et orchestration (OpenShift, Rancher, Kubernetes).\nIl garantit la performance, la scalabilité, la sécurité et la disponibilité des infrastructures nécessaires aux traitements de données massives et aux workloads IA.\n- Lieu d'exercice : Direction du Numérique en Santé  \n- Horaires : 8h-12h/14h-18h (forfait jour) \n- Repos : Samedi, Dimanche et Jours fériés\n\nACTIVITÉS PRINCIPALES : \nInfrastructure IA et Data :\n- Déployer et maintenir des infrastructures adaptées aux workloads IA (GPU, stockage haute performance, data pipelines).\n- Optimiser les performances pour les traitements de données massives et le machine learning.\n- Assurer la disponibilité, la résolution d'incidents et le maintien en condition opérationnelle.\n- Superviser les performances, monitoring, capacity planning, patch management.\n- Gestion de projet\n\nSystèmes & Conteneurs :\n- Administrer les environnements Linux.\n- Concevoir et exploiter des plateformes conteneurisées (Docker, Kubernetes).\n- Gérer des environnements OpenShift ou Rancher.\n\nDevOps & Automatisation :\n- Mettre en place des pipelines CI/CD.\n- Automatiser les déploiements (Ansible, Terraform, scripts).\n- Participer à la culture DevOps (monitoring, logging, observabilité).\n\nArchitecture & Cloud :\n- Concevoir des architectures évolutives et résilientes.\n- Participer aux projets cloud hybrides.\n\nSécurité :\n- Assurer la sécurité des infrastructures et des données sensibles de santé.\n-       Appliquer les bonnes pratiques de cybersécurité\n\nRELATIONS PROFESSIONNELLES LES PLUS FRÉQUENTES :\n- En lien direct avec le responsable technique de la DNS\n- En lien avec le secteur fonctionnel de la DNS\n \nLIAISON HIÉRARCHIQUE : \n- Responsable Technique\n\nCORRESPONDANCE STATUTAIRE (grade) : \n- Ingénieur Hospitalier",
+    "metier": "Ingénieur / Ingénieure supervision IT Datacenter",
+    "niveau": "junior",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Machine learning",
+      "Terraform",
+      "CI/CD",
+      "Automatisation des déploiements",
+      "Optimisation de performance",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Feature Engineering",
+      "Tests automatisés",
+      "Intégration continue",
+      "Architecture microservices",
+      "Backend",
+      "Monitoring de modèles",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Pipelines de données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'ingénieur systèmes et réseaux spécialisé en infrastructure IA conçoit, déploie et exploite des plateformes techniques dédiées aux projets d'intelligence artificielle (IA) du CHU de Montpellier.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur Hospitalier",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 23,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:55.426657",
+  "input_hash": "926c35ee07164a7c74f5a2aa9caa0807d9280fbf5e02591ffbd1c0fcf7d0514d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

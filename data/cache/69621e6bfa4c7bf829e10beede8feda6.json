@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3591098",
+  "value": {
+    "id": "3591098",
+    "intitule": "Ingénieur / Ingénieure d'intégration applicative (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 14e Arrondissement",
+    "ville": "75114",
+    "code_postal": "75014",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3591098",
+    "description": "Mission : L'ingénieur(e) participera au développement, à l'exploitation et à la maintenance des chaînes logicielles de simulation et de traitement des images de l'instrument VIS (canal visible) de la mission Euclid de l'Agence spatiale européenne (ESA). Il/elle interviendra dans la conception, le développement, le test, l'intégration, la validation et la maintenance de ces chaînes de traitement au sein de l'équipe en charge du segment sol d'Euclid à l'IAP. Activités : - Développement et test de composants de la chaîne de simulation et traitement d'image - Intégration et validation dans l'environnement cible - Rédaction de documentation - Optimisation du code (runtime, mémoire, I/O) - Maintenance corrective et évolutive Environnement logiciel : Linux, Python, Git",
+    "metier": "Cartographe",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Computer Vision",
+      "Documentation technique",
+      "Optimisation des performances",
+      "Pipelines de données",
+      "Code review"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Mission : L'ingénieur(e) participera au développement, à l'exploitation et à la maintenance des chaînes logicielles de simulation et de traitement des images de l'instrument VIS (canal visible) de la mission Euclid de l'Agence spatiale européenne (ESA).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:01.724602",
+  "input_hash": "de29304e85e26edcca10b6278e30384df0732594434d5a8902ac6a27e6b67a2b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

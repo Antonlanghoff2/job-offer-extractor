@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:2237227",
+  "value": {
+    "id": "2237227",
+    "intitule": "Développeur Informatique Windev F/H - ATELIER DES QUATRE COLLINES",
+    "entreprise": "ATELIER DES QUATRE COLLINES",
+    "territoire": "26 - Hauterives",
+    "ville": "26148",
+    "code_postal": "26390",
+    "contrat": "CDI",
+    "date_creation": "2026-05-04",
+    "date": "2026-05-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2237227",
+    "description": "Rejoindre notre équipe, c’est intégrer une entreprise où la technologie est au service de l’artisanat. Vous aurez l’opportunité de travailler sur un outil stratégique et évolutif, au cœur de notre organisation. Si vous êtes passionné par le développement et souhaitez contribuer à un projet ambitieux et stimulant, cette offre est faite pour vous !\n \n \n \nEn tant que Développeur, vous interviendrez sur l’ensemble du cycle de vie des applications informatiques, de la conception à l’optimisation continue, en passant par le déploiement. Vos principales tâches seront :\n \n \n \n- Concevoir et développer des applications en Windev, Windev mobile, Webdev en fonction des besoins internes. \n- Assurer l’installation, le déploiement et la maintenance des applications. \n- Réaliser les tests et les corrections afin de garantir la fiabilité et la performance des solutions. \n- Améliorer en continu les applications existantes en fonction des retours utilisateurs. \n- Documenter les développements réalisés. \n \n \n \nPour accompagner son développement, notre atelier de maroquinerie reposant sur des savoir-faire de pointe et des produits de haute qualité recrute pour son site de production basé à Paris.- Vous avez une formation en informatique (Bac+2/5) et une expérience de 5 ans minimum en développement. \n- Maîtrise des environnements PC SOFT Windev, Webdev, Windev Mobile avec la base de donnée Hyper Files SQL. \n- Maitrise de la Programmation Orientée Objet (POO) \n- Maitrise du langage SQL \n- Capacité à travailler en autonomie et en équipe. \n- Rigueur, curiosité et esprit d’initiative.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL",
+      "Qualité des données",
+      "Gestion de projet",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Tests automatisés",
+      "Intégration continue",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Pour accompagner son développement, notre atelier de maroquinerie reposant sur des savoir-faire de pointe et des produits de haute qualité recrute pour son site de production basé à Paris.- Vous avez une formation en informatique (Bac+2/5) et une expérience de 5 ans minimum en développement.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:18.895591",
+  "input_hash": "bb74e2b89ec9b78e7bc53fcf9166bf503d577eb847d6228cd1543e9a410f7f0f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

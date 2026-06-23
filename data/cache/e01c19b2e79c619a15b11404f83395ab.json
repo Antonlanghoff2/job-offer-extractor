@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:3429126",
+  "value": {
+    "id": "3429126",
+    "intitule": "Ingénieur développement applicatif F/H - Conception, recherche (H/F)",
+    "entreprise": "AKKODIS DIGITAL SAS",
+    "territoire": "29 - Brest",
+    "ville": "29019",
+    "code_postal": "29200",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3429126",
+    "description": "Descriptif du poste:\n\n\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Bretagne et recrute un Ingénieur développement applicatif H/F en CDI à Brest. Ce poste s'adresse à des ingénieur(e)s passionné(e)s par le développement applicatif dans le secteur défense et naval, avec l'opportunité de concevoir et de maintenir des solutions innovantes en collaboration avec des équipes pluridisciplinaires.\n\n \n\nResponsabilités principales :\n\n\n* Concevoir et développer des applications selon les spécifications fonctionnelles et techniques.\n* Assurer la maintenance évolutive et corrective des applications existantes.\n* Collaborer avec les équipes projet pour définir les besoins et proposer des solutions adaptées.\n* Réaliser des tests unitaires et d'intégration pour garantir la qualité du code.\n* Participer à la rédaction de la documentation technique et utilisateur.\n* Veiller au respect des normes de développement et des bonnes pratiques.\n* Analyser et résoudre les incidents techniques liés aux applications.\n\n \n\nEnvironnement de travail :\n\n\n\nVous évoluerez dans un contexte technique exigeant, au sein d'équipes orientées projet où la méthodologie agile est privilégiée. Les interactions sont fréquentes avec des experts métiers, des architectes logiciels et des chefs de projet. L'environnement de travail favorise l'innovation, la collaboration et l'apprentissage continu, avec des outils modernes de gestion de version (Git) et des plateformes cloud. La gestion de projet agile et le respect des normes de développement sont au cœur des pratiques.\n\nProfil recherché:\n\n\nDiplômé(e) d'un master en ingénierie, vous justifiez de minimum 3 ans d'expérience en développement applicatif dans un contexte industriel, idéalement dans les secteurs défense ou naval. Vous maîtrisez les langages Java, C# ou Python, ainsi que les bases de données relationnelles et SQL. Vous avez une bonne compréhension des architectures logicielles, des API et des méthodologies agiles. Une expérience avec les outils de gestion de version (Git), les environnements cloud et la documentation technique est appréciée. Vous possédez des compétences en communication, en gestion de projet et en résolution de problèmes, et vous êtes capable de vous adapter rapidement aux nouvelles technologies. Une première expérience en management de proximité sera valorisée.\n\n \n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Cahier des charges",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "SQL",
+      "Résolution de problèmes",
+      "Tests automatisés",
+      "Code review",
+      "Qualité des données",
+      "Analyse de données",
+      "Product Management",
+      "API",
+      "Sécurité informatique",
+      "Architecture microservices",
+      "Backend",
+      "MLOps"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Bretagne et recrute un Ingénieur développement applicatif H/F en CDI à Brest.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'un master en ingénierie, vous justifiez de minimum 3 ans d'expérience en développement applicatif dans un contexte industriel, idéalement dans les secteurs défense ou naval.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:10.205453",
+  "input_hash": "d7fb77a221e7661c4439bb4930e4ef12790e0cae80c3dd192dc2e1da6e2c5c72",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

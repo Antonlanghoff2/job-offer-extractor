@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:4038410",
+  "value": {
+    "id": "4038410",
+    "intitule": "Ingénieur de Recherche en mécanique numérique H.F (H/F)",
+    "entreprise": "Armines",
+    "territoire": "78 - Versailles",
+    "ville": "78646",
+    "code_postal": "78000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4038410",
+    "description": "RESPONSABILITÉS : Le Centre des Matériaux (Mines Paris-PSL / CNRS Ingénierie UMR 7633), situé à Versailles Satory, est un laboratoire de recherche reconnu en simulation des matériaux. Dans ce cadre, Armines recrute un·e Ingénieur·e de Recherche en simulation numérique pour renforcer le pôle Simulation des Matériaux et des Structures (SIMS). Vos missions et challenges Au cœur des activités du laboratoire, la simulation numérique s'appuie sur des modèles avancés de comportement et de durée de vie des matériaux (métaux, polymères, composites) et sur la simulation par éléments finis de l'endommagement des structures. Dans un contexte d'évolution des pratiques (simulation non linéaire, multiphysique, data science, IA, imagerie), le poste vise à développer des outils innovants et à exploiter notamment les modèles de langage pour accélérer les traitements et le développement logiciel. Vous interviendrez à l'interface entre simulation, données expérimentales et IA, avec un rôle actif dans la recherche et non limité au support technique. Activités principales : • Développer des outils avancés de simulation des matériaux et structures • Mettre en place des chaînes numériques intégrant données expérimentales, imagerie, maillage et calcul haute performance • Intégrer des méthodes de science des données et d'optimisation • Déployer des solutions d'IA pour assister le développement logiciel • Contribuer au développement de l'outil numérique A-Set Vous participerez également à des projets collaboratifs, à l'encadrement de travaux de recherche (thèses) et aux activités d'enseignement de Mines Paris-PSL. PROFIL RECHERCHÉ : Titulaire d'un doctorat (Bac+8) en mécanique, calcul scientifique, mathématiques appliquées ou domaine connexe, vous disposez d'une solide expertise en simulation numérique et développement scientifique. Compétences requises : • Solide formation en calcul scientifique, méthodes numériques et développement logiciel • Bonne maîtrise des méthodes des éléments finis, de la mécanique des matériaux et du calcul non linéaire • Excellentes compétences en programmation, notamment en Python et/ou C++ • Niveau d'anglais intermédiaire (B1) Compétences appréciées : • Expérience en traitement de données expérimentales • Connaissances en traitement d'images, apprentissage automatique, optimisation • Notions en calcul haute performance (HPC) ou différenciation automatique Qualités personnelles : • Capacité à évoluer dans un environnement scientifique multidisciplinaire (chercheurs, doctorants, partenaires industriels) • Rigueur dans le développement logiciel et les approches méthodologiques • Bonne compréhension des enjeux mécaniques • Autonomie, sens de l'initiative et capacité d'innovation Curiosité scientifique, polyvalence et adaptabilité, notamment à l'interface entre simulation, données et mécanique des matériaux Conditions du poste : • CDI à pourvoir dés que possible • Participation aux frais de transport à hauteur de 75 % • Télétravail possible après la période d'essai • Mutuelle familiale prise en charge à 100 % • Avantages CSE : accès à de nombreuses offres et réductions Mines Paris - PSL et Armines s'engagent à soutenir et promouvoir l'égalité, la diversité et l'inclusion via un processus de recrutement ouvert et transparent. Mines Paris - PSL et Armines s'engagent également dans l'insertion professionnel et au développement de carrière des personnes en situation de handicap",
+    "metier": "Technicien / Technicienne R&D",
+    "niveau": "junior",
+    "competences": [
+      "Imagerie",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Traitement D'images",
+      "Vision par ordinateur",
+      "Data Engineering",
+      "Déploiement de solutions",
+      "Model drift",
+      "Protection des données",
+      "Feature Engineering",
+      "Intégration continue",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 38000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans ce cadre, Armines recrute un·e Ingénieur·e de Recherche en simulation numérique pour renforcer le pôle Simulation des Matériaux et des Structures (SIMS).",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Titulaire d'un doctorat (Bac+8) en mécanique, calcul scientifique, mathématiques appliquées ou domaine connexe, vous disposez d'une solide expertise en simulation numérique et développement scientifique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+8",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Titulaire d'un doctorat (Bac+8) en mécanique, calcul scientifique, mathématiques appliquées ou domaine connexe, vous disposez d'une solide expertise en simulation numérique et développement scientifique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:40.009209",
+  "input_hash": "961f6353a0029319fbbb8e01220d5b2529fcadd789e8517144e4d94c1c221086",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

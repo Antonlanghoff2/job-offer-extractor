@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:209KQFT",
+  "value": {
+    "id": "209KQFT",
+    "intitule": "Data Scientist (H/F)",
+    "entreprise": "",
+    "territoire": "91 - LES ULIS",
+    "ville": "91692",
+    "code_postal": "91940",
+    "contrat": "CDI",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209KQFT",
+    "description": "Intitulé du poste : Data Scientist\n\nLieu de stage : Les Ulis 91940 - Zone industrielle Paris-Saclay \nSite web : https://gibrai.com/\n\nProfil recherché\n\nTitulaire d'un Master ou d'un Doctorat en Informatique, Data Science, Ingénierie ou dans un domaine quantitatif connexe, vous justifiez de 2 ans (post diplôme) ou plus d'expérience en data science appliquée à des systèmes IA en production. Vous maîtrisez Python et SQL.\nVous savez extraire des insights à partir de données orientées métier et hétérogènes, construire des datasets d'entraînement et d'évaluation de qualité, et concevoir des protocoles d'expérimentation rigoureux pour valider des hypothèses en conditions réelles. Vous avez une expérience confirmée en scraping et comprenez les différentes portes d'entrée web (APIs, pages HTML, flux de données, points d'accès structurés et non structurés) pour la récolte d'informations. Votre intuition statistique est solide et vous savez l'appliquer concrètement à l'évaluation de la performance des modèles IA en production (qualité, dérive, hallucinations, coût, latence).\nExcellent(e) communicant(e), vous savez restituer des analyses complexes avec clarté auprès d'interlocuteurs variés, qu'ils soient techniques ou non. Créatif(ve) et rigoureux(se), vous aimez explorer de nouvelles approches pour tirer le meilleur parti de la donnée et amplifier la valeur des solutions IA que vous contribuez à construire.\n\nStructure d'accueil :\n\nGibr est une startup deeptech, filiale de GroupABM, dont l'intelligence artificielle constitue le cœur des solutions développées. Nous concevons des solutions IA spécialisées pour des secteurs où l'exigence est élevée : pharmaceutique, santé, défense, achats industriels critiques. Notre équipe réunit des experts métier et des ingénieurs IA qui ont vécu ces contraintes de l'intérieur.\nEn tant que Data Scientist chez Gibr, vous occupez une position centrale au sein du binôme IA que vous formez avec l'Applied AI Engineer. Là où ce dernier architecture et déploie les systèmes, vous êtes celui ou celle qui les enrichit, les évalue et les fait progresser. Votre mission prend tout son sens dans la transformation de données brutes (souvent rares et à fort enjeu stratégique) en signaux exploitables et en preuves de valeur tangibles. Vous intervenez dans des secteurs où la donnée est un actif critique et où l'exigence analytique n'est pas une contrainte, mais une philosophie de travail que vous partagez pleinement.\n\nVos missions au sein de l'équipe :\n- Explorer et qualifier des corpus de données issus des environnements différents et à fort enjeu sectoriel\n- Construire, annoter et enrichir les datasets d'entraînement et d'évaluation de nos solutions IA\n- Concevoir des protocoles d'expérimentation rigoureux pour valider les hypothèses en conditions réelles avant toute industrialisation\n- Définir et suivre les métriques d'évaluation des modèles IA déployés en production chez nos clients (qualité, dérive, hallucinations, coût,\nlatence)\n- Alimenter l'Applied AI Engineer en insights exploitables pour faire évoluer les architectures et affiner les choix de modèles\n- Restituer des analyses complexes à des interlocuteurs variés, direction de Gibr, équipes produit et clients avec clarté et impact\n- Veiller à la gouvernance, à la traçabilité et à la conformité des données dans les contextes multi-réglementaires propres aux secteurs\ncouverts par Gibr\n- Concevoir et mettre en œuvre des projets de data science de bout en bout, de la collecte et du prétraitement data jusqu'à la\nconstruction, l'évaluation.\n\nVie d'équipe & culture startup\n\nCollaboration directe avec les fondateurs, experts métier et profils produit \nParticipation aux décisions techniques et à la roadmap solution\nApproche Test & Learn : prototypage rapide, itération, industrialization \nCulture de la documentation, du partage et des retours",
+    "metier": "Data scientist",
+    "niveau": "intermediaire",
+    "competences": [
+      "HTML",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Analyse de données",
+      "Data Engineering",
+      "Pipelines de données",
+      "Déploiement de modèles",
+      "Veille technologique",
+      "Architecture microservices",
+      "Backend",
+      "Qualité des données"
+    ],
+    "salaire_min": 91940,
+    "salaire_max": 91940,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Titulaire d'un Master ou d'un Doctorat en Informatique, Data Science, Ingénierie ou dans un domaine quantitatif connexe, vous justifiez de 2 ans (post diplôme) ou plus d'expérience en data science appliquée à des systèmes IA en production.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Titulaire d'un Master ou d'un Doctorat en Informatique, Data Science, Ingénierie ou dans un domaine quantitatif connexe, vous justifiez de 2 ans (post diplôme) ou plus d'expérience en data science appliquée à des systèmes IA en production.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:11.472939",
+  "input_hash": "44e19a9314ad5004229e8ad0459b78f66600a8c5e59d4c1a6b36c8245c02d54a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

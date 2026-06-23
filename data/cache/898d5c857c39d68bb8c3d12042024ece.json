@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:209ZBZR",
+  "value": {
+    "id": "209ZBZR",
+    "intitule": "Chef de projet informatique industriel junior (H/F)",
+    "entreprise": "SOLSTISS",
+    "territoire": "59 - CAUDRY",
+    "ville": "59139",
+    "code_postal": "59540",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZBZR",
+    "description": "Entreprise industrielle à taille humaine, reconnue pour son savoir-faire dans le secteur de la dentelle. \nDans le cadre d'un départ à la retraite, nous recrutons un profil junior afin d'assurer la continuité et la transmission des compétences informatiques.\n\nVotre mission : Un rôle clé au cœur de la production\nEn tant que Chef de Projets Informatique Junior, vous rejoignez un environnement technique riche et varié. Suite à un départ en retraite, vous serez formé(e) à nos procédures internes spécifiques à l'univers de la dentelle. Votre rôle sera d'assurer la continuité et l'évolution de notre système d'information sur quatre piliers majeurs :\n\n1. Informatique Industrielle & Pilotage\n- Développement, installation et maintenance des systèmes de pilotage des machines.\n- Intervention sur automates Siemens, cartes E/S, variateurs, moteurs et capteurs.\n- Programmation en C, C#, C++ et Python.\n\n2. Informatique de Gestion\n- Développement et support des logiciels internes et applicatifs fabricants.\n- Création d'applis PC, mobiles, services et scripting.\n- Environnement technique : Windev, MS Access (adp), MS SQL Server.\n\n3. Infrastructure SI (Serveurs & Réseaux)\n- Installation et maintenance du SI.\n- Gestion de la virtualisation (VMWare, Proxmox), Active Directory, Windows Server et Linux.\n- Pilotage de la sécurité, des réseaux et des sauvegardes.\n4. Support & Bureautique\n- Assistance aux utilisateurs sur la Suite Office et la Suite Sage.\n- Maintenance du parc informatique.\n\nLe profil que nous recherchons\n- Formation : Diplômé(e) d'un Bac+3 à Bac+5 en informatique.\n- Expérience : 2 ans\n- Profil junior accepté, une alternance réussie dans un milieu industriel est un réel atout.\n- Compétences techniques : Vous avez des bases solides en développement logiciel et en administration réseaux. La connaissance de l'électricité industrielle est un plus.\n\n- Savoir-être : Vous êtes polyvalent(e), curieux(se) et prêt(e) à vous immerger dans un savoir-faire artisanal unique. Votre capacité à passer du code informatique à la machine industrielle est essentielle.\n\nPourquoi nous rejoindre ?\n- L'opportunité de travailler pour un acteur du luxe reconnu mondialement.\n- Un cadre de travail responsabilisant dans une structure à taille humaine.\n- Une passation de compétences prévue pour vous accompagner dans votre prise de poste.\n- Un environnement de travail stable porté par des valeurs de fidélité et de qualité.\n",
+    "metier": "Chef / Cheffe de projet étude et développement informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "SQL",
+      "Vue.js",
+      "Cybersécurité",
+      "Gestion de projet",
+      "Qualité des données"
+    ],
+    "salaire_min": 25000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : Diplômé(e) d'un Bac+3 à Bac+5 en informatique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : Diplômé(e) d'un Bac+3 à Bac+5 en informatique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s) - Informatique",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:03.423390",
+  "input_hash": "d24dfc19d8a5757d8669223ab3abc06904af50b3919194fc25753296d5b02980",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

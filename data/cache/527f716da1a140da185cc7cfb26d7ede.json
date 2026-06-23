@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:3551866",
+  "value": {
+    "id": "3551866",
+    "intitule": "Administrateur / Administratrice de bases de données (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3551866",
+    "description": "Description du poste :\nLe Club Med est né en 1950, de la volonté de deux hommes, Gilbert Trigano et Gérard Blitz. Ils ont inventé un style de vacances inédit : des vacances tout compris dans les plus beaux sites du monde, le bonheur de vivre ensemble et de se ressourcer au contact de la nature ou par le sport.\nLe Club Med propose à ses clients (ses Gentils Membres, les G.M) une expérience unique de vacances l'esprit libre, grâce à la convivialité et au professionnalisme de ses salariés : les G.O, Gentils Organisateurs, et les G.E, Gentils Employés.\nContexte\nAu sein du département Système et Architecture de la BU gMDT, vous rejoignez l'équipe 'Système Linux, Production et Databases', responsable des environnements critiques qui supportent les applications du Groupe. Vous contribuez à assurer la stabilité, la performance et la résilience des bases de données, principalement sur un socle Linux / PostgreSQL, dans un contexte d'exploitation international 24/7. Votre rôle couvre l'ensemble du cycle de vie des bases PostgreSQL - installation, évolution, tuning et supervision - tout en garantissant un haut niveau de disponibilité. Une connaissance de DB2 LUW constitue un atout complémentaire pour intervenir sur les systèmes historiques.\nMissions***Assurer l'installation, l'administration, les optimisations et les montées de version des bases de données PostgreSQL.***Garantir la cohérence, la disponibilité et la sécurité des données critiques : sauvegardes, restaurations, continuité d'activité, DRP.***Réaliser le tuning avancé (requêtes, indexation, paramètres système) pour garantir les meilleures performances en production.***Assurer le support aux équipes de développement et de production autour des environnements PostgreSQL, et ponctuellement sur DB2 si nécessaire.***Définir, industrialiser et automatiser les processus d'administration via scripts et outillages adaptés.***Contribuer à la mise en place ou à l'exploitation d'un outil de CDC (Change Data Capture) pour la synchronisation ou la réplication de données.***Participer à la mise en place d'un dispositif d'observabilité avancé (Datadog ou équivalent) pour la supervision, l'alerting et l'analyse des performances.***Assurer une veille technologique continue autour de PostgreSQL et des outils associés.\nProfil recherché***Maîtrise avancée de PostgreSQL (installation, upgrade, tuning, supervision, performance Bonne connaissance de l'environnement Linux RedHat.***Bonne maîtrise du scripting Shell.***Connaissance d'un outil d'observabilité moderne (ex : Datadog Utilisation des outils usuels PostgreSQL : pgAdmin, extensions, outils de sauvegarde.***Connaissance d'au moins un outil de CDC (IDR, Debezium, Kafka Connect, etc Connaissances de DB2 LUW.***Compétences Python pour l'automatisation.***Connaissance des ordonnanceurs de traitements (ex : Opcon Bonne compréhension des environnements Cloud : GCP, Azure ou AWS.***Expérience sur datalake, volumétrie importante ou problématiques de qualité de données.***Bon relationnel et communication claire.***Autonomie, fiabilité, rigueur et organisation.***Sens du service et respect des engagements.***Force de proposition et capacité d'amélioration continue.\nModalités***Poste à pourvoir en CDI.***Basé au siège de Paris La Villette (19ème arrondissement Politique de télétravail actuelle : 8 jours / mois en accord avec le manager et l'équipe ; possibilité de poser une semaine complète tous les trimestres.***Avantages en nature \"Vacances G.O\" pour tous nos postes en CDI avec un an d'ancienneté : vacances dans nos Resorts Club Med pour le/la salarié(e) et sa famille ou un accompagnant de son choix.\nTous nos postes sont ouverts aux personnes en situation de handicap.",
+    "metier": "Gestionnaire de base de données",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Intelligence artificielle",
+      "Linux",
+      "PostgreSQL",
+      "Python",
+      "Vision",
+      "Automatisation de processus",
+      "Data Engineering",
+      "Qualité des données",
+      "Pipelines de données",
+      "Model drift"
+    ],
+    "salaire_min": 1950,
+    "salaire_max": 1950,
+    "teletravail": "télétravail",
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:03.971704",
+  "input_hash": "7a2305386231cfed02ff7def0747aaa62f62477ff7e08e9afd9edf8de28b3a5c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

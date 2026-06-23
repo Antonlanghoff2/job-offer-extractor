@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3894683",
+  "value": {
+    "id": "3894683",
+    "intitule": "Product Owner Data H/F",
+    "entreprise": "AKKODIS",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3894683",
+    "description": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Nouvelle-Aquitaine et recrute un Product Owner Data H/F en CDI. Ce poste s'inscrit dans le secteur Healthcare & Medical et vous offre l'opportunité de piloter la modernisation de la plateforme Data et la migration des systèmes legacy, au sein d'une équipe dynamique dédiée à la fiabilité et à l'industrialisation des Produits Data.\n\n \n\nResponsabilités principales :\n\n * Gérer la collecte, le stockage et la maintenance des données de l'entreprise en garantissant leur qualité, cohérence et sécurité.\n * Développer et mettre en œuvre des politiques de gestion des données et superviser la conformité aux réglementations telles que le RGPD.\n * Collaborer avec les équipes Data Engineering et BI pour optimiser et industrialiser les bases de données et pipelines de données.\n * Piloter la modélisation des données (Bronze / Silver / Gold, couche sémantique) et améliorer la robustesse des pipelines analytiques.\n * Prioriser le backlog, rédiger des user stories orientées Data et assurer la livraison de Produits Data de haute qualité (datasets, tableaux de bord).\n * Analyser les besoins en données des différents départements et générer des rapports réguliers sur l'état et l'intégrité des données.\n * Former les utilisateurs aux systèmes de gestion des données et adopter une posture proactive de « Data Push » pour proposer des solutions innovantes.\n\n \n\nEnvironnement de travail :\n\nVous évoluez au sein de la Data Product Squad, en interaction étroite avec les équipes Data Engineering, BI et les parties prenantes métier. Le contexte technique repose sur des plateformes modernes telles que Databricks, Snowflake, BigQuery et Power BI. Les pratiques agiles structurent les activités (refinement, sprint planning, reviews, rétrospectives) pour garantir une delivery incrémentale et collaborative. La migration vers une plateforme Data unifiée et l'industrialisation des produits sont au cœur des missions.\nProfil du candidat\nDiplômé(e) d'un Master ou équivalent, vous justifiez de 5 années minimum d'expérience en tant que Product Owner ou Data Manager dans des environnements Data, BI ou Analytics, idéalement dans le secteur Healthcare & Medical. Vous maîtrisez les systèmes de gestion de bases de données (SQL, NoSQL), les plateformes Snowflake, BigQuery et Power BI, ainsi que les concepts de modélisation des données. Vous possédez des compétences en rédaction de user stories, gestion de backlog, pratiques agiles et reporting. Une connaissance des langages Python, des plateformes cloud et des réglementations sur la protection des données est recommandée. Vous êtes reconnu(e) pour votre capacité à structurer, communiquer, challenger les besoins et piloter des projets de modernisation de plateformes Data.\n\n \n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Product Owner",
+    "niveau": "intermediaire",
+    "competences": [
+      "Data engineering",
+      "Intelligence artificielle",
+      "NoSQL",
+      "Protection Des Données",
+      "Python",
+      "SQL",
+      "Gestion de projet",
+      "Analyse des besoins",
+      "Qualité des données",
+      "Analyse de données",
+      "Cybersécurité",
+      "Model drift",
+      "Pipelines de données",
+      "Documentation technique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'un Master ou équivalent, vous justifiez de 5 années minimum d'expérience en tant que Product Owner ou Data Manager dans des environnements Data, BI ou Analytics, idéalement dans le secteur Healthcare & Medical.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:47.308701",
+  "input_hash": "52b4103ee8a1ee5299efaff224d0c6465bca1fccae8cd1a0b37cf022d7cddc3f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:209TTBW",
+  "value": {
+    "id": "209TTBW",
+    "intitule": "Ingénieur(e) de recherche en IA appliquée à la vision (H/F)",
+    "entreprise": "LIAISON R&D",
+    "territoire": "42 - ST ETIENNE",
+    "ville": "42218",
+    "code_postal": "42000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209TTBW",
+    "description": "ce recrutement vise à concevoir et expérimenter une preuve de concept d'un système embarqué d'IA non supervisée pour la détection automatisée de défauts de production au niveau sub-pixel.\nVos missions principales seront les suivantes :\n- Vous assurez le développement d'algorithmes d'intelligence artificielle non supervisée, appliqués à des images industrielles haute précision (autoencodeurs, GAN, clustering, etc.).\n- Vous participez à la mise en place du banc d'essai expérimental (caméras, convoyeur, PC industriel, etc.) et à l'acquisition de données en environnement représentatif.\n- Vous contribuez à l'intégration des modèles IA dans un système embarqué temps réel et à leur évaluation en conditions réelles de production.\n- Vous rendez compte de vos travaux par des rapports techniques, des démonstrateurs fonctionnels et des interactions régulières avec les partenaires industriels.\n\nVous êtes titulaire d'un :\n- Diplôme Bac +5 (école d'ingénieur ou master 2) en science de données, informatique, intelligence artificielle, traitement d'image.\n\nEt idéalement : \n- Avec une expérience de 1 à 3 ans dans le secteur de l'intelligence artificielle appliquée, notamment à des projets en vision par ordinateur, segmentation, ou détection d'anomalies.\nEt vous possédez :\n- Une expérience significative en développement d'algorithmes d'intelligence artificielle ou de vision par ordinateur.\n- Une expérience confirmée en programmation Python avec des bibliothèques IA (PyTorch, TensorFlow, OpenCV)\n- Une expertise avérée en apprentissage non supervisé ou auto-supervisé, détection d'anomalies\n- Une maîtrise de l'anglais technique (niveau B2 confirmé)\nVos atouts supplémentaires :\n- Connaissances en intégration sur matériel industriel (edge computing, GPU, PC embarqué)\n- Intérêt pour la transfert technologique et l'impact industriel concret\n\nMaîtrise de l'anglais et la connaissance de l'arabe serait un plus.",
+    "metier": "Opérateur / Opératrice de prise de vues",
+    "niveau": "intermediaire",
+    "competences": [
+      "Acquisition",
+      "Intelligence artificielle",
+      "PyTorch",
+      "Python",
+      "TensorFlow",
+      "Vision",
+      "Anglais professionnel",
+      "Vision par ordinateur",
+      "Déploiement de modèles",
+      "Computer Vision",
+      "Model drift",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Diplôme Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplôme Bac +5 (école d'ingénieur ou master 2) en science de données, informatique, intelligence artificielle, traitement d'image.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplôme Bac +5 (école d'ingénieur ou master 2) en science de données, informatique, intelligence artificielle, traitement d'image.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Diplôme Bac +5 (école d'ingénieur ou master 2) en science de données, informatique, intelligence artificielle, traitement d'image.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "4 An(s) - DANS L'IA",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:57.150410",
+  "input_hash": "29b8ebd3747c7b9b2921c650fb7629d70f24542a0dd709bb2c9d87feb3dcc7a1",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

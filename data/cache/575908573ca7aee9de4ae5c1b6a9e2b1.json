@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:3849061",
+  "value": {
+    "id": "3849061",
+    "intitule": "Responsable Master Data (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris",
+    "ville": "75056",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3849061",
+    "description": "Notre client est un acteur reconnu dans le domaine de la santé. Engagé dans l'innovation et l'excellence, il évolue dans un environnement structuré et orienté vers des solutions technologiques avancées pour répondre aux besoins spécifiques de son secteur. Pour ce faire, il recherche un Responsable Master Data (F/H). \nLe poste est basé dans Paris-8e-Arrondissement et en CDI. \nLe processus de recrutement est rapide :\n1er entretien RH \n2nd entretien avec la Direction Générale.\nEn tant que Responsable Master Data (F/H), vous êtes garant(e) de la qualité, de la cohérence et de la valorisation des données articles et partenaires.\nVos principales missions :\nGarantir la fiabilité des Master Data dans l'ensemble des outils du SI\nÊtre le/la référent(e) interne sur les enjeux liés aux données et aux normes associées\nAnalyser et challenger les demandes d'évolution des métiers\nPiloter les échanges avec la DSI et les partenaires fonctionnels\nContribuer aux projets d'harmonisation transverse\nAssurer le rôle de Business Owner de l'outil PLM\nParticiper à la rédaction des cahiers des charges\nManager une équipe de 2 collaborateurs\nResponsable Master Data (F/H)\nParticpation\nProcessus de recrutement rapide (2 étapes)\n2 jour de télétravail par semaine dès validation de la période d'essai",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Cahier des charges",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Pour ce faire, il recherche un Responsable Master Data (F/H).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:32.603292",
+  "input_hash": "eed915973a4e24ad543c81a82bc2acd26bbb29f4c032a56a717f28766a045618",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:4076704",
+  "value": {
+    "id": "4076704",
+    "intitule": "Analyste-Développeur (m/f) (réf. E) (réf. F) (réf. M) (H/F)",
+    "entreprise": "",
+    "territoire": "Luxembourg",
+    "ville": "Luxembourg",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-21",
+    "date": "2026-06-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4076704",
+    "description": "Statut : Employé, Fonctionnaire Qui recrute ? Police grand-ducale La Police Grand-Ducale recrute, au sein de sa Direction des Technologies Policier/ières, un analyste-développeur pour la section « Développement et Maintenance Applicative ». Le titulaire du poste contribuera à la conception, à l’évolution et à la maintenance des applications métiers de la Police, en combinant des responsabilités techniques (maintenance, suivi, coordination) et des compétences de développement (création de nouvelles fonctionnalités, correctifs, automatisation et intégration technique). Missions La mission de l’analyste-développeur couvre les tâches principales suivant/antes : Analyser les besoins métiers et produire les spécifications fonctionnelles et techniques; Concevoir et développer les applications internes; Assurer la maintenance corrective et évolutive des systèmes existants; Intégrer des interfaces entre différents systèmes internes et externes à la Police Grand-Ducale; Rédiger et maintenir la documentation technique, et contribuer à la qualité du code et des livrables; Assurer une veille technologique régulier/ière; Collaborer avec les équipes métiers, infrastructure et sécurité. Nous vous informons que suite à la réception de votre candidature, une « épreuve spéciale » vous sera envoyée et doit être remplie obligatoirement afin que votre candidature soit recevable. Profil Compétences techniques Expérience mininum de 3ans en développement back-end : Java et Spring Boot; Expérience mininum de 3ans en développement front-end : TypeScript et Angular; Bonne compréhension du cycle de vie applicatif, de la maintenance et de l’analyse des besoins; Connaissances en bases de données : PostgreSQL, Oracle, SQL, optimisation des requêtes; Connaissances en architecture logicielle : modulaire, orientée services, microservices; Aptitude à produire et maintenir une documentation technique claire et structurée. Compétences comportementales Collaboration en équipe; Autonomie et sens des responsabilités; Esprit d’analyse et d’initiative; Faire preuve de fiabilité, d’exactitude, de rigueur et de discrétion; Capacité à identifier les problèmes et à proposer des solutions adaptées; Vous aimez communiquer et travailler en équipe pluridisciplinaire. Atouts Une expérience professionnelle dans une fonction similaire constitue un atout; Expérience en développement mobile : Kotlin Multiplatform, Android; Expérience avec les outils CI/CD : GitLab, Argo CD; Connaissances des outils de suivi et de documentation : Jira, Confluence; Connaissances dans les systèmes de monitoring : Grafana, Prometheus; Connaissances en conteneurisation : Docker, OpenShift, Kubernetes; Compréhension des principes d’authentification et autorisation : IAM, SSO; Connaissances des règlements européens relatifs aux traitements des données : RGPD; Connaissances dans les langages de programmation : Python, Powershell. Conditions d’admission Le poste peut être brigué sous le statut du fonctionnaire de l’État ou de l’employé de l’État. Il est ouvert au changement d'administration des fonctionnaires. Obtenez plus de détails sur les conditions d'admission : Pour devenir fonctionnaire de l'État Pour changer d'administration en tant que fonctionnaire Pour devenir employé de l'État. Diplômes Vous êtes titulaire d’un grade ou diplôme délivré par un établissement d’enseignement supérieur reconnu par l’État du siège de l’établissement et sanctionnant l’accomplissement avec succès d’un master ou de son équivalent. Le grade ou diplôme requis doit correspondre au moins au niveau 7 tel que défini par le Cadre luxembourgeois des qualifications. Langues Applicable à l'employé et au fonctionnaire (hors changement d'administration) : Vous répondez aux exigences de connaissances des 3 langues administratives pour le groupe A1. Vous êtes ressortissant d’un État membre de l’Union européenne.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Cahier des charges",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "PostgreSQL",
+      "Python",
+      "SQL",
+      "TypeScript",
+      "Spring",
+      "Monitoring de modèles",
+      "Protection des données",
+      "Analyse des besoins",
+      "Qualité logicielle",
+      "Design patterns",
+      "Code review",
+      "Documentation technique",
+      "Analyse de données",
+      "Cybersécurité",
+      "Data Engineering",
+      "Model drift",
+      "Qualité des données"
+    ],
+    "salaire_min": 7000,
+    "salaire_max": 7000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Diplômes Vous êtes titulaire d’un grade ou diplôme délivré par un établissement d’enseignement supérieur reconnu par l’État du siège de l’établissement et sanctionnant l’accomplissement avec succès d’un master ou de son équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 23,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:35.953024",
+  "input_hash": "e6a75cc68a78110f1386fdd360bd4a475f9f466256059c5a0f029bbd120374d1",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

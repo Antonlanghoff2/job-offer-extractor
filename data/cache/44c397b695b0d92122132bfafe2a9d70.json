@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:3170522",
+  "value": {
+    "id": "3170522",
+    "intitule": "Ingénieur Développement software (H/F)",
+    "entreprise": "Page Personnel",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3170522",
+    "description": "Rattaché(e) au Directeur du Développement Logiciel, au sein de l'équipe développement : \n- Vous êtes responsable de l'étude théorique conformément aux normes ETSI des\névolutions des produits\n- Vous participerez à la définition des différents sous-ensembles composant un projet\ngénéral d'infrastructure télécom\n- Vous serez chargé(e) des développements théoriques et des développements de\nlogiciels de sous-ensembles composant cette infrastructure (réseau LTE)\n- Vous intégrerez ces équipements dans la chaîne complète et en assurerez le test\n- Vous participerez aux mesures d'ensemble.\n- Vous analyserez et développerez les composants en utilisant les langages appropriés\n(c++, c, java, c#...).\n- Vous documenterez vos développements.\nDe formation Bac + 5 type École d'ingénieur, vous disposez des compétences suivantes :\n- Vous justifiez de compétences en développement technique de systèmes LTE.\n- Maîtrise du développement et mise au point logiciel (C/C++, Unix/Linux)\n- Connaissance théorique des radiocommunications, en particulier de la norme LTE-A\net évolution vers la 5G\n- La maîtrise de l'anglais technique est impérative pour ce poste.\n- La maîtrise du développement de systèmes complexes télécom incluant de\nnombreux protocoles est un plus (LTE, L3, RLC, RRC, NAS, S1AP, couches physiques LTE)\n- La maîtrise théorique de la norme LTE-A et évolution vers la 5G est un plus\n- Salaire : 45-50 K € bruts/an selon profil\n- Prime d'intéressement (3000 € bruts/an)\n- Prime plan d'épargne\n- 1 jours de télétravail par semaine\n- Tickets restaurant \n- Cadre forfait jours 218/an",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Java",
+      "Linux",
+      "Anglais professionnel"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac + 5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac + 5 type École d'ingénieur, vous disposez des compétences suivantes :",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "De formation Bac + 5 type École d'ingénieur, vous disposez des compétences suivantes :",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:45.956958",
+  "input_hash": "74f0a6890b36cc24f5213353be406a610b817933ed3b2574f84d22391552fae1",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

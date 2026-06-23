@@ -1,0 +1,44 @@
+{
+  "key": "offer_extraction:1207953",
+  "value": {
+    "id": "1207953",
+    "intitule": "Développeur foncier H/F",
+    "entreprise": "",
+    "territoire": "13 - Marseille",
+    "ville": "13055",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-04-07",
+    "date": "2026-04-07",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1207953",
+    "description": "Notre client est un promoteur immobilier et une foncière.Rattaché à la Direction, vos responsabilités vont de la prospection des terrains à la signature de la promesse de vente.\nVous assurez donc la prospection foncière auprès des particuliers dans le but d'identifier des terrains constructibles en promotion immobilière\nVous réalisez ensuite les études de faisabilité administratives, financières et techniques des opérations potentielles (en lien avec les services programme et technique de la société) et négociez les terrains auprès des propriétaires privés et public.\nVous devez également entretenir votre réseau d'apporteurs d'affaires (notaires, géomètres, agences immobilières...), ainsi que votre relationnel auprès des élus locaux. Enfin, vous procédez au transfert du dossier auprès du service programme après la signature de la promesse de vente.Nombreux avantages, salaire fixe + primes",
+    "metier": "Chargé / Chargée d'affaires foncières",
+    "niveau": "junior",
+    "competences": [],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Vous assurez donc la prospection foncière auprès des particuliers dans le but d'identifier des terrains constructibles en promotion immobilière",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 0,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:22.270506",
+  "input_hash": "7a27316a538ed685bd6628f9cc110d28b800624713d9a6b237a2336f3f2e191d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

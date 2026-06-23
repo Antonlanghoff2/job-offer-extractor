@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:209JNLV",
+  "value": {
+    "id": "209JNLV",
+    "intitule": "Ingénieur(e) en développement logiciel & IA en alternance H/F (H/F)",
+    "entreprise": "STEEL ELECTRONIQUE",
+    "territoire": "31 - MARTRES TOLOSANE",
+    "ville": "31324",
+    "code_postal": "31220",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JNLV",
+    "description": "Poste et missions\n\nEn immersion dans l'équipe logiciel embarqué composée d'une dizaine de collaborateurs, vous aiderez l'équipe à définir et mettre en place des méthodes et outils basés IA générative pour accélérer les cycles de développement. Pour cela, vous travaillerez sur plusieurs projets et cas d'usage avec comme double objectif de générer un livrable concret du cycle de vie de développement logiciel, et de mettre au point par amélioration continue une méthode de développement assistée par l'IA.\n\nPour cela vous serez amené(e) à : \n\n- Participer à la rédaction des spécifications du projet à réaliser ;\n- Comparer des assistants de codage par IA candidats et en sélectionner un, en privilégiant une solution protégeant les données et offrant les meilleures garanties de souveraineté. Dans cette tâche vous serez aidé(e) par le référent IA du groupe ACTIA.\n- Mettre en place l'environnement ;\n- Développer le projet à l'aide de l'assistant, typiquement sous langages C, Python, Robot Framework ;\n- Valider le projet ;\n- Rédiger la documentation technique du projet ;\n- En faisant le travail de développement, tester différentes méthodes, évaluer le résultat, en tirer des recommandations ; \n- Partager les leçons apprises au fur et à mesure de l'avancement, disséminer la méthode.\n\nEn premier projet, vous travaillerez à la mise en place d'un environnement de test sous langage pour tester des cartes électroniques. L'objectif est de générer par assistant de codage, le code de l'environnement de test compatible avec l'environnement Robot Framework, le gestionnaire de commandes TM/TC, et le code embarqué applicatif en langage C destiné à être téléchargé dans la CPU de la carte sous test. \n\nDans la réalisation, vous sélectionnerez et utiliserez un assistant de codage, vous testerez des méthodes de travail avec cet assistant, vous travaillerez à leur amélioration puis vous en tirerez des leçons que vous transmettrez à l'équipe de développement.\n\n\nProfil / Expérience\n\nVous êtes dynamique, autonome, doté d'une forte capacité d'analyse et vous avez envie d'évoluer en alternance en entreprise. \n\n- Formation : Niveau BAC+3/4 (selon durée de l'alternance) en informatique / électronique et systèmes, issu d'une école d'ingénieur ou équivalent, avec spécialisation en logiciel embarqué bas niveau\n- Compétences techniques : Bonne maitrise de GIT, langage C et Python, assistants codage par IA (Anthropic Claude typiquement)\n- Lieu : Martres-Tolosane (31)\n- Horaire hebdomadaire : 35h00\n\nContrat sur 12 ou 24 mois selon profil, à partir de septembre 2026.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Gestion de projet",
+      "Cahier des charges",
+      "Déploiement de modèles",
+      "MLOps",
+      "Intégration continue",
+      "Data Engineering"
+    ],
+    "salaire_min": 4000,
+    "salaire_max": 4000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : Niveau BAC+3/4 (selon durée de l'alternance) en informatique / électronique et systèmes, issu d'une école d'ingénieur ou équivalent, avec spécialisation en logiciel embarqué bas niveau",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Formation : Niveau BAC+3/4 (selon durée de l'alternance) en informatique / électronique et systèmes, issu d'une école d'ingénieur ou équivalent, avec spécialisation en logiciel embarqué bas niveau",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:10.528322",
+  "input_hash": "cb2e7302654c040dc41e82a07da7bb6556d2cdffc2a4cfed01f40ee03261862b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

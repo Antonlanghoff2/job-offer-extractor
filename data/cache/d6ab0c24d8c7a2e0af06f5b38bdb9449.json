@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:209NFDZ",
+  "value": {
+    "id": "209NFDZ",
+    "intitule": "Ref RL  IAA    INGENIEUR ETUDES AUTOMATICIEN AERO (H/F)",
+    "entreprise": "CIMEM",
+    "territoire": "69 - Lyon 9e Arrondissement",
+    "ville": "69389",
+    "code_postal": "69009",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NFDZ",
+    "description": "Ref RL  IAA    INGENIEUR ETUDES AUTOMATICIEN AERO\nETI spécialisée dans le développement, la construction, l'installation et la maintenance de systèmes complexes de manutention et de levage pour de multiples domaines : énergie, aéronautique, industries lourdes.\n Tier1 pour les constructeurs aéronautiques, elle conçoit et fournit des lignes d'assemblage sur tout le cycle de fabrication d'aéronefs \n \nMissions :\nAu sein du BE de la BU aéro marine vous êtes en charge du développement, de l'installation et de la mise en service d'équipements d'industrialisation et de machines spéciales en ce qui concerne \nle contrôle commande et les solutions 4.0, ce qui inclut :\n- la proposition de solutions \n- la réalisation des études de détail : programmation automates et contrôle\n- l'établissement des analyses fonctionnelles , des manuels d'utilisation, des pv d'essais\n- la réalisation des essais en plateformes , en simulation\n- le suivi de la réalisation  en lien avec le chantier et le client\n- la mise en service avec les équipes du site\n\nDans ce cadre vous serez amené à vous déplacer ponctuellement sur différents sites en France et à l'International   \n \nCompétences :\n-  Formation : Bac +5 automaticien ou informaticien industriel \n- Expérience minimum de 5 ans come automaticien en conception et mise en service de systèmes automatisés    \n-Pratique de TIA Portal, Ecostructure\n-Connaissances en base de données, Linux, Python , Html, javascript,. sont des plus\n- Intérêt pour la machine spéciale\n - Anglais B2 \n- Autonome\n-  Rigoureux - Réactif    \n-  Capacité à travailler en équipe \n \nLieu de Travail :    Lyon",
+    "metier": "Automaticien / Automaticienne en bureau d'études",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "HTML",
+      "Intelligence artificielle",
+      "JavaScript",
+      "Linux",
+      "Python",
+      "Analyse de données",
+      "Data Engineering"
+    ],
+    "salaire_min": 58000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "INGENIEUR",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Ref RL IAA INGENIEUR ETUDES AUTOMATICIEN AERO",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation : Bac +5 automaticien ou informaticien industriel",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:08.275424",
+  "input_hash": "73c53988fd786d49887f73307ebc5b099b47ea8790ddcc1033a1fc8b3c19f5a7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

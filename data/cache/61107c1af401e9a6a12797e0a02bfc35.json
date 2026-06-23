@@ -1,0 +1,250 @@
+{
+  "key": "trends:77 - Champs-sur-Marne",
+  "value": {
+    "territoire": "77 - Champs-sur-Marne",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Intelligence artificielle": 2,
+      "Délais": 1,
+      "Git": 1,
+      "Python": 1,
+      "SQL": 1,
+      "Vision": 1,
+      "Vue.js": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Délais": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "SQL": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Vision": 1
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Vue.js": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Délais": {
+        "Délais": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "SQL": {
+        "SQL": 1
+      },
+      "Vision": {
+        "Vision": 1
+      },
+      "Vue.js": {
+        "Vue.js": 1
+      }
+    },
+    "metiers": {
+      "Actuaire En Assurances": 1,
+      "Vendeur / Vendeuse en épicerie": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDD - 14 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Délais",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Vue.js"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "SQL",
+        "Délais",
+        "Vision"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209FGJM",
+        "intitule": "Conseiller(ère) de vente en alternance",
+        "entreprise": "COGEFI FORMATION",
+        "territoire": "77 - CHAMPS-SUR-MARNE",
+        "contrat": "CDD - 14 Mois",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FGJM"
+      },
+      {
+        "id": "2914064",
+        "intitule": "ACTUAIRE (F/H) h/f",
+        "entreprise": "",
+        "territoire": "77 - Champs-sur-Marne",
+        "contrat": "CDI",
+        "date": "2026-05-22",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2914064"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209FGJM",
+        "intitule": "Conseiller(ère) de vente en alternance",
+        "entreprise": "COGEFI FORMATION",
+        "territoire": "77 - CHAMPS-SUR-MARNE",
+        "contrat": "CDD - 14 Mois",
+        "date": "2026-06-03",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FGJM"
+      },
+      {
+        "id": "2914064",
+        "intitule": "ACTUAIRE (F/H) h/f",
+        "entreprise": "",
+        "territoire": "77 - Champs-sur-Marne",
+        "contrat": "CDI",
+        "date": "2026-05-22",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2914064"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:01:37.199871",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

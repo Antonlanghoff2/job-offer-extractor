@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:4003736",
+  "value": {
+    "id": "4003736",
+    "intitule": "Développeur Support Logiciel H/F",
+    "entreprise": "Fed Group",
+    "territoire": "69 - Lyon 3e Arrondissement",
+    "ville": "69383",
+    "code_postal": "69003",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4003736",
+    "description": "Fed IT, cabinet de recrutement dédié aux fonctions informatiques, recrute pour son client, éditeur de logiciels spécifiques, un(e) Développeur SQL H/F, pour accompagner son service support clients.\nRattaché(e) au pôle intégration de cet éditeur de logiciels d'une centaine de collaborateurs, vous reportez au manager support (équipe de 3 N1 et 4 N2). A ce titre, vous : \n \n-Intervenez sur l'outil WMS développé en interne, \n-Collaborez avec les développeurs et les chefs de projets techniques, \n-Réalisez le support auprès de vos clients, \n-Travaillez sur de la recherche fonctionnelle (définition de l'environnement en question, investigation, diagnostic), \n-Ouvrez les codes et réalisez les corrections, \n-Travaillez sous SQL et Windev, \n \nRémunération : 38 à 43 K€ bruts/an (fixe selon expérience) + 12 jours de RTT/an + 2 jours de télétravail/semaine + statut ETAM + tickets restaurant, mutuelle et CSE + locaux modernes.\nDe formation Bac +3/5, vous justifiez de 5 ans d'expérience minimum à un poste de développeur et vous maîtrisez impérativement SQL. \nVotre aisance relationnelle et votre appétence à faire du support utilisateurs sont des atouts primordiaux pour votre réussite dans cette fonction.",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL"
+    ],
+    "salaire_min": 39000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac +3/5, vous justifiez de 5 ans d'expérience minimum à un poste de développeur et vous maîtrisez impérativement SQL.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:14.915174",
+  "input_hash": "9fe2ae7c235625eadd112a1861f1497dbf11750c8cda7204d9d288aee583a1a6",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

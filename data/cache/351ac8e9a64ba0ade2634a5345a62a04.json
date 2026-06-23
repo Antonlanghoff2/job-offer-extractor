@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3968586",
+  "value": {
+    "id": "3968586",
+    "intitule": "Ingénieur d'études (H/F)",
+    "entreprise": "",
+    "territoire": "77 - Réau",
+    "ville": "77384",
+    "code_postal": "77550",
+    "contrat": "Intérim - 6 Mois",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3968586",
+    "description": "Sous la responsabilité d'un référent technique, vous contribuerez à la conception des moyens d'essais, à la préparation des campagnes expérimentales ainsi qu'à l'analyse et à la valorisation des résultats obtenus. Dans ce cadre, vos principales responsabilités seront les suivantes : Réaliser des études techniques multidisciplinaires (simulations numériques, analyses bibliographiques, études de conception) afin de contribuer au développement des machines d'essais ; Participer à la définition des programmes d'essais, des matrices de tests et des besoins en instrumentation ; Assurer, lorsque nécessaire, le suivi des campagnes d'essais sur site et apporter un support technique aux équipes opérationnelles Exploiter et mettre en forme les données issues des essais afin de faciliter leur analyse et leur interprétation ; Analyser les résultats obtenus en collaboration avec les différents métiers impliqués (aérodynamique, mécanique, conception, essais) ; Identifier les phénomènes observés, formuler des conclusions techniques et proposer des axes d'amélioration ; Présenter et défendre les résultats lors de réunions techniques avec les bureaux d'études et les experts du domaine ; Participer à la rédaction des rapports d'essais, notes techniques et synthèses de résultats. Diplômé(e) d'une école d'ingénieurs ou titulaire d'un Master 2 (Bac+5) avec une spécialisation en mécanique des fluides, aérodynamique ou énergétique, vous disposez idéalement d'une première expérience dans le domaine des turbomachines ou des essais. Compétences Techniques requises: Solides connaissances en aérodynamique Connaissances en mécanique vibratoire Notions de fonctionnement et de conception des turbomachines Maîtrise des outils d'analyse et de traitement de données (Python, Excel) Bonne maîtrise des outils bureautiques, notamment Word Connaissance d'un logiciel de simulation CFD (Fluent, elsA ou équivalent). Qualités personnelles: Esprit d'analyse et de synthèse Rigueur scientifique Curiosité technique Aptitude à travailler en équipe dans un environnement multidisciplinaire Bonnes capacités de communication écrite et orale.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Instrumentation",
+      "Intelligence artificielle",
+      "Python",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Qualité des données"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'une école d'ingénieurs ou titulaire d'un Master 2 (Bac+5) avec une spécialisation en mécanique des fluides, aérodynamique ou énergétique, vous disposez idéalement d'une première expérience dans le domaine des turbomachines ou des essais.",
+        "confidence": 0.7
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'une école d'ingénieurs ou titulaire d'un Master 2 (Bac+5) avec une spécialisation en mécanique des fluides, aérodynamique ou énergétique, vous disposez idéalement d'une première expérience dans le domaine des turbomachines ou des essais.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:42.721964",
+  "input_hash": "c250800189deb5d4a8f26815b48e17c5a12baddb53244a5da098c702a3fb4bc9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

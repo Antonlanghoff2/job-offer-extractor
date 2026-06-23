@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3837535",
+  "value": {
+    "id": "3837535",
+    "intitule": "Ingénieur Logiciel de Vol H/F",
+    "entreprise": "",
+    "territoire": "33 - Eysines",
+    "ville": "33162",
+    "code_postal": "33320",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3837535",
+    "description": "Contexte : Développement du logiciel embarqué critique des futurs véhicules spatiaux et systèmes de services en orbite. Le poste couvre l'architecture logicielle, le développement bas niveau et applicatif, ainsi que la coordination avec les équipes avionique, système et logiciel de vol Nyx. Vos missions Définir les architectures logicielles et les exigences du logiciel de vol. Décliner les exigences système en spécifications logicielles et maintenir les référentiels techniques. Gérer les interfaces entre le logiciel de vol, l'avionique et les autres sous-systèmes embarqués. Réaliser les études techniques, analyses de performances et arbitrages d'architecture. Développer des composants logiciels bas niveau (systèmes d'exploitation, drivers, protocoles de communication) et applicatifs (algorithmes de contrôle, applications embarquées). Définir les stratégies de développement, vérification et validation du logiciel. Assurer le suivi des coûts, délais et performances des activités sous votre responsabilité. Contribuer à la préparation des offres techniques liées au logiciel de vol pour les futurs projets. Votre profil Diplôme d'ingénieur ou Master en informatique, électronique, aéronautique ou domaine équivalent. Expérience significative en architecture logicielle pour systèmes embarqués complexes, idéalement dans le spatial, l'aéronautique ou les systèmes critiques. Maîtrise des systèmes temps réel distribués et des problématiques de synchronisation, déterminisme et contraintes temporelles. Solides compétences en développement logiciel C++, Python et/ou MATLAB/Simulink. Expérience du développement de logiciels embarqués critiques. Familiarité avec les méthodes de validation HIL (Hardware-in-the-Loop) et SIL (Software-in-the-Loop). Bonne compréhension des interactions entre logiciel embarqué et matériel avionique. Excellentes capacités d'analyse, de résolution de problèmes et de communication technique. Capacité à travailler dans un environnement multidisciplinaire et à piloter des activités techniques.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Coûts",
+      "Délais",
+      "Intelligence artificielle",
+      "Python",
+      "Cybersécurité",
+      "Pilotage d'activités",
+      "Gestion de projet",
+      "Sécurité informatique",
+      "API",
+      "Backend",
+      "Documentation technique"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Votre profil Diplôme d'ingénieur ou Master en informatique, électronique, aéronautique ou domaine équivalent.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Votre profil Diplôme d'ingénieur ou Master en informatique, électronique, aéronautique ou domaine équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:17.768956",
+  "input_hash": "f4cf8f2663362e7c584c509005530fa3a99e536fa1da6d9cdb26d749f42d8627",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

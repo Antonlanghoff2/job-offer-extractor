@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:3145412",
+  "value": {
+    "id": "3145412",
+    "intitule": "Ingénieur de production informatique H/F",
+    "entreprise": "",
+    "territoire": "69 - Lyon",
+    "ville": "69123",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3145412",
+    "description": "Ingénieur de production informatique H/F - LyonL'Humain, l'Expertise et l'Innovation, voilà ce qui caractérise l'ADN d'Experis France, ESN de ManpowerGroup reconnue Top Employer .\nPrésente dans 28 pays, Experis se positionne comme un acteur incontournable et innovant sur le marché des ESN.\nNous proposons une offre intégrée alliant services et solutions IT pour accompagner nos clients partenaires dans leurs projets de transformations.\nA travers la formation, Experis investit continuellement dans l'acquisition de connaissances de ses Talents afin d'anticiper les tendances et faire preuve de réactivité face aux changements.\n  \nNous sommes à la recherche d'un Ingénieur de Production Applicative / Middleware H/F pour accompagner l'un de nos clients sur un périmètre applicatif critique.\nVous évoluerez dans un contexte moderne, mêlant exploitation applicative, optimisation des plateformes, pratiques DevOps et environnements conteneurisés.\n \nVotre mission \nAssurer le support applicatif de niveau 2 sur des plateformes distribuées (Windows, Linux, AIX), garantir la stabilité des environnements et contribuer à leur amélioration continue tout en accompagnant les équipes métiers et projets.\n \n1. Exploitation &amp; stabilité des environnements\nAssurer la stabilité, disponibilité et sécurité des applications en production.\nTraiter les incidents applicatifs (N2), organiser les analyses de causes et coordonner les correctifs.\nOptimiser les plateformes du périmètre (performances, fiabilité, automatisation).\n2. Déploiements &amp; intégration applicative\nInstaller et configurer les composants applicatifs (EAR, paramétrages, guides d'installation).\nProvisionner, administrer et maintenir les environnements Windows &amp; Linux.\nGérer les déploiements et accompagner les équipes de développement tout au long du delivery.\n3. Middleware, conteneurs &amp; outillage\nIntervenir sur les stacks middleware : JBoss / WebSphere, IIS, Tomcat.\nIntervenir sur les environnements conteneurisés : OpenShift (confirmé - important).\nUtiliser les outils DevOps : Git, GitHub, Jenkins, Ansible ; outils de déploiement XLDeploy / XLRelease.\nExploiter les outils d'automatisation &amp; scripting (Shell, PowerShell, Python).\n4. Monitoring &amp; supervision\nAméliorer le monitoring et l'alerting via les outils internes (Zabbix, supervision middleware).\nEffectuer un reporting régulier (indicateurs, bilans, actions).\n5. Architecture &amp; amélioration continue\nParticiper à la définition, au dimensionnement et à l'optimisation des architectures on-premise &amp; cloud (OpenShift, GCP, AWS, Azure).\nContribuer à la plateformisation et aux évolutions du delivery.",
+    "metier": "Ingénieur / Ingénieure systèmes, réseaux et sécurité informatique",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Acquisition",
+      "Ansible",
+      "Azure",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Vision",
+      "Optimisation des performances",
+      "Intégration continue",
+      "MLOps",
+      "Sécurité informatique",
+      "Gestion de projet",
+      "Qualité des données",
+      "Scalabilité"
+    ],
+    "salaire_min": 28000,
+    "salaire_max": 28000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ingénieur de production informatique H/F - LyonL'Humain, l'Expertise et l'Innovation, voilà ce qui caractérise l'ADN d'Experis France, ESN de ManpowerGroup reconnue Top Employer .",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:15.931895",
+  "input_hash": "5d03fd763684beb602a841a5de8d044230fb2ca43077dae36c76950d92d3bc69",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

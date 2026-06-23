@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:209WBQM",
+  "value": {
+    "id": "209WBQM",
+    "intitule": "Enseignant(e) en STI2D (H/F)",
+    "entreprise": "RECTORAT DE L'ACADEMIE D'AMIENS",
+    "territoire": "80 - Amiens",
+    "ville": "80021",
+    "code_postal": "80000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209WBQM",
+    "description": "Sous l'autorité du chef d'établissement et en collaboration avec l'équipe technologique, l'enseignant(e) assure la formation des élèves de la filière STI2D en développant leurs compétences scientifiques, technologiques et méthodologiques dans les domaines du numérique, de l'énergie, de l'innovation et de l'éco-conception.\nIl/elle contribue à la réussite des élèves, à leur orientation vers  l'enseignement supérieur et à leur insertion dans les formations scientifiques et technologiques.\n\nCompétences techniques \nLe candidat devra posséder des compétences dans plusieurs des domaines suivants :\nSystèmes d'Information et Numérique (SIN)\n -programmation (python, C/C++, Arduino, microcontrôleurs)\n -réseaux informatiques et protocoles de communication\n -objets connectés et systèmes embarqués\n -acquisition et traitement de données\nEnergies et Environnement (EE)\n -électrotechnique et électronique de puissance\n -production et gestion de l'énergie\n -efficacité énergétique\n -énergies renouvelables et transition énergétique\nInnovation Technologique ey Eco-Conception (ITEC)\n -conception mécanique et innovation produit\n -CAO/DAO (SolidWorks, Inventor ou équivalent)\n -fabrication additive et prototypage\n -analyse du cycle de vie éco-conception\nCompétences pédagogiques\n -maîtrise de la pédagogie du projet\n -capacité à différencier les apprentissages\n -utilisation des outils numériques éducatifs\n -travail en équipe pluridisciplinaire\n -capacité à accompagner les élèves vers l'autonomie \nQualités attendues\n -sens de la pédagogie\n -capacité d'écoute et d'accompagnement\n -esprit d'initiative\n -rigueur et organisation\n -goût pour l'innovation pédagogique et technologique\n -aptitude au travail collaboratif\n\nConditions particulières d'exercice : \n\nUn contrat à temps plein est de 18 heures par semaine sur 36 semaines par année scolaire comprenant 18 heures de cours par semaine en présence des élèves (hors temps de préparation des cours, de correction). La quotité et la durée peuvent varier en fonction du besoin de remplacement.\n \nTutorat et accompagnement possible à l'issue des actions de formation.\n\nProfil recherché : \n\nDiplômes requis de niveau bac + 5 dans un domaine industriel et technologique :\n -génie électrique\n -génie industriel\n -informatique industrielle\n -mécatronique\n -génie mécanique\n -énergétique\n -systèmes embarqués\nConditions d'exercice\n -enseignement en lycée technologique\n -interventions en salles spécialisées et laboratoires technologiques\n -travail en équipe avec les enseignants de mathématiques, physique-chimie, sciences industrielles et les personnels d'orientation\n -participation aux jurys d'examen et aux évaluations certificatives",
+    "metier": "Professeur / Professeure de collège et de lycée",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Intelligence artificielle",
+      "Python",
+      "Gestion de projet"
+    ],
+    "salaire_min": 2263,
+    "salaire_max": 83,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac + 5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômes requis de niveau bac + 5 dans un domaine industriel et technologique :",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:05.376088",
+  "input_hash": "06bd5868e8340463a0aa385313e17b4315b8e45b63b36e57db89ebbdcd623045",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

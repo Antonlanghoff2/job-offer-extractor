@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:2730706",
+  "value": {
+    "id": "2730706",
+    "intitule": "Alternant Data Analyst F/H - COIFF'IDIS",
+    "entreprise": "COIFF'IDIS",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-05-18",
+    "date": "2026-05-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2730706",
+    "description": "Rattaché au contrôleur de gestion, vous aurez en charge différentes missions :\n \n- Concevoir et maintenir des tableaux de bord et indicateurs (KPI) de performance \n- Améliorer la fiabilité et la qualité des analyses \n- Participer à l’automatisation des processus de traitement données \n- Collaborer avec les équipes pour comprendre leurs besoins et les traduire en analyses concrètes \n- Contribuer à l’amélioration des données et des outils de pilotage- Bonne maîtrise d’Excel et intérêt pour les reportings et la data \n- Connaissance d’un outil data visualisation \n- Rigueur, autonomie, sens de l’organisation et proactivité \n- Excellente aisance relationnelle et orale \n- Forte orientation résultats et esprit d’initiative \n- Aisance avec les chiffres, la logique et manipulation de données \n \nÉtudiant(e) en école d’ingénieur ou université (Bac+4 à Bac+5), spécialisé(e) en Informatique ou Science des données",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Data Engineering",
+      "Pipelines de données",
+      "Analyse de données",
+      "Model drift",
+      "Scalabilité"
+    ],
+    "salaire_min": 4000,
+    "salaire_max": 4000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Étudiant(e) en école d’ingénieur ou université (Bac+4 à Bac+5), spécialisé(e) en Informatique ou Science des données",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Étudiant(e) en école d’ingénieur ou université (Bac+4 à Bac+5), spécialisé(e) en Informatique ou Science des données",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Étudiant(e) en école d’ingénieur ou université (Bac+4 à Bac+5), spécialisé(e) en Informatique ou Science des données",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:50.618997",
+  "input_hash": "ad99a87d11d85e2a7ea6350f6508e494107950094addd14f7b44a0eb92e303dd",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:1985495",
+  "value": {
+    "id": "1985495",
+    "intitule": "Architecte Applicatif - H/F",
+    "entreprise": "Seyos",
+    "territoire": "92 - Plessis-Robinson",
+    "ville": "92060",
+    "code_postal": "92350",
+    "contrat": "CDI",
+    "date_creation": "2026-04-27",
+    "date": "2026-04-27",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1985495",
+    "description": "Description:\nDepuis près de 40 ans, notre client est spécialisé dans l'accompagnement des entreprises dans leur tranformation digitale.\nAvec un CA de +145 millions d'€, et composée de +1000 collaborateurs, elle compte parmi ses clients des acteurs majeurs du secteur public et du CAC 40 sur des secteurs d'activité diversifiés.\n\nLe Centre d'Excellence regroupe diverses expertises technologiques au service des projets.\nEn intégrant cette équipe, vous participerez à la structuration, la transformation et la cohérence des systèmes d’information, tout en apportant de l’expertise technique aux projets et aux équipes.\nVous évoluerez au sein d’une communauté d’experts (Cloud, DevOps, Data/IA, Cybersécurité, Architecture logicielle), et bénéficierez d’un accompagnement progressif sur l’ensemble des missions.\n\nPlus précisément, votre rôle s'articulera de la façon suivante :\n\n1/ Soutien transverse aux projets & expertise technique\n- Définition ou revue d’architecture (infra, dimensionnement, intégration, performances, sécurité).\n- Participation ou aide à la rédaction des documents d’architecture technique (DAT…).\n- Assistance aux Lead Techs sur les sujets complexes.\n- Audits, diagnostics, missions d’expertise pour nos clients.\n- Travail transverse avec les équipes DevOps, Cloud, Cybersécurité, IA/Data.\n\n2/ Participation aux actions commerciales et marketing\n- Participation aux avant‑ventes, chiffrages, soutenances, démonstrations.\n- Production de POCs / démos pour soutenir les offres.\n\n3/ Coaching, formation & accompagnement interne\n- Animation de formations, ateliers et sessions de partage.\n- Accompagnement des collaborateurs dans leur montée en compétences (architecture, urbanisme, tech).\n- Participation à des communications internes/externes : TechCafés, webinaires, salons, retours d’expérience.\n\n4/ Veille & innovation\n- Veille sur les tendances architecture, cloud, sécurité, API, accessibilité…\n- Benchmarks technologiques et restitution aux équipes.\n- Propositions d’amélioration des pratiques d’architecture et assets internes.\n\nLocalisation : Le Plessis-Robinson\nTélétravail : 2 jours / semaine\nRémunération : selon niveau d'expérience\n\nAvantages :\n- Prime d'intéressement / participation\n- Prime de vacances\n- Tickets restaurant\n- Télétravail (2 jours par semaine)\n- CE\n- Possibilité d'évolution en interne\n\nProfil recherché:\n- Titulaire d'un diplôme de niveau Bac +5, vous justifiez d'une expérience de 8 à 15 ans  dans les métiers du développement, de l’architecture applicative ou du conseil technique, acquise au sein d'une société de conseil.\n- Maîtrise ou forte appétence pour TOGAF, ArchiMate, modèles d’urbanisation.\n- Très bonnes capacités de modélisation, structuration et communication.\n- Bon relationnel, esprit de synthèse, rigueur.\n- Curiosité, engagement, goût pour l’expertise et le partage.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Vue.js"
+    ],
+    "salaire_min": 8000,
+    "salaire_max": 15000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Titulaire d'un diplôme de niveau Bac +5, vous justifiez d'une expérience de 8 à 15 ans dans les métiers du développement, de l’architecture applicative ou du conseil technique, acquise au sein d'une société de conseil.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "8 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:48.458120",
+  "input_hash": "9ad51aa75c036ab9a6ab98cc905a9d90926dcb3f897a940f37dd4f1e53c3d16e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:209FJMG",
+  "value": {
+    "id": "209FJMG",
+    "intitule": "Administrateur Systèmes & Réseaux H/F",
+    "entreprise": "VAL SOFTWARE",
+    "territoire": "31 - BLAGNAC",
+    "ville": "31069",
+    "code_postal": "31700",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209FJMG",
+    "description": "VAL SOFTWARE : qui sommes-nous ? \nVAL SOFTWARE est un éditeur de logiciel SaaS dédié aux acteurs de la formation professionnelle qui accélère son développement et devient leader sur son marché.\n\nNotre devise : \n\n« L'Humain au service du progrès de la formation » ! Les valeurs qui nous rassemblent : Apprentissage Continu, Humain, Indépendance.\n\nVos missions : \n\nRattaché(e) à la Directrice Product & Technology, vous êtes garant(e) de la fiabilité, de la sécurité et de l'évolution de nos infrastructures. \n\nVos responsabilités couvrent :\n\nInfrastructure & Cloud : \n- Administration et évolution de notre datacenter interne et des environnements cloud (OVH, Azure)\n- Gestion des environnements de virtualisation VMware (ESXi, vCenter, NSX-T)\n- Support N2/N3 sur les incidents infrastructure\n\nSécurité & Résilience : \n- Maintien en condition opérationnelle et supervision proactive\n- Gestion des sauvegardes (Veeam) et du Plan de Reprise d'Activité\n- Participation active à la démarche de sécurité (ISO 27001, gestion des vulnérabilités)\n\nAutomatisation & IaC\n- Déploiement et configuration des environnements via Terraform, Ansible, Packer\n- Contribution aux pipelines CI/CD (Azure DevOps)\n- Conteneurisation et orchestration (Docker Swarm, Traefik)\n\nCe poste est fait pour vous si .\n\nCompétences requises \n- Vous possédez une expérience de 5 ans minimum sur un poste similaire (admin sys/réseau, infra cloud)\n- Un diplôme de niveau Bac+3 à Bac+5 en informatique ou équivalent par expérience\n- Qualité : Rigueur, autonomie, sens du service, esprit d'équipe, curiosité technique, capacité à documenter et à structurer\n\nCompétences techniques Indispensables\n- OS : Windows Server (AD, GPO, WSUS), Linux\n- Virtualisation : VMware ESXi, vCenter\n- Réseau : TCP/IP, DHCP, VPN, Switching Cisco, Firewall (Stormshield ou équivalent)\n- Wi-Fi : administration points d'accès Unifi\n- Cloud : OVH, Azure\n- IaC : Terraform, Ansible\n- Scripting : PowerShell, Bash\n- Sauvegardes : Veeam ou équivalent\n- Monitoring : Prometheus/Grafana ou Centreon\n- BDD : SQL Server, MySQL (administration de base)\n- Web : IIS, Apache, Nginx\n\nCompétences techniques appréciées\n- Virtualisation : Proxmox VE\n- NAS/SAN (NetApp ou équivalent)\n- NSX-T (réseau virtualisé VMware)\n- Langages de développement : notions C#, .NET, Python ou équivalent\n- Conteneurisation : Docker, Docker Swarm, Traefik\n- Démarche DevSecOps / cycles agiles\n- IaC avancé : Packer, Azure DevOps pipelines\n- Connaissance des environnements SaaS multi-tenant\n- Sécurité : ISO 27001, gestion CVE/CVSS\n\nLes petits plus à savoir !\nEn plus d'un contrat à durée indéterminée (statut Cadre forfait jours), nous vous offrons un package salarial complet composé d'une rémunération fixe et variable.\nVous bénéficierez également de : la mutuelle (prise en charge à 50%) et la prévoyance d'entreprise, des tickets restaurant (8,50€), une participation aux bénéfices, une prime de vacances, des dispositifs d'épargne salariale (PEE & PERCOL), une Charte télétravail (jusqu'à 2 jours / semaine sous conditions) et des avantages CSE.\n\nNous vous proposons des conditions de travail attractives dans locaux récents et confortables, et un poste de travail bien équipé.\nVous pourrez évoluer au sein d'une équipe passionnée, dynamique et en pleine croissance car elle porte les ambitions de la société.\nNotre politique RH assure à toute nouvelle recrue une formation à l'intégration et tout au long de la carrière pour développer vos compétences et accompagner votre évolution.\n\nRémunération : à partir de 38-41k€ bruts annuels.\n\nConvaincu.e ? Alors Rencontrons-nous ! \n1ère étape : 1er échange avec notre service RH  \n2ème étape : Un entretien avec le Directeur.\n\nVAL SOFTWARE se construit à travers la diversité de ses équipes.\nEmployeur handi-engagé, nous accueillons toutes les candidatures avec la même attention !\nRévélez-vous et rejoignez-nous chez VAL SOFTWARE.",
+    "metier": "Administrateur / Administratrice de systèmes d'information (SI)",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Azure",
+      "Docker",
+      "Intelligence artificielle",
+      "Linux",
+      "MySQL",
+      "Python",
+      "SQL",
+      "Terraform",
+      "Vision",
+      "CI/CD"
+    ],
+    "salaire_min": 38000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Un diplôme de niveau Bac+3 à Bac+5 en informatique ou équivalent par expérience",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Un diplôme de niveau Bac+3 à Bac+5 en informatique ou équivalent par expérience",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:11.395686",
+  "input_hash": "918f005fe7ffa0007aa791fa63a556a8d9171b6c9fa448874cc9484583def1ac",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:2715872",
+  "value": {
+    "id": "2715872",
+    "intitule": "Ingénieur logiciel embarqué H/F",
+    "entreprise": "SERMA INGENIERIE",
+    "territoire": "31 - Cornebarrieu",
+    "ville": "31150",
+    "code_postal": "31700",
+    "contrat": "CDI",
+    "date_creation": "2026-05-17",
+    "date": "2026-05-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2715872",
+    "description": "Le Groupe SERMA est un leader Européen, représentant 1400 ingénieurs et techniciens, spécialiste de l’ensemble des activités liées à l’électronique, la microélectronique et les nouvelles énergies. SERMA Ingénierie conçoit, produit et maintient en conditions opérationnelles les systèmes électroniques embarqués de ses clients multisectoriels (aéronautique, spatial, automobile, ferroviaire, médical, télécommunications et énergie). SERMA Ingénierie recrute pour un de ses clients, dans le secteur industriel, un Ingénieur logiciel embarqué H/F. Votre mission sera de : - Etudier et analyser les besoins - Développer, mettre au point et déployer les logiciels embarqués et les interfaces homme-machine - Constituer et suivre les dossiers techniques de définition et de tests/recettes logiciels en vue de l’industrialisation - Définir et réaliser les essais de validation/qualification et de mise en route - Développer et améliorer les logiciels des moyens d’essais - Assurer un support technique en interne et sur site client - Participer à la rédaction de la documentation associée à toute la vie d’un produit De formation Bac +5 ou plus en informatique embarquée ou systèmes embarqués, vous justifiez de 2 ans d’expériences minimum dans ce domaine. De nature curieuse, vous souhaitez élargir vos connaissances et compétences dans un environnement innovant. Vous êtes rigoureux(se), curieux(se), autonome. Vous avez des capacités d’adaptation, de travail en équipe, d’expertise technique, de synthèse et d’analyses. Une bonne maîtrise de l’anglais est nécessaire.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Vue.js",
+      "Travail en équipe",
+      "Analyse des besoins",
+      "Documentation technique",
+      "API",
+      "Tests automatisés"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": "onsite",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "SERMA Ingénierie recrute pour un de ses clients, dans le secteur industriel, un Ingénieur logiciel embarqué H/F.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Votre mission sera de : - Etudier et analyser les besoins - Développer, mettre au point et déployer les logiciels embarqués et les interfaces homme-machine - Constituer et suivre les dossiers techniques de définition et de tests/recettes logiciels en vue de l’industrialisation - Définir et réaliser les essais de validation/qualification et de mise en route - Développer et améliorer les logiciels des moyens d’essais - Assurer un support technique en interne et sur site client - Participer à la rédaction de la documentation associée à toute la vie d’un produit De formation Bac +5 ou plus en informatique embarquée ou systèmes embarqués, vous justifiez de 2 ans d’expériences minimum dans ce domaine.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:29.670224",
+  "input_hash": "cad14a9f8aa0289f17803b1df5d23437658b0cdfe2cbaf927795e29ebd9d21ad",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

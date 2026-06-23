@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:2639601",
+  "value": {
+    "id": "2639601",
+    "intitule": "Data scientist (H/F)",
+    "entreprise": "",
+    "territoire": "35 - Bruz",
+    "ville": "35047",
+    "code_postal": "35170",
+    "contrat": "CDI",
+    "date_creation": "2026-05-14",
+    "date": "2026-05-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2639601",
+    "description": "Description du poste :\nAu sein de l'équipe \"agents autonomes et aide à la décision\", en qualité d'expert en Intelligence Artificielle Optimisation et multi-agents, vous concevrez, développerez et mettrez en œuvre des modèles d'intelligence artificielle pour les problématiques d'optimisation et de systèmes multi-agents au profit des entités du ministère des armées.\nA ce titre, vos principales missions seront les suivantes :\n-Appliquer les meilleures pratiques et rester à jour sur l'état de l'art et en IA.\n-Capter les besoins des experts métier et les traduire en solutions IA.\n-Explorer de nouvelles techniques d'IA pour améliorer les modèles existants et proposer des solutions innovantes.\n-Collecter et préparer les données nécessaires, en s'assurant de leur qualité et de leur pertinence.\n-Évaluer et améliorer la qualité des modèles à l'aide de métriques appropriées.\n-Avec les équipes de développement logiciel, intégrer et documenter les modèles dans les applications existantes.\n-Dans le cadre du rayonnement de l'agence, mener des actions de formation, de sensibilisation ou d'informations sur l'IA.\nDescription du profil :\nTitulaire d'un diplôme de niveau bac+5 et d'au moins trois années d'expérience ou d'un doctorat en informatique, statistiques et/ou mathématiques, vous possédez de compétences solides dans le domaine de l'optimisation et/ou des systèmes multi-agents et justifiez de compétences parmi les sujets suivants :\n-L'apprentissage automatique, dont l'apprentissage par renforcement\n-Les systèmes multi-agents\n-Le développement de simulations\n-La recherche opérationnelle, les réseaux bayésiens\n-La modélisation des connaissances\nVous maitrisez les langages et les bibliothèques comme python, PyTorch et/ou TensorFlow. Une expérience dans la robotique et le hardware pour l'IA et l'embarqué sont un plus.\nLe poste s'inscrivant dans la montée en puissance de l'activité au profit du ministère des armées, vous savez faire preuve d'autonomie, aimez le travail d'équipe, êtes curieux et savez communiquer pour capter les besoins, identifier et expliquer les solutions à des experts d'autres domaines métiers.",
+    "metier": "Data scientist",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "PyTorch",
+      "Python",
+      "TensorFlow",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Titulaire d'un diplôme de niveau bac+5 et d'au moins trois années d'expérience ou d'un doctorat en informatique, statistiques et/ou mathématiques, vous possédez de compétences solides dans le domaine de l'optimisation et/ou des systèmes multi-agents et justifiez de compétences parmi les sujets suivants :",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Titulaire d'un diplôme de niveau bac+5 et d'au moins trois années d'expérience ou d'un doctorat en informatique, statistiques et/ou mathématiques, vous possédez de compétences solides dans le domaine de l'optimisation et/ou des systèmes multi-agents et justifiez de compétences parmi les sujets suivants :",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:13.177536",
+  "input_hash": "7965d8e80f972c55b8223058a3cf761192c8344b62e20791f19fb836f74198a7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

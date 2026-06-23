@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:3462012",
+  "value": {
+    "id": "3462012",
+    "intitule": "Développeur java (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris",
+    "ville": "75056",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3462012",
+    "description": "Votre mission (si vous lacceptezstrong>  Vous effectuez majoritairement du développement en Java 21 et springboot 3.0, en respectant les bonnes pratiques de qualité, de performance et de sécurité. Vous êtes impliqué à la fois sur le build et sur le run, en participant à toutes les étapes du cycle de vie des applications. Vous participez aussi à dautres activités, telles que la conception et lutilisation dAPI, la réalisation de tests métiers et techniques, le déploiement et le suivi de production. Vous travaillez dans un environnement technique innovant, basé sur des technologies telles que Mongo Atlas, MSK, Kubernetes, Datadog et Elasticache.  Votre future équipe : Vous intégrez une tribu agile composée de Développeurs, de Product Owners, de Scrum Masters et de Devops. Vous :  Vous &ecirc;tes id&eacute;alement dipl&ocirc;m&eacute; d&rsquo;une &eacute;cole d&rsquo;ing&eacute;nieur ou un &eacute;quivalent Bac+5. Vous avez une exp&eacute;rience significative d&rsquo;au moins 2&nbsp;ans en d&eacute;veloppement Java. Vous ma&icirc;trisez les frameworks et les outils associ&eacute;s &agrave; Java et Springboot. Vous avez des connaissances en bases de donn&eacute;es NoSQL, en messaging et en conteneurisation. Vous &ecirc;tes sensible &agrave; l&rsquo;agilit&eacute; et vous savez travailler en &eacute;quipe, en &eacute;tant &agrave; l&rsquo;&eacute;coute, en partageant vos id&eacute;es et en respectant les feedbacks. Vous &ecirc;tes curieux, autonome, proactif et force de proposition. Vous avez un bon niveau de communication, &agrave; l&rsquo;oral comme &agrave; l&rsquo;&eacute;crit.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Java",
+      "Kubernetes",
+      "NoSQL",
+      "SQL"
+    ],
+    "salaire_min": 21000,
+    "salaire_max": 21000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous : Vous &ecirc;tes id&eacute;alement dipl&ocirc;m&eacute; d&rsquo;une &eacute;cole d&rsquo;ing&eacute;nieur ou un &eacute;quivalent Bac+5.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:06.241886",
+  "input_hash": "275abcedfe393c0569200fffa83ee6723b08c65272f579b53f7371e64c29a497",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

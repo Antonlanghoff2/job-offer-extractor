@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:3035359",
+  "value": {
+    "id": "3035359",
+    "intitule": "Ingénieur temps réel embarqué (H/F)",
+    "entreprise": "",
+    "territoire": "91 - Limours",
+    "ville": "91338",
+    "code_postal": "91470",
+    "contrat": "CDI",
+    "date_creation": "2026-05-26",
+    "date": "2026-05-26",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3035359",
+    "description": "Description du poste :\nLieu : Limours, France\nConstruisons ensemble un avenir de confiance\nThales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels que l'IA, la cybersécurité, le quantique, les technologies du cloud et la 6G. Thales compte près de 85 000 collaborateurs dans 65 pays.\nNos engagements, vos avantages***Une réussite portée par notre excellence technologique, votre expérience et notre ambition partagée***Un package de rémunération attractif***Un développement des compétences en continu : parcours de formation, académies et communautés internes***Un environnement inclusif, bienveillant et respectant l'équilibre des collaborateurs***Un engagement sociétal et environnemental reconnu\nVotre quotidien\nSitué à 20mn du Pôle technologique de Paris-Saclay, le site est l'un des plus grands centres d'excellence radars de surface. Nous contribuons à développer, concevoir, intégrer et tester des radars de surveillance aériennes dédiés à la détection et l'identification de cibles.\nAu sein du centre de compétences Radar Embedded Processing, vous intégrerez la section Expertise du service de développement (DEL), en charge de livrer les logiciels temps réel Backend pour l'ensemble des radars de surveillance aérienne ou multifonctions de Surface Radar.\nVous intervenez dans le cadre de la modernisation de nos solutions logicielles temps réel pour systèmes RADAR, en implémentant la transition d'une architecture monolithique vers une architecture microservices conteneurisée, tout en respectant des contraintes fortes de performance, déterminisme et fiabilité.\nAu quotidien, Vous concevez, développez et déployez des services autonomes, scalables et résilients, exécutés dans des conteneurs et orchestrés par Kubernetes, pour des systèmes critiques à forte exigence temps réel.\nA ce titre, vous aurez pour missions Concevoir les architectures microservices adaptées au temps réel\n* Réaliser l'implémentation logicielle\n* Déployer, observer et participer à l'amélioration continue.\nVotre environnement technique :\nLangages***Ada, C (temps réel critique, bas niveau)\n* Python, Bash (outillage, automatisation, microservices)\nSystèmes / OS***Linux (environnements embarqués et serveurs)\nArchitecture & middleware***Architecture temps réel pour systèmes RADAR\n* Middleware de messagerie MYCCM\n* Streaming et événements haute fréquence (Kafka)\nConteneurisation & orchestration***Docker, Podman (build d'images optimisées, multi-stage, sécurité)\n* Kubernetes (déploiement, scaling, gestion du cycle de vie des services, Helm)\nCI/CD & outillage***GitLab CI/CD (pipelines automatisés, tests, scans sécurité, déploiements)\n* JIRA (suivi agile, gestion des backlogs)\nIDE***GNAT Studio\n* VS Code + assistant de codage\nContraintes clés***Temps réel strict (deadlines, priorités, déterminisme)\n* Haute disponibilité, résilience et sûreté de fonctionnement\n* Environnements critiques et embarqués\nVotre profil\nVous avez l'ambition et l'envie de vous épanouir au cœur du développement logiciel ?\nVous disposez d'un diplôme d'ingénieur ou équivalent Bac+5 et Vous avez une solide expérience en développement logiciel structuré dans un environnement Linux\n* Vous avez une bonne compréhension des systèmes temps réel et des contraintes de performance\n* Vous faites preuve de rigueur et attachez de l'importance à la qualité du logiciel\n* Vous êtes intéressé par l'architecture et la conception\n* Idéalement, vous avez une ou plusieurs expériences mettant en œuvre les nouvelles technologies/architectures visées (microservices, conteneurs, orchestration Par ailleurs, une expérience d'intégration sur un système temps réel complexe est souhaitée.\nLe dynamisme, l'esprit d'équipe, le sens du relationnel et la force de proposition sont des atouts que l'on vous reconnait ?\nAlors rejoignez- nous !\nThales, entreprise Handi-Engagée, reconnait tous les talents. La diversité est notre meilleur atout. Postulez et rejoignez nous !Le poste pouvant nécessiter d'accéder à des informations relevant du secret de la défense nationale, la personne retenue fera l'objet d'une procédure d'habilitation, conformément aux dispositions des articles R.2311-1 et suivants du Code de la défense et de l'IGI 1300 SGDSN/PSE du 09 août 2021.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Scalabilité",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Sécurité informatique",
+      "Documentation technique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 2311,
+    "salaire_max": 1000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous disposez d'un diplôme d'ingénieur ou équivalent Bac+5 et Vous avez une solide expérience en développement logiciel structuré dans un environnement Linux",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous disposez d'un diplôme d'ingénieur ou équivalent Bac+5 et Vous avez une solide expérience en développement logiciel structuré dans un environnement Linux",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:17.792635",
+  "input_hash": "b32359bb98f998d8ab785abb318fd153fd42ef8c1735f614b949ab6f64ca08d3",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

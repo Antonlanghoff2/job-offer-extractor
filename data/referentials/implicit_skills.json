@@ -1,0 +1,368 @@
+[
+  {
+    "canonical_name": "MLOps",
+    "category": "IA et Data",
+    "description": "Déploiement, supervision et maintenance de modèles de machine learning en production",
+    "indicators": [
+      "mettre un modèle en production",
+      "déployer des modèles en production",
+      "surveiller la dérive des modèles",
+      "monitorer les performances d'un modèle",
+      "automatiser le déploiement de modèles",
+      "maintenir des modèles en production",
+      "pipeline de déploiement de modèles",
+      "versioning de modèles",
+      "registry de modèles"
+    ]
+  },
+  {
+    "canonical_name": "Déploiement de modèles",
+    "category": "IA et Data",
+    "description": "Mise en production de modèles de machine learning",
+    "indicators": [
+      "déployer un modèle",
+      "mettre en production un modèle",
+      "servir un modèle",
+      "exposer un modèle via une API",
+      "déployer des modèles de ML"
+    ]
+  },
+  {
+    "canonical_name": "Monitoring de modèles",
+    "category": "IA et Data",
+    "description": "Surveillance des performances et de la dérive des modèles en production",
+    "indicators": [
+      "surveiller la dérive",
+      "monitorer les modèles",
+      "surveiller les performances d'un modèle",
+      "détecter la dérive de données",
+      "détecter la dérive de concept",
+      "suivre les métriques de modèle"
+    ]
+  },
+  {
+    "canonical_name": "Model drift",
+    "category": "IA et Data",
+    "description": "Détection et gestion de la dérive des modèles de machine learning",
+    "indicators": [
+      "dérive du modèle",
+      "dérive de données",
+      "dérive de concept",
+      "surveiller la dérive",
+      "détecter la dérive"
+    ]
+  },
+  {
+    "canonical_name": "Data Engineering",
+    "category": "IA et Data",
+    "description": "Conception et maintenance de pipelines de données et d'architectures data",
+    "indicators": [
+      "concevoir des flux de données",
+      "construire des pipelines de données",
+      "développer des pipelines ETL",
+      "alimenter des bases de données",
+      "transformer des données",
+      "orchestrer des flux de données",
+      "architecturer des données",
+      "flux d'alimentation de données",
+      "flux de transformation de données"
+    ]
+  },
+  {
+    "canonical_name": "ETL",
+    "category": "IA et Data",
+    "description": "Processus d'extraction, transformation et chargement de données",
+    "indicators": [
+      "concevoir des processus ETL",
+      "développer des flux ETL",
+      "extraire transformer charger",
+      "pipelines d'extraction",
+      "pipelines de transformation",
+      "chargement de données"
+    ]
+  },
+  {
+    "canonical_name": "Qualité des données",
+    "category": "IA et Data",
+    "description": "Gouvernance, validation et contrôle qualité des données",
+    "indicators": [
+      "contrôler la qualité des données",
+      "valider les données",
+      "assurer la qualité des données",
+      "nettoyer les données",
+      "gouvernance des données",
+      "contrôle qualité des données",
+      "vérifier l'intégrité des données"
+    ]
+  },
+  {
+    "canonical_name": "Pipelines de données",
+    "category": "IA et Data",
+    "description": "Automatisation des flux de traitement de données",
+    "indicators": [
+      "concevoir des pipelines de données",
+      "automatiser les flux de données",
+      "orchestrer des pipelines",
+      "développer des pipelines de traitement",
+      "flux de données automatisés"
+    ]
+  },
+  {
+    "canonical_name": "Backend",
+    "category": "Développement",
+    "description": "Développement de la partie serveur et logique métier des applications",
+    "indicators": [
+      "développer des services backend",
+      "concevoir des APIs",
+      "développer des services côté serveur",
+      "implémenter la logique métier",
+      "développer des microservices",
+      "services capables de traiter des requêtes"
+    ]
+  },
+  {
+    "canonical_name": "API",
+    "category": "Développement",
+    "description": "Conception et développement d'interfaces de programmation",
+    "indicators": [
+      "développer des APIs",
+      "concevoir des APIs REST",
+      "exposer des services via API",
+      "implémenter des endpoints",
+      "développer des interfaces de programmation"
+    ]
+  },
+  {
+    "canonical_name": "Programmation concurrente",
+    "category": "Développement",
+    "description": "Gestion du traitement simultané de multiples requêtes ou tâches",
+    "indicators": [
+      "traiter plusieurs milliers de requêtes",
+      "gérer le traitement simultané",
+      "programmation asynchrone",
+      "traitement parallèle",
+      "haute concurrence",
+      "gérer de forts volumes de requêtes"
+    ]
+  },
+  {
+    "canonical_name": "Scalabilité",
+    "category": "Architecture",
+    "description": "Conception de systèmes capables de monter en charge",
+    "indicators": [
+      "concevoir des systèmes scalables",
+      "monter en charge",
+      "gérer de forts volumes",
+      "architecture scalable",
+      "systèmes distribués",
+      "traiter plusieurs milliers de requêtes",
+      "haute disponibilité"
+    ]
+  },
+  {
+    "canonical_name": "Optimisation des performances",
+    "category": "Développement",
+    "description": "Amélioration des temps de réponse et de l'efficacité des systèmes",
+    "indicators": [
+      "optimiser les performances",
+      "améliorer les temps de réponse",
+      "réduire la latence",
+      "optimiser les requêtes",
+      "améliorer l'efficacité",
+      "optimisation des temps de traitement"
+    ]
+  },
+  {
+    "canonical_name": "Sécurité informatique",
+    "category": "Sécurité",
+    "description": "Protection des systèmes, réseaux et données contre les cybermenaces",
+    "indicators": [
+      "sécuriser les applications",
+      "implémenter l'authentification",
+      "gérer les autorisations",
+      "protection des données",
+      "chiffrement des données",
+      "sécurité des APIs",
+      "prévenir les intrusions",
+      "analyser les vulnérabilités"
+    ]
+  },
+  {
+    "canonical_name": "Gestion de projet",
+    "category": "Management",
+    "description": "Pilotage et coordination de projets informatiques",
+    "indicators": [
+      "piloter un projet",
+      "coordonner les activités",
+      "planifier les livrables",
+      "suivre l'avancement du projet",
+      "gérer le planning",
+      "définir les jalons",
+      "assurer la livraison"
+    ]
+  },
+  {
+    "canonical_name": "Méthodologie Agile",
+    "category": "Management",
+    "description": "Gestion de projet itérative et collaborative",
+    "indicators": [
+      "travailler en mode agile",
+      "participer aux sprints",
+      "méthode Scrum",
+      "rituels agiles",
+      "planification de sprint",
+      "rétrospective",
+      "daily standup"
+    ]
+  },
+  {
+    "canonical_name": "Tests automatisés",
+    "category": "Qualité",
+    "description": "Automatisation des tests logiciels pour garantir la qualité du code",
+    "indicators": [
+      "écrire des tests unitaires",
+      "automatiser les tests",
+      "développer des tests d'intégration",
+      "tests de non-régression",
+      "couverture de tests",
+      "tests E2E"
+    ]
+  },
+  {
+    "canonical_name": "Intégration continue",
+    "category": "DevOps",
+    "description": "Automatisation de l'intégration du code et des tests",
+    "indicators": [
+      "mettre en place l'intégration continue",
+      "automatiser les builds",
+      "pipeline CI/CD",
+      "intégration et déploiement continus",
+      "automatisation du déploiement"
+    ]
+  },
+  {
+    "canonical_name": "Analyse de données",
+    "category": "IA et Data",
+    "description": "Exploration et analyse de données pour en extraire des insights",
+    "indicators": [
+      "analyser les données",
+      "extraire des insights",
+      "exploration de données",
+      "visualiser les données",
+      "créer des tableaux de bord",
+      "analyse exploratoire"
+    ]
+  },
+  {
+    "canonical_name": "Feature Engineering",
+    "category": "IA et Data",
+    "description": "Création et sélection de variables pour les modèles de ML",
+    "indicators": [
+      "créer des features",
+      "sélectionner des variables",
+      "ingénierie des features",
+      "préparer les données pour le ML",
+      "transformer les variables",
+      "feature selection"
+    ]
+  },
+  {
+    "canonical_name": "NLP",
+    "category": "IA et Data",
+    "description": "Traitement automatique du langage naturel",
+    "indicators": [
+      "traiter du texte",
+      "analyser du langage naturel",
+      "classification de texte",
+      "extraction d'entités nommées",
+      "analyse sentiment",
+      "tokenisation",
+      "modèles de langage"
+    ]
+  },
+  {
+    "canonical_name": "Computer Vision",
+    "category": "IA et Data",
+    "description": "Traitement et analyse d'images et de vidéos par IA",
+    "indicators": [
+      "traiter des images",
+      "détection d'objets",
+      "classification d'images",
+      "segmentation d'images",
+      "reconnaissance d'images",
+      "analyse vidéo"
+    ]
+  },
+  {
+    "canonical_name": "Architecture microservices",
+    "category": "Architecture",
+    "description": "Conception de systèmes distribués en services indépendants",
+    "indicators": [
+      "concevoir des microservices",
+      "architecture distribuée",
+      "services découplés",
+      "communication inter-services",
+      "API gateway"
+    ]
+  },
+  {
+    "canonical_name": "Design patterns",
+    "category": "Développement",
+    "description": "Solutions réutilisables à des problèmes courants de conception",
+    "indicators": [
+      "appliquer des design patterns",
+      "patterns de conception",
+      "architecture logicielle",
+      "bonnes pratiques de conception",
+      "conception orientée objet"
+    ]
+  },
+  {
+    "canonical_name": "Documentation technique",
+    "category": "Communication",
+    "description": "Rédaction de documentation pour les systèmes et APIs",
+    "indicators": [
+      "rédiger de la documentation technique",
+      "documenter les APIs",
+      "documenter l'architecture",
+      "rédaction de spécifications",
+      "documentation des systèmes"
+    ]
+  },
+  {
+    "canonical_name": "Code review",
+    "category": "Qualité",
+    "description": "Revue de code pour assurer la qualité et partager les connaissances",
+    "indicators": [
+      "revoir le code",
+      "effectuer des revues de code",
+      "code review",
+      "assurer la qualité du code",
+      "revue par les pairs"
+    ]
+  },
+  {
+    "canonical_name": "Résolution de problèmes",
+    "category": "Soft skills",
+    "description": "Capacité à analyser et résoudre des problèmes techniques complexes",
+    "indicators": [
+      "résoudre des problèmes complexes",
+      "diagnostiquer des incidents",
+      "trouver des solutions techniques",
+      "analyser les causes racines",
+      "débugger des systèmes"
+    ]
+  },
+  {
+    "canonical_name": "Veille technologique",
+    "category": "Apprentissage",
+    "description": "Suivi des évolutions technologiques et des nouvelles tendances",
+    "indicators": [
+      "effectuer une veille technologique",
+      "suivre les nouvelles technologies",
+      "rester à jour techniquement",
+      "explorer de nouvelles technologies",
+      "expérimenter de nouveaux outils"
+    ]
+  }
+]

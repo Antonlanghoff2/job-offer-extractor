@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:3720739",
+  "value": {
+    "id": "3720739",
+    "intitule": "Assistant programmation planning (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-11",
+    "date": "2026-06-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3720739",
+    "description": "Description du poste :\nSous la responsabilité du responsable d'exploitation, vous aurez pour principales missions Élaborer, mettre à jour et optimiser les plannings des équipes terrain Organiser les interventions en tenant compte des contraintes opérationnelles et des priorités clients Assurer la coordination entre les équipes, les clients et les différents services internes Réceptionner les demandes d'intervention et en assurer le suivi administratif Gérer les modifications de planning et les imprévus avec réactivité Contrôler la bonne réalisation des interventions et assurer le reporting associé Participer à l'amélioration continue des processus d'organisation et de planification Mettre à jour les outils de suivi et les bases de données.\nDescription de l'entreprise\nL'entreprise est spécialisée dans la menuiserie.\nDescription du profil Formation Bac à Bac +2 en assistanat, gestion administrative ou équivalent Première expérience réussie sur un poste similaire appréciée Excellente capacité d'organisation et de gestion des priorités Aisance relationnelle et sens du service Maîtrise des outils bureautiques (Excel, Outlook, Word La connaissance d'un logiciel de planification constitue un atout Rigueur, autonomie et réactivité.\nAUTRES INFORMATIONS Création de poste Prise de poste immédiate en intérim, pérennisable Salaire selon expérience et compétences Accessible en transport en commun",
+    "metier": "Responsable en organisation en entreprise",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Gestion de projet",
+      "Analyse de données",
+      "Data Engineering",
+      "Qualité des données"
+    ],
+    "salaire_min": 12,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +2",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Description du profil Formation Bac à Bac +2 en assistanat, gestion administrative ou équivalent Première expérience réussie sur un poste similaire appréciée Excellente capacité d'organisation et de gestion des priorités Aisance relationnelle et sens du service Maîtrise des outils bureautiques (Excel, Outlook, Word La connaissance d'un logiciel de planification constitue un atout Rigueur, autonomie et réactivité.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:51.003082",
+  "input_hash": "1c9edcf4de5b2b3bf7214ae61ff84024deef6b01fb4a2c4227886a614f7e5208",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:3371292",
+  "value": {
+    "id": "3371292",
+    "intitule": "Ingénieur DevOps (H/F)",
+    "entreprise": "",
+    "territoire": "79 - Niort",
+    "ville": "79191",
+    "code_postal": "79000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3371292",
+    "description": "AIS : Depuis 1985, AIS est une ESN tournée vers l'humain. Nous capitalisons sur le talent de nos collaborateurs pour accompagner nos clients dans leurs projets. Nos activités : Pôle Compétences : activité de régie chez nos clients sur tous nos métiers Pôle Infrastructure : projets d'intégration, missions de MCO et de support Pôle Applications : projets de développement d'applications web et de TMA Nos chiffres clefs : 250 collaborateurs 15 managers techniques 5 agences : Nantes, Angers, Rennes, Niort et Toulouse ! 2 labellisations annuelles: Happy At Work & Tech At Work CHOISIR AIS, C'EST : Travailler dans une entreprise où 83,6% des collaborateurs(trices) sont satisfait(e)s de la qualité des relations humaines. Assurer sa montée en compétences grâce à nos parcours de formations et de certifications. Profiter d'évènements conviviaux tout au long de l'année ! Un suivi aux petits oignons ! Un binôme Manager technique/RH vous accompagne au quotidien ! Le poste : MISSIONS : Intégré(e) aux équipes d'un de nos clients grands comptes vos missions seront les suivantes : - Assurer la disponibilité et la stabilité des environnements (Test, Prod). - Exécuter et superviser l'installation (déploiement, bon démarrage). - Automatiser les déploiements et les pipelines (CI/CD) dans un but de fluidifier et de fiabiliser la réalisation. - Collaborer à la mise en place de la supervision incluant la documentation des dépendances. - Analyser, résoudre les incidents et suivre les plans de remédiation. - Participer à la définition des Exigences Non Fonctionnelles (sécurité, performance, scalabilité) et s'assurer de leur implémentation en projet et en production. - Garantir la conformité et la qualité des livrables (tests, documentation) et anticiper les risques. Connaissances techniques : - Ordonnanceur (Control M) - Déploiement continu (Gitlab, Openshift, CICD, Terraform) - SQL (Oracle, MySQL, PostgreSQL) - Monitoring (Dynatrace) - ETL Powercenter / ELT DBT - Hadoop (HDFS, Spark) - Scripts (shell, ksh) - Python - Google Cloud Platform (Big Query) - Jira, Confluence, Easyvista, Google Workspace Profil recherché : VOUS : Vous avez eu une expérience en tant qu'Ingénieur DevOps et cela vous a beaucoup plu. Vous souhaitez rejoindre une ESN pour intervenir chez des clients grands comptes. Savoir être: Bonne connaissance des contraintes de production. Expérience significative en DevOps. Cette annonce est ouverte aux personnes en situation de handicap.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "MySQL",
+      "PostgreSQL",
+      "Python",
+      "SQL",
+      "Terraform",
+      "Vision",
+      "CI/CD",
+      "Cybersécurité",
+      "Automatisation des déploiements",
+      "Déploiement de modèles",
+      "Gestion de projet",
+      "MLOps",
+      "Qualité des données",
+      "Tests automatisés"
+    ],
+    "salaire_min": 1985,
+    "salaire_max": 1985,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Le poste : MISSIONS : Intégré(e) aux équipes d'un de nos clients grands comptes vos missions seront les suivantes : - Assurer la disponibilité et la stabilité des environnements (Test, Prod). - Exécuter et superviser l'installation (déploiement, bon démarrage). - Automatiser les déploiements et les pipelines (CI/CD) dans un but de fluidifier et de fiabiliser la réalisation. - Collaborer à la mise en place de la supervision incluant la documentation des dépendances. - Analyser, résoudre les incidents et suivre les plans de remédiation. - Participer à la définition des Exigences Non Fonctionnelles (sécurité, performance, scalabilité) et s'assurer de leur implémentation en projet et en production. - Garantir la conformité et la qualité des livrables (tests, documentation) et anticiper les risques.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Connaissances techniques : - Ordonnanceur (Control M) - Déploiement continu (Gitlab, Openshift, CICD, Terraform) - SQL (Oracle, MySQL, PostgreSQL) - Monitoring (Dynatrace) - ETL Powercenter / ELT DBT - Hadoop (HDFS, Spark) - Scripts (shell, ksh) - Python - Google Cloud Platform (Big Query) - Jira, Confluence, Easyvista, Google Workspace Profil recherché : VOUS : Vous avez eu une expérience en tant qu'Ingénieur DevOps et cela vous a beaucoup plu.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 16,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:10.938799",
+  "input_hash": "e4e3c9181085ec285513409890ea8fcdd7f2b748b9def344da10817aca3dcafd",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

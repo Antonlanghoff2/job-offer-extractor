@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:2297099",
+  "value": {
+    "id": "2297099",
+    "intitule": "Développeur / Lead ERP - H/F",
+    "entreprise": "Seyos",
+    "territoire": "69 - Lyon 9e Arrondissement",
+    "ville": "69389",
+    "code_postal": "69009",
+    "contrat": "CDI",
+    "date_creation": "2026-05-05",
+    "date": "2026-05-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2297099",
+    "description": "Description: Notre client est une société française spécialisée dans la fourniture de produits techniques pour l'industrie (systèmes de fixation, de serrage, roulements à billes, vannes, ...). Rattaché au DSI et en qualité de Développeur / Lead Dev ERP, vos missions principales consistent à : - Réaliser les développements dans le cadre de la mise en place du nouvel ERP - Piloter les phases de paramétrage, de recette et d’interfaces entre les différents systèmes. - Superviser la phase de déploiement - Collaborer avec les équipes de l'intégrateur - Accompagner les utilisateurs dans la prise en main de l’ERP. - Assurer un support post-déploiement et contribuer à l’amélioration continue des processus. Localisation : Lyon 9ème (100% présentiel) Rémunération : 55 000 - 58 000 euros annuels bruts Avantages : Prime, participation, titres restaurants, mutuelle familiale Profil recherché: Titulaire d’une formation Bac+2 à Bac+5, vous justifiez d'une expérience significative en développement dans le domaine des ERP. Vous possédez une bonne compréhension des processus industriels (achat, vente, gestion de stocks, logistique). Votre expérience en développement, vos connaissances en VBA, SQL, Progress, Excel,Eclipse, GIT sont de véritables atouts pour ce poste.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "SQL",
+      "Code review",
+      "Qualité des données",
+      "Intégration continue"
+    ],
+    "salaire_min": 55000,
+    "salaire_max": 0,
+    "teletravail": "présentiel",
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Localisation : Lyon 9ème (100% présentiel) Rémunération : 55 000 - 58 000 euros annuels bruts Avantages : Prime, participation, titres restaurants, mutuelle familiale Profil recherché: Titulaire d’une formation Bac+2 à Bac+5, vous justifiez d'une expérience significative en développement dans le domaine des ERP.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Localisation : Lyon 9ème (100% présentiel) Rémunération : 55 000 - 58 000 euros annuels bruts Avantages : Prime, participation, titres restaurants, mutuelle familiale Profil recherché: Titulaire d’une formation Bac+2 à Bac+5, vous justifiez d'une expérience significative en développement dans le domaine des ERP.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:54:18.598991",
+  "input_hash": "b73426c48f2129880a35e650405bf37a4abd3bbcebdf3dbb5fe2b888d5d5a20d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

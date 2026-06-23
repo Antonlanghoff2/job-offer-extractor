@@ -1,0 +1,87 @@
+{
+  "key": "offer_extraction:209KXGG",
+  "value": {
+    "id": "209KXGG",
+    "intitule": "Ingéniuer Production Cloud Gcp/Aws (H/F)",
+    "entreprise": "COLCOMBET THIBAULT",
+    "territoire": "78 - GUYANCOURT",
+    "ville": "78297",
+    "code_postal": "78280",
+    "contrat": "CDI",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209KXGG",
+    "description": "En tant qu'Ingénieur Cloud GCP/AWS, vous interviendrez au sein des équipes infrastructures et plateformes de nos clients grands comptes afin de concevoir, automatiser et faire évoluer leurs environnements Cloud.\n\nMissions :\n\n- Concevoir et mettre en œuvre des solutions Cloud robustes, sécurisées et évolutives sur Google Cloud Platform et/ou Amazon Web Services.\n- Développer et maintenir des infrastructures as code à l'aide de Terraform.\n- Définir et industrialiser des modules Terraform réutilisables pour les différents environnements.\n- Participer à l'automatisation des processus de déploiement et à l'amélioration continue des plateformes Cloud.\n- Réaliser des revues de code et garantir le respect des bonnes pratiques de développement et d'architecture.\n- Mettre en place, maintenir et optimiser les pipelines CI/CD.\n- Assurer un support technique de niveau 3 auprès des équipes de développement et des projets.\n- Diagnostiquer, analyser et résoudre les incidents complexes en environnement de production.\n- Participer aux études d'impact, aux choix d'architecture et à la rédaction des dossiers techniques.\n- Réaliser une veille technologique continue afin de proposer des améliorations et innovations adaptées aux besoins métiers.\n- Accompagner le déploiement des solutions et contribuer à leur exploitation opérationnelle.\n- Participer aux activités de RUN et à la gestion des environnements de production.\n\nEnvironnement technique : GCP, Terraform, AWS, Kubernetes, GitLab CI, Jenkins, Ansible, AWX, Python, Infrastructure as Code (IaC), CI/CD, DevOps, Cloud Native.\n\nProfil :\n\n- Vous êtes diplômé(e) d'un Bac+3/5 en informatique (école d'ingénieur ou université).\n- Vous disposez d'une expérience significative d'au moins 5 ans sur des environnements Cloud et DevOps.\n- Vous possédez une expertise confirmée sur GCP et/ou AWS.\n- Vous maîtrisez Terraform ainsi que la conception de modules réutilisables.\n- Vous maîtrisez les outils d'automatisation et les pipelines CI/CD (GitLab CI, Jenkins, Ansible, AWX).\n- Vous avez une expérience autour de GKE, EKS et/ou Kubernetes.\n- Vous êtes capable d'intervenir aussi bien sur les sujets d'architecture, d'automatisation que de support de production.\n- Vous parlez couramment anglais.\n- Vous êtes reconnu(e) pour votre autonomie, votre rigueur, votre capacité d'analyse et votre esprit d'équipe.",
+    "metier": "Ingénieur / Ingénieure Cloud computing",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Python",
+      "Terraform",
+      "Vue.js",
+      "CI/CD",
+      "GitLab CI",
+      "Travail en équipe",
+      "Automatisation de pipelines",
+      "Design patterns",
+      "Déploiement de modèles",
+      "Gestion de projet",
+      "Product Management",
+      "Intégration continue",
+      "Optimisation des performances",
+      "API",
+      "Code review",
+      "Pipelines de données",
+      "Analyse de données",
+      "Résolution de problèmes",
+      "Sécurité informatique",
+      "MLOps",
+      "Architecture microservices",
+      "Backend",
+      "Data Engineering"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieur Cloud GCP/AWS, vous interviendrez au sein des équipes infrastructures et plateformes de nos clients grands comptes afin de concevoir, automatiser et faire évoluer leurs environnements Cloud.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous êtes diplômé(e) d'un Bac+3/5 en informatique (école d'ingénieur ou université).",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous êtes diplômé(e) d'un Bac+3/5 en informatique (école d'ingénieur ou université).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 28,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:09.724359",
+  "input_hash": "e68b1cce4a960d6e23578adc5ca0d03e8bde5ae7c9bdd9d8f634ab5323e14460",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

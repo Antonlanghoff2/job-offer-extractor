@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3601458",
+  "value": {
+    "id": "3601458",
+    "intitule": "Ingénieur signaux de navigation h/f",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3601458",
+    "description": "Le Centre National d'Etudes Spatiales (CNES), agence spatiale, est un acteur public au sein d'un secteur innovant et en pleine expansion qui suscite vocations et passions. Nous déployons une large palette d'activités pour poursuivre des objectifs d'intérêt général au service des progrès de l'humanité tels que la science, le climat, la connaissance de notre planète... La Direction Technique et Numérique du CNES recrute pour son service Techniques et Performances des Instruments un(e) Ingénieur(e) signaux de navigation basé(e) au Centre Spatial de Toulouse. Vous intégrerez le service Signaux, Temps/Fréquence du CNES, qui est au coeur des enjeux du positionnement, navigation et temps (PNT) par satellite. Le service a pour mission de développer les signaux, algorithmes instruments de navigation ; et de caractériser et expertiser les performances des instruments et du système Galileo en Temps et en Signal. En tant qu'ingénieur(e), vous contribuez au développement et au prototypage des traitements des signaux de navigation et de localisation pour différents cas d'usages comme la réflectométrie GNSS, le transfert de temps et les échelles de temps, l'analyse et le traitement des signaux GNSS autour des enjeux de la résilience en orbite. Pour ce faire, vos principales responsabilités et/ou missions sont : Maintenir les compétences en traitement du signal au sein du service (formations, capitalisation des connaissances) Développer et améliorer les outils du service (appareils de mesure, étalonnages, traitements) Développer des réflexions transversales sur les problématiques et les enjeux du service Participer au rayonnement : colloques, visites, publications, expertises pour des revues Diplômé(e) d'une formation ingénieur et/ou doctorat, vous avez une solide formation en traitement du signal ainsi qu'une première expérience en signaux de navigation. Des compétences en Matlab, Python et Fréquence de Temps sont un atout. Vous aimez tester, expérimenter, et vous savez communiquer aisément à l'écrit comme à l'oral, en français et en anglais. Rigoureux(se), organisé(e), autonome, curieux(se), vous disposez de très bonnes capacités d'analyse et de synthèse techniques. Vous êtes force de proposition et prenez des initiatives pour mener à bien vos missions. Vous souhaitez contribuer à l'aventure spatiale ? ...alors rejoignez le CNES !",
+    "metier": "Contrôleur aérien / Contrôleuse aérienne",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Vue.js",
+      "Pipelines de données",
+      "Data Engineering",
+      "API",
+      "Backend",
+      "Optimisation des performances"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La Direction Technique et Numérique du CNES recrute pour son service Techniques et Performances des Instruments un(e) Ingénieur(e) signaux de navigation basé(e) au Centre Spatial de Toulouse.",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Pour ce faire, vos principales responsabilités et/ou missions sont : Maintenir les compétences en traitement du signal au sein du service (formations, capitalisation des connaissances) Développer et améliorer les outils du service (appareils de mesure, étalonnages, traitements) Développer des réflexions transversales sur les problématiques et les enjeux du service Participer au rayonnement : colloques, visites, publications, expertises pour des revues Diplômé(e) d'une formation ingénieur et/ou doctorat, vous avez une solide formation en traitement du signal ainsi qu'une première expérience en signaux de navigation.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:01.009014",
+  "input_hash": "2787d20bf9d852c463b1b646fdd10b8dc2bf743d32ac461fea71cfbfa422d469",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

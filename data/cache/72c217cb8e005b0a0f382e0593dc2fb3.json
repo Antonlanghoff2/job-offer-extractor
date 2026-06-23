@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:2785112",
+  "value": {
+    "id": "2785112",
+    "intitule": "BRIAND - Ingénieur / Ingénieure robotique en industrie (H/F)",
+    "entreprise": "",
+    "territoire": "85 - Beaurepaire",
+    "ville": "85017",
+    "code_postal": "85500",
+    "contrat": "CDI",
+    "date_creation": "2026-05-19",
+    "date": "2026-05-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2785112",
+    "description": "Nous recherchons un Ingénieur Robotique et Vision Industrielle passionné et orienté terrain pour concevoir, développer et déployer des solutions robotiques innovantes au service de la performance industrielle de nos sites de production.\nAu sein de la cellule industrialisation, vous interviendrez sur des projets à forte valeur ajoutée, mêlant robotique, automatisation et digitalisation des outils de production, dans une logique d’amélioration continue et de standardisation des bonnes pratiques.\nVotre mission :\nRattaché(e) à la cellule industrialisation et en étroite collaboration avec le responsable de la cellule, les experts techniques internes et les équipes opérationnelles des filiales, vous aurez pour principales responsabilités de :\n\nParticiper à l’analyse des besoins industriels et à la définition des architectures robotiques et automatisées.\nIntégrer et paramétrer des systèmes de vision pour l’inspection, la détection et le contrôle qualité.\nConcevoir et mettre en œuvre des systèmes permettant la reconnaissance et l'analyse d'images (OpenCV, Matlab...).\nOptimiser la planification de trajectoires robot et développer des bibliothèque de fonctions métiers pour jumeau numérique ROS 2.\nContribuer à la veille technologique et au benchmark des solutions robotiques du marché.\nParticiper au déploiement des solutions robotiques sur nos différents sites en France et à l’international.\n\nDes déplacements réguliers sur nos sites en France et à l’étranger sont nécessaires pour assurer le déploiement des projets et l’accompagnement des équipes locales\nVos compétences qui feront la différence\n\nDiplôme d’ingénieur ou équivalent en informatique industrielle, robotique, vision industrielle ou systèmes embarqués.\nExpérience en développement et intégration de solutions de robotique industrielle en environnement de production.\nConnaissance des systèmes de vision industrielle (Wenglor, Keyence, …) et des bibliothèques logicielles associées.\nLangages de développement Python, C++ souhaité.\nEsprit d’analyse, rigueur technique et capacité à résoudre des problématiques complexes.\nGoût du terrain, sens du concret et capacité à travailler en mode projet avec des interlocuteurs variés.\nAutonomie, curiosité technique et appétence pour l’innovation.\nMaîtrise de l’anglais indispensable pour évoluer dans un environnement international.\nBon relationnel et goût pour le travail en équipe pluridisciplinaire.\n\nCe que vous gagnez en rejoignant notre équipe :\nNous valorisons l’expertise et l’évolution continue de nos collaborateurs. En intégrant notre groupe, vous rejoindrez un environnement stimulant où votre savoir-faire sera reconnu et enrichi. Vous aurez l’opportunité de relever des défis stratégiques, d’apporter votre expertise sur des projets d’envergure et d’évoluer au sein d’une organisation qui encourage l’innovation et l’excellence.\nLes quelques étapes qui nous séparent\nChez BRIAND Group, nous croyons à un processus de recrutement agile et transparent, qui s’adapte à vous.\n\nEntretien RH pour échanger sur votre parcours et vos motivations.\n1 à 2 entretiens pour rencontrer votre futur manager et la direction.\nDes étapes complémentaires peuvent être ajoutées selon le poste (visite d’usine, rencontre d’un futur collègue, etc.).\n\nÀ chaque étape, nous serons à l’écoute de vos questions, et vous aurez l’opportunité de découvrir nos projets et notre culture d’entreprise.\nVous voulez en savoir plus sur nous ?\nBRIAND Group, entreprise familiale depuis trois générations, est le leader de la construction métallique de bâtiments. Nous nous appuyons sur un collectif de compétences multi-matériaux et un réseau de filiales d’excellence pour offrir des solutions techniques innovantes, qu'elles soient sur mesure ou standardisées. La holding centralise les services support et métiers techniques transverses et au service de toutes nos filiales.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Vision",
+      "Déploiement de solutions",
+      "Computer Vision",
+      "Scalabilité",
+      "Cybersécurité",
+      "Déploiement de modèles",
+      "MLOps",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons un Ingénieur Robotique et Vision Industrielle passionné et orienté terrain pour concevoir, développer et déployer des solutions robotiques innovantes au service de la performance industrielle de nos sites de production.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplôme d’ingénieur ou équivalent en informatique industrielle, robotique, vision industrielle ou systèmes embarqués.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:21.190579",
+  "input_hash": "6f3f8e3724d9f6c021f22499dfe4c221cbd1008976cea5af4867aa5adf68212e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

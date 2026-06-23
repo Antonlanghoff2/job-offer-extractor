@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:208ZMLW",
+  "value": {
+    "id": "208ZMLW",
+    "intitule": "Administrateur système messagerie (F/H)",
+    "entreprise": "RENATER",
+    "territoire": "75 - PARIS 13",
+    "ville": "75113",
+    "code_postal": "75013",
+    "contrat": "CDI",
+    "date_creation": "2026-06-01",
+    "date": "2026-06-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208ZMLW",
+    "description": "Dans le cadre d'une création de poste, nous recrutons une administratrice ou un administrateur système messagerie au sein de la direction des opérations. Les services de messagerie, qui comprennent la plateforme PARTAGE, le service antispam ainsi que les services de listes de diffusion, sont utilisés par l'ensemble de la communauté ESR (universités et organismes de recherche).\nVous contribuez au fonctionnement, à l'amélioration de la performance du service rendu et participez à la gestion courante et à l'évolution des services.\n\nMISSION :\nEn concertation avec le tech-lead messagerie et en se coordonnant avec les équipes de développement, de sécurité, d'exploitation et d'infrastructures :\n- Contribuer au suivi technique des prestataires en charge au quotidien de l'exploitation et du support des services de messagerie ;\n- Contribuer aux études techniques (dont contribution à des POC) notamment concernant l'automatisation et le monitoring des services ;\n- Mettre en œuvre les évolutions, en coordination avec les prestataires et les équipes du GIP ;\n- Contribuer au support et à son amélioration, concernant les demandes dont RENATER est en charge ;\n- Contribuer à la maintenance en conditions opérationnelles (MCO) et de sécurité des services (MCS) ;\n- Participer à la veille technologique et règlementaire, dans un contexte national et international.\nLa liste des missions n'est pas exhaustive et peut être amenée à évoluer selon les besoins des services prescripteurs.\n\nCOMPETENCES PROFESSIONNELLES :\n- Maîtrise générale de l'administration système sous Linux ;\n- Connaissances de solutions de mesure de performance, de supervision et de métrologie comme Prometheus/Grafana/Nagios/LibreNMS ;\n- Connaissances en automatisation et scripting (bash), langages de programmation (PHP, Perl, Python, Ruby) et API ;\n- Connaissances des principes de support à l'utilisateur (ITIL, ticketing) ;\n- Maîtrise de l'anglais technique ;\n- Connaissances appréciées des protocoles de messagerie électronique (SMTP, IMAP) et antispam ;\nConnaissances appréciées des méthodologies DevOps/AGILE ;\n- Des connaissances sur les logiciels Zimbra (messagerie collaborative) et/ou Sympa (serveur de listes de diffusion) seraient un plus ;\n- Des connaissances en stockage objet et en virtualisation seraient un plus.\n\nFORMATION :\n- Formation supérieure Bac + 5 en informatique, avec une première expérience sur un poste similaire ;\n- Niveau équivalent à la branche d'activité professionnelle (BAP) du RÉFérentiel des Emplois-types de la Recherche et de l'ENseignement Supérieur - REFERENS : E3A41.\n\nCONDITIONS ET AVANTAGES :\n- Compléments de formation possibles à l'entrée en fonction ;\n- Possibilité de télétravailler de 1 à 2 jours flexibles par semaine ;\n- Environnement de travail polyvalent au sein d'une équipe à taille humaine ;\n- Contribution à des projets à échelle européenne ;\n- Protection sociale complémentaire attractive :\no Participation employeur de 70% pour la mutuelle et de 100% pour la prévoyance ;\no Retraite sur-complémentaire avec une participation employeur de 75% (pour les CDI) ;\n- 25 jours ouvrés de congés payés et 23 jours de RTT ;\n- Lieu de travail agréable : Paris 13ème (métro Glacière ou Corvisart)\n- Titres-restaurant avec une participation employeur de 60%.\n\nTYPE DE CONTRAT :\nCDI, possibilité de détachement ou de mise à disposition pour les agents de la fonction publique.\n",
+    "metier": "Administrateur / Administratrice de systèmes d'information (SI)",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Vision",
+      "Anglais professionnel"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac + 5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation supérieure Bac + 5 en informatique, avec une première expérience sur un poste similaire ;",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:13.021402",
+  "input_hash": "d4f29339d29736a9b3948aba5a5b9729e742bb70063b15804fb0193f9e1a71c3",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

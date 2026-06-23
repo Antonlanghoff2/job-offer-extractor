@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:209MQJS",
+  "value": {
+    "id": "209MQJS",
+    "intitule": "DATA ENGINEER (H/F)",
+    "entreprise": "CHU de MONTPELLIER",
+    "territoire": "34 - MONTPELLIER CEDEX 5",
+    "ville": "34172",
+    "code_postal": "34295",
+    "contrat": "CDD - 6 Mois",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209MQJS",
+    "description": "Grade\n\nGrille de référence\n\nIH\n\nType de contrat\n\nTitulaires et contractuels acceptés\n\nPourcentage d'activité\n\n100%\n\nLOCALISATION : Montpellier, France\n\nHoraires : variables 8h-19h Repos : samedi-dimanche\n\nDESCRIPTION DU POSTE\n\nNous sommes à la recherche d'un(e) Ingénieur(e) Data passionné(e) pour rejoindre notre équipe au sein du Pôle de Santé Publique. En tant que Data Engineer spécialisé(e) dans le domaine de la santé, vous participerez au développement, la gestion et l'exploitation de l'Entrepôt de Données de Santé (EDS eDOL) du CHU de Montpellier. Vous bénéficierez du soutien méthodologique et des conseils des membres de l'équipe et des autres professionnels du service\n\nDans le cadre de ce projet, vous rejoindrez une équipe de 13 personnes et participerez aux missions suivantes :\n\nMise en place des pipelines de données robustes pour l'ingestion, le nettoyage, la transformation et la gestion des données de santé provenant de différentes sources.\nOptimisation des requêtes SQL et des performances des bases de données pour garantir une récupération rapide et efficace des informations.\nCollaboration avec les experts en santé pour comprendre les besoins et les exigences spécifiques du domaine.\nConception, développement et maintenance l'architecture de l'EDS, en garantissant la qualité, la performance et la sécurité des données.\nDéveloppement de fonctions du package commun Python pour l'accès aux données et la gestion de la sécurité.\nConformité aux normes de sécurité et de confidentialité des données de santé, telles que le RGPD et les règlements spécifiques au secteur comme le Référentiel CNIL EDS.\nParticipation à la veille technologique sur les tendances émergentes dans le domaine de la gestion des données de santé.\nACTIVITÉS SPÉCIFIQUES LIÉES AU POSTE :\n\nProduire des indicateurs d'activité ou de qualité.\nRéaliser, à la demande des pôles médicaux, des études spécifiques dont l'objectif peut-être de décrire et évaluer l'activité ou de servir de base à la réalisation d'études de recherche clinique.\nParticiper au processus de facturation de l'établissement.\nRédiger des documentations relatives à son domaine d'intervention pour assurer un suivi et une traçabilité.\nParticiper à la valorisation des résultats et réalisations technologiques sous forme de rapports, brevets, publications, présentations orales, enseignement.\nRELATIONS PROFESSIONNELLES LES PLUS FRÉQUENTES (internes et externes) :\n\nService d'Information Medicale, Epidemiologie et Données de santé (SIMED) : Chef de service, Responsable et membres de l'Unité Sciences des Données de Santé\n\nDirection du Numérique en Santé et Cyber Sécurité : Directeur, RSSI, Responsable secteur Système, Réseaux, DBA, Ingénieur correspondant EDS\n\nDirection de la Recherche et de l'Innovation : Directeur, Secteur Valorisation, Innovation, partenariats\n\nDPO du CHU de Montpellier\n\nFournisseurs.\n\nLIAISON HIÉRARCHIQUE\n\nResponsable administrative et fonctionnelle :\n\nResponsable de l'Unité Sciences des Données de Santé\n\nCORRESPONDANCE STATUTAIRE (grade) :\n\nIngénieur, Catégorie A\n\nEN CONCLUSION\n\nNous offrons un environnement de travail stimulant, des opportunités d'apprentissage continu et la possibilité de contribuer à un projet innovant visant à améliorer la gestion des données de santé à Montpellier. Rejoignez-nous pour faire partie d'une équipe passionnée qui façonne l'avenir de la santé numérique.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous sommes à la recherche d'un(e) Ingénieur(e) Data passionné(e) pour rejoindre notre équipe au sein du Pôle de Santé Publique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:17.195395",
+  "input_hash": "b0fff208e6a80d09c83c2fff4a1a35b905510101cad0afe9a4743b843695a971",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

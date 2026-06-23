@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:4064907",
+  "value": {
+    "id": "4064907",
+    "intitule": "Manoeuvre H0B0 + AIPR (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "Intérim - 1 Mois",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4064907",
+    "description": "Dans le cadre du développement de son activité, nous recherchons pour notre client, spécialisé dans le secteur du bâtiment et des travaux publics, un manoeuvre en intérim pour une durée de 2 mois. Le poste est à pourvoir sans distinction d'expérience. Un niveau d'étude BEP/CAP est requis pour ce poste à temps plein de 35 heures par semaine.- Tâches de manutention sur le chantier- Port de charges en respectant les consignes de sécurité- Tirage de câbles si nécessaire- Contrat en intérim de 2 mois- Salaire horaire : 12,02 euros- Horaires de travail : 35 heures par semaine",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BEP",
+        "level": 3,
+        "required": true,
+        "source_sentence": "Un niveau d'étude BEP/CAP est requis pour ce poste à temps plein de 35 heures par semaine.- Tâches de manutention sur le chantier- Port de charges en respectant les consignes de sécurité- Tirage de câbles si nécessaire- Contrat en intérim de 2 mois- Salaire horaire : 12,02 euros- Horaires de travail : 35 heures par semaine",
+        "confidence": 0.9
+      },
+      {
+        "label": "CAP",
+        "level": 3,
+        "required": true,
+        "source_sentence": "Un niveau d'étude BEP/CAP est requis pour ce poste à temps plein de 35 heures par semaine.- Tâches de manutention sur le chantier- Port de charges en respectant les consignes de sécurité- Tirage de câbles si nécessaire- Contrat en intérim de 2 mois- Salaire horaire : 12,02 euros- Horaires de travail : 35 heures par semaine",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 1,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:03.108774",
+  "input_hash": "4b89c1fe748190b9cffde113fa42a2a611a3b24927cc854f0e6aaa5d84bd7206",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

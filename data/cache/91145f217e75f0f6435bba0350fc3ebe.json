@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:3318790",
+  "value": {
+    "id": "3318790",
+    "intitule": "Développeur d'applications (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3318790",
+    "description": "Description du poste :\nEncadré(e) par une équipe technique, vous participerez à La conception et le développement d'applications web ou métiers***L'intégration d'API et de services externes***La participation à des projets intégrant des briques d'intelligence artificielle (chatbots, automatisation, traitement et analyse de données, IA générative)***La gestion et l'exploitation de bases de données***Les phases de tests, de correction et de mise en production***L'amélioration continue des solutions existantes***La participation aux projets en méthodologie Agile\nDescription du profil Vous souhaitez intégrer un BTS SIO option SLAM***Vous êtes intéressé(e) par le développement d'applications***Vous êtes curieux(se) des technologies liées à l'intelligence artificielle***Vous faites preuve de rigueur, d'autonomie et d'esprit d'analyse***Vous appréciez le travail en équipe",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Méthodes agiles",
+      "Data Engineering",
+      "Airflow"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": false,
+        "source_sentence": "Description du profil Vous souhaitez intégrer un BTS SIO option SLAM***Vous êtes intéressé(e) par le développement d'applications***Vous êtes curieux(se) des technologies liées à l'intelligence artificielle***Vous faites preuve de rigueur, d'autonomie et d'esprit d'analyse***Vous appréciez le travail en équipe",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:09.096376",
+  "input_hash": "47bf95ea7ed57c436c83677c2c147b451679b7c593423e0ba78333379572c2c0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

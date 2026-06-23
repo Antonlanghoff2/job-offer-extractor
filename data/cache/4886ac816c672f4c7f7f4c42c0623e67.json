@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:3837497",
+  "value": {
+    "id": "3837497",
+    "intitule": "Ingénieur Thermique Propulsion H/F",
+    "entreprise": "",
+    "territoire": "33 - Eysines",
+    "ville": "33162",
+    "code_postal": "33320",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3837497",
+    "description": "Contexte : Analyse et justification thermique du système de propulsion de Nyx Earth. Le poste est centré sur l'étude des phénomènes thermiques liés au fonctionnement des propulseurs, notamment les effets de heat soak back après extinction, les interactions thermiques entre équipements propulsion et la validation des modèles thermiques par essais. Vos missions Réaliser les analyses thermiques des propulseurs en régime permanent et transitoire. Évaluer les effets de heat soak back après arrêt moteur et leur impact sur les structures et équipements environnants. Développer des modèles thermiques permettant de prédire l'évolution des températures au sein du système de propulsion. Identifier les risques d'interactions thermiques et proposer des solutions de conception adaptées. Construire, maintenir et corréler les modèles thermiques numériques. Réaliser des simulations thermiques stationnaires et transitoires ainsi que des analyses de sensibilité et des études de compromis. Participer aux campagnes d'essais thermiques au niveau composant et système. Corréler les modèles analytiques avec les données expérimentales. Rédiger les rapports techniques et contribuer aux revues de conception (CDR, QR). Collaborer avec les équipes propulsion, mécanique, système et essais. Votre profil Diplôme d'ingénieur, Master ou Doctorat en aéronautique, mécanique ou domaine équivalent avec spécialisation en thermique. Expérience en justification thermique de systèmes de propulsion spatiale. Solides connaissances en transferts thermiques (conduction, rayonnement, convection) et phénomènes thermiques transitoires. Bonne compréhension du comportement thermique des matériaux haute température. Maîtrise des outils de calcul thermique Thermal Desktop et SINDA/FLUINT. Compétences en programmation et automatisation (Python, MATLAB). Connaissance des systèmes de propulsion spatiale. Familiarité avec les standards thermiques ECSS et/ou NASA. Expérience du cycle de développement de systèmes spatiaux. Capacité à travailler dans des équipes multidisciplinaires et à communiquer des résultats techniques complexes.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Intelligence artificielle",
+      "Python",
+      "Vue.js",
+      "Monitoring de modèles",
+      "Développement de modèles",
+      "Cybersécurité",
+      "Déploiement de modèles",
+      "Pipelines de données",
+      "MLOps"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Votre profil Diplôme d'ingénieur, Master ou Doctorat en aéronautique, mécanique ou domaine équivalent avec spécialisation en thermique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Votre profil Diplôme d'ingénieur, Master ou Doctorat en aéronautique, mécanique ou domaine équivalent avec spécialisation en thermique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Votre profil Diplôme d'ingénieur, Master ou Doctorat en aéronautique, mécanique ou domaine équivalent avec spécialisation en thermique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:49.230423",
+  "input_hash": "f6bd985fc3a0b14f996655bc669b5cd878c89d3b4031268b82d1d092fa71a27c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3611338",
+  "value": {
+    "id": "3611338",
+    "intitule": "Ingénieur Développeur Java / JavaFX (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3611338",
+    "description": "Nous recherchons actuellement, pour le compte d'un de nos clients spécialisé dans le secteur aéronautique, un Ingénieur Développeur Java / JavaFX (H/F). Vos Missions : Au sein de notre équipe technique, vous jouez un rôle clé dans l'évolution de nos solutions : - Développement Core : Vous participez activement au développement (backend et frontend) de notre suite logicielle, principalement en Java, avec une expertise sur JavaFX pour les interfaces graphiques. - Polyvalence Technique : Selon les besoins des projets, vous intervenez sur des modules complémentaires développés en C#, Python ou C++. - Méthodologie Agile : Vous êtes force de proposition au sein d'un environnement Scrum (sprints, rituels quotidiens, revues). - Expertise Terrain : Vous assurez ponctuellement l'installation, la configuration et le support de nos solutions directement sur les sites industriels de nos clients. Votre Profil : - Ingénieur de formation ou Bac+5 en informatique. - Maîtrise solide de Java et idéalement de JavaFX. Une connaissance (ou l'envie d'apprendre) du C#, Python ou C++ est un vrai plus. - Vous êtes autonome, curieux et appréciez le contact client. Mobilité : Vous êtes prêt à effectuer des déplacements ponctuels, principalement dans le Sud-Ouest et en Région Parisienne dans un premier temps. - Ingénieur de formation ou Bac+5 en informatique. - Maîtrise solide de Java et idéalement de JavaFX. Une connaissance (ou l'envie d'apprendre) du C#, Python ou C++ est un vrai plus. - Vous êtes autonome, curieux et appréciez le contact client.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Aéronautique",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "Vue.js"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons actuellement, pour le compte d'un de nos clients spécialisé dans le secteur aéronautique, un Ingénieur Développeur Java / JavaFX (H/F).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Votre Profil : - Ingénieur de formation ou Bac+5 en informatique. - Maîtrise solide de Java et idéalement de JavaFX.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:00.496285",
+  "input_hash": "e6469f159b7c6c2991070ca91296d1d72b9f9c78759c479da55bfedca95ebc88",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

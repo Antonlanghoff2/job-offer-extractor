@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:4039970",
+  "value": {
+    "id": "4039970",
+    "intitule": "Responsable qualité des données H/F",
+    "entreprise": "",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4039970",
+    "description": "En tant que Responsable qualité des données, vous garantissez la qualité, la cohérence et la gouvernance des données de référence à travers l’écosystème GTM (Go-to-market), permettant une vue Customer 360 fiable au service des processus métier, du reporting et des cas d’usage IA. Missions Définir les règles de qualité de données et en assurer le monitoring Établir et maintenir les standards de données de référence (master data) Piloter le nettoyage et l’enrichissement des données Mettre en oeuvre les processus de gouvernance des données Assurer la résolution des incidents de données Travailler en étroite collaboration avec les Data Stewards, notamment côté RevOps, afin de co-définir, déployer et faire appliquer les règles de qualité et de gouvernance des données de référence en lien avec les usages métier. Profil De formation Bac+5, vous justifiez d’au moins 4 ans d'expérience en qualité de données et en gestion des données de référence (MDM), idéalement au sein d’un écosystème GTM / CRM. Vous disposez d’une bonne compréhension du modèle de données GTM / Customer 360 et maîtrisez les frameworks et outils de qualité de données. Doté(e) d’un esprit analytique et d’une réelle capacité de troubleshooting, vous savez coordonner les parties prenantes Business, IT et Data. COMPÉTENCES REQUISES • Gouvernance des données et MDM (Master Data Management). • Frameworks et outils de qualité de données. • Bonne compréhension du modèle de données GTM / Customer 360. • Anglais courant (environnement international). • Esprit analytique et capacité de troubleshooting. • Compréhension des enjeux IA appliqués aux données (préparation, qualité, exploitation des données pour cas d’usage IA / analytics avancés) COMPETENCES SOUHAITÉES • Coordination inter-équipes (Business / IT / Data). • Capacité à collaborer avec des équipes Data/AI (Data Engineers, Data Scientists, AI Engineers) pour aligner la qualité des données avec les use cases IA",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Vue.js",
+      "Qualité des données",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Missions Définir les règles de qualité de données et en assurer le monitoring Établir et maintenir les standards de données de référence (master data) Piloter le nettoyage et l’enrichissement des données Mettre en oeuvre les processus de gouvernance des données Assurer la résolution des incidents de données Travailler en étroite collaboration avec les Data Stewards, notamment côté RevOps, afin de co-définir, déployer et faire appliquer les règles de qualité et de gouvernance des données de référence en lien avec les usages métier.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil De formation Bac+5, vous justifiez d’au moins 4 ans d'expérience en qualité de données et en gestion des données de référence (MDM), idéalement au sein d’un écosystème GTM / CRM.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:41.121833",
+  "input_hash": "ebd89969584444c44723664cf89fd1438adaa7cf53113ab8d7a1b4f85c732a7f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3660409",
+  "value": {
+    "id": "3660409",
+    "intitule": "POST-DOC INGENIEUR-E DEEP LEARNING F/H (H/F)",
+    "entreprise": "CSTB",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDD - 18 Mois",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3660409",
+    "description": "La direction Energie Environnement, composée de 120 ingénieurs et chercheurs passionnés recherche un(e) Post-Doc talentueux(se) pour rejoindre l'équipe IDPB en charge de la Base de Données Nationale des Bâtiments (https://bdnb.io).\n\nVotre rôle sera de continuer le développement de modèles multimodaux images (façade, aérien et satellite) / données tabulaires (et potentiellement LLM) appliqués aux bâtiments, issus d'un précédent post-doc.\n\nCe postdoc a pour objectif d'étendre les travaux du post doc précédant :\n\n * Explorer les sujets algorithmiques sur l'entrainement multimodale et son exploitation dans le cadre de la prédiction de données manquantes à partir d'images afin d'en améliorer la performance. Et étendre le contexte aux bâtiments tertiaires, dont le niveau de description est très faible. \n\n * Développer des modèles de bâtimentS multimodaux. Les résultats devront permettre à nos ingénieurs et à nos utilisateurs de capitaliser différentes modalités de données Magal bâtimentaire (tabulaire, image, texte...) pour les tâches aval de machine learning telles que : \n\n * prédiction de typologies de bâtiment (classification, clustering) \n * recherche et interaction avec la description du bâtiment en langage naturel \n * recherche par similarité (Retrieval Augmented Generation ou RAG)\nVous êtes titulaire d'un doctorat dans le domaine du deep learning appliqué à l'image.\n\nVous êtes familier avec les techniques du type Vision transformer et les approches multimodales (ex : ImageBind).\n\nVous êtes à l'aise avec le stack python scientifique (pandas, numpy, scikit learn, pytorch).\n\nConnaissances appréciées :\n\n * Tensorboard, mlflow, dagster , dbt\n * Technologies de base de données relationnelles (SQL)\n * git, gitlab\n\nVous disposez d'une aptitude au travail en équipe.\n\nVous faites preuve de rigueur et disposez d'un sens de l'organisation.\n\nVous avez un esprit critique et vous êtes force de proposition.\n\nVous disposez de capacités rédactionnelles et vous avez un esprit de synthèse.\n\nVous faites preuve de curiosité et de créativité.\n\nVous souhaitez être acteur d'un monde qui change, rejoignez-nous !",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "Deep learning",
+      "Git",
+      "Intelligence artificielle",
+      "Machine learning",
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "Python",
+      "SQL",
+      "Vision",
+      "scikit-learn",
+      "Monitoring de modèles",
+      "Développement de modèles",
+      "API",
+      "Pipelines de données",
+      "Analyse de données",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": 36000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Vous êtes titulaire d'un doctorat dans le domaine du deep learning appliqué à l'image.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:03.613139",
+  "input_hash": "d51cb1eb2c5f322df1aa4be967b93ca6e501fbc6cd638c8bebddcb19c6f11e8f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

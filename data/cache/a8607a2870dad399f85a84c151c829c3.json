@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:3246469",
+  "value": {
+    "id": "3246469",
+    "intitule": "Alternance Support IT & Opérations - Strasbourg (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-01",
+    "date": "2026-06-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3246469",
+    "description": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, leader en télémédecine, un(e) Chargé de Support IT & Opérations en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5). Choisissez l'alternance nouvelle génération avec l'ISCOD ! LES MISSIONS Intégré(e) à l'équipe IT, vous participez au support informatique de niveau 2 tout en contribuant à l'amélioration continue des outils internes et des processus techniques. Participer aux tests et vérifications des outils internes avant leur mise en production Assurer le support IT de niveau 2 auprès des utilisateurs (diagnostic, résolution, suivi des incidents) Prendre en charge les tickets escaladés (poste de travail, applications internes, accès, etc.) Identifier et documenter les bugs, anomalies et dysfonctionnements Contribuer à l'amélioration continue des processus IT et à la création et à l'amélioration d'outils internes (scripts, automatisations, petites applications) grâce aux retours utilisateurs Rédiger ou mettre à jour des protocoles de tests et check-lists QA Participer à la gestion du parc informatique (installation, configuration, maintenance) Documenter les procédures et enrichir la base de connaissances IT Collaborer avec les équipes techniques et opérations pour améliorer l'expérience utilisateur Participer à des projets IT (déploiement d'outils, amélioration des processus, sécurité, etc.) PROFIL RECHERCHE Environnement technique :OS : MacOS, Windows, iOS Outils : Google Workspace, Microsoft Entra ID Ticketing : Jira + Salesforce Service Cloud Tooling interne : Python, Typescript/React Autre : Confluence, Notion, SimpleMDMVous êtes éligible à une formation Bac+2 à Bac+5 (diplôme validé ou en cours de validation) Qualités : Bon relationnel et sens du service Esprit d'analyse et de résolution de problèmes Curiosité technique et envie d'apprendre Capacité à être autonome tout en sachant demander de l'aide Bon niveau de communication écrite et oraleAvantages : Tickets restaurant (Swile)Mutuelle d'entreprisePoste basé à Strasbourg Rémunération fixe selon niveau d'études + âge, Vous êtes intéressé(e) par cette offre d'emploi en alternance ? Postulez dès maintenant !",
+    "metier": "Attaché commercial / Attachée commerciale",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "React",
+      "TypeScript"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, leader en télémédecine, un(e) Chargé de Support IT & Opérations en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, leader en télémédecine, un(e) Chargé de Support IT & Opérations en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, leader en télémédecine, un(e) Chargé de Support IT & Opérations en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, leader en télémédecine, un(e) Chargé de Support IT & Opérations en contrat d'apprentissage, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:13.444487",
+  "input_hash": "19fb73576ba4e72d03fb85c910272d8193c56a3540bf3360fbba3ba17d7784be",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

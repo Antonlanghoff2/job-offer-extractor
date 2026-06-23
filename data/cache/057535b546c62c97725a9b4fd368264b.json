@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:3829927",
+  "value": {
+    "id": "3829927",
+    "intitule": "Chef de projet logiciel (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3829927",
+    "description": "Description du poste :\nSitué dans le 8ème arrondissement de Paris, vous viendrez renforcer le centre de compétence SAP IS-U.\nVous interviendrez sur l'ensemble du cycle de vie des projets liés à la gestion client et à la facturation, depuis l'analyse des besoins jusqu'au support post-déploiement.\nVos principales missions seront Cadrer les besoins métiers et participer à la définition des processus Rédiger les spécifications fonctionnelles en lien avec les utilisateurs et les équipes techniques Réaliser le paramétrage selon les exigences définies Organiser et exécuter les phases de test et de recette, en garantissant la qualité des livrables Assurer la mise en production et le suivi du déploiement des évolutions applicatives Participer à la formation des utilisateurs et assurer le support fonctionnel dans le cadre de la maintenance évolutive et corrective.\nPourquoi rejoindre cette entreprise Un management de proximité, porté par des managers et les dirigeant toujours opérationnels, permettant de travailler directement avec les associés Une culture de la formation continue : chaque mois, une session technique pour renforcer les compétences des équipes Vous bénéficierez d'avantages sociaux significatifs : jusqu'à 2 jours de télétravail par semaine, prime sur objectif, 170€ de chèque cadeau, prime de participation d'environs 2.5k€, une prime vacances de 1k€, 10 jours de RTT.\nDescription du profil Idéalement, vous justifié d'un diplôme Bac + 3 en informatique Vous disposez d'au moins deux ans d'expérience sur SAP IS-U : que ce soit sur du support, de l'évolution, etc.",
+    "metier": "Responsable des études et applications informatiques",
+    "niveau": "junior",
+    "competences": [
+      "Cahier des charges",
+      "Intelligence artificielle",
+      "Code review",
+      "Qualité des données",
+      "Gestion de projet"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "diplôme Bac + 3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Description du profil Idéalement, vous justifié d'un diplôme Bac + 3 en informatique Vous disposez d'au moins deux ans d'expérience sur SAP IS-U : que ce soit sur du support, de l'évolution, etc.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:18.187736",
+  "input_hash": "d513a0ed9cb330ce0072104608144be0ffb9fd66553856477d0c8e60eba031d9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:2567361",
+  "value": {
+    "id": "2567361",
+    "intitule": "DÉVELOPPEUR FULLSTACK SPRINGBOOT/REACT (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Marseille",
+    "ville": "13055",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-05-13",
+    "date": "2026-05-13",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2567361",
+    "description": "Nous recherchons pour le compte de notre client éditeur de logiciel, un développeur full stack Java/React en CDI, basé sur Marseille. Vous rejoindrez l'équipe R&D et serez garant de la qualité des applications pour offrir aux clients la meilleure expérience possible.Après ta période de onboarding et une formation à nos outils, vous réalisez les missions suivantes : - Compréhension des besoins métiers - Conception et développement des applications - Rituels agiles (grooming, sprint planning, revuePrise en compte des contraintes de sécurité Vous maîtrisez au moins une des technos suivantes : Spring Boot, React, Kubernetes, PostgreSQL. De formation Bac+5, vous justifiez d'une expérience de 5 années minimum. Au-delà de ta formation ou du nombre d'années d'expérience, c'est votre personnalité qui retiendra notre attention. Vous êtes autonome, force de proposition et aimez travailler en équipe Vous êtes à l'écoute des interlocuteurs, curieux, rigoureux et n'avez pas peur de faire des erreurs. Vous aimez apprendre et explorer de nouveaux horizons tout en disposant d'un excellent relationnel. Vous souhaitez évoluer au sein d'une équipe auto-organisée en mode Agile où tu auras la liberté de faire évoluer nos produits et notre mode de fonctionnement ? Cette offre est certainement pour vous !",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Java",
+      "Kubernetes",
+      "PostgreSQL",
+      "React",
+      "Vue.js",
+      "Spring"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac+5, vous justifiez d'une expérience de 5 années minimum.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:17.490727",
+  "input_hash": "cb42a240a342b9e498c88bd16c1edd9d744c42558f8d661f270f7244d4008582",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

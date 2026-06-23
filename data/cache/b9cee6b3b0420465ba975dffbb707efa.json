@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:209JYNR",
+  "value": {
+    "id": "209JYNR",
+    "intitule": "Ingénieur informatique (H/F)",
+    "entreprise": "",
+    "territoire": "Ile-de-France",
+    "ville": "Ile-de-France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JYNR",
+    "description": "Dans le cadre du développement de nos activités, nous recherchons un(e) Ingénieur Informatique Senior disposant d'au moins 7 années d'expérience pour intervenir sur des environnements complexes mêlant calcul haute performance (HPC), DATA engineering et intelligence artificielle.\n\nVous participerez à la conception, l'industrialisation et l'exploitation de plateformes critiques tout en contribuant à la modernisation des systèmes existants et au développement de nouvelles solutions technologiques.\n\nVos missions:\n\n* Concevoir, déployer et administrer des infrastructures HPC (High Performance Computing).\n* Maintenir et faire évoluer des applications et traitements développés en COBOL.\n* Concevoir et exploiter des architectures cloud sur Azure et/ou GCP.\n* Automatiser le provisioning et la gestion des infrastructures à l'aide d'Ansible, Terraform et Salt.\n* Mettre en œuvre des pipelines CI/CD et des pratiques DevOps avancées.\n* Concevoir et optimiser les flux de traitement de données à grande échelle.\n* Assurer la supervision, la performance, la sécurité et la disponibilité des plateformes.\n* Collaborer avec les équipes métiers, développement et infrastructure.\n* Rédiger la documentation technique et partager les bonnes pratiques.\n\nProfil recherché :\n\n* Minimum 7 ans d'expérience professionnelle en ingénierie informatique, infrastructure ou systèmes distribués.\n* Expérience significative dans des environnements de production critiques.\n\nCompétences techniques obligatoires\n* HPC (High Performance Computing) - impératif.\n* COBOL - impératif.\n* Cloud : Microsoft Azure et Google Cloud Platform (GCP) - impératif\n* Automatisation et Infrastructure as Code :\n    * Salt\n* DevOps et CI/CD :\n    * Git\n    * Azure DevOps\n* Data Engineering :\n    * Conception et traitement de pipelines de données\n    * ETL/ELT\n* Intelligence Artificielle :\n    * Connaissances des plateformes et outils IA modernes\n    * Intégration de modèles IA dans des environnements de production\n\nCompétences appréciées\n* Architecture distribuée et systèmes à forte volumétrie.\n* Kubernetes et conteneurisation.\n* Linux (administration avancée).\n* Python, Shell scripting.\n* Bases de données relationnelles et NoSQL.\n* Monitoring et observabilité (Prometheus, Grafana, ELK, etc.).\n\nQualités recherchées\n* Forte capacité d'analyse et de résolution de problèmes complexes.\n* Autonomie et sens des responsabilités.\n* Excellentes capacités de communication.\n* Esprit d'équipe et sens du service.\n* Rigueur et capacité à travailler dans des environnements exigeants.\n\nLangues\n* Anglais : excellent niveau écrit et oral (obligatoire).\n\nCe que nous offrons\n* Participation à des projets innovants à forte valeur ajoutée.\n* Environnement technique stimulant combinant HPC et IA.\n* Opportunités d'évolution et de montée en compétences.\n* Collaboration avec des experts techniques sur des sujets stratégiques.\n\nLocalisation : IDF avec déplacements fréquents sur Toulouse et Nice.\nDisponibilité : ASAP",
+    "metier": "Ingénieur informaticien / Ingénieure informaticienne",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Azure",
+      "Data engineering",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "NoSQL",
+      "Python",
+      "SQL",
+      "Terraform",
+      "Vision",
+      "CI/CD",
+      "Résolution de problèmes",
+      "Pipelines de données",
+      "Qualité des données",
+      "Gestion de projet",
+      "Sécurité informatique",
+      "Analyse de données",
+      "Déploiement de modèles",
+      "MLOps",
+      "Architecture microservices",
+      "Backend",
+      "Model drift"
+    ],
+    "salaire_min": 1867,
+    "salaire_max": 2,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre du développement de nos activités, nous recherchons un(e) Ingénieur Informatique Senior disposant d'au moins 7 années d'expérience pour intervenir sur des environnements complexes mêlant calcul haute performance (HPC), DATA engineering et intelligence artificielle.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "7 An(s) - ingénierie informatique",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 24,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:49:59.353937",
+  "input_hash": "edf2083a7bcac9491e259beca283e17f4f07001839703241469c5533adf02bad",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:3662903",
+  "value": {
+    "id": "3662903",
+    "intitule": "Data Analyst F/H - Système, réseaux, données (H/F)",
+    "entreprise": "AKKODIS FRANCE SAS",
+    "territoire": "79 - Niort",
+    "ville": "79191",
+    "code_postal": "79000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3662903",
+    "description": "Descriptif du poste:\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région et recrute un(e) Data Analyst en CDI. Ce poste, au cœur du pilotage commercial et de l'exploitation stratégique des données, s'inscrit dans une démarche de valorisation et d'accompagnement des métiers par l'analyse et la transformation des besoins fonctionnels en solutions data concrètes et opérationnelles.\n \n\n\nResponsabilités principales :\n\n\n* Collecter, nettoyer et structurer les données issues de sources multiples pour garantir leur qualité et leur cohérence.\n* Analyser les données afin d'identifier tendances, anomalies et opportunités business.\n* Traduire les besoins métier en solutions data fiables et pertinentes, en assurant la relation continue avec les équipes métiers.\n* Concevoir, maintenir et optimiser les dashboards, analyses et flux de données (Spotfire, Tableau, Power BI).\n* Automatiser les processus de collecte et de traitement via des outils tels que SQL, Alteryx et Python.\n* Assurer la conformité des traitements de données aux règles de gestion et aux contraintes réglementaires du secteur.\n* Présenter les résultats d'analyse de manière claire et accessible aux parties prenantes.\n* Contribuer à l'amélioration continue des processus analytiques et collaborer activement avec les autres équipes data.\n\n \n\nEnvironnement de travail :\n\nLe poste s'inscrit dans un environnement dynamique, collaboratif et orienté métier, au sein d'une équipe data engagée dans la transformation digitale du secteur Assurance. Vous évoluerez avec des outils analytiques modernes (SQL, Alteryx, Spotfire, Python, Git/GitHub, VS Code, DBeaver) et bénéficierez d'une interaction régulière avec des équipes pluridisciplinaires. La culture d'amélioration continue, de partage et de transparence favorise l'échange et le développement professionnel.\n\n\n\n\nProfil recherché:\nDiplômé(e) d'un Master ou équivalent en statistiques, informatique, data science ou domaine similaire, vous justifiez d'une expérience dans l'analyse de données, idéalement dans le secteur Assurance ou un contexte commercial. Vous maîtrisez SQL, Alteryx et possédez des compétences en data visualisation (Spotfire, Tableau, Power BI). La connaissance de Python, des principes d'architecture décisionnelle et des environnements analytiques modernes est appréciée. Vous êtes reconnu(e) pour votre rigueur, votre esprit analytique, votre capacité à vulgariser et à collaborer avec des interlocuteurs non techniques. Une expérience en gestion de projet et une posture professionnelle solide sont attendues.\n\n\n Akkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Gestion de projet",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Automatisation de processus",
+      "Qualité des données",
+      "Pipelines de données",
+      "Data Engineering",
+      "Model drift",
+      "Sécurité informatique",
+      "Monitoring de modèles",
+      "Optimisation des performances",
+      "Tests automatisés",
+      "Airflow"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'un Master ou équivalent en statistiques, informatique, data science ou domaine similaire, vous justifiez d'une expérience dans l'analyse de données, idéalement dans le secteur Assurance ou un contexte commercial.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:47.491682",
+  "input_hash": "caffd490cc6d478558b99ed981d67ec4c3134462aa052666b2baa990d56e83a5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

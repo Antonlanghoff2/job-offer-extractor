@@ -1,0 +1,697 @@
+{
+  "key": "trends:47 - AGEN",
+  "value": {
+    "territoire": "47 - AGEN",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Gestion de projet": 2,
+      "Intelligence artificielle": 2,
+      "Qualité Des Données": 2,
+      "Sécurité Informatique": 2,
+      "Analyse de données": 1,
+      "Data engineering": 1,
+      "Model Drift": 1,
+      "Monitoring De Modèles": 1,
+      "Optimisation Des Performances": 1,
+      "Pipelines De Données": 1,
+      "Power BI": 1,
+      "Protection Des Données": 1,
+      "Travail En Équipe": 1,
+      "Veille Technologique": 1,
+      "Vue.js": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Qualité des données": 2
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Sécurité informatique": 2
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Monitoring de modèles": 1
+        }
+      },
+      {
+        "nom": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Optimisation des performances": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Power BI",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Power BI": 1
+        }
+      },
+      {
+        "nom": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Protection des données": 1
+        }
+      },
+      {
+        "nom": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Travail en équipe": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Veille technologique": 1
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vue.js": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 2
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 2
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 1
+      },
+      "Optimisation Des Performances": {
+        "Optimisation des performances": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Power BI": {
+        "Power BI": 1
+      },
+      "Protection Des Données": {
+        "Protection des données": 1
+      },
+      "Travail En Équipe": {
+        "Travail en équipe": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      },
+      "Vue.js": {
+        "Vue.js": 1
+      }
+    },
+    "metiers": {
+      "Data Analyst": 1,
+      "Responsable Des Études Et Applications Informatiques": 1,
+      "Technicien / Technicienne de laboratoire photographique": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDD - 12 Mois": 1,
+      "CDD - 6 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Power BI",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Protection Des Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Protection Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Travail En Équipe",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Travail En Équipe",
+        "Sécurité Informatique",
+        "Veille Technologique",
+        "Qualité Des Données",
+        "Monitoring De Modèles",
+        "Optimisation Des Performances",
+        "Pipelines De Données"
+      ],
+      [
+        "Intelligence artificielle",
+        "Data engineering",
+        "Analyse de données",
+        "Gestion de projet",
+        "Power BI",
+        "Qualité Des Données",
+        "Model Drift",
+        "Protection Des Données",
+        "Sécurité Informatique"
+      ],
+      [
+        "Vue.js"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209VKDN",
+        "intitule": "Développeur-vendeur/Développeuse-vendeuse en photographie  (H/F)",
+        "entreprise": "PHOCIVI",
+        "territoire": "47 - AGEN",
+        "contrat": "CDD - 6 Mois",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209VKDN"
+      },
+      {
+        "id": "209PVVG",
+        "intitule": "Assistant(e) Data Analyst en alternance (H/F)",
+        "entreprise": "PREVIFRANCE",
+        "territoire": "47 - AGEN",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209PVVG"
+      },
+      {
+        "id": "3117912",
+        "intitule": "Chef de projet logiciel (H/F)",
+        "entreprise": "",
+        "territoire": "47 - Agen",
+        "contrat": "CDI",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3117912"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209VKDN",
+        "intitule": "Développeur-vendeur/Développeuse-vendeuse en photographie  (H/F)",
+        "entreprise": "PHOCIVI",
+        "territoire": "47 - AGEN",
+        "contrat": "CDD - 6 Mois",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209VKDN"
+      },
+      {
+        "id": "209PVVG",
+        "intitule": "Assistant(e) Data Analyst en alternance (H/F)",
+        "entreprise": "PREVIFRANCE",
+        "territoire": "47 - AGEN",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209PVVG"
+      },
+      {
+        "id": "3117912",
+        "intitule": "Chef de projet logiciel (H/F)",
+        "entreprise": "",
+        "territoire": "47 - Agen",
+        "contrat": "CDI",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3117912"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:00.189904",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,744 @@
+{
+  "key": "trends:77 - Réau",
+  "value": {
+    "territoire": "77 - Réau",
+    "periode_jours": 365,
+    "nombre_offres": 5,
+    "competences": {
+      "Intelligence artificielle": 5,
+      "Aéronautique": 4,
+      "Instrumentation": 4,
+      "Python": 4,
+      "Analyse de données": 3,
+      "Qualité Des Données": 2,
+      "API": 1,
+      "Data engineering": 1,
+      "Model Drift": 1,
+      "Optique": 1,
+      "Pipelines De Données": 1,
+      "Résolution De Problèmes": 1,
+      "Sécurité Informatique": 1,
+      "Tests Automatisés": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 5,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 5
+        }
+      },
+      {
+        "nom": "Aéronautique",
+        "count": 4,
+        "percentage": 80.0,
+        "variants": {
+          "Aéronautique": 4
+        }
+      },
+      {
+        "nom": "Instrumentation",
+        "count": 4,
+        "percentage": 80.0,
+        "variants": {
+          "Instrumentation": 4
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 4,
+        "percentage": 80.0,
+        "variants": {
+          "Python": 4
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 3,
+        "percentage": 60.0,
+        "variants": {
+          "Analyse de données": 3
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 2,
+        "percentage": 40.0,
+        "variants": {
+          "Qualité des données": 2
+        }
+      },
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Optique",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Optique": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Tests automatisés": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 20.0,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 5
+      },
+      "Aéronautique": {
+        "Aéronautique": 4
+      },
+      "Instrumentation": {
+        "Instrumentation": 4
+      },
+      "Python": {
+        "Python": 4
+      },
+      "Analyse de données": {
+        "Analyse de données": 3
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 2
+      },
+      "API": {
+        "API": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Optique": {
+        "Optique": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur / Ingénieure R&D en industrie": 3,
+      "Développeur / Développeuse informatique": 1,
+      "Mécanicien / Mécanicienne avion": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 4
+    },
+    "contrats": {
+      "Intérim - 6 Mois": 2,
+      "CDI": 1,
+      "Intérim - 12 Mois": 1,
+      "Intérim - 3 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 4,
+        "percentage": 80.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Instrumentation",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Python",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Python",
+        "count": 3,
+        "percentage": 60.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Aéronautique",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Instrumentation",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 40.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Aéronautique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Instrumentation",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Optique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Optique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Instrumentation",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Optique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Optique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 20.0
+      },
+      {
+        "competence_a": "Tests Automatisés",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 20.0
+      }
+    ],
+    "fiabilite": 0.125,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Aéronautique",
+        "Instrumentation",
+        "Optique",
+        "Vision",
+        "Qualité Des Données",
+        "API",
+        "Pipelines De Données",
+        "Tests Automatisés"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Aéronautique",
+        "Instrumentation"
+      ],
+      [
+        "Analyse de données",
+        "Intelligence artificielle",
+        "Python",
+        "Aéronautique",
+        "Instrumentation"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Analyse de données",
+        "Data engineering",
+        "Instrumentation",
+        "Model Drift",
+        "Qualité Des Données"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Analyse de données",
+        "Aéronautique",
+        "Sécurité Informatique",
+        "Résolution De Problèmes"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4010270",
+        "intitule": "Ingénieur d'études  Aérodynamiques (H/F)",
+        "entreprise": "",
+        "territoire": "77 - Réau",
+        "contrat": "Intérim - 12 Mois",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4010270"
+      },
+      {
+        "id": "4010231",
+        "intitule": "Ingénieur d'études  Aérodynamiques (H/F)",
+        "entreprise": "",
+        "territoire": "77 - Réau",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4010231"
+      },
+      {
+        "id": "3968586",
+        "intitule": "Ingénieur d'études (H/F)",
+        "entreprise": "",
+        "territoire": "77 - Réau",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3968586"
+      },
+      {
+        "id": "209JVQT",
+        "intitule": "Technicien d'études (H/F)",
+        "entreprise": "MANPOWER",
+        "territoire": "77 - Réau",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-06-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JVQT"
+      },
+      {
+        "id": "8180886",
+        "intitule": "Ingénieur-e calcul moteurs d'avions - f/h",
+        "entreprise": "",
+        "territoire": "77 - Réau",
+        "contrat": "CDI",
+        "date": "2026-01-22",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8180886"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4010270",
+        "intitule": "Ingénieur d'études  Aérodynamiques (H/F)",
+        "entreprise": "",
+        "territoire": "77 - Réau",
+        "contrat": "Intérim - 12 Mois",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4010270"
+      },
+      {
+        "id": "4010231",
+        "intitule": "Ingénieur d'études  Aérodynamiques (H/F)",
+        "entreprise": "",
+        "territoire": "77 - Réau",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4010231"
+      },
+      {
+        "id": "3968586",
+        "intitule": "Ingénieur d'études (H/F)",
+        "entreprise": "",
+        "territoire": "77 - Réau",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3968586"
+      },
+      {
+        "id": "209JVQT",
+        "intitule": "Technicien d'études (H/F)",
+        "entreprise": "MANPOWER",
+        "territoire": "77 - Réau",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-06-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JVQT"
+      },
+      {
+        "id": "8180886",
+        "intitule": "Ingénieur-e calcul moteurs d'avions - f/h",
+        "entreprise": "",
+        "territoire": "77 - Réau",
+        "contrat": "CDI",
+        "date": "2026-01-22",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8180886"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:59.841519",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

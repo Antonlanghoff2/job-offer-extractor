@@ -365,6 +365,85 @@ a { color: inherit; }
   border: 1px solid #d3e0f3;
 }
 
+.chip--match {
+  background: #e8f7f0;
+  color: #13795b;
+  border-color: #b8e4d0;
+}
+
+.chip--missing {
+  background: #fdf0f0;
+  color: #bb3e3e;
+  border-color: #f0c4c4;
+}
+
+.offer-skills-section {
+  margin: 12px 0;
+}
+
+.offer-skills-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.offer-skills-legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 0.82rem;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-item--match {
+  color: #13795b;
+}
+
+.legend-item--missing {
+  color: #bb3e3e;
+}
+
+.match-explanation {
+  margin: 12px 0;
+  padding: 12px;
+  background: #f7fbff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.match-explanation__title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 8px 0;
+}
+
+.match-explanation__summary {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 8px 0;
+}
+
+.match-explanation__details {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.match-explanation__details li {
+  margin: 4px 0;
+}
+
 .pagination {
   display: flex;
   justify-content: space-between;

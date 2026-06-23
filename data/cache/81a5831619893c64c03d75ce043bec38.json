@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:4055520",
+  "value": {
+    "id": "4055520",
+    "intitule": "Business analyst (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 9e Arrondissement",
+    "ville": "75109",
+    "code_postal": "75009",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4055520",
+    "description": "Ambition du poste Rattaché(e) au pôle coordination du développement au sein de la Direction Développement Innovation et Stratégie Client, vous serez amené à participer l'analyse de la production et de l'activité commerciale ainsi qu'à la réalisation et le suivi des reportings. Vous intégrez un service qui occupe un rôle clé dans notre stratégie de développement. Missions du poste - Bâtir, maintenir et partager les tableaux de bord d'analyse de la production et de l'activité commerciale. - Suivre les résultats individuels des commerciaux et l'atteinte des objectifs. - Contribuer à la fiabilisation des données commerciales par la mise en place des outils de contrôle et d'amélioration continue. - Participer à l'élaboration des procédures d'optimisation des process en coordination avec les autres membres de l'équipe. Etudiant(e) préparant un niveau bac +4 à 5 en école d'ingénieur ou en école de commerce, vous souhaitez bénéficier d'une expérience enrichissante en tant que Business Analyst. La maîtrise des outils décisionnels de requête serait un plus fortement apprécié. Vous maîtrisez les logiciels informatiques (Excel, PowerPoint ...) Vous disposez d'une grande capacité à faire parler les chiffres et une facilité à les interpréter de manière opérationnelle. Votre travail est orienté client et centré sur l'action et les résultats. Vous êtes méthodique, analytique, rigoureux(se) et avez le sens de l'écoute. Vous faites preuve de curiosité et avez le goût du travail en équipe. Rythme d'alternance souhaité : 4jours/1 jour ou 3 semaines 1 semaine ou 3 jours 2 jour Envie d'une expérience riche?? Venez construire votre avenir professionnel avec une alternance stimulante et formatrice au sein de la mutuelle Interiale?! Remboursement transports (65%) Une mutuelle (cotisation employeur de 60%) et prévoyance Des titres restaurants?: 10 EUR / jour (participation employeur de 5.65 EUR) Comité d'entreprise et ses nombreux avantages (chèques cadeaux, vacances, CESU...) Une organisation du travail hybride : 3 jours/sem de télétravail Vous rejoignez un espace de travail formel et informel, un lieu de convivialité pour rendre l'expérience collaborateur la plus agréable possible. Un rooftop avec vue sur la Tour Eiffel. De nombreuses initiatives sont aussi organisées régulièrement pour?renforcer les liens entre les collaborateurs et favoriser le bien-être au travail?: participation à des courses, tournoi de foot intersites, chorale d'entreprise, événements thématiques (concours photos d'été, calendrier de l'Avent digital...).",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Vue.js",
+      "Analyse de données",
+      "MLOps",
+      "Qualité des données"
+    ],
+    "salaire_min": 4000,
+    "salaire_max": 5000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "bac +4",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Etudiant(e) préparant un niveau bac +4 à 5 en école d'ingénieur ou en école de commerce, vous souhaitez bénéficier d'une expérience enrichissante en tant que Business Analyst.",
+        "confidence": 0.7
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Etudiant(e) préparant un niveau bac +4 à 5 en école d'ingénieur ou en école de commerce, vous souhaitez bénéficier d'une expérience enrichissante en tant que Business Analyst.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:53.488200",
+  "input_hash": "640c359542e6d8782dc9f498286cf26ac197bc59b33f6c470badf80d5ea70142",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

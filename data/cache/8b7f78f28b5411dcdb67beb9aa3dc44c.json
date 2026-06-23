@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:208ZZBW",
+  "value": {
+    "id": "208ZZBW",
+    "intitule": "Ingénieur IA (alternance) (H/F)",
+    "entreprise": "ARCYS",
+    "territoire": "31 - BLAGNAC",
+    "ville": "31069",
+    "code_postal": "31700",
+    "contrat": "CDD - 24 Mois",
+    "date_creation": "2026-06-01",
+    "date": "2026-06-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208ZZBW",
+    "description": "Nous recherchons pour un contrat en alternance un(e) Ingénieur logiciel - Intelligence Artificielle.\n\nLa mission consiste à déterminer et/ou améliorer des modèles IA existants dans l'optique d'aider les équipes ARCYS sur des tâches spécifiques de leurs métiers :\n- Rapports dynamiques en conjugaison de données multi-facteurs\n- Alertes des collaborateurs sur exploitations de données multi-facteurs\nPour cela, il vous faudra étudier des modèles existants, les entraîner sur des données à consolider et faire des benchmarks sur des cas d'usages. \nDans un second temps, l'intégration du modèle dans un LLM accessible par prompt ou la création d'un chabot pour interagir avec le modèle sera nécessaire.\n\nEnvironnement technique : Python, TensorFlow, Django, SQL\n\n\nProfil :\nDiplômé(e) d'un Bac+2/3 en informatique et en cours d'étude Bac+5.\n\nPoste nécessitant une enquête administrative et un accès à des documents Diffusion Restreinte Spécial France selon IGI 1300\n\nDurée : \n1 à 2 ans avec un démarrage en septembre 2026\n\n\nCe que nous offrons :\n\n- Des équipes bienveillantes\n- 15 jours de RTT par an\n- Mutuelle familiale avantageuse\n- Horaires flexibles\n- Titres restaurant\n- Convention collective de la Métallurgie",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "Django",
+      "Intelligence artificielle",
+      "Optique",
+      "Python",
+      "SQL",
+      "TensorFlow"
+    ],
+    "salaire_min": 1927,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons pour un contrat en alternance un(e) Ingénieur logiciel - Intelligence Artificielle.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'un Bac+2/3 en informatique et en cours d'étude Bac+5.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'un Bac+2/3 en informatique et en cours d'étude Bac+5.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:49:58.181683",
+  "input_hash": "76af0411fe67c659e864a40db607484d7438265053c7f51e6d120b256489137c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

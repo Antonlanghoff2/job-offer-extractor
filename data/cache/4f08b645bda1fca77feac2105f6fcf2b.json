@@ -1,0 +1,187 @@
+{
+  "key": "trends:85 - Saint-Étienne-du-Bois",
+  "value": {
+    "territoire": "85 - Saint-Étienne-du-Bois",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Gestion de projet": 3,
+      "Intelligence artificielle": 3,
+      "Design Patterns": 1,
+      "Sécurité Informatique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 3
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 3
+        }
+      },
+      {
+        "nom": "Design Patterns",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Design patterns": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 3
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 3
+      },
+      "Design Patterns": {
+        "Design patterns": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      }
+    },
+    "metiers": {
+      "Usineur / Usineuse": 2,
+      "Régleur / Régleuse d'équipements industriels": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 1,
+      "Intérim - 1 Mois": 1,
+      "Intérim - 6 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Design Patterns"
+      ],
+      [
+        "Intelligence artificielle",
+        "Gestion de projet"
+      ],
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Sécurité Informatique"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3637029",
+        "intitule": "Régleur programmation tournage fraisage (H/F)",
+        "entreprise": "",
+        "territoire": "85 - Saint-Étienne-du-Bois",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3637029"
+      },
+      {
+        "id": "3446759",
+        "intitule": "Régleur programmation tournage fraisage (H/F)",
+        "entreprise": "",
+        "territoire": "85 - Saint-Étienne-du-Bois",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3446759"
+      },
+      {
+        "id": "3270087",
+        "intitule": "Régleur programmation tournage fraisage H/F",
+        "entreprise": "MONROC",
+        "territoire": "85 - Saint-Étienne-du-Bois",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3270087"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3637029",
+        "intitule": "Régleur programmation tournage fraisage (H/F)",
+        "entreprise": "",
+        "territoire": "85 - Saint-Étienne-du-Bois",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3637029"
+      },
+      {
+        "id": "3446759",
+        "intitule": "Régleur programmation tournage fraisage (H/F)",
+        "entreprise": "",
+        "territoire": "85 - Saint-Étienne-du-Bois",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3446759"
+      },
+      {
+        "id": "3270087",
+        "intitule": "Régleur programmation tournage fraisage H/F",
+        "entreprise": "MONROC",
+        "territoire": "85 - Saint-Étienne-du-Bois",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3270087"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:03:42.527412",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

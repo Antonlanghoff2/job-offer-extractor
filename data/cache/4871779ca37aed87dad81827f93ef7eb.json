@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:208QNNF",
+  "value": {
+    "id": "208QNNF",
+    "intitule": "Développeur(se) Fullstack IA (H/F)",
+    "entreprise": "BASSETTI GROUP",
+    "territoire": "75 - Paris (Dept.)",
+    "ville": "75 - Paris (Dept.)",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-05-22",
+    "date": "2026-05-22",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208QNNF",
+    "description": "Nous recherchons un(e) développeur(se) Fullstack passionné, maîtrisant Python et Java, avec une solide approche DevOps.\nVous interviendrez sur des projets variés mêlant cloud (Azure, GCP) et environnements on-premise, avec des enjeux de développement, d'automatisation et de déploiement fiables et sécurisés. Vous serez le multi-outil de la squad IA que vous intégrerai afin de les aider à industrialiser/optimiser leurs projets. Vous serez aussi amener à concevoir des projet complets (front,back,infra,CI/CD).\n\nMissions principales : \n     - Développer et maintenir des applications backend et frontend (Python,\n     - Java + frameworks JS type React / Angular / Vue.js)\n     - Participer à la conception d'architectures techniques et à la mise en place de bonnes pratiques\n     - Implémenter et optimiser des pipelines CI/CD (GitLab CI/CD)\n     - Conteneuriser et déployer des applications avec Docker\n     - Provisionner et gérer des infrastructures via Terraform (Avec l'appuie d'une team devops)\n     - Rédiger documentation technique et participer aux revues de code\n\nProfil recherché :\n- Bac +3/+5 en informatique ou équivalent\n- Minimum 3 ans d'expérience sur un poste similaire\n- Certifications Cloud ou DevOps appréciées\n\nStack technique :\n     - Langages : Python, Java +++\n     - Frontend : React / Angular / Vue.js +\n     - Infra & DevOps : Docker, Terraform, Ansible ++\n     - CI/CD : GitLab CI/CD ++\n     - Cloud : Microsoft Azure, Google Cloud Platform ++\n     - On-premise : serveurs physiques et virtuels internes\n     - Bases de données : PostgreSQL, BigQuery ++\n     - Gestion de versions : Git +++",
+    "metier": "Spécialiste IA embarquée",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Azure",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "JavaScript",
+      "PostgreSQL",
+      "Python",
+      "React",
+      "Terraform",
+      "Vision",
+      "Vue.js",
+      "CI/CD",
+      "GitLab CI",
+      "Déploiement de modèles",
+      "Déploiement d'applications",
+      "Gestion d'infrastructure",
+      "Maintenance applicative",
+      "API",
+      "Pipelines de données",
+      "Architecture microservices",
+      "Backend",
+      "Intégration continue",
+      "Optimisation des performances",
+      "Data Engineering",
+      "MLOps"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac +3/+5 en informatique ou équivalent",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 27,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:55.746147",
+  "input_hash": "7e4afb1760e2e20a2a93b37c4f918da80f5801b39e19bad1a54cf91805f08c07",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

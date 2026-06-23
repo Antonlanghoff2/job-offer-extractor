@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:209NHKW",
+  "value": {
+    "id": "209NHKW",
+    "intitule": "Apprenti Excellence Operationnelle (H/F)",
+    "entreprise": "Lundbeck Elaiapharm",
+    "territoire": "06 - Valbonne",
+    "ville": "06152",
+    "code_postal": "06560",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NHKW",
+    "description": "Rejoignez une équipe engagée au cœur d'un site pharmaceutique en pleine évolution\n\nVous souhaitez donner un nouvel élan à votre carrière au sein d'un environnement industriel ambitieux et tourné vers l'excellence ? \nVous aimez le terrain, le travail d'équipe et les missions qui allient rigueur, analyse et amélioration continue ? \nVous avez envie de contribuer activement à la qualité de nos médicaments et à l'innovation de nos pratiques ?\nAlors cette opportunité au sein de Lundbeck Elaiapharm pourrait bien être la prochaine étape de votre parcours.\n\nSur notre site de production pharmaceutique de Valbonne (06), vous intégrerez l'équipe IT & Operational Excellence et participerez activement à des projets stratégiques visant à optimiser nos processus, développer la culture Lean et accompagner la transformation digitale du site.\n\nCette alternance constitue une opportunité unique de développer vos compétences dans un environnement industriel exigeant, innovant et fortement orienté vers l'excellence opérationnelle.\n\nVos missions\n\nAccompagné(e) par le Manager IT & Operational Excellence, vous serez amené(e) à :\n\nDévelopper et animer le management visuel du site\n\nParticiper au déploiement et à l'amélioration de notre système de management visuel (Fabriq).\nAnimer des routines de pilotage avec les équipes autour des indicateurs de performance diffusés sur les TV connectées des différents services.\n\nExploiter la donnée pour améliorer la performance industrielle\n\nConcevoir et faire évoluer des tableaux de bord décisionnels sous Power BI.\nAnalyser les indicateurs de performance (OEE/TRS, rendements, pertes de vitesse, micro-arrêts, etc.).\nContribuer à la valorisation des données pour faciliter la prise de décision.\n\n Participer au développement de la culture Lean\n\nCréer et mettre à jour des supports de formation Lean en lien avec les standards du Groupe Lundbeck.\nAccompagner les actions de sensibilisation et de formation des collaborateurs aux outils Lean (5S, 5 Pourquoi, résolution de problèmes, etc.).\nParticiper à l'animation de la démarche d'amélioration continue sur le site.\n\nContribuer à des projets d'amélioration continue\n\nParticiper à l'organisation et à l'animation de chantiers Kaizen.\nAccompagner la mise en œuvre et le suivi des plans d'actions.\nCollaborer avec les équipes opérationnelles pour identifier et déployer des solutions concrètes d'amélioration.\n\nCette description n'est pas exhaustive et pourra évoluer en fonction de vos compétences, de vos initiatives et des projets en cours.\n\nVotre profil\n\nVous préparez un diplôme de niveau Bac +5 (école d'ingénieur ou Master) avec une spécialisation en :\n\nGénie industriel\nExcellence opérationnelle / Lean Manufacturing\nIndustrie pharmaceutique\nAmélioration continue\nVous vous reconnaissez dans les qualités suivantes :\nCuriosité et goût pour l'apprentissage\nEsprit d'analyse et de synthèse\nSens de l'amélioration continue et du travail en équipe\nAppétence pour la donnée et les outils de Business Intelligence\nBonnes connaissances des méthodologies Lean et Kaizen\nMaîtrise de l'anglais professionnel\nPourquoi nous rejoindre ?\nIntégrer un groupe pharmaceutique international reconnu\nParticiper à des projets à forte valeur ajoutée et visibles sur le terrain\nDévelopper une double compétence en Lean Manufacturing et Data Analytics\nÉvoluer dans un environnement collaboratif favorisant l'autonomie et l'innovation\nContribuer à une mission porteuse de sens : améliorer la vie des patients\n\nContrat d'apprentissage de 12 mois à partir de septembre 2026",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Anglais Professionnel",
+      "Git",
+      "Intelligence artificielle",
+      "Power BI",
+      "Déploiement de solutions",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "Pipelines de données",
+      "Sécurité informatique",
+      "API",
+      "Backend",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 6000,
+    "salaire_max": 6000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous préparez un diplôme de niveau Bac +5 (école d'ingénieur ou Master) avec une spécialisation en :",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous préparez un diplôme de niveau Bac +5 (école d'ingénieur ou Master) avec une spécialisation en :",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Vous préparez un diplôme de niveau Bac +5 (école d'ingénieur ou Master) avec une spécialisation en :",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:49:58.690061",
+  "input_hash": "175c3fd9e8f952329ad53c30c60601b828bc0b2cd9ac7e00015afd0cef20d689",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

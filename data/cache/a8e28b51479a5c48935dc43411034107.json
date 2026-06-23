@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:3597577",
+  "value": {
+    "id": "3597577",
+    "intitule": "Développeur .NET senior H/F",
+    "entreprise": "AKKODIS",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3597577",
+    "description": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes et recrute un Développeur .NET senior H/F en CDI. Ce poste s'inscrit dans un contexte de développement et de simplification de plateformes logistiques, au sein de l'équipe inbound dédiée au référencement produit, à l'approvisionnement entrepôt, au stockage et au traitement des retours. Vous serez un acteur clé dans l'évolution et la maintenance de solutions logicielles pour des clients finaux et B2B.\n\nResponsabilités principales :\n\n * Concevoir, développer et maintenir des applications sur la technologie .NET (C#).\n * Collaborer avec les équipes produit pour définir les spécifications techniques et fonctionnelles.\n * Assurer la qualité du code via des revues, des tests unitaires et d'intégration.\n * Optimiser les performances des applications existantes et participer à la transformation du legacy.\n * Intégrer des services tiers et des API dans les solutions développées.\n * Encadrer et accompagner les développeurs juniors, partager les connaissances et améliorer la performance de l'équipe.\n * Garantir la conformité des développements avec les normes de sécurité et les standards de l'entreprise.\n * Monitorer et gérer les incidents de production, documenter les processus et solutions techniques.\n\nEnvironnement de travail :\n\nVous évoluerez dans une équipe de 8 personnes composée de développeurs, lead dev, team leader, quality engineer et product managers, rattachée à la direction IT logistique. L'environnement technique inclut .NET 10/C#, React/TypeScript, MongoDB, SQL Server, Talend, Kubernetes, VM, Azure DevOps et GitHub. Le cadre méthodologique est Kanban, avec des interactions régulières avec les équipes produit, métier et component teams.\nProfil du candidat\nDiplômé(e) d'un master ou équivalent en informatique, vous justifiez d'une expérience minimale de 5 années sur des missions similaires dans le secteur IT. Vous maîtrisez C#, .NET, ASP.NET MVC, Web API, SQL Server et MongoDB, ainsi que les outils de versioning (Git) et de CI/CD (Azure DevOps, GitHub). Une expérience avec React, TypeScript, Docker, Kubernetes et les environnements cloud (Azure ou AWS) est appréciée. Vous avez une bonne compréhension des principes SOLID, des design patterns et vous êtes à l'aise en environnement Agile/Kanban. Autonomie, rigueur, capacité à travailler en équipe, à communiquer efficacement et à partager les connaissances sont attendues.\n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "React",
+      "SQL",
+      "TypeScript",
+      "Vision",
+      "Vue.js",
+      "Maintenance applicative",
+      "Optimisation de performance",
+      "Code review",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Tests automatisés",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Documentation technique",
+      "Monitoring de modèles",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 8000,
+    "salaire_max": 8000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'un master ou équivalent en informatique, vous justifiez d'une expérience minimale de 5 années sur des missions similaires dans le secteur IT.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 25,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:54.619195",
+  "input_hash": "bb4bedfb3ea20feb1c119d028cccf2ba550fd093cbddf204d3bb2332c16ea207",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

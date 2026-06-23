@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:209MPLC",
+  "value": {
+    "id": "209MPLC",
+    "intitule": "Ingénieur Recherche Modélisation prospective infrastructures CO2 (H/F)",
+    "entreprise": "ECOLE NATIONALE SUPERIEURE DES MINES DE ",
+    "territoire": "06 - VALBONNE",
+    "ville": "06152",
+    "code_postal": "06560",
+    "contrat": "CDD - 16 Mois",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209MPLC",
+    "description": "L'ingénieur(e) recruté(e) devra contribuer à la modélisation de la planification des infrastructures CO2 européennes. Cela comprend les développements informatiques de l'outil POMMES, la mise en place de jeux de données pour la décarbonation de l'industrie à l'échelle européenne, la prise en compte des différentes typologies de CO2. Il s'agira également de proposer, à partir de ces outils et données, les analyses économiques des différentes options existantes pour la décarbonation de l'industrie et la fabrication de carburants de synthèse. \n\nMissions :\n- Participer aux études scientifiques et techniques afférentes au sein du groupe ERSEI.\n- Participer activement, en tant qu'ingénieur spécialisé en modélisation des systèmes multi-énergie et en développement python, à l'amélioration de l'outil POMMES. \n- Participer à des conférences pour présenter les travaux réalisés\n- Rédiger et soumettre un article scientifique sur l'évolution des infrastructures CO2 en France et dans les pays voisins.  \n- Participer à l'enseignement dispensé au sein du cycle ingénieur civil de Mines Paris - PSL au travers de l'encadrement de mini-projets de l'UE 14 « Terre et société » ainsi qu'en contribuant à la mise en place de cas d'étude POMMES pour l'Enseignement Spécialisé centré sur l'évolution du système électrique dans un contexte de transition énergétique. \n- L'ingénieur recruté devra contribuer au projet PlaneTerr par la réalisation d'analyse et l'écriture de rapports",
+    "metier": "Ingénieur / Ingénieure de recherche scientifique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Analyse de données",
+      "Data Engineering",
+      "Gestion de projet"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'ingénieur(e) recruté(e) devra contribuer à la modélisation de la planification des infrastructures CO2 européennes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:09.034482",
+  "input_hash": "064d84198160308112c625a55dfe9e5c1401262a1cb7ff75c69f691f9a296f24",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

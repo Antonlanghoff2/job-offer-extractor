@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:207GPSH",
+  "value": {
+    "id": "207GPSH",
+    "intitule": "Ingénieur Développement C++ (H/F)",
+    "entreprise": "INTERSCIENCE",
+    "territoire": "15 - PUYCAPEL",
+    "ville": "15027",
+    "code_postal": "15340",
+    "contrat": "CDI",
+    "date_creation": "2026-04-21",
+    "date": "2026-04-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/207GPSH",
+    "description": "Dans le cadre d'un accroissement d'activité lié au développement de nouveaux équipements, nous recherchons pour notre bureau d'études (35 personnes), un développeur de logiciel C/C++ afin de concevoir et développer les logiciels de nos nouveaux produits.\n\nVos missions : \nEn tant qu'ingénieur développement logiciel, vous venez renforcer l'équipe existante et participez aux développements en cours. Vous intervenez notamment sur le ScanStation, station d'incubation et de comptage de colonies en temps réel qui représente une innovation majeure dans le monde de la microbiologie.\nVos missions sont les suivantes :\n- Définition de l'architecture logicielle\n- Élaboration des spécifications fonctionnelles et techniques\n- Conception logicielle\n- Développement logiciel\n- Test (vérification de code, tests unitaires, tests d'intégration) et validation\n- Maintenance corrective\nVos compétences :\n- Maitrise des langages C/C++, Qt Framework\n- CI/CD : jenkins , docker\n- Base de données : Mysql\n- Anglais opérationnel requis\n- Rigueur et Gestion des priorités\n- Dynamique et force de propositions\n\nPoste à pourvoir immédiatement - Merci de transmettre CV et lettre de motivation à Mme Marie MALEVIALE .\n",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Cahier des charges",
+      "Docker",
+      "Intelligence artificielle",
+      "MySQL"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'ingénieur développement logiciel, vous venez renforcer l'équipe existante et participez aux développements en cours.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:38.983447",
+  "input_hash": "9d36cb11df3e83c499a923640442f4f90984549fa374897bcce0304f54d3ee39",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

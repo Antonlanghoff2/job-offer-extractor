@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:3955594",
+  "value": {
+    "id": "3955594",
+    "intitule": "Cloud Network NetDevOps Engineer (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3955594",
+    "description": "Soors est un cabinet de conseil spécialisé dans la délégation de profils IT et digitaux auprès de grands groupes et entreprises innovantes. Notre mission est d'accompagner nos clients dans leur transformation digitale en proposant des talents experts et passionnés. Notre équipe prône l'exigence, la confiance et la proximité, afin de garantir un service sur-mesure et une expérience humaine valorisante. Le poste : Nous vous proposons une mission stratégique au sein d'un programme de transformation réseau d'envergure dans un contexte international. Missions principales : - Concevoir, déployer et maintenir des réseaux virtuels sur Azure et AWS (Hub & Spoke) - Assurer le support et le troubleshooting des infrastructures VPN Azure - Rédiger et maintenir la documentation technique et opérationnelle - Collaborer avec les équipes projet, cloud et sécurité - Réaliser la planification capacitaire et la mise en oeuvre de plans de patch - Contribuer aux plans de reprise d'activité (disaster recovery) - Participer à la migration de projets et à la gestion des incidents - Partager les connaissances techniques et favoriser l'amélioration continue Environnement technique : - Azure, AWS, réseaux virtualisés (VWAN, Express Route, NVA, VNET, AWS Transit Gateways, VPC, Direct Connect) - Protocoles IP (BGP) - DevOps : Terraform Enterprise, GitHub, modules Terraform, Python, REST API - Sécurité et monitoring des environnements cloud Modalités : - Localisation : Paris - Télétravail partiel possible - Mission longue durée (12 mois renouvelable) Profil recherché : Nous recherchons un ingénieur expérimenté en réseaux et cloud, capable d'intervenir sur des architectures complexes dans un environnement international exigeant. Expérience : - Solide expérience en architecture réseau et migration cloud - Pratique courante de l'anglais Formation : - Bac+4/5 en informatique, réseaux ou équivalent Compétences techniques : - Maîtrise des environnements Azure et AWS - Expertise en conception et déploiement de réseaux virtuels (Hub & Spoke) - Protocoles réseau (BGP) - Environnements DevOps (Terraform, GitHub, Python, REST API) - Sécurité réseau cloud et monitoring - Connaissance de la documentation technique (Confluence) Certifications (un plus) : - Microsoft AZ-700, AWS Advanced Networking, Cisco CCNA/CCNP/CCIE, CISSP, Palo Alto",
+    "metier": "Architecte cloud",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "AWS",
+      "Azure",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Python",
+      "Terraform",
+      "Documentation technique",
+      "API",
+      "Déploiement de modèles"
+    ],
+    "salaire_min": 12000,
+    "salaire_max": 12000,
+    "teletravail": "télétravail partiel",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Missions principales : - Concevoir, déployer et maintenir des réseaux virtuels sur Azure et AWS (Hub & Spoke) - Assurer le support et le troubleshooting des infrastructures VPN Azure - Rédiger et maintenir la documentation technique et opérationnelle - Collaborer avec les équipes projet, cloud et sécurité - Réaliser la planification capacitaire et la mise en oeuvre de plans de patch - Contribuer aux plans de reprise d'activité (disaster recovery) - Participer à la migration de projets et à la gestion des incidents - Partager les connaissances techniques et favoriser l'amélioration continue Environnement technique : - Azure, AWS, réseaux virtualisés (VWAN, Express Route, NVA, VNET, AWS Transit Gateways, VPC, Direct Connect) - Protocoles IP (BGP) - DevOps : Terraform Enterprise, GitHub, modules Terraform, Python, REST API - Sécurité et monitoring des environnements cloud Modalités : - Localisation : Paris - Télétravail partiel possible - Mission longue durée (12 mois renouvelable) Profil recherché : Nous recherchons un ingénieur expérimenté en réseaux et cloud, capable d'intervenir sur des architectures complexes dans un environnement international exigeant.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Expérience : - Solide expérience en architecture réseau et migration cloud - Pratique courante de l'anglais Formation : - Bac+4/5 en informatique, réseaux ou équivalent Compétences techniques : - Maîtrise des environnements Azure et AWS - Expertise en conception et déploiement de réseaux virtuels (Hub & Spoke) - Protocoles réseau (BGP) - Environnements DevOps (Terraform, GitHub, Python, REST API) - Sécurité réseau cloud et monitoring - Connaissance de la documentation technique (Confluence) Certifications (un plus) : - Microsoft AZ-700, AWS Advanced Networking, Cisco CCNA/CCNP/CCIE, CISSP, Palo Alto",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:44.413653",
+  "input_hash": "ef6ebca3034a01691ff543b3ddcd47b0b7c4f418a1d8773d5bf5319a5a49dc5f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

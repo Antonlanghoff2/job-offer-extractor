@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:209WYZM",
+  "value": {
+    "id": "209WYZM",
+    "intitule": "Administrateur Systèmes & Support N2",
+    "entreprise": "ARCESI OCCITANIE",
+    "territoire": "31 - BLAGNAC",
+    "ville": "31069",
+    "code_postal": "31700",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209WYZM",
+    "description": "Rejoindre ARCESI, c'est avant tout partager nos valeurs :  Adaptation, Solidarité, Innovation, Diversité, Engagement. \n\nForte d'une expérience de plus de 10 ans dans le secteur du numérique, ARCESI est une ESN et une Entreprise Adaptée, sociale et solidaire à taille humaine. \nAu sein de nos différentes agences au niveau national, nous accompagnons nos clients de divers secteurs dans leurs projets d'ingénierie industrielle, de gestion d'infrastructure IT et de développement applicatif.\n\nDévelopper l'emploi durable de personnes en situation de handicap est notre vocation, raison pour laquelle nous ne proposons que des CDI !\n\nPlonger dans l'aventure ARCESI c'est : \n\n- Intégrer une société solide, agile et à taille humaine en plein développement où l'on propose de véritables passerelles vers un large panel de métiers et d'expériences\n- Acquérir une expérience enrichissante et valorisante qui vous permettra d'évoluer tant professionnellement que personnellement \n- Bénéficier d'un double accompagnement opérationnel et santé, au cœur de nos valeurs\n\n\nVos missions : \n\nAu sein d'une ESN d'environ 200 collaborateurs, le poste couvre l'administration des postes de travail internes, le support utilisateurs, la supervision et l'administration des infrastructures physiques et virtualisées ainsi que des prestations externalisées. Le rôle implique une bonne connaissance des postes de travail et des environnements serveurs et réseau permettant d'adresser le niveau 2 de ses activités.\n\nA ce titre vous réalisez les activités suivantes :\n\n- Vous effectuez toutes liées au support utilisateurs de niveau 2 (gestion des incidents et demandes, diagnostic, résolution, escalade vers le niveau 3, Industrialisation.)\n- Vous avez la responsabilité de la gestion des postes de travail (ingénierie poste de travail, déploiement, masterisation, gestion du parc, périphériques)\n- Vous faites du Scripting PowerShell avec la création et la mise à jour des GPO\n- Vous administrez les serveurs et le réseau (AD, WSUS, MDM, comptes, patching, sauvegardes)\n- Vous réalisez des tâches de supervision (Centreon, traitement des alertes)\n- Vous veillez à la cybersécurité endpoint  du réseau et du matériel (EDR, antivirus, anti-spam, bonnes pratiques)\n- Vous interviendrez sur les différents environnements clients\n- Vous avez aussi la charge de l'amélioration continue de la documentation interne ainsi que la participation à des projets techniques de manière ponctuelle \n- Vous encadrez les alternants\n\n\nProfil recherché :\n\n- Vous possédez une formation en informatique (bac+2 à bac+5) avec deux ans d'expérience sur du support niveau 2. Vous êtes polyvalents avec une aisance pour jongler entre support administration et industrialisation. \n- Vous êtes reconnus pour votre sens du service client votre rigueur, votre esprit d'équipe et vos capacités de communication\n- Vous maîtrisez l'environnement Windows(postes de travail et serveur)\n- Vous avez une solide connaissance de l'Active Directory, des outils ITSM, de l'outil de supervision centreon \n- Vos diverses expériences vous ont rendu sensible à la cybersécurité et à ses enjeux\n- Une pratique du Linux serait appréciée\n\n\n Ce que nous vous offrons\n Rémunération :  35-38 K€ selon le profil, CDI\n CSE : chèques vacances, cartes cadeaux. \n Un plan de carrière et de formations adapté au besoin de chacun \n Suivi de proximité, régulier et adapté \n\n** Nous accordons une grande importance à l'inclusion et à l'accessibilité pour tous, de ce fait, à compétence égale nous accordons une priorité particulière aux personnes en situation de handicap. **",
+    "metier": "Conseiller / Conseillère support technique informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Linux",
+      "Vision",
+      "Product Management",
+      "Git",
+      "API",
+      "Backend",
+      "Pipelines de données"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous possédez une formation en informatique (bac+2 à bac+5) avec deux ans d'expérience sur du support niveau 2.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous possédez une formation en informatique (bac+2 à bac+5) avec deux ans d'expérience sur du support niveau 2.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:34.847121",
+  "input_hash": "842179b662f1db9493afabb56c19dcf66592a36989d2ad38225a390c17b62e70",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

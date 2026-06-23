@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:3551671",
+  "value": {
+    "id": "3551671",
+    "intitule": "Business Analyst (H/F)",
+    "entreprise": "",
+    "territoire": "03 - Bègues",
+    "ville": "03021",
+    "code_postal": "03800",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3551671",
+    "description": "STEP UP est une société d'ingénierie experte en pilotage de projets industriels et informatiques (+ 250 collaborateurs sur 11 agences en France), plaçant le potentiel humain comme 1er vecteur d'excellence et de performance en entreprise. Oubliez les sociétés d'ingénierie qui ne valorisent que vos seules compétences, chez STEP UP, nous visons également l'adéquation entre votre personnalité et la culture d'entreprise de nos clients. Cela se traduit pour vous par une différence fondamentale en termes de bien être, d'épanouissement au travail et de succès dans vos missions. Ce que nous vous proposons : - Un cadre de travail épanouissant, stimulant et collaboratif, nous sommes certifiés entreprise où il fait bon vivre ! - Des projets innovants et variés. - La possibilité de se perfectionner continuellement avec des formations internes. - Des perspectives d'évolution de carrière. - Un accompagnement individualisé avec un programme de développement du potentiel humain. - Un programme de cooptation. Et bien sûr, nous prenons en charge 70% de votre mutuelle santé et encourageons financièrement la mobilité douce. Le poste : L'objectif principal est d'assurer le Maintien en Conditions Opérationnelles (MCO) du SI, tout en contribuant à son évolution et à son amélioration continue. Les missions et responsabilités sont les suivantes : 1. Administration et paramétrage Administration fonctionnelle et technique des applications Paramétrage des outils conformément aux procédures internes Gestion des habilitations et des droits d'accès 2. Gestion des demandes métiers Analyse des besoins utilisateurs Qualification, investigation et étude d'impact des demandes Rédaction et formalisation des spécifications (tickets d'évolution/correction) Documentation associée 3. Réalisation technique Mise en œuvre d'évolutions simples en autonomie Exploitation des bases de données (SQL Server, MariaDB) Optimisation des traitements et des requêtes 4. Pilotage des partenaires Interface opérationnelle avec les éditeurs et intégrateurs Suivi des demandes externalisées Coordination des interventions 5. Recette et qualité Validation des correctifs et évolutions livrés Organisation et exécution des phases de tests Garantie de la conformité aux besoins métiers 6. Amélioration continue Identification d'axes d'optimisation technique et fonctionnelle Mise en œuvre de solutions visant à améliorer la performance et la fiabilité du SI 7. Coordination Synchronisation des différents acteurs (métiers, IT, prestataires) Suivi global des sujets et priorités Profil recherché : Vous avez un Bac + 4 ou 5 en informatique avec au moins 5 années en management de projet. Vous avez les compétences ou connaissances suivantes : - Maitrise technique du langage SQL - Connaissance d'un SIRH, d'un ERP et/ou d'un outil de reporting (idéalement MS AX et SSRS). - Connaissance du domaine fonctionnel de la Finance (principalement la Comptabilité), voire du domaine des RH Vous connaissez l'environnement technique suivant : - Microsoft Dynamics AX2009, MS SQL Server - SIRH Adequasys, MariaDB - Microsoft SQL Server Reporting Services 2008, Visual Studio 2008 - Outils de ticketing (Itop, Jira, Redmine)",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac + 4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Coordination Synchronisation des différents acteurs (métiers, IT, prestataires) Suivi global des sujets et priorités Profil recherché : Vous avez un Bac + 4 ou 5 en informatique avec au moins 5 années en management de projet.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:54.536069",
+  "input_hash": "d2b14d072af7aeeee00d57f06d75e7ae92ff57543adbac2c652d90b6aca87bd1",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

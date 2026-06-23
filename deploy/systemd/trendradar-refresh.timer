@@ -1,0 +1,12 @@
+[Unit]
+Description=TrendRadar IA - Refresh Timer
+Requires=trendradar-refresh.service
+
+[Timer]
+Unit=trendradar-refresh.service
+OnBootSec=5min
+OnUnitActiveSec=5min
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target

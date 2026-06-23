@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:3838220",
+  "value": {
+    "id": "3838220",
+    "intitule": "Développeur Full Stack .NET H/F",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3838220",
+    "description": "Viveris est un groupe de conseil et d'ingénierie spécialisé dans la conduite et la réalisation de projets dans les domaines de l'informatique et de l'électronique. S'engager avec Viveris, c'est l'assurance de relever des défis techniques et humains tout en travaillant sur des projets innovants dans un environnement collaboratif et solidaire. Contribuez à la transformation digitale du secteur industriel ! Contexte de la mission : Viveris est un acteur de référence dans le secteur industriel. Notre client est un constructeur d'engins hydrauliques utilisés à travers le monde. Une équipe Viveris a été missionnée pour développer une plateforme IoT. Celle-ci permettra d'offrir de nouveaux produits et services digitaux dans le but de créer de la valeur grâce aux données collectées par les machines. Dans un environnement de travail agréable et challengeant, rejoignez notre équipe expérimentée et participez à la conception et au développement d'applications innovantes. Responsabilités : - Analyser le besoin des clients ; - Définir l'architecture technique ; - Concevoir les solutions ; - Développer les applications ; - Organiser la recette des solutions applicatives ; - Contrôler et maintenir le bon fonctionnement des applications. Profil recherché : De formation Bac +5, Ingénieur, Université à dominante informatique ou IoT, vous avez idéalement une expérience de 2 ans minimum. Compétences techniques : - .NET C# - VueJS ou framework front-end similaire : React, Angular - Git, GraphQL, Kubernetes, Docker Vous êtes technophile, curieux et créatif ? Vous souhaitez vous investir dans la réalisation d'un projet concret, utile et innovant ? Alors rencontrons-nous ! Nos avantages : - Rémunération attractive et évolutive, mutuelle familiale à garantie haute; - Tickets restaurant pris en charge à 60%, 100% titre de transport urbain remboursé; - Primes d'intéressement, de participation et de cooptation; - 2 jours de télétravail par semaine; - Formation continue avec LinkedIn Learning et nos communautés techniques.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "React",
+      "Vue.js",
+      "API",
+      "Backend",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Celle-ci permettra d'offrir de nouveaux produits et services digitaux dans le but de créer de la valeur grâce aux données collectées par les machines.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil recherché : De formation Bac +5, Ingénieur, Université à dominante informatique ou IoT, vous avez idéalement une expérience de 2 ans minimum.",
+        "confidence": 0.7
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Profil recherché : De formation Bac +5, Ingénieur, Université à dominante informatique ou IoT, vous avez idéalement une expérience de 2 ans minimum.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:46.398605",
+  "input_hash": "49c204d7c824b3eba3b5a59019a70bb8a5a503f6bef54deb45b488d2661f1bd8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

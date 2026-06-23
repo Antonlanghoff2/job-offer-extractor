@@ -1,0 +1,628 @@
+{
+  "key": "trends:64 - Bayonne",
+  "value": {
+    "territoire": "64 - Bayonne",
+    "periode_jours": 365,
+    "nombre_offres": 4,
+    "competences": {
+      "Git": 3,
+      "Intelligence artificielle": 3,
+      "Vision": 2,
+      "Application web": 1,
+      "Aéronautique": 1,
+      "CSS": 1,
+      "Délais": 1,
+      "Développement web": 1,
+      "Gestion de projet": 1,
+      "HTML": 1,
+      "JavaScript": 1,
+      "LangChain": 1,
+      "MySQL": 1,
+      "Python": 1,
+      "Résolution De Problèmes": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Git",
+        "count": 3,
+        "percentage": 75.0,
+        "variants": {
+          "Git": 3
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 75.0,
+        "variants": {
+          "Intelligence artificielle": 3
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 2,
+        "percentage": 50.0,
+        "variants": {
+          "Vision": 2
+        }
+      },
+      {
+        "nom": "Application web",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Application web": 1
+        }
+      },
+      {
+        "nom": "Aéronautique",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Aéronautique": 1
+        }
+      },
+      {
+        "nom": "CSS",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "CSS": 1
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Délais": 1
+        }
+      },
+      {
+        "nom": "Développement web",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Développement web": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "HTML",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "HTML": 1
+        }
+      },
+      {
+        "nom": "JavaScript",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "JavaScript": 1
+        }
+      },
+      {
+        "nom": "LangChain",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "LangChain": 1
+        }
+      },
+      {
+        "nom": "MySQL",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "MySQL": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Git": {
+        "Git": 3
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 3
+      },
+      "Vision": {
+        "Vision": 2
+      },
+      "Application web": {
+        "Application web": 1
+      },
+      "Aéronautique": {
+        "Aéronautique": 1
+      },
+      "CSS": {
+        "CSS": 1
+      },
+      "Délais": {
+        "Délais": 1
+      },
+      "Développement web": {
+        "Développement web": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "HTML": {
+        "HTML": 1
+      },
+      "JavaScript": {
+        "JavaScript": 1
+      },
+      "LangChain": {
+        "LangChain": 1
+      },
+      "MySQL": {
+        "MySQL": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      }
+    },
+    "metiers": {
+      "Chargé / Chargée d'affaires foncières": 1,
+      "Développeur / Développeuse web": 1,
+      "Ingénieur / Ingénieure DevOps": 1,
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 3,
+      "CDD - 12 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 2,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "CSS",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "HTML",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "LangChain",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "HTML",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "LangChain",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "MySQL",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "LangChain",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "MySQL",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      }
+    ],
+    "fiabilite": 0.1,
+    "skill_sets": [
+      [
+        "Git",
+        "Intelligence artificielle",
+        "LangChain",
+        "Python"
+      ],
+      [
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Aéronautique",
+        "Vision"
+      ],
+      [
+        "Intelligence artificielle",
+        "Vision"
+      ],
+      [
+        "CSS",
+        "Git",
+        "HTML",
+        "JavaScript",
+        "MySQL",
+        "Application web",
+        "Développement web",
+        "Délais",
+        "Résolution De Problèmes"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209XJFC",
+        "intitule": "Consultant Foncier (H/F)",
+        "entreprise": "HUMAN IMMOBILIER",
+        "territoire": "64 - Bayonne",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209XJFC"
+      },
+      {
+        "id": "3660591",
+        "intitule": "Alternant IA (H/F)",
+        "entreprise": "UCANSS",
+        "territoire": "64 - Bayonne",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3660591"
+      },
+      {
+        "id": "3471052",
+        "intitule": "Lead développeur web H/F",
+        "entreprise": "",
+        "territoire": "64 - Bayonne",
+        "contrat": "CDI",
+        "date": "2026-06-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3471052"
+      },
+      {
+        "id": "208PTZK",
+        "intitule": "Développeur(se)  C++  (H/F)",
+        "entreprise": "ADAXIS",
+        "territoire": "64 - BAYONNE",
+        "contrat": "CDI",
+        "date": "2026-05-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208PTZK"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209XJFC",
+        "intitule": "Consultant Foncier (H/F)",
+        "entreprise": "HUMAN IMMOBILIER",
+        "territoire": "64 - Bayonne",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209XJFC"
+      },
+      {
+        "id": "3660591",
+        "intitule": "Alternant IA (H/F)",
+        "entreprise": "UCANSS",
+        "territoire": "64 - Bayonne",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-10",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3660591"
+      },
+      {
+        "id": "3471052",
+        "intitule": "Lead développeur web H/F",
+        "entreprise": "",
+        "territoire": "64 - Bayonne",
+        "contrat": "CDI",
+        "date": "2026-06-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3471052"
+      },
+      {
+        "id": "208PTZK",
+        "intitule": "Développeur(se)  C++  (H/F)",
+        "entreprise": "ADAXIS",
+        "territoire": "64 - BAYONNE",
+        "contrat": "CDI",
+        "date": "2026-05-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208PTZK"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:02:42.139755",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

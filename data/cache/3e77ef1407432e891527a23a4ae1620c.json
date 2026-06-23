@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3661440",
+  "value": {
+    "id": "3661440",
+    "intitule": "Ingénieur modélis.simulat. système / décarbon. transport H/F",
+    "entreprise": "IFPEN",
+    "territoire": "92 - Rueil-Malmaison",
+    "ville": "92063",
+    "code_postal": "92500",
+    "contrat": "CDD - 18 Mois",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3661440",
+    "description": "Vous rejoindrez l'équipe du Département Modélisation Numérique des Systèmes Energétiques, composé d'ingénieurs de recherche et de doctorants travaillant à la frontière de la modélisation numérique et de la science des données. L'équipe conçoit et déploie des modèles physiques et des simulateurs numériques pour caractériser la performance énergétique et l'impact environnemental des systèmes énergétiques, en partenariat avec l'industrie et les acteurs publics.\nVous serez responsable de la conception, du développement et de la mise en oeuvre de modèles et simulateurs système (0D/1D). Vos principales contributions incluront :\nConcevoir des modèles physiques et des architectures de simulateurs/jumeaux numériques multi-niveaux (composants, véhicule, flotte, territoire).\nValider les modèles sur des campagnes terrain et jeux de données réelles.\nDévelopper et maintenir des codes et bibliothèques de simulation (exigences de robustesse, modularité et performances).\nIndustrialiser les chaînes de calcul pour des applications opérationnelles chez nos partenaires.\nMettre en oeuvre des workflows pour l'analyse de données massives de mobilité (trajectoires, profils d'usage) et produire des indicateurs d'émissions et de consommation à l'échelle d'un territoire ou d'une flotte.\nContribuer à des études d'aide à la décision (scénarios d'électrification, mix énergétique, politiques locales).\nParticiper à l'extension des activités de modélisation pour le transport vers la modélisation pour d'autres systèmes énergétiques : production d'électricité, gestion de l'énergie renouvelable, procédés décarbonés pour la production d'énergie.\nTravailler en étroite collaboration avec des experts internes (thermique, contrôle, data science) et des partenaires externes (industriels, universités)\nPrésenter et valoriser les résultats (rapports, publications scientifiques, conférences) et encadrer occasionnellement stagiaires, apprentis, doctorants et post docs.\nMaîtrise de la modélisation et de la simulation système (0D/1D).\nBonne connaissance des architectures de chaînes de traction (hybride, électrique) et de la dynamique longitudinale du véhicule.\nConnaissance d'une plateforme/outil de simulation : Amesim, Matlab/Simulink, GT Power, Modelica ou équivalents.\nProgrammation : maîtrise de Python souhaitée ; connaissance de MATLAB/Simulink, C/C++ appréciée.\nBonnes pratiques de développement : gestion de versions (Git), tests et documentation technique.\nCompétences en data science et manipulation de données massives et en visualisation appréciées.\nAutonome, rigoureux, curieux et agile.\nProactif et esprit d'initiative pour proposer des idées innovantes dans son domaine\nBon relationnel et excellent sens du travail en équipe et du partenariat industriel.\nCapacité à documenter ses travaux, communiquer des résultats techniques et encadrer des stagiaires/doctorants.\n\nDiplôme d'ingénieur ou doctorat (ou équivalent) dans les domaines suivants : modélisation des systèmes énergétiques, motorisation / groupes motopropulseurs hybrides, électriques.\nUne formation IFP School ou un doctorat en lien direct avec la simulation de systèmes énergétiques est un plus.\n\nUne première expérience professionnelle antérieure dans le domaine de la simulation de systèmes énergétiques et/ou l'analyse de données de la mobilité est demandée.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Product Management",
+      "MLOps",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "API",
+      "Pipelines de données",
+      "Backend"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplôme d'ingénieur ou doctorat (ou équivalent) dans les domaines suivants : modélisation des systèmes énergétiques, motorisation / groupes motopropulseurs hybrides, électriques.",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Diplôme d'ingénieur ou doctorat (ou équivalent) dans les domaines suivants : modélisation des systèmes énergétiques, motorisation / groupes motopropulseurs hybrides, électriques.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:58.329919",
+  "input_hash": "a78617209c86422a8262d8b42c87808ec3f3546d2bf427f639a9aee9f05ad968",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

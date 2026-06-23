@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:3609676",
+  "value": {
+    "id": "3609676",
+    "intitule": "Administrateur système Linux (H/F)",
+    "entreprise": "",
+    "territoire": "35 - Rennes",
+    "ville": "35238",
+    "code_postal": "35000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3609676",
+    "description": "AIS : Depuis 1985, AIS est une ESN tournée vers l'humain. Nous capitalisons sur le talent de nos collaborateurs pour accompagner nos clients dans leurs projets. Nos activités : Pôle Compétences : activité de régie chez nos clients sur tous nos métiers Pôle Infrastructure : projets d'intégration, missions de MCO et de support Pôle Applications : projets de développement d'applications web et de TMA Nos chiffres clefs : 250 collaborateurs 15 managers techniques 5 agences : Nantes, Angers, Rennes, Niort et Toulouse ! 2 labellisations annuelles: Happy At Work & Tech At Work CHOISIR AIS, C'EST : Travailler dans une entreprise où 83,6% des collaborateurs(trices) sont satisfait(e)s de la qualité des relations humaines. Assurer sa montée en compétences grâce à nos parcours de formations et de certifications. Profiter d'évènements conviviaux tout au long de l'année ! Un suivi aux petits oignons ! Un binôme Manager technique/RH vous accompagne au quotidien ! Le poste : Maintien en conditions opérationnelles des infrastructures de messagerie de WEB (Proxy mandataire) : - Veiller au bon fonctionnement à partir d'indicateurs de supervision (Supervision Nagios & Centreon), de métrologie et de journaux d'évènements (Grafana) - Gérer les incidents sur procédures et hors procédures (diagnostic, résolution, demandes d'interventions en proximité, alerte), en éditer les fiches de suivi - Assurer le support de niveau 2 des correspondants informatiques locaux (= déclencher les interventions des techniciens de support de proximité) et les escalades au niveau 3 - Assurer les « MEP » (Mises en production / Infrastructure d'hébergement ventilée sur de nombreux sites) - Contribuer à la rédaction des procédures d'exploitation et de support (Base de connaissance / Wiki) - Participer aux maintenances correctives Intégrer dans leurs environnements leurs différents composants : - Réaliser le maintien en conditions de sécurité et les évolutions fonctionnelles - Contrôler et restituer le résultat en qualité de service rendu (Reporting sur les indicateurs de prod et de perf) - Analyser les performances et l'expérience usager (analyse de l'efficience/taux de dispo outils de messagerie) - Proposer et mettre en place des améliorations de qualité, de productivité, d'automatisation (Ansible) - Accompagner les équipes de supervision et les correspondants locaux - Maintenir et faire évoluer les outils d'administration et de surveillance - Participer aux choix d'outils de production Profil recherché : Vous avez une expérience d'au minimum 2 ans (hors stage et alternance) sur de l'administration système en environnement Linux. Compétences techniques attendues : - Maitrise des environnements Linux (Debian) en lignes de commandes - Connaissance des protocoles et des technologies de messagerie et du web : Smtp, imap : acces au client de messagerie, Cyrus : Réception de mail sur Imap, Postfix : Envoie de mail, SPF : Validation du serveur qui envoi le mail avec une adresse) Dmark : Détail de la procédure à suivre suite aux vérifications SPF et DKIM Dkim : Vérification cryptographique que le mail est authentique et inchangée depuis son envoi Squid : logiciel proxy cache Haproxy : Logiciel de Load balancing et de revese proxy pour les infras web à fort trafic - Connaissance en méthodes DevSecOps. - Virtualisation Vcenter / VMWare - Requetage SQL",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Intelligence artificielle",
+      "Linux",
+      "SQL",
+      "Vision",
+      "Analyse de performance",
+      "MLOps",
+      "Intégration continue",
+      "Qualité des données",
+      "Tests automatisés"
+    ],
+    "salaire_min": 1985,
+    "salaire_max": 1985,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:43.240717",
+  "input_hash": "f35bd4b803fdc5cf3d974cd9d67b401b1f6e8ca5e674bc365a5698a7aa27641e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

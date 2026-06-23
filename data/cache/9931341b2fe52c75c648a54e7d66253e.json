@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:1629455",
+  "value": {
+    "id": "1629455",
+    "intitule": "Ingénieur FullStack Data GenAI (H/F) h/f",
+    "entreprise": "",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-04-20",
+    "date": "2026-04-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1629455",
+    "description": "Au sein d'une industrie qu'elle soit Retail, Luxe, pure player, tourisme ou autre, la Data est au cœur de l'activité. En effet, il s'agit de maîtriser l'écosystème Data visant à offrir une vision complète de la connaissance clients, de la performance &amp;amp; de l&amp;#8217;optimisation de chaque asset media, de la stratégie globale à l&amp;#8217;activation locale. Davidson dispose d'un savoir-faire reconnu qui lui permet d'intervenir sur différentes phases d'un projet que ce soit en Conseil et organisation, Cadrage, Définition, Conception ou Optimisation. Nos consultants interviennent sur des projets Data ingénieur, Data Analytics et Data IA. Ton rôle en tant que Data Engineer/Data Analyst sera de prendre en charge l'ensemble des étapes de transformation de la Data :  Développer et maintenir les data pipelines de :  Sourcing des données (Datalake BigQuery) Téléchargement d&amp;#8217;assets via API Automatisation des processus IA (embedding, clustering)   Transformer la donnée brute du Datalake en tables optimisées Optimiser le déploiement du backend sur GCP Moderniser les briques techniques (thumbnail, product-detection, encoder) avec des approches plus modernes et optimisées Optimiser la chaîne CI/CD Développer les requêtes SQL pour sourcer les données dans les tables du Datalake, sur la base des inputs du Data Business Owner Documenter les données récupérées depuis le Datalake avec des documents et des schémas des données S&amp;#8217;assurer de la qualité des données consolidées dans l&amp;#8217;application par rapport aux données sources Analyser et croiser les données pour générer de nouveaux insights (creative data qui génèrent le plus de performance&amp;#8230;) et benchmarks  Exemples de projets menés :  Pour un client dans le secteur du luxe : Définition des nouveau parcours (wireframe) dans le cadre du déploiement du programme de Digitalisation des points de ventes en France et en Europe Pour un autre client : Gestion et optimisation du Roll out d'une nouvelle plateforme e-commerce dans un contexte EMEA Pour un acteur dans le Tourisme : rédaction des User Storie et priorisation du Back Log produit pour une application de réservation BtoB (Hotels et Call Center) Pour un client Retail : études d'impacts multi-brique dans le cadre de la refonte d'un écosystème e-commerce (CMS, PIM, DAM, brique E-commerce, etc.)  Compétences requises ou à acquérir  Tu es le/la reine (roi) de la Data ? Les termes BigQuery, Python, FastAPI, GenAI, Looker, GCP n'ont plus aucun secret pour toi ? Le Tea Time n'est pas un secret pour toi (tu parles anglais couramment ? ?) Tu aimes travailler en équipe ? Tu aimes la technique ?  N'hésite pas à candidater !!! Aptitudes / Savoir-être  Esprit d'équipe et de partage ! Appétence forte pour la technique Capacité rédactionnelle  &lt;br /&gt;Compétences requises ou à acquérir&lt;br /&gt;Tu es le/la reine (roi) de la Data ? Les termes BigQuery, Python, FastAPI, GenAI, Looker, GCP n'ont plus aucun secret pour toi ? Le Tea Time n'est pas un secret pour toi (tu parles anglais couramment ? ?) Tu aimes travailler en équipe ? Tu aimes la technique ? N'hésite pas à candidater !!!&lt;br /&gt;Aptitudes / Savoir-être&lt;br /&gt;Esprit d'équipe et de partage ! Appétence forte pour la technique Capacité rédactionnelle",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "FastAPI",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Vision",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": 8217,
+    "salaire_max": 8217,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nos consultants interviennent sur des projets Data ingénieur, Data Analytics et Data IA.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:29.956507",
+  "input_hash": "77b510bcb2d5bd81d8febf62112b0b74f2f185307a221a45343da4ab0da06f36",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

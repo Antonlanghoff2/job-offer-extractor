@@ -1,0 +1,89 @@
+{
+  "key": "trends:17 - Saint-Just-Luzac",
+  "value": {
+    "territoire": "17 - Saint-Just-Luzac",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Intelligence artificielle": 1,
+      "Scalabilité": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Scalabilité": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      }
+    },
+    "metiers": {
+      "Ingénieur / Ingénieure en Intelligence Artificielle (IA)": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Scalabilité"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4079916",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "17 - Saint-Just-Luzac",
+        "contrat": "CDI",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4079916"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4079916",
+        "intitule": "IDE (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "17 - Saint-Just-Luzac",
+        "contrat": "CDI",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4079916"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:20.524305",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

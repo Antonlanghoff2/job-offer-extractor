@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:2838784",
+  "value": {
+    "id": "2838784",
+    "intitule": "Segula Technologies - Ingénieur / Ingénieure machine learning (H/F)",
+    "entreprise": "",
+    "territoire": "63 - Clermont-Ferrand",
+    "ville": "63113",
+    "code_postal": "63000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-20",
+    "date": "2026-05-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2838784",
+    "description": "Dans le cadre du développement de notre activité dans le secteur automobile, nous recherchons un Ingénieur Vision Industrielle H/F.\nPour cela, vous serez amené à :\n\nComprendre et échanger sur les besoins des partenaires internes,\nEtudier, concevoir et réaliser les solutions : architecture vision, traitement d'images,\nPiloter les études d'intégration sur équipements opérationnels,\nParticiper à l'installation et au démarrage de l'équipement sur nos sites industriels,\nValider les performances de l'équipement,\nAssurer le support technique et la formation aux sites industriels.\n\nNous recherchons un candidat possédant les compétences suivantes :\n\nFormation Bac+5 minimum, spécialité vision industrielle ou computer vision,\nProgrammation d'algorithmes de traitement d'image,\nConnaissance environnement Keyence, Cognex et Gocator,\nConnaissances techniques suivantes : caméra matricielle, caméra linéaire, éclairage,\nMaîtrise de l'anglais (des déplacements à l'international sont à prévoir).\n",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Traitement D'images",
+      "Vision",
+      "Data Engineering",
+      "Gestion de projet",
+      "Computer Vision",
+      "Tests automatisés"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre du développement de notre activité dans le secteur automobile, nous recherchons un Ingénieur Vision Industrielle H/F.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation Bac+5 minimum, spécialité vision industrielle ou computer vision,",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:04.928989",
+  "input_hash": "a005f52cd37d32b84f2befefbea20717a70dbb04dc7d46e370d1550e79a910d2",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

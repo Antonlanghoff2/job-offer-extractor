@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:209JCYL",
+  "value": {
+    "id": "209JCYL",
+    "intitule": "Ingénieur Data & IA (H/F)",
+    "entreprise": "",
+    "territoire": "75 - PARIS",
+    "ville": "75108",
+    "code_postal": "75008",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JCYL",
+    "description": "L'ingénieur Data & IA aura pour mission principale d'assurer la conception, le déploiement, la sécurisation et le bon fonctionnement de l'environnement de données et d'intelligence artificielle de l'entreprise, avec un focus particulier sur les pipelines de données, les architectures RAG et le déploiement d'agents IA souverains pour l'automatisation des processus métiers.",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Data Engineering",
+      "Pipelines de données",
+      "Qualité des données"
+    ],
+    "salaire_min": 3750,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'ingénieur Data & IA aura pour mission principale d'assurer la conception, le déploiement, la sécurisation et le bon fonctionnement de l'environnement de données et d'intelligence artificielle de l'entreprise, avec un focus particulier sur les pipelines de données, les architectures RAG et le déploiement d'agents IA souverains pour l'automatisation des processus métiers.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "12 Mois",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:18.310300",
+  "input_hash": "4e10c192777ae2e8aab659257f4fd097390d2098b537ddfead3bd5db3abdfce9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

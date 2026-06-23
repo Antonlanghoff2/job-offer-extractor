@@ -1,0 +1,84 @@
+{
+  "key": "offer_extraction:208XRXB",
+  "value": {
+    "id": "208XRXB",
+    "intitule": "LEAD DEVELOPPEUR CLOUD (H/F)",
+    "entreprise": "HARDIS TECH SERVICES",
+    "territoire": "38 - GRENOBLE",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208XRXB",
+    "description": "Vous souhaitez associer expertise technique, leadership et Cloud ? A Hardis Group, nous accompagnons grands comptes et start-ups sur des projets Cloud natifs ambitieux. Basés à Grenoble, au cœur des Alpes, nous cultivons une culture d'entraide, d'innovation et d'excellence technique.\nNous sommes à la recherche d'un Lead Dev Cloud (H/F) pour notre entité Hardis Tech Solutions à Grenoble.\n\nLes principaux défis à relever sont à :\n- Concevoir et architecturer : Définir et valider des architectures robustes et scalables, en appliquant les meilleures pratiques Cloud (principalement AWS et Azure).\n- Coder et encadrer : Participer activement au développement backend (Java Spring Boot, .Net ou Node.js) tout en animant les revues de code, en définissant les standards et en accompagnant les développeurs.\n- Industrialiser : Mettre en place et optimiser des pipelines CI/CD modernes (Azure pipline, GitLab CI ou GitHub Actions) et promouvoir l'Infrastructure as Code (Terraform, Ansible).\n- Migrer et automatiser : Piloter la migration d'applications vers le Cloud, promouvoir l'automatisation et les pratiques DevOps.\n- Innover et partager : Assurer une veille technologique active, organiser des ateliers internes et partager vos découvertes avec l'équipe.\n- Accompagner et fédérer : Former et faire grandir les développeurs, collaborer étroitement avec les chefs de projet et les clients pour assurer le succès et la qualité des livrables.\n- Garantir la qualité et la sécurité : Superviser la qualité du code, la sécurité applicative et la documentation technique.\n\nProfil recherché :\nDiplômé(e) d'un Master Bac+4/5 en école d'ingénieur ou université, vous avez une expérience significative de 5 ans (hors alternance) en développement logiciel dont 3 années en tant que Lead Developpeur.\n\nCompétences techniques clés :\n- Excellente maîtrise d'un langage backend (Java Spring Boot privilégié, .Net ou Node.js).\n- Expérience significative exigée sur AWS ou Azure (GCP est un plus) en contexte de production.\n- Connaissance des architectures microservices, conteneurisation (Docker, Kubernetes).\n- Pratique de l'Infrastructure as Code et des pipelines CI/CD.\n- Familiarité avec les méthodes Agile (Scrum, SAFe).\n\nQualités humaines :\n- Leadership naturel et excellente communication.\n- Capacité à fédérer une équipe et à collaborer avec les parties prenantes.\n- Autonomie, proactivité et sens du service client.\n- Maîtrise du français et de l'anglais à l'écrit et à l'oral.\n\nCe que nous offrons :\n- Un environnement stimulant et convivial : des missions variées avec des clients locaux, une culture technique forte et esprit collaboratif.\n- Une trajectoire : Perspectives vers des postes d'Architecte Cloud ou Expert référent.\n- Qualité de vie au travail : CDI, Accord Télétravail et clients locaux, horaires flexibles, bureaux modernes au cœur de Grenoble avec vue sur les montagnes.\n- Investissement dans votre progression : Budget annuel dédié aux formations et certifications (Cloud et autres), participation possible à des conférences et temps consacré à des projets R&D ou open-source.\n- Avantages sociaux : Mutuelle familiale, primes de participation et d'intéressement, tickets restaurant, remboursement des abonnements de transport, événements d'équipe réguliers (ateliers techniques, afterworks).\n\nCurieux(se) et motivé(e) par cette offre ?\n\nRejoignez-nous et participez à notre veille technologique en collaboration avec la Direction Technique d'Hardis Group. Même si vous pensez manquer une ou deux compétences, nous sommes là pour vous aider à progresser et à évoluer dans votre carrière.",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Java",
+      "JavaScript",
+      "Kubernetes",
+      "Terraform",
+      "Vue.js",
+      "CI/CD",
+      "Spring",
+      "Veille technologique",
+      "Scalabilité",
+      "Documentation technique",
+      "Intégration continue",
+      "Sécurité informatique",
+      "Tests automatisés",
+      "Data Engineering",
+      "Qualité des données",
+      "Pipelines de données",
+      "Code review"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'un Master Bac+4/5 en école d'ingénieur ou université, vous avez une expérience significative de 5 ans (hors alternance) en développement logiciel dont 3 années en tant que Lead Developpeur.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'un Master Bac+4/5 en école d'ingénieur ou université, vous avez une expérience significative de 5 ans (hors alternance) en développement logiciel dont 3 années en tant que Lead Developpeur.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'un Master Bac+4/5 en école d'ingénieur ou université, vous avez une expérience significative de 5 ans (hors alternance) en développement logiciel dont 3 années en tant que Lead Developpeur.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 25,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:38.023829",
+  "input_hash": "4f6e116910d9aa3f6ff3c7051e9654b9a7b29a1ff2a93f7f9e83f12ffcc0966b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

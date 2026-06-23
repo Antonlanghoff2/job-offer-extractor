@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:1260595",
+  "value": {
+    "id": "1260595",
+    "intitule": "Développeur / Développeuse informatique (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 5e Arrondissement",
+    "ville": "69385",
+    "code_postal": "69005",
+    "contrat": "CDI",
+    "date_creation": "2026-04-09",
+    "date": "2026-04-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1260595",
+    "description": "Description du poste :\nFIDUCIAL est le leader des services pluridisciplinaires aux petites entreprises, artisans, commerçants, professions libérales dans les métiers du droit, expertise comptable, banque, conseil financier, informatique, fourniture de bureau et sécurité.\nDans le cadre d'une création de poste, nous recrutons un Ingénieur études junior (h/f) à Lyon 9e en CDI.\nRattaché au DSI, vos missions sont les suivantes Administration fonctionnelle des rôles & autorisation SAP Assurance qualité SAP (tests d'intégration, documentation, suivi Redmine Paramétrage d'interfaces & notamment d'AIF Suivi des opérations récurrentes métier et support technique N3 (refacturation, support technique au métier - paramétrage, données Vous serez formé sur l'utilisation de SAP sur le paramétrage des rôles & autorisations.\nDescription du profil :\nVous êtes titulaire d'une formation Ingénieur informatique ou généraliste avec un Master commerce et une expérience significative en projets informatiques (coté MOE - assurance qualité Vous avez idéalement une première expérience significative dans l'administration d'un ERP au sein d'un grand groupe avec des procédures qualité normées (pharmacie, chimie, aéronautique Vous êtes curieux, autonome, rigoureux et vous avez des capacités à apprendre vite.\nVous êtes reconnu pour vos capacités d'analyse et rédactionnelles.\nVous avez un anglais opérationnel pour travailler efficacement avec les développeurs ABAP à Braga (Portugal).",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Aéronautique",
+      "Intelligence artificielle"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre d'une création de poste, nous recrutons un Ingénieur études junior (h/f) à Lyon 9e en CDI.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Vous êtes titulaire d'une formation Ingénieur informatique ou généraliste avec un Master commerce et une expérience significative en projets informatiques (coté MOE - assurance qualité Vous avez idéalement une première expérience significative dans l'administration d'un ERP au sein d'un grand groupe avec des procédures qualité normées (pharmacie, chimie, aéronautique Vous êtes curieux, autonome, rigoureux et vous avez des capacités à apprendre vite.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:22.222975",
+  "input_hash": "bf9bb95bfef79fbb254f513b5e028782b890b960553b75e492f62686ec7250ec",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

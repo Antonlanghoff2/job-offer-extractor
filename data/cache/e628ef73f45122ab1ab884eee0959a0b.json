@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:210BHCF",
+  "value": {
+    "id": "210BHCF",
+    "intitule": "Automaticien Senior H/F (H/F)",
+    "entreprise": "RESEAU TALENTS",
+    "territoire": "51 - Reims",
+    "ville": "51454",
+    "code_postal": "51100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210BHCF",
+    "description": "Votre mission\n\nDans le cadre de nos projets industriels, nous recherchons un Automaticien Senior pour concevoir, développer et maintenir des systèmes automatisés tout en participant activement à la digitalisation de nos outils de production.\n\nVous intervenez sur l'ensemble du cycle de vie des installations : études, programmation, mise en service, amélioration continue et support technique.\n\nVos principales missions\n\n * Développer et optimiser les programmes automates et les systèmes de supervision.\n * Concevoir les architectures d'automatisme et d'informatique industrielle.\n * Assurer la communication entre les équipements industriels et les systèmes MES, SCADA et ERP.\n * Participer aux projets de digitalisation et d'Industrie 4.0.\n * Diagnostiquer les dysfonctionnements et assurer le support technique.\n * Accompagner les équipes maintenance et production dans l'amélioration des performances des installations.\n\nCompétences recherchées\n\n * Maîtrise des automates Siemens (TIA Portal), Schneider (Control Expert) et idéalement Rockwell ou Beckhoff.\n * Bonne connaissance des logiciels de supervision (WinCC, AVEVA/Wonderware, Ignition, PcVue.).\n * Solides compétences en informatique industrielle : SCADA, MES, OPC UA, MQTT, SQL et réseaux industriels (Profinet, Modbus TCP, Ethernet/IP.).\n * Connaissances en développement (Python, C#, SQL) appréciées.\n * Sensibilité aux enjeux de cybersécurité industrielle et aux architectures OT/IT.\n\nProfil recherché\n\n * Formation supérieure Bac +5 en automatisme, informatique industrielle, génie électrique ou équivalent ;\n * Expérience confirmée de 5 à 7 ans minimum sur des fonctions similaires en environnement industriel ;\n * Solides compétences en automatisme industriel et gestion de projets techniques ;\n * Maîtrise des automates industriels type Siemens, Schneider, Rockwell ou équivalent ;\n * Bonne connaissance des systèmes SCADA / supervision (WinCC, Panorama, Wonderware, PC Vue, etc.) ;\n * Connaissance des réseaux et protocoles industriels (Profinet, Modbus, Ethernet/IP, OPC, etc.) ;\n * Capacité à piloter des projets transverses et à interagir avec différents services ;\n * Anglais technique apprécié.",
+    "metier": "Technicien / Technicienne de maintenance d'installations automatisées",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Vision",
+      "Vue.js",
+      "Maintenance système",
+      "MLOps",
+      "Optimisation des performances",
+      "Cybersécurité",
+      "Product Management",
+      "Scalabilité",
+      "Backend"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation supérieure Bac +5 en automatisme, informatique industrielle, génie électrique ou équivalent ;",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:02.958540",
+  "input_hash": "9e986a31797769ba196170761a9afa6ae39f3ee4146c607efa34b6e4288e5cde",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

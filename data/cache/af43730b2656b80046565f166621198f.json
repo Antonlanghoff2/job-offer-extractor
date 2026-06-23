@@ -1,0 +1,71 @@
+{
+  "key": "offer_extraction:3614743",
+  "value": {
+    "id": "3614743",
+    "intitule": "Enseignant en mathématiques appliquées F/H - IPSA",
+    "entreprise": "IPSA",
+    "territoire": "94 - Ivry-sur-Seine",
+    "ville": "94041",
+    "code_postal": "94200",
+    "contrat": "CDD - 6 Mois",
+    "date_creation": "2026-06-09",
+    "date": "2026-06-09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3614743",
+    "description": "L'IPSA recherche un ou plusieurs enseignants titulaires d'un Master 2, ou d'un doctorat (et/ou agrégés) en Mathématiques pour la période entre le 1er septembre 2026 et juillet 2027.. Au sein de l'école, le ou les intervenants (vacataires ou prestataires) devront assurer différents enseignements de Mathématiques générales (algèbre, algébre linéaire, analyse, probabilité et statistique) mais aussi de Génie en première et seconde année du cycle préparatoire (bac+1, bac+2).Le candidat devra disposer de compétences traversent en mathématiques appliquée : Analyse numérique, Optimisation différentiable, mais aussi en probabilité et statistique dans le contexte des sciences des données et de la décision, ainsi qu'en analyse harmonique. La connaissance du langage Python est requise. Un point essentiel, le niveau d'anglais demandé est de très forte préférence Bilingue (niveau C1). Mots clés : Algèbre linéaire, Analyse, Analyse numérique, Probabilité et statistique, Python. Durée du contrat : Septembre 2026 à Juillet 2027 (un contrat au premier semestre renouvelable). Début du contrat : Septembre 2026 Pour candidater :Les candidats devront transmettre : • un CV détaillé • leurs disponibilités horaires sur la période du contrat",
+    "metier": "Professeur / Professeure des universités",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": 2026,
+    "salaire_max": 2026,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "L'IPSA recherche un ou plusieurs enseignants titulaires d'un Master 2, ou d'un doctorat (et/ou agrégés) en Mathématiques pour la période entre le 1er septembre 2026 et juillet 2027..",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "L'IPSA recherche un ou plusieurs enseignants titulaires d'un Master 2, ou d'un doctorat (et/ou agrégés) en Mathématiques pour la période entre le 1er septembre 2026 et juillet 2027..",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac+1",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Au sein de l'école, le ou les intervenants (vacataires ou prestataires) devront assurer différents enseignements de Mathématiques générales (algèbre, algébre linéaire, analyse, probabilité et statistique) mais aussi de Génie en première et seconde année du cycle préparatoire (bac+1, bac+2).Le candidat devra disposer de compétences traversent en mathématiques appliquée : Analyse numérique, Optimisation différentiable, mais aussi en probabilité et statistique dans le contexte des sciences des données et de la décision, ainsi qu'en analyse harmonique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Au sein de l'école, le ou les intervenants (vacataires ou prestataires) devront assurer différents enseignements de Mathématiques générales (algèbre, algébre linéaire, analyse, probabilité et statistique) mais aussi de Génie en première et seconde année du cycle préparatoire (bac+1, bac+2).Le candidat devra disposer de compétences traversent en mathématiques appliquée : Analyse numérique, Optimisation différentiable, mais aussi en probabilité et statistique dans le contexte des sciences des données et de la décision, ainsi qu'en analyse harmonique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:00.386750",
+  "input_hash": "88b15ed766d47fa54e2ad030bc7069520afa74e397e24dcfe6d251c36cf0bbe8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,43 @@
+{
+  "key": "offer_extraction:3874505",
+  "value": {
+    "id": "3874505",
+    "intitule": "Architecte logiciel embarqué temps réel / Linux embarqué (H/F)",
+    "entreprise": "",
+    "territoire": "35 - Rennes",
+    "ville": "35238",
+    "code_postal": "35000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3874505",
+    "description": "Au sein d’une équipe d’ingénierie embarquée intervenant sur des systèmes critiques temps réel, vous êtes responsable de la définition, de l’évolution et de la cohérence technique de l’architecture logicielle bas niveau. Vous intervenez sur l’ensemble du cycle de vie : conception, spécifications, développement bas niveau, intégration, industrialisation et amélioration continue. Vous contribuez à des projets industriels exigeants et variés : mobilité intelligente, robotique, énergie, IoT industriel, équipements médicaux, télécom/edge computing, transport, électronique professionnelle, etc. Dans ce cadre, vos missions seront de : Définir l’architecture logicielle bas niveau : bootloader (p. ex. U‑Boot), noyau/RTOS, partitions, drivers, HAL et interfaces avec le middleware. Spécifier les exigences (performances, latence, déterminisme, consommation) et piloter les compromis sûreté/sécurité/perf. Choisir et justifier les patterns d’architecture (partitionnement, micro‑services embarqués, IPC, scheduling temps réel, multi‑cœur). Encadrer les développements C/C++ bas niveau et les revues (MISRA/CERT, analyse statique, couverture). Industrialiser : intégration continue, artefacts reproductibles, traçabilité et supply‑chain logicielle (SBOM). Garantir la conformité aux référentiels selon les projets. Support technique avant‑vente/RFQ et mentorat des équipes dev & intégration. Environnement technique : Langages : C/C++, OS / RTOS : Linux temps réel (PREEMPT_RT), VxWorks, PikeOS, RTEMS, FreeRTOS Boot & Drivers : U‑Boot, device tree, HAL/SDK constructeurs Processeurs / SoC : ARM Cortex‑M/R/A, multi‑cœur, DSP, interfaces FPGA Bus & I/O : CAN/CAN‑FD, ARINC 429/653, AFDX, SpaceWire, MIL‑STD‑1553, SPI, I2C, UART, Ethernet TSN Réseau : TCP/IP, UDP, sockets Outils & qualité : Git, CMake, Yocto/Buildroot, Jenkins/GitLab CI, analyse statique (PC‑lint, CPP‑check), DOORS/Polarion, Jira/Confluence, GDB, Trace32, tests HIL Méthodes : Temps réel, sûreté de fonctionnement, validation embarquée, standards MISRA/CERT",
+    "metier": "Ingénieur / Ingénieure en informatique embarquée",
+    "niveau": "junior",
+    "competences": [
+      "CMake",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Vue.js",
+      "Optimisation des performances"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "10 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:17.309848",
+  "input_hash": "4e6ad044b0edd8d2bcbde88908442f71850f601bd3ba99577df7a925fa5bff72",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

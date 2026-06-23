@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:3588364",
+  "value": {
+    "id": "3588364",
+    "intitule": "Ingénieur systèmes embarqués F/H - Groupe OKWIND",
+    "entreprise": "Groupe OKWIND",
+    "territoire": "35 - Torcé",
+    "ville": "35338",
+    "code_postal": "35370",
+    "contrat": "CDI",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3588364",
+    "description": "Manuel, notre responsable du pôle informatique R&D est actuellement à la recherche d'un(e) ingénieur(e) systèmes embarqué pour venir renforcer son équipe de 6 collaborateurs. Sur ce poste, vous réaliserez des évolutions, corrections , configurations, validations et déploiements, sur les applications ou composants des services logiciels embarqués fournis par le pôle informatique R&D. Les missions : Développement et Maintenance des Applications Embarquées : - Réaliser des travaux de conception, développement, configuration, validation, déploiement et maintien en condition opérationnelle sur les applications embarquées fournies par le pôle informatique R&D - Contribuer aux spécifications techniques et à l’architecture logicielle en collaboration avec le lead développeur - Prendre en charge certaines relectures de code développé par d’autres développeur(euse)s embarqués du pôle informatique en délégation du lead développeur Amélioration Continue et Veille Technologique : - Appliquer les méthodologies et bonnes pratiques définies au sein du pôle, et contribuer à leur évolution - Assurer une veille continue et une progression de compétences sur les langages et technologies nécessaires à l’exécution de ses tâches Nos conditions d'emploi : - Cadre - forfait 218 jours - 6 semaines de congés payés (+JNT dans le cadre du forfait jours) - Titres restaurant (valeur faciale de 10€, prise en charge employeur à 53%) - Prime de participation - Prime sur objectifs (pouvant aller jusqu'à 1 mois de salaire) - Charte de télétravail (2 jours maximum) Nos petits plus : - Plateforme d’avantages (culturel, sportif…) - Activités de cohésion d’équipe - Événement de fin d’année - Communication interne via Steeple - Kit de bienvenue - Parcours d’information nouveaux collaborateurs - Programme de cooptation - Borne de recharge pour véhicules électriquesVotre Parcours Issu(e) d'un cursus ingénieur spécialisé en informatique, vous justifiez d'au moins 3 ans d’expérience sur un poste similaire. Vous possédez des compétences avancées en développement embarqué (Python, méthodes agiles, tests automatisés) et maîtrisez les contraintes liées aux environnements contraints. Vous avez de solides connaissances en protocoles (Modbus, objets connectés), Linux, et DevOps (Docker, Kubernetes, JFrog), ainsi que des notions en électromécanique. Une maîtrise de l'anglais technique est essentielle. Vos Qualités Personnelles Vous êtes rigoureux(se), autonome, et savez travailler en équipe, en coordonnant vos efforts avec ceux de vos collaborateurs. Curieux(se) et innovant(e), vous suivez les évolutions du secteur et proposez des solutions créatives pour optimiser les performances. Votre esprit d'analyse et de synthèse, combiné à une communication claire et adaptée, vous permettent de vulgariser et transmettre efficacement les informations. Notre processus : - Échange téléphonique avec Salomé - Entretien avec Manuel (N+1) et Salomé (RH) - Rencontre avec l'équipe - Entretien avec Arthur (N+2) Selon le poste et le contexte, un entretien en visio est proposé. L'entreprise, le poste et l'environnement de travail vous ont convaincu ? N'hésitez plus, postulez !",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Anglais professionnel",
+      "Optimisation de performance",
+      "Design patterns",
+      "Optimisation des performances",
+      "Veille technologique",
+      "Scalabilité"
+    ],
+    "salaire_min": 6000,
+    "salaire_max": 6000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Manuel, notre responsable du pôle informatique R&D est actuellement à la recherche d'un(e) ingénieur(e) systèmes embarqué pour venir renforcer son équipe de 6 collaborateurs.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:01.782599",
+  "input_hash": "8341803ce694f268c36f1337033abf3e3e214c53ba32020ea2381fd1adba2aa0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:1665958",
+  "value": {
+    "id": "1665958",
+    "intitule": "Senior Software Engineer – Editeur Saas dans l’EdTech (H/F)",
+    "entreprise": "SILKHOM SAS",
+    "territoire": "75 - Paris 2e Arrondissement",
+    "ville": "75102",
+    "code_postal": "75002",
+    "contrat": "CDI",
+    "date_creation": "2026-04-20",
+    "date": "2026-04-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1665958",
+    "description": "Description du poste:\nVous intégrez l’équipe Tech aujourd’hui composée de 6 personnes : un CTO, un Head of Product et 4 développeurs FullStack. Rattaché au CTO, votre objectif est de renforcer cette équipe avec un profil senior, capable de prendre en charge, comprendre, structurer et faire évoluer les systèmes existants en intégrant l’IA dans leurs développements.\nVous intervenez comme un véritable pilier technique.\n\nVos principaux défis techniques :\n\n - Fiabilité      de workflows métiers critiques : Garantir le \"zéro défaut\" sur      des processus automatisés qui soutiennent la croissance.\n - Intégration      complexe de services : Assurer une communication fluide et résiliente au      sein d'un environnement distribué (APIs multiples).\n - Refactoring      & Évolution d’architecture : Restructurer et moderniser une      architecture mature pour accompagner le passage à l'échelle.\n - Data      Management : Maîtriser et optimiser la gestion de volumes importants de      données variées (SQL, flux vidéo, données utilisateurs).\n - Industrialisation      de l’IA : Intégrer les outils d’IA générative directement dans les      workflows (code, opérations, outils internes) avec un niveau d'exigence      maximal sur la qualité, la cohérence et la maintenabilité à long terme.\n\nEnvironnement technique : Python / Django ou FastAPI, React, Next.js, PostgreSQL, AWS (ECS, Lambda).\n\nPourquoi rejoindre cette entreprise ?\n\n- Un rôle primordial : Bénéficiez d'un ownership et d'une responsabilité sur un écosystème en pleine croissance, impactant directement l’avenir de l’éducation.\n- L’innovation au cœur des projets : Participez à un projet d’envergure où l’IA devient un levier opérationnel majeur.\n- Un acteur en phase d’accélération : Intégrez une entreprise solide (+30 % de croissance) qui maîtrise et développe 100 % de sa technologie en interne\n\nProfil recherché:\n- 8 ans d’expérience minimum sont attendus en python dans un environnement FullStack, idéalement REACT\n- Vous avez un diplôme d’Ingénieur Informatique\n\nCompléments:\n-Lieu : Paris (2ème)\n-Contrat : CDI\n-Salaire : 80-105 K fixe\n\nSi votre profil correspond, nous reviendrons vers vous dans les 7 jours à compter de la date d’envoi.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Django",
+      "FastAPI",
+      "Intelligence artificielle",
+      "JavaScript",
+      "PostgreSQL",
+      "Python",
+      "React",
+      "SQL",
+      "Pipelines de données",
+      "Analyse de données",
+      "Data Engineering",
+      "Gestion de projet",
+      "Model drift",
+      "Architecture microservices"
+    ],
+    "salaire_min": 80000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous avez un diplôme d’Ingénieur Informatique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:28.035208",
+  "input_hash": "55b04a21a4431c19b12bc8c3b3aa57b89d011e53f52f4c8c09aaadf9db2de7ee",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

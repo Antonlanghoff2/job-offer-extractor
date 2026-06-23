@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:3209834",
+  "value": {
+    "id": "3209834",
+    "intitule": "Chargé(e) de projets Data / BI  (F/H) (H/F)",
+    "entreprise": "Wienerberger AG",
+    "territoire": "67 - Achenheim",
+    "ville": "67001",
+    "code_postal": "67204",
+    "contrat": "CDI",
+    "date_creation": "2026-05-30",
+    "date": "2026-05-30",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3209834",
+    "description": "Nous avons aujourd'hui une très belle opportunité d'emploi à saisir en tant que :\n \n\nAnalyste de données (F/H) \n\nVos missions\n\nAu sein de l'équipe BI & Analytics, vous intervenez en tant qu'analyste de données afin de valoriser les données de l'entreprise pour en faire un levier d'aide à la décision, en développant des tableaux de bord et des analyses statistiques, au service des différents métiers.\n \nA ce titre :\n\n * Vous analysez et exploitez des données issues de différentes sources afin de créer des modèles de données optimisés ;\n * Vous recueillez et analysez les besoins métiers pour proposer des indicateurs et tableaux de bord pertinents ;\n * Vous concevez, développez et maintenez des reportings BI et outils décisionnels à destination des équipes métiers et du management ;\n * Vous contribuez à l'amélioration de la fiabilité, la cohérence et la qualité des données ;\n * Vous jouez un rôle de référent auprès des utilisateurs locaux et assurez l'interface avec les interlocuteurs groupe ;\n * Vous participez à la diffusion d'une culture data et à l'amélioration continue des processus de reporting.\n\nConditions et avantages\n\n * CDI\n * Statut Cadre\n * Poste basé à Achenheim Siège (67)\n * Des déplacements ponctuels sont à prévoir au niveau national (1 fois par trimestre environ).\n * Rémunération motivante, selon diplôme et expérience\n * Avantages sociaux intéressants\n * Poste à pourvoir dès que possible\n\nCette offre vous intéresse ? Envoyez-nous vos CV et lettre de motivation sur notre site Internet! \n \n \n \n\nPassion, esprit d'entreprendre et sens des responsabilités sont des valeurs qui caractérisent les employés de Wienerberger.\n \nWienerberger S.A.S.\nwww.wienerberger.fr\nVotre profil\n\nFormation :\n \n\n * Bac +3 à Bac +5, école de commerce ou équivalent, avec une spécialisation en data, informatique décisionnel, finance, supply chain, etc.\n\nExpérience :\n \n\n * Au moins une première expérience réussie en analyse de données, reporting décisionnel ou projets digitaux.\n\nVos compétences\n\n * Maîtrise d'au moins un outil de Business Intelligence ou de data visualisation (idéalement Qlik, SAP Analytics Cloud, Alteryx, Power BI ou Tableau) ;\n * Bonne connaissance d'Excel et des bases de données (SQL ou équivalent) ;\n * Analyse de données et restitution via des tableaux de bord clairs et pertinents ;\n * Esprit analytique, rigueur, capacité de synthèse et aisance dans les échanges avec des interlocuteurs métiers.\n * Maîtrise de l'Anglais niveau opérationnel",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Git",
+      "Intelligence artificielle",
+      "SQL",
+      "Data Engineering",
+      "Model drift",
+      "Déploiement de modèles",
+      "Pipelines de données",
+      "Airflow"
+    ],
+    "salaire_min": 67000,
+    "salaire_max": 67000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac +3 à Bac +5, école de commerce ou équivalent, avec une spécialisation en data, informatique décisionnel, finance, supply chain, etc.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac +3 à Bac +5, école de commerce ou équivalent, avec une spécialisation en data, informatique décisionnel, finance, supply chain, etc.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:54.874528",
+  "input_hash": "b73e09522d5a5d2a331b5c5269344f3b28f377f5fd9f9a97e5e3864db43f8551",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

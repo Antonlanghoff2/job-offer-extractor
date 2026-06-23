@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:209JFPS",
+  "value": {
+    "id": "209JFPS",
+    "intitule": "Ingénieur électronique (H/F)",
+    "entreprise": "COMPAGNIE DES SIGNAUX",
+    "territoire": "91 - LES ULIS",
+    "ville": "91692",
+    "code_postal": "91940",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JFPS",
+    "description": "VIVATECH 2026\n\nL'entreprise sera présente au Salon Vivatech (Porte de Versailles) le samedi 20 juin. Si vous souhaitez la rencontrer, merci de postuler sur l'offre et nous vous contacterons si votre profil correspond.\n\nLa Compagnie des Signaux renforce ses équipes et recrute un Ingénieur Electronique H/F en CDI, pour son site des Ulis (91) - siège social.\n\nLe poste que nous vous proposons : \n\nRattaché au département Products Development, au sein du groupe chargé du développement hardware, vous assurez le développement des cartes électroniques et des FPGA/SoC pour les différentes lignes de produits et plateformes de signalisation ferroviaire bord et sol du groupe.\n\nVos principales missions incluent :\n\n- L'élaboration des spécifications techniques des équipements et/ou des cartes électroniques\n- La conception de l'architecture électronique et les choix technologiques, considérant les contraintes d'intégration, d'environnements (thermique, mécanique, CEM), de sécurité (SIL4) et d'industrialisation\n- La réalisation des schémas électriques et les simulations sous Cadence Orcad Capture / PSpice\n- La spécification et le suivi du placement/routage sous Cadence Allegro\n- Le développement de FPGA/SoC sur cibles Xilinx/Lattice\n- La mise au point, les tests d'intégration et de validation des prototypes en laboratoire\n- La gestion de l'interface avec les équipes Système, Logiciel, Projets, RAMS, V&V, Industrialisation, Qualité et Certification \n- La production de la documentation associée au matériel\n\nVous pourrez également être amenés à :\n\n- Suivre des développements confiés à des fournisseurs extérieurs\n- Participer à l'élaboration d'offres techniques\n- Fournir un support technique aux équipes de production, déploiement et maintenance\n\nModalités de travail : \n\n- Temps complet\n- Télétravail partiel possible (jusqu'à 2 jours par semaine)\n\nLocalisation du poste : \n\n- Au cœur du Parc d'activités de Courtabœuf : 4 avenue du Canada, 91940 Les Ulis\n- Accès facilité : \n- En voiture depuis l'autoroute A10/A11 et la N118\n- En bus n°4602 depuis la gare RER de Massy Palaiseau (RER B et C)\n\nPourquoi nous rejoindre ?\n\n- Contribuer au développement d'un secteur d'avenir et participer à l'évolution d'un mode de transport plus durable et plus respectueux de l'environnement, répondant aux grands enjeux du XXIème siècle\n- Participer à ce marché de la signalisation ferroviaire en forte croissance dont la large palette de métiers qui le compose (Système, Hardware, Software, Communication, Cybersécurité, .) permet d'envisager nombre de parcours professionnels et d'expériences au service la sécurité et l'efficacité des transports\n- Evoluer au sein d'une entreprise responsable et engagée en faveur de grandes causes telles que la préservation de l'environnement (nos solutions contribuent aux objectifs de décarbonisation définis lors de la COP21 à Paris en 2015, notamment par la réduction des émissions de gaz à effet de serre grâce à nos technologies), la diversité, l'égalité des chances et l'emploi des personnes en situation de handicap\n- Intégrer une entreprise bienveillante, à taille humaine et multiculturelle, qui prône un équilibre entre la vie professionnelle et la vie privée\n- Rejoindre un employeur qui décroche depuis 9 ans la labellisation HappyTrainees et dont le taux de recommandation des stagiaires et alternants s'élève à 90% en 2025\n- Bénéficier d'une politique de télétravail, d'un plan de formation et d'un accompagnement de votre carrière dans l'objectif de développer vos compétences et de construire votre avenir professionnel",
+    "metier": "Technicien / Technicienne en électricité et électronique études et développement",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ferroviaire",
+      "Intelligence artificielle"
+    ],
+    "salaire_min": 2026,
+    "salaire_max": 2026,
+    "teletravail": "télétravail partiel",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La Compagnie des Signaux renforce ses équipes et recrute un Ingénieur Electronique H/F en CDI, pour son site des Ulis (91) - siège social.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:30.928015",
+  "input_hash": "1b51295dbee3e8f7307e630eff9ce462582873096ca4bfcb11b0406d9d0b1132",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

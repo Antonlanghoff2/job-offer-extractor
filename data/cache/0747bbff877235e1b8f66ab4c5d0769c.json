@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3382534",
+  "value": {
+    "id": "3382534",
+    "intitule": "Lead Technique (H/F)",
+    "entreprise": "",
+    "territoire": "82 - Montauban",
+    "ville": "82121",
+    "code_postal": "82000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3382534",
+    "description": "Au sein de l'équipe R&D, vous occupez un rôle clé dans la conception et l'évolution de solutions logicielles innovantes intégrant vision industrielle, intelligence artificielle et robotique. Véritable référent technique, vous intervenez à la fois sur les choix d'architecture, le développement des solutions et l'accompagnement d'une équipe d'ingénieurs. Vos responsabilités Concevoir et faire évoluer les architectures logicielles des systèmes développés ; Traduire les besoins fonctionnels en solutions techniques robustes et performantes ; Piloter techniquement une équipe Accompagner les développements et animer les revues de code ; Développer des solutions en C#, C++ et Python ; Concevoir et intégrer des pipelines de vision par ordinateur (détection, segmentation, tracking) ; Participer au déploiement et à l'intégration de modèles de Deep Learning ; Assurer l'interfaçage avec des équipements industriels, caméras, automates et systèmes robotisés ; Participer aux phases de validation, de tests et de mise au point des solutions ; Contribuer à la documentation et au transfert de compétences auprès des équipes internes. De formation Ingénieur en informatique ou équivalent, vous justifiez d'au moins 5 années d'expérience dans le développement de systèmes logiciels complexes. Vous avez idéalement évolué dans des environnements liés à la robotique, la vision industrielle, l'automatisation ou les systèmes embarqués. Vous disposez de solides compétences en architecture logicielle, développement orienté objet et intégration de solutions de vision par ordinateur. Au-delà de l'expertise technique, vous avez déjà occupé un rôle de référent technique ou de lead auprès d'une équipe d'ingénieurs. Rigoureux, curieux et force de proposition, vous appréciez les environnements innovants où les défis techniques sont nombreux et variés.",
+    "metier": "Architecte systèmes et réseaux",
+    "niveau": "intermediaire",
+    "competences": [
+      "Deep learning",
+      "Intelligence artificielle",
+      "Python",
+      "Vision",
+      "Vue.js",
+      "Vision par ordinateur",
+      "Déploiement de modèles",
+      "Documentation technique",
+      "Automatisation de pipelines",
+      "Cybersécurité",
+      "Data Engineering",
+      "Pipelines de données",
+      "Tests automatisés"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "De formation Ingénieur en informatique ou équivalent, vous justifiez d'au moins 5 années d'expérience dans le développement de systèmes logiciels complexes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:10.825397",
+  "input_hash": "69ef80b416a129a1c1debd92bdd32f66d6f4db23f44c2b4c03ecddc8e9209b85",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

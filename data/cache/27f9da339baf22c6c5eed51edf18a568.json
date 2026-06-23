@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:3343083",
+  "value": {
+    "id": "3343083",
+    "intitule": "Ingénieur(e) R&D en Intelligence Artificielle H/F",
+    "entreprise": "CATIE",
+    "territoire": "33 - Talence",
+    "ville": "33522",
+    "code_postal": "33400",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3343083",
+    "description": "À l’interface entre les laboratoires de recherche et les entreprises, vous travaillerez à la maturation des technologies émergentes. Vos principales missions : · Réaliser une veille active sur les sujets de pointe (Agentique, Séries temporelles, Vision par ordinateur), · Explorer et adapter des bibliothèques open-source et des codes de chercheurs, · Réaliser des preuves de concept (PoC) et des prototypes exploratoires pour des PME/ETI, · Recueillir le besoin client et le transcrire en solutions techniques innovantes, · Participer à notre R&amp;D interne en avance de phase sur les sujets émergents, · Vulgariser vos travaux et partager vos connaissances en équipe. De formation supérieure en informatique ou data science (Ecole d’ingénieur, Master 2 ou Doctorat), vous avez de bonnes compétences en développement logiciel. Vous savez explorer l'état de l'art et adapter du code issu de la recherche pour répondre à des problématiques concrètes. Vous êtes à l’aise en Python et avec les environnements Linux. Vous savez vous adapter à de nombreuses technologies. Expérience souhaitée : 1 an minimum en R&amp;D. Connaissances requises : · Python, · IA au sens large (Machine Learning, Deep Learning) · Lecture et implémentation de papiers de recherche · Anglais technique (veille internationale) Connaissances appréciées : · Environnement Linux · Frameworks : PyTorch, Scikit-Learn, Hugging Face, Git, Docker · Outils de Dataviz Curieux(se), rigoureux(se) et autonome, vous avez une appétence naturelle pour la veille technologique. Vous possédez une excellente capacité à vulgariser des concepts complexes et un bon sens relationnel pour échanger avec nos prospects et clients. POURQUOI NOUS REJOINDRE ? · Diversité et Sens : Oubliez la monotonie. Vous travaillerez sur des projets variés (industrie 4.0, environnement, défense, santé) avec un impact direct sur le tissu économique régional. · Culture de l'Apprentissage : Nous encourageons la montée en compétences continue. Vous bénéficierez de l’appui de nos seniors experts et d’un accès privilégié à des ressources matérielles de pointe (serveurs GPU type A100). · Environnement Stimulant : Vous évoluerez au cœur d'un écosystème unique, à la croisée des chemins entre l’effervescence de la recherche académique et l'agilité du monde entrepreneurial. · Équilibre de Vie : Nous valorisons le bien-être de nos collaborateurs avec une politique de télétravail flexible et un environnement de travail collaboratif au sein du campus de Talence. · Veille Intégrée : La veille technologique n'est pas un bonus chez nous, c'est une mission à part entière intégrée à votre temps de travail. INFORMATIONS COMPLÉMENTAIRES Rémunération : 38 – 45 K€ (selon profil et expérience) Lieu de travail : locaux du CATIE (Talence), télétravail possible (jusqu’à 3 jours de télétravail par semaine). Contrat : · Contrat CDI (36h36 hebdomadaire soit 7h18 par jour) · 25 jours de congés payés + 15 jours de repos compensateurs · Convention Collective Nationale de la Métallurgie Avantages : · Tickets restaurant d’une valeur de 10€ pris en charge à 60% · Remboursement à 75 % des frais de transport en commun de la Métropole de Bordeaux · Mutuelle famille et prévoyance avec un haut niveau de garanties · Compte Épargne Temps (jusqu’à 10 jours) · Formation continue, développement de compétences · Travail en équipe pluridisciplinaire",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Deep learning",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Machine learning",
+      "PyTorch",
+      "Python",
+      "Vision",
+      "scikit-learn",
+      "Travail en équipe",
+      "Résolution de problèmes",
+      "Model drift"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "De formation supérieure en informatique ou data science (Ecole d’ingénieur, Master 2 ou Doctorat), vous avez de bonnes compétences en développement logiciel.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "De formation supérieure en informatique ou data science (Ecole d’ingénieur, Master 2 ou Doctorat), vous avez de bonnes compétences en développement logiciel.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "De formation supérieure en informatique ou data science (Ecole d’ingénieur, Master 2 ou Doctorat), vous avez de bonnes compétences en développement logiciel.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 3,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:01.077851",
+  "input_hash": "59ec927ffa8483128605ade303b17c7741062215cd99192f561eb8c750aade68",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

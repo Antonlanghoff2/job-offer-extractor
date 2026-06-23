@@ -1,0 +1,145 @@
+{
+  "key": "trends:69 - AMPLEPUIS",
+  "value": {
+    "territoire": "69 - AMPLEPUIS",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Data engineering": 1,
+      "Intelligence artificielle": 1,
+      "Model Drift": 1,
+      "Protection Des Données": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Protection des données": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Protection Des Données": {
+        "Protection des données": 1
+      }
+    },
+    "metiers": {
+      "Technicien / Technicienne méthodes": 1
+    },
+    "niveau": {
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Data engineering",
+        "Model Drift",
+        "Protection Des Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209JBPH",
+        "intitule": "technicien méthodes et programmation (H/F)",
+        "entreprise": "SOUS TRAITANCE INDUSTR & AGRICOLE",
+        "territoire": "69 - AMPLEPUIS",
+        "contrat": "CDI",
+        "date": "2026-06-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JBPH"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209JBPH",
+        "intitule": "technicien méthodes et programmation (H/F)",
+        "entreprise": "SOUS TRAITANCE INDUSTR & AGRICOLE",
+        "territoire": "69 - AMPLEPUIS",
+        "contrat": "CDI",
+        "date": "2026-06-05",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JBPH"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T18:59:38.036219",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

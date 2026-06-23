@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:209VKDY",
+  "value": {
+    "id": "209VKDY",
+    "intitule": "Analyste Programmeur (H/F)",
+    "entreprise": "SUP INTERIM",
+    "territoire": "80 - FRIVILLE ESCARBOTIN",
+    "ville": "80368",
+    "code_postal": "80130",
+    "contrat": "Intérim - 18 Mois",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209VKDY",
+    "description": "Vous êtes un professionnel du développement d'ERP...votre agence SUP INTERIM Friville (80), a l'offre qu'il vous faut en tant qu'Analyste Programmeur, développement sous WINDEV. \n\nVos missions : \n Participer à la rédaction des cahiers des charges fonctionnels et techniques.\n Développer, améliorer et paramétrer les applications.\n Assurer la maintenance corrective et évolutive des logiciels existants.\n Concevoir, coder et tester de nouvelles applications selon les besoins internes.\n Participer à la modernisation et à la migration des anciens systèmes.\n Former les utilisateurs aux nouvelles fonctionnalités et rédiger les guides pratiques.\n Contribuer à la mise en place et à l'intégration de nouveaux logiciels ou modules.\n Mettre à jour les référentiels techniques et les manuels utilisateurs.\n\nInformations complémentaires : \n\n Horaires de journée du lundi au vendredi\n Salaire selon profil\n Bac +2/5 dans le domaine achat/commercial/logistique + première expérience demandée",
+    "metier": "Analyste d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Cahier des charges",
+      "Sécurité informatique",
+      "Qualité des données",
+      "Gestion de projet",
+      "Cybersécurité",
+      "Déploiement de modèles",
+      "MLOps",
+      "Optimisation des performances",
+      "Veille technologique"
+    ],
+    "salaire_min": 80000,
+    "salaire_max": 80000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac +2/5 dans le domaine achat/commercial/logistique + première expérience demandée",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "6 Mois",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:20.508993",
+  "input_hash": "536e9ac67066385e28d699aa5343acb841c9d0de4118b7c783d9bcc9f0ad2216",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

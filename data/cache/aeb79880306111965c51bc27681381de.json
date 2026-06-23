@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3895030",
+  "value": {
+    "id": "3895030",
+    "intitule": "Analyste Programmeur(se) F/H (H/F)",
+    "entreprise": "Safran",
+    "territoire": "03 - Montluçon",
+    "ville": "03185",
+    "code_postal": "03100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3895030",
+    "description": "Pour rejoindre la Direction Industrielle du site de Montluçon, nous recherchons un(e) analyste programmeur(se) expérimenté(e) en bases de données relationnelles SQL Server et en développement d'applications web avec ASP.NET. Vous serez en charge , en autonomie, de la surveillance des données pour garantir leur conformité aux règles définies. Vous participerez également au développement d'applications de production client léger, de la spécification à l'acceptation qualité.\nDe formation Bac + 2 en informatique de gestion, développement logiciel ou domaine équivalent, avec au minimum 8 années d'expérience réussies.\n*Compétences techniques requises :\n oSolide maîtrise des bases de données relationnelles SQL Server.\n oCompétences en développement web : C#, JavaScript, HTML/CSS.\n oExpertise dans l'utilisation du framework ASP.NET.\n oConnaissance de Transact SQL pour la gestion des bases de données.\n oLa connaissance du framework Blazor et de l'ORM Entity Framework serait un plus.\nQualités recherchées :\n *Capacité à travailler de manière autonome et en équipe.\n *Aptitude à communiquer efficacement avec des équipes techniques et non techniques. \n *Aptitude à résoudre des problèmes techniques complexes.\n *Souci de la qualité des livrables et rigueur dans le respect des délais.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "CSS",
+      "Délais",
+      "Développement web",
+      "HTML",
+      "JavaScript",
+      "SQL",
+      "Application web",
+      "Data Engineering",
+      "Gestion de projet",
+      "Product Management",
+      "Analyse de données",
+      "Model drift",
+      "Protection des données",
+      "Git"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac + 2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac + 2 en informatique de gestion, développement logiciel ou domaine équivalent, avec au minimum 8 années d'expérience réussies.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:44.190361",
+  "input_hash": "6aab1eedb625a3febf30a7d49f8b70993b89cd2f72121d15ca53cb5a5870a107",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

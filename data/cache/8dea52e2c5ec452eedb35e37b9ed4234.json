@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:1857445",
+  "value": {
+    "id": "1857445",
+    "intitule": "Ingénieur senior full stack .NET Core/Angular full remote F/H - Bealink",
+    "entreprise": "Bealink",
+    "territoire": "75 - Paris 15e Arrondissement",
+    "ville": "75115",
+    "code_postal": "75015",
+    "contrat": "CDI",
+    "date_creation": "2026-04-23",
+    "date": "2026-04-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1857445",
+    "description": "En collaboration avec le CTO et l’équipe de R&D vous interviendrez sur les sujets suivants :\n \n \n \n- Étudier, concevoir, développer, tester et maintenir les composants techniques associés \n- Analyse des besoins et des contraintes techniques \n- Gestion de projet technique avec rédaction de spécifications, documentation et recette des livrables clients \n- Développement d’outils et de prototypes \n \n \nNotre stack-techno :\n \n \n \n- Aspnet core / Dotnet core \n- Angular \n- MAUI \n- MySQL \n- Azure: PaaS, SaaS, Serverless.Qualifications\n \n \n \n- Diplômé d’une école d’Ingénieur en informatique, vous êtes à la recherche d’une entreprise innovante qui vous formera et vous donnera d’importantes responsabilités. \n- 10 ans d’expérience mini sur un poste similaire. \n- Bon niveau d’anglais, à l’oral comme à l’écrit. \n- Vous aimez être challengé par des problématiques et technologies nouvelles. \n- Vous avez le souci du détail et une sensibilité à l’UX et l’UI. \n- Vous possédez des notions de gestion de projets. \n \n- Des connaissances des applications B2B ou du monde de l’e-learning sont un plus. \n \n \n \nAvantages \n \n \n \n \n \n \n \n12 RTT / an. \n \nFull remote possible\n \n \nTickets restaurants. \n \n \nPlan d’intéressement aux bénéfices de l’entreprise. \n \n \nPlan d'épargne salariale.  \n \n \nPrise en charge de l'abonnement transport public à 75%.  \n \n \nForfait mobilité durable.  \n  \n \nSubventions associatives. \n \n \nEvènements collaborateurs entreprise (petits-déjeuners, afterworks, soirées, séminaires,…). \n \n \nRejoindre une équipe soudée, enthousiaste, axée sur le partage et la montée en compétence.",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "junior",
+    "competences": [
+      "Azure",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "MySQL",
+      "Cahier des charges"
+    ],
+    "salaire_min": 10000,
+    "salaire_max": 10000,
+    "teletravail": "remote",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplômé d’une école d’Ingénieur en informatique, vous êtes à la recherche d’une entreprise innovante qui vous formera et vous donnera d’importantes responsabilités.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "10 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:54.308873",
+  "input_hash": "61d43aaa4b51135bbb6386d3b80b1386f921ba0b4797811544088d46dd6afa60",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:209YKKL",
+  "value": {
+    "id": "209YKKL",
+    "intitule": "(ALTERNANCE) - Data Engineer (H/F)",
+    "entreprise": "AUTOMOTIVE CELLS COMPANY SE",
+    "territoire": "62 - Billy-Berclau",
+    "ville": "62132",
+    "code_postal": "62138",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209YKKL",
+    "description": "En rejoignant ACC, vous contribuez à façonner l'avenir de la mobilité électrique : nos batteries équipent déjà les PEUGEOT E-3008 et E-5008, Opel Grandland, DS N°8, Citroën C5 Aircross et Jeep Compass - et bientôt Mercedes !\n\nDescription du poste\n\nAu sein du périmètre du processus de fabrication des cellules :\n\n * Collecter, nettoyer et analyser les données provenant de nos machines, des instruments de mesure en ligne et hors ligne, du système MES, etc., afin d'identifier des tendances et de générer des informations pertinentes.\n * Dans le cadre d'un premier projet d'intégration, il/elle devra travailler sur l'étude de l'influence de l'humidité de l'air ambiant sur la qualité du revêtement (coating).\n * Soutenir les besoins d'analyse des Ingénieurs Process et des équipes de Production afin de faciliter la montée en cadence de nos gigafactories.\n * Développer des outils permettant d'analyser les lots de production ainsi que les indicateurs de défaillance.\n * Assister ou piloter des activités locales liées aux projets de données, nécessitant une présence et du temps sur le terrain (atelier de production).\n * Collaborer avec d'autres équipes sur des activités transverses liées aux données, couvrant plusieurs étapes du processus de fabrication.\n * Recueillir et consolider les nouveaux besoins métier dans le périmètre concerné.\n * Participer aux réunions d'équipe afin de discuter de l'avancement des projets, des prochaines étapes et de communiquer les résultats obtenus.\n\nIndicateurs clés de performance (KPI) :\n\n * Présentation régulière de l'avancement des projets et participation aux réunions de suivi.\n * Réalisation de reportings réguliers (présentations PowerPoint, rapports, etc.).\n * Développement d'outils partageables pour les utilisateurs, déploiement de tableaux de bord (dashboards) et mise à disposition de solutions de suivi des performances. \n\nVotre profil correspond si :\n\n * Votre formation est orientée vers l'analyse de données, avec une aisance dans la gestion de grands volumes de données provenant de bases de données multiples, l'étude de séries temporelles, l'analyse de corrélation, la visualisation de données, les statistiques de base, les méthodes de résolution de problèmes et l'analyse des causes racines (root cause analysis).\n * Vous possédez un dîplome de niveau Bac+3 (Bachelor) dans un domaine lié à la donnée (data), tel que les statistiques, l'informatique, les mathématiques ou une discipline équivalente.\n * Vous maitrisez les outils d'analyse de données tels que Python, SQL et Power BI.\n * Vous maitrisez l'anglais oral et écrit.\n\n\nPourquoi nous rejoindre ?\n\n Des équipements de haute technologie \n Primes en fonction du rythme\n Prime panier\n Intéressement \n CSE attractif : cartes cadeaux, chèques vacances, billetterie, sorties organisées...\n Indemnités kilométriques\n Prime cooptation\n 2 offres de livraison repas + frigos connectés\n Environnement multiculturel et inclusif \n Accès à la plateforme goFluent pour développer vos compétences linguistiques\n Equipements récents et de haute technologie",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Pilotage d'activités",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift",
+      "API",
+      "Pipelines de données",
+      "Tests automatisés"
+    ],
+    "salaire_min": 3008,
+    "salaire_max": 3008,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous possédez un dîplome de niveau Bac+3 (Bachelor) dans un domaine lié à la donnée (data), tel que les statistiques, l'informatique, les mathématiques ou une discipline équivalente.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous possédez un dîplome de niveau Bac+3 (Bachelor) dans un domaine lié à la donnée (data), tel que les statistiques, l'informatique, les mathématiques ou une discipline équivalente.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:16.477836",
+  "input_hash": "2f3021c062a72d56d1f597ee3ac03b64b9de5622a7c9971e0a9b91f0c548855f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

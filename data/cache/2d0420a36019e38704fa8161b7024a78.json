@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:4067119",
+  "value": {
+    "id": "4067119",
+    "intitule": "Ingénieur(e) Intégration Vérification et Validation - Spatial - Toulouse (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-21",
+    "date": "2026-06-21",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4067119",
+    "description": "Nous recrutons un(e)&#xa0;Ingénieur(e) IVV&#xa0;pour rejoindre notre&#xa0;Business Unit Espace&#xa0;au sein de notre&#xa0;Agence Space Consultancy &amp; Engineering, spécialisée dans le support et les services aux principaux acteurs du spatial en Europe. Dans le cadre de la réalisation et du suivi de leurs grands programmes, nous intervenons sur l'ensemble des métiers du secteur spatial : segment sol de contrôle, mécanique spatiale, cybersécurité, communications, traitement d'image...Nous accompagnons nos clients dans toutes les étapes des projets : développement, intégration, qualification et opérations à travers des prestations d'expertise, d'architecture et de support technique couvrant un large spectre de compétences.Vos missions Dans le cadre d'un renfort d'équipe vous intervenez sur des tâches d'IVV des produits ICF/PCF/MCIF. Dans ce cadre, vos missions sont les suivantes :&#xa0;Réaliser l'acceptance produit MCIF, depuis la préparation jusqu'à la validation finaleConduire les tests d'intégration libre, assurer le suivi et le management des anomalies (monitoring, contrôle, sécurité)Rédiger la documentation associée aux rapports d'acceptance et aux activités de testsAdministrer la plateforme Linux et réseau (configuration, supervision, support aux activités IVV)Assurer la maintenance et l'évolution des outils et rédiger la documentation de qualification des outilsRédiger les procédures de test, développer des scripts Python, exécuter les Dry Runs et produire les rapports de testsProduire les récurrents, construire les versions CPF, réaliser leur installation et validation, et assurer la documentation associéePréparer, exécuter et analyser des campagnes de testsL'environnement techniqueProduits ICF / PCF / MCIFLinuxGitBashPython&#xa0;",
+    "metier": "Responsable de l'emploi des forces armées",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Vision",
+      "Tests automatisés",
+      "Documentation technique",
+      "Backend"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recrutons un(e)&#xa0;Ingénieur(e) IVV&#xa0;pour rejoindre notre&#xa0;Business Unit Espace&#xa0;au sein de notre&#xa0;Agence Space Consultancy &amp; Engineering, spécialisée dans le support et les services aux principaux acteurs du spatial en Europe.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:36.702813",
+  "input_hash": "546f409df9bc4e7723ccf10adc620f2a753afa97d5b03f4197abe54e0e4d29e4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

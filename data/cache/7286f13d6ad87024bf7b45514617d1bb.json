@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:3743762",
+  "value": {
+    "id": "3743762",
+    "intitule": "Ingénieur Projets IEG Nucléaire (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Marseille 8e Arrondissement",
+    "ville": "13208",
+    "code_postal": "13008",
+    "contrat": "CDI",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3743762",
+    "description": "Rejoindre B-HIVE Engineering , c'est? Intégrer une société d'ingénierie multi-spécialisée, qui place l'humain et l'innovation au coeur de ses projets. Depuis 2017, nous construisons avec nos collaborateurs une aventure fondée sur : - L'entraide et l'esprit d'équipe - La bienveillance et la stabilité - L'épanouissement et la progression professionnelle Chez B-HIVE, nous croyons qu'un collaborateur épanoui est un collaborateur performant. C'est pourquoi nous offrons un environnement stimulant, des opportunités de formation et un accompagnement durable dans votre carrière. Le poste : Dans le cadre de notre croissance, nous recherchons un Ingénieur Projets BE IEG - Nucléaire (H/F) pour intervenir chez l'un de nos clients, acteur majeur du secteur de l'énergie et des grands projets industriels. Le poste est basé à Marseille (13) dans la région PACA. Vous interviendrez au sein d'équipes projets sur des activités d'études et de coordination technique liées à des modifications d'installations électriques et contrôle-commande dans un environnement nucléaire exigeant. Ci-dessous vos principales missions : Analyser les cahiers des charges et les exigences de sûreté associées aux projets. Piloter et coordonner les études techniques dans le domaine électricité / contrôle-commande. Travailler en binôme avec un Chargé d'Études sur les modifications techniques. Assurer l'interface entre les équipes études et travaux au sein de SOLINE. Suivre l'avancement des affaires, la planification et les évolutions des données d'entrée. Identifier les impacts techniques et organisationnels liés aux modifications en cours d'études. Collaborer avec la cellule planification et les différentes parties prenantes du projet. Garantir le respect des exigences qualité, sûreté, sécurité et environnement. Profil recherché : - Formation Bac +2 à Bac +5 en électrotechnique, génie électrique ou équivalent - Vous justifiez d'au moins 3 ans d'expérience en environnement nucléaire - Vous disposez impérativement d'une expérience sur des projets EDF nucléaires - Vous avez une connaissance des centrales EDF, idéalement des paliers N4 ou 900 MWe. - Vous possédez de solides compétences en électrotechnique et idéalement en contrôle-commande",
+    "metier": "Ingénieur concepteur / Ingénieure conceptrice informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Cahier des charges",
+      "Gestion de projet",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Qualité des données"
+    ],
+    "salaire_min": 2017,
+    "salaire_max": 2017,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Le poste : Dans le cadre de notre croissance, nous recherchons un Ingénieur Projets BE IEG - Nucléaire (H/F) pour intervenir chez l'un de nos clients, acteur majeur du secteur de l'énergie et des grands projets industriels.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +2",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil recherché : - Formation Bac +2 à Bac +5 en électrotechnique, génie électrique ou équivalent - Vous justifiez d'au moins 3 ans d'expérience en environnement nucléaire - Vous disposez impérativement d'une expérience sur des projets EDF nucléaires - Vous avez une connaissance des centrales EDF, idéalement des paliers N4 ou 900 MWe. - Vous possédez de solides compétences en électrotechnique et idéalement en contrôle-commande",
+        "confidence": 0.7
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Profil recherché : - Formation Bac +2 à Bac +5 en électrotechnique, génie électrique ou équivalent - Vous justifiez d'au moins 3 ans d'expérience en environnement nucléaire - Vous disposez impérativement d'une expérience sur des projets EDF nucléaires - Vous avez une connaissance des centrales EDF, idéalement des paliers N4 ou 900 MWe. - Vous possédez de solides compétences en électrotechnique et idéalement en contrôle-commande",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:31.863639",
+  "input_hash": "8b072bee37ef99e86a74c8f2e585a0e1a1cde3411bc5593311972ca5c7f3ecda",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

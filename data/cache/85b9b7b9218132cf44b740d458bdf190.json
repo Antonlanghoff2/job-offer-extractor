@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:3660591",
+  "value": {
+    "id": "3660591",
+    "intitule": "Alternant IA (H/F)",
+    "entreprise": "UCANSS",
+    "territoire": "64 - Bayonne",
+    "ville": "64102",
+    "code_postal": "64100",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3660591",
+    "description": "Contexte\n\nLa Caisse Primaire d'Assurance Maladie (CPAM) est un acteur majeur du système de santé et plus globalement de la protection sociale. Elle accompagne de nombreux assurés sociaux pour l'accès aux droits et aux soins.\n\nRejoindre la CPAM, c'est s'engager au sein d'un collectif animé par des valeurs fortes : solidarité, inclusion, professionnalisme et engagement dans la transition écologique.\n\nMission/Activités\n\n * Construction d'agents IA et automatisation de processus métier\n * Développement de scripts, pipelines RAG et intégrations d'outils IA\n * Expérimentation de workflows agentiques de type LangChain / LangGraph, et d'automatisations métier avec n8n ou solutions équivalentes\n * Appui technique direct au noyau dur du Club IA (accompagnement, tests, déploiement)\n * Contribution a la documentation technique des cas d'usage produit\n\nLes candidats retenus devront se conformer aux exigences de la Politique de Sécurité du Système d'Information de l'organisme\n\nLa CPAM est engagée en faveur de la diversité et mène une politique active en faveur des personnes en situation de handicap\n\nCompétences\n\n * Maîtrise des fondamentaux du développement (Python, API, GIT, intégration LLM)\n * Notions de RAG, prompt engineering, agents IA, LangChain/LangGraph ou solutions équivalentes.\n * Capacité à installer, configurer et tester des solutions IA en environnement sécurisé : Python, API, n8n, bases vectorielles ou outils équivalents\n * Un sens de l'organisation, de la rigueur et une gestion des priorités,\n * Maîtrise des fondamentaux du développement (Python, API, GIT, intégration LLM)\n * Notions de RAG, prompt engineering, agents IA, LangChain/LangGraph ou solutions équivalentes.\n * Capacité à installer, configurer et tester des solutions IA en environnement sécurisé : Python, API, n8n, bases vectorielles ou outils équivalents\n * Un sens de l'organisation, de la rigueur et une gestion des priorités,\n\nFormation\n\nMinimum obtenu : BAC+2\n\nInformations complémentaires\n\nAlternance (1 ou 2ans)\n\nPrise de fonction : septembre 2026\n\n \n\nDiversité et inclusion, la CPAM de Bayonne s'engage : signature d'une charte LGBT+\n\nNotre site est labellisé, employeur pro vélo -> niveau or",
+    "metier": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "LangChain",
+      "Python"
+    ],
+    "salaire_min": 26000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Minimum obtenu : BAC+2",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:03.564646",
+  "input_hash": "6373037b56d5f358fe2558fafbfb0150ad3e9677156593258e9078611bb0fbfc",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

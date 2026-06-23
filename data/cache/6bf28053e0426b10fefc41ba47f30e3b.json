@@ -1,0 +1,137 @@
+{
+  "key": "trends:06 - Carros",
+  "value": {
+    "territoire": "06 - Carros",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Analyse de données": 2,
+      "Data engineering": 2,
+      "Intelligence artificielle": 2
+    },
+    "competences_details": [
+      {
+        "nom": "Analyse de données",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Analyse de données": 2
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Data Engineering": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      }
+    ],
+    "competences_variants": {
+      "Analyse de données": {
+        "Analyse de données": 2
+      },
+      "Data engineering": {
+        "Data Engineering": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      }
+    },
+    "metiers": {
+      "Data Engineer": 2
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "Intérim - 3 Mois": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Analyse de données",
+        "Data engineering"
+      ],
+      [
+        "Intelligence artificielle",
+        "Analyse de données",
+        "Data engineering"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "1771966",
+        "intitule": "DATA MANAGER (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "06 - Carros",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-04-22",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1771966"
+      },
+      {
+        "id": "1560569",
+        "intitule": "DATA MANAGER (H/F)",
+        "entreprise": "",
+        "territoire": "06 - Carros",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-04-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1560569"
+      }
+    ],
+    "offers": [
+      {
+        "id": "1771966",
+        "intitule": "DATA MANAGER (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "06 - Carros",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-04-22",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1771966"
+      },
+      {
+        "id": "1560569",
+        "intitule": "DATA MANAGER (H/F)",
+        "entreprise": "",
+        "territoire": "06 - Carros",
+        "contrat": "Intérim - 3 Mois",
+        "date": "2026-04-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1560569"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:07:46.459000",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

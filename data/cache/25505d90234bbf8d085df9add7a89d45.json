@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:3977199",
+  "value": {
+    "id": "3977199",
+    "intitule": "Alternance - Ingénieur électronique - Programmation et tests F/H (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3977199",
+    "description": "En tant qu'alternant(e) Ingénieur électronique - Programmation et tests, vos missions seront les suivantes :Dans le cadre d'une maquette : Participer à la spécification système d'une solution de géolocalisation indoor,Mettre en œuvre la partie logicielle de la carte RP UWB,Interfacer une carte Raspberry Pi et une carte RP UWB en SPI,Tester et valider le montage électronique,Mettre en œuvre la carte RP depuis la carte Raspberry Pi,Développer un driver pour utiliser l'UWB sous Linux,Tester le driver.  Dans le cadre d'un développement produit : Participer aux tests d'une nouvelle carte électronique de puissance prototype,Participer aux tests en usine à Meylan et à la mise en service d'un système de commande de grappe à Maubeuge.",
+    "metier": "Contrôleur / Contrôleuse technique en électricité-électronique",
+    "niveau": "junior",
+    "competences": [
+      "Linux",
+      "Raspberry Pi",
+      "Qualité des données",
+      "Tests automatisés",
+      "MLOps"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'alternant(e) Ingénieur électronique - Programmation et tests, vos missions seront les suivantes :Dans le cadre d'une maquette : Participer à la spécification système d'une solution de géolocalisation indoor,Mettre en œuvre la partie logicielle de la carte RP UWB,Interfacer une carte Raspberry Pi et une carte RP UWB en SPI,Tester et valider le montage électronique,Mettre en œuvre la carte RP depuis la carte Raspberry Pi,Développer un driver pour utiliser l'UWB sous Linux,Tester le driver.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:40.442265",
+  "input_hash": "eaf4fe6f0d0216a5bcdb3de404ee850485c0c1b507af662ea204e0d1d0657e29",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

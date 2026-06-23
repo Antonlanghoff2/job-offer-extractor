@@ -1,0 +1,67 @@
+{
+  "tasks": {
+    "import_offers": {
+      "status": "success",
+      "started_at": "2026-06-22T18:49:33.909974",
+      "completed_at": "2026-06-22T18:49:51.346896",
+      "stats": {
+        "total_offers": 896,
+        "new_offers": 10,
+        "updated_offers": 886,
+        "errors": 0
+      }
+    },
+    "normalize_offers": {
+      "status": "success",
+      "started_at": "2026-06-22T18:49:51.349600",
+      "completed_at": "2026-06-22T18:49:55.582065",
+      "stats": {
+        "total_offers": 4518,
+        "normalized": 4518,
+        "errors": 0
+      }
+    },
+    "extract_offer_data": {
+      "status": "success",
+      "started_at": "2026-06-22T18:49:56.200196",
+      "completed_at": "2026-06-22T18:54:33.934112",
+      "stats": {
+        "total_offers": 4518,
+        "processed": 4518,
+        "skipped": 0,
+        "errors": 0
+      }
+    },
+    "aggregate_trends": {
+      "status": "success",
+      "started_at": "2026-06-22T18:54:33.935331",
+      "completed_at": "2026-06-22T19:07:55.901481",
+      "stats": {
+        "total_offers": 4518,
+        "territories_processed": 1037,
+        "errors": 0
+      }
+    },
+    "compute_dashboards": {
+      "status": "success",
+      "started_at": "2026-06-22T19:07:55.902691",
+      "completed_at": "2026-06-22T19:07:57.015521",
+      "stats": {
+        "dashboards_computed": 1037,
+        "errors": 0
+      }
+    },
+    "compute_matches": {
+      "status": "success",
+      "started_at": "2026-06-22T19:07:57.017823",
+      "completed_at": "2026-06-22T19:07:57.330583",
+      "stats": {
+        "total_users": 0,
+        "users_processed": 0,
+        "matches_computed": 0,
+        "errors": 0
+      }
+    }
+  },
+  "last_refresh": "2026-06-22T19:07:57.330864"
+}

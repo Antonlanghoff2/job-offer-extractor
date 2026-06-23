@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:3450864",
+  "value": {
+    "id": "3450864",
+    "intitule": "Data scientist (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "Intérim - 6 Mois",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3450864",
+    "description": "Description du poste :\nData Scientist ? Télédétection & Agriculture Carbone (H/F)\nToulouse ? Mission pour Airbus Defence & Space\nManpower recrute pour son client, Airbus Defence & Space, un Data Scientist spécialisé en télédétection, pour rejoindre des équipes innovantes travaillant sur des projets à fort impact environnemental. ?Au sein des équipes Satellite Data Science, vous contribuez au développement de solutions basées sur l'analyse d'images satellites et l'intelligence artificielle, appliquées à des enjeux concrets liés à l'agriculture durable et au climat.\nÀ ce titre, vous interviendrez notamment sur le suivi de l'évolution des terres (agriculture, prairies, forêts la détection de changements d'usage des sols (déforestation, conversion des terres la modélisation de l'impact carbone lié aux pratiques agricoles le développement de solutions pour des acteurs industriels, agricoles et assurantiels\nAu quotidien, vos responsabilités incluent l'analyse de séries temporelles d'images satellites multi-sources le développement et l'optimisation de modèles de machine learning / computer vision la conception de prototypes (Proof of Concept le croisement de données spatiales avec des données externes et clients l'évaluation des performances des modèles développés\nVous évoluerez dans un environnement collaboratif, aux côtés d'équipes pluridisciplinaires (data scientists, ingénieurs, chefs de projet). Votre profil Formation Bac+5 (école d'ingénieurs, Master ou doctorat) en data science, mathématiques appliquées, informatique, télédétection, agronomie ou domaine connexe Première expérience (1 à 3 ans) en data science appliquée Excellente maîtrise de Python et des outils de machine learning Expérience en traitement d'images (computer vision ou imagerie satellite)\nSerait un plus connaissances en systèmes d'information géographique (QGIS, ArcGIS expérience sur des environnements cloud (AWS, GCP ou Azure intérêt pour les sujets environnementaux, agricoles ou carbone\nPourquoi rejoindre ce projet Intervenir sur des projets à fort impact environnemental Travailler sur des technologies avancées en data et spatial Intégrer un environnement d'expertise reconnu à l'international Développer vos compétences sur des enjeux d'avenir (carbone, agriculture durable, données satellites Localisation : Toulouse Démarrage : juillet 26 jusqu'à décembre 26(renouvellement possible Télétravail : possible\nDans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicap",
+    "metier": "Data scientist",
+    "niveau": "junior",
+    "competences": [
+      "AWS",
+      "Azure",
+      "Imagerie",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Traitement D'images",
+      "Vision",
+      "Data Engineering",
+      "MLOps",
+      "Model drift",
+      "Backend",
+      "Qualité des données"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 3000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Votre profil Formation Bac+5 (école d'ingénieurs, Master ou doctorat) en data science, mathématiques appliquées, informatique, télédétection, agronomie ou domaine connexe Première expérience (1 à 3 ans) en data science appliquée Excellente maîtrise de Python et des outils de machine learning Expérience en traitement d'images (computer vision ou imagerie satellite)",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Votre profil Formation Bac+5 (école d'ingénieurs, Master ou doctorat) en data science, mathématiques appliquées, informatique, télédétection, agronomie ou domaine connexe Première expérience (1 à 3 ans) en data science appliquée Excellente maîtrise de Python et des outils de machine learning Expérience en traitement d'images (computer vision ou imagerie satellite)",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Votre profil Formation Bac+5 (école d'ingénieurs, Master ou doctorat) en data science, mathématiques appliquées, informatique, télédétection, agronomie ou domaine connexe Première expérience (1 à 3 ans) en data science appliquée Excellente maîtrise de Python et des outils de machine learning Expérience en traitement d'images (computer vision ou imagerie satellite)",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:04.561695",
+  "input_hash": "303751b78667980e2491238df851e50d6dd77ec2f881ed2cec5327af4e3fcf12",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

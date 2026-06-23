@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:3660235",
+  "value": {
+    "id": "3660235",
+    "intitule": "SOFTWARE DEVOPS ENGINEER F/H - Informatique industrielle (H/F)",
+    "entreprise": "AKKODIS FRANCE SAS",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3660235",
+    "description": "Descriptif du poste:\n\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région et recrute un Software DevOps Engineer en CDI. Ce poste s'adresse à des ingénieur(e)s passionné(e)s par l'automatisation et la gestion de pipelines CI/CD pour applications mobiles, dans un environnement technologique innovant du secteur IT. Vous évoluerez sur des projets stratégiques, notamment liés à l'intégration continue et au packaging d'applications mobiles.\n\nResponsabilités principales :\n \n \n \n* Automatiser les processus de build, test et déploiement\n* Gérer et maintenir les pipelines CI/CD afin d'assurer des cycles de livraison efficaces et fiables.\n* Collaborer avec les équipes de développement et de QA pour intégrer les pratiques DevOps.\n* Surveiller la performance des applications et la santé de l'infrastructure pour garantir la disponibilité.\n* Implémenter et gérer les systèmes de gestion de versions et les stratégies de branches.\n* Veiller à la conformité sécurité et aux meilleures pratiques lors des déploiements mobiles.\n* Résoudre les incidents liés aux environnements de build et de déploiement.\n* Optimiser l'infrastructure pour la scalabilité et la maîtrise des coûts.\n \n\nEnvironnement de travail :\n\n\n\nVous interviendrez sur des chaînes CI/CD modulaires dédiées aux applications natives iOS et Android, ainsi que sur des micro-services NodeJS et des applications web Angular hébergées sur un PaaS interne. L'environnement technique est dynamique, avec des outils et versions en évolution constante, nécessitant une grande réactivité et une veille technologique continue. La méthodologie Agile (SAFE) structure les interactions avec les équipes pluridisciplinaires.\n \n \n\nProfil recherché:\n\nDiplômé(e) d'une formation supérieure en informatique ou équivalent, vous justifiez de minimum 5 années d'expérience en DevOps, idéalement dans le secteur IT ou sur des projets mobiles. Vous maîtrisez les outils GitLab CI, Docker, Jenkins, Ansible et Python. Une connaissance approfondie des écosystèmes Apple/iOS et Android est un plus, ainsi qu'une expérience dans l'automatisation, l'API management et l'architecture CI/CD. Vous êtes à l'aise avec les pratiques Agile et possédez une forte capacité d'analyse, d'adaptation et de communication. La maîtrise des concepts de sécurité, du cloud (AWS, Azure, Google Cloud), des outils de monitoring (Prometheus, Grafana, ELK stack) et des frameworks de tests mobiles est appréciée.\n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Coûts",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "CI/CD",
+      "GitLab CI",
+      "Cybersécurité",
+      "Automatisation de processus",
+      "MLOps",
+      "Pipelines de données",
+      "Tests automatisés",
+      "Data Engineering",
+      "Product Management",
+      "Model drift",
+      "Monitoring de modèles",
+      "Sécurité informatique",
+      "Scalabilité"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ce poste s'adresse à des ingénieur(e)s passionné(e)s par l'automatisation et la gestion de pipelines CI/CD pour applications mobiles, dans un environnement technologique innovant du secteur IT.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 22,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:42.299303",
+  "input_hash": "c48f5b4f0f0d14a9fc7f6e3817005ecdafad3d37634563dc4f03ad45b4b8ffbe",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

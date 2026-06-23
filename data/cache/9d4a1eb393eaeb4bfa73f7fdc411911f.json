@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3759234",
+  "value": {
+    "id": "3759234",
+    "intitule": "INGENIEUR CARACTERISATION PRODUITS H/F",
+    "entreprise": "LYNRED",
+    "territoire": "38 - Veurey-Voroize",
+    "ville": "38540",
+    "code_postal": "38113",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3759234",
+    "description": "Votre mission consistera à prendre en charge la vérification et la validation des spécifications des modules et/ou des briques technologiques associées. À ce titre, vous appliquez les processus internes de validation, participez à la rédaction de la documentation associée et êtes responsable de la validation des nouveaux produits modules, incluant le pilotage des actions nécessaires et la coordination des intervenants pour le passage des jalons de maturité produit. Vous intervenez en interface avec les équipes R&amp;D, Électronique, Instrumentation et Systèmes d’Information. Vos principales responsabilités sont les suivantes : Validation des modules et des systèmes associés. Définir la stratégie de validation et rédiger les plans de tests en cohérence avec les spécifications produits. Anticiper les besoins en moyens instrumentaux (matériels et logiciels), formaliser les demandes auprès des équipes concernées et suivre la disponibilité des moyens de caractérisation. Planifier et piloter les activités de validation. Réaliser les caractérisations des différentes performances et fonctionnalités constituant un module. Analyser et interpréter les résultats de mesure. Rédiger les rapports de validation et contribuer à la revue des rapports produits par les autres membres de l’équipe. Communiquer les résultats et conclusions aux clients internes et externes. Validation des briques technologiques amont Définir et rédiger les stratégies de validation des briques technologiques. Réaliser les jeux de données nécessaires aux analyses. Exploiter et interpréter les résultats obtenus. Rédiger les rapports de validation et restituer les conclusions aux clients internes. Par ailleurs, vous pourrez être sollicité(e) pour apporter une expertise technique auprès des clients internes (production, qualité, support après-vente) et serez amené(e) à piloter ou animer des groupes de travail dédiés à la résolution de problématiques techniques relevant de votre périmètre. Issu(e) de formation ingénieur ou équivalent, avec une spécialisation en physiques, vous justifiez d'une expérience professionnelle de 5 ans minimum en caractérisation électro-optique ou optronique. Vous disposez de compétences techniques en : Caractérisation électronique, électro-optique, optique et systèmes embarqués Cycle de développement en V Traitement du signal et algorithmes de correction d’image Gestion de projet Outils et langages : Python, Matlab, C/C++, Azure DevOps La connaissance des technologies infrarouges constitue un atout. Qualités attendues : Rigueur, autonomie, esprit d’analyse et de synthèse, adaptabilité et sens du travail en équipe. Capacité à communiquer efficacement ses résultats, à l’écrit comme à l'oral",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Azure",
+      "Gestion de projet",
+      "Instrumentation",
+      "Intelligence artificielle",
+      "Optique",
+      "Python",
+      "Vue.js",
+      "Sécurité informatique",
+      "Analyse de données",
+      "Data Engineering",
+      "Résolution de problèmes",
+      "Monitoring de modèles",
+      "Pipelines de données",
+      "Documentation technique",
+      "Qualité des données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Issu(e) de formation ingénieur ou équivalent, avec une spécialisation en physiques, vous justifiez d'une expérience professionnelle de 5 ans minimum en caractérisation électro-optique ou optronique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:53.813408",
+  "input_hash": "4780a5639d9cfe1f5d03c50b5e484098fa9b9ecfa773f63e3faf48d12a6ba50b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

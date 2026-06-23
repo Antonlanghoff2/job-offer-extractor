@@ -28,6 +28,17 @@ from src.services.offer_repository import (
 )
 from src.trend_aggregation import aggregate_trends
 from src.user_portal import _current_profile_snapshot, _current_user_id, register_user_portal
+from src.skill_extraction import extract_skills_from_offer
+from src.cache_reader import (
+    get_precomputed_offers,
+    get_precomputed_trends,
+    get_territory_options as get_cached_territory_options,
+    get_last_refresh_time,
+    is_refresh_running,
+    get_cache_status,
+    has_precomputed_data,
+)
+from src.performance import timed_route, RouteTimer, _PERF_DEBUG
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -459,7 +470,19 @@ def build_live_state(
         enriched = dict(offer)
         source_offer = normalized_by_id.get(str(offer.get("id") or offer.get("id_offre") or ""))
         if source_offer:
-            enriched["competences"] = source_offer.get("competences", [])
+            structured_competences = source_offer.get("competences", [])
+            description = source_offer.get("description", "")
+            
+            extracted_skills = extract_skills_from_offer(
+                description,
+                structured_competences=structured_competences,
+            )
+            all_competences = list(dict.fromkeys(skill.canonical_name for skill in extracted_skills))
+            
+            enriched["competences"] = all_competences
+            enriched["competences_explicites"] = [s.canonical_name for s in extracted_skills if s.extraction_type == "explicit"]
+            enriched["competences_semantiques"] = [s.canonical_name for s in extracted_skills if s.extraction_type == "semantic"]
+            enriched["competences_implicites"] = [s.canonical_name for s in extracted_skills if s.extraction_type == "implicit"]
             enriched["ville"] = source_offer.get("ville", "")
             enriched["code_postal"] = source_offer.get("code_postal", "")
         if current_profile and source_offer:
@@ -467,10 +490,14 @@ def build_live_state(
                 match = compute_match(current_profile, source_offer, weights=matching_weights)
                 enriched["match_score"] = round(float(match.get("global_score") or 0.0), 2)
                 enriched["matching_skills"] = match.get("matching_skills", [])
+                enriched["missing_skills"] = match.get("missing_skills", [])
                 enriched["match_details"] = match
+                enriched["match_explanation"] = match.get("explanation", {})
             except Exception:
                 enriched["match_score"] = None
                 enriched["matching_skills"] = []
+                enriched["missing_skills"] = []
+                enriched["match_explanation"] = {}
         enriched_offers.append(enriched)
 
     enriched_offers.sort(
@@ -524,6 +551,150 @@ def build_live_state(
         "matching_weights": dict(matching_weights),
         "default_matching_weights": dict(DEFAULT_MATCHING_WEIGHTS),
         "matching_weights_error": "",
+    }
+
+
+def build_cached_state(
+    mots_cles: str,
+    territoire_type: str,
+    territoire: str,
+    distance: object,
+    page: int,
+    per_page: int,
+    periode_jours: int,
+    top_n: int,
+    matching_weights: Dict[str, float],
+) -> Dict[str, Any]:
+    """Construit l'état depuis les caches précalculés.
+
+    Cette fonction lit les données précalculées par src.jobs.refresh_all
+    au lieu de recalculer à chaque requête. Elle ne fait que filtrer,
+    trier et paginer les résultats.
+
+    Args:
+        mots_cles: Mots-clés de recherche.
+        territoire_type: Type de territoire (commune, departement, region, all).
+        territoire: Valeur du territoire.
+        distance: Distance pour la recherche par commune.
+        page: Numéro de page.
+        per_page: Nombre d'offres par page.
+        periode_jours: Période en jours.
+        top_n: Nombre de top éléments.
+        matching_weights: Pondérations du matching.
+
+    Returns:
+        Dictionnaire de contexte pour le rendu.
+    """
+    errors: List[str] = []
+    search_filters, territoire_label, normalized_territoire = _build_search_arguments(territoire_type, territoire, distance)
+
+    offers, offers_error = get_precomputed_offers()
+    territory_options = get_cached_territory_options()
+
+    if offers_error:
+        errors.append(offers_error)
+
+    cache_status = get_cache_status()
+
+    if not mots_cles.strip():
+        return {
+            "mots_cles": mots_cles,
+            "territoire_type": territoire_type,
+            "territoire": normalized_territoire,
+            "distance": str(distance or ""),
+            "page": page,
+            "per_page": per_page,
+            "periode_jours": periode_jours,
+            "top_n": top_n,
+            "territoire_label": territoire_label,
+            "error_message": " ".join(errors) if errors else "Veuillez saisir des mots-clés pour lancer la recherche.",
+            "nombre_offres": 0,
+            "offres": [],
+            "offers": [],
+            "paged_offers": [],
+            "total_pages": 0,
+            "page": page,
+            "page_size": per_page,
+            "top_metiers": [],
+            "top_competences": [],
+            "trends": {"territoire": normalized_territoire or None, "periode_jours": periode_jours, "nombre_offres": 0, "competences": {}, "metiers": {}, "niveau": {}, "contrats": {}, "offres": [], "offers": []},
+            "market_context": load_market_context_rows(),
+            "market_context_headers": [],
+            "territoire_options": territory_options,
+            "trend_competence_items": [],
+            "trend_contract_items": [],
+            "trend_niveau_items": [],
+            "matching_weights": dict(matching_weights),
+            "default_matching_weights": dict(DEFAULT_MATCHING_WEIGHTS),
+            "matching_weights_error": "",
+            "cache_status": cache_status,
+        }
+
+    if territoire_type != "all" and not normalized_territoire:
+        errors.append("Le territoire est requis pour ce type de filtre.")
+
+    filtered_offers = []
+    for offer in offers:
+        if not _offer_matches_territory(offer, normalized_territoire if territoire_type != "all" else None):
+            continue
+        if mots_cles.strip():
+            searchable = " ".join([
+                str(offer.get("intitule") or offer.get("titre") or ""),
+                str(offer.get("description") or ""),
+                str(offer.get("metier") or ""),
+                " ".join(str(s) for s in (offer.get("competences") or [])),
+            ]).lower()
+            if mots_cles.lower() not in searchable:
+                continue
+        filtered_offers.append(offer)
+
+    filtered_offers.sort(key=lambda item: item.get("date") or "", reverse=True)
+
+    trends, _ = get_precomputed_trends(territoire=normalized_territoire or None, periode_jours=periode_jours)
+    total_offers = len(filtered_offers)
+    total_pages = max((total_offers + per_page - 1) // per_page, 1) if total_offers else 0
+    current_page = min(page, total_pages) if total_pages else 1
+    start_index = (current_page - 1) * per_page
+    end_index = start_index + per_page
+    paged_offers = filtered_offers[start_index:end_index] if total_offers else []
+
+    top_limit = max(top_n, 1)
+    trend_competence_items = list((trends or {}).get("competences", {}).items())[:top_limit]
+    trend_contract_items = list((trends or {}).get("contrats", {}).items())[:top_limit]
+    trend_niveau_items = list((trends or {}).get("niveau", {}).items())[:top_limit]
+    market_context = load_market_context_rows()
+    market_context_headers = list(market_context[0].keys())[:4] if market_context else []
+
+    return {
+        "mots_cles": mots_cles,
+        "territoire_type": territoire_type,
+        "territoire": normalized_territoire,
+        "distance": str(distance or ""),
+        "page": current_page,
+        "per_page": per_page,
+        "periode_jours": periode_jours,
+        "top_n": top_n,
+        "territoire_label": territoire_label,
+        "error_message": " ".join(errors),
+        "nombre_offres": total_offers,
+        "offres": filtered_offers[:50],
+        "offers": filtered_offers[:50],
+        "paged_offers": paged_offers,
+        "total_pages": total_pages,
+        "page_size": per_page,
+        "top_metiers": build_ranking_entries((trends or {}).get("metiers"), total_offers, top_limit),
+        "top_competences": build_ranking_entries((trends or {}).get("competences"), total_offers, top_limit),
+        "trends": trends or {},
+        "trend_competence_items": trend_competence_items,
+        "trend_contract_items": trend_contract_items,
+        "trend_niveau_items": trend_niveau_items,
+        "market_context": market_context,
+        "market_context_headers": market_context_headers,
+        "territoire_options": territory_options,
+        "matching_weights": dict(matching_weights),
+        "default_matching_weights": dict(DEFAULT_MATCHING_WEIGHTS),
+        "matching_weights_error": "",
+        "cache_status": cache_status,
     }
 
 
@@ -986,17 +1157,31 @@ def _build_render_context_from_request() -> Dict[str, Any]:
     top_n = _sanitize_top_n(request.args.get("top_n"))
 
     matching_weights, matching_weights_error = _extract_matching_weights_from_request()
-    state = build_live_state(
-        mots_cles=mots_cles,
-        territoire_type=territoire_type,
-        territoire=territoire,
-        distance=distance,
-        page=page,
-        per_page=per_page,
-        periode_jours=periode_jours,
-        top_n=top_n,
-        matching_weights=matching_weights,
-    )
+
+    if has_precomputed_data():
+        state = build_cached_state(
+            mots_cles=mots_cles,
+            territoire_type=territoire_type,
+            territoire=territoire,
+            distance=distance,
+            page=page,
+            per_page=per_page,
+            periode_jours=periode_jours,
+            top_n=top_n,
+            matching_weights=matching_weights,
+        )
+    else:
+        state = build_live_state(
+            mots_cles=mots_cles,
+            territoire_type=territoire_type,
+            territoire=territoire,
+            distance=distance,
+            page=page,
+            per_page=per_page,
+            periode_jours=periode_jours,
+            top_n=top_n,
+            matching_weights=matching_weights,
+        )
     if matching_weights_error:
         existing_error = state.get("error_message") or ""
         state["error_message"] = (existing_error + " " + matching_weights_error).strip()
@@ -1042,41 +1227,89 @@ def _build_render_context_from_request() -> Dict[str, Any]:
 
 def _build_territory_trends_context_from_request() -> Dict[str, Any]:
     territory = (request.args.get("territoire") or "").strip()
-    offers, error_message = load_normalized_offers()
-    context = build_territory_trends_context(offers, territory or None, limit=DEFAULT_TOP_N)
-    territory_options = get_available_territories(offers)
-    context.update(
-        {
+
+    if has_precomputed_data():
+        offers, error_message = get_precomputed_offers()
+        territory_options = get_cached_territory_options()
+        trends, trends_error = get_precomputed_trends(territoire=territory or None)
+        total_offers = int(trends.get("nombre_offres") or 0) if trends else 0
+        top_skills_raw = list((trends or {}).get("competences", {}).items())[:DEFAULT_TOP_N]
+        top_skills = []
+        for index, (skill, count) in enumerate(top_skills_raw, start=1):
+            if not skill:
+                continue
+            percentage = round((count / total_offers) * 100.0, 1) if total_offers else 0.0
+            top_skills.append({"rank": index, "skill": skill, "count": count, "percentage": percentage})
+        context = {
+            "selected_territory": territory or "Tous les territoires",
+            "territory_value": territory or "",
+            "total_offers": total_offers,
+            "period_label": None,
+            "top_skills": top_skills,
+            "has_data": bool(top_skills),
+            "page_title": "TrendRadar IA - Tendances par territoire",
+            "territory_options": territory_options,
+            "error_message": error_message or trends_error or "",
+            "cache_status": get_cache_status(),
+        }
+    else:
+        offers, error_message = load_normalized_offers()
+        context = build_territory_trends_context(offers, territory or None, limit=DEFAULT_TOP_N)
+        territory_options = get_available_territories(offers)
+        context.update({
             "page_title": "TrendRadar IA - Tendances par territoire",
             "territory_options": territory_options,
             "error_message": error_message or "",
-        }
-    )
+        })
     return context
 
 
 def build_state(territoire: Optional[str], periode_jours: int, top_n: int = DEFAULT_TOP_N) -> Dict[str, Any]:
-    normalized_offers, _error_message = load_normalized_offers()
-    offers = filter_offers(normalized_offers, territoire, periode_jours)
-    trends = aggregate_trends(offers, territoire=territoire, periode_jours=periode_jours)
-    market_context = load_market_context_rows()
-    territoire_options = get_available_territories(normalized_offers)
-    total_offers = int(trends.get("nombre_offres") or len(offers))
-    top_limit = max(top_n, 1)
-    return {
-        "territoire": territoire,
-        "periode_jours": periode_jours,
-        "top_n": top_limit,
-        "nombre_offres_brutes": len(normalized_offers),
-        "nombre_offres_filtrees": len(offers),
-        "trends": trends,
-        "ranking_source": trends,
-        "top_metiers": build_ranking_entries(trends.get("metiers"), total_offers, top_limit),
-        "top_competences": build_ranking_entries(trends.get("competences"), total_offers, top_limit),
-        "offers": offers[:20],
-        "territoire_options": territoire_options,
-        "market_context": market_context,
-    }
+    if has_precomputed_data():
+        normalized_offers, _error_message = get_precomputed_offers()
+        offers = filter_offers(normalized_offers, territoire, periode_jours)
+        trends, _ = get_precomputed_trends(territoire=territoire, periode_jours=periode_jours)
+        market_context = load_market_context_rows()
+        territoire_options = get_cached_territory_options()
+        total_offers = int((trends or {}).get("nombre_offres") or len(offers))
+        top_limit = max(top_n, 1)
+        return {
+            "territoire": territoire,
+            "periode_jours": periode_jours,
+            "top_n": top_limit,
+            "nombre_offres_brutes": len(normalized_offers),
+            "nombre_offres_filtrees": len(offers),
+            "trends": trends or {},
+            "ranking_source": trends or {},
+            "top_metiers": build_ranking_entries((trends or {}).get("metiers"), total_offers, top_limit),
+            "top_competences": build_ranking_entries((trends or {}).get("competences"), total_offers, top_limit),
+            "offers": offers[:20],
+            "territoire_options": territoire_options,
+            "market_context": market_context,
+            "cache_status": get_cache_status(),
+        }
+    else:
+        normalized_offers, _error_message = load_normalized_offers()
+        offers = filter_offers(normalized_offers, territoire, periode_jours)
+        trends = aggregate_trends(offers, territoire=territoire, periode_jours=periode_jours)
+        market_context = load_market_context_rows()
+        territoire_options = get_available_territories(normalized_offers)
+        total_offers = int(trends.get("nombre_offres") or len(offers))
+        top_limit = max(top_n, 1)
+        return {
+            "territoire": territoire,
+            "periode_jours": periode_jours,
+            "top_n": top_limit,
+            "nombre_offres_brutes": len(normalized_offers),
+            "nombre_offres_filtrees": len(offers),
+            "trends": trends,
+            "ranking_source": trends,
+            "top_metiers": build_ranking_entries(trends.get("metiers"), total_offers, top_limit),
+            "top_competences": build_ranking_entries(trends.get("competences"), total_offers, top_limit),
+            "offers": offers[:20],
+            "territoire_options": territoire_options,
+            "market_context": market_context,
+        }
 
 
 def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:

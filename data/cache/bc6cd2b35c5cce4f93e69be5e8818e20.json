@@ -1,0 +1,49 @@
+{
+  "key": "offer_extraction:3836663",
+  "value": {
+    "id": "3836663",
+    "intitule": "Développeur Full-stack (H/F)",
+    "entreprise": "",
+    "territoire": "67 - Strasbourg",
+    "ville": "67482",
+    "code_postal": "67000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3836663",
+    "description": "Description du poste :\nAu sein de l'unité dédiée aux clients du Service Public, en équipe et sous la responsabilité d'un chef de projet, vous participez aux différentes phases de projets itératifs d'envergure, de la conception à la livraison.\nDans un environnement DevOps et dans un contexte d'amélioration continue, vous participez au développements de nouveaux projets, d'évolutions et de corrections d'applications Java et/ou Angular.\nDans ce cadre, vous appréhendez les besoins métiers des utilisateurs, participez aux réunions techniques et contribuez à la recherche de solutions.\nCette opportunité de carrière vous permet de basculer d'un domaine métier à un autre, d'acquérir, consolider et mettre en pratique des compétences techniques et, plus globalement, d'évoluer professionnellement au sein de votre entreprise.\nCe poste, en CDI, est basé sur le secteur de Strasbourg. La rémunération sera définie en fonction de votre parcours et de vos expériences.\nDescription du profil :\nDe formation Bac+5 (école d'Ingénieurs ou formation universitaire en informatique), vous justifiez d'une expérience de 5 années minimum à un poste similaire.\nVous maîtrisez la programmation JAVA et au moins un framework associé et/ou ANGULAR et un ou plusieurs systèmes de gestion de bases de données. Vous connaissez des framework de tests (front et back Vous portez une attention particulière à la qualité de votre code.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Java",
+      "NoSQL",
+      "Analyse de données",
+      "Data Engineering"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac+5 (école d'Ingénieurs ou formation universitaire en informatique), vous justifiez d'une expérience de 5 années minimum à un poste similaire.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:46.487473",
+  "input_hash": "6bad6cc175c44899f13d1b30f6b1f59e401b6be00b884db78451b4b87f6d15e0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

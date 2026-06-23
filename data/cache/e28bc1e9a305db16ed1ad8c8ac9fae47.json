@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:205QQMX",
+  "value": {
+    "id": "205QQMX",
+    "intitule": "DEVELOPPEUR TEST FONCTIONNEL H/F",
+    "entreprise": "SCHAEFFLER FRANCE",
+    "territoire": "31 - BOUSSENS",
+    "ville": "31084",
+    "code_postal": "31360",
+    "contrat": "CDI",
+    "date_creation": "2026-03-18",
+    "date": "2026-03-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/205QQMX",
+    "description": "Vos responsabilités quotidiennes :\nAu sein de l'équipe Test Engineering rattachée à l'entité Industrial Engineering, vous assurez le développement de programmes et l'implémentation de moyens de tests fonctionnels pour la production de calculateurs et capteurs pour véhicules thermiques, hybrides ou électriques (prototypes et grande série). Vous serez rattaché au site de Boussens. Des déplacements intersites sont à prévoir (Foix, Toulouse).\n\n \n\nParticiper à la rédaction du cahier des charges des testeurs fonctionnels.\nDévelopper des programmes de tests fonctionnels sur la base des spécifications fournies.\nDéfinir et effectuer la recette des équipements et interfaces de test.\nMettre au point et vérifier les programmes en laboratoire.\nInstaller et valider les programmes sur les machines de production.\nAssurer la maintenance des programmes en production (évolution produits ou machines, augmentation couverture de test, réduction temps\nde test).\nRéaliser l'analyse des données statistiques (MSA).\n\nProfil recherché :\nDe formation supérieure en électronique, électrotechnique, automatismes, ou titulaire d'un diplôme d'Ingénieur généraliste à dominante électronique.\nVous justifiez de 3 à 5 ans d'expérience sur un poste similaire dans l'industrie automobile, aéronautique ou ferroviaire.\n\n \nAptitudes :\nAutonomie, rigueur\nBon relationnel et capacité à interagir avec des équipes pluridisciplinaires\nCapacité à résoudre des problèmes\nForce de proposition de solutions innovantes\nLangues : Anglais courant exigé\n\n ",
+    "metier": "Responsable d'unité de production industrielle",
+    "niveau": "senior",
+    "competences": [
+      "Aéronautique",
+      "Cahier des charges",
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Analyse de données",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "API",
+      "Pipelines de données",
+      "Tests automatisés",
+      "Gestion de projet",
+      "MLOps"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "De formation supérieure en électronique, électrotechnique, automatismes, ou titulaire d'un diplôme d'Ingénieur généraliste à dominante électronique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s) - 5 ans industrie automobile, aeronaut",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:28.518872",
+  "input_hash": "882f30d2464b524e91647c573105424d0bf1a6fd2a02677572c4969cc8275226",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:1831446",
+  "value": {
+    "id": "1831446",
+    "intitule": "Chef de projet Systèmes d'information (H/F)",
+    "entreprise": "",
+    "territoire": "35 - Saint-Jacques-de-la-Lande",
+    "ville": "35281",
+    "code_postal": "35136",
+    "contrat": "CDI",
+    "date_creation": "2026-04-23",
+    "date": "2026-04-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1831446",
+    "description": "Description du poste :\nPRINCIPALES\n-Concevoir, développer et maintenir des pipelines de données robustes et évolutifs pour collecter, transformer et charger des données de formats multiples et provenant de diverses sources.\n-Assurer la mise à disposition des données dans les bases de données (SQL/NoSQL) exploitées par les équipes métier (cyber threat intelligence, détection, réponse à incident Participer à l'administration et à la maintenance applicative de l'architecture big data du Centre, à la résolution des problèmes techniques, et rechercher à optimiser ses performances ;\n-Collaborer avec les data scientists pour comprendre leurs besoins de valorisation des données pour la recherche d'attaques cyber, et fournir des solutions techniques adaptées.\n-Créer des rapports et des tableaux de bord pour visualiser les données et faciliter la prise de décision des analystes en cybersécurité.\n-Fournir un appui technique aux utilisateurs finaux et aux autres équipes, sur le périmètre de la section.\n-Assurer une veille technologique.\nL'environnement technique : Airflow, ELK, Postgres, Splunk, Spark, Docker, TensorFlow, Scikit-learn, Pytorch, Python, Gitlab, etc.\nDescription du profil :\nIssu d'une formation en informatique, vous avez acquis une expérience de 3 à 5 ans minimum dans le domaine du Data Engineering, de la Data Architecture ou du Big Data. Une expérience en cyber et/ou dans l'exploitation de données complexes est aussi appréciée.\nCompétences mises en œuvre dans le cadre du poste :\n-Maîtrise des langages courants de programmation et de données dans le domaine (Python, SQL, Spark, etc Connaissance des bases de données relationnelles (Postgres, etc.) et non relationnelles (Elasticsearch, etc.)\n-Expérience avec des outils d'orchestration (Airflow, etc.)\n-Expérience avec des outils de stockage et de calcul distribué (Spark, HDFS, etc.)\n-Démarche DevOps (CI/CD, tests)\n-Exploitation et rédaction de documentation technique et référentiels ;\n-Capacité à travailler en équipe et à collaborer avec des analystes en cybersécurité ;\n-Sens de l'organisation et rigueur.",
+    "metier": "Chef de projet / Cheffe de projet (Project Management Officer)",
+    "niveau": "junior",
+    "competences": [
+      "Data engineering",
+      "Docker",
+      "Git",
+      "NoSQL",
+      "PostgreSQL",
+      "PyTorch",
+      "Python",
+      "SQL",
+      "TensorFlow",
+      "scikit-learn",
+      "Veille technologique",
+      "Pipelines de données",
+      "Optimisation des performances",
+      "Qualité des données",
+      "Analyse de données",
+      "Model drift"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 16,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:27.573261",
+  "input_hash": "9485ff2f4f320869717ad2fe7c19a203ec0c6a53d579097a2bb7f686576b5c5c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

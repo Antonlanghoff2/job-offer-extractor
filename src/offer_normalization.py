@@ -11,6 +11,13 @@ from datetime import date, datetime
 from typing import Any, Dict, List, Optional, Tuple
 
 
+from src.offer_field_extractors import (
+    extract_diplomas_from_text,
+    extract_salary_from_text,
+    extract_teletravail_from_text,
+)
+
+
 COMMON_KEYS = (
     "id_offre",
     "source",
@@ -189,6 +196,68 @@ def _extract_competences_from_fr(raw_offer: Dict[str, Any]) -> List[str]:
     return competences
 
 
+def _extract_experience_from_fr(raw_offer: Dict[str, Any]) -> Optional[str]:
+    """Extrait le texte d'expérience depuis les données France Travail."""
+    experience = raw_offer.get("experienceLibelle") or raw_offer.get("experienceExige")
+    if experience:
+        return str(experience).strip()
+    return None
+
+
+def _extract_salary_from_fr(raw_offer: Dict[str, Any]) -> Tuple[Optional[int], Optional[int]]:
+    """Extrait le salaire depuis les données structurées France Travail."""
+    salaire = raw_offer.get("salaire")
+    if isinstance(salaire, dict):
+        min_val = salaire.get("libelle") or salaire.get("code")
+        if min_val:
+            numbers = re.findall(r"\d+", str(min_val))
+            if len(numbers) >= 2:
+                return int(numbers[0]), int(numbers[1])
+            if len(numbers) == 1:
+                return int(numbers[0]), int(numbers[0])
+    elif isinstance(salaire, str):
+        numbers = re.findall(r"\d+", salaire)
+        if len(numbers) >= 2:
+            return int(numbers[0]), int(numbers[1])
+        if len(numbers) == 1:
+            return int(numbers[0]), int(numbers[0])
+    return None, None
+
+
+def _extract_teletravail_from_fr(raw_offer: Dict[str, Any]) -> Optional[str]:
+    """Extrait le télétravail depuis les données structurées France Travail."""
+    teletravail = raw_offer.get("teletravail") or raw_offer.get("distanciel")
+    if teletravail:
+        if isinstance(teletravail, dict):
+            teletravail = teletravail.get("libelle") or teletravail.get("code")
+        text = str(teletravail).lower()
+        if any(t in text for t in ("oui", "possible", "partiel")):
+            return "hybride"
+        if any(t in text for t in ("complet", "total", "100%")):
+            return "teletravail"
+        if any(t in text for t in ("non", "pas de")):
+            return "presentiel"
+    return None
+
+
+def _extract_diplomes_from_fr(raw_offer: Dict[str, Any]) -> List[str]:
+    """Extrait les diplômes depuis les données structurées France Travail."""
+    diplomes: List[str] = []
+    for key in ("diplomes", "diplomes_requis", "formation"):
+        items = raw_offer.get(key) or []
+        if isinstance(items, list):
+            for item in items:
+                if isinstance(item, dict):
+                    label = item.get("libelle") or item.get("code") or item.get("name")
+                else:
+                    label = item
+                if label:
+                    diplomes.append(str(label).strip())
+        elif isinstance(items, str) and items.strip():
+            diplomes.append(items.strip())
+    return diplomes
+
+
 def _extract_france_travail_location(raw_offer: Dict[str, Any]) -> Dict[str, str]:
     lieu = raw_offer.get("lieuTravail")
     if not isinstance(lieu, dict):
@@ -236,6 +305,29 @@ def normalize_france_travail_offer(raw_offer: Dict[str, Any]) -> Dict[str, Any]:
     else:
         entreprise_name = entreprise or ""
     date_creation = parse_date(raw_offer.get("dateCreation") or raw_offer.get("dateActualisation") or raw_offer.get("date"))
+
+    description = str(raw_offer.get("description") or "")
+
+    salaire_min, salaire_max = _extract_salary_from_fr(raw_offer)
+    if salaire_min is None and description:
+        salary_data = extract_salary_from_text(description)
+        if salary_data:
+            salaire_min = salary_data.get("minimum")
+            salaire_max = salary_data.get("maximum")
+
+    teletravail = _extract_teletravail_from_fr(raw_offer)
+    if teletravail is None and description:
+        teletravail_data = extract_teletravail_from_text(description)
+        if teletravail_data:
+            teletravail = teletravail_data.get("mode")
+
+    diplomes_requis = _extract_diplomes_from_fr(raw_offer)
+    if not diplomes_requis and description:
+        diploma_data = extract_diplomas_from_text(description)
+        diplomes_requis = [d.get("label", "") for d in diploma_data if d.get("label")]
+
+    experience_requise = _extract_experience_from_fr(raw_offer)
+
     return {
         "id": str(raw_offer.get("id") or raw_offer.get("id_offre") or raw_offer.get("idOffre") or raw_offer.get("idOfr") or ""),
         "intitule": str(raw_offer.get("intitule") or raw_offer.get("appellationlibelle") or raw_offer.get("romeLibelle") or ""),
@@ -247,10 +339,15 @@ def normalize_france_travail_offer(raw_offer: Dict[str, Any]) -> Dict[str, Any]:
         "date_creation": date_creation,
         "date": date_creation,
         "url": _extract_france_travail_url(raw_offer),
-        "description": str(raw_offer.get("description") or ""),
+        "description": description,
         "metier": _extract_metier_from_fr(raw_offer),
         "niveau": _extract_niveau_from_fr(raw_offer),
         "competences": _extract_competences_from_fr(raw_offer),
+        "salaire_min": salaire_min,
+        "salaire_max": salaire_max,
+        "teletravail": teletravail,
+        "diplomes_requis": diplomes_requis,
+        "experience_requise": experience_requise,
     }
 
 
@@ -261,13 +358,18 @@ def _normalize_france_travail_common(raw_offer: Dict[str, Any]) -> Dict[str, Any
         "source": "france_travail",
         "date": normalized["date_creation"],
         "territoire": normalized["territoire"] or normalized["ville"],
-        "metier": _extract_metier_from_fr(raw_offer),
-        "niveau": _extract_niveau_from_fr(raw_offer),
-        "contrat": normalized["contrat"] or _extract_contrat_from_fr(raw_offer),
-        "competences": _extract_competences_from_fr(raw_offer),
+        "metier": normalized["metier"],
+        "niveau": normalized["niveau"],
+        "contrat": normalized["contrat"],
+        "competences": normalized["competences"],
         "titre": normalized["intitule"],
         "entreprise": normalized["entreprise"],
         "description": normalized["description"],
+        "salaire_min": normalized.get("salaire_min"),
+        "salaire_max": normalized.get("salaire_max"),
+        "teletravail": normalized.get("teletravail"),
+        "diplomes_requis": normalized.get("diplomes_requis", []),
+        "experience_requise": normalized.get("experience_requise"),
     }
 
 

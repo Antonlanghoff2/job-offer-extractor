@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:209HBTV",
+  "value": {
+    "id": "209HBTV",
+    "intitule": "Ingénieur DevOps GCP (H/F)",
+    "entreprise": "ALTEN SYSTEMES D'INFORMATION ET RESEAUX",
+    "territoire": "92 - BOULOGNE BILLANCOURT",
+    "ville": "92012",
+    "code_postal": "92100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209HBTV",
+    "description": "Nous recherchons un Ingénieur DevOps spécialisé sur Google Cloud Platform (GCP) pour rejoindre notre équipe dynamique. Vous serez responsable de la conception, du déploiement et de la gestion de notre infrastructure cloud, en mettant l'accent sur l'automatisation, la scalabilité et la sécurité. \n\nMissions principales : \n\n-Concevoir et implémenter des pipelines CI/CD robustes pour automatiser les processus de déploiement. \n-Gérer et optimiser l'infrastructure sur GCP en utilisant des outils d'Infrastructure as Code (IaC) tels que Terraform. \n-Superviser et assurer la performance des applications déployées, en mettant en place des solutions de monitoring et de logging. \n-Collaborer étroitement avec les équipes de développement pour intégrer les pratiques DevOps et améliorer les cycles de livraison. \n-Garantir la sécurité et la conformité des environnements cloud en appliquant les meilleures pratiques du secteur. \n\nProfil recherché : \n\n-Diplômé(e) d'une école d'ingénieurs ou équivalent universitaire, vous justifiez d'au moins 3 ans d'expérience en tant qu'Ingénieur DevOps, avec une expertise avérée sur GCP. \n\n-Maîtrise des outils et services GCP, notamment GKE, Cloud Functions, Pub/Sub, et BigQuery. \n-Expérience solide en conteneurisation avec Docker et orchestration avec Kubernetes. \n-Compétence en Scripting (Python, Bash) pour l'automatisation des tâches. \n-Bonne compréhension des concepts de réseau, de sécurité et des architectures Microservices. \n-Expérience dans un environnement international ; la maîtrise de l'anglais est indispensable. \n\n",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Python",
+      "Terraform",
+      "Automatisation de processus",
+      "Pipelines de données",
+      "Monitoring de modèles",
+      "MLOps",
+      "Gestion de projet",
+      "Qualité des données",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons un Ingénieur DevOps spécialisé sur Google Cloud Platform (GCP) pour rejoindre notre équipe dynamique.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:10.816016",
+  "input_hash": "58f686a5241d401165d968ae725ab1ea5a1c8aef8ab917a491e0049153f51937",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

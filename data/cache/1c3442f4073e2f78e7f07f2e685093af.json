@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3054492",
+  "value": {
+    "id": "3054492",
+    "intitule": "Ingénieur Data/IA (F/H)",
+    "entreprise": "CERFRANCE Champagne Nord Est Ile de France",
+    "territoire": "02 - Chambry",
+    "ville": "02157",
+    "code_postal": "02000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-27",
+    "date": "2026-05-27",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3054492",
+    "description": "RESPONSABILITÉS : \n\nDans le cadre du développement de notre stratégie Data & IA, nous renforçons notre équipe avec un(e) Ingénieur(e) Data / IA disposant d'une première expérience réussie, capable d'apporter expertise technique et capacité d'innovation.\n\n\nAu sein de l'équipe Data / IA, vous aurez pour mission de structurer, valoriser et exploiter notre patrimoine de données afin de créer de la valeur pour nos collaborateurs et nos clients.\nNous recherchons un(e) Ingénieur(e) Data / IA avec une première expérience, capable de :\n· Structurer et valoriser notre patrimoine de données\n· Identifier des usages IA concrets pour nos métiers\n· Concevoir et déployer des solutions innovantes\n· Promouvoir une culture Data & IA responsable\nVous ne serez pas un simple exécutant technique : vous participerez à définir la vision et les cas d'usage qui feront évoluer notre organisation.\nCe que vous ferez concrètement :\nIdentifier les opportunités\n • Aller à la rencontre des métiers\n • Comprendre leurs enjeux\n • Détecter des cas d'usage IA à fort impact\nConcevoir et développer\n • Construire des pipelines de données robustes\n • Mettre en œuvre des modèles analytiques et prédictifs\n • Déployer des solutions d'automatisation intelligente\nExplorer l'IA générative\n • Mettre en place des assistants internes\n • Exploiter des LLM (RAG, API, prompt engineering...)\n • Encadrer les usages responsables et sécurisés\nAcculturer et embarquer\n • Partager votre expertise\n • Vulgariser les enjeux\n • Contribuer à faire évoluer les pratiques\n\nPROFIL RECHERCHÉ : \n\nVotre profil :\n • Formation en Data / IA / Informatique\n • 2 à 5 ans d'expérience en environnement data\n • Maîtrise de Python, SQL\n • Des compétences sur l'environnement Snowflake sont grandement appréciées\n • Appétence forte pour l'IA générative\n • Des connaissances en Dataviz sont un plus\n • Capacité à dialoguer avec des profils non techniques\n • Curiosité, esprit d'initiative et pragmatisme",
+    "metier": "Chargé / Chargée de méthodes BTP",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Vision",
+      "Déploiement de modèles",
+      "Déploiement de solutions",
+      "Data Engineering",
+      "Pipelines de données",
+      "Architecture microservices",
+      "Backend",
+      "Intégration continue",
+      "Model drift",
+      "MLOps",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 38000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre du développement de notre stratégie Data & IA, nous renforçons notre équipe avec un(e) Ingénieur(e) Data / IA disposant d'une première expérience réussie, capable d'apporter expertise technique et capacité d'innovation.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:58.452239",
+  "input_hash": "50ec57db52e46cfe8c78db44e26998064b74bd39735790b14c7237eda9cffb0f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

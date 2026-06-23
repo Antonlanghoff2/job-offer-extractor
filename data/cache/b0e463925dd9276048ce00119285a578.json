@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:3821143",
+  "value": {
+    "id": "3821143",
+    "intitule": "IVV logiciel H/F",
+    "entreprise": "AKKODIS",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3821143",
+    "description": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région et recrute un(e) IVV logiciel (H/F) en CDI. En tant qu'Ingénieur(e) Validation Logicielle, vous interviendrez sur des projets à forte valeur ajoutée dans le secteur de l'aéronautique, en prenant en charge l'intégration, la vérification et la validation des logiciels tout au long du cycle de développement. Vous serez un acteur clé pour garantir la qualité, la conformité et la fiabilité des produits logiciels.\n\n \n\nResponsabilités principales :\n\n * Planifier et exécuter les tests d'intégration et de validation logicielle selon les exigences projets.\n * Développer, maintenir et documenter les procédures de test pour les activités IVV.\n * Analyser les exigences fonctionnelles et techniques afin de définir la stratégie de test et rédiger les plans de validation.\n * Exécuter les campagnes de test fonctionnels, systèmes et d'intégration, puis analyser les résultats.\n * Identifier, qualifier et suivre les anomalies via des outils de gestion de tickets (Jira, Bugzilla).\n * Assurer le reporting des activités de validation et garantir la conformité aux standards qualité et réglementaires.\n * Participer aux revues de conception pour contribuer à la testabilité et à la stratégie de validation.\n * Collaborer avec les équipes de développement, d'ingénierie et de qualité pour résoudre les problématiques logicielles.\n\n \n\nEnvironnement de travail :\n\nVous évoluerez dans un contexte technique exigeant du secteur aéronautique, en interaction avec des équipes pluridisciplinaires. L'environnement de travail s'appuie sur des outils de test tels que TestRail, HP ALM / QC, Xray, Selenium ou Robot Framework, ainsi que sur des méthodologies agiles (Scrum) ou cycle en V. Vous interviendrez dans un contexte normatif fort, nécessitant rigueur et sens du détail, et participerez à l'amélioration continue des processus de test.\nProfile\nDe formation Bac+5 en informatique ou équivalent, vous justifiez d'une expérience confirmée d'au moins 3 ans en validation et tests logiciels, idéalement dans un environnement industriel critique ou normé (aéronautique, ferroviaire, médical). Vous maîtrisez les méthodologies IVV, la rédaction et l'exécution de plans de tests, ainsi que l'utilisation d'outils de gestion de tests et de tickets (TestRail, HP ALM, Jira). Une expérience en automatisation des tests (Selenium, Robot Framework) et des notions en développement logiciel (C, C++) sont des atouts appréciés. Rigoureux(se), doté(e) d'un bon esprit d'analyse et d'un sens du détail, vous possédez de bonnes qualités relationnelles et une capacité à travailler en équipe. Un niveau d'anglais technique est requis pour évoluer dans un contexte international.\n\n \n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Aéronautique",
+      "Ferroviaire",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Vue.js",
+      "Analyse des exigences",
+      "Product Management",
+      "Documentation technique",
+      "Analyse de données",
+      "Code review",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Intégration continue",
+      "Git"
+    ],
+    "salaire_min": 36000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieur(e) Validation Logicielle, vous interviendrez sur des projets à forte valeur ajoutée dans le secteur de l'aéronautique, en prenant en charge l'intégration, la vérification et la validation des logiciels tout au long du cycle de développement.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "De formation Bac+5 en informatique ou équivalent, vous justifiez d'une expérience confirmée d'au moins 3 ans en validation et tests logiciels, idéalement dans un environnement industriel critique ou normé (aéronautique, ferroviaire, médical).",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:18.331582",
+  "input_hash": "f581d5bd5e42caa68a93d3dcac4b0904e909baf9b3070ead34f8a7752f5d1fb6",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

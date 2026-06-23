@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:4055983",
+  "value": {
+    "id": "4055983",
+    "intitule": "Ingénieur full stack - .NET Angular H/F",
+    "entreprise": "",
+    "territoire": "34 - Montpellier",
+    "ville": "34172",
+    "code_postal": "34000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4055983",
+    "description": "Viveris est un groupe de conseil et d'ingénierie spécialisé dans la conduite et la réalisation de projets dans les domaines de l'informatique et de l'électronique. S'engager avec Viveris, c'est l'assurance de relever des défis techniques et humains tout en travaillant sur des projets innovants dans un environnement collaboratif et solidaire. Contexte de la mission : Viveris accompagne ses clients dans la conception et le développement d'outils afin d'accompagner la transformation numérique des métiers. Dans ce cadre, nous recherchons un Ingénieur développement full stack .NET Angular pour accompagner notre client dans le domaine de l'énergie à développer des outils métiers. Vous êtes intégré dans une équipe de développeurs d'une dizaine de personnes fonctionnant en méthodologie Agile Scrum. Responsabilités : - Développer les nouvelles fonctionnalités lors des sprints de trois semaines ; - Traiter les différents tickets de support ; - Participer aux cérémonies Agiles. Profil recherché : - Diplômé d'une formation Bac +5 en développement full stack, vous avez au moins 3 ans d'expérience sur les technos .NET Angular. Compétences techniques : - Maitrise des frameworks .NET et Angular ; - Maitrise des bases de données SQL Server ; - Connaissances de la logique microservices. Nos avantages : - Rémunération attractive et évolutive ; - Mutuelle familiale à garantie haute ; - Tickets restaurant pris en charge à 60% ; - 100% titre de transport urbain remboursé ; - Primes d'intéressement, de participation et de cooptation ; - 2 jours de télétravail par semaine ; - Formation continue avec LinkedIn Learning et nos communautés techniques.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "SQL",
+      "Méthodes agiles",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Design patterns",
+      "API",
+      "Backend",
+      "Pipelines de données"
+    ],
+    "salaire_min": 35000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans ce cadre, nous recherchons un Ingénieur développement full stack .NET Angular pour accompagner notre client dans le domaine de l'énergie à développer des outils métiers.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché : - Diplômé d'une formation Bac +5 en développement full stack, vous avez au moins 3 ans d'expérience sur les technos .NET Angular.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:54:27.915294",
+  "input_hash": "56d0c781abae42fd401cba84d22bcf9e073d772c84bfa4758dc40bd110bab6e8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:3881713",
+  "value": {
+    "id": "3881713",
+    "intitule": "Développeuse / Développeur C++ Yocto embarqué (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3881713",
+    "description": "En tant qu'Ingénieure/Ingénieur, vous serez un membre essentiel de notre équipe. Vos responsabilités principales seront les suivantes :   Participer à la définition de l'architecture logicielle embarquée Linux Yocto, en respectant l'environnement technique existant et les contraintes associées. Concevoir et développer une nouvelle passerelle serveur d'énergie pour les tableaux électriques, en réutilisant et adaptant le logiciel d'un produit existant. Travailler en collaboration avec une équipe de développement et de test en France et en Inde dans un environnement agile. Effectuer le bring-up du matériel et réaliser des tests et corrections (patches) des drivers pour les modules Wifi, Zigbee, Bluetooth, Ethernet MAC, Boot, etc. Proposer des solutions pragmatiques et innovantes pour répondre aux défis techniques du projet.   Votre profil :    Diplôme d'ingénieur en informatique embarquée ou équivalent, avec une expérience significative dans le domaine de l'embarqué Linux. Expertise avancée en Linux Yocto, Bitbake, kernel, BSP, drivers, debug et patches. Maîtrise des langages C++ et des principes de développement orienté objet. Expérience significative avec les outils de développement tels que Git, VS Code, Jira et les outils de qualimétrie (Coverity, Score). Connaissance approfondie des protocoles de communication réseau, de la containérisation d'applications et des méthodologies de développement agile (SAFE, Scrum, Kanban).",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Git",
+      "Linux",
+      "Design patterns",
+      "Documentation technique",
+      "Feature Engineering",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieure/Ingénieur, vous serez un membre essentiel de notre équipe.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:44.647431",
+  "input_hash": "17aa30353478bc3eb1132dbe5e0b6073c838c5c993a48123c0e133d20b9d1384",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,279 @@
+{
+  "key": "trends:26 - Montélimar",
+  "value": {
+    "territoire": "26 - Montélimar",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Aéronautique": 1,
+      "Cybersécurité": 1,
+      "Déploiement De Modèles": 1,
+      "Ferroviaire": 1,
+      "Gestion de projet": 1,
+      "Intelligence artificielle": 1,
+      "Linux": 1,
+      "MLOps": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Aéronautique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Aéronautique": 1
+        }
+      },
+      {
+        "nom": "Cybersécurité",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Cybersécurité": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Ferroviaire",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Ferroviaire": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Linux",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Linux": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "MLOps": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Aéronautique": {
+        "Aéronautique": 1
+      },
+      "Cybersécurité": {
+        "Cybersécurité": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Ferroviaire": {
+        "Ferroviaire": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Linux": {
+        "Linux": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      }
+    },
+    "metiers": {
+      "Chargé / Chargée d'accueil": 1,
+      "Intégrateur / Intégratrice logiciels métiers": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Cybersécurité",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Ferroviaire",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Ferroviaire",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "MLOps",
+        "Déploiement De Modèles"
+      ],
+      [
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Linux",
+        "Aéronautique",
+        "Ferroviaire",
+        "Cybersécurité"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3539580",
+        "intitule": "Chargé d'accueil famille/Administrateur Logiciel Métier (H/F)",
+        "entreprise": "Communauté d'Agglomération Montélimar Agglomération",
+        "territoire": "26 - Montélimar",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3539580"
+      },
+      {
+        "id": "0900179",
+        "intitule": "Architecte Logiciel IT / OT (H/F)",
+        "entreprise": "",
+        "territoire": "26 - Montélimar",
+        "contrat": "CDI",
+        "date": "2026-03-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0900179"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3539580",
+        "intitule": "Chargé d'accueil famille/Administrateur Logiciel Métier (H/F)",
+        "entreprise": "Communauté d'Agglomération Montélimar Agglomération",
+        "territoire": "26 - Montélimar",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3539580"
+      },
+      {
+        "id": "0900179",
+        "intitule": "Architecte Logiciel IT / OT (H/F)",
+        "entreprise": "",
+        "territoire": "26 - Montélimar",
+        "contrat": "CDI",
+        "date": "2026-03-30",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0900179"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:07:07.901475",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

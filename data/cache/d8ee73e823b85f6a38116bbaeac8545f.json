@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:209GZYN",
+  "value": {
+    "id": "209GZYN",
+    "intitule": "Testeur Robot Framework (H/F)",
+    "entreprise": "AMILTONE",
+    "territoire": "13 - AIX EN PROVENCE",
+    "ville": "13001",
+    "code_postal": "13290",
+    "contrat": "CDI",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209GZYN",
+    "description": "Qui sommes-nous ?\nNous sommes passionnés par les nouvelles technologies, et vous ? \nRejoindre Amiltone, c'est intégrer des équipes dynamiques et soudées dans le cadre de projets novateurs et ambitieux. Nous relevons les challenges techniques de nos clients et les accompagnons dans leur transformation digitale.\nPourquoi choisir Amiltone ? \nAmiltone, plus qu'une entreprise, un état d'esprit !\nNotre objectif ? Votre épanouissement professionnel !\nNous avons à cœur de :\nVous accompagner au mieux au travers d'un suivi personnalisé\nVous faire monter en compétences en vous proposant des formations tout au long de votre carrière\nComprendre vos besoins et respecter nos engagements\nVous proposer des missions de qualité avec des technologies innovantes\nCultiver votre potentiel grâce à notre programme de développement personnel Addvise\nVotre bien-être passe aussi par des activités extraprofessionnelles, c'est pourquoi nous vous proposons des séances sportives animées par nos coachs, soirées pour se retrouver et animations (à l'agence ou en visio), Gaming nights...\n\nLe poste\n\nIntégré à nos équipes sur notre Factory ou chez nos clients, nous recherchons un testeur expérimenté sur Robot Framework.\n\nVos missions :\n\n- Élaboration des cas de tests & rédaction des cahiers de recette\n- Exécution des tests et analyse des résultats\n- Développer des tests automatisés avec Robot Framework\n- Participer aux revues de code et aux sessions de débogage pour assurer la qualité du code de test automatisé\n- Enrichir et maintenir des suites de tests automatisés\n\nVos compétences :\n\nMaîtrise de Robot Framework et des bibliothèques associées\nConnaissance de SQL\nBonne compréhension du cycle de vie logiciel et des méthodologies Agile\nExpérience avec les outils de CI/CD\nConnaissance des outils de gestion de tests et de tickets\n\nProfil recherché\n\nLe profil d'un Amiltonien :\nDiplômé Bac+4/5 (Master/Ecole d'Ingénieur), vous avez au moins 3 ans d'expérience en automatisation de test avec Robot Framework.\nToujours sur le qui-vive des nouveautés technologiques, vous êtes force de proposition sur des technos, des outils ou des process qui permettent d'améliorer la qualité du code et la stabilité de nos applications.\nOutre vos compétences techniques, nous nous intéressons aussi à votre potentiel et votre motivation.\nNos postes sont ouverts aux personnes en situation de handicap.",
+    "metier": "Spécialiste test et validation logiciel ou application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Git",
+      "SQL",
+      "Vue.js",
+      "Tests automatisés",
+      "Code review",
+      "API",
+      "Backend",
+      "Automatisation de pipelines",
+      "Product Management",
+      "Qualité des données",
+      "Pipelines de données",
+      "MLOps"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé Bac+4/5 (Master/Ecole d'Ingénieur), vous avez au moins 3 ans d'expérience en automatisation de test avec Robot Framework.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Diplômé Bac+4/5 (Master/Ecole d'Ingénieur), vous avez au moins 3 ans d'expérience en automatisation de test avec Robot Framework.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplômé Bac+4/5 (Master/Ecole d'Ingénieur), vous avez au moins 3 ans d'expérience en automatisation de test avec Robot Framework.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:36.811521",
+  "input_hash": "225ae0e030846e6ffe5544a0a2a6db0c0f1e5cc284d06b57ed085a7b362b6d13",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

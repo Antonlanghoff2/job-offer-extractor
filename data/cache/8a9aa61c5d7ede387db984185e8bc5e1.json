@@ -1,0 +1,90 @@
+{
+  "key": "offer_extraction:209VYWD",
+  "value": {
+    "id": "209VYWD",
+    "intitule": "Chef de projet technique SI & Data (H/F)",
+    "entreprise": "MARKAL",
+    "territoire": "26 - ST MARCEL LES VALENCE",
+    "ville": "26313",
+    "code_postal": "26320",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209VYWD",
+    "description": "MISSIONS PRINCIPALES :\n\nRattaché(e) au Responsable informatique, le Chef de projet technique SI & Data F/H prend en charge des projets d'évolution du Système d'Information, assure l'interconnectivité des systèmes et transforme la donnée en levier décisionnel tout en garantissant la pérennité des solutions existantes.\n\nFlux de données\n- ETL : Concevoir et orchestrer des pipelines de données en Python via Apache Airflow \n(première expérience en développement nécessaire).\n- ETL Legacy : Assurer l'entretien, le dépannage et le redéveloppement des flux legacy \n(Talend, Agent SQL, SSIS, et batch).\n- EDI : Piloter les projets d'EDI avec notre prestataire et mettre en place des échanges de \ndonnées entre nos applications et avec nos partenaires.\nSQL & BI\n- Base de Données : SQL, procédures stockées, tâches SQL Server Integration Services, \npgSQL, MySQL.\n- Reporting décisionnel : Reporting PowerBI et Apache Superset\n\nDéveloppement Logiciel\n- Analyse du besoin et rédaction du cahier des charges.\n- Conception de solutions informatiques à partir de solutions du marché ou sur mesure.\n- Installation et paramétrage de solutions logicielles.\n- Maintien en Condition Opérationnelle : Maintenance corrective et évolutive des logiciels.\n\nProjet \n- Organiser les projets et leurs tâches en collaboration avec le DSI.\n- Suivre les prestataires et leur faire tenir leurs engagements.\n- Accompagner le projet depuis l'analyse jusqu'à la conduite du changement.\n\nPROFIL : \n- Formation en informatique (Bac +2 à Bac +3 : BTS, DUT, BUT, Licence professionnelle ou équivalent) ;\n- Expérience souhaitée de 3 ans ;\n\n- Curiosité et motivation sont les atouts principaux ;\n- Très bon niveau de communication écrite ;\n- Capacité d'adaptation à son publique ;\n- Anglais technique",
+    "metier": "Chef / Cheffe de projet étude et développement informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Cahier des charges",
+      "Intelligence artificielle",
+      "MySQL",
+      "Python",
+      "SQL",
+      "Airflow",
+      "Data Engineering",
+      "Pipelines de données",
+      "Model drift",
+      "Intégration continue"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation en informatique (Bac +2 à Bac +3 : BTS, DUT, BUT, Licence professionnelle ou équivalent) ;",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation en informatique (Bac +2 à Bac +3 : BTS, DUT, BUT, Licence professionnelle ou équivalent) ;",
+        "confidence": 0.9
+      },
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Formation en informatique (Bac +2 à Bac +3 : BTS, DUT, BUT, Licence professionnelle ou équivalent) ;",
+        "confidence": 0.9
+      },
+      {
+        "label": "DUT",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Formation en informatique (Bac +2 à Bac +3 : BTS, DUT, BUT, Licence professionnelle ou équivalent) ;",
+        "confidence": 0.9
+      },
+      {
+        "label": "BUT",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Formation en informatique (Bac +2 à Bac +3 : BTS, DUT, BUT, Licence professionnelle ou équivalent) ;",
+        "confidence": 0.9
+      },
+      {
+        "label": "Licence",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Formation en informatique (Bac +2 à Bac +3 : BTS, DUT, BUT, Licence professionnelle ou équivalent) ;",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s) - Sur le même type de poste",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 6,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:05.430821",
+  "input_hash": "ac59937fbd06b6448a7b38aa2b0b50966e79b639de596143fc23599656c8ac14",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

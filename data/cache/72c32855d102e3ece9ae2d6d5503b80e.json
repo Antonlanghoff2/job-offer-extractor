@@ -1,0 +1,182 @@
+{
+  "key": "trends:973 - Cayenne",
+  "value": {
+    "territoire": "973 - Cayenne",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Backend": 1,
+      "Data engineering": 1,
+      "Intelligence artificielle": 1,
+      "Pipelines De Données": 1,
+      "Protection Des Données": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Protection Des Données": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Backend": {
+        "Backend": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Protection Des Données": {
+        "Protection Des Données": 1
+      }
+    },
+    "metiers": {
+      "Formateur / Formatrice": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "Profession libérale - 2 Jour(s)": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Data engineering",
+        "Protection Des Données",
+        "Pipelines De Données",
+        "Backend"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209YZJD",
+        "intitule": "Formateur/Formatrice sur l'Intelligence Artificielle -IA (H/F)",
+        "entreprise": "SARL LABORATOIRE L & M",
+        "territoire": "973 - Cayenne",
+        "contrat": "Profession libérale - 2 Jour(s)",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209YZJD"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209YZJD",
+        "intitule": "Formateur/Formatrice sur l'Intelligence Artificielle -IA (H/F)",
+        "entreprise": "SARL LABORATOIRE L & M",
+        "territoire": "973 - Cayenne",
+        "contrat": "Profession libérale - 2 Jour(s)",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209YZJD"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:38.901439",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

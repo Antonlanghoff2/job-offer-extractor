@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:2997154",
+  "value": {
+    "id": "2997154",
+    "intitule": "Intégrateur Système et/ou Data Engineer - (H/F)",
+    "entreprise": "",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-05-25",
+    "date": "2026-05-25",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2997154",
+    "description": "STEP UP est une société d'ingénierie experte en pilotage de projets industriels et informatiques (+ 250 collaborateurs sur 11 agences en France), plaçant le potentiel humain comme 1er vecteur d'excellence et de performance en entreprise.\nOubliez les sociétés d'ingénierie qui ne valorisent que vos seules compétences, chez STEP UP, nous visons également l'adéquation entre votre personnalité et la culture d'entreprise de nos clients. Cela se traduit pour vous par une différence fondamentale en termes de bien être, d'épanouissement au travail et de succès dans vos missions.\n\nCe que nous vous proposons :\n - Un cadre de travail épanouissant, stimulant et collaboratif, nous sommes certifiés entreprise où il fait bon vivre !\n - Des projets innovants et variés.\n - La possibilité de se perfectionner continuellement avec des formations internes.\n - Des perspectives d'évolution de carrière.\n - Un accompagnement individualisé avec un programme de développement du potentiel humain.\n - Un programme de cooptation.\nEt bien sûr, nous prenons en charge 70% de votre mutuelle santé et encourageons financièrement la mobilité douce.\n\nLe poste : \n\nDans le cadre du programme Cyber, la prestation vise la conception, l'intégration, le déploiement et le maintien en conditions opérationnelles d'une plateforme dédiée à la collecte, au traitement et à la valorisation des journaux techniques (logs) à des fins de cybersurveillance (CEC - SOC).\nVous serez impliqué sur l'ensemble du cycle de vie projet, incluant les phases de Proof of Concept (POC), d'intégration technique ainsi que de mise en production, dans un environnement DevSecOps et en interaction étroite avec les équipes Cyber et Systèmes d'Information.\n \nDans ce cadre, les activités attendues sont les suivantes :\n- Déploiement, configuration et administration des composants techniques sur environnements Linux\nIntégration et paramétrage des solutions constituant la chaîne de traitement des logs, notamment :\n. Kafka\n. OpenSearch / ElasticSearch.. \n. Airflow\n. Rsyslog\n- Conception et formalisation de l'architecture technique et fonctionnelle cible, avec participation active aux phases de POC\n- Contribution à l'urbanisation du SI Cyber et à la structuration de son architecture globale\n- Mise en œuvre de processus d'automatisation des déploiements et des opérations via des outils d'Infrastructure as Code (Ansible)\n- Développement de scripts d'exploitation, d'intégration et d'automatisation en Python et Bash\n- Application et diffusion des pratiques DevSecOps (intégration continue, sécurité by design, automatisation des contrôles)\n- Participation à l'amélioration continue de la plateforme (optimisation des performances, renforcement de la résilience et du niveau de sécurité)\n- Support technique de niveau expert, incluant la maintenance corrective et évolutive\n- Collaboration transverse avec les équipes Cyber (CEC / SOC / VOC), ainsi que les équipes Infrastructure et Projets\n\nLes livrables associés à la prestation incluent :\n- Rédaction de notes d'analyse technique et d'étude d'architecture en phase de POC\n- Production et mise à disposition de l'architecture technique et fonctionnelle validée (intégration et production)\n- Contribution au Dossier d'Architecture Technique (DAT)\n- Développement et livraison des scripts et playbooks d'automatisation (Ansible, Bash, Python)\n- Intégration, qualification et mise en service des composants applicatifs et techniques\n- Élaboration de la documentation technique complète (exploitation, architecture, intégration)\n- Garantie de la conformité aux processus DevSecOps en vigueur, incluant la traçabilité des actions et des livraisons. \n\nProfil recherché : \n\nVous avez un bac + 4 ou 5 en développement informatique avec  un expérience d'au moins 5 ans en Cybersécurité. Vous avec les compétences suivantes :\n - Déploiement, configuration et maintenance d'applicatifs sous Linux\n- Scripting : Python / Bash\n- Intégration de solutions de collecte et de traitement de logs :\n- Kafka\n- OpenSearch / ElasticSearch\n- Airflow\n- Rsyslog\n- Automatisation de déploiement et d'exploitation : Ansible\n- Bonne compréhension des architectures techniques complexes\n- Intérêt marqué pour la cybersécurité\n- Idéalement, expérience sur une architecture SOC / VOC\n- Capacité d'analyse, rigueur technique et force de proposition\n- Bon relationnel, esprit d'équipe et pédagogie\n- Veille technologique active et capacité d'adaptation\n",
+    "metier": "Architecte base de données",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Déploiement de modèles",
+      "Data Engineering"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "bac + 4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous avez un bac + 4 ou 5 en développement informatique avec un expérience d'au moins 5 ans en Cybersécurité.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:25.135016",
+  "input_hash": "407452e4fdf91017f3496e35b20089e4816dceb5f67f08a1d4a79bb73c890cb0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:2246455",
+  "value": {
+    "id": "2246455",
+    "intitule": "Ingénieur avant-vente - Hardware Security (H/F)",
+    "entreprise": "NEXTGEN RH",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-05-05",
+    "date": "2026-05-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2246455",
+    "description": "RESPONSABILITÉS : \n\nNotre client est un acteur deep-tech français de premier plan, spécialisé dans la sécurité logicielle et matérielle, reconnu pour sa capacité d'innovation et sa forte présence à l'international.\nDans le cadre de la croissance de son activité et de la création d'un poste, notre client recherche un(e) :\n\nINGENIEUR AVANT-VENTE / HARDWARE SECURITY (H/F)\nCDI - BORDEAUX (33) OU FULL REMOTE - A PARTIR DE 50K€\n\nVéritable interface entre les équipes internes et les clients internationaux, vous interviendrez tout au long du cycle de vie client : de la phase de pré-vente jusqu'à la formation et au support technique.\nCe poste combine expertise technique et sens du relationnel afin d'accompagner les clients dans la prise en main de la plateforme d'investigation sécurité, depuis la démonstration jusqu'à l'intégration et l'optimisation des workflows.\nEn étroite collaboration avec les équipes commerciales et produit, vous jouerez un rôle clé dans la traduction des besoins clients en solutions concrètes et contribuerez activement à l'évolution de la feuille de route produit.\nMissions principales\n •  Démonstration et formation : Animer des démonstrations techniques, des ateliers et des formations afin de valoriser les fonctionnalités de la plateforme et d'en faciliter l'adoption.\n •  Support technique et avant-vente : Concevoir des PoC sur mesure et accompagner les clients dans leur évaluation technique des solutions.\n •  Évangélisation produit : Représenter l'entreprise lors de salons, conférences et webinaires, et échanger avec les acteurs du secteur. Des déplacements à l'international sont à prévoir (2 à 3 par trimestre).\n •  Retour client : Collecter, analyser et structurer les retours terrain afin d'alimenter l'amélioration continue des solutions et des catalogues d'attaques.\n •  Collaboration interne : Produire des supports techniques (documentation, tutoriels) et former les équipes commerciales aux enjeux et arguments techniques.\n\nPROFIL RECHERCHÉ : \n\nVous possédez un excellent sens relationnel / rédactionnel et des capacités démontrées à communiquer efficacement et à présenter de manière convaincante.  Vous êtes motivé(e) et capable de travailler de manière indépendante pour atteindre les objectifs fixés, tout en contribuant de manière proactive à l'équipe.\n\nProfil recherché :\n\nVous avez idéalement un Master ou un Doctorat en informatique (ou dans un domaine connexe), avec minimum 3 ans en sécurité matérielle, avec une maîtrise des techniques de hacking hardware (injection de fautes, attaques par canaux auxiliaires, exploitation de protocoles).\n\nCompétences requises :\n •  Sécurité matérielle : solide maîtrise des architectures SoC, MCU, FPGA et de leurs vulnérabilités (bootloaders, DMA, fuites par canaux auxiliaires, etc.).\n •  Reverse engineering : utilisation de Ghidra, IDA Pro, Binary Ninja pour extraction et modification de firmwares et analyse de binaires.\n •  Débogage : Bonne maîtrise des outils GDB, x64dbg, WinDbg.\n •  Attaques matérielles : expérience pratique des injections de fautes, attaques par canaux auxiliaires, et/ou exploitation de protocoles matériels (JTAG, UART, I2C, SPI).\n •  Développement embarqué : capacité à écrire et déboguer du code C/C++ et assembleur pour systèmes embarqués, programmation Python (scripts).\n •  Langues : excellente maîtrise de l'anglais parlé et écrit.\n\nContrat et avantages :\n •  Contrat cadre en CDI 38h avec RTT\n •  Primes d'intéressement (+5k de variable)\n •  Horaires de travail et TT très flexible (full remote possible)\n • Vous évoluerez dans un environnement de travail dynamique et stimulant.\n • Tickets restaurant, mutuelle, forfait mobilité durable, etc.\n\nProcessus de recrutement :  \n\nNEXTGEN RH vous accompagne également tout au long du processus de recrutement à travers une approche fondamentalement humaine.\n\n1/ Échange téléphonique avec votre chargé(e) de recrutement\n2/ Entretien physique ou visio avec votre chargé de recrutement\n3/ Entretiens et test chez notre client.",
+    "metier": "Ingénieur / Ingénieure systèmes et réseaux informatiques",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "Product Management",
+      "Architecture microservices",
+      "Backend",
+      "Analyse de données",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 0,
+    "teletravail": "remote",
+    "diplomes_requis": [
+      {
+        "label": "INGENIEUR",
+        "level": 8,
+        "required": true,
+        "source_sentence": "INGENIEUR AVANT-VENTE / HARDWARE SECURITY (H/F)",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Vous avez idéalement un Master ou un Doctorat en informatique (ou dans un domaine connexe), avec minimum 3 ans en sécurité matérielle, avec une maîtrise des techniques de hacking hardware (injection de fautes, attaques par canaux auxiliaires, exploitation de protocoles).",
+        "confidence": 0.7
+      },
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": false,
+        "source_sentence": "Vous avez idéalement un Master ou un Doctorat en informatique (ou dans un domaine connexe), avec minimum 3 ans en sécurité matérielle, avec une maîtrise des techniques de hacking hardware (injection de fautes, attaques par canaux auxiliaires, exploitation de protocoles).",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 3,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:24.915204",
+  "input_hash": "7255c727bc7020b039b47f7f606f409e050952333b4366c4fd7f4123c2691943",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

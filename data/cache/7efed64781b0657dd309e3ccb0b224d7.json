@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:208WXRQ",
+  "value": {
+    "id": "208WXRQ",
+    "intitule": "Développeur/Développeuse Senior Full Stack (F/H)",
+    "entreprise": "DILIJOB",
+    "territoire": "69 - LYON 03",
+    "ville": "69383",
+    "code_postal": "69003",
+    "contrat": "CDI",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208WXRQ",
+    "description": "Missions principales : \n1-Développement Front-end (Vue.js) : Concevoir et optimiser des interfaces d'une grande fluidité.\n2-Architecture Back-end hybride : Évoluer sur l'écosystème PHP Slim et créer les nouveaux microservices sous Python FastAPI.\n3-Data & Performance : Modéliser et optimiser les bases de données MySQL.\n4-Industrialisation & CI/CD : Gérer les conteneurs Docker et maintenir les pipelines Jenkins.\n5-Lead Technique : Garantir la qualité du code (tests, revues de code) et mentorer les profils juniors.\n\nCulture & Rituels d'équipe :\n1-Esprit d'équipe connecté : Collaboration horizontale, partage de connaissances et culture du feedback constructif.\n2-Daily Tech : Un point technique collectif chaque matin pour aligner l'équipe, débloquer les sujets et partager les bonnes pratiques.\n3-Retrouvailles physiques : Travail flexible au quotidien, rythmé par une réunion physique de toute l'équipe une fois par trimestre pour célébrer les succès et planifier la roadmap.\n\nNiveau requis: BAC+5\nExpérience: 10-15 ans\nCompétences: vuejs, php slim, docker, sonar, jenkins, MySQL, Cursor\n\nProfil détaillé : Développeur-se Full Stack de 5 à 7 ans d'expérience minimum, autonome et orienté-e performance.\n1-Front-end : Expert-e Vue.js (v2/v3) pour des interfaces fluides et scalables.\n2-Back-end : Double compétence PHP Slim (maintenance et évolution d'APIs existantes) et Python FastAPI (création de microservices asynchrones performants).\n3-Data & DevOps : Maîtrise de MySQL (requêtes complexes, optimisation d'index), de Docker (conteneurisation locale) et de Jenkins (gestion et amélioration de la CI/CD).\n4-Soft Skills & Leadership : Culture forte du test, pragmatisme technologique, animation des revues de code et mentorat des profils juniors.\n\nSalaire: De 28 000 à 50 000 € par an (négociable selon expérience) - base 35 h/semaine, brut\nAvantages: Primes, Tickets restaurant, Mutuelle, Formation\n\nHoraires de travail: Temps plein, Lundi, Mardi, Mercredi, Jeudi, Vendredi\nTélétravail: Complet\nContrat: CDI\nStatut: Cadre\nFonction: Informatique & Technologies\nSecteur: IT\nDate de début: 1 juin 2026",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "FastAPI",
+      "Intelligence artificielle",
+      "JavaScript",
+      "MySQL",
+      "Python",
+      "Vue.js",
+      "Automatisation de pipelines",
+      "Code review",
+      "Data Engineering",
+      "Pipelines de données",
+      "Model drift",
+      "Intégration continue",
+      "Sécurité informatique",
+      "Architecture microservices",
+      "Backend",
+      "Tests automatisés",
+      "Documentation technique"
+    ],
+    "salaire_min": 28000,
+    "salaire_max": 50000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Niveau requis: BAC+5",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 18,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:13.687909",
+  "input_hash": "7f29dd86b62ba8391cbca47e9cef33147471f33cf8777664c4f79b865ed7fc14",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

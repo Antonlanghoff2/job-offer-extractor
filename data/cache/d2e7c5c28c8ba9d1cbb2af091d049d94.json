@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:3752185",
+  "value": {
+    "id": "3752185",
+    "intitule": "POST-DOCTORANT EN MODÉLISATION STATISTIQUE - H/F",
+    "entreprise": "Inserm",
+    "territoire": "75 - Paris 15e Arrondissement",
+    "ville": "75115",
+    "code_postal": "75015",
+    "contrat": "CDD - 10 Mois",
+    "date_creation": "2026-06-14",
+    "date": "2026-06-14",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3752185",
+    "description": "Description : UMRS 1346- HEKA ( HEalth data- and model- driven approaches for Knowledge Acquisition) MISSIONS Développement de modèles et de méthodes pour l’analyse des données d’essais cliniques ou de vie réelles en maladies rares dans le cadre du projet Joint-Action ERDERA. ACTIVITÉS PRINCIPALES • Développement de modèles mathématiques en vie réelle • Écriture des papiers scientifiques • Codage des modèles • Analyse des données de vie réelle Profil recherché : CONNAISSANCES • Méthodes pour les données longitudinales SAVOIR-FAIRE • Bonne communication en anglais APTITUDES • Travail en équipe EXPÉRIENCE SOUHAITÉE • Codage en R, Python DIPLÔME(S) SOUHAITÉ(S) • Thèse scientifique DURÉE : CDD de10 mois RÉMUNÉRATION: • À PARTIR DE 2 985,82 € BRUT MENSUEL en fonction de l'expérience professionnelle sur des postes de niveau équivalent. CATÉGORIE : A, CORPS : Ingénieur de Recherche (IR)",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Git",
+      "Python"
+    ],
+    "salaire_min": 2985,
+    "salaire_max": 82,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Thèse",
+        "level": 10,
+        "required": false,
+        "source_sentence": "ACTIVITÉS PRINCIPALES • Développement de modèles mathématiques en vie réelle • Écriture des papiers scientifiques • Codage des modèles • Analyse des données de vie réelle Profil recherché : CONNAISSANCES • Méthodes pour les données longitudinales SAVOIR-FAIRE • Bonne communication en anglais APTITUDES • Travail en équipe EXPÉRIENCE SOUHAITÉE • Codage en R, Python DIPLÔME(S) SOUHAITÉ(S) • Thèse scientifique DURÉE : CDD de10 mois RÉMUNÉRATION: • À PARTIR DE 2 985,82 € BRUT MENSUEL en fonction de l'expérience professionnelle sur des postes de niveau équivalent.",
+        "confidence": 0.7
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "CATÉGORIE : A, CORPS : Ingénieur de Recherche (IR)",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:40.321261",
+  "input_hash": "bfd4ab4f32d9e10ba559b5c0aa8c5b6b49be694f4a503d87cd6bcf9b9211b4a3",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

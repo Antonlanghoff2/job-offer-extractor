@@ -1,0 +1,985 @@
+{
+  "key": "trends:73 - Chambéry",
+  "value": {
+    "territoire": "73 - Chambéry",
+    "periode_jours": 365,
+    "nombre_offres": 6,
+    "competences": {
+      "Gestion de projet": 4,
+      "Intelligence artificielle": 4,
+      "Git": 3,
+      "Analyse de données": 2,
+      "Déploiement De Modèles": 2,
+      "MLOps": 2,
+      "Product Management": 2,
+      "Scalabilité": 2,
+      "SQL": 2,
+      "Coûts": 1,
+      "Data engineering": 1,
+      "Documentation Technique": 1,
+      "Délais": 1,
+      "Machine learning": 1,
+      "Monitoring De Modèles": 1,
+      "Pipelines De Données": 1,
+      "Python": 1,
+      "Qualité Des Données": 1,
+      "Résolution De Problèmes": 1,
+      "Sécurité Informatique": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 4,
+        "percentage": 66.7,
+        "variants": {
+          "Gestion de projet": 4
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 66.7,
+        "variants": {
+          "Intelligence artificielle": 4
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 3,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 3
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 2,
+        "percentage": 33.3,
+        "variants": {
+          "Analyse de données": 2
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 33.3,
+        "variants": {
+          "Déploiement de modèles": 2
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 2,
+        "percentage": 33.3,
+        "variants": {
+          "MLOps": 2
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 2,
+        "percentage": 33.3,
+        "variants": {
+          "Product Management": 2
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 2,
+        "percentage": 33.3,
+        "variants": {
+          "Scalabilité": 2
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 2,
+        "percentage": 33.3,
+        "variants": {
+          "SQL": 2
+        }
+      },
+      {
+        "nom": "Coûts",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Coûts": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Documentation Technique",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Documentation technique": 1
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Délais": 1
+        }
+      },
+      {
+        "nom": "Machine learning",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Machine learning": 1
+        }
+      },
+      {
+        "nom": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Monitoring de modèles": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 16.7,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 4
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 4
+      },
+      "Git": {
+        "Git": 3
+      },
+      "Analyse de données": {
+        "Analyse de données": 2
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 2
+      },
+      "MLOps": {
+        "MLOps": 2
+      },
+      "Product Management": {
+        "Product Management": 2
+      },
+      "Scalabilité": {
+        "Scalabilité": 2
+      },
+      "SQL": {
+        "SQL": 2
+      },
+      "Coûts": {
+        "Coûts": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Documentation Technique": {
+        "Documentation technique": 1
+      },
+      "Délais": {
+        "Délais": 1
+      },
+      "Machine learning": {
+        "Machine learning": 1
+      },
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Chef / Cheffe de projet étude et développement informatique": 1,
+      "Consultant fonctionnel / Consultante fonctionnelle des systèmes d'information": 1,
+      "Data Scientist": 1,
+      "Développeur / Développeuse web": 1,
+      "Gestionnaire De Base De Données": 1,
+      "Responsable Commercial / Commerciale": 1
+    },
+    "niveau": {
+      "junior": 4,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 5,
+      "CDD - 12 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 3,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Product Management",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Scalabilité",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Scalabilité",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Product Management",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Scalabilité",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 16.7
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 16.7
+      }
+    ],
+    "fiabilite": 0.15,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Analyse de données",
+        "Git",
+        "Déploiement De Modèles",
+        "Product Management",
+        "Scalabilité",
+        "Sécurité Informatique"
+      ],
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Coûts",
+        "Délais",
+        "Monitoring De Modèles",
+        "Qualité Des Données",
+        "Résolution De Problèmes"
+      ],
+      [
+        "Intelligence artificielle",
+        "MLOps",
+        "Machine learning",
+        "Python",
+        "SQL",
+        "Analyse de données",
+        "Data engineering",
+        "Vision",
+        "Pipelines De Données"
+      ],
+      [
+        "MLOps",
+        "Déploiement De Modèles"
+      ],
+      [
+        "Git",
+        "SQL",
+        "Gestion de projet",
+        "Documentation Technique"
+      ],
+      [
+        "Git",
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Product Management",
+        "Scalabilité"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4069688",
+        "intitule": "Consultant·e Support Fonctionnel - Logiciel de gestion (comptabilité & finance) H/F",
+        "entreprise": "",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4069688"
+      },
+      {
+        "id": "3870493",
+        "intitule": "Développeur mobile flutter H/F",
+        "entreprise": "",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3870493"
+      },
+      {
+        "id": "3743904",
+        "intitule": "Développeur PowerBuilder SQL (H/F)",
+        "entreprise": "",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3743904"
+      },
+      {
+        "id": "3729366",
+        "intitule": "Chef de projets CFO/CFA ou CVC F/H - Informatique industrielle (H/F)",
+        "entreprise": "Fed Construction",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3729366"
+      },
+      {
+        "id": "3544803",
+        "intitule": "Développeur commercial (H/F)",
+        "entreprise": "",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3544803"
+      },
+      {
+        "id": "3142222",
+        "intitule": "ALTERNANT(E) DATA SCIENTIST - H/F",
+        "entreprise": "COMPAGNIE DES ALPES",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3142222"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4069688",
+        "intitule": "Consultant·e Support Fonctionnel - Logiciel de gestion (comptabilité & finance) H/F",
+        "entreprise": "",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4069688"
+      },
+      {
+        "id": "3870493",
+        "intitule": "Développeur mobile flutter H/F",
+        "entreprise": "",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-17",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3870493"
+      },
+      {
+        "id": "3743904",
+        "intitule": "Développeur PowerBuilder SQL (H/F)",
+        "entreprise": "",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3743904"
+      },
+      {
+        "id": "3729366",
+        "intitule": "Chef de projets CFO/CFA ou CVC F/H - Informatique industrielle (H/F)",
+        "entreprise": "Fed Construction",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3729366"
+      },
+      {
+        "id": "3544803",
+        "intitule": "Développeur commercial (H/F)",
+        "entreprise": "",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3544803"
+      },
+      {
+        "id": "3142222",
+        "intitule": "ALTERNANT(E) DATA SCIENTIST - H/F",
+        "entreprise": "COMPAGNIE DES ALPES",
+        "territoire": "73 - Chambéry",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-05-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3142222"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:02:03.736522",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

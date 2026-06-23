@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:209DRSC",
+  "value": {
+    "id": "209DRSC",
+    "intitule": "Administrateur de données (H/F)",
+    "entreprise": "",
+    "territoire": "64 - PAU",
+    "ville": "64445",
+    "code_postal": "64000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209DRSC",
+    "description": "Vous souhaitez donner du sens à votre métier à l'heure des défis écologiques et territoriaux, au sein d'une équipe dynamique, accueillante et innovante ? L'Agence d'urbanisme Atlantiques & Pyrénées (AUDAP) est prête à vous accueillir. L'AUDAP, ingénierie mutualisée au service de la Transition écologique des Territoires, intervient sur des thématiques variées : habitat et logement, environnement et biodiversité, économie territoriale, mobilité et déplacements, foncier, climat, énergie, tourisme, etc. \n\nVOS MISSIONS ET ACTIVITES\nActeur de la structuration et de l'administration de la donnée territoriale : Vous serez garant(e) de la qualité, de l'organisation et de la disponibilité des données territoriales de l'Agence. À ce titre, vous participerez à :\n- L'administration et l'optimisation des bases de données territoriales PostgreSQL/PostGIS\n- La structuration, la normalisation et la documentation des données ;\n- La mise en place et le suivi des processus d'intégration, de contrôle qualité et de mise à jour des données ;\n- L'automatisation des chaînes de traitement et des flux d'alimentation de la donnée ;\n- La gestion des flux de données multi-sources : open data, API, données métiers, données partenaires ou privées ;\n- La mise à disposition des données auprès des équipes internes et des partenaires ;\n- La conception de datamarts thématiques et d'outils simplifiés d'accès à la donnée pour les chargés d'études de l'Agence (urbanistes, économistes, environnementalistes, etc.).\n\nL'AUDAP évolue dans un environnement où les données deviennent de plus en plus dynamiques, interconnectées et orientées services. Dans ce contexte, Il est attendu de votre part :\n- Une capacité à proposer de nouvelles méthodes d'intégration et d'automatisation des données (API, web services, flux automatisés, ETL, scraping, connecteurs, etc.) ;\n- Le développement d'applications et d'interfaces de consultation et de diffusion de la donnée, à destination : des équipes internes, des partenaires, ou du grand public.\n\nVOS COMPETENCES ET APTITUDES\nMaîtrise des concepts de modélisation, structuration et gouvernance des données ;\nCapacité à comprendre les besoins métiers et à les traduire en solutions techniques adaptées ;\nConception et automatisation de flux d'intégration et de mise à jour des données (ETL, API, traitements automatisés) ;\nDéveloppement de solutions facilitant l'accès, l'exploitation et la diffusion des données (applications, services web, datamarts, API).\n\nMAITRISE D'OUTILS NUMERIQUES\nNiveau expert souhaité : \nBases de données : PostgreSQL / PostGIS / pgAdmin\nLangages : Python obligatoire (et R apprécié)\nAPIs (exemple : REST, JSON ou Swagger)\n\nBon niveau apprécié : \nETL et automatisation : FME, ou équivalent\nOutils BI et datavisualisation : Power BI\nDéveloppement web : Python/Django, FastAPI, React, HTML/CSS/JavaScript\n\nAPTITUDES\nRigueur et sens de l'organisation ;\nSens du travail en équipe et qualités relationnelles ;\nAutonomie et esprit d'initiative ;\nEsprit d'innovation et capacité à proposer des solutions nouvelles.\n\nPROFIL\nFormation supérieure Bac+2/+3 en informatique, data engineering, data science, géomatique ou équivalent ;\nUne expérience en administration de données ou gestion de bases de données sera appréciée ;\nUne expérience dans les domaines de l'aménagement du territoire, de l'urbanisme ou de l'observation territoriale constituerait un plus\n\nMODALITES\nContrat à durée indéterminée de droit privé.\nPoste basé à Pau\nDate de publication : 02 juin 2026\nDate limite de candidature : 29 juin 2026\nDates audition des candidats sélectionnés : Entre le 06 et 10 juillet 2026",
+    "metier": "Gestionnaire de base de données",
+    "niveau": "junior",
+    "competences": [
+      "API REST",
+      "CSS",
+      "Data engineering",
+      "Django",
+      "Développement web",
+      "FastAPI",
+      "HTML",
+      "Intelligence artificielle",
+      "JavaScript",
+      "PostgreSQL",
+      "Python",
+      "React",
+      "Automatisation de pipelines",
+      "Analyse de données",
+      "Gestion de projet",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 6000,
+    "salaire_max": 10000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation supérieure Bac+2/+3 en informatique, data engineering, data science, géomatique ou équivalent ;",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:11.597012",
+  "input_hash": "d8cfe36f0501ad686cc0465071b9f90887cc4b828c64a76e1ee07402ef55774f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

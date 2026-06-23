@@ -1,0 +1,632 @@
+{
+  "key": "trends:33 - Saint-Médard-en-Jalles",
+  "value": {
+    "territoire": "33 - Saint-Médard-en-Jalles",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Aéronautique": 2,
+      "Coûts": 2,
+      "Délais": 2,
+      "Architecture Microservices": 1,
+      "Backend": 1,
+      "Code Review": 1,
+      "Data engineering": 1,
+      "Déploiement De Modèles": 1,
+      "Gestion de projet": 1,
+      "MLOps": 1,
+      "Qualité Des Données": 1,
+      "Sécurité Informatique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Aéronautique",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Aéronautique": 2
+        }
+      },
+      {
+        "nom": "Coûts",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Coûts": 2
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Délais": 2
+        }
+      },
+      {
+        "nom": "Architecture Microservices",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Architecture microservices": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Code Review",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Code review": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Aéronautique": {
+        "Aéronautique": 2
+      },
+      "Coûts": {
+        "Coûts": 2
+      },
+      "Délais": {
+        "Délais": 2
+      },
+      "Architecture Microservices": {
+        "Architecture microservices": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Code Review": {
+        "Code review": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 2
+    },
+    "niveau": {
+      "junior": 2
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Coûts",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Délais",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Délais",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Aéronautique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Aéronautique",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Code Review",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Aéronautique",
+        "Coûts",
+        "Délais"
+      ],
+      [
+        "Gestion de projet",
+        "Data engineering",
+        "MLOps",
+        "Aéronautique",
+        "Coûts",
+        "Délais",
+        "Sécurité Informatique",
+        "Architecture Microservices",
+        "Backend",
+        "Code Review",
+        "Qualité Des Données",
+        "Déploiement De Modèles"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "0886217",
+        "intitule": "Développeur logiciel embarqué (H/F)",
+        "entreprise": "",
+        "territoire": "33 - Saint-Médard-en-Jalles",
+        "contrat": "CDI",
+        "date": "2026-03-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0886217"
+      },
+      {
+        "id": "0604158",
+        "intitule": "Développeur logiciel embarqué (H/F)",
+        "entreprise": "",
+        "territoire": "33 - Saint-Médard-en-Jalles",
+        "contrat": "CDI",
+        "date": "2026-03-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0604158"
+      }
+    ],
+    "offers": [
+      {
+        "id": "0886217",
+        "intitule": "Développeur logiciel embarqué (H/F)",
+        "entreprise": "",
+        "territoire": "33 - Saint-Médard-en-Jalles",
+        "contrat": "CDI",
+        "date": "2026-03-28",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0886217"
+      },
+      {
+        "id": "0604158",
+        "intitule": "Développeur logiciel embarqué (H/F)",
+        "entreprise": "",
+        "territoire": "33 - Saint-Médard-en-Jalles",
+        "contrat": "CDI",
+        "date": "2026-03-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/0604158"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:07:30.258131",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

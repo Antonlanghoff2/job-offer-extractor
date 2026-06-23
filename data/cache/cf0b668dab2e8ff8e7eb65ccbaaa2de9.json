@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3208726",
+  "value": {
+    "id": "3208726",
+    "intitule": "Alternance Technicien Data et Fiabilisation des Référentiels F/H (H/F)",
+    "entreprise": "FILIALES SERVICE COURRIER COLIS",
+    "territoire": "16 - Fléac",
+    "ville": "16138",
+    "code_postal": "16730",
+    "contrat": "CDD - 6 Mois",
+    "date_creation": "2026-05-30",
+    "date": "2026-05-30",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3208726",
+    "description": "Envie de développer vos compétences en optimisation de l'organisation, gestion et qualité des données dans un environnement stimulant et stratégique ?\nRejoignez La Poste pour une alternance de 24 mois, qui vous permettra d'obtenir un BTS SERVICES INFORMATIQUES AUX ORGANISATIONS de niveau 5 (équivalent Bac+2) et de contribuer à la réussite des missions d'un établissement courrier.\nVos missions principales :\nMise à jour des points de distribution.\nCollecte de données sur le terrain.\nPrise en charge de la création des adresses dans le SI.\nParticipe à l'optimisation du tri en contribuant à la réduction des travaux intérieurs du facteur en utilisant des outils de l'IA dédiés au tri.\nAccompagnement du déploiement des nouvelles applications de tri et de distribution du Facteo.\nAppui et soutien en amont à des projets d'évolution.\nContribution à l'optimisation du raccordement postal au sein de l'établissement (organisation de rendez-vous avec les mairies et les syndics).\nSensibilisation et formation des équipes sur les outils développés.Date de rentrée : SEPTEMBRE 2026\nPostulez dès maintenant pour cette alternance professionnalisante.\nNous recherchons des candidat(e)s :\nDynamique, organisé(e), et doté(e) d'un excellent sens de l'écoute.\nTitulaire du bac. \nAyant une appétence pour l'informatique et savoir maitriser les outils bureautiques, Teams et Google Form. \nÉligible au contrat d'apprentissage (moins de 30 ans à la signature, sauf pour les personnes en situation de handicap - RQTH).*\n*conformément aux dispositions légales, pas de limite d'âge pour les personnes reconnues en qualité de travailleurs. Pourquoi choisir La Poste pour votre alternance ?\nIntégrer IRIS Angoulème pour obtenir un BTS SIO, un diplôme reconnu par le ministère du Travail (niveau Bac+2).\nTrouver un lieu d'alternance proche de chez vous et bénéficier d'un accompagnement personnalisé.\nProfiter des nombreux avantages sociaux de La Poste.\nRejoindre une entreprise engagée et reconnue comme n°1 mondiale en RSE, détentrice des labels Diversité et Top Employeur.",
+    "metier": "Data scientist",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Déploiement de modèles",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 24000,
+    "salaire_max": 24000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BTS",
+        "level": 5,
+        "required": true,
+        "source_sentence": "Rejoignez La Poste pour une alternance de 24 mois, qui vous permettra d'obtenir un BTS SERVICES INFORMATIQUES AUX ORGANISATIONS de niveau 5 (équivalent Bac+2) et de contribuer à la réussite des missions d'un établissement courrier.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Rejoignez La Poste pour une alternance de 24 mois, qui vous permettra d'obtenir un BTS SERVICES INFORMATIQUES AUX ORGANISATIONS de niveau 5 (équivalent Bac+2) et de contribuer à la réussite des missions d'un établissement courrier.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:14.448861",
+  "input_hash": "469efa6d48e9a49d677f755f43becd76cecd1fa573186f1508fd728d9cb1ccf1",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

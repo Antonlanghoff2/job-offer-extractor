@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:2614506",
+  "value": {
+    "id": "2614506",
+    "intitule": "AI Engineer - R&D - Secteur MarTech - F/H",
+    "entreprise": "Externatic",
+    "territoire": "92 - Levallois-Perret",
+    "ville": "92044",
+    "code_postal": "92300",
+    "contrat": "CDI",
+    "date_creation": "2026-05-13",
+    "date": "2026-05-13",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2614506",
+    "description": "L'entreprise accompagnée et les missions:\nL'entreprise accompagnée dans son recrutement CDI \n\nRejoignez une grande agence internationale, leader du conseil et des technologies marketing, adossée à un grand groupe mondial leader dans la communication, la transformation digitale et la data.\n\nVous rejoignez une équipe R&D spécialisée dans l’innovation algorithmique et les usages avancés de l’intelligence artificielle appliqués au marketing et à l’expérience client.\n\nL’équipe intervient en mode laboratoire d’innovation sur des sujets de pointe : IA générative, agentique, deep learning, automatisation intelligente, expérimentation de nouveaux modèles et conception de POC à forte valeur ajoutée.\n\nLes missions / rôles \n\nCe poste s’adresse particulièrement à un profil issu d’un parcours recherche (PhD) souhaitant évoluer dans un environnement où l’expérimentation et l’innovation occupent une place centrale.\n\nVos responsabilités incluent notamment :\n\n- Concevoir des POC IA innovants autour des LLM, de l’IA générative et des systèmes agentiques appliqués aux enjeux marketing, CRM et expérience client\n- Développer des workflows intelligents et automatisations avancées combinant modèles IA, APIs, orchestration et traitement de données\n- Expérimenter des approches de machine learning et deep learning pour des cas d’usage concrets : personnalisation, génération de contenus, analyse sémantique, recommandations ou optimisation de parcours clients\n- Collaborer avec les équipes Data, Martech et Tech afin de transformer des prototypes innovants en solutions exploitables pour de grands comptes internationaux\n- Assurer une veille active sur les nouvelles technologies IA et contribuer à l’émergence de nouvelles offres autour de l’IA appliquée au marketing digital\n\nProfil:\nCe client recherche avant tout un potentiel passionné.\nUne première expérience réalisée dans le cadre d'une thèse (scientifique ou ingénieur / pas obligatoirement sur des sujets IA), avec forte culture R&D et une passion pour l’IA appliquée est suffisante.\n\nQuelques pré-requis :\n- Compétences en Python, IA générative, machine learning ou deep learning\n- Intérêt marqué pour les architectures LLM, l’agentique, les frameworks IA modernes et le prototypage rapide\n- Anglais professionnel indispensable car environnement international\n- Curieux(se), orienté(e) innovation et à l’aise dans des contextes exploratoires mêlant recherche et cas d’usage business\n\nAvantages:\nConditions de travail et avantages\n- CDI au sein d’un groupe international reconnu dans les domaines du digital, de la data et du marketing\n- Rémunération selon expérience : jusqu’à 45K€\n- Télétravail hybride 2 jours / semaine\n- Locaux accessibles facilement (Levallois Perret, proche metro 3)\n- Environnement R&D stimulant avec forte autonomie sur les sujets explorés\n- Projets IA de nouvelle génération autour de l’agentique et des usages émergents de l’IA\n- Environnement stimulant mêlant data, innovation et stratégie marketing\n- Perspectives d’évolution au sein d’un écosystème international\n\nProcess de recrutement \n- Échange téléphonique avec un consultant Externatic (Hadrien)\n- Entretien RH avec l’entreprise\n- Rencontre avec le manager opérationnel accompagnée d’un test technique\n- Test d’anglais \n- Entretien final avec la direction du pôle concerné\nExternatic s’engage à vous apporter un suivi rapide, transparent et personnalisé tout au long du processus.",
+    "metier": "Data scientist",
+    "niveau": "junior",
+    "competences": [
+      "Anglais Professionnel",
+      "Deep learning",
+      "Git",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Déploiement de modèles",
+      "API",
+      "Pipelines de données",
+      "Scalabilité",
+      "Veille technologique",
+      "MLOps",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "thèse",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Une première expérience réalisée dans le cadre d'une thèse (scientifique ou ingénieur / pas obligatoirement sur des sujets IA), avec forte culture R&D et une passion pour l’IA appliquée est suffisante.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Une première expérience réalisée dans le cadre d'une thèse (scientifique ou ingénieur / pas obligatoirement sur des sujets IA), avec forte culture R&D et une passion pour l’IA appliquée est suffisante.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:07.148328",
+  "input_hash": "3860b69d5c5776172e8406fb69ec318977930a83926d2e8b8a341f0dba99e31e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

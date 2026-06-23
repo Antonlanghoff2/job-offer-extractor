@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:4052037",
+  "value": {
+    "id": "4052037",
+    "intitule": "Développeur Java/Kafka/Mongo (H/F)",
+    "entreprise": "",
+    "territoire": "59 - Lille",
+    "ville": "59350",
+    "code_postal": "59000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4052037",
+    "description": "Soors est une société spécialisée dans le recrutement et la délégation de profils IT et digitaux. Nous accompagnons nos clients dans la recherche de talents en proposant des missions innovantes et des environnements dynamiques. Nos valeurs reposent sur la proximité, l'expertise, la confidentialité et l'accompagnement personnalisé. Rejoindre Soors, c'est intégrer une communauté passionnée, agile et à taille humaine, au service de projets ambitieux. Le poste : Vous intégrerez une équipe dynamique pour contribuer au développement et au maintien en condition opérationnelle d'un produit stratégique. Poste et missions : - Participer à la conception technique et au développement des produits du pôle. - Assurer la cohérence technique autour du SI Supply en lien avec le centre de service. - Garantir la qualité applicative et participer aux estimations techniques. - Superviser le cycle de vie complet du développement, de la conception à la mise en production. - Assurer une veille technologique active et s'impliquer dans la communauté des Tech Lead. Environnement technique : - Back-End : Java (17/21), Spring Boot - Stockage : MongoDB, Elasticsearch (atout) - Event streaming : Kafka (Streams, Connect, Schema Registry) - Infrastructure : GitLab (CI/CD), Kubernetes, ELK, Prometheus, Grafana - Outils collaboratifs : Confluence, Jira, Google Workspace Modalités : - Localisation : Lille - Télétravail partiel possible Profil recherché : Nous recherchons un développeur disposant d'une disponibilité immédiate, capable de s'intégrer rapidement à une équipe technique exigeante. Expérience et compétences : - Expérience confirmée en développement Java et Spring Boot - Maîtrise de MongoDB, Kafka, GitLab CI/CD - Connaissance des environnements Kubernetes, ELK, Prometheus, Grafana - Bonne pratique des outils collaboratifs (Confluence, Jira) Formation : - Formation supérieure en informatique (BAC+4/+5 apprécié) Soft skills : - Esprit d'équipe, autonomie, capacité d'adaptation - Curiosité et veille technologique Un plus : - Expérience préalable dans un environnement similaire ou chez Boulanger - Disponible sous 1 semaine impératif",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "Spring",
+      "Code review",
+      "Qualité des données",
+      "Veille technologique"
+    ],
+    "salaire_min": 17000,
+    "salaire_max": 17000,
+    "teletravail": "télétravail partiel",
+    "diplomes_requis": [
+      {
+        "label": "BAC+4",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Expérience et compétences : - Expérience confirmée en développement Java et Spring Boot - Maîtrise de MongoDB, Kafka, GitLab CI/CD - Connaissance des environnements Kubernetes, ELK, Prometheus, Grafana - Bonne pratique des outils collaboratifs (Confluence, Jira) Formation : - Formation supérieure en informatique (BAC+4/+5 apprécié) Soft skills : - Esprit d'équipe, autonomie, capacité d'adaptation - Curiosité et veille technologique Un plus : - Expérience préalable dans un environnement similaire ou chez Boulanger - Disponible sous 1 semaine impératif",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:36.220419",
+  "input_hash": "d3bff7b7b15995d9dfa3b82eb0affd5294fa2cefd0a8c3ffcfad692fd765419d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

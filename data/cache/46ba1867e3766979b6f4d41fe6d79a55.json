@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:3552792",
+  "value": {
+    "id": "3552792",
+    "intitule": "Développeur C++ (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Isère",
+    "ville": "38 - Isère",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3552792",
+    "description": "Description du poste :\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Capgemini recherche actuellement des profils Vos missions :\nEn tant qu'Ingénieure/Ingénieur, vous serez un membre essentiel de notre équipe. Vos responsabilités principales seront les suivantes Participer à la définition de l'architecture logicielle embarquée Linux Yocto, en respectant l'environnement technique existant et les contraintes associées.\n* Concevoir et développer une nouvelle passerelle serveur d'énergie pour les tableaux électriques, en réutilisant et adaptant le logiciel d'un produit existant.\n* Travailler en collaboration avec une équipe de développement et de test en France et en Inde dans un environnement agile.\n* Effectuer le bring-up du matériel et réaliser des tests et corrections (patches) des drivers pour les modules Wifi, Zigbee, Bluetooth, Ethernet MAC, Boot, etc.\n* Proposer des solutions pragmatiques et innovantes pour répondre aux défis techniques du projet.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Linux",
+      "Design patterns",
+      "Documentation technique",
+      "Feature Engineering",
+      "MLOps",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieure/Ingénieur, vous serez un membre essentiel de notre équipe.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:57.924180",
+  "input_hash": "9be6d8b7112bfadba31685694bdc24639a646f9996ce637dfdfaa77fdc6aa19e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

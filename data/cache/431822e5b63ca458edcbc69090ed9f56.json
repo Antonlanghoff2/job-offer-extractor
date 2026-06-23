@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:3172359",
+  "value": {
+    "id": "3172359",
+    "intitule": "Ingénieur-e développement interface web f/h",
+    "entreprise": "",
+    "territoire": "14 - Colombelles",
+    "ville": "14167",
+    "code_postal": "14460",
+    "contrat": "CDI",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3172359",
+    "description": "Safran est un groupe international de haute technologie opérant dans les domaines de l'aéronautique (propulsion, équipements et intérieurs), de l'espace et de la défense. Sa mission : contribuer durablement à un monde plus sûr, où le transport aérien devient toujours plus respectueux de l'environnement, plus confortable et plus accessible. Implanté sur tous les continents, le Groupe emploie 100 000 collaborateurs pour un chiffre d'affaires de 27,3 milliards d'euros en 2024, et occupe, seul ou en partenariat, des positions de premier plan mondial ou européen sur ses marchés. Safran est la 2ème entreprise du secteur aéronautique et défense du classement « World's Best Companies 2024 » du magazine TIME. Safran Electronics & Defense propose à ses clients des solutions d'intelligence embarquée leur permettant d'appréhender l'environnement, de réduire la charge mentale et de garantir une trajectoire, même en situation critique, ce dans tous les environnements : sur terre, en mer, dans le ciel ou l'espace. La société met les expertises de ses 13 000 collaborateurs au service de ces trois fonctions : observer, décider et guider, pour les marchés civils et militaires. Parce que nous sommes persuadés que chaque talent compte, nous valorisons et encourageons les candidatures de personnes en situation de handicap pour nos opportunités d'em Descriptif missionPrêt-e à contribuer à des projets ambitieux qui façonnent l'avenir du spatial, de manière sûre, durable et innovante ? Rejoignez Safran Space, la Global Business Unit de Safran Electronics & Defense dédiée à l'industrie spatiale. Spécialiste technologique de premier plan, Safran Space accompagne à la fois le spatial et l'aéronautique avec des solutions permettant d'observer notre environnement avec une précision inégalée, de connecter les systèmes de la Terre à l'Espace, et de guider les plateformes, les personnes et les décisions dans un environnement toujours plus complexe. Avec plus de 1 600 femmes et hommes passionnés à travers le monde, notre expertise couvre la propulsion, les communications Terre-Espace, le temps-fréquence, l'optique, la surveillance de l'Espace, l'instrumentation, la navigation et la sécurité des lanceurs. Chaque jour, vous contribuerez à concevoir, fabriquer et soutenir des équipements, composants et sous-systèmes critiques, permettant aux agences spatiales, aux gouvernements, aux intégrateurs et aux acteurs commerciaux de développer et d'exploiter des systèmes spatiaux complexes. Envie de faire partie de cette aventure ? L'activité SCSA (Satellite Communication and Space Awareness) offre aux acteurs du secteur spatial (opérateurs satellite, régulateurs de fréquence, agences gouvernementales, ...), tous les outils, solutions et services pour détecter, localiser et analyser ces menaces.Safran Data Systems développe l'intégralité de ces systèmes, depuis les antennes, les fronts end d'acquisition haut débit, les logiciels de traitement temps réel et jusqu'aux interfaces de contrôle temps réel de la mission. L'équipe SCSA recherche un-e ingénieur-e en développement Web pour faire évoluer une interface permettant la visualisation de données utiles à la détection et à l'analyse de différents événements spatiaux (mouvement de satellites, pannes, ...). Pour cela, vous contribuez activement aux différentes étapes du projet : conception, développement, intégration, validation, documentation et déploiement. Intégré-e au sein des équipes de développement de l'activité SCSA, vos missions principales seront les suivantes : - Recueillir et analyser les besoins utilisateurs et opérationnels - Concevoir, développer et maintenir des applications WEB en Python/Django - Concevoir des interfaces ergonomiques et intuitives. Proposer des maquettes - Participer aux revues de conception et de code - Rédiger et exécuter les tests (unitaires, intégration) - Corriger les anomalies et assurer la maintenance évolutive - Contribuer à la documentation technique et à la traçabilité",
+    "metier": "Administrateur / Administratrice de site internet",
+    "niveau": "intermediaire",
+    "competences": [
+      "Acquisition",
+      "Aéronautique",
+      "Django",
+      "Développement web",
+      "Instrumentation",
+      "Intelligence artificielle",
+      "Optique",
+      "Python",
+      "Vue.js",
+      "Tests automatisés",
+      "Analyse des besoins",
+      "Maintenance applicative",
+      "Documentation technique",
+      "Code review",
+      "Cybersécurité",
+      "API",
+      "Backend",
+      "Optimisation des performances",
+      "Scalabilité",
+      "Analyse de données",
+      "Model drift",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 100000,
+    "salaire_max": 100000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "L'équipe SCSA recherche un-e ingénieur-e en développement Web pour faire évoluer une interface permettant la visualisation de données utiles à la détection et à l'analyse de différents événements spatiaux (mouvement de satellites, pannes, ...).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 22,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:15.177753",
+  "input_hash": "fc60741fdb9badb2c18de4c20770fb59be93d7ca3e29a7a4bc6d3cff3b98520c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

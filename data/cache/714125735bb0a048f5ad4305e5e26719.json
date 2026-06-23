@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:209HVPX",
+  "value": {
+    "id": "209HVPX",
+    "intitule": "Ingenieur Architecte Developpeur C++ (H/F)",
+    "entreprise": "PB SOLUTIONS",
+    "territoire": "35 - Bruz",
+    "ville": "35047",
+    "code_postal": "35170",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209HVPX",
+    "description": "PB Solutions recherche pour son client Fabriquant de Simulateur de vols pour les armees, un (e) Développeur(euse) logiciel 3D Simulateurs de Vol (H/F) pour assurer le développement de logiciels 3D (générateurs d'images temps-réel OTW & IR) avec le moteur Unreal Engine.\n\nMission CDIC 6 mois . \n\nMissions : \n-Analyse fonctionnelle et rédaction de spécifications détaillées,\n-Conception d'architectures et de solutions logicielles innovantes,\n-Développement en C++ pour le moteur Unreal Engine,\n- Tests unitaires,\n- Intégration et tests sur bancs,\n- Analyse et traitements des faits techniques\n\nLieu de travail: BRUZ (35), avec des déplacements en France comme à l'étranger.\n\nProfil : \n\nDiplômé(e) d'une école d'ingénieur avec spécialité informatique, vous êtes doté(e) d'au moins 2 ans d'expérience dans la technologie du moteur Unreal Engine.\n\nVous êtes doté(e) d'un bon relationnel, d'une forte capacité d'adaptation, et d'un bon esprit d'analyse et de synthèse ainsi que d'une grande autonomie.\n\nInformatique (logiciels et niveau de maîtrise souhaités):\n- Langage C++ : maîtrise\n- OS Windows : bases\n- Git : maîtrise\n\nVous avez un bon niveau d'anglais tant à l'oral qu'à l'écrit.\nVous etes habilitable Defense",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Cahier des charges",
+      "Computer Vision",
+      "Optimisation des performances"
+    ],
+    "salaire_min": 42000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Diplômé(e) d'une école d'ingénieur avec spécialité informatique, vous êtes doté(e) d'au moins 2 ans d'expérience dans la technologie du moteur Unreal Engine.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:36.718055",
+  "input_hash": "c5db66a4a0a03a60317d2ef3aef228030268ce23586e76858890bdf6689f5ad4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,312 @@
+{
+  "key": "trends:95 - Plessis-Bouchard",
+  "value": {
+    "territoire": "95 - Plessis-Bouchard",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Gestion de projet": 3,
+      "Intelligence artificielle": 3,
+      "Qualité Des Données": 3,
+      "Code Review": 2,
+      "Coûts": 2,
+      "Sécurité Informatique": 2,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 3
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 3
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Qualité des données": 3
+        }
+      },
+      {
+        "nom": "Code Review",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Code review": 2
+        }
+      },
+      {
+        "nom": "Coûts",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Coûts": 2
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Sécurité informatique": 2
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 3
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 3
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 3
+      },
+      "Code Review": {
+        "Code review": 2
+      },
+      "Coûts": {
+        "Coûts": 2
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 2
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Data Scientist": 3
+    },
+    "niveau": {
+      "intermediaire": 3
+    },
+    "contrats": {
+      "Intérim - 18 Mois": 2,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Coûts",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Vision",
+        "Qualité Des Données",
+        "Sécurité Informatique"
+      ],
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Coûts",
+        "Code Review",
+        "Qualité Des Données"
+      ],
+      [
+        "Gestion de projet",
+        "Intelligence artificielle",
+        "Coûts",
+        "Code Review",
+        "Qualité Des Données",
+        "Sécurité Informatique"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3744173",
+        "intitule": "MOEX Second œuvre - Projets Data Centers (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Plessis-Bouchard",
+        "contrat": "Intérim - 18 Mois",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3744173"
+      },
+      {
+        "id": "3744163",
+        "intitule": "MOEX Généraliste - Projets Data Centers (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Plessis-Bouchard",
+        "contrat": "Intérim - 18 Mois",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3744163"
+      },
+      {
+        "id": "3744150",
+        "intitule": "MOEX Second œuvre - Projets Data Centers (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Plessis-Bouchard",
+        "contrat": "CDI",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3744150"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3744173",
+        "intitule": "MOEX Second œuvre - Projets Data Centers (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Plessis-Bouchard",
+        "contrat": "Intérim - 18 Mois",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3744173"
+      },
+      {
+        "id": "3744163",
+        "intitule": "MOEX Généraliste - Projets Data Centers (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Plessis-Bouchard",
+        "contrat": "Intérim - 18 Mois",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3744163"
+      },
+      {
+        "id": "3744150",
+        "intitule": "MOEX Second œuvre - Projets Data Centers (H/F)",
+        "entreprise": "",
+        "territoire": "95 - Plessis-Bouchard",
+        "contrat": "CDI",
+        "date": "2026-06-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3744150"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:26.644849",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:209ZTHH",
+  "value": {
+    "id": "209ZTHH",
+    "intitule": "Ingénieur informatique PL/SQL (H/F)",
+    "entreprise": "WIZBII",
+    "territoire": "56 - Lorient",
+    "ville": "56121",
+    "code_postal": "56100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZTHH",
+    "description": "La société WIZBII recherche pour FIVES SYLEPS un Ingénieur informatique PL/SQL H/F en CDI à temps plein (35h/semaine). \n\nVos missions : \n\n-Participer au sein d'une équipe projet, au développement et au paramétrage d'applications autour de notre progiciel métier (gestion d'entrepôt, gestion des expéditions, GPAO, gestion commerciale.)\n\n-Assurer également les tests des applications informatiques et leur intégration chez le client. Des déplacements sont donc à prévoir\n\n-Posséder une réelle capacité d'analyse, un esprit de synthèse ainsi qu'une rigueur qui sont des atouts dans la conduite de nos projets\n\nLes entretiens pour le poste se dérouleront à l'occasion d'une session de recrutement privée à Lorient le Mardi 30 juin de 17h30 à 20h30 lors de laquelle vous pourrez rencontrer les recruteurs de l'entreprise.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL",
+      "Tests automatisés",
+      "Sécurité informatique",
+      "Intégration continue"
+    ],
+    "salaire_min": 36000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La société WIZBII recherche pour FIVES SYLEPS un Ingénieur informatique PL/SQL H/F en CDI à temps plein (35h/semaine).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:34.168468",
+  "input_hash": "d3f43e77a1dac2bc3cb8dca29256ef5bc9bf9ef8106f431c8277a87991128374",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

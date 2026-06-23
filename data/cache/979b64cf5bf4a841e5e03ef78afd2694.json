@@ -1,0 +1,74 @@
+{
+  "key": "offer_extraction:3955546",
+  "value": {
+    "id": "3955546",
+    "intitule": "DevOps (H/F)",
+    "entreprise": "",
+    "territoire": "34 - Montpellier",
+    "ville": "34172",
+    "code_postal": "34000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3955546",
+    "description": "Envie de rejoindre une entreprise où la technologie est un véritable moteur d'innovation ? Notre client est un acteur national en forte croissance, reconnu pour sa capacité à concevoir et déployer des solutions technologiques innovantes utilisées par des milliers d'acteurs de l'immobilier et du retail. Dans le cadre du renforcement de son équipe Infrastructure & IT, nous recherchons un(e) Ingénieur Systèmes & Réseaux prêt(e) à relever de nouveaux défis techniques et à participer à la transformation numérique de l'entreprise. Le poste : Vous participerez à la fiabilisation, l'automatisation et l'évolution de notre infrastructure technique, qui supporte nos solutions logicielles et nos produits connectés déployés chez nos clients. Vous serez responsable de l'exploitation, du déploiement et de l'amélioration continue de nos plateformes, en collaboration avec les équipes de développement logiciel et d'infrastructure. Missions principales Infrastructure & Exploitation (45%) - Maintenir et faire évoluer l'infrastructure cloud et les environnements de production. - Garantir la disponibilité, la performance et la sécurité des services. - Administrer les bases de données et les sauvegardes. - Mettre en place et superviser les outils de monitoring et de logging. - Analyser les incidents et assurer leur résolution. Automatisation & CI/CD (35%) - Concevoir et maintenir les pipelines CI/CD. - Automatiser les déploiements et la gestion de l'infrastructure. - Administrer les environnements Docker et les registres d'images. - Optimiser les processus de livraison et d'exploitation. Sécurité & Amélioration Continue (20%) - Mettre en oeuvre les bonnes pratiques de sécurité et gérer les accès. - Contribuer à la résilience, la scalabilité et la fiabilité des plateformes. - Être force de proposition sur les outils, architectures et pratiques DevOps. - Documenter les procédures et participer à l'amélioration continue. Profil recherché : Passionné(e) par les infrastructures IT, vous aimez comprendre, optimiser et faire évoluer des environnements techniques complexes. Vous avez 6 ans minimum d'expérience sur un poste similaire et vous disposez d'un Bac +5 en informatique, systèmes ou réseaux, au sein de PME. Un vrai plus : Une expérience ou un fort intérêt pour les technologies d'Intelligence Artificielle (IA générative, automatisation intelligente, machine learning appliqué aux opérations IT). Votre état d'esprit Curieux(se) et passionné(e) de nouvelles technologies Force de proposition et autonome Esprit d'équipe et sens du service Capacité à résoudre des problématiques techniques complexes Envie d'avoir un impact concret sur les projets et les infrastructures Pourquoi rejoindre cette aventure ? - Des projets techniques ambitieux et variés. - Un environnement innovant en constante évolution. - Une réelle autonomie dans vos missions. - L'opportunité de travailler sur des sujets mêlant Infrastructure, Cloud, Cybersécurité et Intelligence Artificielle. - Une équipe passionnée où l'expertise, le partage et l'innovation sont valorisés. Vous aimez les défis techniques, l'automatisation et les technologies de demain - Ce poste est fait pour vous !",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Intelligence artificielle",
+      "Machine learning",
+      "CI/CD",
+      "Automatisation de pipelines",
+      "Monitoring de modèles",
+      "Automatisation des déploiements",
+      "Déploiement de solutions",
+      "Optimisation de processus",
+      "MLOps",
+      "Analyse de données",
+      "Data Engineering",
+      "Gestion de projet",
+      "Product Management",
+      "Design patterns",
+      "Intégration continue",
+      "Optimisation des performances",
+      "Architecture microservices",
+      "Backend",
+      "Déploiement de modèles",
+      "Sécurité informatique",
+      "Git"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 45000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre du renforcement de son équipe Infrastructure & IT, nous recherchons un(e) Ingénieur Systèmes & Réseaux prêt(e) à relever de nouveaux défis techniques et à participer à la transformation numérique de l'entreprise.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous avez 6 ans minimum d'expérience sur un poste similaire et vous disposez d'un Bac +5 en informatique, systèmes ou réseaux, au sein de PME.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 22,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:00.138992",
+  "input_hash": "9550b43779e7d508212d2933da409dc9bd955904d1bdd9224a859745b498b6d0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

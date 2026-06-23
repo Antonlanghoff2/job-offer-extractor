@@ -1,0 +1,556 @@
+{
+  "key": "trends:62 - Béthune",
+  "value": {
+    "territoire": "62 - Béthune",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Intelligence artificielle": 2,
+      "Acquisition": 1,
+      "Analyse de données": 1,
+      "Data engineering": 1,
+      "Design Patterns": 1,
+      "Déploiement De Modèles": 1,
+      "Gestion de projet": 1,
+      "Git": 1,
+      "Instrumentation": 1,
+      "Model Drift": 1,
+      "Product Management": 1,
+      "Python": 1,
+      "Qualité Des Données": 1,
+      "Veille Technologique": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Acquisition",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Acquisition": 1
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Design Patterns",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Design patterns": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Instrumentation",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Instrumentation": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Product Management": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Veille technologique": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Acquisition": {
+        "Acquisition": 1
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Design Patterns": {
+        "Design patterns": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Instrumentation": {
+        "Instrumentation": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Product Management": {
+        "Product Management": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
+      }
+    },
+    "metiers": {
+      "Formateur / Formatrice": 1,
+      "Ingénieur / Ingénieure génie civil": 1
+    },
+    "niveau": {
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDD - 4 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Instrumentation",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Instrumentation",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Instrumentation",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Design Patterns",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Git",
+        "Product Management",
+        "Déploiement De Modèles",
+        "Qualité Des Données",
+        "Design Patterns",
+        "Veille Technologique"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Data engineering",
+        "Analyse de données",
+        "Acquisition",
+        "Instrumentation",
+        "Model Drift"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209QBSC",
+        "intitule": "Ingénieur(e) d'études en Énergétique et Matériaux de Génie Civil, (H/F)",
+        "entreprise": "UNIVERSITE D ARTOIS",
+        "territoire": "62 - Béthune",
+        "contrat": "CDD - 4 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209QBSC"
+      },
+      {
+        "id": "208TNTQ",
+        "intitule": "TECHNICIEN HELPDESK /  FORMATEUR LOGICIEL COMPTA PAIE SOINS H/F",
+        "entreprise": "MEDICAL LOCA SERVICES",
+        "territoire": "62 - BETHUNE",
+        "contrat": "CDI",
+        "date": "2026-05-27",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208TNTQ"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209QBSC",
+        "intitule": "Ingénieur(e) d'études en Énergétique et Matériaux de Génie Civil, (H/F)",
+        "entreprise": "UNIVERSITE D ARTOIS",
+        "territoire": "62 - Béthune",
+        "contrat": "CDD - 4 Mois",
+        "date": "2026-06-11",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209QBSC"
+      },
+      {
+        "id": "208TNTQ",
+        "intitule": "TECHNICIEN HELPDESK /  FORMATEUR LOGICIEL COMPTA PAIE SOINS H/F",
+        "entreprise": "MEDICAL LOCA SERVICES",
+        "territoire": "62 - BETHUNE",
+        "contrat": "CDI",
+        "date": "2026-05-27",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208TNTQ"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:17.158671",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

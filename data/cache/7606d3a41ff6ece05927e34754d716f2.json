@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:4038413",
+  "value": {
+    "id": "4038413",
+    "intitule": "Automaticien de tests (F/H)",
+    "entreprise": "Thelem assurances",
+    "territoire": "45 - Chécy",
+    "ville": "45089",
+    "code_postal": "45430",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4038413",
+    "description": "RESPONSABILITÉS : Nous recherchons un(e) Automaticien de tests en CDI pour rejoindre le siège social de notre compagnie d'assurance situé à Chécy (45). Au sein de l'équipe Développements Java, vous concevez, développez et maintenez à jour des tests d'automatisation avec Playwright sur les différentes applications de notre Système d'Information. Vous suivez leur exécution sur plusieurs environnements, analysez les résultats et vous vous assurez que les fonctionnalités sont conformes aux attentes, tant sur le plan technique que sur l'expérience utilisateur. › Vous créez des scénari de test, écrivez et exécutez les scripts, puis analysez les résultats › Vous mettez à jour les tests selon l'évolution des applications et/ou des spécifications et recettez les développements › Vous collaborez étroitement avec différents interlocuteurs et parties prenantes (MOE, MOA, TRA) ainsi qu'avec l'ensemble des acteurs informatiques (développeurs, architectes, intégrateurs, exploitants) › Vous assurez une communication efficace ainsi qu'un partage d'informations au sein de l'équipe et de vos interlocuteurs dédiés › Vous faîtes évoluer les KPI existants, mesurez l'activité de développement des tests automatisés et réalisez le reporting associé › Vous rédigez et mettez à jour les modes opératoires et effectuez une veille active régulière sur les différentes solutions d'automatisation. PROFIL RECHERCHÉ : Vous êtes titulaire d'un diplôme de niveau Bac+5 en informatique (Master MIAGE, Ecole d'Ingénieur Informatique), et possédez une expérience d' au moins 2 ans dans les tests fonctionnels et le développement. Vous avez déjà contribué à des projets d'automatisation et vous connaissez le secteur de l'assurance. Vos compétences techniques clés : Playwright, Selenium, Gerkin, Cucumber et RPA. Une compétence supplémentaire de GIT sera votre atout. Fiabilité, méthode, sens de l'analyse et du travail en équipe, force de proposition, aisance relationnelle et sens du service sont vos qualités reconnues ! La rémunération proposée pourra varier selon votre profil, expérience et compétences. Convention Collective applicable : Convention Collective des Sociétés d'Assurance du 27 mai 1992.",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Travail en équipe",
+      "Automatisation de pipelines",
+      "Tests automatisés",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 45000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "diplôme de niveau Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Vous êtes titulaire d'un diplôme de niveau Bac+5 en informatique (Master MIAGE, Ecole d'Ingénieur Informatique), et possédez une expérience d' au moins 2 ans dans les tests fonctionnels et le développement.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Vous êtes titulaire d'un diplôme de niveau Bac+5 en informatique (Master MIAGE, Ecole d'Ingénieur Informatique), et possédez une expérience d' au moins 2 ans dans les tests fonctionnels et le développement.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Vous êtes titulaire d'un diplôme de niveau Bac+5 en informatique (Master MIAGE, Ecole d'Ingénieur Informatique), et possédez une expérience d' au moins 2 ans dans les tests fonctionnels et le développement.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:51.530110",
+  "input_hash": "713c6ed92b7a76e8a2c259123c201ac05f8b4502c0ee1524e6be9758c76149a8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

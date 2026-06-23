@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:205BPXM",
+  "value": {
+    "id": "205BPXM",
+    "intitule": "Ingenieur Architecte Informatique  VTOM (H/F)",
+    "entreprise": "",
+    "territoire": "93 - Seine-Saint-Denis",
+    "ville": "93 - Seine-Saint-Denis",
+    "code_postal": "",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-03-06",
+    "date": "2026-03-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/205BPXM",
+    "description": "Expert de l'informatique KAN CS apporte à ses clients des solutions en maintenance informatique, réseau, monétique et dans le déploiement de techniciens.\nNous recherchons un Ingenieur Architecte VTOM\nMission : \nL'objectif de la mission :\nDéfinir et faire évoluer l'architecture VTOM en relation avec les architectes techniques\nAdministrer les plateformes VTOM\nAssister et conseiller les équipes projets sur les différentes solutions référencés au catalogue\nAssurer du support de N2 et N3 pour les Solutions Métier\nMettre en place en intégration les chaines d'ordonnancement.\nÊtre en support N3 des équipes de production\nDéfinir/modifier les bonnes pratiques de l'utilisation de l'ordonnanceur\nParticipation à la conception des feuilles de route techniques\nSuivre l'obsolescence des composants\nAssure la veille technologique\n\nEnvironnement fonctionnel et technique :\nEnvironnement : Hébergement Datacenter et cloud (Aws, Azure)\nSGBD : Oracle, Micrososft Sql Server, Postgresql, Ingres 9.2 sur Solaris, NoSQL Couchbase, Redis, MONGODB, PAAS SGBD (AWS et Azure)\nServeurs : Unix Solaris / AIX, Linux Suse / Red Hat / Centos / Ubuntu, Windows Server\nMiddlewares : Apache, Tomcat, Weblogic, CFT, MQ Server, SFTP, JMS, VTOM, suite logicielle TIBCO, Networker, Oracle Tuxedo\nPlateformes/ logiciels / Outils : Terraform, Jenkins, Ansible, squash TM, Postman, Docker, Kubernetes, Databricks, Script Shell, Python\nSupervision : Nagios, Datadog, Splunk\n\nRésultats attendus et/ou livrables avec échéancier si besoin:\nRédaction de documentation\nRespect de la sécurité\nCompte rendu d'activité mensuel\nRespect des engagements sur les délais et la qualité des propositions\nReporting\n\nConnaissances, compétences obligatoires:\nExpertise en ordonnancement (VTOM)\nMaitrise des technologies flux (SFTP, CFT, MQ Server)\nMaitrise des technologies autour du cloud serait un plus",
+    "metier": "Ingénieur / Ingénieure systèmes, réseaux et sécurité informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Docker",
+      "Délais",
+      "Kubernetes",
+      "Linux",
+      "NoSQL",
+      "PostgreSQL",
+      "Python",
+      "SQL",
+      "Terraform",
+      "Vision",
+      "Intégration continue",
+      "CSS",
+      "Documentation technique",
+      "Monitoring de modèles",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingenieur",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Nous recherchons un Ingenieur Architecte VTOM",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:16.637078",
+  "input_hash": "5373f3f3beae7c426ae688698347fcc942390f531fbccc845b7f84e65f6f7dbf",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

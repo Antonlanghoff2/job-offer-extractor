@@ -1,0 +1,80 @@
+{
+  "key": "offer_extraction:2404734",
+  "value": {
+    "id": "2404734",
+    "intitule": "Chercheur en informatique (H/F)",
+    "entreprise": "",
+    "territoire": "29 - Lanvéoc",
+    "ville": "29120",
+    "code_postal": "29160",
+    "contrat": "CDI",
+    "date_creation": "2026-05-07",
+    "date": "2026-05-07",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2404734",
+    "description": "Description du poste :\nENSEIGNEMENT\nAu sein du département de formation scientifique, la personne recrutée assurera une charge d'enseignement annuelle de 192 heures ETD sous forme de travaux pratiques (TP), travaux dirigés (TD), de cours magistraux (CM) ou encadrement de projets. Ces interventions s'effectuent dans le cadre de la formation d'ingénieur des élèves-officiers de l'École navale (niveau L3, M1 et M2) et concernent les masters soutenus par l'École navale (niveau M1 et M2).\nLa transition numérique, notamment à bord des navires, qui s'opère depuis ces dernières années confirme la nécessité d'assurer à tout futur officier une formation dans différents domaines de l'informatique et du numérique. L'École navale recherche un enseignant-chercheur pour développer des enseignements dans ces domaines. La personne recrutée effectuera son enseignement au sein du département d'enseignement informatique et traitement du signal de l'École navale. Elle pourra intervenir dans les enseignements de l'informatique au sens large et principalement dans des cours d'algorithmique et de programmation (C++, Java, Python), en réseaux et cybersécurité, en technologies Web, systèmes embarqués, architectures numériques et cloud. Elle encadrera des projets élèves, en particulier en lien avec les systèmes embarqués. Elle sera aussi force de proposition pour développer de nouveaux modules relatifs à ces domaines en s'appuyant sur des méthodes pédagogiques innovantes.\nLa personne recrutée aura la volonté de s'impliquer pleinement dans des projets collectifs rapprochant enseignement, recherche et innovation. Elle participera aux différents jurys des parcours de formation. Elle pourra également participer à l'élaboration et à l'encadrement des activités de formation. La capacité à enseigner en langue anglaise sera un plus, de même que l'intérêt pour les formes pédagogiques innovantes, incluant l'usage des technologies numériques et les méthodes d'apprentissage actif centré sur l'apprenant\nRECHERCHE ET INNOVATION\nLa personne recrutée viendra renforcer la composante cyber sécurité de l'axe de recherche « Conception et optimisation de vecteurs et systèmes navals » et la chaire industrielle de cyberdéfense des systèmes navals. Les thématiques de recherche privilégiées concernent les approches Zero Trust Network et la data-centric security, dans le but de renforcer la sécurité des systèmes distribués et critiques. Ces travaux peuvent porter sur des mécanismes de contrôle d'accès dynamiques, la vérification continue des identités, ainsi que sur la protection des données à la source, indépendamment de leur localisation. L'objectif est de concevoir des modèles de sécurité adaptatifs, capables de répondre aux contraintes de contextes opérationnels exigeants Le descriptif complet du poste est accessible via le lien suivant :\nhttps://ecolenavale.teamtailor.com/jobs/7337786-enseignant-chercheur-en-informatique-cyber-securite-section-cnu-27-f-h\nDescription du profil :\nTitulaire d'un doctorat en informatique en lien avec la cybersécurité, la personne recrutée devra s'investir au sein du laboratoire dans des travaux de recherche axés sur le domaine de cyber sécurité et en particulier sur la sécurité centrée sur les données (data-centric security) et les stratégies de sécurité informatique Zero Trust.\nMembre à temps plein de l'École navale, la personne recrutée devra s'impliquer dans les activités de la direction de la recherche et innovation et de l'Institut de Recherche et d'Etudes Navales. Elle pourra être amenée à prendre des responsabilités collectives pour la formation et la recherche.\nVotre profil\nDiplôme requis : Doctorat en informatique (spécialité cybersécurité La qualification aux fonctions de maître de conférences (section 27) serait appréciée\n- Goût prononcé pour les applications sur les problématiques maritimes et navales\n- Bonnes capacités relationnelles et humaines, dynamisme\n- Très bonnes capacités de rédaction scientifique en français et en anglais\n- Un intérêt et des compétences pour l'innovation seraient appréciés\n- Une expérience à l'étranger serait également appréciée",
+    "metier": "Ingénieur / Ingénieure de recherche scientifique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Java",
+      "Protection Des Données",
+      "Python",
+      "Sécurité Informatique",
+      "Déploiement de modèles",
+      "MLOps",
+      "API",
+      "Backend",
+      "Pipelines de données",
+      "Gestion de projet",
+      "Analyse de données",
+      "Qualité des données",
+      "Data Engineering"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Ces interventions s'effectuent dans le cadre de la formation d'ingénieur des élèves-officiers de l'École navale (niveau L3, M1 et M2) et concernent les masters soutenus par l'École navale (niveau M1 et M2).",
+        "confidence": 0.9
+      },
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Les thématiques de recherche privilégiées concernent les approches Zero Trust Network et la data-centric security, dans le but de renforcer la sécurité des systèmes distribués et critiques.",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Titulaire d'un doctorat en informatique en lien avec la cybersécurité, la personne recrutée devra s'investir au sein du laboratoire dans des travaux de recherche axés sur le domaine de cyber sécurité et en particulier sur la sécurité centrée sur les données (data-centric security) et les stratégies de sécurité informatique Zero Trust.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": false,
+        "source_sentence": "Diplôme requis : Doctorat en informatique (spécialité cybersécurité La qualification aux fonctions de maître de conférences (section 27) serait appréciée",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 4,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:24.052676",
+  "input_hash": "0e406a9e88ac05556d86869dcb60d825e7d70f20acf81e9b7c834a4a52cc0858",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

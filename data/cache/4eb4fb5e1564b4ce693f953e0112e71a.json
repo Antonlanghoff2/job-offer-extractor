@@ -1,0 +1,44 @@
+{
+  "key": "offer_extraction:3407776",
+  "value": {
+    "id": "3407776",
+    "intitule": "Tech lead embedded C/C++ - Greentech H/F",
+    "entreprise": "Externatic",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3407776",
+    "description": "L'entreprise accompagnée et les missions: L'entreprise et l'équipe Rejoins une startup industrielle et technologique en pleine croissance, basée en périphérie nantaise. Forte d'une quarantaine de collaborateurs passionnés, cette jeune entreprise innovante bouscule le secteur de la logistique et du e-commerce grâce à des solutions connectées éco-responsables. Leur mission est à fort impact : réduire drastiquement le gaspillage et l'empreinte carbone liés aux emballages jetables grâce à une technologie embarquée intelligente, réutilisable et hautement sécurisée. Dans cet environnement axé R&D où les cycles de décision sont courts, l'innovation technique est au service de la durabilité. Pour soutenir le déploiement à très grande échelle de leur produit phare, l'équipe technique doit aujourd'hui structurer et pérenniser sa roadmap logicielle embarquée. Tes futures missions Rattaché directement au Head of Engineering, tu prends le leadership technique du pôle embarqué. Tu occupes un rôle central, combinant expertise de haut niveau, architecture et mentorat d'une équipe de 3 à 5 ingénieurs de manière très \"hands-on\" : - Piloter la qualité et le cycle de vie du firmware : tu garantis la stabilité long terme du produit en production sur l'ensemble de son cycle d'utilisation (logistique, transport, utilisateur final) et gères les phases de spécification, de validation et de release ; - Prendre l'ownership des campagnes de mise à jour (OTA) : tu conçois et exécutes les stratégies de déploiement à distance sur le parc de devices actifs (rollouts progressifs, rollbacks sécurisés, monitoring proactif) ; - Maîtriser les contraintes physiques et de consommation : tu optimises finement la gestion de l'énergie (cycles de veille/réveil, gestion radio) et interfaces efficacement les pipelines de capteurs pour garantir une réactivité maximale sans perte d'événements critiques ; - Définir les contrats d'interface et l'intégration Cloud : tu supervises le comportement des stacks réseaux et structures les échanges de données avec le backend (schémas de télémétrie, IoT Shadows) ; - Inculquer l'innovation sur le matériel de nouvelle génération : tu participes activement aux choix d'architectures hardware (MCU/SoC, choix de connectivité, mémoire) et mènes des POCs avancés, notamment autour de l'inférence embarquée ; - Accompagner et faire grandir l'équipe : tu partages tes bonnes pratiques, challenges les spécifications avec le produit et diffuses l'usage des outils d'IA générative comme accélérateurs au quotidien (aide au debug, documentation, génération de drivers). Profil: Ce que tu apportes Tu justifies d'une expérience minimale de 7 ans en développement firmware, incluant au moins 2 ans sur un rôle de Tech Lead ou de référent technique majeur sur un produit connecté industriel déployé avec succès en conditions réelles. Expertise technique : - Une maîtrise incontournable du développement C/C++ orienté firmware et des architectures de production - Une expérience solide des systèmes d'exploitation temps réel (RTOS de type Zephyr ou FreeRTOS) - Une pratique courante du debug bas niveau (JTAG/SWD, analyseurs logiques, crash dumps) et du profilage de puissance énergétique - Une expertise éprouvée sur les protocoles de connectivité sans fil (BLE ou LTE-M) - Une gestion rigoureuse des contraintes de ressources matérielles (allocation statique RAM/Flash, optimisation de batterie) Compétences appréciées (Les petits \"+\" ) : - Une bonne connaissance de l'écosystème AWS IoT Core (IoT Jobs, MQTT/TLS) - Des compétences en scripting (Python) pour l'automatisation de bancs de tests et l'intégration dans des pipelines CI/CD sous Git - Une sensibilité à l'intégration de capteurs complexes (MEMS, affichage basse consommation) et à la lecture de schémas électroniques Mindset et soft skills : - Tu as la culture du résultat et considères qu'un problème en production est sous ta responsabilité jusqu'à sa résolution complète - Tu sais structurer une problématique complexe, proposer des arbitrages valeur/technique et engager l'action - Tu apprécies le travail transversal et sais vulgariser tes choix techniques auprès des équipes Produit, Backend, Mobile ou Hardware Le poste ayant une dimension internationale, la maîtrise de l'anglais est nécessaire. Avantages: Les conditions : - Rémunération cible : entre 50 000 € et 60 000 € brut annuel (selon ton parcours et ton niveau d'expertise). - Une politique de télétravail partiel est en place pour concilier vie pro / vie perso. - Localisation : Sainte-Luce-sur-Loire (Nord-Est de Nantes), avec des locaux modernes, un parking privé et un accès rapide depuis le périphérique. - Cadre de travail : Un environnement de type R&D stimulant, avec peu de niveaux hiérarchiques, où l'initiative et l'esprit d'intrapreneuriat sont valorisés. Process de recrutement : - Un entretien avec Nicolas ou Justine d'Externatic - Un premier rendez-vous sur site ou en visio avec la direction et l'équipe RH - Un deu...",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "Data Engineering",
+      "Pipelines de données",
+      "Qualité des données"
+    ],
+    "salaire_min": 60000,
+    "salaire_max": 60000,
+    "teletravail": "télétravail partiel",
+    "diplomes_requis": [],
+    "experience_requise": "7 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 0,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:45.309952",
+  "input_hash": "849c27c49759d3fe01903355ba237741147416b470e244797c50044f839e224e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

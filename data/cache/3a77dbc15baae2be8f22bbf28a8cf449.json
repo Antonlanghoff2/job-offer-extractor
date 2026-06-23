@@ -1,0 +1,329 @@
+{
+  "key": "trends:01 - Ségny",
+  "value": {
+    "territoire": "01 - Ségny",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "API": 1,
+      "AWS": 1,
+      "Backend": 1,
+      "Git": 1,
+      "Intelligence artificielle": 1,
+      "JavaScript": 1,
+      "Pipelines De Données": 1,
+      "Vue.js": 1
+    },
+    "competences_details": [
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "AWS",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "AWS": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "JavaScript",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "JavaScript": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Vue.js": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "API": {
+        "API": 1
+      },
+      "AWS": {
+        "AWS": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "JavaScript": {
+        "JavaScript": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Vue.js": {
+        "Vue.js": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "API",
+        "competence_b": "AWS",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "AWS",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "JavaScript",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "AWS",
+        "Git",
+        "Intelligence artificielle",
+        "JavaScript",
+        "Vue.js",
+        "API",
+        "Backend",
+        "Pipelines De Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "1458049",
+        "intitule": "Développeur full stack Laravel/VueJs (H/F)",
+        "entreprise": "Seyos",
+        "territoire": "01 - Ségny",
+        "contrat": "CDI",
+        "date": "2026-04-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1458049"
+      }
+    ],
+    "offers": [
+      {
+        "id": "1458049",
+        "intitule": "Développeur full stack Laravel/VueJs (H/F)",
+        "entreprise": "Seyos",
+        "territoire": "01 - Ségny",
+        "contrat": "CDI",
+        "date": "2026-04-14",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/1458049"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:17.236600",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

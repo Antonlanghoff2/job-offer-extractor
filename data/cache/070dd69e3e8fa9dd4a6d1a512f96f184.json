@@ -1,0 +1,40 @@
+{
+  "key": "offer_extraction:9328843",
+  "value": {
+    "id": "9328843",
+    "intitule": "DEVELOPPEUR INFORMATIQUE INDUTRIELLE (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Porcieu-Amblagnieu",
+    "ville": "38320",
+    "code_postal": "38390",
+    "contrat": "CDI",
+    "date_creation": "2026-02-20",
+    "date": "2026-02-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/9328843",
+    "description": "Nous recherchons pour le compte de notre client acteur historique et reconnu dans le secteur de la pierre, son futur Développeur Informatique Industrielle. Cette entreprise, qui allie un savoir-faire traditionnel d'excellence à une véritable ambition de modernisation vers l'Industrie 4.0, crée ce poste stratégique pour consolider son système d'information et sécuriser ses échanges de données.En plein défis de synchronisation de données entre son parc machine et son ERP, votre rôle sera double : investiguer et construire. Vous commencerez par auditer l'architecture existante pour diagnostiquer précisément les problématiques de communication entre le terrain et le système d'information. En parallèle, vous serez le moteur d'une transition majeure vers une architecture basée sur un middleware industriel de type edge computing. Votre objectif sera de fiabiliser la collecte, de centraliser et de normaliser les flux, puis de découpler la production de l'ERP afin d'exposer des données parfaitement qualifiées via des API, des bases de données ou des événements. Vous interviendrez sur un environnement technique industriel hybride et très riche. Les lignes de production sont architecturées autour d'automates Omron , de robots industriels et d'IHM ASEM. Vous interagirez avec des réseaux critiques (EtherCAT, Safety Bus, modules Schneider XPS) et une grande variété de protocoles (OPC UA, PROFINET, PROFIBUS, Modbus RTU et TCP/IP, Ethernet TCP/IP, liaisons séries, CANopen), le tout communiquant avec une multitude de capteurs et d'actionneurs.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Analyse de données",
+      "Model drift"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "hybrid",
+    "diplomes_requis": [],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:25.342330",
+  "input_hash": "182be6ecb27d22326c13d4c641979b1b9516844b63470c0202d54a440498053e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

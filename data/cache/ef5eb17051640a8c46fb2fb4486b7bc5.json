@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:209WWVQ",
+  "value": {
+    "id": "209WWVQ",
+    "intitule": "DCEO Engineer, Data Center Engineering Operations H/F",
+    "entreprise": "AMAZON DATA SERVICES FRANCE SAS",
+    "territoire": "95 - Argenteuil",
+    "ville": "95018",
+    "code_postal": "95100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209WWVQ",
+    "description": "Nous recherchons actuellement un **Ingénieur DCEO (Data Center Engineering Operations)** pour intervenir en tant que ressource technique au sein des centres de données critiques d'Amazon. Ce poste vise à garantir la disponibilité et la fiabilité globales de l'ensemble des infrastructures électriques et mécaniques du centre de données sur un site donné.\n\nCes équipements prennent en charge des serveurs critiques et doivent assurer une disponibilité supérieure à **99,999 %**. Le poste requiert une personne autonome, capable de prendre des initiatives et de proposer des solutions efficaces à des problèmes techniques complexes.\n\nLe candidat retenu devra avoir un impact direct et immédiat sur l'amélioration de la résilience, de l'efficacité et des capacités de nos installations afin d'offrir davantage de valeur aux clients d'Amazon. Ses responsabilités incluront la maintenance, l'exploitation et le dépannage des infrastructures critiques des centres de données, notamment :\n\n* Les groupes électrogènes diesel de secours et leurs systèmes de carburant associés ;\n* Les systèmes électriques triphasés tels que les tableaux de distribution, les onduleurs (UPS), les unités de distribution électrique (PDU), les batteries à électrolyte liquide et les systèmes associés ;\n* Les systèmes de climatisation de précision (CRAC), les groupes frigorifiques centrifuges, les tours de refroidissement et les systèmes de traitement chimique de l'eau ;\n* Les centrales de traitement d'air, pompes, moteurs et équipements associés.\n\n---\n\n## Missions\n\n* Exploiter et assurer la maintenance de tous les équipements mécaniques, électriques et CVC (chauffage, ventilation, climatisation) du centre de données.\n* Superviser les prestataires réalisant des opérations de maintenance ou d'entretien préventif.\n* Élaborer des plans d'intervention pour les réparations d'urgence des équipements critiques.\n* Travailler avec un minimum de supervision.\n* Participer aux astreintes et aux rotations d'équipes selon les besoins.\n* Utiliser les outils de support de base tels que les systèmes de tickets, les analyses des causes racines et la priorisation des tâches.\n* Assurer les permanences de quart lorsque nécessaire.\n* Respecter strictement les procédures et politiques de sécurité physique.\n* Veiller au respect de toutes les procédures de sécurité lors des interventions.\n* Effectuer les installations électriques des baies informatiques, remplacer les PDU et ATS de baie.\n* Vérifier les capacités électriques et de refroidissement avant l'installation de nouvelles baies.\n* Créer et clôturer les ordres de travail avec toutes les informations nécessaires (heures de travail, maintenance réalisée, pièces utilisées) dans le système de gestion des actifs.\n* Assurer le suivi des modifications d'état des infrastructures critiques dans le cadre des maintenances préventives et correctives.\n* Réaliser des tests de qualité, de performance, de sécurité et de fiabilité des équipements et processus.\n* Intervenir en première ligne pour le diagnostic et le dépannage des équipements électriques et mécaniques\n\nLe candidat devra démontrer :\n\n* Une capacité à résoudre les problèmes par l'identification et l'élimination des causes racines, tout en gardant une vision globale de la situation.\n* Un respect rigoureux des procédures de sécurité.\n* Une forte aptitude au diagnostic et à la résolution de problèmes complexes.\n* La capacité à suivre les procédures, la documentation technique et à assurer le suivi des incidents via un système de tickets.\n\nDiplôme de niveau Bac+5 ou équivalent en :\nGénie électrique,\nGénie mécanique,\nCVC (chauffage, ventilation et climatisation),\nTechnologie industrielle,\nÉlectrotechnique.\nPlus de 7 ans d'expérience dans la maintenance préventive et corrective des systèmes électriques, mécaniques et frigorifiques (centre de données, site industriel, installation énergétique, etc.).",
+    "metier": "Expert / Experte systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Vision",
+      "Documentation technique",
+      "Cybersécurité",
+      "Scalabilité",
+      "Qualité des données",
+      "Gestion de projet",
+      "Résolution de problèmes",
+      "Data Engineering",
+      "Model drift",
+      "Monitoring de modèles",
+      "Optimisation des performances",
+      "Pipelines de données"
+    ],
+    "salaire_min": 99000,
+    "salaire_max": 99000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons actuellement un **Ingénieur DCEO (Data Center Engineering Operations)** pour intervenir en tant que ressource technique au sein des centres de données critiques d'Amazon.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Diplôme de niveau Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplôme de niveau Bac+5 ou équivalent en :",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "7 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:16.730949",
+  "input_hash": "bb414f93a0276647fdb58c3b6ce932474c2b90b16fd317e0cabb07f3db6ff44e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

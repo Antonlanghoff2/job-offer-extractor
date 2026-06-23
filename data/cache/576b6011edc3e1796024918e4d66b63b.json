@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:7605837",
+  "value": {
+    "id": "7605837",
+    "intitule": "Data manager (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Malakoff",
+    "ville": "92046",
+    "code_postal": "92240",
+    "contrat": "CDI",
+    "date_creation": "2026-01-08",
+    "date": "2026-01-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7605837",
+    "description": "Description du poste Concevoir, développer et maintenir des chaines de traitement et d'enrichissement des données S'assurer de la qualité des données et traiter les demandes exprimées par les utilisateurs Analyser les besoins des utilisateurs au regard des capacités fournies par les outils décisionnels. Concevoir, en fonction, des univers décisionnels, des d'entrepôts de données, réaliser les tests de bon fonctionnement Participer à l'administration et à la maintenance des bases de données Créer, adapter et diffuser les requêtes décisionnelles / Concevoir et mettre en place des rapports décisionnels Participer à la politique de gestion de la donnée et à la structuration de son cycle de vie Assurer les fonctions d'analyste programmeur Rédiger la documentation associée aux requêtes programmées ainsi qu'aux tests et à la validation Procéder à la correction ou la modification de données en bases Gérer les comptes utilisateurs sur le SI.\nDescription du profil Expérience préalable en administration des données, administration des SI ou développement.\n- Diplôme de niveau BAC+5 en informatique avec spécialité data science / machine learning.",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "Data Engineering",
+      "Analyse des besoins",
+      "Qualité des données",
+      "Analyse de données",
+      "Model drift",
+      "Protection des données",
+      "Pipelines de données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Diplôme de niveau BAC+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplôme de niveau BAC+5 en informatique avec spécialité data science / machine learning.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:10.926923",
+  "input_hash": "47db4fa3c233974dbcedd018f0e65853a61ec86f6592bbe5a6f5d591c237eb6d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:3314097",
+  "value": {
+    "id": "3314097",
+    "intitule": "Ingénieur Test Automation IoT (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3314097",
+    "description": "Et si vous embarquiez vers les nouvelles technologies ? Filiale du groupe industriel ICE, Médiane Système, est une société d'ingénierie innovante spécialisée en électronique, systèmes embarqués et informatique industrielle. Médiane Système a construit son identité sur une expertise technique de haut niveau en proposant à ses clients, des prestations d'accompagnement au travers de ses Départements R&D (DRD) et ConSulting (DCS). Présente en France (région Parisienne, Rhône-Alpes, Midi-Pyrénées, PACA, Grand Ouest), en Belgique et en Italie, Médiane Système est partenaire de grands comptes industriels et de nombreuses PME. Du secteur automobile au médical, en passant par l'énergie, le ferroviaire, l'aéronautique ou bien les télécoms. Médiane Système intervient exclusivement sur les métiers de l'ingénierie système (logiciel embarqué, logiciel applicatif pour l'industrie, électronique numérique et analogique, banc de tests) dans des environnements technologiques de pointe. Créée par des ingénieurs, Médiane Système, est une entreprise technique à taille humaine, proche de ses collaborateurs, qui privilégie depuis plus de 30 ans, le développement des compétences et l'épanouissement de ses salariés. Le poste : Dans le cadre du développement d'un SDK embarqué de nouvelle génération destiné à des objets connectés communicants, nous recherchons un(e) Consultant(e) Test Automation IoT pour renforcer une équipe d'experts intervenant sur des technologies sans fil de pointe. Vos missions : - Concevoir et développer des Framework de tests automatisés couvrant les couches physiques et protocolaires du SDK - Définir et exécuter des scénarios de validation fonctionnelle, d'intégration système et de performance RF - Garantir la couverture des tests d'interopérabilité entre les différents protocoles sans fil - Participer à la validation de conformité vis-à-vis des standards et certifications du marché - Intégrer les campagnes de tests dans les pipelines CI/CD et automatiser la génération des résultats - Collaborer étroitement avec les équipes Firmware et Système pour accompagner les évolutions du SDK - Identifier, analyser et documenter les anomalies, régressions et risques qualité liés aux stacks de communication. Profil recherché : Diplômé(e) d'une école d'ingénieur ou équivalent, vous justifiez d'une expérience significative d'au moins 4 ans en automatisation de tests. Compétences techniques : - Python / C / C++ - Test Framework - Environnement CI / CD - Scripting et automatisation avancée. Expertise protocoles sans fil : - OpenThread - Bluetooth Low Energy (BLE) - Wireless M-Bus (W-MBUS) - Wi-SUN.",
+    "metier": "Evaluateur / Evaluatrice sécurité des systèmes et produits informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Python",
+      "Tests automatisés",
+      "Pipelines de données",
+      "Data Engineering"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 30000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Profil recherché : Diplômé(e) d'une école d'ingénieur ou équivalent, vous justifiez d'une expérience significative d'au moins 4 ans en automatisation de tests.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:12.540958",
+  "input_hash": "edbc3ed83bfcde8ca3b8647229688fe7d2a83d342a7ed4348568a001cd1f682a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

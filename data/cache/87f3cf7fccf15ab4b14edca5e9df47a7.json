@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:209BFRR",
+  "value": {
+    "id": "209BFRR",
+    "intitule": "Expert-e en calcul scientifique - simulations atomistiques (H/F)",
+    "entreprise": "INSTITUT MAX VON LAUE - PAUL LANGEVIN",
+    "territoire": "38 - GRENOBLE",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2026-06-01",
+    "date": "2026-06-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209BFRR",
+    "description": "L'Institut Laue-Langevin (ILL), implanté à Grenoble, est un centre international de recherche fondamentale, leader européen en sciences neutroniques. L'ILL accueille chaque année plus de 2000 visites de scientifiques qui viennent réaliser des expériences de haut niveau.\nLe groupe Calcul Scientifique (CS) de l'ILL assure le développement et la maintenance des outils logiciels permettant la réduction et l'analyse de données ainsi que des simulations atomistiques. Ces outils sont regroupés sur une plateforme numérique qui intègre des logiciels de dynamique moléculaire classique et de simulation de premiers principes (ab initio, DFT), et les simulations sont réalisées sur un cluster de calcul haute performance (HPC).\nDans le cadre de la stratégie scientifique de l'ILL, le groupe CS est impliqué dans la mise à disposition des scientifiques d'outils numériques de dernière génération, intégrant notamment des approches nouvelles d'intelligence artificielle. Dans ce même cadre, des sujets à fort intérêt sociétal ont été identifiés, l'un d'eux portant sur les batteries : le « ILL Battery Hub » est un programme de recherche prioritaire dans le cadre duquel le groupe CS fournit un soutien en matière de simulation pour des études par spectroscopie neutronique, c'est à dire en support des expériences qui seront réalisées sur l'ensemble des instruments du groupe Spectroscopy de l'ILL.\n\nVos fonctions :\nVous serez membre du groupe Calcul Scientifique, mais vous aurez une grande part de votre activité en lien avec les problématiques du groupe Spectroscopy qui est en charge de l'ensemble des spectromètres neutroniques de l'ILL.\n\n    IPAD - Développement : vous participerez au développement de la plateforme IPAD (Integrated Platform for Analysing Data), en étroite collaboration avec des scientifiques et équipes de l'ILL (IT, SCI, DS) ainsi qu'avec des partenaires externes (Université d'Oslo - Hylleraas Centre). Cette mission nécessite une compréhension profonde des besoins des scientifiques ainsi que des différents aspects en matière de réduction et d'analyse des données de diffusion de neutrons.\n    Battery Hub - activités de simulation : vous contribuerez aux développements scientifiques au sein du Battery Hub et plus particulièrement aux simulations atomistiques (dynamique moléculaire classique, ab initio, DFT) réalisées sur le cluster HPC de l'ILL. A ce titre, vous aurez la responsabilité de coordonner, initier et soutenir des projets de simulation au sein du Hub, en particulier ceux qui nécessitent une expertise en spectroscopie.\n    IN1-Lagrange - support aux utilisateurs : vous aiderez au développement de nouvelles méthodes d'analyse de données et de conduites d'expérience sur le spectromètre IN1-Lagrange (AI-Machine Learning, Analyse Bayesienne...). A ce titre, vous aurez une part de soutien expérimental aux utilisateurs externes de cet instrument (en assurant la fonction de « local contact »).\n\nVotre profil :\n\n    Doctorat en physique, chimie ou dans un domaine connexe.\n    Vous devez impérativement posséder des compétences en programmation (Python et/ou d'autres langages de calcul scientifique) ainsi qu'une bonne expérience des logiciels de DFT (tels que VASP, Quantum ESPRESSO, CP2K) pour l'étude de la matière condensée.\n    Posséder des connaissances en intelligence artificielle et plus particulièrement en machine learning serait un atout.\n\n    Une expérience dans les techniques de spectroscopie (en particulier vibrationnelle) serait un plus.\n    La connaissance des problèmes et matériaux liés aux batteries serait utile",
+    "metier": "Ingénieur / Ingénieure calcul et structure",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Doctorat en physique, chimie ou dans un domaine connexe.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:57.310471",
+  "input_hash": "19dea2dfd719a22d409ada784afba6b937e78a704d57ff3b4f8d41deb7129652",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

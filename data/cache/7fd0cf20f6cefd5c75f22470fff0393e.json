@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3833218",
+  "value": {
+    "id": "3833218",
+    "intitule": "Senior Software Engineer / DevOps (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3833218",
+    "description": "STEP UP est une société d'ingénierie experte en pilotage de projets industriels et informatiques (+ 250 collaborateurs sur 11 agences en France), plaçant le potentiel humain comme 1er vecteur d'excellence et de performance en entreprise. Oubliez les sociétés d'ingénierie qui ne valorisent que vos seules compétences, chez STEP UP, nous visons également l'adéquation entre votre personnalité et la culture d'entreprise de nos clients. Cela se traduit pour vous par une différence fondamentale en termes de bien être, d'épanouissement au travail et de succès dans vos missions. Ce que nous vous proposons : - Un cadre de travail épanouissant, stimulant et collaboratif, nous sommes certifiés entreprise où il fait bon vivre ! - Des projets innovants et variés. - La possibilité de se perfectionner continuellement avec des formations internes. - Des perspectives d'évolution de carrière. - Un accompagnement individualisé avec un programme de développement du potentiel humain. - Un programme de cooptation. Et bien sûr, nous prenons en charge 70% de votre mutuelle santé et encourageons financièrement la mobilité douce. Le poste : Profil recherché : - Senior (7+ ans d'expérience) - Développement Python + Azure Cloud - DevOps / DevSecOps : CI/CD (GitHub Actions), Docker, Kubernetes / K3s, Helm - Bonne maîtrise de Linux et des architectures micro-services distribuées - Un plus : Edge AI (Machine Learning, Computer Vision, Agentic AI), C/C++/Rust, GPU - Anglais courant Infos clés : - Démarrage : dès que possible (urgent) - Mode : hybride (présentiel + télétravail) Profil recherché : Senior Software Engineer - Cloud, Edge AI & Platform Engineering (H/F) Grenoble (hybride) | Démarrage ASAP Rejoignez la prochaine génération de plateformes IA Dans le cadre du développement de notre plateforme d'Intelligence Artificielle nouvelle génération, nous recherchons un Senior Software Engineer capable de concevoir, développer et industrialiser des solutions Cloud-to-Edge à grande échelle. Vous évoluerez au sein d'une équipe multidisciplinaire regroupant Software Engineers, Data Scientists, Data Engineers et Product Owners afin de construire les fondations technologiques permettant le déploiement d'applications IA dans des environnements Cloud, Edge et On-Premise. Ce poste s'adresse à un ingénieur expérimenté souhaitant intervenir sur des problématiques techniques à forte valeur ajoutée : architectures distribuées, Edge AI, MLOps, conteneurisation, automatisation et industrialisation des déploiements. Vos missions - Développer les services Cloud de la plateforme basés sur Microsoft Azure. - Concevoir et industrialiser les runtimes Edge AI destinés à l'exécution de modèles de Machine Learning, Computer Vision et Agentic AI. - Construire des architectures distribuées et conteneurisées déployées sur Kubernetes/K3s. - Mettre en œuvre les pipelines CI/CD et les pratiques DevSecOps permettant des déploiements fiables et sécurisés. - Participer à la définition des architectures de référence utilisées par les équipes Data Science pour développer, tester, déployer et superviser les modèles IA. - Contribuer aux choix techniques structurants de la future plateforme. - Produire la documentation technique, les tests automatisés et les démonstrations associées aux développements réalisés. Environnement technique - Python - Microsoft Azure - GitHub Actions - Docker - Kubernetes / K3s - Helm - Linux - Microservices - DevOps / DevSecOps - Cloud Native Architecture Profil recherché Vous disposez idéalement de : - 7 ans d'expérience minimum en dévelo",
+    "metier": "Architecte base de données",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Docker",
+      "Git",
+      "GitHub",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "MLOps",
+      "Machine learning",
+      "Python",
+      "Vision",
+      "CI/CD",
+      "Monitoring de modèles",
+      "Déploiement de modèles",
+      "Backend",
+      "Sécurité informatique",
+      "API",
+      "Intégration continue",
+      "Data Engineering"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Ce poste s'adresse à un ingénieur expérimenté souhaitant intervenir sur des problématiques techniques à forte valeur ajoutée : architectures distribuées, Edge AI, MLOps, conteneurisation, automatisation et industrialisation des déploiements.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 19,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:01.363921",
+  "input_hash": "6130e1211f0e3cf56b5f4077059a980ee0f8328d9bfc6ed237e18a2e9d83f013",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

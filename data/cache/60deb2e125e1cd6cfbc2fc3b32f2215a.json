@@ -1,0 +1,50 @@
+{
+  "key": "offer_extraction:2986058",
+  "value": {
+    "id": "2986058",
+    "intitule": "Développeur / Développeuse informatique (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 5e Arrondissement",
+    "ville": "69385",
+    "code_postal": "69005",
+    "contrat": "CDI",
+    "date_creation": "2026-05-23",
+    "date": "2026-05-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2986058",
+    "description": "Description du poste :\nFIDUCIAL est un groupe spécialisé dans les services pluridisciplinaires aux petites entreprises, artisans, commerçants, professions libérales dans les métiers du droit, expertise comptable, banque, conseil financier, informatique, fourniture de bureau et sécurité.\nNous recrutons un Ingénieur études Java (h/f) en CDI dans le 9e arrondissement de Lyon au sein de notre bureau d'étude GED.\nRattaché au DSI, dans une équipe de 5 collaborateurs (dont deux développeurs au Portugal), vos missions sont les suivantes Évolution et corrections autour d'un SI de gestion documentaire (Alfresco - 3M de nouveaux documents par mois Maintien en conditions opérationnelles et optimisation de développements spécifiques Java (ex. caches techniques, APIs Accompagnement de l'accroissement de la volumétrie suite à déploiement Facilia / Plateforme agréée Fiducial (performances, niveau de service 24/7 Automatisation de l'intégration de fonds documentaires existants (dossiers papiers ou migration GED lors de rachats de sociétés Évolution et maintien en conditions opérationnelles d'une solution de signature électronique\nDescription du profil :\nVous êtes titulaire d'une formation d'Ingénieur généraliste ou informatique.\nVous avez une expérience significative en développement Java et idéalement autour d'une GED\nVous êtes à l'aise dans la gestion de flux et la manipulation de données.\nVous êtes curieux, agile d'esprit et rigoureux dans votre travail.\nVous savez travailler en équipe.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Java",
+      "Data Engineering",
+      "Analyse de données"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recrutons un Ingénieur études Java (h/f) en CDI dans le 9e arrondissement de Lyon au sein de notre bureau d'étude GED.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:14.518616",
+  "input_hash": "5401edd4fc60609e481d7d64b6f93882029a5be9eb22a9e336bd511189902063",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

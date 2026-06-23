@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3765544",
+  "value": {
+    "id": "3765544",
+    "intitule": "Data Engineer Confirmé(e) - expert PySpark  - Services Financiers - Ile de France  (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3765544",
+    "description": "Description de l'entrepriseSopra Steria, acteur majeur de la Tech en Europe, avec 50000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d’activité et des technologies à une approche collaborative. Sopra Steria place l’humain au cœur de son action et s’engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2024, le Groupe a réalisé un chiffre d’affaires de 5,8 milliards d’euros.The world is how we shape it* *Le monde est tel que nous le façonnonsDescription du posteVotre futur environnement de travail :Vous êtes passionné(e) par la valorisation de la donnée, rejoignez notre Data Factory localisée à Paris ! Vous y rencontrerez des experts de la mise en œuvre de Plateforme de Données, des Data Architectes ou autres experts solution autour des problématiques de valorisation de la donnée.Vous êtes accompagné(e) au développement de vos connaissances aux travers de différents parcours Data que ce soit pour l'ingestion, la construction de datahub, la transformation et valorisation de la donnée, la modélisation et mise à disposition.Rejoindre notre Data Factory Sopra Steria, c'est rejoindre une communauté de Data Ingénieurs fiers de partager leur savoir et ouverts aux nouvelles expériences et expérimentations de la donnée.Votre rôle et vos missions :Dans le cadre de la mise en place du centre Data pour un grand acteur financier de l’état et selon votre appétence, vous participerez à plusieurs étapes de la chaîne :- La compréhension des besoins métiers et la traduction solution de data ingénierie- La mise en œuvre de solution d'ingestion des données quelles soit en batch et/ou en streaming dans un contexte Cloud ;- La structuration du DataLake, la mise en place de processus de gouvernance et sécurisation des données ;- Le traitement de la donnée jusqu'à l'exposition au métier ;- La mise en place de la chaine CI/CD et de sa supervision ;- La veille technologie avec nos partenaires éditeurs et la mise en place de Prototype Design, Proof of Concept ou encore MVP dans un objectif d'idéation pour nos clients.Vous maitrisez un langage de programmation appliqué à l’analyse de données (SQL, Scala, R, Python, Java), le traitement distribué de données (Spark, Pyspark , Hadoop) et un Framework de streaming de données (Kafka, RabbitMQ, etc.).QualificationsVous êtes attiré(e) par le monde du numérique, le Cloud et des technologies innovantes.Vous avez un bon esprit d'analyse, êtes curieux(se) et passionné(e) et vous avez le sens du travail en équipe dans une organisation Agile type Srcum ou SAFEVous accordez une importance particulière au développement de vos compétences sur plusieurs technologies. Vous souhaitez une évolution réelle de carrière à travers l'expérience projet. Vous êtes soucieux de l'apport de valeur pour vos clients. Et vous voulez transmettre votre savoir auprès de collaborateurs moins expérimentés. Alors, n'attendez-plus, ce poste est fait pour vous !Diplômé(e) d'une Ecole d'ingénieur ou formation équivalente, vous avez déjà participé à un projet Data (Big Data, BI) et vous avez une expérience de minimum 3 ans. La maitrise de Dataiku serait un plus.Informations supplémentairesUn accord télétravail pour télétravailler jusqu’à 2 jours par semaine selon vos missions. Un package avantages intéressant : une mutuelle, un CSE, des titres restaurants, un accord d’intéressement, des primes vacances et cooptation.Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.Plusieurs centaines de formations accessibles en toute autonomie avec Sopra Steria Academy.La possibilité de s’engager auprès d’une association grâce à notre plateforme d’engagement citoyen.L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore…).Employeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C’est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les profils.https://www.soprasteria.fr/nous-connaitre/nos-engagements",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "SQL",
+      "Vision",
+      "CI/CD",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift",
+      "Veille technologique"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 50000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Alors, n'attendez-plus, ce poste est fait pour vous !Diplômé(e) d'une Ecole d'ingénieur ou formation équivalente, vous avez déjà participé à un projet Data (Big Data, BI) et vous avez une expérience de minimum 3 ans.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "0 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:21.921495",
+  "input_hash": "7860d34c3477882c72ecf1cfdd369b932e723b90c194a6dc2e775da161513863",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

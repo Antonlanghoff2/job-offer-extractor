@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3324796",
+  "value": {
+    "id": "3324796",
+    "intitule": "E.Leclerc - DATA Engineer - H/F",
+    "entreprise": "",
+    "territoire": "62 - Tilloy-lès-Mofflaines",
+    "ville": "62817",
+    "code_postal": "62217",
+    "contrat": "CDI",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3324796",
+    "description": "DESCRIPTIF DE L'OFFRE La DSI pilote une migration progressive vers une architecture GCP (BigQuery, DBT, Airflow) pour remplacer un environnement hétérogène composé de bases relationnelles (Oracle, SQL Server, MySQL, Progress SQL), de fichiers QVD et d'ordonnancement Airflow. Dans ce cadre, le Data Engineer recruté aura pour mission de construire, industrialiser et maintenir les pipelines de données alimentant les couches Bronze, Silver et Gold de l'architecture Medallion, en lien direct avec les équipes métier, BI et infrastructure. Son rôle, renforcer les compétences data engineering, et à sécuriser la continuité opérationnelle dans un contexte de montée en maturité data de l'organisation. 3.1 CONSTRUCTION ET MAINTENANCE DES PIPELINES DE DONNÉES * Développer et maintenir les pipelines alimentant BigQuery depuis les sources (Oracle, SQL Server, MySQL, Progress SQL) * Modéliser les couches Bronze (ingestion brute), Silver (nettoyage, normalisation) et Gold (agrégats métier) selon l'architecture Medallion * Écrire, tester et versionner les transformations DBT (modèles, tests, documentation) * Orchestrer les workflows de données via Apache Airflow (DAGs, dépendances, gestion des erreurs et alertes) 3.2 QUALITÉ ET FIABILITÉ DES DONNÉES * Implémenter des contrôles qualité à chaque couche de la plateforme (tests DBT, checks d'intégrité référentielle, détection d'anomalies) * Mettre en place une gestion des incidents data et assurer le suivi des SLA de disponibilité * Documenter les modèles, les flux et les règles métier dans les outils de catalogage (Dataplex) 3.3 CONTRIBUTION À LA GOUVERNANCE ET À L'ACCULTURATION DATA * Travailler en étroite collaboration avec les Data Domain Owners pour formaliser les règles métier et les définitions des indicateurs * Participer à la définition et à l'alimentation du catalogue de données (métadonnées techniques et fonctionnelles) * Contribuer à la montée en compétences des équipes BI sur les pratiques de la plateforme cible 3.4 MIGRATION ET INTÉGRATION TECHNIQUE * Accompagner la migration progressive des sources QlikView/QVD vers la plateforme GCP * Identifier et traiter les dépendances entre les extractions manuelles Excel, les DAGs Airflow et les tables Gold exposées aux outils BI (Qlik Sense) * Participer aux arbitrages d'architecture avec la DSI et les prestataires externes N'HÉSITEZ PAS À DÉCOUVRIR CE MÉTIER ET NOTRE CENTRALE VIA NOTRE SITE INTERNET : WWW.SCAPARTOIS.LECLERC PROFIL RECHERCHÉ Votre formation : * Bac+4/5 en informatique, data engineering, mathématiques appliquées ou équivalent * Formation par l'expérience acceptée pour les profils autodidactes solides Votre expérience : * 2 à 5 ans d'expérience en data engineering ou dans un rôle équivalent (alternance comprise) * Expérience sur au moins un projet de construction de data platform (cloud GCP) * Exposition à des environnements legacy multi-sources appréciée Vos compétences techniques requises : * SQL avancé (CTE, optimisation de requêtes) * Python pour la manipulation de données et l'automatisation * Maîtrise de DBT (modèles, tests, documentation, sources) * Apache Airflow (DAG authoring, gestion des dépendances, monitoring) * Google BigQuery * Git et pratiques de versionnage (branches, PR, CI/CD basique) Compétences techniques apprécées : * Connaissance de l'écosystème GCP (Cloud Storage, Cloud Composer, Dataplex) * Expérience avec des bases de données relationnelles legacy (Oracle, SQL Server, MySQL) * Notions de modélisation dimensionnelle (Kimball, star schema, SCD) * Connaissance des outils de catalogage (Zeenea, Data Galaxy, Dataplex) * Exposition à Qlik Sense ou QlikView Vous étes : Votre rigueur et sens du détail dans la gestion de la qualité des données est primordiale. Vous savez vous adapter et avez la apacité à travailler en autonomie dans un environnement en structuration Bon pédagogue et goût pour la transmission auprés des équipes. Votre curiosité technologique et votre capacité d'adaptation à un stack en évolution sont de véritables atouts Bon communiquant avec des interlocuteurs non techniques. Rejoignez l'équipe !",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Data engineering",
+      "Git",
+      "Intelligence artificielle",
+      "MySQL",
+      "Python",
+      "SQL",
+      "Automatisation de pipelines",
+      "Déploiement de modèles",
+      "Monitoring de modèles",
+      "Analyse de données",
+      "Model drift",
+      "Protection des données",
+      "Feature Engineering"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+4",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Son rôle, renforcer les compétences data engineering, et à sécuriser la continuité opérationnelle dans un contexte de montée en maturité data de l'organisation. 3.1 CONSTRUCTION ET MAINTENANCE DES PIPELINES DE DONNÉES * Développer et maintenir les pipelines alimentant BigQuery depuis les sources (Oracle, SQL Server, MySQL, Progress SQL) * Modéliser les couches Bronze (ingestion brute), Silver (nettoyage, normalisation) et Gold (agrégats métier) selon l'architecture Medallion * Écrire, tester et versionner les transformations DBT (modèles, tests, documentation) * Orchestrer les workflows de données via Apache Airflow (DAGs, dépendances, gestion des erreurs et alertes) 3.2 QUALITÉ ET FIABILITÉ DES DONNÉES * Implémenter des contrôles qualité à chaque couche de la plateforme (tests DBT, checks d'intégrité référentielle, détection d'anomalies) * Mettre en place une gestion des incidents data et assurer le suivi des SLA de disponibilité * Documenter les modèles, les flux et les règles métier dans les outils de catalogage (Dataplex) 3.3 CONTRIBUTION À LA GOUVERNANCE ET À L'ACCULTURATION DATA * Travailler en étroite collaboration avec les Data Domain Owners pour formaliser les règles métier et les définitions des indicateurs * Participer à la définition et à l'alimentation du catalogue de données (métadonnées techniques et fonctionnelles) * Contribuer à la montée en compétences des équipes BI sur les pratiques de la plateforme cible 3.4 MIGRATION ET INTÉGRATION TECHNIQUE * Accompagner la migration progressive des sources QlikView/QVD vers la plateforme GCP * Identifier et traiter les dépendances entre les extractions manuelles Excel, les DAGs Airflow et les tables Gold exposées aux outils BI (Qlik Sense) * Participer aux arbitrages d'architecture avec la DSI et les prestataires externes N'HÉSITEZ PAS À DÉCOUVRIR CE MÉTIER ET NOTRE CENTRALE VIA NOTRE SITE INTERNET : WWW.SCAPARTOIS.LECLERC PROFIL RECHERCHÉ Votre formation : * Bac+4/5 en informatique, data engineering, mathématiques appliquées ou équivalent * Formation par l'expérience acceptée pour les profils autodidactes solides Votre expérience : * 2 à 5 ans d'expérience en data engineering ou dans un rôle équivalent (alternance comprise) * Expérience sur au moins un projet de construction de data platform (cloud GCP) * Exposition à des environnements legacy multi-sources appréciée Vos compétences techniques requises : * SQL avancé (CTE, optimisation de requêtes) * Python pour la manipulation de données et l'automatisation * Maîtrise de DBT (modèles, tests, documentation, sources) * Apache Airflow (DAG authoring, gestion des dépendances, monitoring) * Google BigQuery * Git et pratiques de versionnage (branches, PR, CI/CD basique) Compétences techniques apprécées : * Connaissance de l'écosystème GCP (Cloud Storage, Cloud Composer, Dataplex) * Expérience avec des bases de données relationnelles legacy (Oracle, SQL Server, MySQL) * Notions de modélisation dimensionnelle (Kimball, star schema, SCD) * Connaissance des outils de catalogage (Zeenea, Data Galaxy, Dataplex) * Exposition à Qlik Sense ou QlikView Vous étes : Votre rigueur et sens du détail dans la gestion de la qualité des données est primordiale.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "0 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:24.446837",
+  "input_hash": "da241d3ddf7fb099967269fc56cb223fa3cf721303c11b7c3369fa144ce2d238",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:3838415",
+  "value": {
+    "id": "3838415",
+    "intitule": "Ingénieur Java / Javascript - Référentiel Produit (H/F)",
+    "entreprise": "",
+    "territoire": "59 - Lille",
+    "ville": "59350",
+    "code_postal": "59000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3838415",
+    "description": "Viveris est un groupe de conseil et d'ingénierie spécialisé dans la conduite et la réalisation de projets dans les domaines de l'informatique et de l'électronique. S'engager avec Viveris, c'est l'assurance de relever des défis techniques et humains tout en travaillant sur des projets innovants dans un environnement collaboratif et solidaire. Viveris accompagne un distributeur important dans l'exploitation et l'optimisation de son Référentiel Produit (Product Information Management). Ce système collecte les Données Produit, les enrichit, et les diffuse ensuite aux systèmes d'informations Magasins et e-commerce. Responsabilités : - Assurer le maintien en conditions opérationnelles dont la gestion des incidents, la gestion des problèmes, le suivi des performances, et le traitement des anomalies: - Assumer le support N3 : analyse des incidents, participation aux comités de suivi, respect des SLA; - Enrichir les fiches produits et les catalogues Produit, en développant les évolutions via le paramétrage de la solution, et en développant les traitements applicatifs en Java et JavaScript; - Garantir la cohérence, la qualité et la mise à jour des DATA produits (descriptions, images, prix). Profil recherché : - Vous disposez d'une formation bac +4/5 en informatique, et avez acquis une première expérience réussie en développement Java et/ou JavaScript. - Vous connaissez les principes de la méthodologie ITIL : Gestion des incidents / problèmes / changements. - Vous faites preuve d'autonomie, rigueur, sens du service. Viveris assume la formation à la solution logicielle en vigueur. Nos avantages : - Rémunération attractive et évolutive, mutuelle familiale à garantie haute; - Tickets restaurant pris en charge à 60%, 100% titre de transport urbain remboursé; - Primes d'intéressement, de participation et de cooptation; - 2 jours de télétravail par semaine; - Formation continue avec LinkedIn Learning et nos communautés techniques.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Java",
+      "JavaScript",
+      "Qualité des données",
+      "Gestion de projet",
+      "Optimisation des performances"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "bac +4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché : - Vous disposez d'une formation bac +4/5 en informatique, et avez acquis une première expérience réussie en développement Java et/ou JavaScript. - Vous connaissez les principes de la méthodologie ITIL : Gestion des incidents / problèmes / changements. - Vous faites preuve d'autonomie, rigueur, sens du service.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:54:30.764657",
+  "input_hash": "52ac62370aa6162b900e075fdc05767c6c02b714463f94c84cc36cf90db20496",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

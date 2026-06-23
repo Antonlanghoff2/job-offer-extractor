@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3355926",
+  "value": {
+    "id": "3355926",
+    "intitule": "Expert d'analyse de données (m/f) (H/F)",
+    "entreprise": "",
+    "territoire": "Luxembourg",
+    "ville": "Luxembourg",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3355926",
+    "description": "Statut : Employé de l'État Qui recrute ? Institut luxembourgeois de régulation Missions Garantir la collecte et l’analyse de données statistiques en vue de la publication ; Élaboration et mise en œuvre des stratégies de la surveillance des marchés ; Supervision des marchés sectoriels et des méthodologies de traitement de données ; Gestion de projets relatifs à la Business Intelligence et du Data Warehouse ; Préparation et mise en œuvre d’outils informatiques (JWAY/SQL/Power BI) ; Participation aux échanges avec des organisations internationales. Profil Compétences techniques Master en sciences de l’ingénieur, en gestion, en sciences économiques ou de son équivalent ; Excellente aptitude à mettre en œuvre et à suivre des plans d’action ; Solides compétences analytiques et de synthèse. Compétences comportementales Sens des responsabilités et approche proactive de l’atteinte des objectifs ; Capacité à gérer des projets de manier/ière autonome en collaboration avec d’autres services ; Bon esprit d’équipe pluridisciplinaire ; Excellentes compétences rédactionnelles et techniques. Atouts Expérience professionnelle confirmée de minimum 5 années dans la veille de marchés ou d’études économiques ou de l’ingénierie. Conditions d’admission Le poste peut être brigué sous le statut de l'employé de l'État. Obtenez plus de détails sur les conditions d'admission pour devenir employé de l'État. Diplômes Vous êtes titulaire d’un grade ou diplôme délivré par un établissement d’enseignement supérieur reconnu par l’État du siège de l’établissement et sanctionnant l’accomplissement avec succès d’un master en sciences de l'ingénieur, en gestion, en sciences économiques ou de son équivalent. Le grade ou diplôme requis doit correspondre au moins au niveau 7 tel que défini par le Cadre luxembourgeois des qualifications. Expérience Vous avez une expérience d'au moins 3 ans dans le domaine. Langues Vous répondez aux exigences de connaissances des 3 langues administratives pour le groupe d'indemnité A1. Vous êtes ressortissant d’un État membre de l’Union européenne.",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Gestion de projet",
+      "SQL",
+      "Vision",
+      "Vue.js",
+      "Data Engineering",
+      "Model drift"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Profil Compétences techniques Master en sciences de l’ingénieur, en gestion, en sciences économiques ou de son équivalent ; Excellente aptitude à mettre en œuvre et à suivre des plans d’action ; Solides compétences analytiques et de synthèse.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Profil Compétences techniques Master en sciences de l’ingénieur, en gestion, en sciences économiques ou de son équivalent ; Excellente aptitude à mettre en œuvre et à suivre des plans d’action ; Solides compétences analytiques et de synthèse.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:41.540448",
+  "input_hash": "f125b4b9a72bee7d96835433636e6e3ce0b78d8a4978bdb8ea4682d44c8958d5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

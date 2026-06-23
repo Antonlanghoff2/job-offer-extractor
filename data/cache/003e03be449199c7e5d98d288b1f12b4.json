@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3558997",
+  "value": {
+    "id": "3558997",
+    "intitule": "Ingénieur QA Testeur Logiciel (F/H) (H/F)",
+    "entreprise": "Michael Page",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-07",
+    "date": "2026-06-07",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3558997",
+    "description": "En tant qu'Ingénieur QA Testeur Logiciel (F/H), vous garantissez la fiabilité des solutions SaaS et contribuez à une démarche Quality by Design. Vos missions : \n * Définir et piloter la stratégie de tests (fonctionnels, techniques, performance, sécurité) en cohérence avec les objectifs produits et les standards qualité.\n * Développer et maintenir des tests automatisés (Cypress, Playwright, Selenium.) ;\n * Mettre en place des indicateurs de qualité logicielle (taux de couverture, temps de réponse, stabilité,\ndette technique) et assurer leur suivi ;\n * Collaborer étroitement avec les équipes produit, dev et support pour optimiser l'expérience utilisateur ;\n * Participer activement au cycle de développement (revues, validation des user stories, intégration continue et déploiement continu CI/CD)\n * Assurer une veille technologique : IA, observabilité, test cloud, chaos engineering\nDe formation supérieure en informatique, vous disposez de deux à trois ans d'expérience en qualité logicielle et maîtrisez les principales méthodologies de test ainsi que les environnements Microsoft, SQL Server et PostgreSQL.\nCurieux(se) et rigoureux(se), vous vous appuyez sur une approche structurée pour analyser, tester et améliorer les solutions.\nÀ l'aise avec les outils d'automatisation et sensible aux bonnes pratiques d'ingénierie logicielle, vous savez également collaborer avec des interlocuteurs variés grâce à un excellent relationnel.\n* Processus de recrutement rapide ; \n * Système de covoiturage ;\n * 2 jours de télétravail / semaine ; \n * Environnement international, collaboratif et tourné vers l'innovation ;\n * Ingénieur QA Testeur Logiciel (F/H)",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "PostgreSQL",
+      "SQL",
+      "Vue.js",
+      "Qualité logicielle",
+      "Tests automatisés",
+      "Définition d'indicateurs",
+      "Veille technologique",
+      "API",
+      "Backend",
+      "Optimisation des performances",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Gestion de projet",
+      "Intégration continue"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "En tant qu'Ingénieur QA Testeur Logiciel (F/H), vous garantissez la fiabilité des solutions SaaS et contribuez à une démarche Quality by Design.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:21.932518",
+  "input_hash": "29030ebafbf69864bc45eee6ea6b38a96c47f793291fea634db7b5ea0f27d49c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

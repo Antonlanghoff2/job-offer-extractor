@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:1655525",
+  "value": {
+    "id": "1655525",
+    "intitule": "DOCTORANT(E) EN GÉOINFORMATIQUE - H/F",
+    "entreprise": "ESTP",
+    "territoire": "45 - Orléans",
+    "ville": "45234",
+    "code_postal": "45000",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2026-04-20",
+    "date": "2026-04-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1655525",
+    "description": "Description :\n\n\nTITRE DE LA THÈSE : BASTIR Jumeau Numérique pour le Bilan d’Approvisionnement en ressources minérales issues des Sols et des Terres et des Infrastructures pour la Construction et la Réhabilitation\n\nSUJET DE THÈSE : Les ressources minérales sont essentielles dans la construction des bâtiments et des infrastructures. Elles sont utilisées dans divers matériaux et composants, contribuant à la solidité, la durabilité et l'esthétique des structures. Les ressources minérales contenues dans les matériaux de construction sont au cœur de nombreux enjeux scientifiques actuels, allant de l'épuisement des ressources à l'impact environnemental, en passant par la santé humaine et la performance des bâtiments. Il est donc essentiel d'évaluer le risque écologique global des matériaux de construction, de l'extraction des matières premières à la fin de vie du bâtiment, en passant par la fabrication, le transport, la construction, la déconstruction mais aussi désormais, dans une perspective d’économie circulaire, par le recyclage et le réemploi.\n\nDans l’enjeux du recyclage et de la réutilisation efficaces des matériaux de construction contenant des ressources minérales, la problématique se pose sur l’inventaire de la ressource minérale en exploitation ou non : (i) présentes dans les infrastructures existantes (en « sur sol ») ; (ii) situées à proximité des chantiers de la rénovation des bâtiments (en « sous-sol ») mais aussi (iii) en prenant en compte les points de recyclages existants les plus proches ou potentiellement à créer.\n\nOBJECTIFS VISÉS :\n\nUne première partie de la thèse sera consacrée à la gestion et structuration des données disponibles pour répondre à la problématique de la disponibilité de la ressource. Cette étape comprendra (a) la collecte et l’organisation des données, en veillant à leur structuration dans un format adapté au traitement et à l’analyse, en s’appuyant sur des standards d’échange de données existants, par exemple ceux développés dans le cadre du projet national MiNnD; (b) le développement d’une visualisation des données basé sur des composants open source, facilitant l’exploitation et l’interprétation des résultats.\n\nUne deuxième partie s’attachera à décrire le cycle de vie de la ressource du point de vue de sa performance écologique en s’appuyant sur la méthode d’Analyse de Cycle de Vie (ACV). En effet, aujourd’hui une ACV ne permet que de calculer d’une part, des « impacts » et d’autres part des « impacts globaux ». En l’absence d’information sur la disponibilité soutenable des ressources les impacts ne peuvent être traduits en termes de « risques écologiques ». De plus, en l’absence d’information sur la localisation du traitement des déchets et les points de recyclage, les impacts ne peuvent être que calculés au niveau global (celui de la planète) et en aucune mesure à l’échelle de la France et encore moins à celle d’une région naturelle. En conséquence, il s’agira de mesurer l'effet de l'optimisation de la localisation des gisements, issus du recyclage ou non, sur les résultats des ACV à l’échelle des matériaux de construction. Compte tenu de l’influence du transport dans le cycle de vie des matériaux et des bénéfices liés à leur valorisation en termes d’impacts environnementaux l’apport des travaux de thèse en termes d’aide à la décision consistera, d’une part, à outiller le processus de sélection des matériaux par les maîtres d’ouvrages, et d’autre part, à optimiser la localisation des centres de valorisation de matériaux sur le territoire national. \n\nEnfin une dernière étape consistera à définir le « workflow scientifique » du système permettant de chaîner l’ensemble des processus de traitement. Il s’agira d’automatiser les traitements notamment à l’aide de méthode d’intelligence artificielle comme le Machine Learning.\n\nLes résultats des travaux de thèse pourront initier des éléments de réponse sur comment les stocks de matériaux peuvent stimuler de nouvelles opportunités commerciales pour le secteur de la construction.\n\nLes données sur la ressource du sous-sol sont disponibles et mises à disposition par diverses plateformes. Concernant le territoire français, nous trouvons les plateformes numériques comme MineralInfo (https://www.mineralinfo.fr/fr) donnant accès aux potentiels miniers français et aux données des carrières pour les matériaux. L’évaluation des métaux critiques et stratégiques pour la filière industrielle est en cours de réalisation avec le programme OFREMI (https://www.ofremi.fr/fr) et sera mis à disposition ces prochains mois. En revanche, la connaissance du poids et de la répartition spatiale des stocks environnementaux bâtis est limitée alors qu’une grande partie du stock de matériaux s'accumule dans l'environnement bâti existant. Les stocks de matériaux accumulés dans l'économie peuvent être considérés comme des dépôts de ressources anthropiques pour le système économique. Par rapport aux ressources primaires, les ressources anthropiques ont reçu moin...",
+    "metier": "Professeur / Professeure des universités",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "Vision",
+      "Vue.js",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Intégration continue",
+      "Tests automatisés",
+      "MLOps",
+      "Optimisation des performances"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "THÈSE",
+        "level": 10,
+        "required": true,
+        "source_sentence": "TITRE DE LA THÈSE : BASTIR Jumeau Numérique pour le Bilan d’Approvisionnement en ressources minérales issues des Sols et des Terres et des Infrastructures pour la Construction et la Réhabilitation",
+        "confidence": 0.9
+      },
+      {
+        "label": "thèse",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Une première partie de la thèse sera consacrée à la gestion et structuration des données disponibles pour répondre à la problématique de la disponibilité de la ressource.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:09.255283",
+  "input_hash": "16f78b4985caef00da2be52d222aa63b1d1094f00d1d1732d2be621a99ba0ba7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,72 @@
+{
+  "key": "offer_extraction:3508194",
+  "value": {
+    "id": "3508194",
+    "intitule": "Ingénieur Cybersécurité Devsecops - Spatial - Toulouse H/F",
+    "entreprise": "Talents Handicap",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3508194",
+    "description": "POSTE : Ingénieur Cybersécurité Devsecops - Spatial - Toulouse H/F\nDESCRIPTION : Description de l'entreprise  \n \nCS, filiale du groupe Sopra Steria, est un acteur technologique de référence dans la conception, l'intégration et l'exploitation de systèmes critiques. Présents dans 7 pays avec plus de 2600 collaborateurs passionnés, nous intervenons au coeur des enjeux de souveraineté, de sécurité et de performance, dans des secteurs stratégiques tels que la défense, le spatial, l'énergie, l'industrie, le transport, l'aéronautique et la cybersécurité.\n \nNotre différence ? Une expertise unique en systèmes temps réel, des solutions souveraines et durables, et une culture d'innovation forte, portée par 15 % de notre chiffre d'affaires investi en R&D. Nous accompagnons nos clients dans la réussite de leurs programmes les plus complexes, du contrôle aérien à la lutte anti-drones, en passant par les systèmes nucléaires et les centres de contrôle satellites.\n \nEn rejoignant CS, vous intégrez une entreprise humaine et innovante.\n \n- Nous livrons bien plus que des systèmes, nous bâtissons la confiance.\n- Nous allons au-delà des besoins exprimés, nous préparons les défis de demain.\n- Plus que de simples experts, nous façonnons l'innovation.\n \nDescription du poste  \n \nNous recrutons un(e) Ingénieur(e) Cybersécurité DevSecOps pour rejoindre notre Business unit Espace au sein de notre agence Space Processing & Intelligence spécialisée dans le traitement et l'hybridation des données spatiales.\n \nVos missions\n \nAu sein de l'agence SP&I, les équipes INFRA/METIS et Sécurité rassemblent des ingénieurs responsables respectivement de l'infrastructure et de la cybersécurité des applications de la BU Espace. Dans ce contexte, nous recherchons un(e) ingénieur(e) cybersécurité pour assurer le rôle de référent(e) sécurité pour nos produits et projets avec comme missions :\n \n- Le support/responsable Sécurité projet\n- La Veille Technologique des produits en lien avec la sécurité\n- L'amélioration /update sécurité de nos produits\n \nL'environnement technique\n \n- GitLab, Kubernetes, Kustomize, Helm, ArgoCD, Ansible, Terraform\n- Cloud (providers européens essentiellement) / Openstack\n- Linux, intégration COTS\n- Langages variés (Python, Node, Java, C/C++, Golang, Rust)\n- Mise en place des outils\n- Réalisation des pipelines CI/CD\n \nQualifications  \n \nDe formation Bac +5 écoles d'ingénieur ou équivalent, vous possédez une expérience de 3 ans minimum sur ce type de poste. La maitrise de l'intégration linux et de kubernetes est indispensable pour l'exercice de vos fonctions. La connaissance du secteur du spatial ainsi que de la programmation python sont de véritables atouts.\n \nVous possédez une expertise en architecture des systèmes d'information, en sécurité des systèmes et des données, ainsi qu'en Infrastructure as Code (IaC).\n \nVous êtes autonome et capable de mener vos missions avec efficacité tout en prenant des initiatives. Vous êtes curieux et rigoureux et restez constamment en veille des évolutions et innovations de votre domaine ? Alors vous êtes la pépite que nous recherchons !\nInformations supplémentaires  \n \nRejoignez une entreprise où l'humain, l'innovation et l'impact se rencontrent.\n \nChez CS, nous offrons :\n \n- Une expérience collaborateur enrichissante, portée par un environnement de travail conçu pour favoriser la flexibilité, l'autonomie et le bien-être au quotidien.\n- Un parcours d'intégration complet pensé pour embarquer chaque talent dès le premier jour et une Academy pour développer vos compétences, enrichir votre expertise et construire les parcours professionnels qui vous ressemblent.\n- Un engagement sociétal fort : plus de 3000 associations soutenues, une politique handicap active, une culture inclusive, une démarche de numérique responsable, et des partenariats comme Elles bougent pour inspirer les talents féminins de demain.\n \net bien d'autres avantages à découvrir en nous rejoignant !\n \n#CSGROUP #kubernetes #devsecops #linux\n \nEmployeur inclusif et engagé, notre société oeuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les profils.\n \nhttps://www.soprasteria.fr/nous-connaitre/nos-engagements\n \nPROFIL :",
+    "metier": "Ingénieur / Ingénieure sécurité informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Aéronautique",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Terraform",
+      "CI/CD",
+      "Tests automatisés",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": 7000,
+    "salaire_max": 7000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "POSTE : Ingénieur Cybersécurité Devsecops - Spatial - Toulouse H/F",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans ce contexte, nous recherchons un(e) ingénieur(e) cybersécurité pour assurer le rôle de référent(e) sécurité pour nos produits et projets avec comme missions :",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation Bac +5 écoles d'ingénieur ou équivalent, vous possédez une expérience de 3 ans minimum sur ce type de poste.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:07.355712",
+  "input_hash": "b183f525ae8c62b8fbba929df5259a008df42455119be97973930ff12f05f80d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

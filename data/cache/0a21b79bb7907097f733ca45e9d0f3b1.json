@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:3838407",
+  "value": {
+    "id": "3838407",
+    "intitule": "Développeur C# H/F",
+    "entreprise": "",
+    "territoire": "59 - Lille",
+    "ville": "59350",
+    "code_postal": "59000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3838407",
+    "description": "Viveris est un groupe de conseil et d'ingénierie spécialisé dans la conduite et la réalisation de projets dans les domaines de l'informatique et de l'électronique. S'engager avec Viveris, c'est l'assurance de relever des défis techniques et humains tout en travaillant sur des projets innovants dans un environnement collaboratif et solidaire. Contexte de la mission : Viveris pilote les chantiers de transformation métier et IT à destination du secteur bancassurance, de manière à les rendre encore plus performants. Dans ce cadre, nous contribuons au développement du nouveau système de gestion d'instruction de crédits et recherchons notre Ingénieur Développement C#. Vos missions et responsabilités : Intégré dans un domaine de 50 collaborateurs, vous interviendrez dans une des équipes de développement en charge des outils d'instruction de crédits Consommation. Vous assurez les missions suivantes : - Rédaction des spécifications fonctionnelles et techniques ; - Développement batch et transactionnel dans le respect des normes internes ; - Suivi des recettes utilisateurs ; - Rédaction des dossiers d'exploitation et suivi des mises en production ; - Maintenance évolutive et corrective ; - Support utilisateur. Profil recherché : - De formation bac +4/5, vous disposez d'une expérience technique réussie de 4 ans minimum sur une expérience similaire ; - Confirmé avec une véritable appétence pour le fonctionnel, vous produisez un code de grande qualité ; - Vous maîtrisez les technologies C#, .Net 6 / SQL Server ; - Des connaissances et une expérience préalable sur Azure et la conteneurisation (Docker, Kubernetes, AKS) sont un plus ; - De nature curieuse et volontaire, vous savez faire preuve de rigueur et être force de proposition. Nos avantages : - Rémunération attractive et évolutive, mutuelle familiale à garantie haute ; - Tickets restaurant pris en charge à 60%, 100% titre de transport urbain remboursé ; - Primes d'intéressement, de participation et de cooptation ; - 2 jours de télétravail par semaine ; - Formation continue avec Linkedin Learning et nos communautés techniques.",
+    "metier": "Développeur / Développeuse logiciel ou d'application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Azure",
+      "Cahier des charges",
+      "Docker",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "SQL",
+      "Déploiement de modèles",
+      "MLOps",
+      "Scalabilité"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans ce cadre, nous contribuons au développement du nouveau système de gestion d'instruction de crédits et recherchons notre Ingénieur Développement C#.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac +4",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché : - De formation bac +4/5, vous disposez d'une expérience technique réussie de 4 ans minimum sur une expérience similaire ; - Confirmé avec une véritable appétence pour le fonctionnel, vous produisez un code de grande qualité ; - Vous maîtrisez les technologies C#, .Net 6 / SQL Server ; - Des connaissances et une expérience préalable sur Azure et la conteneurisation (Docker, Kubernetes, AKS) sont un plus ; - De nature curieuse et volontaire, vous savez faire preuve de rigueur et être force de proposition.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:51.846810",
+  "input_hash": "2b7d53946c0b0d78636bbeb8753cd569c7c3422177fa56ecab111e2724b8ea54",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

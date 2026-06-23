@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:3543446",
+  "value": {
+    "id": "3543446",
+    "intitule": "Développeur Informatique Applications H/F",
+    "entreprise": "Manpower",
+    "territoire": "94 - Villeneuve-Saint-Georges",
+    "ville": "94078",
+    "code_postal": "94190",
+    "contrat": "Intérim - 2 Mois",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3543446",
+    "description": "POSTE : Développeur Informatique Applications H/F\nDESCRIPTION : Manpower GD PARIS TRANSPORT FERROVIAIRE recherche pour son client, un acteur du secteur ferroviaire, un Développeur informatique (Applications) (H/F) Le projet PEPS (Participons à l'Evolution et à la Performance de nos Sites) vise à l'animation de ces transformations avec la participation de l'ensemble des agents du Technicentre pour :  \n - accompagner plus de 700 agents  \n - réaliser une séparation du TMV en 2 établissements distincts  \n - aménager 31 ha de nouveau site dont 27 300 m2 de plancher  \n - préparer et gérer 3 déménagements sur plus de 3 mois  \n - repositionner environ 24 000 pièces de magasins dans 2 BU séparées  \n - préparer et réaliser plus de 4 mois d'essais et de marches à blanc puis capitaliser via un REX,  \n - s'approprier au moins 3 nouvelles installations stratégiques (TEF, VEF, PAIVS)  \n - recréer au moins 200 roulements pour correspondre à la modification d'exploitation des sites et des organisations  \n - séparer entre les 2 entités les équipes informatiques du TMV et mettre à jour les outils vers des technologies modernes  \n ?Rejoignez les équipes PROJET pour participer à une mission stratégique de création d'un nouveau site industriel dédié à la maintenance du matériel roulant. Ce projet s'inscrit dans notre volonté d'optimiser nos capacités industrielles, d'accroître la disponibilité de nos rames et d'intégrer des innovations technologiques pour un service toujours plus performant et durable. Compétences / Aptitudes : Bac +5 (école d'ingénieur ou master SI/informatique/management de projet) avec idéalement minimum 2 à 5 ans d'expérience.  \nMaîtrise des PowerBI/excel, MS Project.  \n   \nCompétences transverses :  \n   \n - Communication et coordination multi-acteurs.  \n - Négociation, pédagogie, conduite du changement.  \n - Rigueur, esprit d'analyse/synthèse, autonomie, réactivité.  \n - Capacité à intervenir en période de transition avec contraintes opérationnelles.  \n \nDans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicap Date début :  Dès que possible Durée : 2 mois\nPROFIL :",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Gestion de projet",
+      "Scalabilité"
+    ],
+    "salaire_min": 20,
+    "salaire_max": 84,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "Compétences / Aptitudes : Bac +5 (école d'ingénieur ou master SI/informatique/management de projet) avec idéalement minimum 2 à 5 ans d'expérience.",
+        "confidence": 0.7
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Compétences / Aptitudes : Bac +5 (école d'ingénieur ou master SI/informatique/management de projet) avec idéalement minimum 2 à 5 ans d'expérience.",
+        "confidence": 0.7
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Compétences / Aptitudes : Bac +5 (école d'ingénieur ou master SI/informatique/management de projet) avec idéalement minimum 2 à 5 ans d'expérience.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 4,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:59.207540",
+  "input_hash": "bbf11ac6c799ac4a63167deb53b33f4a052162be15d3754faaf2d9857fb0c1b0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:1031612",
+  "value": {
+    "id": "1031612",
+    "intitule": "Ingénieur Hardware H/F",
+    "entreprise": "Externatic",
+    "territoire": "49 - Cholet",
+    "ville": "49099",
+    "code_postal": "49300",
+    "contrat": "CDI",
+    "date_creation": "2026-04-01",
+    "date": "2026-04-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1031612",
+    "description": "L'entreprise accompagnée et les missions:\nNous accompagnons un groupe industriel français qui conçoit et développe des solutions complètes de gestion des temps, de contrôle d’accès et d’équipements connectés en maîtrisant toute leur chaîne de valeur :\n\n- développement logiciel \n- conception électronique\n- fabrication de terminaux physiques (badgeuses, horloges, écrans sportifs…)\n\nAujourd’hui, leurs solutions équipent plus de 30 000 clients dans le monde, dans des environnements très variés (industrie, collectivités, santé, sport…)\n\nToujours là ? Lisez la suite !\n\nSous la responsabilité du Responsable Hardware, vous :\n\n- effectuer des études de faisabilité ou études de redesign\n- sélectionner et suivez les normes applicables aux produits conçus selon les pays de commercialisation\n- participer aux tests de conformité en assurant les mises aux normes (directives CE, etc...)\n- sélectionner les constituants des produits à concevoir en collaboration avec le service Achats, les fournisseurs et fabricants\n- réaliser les schémas des cartes électroniques\n- réaliser et mettez au point les prototypes\n- collaborer à la conception des circuits imprimés\n- rédiger des dossiers d’études de conception\n- assurez la qualité technique des produits en collaboration avec le bureau d’intégration mécanique et les services d’industrialisation pour la mise en production du produit\n- développer des outils de tests afin de valider et produire les produits\n- participer à la veille technologique du service\n\nProfil:\nHard skills\n\n- formation supérieure en informatique (Bac+3 à Bac+5)\n- justifiez d'une expérience de 2 à 5 ans sur un poste similaire\n\nAvantages:\nCe que vous allez y gagner / pourquoi postuler ?\n\n- Formation et montée en compétence garanties -&gt; intégration facilitée \n- Équipe solidaire, locale et orientée produit\n- équilibre vie pro vie perso / campus moderne avec espaces détente, terrains de sport \n- environnement stimulant avec projets innovants : montée en expertise / perspective d’évolutions",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "API",
+      "Pipelines de données",
+      "Tests automatisés",
+      "Architecture microservices",
+      "Backend",
+      "Feature Engineering"
+    ],
+    "salaire_min": 38000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": true,
+        "source_sentence": "formation supérieure en informatique (Bac+3 à Bac+5)",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "formation supérieure en informatique (Bac+3 à Bac+5)",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:48.909338",
+  "input_hash": "cd68d2e7cdfb296c34d3c93fa8042de789129f55ed9d7a24b1a5f20e003c6367",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

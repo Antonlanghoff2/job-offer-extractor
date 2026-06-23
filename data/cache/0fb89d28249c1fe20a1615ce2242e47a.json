@@ -1,0 +1,66 @@
+{
+  "key": "offer_extraction:3759189",
+  "value": {
+    "id": "3759189",
+    "intitule": "Ingénieur en Electricité (F/H)  H/F",
+    "entreprise": "ARDATEM",
+    "territoire": "59 - Gravelines",
+    "ville": "59273",
+    "code_postal": "59820",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3759189",
+    "description": "Vos missions : Dans le cadre de notre développement, nous recherchons un.e Ingénieur.e en électricité pour intervenir chez notre client, leader de la production d'électricité en France. Votre expérience dans le domaine du Nucléaire, votre autonomie et votre sens des responsabilités vous rendent apte à la : - Conception et programmation d'IHM - Production et validation des données de contrôle-commande des paliers 900 et/ou 1300 et/ou 1450 MW et imagerie - Relation client - Conception d'armoires électriques - Suivi de la fabrication en lien avec le chargé de Clientèle - Administration des données de contrôle commande et d'informatique industrielle (gestion des bases de données, contrôle de cohérence, production des jeux de données) - Gestion de l'interface technique avec notre client et participation aux différentes réunions d'avancement Vos compétences et les prérequis pour réussir : Vous bénéficiez d'une formation de niveau Master (Bac + 5) dans le domaine de l'électricité ainsi que d'un parcours professionnel significatif dans ce domaine. Vous démontrez une capacité d'analyse, d'esprit critique, de sens des responsabilités tout en respectant les consignes de sécurité. Des connaissances du nucléaire et en informatique industrielle seront des atouts majeurs : - Les systèmes d'exploitation Windows - Les langages de programmation VB, JAVA, Python, etc. - Les logiciels de conception type Caneco, Autocad, etc. Le poste est ouvert en CDI et basé à Gravelines. Des déplacements courts, d'une durée maximale de 5 jours, trajet inclus, sont à anticiper. Ce que nous pouvons vous offrir ? - Un environnement de travail équilibré et bienveillant - Prime de participation - Indemnité de déplacement du domicile au lieu de travail - Mutuelle avantageuse - Epargne salariale La rémunération est à négocier en fonction de votre profil et de votre expérience.",
+    "metier": "Ingénieur / Ingénieure études conception électrique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Imagerie",
+      "Intelligence artificielle",
+      "Java",
+      "Python",
+      "Relation Client",
+      "Déploiement de modèles",
+      "MLOps"
+    ],
+    "salaire_min": 900,
+    "salaire_max": 900,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vos missions : Dans le cadre de notre développement, nous recherchons un.e Ingénieur.e en électricité pour intervenir chez notre client, leader de la production d'électricité en France.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Votre expérience dans le domaine du Nucléaire, votre autonomie et votre sens des responsabilités vous rendent apte à la : - Conception et programmation d'IHM - Production et validation des données de contrôle-commande des paliers 900 et/ou 1300 et/ou 1450 MW et imagerie - Relation client - Conception d'armoires électriques - Suivi de la fabrication en lien avec le chargé de Clientèle - Administration des données de contrôle commande et d'informatique industrielle (gestion des bases de données, contrôle de cohérence, production des jeux de données) - Gestion de l'interface technique avec notre client et participation aux différentes réunions d'avancement Vos compétences et les prérequis pour réussir : Vous bénéficiez d'une formation de niveau Master (Bac + 5) dans le domaine de l'électricité ainsi que d'un parcours professionnel significatif dans ce domaine.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac + 5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Votre expérience dans le domaine du Nucléaire, votre autonomie et votre sens des responsabilités vous rendent apte à la : - Conception et programmation d'IHM - Production et validation des données de contrôle-commande des paliers 900 et/ou 1300 et/ou 1450 MW et imagerie - Relation client - Conception d'armoires électriques - Suivi de la fabrication en lien avec le chargé de Clientèle - Administration des données de contrôle commande et d'informatique industrielle (gestion des bases de données, contrôle de cohérence, production des jeux de données) - Gestion de l'interface technique avec notre client et participation aux différentes réunions d'avancement Vos compétences et les prérequis pour réussir : Vous bénéficiez d'une formation de niveau Master (Bac + 5) dans le domaine de l'électricité ainsi que d'un parcours professionnel significatif dans ce domaine.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:53.837754",
+  "input_hash": "7fcf63c2f2b52907520bab84f1d842ea7af5c3efd3795dd72977c876f9dbf53f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

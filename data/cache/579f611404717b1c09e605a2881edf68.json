@@ -1,0 +1,63 @@
+{
+  "key": "offer_extraction:1078481",
+  "value": {
+    "id": "1078481",
+    "intitule": "Ingénieur Test Senior 2 – Microcontrôleurs MCU32  H/F",
+    "entreprise": "MICROCHIP TECHNOLOGY Nantes",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDI",
+    "date_creation": "2026-04-03",
+    "date": "2026-04-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1078481",
+    "description": "Microchip Technology recherche un Ingénieur Test Senior 2 hautement qualifié et motivé pour rejoindre notre équipe dynamique de microcontrôleurs MCU32 à Nantes. Dans ce rôle, vous jouerez un rôle clé dans le développement de nouveaux produits microcontrôleurs, en garantissant les plus hauts standards de qualité et de performance. Vous collaborerez avec des équipes pluridisciplinaires à l’échelle mondiale, contribuerez à des solutions de test innovantes et participerez au succès de nos produits Arm 32 bits de nouvelle génération. Responsabilités principales : Spécifier, développer, déboguer et optimiser les programmes de test pour les nouveaux produits microcontrôleurs Arm 32 bits, depuis le concept initial jusqu’à la production de masse. Contribuer aux spécifications DFT (Design For Test). Analyser les données de test, identifier les causes des problèmes de rendement et de qualité, et mettre en œuvre des actions correctives. Collaborer étroitement avec les équipes de conception, de production et d’ingénierie de fabrication pour définir les exigences et stratégies de test. Supporter la qualification des produits, la caractérisation et les tests de fiabilité. Améliorer en continu les méthodologies de test afin de réduire les coûts, le temps de cycle et d’augmenter la couverture des tests. Fournir un encadrement technique et un mentorat aux ingénieurs juniors et aux équipes distantes de support. Préparer la documentation technique et les rapports relatifs au développement des tests et à la performance des produits. Qualifications requises : Diplôme de Master/d’ingénieur en électronique ou dans un domaine similaire. Minimum 5 ans d’expérience en ingénierie de test de semiconducteurs, de préférence avec des microcontrôleurs ou des circuits intégrés mixtes (analogiques et numériques), incluant des éléments analogiques et mémoire. Maîtrise des langages de programmation embarqués tels que C, C++ ou Python. Solide compréhension du débogage matériel, de l’analyse de données et des méthodes statistiques. Excellentes compétences en résolution de problèmes et grande attention aux détails. Excellentes compétences en communication en anglais. Fortes aptitudes en communication, organisation et travail d’équipe. Qualifications souhaitées : Connaissance des équipements de test automatisés (ATE) et du développement de programmes de test. Expérience avec le testeur Cohu D1X serait appréciée. Expérience avec l’architecture Arm 32 bits ou des familles de microcontrôleurs similaires. Connaissance des processus de test sur wafer et de test final. Connaissance des techniques d’optimisation des coûts de test et d’amélioration du rendement. Expérience de travail dans un environnement international et pluridisciplinaire.",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Coûts",
+      "Intelligence artificielle",
+      "Python",
+      "Qualité des données",
+      "Résolution de problèmes",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Optimisation des performances",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Microchip Technology recherche un Ingénieur Test Senior 2 hautement qualifié et motivé pour rejoindre notre équipe dynamique de microcontrôleurs MCU32 à Nantes.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Diplôme de Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Qualifications requises : Diplôme de Master/d’ingénieur en électronique ou dans un domaine similaire.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "1 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:30.093892",
+  "input_hash": "c2256acb16929960cc46698c35ee197533c15d57ff9391851873bdf780097f07",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

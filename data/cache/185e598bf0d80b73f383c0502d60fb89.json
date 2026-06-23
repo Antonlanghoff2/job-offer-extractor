@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:209RMHM",
+  "value": {
+    "id": "209RMHM",
+    "intitule": "Business Développeur - Team EST (H/F)",
+    "entreprise": "ICCI FORMATIONS",
+    "territoire": "974 - ST ANDRE",
+    "ville": "97409",
+    "code_postal": "97440",
+    "contrat": "CDD - 20 Mois",
+    "date_creation": "2026-06-12",
+    "date": "2026-06-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209RMHM",
+    "description": "Business Développeur (H/F) - Team EST\n\nLe Projet : Faire rayonner les talents de demain\n\nChez nous, l'ambition est claire : former et propulser les futurs pros du Commerce et de la Vente à la Réunion, du CAP au Bachelor. Nous ne vendons pas des formations, nous construisons des carrières.\nVotre défi ? Être le moteur de cette réussite en connectant les entreprises du Sud avec leurs futures pépites.\n\nVos Missions :\nVous êtes le moteur du développement commercial :\n- Détecteur d'opportunités (Prospection) : Vous explorez le tissu économique de la Zone Est. Votre but ? Décrypter les besoins des entreprises et pitcher l'alternance comme levier de croissance.\n- Chasseur de Pépites (Recrutement) : Vous gérez le cycle complet pour dénicher nos futurs talents. Identification, entretiens \"feel good\" et sélection : c'est vous qui trouvez le match parfait.\n- Coach de carrière : Préparer nos candidats  pour qu'ils soient irrésistibles en entretien.\n\nVotre Profil :\nIl s'agit d'un poste en apprentissage ! Nous ne cherchons pas un CV mais une véritable personnalité animée par l'envie de faire bouger les lignes :\n- L'énergie : Vous avez un tempérament de feu et un excellent relationnel au téléphone.\n- La culture du \"Win\" : Le résultat vous motive, et transformer un \"non\" en \"oui\" est votre sport préféré.\n- L'esprit d'équipe : Ici, on gagne ensemble. Vous savez que la réussite des talents passe par une collaboration fluide avec vos collègues.\n\nPourquoi nous rejoindre ?\n- Un rôle à fort impact social pour le territoire réunionnais.\n- Un environnement dynamique où votre autonomie est encouragée.\n- Un challenge à la hauteur de vos ambitions.\n\nPrêt(e) à devenir le/la partenaire que nos entreprises attendent ? Envoyez-nous votre candidature et montrez-nous votre énergie !\n\n(Poste ouvert à toutes les compétences, sans distinction, seule votre motivation compte.)",
+    "metier": "Manager de proximité",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "CAP",
+        "level": 3,
+        "required": true,
+        "source_sentence": "Chez nous, l'ambition est claire : former et propulser les futurs pros du Commerce et de la Vente à la Réunion, du CAP au Bachelor.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bachelor",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Chez nous, l'ambition est claire : former et propulser les futurs pros du Commerce et de la Vente à la Réunion, du CAP au Bachelor.",
+        "confidence": 0.9
+      },
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Votre but ?",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:21.660525",
+  "input_hash": "96ec31a98731ad2ea56f484ba6809f16e3808a061dbd1b8c05c9a54fafec233d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

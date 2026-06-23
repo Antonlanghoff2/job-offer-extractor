@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:209ZDHG",
+  "value": {
+    "id": "209ZDHG",
+    "intitule": "Data Analyst (H/F)",
+    "entreprise": "E-KENT",
+    "territoire": "75 - Paris",
+    "ville": "75 - Paris",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZDHG",
+    "description": "Rôles & Missions :\n\nPour l'un de nos clients, acteur du secteur de la santé, nous recherchons un Data Analyst / Data Architect (H/F) afin d'accompagner la structuration et la gouvernance de son patrimoine de données sur un périmètre stratégique lié aux professionnels de santé.\n\n- Réaliser un état des lieux du patrimoine de données existant sur le périmètre des professionnels de santé.\n- Identifier, analyser et documenter les différentes sources de données, leurs formats, leurs flux et leurs dépendances.\n- Cartographier les données et formaliser les interactions entre les différents systèmes d'information.\n- Évaluer la qualité des données en analysant leur complétude, leur cohérence, leur exactitude, leur fraîcheur ainsi que les éventuelles redondances.\n- Identifier les « sources de vérité » et analyser leurs forces, limites et usages.\n- Participer à la définition et à la mise en place d'une gouvernance des données adaptée aux enjeux de l'organisation.\n- Définir les rôles et responsabilités liés à la gestion des données (Data Owner, Data Steward, etc.).\n- Formaliser les règles de gestion, de validation et de mise à jour des données.\n- Construire et maintenir la documentation fonctionnelle et les métadonnées associées aux données.\n- Concevoir un référentiel de données cible (MDM) permettant de consolider et fiabiliser les informations stratégiques.\n- Modéliser les données aux niveaux conceptuel, logique et physique.\n- Définir les règles d'intégration, de synchronisation et de gouvernance du futur référentiel.\n- Participer à l'évaluation et à la sélection des solutions MDM les plus adaptées aux besoins de l'entreprise.\n- Accompagner les équipes métiers et techniques dans l'adoption des bonnes pratiques data.\n- Animer les échanges avec les différentes parties prenantes et contribuer à l'acculturation autour des enjeux de qualité et de gouvernance des données.\n\nProfil Attendu :\n\n- Expérience significative en analyse de données, architecture de données ou gouvernance des données.\n- Maîtrise des méthodes de cartographie et d'analyse de patrimoine de données.\n- Solides compétences en modélisation de données (modèles conceptuels, logiques et physiques).\n- Bonne connaissance des méthodologies UML, Merise ou équivalentes.\n- Maîtrise des bases de données relationnelles et des principaux moteurs du marché (Oracle, PostgreSQL, MariaDB).\n- Expérience des outils ETL/ELT et des problématiques d'intégration de données.\n- Connaissance des bonnes pratiques de gouvernance des données et de gestion de la qualité des données.\n- Capacité à concevoir un référentiel de données (MDM) et à définir les règles de gestion associées.\n- Compréhension des enjeux métiers liés aux secteurs de la santé, de l'assurance ou des services fortement réglementés.\n- Excellentes capacités d'analyse, de synthèse et de formalisation.\n- Aisance relationnelle permettant d'interagir avec des interlocuteurs métiers et techniques.\n- Capacité à vulgariser des sujets complexes et à accompagner le changement.\n- Autonomie, rigueur et sens de l'organisation.\n- Capacité à fédérer et à convaincre autour des enjeux de gouvernance et de valorisation de la donnée.\n- Une connaissance de frameworks ou certifications tels que CDMP, TOGAF ou des solutions MDM du marché constitue un atout.",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "PostgreSQL",
+      "Gestion de projet",
+      "Product Management",
+      "Pipelines de données",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Qualité des données",
+      "Sécurité informatique",
+      "Résolution de problèmes",
+      "Git",
+      "Airflow"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:42.479775",
+  "input_hash": "22588aa5d9b61d012b1098b74439ebc65e4a4ccf86c2945d7df090f75687aeb9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

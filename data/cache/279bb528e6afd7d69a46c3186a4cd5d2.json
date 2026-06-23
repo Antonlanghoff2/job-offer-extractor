@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:3461497",
+  "value": {
+    "id": "3461497",
+    "intitule": "SNCF - Data Analyst Santé Sécurité au Travail (H/F)",
+    "entreprise": "",
+    "territoire": "93 - Saint-Denis",
+    "ville": "93066",
+    "code_postal": "93380",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-04",
+    "date": "2026-06-04",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3461497",
+    "description": "DESCRIPTION DU POSTE DESCRIPTIF DES MISSIONS : 1 - Comprendre le contexte de la mission : les grandes familles d'accidents du travail dans le groupe SNCF, les indicateurs existants et leurs modes de calcul, les bases de données à disposition 2 - Maintenir/développer plusieurs rapports de Power-Bi sur des indicateurs définis avec le tuteur et le reste du Département SST. Proposer un Power-BI de synthèse 3 - Analyser les données afin de mieux comprendre l'évolution des différents indicateurs, mieux identifier les types d'accidents et les facteurs (causes profondes) qui pèsent sur leur survenance et leur niveau de gravité 4 - Concevoir et proposer des traitements et méthodes d'analyse de données pertinents en expérimentant le cas échéant l'usage de l'Intelligence Artificielle interne. 5 - Réaliser des supports de présentation valorisant les analyses menées. PROFIL RECHERCHÉ VOUS DISPOSEZ DES COMPÉTENCES SUIVANTES : Compétences fonctionnelles : Autonomie, Etudes/recherche, Traitement de données, Aptitude à l'analyse et à la synthèse, Travail en équipe, Communication et impact Compétences techniques : Analyse de données, méthodes statistiques, Data Visualisation, Python, Power-Bi, Suite Office VOUS PRÉPAREZ : UN MASTER 2 OU MBA DATA ANALYST- BIG DATA- INTELLIGENCE ARTIFICIELLE, alors rejoignez nous !",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Python",
+      "Data Engineering",
+      "Model drift",
+      "Pipelines de données",
+      "Airflow"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 1000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "MASTER 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ VOUS DISPOSEZ DES COMPÉTENCES SUIVANTES : Compétences fonctionnelles : Autonomie, Etudes/recherche, Traitement de données, Aptitude à l'analyse et à la synthèse, Travail en équipe, Communication et impact Compétences techniques : Analyse de données, méthodes statistiques, Data Visualisation, Python, Power-Bi, Suite Office VOUS PRÉPAREZ : UN MASTER 2 OU MBA DATA ANALYST- BIG DATA- INTELLIGENCE ARTIFICIELLE, alors rejoignez nous !",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:48.804723",
+  "input_hash": "b7deb0809346769f497a0a7bacca46d7fec9048377bc1322309f7f81c5d70f6b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

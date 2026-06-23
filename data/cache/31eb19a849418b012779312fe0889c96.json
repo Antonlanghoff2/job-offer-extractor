@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3834812",
+  "value": {
+    "id": "3834812",
+    "intitule": "Technicien / Technicienne de hot line en informatique (H/F)",
+    "entreprise": "",
+    "territoire": "85 - Rocheservière",
+    "ville": "85190",
+    "code_postal": "85620",
+    "contrat": "CDI",
+    "date_creation": "2026-06-16",
+    "date": "2026-06-16",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3834812",
+    "description": "Description du poste :\nLe Cabinet Manpower Expert Digital recherche pour son client final, un Technicien IT H/F en CDI.\nLe poste est basé à Rocheservière à 30 minutes de Nantes. Rattaché au Responsable informatique, vous participerez à la fois Au support quotidien des utilisateurs A la gestion du SI Et aux projets IT.\nPlus précisément Support & exploitation ; Analyser et traiter les demandes utilisateurs (bureautique, ERP, WMS, outils métiers assurer le suivi des tickets et la communication aux utilisateurs, escalader si nécessaire vers les prestataires, installer configurer et maintenir les postes de travail.\nInfrastructure & environnement technique ; Administrer le parc informatique (postes, périphériques, réseau de base), participer à la maintenance et à l'évolution de l'infrastructure, accompagner les utilisateurs (support, formation, paramétrage Projets & évolution du SI : Participer aux déploiements et mises à jour des applications métiers, contribuer aux projets IT de l'entreprise.\nData & automatisation : Créer et assurer la maintenance de jobs ETL et autres sur Windows (Python/Microsoft Azure), créer et faire évoluer les indicateurs (BI et Zabbix). De formation BAC +2/3 en informatique, vous justifiez d'une première expérience sur un poste similaire (débutant accepté Bonne maitrise de l'environnement Windows, bureautique Réseaux SQL / bases de données Scripting ou développement (la connaissance de Python est un plus Capacité à piloter de petits projets en autonomie.\nSavoir être Sens du service et bon relationnel Rigueur et capacité d'analyse Curiosité technique et envie d'apprendre Esprit d'équipe.\nInformations complémentaires Avantages CSE 1 à 2 jours de télétravail par semaine\nDans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicap",
+    "metier": "Conseiller / Conseillère support technique informatique",
+    "niveau": "junior",
+    "competences": [
+      "Azure",
+      "Git",
+      "Python",
+      "SQL",
+      "Travail en équipe",
+      "Analyse de données",
+      "Gestion de projet",
+      "Sécurité informatique",
+      "Documentation technique"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "BAC +2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "De formation BAC +2/3 en informatique, vous justifiez d'une première expérience sur un poste similaire (débutant accepté Bonne maitrise de l'environnement Windows, bureautique Réseaux SQL / bases de données Scripting ou développement (la connaissance de Python est un plus Capacité à piloter de petits projets en autonomie.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:49.505105",
+  "input_hash": "15454a963911a05fe6fe07b5f9faa95bafe160e16d630ebfe7105aa037d778f8",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

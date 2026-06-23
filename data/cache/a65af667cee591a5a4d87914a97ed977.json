@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:1097006",
+  "value": {
+    "id": "1097006",
+    "intitule": "DevSecOps - Rennes, France (H/F)",
+    "entreprise": "",
+    "territoire": "35 - Rennes",
+    "ville": "35238",
+    "code_postal": "35000",
+    "contrat": "CDI",
+    "date_creation": "2026-04-03",
+    "date": "2026-04-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1097006",
+    "description": "Ce que nous allons accomplir ensemble :  Au sein d'une équipe CyberSOC d'un grand compte Télécoms, vous intégrez l'équipe DevSecOps, responsable de la conception, de l'implémentation et de l'expertise des outils du CyberSOC, dédiée à la gestion, à l'investigation et à la résolution des incidents de sécurité informatique. Votre mission (...si vous lacceptezstrong>  En tant quingénieur SecOps, vous êtes le référent pour lautomatisation et lorchestration. Vous participez à la conception et au développement de lécosystème pour le déploiement automatisé des plateformes SOAR ainsi quà lélaboration, au développement et à lintégration continue des contenus métiers. Vos missions principales sont :  d'automatiser les déploiements des plateformes SOAR et des contenus métiers ; de développer des playbooks, intégrations et connecteurs ; de rédiger les procédures et la documentation associée.  A noter que des astreintes sont à prévoir. Les petits plus du projet : Vous travaillez dans un environnement opérationnel multi-clients, dynamique et en constante évolution, impliquant le développement de nouveaux scénarios dautomatisation, l'étude de solutions innovantes, ainsi que l'amélioration continue des infrastructures de détection, de remédiation et des contenus métiers.  Vous : Diplômé dune école Ingénieur ou d'un équivalent bac +5, vous avez une première expérience en tant que DevSecOps. Vous avez une forte appétence pour les enjeux de sécurité et de développement, dans une démarche DevOps, voire GitOps. Une bonne maitrîse du système Linux et de Docker est un pré-requis, tout comme la connaissance de Git/Gitlab. Egalement, vous avez déjà codé en Python. Pour vous épanouir sur ce poste, le goût du travail en équipe et le sens du partage sont des atouts indispensables !",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Linux",
+      "Python",
+      "Sécurité Informatique",
+      "Automatisation des déploiements",
+      "Documentation technique",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous : Diplômé dune école Ingénieur ou d'un équivalent bac +5, vous avez une première expérience en tant que DevSecOps.",
+        "confidence": 0.9
+      },
+      {
+        "label": "bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous : Diplômé dune école Ingénieur ou d'un équivalent bac +5, vous avez une première expérience en tant que DevSecOps.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:30.023370",
+  "input_hash": "a14a6be4ee60467a03068829d55f2647fdea782b5300126c47566dc5875b989f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

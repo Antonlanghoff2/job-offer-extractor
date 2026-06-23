@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3883477",
+  "value": {
+    "id": "3883477",
+    "intitule": "Ingénieur(e) Data et Architecte Plateforme (H/F)",
+    "entreprise": "",
+    "territoire": "95 - Argenteuil",
+    "ville": "95018",
+    "code_postal": "95100",
+    "contrat": "Intérim - 1 Mois",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3883477",
+    "description": "Nous recherchons un(e)&#xa0;Ingénieur(e) Data et Architecte Plateforme (H/F)Rattaché(e) à la direction&#xa0;informatique du Groupe, votre mission principale est de concevoir et déployer de bout en bout notre nouvelle plateforme de données reposant sur la solution&#xa0;Snowflake. L'objectif est de bâtir une architecture&#xa0;native, performante et simplifiée en exploitant au maximum les fonctionnalités intégrées de l'écosystème&#xa0;Snowflake.&#xa0;Note&#xa0;stratégique&#xa0;:&#xa0;Pour le&#xa0;lancement&#xa0;de la&#xa0;plateforme, nous serons&#xa0;accompagnés&#xa0;par&#xa0;une&#xa0;équipe de consultants externes experts.&#xa0;Votre&#xa0;rôle&#xa0;sera de&#xa0;piloter&#xa0;cette&#xa0;collaboration, de&#xa0;valider&#xa0;les choix techniques et&#xa0;d'assurer&#xa0;la reprise&#xa0;en&#xa0;main&#xa0;totale&#xa0;de&#xa0;l'environnement&#xa0;après la phase de build.&#xa0;L'enjeu&#xa0;de&#xa0;cette&#xa0;nouvelle&#xa0;plateforme&#xa0;est&#xa0;double :&#xa0;Découplage applicatif&#xa0;:&#xa0;créer une couche d'abstraction native entre nos outils métiers (ERP, CRM, etc.) pour faciliter les migrations futures via une centralisation dans&#xa0;Snowflake.&#xa0;Pilotage&#xa0;Business&#xa0;:&#xa0;centraliser&#xa0;la donnée pour&#xa0;offrir&#xa0;une&#xa0;vision 360° de&#xa0;l'activité,&#xa0;en&#xa0;privilégiant&#xa0;les flux directs et&#xa0;l'orchestration&#xa0;intégrée.&#xa0;À ce poste, vos principales missions seront les suivantes :1. Architecture &amp; InfrastructureDesign &amp;&#xa0;Configuration&#xa0;:&#xa0;Mise&#xa0;en&#xa0;place de&#xa0;l'environnement&#xa0;Snowflake (RBAC, Sécurité, Virtual Warehouses).&#xa0;Ingestion &amp;&#xa0;Flux&#xa0;:&#xa0;Privilégier&#xa0;les&#xa0;connecteurs&#xa0;natifs&#xa0;Snowflake,&#xa0;Snowpipe&#xa0;et les External Stages pour limiter le&#xa0;recours&#xa0;à des ETL tiers.&#xa0;Transformation &amp;&#xa0;Modélisation&#xa0;:&#xa0;Concevoir&#xa0;les&#xa0;modèles&#xa0;de données&#xa0;en&#xa0;utilisant&#xa0;SQL et Snowpark (Python) pour les transformations complexes,&#xa0;afin&#xa0;de&#xa0;réduire&#xa0;l'empreinte&#xa0;logicielle&#xa0;externe.&#xa0;2. Orchestration &amp; QualitéOrchestration&#xa0;:&#xa0;Automatiser&#xa0;les pipelines de données via les Snowflake Tasks&#xa0;et&#xa0;Stream &amp; Tasks pour&#xa0;une&#xa0;gestion&#xa0;intégrée&#xa0;du cycle de vie des données.&#xa0;Gouvernance&#xa0;: Garantir l'intégrité et la sécurité des données en exploitant les fonctionnalités de gouvernance natives (Snowflake&#xa0;Horizon).&#xa0;3. Analytics Engineering &amp;&#xa0;DataViz&#xa0;Interconnectivité&#xa0;:&#xa0;Connecter les&#xa0;outils&#xa0;de DataViz (Tableau&#xa0;ou&#xa0;autre)&#xa0;directement&#xa0;à Snowflake.&#xa0;Optimisation&#xa0;: Piloter les performances et les coûts (finops) en optimisant les requêtes et l'usage des ressources&#xa0;Snowflake.&#xa0;&#xa0;",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Coûts",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Vision",
+      "Data Engineering",
+      "Design patterns",
+      "Pipelines de données",
+      "Optimisation des performances",
+      "Déploiement de modèles",
+      "Model drift",
+      "Documentation technique",
+      "Gestion de projet",
+      "Qualité des données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Nous recherchons un(e)&#xa0;Ingénieur(e) Data et Architecte Plateforme (H/F)Rattaché(e) à la direction&#xa0;informatique du Groupe, votre mission principale est de concevoir et déployer de bout en bout notre nouvelle plateforme de données reposant sur la solution&#xa0;Snowflake.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:32.123687",
+  "input_hash": "7f5bfc2c92201ef4bec05f4ec530bb626092b81a2dbf7c71f19d1b06a4c7049b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -22,6 +22,12 @@ from src.source_comparison import compare_sources
 from src.web_app import filter_offers as filter_france_travail_offers
 from src.web_app import load_raw_offers, normalize_offer
 from src.user_portal import register_user_portal
+from src.cache_reader import (
+    get_precomputed_offers,
+    get_precomputed_trends,
+    get_territory_options as get_cached_territory_options,
+    get_cache_status,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -136,9 +142,7 @@ def build_state(
     imported_offers: list[dict[str, Any]] | None = None,
     source_label: str | None = None,
 ) -> dict[str, Any]:
-    raw_offers = load_raw_offers()
-    france_travail_offers = filter_france_travail_offers(raw_offers, territoire, periode_jours)
-    france_travail_trends = compare_sources(france_travail_offers, [], territoire=territoire, periode_jours=periode_jours)["france_travail"]
+    from src.cache_reader import has_precomputed_data
 
     if imported_offers is None:
         source_mode = "indeed"
@@ -151,15 +155,30 @@ def build_state(
 
     source_normalized = normalize_indeed_offers(source_raw)
     source_filtered = filter_normalized_offers(source_normalized, territoire, periode_jours)
-    source_trends = compare_sources([], source_filtered, territoire=territoire, periode_jours=periode_jours)["indeed"]
 
-    comparison = compare_sources(france_travail_offers, source_filtered, territoire=territoire, periode_jours=periode_jours)
+    if has_precomputed_data():
+        raw_offers, _ = get_precomputed_offers()
+        france_travail_offers = filter_france_travail_offers(raw_offers, territoire, periode_jours)
+        ft_trends, _ = get_precomputed_trends(territoire=territoire, periode_jours=periode_jours)
+        france_travail_trends = ft_trends or {}
+        territoire_options = get_cached_territory_options()
+    else:
+        raw_offers = load_raw_offers()
+        france_travail_offers = filter_france_travail_offers(raw_offers, territoire, periode_jours)
+        france_travail_trends = compare_sources(france_travail_offers, [], territoire=territoire, periode_jours=periode_jours)["france_travail"]
+        territoire_options = sorted(
+            {offer["territoire"] for offer in (normalize_offer(raw) for raw in raw_offers) if offer.get("territoire")},
+            key=lambda value: value.lower(),
+        )
+
+    if source_filtered:
+        source_trends = compare_sources([], source_filtered, territoire=territoire, periode_jours=periode_jours)["indeed"]
+        comparison = compare_sources(france_travail_offers, source_filtered, territoire=territoire, periode_jours=periode_jours)
+    else:
+        source_trends = {}
+        comparison = {"common_skills": {}, "france_travail_only": {}, "indeed_only": {}, "common_jobs": {}, "common_contracts": {}}
+
     market_context = load_market_context_rows()
-
-    territoire_options = sorted(
-        {offer["territoire"] for offer in (normalize_offer(raw) for raw in raw_offers) if offer.get("territoire")},
-        key=lambda value: value.lower(),
-    )
 
     return {
         "territoire": territoire,
@@ -177,6 +196,7 @@ def build_state(
         "territoire_options": territoire_options,
         "offers_ft": france_travail_offers[:20],
         "offers_indeed": source_filtered[:20],
+        "cache_status": get_cache_status() if has_precomputed_data() else None,
     }
 
 

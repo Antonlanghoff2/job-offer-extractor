@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:4038178",
+  "value": {
+    "id": "4038178",
+    "intitule": "Ingénieur Développement logiciel 3DExperience F/H  (H/F)",
+    "entreprise": "Safran",
+    "territoire": "77 - Melun",
+    "ville": "77288",
+    "code_postal": "77000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4038178",
+    "description": "Vous voyez un avion ? C'est simple, le groupe Safran fait tout dans l'avion, sauf l'avion !\nEt nous, Safran Aircraft Engines, notre mission c'est de concevoir, produire et commercialiser nos moteurs tout en assurant leur support depuis plus de 110 ans !\n\nAu sein de la DSI de Safran Aircraft Engines, vous intégrerez la division Continuité Numérique afin de participer à un de nos programmes majeurs.\nLe programme continuité numérique vise à uniformiser les outils du PLM et MES depuis la conception jusqu'à l'après-vente du turbo réacteur, en passant par la fabrication et le montage.\n\nDans ce cadre, nous recherchons un-e Ingénieur-e Développement Logiciel / Widgets & Innovation 3DExperience passionné-e et talentueux-se pour rejoindre notre équipe.\n\nVous interviendrez sur la plateforme 3DExperience de Dassault Systèmes, en environnement on premise et Cloud. Vous contribuez au développement de widgets, d'extensions, de POCs et d'automatismes techniques autour de la plateforme, en lien étroit avec les architectes logiciels et les architectes solution.\n\nVos principales responsabilités seront les suivantes :\n\nDéveloppement et conception technique :\n- Concevoir et développer des widgets sur la plateforme 3DExperience\n- Contribuer à la traduction des besoins fonctionnels en spécifications techniques détaillées (User Stories, critères d'acceptation, conception détaillée) en collaboration avec les architectes logiciels\n- Réaliser des POCs et prototypes pour explorer des solutions, valider des options techniques ou démontrer la faisabilité de nouveaux usages\nIndustrialisation, qualité et performance\n- Développer un code maintenable, performant et sécurisé, en appliquant les bonnes pratiques de développement et de test (tests unitaires, automatisations...)\n- Contribuer à l'intégration continue et au déploiement des composants développés, en lien avec les équipes en charge de la chaîne DevOps.\n- Analyser et traiter les incidents et problèmes techniques liés aux développements 3DExperience (widgets, customisations, .)\n- Participer à l'amélioration continue des performances et de la robustesse des solutions\n- Contribuer à la mise en place et à l'évolution des prérequis de développement : environnements de développement, frameworks, outillage, bonnes pratiques, standards...\nCollaboration et support aux projets\n- Travailler en étroite collaboration avec les différents acteurs DSI\n- Contribuer aux ateliers techniques et aux revues de conception sur les sujets incluant des développements 3DExperience\n- Participer, lorsque nécessaire, aux phases de tests et aux mises en production, en apportant un support technique avancé\n- Rédiger et maintenir la documentation technique\n- Assurer une veille sur les évolutions techniques de la plateforme 3Dexp et de son écosystème\nCompétences techniques requises :\n- Maîtrise approfondie de la plateforme 3DExperience de Dassault Systèmes, en particulier de ses APIs et services, ainsi que de ses différentes possibilités de paramétrage & customisation\n- Expérience confirmée de développement sur 3DExperience (widgets, customisations legacy type JPO, TCL/MQL.)\n- Maîtrise des technologies de développement Web utilisées autour des widgets 3DExperience (JavaScript/TypeScript, frameworks front, HTML/CSS, REST, JSON.)\n- Compréhension des principes d'architecture applicative (séparation des couches, intégration, sécurité, performance)\n- Connaissance des environnements d'intégration continue et de déploiement (Git, pipelines CI/CD, outils de build, gestion des artefacts)\n- Capacité à lire et comprendre des spécifications techniques et fonctionnelles, et à contribuer à leur enrichissement\n- Bonne connaissance des modules PLM (ENOVIA, CATIA, DELMIA) et des processus associés\nCompétences comportementales requises :\n- Capacité à travailler en équipe dans un environnement multi acteurs (DSI, métiers, intégrateurs externes, équipes internationales)\n- Rigueur, sens de la qualité et de la documentation\n- Esprit d'analyse et de résolution de problèmes.\n- Curiosité technique et goût pour l'innovation (tests de nouvelles aproches, POCs, veille)\n- Bonnes capacités de communication, à l'écrit et à l'oral",
+    "metier": "Ingénieur / Ingénieure systèmes, réseaux et sécurité informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "CSS",
+      "Développement web",
+      "Git",
+      "HTML",
+      "Intelligence artificielle",
+      "JavaScript",
+      "TypeScript",
+      "Vision",
+      "Vue.js",
+      "CI/CD",
+      "Résolution de problèmes",
+      "Tests automatisés",
+      "Déploiement de modèles",
+      "Documentation technique",
+      "Design patterns",
+      "API",
+      "Architecture microservices",
+      "Backend",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Gestion de projet",
+      "Veille technologique"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans ce cadre, nous recherchons un-e Ingénieur-e Développement Logiciel / Widgets & Innovation 3DExperience passionné-e et talentueux-se pour rejoindre notre équipe.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 23,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:14.655674",
+  "input_hash": "5458cb6b176c626bd0fa95ff7c5e40e4f156380f94910123117a9ae292033269",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

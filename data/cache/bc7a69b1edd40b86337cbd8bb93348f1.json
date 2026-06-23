@@ -1,0 +1,593 @@
+{
+  "key": "trends:91 - Orsay",
+  "value": {
+    "territoire": "91 - Orsay",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Gestion de projet": 2,
+      "Intelligence artificielle": 2,
+      "Python": 2,
+      "Qualité Des Données": 2,
+      "API": 1,
+      "Code Review": 1,
+      "Déploiement De Modèles": 1,
+      "Feature Engineering": 1,
+      "Optique": 1,
+      "Scalabilité": 1,
+      "Sécurité Informatique": 1,
+      "Vision": 1,
+      "Vue.js": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Python": 2
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Qualité des données": 2
+        }
+      },
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "Code Review",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Code review": 1
+        }
+      },
+      {
+        "nom": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Déploiement de modèles": 1
+        }
+      },
+      {
+        "nom": "Feature Engineering",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Feature Engineering": 1
+        }
+      },
+      {
+        "nom": "Optique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Optique": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Scalabilité": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vision": 1
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vue.js": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Python": {
+        "Python": 2
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 2
+      },
+      "API": {
+        "API": 1
+      },
+      "Code Review": {
+        "Code review": 1
+      },
+      "Déploiement De Modèles": {
+        "Déploiement de modèles": 1
+      },
+      "Feature Engineering": {
+        "Feature Engineering": 1
+      },
+      "Optique": {
+        "Optique": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Vision": {
+        "Vision": 1
+      },
+      "Vue.js": {
+        "Vue.js": 1
+      }
+    },
+    "metiers": {
+      "Automaticien / Automaticienne en bureau d'études": 1,
+      "Ingénieur / Ingénieure d'étude informatique": 1,
+      "Ingénieur / Ingénieure de recherche scientifique": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDD - 12 Mois": 1,
+      "CDD - 36 Mois": 1,
+      "CDI": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Déploiement De Modèles",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Optique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Optique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Feature Engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Optique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Optique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Optique",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Vision",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Feature Engineering",
+        "Qualité Des Données"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Vue.js",
+        "Gestion de projet",
+        "Optique",
+        "Vision",
+        "Code Review",
+        "Qualité Des Données",
+        "Déploiement De Modèles",
+        "Sécurité Informatique"
+      ],
+      [
+        "Intelligence artificielle",
+        "Python",
+        "Gestion de projet",
+        "Scalabilité",
+        "API"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3984748",
+        "intitule": "Responsable utilisateurs des systèmes d'information (H/F)",
+        "entreprise": "",
+        "territoire": "91 - Orsay",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3984748"
+      },
+      {
+        "id": "3972087",
+        "intitule": "Ingénieur Software industriel (H/F)",
+        "entreprise": "",
+        "territoire": "91 - Orsay",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3972087"
+      },
+      {
+        "id": "209TRKY",
+        "intitule": "Assistant ingénieur d'exploitation d'instrument (H/F)",
+        "entreprise": "UNIVERSITE PARIS-SACLAY",
+        "territoire": "91 - Orsay",
+        "contrat": "CDD - 36 Mois",
+        "date": "2026-06-15",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209TRKY"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3984748",
+        "intitule": "Responsable utilisateurs des systèmes d'information (H/F)",
+        "entreprise": "",
+        "territoire": "91 - Orsay",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3984748"
+      },
+      {
+        "id": "3972087",
+        "intitule": "Ingénieur Software industriel (H/F)",
+        "entreprise": "",
+        "territoire": "91 - Orsay",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3972087"
+      },
+      {
+        "id": "209TRKY",
+        "intitule": "Assistant ingénieur d'exploitation d'instrument (H/F)",
+        "entreprise": "UNIVERSITE PARIS-SACLAY",
+        "territoire": "91 - Orsay",
+        "contrat": "CDD - 36 Mois",
+        "date": "2026-06-15",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209TRKY"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:00:44.114582",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

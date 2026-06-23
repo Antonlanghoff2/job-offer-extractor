@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:4005936",
+  "value": {
+    "id": "4005936",
+    "intitule": "Ingénieur développement logiciel F/H - Informatique de gestion (H/F)",
+    "entreprise": "AKKODIS DIGITAL SAS",
+    "territoire": "29 - Brest",
+    "ville": "29019",
+    "code_postal": "29200",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4005936",
+    "description": "Descriptif du poste:\n\n\nLa ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Bretagne et recrute un Ingénieur développement logiciel H/F en CDI à Brest. Ce poste s'inscrit dans le secteur de la défense, où vous serez chargé(e) de concevoir, développer et maintenir des applications logicielles innovantes au sein d'une équipe dynamique.\n\n \n\nResponsabilités principales :\n\n\n* Concevoir, développer et maintenir des applications logicielles selon les spécifications techniques et fonctionnelles.\n* Collaborer étroitement avec les équipes produit et technique pour définir les exigences et assurer la cohérence des solutions.\n* Réaliser des tests unitaires et d'intégration afin de garantir la qualité et la fiabilité du code produit.\n* Participer activement aux revues de code et à l'amélioration continue des processus de développement.\n* Documenter les solutions techniques et les évolutions apportées aux applications.\n* Assurer la maintenance corrective et évolutive des logiciels existants.\n* Veiller au respect des normes de sécurité et des bonnes pratiques de développement logiciel.\n* Contribuer à l'optimisation des performances et à l'efficacité des applications développées.\n\n \n\nEnvironnement de travail :\n\n\n\nVous évoluerez dans un environnement technique exigeant, au sein d'équipes multidisciplinaires appliquant les méthodologies Agile. Les interactions régulières avec les experts métiers, les responsables techniques et les équipes de gestion de projet favorisent la collaboration et l'innovation. L'utilisation d'outils modernes tels que Git, des environnements de développement intégrés (IDE) et des plateformes d'intégration continue vous permettra de travailler efficacement sur des projets à forte valeur ajoutée dans le secteur aéronautique.\n\nProfil recherché:\n\n\nDiplômé(e) d'un Master ou d'une formation équivalente en informatique, génie logiciel ou domaine connexe, vous justifiez de minimum 3 ans d'expérience en développement logiciel, idéalement dans le secteur de la défense. Vous maîtrisez les langages C++, Java et C à un niveau avancé, ainsi que les bases de données relationnelles et le requêtage SQL. Une connaissance approfondie des architectures logicielles, des design patterns et des outils de gestion de version (Git) est requise. Vous disposez d'une forte capacité d'analyse, d'un sens de l'organisation et d'excellentes compétences en communication. La maîtrise du français et de l'anglais est indispensable pour évoluer dans un contexte international et collaboratif.\n\n \n\nAkkodis accompagne ses clients dans la mondialisation de leurs projets, aussi un anglais courant est requis pour l'ensemble de nos collaborateurs.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Aéronautique",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "SQL",
+      "Vue.js",
+      "Maintenance applicative",
+      "Code review",
+      "Tests automatisés",
+      "Sécurité informatique",
+      "Qualité des données",
+      "API",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La ligne de service Consulting & Solutions d'Akkodis France renforce ses équipes en région Bretagne et recrute un Ingénieur développement logiciel H/F en CDI à Brest.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": false,
+        "source_sentence": "Diplômé(e) d'un Master ou d'une formation équivalente en informatique, génie logiciel ou domaine connexe, vous justifiez de minimum 3 ans d'expérience en développement logiciel, idéalement dans le secteur de la défense.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:14.804580",
+  "input_hash": "779b38eef39504aeffec3f3013df6755eac87c3988207f8935bf5032e2f1ab01",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

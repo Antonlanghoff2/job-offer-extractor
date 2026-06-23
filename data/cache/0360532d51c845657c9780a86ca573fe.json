@@ -1,0 +1,612 @@
+{
+  "key": "trends:94 - Villeneuve-Saint-Georges",
+  "value": {
+    "territoire": "94 - Villeneuve-Saint-Georges",
+    "periode_jours": 365,
+    "nombre_offres": 4,
+    "competences": {
+      "Gestion de projet": 3,
+      "Intelligence artificielle": 3,
+      "Scalabilité": 2,
+      "Vision": 2,
+      "Code Review": 1,
+      "Cybersécurité": 1,
+      "Documentation Technique": 1,
+      "Ferroviaire": 1,
+      "Git": 1,
+      "Linux": 1,
+      "Product Management": 1,
+      "Python": 1,
+      "Qualité Des Données": 1,
+      "Résolution De Problèmes": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 3,
+        "percentage": 75.0,
+        "variants": {
+          "Gestion de projet": 3
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 75.0,
+        "variants": {
+          "Intelligence artificielle": 3
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 2,
+        "percentage": 50.0,
+        "variants": {
+          "Scalabilité": 2
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 2,
+        "percentage": 50.0,
+        "variants": {
+          "Vision": 2
+        }
+      },
+      {
+        "nom": "Code Review",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Code review": 1
+        }
+      },
+      {
+        "nom": "Cybersécurité",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Cybersécurité": 1
+        }
+      },
+      {
+        "nom": "Documentation Technique",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Documentation technique": 1
+        }
+      },
+      {
+        "nom": "Ferroviaire",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Ferroviaire": 1
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Linux",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Linux": 1
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Product Management": 1
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Python": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 3
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 3
+      },
+      "Scalabilité": {
+        "Scalabilité": 2
+      },
+      "Vision": {
+        "Vision": 2
+      },
+      "Code Review": {
+        "Code review": 1
+      },
+      "Cybersécurité": {
+        "Cybersécurité": 1
+      },
+      "Documentation Technique": {
+        "Documentation technique": 1
+      },
+      "Ferroviaire": {
+        "Ferroviaire": 1
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Linux": {
+        "Linux": 1
+      },
+      "Product Management": {
+        "Product Management": 1
+      },
+      "Python": {
+        "Python": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      }
+    },
+    "metiers": {
+      "Chargé / Chargée de méthodes BTP": 1,
+      "Développeur / Développeuse informatique": 1,
+      "Ingénieur informaticien / Ingénieure informaticienne": 1,
+      "Qualiticien / Qualiticienne logiciel en informatique": 1
+    },
+    "niveau": {
+      "junior": 2,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 1,
+      "Intérim - 1 Mois": 1,
+      "Intérim - 2 Mois": 1,
+      "Intérim - 6 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vision",
+        "count": 2,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Scalabilité",
+        "count": 2,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Code Review",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Cybersécurité",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Linux",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 25.0
+      }
+    ],
+    "fiabilite": 0.1,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Vision",
+        "Code Review",
+        "Qualité Des Données"
+      ],
+      [
+        "Intelligence artificielle",
+        "Scalabilité"
+      ],
+      [
+        "Gestion de projet",
+        "Linux",
+        "Python",
+        "Git",
+        "Vision",
+        "Cybersécurité",
+        "Product Management",
+        "Documentation Technique",
+        "Résolution De Problèmes"
+      ],
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Ferroviaire",
+        "Scalabilité"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209NFCS",
+        "intitule": "DEVELOPPEUR D'APPLICATIONS POWER APPS H/F",
+        "entreprise": "ADEQUAT INTERIM",
+        "territoire": "94 - Villeneuve-Saint-Georges",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NFCS"
+      },
+      {
+        "id": "3543446",
+        "intitule": "Développeur Informatique Applications H/F",
+        "entreprise": "Manpower",
+        "territoire": "94 - Villeneuve-Saint-Georges",
+        "contrat": "Intérim - 2 Mois",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3543446"
+      },
+      {
+        "id": "3054290",
+        "intitule": "ADMINISTRATEUR SYSTEME (H/F)",
+        "entreprise": "CHI",
+        "territoire": "94 - Villeneuve-Saint-Georges",
+        "contrat": "CDI",
+        "date": "2026-05-27",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3054290"
+      },
+      {
+        "id": "8788875",
+        "intitule": "Responsable d'Atelier H/F - Villeneuve St Georges",
+        "entreprise": "",
+        "territoire": "94 - Villeneuve-Saint-Georges",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-02-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8788875"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209NFCS",
+        "intitule": "DEVELOPPEUR D'APPLICATIONS POWER APPS H/F",
+        "entreprise": "ADEQUAT INTERIM",
+        "territoire": "94 - Villeneuve-Saint-Georges",
+        "contrat": "Intérim - 6 Mois",
+        "date": "2026-06-09",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209NFCS"
+      },
+      {
+        "id": "3543446",
+        "intitule": "Développeur Informatique Applications H/F",
+        "entreprise": "Manpower",
+        "territoire": "94 - Villeneuve-Saint-Georges",
+        "contrat": "Intérim - 2 Mois",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3543446"
+      },
+      {
+        "id": "3054290",
+        "intitule": "ADMINISTRATEUR SYSTEME (H/F)",
+        "entreprise": "CHI",
+        "territoire": "94 - Villeneuve-Saint-Georges",
+        "contrat": "CDI",
+        "date": "2026-05-27",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3054290"
+      },
+      {
+        "id": "8788875",
+        "intitule": "Responsable d'Atelier H/F - Villeneuve St Georges",
+        "entreprise": "",
+        "territoire": "94 - Villeneuve-Saint-Georges",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-02-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8788875"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:06:40.679348",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

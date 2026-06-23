@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:3168967",
+  "value": {
+    "id": "3168967",
+    "intitule": "Master Data Management H/F",
+    "entreprise": "FM LOGISTIC",
+    "territoire": "60 - Longueil-Sainte-Marie",
+    "ville": "60369",
+    "code_postal": "60126",
+    "contrat": "CDI",
+    "date_creation": "2026-05-29",
+    "date": "2026-05-29",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3168967",
+    "description": "Gestion des Master Data : Création des comptes dans les TMS. Traitement des appairages avec les autres TMS et SAP. Garantie de l'unicité des données (Golden Address). Vérification de la conformité des documents légaux. Création et maintenance des grilles tarifaires : Élaboration et mise en place des grilles clients et transporteurs. Pilotage des indicateurs d'automatisation afin de diminuer les interventions manuelles. Garantie de leur bonne application. Support aux agences, amélioration continue : Mettre en place des points d'échange avec les agences pour identifier leurs besoins de paramétrage/automatisation Vous êtes rigoureux, méthodique, bon communiquant et à l'écoute. Vous avez une appétence pour les outils informatiques. Idéalement, vous avez déjà géré du contrôle de facturation de transporteur et des factures clients.",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Intégration continue",
+      "Automatisation de pipelines"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Gestion des Master Data : Création des comptes dans les TMS.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 2,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:36.453066",
+  "input_hash": "ac2d43cda9ce2db630e127aeab3e188223a95c2ecf549ab5e149c203501e60c3",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

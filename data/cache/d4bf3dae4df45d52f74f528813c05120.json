@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:0345194",
+  "value": {
+    "id": "0345194",
+    "intitule": "INGÉNIEUR LOGICIEL 3D (H/F)",
+    "entreprise": "",
+    "territoire": "31 - Labège",
+    "ville": "31254",
+    "code_postal": "31670",
+    "contrat": "CDI",
+    "date_creation": "2026-03-17",
+    "date": "2026-03-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/0345194",
+    "description": "Nous recherchons pour le compte de notre client, société d'ingénierie logicielle de pointe, acteur reconnu du secteur spatial. Pour accompagner leur forte croissance, nous recherchons leur futur(e) Ingénieur(e) 3D  de haut vol pour rejoindre l'équipe \"Simulation\".\n\nIci, vous ne ferez pas que du code : vous intégrerez une équipe soudée, passionnée par les défis technologiques complexes, dans un environnement serein qui place l'humain et l'échange au cœur de sa culture.Sous la responsabilité d'un chef de projet, vous serez le moteur de solutions visuelles et techniques innovantes :\n\nConcevoir et développer des modèles d'équipements et des outils d'exploitation de pointe.\n\nDonner vie aux données : Vous interviendrez sur un logiciel de visualisation 3D synchronisant des applications interconnectées (3D, SIG, tracés de courbes).\n\nOptimiser la performance : Analyse et amélioration d'algorithmes complexes pour garantir une fluidité parfaite.\n\nGarantir l'excellence : Participer à tout le cycle de vie (conception, tests, validation) avec la rigueur exigée par les standards du spatial.",
+    "metier": "Ingénieur / Ingénieure d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Développement de modèles",
+      "Déploiement de modèles",
+      "MLOps",
+      "Data Engineering",
+      "Pipelines de données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Pour accompagner leur forte croissance, nous recherchons leur futur(e) Ingénieur(e) 3D de haut vol pour rejoindre l'équipe \"Simulation\".",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 6,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:33.344423",
+  "input_hash": "641ff15cc5d1a5ed76de65623c0457dfbb3bf6b4e9e8ed52dd1c8f78f19b274d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

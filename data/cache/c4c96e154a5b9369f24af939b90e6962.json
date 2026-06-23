@@ -1,0 +1,42 @@
+{
+  "key": "offer_extraction:3521273",
+  "value": {
+    "id": "3521273",
+    "intitule": "Ingénieur / Ingénieure d'études-recherche-développement en industrie (H/F)",
+    "entreprise": "",
+    "territoire": "72 - Mans",
+    "ville": "72181",
+    "code_postal": "72000",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-06",
+    "date": "2026-06-06",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3521273",
+    "description": "Mission : Le candidat (H/F) sera chargé de produire une base de données de mesures de haut-parleurs électrodynamiques qui servira à entraîner des modèles d'apprentissage profond. Les grandeurs à mesurer seront l'impédance électrique d'entrée du haut-parleur, le déplacement de la membrane et la pression acoustique rayonnée dans l'axe. Les mesures seront effectuées à la fois dans les plages de fonctionnement linéaire et non-linéaire des haut-parleurs. Une base de donnée étiquetée sera ensuite réalisée ainsi que des scripts pythons permettant un accès rapide aux données. Cette base sera ensuit mise en ligne. Parallèlement à ce travail, une étude bibliographique sur la modélisation du comportement de haut-parleurs électrodynamiques par apprentissage profond sera réalisée. Des premiers algorithmes d'apprentissage profond seront ensuite proposées sous python. Activités : Réalisation des mesures pour la base de données (domaines linéaire et non-linéaire) Etiquetage et mise en forme des données Bibliographie sur le sujet Réalisation d'algorithmes d'apprentissage profond.",
+    "metier": "Technicien / Technicienne installation et maintenance électronique",
+    "niveau": "junior",
+    "competences": [
+      "Python",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "MLOps"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:07.137124",
+  "input_hash": "7a6faaeda5756367ffc7da1e592b2124b5aaf940bc5ba3bb4b2ec18019e44a68",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

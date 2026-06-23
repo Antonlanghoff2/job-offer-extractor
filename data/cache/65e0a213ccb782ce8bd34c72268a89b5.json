@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:3684719",
+  "value": {
+    "id": "3684719",
+    "intitule": "Senior Data Analyst - H/F",
+    "entreprise": "Seyos",
+    "territoire": "35 - Cesson-Sévigné",
+    "ville": "35051",
+    "code_postal": "35510",
+    "contrat": "CDI",
+    "date_creation": "2026-06-10",
+    "date": "2026-06-10",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3684719",
+    "description": "Description: Notre client est une entreprise spécialisée dans les technologies de tatouage numérique (watermarking), utilisées pour protéger les contenus audiovisuels contre le piratage et la redistribution illégale. Ses solutions s’adressent principalement aux acteurs majeurs de l’industrie : - Studios de cinéma - Chaînes de télévision - Plateformes de vidéo à la demande (VOD) - Diffuseurs d’événements sportifs L’objectif est de sécuriser la diffusion des contenus premium (films, séries, événements sportifs) en permettant notamment de tracer l’origine des fuites en cas de diffusion illégale. La société lance un projet stratégique -> la création d’un SOC dédié à l’analyse et à la sécurisation des flux vidéo. Objectif : - Sécuriser les services de streaming contre les menaces et comportements frauduleux. - Garantir une détection proactive des signaux faibles, - Garantir une haute qualité de données - Piloter efficacement la remédiation pour renforcer la sécurité globale des plateformes. Dans ce cadre vous intégré une équipe de 7 experts, dans un environnement agile, technique et en constante évolution. En tant que Senior Data Analyst, votre mission consiste à exploiter, structurer et interpréter de grands volumes de données techniques et métier afin de concevoir des analyses, indicateurs et restitutions visuelles à forte valeur ajoutée, au service de problématiques de sécurité concrètes. Missions principales - Transformer des données complexes en analyses actionnables pour répondre à des cas d'usage clients concrets - Concevoir et faire évoluer des indicateurs métier permettant de détecter des signaux faibles et d'accompagner la prise de décision - Croiser et interpréter des données hétérogènes multi-sources pour produire des insights fiables et directement exploitables en production - Évaluer la qualité et la robustesse des analyses en maîtrisant les biais et les limites des données - Structurer, préparer et enrichir les données pour maximiser leur valeur analytique - Concevoir des tableaux de bord et visualisations à fort impact, adaptés aux utilisateurs, clients et équipes internes - Collaborer au quotidien avec des experts DevOps, Data Engineers et équipes produit dans un cadre agile Missions complémentaires - Faire évoluer les flux et traitements de données pour l'exploitation analytique - Améliorer la lisibilité et l'utilité opérationnelle des outils de reporting et dashboards - Veiller à la qualité, la gouvernance et la sécurisation des données Environnement technique : Python, SQL avancé, AWS (S3, Athena, Glue, QuickSight), Lakehouse (Apache Iceberg), OLTP, OLAP, ETL, Plotly Dash, Docker, GitLab. Lieu : Rennes Rémunération : 45 000 – 60 000 Euros Télétravail : 1 à 2 jours Avantages : PEE, abondement 300% / Mutuelle 60% / Swile 60% par l’entreprise / Prévoyance 100% / Transport 70% par l’entreprise / PERCO / CET / Hackathons / Contexte international. Profil recherché: Formation & expérience - Bac+5 (école d'ingénieurs, master ou équivalent) - 5 ans d'expérience minimum dans la data, dont 3 ans en tant que Data Analyst Savoir-être - Esprit analytique et capacité à résoudre des problèmes complexes - Pédagogie : savoir restituer des résultats techniques à des interlocuteurs variés - Anglais courant écrit et oral (langue de travail) - Autonomie, curiosité et rigueur - Orientation qualité, fiabilité et recherche d’efficience dans les solutions proposées.",
+    "metier": "Data analyst",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Vision",
+      "Cybersécurité",
+      "Qualité des données",
+      "Pipelines de données",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Monitoring de modèles"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 0,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché: Formation & expérience - Bac+5 (école d'ingénieurs, master ou équivalent) - 5 ans d'expérience minimum dans la data, dont 3 ans en tant que Data Analyst Savoir-être - Esprit analytique et capacité à résoudre des problèmes complexes - Pédagogie : savoir restituer des résultats techniques à des interlocuteurs variés - Anglais courant écrit et oral (langue de travail) - Autonomie, curiosité et rigueur - Orientation qualité, fiabilité et recherche d’efficience dans les solutions proposées.",
+        "confidence": 0.9
+      },
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Profil recherché: Formation & expérience - Bac+5 (école d'ingénieurs, master ou équivalent) - 5 ans d'expérience minimum dans la data, dont 3 ans en tant que Data Analyst Savoir-être - Esprit analytique et capacité à résoudre des problèmes complexes - Pédagogie : savoir restituer des résultats techniques à des interlocuteurs variés - Anglais courant écrit et oral (langue de travail) - Autonomie, curiosité et rigueur - Orientation qualité, fiabilité et recherche d’efficience dans les solutions proposées.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "4 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:47.329594",
+  "input_hash": "0c1d0b907bfc075ed4cefc44cf11a62925097b5e5fd9cdd77e779a3ecdd88e9f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

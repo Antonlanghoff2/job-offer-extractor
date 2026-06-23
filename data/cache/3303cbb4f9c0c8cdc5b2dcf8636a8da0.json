@@ -1,0 +1,330 @@
+{
+  "key": "trends:13 - Trets",
+  "value": {
+    "territoire": "13 - Trets",
+    "periode_jours": 365,
+    "nombre_offres": 2,
+    "competences": {
+      "Gestion de projet": 2,
+      "Qualité Des Données": 2,
+      "SQL": 2,
+      "Git": 1,
+      "Intelligence artificielle": 1,
+      "Product Management": 1,
+      "Résolution De Problèmes": 1,
+      "Windows Server": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Qualité des données": 2
+        }
+      },
+      {
+        "nom": "SQL",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "SQL": 2
+        }
+      },
+      {
+        "nom": "Git",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Git": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Product Management": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Résolution de problèmes": 1
+        }
+      },
+      {
+        "nom": "Windows Server",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Windows Server": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 2
+      },
+      "SQL": {
+        "SQL": 2
+      },
+      "Git": {
+        "Git": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Product Management": {
+        "Product Management": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
+      },
+      "Windows Server": {
+        "Windows Server": 1
+      }
+    },
+    "metiers": {
+      "Conseiller / Conseillère support technique informatique": 1,
+      "Responsable Comptabilité": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 1
+    },
+    "contrats": {
+      "CDI": 2
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "SQL",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Résolution De Problèmes",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "Windows Server",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "fiabilite": 0.05,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "SQL",
+        "Gestion de projet",
+        "Git",
+        "Product Management",
+        "Résolution De Problèmes",
+        "Qualité Des Données"
+      ],
+      [
+        "SQL",
+        "Gestion de projet",
+        "Windows Server",
+        "Qualité Des Données"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3312062",
+        "intitule": "Technicien(ne) Support Logiciel Comptabilité H/F",
+        "entreprise": "FAB Group",
+        "territoire": "13 - Trets",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3312062"
+      },
+      {
+        "id": "3311959",
+        "intitule": "Consultant Logiciel Comptabilité F/H - Direction gestion, finance (H/F)",
+        "entreprise": "FAB GROUP",
+        "territoire": "13 - Trets",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3311959"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3312062",
+        "intitule": "Technicien(ne) Support Logiciel Comptabilité H/F",
+        "entreprise": "FAB Group",
+        "territoire": "13 - Trets",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3312062"
+      },
+      {
+        "id": "3311959",
+        "intitule": "Consultant Logiciel Comptabilité F/H - Direction gestion, finance (H/F)",
+        "entreprise": "FAB GROUP",
+        "territoire": "13 - Trets",
+        "contrat": "CDI",
+        "date": "2026-06-02",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3311959"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:05:09.160308",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

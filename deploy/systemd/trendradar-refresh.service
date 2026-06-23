@@ -1,0 +1,15 @@
+[Unit]
+Description=TrendRadar IA - Refresh Job
+After=network.target
+
+[Service]
+Type=oneshot
+User=bibi
+WorkingDirectory=/home/bibi/job-offer-extractor
+ExecStart=/home/bibi/job-offer-extractor/.venv/bin/python -m src.jobs.refresh_all
+StandardOutput=append:/home/bibi/job-offer-extractor/logs/refresh.log
+StandardError=append:/home/bibi/job-offer-extractor/logs/refresh.error.log
+TimeoutStartSec=3600
+
+[Install]
+WantedBy=multi-user.target

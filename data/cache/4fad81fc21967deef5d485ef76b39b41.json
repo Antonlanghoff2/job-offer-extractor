@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3054290",
+  "value": {
+    "id": "3054290",
+    "intitule": "ADMINISTRATEUR SYSTEME (H/F)",
+    "entreprise": "CHI",
+    "territoire": "94 - Villeneuve-Saint-Georges",
+    "ville": "94078",
+    "code_postal": "94190",
+    "contrat": "CDI",
+    "date_creation": "2026-05-27",
+    "date": "2026-05-27",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3054290",
+    "description": "RESPONSABILITÉS : \n\nHoraires de travail : Forfait jour, du lundi au vendredi. Astreinte semaine et week-end.\nLieu de travail : L'ensemble des 2 hôpitaux du GH, implantation principale : CHI Villeneuve Saint Georges.\n\n\nMissions Permanentes du poste :\nL'administrateur système a pour mission la supervision ainsi que l'administration des serveurs Windows et Linux. (La gestion de l'infrastructure système de la DSI, le contrôle des systèmes de sauvegarde, assurer les mises à jour, les mises hors service ainsi que les montées de version des serveurs)\n \nMissions Spécifiques :\n·         Administration Windows / LINUX\n·         Développer et maintenir notre EAI ENNOVACOM\n·         Gestion de projets technique : coordination des différentes équipes (prestataire externe, DSI, services/directions hospitalières), planification des actions et documentations\n·         Assurer le suivi et l'analyse des performances du système d'information\n·         Effectuer des études de préconisation et d'implantation des matériels, outils et logiciels adaptés\n·         Accompagnement au changement : transfert de compétences aux équipes support, communication avec les utilisateurs du SI hospitalier\n·         Veille technologique (matériel et logiciel)\n·         Participation à une astreinte SI semaine et week-end.\n\nPROFIL RECHERCHÉ : \n\nFormations et/ou Qualifications :\n·         Niveau ingénieur avec une expérience dans l'administration système\n \n\nConnaissances particulières requises :\n·         Maîtrise des systèmes d'exploitation Microsoft Client et Server et linux\n·         Maîtrise VMWare-Vsphere, Varonis, Avamar, Unity, ME4, Active Directory, Exchange, IIS, Hyper-V\n·         Maîtrise des applications de supervision et de gestion ;\n·         Maîtrise des protocoles de sécurités ;\n·         Maîtrise Scripting PowerShell et Shell\n·         Développement python, perl, JSON appréciés\n\n\n \nQualités professionnelles requises :\n • Sens du service utilisateur\n • Fort esprit d'équipe\n • Méthodique et rigoureux\n • Autonome",
+    "metier": "Chargé / Chargée de méthodes BTP",
+    "niveau": "junior",
+    "competences": [
+      "Gestion de projet",
+      "Linux",
+      "Python",
+      "Vision",
+      "Cybersécurité",
+      "Product Management",
+      "Documentation technique",
+      "Résolution de problèmes",
+      "Git"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "· Niveau ingénieur avec une expérience dans l'administration système",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:17.488458",
+  "input_hash": "a585ad20331e8821a3549eb8cb0391edebf4c5533393dedc752627bd25c70788",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

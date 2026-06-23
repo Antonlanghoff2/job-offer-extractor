@@ -230,15 +230,36 @@
         </div>
 
         {% if offre.competences %}
-        <div class="chips">
-          {% for skill in offre.competences %}
-          <span class="chip">{{ skill }}</span>
-          {% endfor %}
+        <div class="offer-skills-section">
+          <h4 class="offer-skills-title">Compétences demandées</h4>
+          <div class="chips">
+            {% for skill in offre.competences %}
+            {% set is_matching = offre.matching_skills and skill in offre.matching_skills %}
+            {% set is_missing = offre.missing_skills and skill in offre.missing_skills %}
+            <span class="chip {% if is_matching %}chip--match{% elif is_missing %}chip--missing{% endif %}">{{ skill }}</span>
+            {% endfor %}
+          </div>
+          {% if offre.matching_skills or offre.missing_skills %}
+          <div class="offer-skills-legend">
+            {% if offre.matching_skills %}<span class="legend-item legend-item--match">✓ Acquise</span>{% endif %}
+            {% if offre.missing_skills %}<span class="legend-item legend-item--missing">✗ Manquante</span>{% endif %}
+          </div>
+          {% endif %}
         </div>
         {% endif %}
 
-        {% if offre.matching_skills %}
-        <p class="offer-note">Compétences communes: {{ offre.matching_skills|join(', ') }}</p>
+        {% if offre.match_explanation %}
+        <div class="match-explanation">
+          <h4 class="match-explanation__title">Explication du match</h4>
+          <p class="match-explanation__summary">{{ offre.match_explanation.summary }}</p>
+          {% if offre.match_explanation.details %}
+          <ul class="match-explanation__details">
+            {% for detail in offre.match_explanation.details %}
+            <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
         {% endif %}
 
         {% if match_details %}
@@ -254,11 +275,17 @@
               {% set critere_detail = details.details if details.details is mapping else {} %}
               <div class="score-tile">
                 <div class="score-tile__label">{{ critere|capitalize }}</div>
+                {% if details.statut == 'champ_absent' %}
+                <div class="score-tile__value">—</div>
+                <div class="score-tile__meta">Non évalué</div>
+                {% if critere_detail.reason %}<div class="score-tile__detail">{{ critere_detail.reason }}</div>{% endif %}
+                {% else %}
                 <div class="score-tile__value">{{ details.score if details.score is not none else '—' }}%</div>
-                <div class="score-tile__meta">Poids initial {{ '%.1f'|format(details.poids_initial) }} · Poids effectif {{ '%.1f'|format(details.poids_effectif) }} · {{ details.statut }}</div>
+                <div class="score-tile__meta">Poids initial {{ '%.1f'|format(details.poids_initial) }} · Poids effectif {{ '%.1f'|format(details.poids_effectif) }}</div>
                 {% if critere_detail.reason %}<div class="score-tile__detail">{{ critere_detail.reason }}</div>{% endif %}
                 {% if critere == 'localisation' and critere_detail.offer_locations %}<div class="score-tile__detail">Lieux analysés: {{ critere_detail.offer_locations|join(', ') }}</div>{% endif %}
                 {% if critere == 'salaire' and critere_detail.requested_salary is not none %}<div class="score-tile__detail">Salaire demandé: {{ critere_detail.requested_salary }} {% if critere_detail.offer_salary_min is not none and critere_detail.offer_salary_max is not none %}· Offre: {{ critere_detail.offer_salary_min }} - {{ critere_detail.offer_salary_max }}{% endif %}</div>{% endif %}
+                {% endif %}
               </div>
               {% endfor %}
             </div>

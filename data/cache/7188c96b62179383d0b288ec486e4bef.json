@@ -1,0 +1,182 @@
+{
+  "key": "trends:68 - Kingersheim",
+  "value": {
+    "territoire": "68 - Kingersheim",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Gestion de projet": 1,
+      "Intelligence artificielle": 1,
+      "Optimisation Des Performances": 1,
+      "Sécurité Informatique": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Gestion de projet",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Gestion de projet": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      },
+      {
+        "nom": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Optimisation des performances": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Gestion de projet": {
+        "Gestion de projet": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      },
+      "Optimisation Des Performances": {
+        "Optimisation des performances": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Qualiticien / Qualiticienne logiciel en informatique": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "Intérim - 1 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Intelligence artificielle",
+        "Gestion de projet",
+        "Vision",
+        "Optimisation Des Performances",
+        "Sécurité Informatique"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "8787276",
+        "intitule": "Responsable d'atelier H/F Mulhouse",
+        "entreprise": "",
+        "territoire": "68 - Kingersheim",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-02-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8787276"
+      }
+    ],
+    "offers": [
+      {
+        "id": "8787276",
+        "intitule": "Responsable d'atelier H/F Mulhouse",
+        "entreprise": "",
+        "territoire": "68 - Kingersheim",
+        "contrat": "Intérim - 1 Mois",
+        "date": "2026-02-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/8787276"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:07:05.972862",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

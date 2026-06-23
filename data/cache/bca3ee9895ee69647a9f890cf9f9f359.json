@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:209XMNM",
+  "value": {
+    "id": "209XMNM",
+    "intitule": "Thèse: Surveillance par IA de l'usure des outils coupants indus",
+    "entreprise": "SAFRAN",
+    "territoire": "78 - Châteaufort",
+    "ville": "78143",
+    "code_postal": "78117",
+    "contrat": "CDD - 36 Mois",
+    "date_creation": "2026-06-17",
+    "date": "2026-06-17",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209XMNM",
+    "description": "Les outils coupants, consommables essentiels des procédés d'usinage, constituent pour le Groupe Safran un poste de dépense stratégique. La maîtrise de leur usure représente ainsi un enjeu majeur, tant sur les plans économique qu'industriel. Une compréhension approfondie et une prédiction fiable de l'évolution de l'usure permettraient non seulement d'optimiser l'utilisation et la durée de vie des outils, mais également de concevoir des gammes d'usinage plus productives, plus robustes et mieux adaptées aux exigences de performance industrielle.\n\nL'objectif principal de cette thèse est de poser les bases méthodologiques et algorithmiques d'un jumeau numérique hybride (Hybrid Twin) dédié au suivi et au pronostic de l'usure des outils coupants en conditions industrielles réelles.\nPlus précisément, les travaux de recherche viseront à :\n- concevoir une architecture de type Hybrid Twin combinant des modèles d'apprentissage automatique (Machine Learning / Deep Learning) et des modèles ou contraintes issus de la physique du procédé, afin de prédire l'évolution de l'usure à partir de signaux physiques majoritairement non intrusifs ;\n- développer des méthodes de fusion de données permettant d'intégrer, dans un cadre unifié de suivi et de pronostic, des observations directes de l'usure obtenues par vision artificielle à des instants discrets, ainsi que des estimations continues issues des signaux machine ;\n- étudier les capacités d'adaptation et d'auto-apprentissage du système, de manière à assurer son fonctionnement aussi bien avec des configurations d'acquisition légères que fortement instrumentées, et à garantir sa robustesse face à la diversité des contextes industriels (types d'outils, opérations d'usinage, stratégies de coupe, matériaux usinés et machines-outils).",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Deep learning",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Vision",
+      "Architecture logiciel",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Architecture microservices",
+      "Backend",
+      "MLOps",
+      "Gestion de projet",
+      "Code review",
+      "Qualité des données"
+    ],
+    "salaire_min": 2843,
+    "salaire_max": 0,
+    "teletravail": "hybrid",
+    "diplomes_requis": [
+      {
+        "label": "thèse",
+        "level": 10,
+        "required": true,
+        "source_sentence": "L'objectif principal de cette thèse est de poser les bases méthodologiques et algorithmiques d'un jumeau numérique hybride (Hybrid Twin) dédié au suivi et au pronostic de l'usure des outils coupants en conditions industrielles réelles.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:49:59.064261",
+  "input_hash": "a93f6ebdc124431e09337303c02cfe59020f509eb1c64d12b5257a7b4b33e1e5",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:3270174",
+  "value": {
+    "id": "3270174",
+    "intitule": "Technicien informatique industrielle H/F",
+    "entreprise": "FILEC SAS",
+    "territoire": "79 - Airvault",
+    "ville": "79005",
+    "code_postal": "79600",
+    "contrat": "CDI",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3270174",
+    "description": "Au cœur de notre transformation digitale, vous serez en charge de déployer et fiabiliser les systèmes d’acquisition de données industrielles, afin d’alimenter nos indicateurs de performance (TRS) et améliorer l’efficacité de nos lignes de production. ? Vos responsabilités principales * Mettre en place la collecte automatique des données machines (temps de cycle, arrêts, rebuts…) Programmer et optimiser les automates industriels (PLC) * Déployer les protocoles de communication industrielle (OPC UA, Modbus, Profinet…) * Développer ou configurer des outils de supervision / SCADA * Assurer l’intégration avec nos systèmes (GMAO, MES, ERP) * Garantir la fiabilité, la disponibilité et la traçabilité des données * Participer activement à nos projets Industrie 4.0 Formation Bac+2 à Bac+5 en automatisme, informatique industrielle ou équivalent. Expérience en environnement industriel (secteur automobile ou process fortement automatisé est un plus). Maîtrise des automates industriels (Siemens, Schneider, Rockwell…). Connaissance des réseaux et protocoles industriels Sensibilité à la data industrielle et à la performance (TRS) Les + qui feront la différence Expérience en acquisition de données / MES / TRS Compétences en programmation (Python, SQL, C#…) Connaissances en cybersécurité industrielle Appétence pour les environnements innovants et en évolution",
+    "metier": "Technicien / Technicienne d'exploitation informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Acquisition",
+      "Git",
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Vision",
+      "Optimisation des performances",
+      "Intégration continue",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Qualité des données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vos responsabilités principales * Mettre en place la collecte automatique des données machines (temps de cycle, arrêts, rebuts…) Programmer et optimiser les automates industriels (PLC) * Déployer les protocoles de communication industrielle (OPC UA, Modbus, Profinet…) * Développer ou configurer des outils de supervision / SCADA * Assurer l’intégration avec nos systèmes (GMAO, MES, ERP) * Garantir la fiabilité, la disponibilité et la traçabilité des données * Participer activement à nos projets Industrie 4.0 Formation Bac+2 à Bac+5 en automatisme, informatique industrielle ou équivalent.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vos responsabilités principales * Mettre en place la collecte automatique des données machines (temps de cycle, arrêts, rebuts…) Programmer et optimiser les automates industriels (PLC) * Déployer les protocoles de communication industrielle (OPC UA, Modbus, Profinet…) * Développer ou configurer des outils de supervision / SCADA * Assurer l’intégration avec nos systèmes (GMAO, MES, ERP) * Garantir la fiabilité, la disponibilité et la traçabilité des données * Participer activement à nos projets Industrie 4.0 Formation Bac+2 à Bac+5 en automatisme, informatique industrielle ou équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:13.182843",
+  "input_hash": "d89a4834fd531c5fa562e9ccaf3b87bb9a9c02dc923db707ef36323700ad1228",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

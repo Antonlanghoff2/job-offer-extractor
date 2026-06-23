@@ -1,0 +1,52 @@
+{
+  "key": "offer_extraction:3558979",
+  "value": {
+    "id": "3558979",
+    "intitule": "Data Analyst F/H - Système, réseaux, données (H/F)",
+    "entreprise": "MICHAEL PAGE INTERNATIONAL FRANCE",
+    "territoire": "13 - Ventabren",
+    "ville": "13114",
+    "code_postal": "13122",
+    "contrat": "CDI",
+    "date_creation": "2026-06-07",
+    "date": "2026-06-07",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3558979",
+    "description": "Descriptif du poste:\n\n\nRattaché(e) au Lead Data, vous intervenez comme référent analytique transverse, à l'interface entre enjeux métiers et contraintes techniques.\n\nVos responsabilités clés :\n* Recueillir, analyser et challenger les besoins des directions métiers\n* Réaliser des analyses avancées et des extractions complexes\n* Concevoir, maintenir et rationaliser les dashboards Power BI\n* Participer activement à la modélisation de la donnée\n* Garantir la fiabilité des KPIs, notamment financiers (CA, performance)\n* Collaborer étroitement avec les profils Data Engineer / Développement\n* Contribuer à la refonte d'une plateforme data from scratch\n* Accompagner les métiers dans l'appropriation et l'usage de la data\n\n\n\nPoste à forte exposition, orienté impact, décision et transformation.\n\n\n* Rémunération : 45-50 K€ + variable individuel\n* Statut : Cadre\n* Télétravail : 1 jour/semaine (hors lundi et vendredi)\n* Avantages : tickets restaurant, mutuelle Alan, accès aux infrastructures\n* Formation : accompagnement et montée en compétences continue\n* Onboarding : immersion terrain et interactions fortes avec les métiers\n* Contexte : rôle clé dans une transformation structurante\n\nProfil recherché:\n\n* Formation supérieure Bac+5\n* Expérience confirmée en Data Analyst dans des environnements complexes\n* Maîtrise indispensable de Power BI et SQL\n* Solide expertise en modélisation de données\n* Compréhension des flux data issus d'applications métiers\n* Snowflake apprécié\n* Excellente maîtrise d'Excel ; Python ou R en complément\n* Grande rigueur sur les données financières et business\n* Anglais intermédiaire\n* Curiosité intellectuelle et sens critique\n* Relationnel métier de haut niveau\n* Diplomatie et capacité d'influence\n* Excellente communication et pédagogie\n* Forte culture du service client interne",
+    "metier": "Data analyst",
+    "niveau": "junior",
+    "competences": [
+      "Intelligence artificielle",
+      "Python",
+      "SQL",
+      "Power BI",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 45000,
+    "salaire_max": 50000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation supérieure Bac+5",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:48.297684",
+  "input_hash": "4a19cda46f144f3ed8980272aba33f4b481570dd1675fa056e55276312f596ba",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

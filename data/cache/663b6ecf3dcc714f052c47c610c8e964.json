@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:3732867",
+  "value": {
+    "id": "3732867",
+    "intitule": "Consultant DevOps H/F",
+    "entreprise": "JEMS",
+    "territoire": "75 - Paris",
+    "ville": "75056",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-12",
+    "date": "2026-06-12",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3732867",
+    "description": "RESPONSABILITÉS : Nous recherchons un(e) Consultant(e) DevOps confirmé(e) capable d'intégrer le développement, l'assurance qualité et d'orchestrer les problématiques de scalabilité, d'automatisation et d'industrialisation. Votre devise : \"réduire les interventions humaines pour améliorer la qualité et accélérer les livraisons\" Vos missions seront : • Mise en place et pilotage des pipelines CI/CD • Automatisation et industrialisation des processus de déploiement • Gestion des problématiques de scalabilité et de performance • Supervision et optimisation des environnements sur Google Cloud Platform (GCP) • Mise en œuvre et gestion des API via Apigee • Accompagnement des équipes techniques et diffusion des bonnes pratiques DevOps • Contribution à l'amélioration continue et à la qualité des plateformes Profil recherché : • Solide expérience en DevOps avec une dimension lead • Expertise sur GCP indispensable et connaissance d'Apigee fortement appréciée • Maîtrise des outils CI/CD, Docker, Kubernetes • Bonne connaissance de Terraform / Infrastructure as Code • Compétences en scripting (Bash, Python) • Environnements Linux • Capacité à prendre de la hauteur, structurer et accompagner les équipes • Maîtrise de l'anglais appréciée PROFIL RECHERCHÉ : Vous êtes diplômé(e) d'une école d'ingénieur ou d'un parcours universitaire technique. Vous justifiez d'au minimum 5 ans d'expérience professionnelle en tant qu'Ingénieur DevOps confirmé(e).",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "Docker",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Terraform",
+      "Vision",
+      "CI/CD"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": false,
+        "source_sentence": "Votre devise : \"réduire les interventions humaines pour améliorer la qualité et accélérer les livraisons\" Vos missions seront : • Mise en place et pilotage des pipelines CI/CD • Automatisation et industrialisation des processus de déploiement • Gestion des problématiques de scalabilité et de performance • Supervision et optimisation des environnements sur Google Cloud Platform (GCP) • Mise en œuvre et gestion des API via Apigee • Accompagnement des équipes techniques et diffusion des bonnes pratiques DevOps • Contribution à l'amélioration continue et à la qualité des plateformes Profil recherché : • Solide expérience en DevOps avec une dimension lead • Expertise sur GCP indispensable et connaissance d'Apigee fortement appréciée • Maîtrise des outils CI/CD, Docker, Kubernetes • Bonne connaissance de Terraform / Infrastructure as Code • Compétences en scripting (Bash, Python) • Environnements Linux • Capacité à prendre de la hauteur, structurer et accompagner les équipes • Maîtrise de l'anglais appréciée PROFIL RECHERCHÉ : Vous êtes diplômé(e) d'une école d'ingénieur ou d'un parcours universitaire technique.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:55.338002",
+  "input_hash": "650ad1e806130fc2313444d2e1cce208ee55240291cced1c03e79f1d8a69d4b7",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

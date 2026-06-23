@@ -1,0 +1,507 @@
+{
+  "key": "trends:50 - Cherbourg-en-Cotentin",
+  "value": {
+    "territoire": "50 - Cherbourg-en-Cotentin",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Backend": 2,
+      "Data engineering": 2,
+      "Gestion de projet": 2,
+      "Python": 2,
+      "Architecture Microservices": 1,
+      "Coûts": 1,
+      "Documentation Technique": 1,
+      "Délais": 1,
+      "Instrumentation": 1,
+      "Scalabilité": 1,
+      "Travail En Équipe": 1,
+      "Vision": 1,
+      "Vue.js": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Backend",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Backend": 2
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Data Engineering": 2
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Python",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Python": 2
+        }
+      },
+      {
+        "nom": "Architecture Microservices",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Architecture microservices": 1
+        }
+      },
+      {
+        "nom": "Coûts",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Coûts": 1
+        }
+      },
+      {
+        "nom": "Documentation Technique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Documentation technique": 1
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Délais": 1
+        }
+      },
+      {
+        "nom": "Instrumentation",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Instrumentation": 1
+        }
+      },
+      {
+        "nom": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Scalabilité": 1
+        }
+      },
+      {
+        "nom": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Travail en équipe": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vision": 1
+        }
+      },
+      {
+        "nom": "Vue.js",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vue.js": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Backend": {
+        "Backend": 2
+      },
+      "Data engineering": {
+        "Data Engineering": 2
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Python": {
+        "Python": 2
+      },
+      "Architecture Microservices": {
+        "Architecture microservices": 1
+      },
+      "Coûts": {
+        "Coûts": 1
+      },
+      "Documentation Technique": {
+        "Documentation technique": 1
+      },
+      "Délais": {
+        "Délais": 1
+      },
+      "Instrumentation": {
+        "Instrumentation": 1
+      },
+      "Scalabilité": {
+        "Scalabilité": 1
+      },
+      "Travail En Équipe": {
+        "Travail en équipe": 1
+      },
+      "Vision": {
+        "Vision": 1
+      },
+      "Vue.js": {
+        "Vue.js": 1
+      }
+    },
+    "metiers": {
+      "Chef / Cheffe d'équipe en industrie": 1,
+      "Ingénieur / Ingénieure calcul et structure": 1,
+      "Ingénieur concepteur / Ingénieure conceptrice informatique": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 3
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Instrumentation",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Vision",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Instrumentation",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Instrumentation",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Scalabilité",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Scalabilité",
+        "competence_b": "Vue.js",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Python",
+        "Data engineering",
+        "Gestion de projet",
+        "Travail En Équipe",
+        "Documentation Technique"
+      ],
+      [
+        "Python",
+        "Vue.js",
+        "Gestion de projet",
+        "Instrumentation",
+        "Scalabilité",
+        "Backend"
+      ],
+      [
+        "Data engineering",
+        "Coûts",
+        "Délais",
+        "Vision",
+        "Architecture Microservices",
+        "Backend"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3955596",
+        "intitule": "Ingénieur Calcul Confirmé (H/F)",
+        "entreprise": "",
+        "territoire": "50 - Cherbourg-en-Cotentin",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3955596"
+      },
+      {
+        "id": "3955647",
+        "intitule": "Ingénieur méthode GC-Cherbourg (H/F)",
+        "entreprise": "",
+        "territoire": "50 - Cherbourg-en-Cotentin",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3955647"
+      },
+      {
+        "id": "3429816",
+        "intitule": "Ingénieur Mesures Nucléaires F/H (H/F)",
+        "entreprise": "Orano SA",
+        "territoire": "50 - Cherbourg-en-Cotentin",
+        "contrat": "CDI",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3429816"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3955596",
+        "intitule": "Ingénieur Calcul Confirmé (H/F)",
+        "entreprise": "",
+        "territoire": "50 - Cherbourg-en-Cotentin",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3955596"
+      },
+      {
+        "id": "3955647",
+        "intitule": "Ingénieur méthode GC-Cherbourg (H/F)",
+        "entreprise": "",
+        "territoire": "50 - Cherbourg-en-Cotentin",
+        "contrat": "CDI",
+        "date": "2026-06-18",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3955647"
+      },
+      {
+        "id": "3429816",
+        "intitule": "Ingénieur Mesures Nucléaires F/H (H/F)",
+        "entreprise": "Orano SA",
+        "territoire": "50 - Cherbourg-en-Cotentin",
+        "contrat": "CDI",
+        "date": "2026-06-04",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3429816"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:04:23.604994",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

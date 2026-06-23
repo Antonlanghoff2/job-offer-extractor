@@ -28,7 +28,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Tuple
 
 import joblib
 from sklearn.pipeline import Pipeline
@@ -54,6 +54,8 @@ from src.extractors import (
     sort_skills_by_predefined_order,
     split_offer_into_segments,
 )
+from src.offer_field_extractors import extract_diplomas_from_text
+from src.skill_extraction import extract_skills_from_offer
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -297,6 +299,25 @@ def extract_job_offer(text: str, debug: bool = False) -> dict:
         competences_requises.extend(extract_required_skills(seg["text"]))
     competences_requises = sort_skills_by_predefined_order(competences_requises)
 
+    # ── competences_requises_detaillees (pipeline hybride) ──────────
+    detailed_skills = extract_skills_from_offer(text)
+    competences_requises_detaillees = [skill.to_dict() for skill in detailed_skills]
+    competences_requises_noms = [skill.canonical_name for skill in detailed_skills]
+
+    # ── diplomes_requis ─────────────────────────────────────────────
+    diplomes_requis: List[Dict[str, Any]] = []
+    for seg in cleaned_segments:
+        diplomes_requis.extend(extract_diplomas_from_text(seg["text"]))
+    # Dédupliquer par label
+    seen_diplomas = set()
+    unique_diplomas = []
+    for diploma in diplomes_requis:
+        label = diploma.get("label", "")
+        if label and label not in seen_diplomas:
+            seen_diplomas.add(label)
+            unique_diplomas.append(diploma)
+    diplomes_requis = unique_diplomas
+
     # ── contacts ────────────────────────────────────────────────────
     contacts: List[str] = []
     for seg in cleaned_segments:
@@ -310,6 +331,9 @@ def extract_job_offer(text: str, debug: bool = False) -> dict:
         "lieux_embauche": lieux_embauche,
         "distanciel": distanciel,
         "competences_requises": competences_requises,
+        "competences_requises_detaillees": competences_requises_detaillees,
+        "competences_requises_noms": competences_requises_noms,
+        "diplomes_requis": diplomes_requis,
         "contacts": contacts,
     }
 
@@ -327,6 +351,9 @@ def _empty_result() -> dict:
         "lieux_embauche": [],
         "distanciel": None,
         "competences_requises": [],
+        "competences_requises_detaillees": [],
+        "competences_requises_noms": [],
+        "diplomes_requis": [],
         "contacts": [],
     }
 
@@ -347,6 +374,16 @@ def pretty_print_result(result: dict) -> None:
         label = key.replace("_", " ").title()
         display = ", ".join(val) if val else "(non trouvé)"
         print(f"  {label:<22} : {display}")
+
+    detailed = result.get("competences_requises_detaillees", [])
+    if detailed:
+        print("-" * 48)
+        print("  Compétences détaillées (pipeline hybride) :")
+        for skill in detailed:
+            etype = skill.get("extraction_type", "explicit")
+            conf = skill.get("confidence", 1.0)
+            name = skill.get("canonical_name", "")
+            print(f"    [{etype:>8} | {conf:.2f}] {name}")
 
     if "segments_classes" in result:
         print("-" * 48)

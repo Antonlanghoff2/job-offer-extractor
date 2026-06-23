@@ -1,0 +1,964 @@
+{
+  "key": "trends:72 - Sarthe",
+  "value": {
+    "territoire": "72 - Sarthe",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Git": 3,
+      "Intelligence artificielle": 3,
+      "Gestion de projet": 2,
+      "Java": 2,
+      "Anglais Professionnel": 1,
+      "API": 1,
+      "API REST": 1,
+      "Application web": 1,
+      "Backend": 1,
+      "CI/CD": 1,
+      "CSS": 1,
+      "Docker": 1,
+      "Développement web": 1,
+      "Intégration Continue": 1,
+      "MLOps": 1,
+      "PostgreSQL": 1,
+      "Product Management": 1,
+      "Qualité Des Données": 1,
+      "Tests Automatisés": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Git",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Git": 3
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 3
+        }
+      },
+      {
+        "nom": "Gestion de projet",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Gestion de projet": 2
+        }
+      },
+      {
+        "nom": "Java",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Java": 2
+        }
+      },
+      {
+        "nom": "Anglais Professionnel",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Anglais Professionnel": 1
+        }
+      },
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "API REST",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "API REST": 1
+        }
+      },
+      {
+        "nom": "Application web",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Application web": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "CI/CD",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "CI/CD": 1
+        }
+      },
+      {
+        "nom": "CSS",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "CSS": 1
+        }
+      },
+      {
+        "nom": "Docker",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Docker": 1
+        }
+      },
+      {
+        "nom": "Développement web",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Développement web": 1
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Intégration continue": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "PostgreSQL": 1
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Product Management": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Tests automatisés": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Git": {
+        "Git": 3
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 3
+      },
+      "Gestion de projet": {
+        "Gestion de projet": 2
+      },
+      "Java": {
+        "Java": 2
+      },
+      "Anglais Professionnel": {
+        "Anglais Professionnel": 1
+      },
+      "API": {
+        "API": 1
+      },
+      "API REST": {
+        "API REST": 1
+      },
+      "Application web": {
+        "Application web": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "CI/CD": {
+        "CI/CD": 1
+      },
+      "CSS": {
+        "CSS": 1
+      },
+      "Docker": {
+        "Docker": 1
+      },
+      "Développement web": {
+        "Développement web": 1
+      },
+      "Intégration Continue": {
+        "Intégration continue": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "PostgreSQL": {
+        "PostgreSQL": 1
+      },
+      "Product Management": {
+        "Product Management": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 1
+      }
+    },
+    "metiers": {
+      "Développeur / Développeuse informatique": 2,
+      "Développeur / Développeuse web": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 3
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Git",
+        "competence_b": "Intelligence artificielle",
+        "count": 3,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "CI/CD",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Anglais Professionnel",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Anglais Professionnel",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "CI/CD",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API REST",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "CSS",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Application web",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "CI/CD",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CI/CD",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Développement web",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "CSS",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Développement web",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Java",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "CSS",
+        "Développement web",
+        "Git",
+        "Intelligence artificielle",
+        "Application web"
+      ],
+      [
+        "API REST",
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "PostgreSQL",
+        "MLOps"
+      ],
+      [
+        "Docker",
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "Anglais Professionnel",
+        "CI/CD",
+        "Product Management",
+        "Tests Automatisés",
+        "Qualité Des Données",
+        "API",
+        "Backend",
+        "Intégration Continue"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "3836482",
+        "intitule": "CDI - Analyste Développeur Frontend Angular F/H F/H",
+        "entreprise": "",
+        "territoire": "72 - Sarthe",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3836482"
+      },
+      {
+        "id": "3535331",
+        "intitule": "Développeur(se) - Full Stack Java Angular - Services Financiers- Le Mans (H/F)",
+        "entreprise": "",
+        "territoire": "72 - Sarthe",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3535331"
+      },
+      {
+        "id": "2916761",
+        "intitule": "CDI - Analyste Développeur F/H",
+        "entreprise": "",
+        "territoire": "72 - Sarthe",
+        "contrat": "CDI",
+        "date": "2026-05-22",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2916761"
+      }
+    ],
+    "offers": [
+      {
+        "id": "3836482",
+        "intitule": "CDI - Analyste Développeur Frontend Angular F/H F/H",
+        "entreprise": "",
+        "territoire": "72 - Sarthe",
+        "contrat": "CDI",
+        "date": "2026-06-16",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3836482"
+      },
+      {
+        "id": "3535331",
+        "intitule": "Développeur(se) - Full Stack Java Angular - Services Financiers- Le Mans (H/F)",
+        "entreprise": "",
+        "territoire": "72 - Sarthe",
+        "contrat": "CDI",
+        "date": "2026-06-06",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3535331"
+      },
+      {
+        "id": "2916761",
+        "intitule": "CDI - Analyste Développeur F/H",
+        "entreprise": "",
+        "territoire": "72 - Sarthe",
+        "contrat": "CDI",
+        "date": "2026-05-22",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/2916761"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:03:43.584752",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

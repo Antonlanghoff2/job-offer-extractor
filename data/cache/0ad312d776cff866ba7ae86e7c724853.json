@@ -1,0 +1,62 @@
+{
+  "key": "offer_extraction:209DGLM",
+  "value": {
+    "id": "209DGLM",
+    "intitule": "BioInformaticien en analyse d'image (H/F)",
+    "entreprise": "",
+    "territoire": "91 - GIF SUR YVETTE",
+    "ville": "91272",
+    "code_postal": "91190",
+    "contrat": "CDD - 10 Mois",
+    "date_creation": "2026-06-02",
+    "date": "2026-06-02",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209DGLM",
+    "description": "Missions\nLa personne recrutée assurera le déploiement opérationnel et le transfert de compétences autour des méthodes de segmentation automatisée de données de microscopie électronique volumétrique (FIB-SEM) à l'échelle de l'institut. À partir des outils et pipelines validés lors d'un stage de master préalable, l'agent rendra ces méthodes accessibles et utilisables en autonomie par les équipes scientifiques et les plateformes techniques de l'I2BC, en s'appuyant sur la bibliothèque BiaPy comme cadre de référence pour le deep learning appliqué à l'analyse d'images biologiques.\n\nActivités\n- Finaliser l'intégration et la maintenance de BiaPy sur le cluster HPC de l'institut et les stations de travail GPU, via des environnements conteneurisés (Apptainer/Singularity), en garantissant reproductibilité et portabilité des workflows\n- Mettre en place des pipelines d'analyse standardisés couvrant l'import des données FIB-SEM, la segmentation automatisée et l'export des résultats en formats ouverts (OME-Zarr/OME-NGFF), et en assurer l'évolution selon les besoins des utilisateurs\n- Concevoir et animer des formations pratiques à destination du personnel de la plateforme de microscopie électronique et des biologistes des équipes partenaires (préparation des données, annotation, utilisation de BiaPy, contrôle qualité des résultats)\n- Produire des supports de formation pérennes et réutilisables (tutoriels, notebooks Marimo annotés)\n- Rédiger et maintenir la documentation technique des outils et procédures déployés (guides utilisateurs, wiki interne, dépôt public)\n\nCompétences techniques et connaissances - maîtrise requise :\n- Programmation Python appliquée à l'analyse de données scientifiques ; maîtrise des bibliothèques de deep learning (PyTorch de préférence)\n- Analyse d'images biologiques, en particulier segmentation sémantique et d'instance en 2D/3D\n- Environnement Linux, gestion de clusters HPC avec ordonnanceur SLURM, utilisation de conteneurs (Apptainer/Singularity)\n- Pratiques de développement reproductible : versionnage (Git), documentation, gestion d'environnements\n\nConnaissances - notions appréciées :\n- BiaPy, OMERO, formats OME-Zarr/OME-NGFF\n- Microscopie électronique volumétrique (FIB-SEM, principes d'acquisition et artefacts courants)\n- Principes FAIR et pratiques de science ouverte\n\nSavoir-faire :\n- Capacité à adapter des outils existants à des contextes biologiques variés et à en évaluer rigoureusement les performances\n- Aptitude à concevoir et animer des formations pour des publics non-spécialistes\n\nSavoir-être :\n- Goût du travail en environnement multidisciplinaire (biologie, informatique, microscopie)\n- Sens de la pédagogie et de la communication écrite et orale\n- Autonomie et rigueur dans la documentation et le suivi des travaux\n\nContexte de travail\nLa personne recrutée sera accueillie à l'Institut de Biologie Cellulaire Intégrative (I2BC), unité mixte de recherche sous tutelle du CNRS, de l'Université Paris-Saclay et du CEA, situé sur le campus CNRS de Gif-sur-Yvette (91). L'I2BC regroupe plus de 600 personnes et est reconnu pour son expertise dans l'étude des mécanismes moléculaires et cellulaires du vivant.\nLe poste est rattaché à la Plateforme de Bioinformatique Intégrative (BIOI2), qui fournit des compétences en analyse de données biologiques à haut débit à l'ensemble des équipes de l'institut. La mission s'inscrit dans un projet collaboratif interne impliquant la Plateforme de Microscopie Électronique de l'I2BC ainsi que plusieurs équipes de recherche des départements de biologie cellulaire et de virologie. L'agent disposera d'un accès à un cluster de calcul haute performance équipé de GPU et à un serveur de gestion de données d'imagerie (OMERO).",
+    "metier": "Bioinformaticien / Bioinformaticienne en études, recherche et développement",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Analyse de données",
+      "Deep learning",
+      "Git",
+      "Imagerie",
+      "Intelligence artificielle",
+      "Linux",
+      "PyTorch",
+      "Python",
+      "Documentation technique",
+      "Pipelines de données",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift",
+      "Architecture microservices",
+      "Backend",
+      "Intégration continue"
+    ],
+    "salaire_min": 2571,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "La personne recrutée assurera le déploiement opérationnel et le transfert de compétences autour des méthodes de segmentation automatisée de données de microscopie électronique volumétrique (FIB-SEM) à l'échelle de l'institut. À partir des outils et pipelines validés lors d'un stage de master préalable, l'agent rendra ces méthodes accessibles et utilisables en autonomie par les équipes scientifiques et les plateformes techniques de l'I2BC, en s'appuyant sur la bibliothèque BiaPy comme cadre de référence pour le deep learning appliqué à l'analyse d'images biologiques.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:11.886538",
+  "input_hash": "a524ef905a94a851482dd7ebf8c258e737f37c3d98285d7610edd1f20b5d3319",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

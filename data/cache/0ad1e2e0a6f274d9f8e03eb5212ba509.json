@@ -1,0 +1,145 @@
+{
+  "key": "trends:34 - Grabels",
+  "value": {
+    "territoire": "34 - Grabels",
+    "periode_jours": 365,
+    "nombre_offres": 1,
+    "competences": {
+      "Airflow": 1,
+      "Analyse de données": 1,
+      "Data engineering": 1,
+      "Intelligence artificielle": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Airflow",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Airflow": 1
+        }
+      },
+      {
+        "nom": "Analyse de données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Data Engineering": 1
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Airflow": {
+        "Airflow": 1
+      },
+      "Analyse de données": {
+        "Analyse de données": 1
+      },
+      "Data engineering": {
+        "Data Engineering": 1
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 1
+      }
+    },
+    "metiers": {
+      "Chief digital officer - Responsable de la transformation digitale": 1
+    },
+    "niveau": {
+      "junior": 1
+    },
+    "contrats": {
+      "CDD - 12 Mois": 1
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Airflow",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "fiabilite": 0.025,
+    "skill_sets": [
+      [
+        "Analyse de données",
+        "Intelligence artificielle",
+        "Data engineering",
+        "Airflow"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "4073292",
+        "intitule": "Alternance Consultant(e) IA & Transformation Digitale - Grabels (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "34 - Grabels",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4073292"
+      }
+    ],
+    "offers": [
+      {
+        "id": "4073292",
+        "intitule": "Alternance Consultant(e) IA & Transformation Digitale - Grabels (F/H) (H/F)",
+        "entreprise": "",
+        "territoire": "34 - Grabels",
+        "contrat": "CDD - 12 Mois",
+        "date": "2026-06-21",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4073292"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:01:41.690971",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

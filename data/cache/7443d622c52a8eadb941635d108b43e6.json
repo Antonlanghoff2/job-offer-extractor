@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:3953658",
+  "value": {
+    "id": "3953658",
+    "intitule": "Analyste scientifique des données (H/F)",
+    "entreprise": "",
+    "territoire": "29 - Finistère",
+    "ville": "29 - Finistère",
+    "code_postal": "",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3953658",
+    "description": "Rattaché au Département MOA Pilotage, qualité & gestion des données Risques, le service est responsable du pilotage, de la gouvernance et de l'industrialisation de l'entrepôt de données \" Risques \", dans le but de mettre à disposition des métiers des données de qualité et conformes. Il assure également le support technique de niveau 2 pour les équipes de suivi de production. Sous la supervision d'un chef de projet MOA confirmé, vous serez amené à : Participer au pilotage opérationnel des projets : préparation des comités, suivi des actions, gestion des livrables, Contribuer aux études préalables et à la rédaction de spécifications fonctionnelles (à partir des besoins métiers), Aider à la conception et à l'évolution des dispositifs de contrôle fonctionnel (inventaire des contrôles, cartographie), Participer aux recettes fonctionnelles et à la validation des données en lien avec la MOE, Contribuer à la mise en place et à l'optimisation des reportings et indicateurs de qualité des données, Assister dans l'expression et la formalisation des besoins métiers, en veillant à l'alignement avec les exigences réglementaires (BCBS239) et opérationnelles, Produire des supports et accompagner les actions de conduite du changement (guides utilisateurs, formations courtes, FAQ), Mettre en place des contrôles simples et proposer des pistes d'automatisation ou d'amélioration. Process Postulez à cette annonce. Pensez à bien préciser votre projet de formation (diplôme préparé et rythme d'alternance), la zone géographique de votre recherche et proposer un CV en français. Complétez nos tests de recrutement pour vous préparer et mieux vous connaître d'un point de vue professionnel ! (invitation aux tests reçue par mail sous quelques jours) Présentez vos motivations à un(e) manager lors d'un entretien (présentiel ou visio) Félicitations, Il ne reste plus qu'à signer votre contrat !",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Cahier des charges",
+      "Intelligence artificielle",
+      "Vision",
+      "Vue.js",
+      "Gestion de projet",
+      "Documentation technique",
+      "Qualité des données",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Protection des données",
+      "Intégration continue"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "présentiel",
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Rattaché au Département MOA Pilotage, qualité & gestion des données Risques, le service est responsable du pilotage, de la gouvernance et de l'industrialisation de l'entrepôt de données \" Risques \", dans le but de mettre à disposition des métiers des données de qualité et conformes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:51:41.170381",
+  "input_hash": "f8e74e8a8899999c92d3b71aa7cfcadaa791db9f10d6b1ebc1734bf8034a212a",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

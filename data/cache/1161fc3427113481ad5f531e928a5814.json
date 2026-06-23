@@ -1,0 +1,68 @@
+{
+  "key": "offer_extraction:209KPHC",
+  "value": {
+    "id": "209KPHC",
+    "intitule": "Applied AI Engineer (H/F)",
+    "entreprise": "",
+    "territoire": "91 - LES ULIS",
+    "ville": "91692",
+    "code_postal": "91940",
+    "contrat": "CDI",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209KPHC",
+    "description": "Intitulé du poste : Applied AI Engineer\n\nLieu de stage : Les Ulis 91940 - Zone industrielle Paris-Saclay \nSite web : https://gibrai.com/\n\nProfil recherché\n\nTitulaire d'un Master ou d'un Doctorat en Data Science, Informatique, Ingénierie, ou dans un domaine quantitatif connexe. Vous justifiez de 2 ans (post diplôme) ou plus d'expérience en ingénierie IA ou ML avec des réalisations concrètes en production. Vous maîtrisez l'écosystème IA générative (LLMs, RAG, architectures agentiques, fine-tuning, vector databases ) et vous avez une expérience pratique du développement et du déploiement de solutions IA (Python, APIs, environnements cloud ou on-premise). Doté(e) d'une vraie culture du BUILD, vous êtes à l'aise aussi bien dans le prototypage rapide que dans l'industrialisation, et vous savez dialoguer avec des experts métiers non techniques pour traduire une contrainte opérationnelle en architecture IA concrète.\n\nStructure d'accueil :\n\nGibr est une startup deeptech, filiale de GroupABM, dont l'intelligence artificielle constitue le cœur des solutions développées. Nous concevons des solutions IA spécialisées pour des secteurs où l'exigence est élevée : pharmaceutique, santé, défense, achats industriels critiques. Notre équipe réunit des experts métier et des ingénieurs IA qui ont vécu ces contraintes de l'intérieur.\nEn tant qu'Applied AI Engineer chez Gibr, vous n'êtes pas un exécutant technique mais le pont entre la puissance des modèles d'IA et la réalité des opérations de nos clients. Vous comprenez profondément les modèles, savez les adapter, les contraindre, les évaluer, et les déployer dans des environnements où la fiabilité, la traçabilité et la confidentialité sont exigés. Vous travaillez en binôme avec les experts métier et contribuez directement aux choix stratégiques de la solution adéquate.\n\nVos missions au sein de l'équipe :\n\n- Concevoir des méthodes d'évaluation et d'optimisation des modèles (qualité, latence, coût)\n- Intégrer les solutions dans les environnements et outils existants des clients (API, batch, on-premise)\n- Travailler en binôme avec les experts métier pour traduire des contraintes opérationnelles en décisions d'architecture IA\n- Participer aux choix techniques et à la roadmap IA en lien direct avec les fondateurs\n- Concevoir des architectures agentiques et des pipelines IA de bout en bout, adaptés aux contraintes métiers de nos clients\n- Intégrer et optimiser des LLMs selon les exigences de performance, de coût et de confidentialité\n- Construire des systèmes RAG robustes sur des corpus techniques, documentaires et réglementaires multilingues\n- Développer, entraîner et fine-tuner des modèles pré-entraînés (LLMs, modèles multimodaux) selon les cas d'usage clients\n- Mettre en œuvre des approches d'apprentissage supervisé et par renforcement lorsque pertinent\n- Garantir la fiabilité en production : monitoring, guardrails, gestion des hallucinations et des dérives comportementales\n\nVie d'équipe & culture startup\n\nCollaboration directe avec les fondateurs, experts métier et profils produit \nParticipation aux décisions techniques et à la roadmap IA\nApproche Test & Learn : prototypage rapide, itération, industrialization \nCulture de la documentation, du partage et des retours d'expérience",
+    "metier": "Spécialiste IA embarquée",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "Python",
+      "Pipelines de données",
+      "Automatisation de pipelines",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "MLOps",
+      "Architecture microservices",
+      "Backend",
+      "Documentation technique",
+      "Optimisation des performances",
+      "Résolution de problèmes",
+      "API",
+      "Monitoring de modèles",
+      "Scalabilité"
+    ],
+    "salaire_min": 91940,
+    "salaire_max": 91940,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Titulaire d'un Master ou d'un Doctorat en Data Science, Informatique, Ingénierie, ou dans un domaine quantitatif connexe.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "Titulaire d'un Master ou d'un Doctorat en Data Science, Informatique, Ingénierie, ou dans un domaine quantitatif connexe.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 16,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:57.635674",
+  "input_hash": "bea36945672021657d96f8eb21e9d39a717de4656c5236c762c5bedc809ae2ef",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

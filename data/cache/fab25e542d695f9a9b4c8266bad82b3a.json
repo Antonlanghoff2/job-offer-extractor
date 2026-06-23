@@ -1,0 +1,82 @@
+{
+  "key": "offer_extraction:3760339",
+  "value": {
+    "id": "3760339",
+    "intitule": "Ingénieur DevOps / CloudOps (H/F)",
+    "entreprise": "ISAGRI",
+    "territoire": "41 - Vendôme",
+    "ville": "41269",
+    "code_postal": "41100",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3760339",
+    "description": "RESPONSABILITÉS : Au sein de la Direction des Ressources Informatiques – Service Exploitation / Production IT, l'Ingénieur DevOps / CloudOps participera à la transformation, l'industrialisation et la sécurisation des plateformes techniques hébergées principalement sur Microsoft Azure. Le poste s'inscrit dans un environnement de production critique à forte volumétrie nécessitant disponibilité, automatisation, réactivité et amélioration continue. Vous travaillerez en étroite collaboration avec les équipes Développement, Infrastructure et Exploitation afin de fiabiliser les environnements et accélérer les déploiements. Automatisation & Industrialisation • Concevoir et maintenir les pipelines CI/CD. • Automatiser les déploiements applicatifs et infrastructures. • Développer et maintenir l'Infrastructure as Code (Terraform, Ansible, YAML). • Standardiser et fiabiliser les processus de livraison et d'exploitation. Cloud & Infrastructure • Participer à la conception et à l'évolution des architectures Cloud Azure. • Administrer et maintenir les plateformes Kubernetes et Docker. • Garantir la disponibilité, la résilience et les performances des infrastructures. • Participer au capacity planning et à l'optimisation des plateformes. Supervision & Exploitation • Mettre en place et maintenir les outils de supervision et d'alerting. • Analyser les incidents de production et contribuer aux plans d'actions. • Participer aux mises en production et opérations sensibles. • Assurer le maintien en condition opérationnelle des environnements critiques. Sécurité & Fiabilité • Participer aux démarches DevSecOps. • Sécuriser les pipelines CI/CD et les environnements techniques. • Contribuer aux PRA/PCA, sauvegardes et procédures de rollback. • Identifier les risques techniques et proposer des améliorations. Collaboration & Accompagnement • Accompagner les équipes projets et développement sur les bonnes pratiques DevOps. • Participer aux REX et aux démarches d'amélioration continue. • Documenter les architectures, procédures et standards techniques. Être force de proposition sur les outils et méthodes. PROFIL RECHERCHÉ : • Formation Bac+3 à Bac+5 en Informatique. • Expérience significative en environnement DevOps, Cloud ou Production IT. • Bonne culture infrastructure, automatisation et exploitation. • Expérience en environnement critique fortement appréciée. Compétences techniques attendues • Bonne maîtrise des concepts CI/CD et Infrastructure as Code. • Bonne connaissance de Microsoft Azure. • Expérience sur Kubernetes et Docker. • Maîtrise de Terraform, Ansible et des pipelines CI/CD. • Connaissances Linux / Windows Server. • Expérience en supervision et monitoring (Grafana, Centreon, logging). • Connaissances scripting PowerShell, Bash ou Python. • Connaissances RabbitMQ / AMQP appréciées. • Connaissances SQL Server, PostgreSQL MongoDB appréciées. Qualités recherchées • Rigueur et autonomie. • Sens du service et esprit d'équipe. • Réactivité et gestion des priorités. • Capacité à gérer des incidents complexes. • Bon relationnel et communication transverse. • Appétence pour l'automatisation et l'amélioration continue.",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "junior",
+    "competences": [
+      "Ansible",
+      "Azure",
+      "Docker",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "PostgreSQL",
+      "Python",
+      "SQL",
+      "Terraform",
+      "Vision",
+      "CI/CD",
+      "Windows Server",
+      "Automatisation de pipelines",
+      "Automatisation des déploiements",
+      "MLOps",
+      "Déploiement de modèles",
+      "Pipelines de données",
+      "Optimisation des performances",
+      "Intégration continue",
+      "Tests automatisés",
+      "Méthodologie Agile",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 3000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "RESPONSABILITÉS : Au sein de la Direction des Ressources Informatiques – Service Exploitation / Production IT, l'Ingénieur DevOps / CloudOps participera à la transformation, l'industrialisation et la sécurisation des plateformes techniques hébergées principalement sur Microsoft Azure.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+3",
+        "level": 4,
+        "required": false,
+        "source_sentence": "PROFIL RECHERCHÉ : • Formation Bac+3 à Bac+5 en Informatique. • Expérience significative en environnement DevOps, Cloud ou Production IT. • Bonne culture infrastructure, automatisation et exploitation. • Expérience en environnement critique fortement appréciée.",
+        "confidence": 0.7
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": false,
+        "source_sentence": "PROFIL RECHERCHÉ : • Formation Bac+3 à Bac+5 en Informatique. • Expérience significative en environnement DevOps, Cloud ou Production IT. • Bonne culture infrastructure, automatisation et exploitation. • Expérience en environnement critique fortement appréciée.",
+        "confidence": 0.7
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 23,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:53.634851",
+  "input_hash": "6fd6d2fdc8f56a6c875fef16c78cde7d098fcf3fc2a5bb72d02ee4484e2eb3e6",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

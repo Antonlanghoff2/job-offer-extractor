@@ -1,0 +1,53 @@
+{
+  "key": "offer_extraction:209JHTF",
+  "value": {
+    "id": "209JHTF",
+    "intitule": "Ingénieur Tests logiciel (H/F)",
+    "entreprise": "COMPAGNIE DES SIGNAUX",
+    "territoire": "91 - LES ULIS",
+    "ville": "91692",
+    "code_postal": "91940",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209JHTF",
+    "description": "VIVATECH 2026\n\nL'entreprise sera présente au Salon Vivatech (Porte de Versailles) le samedi 20 juin. Si vous souhaitez la rencontrer, merci de postuler sur l'offre et nous vous contacterons si votre profil correspond.\n\nLa Compagnie des Signaux renforce ses équipes et recrute un Ingénieur Tests logiciel H/F en CDI, pour son site des Ulis (91) - siège social.\n\nLe poste que nous vous proposons : \n\nRattaché(e) au responsable du service LCAP/LCPL (17 personnes), vous intégrez les équipes de développement logiciel en charge de l'implémentation, du test et de la maintenance des applications de signalisation embarquées à bord des trains pour divers projets. Les sujets techniques sont concentrés autour des calculateurs de sécurité ERTMS et des afficheurs cabine pour différents types de train (TGV, Intercités, FRET, .).\n\nVotre mission consiste à vérifier la conformité de nos logiciels et de leurs composants aux spécifications de la signalisation ERTMS, tout en garantissant le respect des contraintes de coût et de délai des projets. \n\nVos principales missions incluent : \n- Concevoir les cas de test en appliquant des techniques de test en boîte noire et en boîte blanche\n- Rédiger les catalogues de test de composants logiciel\n- Ecrire et exécuter les scénarios de test automatisés\n- Vérifier certains comportements du composant logiciel par relectures de code\n- Rédiger les rapports de test de composants logiciel\n- Analyser et investiguer les anomalies en toute indépendance avec le support des développeurs logiciel\n- Participer activement aux audits de certification selon la norme ferroviaire (EN 50128 / SIL4)\n- Assurer un reporting régulier de votre avancement au responsable de lot\n\nModalités de travail : \n\n- Temps complet\n- Télétravail partiel possible (jusqu'à 2 jours par semaine) \n- Déplacements occasionnels à l'international\n\nLocalisation du poste : \n\n- Au cœur du Parc d'activités de Courtabœuf : 4 avenue du Canada, 91940 Les Ulis\n- Accès facilité : \n- En voiture depuis l'autoroute A10/A11 et la N118\n- En bus n°4602 depuis la gare RER de Massy Palaiseau (RER B et C)\n\nPourquoi nous rejoindre ?\n\n- Contribuer au développement d'un secteur d'avenir et participer à l'évolution d'un mode de transport plus durable et plus respectueux de l'environnement, répondant aux grands enjeux du XXIème siècle\n- Participer à ce marché de la signalisation ferroviaire en forte croissance dont la large palette de métiers qui le compose (Système, Hardware, Software, Communication, Cybersécurité, .) permet d'envisager nombre de parcours professionnels et d'expériences au service la sécurité et l'efficacité des transports\n- Evoluer au sein d'une entreprise responsable et engagée en faveur de grandes causes telles que la préservation de l'environnement (nos solutions contribuent aux objectifs de décarbonisation définis lors de la COP21 à Paris en 2015, notamment par la réduction des émissions de gaz à effet de serre grâce à nos technologies), la diversité, l'égalité des chances et l'emploi des personnes en situation de handicap\n- Intégrer une entreprise bienveillante, à taille humaine et multiculturelle, qui prône un équilibre entre la vie professionnelle et la vie privée\n- Rejoindre un employeur qui décroche depuis 9 ans la labellisation HappyTrainees et dont le taux de recommandation des stagiaires et alternants s'élève à 90% en 2025\n- Bénéficier d'une politique de télétravail partiel, d'un plan de formation et d'un accompagnement de votre carrière dans l'objectif de développer vos compétences et de construire votre avenir professionnel",
+    "metier": "Spécialiste test et validation logiciel ou application",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Data Engineering",
+      "Pipelines de données",
+      "Backend",
+      "Analyse de données",
+      "Sécurité informatique",
+      "Résolution de problèmes"
+    ],
+    "salaire_min": 2026,
+    "salaire_max": 2026,
+    "teletravail": "télétravail partiel",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "La Compagnie des Signaux renforce ses équipes et recrute un Ingénieur Tests logiciel H/F en CDI, pour son site des Ulis (91) - siège social.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:50:10.703815",
+  "input_hash": "500e485d19d7f774732c77c9e45ed17a4ce66bd908140f4a3de0040c76de9bf9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

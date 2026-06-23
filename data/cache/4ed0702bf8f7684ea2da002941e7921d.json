@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:209LJCL",
+  "value": {
+    "id": "209LJCL",
+    "intitule": "Formateur / Formatrice en informatique (H/F)",
+    "entreprise": "CFAI OISE",
+    "territoire": "60 - BEAUVAIS",
+    "ville": "60057",
+    "code_postal": "60000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209LJCL",
+    "description": "Poste à pourvoir en CDI, sur le site de Beauvais (60).\n\nPROMEO, Centre de formation précurseur dans les domaines industriels, technologiques et tertiaires, œuvre depuis plus de cinquante ans à développer des compétences « métier » au service de la jeunesse, des salariés d'entreprises et des demandeurs d'emploi. L'innovation pédagogique est au cœur de sa démarche. Fort de son développement, PROMEO propose de nombreuses formations réparties sur 7 Pôles d'activité.\n\nNotre ambition : accompagner les changements du monde industriel en anticipant le développement des compétences des métiers industriels de demain.\n\nEt si c'était vous notre futur talent ?\n\nEn tant que Formateur en informatique (H/F), votre mission consiste à :\n\n        - Assurer les enseignements en informatique en école d'ingénieur (ITII Picardie) et en licence Cybersécurité\n        - Assurer la responsabilité de section en alternance (coordination d'équipe pédagogique, interface avec les tuteurs en entreprise.)\n        - Coordonner les projets informatiques des sections dont vous avez la responsabilité\n        - Piloter et encadrer la préparation des apprentis dans le cadre des Worldskills\n        - Développer la filière informatique de Promeo en lien avec notre partenaire académique (CNAM)\n\n\nProfil recherché :\nDe formation supérieure en informatique spécialité développement/programmation, vous disposez d'une expérience professionnelle de 3 ans minimum\n\nVous maîtrisez les langages de programmation tels que Python, Javascript, C/C++.\n\nDes compétences en intelligence artificielle ou en cloud computing pourraient vous démarquer !\n\nVous avez un bon relationnel et vous savez vous adapter aux différents profils accompagnés\n\nLa connaissance du secteur de la formation serait un plus\n\n\nNous vous proposons à l'embauche un parcours d'intégration complet et de qualité qui s'adapte à votre profil (formation à la pédagogie pour les formateurs et/ou au poste de travail) ainsi qu'un environnement de travail organisé et agréable qui permet de bénéficier d'avantages sociaux:\n-  prime de vacances\n- 13ème mois\n- RTT\n- mutuelle d'entreprise\n- intéressement.",
+    "metier": "Formateur / Formatrice",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "JavaScript",
+      "Python",
+      "Travail en équipe",
+      "Gestion de projet",
+      "API",
+      "Backend",
+      "Pipelines de données"
+    ],
+    "salaire_min": 60000,
+    "salaire_max": 60000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Assurer les enseignements en informatique en école d'ingénieur (ITII Picardie) et en licence Cybersécurité",
+        "confidence": 0.9
+      },
+      {
+        "label": "licence",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Assurer les enseignements en informatique en école d'ingénieur (ITII Picardie) et en licence Cybersécurité",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:09.640943",
+  "input_hash": "11a4ce62eb0f2b87c5bd5e663e2ba75afba2c56f6eee030a258c73cfd3c697ec",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

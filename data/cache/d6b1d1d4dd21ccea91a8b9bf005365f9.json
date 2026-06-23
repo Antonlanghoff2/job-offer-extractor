@@ -1,0 +1,47 @@
+{
+  "key": "offer_extraction:3987083",
+  "value": {
+    "id": "3987083",
+    "intitule": "Architecte système - BU Défense & Sécurité - Le Plessis-Robinson (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Plessis-Robinson",
+    "ville": "92060",
+    "code_postal": "92350",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3987083",
+    "description": "Nous recrutons&#xa0;un/une Architecte système&#xa0;pour rejoindre notre&#xa0;Business Unit Défense &amp; Sécurité,&#xa0;au sein de l'Agence&#xa0;Systèmes Opérationnels et Interopérabilité (SOI).&#xa0;Au sein de l'Agence SOI, le département Contrôle Local d'Aéroport (CLA)&#xa0;qui a pour vocation de spécifier, concevoir, réaliser et déployer sur les bases aériennes et aéronavales le système de contrôle et de communication pour la circulation aérienne militaire.Rôles et missions :&#xa0;L'architecte système est chargé de définir et d'assurer l'entretien de la conception du sous-système qui traite des données temps réel. Il est en charge de&#xa0;:Concevoir et dimensionner l'architecture du sous-système sous la conduite de l'architecte système projet, et produire la documentation associée,De s'assurer de la tenue des performances et des caractéristiques critiques (maintenabilité, évolutivité, pérennité, sécuritli>D'accompagner la modernisation du système en apportant des solutions rationnelles, répondant aux attentes des clients,D'assurer le suivi de la définition système dans le temps, de contribuer aux traitements d'obsolescence,Encadrer la réalisation du sous-système et en particulier soutenir l'équipe IVQ dans les tâches d'intégration et de validation,De présenter les choix techniques vers l'administration, les justifier le cas échéant, de contribuer aux études et analyses d'évolutions.Compétences&#xa0;techniques&#xa0;attendues :Linux (Red Hat, Oracle Linux, Fedora)Scripting (Bash, Python, Perl, Shell.)Réseaux IP sécurisé (VPN, openssh, open sslli>Base de données (postgresql, elasticsearchli>Solutions de virtualisation (KVM/QEMU, VirtualBox), conteneur (Docker)Déploiement centralisé et automatiques (Ansible, Boot PXE.)Gestions des anomalies/événements : Jira",
+    "metier": "Architecte sécurité informatique",
+    "niveau": "junior",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Linux",
+      "PostgreSQL",
+      "Python",
+      "Analyse de données",
+      "Data Engineering",
+      "Model drift",
+      "Pipelines de données",
+      "Qualité des données"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:42.099019",
+  "input_hash": "7b6a15ba5317ee41bd1e8cae163e44f8d53a1b471f217dc994754ce96a993daf",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,955 @@
+{
+  "key": "trends:30 - Nîmes",
+  "value": {
+    "territoire": "30 - Nîmes",
+    "periode_jours": 365,
+    "nombre_offres": 3,
+    "competences": {
+      "Analyse de données": 2,
+      "Data engineering": 2,
+      "Intelligence artificielle": 2,
+      "API": 1,
+      "Backend": 1,
+      "Cahier des charges": 1,
+      "Coûts": 1,
+      "Définition D'indicateurs": 1,
+      "Délais": 1,
+      "Intégration Continue": 1,
+      "Machine learning": 1,
+      "MLOps": 1,
+      "Model Drift": 1,
+      "Pipelines De Données": 1,
+      "Qualité Des Données": 1,
+      "Sécurité Informatique": 1,
+      "Tests Automatisés": 1,
+      "Vision": 1
+    },
+    "competences_details": [
+      {
+        "nom": "Analyse de données",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Analyse de données": 2
+        }
+      },
+      {
+        "nom": "Data engineering",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Data Engineering": 2
+        }
+      },
+      {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "API",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "API": 1
+        }
+      },
+      {
+        "nom": "Backend",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Backend": 1
+        }
+      },
+      {
+        "nom": "Cahier des charges",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Cahier des charges": 1
+        }
+      },
+      {
+        "nom": "Coûts",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Coûts": 1
+        }
+      },
+      {
+        "nom": "Définition D'indicateurs",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Définition d'indicateurs": 1
+        }
+      },
+      {
+        "nom": "Délais",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Délais": 1
+        }
+      },
+      {
+        "nom": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Intégration continue": 1
+        }
+      },
+      {
+        "nom": "Machine learning",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Machine learning": 1
+        }
+      },
+      {
+        "nom": "MLOps",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "MLOps": 1
+        }
+      },
+      {
+        "nom": "Model Drift",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Model drift": 1
+        }
+      },
+      {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Sécurité informatique": 1
+        }
+      },
+      {
+        "nom": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Tests automatisés": 1
+        }
+      },
+      {
+        "nom": "Vision",
+        "count": 1,
+        "percentage": 33.3,
+        "variants": {
+          "Vision": 1
+        }
+      }
+    ],
+    "competences_variants": {
+      "Analyse de données": {
+        "Analyse de données": 2
+      },
+      "Data engineering": {
+        "Data Engineering": 2
+      },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "API": {
+        "API": 1
+      },
+      "Backend": {
+        "Backend": 1
+      },
+      "Cahier des charges": {
+        "Cahier des charges": 1
+      },
+      "Coûts": {
+        "Coûts": 1
+      },
+      "Définition D'indicateurs": {
+        "Définition d'indicateurs": 1
+      },
+      "Délais": {
+        "Délais": 1
+      },
+      "Intégration Continue": {
+        "Intégration continue": 1
+      },
+      "Machine learning": {
+        "Machine learning": 1
+      },
+      "MLOps": {
+        "MLOps": 1
+      },
+      "Model Drift": {
+        "Model drift": 1
+      },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Sécurité Informatique": {
+        "Sécurité informatique": 1
+      },
+      "Tests Automatisés": {
+        "Tests automatisés": 1
+      },
+      "Vision": {
+        "Vision": 1
+      }
+    },
+    "metiers": {
+      "Comptable": 1,
+      "Ingénieur / Ingénieure d'analyse industrielle": 1,
+      "Ingénieur / Ingénieure d'étude informatique": 1
+    },
+    "niveau": {
+      "junior": 1,
+      "intermediaire": 2
+    },
+    "contrats": {
+      "CDI": 3
+    },
+    "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Data engineering",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Cahier des charges",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Définition D'indicateurs",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Analyse de données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Définition D'indicateurs",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "API",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Coûts",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Définition D'indicateurs",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Cahier des charges",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Définition D'indicateurs",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Définition D'indicateurs",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Définition D'indicateurs",
+        "competence_b": "Délais",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Définition D'indicateurs",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Définition D'indicateurs",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Définition D'indicateurs",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Définition D'indicateurs",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Définition D'indicateurs",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Définition D'indicateurs",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Définition D'indicateurs",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Délais",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Intégration Continue",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Intégration Continue",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Machine learning",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      },
+      {
+        "competence_a": "Sécurité Informatique",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "fiabilite": 0.075,
+    "skill_sets": [
+      [
+        "Vision"
+      ],
+      [
+        "Intelligence artificielle",
+        "Machine learning",
+        "Analyse de données",
+        "Data engineering",
+        "Coûts",
+        "Délais",
+        "Définition D'indicateurs",
+        "Qualité Des Données",
+        "Model Drift",
+        "Pipelines De Données",
+        "Sécurité Informatique",
+        "Tests Automatisés",
+        "API",
+        "Backend"
+      ],
+      [
+        "Analyse de données",
+        "Intelligence artificielle",
+        "Cahier des charges",
+        "Data engineering",
+        "MLOps",
+        "Intégration Continue"
+      ]
+    ],
+    "offres": [
+      {
+        "id": "209ZWNM",
+        "intitule": "Un(e) Chargé(e) d'études data (H/F)",
+        "entreprise": "SA DEFENSE ET D ASSURANCES",
+        "territoire": "30 - NIMES",
+        "contrat": "CDI",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZWNM"
+      },
+      {
+        "id": "3732829",
+        "intitule": "Chargé(e) détudes Eau et déchets - Référent IA et optimisation des processus H/F",
+        "entreprise": "",
+        "territoire": "30 - Nîmes",
+        "contrat": "CDI",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3732829"
+      },
+      {
+        "id": "6890134",
+        "intitule": "Collaborateur comptable h/f (logiciel time) h/f",
+        "entreprise": "",
+        "territoire": "30 - Nîmes",
+        "contrat": "CDI",
+        "date": "2025-12-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/6890134"
+      }
+    ],
+    "offers": [
+      {
+        "id": "209ZWNM",
+        "intitule": "Un(e) Chargé(e) d'études data (H/F)",
+        "entreprise": "SA DEFENSE ET D ASSURANCES",
+        "territoire": "30 - NIMES",
+        "contrat": "CDI",
+        "date": "2026-06-19",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZWNM"
+      },
+      {
+        "id": "3732829",
+        "intitule": "Chargé(e) détudes Eau et déchets - Référent IA et optimisation des processus H/F",
+        "entreprise": "",
+        "territoire": "30 - Nîmes",
+        "contrat": "CDI",
+        "date": "2026-06-12",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3732829"
+      },
+      {
+        "id": "6890134",
+        "intitule": "Collaborateur comptable h/f (logiciel time) h/f",
+        "entreprise": "",
+        "territoire": "30 - Nîmes",
+        "contrat": "CDI",
+        "date": "2025-12-20",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/6890134"
+      }
+    ]
+  },
+  "computed_at": "2026-06-22T19:00:19.118554",
+  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "source_version": "",
+  "model_version": "",
+  "status": "success"
+}

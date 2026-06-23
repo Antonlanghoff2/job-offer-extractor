@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3371200",
+  "value": {
+    "id": "3371200",
+    "intitule": "AI ENGINEER (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDI",
+    "date_creation": "2026-06-03",
+    "date": "2026-06-03",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3371200",
+    "description": "iPepper, c'est à la fois une société de conseil et de solutions logicielles. Nous sommes une communauté experte et humaniste qui accompagne les meilleurs Talents de la Data Tech dans leurs missions auprès de clients impactants. Nous croyons que c'est en créant une communauté soudée, épanouie et en perpétuelle évolution que nous répondrons au mieux aux futurs grands enjeux de la DataTech. Le poste : Al ENGINEER PROFIL : Expérimenté (3 à 7 ans d'experience) Description de la mission L'Al Engineer est en charge de la construction/développement, de l'industrialisation et de déploiement des projets en production, il est accompagné par les services informatiques et les équipes d'exploitation et s'appuie également sur des ressources cloud (GCP, AWS) suivant les besoins. Missions: Le poste proposé vise à concevoir, industrialiser et opérer des solutions d'IA robustes, scalables et responsables, de la preuve de concept jusqu'au maintien en conditions opérationnelles à grande échelle. En tant que maillon central du cycle de vie des produits IA, vos missions seront de : - Architecture et Industrialisation (MLOps) : - Concevoir les architectures techniques des produits IA en collaboration avec les Data Scientists, en choisissant les technologies et les design patterns adaptés (ex: services en temps réel, traitement par lots) et les faire valider par le responsable architecture. - Mettre en œuvre et maintenir les pipelines Cl/CD pour automatiser la livraison des modèles, du code et de l'infrastructure. - Gérer l'infrastructure de déploiement (Kubernetes, Services Cloud managés) en optimisant les ressources, notamment les parcs de GPU. - Intégrer les principes de sécurité \"by design\" dans les applications IA pour protéger les modèles et les données contre les menaces spécifiques (ex: attaques adversariales) - Participer au déploiement d'applications basées sur les LLM (architecture RAG), industrialiser leur cycle de vie (prompts, bases vectorielles, fine-tuning) et gérer les risques de sécurité associés. Description complémentaire du profil Ingénieur (grande école ou université: Epita, Centrale, lnsa, Paris Saclay) Spécialisation : Informatique, IA (data Science, DevOps/ MLOPS. Profil recherché : Expérience et compétences: -Développement Python , Mlops, Gitlab CICD, GCP Vertex -Excellente maîtrise des concepts Cl/CD ( Mlops & Devops ), -les outils utilisés sont gitlab, Docker, Vault, Jfrog, Kubernetes, Grafana, GCP vertex, Python, git, redis, postgres. -Une bonne connaissance de l'IA (machine learning, gen-ai, l'écosystème des LLM ) est demandée .",
+    "metier": "Architecte base de données",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "MLOps",
+      "Machine learning",
+      "PostgreSQL",
+      "Python",
+      "Déploiement de modèles",
+      "Pipelines de données",
+      "Qualité des données",
+      "Scalabilité",
+      "Backend",
+      "Model drift"
+    ],
+    "salaire_min": 3000,
+    "salaire_max": 7000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Description complémentaire du profil Ingénieur (grande école ou université: Epita, Centrale, lnsa, Paris Saclay) Spécialisation : Informatique, IA (data Science, DevOps/ MLOPS.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:04.677682",
+  "input_hash": "3965082d4147328975b2a9c3de1e707d6cfb36f9dd69d4b99b4dad1167bb7dd4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

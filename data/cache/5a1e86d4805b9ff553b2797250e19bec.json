@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:3226926",
+  "value": {
+    "id": "3226926",
+    "intitule": "Ingénieur hygiène-sécurité (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Puteaux",
+    "ville": "92062",
+    "code_postal": "92800",
+    "contrat": "CDI",
+    "date_creation": "2026-05-30",
+    "date": "2026-05-30",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3226926",
+    "description": "Description du poste :\nLieu : Campus Cyber, France\nConstruisons ensemble un avenir de confiance\nThales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels que l'IA, la cybersécurité, le quantique, les technologies du cloud et la 6G. Thales compte près de 85 000 collaborateurs dans 65 pays.\nNos engagements, vos avantages***Une réussite portée par notre excellence technologique, votre expérience et notre ambition partagée***Un package de rémunération attractif***Un développement des compétences en continu : parcours de formation, académies et communautés internes***Un environnement inclusif, bienveillant et respectant l'équilibre des collaborateurs***Un engagement sociétal et environnemental reconnu\nVotre quotidien\nErcom est une société du groupe Thales développant des solutions et services de sécurisation des communications, données et terminaux reposant sur des expertises technologiques en infrastructure télécom, cloud, cryptographie et logiciel. Nos solutions font l'objet de certifications de la part de l'ANSSI et équipent des acteurs publics ou privés en France ou à l'étranger.\nVous rejoignez l'équipe regroupant les produits et services Citadel Team : solution sécurisée de messagerie, appel et conférence pour les professionnels, souveraine et simple d'usage***Cryptobox : solution sécurisée de collaboration et de partage de fichier\nCe sont des produits qui sont conçus, hébergés et opérés par Ercom.\nVous participez à fournir un service « sécurisé » dans un objectif de labélisation.\nVos missions consistent à :\nParticiper à la définition des fonctions de sécurité des produits développés Fonctions de sécurités à implémenter***Choix des protocoles et standards***Spécifications des contraintes de sécurité et RGPD à intégrer\nParticiper à la conception des principes de déploiement des produits Règles pour l'administration et monitoring des solutions***Définition et création d'architectures sécurisées, ségrégation.***Choix des fournisseurs de services.\nGarantir le niveau de sécurité Maintien en conditions de sécurité des logiciels utilisés***Bonnes pratiques d'administration, de configuration et de supervisionMéthodes de validation des logiciels livrés***Interlocuteur référent des sujets sécurité pour les organisations clientes\nDocumenter et représenter Participer à l'homologation et (son maintien) des services déployés,***Intervenir dans la certification des logiciels,***Documenter les principes de sécurité choisis/adoptés,***Organiser des revues, des audits internes et/ou externes.\nVous travaillez en étroite collaboration avec les équipes d'ingénierie, de déploiement et de run. Vous pouvez être également être amené à être en relation avec des auditeurs, les interlocuteurs sécurité Groupe et l'ANSSI.\nVotre profil\nVous avez au moins 5 ans d'expérience en sécurité des SI.\nVous disposez d'un Bac+5 et/ou Ingénieur en informatique et/ou sécurité des SI et avez des compétences en matière de Cryptologie : TLS, X509, ECDH, etc.***OS : Linux***Applications : Docker, Kubernetes, Vault, Gitlab-ci***Développement : Android, IOS, Python et JS***Chiffrement.\nVous êtes reconnu pour votre sens de l'organisation et votre rigueur.\nAnglais requis.\nThales, entreprise Handi-Engagée, reconnait tous les talents. La diversité est notre meilleur atout. Postulez et rejoignez nous !Le poste pouvant nécessiter d'accéder à des informations relevant du secret de la défense nationale, la personne retenue fera l'objet d'une procédure d'habilitation, conformément aux dispositions des articles R.2311-1 et suivants du Code de la défense et de l'IGI 1300 SGDSN/PSE du 09 août 2021.",
+    "metier": "Ingénieur / Ingénieure Hygiène, Sécurité et Environnement en industrie (HSE)",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "JavaScript",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Vision",
+      "Vue.js",
+      "Android",
+      "GitLab CI",
+      "Cybersécurité",
+      "Design patterns",
+      "API",
+      "Documentation technique",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 2311,
+    "salaire_max": 1000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Vous disposez d'un Bac+5 et/ou Ingénieur en informatique et/ou sécurité des SI et avez des compétences en matière de Cryptologie : TLS, X509, ECDH, etc.***OS : Linux***Applications : Docker, Kubernetes, Vault, Gitlab-ci***Développement : Android, IOS, Python et JS***Chiffrement.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous disposez d'un Bac+5 et/ou Ingénieur en informatique et/ou sécurité des SI et avez des compétences en matière de Cryptologie : TLS, X509, ECDH, etc.***OS : Linux***Applications : Docker, Kubernetes, Vault, Gitlab-ci***Développement : Android, IOS, Python et JS***Chiffrement.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 17,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:14.152416",
+  "input_hash": "e881530bc783b0f7401aca8f57d8c21287fd67639c8f73f583f9eacce41d8331",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

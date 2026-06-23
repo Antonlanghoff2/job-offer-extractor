@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:208ZQSW",
+  "value": {
+    "id": "208ZQSW",
+    "intitule": "Développeur Full Stack (H/F)",
+    "entreprise": "J.E.S.",
+    "territoire": "44 - Nantes",
+    "ville": "44109",
+    "code_postal": "44000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-01",
+    "date": "2026-06-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208ZQSW",
+    "description": "Planitech équipe 80% des plus importantes communes de France.\n\nDans la continuité de notre croissance, nous recherchons un(e) Développeur(euse) Full Stack (H/F).\n\nVos missions, en mode agile (Scrum - sprints de 3 semaines) :\n\nDéveloppement\n * Concevoir, développer et faire évoluer des fonctionnalités de bout en bout, de la base de données à l'interface utilisateur\n * Contribuer aux choix de conception et d'architecture\n * Écrire du code lisible, testé et maintenable, en respectant les patterns de l'équipe\n * Tirer parti de l'IA (Claude Code) pour accélérer vos développements, sans compromis sur la qualité.\n * Participer aux code reviews comme contributeur et comme relecteur\n\nQualité et fiabilité\n * Garantir la qualité de vos développements : tests unitaires, tests d'intégration, tests end-to-end\n * Porter une exigence sur la CI/CD : pas de warnings, couverture maintenue, breaking changes détectés\n * Contribuer à l'observabilité du produit (traces, métriques, logs)\n * Challenger les solutions techniques et proposer des améliorations continues\n * Documenter vos développements (Jira, Confluence, Scalar pour les APIs)\n\nCollaboration équipe et produit\n * Participer aux rituels Scrum (planning, daily, review, rétro) avec l'équipe\n * Challenger les besoins avec le PO et l'UX pour proposer les meilleures solutions techniques\n * Partager vos apprentissages et bonnes pratiques avec les autres équipes R&D\n\nEnvironnement technique : \n * Frontend : React 19 + React Compiler, Vite 7, TypeScript 5, TanStack Router & Query, Tailwind CSS 4, shadcn/ui, Lingui (i18n)\n * Backend : .NET 10, ASP.NET <http://ASP.NET> Core, PostgreSQL 18, monolithe modulaire, multi-tenant (Finbuckle), observabilité (OpenTelemetry)\n * Qualité : GitLab CI (child pipelines), Vitest, Playwright, xUnit\n * Outillage : Claude Code, Jira, Confluence, Figma, Aspire\n\nSerait un plus :\n * Une expérience avec Claude Code ou un autre copilote IA en contexte professionnel\n * Une appétence pour la conception logicielle (DDD, architecture hexagonale, patterns fonctionnels)\n * Une expérience sur des produits SaaS multi-tenants\n * Une sensibilité UX et accessibilité\n\nNous offrons :\n * Un planning d'intégration sur mesure\n * Un accompagnement tout au long de votre parcours professionnel\n * Des formations\n * Un environnement de travail dynamique et collaboratif\n * Des opportunités de développement professionnel\n\nInformations complémentaires :\n * Poste en CDI, basé à Saint-Herblain (44), à pourvoir immédiatement\n * Rémunération : 30 000€ à 45 000€ selon profil\n * Participation aux résultats\n * Titre-restaurant (60% de prise en charge par l'employeur)\n * 12 RTT\n * Télétravail : possibilité jusqu'à 2 jours/semaine\n * Convention Collective : SYNTEC\n * LinkedIn : Planitech <https://www.linkedin.com/company/planitech-jes/>\n\nDiplômé(e) de l'enseignement supérieur (Bac+5 ou équivalent), vous avez une expérience de plus de 3 ans en développement logiciel, spécifiquement sur .Net et React. Vous êtes à l'aise pour travailler Full Stack. Vous êtes curieux(se), vous aimez comprendre avant de coder, et vous challengez les solutions techniques sans dogmatisme. \n\nVous êtes exigeant(e) sur la qualité : tests, lisibilité, maintenabilité ne sont pas des options pour vous.\n\nVous avez envie de vous saisir des outils d'IA (notamment Claude Code) pour changer votre manière de travailler, en gardant votre esprit critique.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "CSS",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "Tests automatisés",
+      "Data Engineering",
+      "Pipelines de données",
+      "Model drift"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 45000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé(e) de l'enseignement supérieur (Bac+5 ou équivalent), vous avez une expérience de plus de 3 ans en développement logiciel, spécifiquement sur .Net et React.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:24.737442",
+  "input_hash": "7d6f9b878a43dd91f31092367ddb56796f006dd6305ff6b71b9d604b1b717433",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,58 @@
+{
+  "key": "offer_extraction:3565357",
+  "value": {
+    "id": "3565357",
+    "intitule": "APPRENTISSAGE - Administrateur Système (H/F)",
+    "entreprise": "",
+    "territoire": "92 - Saint-Cloud",
+    "ville": "92064",
+    "code_postal": "92210",
+    "contrat": "Intérim - 3 Mois",
+    "date_creation": "2026-06-08",
+    "date": "2026-06-08",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3565357",
+    "description": "Dassault Systèmes, l'entreprise de la 3DEXPERIENCE, est un « accélérateur de progrès humain ». Elle propose aux entreprises et aux particuliers des environnements virtuels collaboratifs qui leur permettent d'imaginer des innovations plus durables. En développant un jumeau virtuel du monde réel, grâce à la plateforme 3DEXPERIENCE et à ses applications, Dassault Systèmes donne à ses clients les moyens de repousser les limites de l'innovation, de l'apprentissage et de la production. Les 20000 collaborateurs de Dassault Systèmes travaillent à créer de la valeur pour nos 270000 clients de toutes tailles, dans toutes les industries, dans plus de 140 pays. Pour plus d'informations, visitez notre site www.3ds.com/frNous recrutons un·e Administrateur·rice Systèmes en alternance afin de renforcer notre équipe IaaS & Storage Operations. OUTSCALE, marque de Dassault Systèmes, est un opérateur souverain et durable de l'Expérience en tant que Service qui offre à ses clients des environnements technologiques de confiance. Nous offrons des expériences uniques grâce au savoir-faire de nos équipes passionnées, qui se reflète notamment par la création de solutions de Business Experiences, le développement de notre propre orchestrateur Cloud, TINA OS, ou encore l'obtention de la qualification SecNumCloud. L'équipe IaaS & Storage Operations est chargée d'assurer la disponibilité et la fiabilité quotidiennes de l'infrastructure cloud, ainsi que son amélioration continue. L'équipe évolue dans un environnement multiculturel et collaboratif qui valorise la diversité, le bien-être et l'innovation technologique rapide. Vos tâches - Configurer, surveiller et automatiser le cycle de vie des ressources cloud (Linux, KVM, ESXi, etc.). - Construire et affiner des pipelines Infrastructure-as-Code avec Terraform, Ansible, SaltStack, Packer et Jenkins. - Définir, mettre en œuvre et suivre les indicateurs SLI/SLO/SLA ; créer des tableaux de bord à l'aide de Prometheus, Grafana et Zabbix.- Participer aux enquêtes sur les incidents de niveau 3 et aux tests d'assurance qualité. - Contribuer à la documentation technique, aux sessions de partage des connaissances et à la collaboration inter-équipes. Stack technique - Linux - Python3, Bash - Terraform - Ansible, SaltStack - KubernetesVotre profil - Vous intégrez un Master en informatique, en génie logiciel ou dans un domaine connexe. - Vous recherchez un contrat d'apprentissage. - Vous avez de solides bases en administration de systèmes Linux et en programmation de scripts avec Python 3 et Bash. - Vous maîtrisez des outils d'automatisation/d'orchestration : Git, Terraform, Ansible, SaltStack, Jenkins, Docker, Kubernetes. - Vous avez des connaissances de base en virtualisation (QEMU, KVM, ESXi) et en solutions de monitoring (Prometheus, Grafana, Zabbix). - Vous aimez travailler en équipe et avez un bon relationnel. - Vous êtes proactif·ve, autonome et désireux·se de proposer des améliorations. - Passion pour les technologies cloud natives, l'optimisation des performances et l'apprentissage continu. Nous rejoindre c'est aussi Intégrer une entreprise scientifique au cœur de l'innovation technologique, portée par une forte croissance depuis plus de 40 ans. Principaux avantages et bénéfices : - Environnement multiculturel - Cadre de travail convivial axé sur le bien-être et la santé - Engagement en faveur de la diversité et de l'inclusion - Politique dynamique de développement de carrière : plan de formation, mobilités internes, etc. Vous souhaitez en savoir plus ? N'hésitez pas à nous suivre sur Linkedin et découvrez nos dernières offres et actus.",
+    "metier": "Administrateur / Administratrice de systèmes d'information (SI)",
+    "niveau": "junior",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Linux",
+      "Python",
+      "Terraform",
+      "Qualité logicielle",
+      "Analyse de données",
+      "Tests automatisés",
+      "Data Engineering",
+      "Gestion de projet"
+    ],
+    "salaire_min": 20000,
+    "salaire_max": 20000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Stack technique - Linux - Python3, Bash - Terraform - Ansible, SaltStack - KubernetesVotre profil - Vous intégrez un Master en informatique, en génie logiciel ou dans un domaine connexe. - Vous recherchez un contrat d'apprentissage. - Vous avez de solides bases en administration de systèmes Linux et en programmation de scripts avec Python 3 et Bash. - Vous maîtrisez des outils d'automatisation/d'orchestration : Git, Terraform, Ansible, SaltStack, Jenkins, Docker, Kubernetes. - Vous avez des connaissances de base en virtualisation (QEMU, KVM, ESXi) et en solutions de monitoring (Prometheus, Grafana, Zabbix). - Vous aimez travailler en équipe et avez un bon relationnel. - Vous êtes proactif·ve, autonome et désireux·se de proposer des améliorations. - Passion pour les technologies cloud natives, l'optimisation des performances et l'apprentissage continu.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:53:02.061168",
+  "input_hash": "52dd718e7997f9ff28ec69a6c5aeb726e10ac2973229c404afa667f3085e6a5e",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

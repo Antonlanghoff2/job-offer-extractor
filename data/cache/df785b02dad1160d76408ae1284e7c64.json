@@ -1,0 +1,70 @@
+{
+  "key": "offer_extraction:4004276",
+  "value": {
+    "id": "4004276",
+    "intitule": "Ingénieur-e en conception mécanique F/H - Conception, recherche (H/F)",
+    "entreprise": "Safran Electronics & Defense",
+    "territoire": "95 - Éragny",
+    "ville": "95218",
+    "code_postal": "95610",
+    "contrat": "CDI",
+    "date_creation": "2026-06-19",
+    "date": "2026-06-19",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4004276",
+    "description": "Descriptif du poste:\n\n\nPassionné(e) d'aviation, d'espace ou encore par les technologies de défense ? Plus\nspécifiquement vous avez toujours eu la fibre pour la mécanique et le dessin industriel ?\nVous avez suivi les 1ers vols d'Ariane 6 ou encore de l'A350, allez au Salon du Bourget ou à des meetings guetter le RAFALE, l'A400M ou encore le Tigre ?\nRejoignez-nous !\n\nSafran est un groupe international de haute technologie opérant dans les domaines de l'aéronautique (propulsion, équipements et intérieurs), de l'espace et de la défense. Le Groupe emploie 110 000 collaborateurs à travers le monde pour un chiffre d'affaires de 31,3 milliards d'euros en 2025.\nEquipementier du Groupe, Safran Electronics & Defense est une entreprise internationale de plus de 19 000 collaboratrices et collaborateurs, tous mobilisés pour concevoir des solutions de haute technologie dans les domaines de l'aéronautique, de la défense et du spatial. En combinant intelligence humaine et technologique, nous développons des produits et services pour les acteurs du monde civil et militaires, sur terre, en mer, dans le ciel et dans l'espace, et\npouvons mettre en avant nos positions de leaders :\nN°1 mondial des optiques spatiales et astronomiques de haute performance.\nN°1 Européen des systèmes de navigation inertielle.\nN°1 Européen des systèmes de Drônes tactiques.\n\nVotre mission :\nVous intégrez la Direction Ingénierie Navigation, et plus particulièrement l'Unité d'Ingénierie Mécanique Navigation en qualité d'ingénieur conception mécanique.\nVous prenez en charge le support à la vie série de nos produits air / terre / mer, ainsi que les développements mécaniques d'équipements permettant leur mise en oeuvre. Plus particulièrement vous :\n- Etes le point d'entrée et l'interface principale pour les projets, les programmes, les autres Métiers et la Production,\n- Pilotez Ingénieur et Projeteur pour votre activité,\n- Analysez les demandes, et problèmes exposés afin d'en évaluer la charge, la criticité et mettez en place les actions pour y répondre,\n- Assurez les réponses techniques et la conformité des livrables, en cohérence avec l'industrialisation et la qualité,\n\nVous vous assurez par ailleurs de la tenue des planning et des coûts, en réponse aux projets, et capitalisez sur l'activité et les processus afin de contribuer à notre amélioration continue.\n\nVous pouvez être amené à réaliser la conception d'équipements nécessaires à la mise en oeuvre de nos produits, et pilotez alors les études de faisabilité 3D, la réalisation de l'architecture détaillée, le dimensionnement mécanique, et la réalisation de maquettages physiques afin de vérifier et finaliser la conception.\nVous pouvez être amené aussi à réaliser des essais de validation mécanique et thermique.\n\nProfil recherché:\n\n\n- Formation dans l'ingénierie mécanique (ou équivalent Bac+5).\n- Expérience : 5 minimum en conception mécanique dans un environnement industriel exigeant (aéronautique, défense, spatial, automobile...).\n- Compétences techniques :\n* Maîtrise des outils CATIA V5 et 3DEXPERIENCE\n* Analyse éléments finis (ANSYS Workbench, ou CATIA V5)\n* Solides connaissances en conception de pièces et ensembles mécaniques (usinage, fonderie, fabrication additive, tolérancement ISO/GPS, matériaux et traitement de surface), et en dimensionnement mécanique.\n- Aptitudes comportementales : leadership, sens du collectif, à l'écoute, vous faites preuve de créativité et de curiosité.\n\nVous maîtrisez par ailleurs parfaitement les outils bureautique.\nDes connaissances en Python seraient un plus.",
+    "metier": "Technicien / Technicienne en conception industrielle en mécanique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Coûts",
+      "Intelligence artificielle",
+      "Optique",
+      "Python",
+      "Conception de solutions",
+      "Déploiement de modèles",
+      "MLOps",
+      "Architecture microservices",
+      "Backend",
+      "Data Engineering"
+    ],
+    "salaire_min": 6000,
+    "salaire_max": 6000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vous intégrez la Direction Ingénierie Navigation, et plus particulièrement l'Unité d'Ingénierie Mécanique Navigation en qualité d'ingénieur conception mécanique.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Pilotez Ingénieur et Projeteur pour votre activité,",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Formation dans l'ingénierie mécanique (ou équivalent Bac+5).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "8 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:41.408275",
+  "input_hash": "fbf452de610dcf3002ea0f6dea1d058f6f7b1b7d13f9f6e469cb6e5fe2acc078",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

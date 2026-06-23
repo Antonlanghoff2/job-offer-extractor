@@ -1,0 +1,54 @@
+{
+  "key": "offer_extraction:3110830",
+  "value": {
+    "id": "3110830",
+    "intitule": "Ingénieur Data & IA F/H",
+    "entreprise": "",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDI",
+    "date_creation": "2026-05-28",
+    "date": "2026-05-28",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3110830",
+    "description": "\n            Dans un contexte de croissance des projets data-driven et d’intégration de l’intelligence artificielle dans les processus métiers, nous recherchons un(e) Ingénieur(e) Data & IA pour renforcer nos équipes. Vous interviendrez sur des projets stratégiques allant de la gestion des données à la mise en œuvre de modèles d’IA.Vous rejoindrez une équipe pluridisciplinaire composée de Data Engineers, Data Scientists et experts IT, dans un environnement stimulant, orienté innovation et valorisation des données. Ce poste est ouvert pour accompagner le développement de nos activités autour de la data et de l’IA.Vos missions à nos côtés• Concevoir et développer des pipelines de traitement de données (collecte, transformation, stockage).• Développer et intégrer des modèles d’IA et de machine learning dans des applications métiers.• Participer à l’industrialisation des solutions data et IA (mise en production, monitoring, maintenance).• Collaborer avec les équipes métiers pour comprendre les besoins et proposer des solutions adaptées.• Mettre en place des bonnes pratiques en matière de qualité des données, gouvernance et performance. \n            ",
+    "metier": "Data engineer",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "Machine learning",
+      "Déploiement de modèles",
+      "Pipelines de données",
+      "Data Engineering",
+      "Qualité des données",
+      "Analyse de données",
+      "MLOps",
+      "Model drift"
+    ],
+    "salaire_min": null,
+    "salaire_max": null,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans un contexte de croissance des projets data-driven et d’intégration de l’intelligence artificielle dans les processus métiers, nous recherchons un(e) Ingénieur(e) Data & IA pour renforcer nos équipes.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:51:05.479574",
+  "input_hash": "e36fe19c5e3213028a9fcab61f1cb6b663ec805a873327785f15f7e9eca095fa",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

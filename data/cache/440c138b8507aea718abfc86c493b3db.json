@@ -1,0 +1,60 @@
+{
+  "key": "offer_extraction:3725492",
+  "value": {
+    "id": "3725492",
+    "intitule": "Ingénieur Test et Validation (H/F)",
+    "entreprise": "",
+    "territoire": "38 - Grenoble",
+    "ville": "38185",
+    "code_postal": "38000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-11",
+    "date": "2026-06-11",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3725492",
+    "description": "Et si vous embarquiez vers les nouvelles technologies ? Filiale du groupe industriel ICE, Médiane Système, est une société d'ingénierie innovante spécialisée en électronique, systèmes embarqués et informatique industrielle. Médiane Système a construit son identité sur une expertise technique de haut niveau en proposant à ses clients, des prestations d'accompagnement au travers de ses Départements R&D (DRD) et ConSulting (DCS). Présente en France (région Parisienne, Rhône-Alpes, Midi-Pyrénées, PACA, Grand Ouest), en Belgique et en Italie, Médiane Système est partenaire de grands comptes industriels et de nombreuses PME. Du secteur automobile au médical, en passant par l'énergie, le ferroviaire, l'aéronautique ou bien les télécoms. Médiane Système intervient exclusivement sur les métiers de l'ingénierie système (logiciel embarqué, logiciel applicatif pour l'industrie, électronique numérique et analogique, banc de tests) dans des environnements technologiques de pointe. Créée par des ingénieurs, Médiane Système, est une entreprise technique à taille humaine, proche de ses collaborateurs, qui privilégie depuis plus de 30 ans, le développement des compétences et l'épanouissement de ses salariés. Le poste : Nous recherchons un(e) ingénieur(e) en tests et validation. Intégré(e) à une équipe évoluant en méthodologie agile, vous participerez à la qualification et à l'amélioration continue de produits à forte composante technologique. Vos principales missions seront : - Définir les plans de test et rédiger les cas de test - Développer et maintenir les scripts d'automatisation sur les bancs de test - Exécuter les campagnes de test et valider les fonctionnalités - Analyser les résultats, identifier les anomalies et assurer le reporting des bugs / améliorations - Participer à la maintenance et à l'évolution des bancs de test matériels. Profil recherché : Diplômé(e) d'une école d'ingénieurs ou titulaire d'un Master 2, vous justifiez d'au moins 3 ans d'expérience en test et validation. Vous possédez notamment les compétences suivantes : - Autonomie dans la préparation, l'exécution et l'analyse de tests ainsi que sur le suivi des anomalies - Maitrise des outils de gestion des exigences et des campagnes de test - Expérience en automatisation de tests avec Python et Robot Framework - Connaissance en électrotechnique.",
+    "metier": "Evaluateur / Evaluatrice sécurité des systèmes et produits informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Ferroviaire",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Python",
+      "API",
+      "Backend",
+      "Qualité des données"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 30000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Le poste : Nous recherchons un(e) ingénieur(e) en tests et validation.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master 2",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Profil recherché : Diplômé(e) d'une école d'ingénieurs ou titulaire d'un Master 2, vous justifiez d'au moins 3 ans d'expérience en test et validation.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 8,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:55.738661",
+  "input_hash": "38e727ac4fe47fa4ffe5a6f5214c5e3d36100b8e9099fcfcff2ae95ddeac8ac9",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

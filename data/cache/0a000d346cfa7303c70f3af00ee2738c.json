@@ -1,0 +1,56 @@
+{
+  "key": "offer_extraction:206JKLL",
+  "value": {
+    "id": "206JKLL",
+    "intitule": "Analyste-programmeur / Analyste-programmeuse informatique (H/F)",
+    "entreprise": "TIR TECHNOLOGIES TOILES INDUS RHIN TECHN",
+    "territoire": "67 - KILSTETT",
+    "ville": "67237",
+    "code_postal": "67840",
+    "contrat": "CDI",
+    "date_creation": "2026-04-01",
+    "date": "2026-04-01",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/206JKLL",
+    "description": "Rattaché(e) au responsable des systèmes d'information.\nDans ce contexte et dans le cadre de vos missions vous :\n- Participez à la rédaction des cahiers des charges,\n- Concevez, développez et optimisez des applications informatiques en réponse aux cahiers\ndes charges validés par les directions métiers et en assurer la maintenance,\n- Participez à la mise en place de l'ERP de l'entreprise\n- Intégrez au système d'information de l'entreprise des progiciels métiers acquis auprès\nd'éditeurs spécialisés (élaboration d'interfaces),\n- Réalisez des tests techniques,\n- Mettez en oeuvre les environnements des tests fonctionnels,\n- Rédigez les guides utilisateurs et les documents techniques.\n\nProfil souhaité :\nDiplômé d'une BAC+2 minimum en informatique\nMaîtrise des bases de données relationnelles SQL\nEnvironnement technique : plate-forme Windows\nSGBD : SQL Server\nMaitrise langage de programmation : SQL, Windev / Webdev\n\nVous avez une bonne capacité à communiquer. Vous faites preuve de patience, d'écoute et de\ncourtoisie auprès de vos interlocuteurs et de vos collègues.\n\nQualité : dynamique, organisé, vous appréciez le travail en équipe et les projets partagés\n\nVous serez amené(e) à effectuer des déplacements très ponctuels.",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Intelligence artificielle",
+      "SQL",
+      "Cahier des charges",
+      "Analyse de données",
+      "Data Engineering",
+      "Déploiement de modèles",
+      "Model drift",
+      "Qualité des données",
+      "Gestion de projet",
+      "MLOps",
+      "Code review"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "BAC+2",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Diplômé d'une BAC+2 minimum en informatique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "6 Mois",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 11,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:28.406550",
+  "input_hash": "1ef69c03ca4045db0db2643a74d4729f3f99e30bc84d56d2b58d146f58e7a5a4",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

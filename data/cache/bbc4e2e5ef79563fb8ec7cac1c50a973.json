@@ -1,0 +1,59 @@
+{
+  "key": "offer_extraction:3491003",
+  "value": {
+    "id": "3491003",
+    "intitule": "INGENIEUR LOGICIEL EMBARQUÉ (H/F)",
+    "entreprise": "",
+    "territoire": "France",
+    "ville": "France",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-05",
+    "date": "2026-06-05",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3491003",
+    "description": "Et si vous embarquiez vers les nouvelles technologies ? Filiale du groupe industriel ICE, Médiane Système, est une société d'ingénierie innovante spécialisée en électronique, systèmes embarqués et informatique industrielle. Médiane Système a construit son identité sur une expertise technique de haut niveau en proposant à ses clients, des prestations d'accompagnement au travers de ses Départements R&D (DRD) et ConSulting (DCS). Présente en France (région Parisienne, Rhône-Alpes, Midi-Pyrénées, PACA, Grand Ouest), en Belgique et en Italie, Médiane Système est partenaire de grands comptes industriels et de nombreuses PME. Du secteur automobile au médical, en passant par l'énergie, le ferroviaire, l'aéronautique ou bien les télécoms. Médiane Système intervient exclusivement sur les métiers de l'ingénierie système (logiciel embarqué, logiciel applicatif pour l'industrie, électronique numérique et analogique, banc de tests) dans des environnements technologiques de pointe. Créée par des ingénieurs, Médiane Système, est une entreprise technique à taille humaine, proche de ses collaborateurs, qui privilégie depuis plus de 30 ans, le développement des compétences et l'épanouissement de ses salariés. Le poste : Nous recherchons pour notre client un Ingénieur logiciel embarqué F/H dont l'activité principale sera de spécifier, concevoir, développer et valider des évolutions logicielles embarquées et débarquées sous OS Linux et Windows dans le respect du cycle de développement interne. A ce titre, vous devrez maitriser les éléments suivants : · Développement de logiciels embarqués · Développement driver Linux embarquée · Maitrise des langages C / C++ Vous serez également en charge de la mise jour documentaire, rédaction des spécifications et des documents techniques et de validation. Profil recherché : De profil Bac+5 dans le domaine industriel, vous avez au moins 3 ans d'expérience. Vous êtes reconnu pour votre rigueur, votre curiosité technique et votre autonomie. Vous aimez le travail en équipe et vous êtes à l'aise en anglais à l'oral comme à l'écrit. Vous avez envie d'intégrer une entreprise (championne 2022 du pôle systématic) forte de ses valeurs qui valorise ses collaborateurs par la proximité de son management, la formation, une politique RSE développée (médaille platinium Ecovadis 2021), une politique Qualité de Vie au Travail au cœur de ses préoccupations. Par l'adhésion à nos valeurs, vous aurez à cœur de représenter notre entreprise auprès de votre entourage. En retour, nous inscrirons Médiane Système de façon significative sur votre chemin de carrière.",
+    "metier": "Ingénieur / Ingénieure systèmes et réseaux informatiques",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Linux",
+      "API",
+      "Architecture microservices",
+      "Backend"
+    ],
+    "salaire_min": 30000,
+    "salaire_max": 30000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Le poste : Nous recherchons pour notre client un Ingénieur logiciel embarqué F/H dont l'activité principale sera de spécifier, concevoir, développer et valider des évolutions logicielles embarquées et débarquées sous OS Linux et Windows dans le respect du cycle de développement interne.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Profil recherché : De profil Bac+5 dans le domaine industriel, vous avez au moins 3 ans d'expérience.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 7,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:50:23.716081",
+  "input_hash": "57d88bc63bc1ddd0f358d0d913350eaa8cbb6eb74a2de03b436c284ec0ac974d",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:3765495",
+  "value": {
+    "id": "3765495",
+    "intitule": "Cloud DevOps Engineer Senior Montpellier (H/F)",
+    "entreprise": "",
+    "territoire": "34 - Montpellier",
+    "ville": "34172",
+    "code_postal": "34000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-15",
+    "date": "2026-06-15",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3765495",
+    "description": "Vos missions : En tant qu’Ingénieur DevOps, vous jouerez un rôle clé dans l’industrialisation, l’automatisation et l’exploitabilité des produits. Vos missions incluront notamment : Identifier les évolutions fonctionnelles et techniques des produits nécessitant des activités Ops, et les traduire en récits techniques dans le backlog. Provisionner les moyens techniques d’infrastructure sur l’ensemble des environnements. Intégrer les produits dans les plateformes (supervision, sauvegardes, archivage, gestion des logs). Développer des composants techniques (scripts d’industrialisation, déploiement, templates d’infrastructure as code) et automatiser les opérations via les services DevOps. Mettre en place des indicateurs d’observabilité et garantir l’intégration des exigences de production dans les applications livrées. Contribuer à la mise à jour des référentiels et consignes d’exploitabilité. Réaliser les mises en production. Suivre les SLAs, contrôler le bon fonctionnement de la production et assurer le reporting. Anticiper, analyser et résoudre les incidents d’exploitation en identifiant les causes racines et en mettant en œuvre les actions correctives. Votre profil : Vous justifiez d’une expérience significative sur un poste similaire et vous maîtrisez les environnements techniques suivants : Compétences techniques : Systèmes : Linux, Kubernetes/Docker, Windows, VMWare, MVS Scripting : Bash/Shell, Python CI/CD : Git, Jenkins, GitlabCI, Ansible, AWX, Helm Supervision/Observabilité : Zabbix, Grafana, Suite ELK Réseaux : F5, firewalls, proxies, DNS Développement Web : JVM/Java, JBoss, Tomcat, Nginx, Apache, WSO2 Bases de données / Streaming : Redis, MySQL, DB2, MongoDB, Elasticsearch, Kafka, MQSeries Qualités personnelles : Esprit d’analyse et de synthèse Autonomie et rigueur Capacité à travailler en équipe et à collaborer avec des profils variés Sens du service et orientation client 3 raisons de nous rejoindre : Qualité de vie au travail : accord de télétravail en France et à l’international, accord sur l’égalité professionnelle, la parentalité, l’équilibre des temps et la mobilité durable. Apprentissage en continu : certifications et formations en libre accès, accompagnement sur mesure avec votre carreer manager, parcours d’intégration sur 9 mois. Avantages groupe & CSE : plan actionnariat, tarif préférentiels, remboursement partiel vacances, remboursement de votre abonnement sportif ou culturel. Nos engagements et priorités : Le groupe Capgemini encourage une culture inclusive dans un cadre multiculturel et handi-accueillant. En nous rejoignant, vous intégrez un collectif qui valorise la diversité, développe le potentiel de ses talents, s’engage dans des initiatives solidaires avec ses partenaires, et se mobilise pour réduire son impact environnemental sur tous ses sites et auprès de ses clients",
+    "metier": "Architecte cloud",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ansible",
+      "Docker",
+      "Développement web",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "Linux",
+      "MySQL",
+      "Python",
+      "Vision",
+      "MLOps",
+      "Définition d'indicateurs",
+      "Résolution de problèmes",
+      "Intégration continue",
+      "Backend",
+      "Déploiement de modèles",
+      "Monitoring de modèles",
+      "Gestion de projet",
+      "Analyse de données",
+      "Sécurité informatique",
+      "API",
+      "Tests automatisés",
+      "Veille technologique"
+    ],
+    "salaire_min": 2000,
+    "salaire_max": 2000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Vos missions : En tant qu’Ingénieur DevOps, vous jouerez un rôle clé dans l’industrialisation, l’automatisation et l’exploitabilité des produits.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 24,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:52:52.893167",
+  "input_hash": "7c644481406ce40b72b51dd6d373dee88536521daf0567883096043f17f9e581",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

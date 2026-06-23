@@ -1,0 +1,64 @@
+{
+  "key": "offer_extraction:209ZHZV",
+  "value": {
+    "id": "209ZHZV",
+    "intitule": "Réf NS IE 2  INGENIEUR ELECTRONICIEN EXPERIMENTE Nat FRANCAISE (H/F)",
+    "entreprise": "CIMEM",
+    "territoire": "91 - Villejust",
+    "ville": "91666",
+    "code_postal": "91140",
+    "contrat": "CDI",
+    "date_creation": "2026-06-18",
+    "date": "2026-06-18",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZHZV",
+    "description": "Réf NS IE 2  INGENIEUR ELECTRONICIEN EXPERIMENTE Nationalité FRANCAISE (Défense)\n PME spécialisée dans les domaines de l'instrumentation militaire et de la mesure en environnement. concevant , fabriquant et assurant la mise en service ainsi que la maintenance d'équipements à forte valeur ajoutée.\n\nMissions :\n  Dans le cadre de la conception de ces équipements vous interviendrez en tant qu'expert électronicien, ce qui intègre :\n- La conception et le développement des circuits électroniques (notamment en analogique de faible puissance): conception des schémas / développement de cartes électroniques via des logiciels de CAO (Proteus -utilisation de Python)  / vérification et validation  \n- L'analyse et la Résolution des problèmes techniques concernant les composants électroniques et participation aux tests permettant d'évaluer les performances\n- La gestion des projets de la conception à la réalisation dont la planification la définition des ressources, le suivi des délais et des coûts\n- Un travail en équipe avec les autres partenaires en charge du produit : communication - réunions- états d'avancement-..\n\nCompétences :\n-  Bac +5 ingénieur électronicien analogique et numérique\n-  Solide connaissance des composants électroniques\n-  Pratique de la CAO en conception de circuits imprimés\n-  Expérience en programmation et développement de microcontrôleurs\n- Connaissance des normes de sécurité et des réglementations applicables aux produits électroniques\n-  Anglais\n-  Autonome\n- Communiquant\n- Réactif\n- HABILITABLE SECRET DEFENCE\n\nLieu de Travail :    Longjumeau",
+    "metier": "Ingénieur / Ingénieure R&D en industrie",
+    "niveau": "intermediaire",
+    "competences": [
+      "Coûts",
+      "Délais",
+      "Instrumentation",
+      "Intelligence artificielle",
+      "Python"
+    ],
+    "salaire_min": 54000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "INGENIEUR",
+        "level": 8,
+        "required": true,
+        "source_sentence": "Réf NS IE 2 INGENIEUR ELECTRONICIEN EXPERIMENTE Nationalité FRANCAISE (Défense)",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac +5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Bac +5 ingénieur électronicien analogique et numérique",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Bac +5 ingénieur électronicien analogique et numérique",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "7 Mois",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 5,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:52:03.342766",
+  "input_hash": "d20400bb3d40def1da83cbb74bc1696bf7c91986a6861bc756b55f10dcb3503f",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

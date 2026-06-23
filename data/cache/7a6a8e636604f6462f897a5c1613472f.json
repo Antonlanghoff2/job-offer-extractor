@@ -1,0 +1,73 @@
+{
+  "key": "offer_extraction:1746768",
+  "value": {
+    "id": "1746768",
+    "intitule": "Alternance Développeur - Saint-Rémy-de-Provence (F/H) (H/F)",
+    "entreprise": "",
+    "territoire": "13 - Saint-Rémy-de-Provence",
+    "ville": "13100",
+    "code_postal": "13210",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-04-22",
+    "date": "2026-04-22",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1746768",
+    "description": "dans le cadre d'une formation de niveau Bac+5 en ingénierie logicielle ou informatique, type Master ILSEN, diplôme d'ingénieur ou équivalent. Intégré(e) à notre équipe technique, vous interviendrez sur des projets ambitieux autour d'une stack moderne Symfony / Next.js, en contribuant aussi bien au back-end qu'au front-end.\nVos principales missions\nMaintenir et faire évoluer l'applicatif existant (corrections de bugs, optimisations, montées de version)\nDévelopper de nouvelles fonctionnalités en collaboration avec les équipes produit et design\nRédiger et maintenir la documentation technique à jour\nÉcrire et maintenir les tests (unitaires, fonctionnels, d'intégration)\nParticiper aux revues de code et contribuer à l'amélioration continue des pratiques développement\nRespecter les bonnes pratiques et les standards Symfony\nStack technique\nBack-end :\nPHP 8.5 / Symfony 8\nMariaDB / Doctrine ORM\nTwig / API Platform\nFront-end :\nNext.js (React) / TypeScript\nTailwind CSS\nOutils & méthodes :\nGit (Bitbucket)\nCI/CD (Jenkins) / Docker\nPHPUnit / Jest (tests unitaires et fonctionnels)",
+    "metier": "Ingénieur / Ingénieure en informatique embarquée",
+    "niveau": "junior",
+    "competences": [
+      "CSS",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "JavaScript",
+      "React",
+      "Symfony",
+      "TypeScript",
+      "Vue.js",
+      "Tests automatisés",
+      "Documentation technique",
+      "Product Management",
+      "Intégration continue",
+      "Veille technologique"
+    ],
+    "salaire_min": 5000,
+    "salaire_max": 5000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "dans le cadre d'une formation de niveau Bac+5 en ingénierie logicielle ou informatique, type Master ILSEN, diplôme d'ingénieur ou équivalent.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "dans le cadre d'une formation de niveau Bac+5 en ingénierie logicielle ou informatique, type Master ILSEN, diplôme d'ingénieur ou équivalent.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "dans le cadre d'une formation de niveau Bac+5 en ingénierie logicielle ou informatique, type Master ILSEN, diplôme d'ingénieur ou équivalent.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 3,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-22T18:54:20.551247",
+  "input_hash": "c62b34ec366d684c9474a07da9e60ea355346a7be52fdf8475b1a9de249cb8fe",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

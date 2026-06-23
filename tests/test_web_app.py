@@ -46,10 +46,11 @@ class WebAppTest(unittest.TestCase):
         self.app = create_app()
         self.client = self.app.test_client()
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_raw_offers", return_value=make_raw_offers("ALL"))
     @patch("src.web_app.load_market_context_rows", return_value=[])
     @patch("src.web_app.iter_search_offres")
-    def test_search_without_territory_and_pagination(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock) -> None:
+    def test_search_without_territory_and_pagination(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_cache: Mock) -> None:
         mock_search.return_value = make_raw_offers("ALL")
 
         response = self.client.get("/?mots_cles=python&territoire_type=all&per_page=1&page=1")
@@ -66,10 +67,11 @@ class WebAppTest(unittest.TestCase):
         self.assertIn("Mon profil", body)
         self.assertIn("Déconnexion", body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_raw_offers", return_value=make_raw_offers("69123"))
     @patch("src.web_app.load_market_context_rows", return_value=[])
     @patch("src.web_app.iter_search_offres")
-    def test_commune_search_forwards_filters(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock) -> None:
+    def test_commune_search_forwards_filters(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_cache: Mock) -> None:
         mock_search.return_value = make_raw_offers("69123")
 
         response = self.client.get("/?mots_cles=data&territoire_type=commune&territoire=69123&distance=20")
@@ -81,10 +83,11 @@ class WebAppTest(unittest.TestCase):
         self.assertIn("2 offres trouvées pour la commune 69123", body)
         self.assertIn('<option value="commune" selected>', body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_raw_offers", return_value=make_raw_offers("75"))
     @patch("src.web_app.load_market_context_rows", return_value=[])
     @patch("src.web_app.iter_search_offres")
-    def test_department_search_forwards_filters(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock) -> None:
+    def test_department_search_forwards_filters(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_cache: Mock) -> None:
         mock_search.return_value = make_raw_offers("75")
 
         response = self.client.get("/?mots_cles=ia&territoire_type=departement&territoire=75")
@@ -94,10 +97,11 @@ class WebAppTest(unittest.TestCase):
         self.assertEqual(mock_search.call_args.kwargs["departement"], "75")
         self.assertIn("2 offres trouvées pour le département 75", body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_raw_offers", return_value=make_raw_offers("84"))
     @patch("src.web_app.load_market_context_rows", return_value=[])
     @patch("src.web_app.iter_search_offres")
-    def test_region_search_forwards_filters(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock) -> None:
+    def test_region_search_forwards_filters(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_cache: Mock) -> None:
         mock_search.return_value = make_raw_offers("84")
 
         response = self.client.get("/?mots_cles=ia&territoire_type=region&territoire=84")
@@ -107,10 +111,11 @@ class WebAppTest(unittest.TestCase):
         self.assertEqual(mock_search.call_args.kwargs["region"], "84")
         self.assertIn("2 offres trouvées pour la région 84", body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_raw_offers", return_value=[])
     @patch("src.web_app.load_market_context_rows", return_value=[])
     @patch("src.web_app.iter_search_offres", side_effect=RuntimeError("API indisponible"))
-    def test_api_error_is_rendered_without_traceback(self, _mock_search: Mock, _mock_context: Mock, _mock_raw: Mock) -> None:
+    def test_api_error_is_rendered_without_traceback(self, _mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_cache: Mock) -> None:
         response = self.client.get("/?mots_cles=python")
         body = response.get_data(as_text=True)
 
@@ -118,23 +123,25 @@ class WebAppTest(unittest.TestCase):
         self.assertIn("API indisponible", body)
         self.assertNotIn("Traceback", body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.load_raw_offers", return_value=[])
     @patch("src.web_app.load_market_context_rows", return_value=[])
     @patch("src.web_app.iter_search_offres", return_value=[])
-    def test_empty_page_state(self, _mock_search: Mock, _mock_context: Mock, _mock_raw: Mock) -> None:
+    def test_empty_page_state(self, _mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_cache: Mock) -> None:
         response = self.client.get("/?mots_cles=python")
         body = response.get_data(as_text=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertIn("Aucune offre ne correspond à cette recherche", body)
 
+    @patch("src.web_app.has_precomputed_data", return_value=False)
     @patch("src.web_app.compute_match")
     @patch("src.web_app._current_profile_snapshot")
     @patch("src.web_app._current_user_id", return_value=1)
     @patch("src.web_app.load_raw_offers", return_value=[])
     @patch("src.web_app.load_market_context_rows", return_value=[])
     @patch("src.web_app.iter_search_offres")
-    def test_search_results_are_sorted_by_best_match_score_first(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_user_id: Mock, mock_profile: Mock, mock_match: Mock) -> None:
+    def test_search_results_are_sorted_by_best_match_score_first(self, mock_search: Mock, _mock_context: Mock, _mock_raw: Mock, _mock_user_id: Mock, mock_profile: Mock, mock_match: Mock, _mock_cache: Mock) -> None:
         raw_offers = [
             {
                 "id": "high",

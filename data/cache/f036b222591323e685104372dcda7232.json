@@ -1,0 +1,51 @@
+{
+  "key": "offer_extraction:4048892",
+  "value": {
+    "id": "4048892",
+    "intitule": "Développeur JAVA (H/F)",
+    "entreprise": "",
+    "territoire": "45 - Orléans",
+    "ville": "45234",
+    "code_postal": "45000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-20",
+    "date": "2026-06-20",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4048892",
+    "description": "Description du poste :\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\nDescription de l'entreprise\nSopra Steria , acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative. Sopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2024, le Groupe a réalisé un chiffre d'affaires de 5,8 milliards d'euros.\nThe world is how we shape it*\nDescription du poste\nVotre rôle et vos missions :\nPrendre en charge la conception, le développement et l'évolution d'applicatifs critiques (B2C, B2B, internes ou distribués) en Java (microservices) et React.js (SPA) dans des environnements exigeant : performance, sécurité, scalabilité, CI/CD avancé.\nBackend - Java (obligatoire)***Développement de microservices Java 17+ / Spring Boot 3+\n* Architecture distribuée / event-driven : Kafka obligatoire\n* Conception et exposition d'API REST (standardisation, versioning)\n* Implémentation de traitements batch : Spring Batch\n* Optimisation de performances : multithreading, gestion mémoire, profiling\n* Interaction avec Oracle / PostgreSQL , tuning SQL, indexation\n* Robustesse & sécurité : OAuth2, JWT, RBAC , normes internes\nFrontend - React.js (obligatoire)***Développement SPA : React 18+, TypeScript, Redux Toolkit\n* Intégration Design System (Material, interne ou équivalent)\n* Gestion d'état avancée, rendering optimisé\n* Tests frontend : Cypress / Jest\n* Accessibilité : respect WCAG/RGAA\nDevOps / Environnement***CI/CD : GitLab CI ou Jenkins , pipelines avancés\n* Docker, orchestrateurs Kubernetes\n* Monitoring & observabilité : Grafana, Prometheus, ELK\n* Qualité : SonarQube, TDD fortement valorisé\nMéthodes***Organisation Agile/Scrum ou modèle hybride\n* Documentation technique (OpenAPI, Confluence)\n* Culture engineering forte : revue de code, pair programming\nQualifications\n5 ans minimum sur stack Java + React.js (pas de profils séparés backend-only ou frontend-only)***Expérience significative sur des applications critiques dans au moins un environnement haute volumétrie / temps réel sécurité renforcée disponibilité 24/7 scalabilité horizontale\n* Maîtrise microservices , Kafka , Docker , Kubernetes , CI/CD\n* Déjà intervenu(e) en responsabilité technique sur un périmètre complet (end-to-end)\nInformations supplémentaires\n* Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n* Un package avantages intéressant : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation.\n* Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.\n* Plusieurs centaines de formations accessibles en toute autonomie avec Sopra Steria Academy.\n* La possibilité de s'engager auprès de notre fondation ou de notre partenaire « Vendredi L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore Employeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les profils.***",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Docker",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "JavaScript",
+      "Kubernetes",
+      "PostgreSQL",
+      "React",
+      "SQL",
+      "TypeScript",
+      "Vue.js",
+      "Spring"
+    ],
+    "salaire_min": 51000,
+    "salaire_max": 51000,
+    "teletravail": "télétravail",
+    "diplomes_requis": [],
+    "experience_requise": "3 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 14,
+      "diplomes_count": 0,
+      "has_salary": false,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-22T18:53:36.668523",
+  "input_hash": "e595e9fb4aaf0d859ac8d2be13465bc88835cec74591eae857f7c86b75cce87b",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}
