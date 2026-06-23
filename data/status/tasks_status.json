@@ -1,15 +1,16 @@
 {
   "tasks": {
     "import_offers": {
-      "status": "success",
-      "started_at": "2026-06-22T18:49:33.909974",
-      "completed_at": "2026-06-22T18:49:51.346896",
+      "status": "error",
+      "started_at": "2026-06-23T06:38:27.601002",
+      "completed_at": "2026-06-23T06:38:28.180841",
       "stats": {
         "total_offers": 896,
         "new_offers": 10,
         "updated_offers": 886,
         "errors": 0
-      }
+      },
+      "error": "Expecting property name enclosed in double quotes: line 7874 column 1 (char 501234)"
     },
     "normalize_offers": {
       "status": "success",
