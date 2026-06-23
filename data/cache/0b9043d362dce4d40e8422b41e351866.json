@@ -1,0 +1,61 @@
+{
+  "key": "offer_extraction:4120203",
+  "value": {
+    "id": "4120203",
+    "intitule": "Expert(e) en attaques physiques (H/F)",
+    "entreprise": "NEXTGEN RH",
+    "territoire": "33 - Bordeaux",
+    "ville": "33063",
+    "code_postal": "33000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-23",
+    "date": "2026-06-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4120203",
+    "description": "RESPONSABILITÉS : Notre client est un acteur en tête de proue de l'innovation, spécialisée dans la sécurité logicielle et matérielle. L'entreprise a développé une forte présence à l'international. Dans le cadre de l'accroissement de son activité, notre client recherche un(e) : Expert(e) en attaques physiques (H/F) CDI - BORDEAUX (33) - 40-45K€ Sous la responsabilité du Directeur Technique, vous intégrez le pôle expertise R&D, hautement qualifié, et serez en charge de développer des solutions logicielles et matérielles pour une plateforme d'analyse de sécurité, ainsi que de réaliser des évaluations techniques pour des clients internationaux. Vos principales missions : • Développer des outils et des bibliothèques techniques pour une plateforme d'investigation sécurité. • Participer à des projets d'innovation et d'évaluation de la résistance des dispositifs. • Animer des formations techniques sur les attaques physiques. • Rédiger des rapports et supports techniques. PROFIL RECHERCHÉ : Vous êtes titulaire d'un master ou d'un doctorat en informatique (ou équivalent) et disposez d'une solide expertise en analyse d'injection de fautes, depuis la mise en place matérielle jusqu'à l'exploitation des attaques. Vous maîtrisez les outils d'instrumentation matérielle tels que les oscilloscopes ou les platines XY et possédez de bonnes connaissances en conception électronique ainsi qu'en microarchitectures de puces. Une expérience en logiciel bas niveau et en rétro-ingénierie constitue un atout, tout comme la maîtrise de Python. Vous communiquez couramment en anglais, à l'écrit comme à l'oral. Sur le plan personnel, vous faites preuve d'excellentes capacités de communication, d'un fort esprit d'équipe, d'une grande détermination et d'autonomie. Passionné par la technologie, vous êtes analytique, orienté résolution de problèmes et allez au bout des projets que vous entreprenez. Contrat et avantages : • Contrat cadre en CDI 38h avec RTT • Primes d'intéressement • Vous évoluerez dans un environnement de travail dynamique et stimulant, au sein du laboratoire de recherche et d'une équipe experte. • Tickets restaurant, mutuelle, forfait mobilité durable, etc. Processus de recrutement : NEXTGEN RH vous accompagne également tout au long du processus de recrutement à travers une approche fondamentalement humaine. 1/ Échange téléphonique avec votre chargé(e) de recrutement 2/ Entretien physique ou visio avec votre chargé de recrutement 3/ Entretiens et test chez notre client.",
+    "metier": "Expert / Experte systèmes et réseaux informatiques",
+    "niveau": "junior",
+    "competences": [
+      "Instrumentation",
+      "Intelligence artificielle",
+      "Python",
+      "Électronique",
+      "Rédaction de rapports",
+      "Résolution de problèmes",
+      "Sécurité informatique",
+      "API",
+      "Backend"
+    ],
+    "salaire_min": 40000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "master",
+        "level": 8,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Vous êtes titulaire d'un master ou d'un doctorat en informatique (ou équivalent) et disposez d'une solide expertise en analyse d'injection de fautes, depuis la mise en place matérielle jusqu'à l'exploitation des attaques.",
+        "confidence": 0.9
+      },
+      {
+        "label": "doctorat",
+        "level": 10,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Vous êtes titulaire d'un master ou d'un doctorat en informatique (ou équivalent) et disposez d'une solide expertise en analyse d'injection de fautes, depuis la mise en place matérielle jusqu'à l'exploitation des attaques.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 9,
+      "diplomes_count": 2,
+      "has_salary": true,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-23T09:01:37.202894",
+  "input_hash": "d37fbea5f72e42ba8957b0201bd5fde0d855ca35e7f3534096231e972160977c",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

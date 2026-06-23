@@ -3,83 +3,73 @@
   "value": {
     "territoire": "13 - MARSEILLE 01",
     "periode_jours": 365,
-    "nombre_offres": 3,
+    "nombre_offres": 2,
     "competences": {
-      "Backend": 3,
-      "Intelligence artificielle": 3,
-      "Acquisition": 2,
       "Architecture Microservices": 2,
+      "Backend": 2,
       "Gestion de projet": 2,
+      "Intelligence artificielle": 2,
+      "Acquisition": 1,
       "Android": 1,
-      "API": 1,
       "Data engineering": 1,
       "Java": 1,
-      "Pipelines De Données": 1,
       "Python": 1,
       "React": 1,
       "Résolution De Problèmes": 1
     },
     "competences_details": [
       {
-        "nom": "Backend",
-        "count": 3,
-        "percentage": 100.0,
-        "variants": {
-          "Backend": 3
-        }
-      },
-      {
-        "nom": "Intelligence artificielle",
-        "count": 3,
-        "percentage": 100.0,
-        "variants": {
-          "Intelligence artificielle": 3
-        }
-      },
-      {
-        "nom": "Acquisition",
-        "count": 2,
-        "percentage": 66.7,
-        "variants": {
-          "Acquisition": 2
-        }
-      },
-      {
         "nom": "Architecture Microservices",
         "count": 2,
-        "percentage": 66.7,
+        "percentage": 100.0,
         "variants": {
           "Architecture microservices": 2
         }
       },
       {
+        "nom": "Backend",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Backend": 2
+        }
+      },
+      {
         "nom": "Gestion de projet",
         "count": 2,
-        "percentage": 66.7,
+        "percentage": 100.0,
         "variants": {
           "Gestion de projet": 2
         }
       },
       {
+        "nom": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Intelligence artificielle": 2
+        }
+      },
+      {
+        "nom": "Acquisition",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Acquisition": 1
+        }
+      },
+      {
         "nom": "Android",
         "count": 1,
-        "percentage": 33.3,
+        "percentage": 50.0,
         "variants": {
           "Android": 1
         }
       },
       {
-        "nom": "API",
-        "count": 1,
-        "percentage": 33.3,
-        "variants": {
-          "API": 1
-        }
-      },
-      {
         "nom": "Data engineering",
         "count": 1,
-        "percentage": 33.3,
+        "percentage": 50.0,
         "variants": {
           "Data Engineering": 1
         }
@@ -87,23 +77,15 @@
       {
         "nom": "Java",
         "count": 1,
-        "percentage": 33.3,
+        "percentage": 50.0,
         "variants": {
           "Java": 1
         }
       },
       {
-        "nom": "Pipelines De Données",
-        "count": 1,
-        "percentage": 33.3,
-        "variants": {
-          "Pipelines de données": 1
-        }
-      },
-      {
         "nom": "Python",
         "count": 1,
-        "percentage": 33.3,
+        "percentage": 50.0,
         "variants": {
           "Python": 1
         }
@@ -111,7 +93,7 @@
       {
         "nom": "React",
         "count": 1,
-        "percentage": 33.3,
+        "percentage": 50.0,
         "variants": {
           "React": 1
         }
@@ -119,42 +101,36 @@
       {
         "nom": "Résolution De Problèmes",
         "count": 1,
-        "percentage": 33.3,
+        "percentage": 50.0,
         "variants": {
           "Résolution de problèmes": 1
         }
       }
     ],
     "competences_variants": {
-      "Backend": {
-        "Backend": 3
-      },
-      "Intelligence artificielle": {
-        "Intelligence artificielle": 3
-      },
-      "Acquisition": {
-        "Acquisition": 2
-      },
       "Architecture Microservices": {
         "Architecture microservices": 2
+      },
+      "Backend": {
+        "Backend": 2
       },
       "Gestion de projet": {
         "Gestion de projet": 2
       },
+      "Intelligence artificielle": {
+        "Intelligence artificielle": 2
+      },
+      "Acquisition": {
+        "Acquisition": 1
+      },
       "Android": {
         "Android": 1
-      },
-      "API": {
-        "API": 1
       },
       "Data engineering": {
         "Data Engineering": 1
       },
       "Java": {
         "Java": 1
-      },
-      "Pipelines De Données": {
-        "Pipelines de données": 1
       },
       "Python": {
         "Python": 1
@@ -167,321 +143,276 @@
       }
     },
     "metiers": {
-      "Chargé / Chargée d'affaires foncières": 1,
       "Développeur / Développeuse web": 1,
       "Professeur / Professeure de collège et de lycée": 1
     },
     "niveau": {
-      "junior": 1,
       "intermediaire": 2
     },
     "contrats": {
-      "CDD - 12 Mois": 2,
-      "CDD - 24 Mois": 1
+      "CDD - 12 Mois": 2
     },
     "cooccurrences": [
       {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Backend",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Architecture Microservices",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
         "competence_a": "Backend",
         "competence_b": "Intelligence artificielle",
-        "count": 3,
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
         "percentage": 100.0
       },
       {
         "competence_a": "Acquisition",
-        "competence_b": "Backend",
-        "count": 2,
-        "percentage": 66.7
-      },
-      {
-        "competence_a": "Acquisition",
-        "competence_b": "Intelligence artificielle",
-        "count": 2,
-        "percentage": 66.7
-      },
-      {
-        "competence_a": "Architecture Microservices",
-        "competence_b": "Backend",
-        "count": 2,
-        "percentage": 66.7
-      },
-      {
-        "competence_a": "Architecture Microservices",
-        "competence_b": "Gestion de projet",
-        "count": 2,
-        "percentage": 66.7
-      },
-      {
-        "competence_a": "Architecture Microservices",
-        "competence_b": "Intelligence artificielle",
-        "count": 2,
-        "percentage": 66.7
-      },
-      {
-        "competence_a": "Backend",
-        "competence_b": "Gestion de projet",
-        "count": 2,
-        "percentage": 66.7
-      },
-      {
-        "competence_a": "Gestion de projet",
-        "competence_b": "Intelligence artificielle",
-        "count": 2,
-        "percentage": 66.7
-      },
-      {
-        "competence_a": "Acquisition",
         "competence_b": "Architecture Microservices",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Acquisition",
+        "competence_b": "Backend",
+        "count": 1,
+        "percentage": 50.0
       },
       {
         "competence_a": "Acquisition",
         "competence_b": "Data engineering",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Acquisition",
         "competence_b": "Gestion de projet",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Acquisition",
-        "competence_b": "Pipelines De Données",
+        "competence_b": "Intelligence artificielle",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Acquisition",
         "competence_b": "Python",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Acquisition",
         "competence_b": "Résolution De Problèmes",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Android",
         "competence_b": "Architecture Microservices",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Android",
         "competence_b": "Backend",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Android",
         "competence_b": "Gestion de projet",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Android",
         "competence_b": "Intelligence artificielle",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Android",
         "competence_b": "Java",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Android",
         "competence_b": "React",
         "count": 1,
-        "percentage": 33.3
-      },
-      {
-        "competence_a": "API",
-        "competence_b": "Acquisition",
-        "count": 1,
-        "percentage": 33.3
-      },
-      {
-        "competence_a": "API",
-        "competence_b": "Backend",
-        "count": 1,
-        "percentage": 33.3
-      },
-      {
-        "competence_a": "API",
-        "competence_b": "Intelligence artificielle",
-        "count": 1,
-        "percentage": 33.3
-      },
-      {
-        "competence_a": "API",
-        "competence_b": "Pipelines De Données",
-        "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Data engineering",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Java",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Python",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "React",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Résolution De Problèmes",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Backend",
         "competence_b": "Data engineering",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Backend",
         "competence_b": "Java",
         "count": 1,
-        "percentage": 33.3
-      },
-      {
-        "competence_a": "Backend",
-        "competence_b": "Pipelines De Données",
-        "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Backend",
         "competence_b": "Python",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Backend",
         "competence_b": "React",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Backend",
         "competence_b": "Résolution De Problèmes",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Gestion de projet",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Intelligence artificielle",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Python",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Résolution De Problèmes",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Java",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Python",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "React",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Résolution De Problèmes",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Java",
         "count": 1,
-        "percentage": 33.3
-      },
-      {
-        "competence_a": "Intelligence artificielle",
-        "competence_b": "Pipelines De Données",
-        "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Python",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "React",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Résolution De Problèmes",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Java",
         "competence_b": "React",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       },
       {
         "competence_a": "Python",
         "competence_b": "Résolution De Problèmes",
         "count": 1,
-        "percentage": 33.3
+        "percentage": 50.0
       }
     ],
-    "fiabilite": 0.075,
+    "fiabilite": 0.05,
     "skill_sets": [
       [
         "Intelligence artificielle",
@@ -492,13 +423,6 @@
         "Résolution De Problèmes",
         "Architecture Microservices",
         "Backend"
-      ],
-      [
-        "Intelligence artificielle",
-        "Acquisition",
-        "API",
-        "Backend",
-        "Pipelines De Données"
       ],
       [
         "Gestion de projet",
@@ -528,15 +452,6 @@
         "contrat": "CDD - 12 Mois",
         "date": "2026-06-12",
         "url": "https://candidat.francetravail.fr/offres/recherche/detail/209RKXJ"
-      },
-      {
-        "id": "208ZHWC",
-        "intitule": "Développeur Foncier H/F - Alternance 24 mois (H/F)",
-        "entreprise": "NEXITY",
-        "territoire": "13 - MARSEILLE 01",
-        "contrat": "CDD - 24 Mois",
-        "date": "2026-06-01",
-        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208ZHWC"
       }
     ],
     "offers": [
@@ -557,20 +472,11 @@
         "contrat": "CDD - 12 Mois",
         "date": "2026-06-12",
         "url": "https://candidat.francetravail.fr/offres/recherche/detail/209RKXJ"
-      },
-      {
-        "id": "208ZHWC",
-        "intitule": "Développeur Foncier H/F - Alternance 24 mois (H/F)",
-        "entreprise": "NEXITY",
-        "territoire": "13 - MARSEILLE 01",
-        "contrat": "CDD - 24 Mois",
-        "date": "2026-06-01",
-        "url": "https://candidat.francetravail.fr/offres/recherche/detail/208ZHWC"
       }
     ]
   },
-  "computed_at": "2026-06-22T19:03:16.469526",
-  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "computed_at": "2026-06-23T22:07:39.860928",
+  "input_hash": "91fc788c16ed9201708db1352b49ad95a116a554d06dd94879cf5e213d4f4b53",
   "source_version": "",
   "model_version": "",
   "status": "success"

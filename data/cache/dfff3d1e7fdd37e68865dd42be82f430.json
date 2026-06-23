@@ -1,0 +1,69 @@
+{
+  "key": "offer_extraction:4100470",
+  "value": {
+    "id": "4100470",
+    "intitule": "INGÉNIEUR EN DÉVELOPPEMENT PYTHON / DJANGO/ TYPESCRIPT/ VUE.JS (SIÈGE) - H/F",
+    "entreprise": "Inserm",
+    "territoire": "75 - Paris 13e Arrondissement",
+    "ville": "75113",
+    "code_postal": "75013",
+    "contrat": "CDD - 12 Mois",
+    "date_creation": "2026-06-22",
+    "date": "2026-06-22",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4100470",
+    "description": "Description : MISSION PRINCIPALE : Au sein du Service des Solutions et du Développement des Usages Numériques, l’ingénieur en développement informatique, la personne recrutée en charge des missions centrées sur la conception, le développement et l’industrialisation de solutions SI, régaliennes, informatique scientifique et d’intelligence artificielle (IA). Ces missions sont : MISSION 1 : TRADUCTION TECHNIQUE DES BESOINS FONCTIONNELS * Transformer les besoins fonctionnels en exigences et solutions adaptées et à forte valeur ajoutée * Contribuer à l’analyse fonctionnelle des besoins des utilisateurs * Évaluer les opportunités ainsi que la faisabilité technologique des applications informatiques * Rédiger le cahier des charges techniques à partir des spécifications fonctionnelles MISSION 2 : CONCEPTION ET DÉVELOPPEMENT D’APPLICATIONS INFORMATIQUES, DE MODÈLES D’IA ET DE MACHINE LEARNING * Concevoir et de développer des solutions informatiques, des agents conversationnels, de modèles d’IA et de Machine Learning (supervisé, non supervisé, Deep Learning) en s’appuyant sur l’écosystème Python ainsi que de paramétrer les progiciels IA retenus par le DSI * Participer à la structuration et à l’optimisation des bases de données * Garantir l’harmonisation et l’industrialisation de l’ensemble des composants logiciels * Rédiger une documentation complète afin de faciliter leur usage par les utilisateurs finaux et leur prise en main par le service de production MISSION 3 : TESTS ET RECETTE * Définir les protocoles et scénarios de tests unitaires et les tests de charge * Accompagner le métier et corrigera les éventuels dysfonctionnements * Vérifier la conformité des performances et des fonctionnalités de la solution avec les exigences formulées par le client MISSION 4 : MISE EN PRODUCTION ET INDUSTRIALISATION DES MODÈLES (MLOPS) * Garantir la mise en production des solutions développées (IA, …) et assurer leur déploiement effectif auprès des utilisateurs finaux et dans le respect de l’ensemble des bonnes pratiques * Automatiser et gérer le cycle de vie des applications (versioning, tests, déploiement, supervision et amélioration continue) MISSION 5 : MAINTENANCE ÉVOLUTIVE ET CORRECTIVE * Assurer la continuité, la fiabilité et l’adaptabilité des applications après leur mise en production * Corriger les anomalies et les dysfonctionnements identifiés (maintenance corrective) * Mettre en œuvre des améliorations, optimisations et nouvelles fonctionnalités pour répondre aux évolutions techniques, réglementaires ou métiers (maintenance évolutive) Profil recherché : CONNAISSANCES : FRAMEWORKS ET BIBLIOTHÈQUES IA/ML * Machine Learning : scikit-learn, XGBoost, LightGBM * Deep Learning : TensorFlow, Keras, PyTorch * Traitement de données : NumPy, Pandas * Maîtrise de la création et de la maintenance de scripts notamment Ansible, ainsi que de la containerisation (Docker, orchestration Kubernetes) * Maîtrise des scripts Shell, des scripts Ansible et des technologies de containerisation LANGAGES DE PROGRAMMATION * Python : indispensable pour le développement de modèles IA et le Scripting * C, C++, Java, C# : utiles pour l’intégration avec d’autres systèmes ou pour l’optimisation des performances * SQL et NoSQL : pour la gestion et l’interrogation des bases de données BASES DE DONNÉES ET GESTION DE DONNÉES * Bases relationnelles : PostgreSQL, MySQL, MariaDB * Bases NoSQL : MongoDB, Redis * Data Lakes et Big Data : Hadoop, Spark, Kafka (optionnel selon projets) ENVIRONNEMENT CLOUD (SOUVENT REQUIS) * AWS, GCP ou Azure pour le déploiement et le stockage de modèles et données * Environnements VMware (vSphere, vCenter, NSX) * Services spécifiques IA : AI Platform, Azure ML ORCHESTRATION ET MLOPS * Pipelines de données et workflow : Airflow, Prefect, Kubeflow * Conteneurisation et déploiement : Docker, Kubernetes * Versioning et CI/CD : Git, GitLab CI/CD, Jenkins SAVOIR-FAIRE : * Maîtrise de l’anglais technique indispensable * Maîtrise technique : solides connaissances en Python, IA, Machine Learning (ML), orchestration de workflows et bases de données APTITUDES : * Capacité d’adaptation : savoir travailler dans des environnements technologiques variés et en évolution rapide * Compétences en résolution de problèmes : identifier rapidement les dysfonctionnements et proposer des solutions efficaces * Autonomie et initiative : être force de proposition dans la conception et l’optimisation des solutions * Esprit d’équipe et communication : collaborer efficacement avec les équipes métiers, data et IT EXPÉRIENCE(S) SOUHAITÉ(S) : * Expérience significative en développement logiciel avec des langages tels que Python, C, C++, Java ou C# * Expérience en développement et déploiement de solutions d’Intelligence Artificielle, Machine Learning ou Deep Learning * Expérience avec AWS ou un autre Cloud provider * Bonne pratique des mé...",
+    "metier": "Ingénieur / Ingénieure DevOps",
+    "niveau": "intermediaire",
+    "competences": [
+      "AWS",
+      "Ansible",
+      "Azure",
+      "Cahier des charges",
+      "Deep learning",
+      "Docker",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "Kubernetes",
+      "MLOps",
+      "Machine learning",
+      "MySQL",
+      "NoSQL",
+      "NumPy",
+      "Pandas",
+      "PostgreSQL",
+      "PyTorch",
+      "Python",
+      "SQL",
+      "TensorFlow",
+      "Vision",
+      "scikit-learn",
+      "Déploiement de modèles"
+    ],
+    "salaire_min": 1000,
+    "salaire_max": 1000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Description : MISSION PRINCIPALE : Au sein du Service des Solutions et du Développement des Usages Numériques, l’ingénieur en développement informatique, la personne recrutée en charge des missions centrées sur la conception, le développement et l’industrialisation de solutions SI, régaliennes, informatique scientifique et d’intelligence artificielle (IA).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "2 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 24,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-23T09:01:36.769241",
+  "input_hash": "cb43db3e934265b0ed5ce2db6549725a8eadc7aed7cb50b60b0983135bb90aed",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

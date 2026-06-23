@@ -1,0 +1,67 @@
+{
+  "key": "offer_extraction:4120597",
+  "value": {
+    "id": "4120597",
+    "intitule": "Directeur Data & Intelligence Artificielle (F/H)",
+    "entreprise": "NEXTGEN RH",
+    "territoire": "75 - Paris",
+    "ville": "75056",
+    "code_postal": "",
+    "contrat": "CDI",
+    "date_creation": "2026-06-23",
+    "date": "2026-06-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4120597",
+    "description": "RESPONSABILITÉS : Rattaché(e) à la Direction Générale et en collaboration avec les équipes IT, vous serez responsable de : • Définir et piloter la stratégie Data & IA du groupe en cohérence avec les objectifs business. • Superviser les équipes Data Science, IA et Big Data pour développer des solutions innovantes. • Assurer la gouvernance des données et veiller à la conformité réglementaire (RGPD, éthique de l'IA, etc.). • Identifier et mettre en place les technologies émergentes (Machine Learning, NLP, Computer Vision, etc.). Accompagner les clients • dans la mise en œuvre de stratégies Data et IA adaptées à leurs enjeux. • Piloter les projets de transformation en lien avec les directions métiers et IT. • Représenter l'entreprise lors d'événements et contribuer au rayonnement de notre expertise sur le marché. PROFIL RECHERCHÉ : Titulaire d'un Bac+5 en Data Science, Intelligence Artificielle ou Informatique (école d'ingénieur, université), vous justifiez d'au moins 10 ans d'expérience en gestion de projets Data et IA avec une forte dimension managériale. Vous possédez une expertise en architectures Data & IA (Cloud, Big Data, Machine Learning, Deep Learning), une maîtrise des outils et langages (Python, TensorFlow, Spark, Kubernetes...) ainsi qu'un leadership affirmé vous permettant de fédérer des équipes pluridisciplinaires. Votre vision stratégique et votre compréhension des enjeux business sont des atouts majeurs pour ce poste. Avantages : • Projets innovants • Forte R&D • Package attractif Processus : • Talent Acquisition • Entretien Direction IT & Générale • Étude de cas technique N'hésitez pas pas à postuler !",
+    "metier": "Data scientist",
+    "niveau": "junior",
+    "competences": [
+      "Acquisition",
+      "Deep learning",
+      "Gestion de projet",
+      "Intelligence artificielle",
+      "Kubernetes",
+      "Machine learning",
+      "Python",
+      "TensorFlow",
+      "Vision",
+      "MLOps",
+      "Protection des données",
+      "Qualité des données",
+      "Data Engineering",
+      "Model drift",
+      "Intégration continue"
+    ],
+    "salaire_min": 75000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Titulaire d'un Bac+5 en Data Science, Intelligence Artificielle ou Informatique (école d'ingénieur, université), vous justifiez d'au moins 10 ans d'expérience en gestion de projets Data et IA avec une forte dimension managériale.",
+        "confidence": 0.9
+      },
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "PROFIL RECHERCHÉ : Titulaire d'un Bac+5 en Data Science, Intelligence Artificielle ou Informatique (école d'ingénieur, université), vous justifiez d'au moins 10 ans d'expérience en gestion de projets Data et IA avec une forte dimension managériale.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 15,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-23T09:01:36.325759",
+  "input_hash": "5736c2accf562d0570bcf2a519719e2518a81616f6f9c4f957c252c40fa021f0",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

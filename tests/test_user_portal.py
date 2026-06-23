@@ -414,7 +414,8 @@ class UserPortalTest(unittest.TestCase):
             },
         ]
 
-        with patch("src.user_portal._load_local_offers", return_value=offers):
+        with patch("src.user_portal.has_precomputed_data", return_value=False), \
+             patch("src.user_portal._load_local_offers", return_value=offers):
             response = self.client.get("/dashboard-utilisateur")
             body = response.get_data(as_text=True)
             self.assertEqual(response.status_code, 200)
@@ -469,7 +470,8 @@ class UserPortalTest(unittest.TestCase):
             },
         ]
 
-        with patch("src.user_portal._load_local_offers", return_value=offers):
+        with patch("src.user_portal.has_precomputed_data", return_value=False), \
+             patch("src.user_portal._load_local_offers", return_value=offers):
             response = self.client.get("/dashboard-utilisateur")
             body = response.get_data(as_text=True)
             self.assertEqual(response.status_code, 200)
@@ -527,7 +529,8 @@ class UserPortalTest(unittest.TestCase):
             },
         ]
 
-        with patch("src.user_portal._load_local_offers", return_value=offers):
+        with patch("src.user_portal.has_precomputed_data", return_value=False), \
+             patch("src.user_portal._load_local_offers", return_value=offers):
             response = self.client.get("/dashboard-utilisateur")
             body = response.get_data(as_text=True)
             self.assertEqual(response.status_code, 200)
@@ -682,7 +685,8 @@ class UserPortalTest(unittest.TestCase):
             },
         ]
 
-        with patch("src.user_portal._load_local_offers", return_value=offers):
+        with patch("src.user_portal.has_precomputed_data", return_value=False), \
+             patch("src.user_portal._load_local_offers", return_value=offers):
             recommendations_body = self.client.get("/mes-offres").get_data(as_text=True)
             self.assertLess(recommendations_body.find("SkillFirst"), recommendations_body.find("LocFirst"))
 
@@ -816,7 +820,8 @@ class UserPortalTest(unittest.TestCase):
             },
         ]
 
-        with patch("src.user_portal._load_local_offers", return_value=offers):
+        with patch("src.user_portal.has_precomputed_data", return_value=False), \
+             patch("src.user_portal._load_local_offers", return_value=offers):
             response = self.client.get("/mes-offres")
             body = response.get_data(as_text=True)
             self.assertEqual(response.status_code, 200)

@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:4130139",
+  "value": {
+    "id": "4130139",
+    "intitule": "Ingénieur logiciel pour les essais satellites (f/h)",
+    "entreprise": "",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-23",
+    "date": "2026-06-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4130139",
+    "description": "Job Description: Airbus Defence and Space recherche un Ingénieur logiciel pour les essais environnementaux sur satellites (h/f). Vous rejoindrez nos équipes dudépartement d’ingénierie logicielle. L'activité de ce département est dédiée aux essais en environnement sur satellites, et en particulier les essais radiofréquence. Vous intégrerez une équipe de 10 personnes, dynamique, engagée et solidaire sur le site d’Airbus Defence and Space à Toulouse. Vous interviendrez sur la définition, le développement et la maintenance des logiciels d’application dédiés aux essais fonctionnels en radiofréquence, notamment pour les satellites de télécommunication. Ce poste nécessite une habilitation de sécurité ou l'éligibilité à une habilitation par les autorités reconnues. Le candidat doit posséder la nationalité française conformément à l’IGI 1300 du 9 août 2021 (paragraphe 1.2.2.1). Chez AIRBUS : Capitale mondiale de l'aéronautique et capitale européenne de la recherche spatiale, Toulouse est une ville dynamique du sud-ouest de la France desservie par un aéroport international. Idéalement située entre la mer Méditerranée et l'océan Atlantique et à proximité des Pyrénées, elle offre de nombreuses possibilités d'activités de plein air ! Parce que nous prenons soin de vous : • Avantages financiers : Salaire attractif, accords d’intéressement et de participation, plan d'épargne salariale abondé par Airbus, plan d’actionnariat salarié sur la base du volontariat avec attribution d'actions gratuites en fonction du nombre d'actions souscrites. • Équilibre vie privée / professionnelle : Des jours de congés supplémentaires pour occasions spéciales et des options de transfert de congés, un comité d'entreprise proposant de nombreuses activités socio-culturelles et d’autres services. • Bien-être / santé : couverture complémentaire des frais de santé et de prévoyance (incapacité, invalidité, décès). Selon le site : centre de services de santé, services de conciergerie, salle de sport, application de covoiturage. • Développement individuel : des opportunités d’évolution et des possibilités de formations nombreuses (catalogue de plus de 10.000 e-formations disponibles en libre accès pour développer votre employabilité, certifications, programmes de développement accéléré, parcours expert, mobilité nationale et internationale). L’atelier d’Assemblage, d’Intégration et Test (AIT) : Pour en savoir plus sur nos activités et découvrir notre environnement de travail, regardez nos vidéos : “How a satellite is built” : https://www.youtube.com/watch?v=fft0IWOwx9s “Assembly, Integration and Test (AIT) for Communication Satellite in Airbus Defence and Space” : https://www.youtube.com/watch?v=CCh3b2al7Dg Afin de satisfaire aux conditions de travail au sein de l’atelier vous serez accompagné(e) durant votre montée en compétence, via des formations obligatoires et le passage de certifications ainsi que l’encadrement par des personnels plus expérimentés. Vos missions L’architecture et le développement logiciel Vous rejoindrez notre équipe agile et participerez à la conception et au développement de nos logiciels pour les essais Radiofréquences. Vous interviendrez sur : La définition des moyens d’essai : baies et logiciels de test La définition et mise en place d’architectures et applicatifs logiciels Le développement et validation de procédures automatiques de tests et mesuresLa correction d’anomalies et les évolutions de nos applicationsLa mise à jour de notre documentation (notes techniques, manuel utilisateurs, formation)La formation des équipes ingénierie et opération L’innovation et la transversalité Vous participerez aux activités transverses de l’équipe qui contribuent à la capitalisation de notre savoir-faire et notre réactivité.Vous pourrez être amené(e) à coordonner des activités avec nos collègues Anglais ou Allemands pour le déploiement de nouveaux moyens d'essais. Des déplacements professionnels occasionnels sont à prévoir en France, Europe, à l’International et sur des sites de lancement de ce fait, vous devez être disposé(e) à vous déplacer en conséquence. Vous pourrez être amené(e) à travailler en équipe en horaires décalés pour couvrir des phases critiques et en astreinte. Votre profil Compétences techniques Vous possédez des compétences dans les domaines suivants : Développement logiciel Automatisation de mesures physiques Des connaissances en : Méthode de travail : Agilité (Kanban), Jira, BigPicture Logiciel et Langages : Java, Angular, Spring, Kafka, Maven, Rest API, Eclipse RCP, SQL Server, git / svn, unix, RangeDB, OCBridge Capacité à documenter des développements (dossier de justification, spécifications, dossier de design, dossier de tests) Vous disposez d’une première expérien",
+    "metier": "Cartographe",
+    "niveau": "intermediaire",
+    "competences": [
+      "API REST",
+      "Aéronautique",
+      "Gestion de projet",
+      "Git",
+      "Intelligence artificielle",
+      "Java",
+      "SQL",
+      "Travail en équipe",
+      "Coordination d'activités",
+      "Backend",
+      "API",
+      "Pipelines de données"
+    ],
+    "salaire_min": 10000,
+    "salaire_max": 10000,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Job Description: Airbus Defence and Space recherche un Ingénieur logiciel pour les essais environnementaux sur satellites (h/f).",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Expérience exigée",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-23T09:01:36.398645",
+  "input_hash": "7cc108b9a4c61bc7f952340db11017e3f9d4bdbc19270c49a95f62ebff6831cd",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}
