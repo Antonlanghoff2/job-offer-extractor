@@ -33,6 +33,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 def run_import_offers() -> Dict[str, Any]:
     """Importe les nouvelles offres depuis France Travail.
 
+    Si l'import échoue (pas de credentials, API indisponible),
+    la tâche continue avec les données existantes.
+
     Returns:
         Statistiques de l'import.
     """
@@ -56,14 +59,14 @@ def run_import_offers() -> Dict[str, Any]:
         
         return stats
     except Exception as e:
+        logger.warning("Import offres ignore: %s", e)
         task_status.update_task(
             "import_offers",
-            "error",
+            "skipped",
             completed_at=datetime.now().isoformat(),
             error=str(e),
         )
-        logger.error(f"Erreur import offres: {e}")
-        raise
+        return {"status": "skipped", "error": str(e)}
 
 
 def run_normalize_offers() -> Dict[str, Any]:

@@ -1,0 +1,55 @@
+{
+  "key": "offer_extraction:4143265",
+  "value": {
+    "id": "4143265",
+    "intitule": "Data Consultant / Data et Supply Chain Analyst 'AirSupply' (H/F)",
+    "entreprise": "",
+    "territoire": "75 - Paris 1er Arrondissement",
+    "ville": "75101",
+    "code_postal": "75001",
+    "contrat": "CDI",
+    "date_creation": "2026-06-23",
+    "date": "2026-06-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4143265",
+    "description": "Chez nous, on ne fait pas que de la technique, on accompagne la transformation digitale des plus grands acteurs industriels. Dans le cadre d'un projet d'envergure pour l'un de nos clients leaders du secteur aéronautique, nous ouvrons une opportunité en transverse entre la Data et la Supply Chain. ?? Votre Mission : Dompter la Data pour piloter la PerformanceRattaché(e) aux équipes métiers et en lien direct avec la DSI et le partenaire externe (SupplyOn), votre rôle sera de centraliser, fiabiliser et faire parler les données liées à l'outil AirSupply. Vos activités principales s'articuleront autour de trois axes : - Business Intelligence et KPI : Concevoir et déployer un tableau de bord centralisé à l'échelle du Groupe sous Power BI, et harmoniser le référentiel d'indicateurs de performance (dont les KPI Sell Side). - Gouvernance et Structuration : Analyser les documents existants éparpillés, réaliser un inventaire complet et bâtir un espace SharePoint hautement structuré pour rendre l'information accessible et fluide. - Accompagnement au changement : Assurer le suivi du projet et accompagner les différentes filiales du groupe dans la prise en main de ces nouveaux outils data. Une habilitation de défense est impérative pour ce poste (nationalité française et casier judiciaire vierge) Ingénieur de formation avec 4-5 ans d'expérience minimum en BI dans le domaine de l'industrie Maitrise de Power BI dans un environnement industriel sur de la supply chain. Vos compétences techniques : - Maîtrise incontournable de Power BI (Data Visualisation). - Excellente compréhension des flux Supply Chain et de la logique des KPI de performance. - Très bonne connaissance de l'environnement collaboratif SharePoint. - La connaissance de l'outil AirSupply est un atout majeur pour être opérationnel(le) rapidement.",
+    "metier": "Analyste d'étude informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Aéronautique",
+      "Git",
+      "Intelligence artificielle",
+      "Power BI",
+      "Pilotage de la performance",
+      "Veille technologique",
+      "Feature Engineering",
+      "Model drift",
+      "Déploiement de modèles",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 50000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Une habilitation de défense est impérative pour ce poste (nationalité française et casier judiciaire vierge) Ingénieur de formation avec 4-5 ans d'expérience minimum en BI dans le domaine de l'industrie Maitrise de Power BI dans un environnement industriel sur de la supply chain.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 10,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-23T22:04:23.920205",
+  "input_hash": "789f2280db27c99c1ae26409493f052be262be588699dc367ac56b6d1463d8ac",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

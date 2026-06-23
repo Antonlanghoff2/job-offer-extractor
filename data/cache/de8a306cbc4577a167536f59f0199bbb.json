@@ -11,31 +11,32 @@
     "date_creation": "2026-04-03",
     "date": "2026-04-03",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/1128720",
-    "description": "Description :\n\n\nAu sein de l'équipe Produit ML & Analytics (5 personnes), vous êtes le pont entre l'algorithmie et la réalité terrain. Votre mission : industrialiser le composant IA de détection d'anomalies comportementales du produit analytics — un livrable on-prem robuste, léger, et directement déployable chez les clients finaux.\n\n \n\n_Ici, pas de notebooks isolés. Vous développez des services Go qui ingèrent, transforment et servent des modèles de détection directement en production. Vous pensez \"produit final\", pas \"prototype\"._\n\n  VOS MISSIONS\nConcevoir des services et agents d'ingestion haute performance en Go pour traiter les flux de logs en temps réelDévelopper et industrialiser les modèles de détection d'anomalies sur séries temporelles (comportements d'accès, comptes utilisateurs) — Random Forest, chaînes de Markov, algorithmes légers adaptés aux petites machinesGarantir la portabilité et la robustesse de la stack data : packaging on-prem, environnements air-gapped, ressources contraintesAssurer le bridge métier : investigation des besoins, documentation technique en anglais, synchro avec les équipes produit et R&DAppliquer une rigueur Software Engineer à la donnée : tests unitaires, intégration, CI/CD\n\t\t\n\t\t\nProfil recherché :\n\t\t\n\t\t\nHARD SKILLS INDISPENSABLES :\n\n\t* Go confirmé : concurrence, gestion mémoire, écriture de code performant en production\n\t* ML classique : anomaly detection, séries temporelles, algorithmes légers (Random Forest, Markov) — pas LLM/GenAI\n\t* Culture data & SQL : modélisation OLAP/OLTP, columnar, indexes, partitions\n\t* Déploiement on-prem : containers, packaging, gestion des ressources contraintes\n\t* Anglais courant (documentation et communication internationale)\n\n \n\nPROFIL ET PARCOURS :\n\n\t* 4–7 ans d'expérience minimum — profil mid-senior confirmé, expérience industrielle prime sur R&D\n\t* Startup, ISV ou éditeur logiciel — a déjà fait tourner du ML en production réelle\n\t* Sensibilité produit forte : vous pensez à l'utilisateur final et à la maintenabilité, pas seulement à valider une hypothèse\n\n",
+    "description": "Description : Au sein de l'équipe Produit ML & Analytics (5 personnes), vous êtes le pont entre l'algorithmie et la réalité terrain. Votre mission : industrialiser le composant IA de détection d'anomalies comportementales du produit analytics — un livrable on-prem robuste, léger, et directement déployable chez les clients finaux. VOS MISSIONS * Concevoir des services et agents d'ingestion haute performance en Go pour traiter les flux de logs en temps réel * Développer et industrialiser les modèles de détection d'anomalies sur séries temporelles (comportements d'accès, comptes utilisateurs) — Random Forest, chaînes de Markov, algorithmes légers adaptés aux petites machines * Garantir la portabilité et la robustesse de la stack data : packaging on-prem, environnements air-gapped, ressources contraintes * Assurer le bridge métier : investigation des besoins, documentation technique en anglais, synchro avec les équipes produit et R&D * Appliquer une rigueur Software Engineer à la donnée : tests unitaires, intégration, CI/CD Profil recherché : HARD SKILLS INDISPENSABLES : * Go confirmé : concurrence, gestion mémoire, écriture de code performant en production * ML classique : anomaly detection, séries temporelles, algorithmes légers (Random Forest, Markov) — pas LLM/GenAI * Culture data & SQL : modélisation OLAP/OLTP, columnar, indexes, partitions * Déploiement on-prem : containers, packaging, gestion des ressources contraintes * Anglais courant (documentation et communication internationale) PROFIL ET PARCOURS : * 4–7 ans d'expérience * Startup, ISV ou éditeur logiciel — a déjà fait tourner du ML en production réelle * Sensibilité produit forte : vous pensez à l'utilisateur final et à la maintenabilité, pas seulement à valider une hypothèse WALLIX, C’EST AUSSI : - Un environnement structuré… qui n’a pas perdu son âme de start-up - Une évolution à double sens : vous évoluez avec nous… et nous évoluons avec vous - Une entreprise « à taille humaine », qui place l’intégration et l’épanouissement de ses « Wallixien(ne)s » au cœur de ses préoccupations * LABEL HAPPY AT WORK 2020, 2021, 2022, 2024 et 2025 * Séminaire d’intégration & déjeuner, Kick-Off dans de belles destinations ou en remote * CHARTE DU TÉLÉTRAVAIL (2 jours par semaine), 25 JOURS de congés payés & 12 RTT (1 par mois) * Possibilité de mobilité interne pour explorer de nouveaux défis, * Participation à 50 % des frais de transport * Mutuelle et prévoyance * Prime de vacances * CARTE SWILE avec une provision de 10,5 € par jour (50 % de contribution de l’employé) * CSE * Bonne humeur et super équipe ! SI VOUS ÊTES À LA HAUTEUR DE CE DÉFI ET SOUHAITEZ REJOINDRE UNE ENTREPRISE TECHNOLOGIQUE EN PLEINE CROISSANCE AVEC DES OPPORTUNITÉS D'ÉVOLUTION DE CARRIÈRE, ALORS N'HÉSITEZ PLUS, ET REJOIGNEZ-NOUS !",
     "metier": "Développeur / Développeuse informatique",
     "niveau": "intermediaire",
     "competences": [
       "Intelligence artificielle",
       "Machine learning",
       "SQL",
+      "Vision",
       "Déploiement de modèles",
       "Computer Vision"
     ],
-    "salaire_min": 5000,
-    "salaire_max": 5000,
-    "teletravail": null,
+    "salaire_min": 2024,
+    "salaire_max": 2025,
+    "teletravail": "remote",
     "diplomes_requis": [],
     "experience_requise": "2 An(s)",
     "_extraction_metadata": {
       "extracted": true,
-      "competences_count": 5,
+      "competences_count": 6,
       "diplomes_count": 0,
       "has_salary": false,
-      "has_teletravail": false
+      "has_teletravail": true
     }
   },
-  "computed_at": "2026-06-22T18:51:26.541697",
-  "input_hash": "5b99867c498444f2109a0f5553646f3479bb1062477cd19ac621ce91f20eef14",
+  "computed_at": "2026-06-23T09:01:36.827465",
+  "input_hash": "c939a93d4c75ca96fc516c893acea4e5e715c8a414cae4f6463000c5dff50ce2",
   "source_version": "1.0",
   "model_version": "1.0",
   "status": "success"

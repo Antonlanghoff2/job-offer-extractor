@@ -5,29 +5,38 @@
     "periode_jours": 365,
     "nombre_offres": 2,
     "competences": {
+      "Coûts": 2,
       "Gestion de projet": 2,
+      "Git": 2,
       "Intelligence artificielle": 2,
-      "Acquisition": 1,
       "API": 1,
       "Architecture Microservices": 1,
       "Backend": 1,
-      "Coûts": 1,
       "Data engineering": 1,
+      "Documentation Technique": 1,
       "Déploiement De Modèles": 1,
-      "Git": 1,
       "MLOps": 1,
       "Model Drift": 1,
       "Optimisation De Performance": 1,
+      "Optimisation Des Performances": 1,
       "Power BI": 1,
+      "Product Management": 1,
       "Protection Des Données": 1,
       "Qualité Des Données": 1,
+      "Résolution De Problèmes": 1,
       "SQL": 1,
       "Sécurité Informatique": 1,
-      "Veille Technologique": 1,
-      "Vision": 1,
-      "Vue.js": 1
+      "Veille Technologique": 1
     },
     "competences_details": [
+      {
+        "nom": "Coûts",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Coûts": 2
+        }
+      },
       {
         "nom": "Gestion de projet",
         "count": 2,
@@ -37,19 +46,19 @@
         }
       },
       {
+        "nom": "Git",
+        "count": 2,
+        "percentage": 100.0,
+        "variants": {
+          "Git": 2
+        }
+      },
+      {
         "nom": "Intelligence artificielle",
         "count": 2,
         "percentage": 100.0,
         "variants": {
           "Intelligence artificielle": 2
-        }
-      },
-      {
-        "nom": "Acquisition",
-        "count": 1,
-        "percentage": 50.0,
-        "variants": {
-          "Acquisition": 1
         }
       },
       {
@@ -77,14 +86,6 @@
         }
       },
       {
-        "nom": "Coûts",
-        "count": 1,
-        "percentage": 50.0,
-        "variants": {
-          "Coûts": 1
-        }
-      },
-      {
         "nom": "Data engineering",
         "count": 1,
         "percentage": 50.0,
@@ -93,19 +94,19 @@
         }
       },
       {
+        "nom": "Documentation Technique",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Documentation technique": 1
+        }
+      },
+      {
         "nom": "Déploiement De Modèles",
         "count": 1,
         "percentage": 50.0,
         "variants": {
           "Déploiement de modèles": 1
-        }
-      },
-      {
-        "nom": "Git",
-        "count": 1,
-        "percentage": 50.0,
-        "variants": {
-          "Git": 1
         }
       },
       {
@@ -134,11 +135,27 @@
         }
       },
       {
+        "nom": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Optimisation des performances": 1
+        }
+      },
+      {
         "nom": "Power BI",
         "count": 1,
         "percentage": 50.0,
         "variants": {
           "Power BI": 1
+        }
+      },
+      {
+        "nom": "Product Management",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Product Management": 1
         }
       },
       {
@@ -155,6 +172,14 @@
         "percentage": 50.0,
         "variants": {
           "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0,
+        "variants": {
+          "Résolution de problèmes": 1
         }
       },
       {
@@ -180,33 +205,20 @@
         "variants": {
           "Veille technologique": 1
         }
-      },
-      {
-        "nom": "Vision",
-        "count": 1,
-        "percentage": 50.0,
-        "variants": {
-          "Vision": 1
-        }
-      },
-      {
-        "nom": "Vue.js",
-        "count": 1,
-        "percentage": 50.0,
-        "variants": {
-          "Vue.js": 1
-        }
       }
     ],
     "competences_variants": {
+      "Coûts": {
+        "Coûts": 2
+      },
       "Gestion de projet": {
         "Gestion de projet": 2
       },
+      "Git": {
+        "Git": 2
+      },
       "Intelligence artificielle": {
         "Intelligence artificielle": 2
-      },
-      "Acquisition": {
-        "Acquisition": 1
       },
       "API": {
         "API": 1
@@ -217,17 +229,14 @@
       "Backend": {
         "Backend": 1
       },
-      "Coûts": {
-        "Coûts": 1
-      },
       "Data engineering": {
         "Data Engineering": 1
       },
+      "Documentation Technique": {
+        "Documentation technique": 1
+      },
       "Déploiement De Modèles": {
         "Déploiement de modèles": 1
-      },
-      "Git": {
-        "Git": 1
       },
       "MLOps": {
         "MLOps": 1
@@ -239,14 +248,23 @@
         "Optimisation de performance": 1,
         "Optimisation des performances": 1
       },
+      "Optimisation Des Performances": {
+        "Optimisation des performances": 1
+      },
       "Power BI": {
         "Power BI": 1
+      },
+      "Product Management": {
+        "Product Management": 1
       },
       "Protection Des Données": {
         "Protection des données": 1
       },
       "Qualité Des Données": {
         "Qualité des données": 1
+      },
+      "Résolution De Problèmes": {
+        "Résolution de problèmes": 1
       },
       "SQL": {
         "SQL": 1
@@ -256,27 +274,43 @@
       },
       "Veille Technologique": {
         "Veille technologique": 1
-      },
-      "Vision": {
-        "Vision": 1
-      },
-      "Vue.js": {
-        "Vue.js": 1
       }
     },
     "metiers": {
-      "Data Analyst": 1,
-      "Développeur / Développeuse informatique": 1
+      "Chargé / Chargée d'affaires BTP": 1,
+      "Data Analyst": 1
     },
     "niveau": {
-      "junior": 1,
-      "intermediaire": 1
+      "intermediaire": 2
     },
     "contrats": {
-      "CDD - 3 Mois": 1,
-      "CDI": 1
+      "CDI": 2
     },
     "cooccurrences": [
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Gestion de projet",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 2,
+        "percentage": 100.0
+      },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Intelligence artificielle",
@@ -284,28 +318,10 @@
         "percentage": 100.0
       },
       {
-        "competence_a": "Acquisition",
-        "competence_b": "Gestion de projet",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Acquisition",
+        "competence_a": "Git",
         "competence_b": "Intelligence artificielle",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Acquisition",
-        "competence_b": "Vision",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Acquisition",
-        "competence_b": "Vue.js",
-        "count": 1,
-        "percentage": 50.0
+        "count": 2,
+        "percentage": 100.0
       },
       {
         "competence_a": "API",
@@ -603,30 +619,18 @@
       },
       {
         "competence_a": "Coûts",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
         "competence_b": "Déploiement De Modèles",
         "count": 1,
         "percentage": 50.0
       },
       {
         "competence_a": "Coûts",
-        "competence_b": "Gestion de projet",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Coûts",
-        "competence_b": "Git",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Coûts",
-        "competence_b": "Intelligence artificielle",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Coûts",
         "competence_b": "MLOps",
         "count": 1,
         "percentage": 50.0
@@ -645,7 +649,19 @@
       },
       {
         "competence_a": "Coûts",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
         "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Product Management",
         "count": 1,
         "percentage": 50.0
       },
@@ -658,6 +674,12 @@
       {
         "competence_a": "Coûts",
         "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Coûts",
+        "competence_b": "Résolution De Problèmes",
         "count": 1,
         "percentage": 50.0
       },
@@ -758,6 +780,42 @@
         "percentage": 50.0
       },
       {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Gestion de projet",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Gestion de projet",
         "count": 1,
@@ -831,12 +889,6 @@
       },
       {
         "competence_a": "Gestion de projet",
-        "competence_b": "Git",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Gestion de projet",
         "competence_b": "MLOps",
         "count": 1,
         "percentage": 50.0
@@ -855,7 +907,19 @@
       },
       {
         "competence_a": "Gestion de projet",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
         "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Product Management",
         "count": 1,
         "percentage": 50.0
       },
@@ -868,6 +932,12 @@
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Résolution De Problèmes",
         "count": 1,
         "percentage": 50.0
       },
@@ -886,24 +956,6 @@
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Veille Technologique",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Gestion de projet",
-        "competence_b": "Vision",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Gestion de projet",
-        "competence_b": "Vue.js",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Git",
-        "competence_b": "Intelligence artificielle",
         "count": 1,
         "percentage": 50.0
       },
@@ -927,7 +979,19 @@
       },
       {
         "competence_a": "Git",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
         "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Product Management",
         "count": 1,
         "percentage": 50.0
       },
@@ -940,6 +1004,12 @@
       {
         "competence_a": "Git",
         "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Résolution De Problèmes",
         "count": 1,
         "percentage": 50.0
       },
@@ -981,7 +1051,19 @@
       },
       {
         "competence_a": "Intelligence artificielle",
+        "competence_b": "Optimisation Des Performances",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
         "competence_b": "Power BI",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Product Management",
         "count": 1,
         "percentage": 50.0
       },
@@ -994,6 +1076,12 @@
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Résolution De Problèmes",
         "count": 1,
         "percentage": 50.0
       },
@@ -1012,18 +1100,6 @@
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Veille Technologique",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Intelligence artificielle",
-        "competence_b": "Vision",
-        "count": 1,
-        "percentage": 50.0
-      },
-      {
-        "competence_a": "Intelligence artificielle",
-        "competence_b": "Vue.js",
         "count": 1,
         "percentage": 50.0
       },
@@ -1154,6 +1230,18 @@
         "percentage": 50.0
       },
       {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Optimisation Des Performances",
+        "competence_b": "Résolution De Problèmes",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
         "competence_a": "Power BI",
         "competence_b": "Protection Des Données",
         "count": 1,
@@ -1180,6 +1268,12 @@
       {
         "competence_a": "Power BI",
         "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Résolution De Problèmes",
         "count": 1,
         "percentage": 50.0
       },
@@ -1242,12 +1336,6 @@
         "competence_b": "Veille Technologique",
         "count": 1,
         "percentage": 50.0
-      },
-      {
-        "competence_a": "Vision",
-        "competence_b": "Vue.js",
-        "count": 1,
-        "percentage": 50.0
       }
     ],
     "fiabilite": 0.05,
@@ -1275,13 +1363,25 @@
       [
         "Gestion de projet",
         "Intelligence artificielle",
-        "Vue.js",
-        "Acquisition",
-        "Vision"
+        "Git",
+        "Coûts",
+        "Product Management",
+        "Documentation Technique",
+        "Résolution De Problèmes",
+        "Optimisation Des Performances"
       ]
     ],
     "offres": [
       {
+        "id": "4143925",
+        "intitule": "Consultant Logiciel Gestion de Projet BTP H/F",
+        "entreprise": "",
+        "territoire": "75 - Paris 10e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4143925"
+      },
+      {
         "id": "209ZRFX",
         "intitule": "Data Analyst / BI Analyst - Power BI (H/F)",
         "entreprise": "BRAIN LOGIC",
@@ -1289,19 +1389,19 @@
         "contrat": "CDI",
         "date": "2026-06-19",
         "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZRFX"
-      },
-      {
-        "id": "3209591",
-        "intitule": "Développeur immobilier - F/H - Informatique de gestion (H/F)",
-        "entreprise": "ICF Habitat",
-        "territoire": "75 - Paris 10e Arrondissement",
-        "contrat": "CDD - 3 Mois",
-        "date": "2026-05-30",
-        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3209591"
       }
     ],
     "offers": [
       {
+        "id": "4143925",
+        "intitule": "Consultant Logiciel Gestion de Projet BTP H/F",
+        "entreprise": "",
+        "territoire": "75 - Paris 10e Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-23",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4143925"
+      },
+      {
         "id": "209ZRFX",
         "intitule": "Data Analyst / BI Analyst - Power BI (H/F)",
         "entreprise": "BRAIN LOGIC",
@@ -1309,20 +1409,11 @@
         "contrat": "CDI",
         "date": "2026-06-19",
         "url": "https://candidat.francetravail.fr/offres/recherche/detail/209ZRFX"
-      },
-      {
-        "id": "3209591",
-        "intitule": "Développeur immobilier - F/H - Informatique de gestion (H/F)",
-        "entreprise": "ICF Habitat",
-        "territoire": "75 - Paris 10e Arrondissement",
-        "contrat": "CDD - 3 Mois",
-        "date": "2026-05-30",
-        "url": "https://candidat.francetravail.fr/offres/recherche/detail/3209591"
       }
     ]
   },
-  "computed_at": "2026-06-22T19:03:39.216777",
-  "input_hash": "a457f685f1ebf34538f57311df6c7fe02bb909788fe743b1d28b53c544dd7c37",
+  "computed_at": "2026-06-23T22:06:37.321115",
+  "input_hash": "91fc788c16ed9201708db1352b49ad95a116a554d06dd94879cf5e213d4f4b53",
   "source_version": "",
   "model_version": "",
   "status": "success"

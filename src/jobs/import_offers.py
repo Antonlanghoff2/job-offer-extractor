@@ -37,12 +37,17 @@ def import_latest_offers() -> Dict[str, Any]:
     }
     
     try:
-        # Charger les offres existantes
         existing_offers = {}
         if RAW_OFFERS_PATH.exists():
-            with RAW_OFFERS_PATH.open("r", encoding="utf-8") as f:
-                existing_list = json.load(f)
-                existing_offers = {o.get("id"): o for o in existing_list if o.get("id")}
+            try:
+                with RAW_OFFERS_PATH.open("r", encoding="utf-8") as f:
+                    existing_list = json.load(f)
+                    existing_offers = {o.get("id"): o for o in existing_list if o.get("id")}
+            except json.JSONDecodeError as e:
+                logger.warning("Fichier raw corrompu (%s), reprise depuis zero", e)
+                backup = RAW_OFFERS_PATH.with_suffix(".json.broken")
+                RAW_OFFERS_PATH.rename(backup)
+                logger.info("Fichier corrompu deplace vers %s", backup)
         
         # Importer les nouvelles offres
         result = search_all_offres(

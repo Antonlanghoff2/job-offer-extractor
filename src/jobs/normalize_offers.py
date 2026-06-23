@@ -25,6 +25,9 @@ NORMALIZED_OFFERS_PATH = PROJECT_ROOT / "data" / "processed" / "offres_normalise
 def normalize_all_offers() -> Dict[str, Any]:
     """Normalise toutes les offres.
 
+    Si le fichier raw n'existe pas ou est corrompu, utilise le fichier
+    enrichi existant comme source.
+
     Returns:
         Statistiques de la normalisation.
     """
@@ -34,34 +37,56 @@ def normalize_all_offers() -> Dict[str, Any]:
         "errors": 0,
     }
     
-    if not RAW_OFFERS_PATH.exists():
-        logger.warning(f"Fichier introuvable: {RAW_OFFERS_PATH}")
+    ENRICHED_PATH = PROJECT_ROOT / "data" / "processed" / "offres_enrichies.json"
+    
+    source_path = RAW_OFFERS_PATH
+    source_offers = None
+    
+    if RAW_OFFERS_PATH.exists():
+        try:
+            with RAW_OFFERS_PATH.open("r", encoding="utf-8") as f:
+                source_offers = json.load(f)
+            if not isinstance(source_offers, list):
+                source_offers = None
+        except (json.JSONDecodeError, OSError) as e:
+            logger.warning("Fichier raw corrompu (%s), tentative avec fichier enrichi", e)
+            source_offers = None
+    
+    if source_offers is None and ENRICHED_PATH.exists():
+        logger.info("Utilisation du fichier enrichi comme source")
+        try:
+            with ENRICHED_PATH.open("r", encoding="utf-8") as f:
+                source_offers = json.load(f)
+            source_path = ENRICHED_PATH
+        except (json.JSONDecodeError, OSError) as e:
+            logger.error("Fichier enrichi aussi invalide: %s", e)
+            return stats
+    
+    if source_offers is None:
+        logger.warning("Aucun fichier d'offres disponible")
         return stats
     
     try:
-        with RAW_OFFERS_PATH.open("r", encoding="utf-8") as f:
-            raw_offers = json.load(f)
-        
-        stats["total_offers"] = len(raw_offers)
+        stats["total_offers"] = len(source_offers)
         
         normalized_offers = []
-        for offer in raw_offers:
+        for offer in source_offers:
             try:
                 normalized = normalize_france_travail_offer(offer)
                 normalized_offers.append(normalized)
                 stats["normalized"] += 1
             except Exception as e:
-                logger.error(f"Erreur normalisation offre {offer.get('id')}: {e}")
+                logger.error("Erreur normalisation offre %s: %s", offer.get('id'), e)
                 stats["errors"] += 1
         
         NORMALIZED_OFFERS_PATH.parent.mkdir(parents=True, exist_ok=True)
         with NORMALIZED_OFFERS_PATH.open("w", encoding="utf-8") as f:
             json.dump(normalized_offers, f, ensure_ascii=False, indent=2)
         
-        logger.info(f"Normalisation terminée: {stats['normalized']}/{stats['total_offers']} offres")
+        logger.info("Normalisation terminee: %s/%s offres", stats['normalized'], stats['total_offers'])
         
     except Exception as e:
-        logger.error(f"Erreur normalisation: {e}")
+        logger.error("Erreur normalisation: %s", e)
         stats["errors"] += 1
         raise
     

@@ -1,0 +1,65 @@
+{
+  "key": "offer_extraction:210FGKJ",
+  "value": {
+    "id": "210FGKJ",
+    "intitule": "Ingénieur Test Logiciel Embarqué - Temps Réel (H/F)",
+    "entreprise": "NBTECH TOULOUSE",
+    "territoire": "31 - Toulouse",
+    "ville": "31555",
+    "code_postal": "31000",
+    "contrat": "CDI",
+    "date_creation": "2026-06-23",
+    "date": "2026-06-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FGKJ",
+    "description": "Dans le cadre du renforcement de ses équipes, notre client recherche un Ingénieur Test Logiciel Embarqué Temps Réel (H/F) afin d'intervenir sur la validation, l'intégration et l'automatisation des tests de logiciels embarqués dans un environnement critique et à fortes contraintes temps réel.\n\nVous évoluerez dans un contexte technique riche : Linux embarqué, chaînes de boot, environnements temps réel, intégration sur cibles matérielles et protocoles bas niveau. Vous rejoindrez une équipe déjà en place et travaillerez en collaboration avec les pôles logiciel, système et électronique.\n\nVos missions principales :\n- Définir et exécuter les stratégies de test des logiciels embarqués temps réel.\n- Concevoir et automatiser les campagnes de validation et de non-régression.\n- Tester et valider les environnements Linux embarqués (U-Boot, kernel, applications).\n- Réaliser les tests d'intégration sur cible matérielle.\n- Analyser les anomalies, identifier les causes racines et suivre leur résolution.\n- Contribuer à l'amélioration continue des processus de test et d'automatisation.\n- Assurer la documentation et la traçabilité des activités de validation.\n\nInformations pratiques :\nDémarrage : dès que possible\nHoraires : Journée\nLocalisation : Toulouse\nEnvironnement : Linux embarqué / temps réel\n\nLe profil recherché :\nIssu(e) d'une formation Bac+5 en informatique embarquée ou équivalent, vous justifiez d'au moins 5 ans d'expérience en test/validation de logiciels embarqués dans des environnements techniques ou critiques.\n\nCompétences techniques indispensables :\nLinux embarqué\nTemps réel\nYocto / Buildroot\nU-Boot\nDéveloppement C\nTests d'intégration & validation logicielle\nGit\n\nCompétences appréciées :\nPython, Bash\nJenkins / GitLab CI\nDrivers Linux\nProtocoles embarqués : SPI, I2C, UART, CAN, Ethernet\n\nQualités attendues :\nRigueur et autonomie\nEsprit analytique\nCapacité à investiguer des problématiques complexes\nBon relationnel et travail en équipe\n\nLangues :\nAnglais technique (documentation, échanges écrits)",
+    "metier": "Développeur / Développeuse informatique",
+    "niveau": "intermediaire",
+    "competences": [
+      "Git",
+      "Linux",
+      "Python",
+      "Tests automatisés",
+      "Résolution de problèmes",
+      "Documentation technique",
+      "Pipelines de données",
+      "Qualité des données",
+      "Gestion de projet",
+      "Intégration continue",
+      "Automatisation de pipelines",
+      "Analyse de données",
+      "Sécurité informatique"
+    ],
+    "salaire_min": 34000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "Ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "Dans le cadre du renforcement de ses équipes, notre client recherche un Ingénieur Test Logiciel Embarqué Temps Réel (H/F) afin d'intervenir sur la validation, l'intégration et l'automatisation des tests de logiciels embarqués dans un environnement critique et à fortes contraintes temps réel.",
+        "confidence": 0.9
+      },
+      {
+        "label": "Bac+5",
+        "level": 4,
+        "required": true,
+        "source_sentence": "Issu(e) d'une formation Bac+5 en informatique embarquée ou équivalent, vous justifiez d'au moins 5 ans d'expérience en test/validation de logiciels embarqués dans des environnements techniques ou critiques.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "5 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 13,
+      "diplomes_count": 2,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-23T22:04:22.995817",
+  "input_hash": "5049d611fc4781d7ab370948fdcf5e4449eefce111c4166f50f27d4e4c252bc2",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -1,0 +1,57 @@
+{
+  "key": "offer_extraction:210DWZR",
+  "value": {
+    "id": "210DWZR",
+    "intitule": "Data manager SNDS (H/F)",
+    "entreprise": "",
+    "territoire": "69 - Lyon 3e Arrondissement",
+    "ville": "69383",
+    "code_postal": "69003",
+    "contrat": "CDI",
+    "date_creation": "2026-06-23",
+    "date": "2026-06-23",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210DWZR",
+    "description": "Rejoignez Heva en tant que Data Manager spécialisé dans les données de santé !\nVous avez une première expérience en gestion de données et vous souhaitez évoluer dans un environnement à la fois exigeant, technique et stimulant ? Vous aimez comprendre des données complexes, relever des défis techniques et travailler en équipe ? \nManagers dynamiques où l'entraide et le partage de compétences font partie du quotidien. Curieux et passionnés par la technique, nous aimons relever ensemble des challenges autour de la donnée et faire évoluer nos pratiques.\nVous interviendrez dans la valorisation des données du Système National des Données de Santé (SNDS), couvrant l'ensemble du parcours de soins en France, des soins de villes aux soins hospitaliers sur plusieurs années. Vous serez notamment en charge de la préparation, de la qualité et de la mise à dispositions des données pour des projets d'études épidémiologiques. Vous travaillerez en étroite collaboration avec des profils variés (chefs de projet, rédacteurs médicaux, pharmaco épidémiologistes, statisticiens, data scientists) dans le but de traduire les besoins métiers en données exploitables pour les analyses. Vous participerez à la conception et à l'optimisation des pipelines de traitements de données.\nVos missions\n- Gestion opérationnelle des données SNDS\no Concevoir, maintenir et exécuter les processus de chargement, extraction, transformation, historisation et mise à jour de bases de données complexes et volumineuses\no Concevoir, maintenir et exécuter les traitements spécifiques de la base de données(sélection des soins selon des règles de gestion précises liées aux règles de facturations)\no Gérer les référentiels, tables métiers et espaces projets, pour plusieurs environnements et plusieurs études\no Assurer l'intégrité, la qualité et la structuration des données mises à disposition des équipes d'analyses\no Garantir la traçabilité complète des traitements (rédaction de documents détaillant les algorithmes appliqués), des versions de codes (utilisation de GitLab) et des livraisons (procédures qualité)\no Relire le travail des collaborateurs pour participer aux process de validation et de qualité\n- Expertise technique\no Adapter les outils et langages de programmation aux plateformes utilisées, aux traitements à réaliser et à la volumétrie des données exploitées (PostgreSQL, Trino, Spark, Python, etc.)\n- Support SNDS aux études et aux analyses\no Réaliser la sélection des populations d'études dans les bases de données\no Présenter les résultats des traitements de Data Management à l'équipe projet\no Participer à la relecture des documents descriptifs de l'étude\no Traduire les besoins des études épidémiologiques en jeu de données exploitable par les analystes\no Accompagner les équipes dans la compréhension des données SNDS, et l'exploitation correcte des tables\n- Conformité réglementaire\no Prendre connaissance et appliquer les règles de sécurité (accès, minimisation, traçabilité, exports, etc.) sur les traitements des données de santé (RGPD, CNIL, EDS)\n- Documentation\no Participer activement au maintien et à la production d'une documentation claire, exploitable et partagée",
+    "metier": "Data engineer",
+    "niveau": "junior",
+    "competences": [
+      "Git",
+      "Intelligence artificielle",
+      "PostgreSQL",
+      "Python",
+      "Data Engineering",
+      "Qualité des données",
+      "Pipelines de données",
+      "Analyse de données",
+      "Model drift",
+      "Protection des données",
+      "Sécurité informatique",
+      "Documentation technique"
+    ],
+    "salaire_min": 36000,
+    "salaire_max": 0,
+    "teletravail": null,
+    "diplomes_requis": [
+      {
+        "label": "but",
+        "level": 6,
+        "required": true,
+        "source_sentence": "Vous travaillerez en étroite collaboration avec des profils variés (chefs de projet, rédacteurs médicaux, pharmaco épidémiologistes, statisticiens, data scientists) dans le but de traduire les besoins métiers en données exploitables pour les analyses.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "Débutant accepté",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 12,
+      "diplomes_count": 1,
+      "has_salary": false,
+      "has_teletravail": false
+    }
+  },
+  "computed_at": "2026-06-23T22:04:23.681449",
+  "input_hash": "430281b77db1ceaa791caeb995e5eeec8a9680041cc769cc0acab4d744f429be",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}
