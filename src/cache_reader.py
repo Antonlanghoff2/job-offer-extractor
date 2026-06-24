@@ -30,6 +30,9 @@ TRENDS_PATH = DATA_PROCESSED / "trends.json"
 DASHBOARDS_PATH = DATA_PROCESSED / "dashboards.json"
 MATCHES_PATH = DATA_PROCESSED / "matches.json"
 
+CACHE_SCHEMA_VERSION = 2
+CACHE_SCHEMA_VERSION_PATH = DATA_PROCESSED / ".cache_schema_version"
+
 
 def _load_json_file(path: Path) -> Optional[Any]:
     """Charge un fichier JSON de manière sécurisée.
@@ -209,3 +212,62 @@ def has_precomputed_data() -> bool:
         True si au moins les offres existent.
     """
     return ENRICHED_OFFERS_PATH.exists() or NORMALIZED_OFFERS_PATH.exists()
+
+
+def get_cache_schema_version() -> int:
+    """Retourne la version du schéma de cache stockée.
+
+    Returns:
+        Version du schéma (0 si absente).
+    """
+    if not CACHE_SCHEMA_VERSION_PATH.exists():
+        return 0
+    try:
+        text = CACHE_SCHEMA_VERSION_PATH.read_text(encoding="utf-8").strip()
+        return int(text)
+    except (ValueError, OSError):
+        return 0
+
+
+def write_cache_schema_version(version: int = CACHE_SCHEMA_VERSION) -> None:
+    """Écrit la version courante du schéma de cache.
+
+    Args:
+        version: Version à écrire.
+    """
+    DATA_PROCESSED.mkdir(parents=True, exist_ok=True)
+    CACHE_SCHEMA_VERSION_PATH.write_text(str(version), encoding="utf-8")
+
+
+def is_cache_schema_valid() -> bool:
+    """Vérifie si le cache est compatible avec le schéma courant.
+
+    Returns:
+        True si la version du cache correspond.
+    """
+    return get_cache_schema_version() >= CACHE_SCHEMA_VERSION
+
+
+def invalidate_cache_if_needed() -> bool:
+    """Invalide les fichiers de cache si le schéma a changé.
+
+    Returns:
+        True si le cache a été invalidé.
+    """
+    if is_cache_schema_valid():
+        return False
+    old_version = get_cache_schema_version()
+    logger.warning(
+        "Schema de cache obsolete (v%s < v%s). Invalidation des fichiers.",
+        old_version,
+        CACHE_SCHEMA_VERSION,
+    )
+    for path in (ENRICHED_OFFERS_PATH, NORMALIZED_OFFERS_PATH, TRENDS_PATH, DASHBOARDS_PATH, MATCHES_PATH):
+        if path.exists():
+            try:
+                path.unlink()
+                logger.info("Fichier invalide supprime: %s", path)
+            except OSError as exc:
+                logger.error("Erreur suppression %s: %s", path, exc)
+    write_cache_schema_version()
+    return True

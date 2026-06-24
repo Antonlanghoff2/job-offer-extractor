@@ -315,6 +315,9 @@ def refresh_all() -> Dict[str, Any]:
         stats["status"] = "success"
         
         task_status.mark_refresh_complete()
+
+        from src.cache_reader import write_cache_schema_version
+        write_cache_schema_version()
         
         logger.info(f"Rafraîchissement terminé en {stats['total_duration']:.2f}s")
         

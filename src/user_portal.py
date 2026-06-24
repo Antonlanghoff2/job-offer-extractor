@@ -43,6 +43,18 @@ from src.cache_reader import (
     has_precomputed_data,
     get_last_refresh_time,
 )
+from src.presentation.offer_view_model import (
+    CACHE_SCHEMA_VERSION,
+    OfferViewModel,
+    build_match_view_model,
+    build_offer_view_model,
+    debug_offer_payload,
+    is_debug_mode,
+    normalize_criterion_scores,
+    resolve_offer_location,
+    resolve_offer_title,
+    resolve_offer_url,
+)
 
 try:  # pragma: no cover - imported by Flask when installed
     from flask import flash
@@ -1867,13 +1879,20 @@ def _current_job_matches(user_id: int) -> List[Dict[str, Any]]:
 def _explanation_with_offer_summary(match: Dict[str, Any]) -> Dict[str, Any]:
     explanation = dict(match.get("explanation") or {})
     offer = match.get("offer") or {}
+    resolved_title = resolve_offer_title(offer)
+    resolved_location = resolve_offer_location(offer)
     explanation["offer"] = {
-        "titre": offer.get("titre"),
+        "titre": resolved_title,
+        "intitule": resolved_title,
         "contrat": offer.get("contrat"),
-        "lieux": offer.get("lieux") or [],
+        "lieux": offer.get("lieux") or ([resolved_location] if resolved_location != "Lieu non renseigné" else []),
+        "territoire": offer.get("territoire"),
+        "ville": offer.get("ville"),
         "competences": offer.get("competences") or [],
         "source": offer.get("source"),
-        "url_originale": offer.get("url_originale"),
+        "url_originale": offer.get("url_originale") or offer.get("url"),
+        "entreprise": offer.get("entreprise"),
+        "teletravail": offer.get("teletravail"),
     }
     explanation["score_global"] = match.get("global_score")
     explanation["sous_scores"] = match.get("criterion_scores") or {}
@@ -1968,9 +1987,20 @@ def _compute_recommendations(user_id: int) -> List[Dict[str, Any]]:
                 offer = offers_by_id.get(offer_id, {})
                 details = cached.get("details") or {}
 
+                explanation = details.get("explanation") or {}
+                if isinstance(explanation, str):
+                    try:
+                        explanation = json.loads(explanation)
+                    except json.JSONDecodeError:
+                        explanation = {}
+
+                criterion_details = details.get("criterion_details") or {}
+                sous_scores = details.get("sous_scores") or {}
+                criterion_scores = details.get("criterion_scores") or {}
+
                 match = {
                     "offer_identifier": offer_id,
-                    "global_score": float(cached.get("score") or details.get("global_score") or 0),
+                    "global_score": float(cached.get("score") or details.get("global_score") or details.get("score_global") or 0),
                     "skill_score": float(details.get("skill_score") or 0),
                     "job_score": float(details.get("job_score") or 0),
                     "experience_score": float(details.get("experience_score") or 0),
@@ -1978,10 +2008,13 @@ def _compute_recommendations(user_id: int) -> List[Dict[str, Any]]:
                     "location_score": float(details.get("location_score") or 0),
                     "contract_score": float(details.get("contract_score") or 0),
                     "remote_score": float(details.get("remote_score") or 0),
-                    "matching_skills": cached.get("matching_skills") or details.get("matching_skills") or [],
-                    "missing_skills": cached.get("missing_skills") or details.get("missing_skills") or [],
-                    "explanation": details.get("explanation") or {},
-                    "criterion_details": details.get("criterion_details") or {},
+                    "salary_score": float(details.get("salary_score") or 0),
+                    "matching_skills": cached.get("matching_skills") or details.get("matching_skills") or details.get("competences_communes") or [],
+                    "missing_skills": cached.get("missing_skills") or details.get("missing_skills") or details.get("competences_manquantes") or [],
+                    "explanation": explanation,
+                    "sous_scores": sous_scores,
+                    "criterion_scores": criterion_scores,
+                    "criterion_details": criterion_details,
                     "offer": offer,
                 }
                 matches.append(match)
@@ -2067,23 +2100,18 @@ _CRITERION_LABELS = {
 
 
 def _render_score_bars(match: Dict[str, Any]) -> str:
-    sous_scores = match.get("sous_scores") or {}
-    criterion_details = match.get("criterion_details") or {}
-    if not sous_scores:
-        sous_scores = {}
-        for key in _CRITERION_LABELS:
-            score_val = float(match.get(f"{key}_score") or 0)
-            sous_scores[key] = {"score": score_val, "statut": "evalue" if score_val else "champ_absent"}
+    vm = build_match_view_model(match)
+    criterion_scores = vm.criterion_scores
     rows = []
-    for key, label in _CRITERION_LABELS.items():
-        info = sous_scores.get(key, {})
+    for key in ("skills", "job", "experience", "diploma", "location", "contract", "remote", "salary"):
+        info = criterion_scores.get(key) or {}
+        label = info.get("label") or key
         score = info.get("score")
-        statut = info.get("statut", "evalue")
-        details = (criterion_details.get(key) or {})
-        reason = details.get("reason") or ""
-        if score is None or statut == "champ_absent":
+        evaluated = info.get("evaluated", False)
+        reason = info.get("reason") or ""
+        if not evaluated or score is None:
             bar_class = "absent"
-            value_display = "—"
+            value_display = "Non évalué"
             width = 0
         else:
             score_f = float(score)
@@ -2122,16 +2150,21 @@ def _render_skills_tags(matching: List[str], missing: List[str]) -> str:
 
 
 def _render_offer_card(match: Dict[str, Any], show_detail_link: bool = True) -> str:
+    vm = build_match_view_model(match)
     offer = match.get("offer") or {}
     explanation = match.get("explanation") or {}
-    global_score = float(match.get("global_score") or 0)
+    global_score = float(vm.global_score or 0)
     score_int = int(round(global_score))
     ring_class = _score_ring_class(global_score)
-    url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
-    offer_id = str(match.get("offer_identifier") or "")
+    url = vm.url
+    if not url:
+        source = str(vm.source or "").lower().strip()
+        if source in {"", "france travail", "france_travail", "francetravail"}:
+            url = f"https://candidat.francetravail.fr/offres/recherche/detail/{vm.offer_id}"
+    offer_id = vm.offer_id
     detail_url = url_for("user_portal.recommendation_detail", offer_id=offer_id) if offer_id else None
-    matching_skills = match.get("matching_skills") or explanation.get("matching_skills") or []
-    missing_skills = match.get("missing_skills") or explanation.get("missing_skills") or []
+    matching_skills = vm.matched_skills or match.get("matching_skills") or explanation.get("matching_skills") or []
+    missing_skills = vm.missing_skills or match.get("missing_skills") or explanation.get("missing_skills") or []
     summary = explanation.get("summary") or ""
     detail_parts = explanation.get("details") or []
 
@@ -2141,22 +2174,44 @@ def _render_offer_card(match: Dict[str, Any], show_detail_link: bool = True) -> 
 
     url_html = ""
     if url:
-        url_html = f'<a class="btn" href="{escape(url)}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>'
+        url_html = f'<a class="btn" href="{escape(url)}" target="_blank" rel="noopener noreferrer">Voir l\u2019offre</a>'
     else:
         url_html = '<span class="muted">Lien indisponible</span>'
+
+    company_display = vm.company or "Entreprise non renseignée"
+    location_display = vm.location or "Lieu non renseigné"
+    contract_display = vm.contract or "Contrat non renseigné"
+    remote_display = vm.remote_text or "Télétravail non renseigné"
+    source_display = vm.source or "Source non renseignée"
+
+    debug_html = ""
+    if is_debug_mode():
+        debug_data = debug_offer_payload(
+            raw_offer=offer,
+            normalized_offer=offer,
+            match_result=match,
+            view_model=vm,
+        )
+        debug_html = (
+            f'<details style="margin-top:8px;font-size:0.75rem">'
+            f'<summary>Debug</summary>'
+            f'<pre style="max-height:300px;overflow:auto;background:#f4f4f4;padding:6px">'
+            f'{escape(json.dumps(debug_data, indent=2, ensure_ascii=False, default=str))}'
+            f"</pre></details>"
+        )
 
     return (
         f'<article class="offer-card">'
         f'<div class="offer-card__header">'
         f'<div class="score-ring {ring_class}">{score_int}</div>'
         f'<div class="offer-card__header-text">'
-        f'<h3 class="offer-title">{escape(offer.get("titre") or "Offre sans titre")}</h3>'
+        f'<h3 class="offer-title">{escape(vm.title)}</h3>'
         f'<div class="meta">'
-        f'<span>{escape(offer.get("entreprise") or "Entreprise non renseignée")}</span>'
-        f'<span>{escape(offer.get("lieux") and ", ".join(offer.get("lieux")) or "Lieu non renseigné")}</span>'
-        f'<span>{escape(offer.get("contrat") or "Contrat non renseigné")}</span>'
-        f'<span>{escape(offer.get("teletravail") or "Télétravail non renseigné")}</span>'
-        f'<span>{escape(offer.get("source") or "Source non renseignée")}</span>'
+        f'<span>{escape(company_display)}</span>'
+        f'<span>{escape(location_display)}</span>'
+        f'<span>{escape(contract_display)}</span>'
+        f'<span>{escape(remote_display)}</span>'
+        f'<span>{escape(source_display)}</span>'
         f"</div>"
         f"{detail_link_html}"
         f"</div>"
@@ -2167,6 +2222,7 @@ def _render_offer_card(match: Dict[str, Any], show_detail_link: bool = True) -> 
         f'<p>{escape(summary)}</p>'
         f'{"".join(f"<p>{escape(part)}</p>" for part in detail_parts) if detail_parts else ""}'
         f"</div>"
+        f'{debug_html}'
         f'<div class="actions" style="margin-top:12px">{url_html}</div>'
         f"</article>"
     )
@@ -2834,42 +2890,40 @@ def recommendation_detail(offer_id: str):
     offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
     if not offer and isinstance(match.get("offer"), dict):
         offer = match.get("offer")
-    offer_url = _offer_fallback_url(offer, offer_id)
-    global_score = float(explanation.get("global_score") or match.get("global_score") or 0)
-    matching_skills = explanation.get("matching_skills") or []
-    missing_skills = explanation.get("missing_skills") or []
-    summary = explanation.get("summary") or ""
-    detail_lines = explanation.get("details") or []
-    criterion_details = explanation.get("criterion_details") or {}
-    sous_scores = explanation.get("subscores") or {}
-    weights = explanation.get("weights") or {}
 
     match_dict = {
+        "offer_identifier": offer_id,
         "offer": offer,
-        "global_score": global_score,
+        "global_score": float(explanation.get("global_score") or match.get("global_score") or 0),
         "explanation": explanation,
-        "matching_skills": matching_skills,
-        "missing_skills": missing_skills,
-        "criterion_details": criterion_details,
-        "sous_scores": {},
+        "matching_skills": explanation.get("matching_skills") or [],
+        "missing_skills": explanation.get("missing_skills") or [],
+        "criterion_details": explanation.get("criterion_details") or {},
+        "sous_scores": explanation.get("sous_scores") or {},
+        "criterion_scores": explanation.get("criterion_scores") or {},
     }
     for key, label in _CRITERION_LABELS.items():
-        score_val = sous_scores.get(key)
-        if score_val is not None:
+        score_val = (explanation.get("subscores") or {}).get(key)
+        if score_val is not None and key not in match_dict["sous_scores"]:
             match_dict["sous_scores"][key] = {"score": float(score_val), "statut": "evalue"}
-        else:
-            match_dict["sous_scores"][key] = {"score": None, "statut": "champ_absent"}
+
+    vm = build_match_view_model(match_dict, offer, offer_identifier=offer_id)
+    offer_url = vm.url or _offer_fallback_url(offer, offer_id)
+    global_score = float(vm.global_score or 0)
+    summary = explanation.get("summary") or ""
 
     score_int = int(round(global_score))
     ring_class = _score_ring_class(global_score)
     url_html = ""
     if offer_url:
-        url_html = f'            <a class="btn" href="{escape(offer_url)}" target="_blank" rel="noopener noreferrer">Voir l’offre originale</a>'
+        url_html = f'            <a class="btn" href="{escape(offer_url)}" target="_blank" rel="noopener noreferrer">Voir l\u2019offre originale</a>'
     else:
         url_html = '<span class="muted">Lien indisponible</span>'
 
     weight_rows = []
-    for key, label in _CRITERION_LABELS.items():
+    weights = explanation.get("weights") or explanation.get("matching_weights") or {}
+    for key, criterion in vm.criterion_scores.items():
+        label = criterion.get("label", key)
         w = weights.get(key)
         if w is not None:
             weight_rows.append(f'<tr><td>{escape(label)}</td><td style="text-align:right;font-variant-numeric:tabular-nums">{float(w):.0f}%</td></tr>')
@@ -2952,16 +3006,16 @@ def recommendation_detail(offer_id: str):
         """,
         ring_class=ring_class,
         score_int=score_int,
-        offer_title=offer.get("titre") or "Offre sans titre",
-        offer_company=offer.get("entreprise") or "Entreprise non renseignée",
-        offer_location=", ".join(offer.get("lieux") or []) if offer.get("lieux") else "Lieu non renseigné",
-        offer_contract=offer.get("contrat") or "Contrat non renseigné",
-        offer_source=offer.get("source") or "Source non renseignée",
+        offer_title=vm.title,
+        offer_company=vm.company or "Entreprise non renseignée",
+        offer_location=vm.location or "Lieu non renseigné",
+        offer_contract=vm.contract or "Contrat non renseigné",
+        offer_source=vm.source or "Source non renseignée",
         summary=summary,
         score_bars=_render_score_bars(match_dict),
-        matching_skills=matching_skills,
-        missing_skills=missing_skills,
-        detail_lines=detail_lines,
+        matching_skills=vm.matched_skills or explanation.get("matching_skills", []),
+        missing_skills=vm.missing_skills or explanation.get("missing_skills", []),
+        detail_lines=explanation.get("details") or [],
         weight_table=weight_table,
         url_html=url_html,
     )
@@ -2988,26 +3042,25 @@ def dashboard():
         offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
         if not offer and isinstance(match.get("offer"), dict):
             offer = match.get("offer")
-        if not offer and isinstance(match.get("offer"), dict):
-            offer = match.get("offer")
+        vm_dash = build_match_view_model(match, offer)
         for skill in offer.get("competences") or explanation.get("matching_skills", []):
             demanded_counter[str(skill)] += 1
         for skill in explanation.get("missing_skills", []):
             missing_counter[str(skill)] += 1
-        contract_counter[str(offer.get("contrat") or "Non renseigné")] += 1
-        locations = offer.get("lieux") or []
-        if isinstance(locations, str):
-            location_label = locations
-        elif locations:
-            location_label = str(locations[0])
-        else:
-            location_label = "Non renseigné"
+        contract_counter[str(vm_dash.contract or "Non renseigné")] += 1
+        location_label = vm_dash.location or "Non renseigné"
         location_counter[location_label] += 1
 
     best_explanation = best.get("explanation") if best and isinstance(best.get("explanation"), dict) else _decoded_explanation(best.get("explanation_json")) if best else {}
     if isinstance(best_explanation, dict):
         best_explanation = dict(best_explanation)
         best_explanation["criterion_details"] = best.get("criterion_details") or best_explanation.get("criterion_details") or {}
+    best_offer_raw = {}
+    if best:
+        best_offer_raw = best_explanation.get("offer") if isinstance(best_explanation.get("offer"), dict) else {}
+        if not best_offer_raw and isinstance(best.get("offer"), dict):
+            best_offer_raw = best.get("offer")
+    best_vm = build_match_view_model(best or {}, best_offer_raw) if best else None
     skills_to_develop = missing_counter.most_common(5)
     match_cards = []
     for match in display_matches:
@@ -3015,24 +3068,38 @@ def dashboard():
         offer = explanation.get("offer") if isinstance(explanation.get("offer"), dict) else {}
         if not offer and isinstance(match.get("offer"), dict):
             offer = match.get("offer")
-        url = _offer_fallback_url(offer, str(match.get("offer_identifier") or "") or None)
-        offer_id = str(match.get("offer_identifier") or "")
+        vm_card = build_match_view_model(match, offer)
+        offer_id = vm_card.offer_id
         detail_url = url_for("user_portal.recommendation_detail", offer_id=offer_id) if offer_id else None
+        card_url = vm_card.url
+        if not card_url:
+            source = str(vm_card.source or "").lower().strip()
+            if source in {"", "france travail", "france_travail", "francetravail"}:
+                card_url = f"https://candidat.francetravail.fr/offres/recherche/detail/{offer_id}"
+            elif detail_url:
+                card_url = detail_url
+
+        sub_scores_display = {}
+        for key, criterion in vm_card.criterion_scores.items():
+            sub_scores_display[key] = {
+                "label": criterion.get("label", key),
+                "score": criterion.get("score"),
+                "evaluated": criterion.get("evaluated", False),
+                "reason": criterion.get("reason", ""),
+            }
+
         match_cards.append({
-            "title": offer.get("titre") or match.get("offer_identifier") or "Offre sans titre",
-            "company": offer.get("entreprise") or "Entreprise non renseignée",
-            "location": ", ".join(offer.get("lieux") or []) if offer.get("lieux") else "Lieu non renseigné",
-            "contract": offer.get("contrat") or "Contrat non renseigné",
-            "source": offer.get("source") or "Source non renseignée",
-            "score": float(match.get("global_score") or 0),
-            "url": url,
+            "title": vm_card.title,
+            "company": vm_card.company or "Entreprise non renseignée",
+            "location": vm_card.location or "Lieu non renseigné",
+            "contract": vm_card.contract or "Contrat non renseigné",
+            "source": vm_card.source or "Source non renseignée",
+            "score": float(vm_card.global_score or 0),
+            "url": card_url,
             "detail_url": detail_url,
-            "matching_skills": explanation.get("matching_skills", []),
-            "missing_skills": explanation.get("missing_skills", []),
-            "sub_scores": {
-                key: float(explanation.get("subscores", {}).get(key) or 0)
-                for key in _CRITERION_LABELS
-            },
+            "matching_skills": vm_card.matched_skills or explanation.get("matching_skills", []),
+            "missing_skills": vm_card.missing_skills or explanation.get("missing_skills", []),
+            "criterion_scores": sub_scores_display,
         })
     content = render_template_string(
         """
@@ -3077,33 +3144,32 @@ def dashboard():
         <section class="grid">
           <section class="panel">
             <h2>Meilleure offre</h2>
-            {% if best %}
-            {% set best_offer = best_explanation.get('offer') if best_explanation.get('offer') is mapping else {} %}
-            {% if not best_offer and best is mapping and best.get('offer') is mapping %}{% set best_offer = best.get('offer') %}{% endif %}
+            {% if best_vm %}
             <article class="offer-card offer-card--highlight">
-              <h3 class="offer-title">{{ best_offer.get('titre') or best['offer_identifier'] }}</h3>
+              <h3 class="offer-title">{{ best_vm.title }}</h3>
               <div class="meta">
-                <span>{{ best_offer.get('entreprise') or 'Entreprise non renseignée' }}</span>
-                <span>{{ ', '.join(best_offer.get('lieux') or []) if best_offer.get('lieux') else 'Lieu non renseigné' }}</span>
-                <span>{{ best_offer.get('contrat') or 'Contrat non renseigné' }}</span>
-                <span>Score {{ '%.0f'|format(best['global_score'] or 0) }}/100</span>
+                <span>{{ best_vm.company or 'Entreprise non renseignée' }}</span>
+                <span>{{ best_vm.location or 'Lieu non renseigné' }}</span>
+                <span>{{ best_vm.contract or 'Contrat non renseigné' }}</span>
+                <span>Score {{ '%.0f'|format(best_vm.global_score or 0) }}/100</span>
               </div>
               <p class="muted">{{ best_explanation.get('summary') }}</p>
-              {% set best_details = best_explanation.get('criterion_details') if best_explanation.get('criterion_details') is mapping else {} %}
-              {% if best_details %}
+              {% if best_vm.criterion_scores %}
               <div class="muted small">
-                <div>Localisation: {{ best_details.get('localisation', {}).get('reason') or 'non précisée' }}</div>
-                <div>Salaire: {{ best_details.get('salaire', {}).get('reason') or 'non précisé' }}</div>
+                {% for key, criterion in best_vm.criterion_scores.items() %}
+                {% if criterion.evaluated %}
+                <div>{{ criterion.label }}: {{ '%.0f'|format(criterion.score) }}/100{% if criterion.reason %} — {{ criterion.reason }}{% endif %}</div>
+                {% endif %}
+                {% endfor %}
               </div>
               {% endif %}
-              {% if best_explanation.get('matching_skills') %}
+              {% if best_vm.matched_skills %}
               <div class="chips">
-                {% for skill in best_explanation.get('matching_skills')[:5] %}<span class="chip">{{ skill }}</span>{% endfor %}
+                {% for skill in best_vm.matched_skills[:5] %}<span class="chip">{{ skill }}</span>{% endfor %}
               </div>
               {% endif %}
               <div class="actions">
-                {% set best_url = best_offer.get('url_originale') or best_offer.get('url') or best.get('url_originale') or best.get('url') or url_for('user_portal.recommendation_detail', offer_id=best['offer_identifier']) %}
-                <a class="btn" href="{{ best_url }}" target="_blank" rel="noopener noreferrer">Voir l’offre</a>
+                {% if best_vm.url %}<a class="btn" href="{{ best_vm.url }}" target="_blank" rel="noopener noreferrer">Voir l'offre</a>{% elif best_vm.offer_id %}<a class="btn" href="{{ url_for('user_portal.recommendation_detail', offer_id=best_vm.offer_id) }}">Voir l'offre</a>{% else %}<span class="muted">Lien indisponible</span>{% endif %}
               </div>
             </article>
             {% else %}
@@ -3147,6 +3213,7 @@ def dashboard():
         best_score=round(float(best["global_score"]) if best else 0.0, 2),
         best=best,
         best_explanation=best_explanation,
+        best_vm=best_vm,
         last_calculated=max((match.get("calculated_at") for match in matches if match.get("calculated_at")), default="—"),
         skills_to_develop=skills_to_develop,
         demanded_skills=demanded_counter.most_common(5),
