@@ -2,66 +2,66 @@
   "tasks": {
     "import_offers": {
       "status": "success",
-      "started_at": "2026-06-24T05:12:00.942249",
-      "completed_at": "2026-06-24T05:12:19.387216",
+      "started_at": "2026-06-24T19:32:57.063355",
+      "completed_at": "2026-06-24T19:33:15.716972",
       "stats": {
-        "total_offers": 888,
-        "new_offers": 17,
-        "updated_offers": 871,
+        "total_offers": 890,
+        "new_offers": 0,
+        "updated_offers": 890,
         "errors": 0
       }
     },
     "normalize_offers": {
       "status": "success",
-      "started_at": "2026-06-24T05:12:19.397033",
-      "completed_at": "2026-06-24T05:12:22.081206",
+      "started_at": "2026-06-24T19:33:15.737827",
+      "completed_at": "2026-06-24T19:33:23.070311",
       "stats": {
-        "total_offers": 929,
-        "normalized": 929,
+        "total_offers": 951,
+        "normalized": 951,
         "errors": 0
       }
     },
     "extract_offer_data": {
       "status": "success",
-      "started_at": "2026-06-24T05:12:22.694007",
-      "completed_at": "2026-06-24T05:12:26.202096",
+      "started_at": "2026-06-24T19:33:25.022705",
+      "completed_at": "2026-06-24T19:33:26.083993",
       "stats": {
-        "total_offers": 929,
-        "processed": 18,
-        "skipped": 911,
+        "total_offers": 951,
+        "processed": 0,
+        "skipped": 951,
         "errors": 0
       }
     },
     "aggregate_trends": {
       "status": "success",
-      "started_at": "2026-06-24T05:12:26.205201",
-      "completed_at": "2026-06-24T05:27:23.247288",
+      "started_at": "2026-06-24T19:33:26.088737",
+      "completed_at": "2026-06-24T19:33:28.653786",
       "stats": {
-        "total_offers": 929,
-        "territories_processed": 78,
+        "total_offers": 951,
+        "territories_processed": 0,
         "errors": 0
       }
     },
     "compute_dashboards": {
       "status": "success",
-      "started_at": "2026-06-24T05:27:23.250496",
-      "completed_at": "2026-06-24T05:27:23.819585",
+      "started_at": "2026-06-24T19:33:28.659414",
+      "completed_at": "2026-06-24T19:33:29.730578",
       "stats": {
-        "dashboards_computed": 78,
+        "dashboards_computed": 0,
         "errors": 0
       }
     },
     "compute_matches": {
       "status": "success",
-      "started_at": "2026-06-24T05:27:23.827646",
-      "completed_at": "2026-06-24T05:30:04.963433",
+      "started_at": "2026-06-24T19:33:29.741011",
+      "completed_at": "2026-06-24T19:33:36.112232",
       "stats": {
         "total_users": 4,
-        "users_processed": 4,
-        "matches_computed": 3716,
+        "users_processed": 0,
+        "matches_computed": 0,
         "errors": 0
       }
     }
   },
-  "last_refresh": "2026-06-24T05:30:04.964382"
+  "last_refresh": "2026-06-24T19:33:36.113098"
 }

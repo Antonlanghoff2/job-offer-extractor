@@ -6,18 +6,20 @@
     "nombre_offres": 7,
     "competences": {
       "Intelligence artificielle": 6,
-      "Data engineering": 4,
+      "Data engineering": 5,
+      "Backend": 4,
       "Sécurité Informatique": 4,
       "Analyse de données": 3,
       "Architecture Microservices": 3,
-      "Backend": 3,
+      "MLOps": 3,
       "Model Drift": 3,
       "Qualité Des Données": 3,
       "Vision": 3,
       "Cahier des charges": 2,
+      "Documentation Technique": 2,
       "Déploiement De Modèles": 2,
       "Gestion de projet": 2,
-      "MLOps": 2,
+      "Monitoring De Modèles": 2,
       "Pipelines De Données": 2,
       "Tests Automatisés": 2,
       "Vue.js": 2,
@@ -25,12 +27,10 @@
       "Code Review": 1,
       "Computer Vision": 1,
       "Cybersécurité": 1,
-      "Documentation Technique": 1,
       "Gestion De Bases De Données": 1,
       "Git": 1,
       "Intégration Continue": 1,
       "Machine learning": 1,
-      "Monitoring De Modèles": 1,
       "Optimisation De Performance": 1,
       "Optimisation Des Performances": 1,
       "Scalabilité": 1,
@@ -47,10 +47,18 @@
       },
       {
         "nom": "Data engineering",
+        "count": 5,
+        "percentage": 71.4,
+        "variants": {
+          "Data Engineering": 5
+        }
+      },
+      {
+        "nom": "Backend",
         "count": 4,
         "percentage": 57.1,
         "variants": {
-          "Data Engineering": 4
+          "Backend": 4
         }
       },
       {
@@ -78,11 +86,11 @@
         }
       },
       {
-        "nom": "Backend",
+        "nom": "MLOps",
         "count": 3,
         "percentage": 42.9,
         "variants": {
-          "Backend": 3
+          "MLOps": 3
         }
       },
       {
@@ -118,6 +126,14 @@
         }
       },
       {
+        "nom": "Documentation Technique",
+        "count": 2,
+        "percentage": 28.6,
+        "variants": {
+          "Documentation technique": 2
+        }
+      },
+      {
         "nom": "Déploiement De Modèles",
         "count": 2,
         "percentage": 28.6,
@@ -134,11 +150,11 @@
         }
       },
       {
-        "nom": "MLOps",
+        "nom": "Monitoring De Modèles",
         "count": 2,
         "percentage": 28.6,
         "variants": {
-          "MLOps": 2
+          "Monitoring de modèles": 2
         }
       },
       {
@@ -198,14 +214,6 @@
         }
       },
       {
-        "nom": "Documentation Technique",
-        "count": 1,
-        "percentage": 14.3,
-        "variants": {
-          "Documentation technique": 1
-        }
-      },
-      {
         "nom": "Gestion De Bases De Données",
         "count": 1,
         "percentage": 14.3,
@@ -235,14 +243,6 @@
         "percentage": 14.3,
         "variants": {
           "Machine learning": 1
-        }
-      },
-      {
-        "nom": "Monitoring De Modèles",
-        "count": 1,
-        "percentage": 14.3,
-        "variants": {
-          "Monitoring de modèles": 1
         }
       },
       {
@@ -284,7 +284,10 @@
         "Intelligence artificielle": 6
       },
       "Data engineering": {
-        "Data Engineering": 4
+        "Data Engineering": 5
+      },
+      "Backend": {
+        "Backend": 4
       },
       "Sécurité Informatique": {
         "Sécurité informatique": 4
@@ -295,8 +298,8 @@
       "Architecture Microservices": {
         "Architecture microservices": 3
       },
-      "Backend": {
-        "Backend": 3
+      "MLOps": {
+        "MLOps": 3
       },
       "Model Drift": {
         "Model drift": 3
@@ -310,14 +313,17 @@
       "Cahier des charges": {
         "Cahier des charges": 2
       },
+      "Documentation Technique": {
+        "Documentation technique": 2
+      },
       "Déploiement De Modèles": {
         "Déploiement de modèles": 2
       },
       "Gestion de projet": {
         "Gestion de projet": 2
       },
-      "MLOps": {
-        "MLOps": 2
+      "Monitoring De Modèles": {
+        "Monitoring de modèles": 2
       },
       "Pipelines De Données": {
         "Pipelines de données": 2
@@ -340,9 +346,6 @@
       "Cybersécurité": {
         "Cybersécurité": 1
       },
-      "Documentation Technique": {
-        "Documentation technique": 1
-      },
       "Gestion De Bases De Données": {
         "Gestion de bases de données": 1
       },
@@ -354,9 +357,6 @@
       },
       "Machine learning": {
         "Machine learning": 1
-      },
-      "Monitoring De Modèles": {
-        "Monitoring de modèles": 1
       },
       "Optimisation De Performance": {
         "Optimisation de performance": 1,
@@ -390,6 +390,18 @@
     },
     "cooccurrences": [
       {
+        "competence_a": "Backend",
+        "competence_b": "Data engineering",
+        "count": 4,
+        "percentage": 57.1
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Intelligence artificielle",
+        "count": 4,
+        "percentage": 57.1
+      },
+      {
         "competence_a": "Analyse de données",
         "competence_b": "Sécurité Informatique",
         "count": 3,
@@ -409,12 +421,6 @@
       },
       {
         "competence_a": "Backend",
-        "competence_b": "Data engineering",
-        "count": 3,
-        "percentage": 42.9
-      },
-      {
-        "competence_a": "Data engineering",
         "competence_b": "Intelligence artificielle",
         "count": 3,
         "percentage": 42.9
@@ -428,6 +434,12 @@
       {
         "competence_a": "Data engineering",
         "competence_b": "Sécurité Informatique",
+        "count": 3,
+        "percentage": 42.9
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "MLOps",
         "count": 3,
         "percentage": 42.9
       },
@@ -517,7 +529,13 @@
       },
       {
         "competence_a": "Backend",
-        "competence_b": "Intelligence artificielle",
+        "competence_b": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "MLOps",
         "count": 2,
         "percentage": 28.6
       },
@@ -534,8 +552,32 @@
         "percentage": 28.6
       },
       {
+        "competence_a": "Backend",
+        "competence_b": "Vision",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
         "competence_a": "Cahier des charges",
         "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Déploiement De Modèles",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "MLOps",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Monitoring De Modèles",
         "count": 2,
         "percentage": 28.6
       },
@@ -553,13 +595,37 @@
       },
       {
         "competence_a": "Data engineering",
+        "competence_b": "Vision",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Data engineering",
         "competence_b": "Vue.js",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "MLOps",
         "count": 2,
         "percentage": 28.6
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "Déploiement De Modèles",
+        "competence_b": "MLOps",
         "count": 2,
         "percentage": 28.6
       },
@@ -589,13 +655,13 @@
       },
       {
         "competence_a": "Intelligence artificielle",
-        "competence_b": "MLOps",
+        "competence_b": "Model Drift",
         "count": 2,
         "percentage": 28.6
       },
       {
         "competence_a": "Intelligence artificielle",
-        "competence_b": "Model Drift",
+        "competence_b": "Monitoring De Modèles",
         "count": 2,
         "percentage": 28.6
       },
@@ -608,6 +674,12 @@
       {
         "competence_a": "MLOps",
         "competence_b": "Tests Automatisés",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Vision",
         "count": 2,
         "percentage": 28.6
       },
@@ -853,13 +925,19 @@
       },
       {
         "competence_a": "Backend",
+        "competence_b": "Computer Vision",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Backend",
         "competence_b": "Cybersécurité",
         "count": 1,
         "percentage": 14.3
       },
       {
         "competence_a": "Backend",
-        "competence_b": "Déploiement De Modèles",
+        "competence_b": "Documentation Technique",
         "count": 1,
         "percentage": 14.3
       },
@@ -871,7 +949,13 @@
       },
       {
         "competence_a": "Backend",
-        "competence_b": "MLOps",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Backend",
+        "competence_b": "Monitoring De Modèles",
         "count": 1,
         "percentage": 14.3
       },
@@ -907,13 +991,13 @@
       },
       {
         "competence_a": "Backend",
-        "competence_b": "Tests Automatisés",
+        "competence_b": "SQL",
         "count": 1,
         "percentage": 14.3
       },
       {
         "competence_a": "Backend",
-        "competence_b": "Vision",
+        "competence_b": "Tests Automatisés",
         "count": 1,
         "percentage": 14.3
       },
@@ -1033,6 +1117,18 @@
       },
       {
         "competence_a": "Computer Vision",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Documentation Technique",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Computer Vision",
         "competence_b": "Déploiement De Modèles",
         "count": 1,
         "percentage": 14.3
@@ -1046,6 +1142,18 @@
       {
         "competence_a": "Computer Vision",
         "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Monitoring De Modèles",
         "count": 1,
         "percentage": 14.3
       },
@@ -1105,7 +1213,7 @@
       },
       {
         "competence_a": "Data engineering",
-        "competence_b": "Déploiement De Modèles",
+        "competence_b": "Documentation Technique",
         "count": 1,
         "percentage": 14.3
       },
@@ -1123,13 +1231,7 @@
       },
       {
         "competence_a": "Data engineering",
-        "competence_b": "MLOps",
-        "count": 1,
-        "percentage": 14.3
-      },
-      {
-        "competence_a": "Data engineering",
-        "competence_b": "Monitoring De Modèles",
+        "competence_b": "Machine learning",
         "count": 1,
         "percentage": 14.3
       },
@@ -1153,13 +1255,19 @@
       },
       {
         "competence_a": "Data engineering",
-        "competence_b": "Tests Automatisés",
+        "competence_b": "SQL",
         "count": 1,
         "percentage": 14.3
       },
       {
         "competence_a": "Data engineering",
-        "competence_b": "Vision",
+        "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Déploiement De Modèles",
         "count": 1,
         "percentage": 14.3
       },
@@ -1171,25 +1279,31 @@
       },
       {
         "competence_a": "Documentation Technique",
-        "competence_b": "Intelligence artificielle",
-        "count": 1,
-        "percentage": 14.3
-      },
-      {
-        "competence_a": "Documentation Technique",
         "competence_b": "Intégration Continue",
         "count": 1,
         "percentage": 14.3
       },
       {
         "competence_a": "Documentation Technique",
-        "competence_b": "MLOps",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Monitoring De Modèles",
         "count": 1,
         "percentage": 14.3
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "SQL",
         "count": 1,
         "percentage": 14.3
       },
@@ -1202,6 +1316,12 @@
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Documentation Technique",
+        "competence_b": "Vision",
         "count": 1,
         "percentage": 14.3
       },
@@ -1219,7 +1339,7 @@
       },
       {
         "competence_a": "Déploiement De Modèles",
-        "competence_b": "MLOps",
+        "competence_b": "Monitoring De Modèles",
         "count": 1,
         "percentage": 14.3
       },
@@ -1339,12 +1459,6 @@
       },
       {
         "competence_a": "Intelligence artificielle",
-        "competence_b": "Monitoring De Modèles",
-        "count": 1,
-        "percentage": 14.3
-      },
-      {
-        "competence_a": "Intelligence artificielle",
         "competence_b": "Optimisation De Performance",
         "count": 1,
         "percentage": 14.3
@@ -1405,6 +1519,12 @@
       },
       {
         "competence_a": "Machine learning",
+        "competence_b": "Monitoring De Modèles",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Machine learning",
         "competence_b": "SQL",
         "count": 1,
         "percentage": 14.3
@@ -1412,6 +1532,18 @@
       {
         "competence_a": "Machine learning",
         "competence_b": "Vision",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "MLOps",
+        "competence_b": "Monitoring De Modèles",
         "count": 1,
         "percentage": 14.3
       },
@@ -1429,13 +1561,13 @@
       },
       {
         "competence_a": "MLOps",
-        "competence_b": "Sécurité Informatique",
+        "competence_b": "SQL",
         "count": 1,
         "percentage": 14.3
       },
       {
         "competence_a": "MLOps",
-        "competence_b": "Vision",
+        "competence_b": "Sécurité Informatique",
         "count": 1,
         "percentage": 14.3
       },
@@ -1471,7 +1603,19 @@
       },
       {
         "competence_a": "Monitoring De Modèles",
+        "competence_b": "SQL",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
         "competence_b": "Sécurité Informatique",
+        "count": 1,
+        "percentage": 14.3
+      },
+      {
+        "competence_a": "Monitoring De Modèles",
+        "competence_b": "Vision",
         "count": 1,
         "percentage": 14.3
       },
@@ -1598,8 +1742,13 @@
         "Intelligence artificielle",
         "Machine learning",
         "SQL",
+        "Data engineering",
+        "MLOps",
         "Vision",
         "Déploiement De Modèles",
+        "Backend",
+        "Documentation Technique",
+        "Monitoring De Modèles",
         "Computer Vision"
       ],
       [
@@ -1768,8 +1917,8 @@
       }
     ]
   },
-  "computed_at": "2026-06-24T05:20:25.160586",
-  "input_hash": "b4818c27af61bcf8388a18d836f19ec8cd70ba04104857f6a7f05d5a71eac1c3",
+  "computed_at": "2026-06-24T19:17:34.520354",
+  "input_hash": "62582770b7fb0b99ed3b2e1bfdfc1981625dc190265377975b6a66fe1220550b",
   "source_version": "",
   "model_version": "",
   "status": "success"

@@ -3,50 +3,50 @@
   "value": {
     "territoire": "69 - LYON",
     "periode_jours": 365,
-    "nombre_offres": 107,
+    "nombre_offres": 109,
     "competences": {
-      "Intelligence artificielle": 86,
-      "Gestion de projet": 50,
+      "Intelligence artificielle": 88,
+      "Gestion de projet": 51,
       "Data engineering": 49,
+      "Git": 40,
       "Python": 40,
-      "Git": 39,
       "Analyse de données": 38,
       "Qualité Des Données": 34,
       "Sécurité Informatique": 31,
       "Model Drift": 29,
       "Vision": 29,
       "MLOps": 27,
+      "SQL": 26,
       "Pipelines De Données": 25,
-      "SQL": 25,
       "Déploiement De Modèles": 24,
       "Résolution De Problèmes": 24,
       "Backend": 23,
-      "Vue.js": 21,
+      "Vue.js": 22,
       "Design Patterns": 20,
       "Documentation Technique": 19,
       "API": 17,
       "Code Review": 16,
       "Intégration Continue": 15,
+      "Java": 15,
       "Tests Automatisés": 15,
-      "Java": 14,
       "Docker": 12,
       "Scalabilité": 12,
+      "JavaScript": 11,
       "Monitoring De Modèles": 11,
       "Optimisation Des Performances": 11,
-      "JavaScript": 10,
+      "PostgreSQL": 10,
       "Veille Technologique": 10,
       "Cahier des charges": 9,
       "Linux": 9,
-      "PostgreSQL": 9,
       "Protection Des Données": 9,
       "Kubernetes": 8,
       "Anglais Professionnel": 7,
       "Automatisation De Pipelines": 7,
       "CI/CD": 7,
       "Cybersécurité": 7,
+      "React": 7,
       "Aéronautique": 6,
       "Feature Engineering": 6,
-      "React": 6,
       "Travail En Équipe": 6,
       "Architecture Microservices": 5,
       "Délais": 5,
@@ -68,14 +68,15 @@
       "NoSQL": 3,
       "Programmation Concurrente": 3,
       "Acquisition": 2,
+      "Computer Vision": 2,
       "Deep learning": 2,
       "Développement web": 2,
+      "Ferroviaire": 2,
       "Optimisation De Performance": 2,
       "Power BI": 2,
+      "TypeScript": 2,
       "Analyse De Performance": 1,
       "Architecture Logiciel": 1,
-      "Computer Vision": 1,
-      "Ferroviaire": 1,
       "HTML": 1,
       "Imagerie": 1,
       "Intégration De Systèmes": 1,
@@ -83,56 +84,55 @@
       "Pandas": 1,
       "Pilotage De La Performance": 1,
       "Symfony": 1,
-      "Terraform": 1,
-      "TypeScript": 1
+      "Terraform": 1
     },
     "competences_details": [
       {
         "nom": "Intelligence artificielle",
-        "count": 86,
-        "percentage": 80.4,
+        "count": 88,
+        "percentage": 80.7,
         "variants": {
-          "Intelligence artificielle": 86
+          "Intelligence artificielle": 88
         }
       },
       {
         "nom": "Gestion de projet",
-        "count": 50,
-        "percentage": 46.7,
+        "count": 51,
+        "percentage": 46.8,
         "variants": {
-          "Gestion de projet": 49,
+          "Gestion de projet": 50,
           "Méthodologie Agile": 1
         }
       },
       {
         "nom": "Data engineering",
         "count": 49,
-        "percentage": 45.8,
+        "percentage": 45.0,
         "variants": {
           "Data Engineering": 43,
           "Data engineering": 6
         }
       },
       {
+        "nom": "Git",
+        "count": 40,
+        "percentage": 36.7,
+        "variants": {
+          "Git": 40
+        }
+      },
+      {
         "nom": "Python",
         "count": 40,
-        "percentage": 37.4,
+        "percentage": 36.7,
         "variants": {
           "Python": 40
         }
       },
       {
-        "nom": "Git",
-        "count": 39,
-        "percentage": 36.4,
-        "variants": {
-          "Git": 39
-        }
-      },
-      {
         "nom": "Analyse de données",
         "count": 38,
-        "percentage": 35.5,
+        "percentage": 34.9,
         "variants": {
           "Analyse de données": 38
         }
@@ -140,7 +140,7 @@
       {
         "nom": "Qualité Des Données",
         "count": 34,
-        "percentage": 31.8,
+        "percentage": 31.2,
         "variants": {
           "Qualité des données": 34
         }
@@ -148,7 +148,7 @@
       {
         "nom": "Sécurité Informatique",
         "count": 31,
-        "percentage": 29.0,
+        "percentage": 28.4,
         "variants": {
           "Sécurité informatique": 30,
           "Sécurité Informatique": 1
@@ -157,7 +157,7 @@
       {
         "nom": "Model Drift",
         "count": 29,
-        "percentage": 27.1,
+        "percentage": 26.6,
         "variants": {
           "Model drift": 29
         }
@@ -165,7 +165,7 @@
       {
         "nom": "Vision",
         "count": 29,
-        "percentage": 27.1,
+        "percentage": 26.6,
         "variants": {
           "Vision": 29
         }
@@ -173,31 +173,31 @@
       {
         "nom": "MLOps",
         "count": 27,
-        "percentage": 25.2,
+        "percentage": 24.8,
         "variants": {
           "MLOps": 27
         }
       },
       {
+        "nom": "SQL",
+        "count": 26,
+        "percentage": 23.9,
+        "variants": {
+          "SQL": 26
+        }
+      },
+      {
         "nom": "Pipelines De Données",
         "count": 25,
-        "percentage": 23.4,
+        "percentage": 22.9,
         "variants": {
           "Pipelines de données": 25
         }
       },
       {
-        "nom": "SQL",
-        "count": 25,
-        "percentage": 23.4,
-        "variants": {
-          "SQL": 25
-        }
-      },
-      {
         "nom": "Déploiement De Modèles",
         "count": 24,
-        "percentage": 22.4,
+        "percentage": 22.0,
         "variants": {
           "Déploiement de modèles": 24
         }
@@ -205,7 +205,7 @@
       {
         "nom": "Résolution De Problèmes",
         "count": 24,
-        "percentage": 22.4,
+        "percentage": 22.0,
         "variants": {
           "Résolution de problèmes": 24
         }
@@ -213,23 +213,23 @@
       {
         "nom": "Backend",
         "count": 23,
-        "percentage": 21.5,
+        "percentage": 21.1,
         "variants": {
           "Backend": 23
         }
       },
       {
         "nom": "Vue.js",
-        "count": 21,
-        "percentage": 19.6,
+        "count": 22,
+        "percentage": 20.2,
         "variants": {
-          "Vue.js": 21
+          "Vue.js": 22
         }
       },
       {
         "nom": "Design Patterns",
         "count": 20,
-        "percentage": 18.7,
+        "percentage": 18.3,
         "variants": {
           "Design patterns": 20
         }
@@ -237,7 +237,7 @@
       {
         "nom": "Documentation Technique",
         "count": 19,
-        "percentage": 17.8,
+        "percentage": 17.4,
         "variants": {
           "Documentation technique": 19
         }
@@ -245,7 +245,7 @@
       {
         "nom": "API",
         "count": 17,
-        "percentage": 15.9,
+        "percentage": 15.6,
         "variants": {
           "API": 17
         }
@@ -253,7 +253,7 @@
       {
         "nom": "Code Review",
         "count": 16,
-        "percentage": 15.0,
+        "percentage": 14.7,
         "variants": {
           "Code review": 16
         }
@@ -261,31 +261,31 @@
       {
         "nom": "Intégration Continue",
         "count": 15,
-        "percentage": 14.0,
+        "percentage": 13.8,
         "variants": {
           "Intégration continue": 15
         }
       },
       {
+        "nom": "Java",
+        "count": 15,
+        "percentage": 13.8,
+        "variants": {
+          "Java": 15
+        }
+      },
+      {
         "nom": "Tests Automatisés",
         "count": 15,
-        "percentage": 14.0,
+        "percentage": 13.8,
         "variants": {
           "Tests automatisés": 15
         }
       },
       {
-        "nom": "Java",
-        "count": 14,
-        "percentage": 13.1,
-        "variants": {
-          "Java": 14
-        }
-      },
-      {
         "nom": "Docker",
         "count": 12,
-        "percentage": 11.2,
+        "percentage": 11.0,
         "variants": {
           "Docker": 12
         }
@@ -293,15 +293,23 @@
       {
         "nom": "Scalabilité",
         "count": 12,
-        "percentage": 11.2,
+        "percentage": 11.0,
         "variants": {
           "Scalabilité": 12
         }
       },
       {
+        "nom": "JavaScript",
+        "count": 11,
+        "percentage": 10.1,
+        "variants": {
+          "JavaScript": 11
+        }
+      },
+      {
         "nom": "Monitoring De Modèles",
         "count": 11,
-        "percentage": 10.3,
+        "percentage": 10.1,
         "variants": {
           "Monitoring de modèles": 11
         }
@@ -309,23 +317,23 @@
       {
         "nom": "Optimisation Des Performances",
         "count": 11,
-        "percentage": 10.3,
+        "percentage": 10.1,
         "variants": {
           "Optimisation des performances": 11
         }
       },
       {
-        "nom": "JavaScript",
+        "nom": "PostgreSQL",
         "count": 10,
-        "percentage": 9.3,
+        "percentage": 9.2,
         "variants": {
-          "JavaScript": 10
+          "PostgreSQL": 10
         }
       },
       {
         "nom": "Veille Technologique",
         "count": 10,
-        "percentage": 9.3,
+        "percentage": 9.2,
         "variants": {
           "Veille technologique": 10
         }
@@ -333,7 +341,7 @@
       {
         "nom": "Cahier des charges",
         "count": 9,
-        "percentage": 8.4,
+        "percentage": 8.3,
         "variants": {
           "Cahier des charges": 9
         }
@@ -341,23 +349,15 @@
       {
         "nom": "Linux",
         "count": 9,
-        "percentage": 8.4,
+        "percentage": 8.3,
         "variants": {
           "Linux": 9
         }
       },
       {
-        "nom": "PostgreSQL",
-        "count": 9,
-        "percentage": 8.4,
-        "variants": {
-          "PostgreSQL": 9
-        }
-      },
-      {
         "nom": "Protection Des Données",
         "count": 9,
-        "percentage": 8.4,
+        "percentage": 8.3,
         "variants": {
           "Protection des données": 8,
           "Protection Des Données": 1
@@ -366,7 +366,7 @@
       {
         "nom": "Kubernetes",
         "count": 8,
-        "percentage": 7.5,
+        "percentage": 7.3,
         "variants": {
           "Kubernetes": 8
         }
@@ -374,7 +374,7 @@
       {
         "nom": "Anglais Professionnel",
         "count": 7,
-        "percentage": 6.5,
+        "percentage": 6.4,
         "variants": {
           "Anglais Professionnel": 4,
           "Anglais professionnel": 3
@@ -383,7 +383,7 @@
       {
         "nom": "Automatisation De Pipelines",
         "count": 7,
-        "percentage": 6.5,
+        "percentage": 6.4,
         "variants": {
           "Automatisation de pipelines": 7
         }
@@ -391,7 +391,7 @@
       {
         "nom": "CI/CD",
         "count": 7,
-        "percentage": 6.5,
+        "percentage": 6.4,
         "variants": {
           "CI/CD": 7
         }
@@ -399,15 +399,23 @@
       {
         "nom": "Cybersécurité",
         "count": 7,
-        "percentage": 6.5,
+        "percentage": 6.4,
         "variants": {
           "Cybersécurité": 7
         }
       },
       {
+        "nom": "React",
+        "count": 7,
+        "percentage": 6.4,
+        "variants": {
+          "React": 7
+        }
+      },
+      {
         "nom": "Aéronautique",
         "count": 6,
-        "percentage": 5.6,
+        "percentage": 5.5,
         "variants": {
           "Aéronautique": 6
         }
@@ -415,23 +423,15 @@
       {
         "nom": "Feature Engineering",
         "count": 6,
-        "percentage": 5.6,
+        "percentage": 5.5,
         "variants": {
           "Feature Engineering": 6
         }
       },
       {
-        "nom": "React",
-        "count": 6,
-        "percentage": 5.6,
-        "variants": {
-          "React": 6
-        }
-      },
-      {
         "nom": "Travail En Équipe",
         "count": 6,
-        "percentage": 5.6,
+        "percentage": 5.5,
         "variants": {
           "Travail en équipe": 6
         }
@@ -439,7 +439,7 @@
       {
         "nom": "Architecture Microservices",
         "count": 5,
-        "percentage": 4.7,
+        "percentage": 4.6,
         "variants": {
           "Architecture microservices": 5
         }
@@ -447,7 +447,7 @@
       {
         "nom": "Délais",
         "count": 5,
-        "percentage": 4.7,
+        "percentage": 4.6,
         "variants": {
           "Délais": 5
         }
@@ -455,7 +455,7 @@
       {
         "nom": "MySQL",
         "count": 5,
-        "percentage": 4.7,
+        "percentage": 4.6,
         "variants": {
           "MySQL": 5
         }
@@ -463,7 +463,7 @@
       {
         "nom": "Product Management",
         "count": 5,
-        "percentage": 4.7,
+        "percentage": 4.6,
         "variants": {
           "Product Management": 5
         }
@@ -471,7 +471,7 @@
       {
         "nom": "Relation Client",
         "count": 5,
-        "percentage": 4.7,
+        "percentage": 4.6,
         "variants": {
           "Relation Client": 5
         }
@@ -591,15 +591,23 @@
       {
         "nom": "Acquisition",
         "count": 2,
-        "percentage": 1.9,
+        "percentage": 1.8,
         "variants": {
           "Acquisition": 2
         }
       },
       {
+        "nom": "Computer Vision",
+        "count": 2,
+        "percentage": 1.8,
+        "variants": {
+          "Computer Vision": 2
+        }
+      },
+      {
         "nom": "Deep learning",
         "count": 2,
-        "percentage": 1.9,
+        "percentage": 1.8,
         "variants": {
           "Deep learning": 2
         }
@@ -607,15 +615,23 @@
       {
         "nom": "Développement web",
         "count": 2,
-        "percentage": 1.9,
+        "percentage": 1.8,
         "variants": {
           "Développement web": 2
         }
       },
       {
+        "nom": "Ferroviaire",
+        "count": 2,
+        "percentage": 1.8,
+        "variants": {
+          "Ferroviaire": 2
+        }
+      },
+      {
         "nom": "Optimisation De Performance",
         "count": 2,
-        "percentage": 1.9,
+        "percentage": 1.8,
         "variants": {
           "Optimisation de performance": 2,
           "Optimisation des performances": 2
@@ -624,9 +640,17 @@
       {
         "nom": "Power BI",
         "count": 2,
-        "percentage": 1.9,
+        "percentage": 1.8,
         "variants": {
           "Power BI": 2
+        }
+      },
+      {
+        "nom": "TypeScript",
+        "count": 2,
+        "percentage": 1.8,
+        "variants": {
+          "TypeScript": 2
         }
       },
       {
@@ -643,22 +667,6 @@
         "percentage": 0.9,
         "variants": {
           "Architecture logiciel": 1
-        }
-      },
-      {
-        "nom": "Computer Vision",
-        "count": 1,
-        "percentage": 0.9,
-        "variants": {
-          "Computer Vision": 1
-        }
-      },
-      {
-        "nom": "Ferroviaire",
-        "count": 1,
-        "percentage": 0.9,
-        "variants": {
-          "Ferroviaire": 1
         }
       },
       {
@@ -724,33 +732,25 @@
         "variants": {
           "Terraform": 1
         }
-      },
-      {
-        "nom": "TypeScript",
-        "count": 1,
-        "percentage": 0.9,
-        "variants": {
-          "TypeScript": 1
-        }
       }
     ],
     "competences_variants": {
       "Intelligence artificielle": {
-        "Intelligence artificielle": 86
+        "Intelligence artificielle": 88
       },
       "Gestion de projet": {
-        "Gestion de projet": 49,
+        "Gestion de projet": 50,
         "Méthodologie Agile": 1
       },
       "Data engineering": {
         "Data Engineering": 43,
         "Data engineering": 6
       },
+      "Git": {
+        "Git": 40
+      },
       "Python": {
         "Python": 40
-      },
-      "Git": {
-        "Git": 39
       },
       "Analyse de données": {
         "Analyse de données": 38
@@ -771,11 +771,11 @@
       "MLOps": {
         "MLOps": 27
       },
+      "SQL": {
+        "SQL": 26
+      },
       "Pipelines De Données": {
         "Pipelines de données": 25
-      },
-      "SQL": {
-        "SQL": 25
       },
       "Déploiement De Modèles": {
         "Déploiement de modèles": 24
@@ -787,7 +787,7 @@
         "Backend": 23
       },
       "Vue.js": {
-        "Vue.js": 21
+        "Vue.js": 22
       },
       "Design Patterns": {
         "Design patterns": 20
@@ -804,11 +804,11 @@
       "Intégration Continue": {
         "Intégration continue": 15
       },
+      "Java": {
+        "Java": 15
+      },
       "Tests Automatisés": {
         "Tests automatisés": 15
-      },
-      "Java": {
-        "Java": 14
       },
       "Docker": {
         "Docker": 12
@@ -816,14 +816,17 @@
       "Scalabilité": {
         "Scalabilité": 12
       },
+      "JavaScript": {
+        "JavaScript": 11
+      },
       "Monitoring De Modèles": {
         "Monitoring de modèles": 11
       },
       "Optimisation Des Performances": {
         "Optimisation des performances": 11
       },
-      "JavaScript": {
-        "JavaScript": 10
+      "PostgreSQL": {
+        "PostgreSQL": 10
       },
       "Veille Technologique": {
         "Veille technologique": 10
@@ -833,9 +836,6 @@
       },
       "Linux": {
         "Linux": 9
-      },
-      "PostgreSQL": {
-        "PostgreSQL": 9
       },
       "Protection Des Données": {
         "Protection Des Données": 1,
@@ -857,14 +857,14 @@
       "Cybersécurité": {
         "Cybersécurité": 7
       },
+      "React": {
+        "React": 7
+      },
       "Aéronautique": {
         "Aéronautique": 6
       },
       "Feature Engineering": {
         "Feature Engineering": 6
-      },
-      "React": {
-        "React": 6
       },
       "Travail En Équipe": {
         "Travail en équipe": 6
@@ -929,11 +929,17 @@
       "Acquisition": {
         "Acquisition": 2
       },
+      "Computer Vision": {
+        "Computer Vision": 2
+      },
       "Deep learning": {
         "Deep learning": 2
       },
       "Développement web": {
         "Développement web": 2
+      },
+      "Ferroviaire": {
+        "Ferroviaire": 2
       },
       "Optimisation De Performance": {
         "Optimisation de performance": 2,
@@ -942,17 +948,14 @@
       "Power BI": {
         "Power BI": 2
       },
+      "TypeScript": {
+        "TypeScript": 2
+      },
       "Analyse De Performance": {
         "Analyse de performance": 1
       },
       "Architecture Logiciel": {
         "Architecture logiciel": 1
-      },
-      "Computer Vision": {
-        "Computer Vision": 1
-      },
-      "Ferroviaire": {
-        "Ferroviaire": 1
       },
       "HTML": {
         "HTML": 1
@@ -977,22 +980,19 @@
       },
       "Terraform": {
         "Terraform": 1
-      },
-      "TypeScript": {
-        "TypeScript": 1
       }
     },
     "metiers": {
       "Data Engineer": 23,
-      "Développeur / Développeuse web": 10,
+      "Développeur / Développeuse web": 11,
       "Ingénieur / Ingénieure d'étude informatique": 10,
       "Développeur / Développeuse logiciel ou d'application": 8,
       "Data Analyst": 4,
+      "Ingénieur / Ingénieure DevOps": 4,
       "Consultant fonctionnel / Consultante fonctionnelle des systèmes d'information": 3,
       "Data Scientist": 3,
       "Développeur / Développeuse informatique": 3,
       "Ingénieur / Ingénieure calcul et structure": 3,
-      "Ingénieur / Ingénieure DevOps": 3,
       "Administrateur / Administratrice de site internet": 2,
       "Architecte Base De Données": 2,
       "Bioinformaticien / Bioinformaticienne en études": 2,
@@ -1028,10 +1028,10 @@
     },
     "niveau": {
       "junior": 52,
-      "intermediaire": 55
+      "intermediaire": 57
     },
     "contrats": {
-      "CDI": 83,
+      "CDI": 85,
       "CDD - 12 Mois": 12,
       "Intérim - 1 Mois": 6,
       "CDD - 24 Mois": 3,
@@ -1044,2119 +1044,2137 @@
         "competence_a": "Data engineering",
         "competence_b": "Intelligence artificielle",
         "count": 42,
-        "percentage": 39.3
+        "percentage": 38.5
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Intelligence artificielle",
-        "count": 39,
-        "percentage": 36.4
+        "count": 40,
+        "percentage": 36.7
       },
       {
         "competence_a": "Git",
         "competence_b": "Intelligence artificielle",
-        "count": 36,
-        "percentage": 33.6
+        "count": 37,
+        "percentage": 33.9
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Python",
         "count": 34,
-        "percentage": 31.8
+        "percentage": 31.2
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Intelligence artificielle",
         "count": 32,
-        "percentage": 29.9
+        "percentage": 29.4
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Data engineering",
         "count": 28,
-        "percentage": 26.2
+        "percentage": 25.7
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Model Drift",
         "count": 28,
-        "percentage": 26.2
+        "percentage": 25.7
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Qualité Des Données",
         "count": 28,
-        "percentage": 26.2
+        "percentage": 25.7
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Vision",
         "count": 26,
-        "percentage": 24.3
+        "percentage": 23.9
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "MLOps",
         "count": 25,
-        "percentage": 23.4
+        "percentage": 22.9
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Model Drift",
         "count": 25,
-        "percentage": 23.4
+        "percentage": 22.9
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Git",
+        "count": 24,
+        "percentage": 22.0
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Sécurité Informatique",
         "count": 24,
-        "percentage": 22.4
+        "percentage": 22.0
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Model Drift",
         "count": 23,
-        "percentage": 21.5
-      },
-      {
-        "competence_a": "Gestion de projet",
-        "competence_b": "Git",
-        "count": 23,
-        "percentage": 21.5
+        "percentage": 21.1
       },
       {
         "competence_a": "Git",
         "competence_b": "Python",
         "count": 23,
-        "percentage": 21.5
+        "percentage": 21.1
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Pipelines De Données",
         "count": 23,
-        "percentage": 21.5
+        "percentage": 21.1
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "SQL",
+        "count": 23,
+        "percentage": 21.1
       },
       {
         "competence_a": "Backend",
         "competence_b": "Intelligence artificielle",
         "count": 22,
-        "percentage": 20.6
+        "percentage": 20.2
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Pipelines De Données",
         "count": 22,
-        "percentage": 20.6
-      },
-      {
-        "competence_a": "Intelligence artificielle",
-        "competence_b": "SQL",
-        "count": 22,
-        "percentage": 20.6
+        "percentage": 20.2
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Qualité Des Données",
         "count": 21,
-        "percentage": 19.6
+        "percentage": 19.3
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Intelligence artificielle",
         "count": 21,
-        "percentage": 19.6
+        "percentage": 19.3
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Python",
         "count": 20,
-        "percentage": 18.7
+        "percentage": 18.3
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Qualité Des Données",
         "count": 20,
-        "percentage": 18.7
+        "percentage": 18.3
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Résolution De Problèmes",
         "count": 20,
-        "percentage": 18.7
+        "percentage": 18.3
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Vue.js",
-        "count": 19,
-        "percentage": 17.8
+        "count": 20,
+        "percentage": 18.3
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Gestion de projet",
         "count": 18,
-        "percentage": 16.8
+        "percentage": 16.5
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "SQL",
         "count": 18,
-        "percentage": 16.8
+        "percentage": 16.5
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Sécurité Informatique",
         "count": 18,
-        "percentage": 16.8
+        "percentage": 16.5
       },
       {
         "competence_a": "Git",
         "competence_b": "Vision",
         "count": 18,
-        "percentage": 16.8
+        "percentage": 16.5
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Intelligence artificielle",
         "count": 17,
-        "percentage": 15.9
+        "percentage": 15.6
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "MLOps",
         "count": 17,
-        "percentage": 15.9
+        "percentage": 15.6
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "MLOps",
         "count": 17,
-        "percentage": 15.9
+        "percentage": 15.6
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Pipelines De Données",
         "count": 17,
-        "percentage": 15.9
+        "percentage": 15.6
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Gestion de projet",
         "count": 16,
-        "percentage": 15.0
+        "percentage": 14.7
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Git",
         "count": 16,
-        "percentage": 15.0
+        "percentage": 14.7
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Pipelines De Données",
         "count": 16,
-        "percentage": 15.0
+        "percentage": 14.7
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "SQL",
         "count": 16,
-        "percentage": 15.0
+        "percentage": 14.7
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Intelligence artificielle",
         "count": 16,
-        "percentage": 15.0
+        "percentage": 14.7
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Python",
         "count": 16,
-        "percentage": 15.0
+        "percentage": 14.7
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Vision",
         "count": 16,
-        "percentage": 15.0
+        "percentage": 14.7
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "Sécurité Informatique",
         "count": 16,
-        "percentage": 15.0
+        "percentage": 14.7
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Qualité Des Données",
         "count": 15,
-        "percentage": 14.0
+        "percentage": 13.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Sécurité Informatique",
         "count": 15,
-        "percentage": 14.0
+        "percentage": 13.8
       },
       {
         "competence_a": "API",
         "competence_b": "Intelligence artificielle",
         "count": 15,
-        "percentage": 14.0
+        "percentage": 13.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Git",
         "count": 15,
-        "percentage": 14.0
+        "percentage": 13.8
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Résolution De Problèmes",
         "count": 15,
-        "percentage": 14.0
+        "percentage": 13.8
       },
       {
         "competence_a": "Git",
         "competence_b": "MLOps",
         "count": 15,
-        "percentage": 14.0
+        "percentage": 13.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Python",
         "count": 14,
-        "percentage": 13.1
+        "percentage": 12.8
       },
       {
         "competence_a": "Backend",
         "competence_b": "Git",
         "count": 14,
-        "percentage": 13.1
+        "percentage": 12.8
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Gestion de projet",
         "count": 14,
-        "percentage": 13.1
+        "percentage": 12.8
       },
       {
         "competence_a": "Python",
         "competence_b": "SQL",
         "count": 14,
-        "percentage": 13.1
+        "percentage": 12.8
       },
       {
         "competence_a": "Python",
         "competence_b": "Vision",
         "count": 14,
-        "percentage": 13.1
+        "percentage": 12.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Déploiement De Modèles",
         "count": 13,
-        "percentage": 12.1
+        "percentage": 11.9
       },
       {
         "competence_a": "API",
         "competence_b": "Backend",
         "count": 13,
-        "percentage": 12.1
+        "percentage": 11.9
       },
       {
         "competence_a": "Backend",
         "competence_b": "Gestion de projet",
         "count": 13,
-        "percentage": 12.1
+        "percentage": 11.9
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Intelligence artificielle",
         "count": 13,
-        "percentage": 12.1
+        "percentage": 11.9
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Déploiement De Modèles",
         "count": 13,
-        "percentage": 12.1
+        "percentage": 11.9
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "MLOps",
         "count": 13,
-        "percentage": 12.1
+        "percentage": 11.9
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Git",
         "count": 13,
-        "percentage": 12.1
+        "percentage": 11.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "SQL",
+        "count": 13,
+        "percentage": 11.9
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Python",
         "count": 13,
-        "percentage": 12.1
+        "percentage": 11.9
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "MLOps",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Backend",
         "competence_b": "Data engineering",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Gestion de projet",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Sécurité Informatique",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Git",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Intégration Continue",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "SQL",
+        "count": 12,
+        "percentage": 11.0
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Vue.js",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
-        "competence_a": "Git",
-        "competence_b": "SQL",
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "Java",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Tests Automatisés",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Qualité Des Données",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "SQL",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Résolution De Problèmes",
         "competence_b": "Sécurité Informatique",
         "count": 12,
-        "percentage": 11.2
+        "percentage": 11.0
       },
       {
         "competence_a": "Backend",
         "competence_b": "Python",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Vue.js",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Gestion de projet",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Python",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Docker",
         "competence_b": "Git",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Docker",
         "competence_b": "Intelligence artificielle",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Docker",
         "competence_b": "Python",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Gestion de projet",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Résolution De Problèmes",
         "count": 11,
-        "percentage": 10.3
-      },
-      {
-        "competence_a": "Gestion de projet",
-        "competence_b": "SQL",
-        "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Tests Automatisés",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Git",
         "competence_b": "Qualité Des Données",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Git",
         "competence_b": "Résolution De Problèmes",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Intégration Continue",
         "count": 11,
-        "percentage": 10.3
-      },
-      {
-        "competence_a": "Intelligence artificielle",
-        "competence_b": "Java",
-        "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Qualité Des Données",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Vision",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Qualité Des Données",
         "count": 11,
-        "percentage": 10.3
+        "percentage": 10.1
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Résolution De Problèmes",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Vision",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Tests Automatisés",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Vision",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Qualité Des Données",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Sécurité Informatique",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "SQL",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Java",
+        "count": 10,
+        "percentage": 9.2
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "JavaScript",
+        "count": 10,
+        "percentage": 9.2
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Monitoring De Modèles",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Optimisation Des Performances",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "PostgreSQL",
+        "count": 10,
+        "percentage": 9.2
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Pipelines De Données",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Résolution De Problèmes",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Sécurité Informatique",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "Python",
         "competence_b": "Qualité Des Données",
         "count": 10,
-        "percentage": 9.3
+        "percentage": 9.2
       },
       {
         "competence_a": "API",
         "competence_b": "Data engineering",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "API",
         "competence_b": "Gestion de projet",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Backend",
         "competence_b": "Design Patterns",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Backend",
         "competence_b": "MLOps",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Backend",
         "competence_b": "Sécurité Informatique",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Backend",
         "competence_b": "Vision",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Git",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Code Review",
         "competence_b": "MLOps",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Qualité Des Données",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Design Patterns",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Protection Des Données",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Vision",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Qualité Des Données",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Résolution De Problèmes",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Model Drift",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Pipelines De Données",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Pipelines De Données",
         "count": 9,
-        "percentage": 8.4
-      },
-      {
-        "competence_a": "Git",
-        "competence_b": "Java",
-        "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Git",
         "competence_b": "Sécurité Informatique",
         "count": 9,
-        "percentage": 8.4
-      },
-      {
-        "competence_a": "Intelligence artificielle",
-        "competence_b": "JavaScript",
-        "count": 9,
-        "percentage": 8.4
-      },
-      {
-        "competence_a": "Intelligence artificielle",
-        "competence_b": "PostgreSQL",
-        "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Scalabilité",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Veille Technologique",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Sécurité Informatique",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "JavaScript",
         "competence_b": "Python",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "MLOps",
         "competence_b": "SQL",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Protection Des Données",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Python",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "SQL",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Sécurité Informatique",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Python",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "SQL",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Python",
         "competence_b": "Résolution De Problèmes",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Python",
         "competence_b": "Vue.js",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "Résolution De Problèmes",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Résolution De Problèmes",
         "competence_b": "Scalabilité",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "SQL",
         "competence_b": "Vue.js",
         "count": 9,
-        "percentage": 8.4
+        "percentage": 8.3
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Protection Des Données",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Vue.js",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "API",
         "competence_b": "Git",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "API",
         "competence_b": "Qualité Des Données",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Backend",
         "competence_b": "Qualité Des Données",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Backend",
         "competence_b": "Vue.js",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Documentation Technique",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Intégration Continue",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Résolution De Problèmes",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Vue.js",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "MLOps",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Docker",
         "competence_b": "Gestion de projet",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Docker",
         "competence_b": "Vision",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Git",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Python",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Python",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Qualité Des Données",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Sécurité Informatique",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Model Drift",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Monitoring De Modèles",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "JavaScript",
+        "count": 8,
+        "percentage": 7.3
       },
       {
         "competence_a": "Git",
         "competence_b": "Vue.js",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Protection Des Données",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "MLOps",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Qualité Des Données",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "SQL",
+        "count": 8,
+        "percentage": 7.3
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Model Drift",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Monitoring De Modèles",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Sécurité Informatique",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Python",
         "competence_b": "Sécurité Informatique",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "Vue.js",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Résolution De Problèmes",
         "competence_b": "SQL",
         "count": 8,
-        "percentage": 7.5
+        "percentage": 7.3
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Backend",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Design Patterns",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Intégration Continue",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "JavaScript",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Monitoring De Modèles",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Tests Automatisés",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "API",
         "competence_b": "Analyse de données",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "API",
         "competence_b": "Pipelines De Données",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "API",
         "competence_b": "Python",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "API",
         "competence_b": "Vision",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Backend",
         "competence_b": "Optimisation Des Performances",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Backend",
         "competence_b": "Pipelines De Données",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Intelligence artificielle",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Gestion de projet",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Documentation Technique",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Monitoring De Modèles",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "SQL",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Docker",
         "competence_b": "Kubernetes",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "MLOps",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Monitoring De Modèles",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Vision",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Git",
         "competence_b": "Intégration Continue",
         "count": 7,
-        "percentage": 6.5
-      },
-      {
-        "competence_a": "Git",
-        "competence_b": "JavaScript",
-        "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Git",
         "competence_b": "Kubernetes",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Git",
         "competence_b": "Optimisation Des Performances",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Git",
         "competence_b": "Pipelines De Données",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Git",
         "competence_b": "Tests Automatisés",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Kubernetes",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Linux",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "React",
+        "count": 7,
+        "percentage": 6.4
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Résolution De Problèmes",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Tests Automatisés",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Java",
         "competence_b": "Python",
         "count": 7,
-        "percentage": 6.5
-      },
-      {
-        "competence_a": "Java",
-        "competence_b": "SQL",
-        "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Kubernetes",
         "competence_b": "Python",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Linux",
         "competence_b": "Python",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Linux",
         "competence_b": "Vision",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "Tests Automatisés",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Résolution De Problèmes",
         "competence_b": "Vision",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Sécurité Informatique",
         "competence_b": "Vision",
         "count": 7,
-        "percentage": 6.5
+        "percentage": 6.4
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Code Review",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Documentation Technique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "Intelligence artificielle",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "API",
         "competence_b": "Java",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "API",
         "competence_b": "Optimisation Des Performances",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "API",
         "competence_b": "SQL",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "API",
         "competence_b": "Sécurité Informatique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Data engineering",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Intelligence artificielle",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "Intelligence artificielle",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "Python",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Backend",
         "competence_b": "Code Review",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Backend",
         "competence_b": "Docker",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Backend",
         "competence_b": "Intégration Continue",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Backend",
         "competence_b": "Model Drift",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Backend",
         "competence_b": "Tests Automatisés",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Data engineering",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Gestion de projet",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Intelligence artificielle",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Pipelines De Données",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Python",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Sécurité Informatique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Intelligence artificielle",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "JavaScript",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Documentation Technique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Docker",
         "competence_b": "MLOps",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Docker",
         "competence_b": "Vue.js",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Intégration Continue",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Pipelines De Données",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Tests Automatisés",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Vue.js",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Intégration Continue",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Tests Automatisés",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Java",
+        "count": 6,
+        "percentage": 5.5
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "JavaScript",
+        "count": 6,
+        "percentage": 5.5
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Kubernetes",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Optimisation Des Performances",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "PostgreSQL",
+        "count": 6,
+        "percentage": 5.5
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Scalabilité",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Veille Technologique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Git",
         "competence_b": "Model Drift",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
-        "competence_a": "Intelligence artificielle",
+        "competence_a": "Git",
+        "competence_b": "PostgreSQL",
+        "count": 6,
+        "percentage": 5.5
+      },
+      {
+        "competence_a": "Git",
         "competence_b": "React",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Pipelines De Données",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "SQL",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "JavaScript",
+        "count": 6,
+        "percentage": 5.5
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "React",
+        "count": 6,
+        "percentage": 5.5
       },
       {
         "competence_a": "Java",
         "competence_b": "Sécurité Informatique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Kubernetes",
         "competence_b": "Vision",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Vue.js",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Vision",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Monitoring De Modèles",
         "competence_b": "Qualité Des Données",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Monitoring De Modèles",
         "competence_b": "Tests Automatisés",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Optimisation Des Performances",
         "competence_b": "Python",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Optimisation Des Performances",
         "competence_b": "SQL",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Résolution De Problèmes",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "PostgreSQL",
         "competence_b": "Python",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "PostgreSQL",
         "competence_b": "Qualité Des Données",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "PostgreSQL",
         "competence_b": "Sécurité Informatique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Python",
         "competence_b": "Scalabilité",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "Vision",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "SQL",
         "competence_b": "Sécurité Informatique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "SQL",
         "competence_b": "Vision",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Sécurité Informatique",
         "competence_b": "Veille Technologique",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Sécurité Informatique",
         "competence_b": "Vue.js",
         "count": 6,
-        "percentage": 5.6
+        "percentage": 5.5
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Docker",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Java",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "PostgreSQL",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "API",
         "competence_b": "MLOps",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "API",
         "competence_b": "Model Drift",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "API",
         "competence_b": "Veille Technologique",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "API",
         "competence_b": "Vue.js",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Backend",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Data engineering",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Intelligence artificielle",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Backend",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Gestion de projet",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "Git",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Backend",
         "competence_b": "CI/CD",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Backend",
         "competence_b": "Documentation Technique",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Backend",
         "competence_b": "Déploiement De Modèles",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Backend",
         "competence_b": "Kubernetes",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Backend",
         "competence_b": "Monitoring De Modèles",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Backend",
         "competence_b": "Résolution De Problèmes",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Backend",
         "competence_b": "Veille Technologique",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Docker",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Git",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Kubernetes",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "MLOps",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Python",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Data engineering",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Docker",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Déploiement De Modèles",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Code Review",
         "competence_b": "SQL",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Vision",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Déploiement De Modèles",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Docker",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Java",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Optimisation Des Performances",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "PostgreSQL",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Java",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Vue.js",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Docker",
         "competence_b": "Documentation Technique",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Déploiement De Modèles",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Scalabilité",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "SQL",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Vision",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Optimisation Des Performances",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Travail En Équipe",
         "count": 5,
-        "percentage": 4.7
-      },
-      {
-        "competence_a": "Gestion de projet",
-        "competence_b": "Java",
-        "count": 5,
-        "percentage": 4.7
-      },
-      {
-        "competence_a": "Gestion de projet",
-        "competence_b": "JavaScript",
-        "count": 5,
-        "percentage": 4.7
-      },
-      {
-        "competence_a": "Gestion de projet",
-        "competence_b": "PostgreSQL",
-        "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Gestion de projet",
         "competence_b": "Product Management",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Git",
         "competence_b": "Linux",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Git",
         "competence_b": "Monitoring De Modèles",
         "count": 5,
-        "percentage": 4.7
-      },
-      {
-        "competence_a": "Git",
-        "competence_b": "PostgreSQL",
-        "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Git",
         "competence_b": "Product Management",
         "count": 5,
-        "percentage": 4.7
-      },
-      {
-        "competence_a": "Git",
-        "competence_b": "React",
-        "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "MySQL",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Relation Client",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Travail En Équipe",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Model Drift",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Python",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Scalabilité",
         "count": 5,
-        "percentage": 4.7
-      },
-      {
-        "competence_a": "Java",
-        "competence_b": "JavaScript",
-        "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Java",
         "competence_b": "Qualité Des Données",
         "count": 5,
-        "percentage": 4.7
-      },
-      {
-        "competence_a": "Java",
-        "competence_b": "React",
-        "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Java",
         "competence_b": "Résolution De Problèmes",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "React",
+        "count": 5,
+        "percentage": 4.6
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "SQL",
+        "count": 5,
+        "percentage": 4.6
       },
       {
         "competence_a": "Kubernetes",
         "competence_b": "MLOps",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Optimisation Des Performances",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "MLOps",
         "competence_b": "PostgreSQL",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Scalabilité",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Tests Automatisés",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Monitoring De Modèles",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Tests Automatisés",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Vue.js",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Monitoring De Modèles",
         "competence_b": "Pipelines De Données",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Optimisation Des Performances",
         "competence_b": "Qualité Des Données",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Optimisation Des Performances",
         "competence_b": "Veille Technologique",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Protection Des Données",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Tests Automatisés",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "SQL",
+        "count": 5,
+        "percentage": 4.6
       },
       {
         "competence_a": "Protection Des Données",
         "competence_b": "Qualité Des Données",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "Scalabilité",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "Veille Technologique",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Résolution De Problèmes",
         "competence_b": "Tests Automatisés",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Résolution De Problèmes",
         "competence_b": "Travail En Équipe",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "SQL",
         "competence_b": "Tests Automatisés",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Sécurité Informatique",
         "competence_b": "Tests Automatisés",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Veille Technologique",
         "competence_b": "Vue.js",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Vision",
         "competence_b": "Vue.js",
         "count": 5,
-        "percentage": 4.7
+        "percentage": 4.6
       },
       {
         "competence_a": "Analyse de données",
@@ -3580,6 +3598,12 @@
       },
       {
         "competence_a": "Gestion de projet",
+        "competence_b": "React",
+        "count": 4,
+        "percentage": 3.7
+      },
+      {
+        "competence_a": "Gestion de projet",
         "competence_b": "Travail En Équipe",
         "count": 4,
         "percentage": 3.7
@@ -3665,18 +3689,6 @@
       {
         "competence_a": "Java",
         "competence_b": "Vue.js",
-        "count": 4,
-        "percentage": 3.7
-      },
-      {
-        "competence_a": "JavaScript",
-        "competence_b": "React",
-        "count": 4,
-        "percentage": 3.7
-      },
-      {
-        "competence_a": "JavaScript",
-        "competence_b": "SQL",
         "count": 4,
         "percentage": 3.7
       },
@@ -3778,12 +3790,6 @@
       },
       {
         "competence_a": "PostgreSQL",
-        "competence_b": "SQL",
-        "count": 4,
-        "percentage": 3.7
-      },
-      {
-        "competence_a": "PostgreSQL",
         "competence_b": "Vision",
         "count": 4,
         "percentage": 3.7
@@ -3797,6 +3803,12 @@
       {
         "competence_a": "Python",
         "competence_b": "Tests Automatisés",
+        "count": 4,
+        "percentage": 3.7
+      },
+      {
+        "competence_a": "React",
+        "competence_b": "SQL",
         "count": 4,
         "percentage": 3.7
       },
@@ -4498,12 +4510,6 @@
       },
       {
         "competence_a": "Gestion de projet",
-        "competence_b": "React",
-        "count": 3,
-        "percentage": 2.8
-      },
-      {
-        "competence_a": "Gestion de projet",
         "competence_b": "Relation Client",
         "count": 3,
         "percentage": 2.8
@@ -4823,12 +4829,6 @@
       {
         "competence_a": "React",
         "competence_b": "Résolution De Problèmes",
-        "count": 3,
-        "percentage": 2.8
-      },
-      {
-        "competence_a": "React",
-        "competence_b": "SQL",
         "count": 3,
         "percentage": 2.8
       },
@@ -4878,1609 +4878,1645 @@
         "competence_a": "Acquisition",
         "competence_b": "Analyse de données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Acquisition",
         "competence_b": "Data engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Acquisition",
         "competence_b": "Intelligence artificielle",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Airflow",
         "competence_b": "Model Drift",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Architecture Microservices",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Automatisation De Pipelines",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "CI/CD",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Conception De Solutions",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Deep learning",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "GitHub",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "MySQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Power BI",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Relation Client",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Travail En Équipe",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Code Review",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Documentation Technique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Déploiement De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Gestion de projet",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Java",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "JavaScript",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Qualité Des Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Relation Client",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Analyse Des Besoins",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "Cahier des charges",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "Code Review",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "Coûts",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "Design Patterns",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "Déploiement De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "MLOps",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "Tests Automatisés",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Anglais Professionnel",
         "competence_b": "Vue.js",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "Backend",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "Docker",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "Déploiement De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "Gestion de projet",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "Git",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "Kubernetes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "Monitoring De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "PostgreSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Ansible",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API",
         "competence_b": "API REST",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API",
         "competence_b": "CI/CD",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API",
         "competence_b": "Docker",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API",
         "competence_b": "Feature Engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API",
         "competence_b": "Kubernetes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Data engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Design Patterns",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Documentation Technique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Déploiement De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Git",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Intégration Continue",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "MLOps",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Monitoring De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "API REST",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Automatisation De Pipelines",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Documentation Technique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Gestion de projet",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Git",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Intégration Continue",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Model Drift",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Python",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Architecture Microservices",
         "competence_b": "Tests Automatisés",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "CI/CD",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Code Review",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Documentation Technique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Optimisation Des Performances",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Relation Client",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Automatisation De Pipelines",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "AWS",
         "competence_b": "Data engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "AWS",
         "competence_b": "Gestion de projet",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "AWS",
         "competence_b": "Git",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "AWS",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Azure",
         "competence_b": "Data engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Azure",
         "competence_b": "Git",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Azure",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Azure",
         "competence_b": "Qualité Des Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Azure",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Azure",
         "competence_b": "Vision",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "Design Patterns",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "Feature Engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "MLOps",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "React",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Aéronautique",
         "competence_b": "Vue.js",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Backend",
         "competence_b": "Cahier des charges",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Backend",
         "competence_b": "Cybersécurité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Backend",
         "competence_b": "Feature Engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Backend",
         "competence_b": "MySQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Backend",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Backend",
         "competence_b": "Relation Client",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Backend",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Coûts",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Délais",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Déploiement De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Monitoring De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Power BI",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Qualité Des Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Vision",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cahier des charges",
         "competence_b": "Vue.js",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Déploiement De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "CI/CD",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Délais",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "JavaScript",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Monitoring De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Optimisation De Performance",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "PostgreSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Product Management",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "React",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Travail En Équipe",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Code Review",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Python",
+        "count": 2,
+        "percentage": 1.8
       },
       {
         "competence_a": "Conception De Solutions",
         "competence_b": "Intelligence artificielle",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Conception De Solutions",
         "competence_b": "Model Drift",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Conception De Solutions",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Coûts",
         "competence_b": "Data engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Coûts",
         "competence_b": "Git",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Coûts",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Coûts",
         "competence_b": "Vision",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Data engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Documentation Technique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Monitoring De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Optimisation Des Performances",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Tests Automatisés",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Cybersécurité",
         "competence_b": "Travail En Équipe",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Deep learning",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Développement web",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Kubernetes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "MySQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "NoSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Optimisation De Performance",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Power BI",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Data engineering",
         "competence_b": "Relation Client",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Deep learning",
         "competence_b": "Intelligence artificielle",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Deep learning",
         "competence_b": "Machine learning",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Deep learning",
         "competence_b": "MLOps",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Deep learning",
         "competence_b": "Model Drift",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Deep learning",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Délais",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Déploiement De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Feature Engineering",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Linux",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Optimisation Des Performances",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "React",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Design Patterns",
         "competence_b": "Tests Automatisés",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Docker",
         "competence_b": "Déploiement De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Docker",
         "competence_b": "NoSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Docker",
         "competence_b": "Optimisation Des Performances",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Délais",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "GitHub",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Gitlab CI",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Optimisation Des Performances",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Relation Client",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Documentation Technique",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Délais",
         "competence_b": "Git",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Délais",
         "competence_b": "MLOps",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Délais",
         "competence_b": "Monitoring De Modèles",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Délais",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Délais",
         "competence_b": "Qualité Des Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Délais",
         "competence_b": "Tests Automatisés",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Java",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "PostgreSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Déploiement De Modèles",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Développement web",
         "competence_b": "Intelligence artificielle",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "Git",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "Java",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "JavaScript",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "MLOps",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "Model Drift",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "Optimisation Des Performances",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "React",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Feature Engineering",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Intelligence artificielle",
+        "count": 2,
+        "percentage": 1.8
+      },
+      {
+        "competence_a": "Ferroviaire",
+        "competence_b": "Vue.js",
+        "count": 2,
+        "percentage": 1.8
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "TypeScript",
+        "count": 2,
+        "percentage": 1.8
       },
       {
         "competence_a": "Git",
         "competence_b": "Protection Des Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "GitHub",
         "competence_b": "Intégration Continue",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "GitHub",
         "competence_b": "Optimisation Des Performances",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "GitHub",
         "competence_b": "PostgreSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "GitHub",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "GitHub",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Optimisation De Performance",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Intelligence artificielle",
         "competence_b": "Power BI",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
+      },
+      {
+        "competence_a": "Intelligence artificielle",
+        "competence_b": "TypeScript",
+        "count": 2,
+        "percentage": 1.8
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Java",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "JavaScript",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Kubernetes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "MySQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Intégration Continue",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Java",
         "competence_b": "MLOps",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Java",
         "competence_b": "MySQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Java",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Java",
         "competence_b": "Travail En Équipe",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "JavaScript",
         "competence_b": "Model Drift",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "JavaScript",
         "competence_b": "MySQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "JavaScript",
         "competence_b": "NoSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "PostgreSQL",
+        "count": 2,
+        "percentage": 1.8
       },
       {
         "competence_a": "Kubernetes",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Kubernetes",
         "competence_b": "PostgreSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Kubernetes",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Kubernetes",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Kubernetes",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Linux",
         "competence_b": "MLOps",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Linux",
         "competence_b": "PostgreSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Linux",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Machine learning",
         "competence_b": "Model Drift",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Machine learning",
         "competence_b": "Python",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Machine learning",
         "competence_b": "Vision",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "MLOps",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Optimisation Des Performances",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Power BI",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Model Drift",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Monitoring De Modèles",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "MySQL",
         "competence_b": "NoSQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "MySQL",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "MySQL",
         "competence_b": "Product Management",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "MySQL",
         "competence_b": "SQL",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "MySQL",
         "competence_b": "Vision",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "NoSQL",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Optimisation De Performance",
         "competence_b": "Pipelines De Données",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Optimisation De Performance",
         "competence_b": "Vue.js",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Optimisation Des Performances",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Optimisation Des Performances",
         "competence_b": "React",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Optimisation Des Performances",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Power BI",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Product Management",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Programmation Concurrente",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Pipelines De Données",
         "competence_b": "Relation Client",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "PostgreSQL",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "PostgreSQL",
         "competence_b": "Tests Automatisés",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "PostgreSQL",
         "competence_b": "Vue.js",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Product Management",
         "competence_b": "React",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Product Management",
         "competence_b": "Sécurité Informatique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Product Management",
         "competence_b": "Vision",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Programmation Concurrente",
         "competence_b": "Relation Client",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Programmation Concurrente",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Programmation Concurrente",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Programmation Concurrente",
         "competence_b": "Sécurité Informatique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Programmation Concurrente",
         "competence_b": "Vue.js",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Qualité Des Données",
         "competence_b": "Travail En Équipe",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "React",
         "competence_b": "Sécurité Informatique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "React",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Relation Client",
         "competence_b": "Résolution De Problèmes",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Relation Client",
         "competence_b": "Scalabilité",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Relation Client",
         "competence_b": "Vue.js",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Résolution De Problèmes",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Scalabilité",
         "competence_b": "Vision",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "SQL",
         "competence_b": "Travail En Équipe",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Tests Automatisés",
         "competence_b": "Veille Technologique",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Veille Technologique",
         "competence_b": "Vision",
         "count": 2,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       {
         "competence_a": "Acquisition",
@@ -6695,6 +6731,12 @@
       {
         "competence_a": "Analyse de données",
         "competence_b": "Azure",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Computer Vision",
         "count": 1,
         "percentage": 0.9
       },
@@ -8188,7 +8230,43 @@
       },
       {
         "competence_a": "Computer Vision",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Deep learning",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
         "competence_b": "Design Patterns",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Imagerie",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Intelligence artificielle",
         "count": 1,
         "percentage": 0.9
       },
@@ -8200,7 +8278,25 @@
       },
       {
         "competence_a": "Computer Vision",
-        "competence_b": "Python",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Pipelines De Données",
         "count": 1,
         "percentage": 0.9
       },
@@ -8949,18 +9045,6 @@
         "percentage": 0.9
       },
       {
-        "competence_a": "Ferroviaire",
-        "competence_b": "Intelligence artificielle",
-        "count": 1,
-        "percentage": 0.9
-      },
-      {
-        "competence_a": "Ferroviaire",
-        "competence_b": "Vue.js",
-        "count": 1,
-        "percentage": 0.9
-      },
-      {
         "competence_a": "Gestion de projet",
         "competence_b": "Intégration De Systèmes",
         "count": 1,
@@ -9003,12 +9087,6 @@
         "percentage": 0.9
       },
       {
-        "competence_a": "Gestion de projet",
-        "competence_b": "TypeScript",
-        "count": 1,
-        "percentage": 0.9
-      },
-      {
         "competence_a": "Git",
         "competence_b": "Imagerie",
         "count": 1,
@@ -9029,6 +9107,12 @@
       {
         "competence_a": "Git",
         "competence_b": "Symfony",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "TypeScript",
         "count": 1,
         "percentage": 0.9
       },
@@ -9219,12 +9303,6 @@
         "percentage": 0.9
       },
       {
-        "competence_a": "Intelligence artificielle",
-        "competence_b": "TypeScript",
-        "count": 1,
-        "percentage": 0.9
-      },
-      {
         "competence_a": "Intégration Continue",
         "competence_b": "Intégration De Systèmes",
         "count": 1,
@@ -9370,6 +9448,12 @@
       },
       {
         "competence_a": "Java",
+        "competence_b": "PostgreSQL",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Java",
         "competence_b": "Relation Client",
         "count": 1,
         "percentage": 0.9
@@ -9383,6 +9467,12 @@
       {
         "competence_a": "Java",
         "competence_b": "Tests Automatisés",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "Java",
+        "competence_b": "TypeScript",
         "count": 1,
         "percentage": 0.9
       },
@@ -9407,12 +9497,6 @@
       {
         "competence_a": "JavaScript",
         "competence_b": "Pipelines De Données",
-        "count": 1,
-        "percentage": 0.9
-      },
-      {
-        "competence_a": "JavaScript",
-        "competence_b": "PostgreSQL",
         "count": 1,
         "percentage": 0.9
       },
@@ -9455,6 +9539,12 @@
       {
         "competence_a": "JavaScript",
         "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "JavaScript",
+        "competence_b": "TypeScript",
         "count": 1,
         "percentage": 0.9
       },
@@ -9898,6 +9988,12 @@
       },
       {
         "competence_a": "PostgreSQL",
+        "competence_b": "React",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "PostgreSQL",
         "competence_b": "Scalabilité",
         "count": 1,
         "percentage": 0.9
@@ -9905,6 +10001,12 @@
       {
         "competence_a": "PostgreSQL",
         "competence_b": "Travail En Équipe",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "PostgreSQL",
+        "competence_b": "TypeScript",
         "count": 1,
         "percentage": 0.9
       },
@@ -10078,6 +10180,12 @@
       },
       {
         "competence_a": "React",
+        "competence_b": "TypeScript",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "React",
         "competence_b": "Vision",
         "count": 1,
         "percentage": 0.9
@@ -10145,6 +10253,12 @@
       {
         "competence_a": "SQL",
         "competence_b": "Terraform",
+        "count": 1,
+        "percentage": 0.9
+      },
+      {
+        "competence_a": "SQL",
+        "competence_b": "TypeScript",
         "count": 1,
         "percentage": 0.9
       },
@@ -10460,6 +10574,7 @@
         "MLOps",
         "Imagerie",
         "Pipelines De Données",
+        "Computer Vision",
         "Model Drift"
       ],
       [
@@ -11374,6 +11489,22 @@
         "Gestion de projet",
         "Intelligence artificielle",
         "Vue.js"
+      ],
+      [
+        "Intelligence artificielle",
+        "Vue.js",
+        "Ferroviaire"
+      ],
+      [
+        "Gestion de projet",
+        "Git",
+        "Intelligence artificielle",
+        "Java",
+        "JavaScript",
+        "PostgreSQL",
+        "React",
+        "SQL",
+        "TypeScript"
       ]
     ],
     "offres": [
@@ -11394,6 +11525,24 @@
         "contrat": "CDD - 12 Mois",
         "date": "2026-06-24",
         "url": "https://candidat.francetravail.fr/offres/recherche/detail/4161113"
+      },
+      {
+        "id": "4174017",
+        "intitule": "Développeur Logiciel Embarqué H/F",
+        "entreprise": "Fed Group",
+        "territoire": "69 - Lyon 1er Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-24",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4174017"
+      },
+      {
+        "id": "4180139",
+        "intitule": "Ingénieur études et développement Java F/H",
+        "entreprise": "Coexya",
+        "territoire": "69 - Lyon 1er Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-24",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4180139"
       },
       {
         "id": "4140558",
@@ -12361,6 +12510,24 @@
         "url": "https://candidat.francetravail.fr/offres/recherche/detail/4161113"
       },
       {
+        "id": "4174017",
+        "intitule": "Développeur Logiciel Embarqué H/F",
+        "entreprise": "Fed Group",
+        "territoire": "69 - Lyon 1er Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-24",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4174017"
+      },
+      {
+        "id": "4180139",
+        "intitule": "Ingénieur études et développement Java F/H",
+        "entreprise": "Coexya",
+        "territoire": "69 - Lyon 1er Arrondissement",
+        "contrat": "CDI",
+        "date": "2026-06-24",
+        "url": "https://candidat.francetravail.fr/offres/recherche/detail/4180139"
+      },
+      {
         "id": "4140558",
         "intitule": "Test et validation ou Lead test logiciel e-santé (H/F)",
         "entreprise": "",
@@ -13307,8 +13474,8 @@
       }
     ]
   },
-  "computed_at": "2026-06-24T05:18:43.656554",
-  "input_hash": "b4818c27af61bcf8388a18d836f19ec8cd70ba04104857f6a7f05d5a71eac1c3",
+  "computed_at": "2026-06-24T19:20:01.753905",
+  "input_hash": "62582770b7fb0b99ed3b2e1bfdfc1981625dc190265377975b6a66fe1220550b",
   "source_version": "",
   "model_version": "",
   "status": "success"

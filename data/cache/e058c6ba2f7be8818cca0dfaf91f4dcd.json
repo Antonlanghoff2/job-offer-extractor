@@ -1,0 +1,48 @@
+{
+  "key": "offer_extraction:4174017",
+  "value": {
+    "id": "4174017",
+    "intitule": "Développeur Logiciel Embarqué H/F",
+    "entreprise": "Fed Group",
+    "territoire": "69 - Lyon 1er Arrondissement",
+    "ville": "69381",
+    "code_postal": "69001",
+    "contrat": "CDI",
+    "date_creation": "2026-06-24",
+    "date": "2026-06-24",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4174017",
+    "description": "Fed IT, cabinet de recrutement spécialisé dans les métiers informatiques, recrute pour son client, PME leader dans le développement de logiciels sur-mesure pour l'industrie, un(e) Chef de Projet Logiciels Embarqués H/F pour accompagner sa forte croissance.\nVous intégrez une société innovante de 200 collaborateurs répartis sur plusieurs sites au national. Rattaché(e) au directeur de la BU \"développement informatique\" (40 personnes), vous : \n \n-Intervenez pour des clients en France et à l'étranger : ferroviaire, nucléaire, industries diverses, \n-Travaillez en liens avec vos homologues spécialistes de l'électronique en vue de conceptions globales \"logiciel/système\", \n-Réalisez le recueil des besoins auprès de vos clients, \n-Projetez le projet en termes de planning et de budget, \n-Rédigez les spécifications techniques et fonctionnelles et les validez avec vos clients, \n-Effectuez les développements logiciels embarqués, essentiellement en C#, \n-Pilotez les phases de tests, recettes, formation et support (les premières semaines), \n \nDes déplacements fréquents sur une journée en France sont à prévoir et les déplacements à l'étranger ont lieu à hauteur de 2 semaines/an. \n \nRémunération : 40 à 49 K€ bruts/an (fixe selon expérience) + intéressement (1 à 2 mois de salaire) + prime d'été + cartes cadeaux de 40 à 80 € à Noël + primes projets possibles (600 à 1 800 €/an) + compensation des déplacements + Tickets Restaurant + CE. \n12 RTT / an et télétravail au bout de 6 mois d'ancienneté.\nDe formation ingénieur, vous justifiez de 3 ans d'expérience minimum à un poste dans le développement informatique dans l'industrie. \n \nAu-delà de votre maîtrise des langages C et C#, votre capacité à gérer des projets complexes, à travaillez en équipe avec polyvalence et souplesse vous assurent réussite sur ce poste.",
+    "metier": "Développeur / Développeuse web",
+    "niveau": "intermediaire",
+    "competences": [
+      "Ferroviaire",
+      "Intelligence artificielle",
+      "Vue.js"
+    ],
+    "salaire_min": 1800,
+    "salaire_max": 1800,
+    "teletravail": "télétravail",
+    "diplomes_requis": [
+      {
+        "label": "ingénieur",
+        "level": 0,
+        "required": true,
+        "source_sentence": "De formation ingénieur, vous justifiez de 3 ans d'expérience minimum à un poste dans le développement informatique dans l'industrie.",
+        "confidence": 0.9
+      }
+    ],
+    "experience_requise": "4 An(s)",
+    "_extraction_metadata": {
+      "extracted": true,
+      "competences_count": 3,
+      "diplomes_count": 1,
+      "has_salary": true,
+      "has_teletravail": true
+    }
+  },
+  "computed_at": "2026-06-24T19:12:35.377493",
+  "input_hash": "1fb18eb0b283b98d4283168b8b5f0f42fe932daa35d069d6b16450fe8c419d51",
+  "source_version": "1.0",
+  "model_version": "1.0",
+  "status": "success"
+}

@@ -12,8 +12,12 @@
       "Git": 1,
       "Linux": 1,
       "Model Drift": 1,
+      "Pipelines De Données": 1,
       "Product Management": 1,
-      "Python": 1
+      "Protection Des Données": 1,
+      "Python": 1,
+      "Qualité Des Données": 1,
+      "Veille Technologique": 1
     },
     "competences_details": [
       {
@@ -73,6 +77,14 @@
         }
       },
       {
+        "nom": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Pipelines de données": 1
+        }
+      },
+      {
         "nom": "Product Management",
         "count": 1,
         "percentage": 100.0,
@@ -81,11 +93,35 @@
         }
       },
       {
+        "nom": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Protection des données": 1
+        }
+      },
+      {
         "nom": "Python",
         "count": 1,
         "percentage": 100.0,
         "variants": {
           "Python": 1
+        }
+      },
+      {
+        "nom": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Qualité des données": 1
+        }
+      },
+      {
+        "nom": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Veille technologique": 1
         }
       }
     ],
@@ -111,11 +147,23 @@
       "Model Drift": {
         "Model drift": 1
       },
+      "Pipelines De Données": {
+        "Pipelines de données": 1
+      },
       "Product Management": {
         "Product Management": 1
       },
+      "Protection Des Données": {
+        "Protection des données": 1
+      },
       "Python": {
         "Python": 1
+      },
+      "Qualité Des Données": {
+        "Qualité des données": 1
+      },
+      "Veille Technologique": {
+        "Veille technologique": 1
       }
     },
     "metiers": {
@@ -166,13 +214,37 @@
       },
       {
         "competence_a": "Analyse de données",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
         "competence_b": "Product Management",
         "count": 1,
         "percentage": 100.0
       },
       {
         "competence_a": "Analyse de données",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
         "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Veille Technologique",
         "count": 1,
         "percentage": 100.0
       },
@@ -208,13 +280,37 @@
       },
       {
         "competence_a": "Data engineering",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
         "competence_b": "Product Management",
         "count": 1,
         "percentage": 100.0
       },
       {
         "competence_a": "Data engineering",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
         "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Data engineering",
+        "competence_b": "Veille Technologique",
         "count": 1,
         "percentage": 100.0
       },
@@ -244,13 +340,37 @@
       },
       {
         "competence_a": "Docker",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
         "competence_b": "Product Management",
         "count": 1,
         "percentage": 100.0
       },
       {
         "competence_a": "Docker",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
         "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Docker",
+        "competence_b": "Veille Technologique",
         "count": 1,
         "percentage": 100.0
       },
@@ -274,13 +394,37 @@
       },
       {
         "competence_a": "Gestion de projet",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
         "competence_b": "Product Management",
         "count": 1,
         "percentage": 100.0
       },
       {
         "competence_a": "Gestion de projet",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
         "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Gestion de projet",
+        "competence_b": "Veille Technologique",
         "count": 1,
         "percentage": 100.0
       },
@@ -298,13 +442,37 @@
       },
       {
         "competence_a": "Git",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
         "competence_b": "Product Management",
         "count": 1,
         "percentage": 100.0
       },
       {
         "competence_a": "Git",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
         "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Git",
+        "competence_b": "Veille Technologique",
         "count": 1,
         "percentage": 100.0
       },
@@ -316,7 +484,19 @@
       },
       {
         "competence_a": "Linux",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Linux",
         "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Protection Des Données",
         "count": 1,
         "percentage": 100.0
       },
@@ -327,6 +507,24 @@
         "percentage": 100.0
       },
       {
+        "competence_a": "Linux",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Linux",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
         "competence_a": "Model Drift",
         "competence_b": "Product Management",
         "count": 1,
@@ -334,13 +532,115 @@
       },
       {
         "competence_a": "Model Drift",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
         "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Model Drift",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Product Management",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Protection Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Pipelines De Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Protection Des Données",
         "count": 1,
         "percentage": 100.0
       },
       {
         "competence_a": "Product Management",
         "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Product Management",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Protection Des Données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Protection Des Données",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Protection Des Données",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Qualité Des Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Python",
+        "competence_b": "Veille Technologique",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Qualité Des Données",
+        "competence_b": "Veille Technologique",
         "count": 1,
         "percentage": 100.0
       }
@@ -355,8 +655,12 @@
         "Python",
         "Analyse de données",
         "Data engineering",
+        "Veille Technologique",
+        "Qualité Des Données",
         "Model Drift",
-        "Product Management"
+        "Product Management",
+        "Protection Des Données",
+        "Pipelines De Données"
       ]
     ],
     "offres": [
@@ -382,8 +686,8 @@
       }
     ]
   },
-  "computed_at": "2026-06-24T05:22:55.543944",
-  "input_hash": "b4818c27af61bcf8388a18d836f19ec8cd70ba04104857f6a7f05d5a71eac1c3",
+  "computed_at": "2026-06-24T19:18:57.256212",
+  "input_hash": "62582770b7fb0b99ed3b2e1bfdfc1981625dc190265377975b6a66fe1220550b",
   "source_version": "",
   "model_version": "",
   "status": "success"

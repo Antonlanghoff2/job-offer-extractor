@@ -6,6 +6,7 @@
     "nombre_offres": 1,
     "competences": {
       "Analyse de données": 1,
+      "Computer Vision": 1,
       "Data engineering": 1,
       "Deep learning": 1,
       "Docker": 1,
@@ -25,6 +26,14 @@
         "percentage": 100.0,
         "variants": {
           "Analyse de données": 1
+        }
+      },
+      {
+        "nom": "Computer Vision",
+        "count": 1,
+        "percentage": 100.0,
+        "variants": {
+          "Computer Vision": 1
         }
       },
       {
@@ -120,6 +129,9 @@
       "Analyse de données": {
         "Analyse de données": 1
       },
+      "Computer Vision": {
+        "Computer Vision": 1
+      },
       "Data engineering": {
         "Data Engineering": 1
       },
@@ -164,6 +176,12 @@
       "CDD - 24 Mois": 1
     },
     "cooccurrences": [
+      {
+        "competence_a": "Analyse de données",
+        "competence_b": "Computer Vision",
+        "count": 1,
+        "percentage": 100.0
+      },
       {
         "competence_a": "Analyse de données",
         "competence_b": "Data engineering",
@@ -226,6 +244,72 @@
       },
       {
         "competence_a": "Analyse de données",
+        "competence_b": "Python",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Data engineering",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Deep learning",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Docker",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Git",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Imagerie",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Intelligence artificielle",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Machine learning",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "MLOps",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Model Drift",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
+        "competence_b": "Pipelines De Données",
+        "count": 1,
+        "percentage": 100.0
+      },
+      {
+        "competence_a": "Computer Vision",
         "competence_b": "Python",
         "count": 1,
         "percentage": 100.0
@@ -575,6 +659,7 @@
         "MLOps",
         "Imagerie",
         "Pipelines De Données",
+        "Computer Vision",
         "Model Drift"
       ]
     ],
@@ -601,8 +686,8 @@
       }
     ]
   },
-  "computed_at": "2026-06-24T05:22:43.629911",
-  "input_hash": "b4818c27af61bcf8388a18d836f19ec8cd70ba04104857f6a7f05d5a71eac1c3",
+  "computed_at": "2026-06-24T19:22:33.257764",
+  "input_hash": "62582770b7fb0b99ed3b2e1bfdfc1981625dc190265377975b6a66fe1220550b",
   "source_version": "",
   "model_version": "",
   "status": "success"

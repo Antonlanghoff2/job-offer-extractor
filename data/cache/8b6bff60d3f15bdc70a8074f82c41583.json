@@ -11,7 +11,7 @@
     "date_creation": "2026-06-18",
     "date": "2026-06-18",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/3976417",
-    "description": "Description : LES CHALLENGES À RELEVER AVEC VOTRE ÉQUIPE 🚀 * Concevoir et développer des composants métiers ou prototypes avec back JAVA, Python, Quarkus / API Rest, interfaces React-JS, TypeScript…, dans un contexte de Pair-programming * Optimiser le code développé pour en assurer la qualité et faciliter sa maintenance, à travers des Code review * Construire les pipelines de livraison dans une approche CI/CD, DEVOPS et Cloud Native, avec les outils Docker et Kubernetes * Mettre en place des tests automatisés avec une approche TDD / BDD * Valider le respect du cadre méthodologique et normatif en matière de sécurité du SI, d’exploitabilité et d’ergonomie des IHM * Automatiser la documentation technique associée aux réalisations grâce à des outils tels que AsciiDoc * Participer et être acteur(trice) des pratiques agiles de l’équipe au quotidien : Mêlées, Démos, Retro, Refinement Ce contrat sera conclu en apprentissage. Profil recherché : NOUS ATTENDONS VOTRE CANDIDATURE AVEC IMPATIENCE 😍 * Vous préparez une formation de niveau Bac +3 à Bac + 5 dans le domaine du génie logiciel * Vous êtes à l'aise pour communiquer, vous souhaitez apporter votre état d'esprit au sein d'une équipe de developpement * Vous êtes curieux(euse) et rigoureux(se) * Vous êtes persévérant.e et force de proposition Vous souhaitez nous rejoindre afin de développer ces compétences et bien d’autres encore ? Votre envie de contribuer à notre projet et de progresser peut faire la différence. Contactez-nous ! PLUS QUE QUELQUES ÉTAPES POUR NOUS REJOINDRE ✨ - Après nous avoir transmis votre CV et lettre de motivation - Vous rencontrez nos managers opérationnels en entretien - Vous échangez avec notre équipe recrutement Vous êtes curieux(se) ? Vous êtes motivé(e) par un nouveau challenge ? N'attendez plus et rejoignez vite les femmes et les hommes de la DSI !",
+    "description": "Description :\n\n\nLES CHALLENGES À RELEVER AVEC VOTRE ÉQUIPE 🚀\n\n\t* Concevoir et développer des composants métiers ou prototypes avec back JAVA, Python, Quarkus / API Rest, interfaces React-JS, TypeScript…, dans un contexte de Pair-programming\n\t* Optimiser le code développé pour en assurer la qualité et faciliter sa maintenance, à travers des Code review\n\t* Construire les pipelines de livraison dans une approche CI/CD, DEVOPS et Cloud Native, avec les outils Docker et Kubernetes\n\t* Mettre en place des tests automatisés avec une approche TDD / BDD\n\t* Valider le respect du cadre méthodologique et normatif en matière de sécurité du SI, d’exploitabilité et d’ergonomie des IHM\n\t* Automatiser la documentation technique associée aux réalisations grâce à des outils tels que AsciiDoc\n\t* Participer et être acteur(trice) des pratiques agiles de l’équipe au quotidien : Mêlées, Démos, Retro, Refinement\n\nCe contrat sera conclu en apprentissage.\n\n\t\t\n\t\t\nProfil recherché :\n\t\t\n\t\t\nNOUS ATTENDONS VOTRE CANDIDATURE AVEC IMPATIENCE 😍\n\n\t* Vous préparez une formation de niveau Bac +3 à Bac + 5 dans le domaine du génie logiciel\n\t* Vous êtes à l'aise pour communiquer, vous souhaitez apporter votre état d'esprit au sein d'une équipe de developpement\n\t* Vous êtes curieux(euse) et rigoureux(se)\n\t* Vous êtes persévérant.e et force de proposition\n\nVous souhaitez nous rejoindre afin de développer ces compétences et bien d’autres encore ? Votre envie de contribuer à notre projet et de progresser peut faire la différence. Contactez-nous !\n\nPLUS QUE QUELQUES ÉTAPES POUR NOUS REJOINDRE ✨\n\n- Après nous avoir transmis votre CV et lettre de motivation\n- Vous rencontrez nos managers opérationnels en entretien\n- Vous échangez avec notre équipe recrutement\n\nVous êtes curieux(se) ? Vous êtes motivé(e) par un nouveau challenge ? N'attendez plus et rejoignez vite les femmes et les hommes de la DSI !\n",
     "metier": "Développeur / Développeuse informatique",
     "niveau": "junior",
     "competences": [
@@ -23,12 +23,16 @@
       "Python",
       "React",
       "TypeScript",
-      "CI/CD",
-      "Automatisation de pipelines",
-      "Code review",
       "Tests automatisés",
+      "Code review",
+      "Qualité des données",
+      "API",
+      "Gestion de projet",
+      "Documentation technique",
+      "Intégration continue",
       "Data Engineering",
-      "Gestion de projet"
+      "Architecture microservices",
+      "Backend"
     ],
     "salaire_min": 3000,
     "salaire_max": 3000,
@@ -37,29 +41,29 @@
       {
         "label": "Bac +3",
         "level": 4,
-        "required": false,
-        "source_sentence": "Profil recherché : NOUS ATTENDONS VOTRE CANDIDATURE AVEC IMPATIENCE 😍 * Vous préparez une formation de niveau Bac +3 à Bac + 5 dans le domaine du génie logiciel * Vous êtes à l'aise pour communiquer, vous souhaitez apporter votre état d'esprit au sein d'une équipe de developpement * Vous êtes curieux(euse) et rigoureux(se) * Vous êtes persévérant.e et force de proposition Vous souhaitez nous rejoindre afin de développer ces compétences et bien d’autres encore ?",
-        "confidence": 0.7
+        "required": true,
+        "source_sentence": "Vous préparez une formation de niveau Bac +3 à Bac + 5 dans le domaine du génie logiciel",
+        "confidence": 0.9
       },
       {
         "label": "Bac + 5",
         "level": 4,
-        "required": false,
-        "source_sentence": "Profil recherché : NOUS ATTENDONS VOTRE CANDIDATURE AVEC IMPATIENCE 😍 * Vous préparez une formation de niveau Bac +3 à Bac + 5 dans le domaine du génie logiciel * Vous êtes à l'aise pour communiquer, vous souhaitez apporter votre état d'esprit au sein d'une équipe de developpement * Vous êtes curieux(euse) et rigoureux(se) * Vous êtes persévérant.e et force de proposition Vous souhaitez nous rejoindre afin de développer ces compétences et bien d’autres encore ?",
-        "confidence": 0.7
+        "required": true,
+        "source_sentence": "Vous préparez une formation de niveau Bac +3 à Bac + 5 dans le domaine du génie logiciel",
+        "confidence": 0.9
       }
     ],
     "experience_requise": "Débutant accepté",
     "_extraction_metadata": {
       "extracted": true,
-      "competences_count": 14,
+      "competences_count": 18,
       "diplomes_count": 2,
       "has_salary": false,
       "has_teletravail": false
     }
   },
-  "computed_at": "2026-06-22T18:52:42.524057",
-  "input_hash": "fc1e72277e2a501ba468a715d64457daec9d0cf9906c9af1e57bc06526c32cd7",
+  "computed_at": "2026-06-24T19:12:32.928674",
+  "input_hash": "262f99919b15bb61474b241389a621f6fe298334b1fa15be642c738c006a32ad",
   "source_version": "1.0",
   "model_version": "1.0",
   "status": "success"
