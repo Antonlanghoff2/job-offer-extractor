@@ -26,6 +26,12 @@ from src.services.offer_repository import (
     get_available_territories,
     load_normalized_offers,
 )
+from src.territory_normalization import (
+    extract_offer_territory_keys,
+    filter_offers_by_territory,
+    is_territory_debug_mode,
+    normalize_territory,
+)
 from src.trend_aggregation import aggregate_trends
 from src.user_portal import _current_profile_snapshot, _current_user_id, register_user_portal
 from src.skill_extraction import extract_skills_from_offer
@@ -1228,12 +1234,39 @@ def _build_render_context_from_request() -> Dict[str, Any]:
 def _build_territory_trends_context_from_request() -> Dict[str, Any]:
     territory = (request.args.get("territoire") or "").strip()
 
+    if is_territory_debug_mode():
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info("territory_raw=%r", territory)
+
     if has_precomputed_data():
         offers, error_message = get_precomputed_offers()
         territory_options = get_cached_territory_options()
+
+        offers_before = len(offers)
+        filtered_offers = filter_offers_by_territory(offers, territory or None)
+        offers_after = len(filtered_offers)
+
+        if is_territory_debug_mode():
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.info(
+                "territory_normalized=%r offers_before=%d offers_after=%d",
+                normalize_territory(territory),
+                offers_before,
+                offers_after,
+            )
+
         trends, trends_error = get_precomputed_trends(territoire=territory or None)
-        total_offers = int(trends.get("nombre_offres") or 0) if trends else 0
-        top_skills_raw = list((trends or {}).get("competences", {}).items())[:DEFAULT_TOP_N]
+
+        if territory and offers_after > 0:
+            aggregated = aggregate_trends(filtered_offers, territoire=territory, periode_jours=365)
+            total_offers = aggregated.get("nombre_offres", offers_after)
+            top_skills_raw = list((aggregated or {}).get("competences", {}).items())[:DEFAULT_TOP_N]
+        else:
+            total_offers = int(trends.get("nombre_offres") or offers_after) if trends else offers_after
+            top_skills_raw = list((trends or {}).get("competences", {}).items())[:DEFAULT_TOP_N]
+
         top_skills = []
         for index, (skill, count) in enumerate(top_skills_raw, start=1):
             if not skill:

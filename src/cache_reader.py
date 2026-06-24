@@ -18,6 +18,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from src.jobs.cache import CacheStore, cache_store
 from src.jobs.status import TaskStatus, task_status
+from src.territory_normalization import find_territory_key_in_data, is_territory_debug_mode
 
 logger = logging.getLogger(__name__)
 
@@ -86,8 +87,24 @@ def get_precomputed_trends(
     if data is None:
         return {}, "Aucune tendance précalculée. Lancez python -m src.jobs.refresh_all"
 
-    if territoire and territoire in data:
-        return data[territoire], None
+    if not territoire:
+        if "global" in data:
+            return data["global"], None
+        return data, None
+
+    matched_key = find_territory_key_in_data(territoire, data.keys())
+
+    if is_territory_debug_mode():
+        logger.info(
+            "territory_raw=%r territory_matched=%r available_keys=%d",
+            territoire,
+            matched_key,
+            len(data),
+        )
+
+    if matched_key and matched_key in data:
+        return data[matched_key], None
+
     if "global" in data:
         return data["global"], None
     return data, None
@@ -108,8 +125,24 @@ def get_precomputed_dashboard(
     if data is None:
         return {}, "Aucun dashboard précalculé."
 
-    if territoire and territoire in data:
-        return data[territoire], None
+    if not territoire:
+        if "global" in data:
+            return data["global"], None
+        return data, None
+
+    matched_key = find_territory_key_in_data(territoire, data.keys())
+
+    if is_territory_debug_mode():
+        logger.info(
+            "dashboard_territory_raw=%r dashboard_territory_matched=%r available_keys=%d",
+            territoire,
+            matched_key,
+            len(data),
+        )
+
+    if matched_key and matched_key in data:
+        return data[matched_key], None
+
     if "global" in data:
         return data["global"], None
     return data, None
