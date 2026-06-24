@@ -1,58 +1,51 @@
 {
   "tasks": {
     "import_offers": {
-<<<<<<< HEAD
-      "status": "error",
-      "started_at": "2026-06-23T06:38:27.601002",
-      "completed_at": "2026-06-23T06:38:28.180841",
-=======
       "status": "success",
-      "started_at": "2026-06-23T22:04:02.089393",
-      "completed_at": "2026-06-23T22:04:20.615474",
->>>>>>> ef5e9fa15288c25aab1d304104edbb73d4f93866
+      "started_at": "2026-06-24T05:12:00.942249",
+      "completed_at": "2026-06-24T05:12:19.387216",
       "stats": {
-        "total_offers": 884,
-        "new_offers": 30,
-        "updated_offers": 854,
+        "total_offers": 888,
+        "new_offers": 17,
+        "updated_offers": 871,
         "errors": 0
-      },
-      "error": "Expecting property name enclosed in double quotes: line 7874 column 1 (char 501234)"
+      }
     },
     "normalize_offers": {
       "status": "success",
-      "started_at": "2026-06-23T22:04:20.618657",
-      "completed_at": "2026-06-23T22:04:21.563396",
+      "started_at": "2026-06-24T05:12:19.397033",
+      "completed_at": "2026-06-24T05:12:22.081206",
       "stats": {
-        "total_offers": 912,
-        "normalized": 912,
+        "total_offers": 929,
+        "normalized": 929,
         "errors": 0
       }
     },
     "extract_offer_data": {
       "status": "success",
-      "started_at": "2026-06-23T22:04:22.465176",
-      "completed_at": "2026-06-23T22:04:24.420247",
+      "started_at": "2026-06-24T05:12:22.694007",
+      "completed_at": "2026-06-24T05:12:26.202096",
       "stats": {
-        "total_offers": 912,
-        "processed": 29,
-        "skipped": 883,
+        "total_offers": 929,
+        "processed": 18,
+        "skipped": 911,
         "errors": 0
       }
     },
     "aggregate_trends": {
       "status": "success",
-      "started_at": "2026-06-23T22:04:24.421240",
-      "completed_at": "2026-06-23T22:07:51.716913",
+      "started_at": "2026-06-24T05:12:26.205201",
+      "completed_at": "2026-06-24T05:27:23.247288",
       "stats": {
-        "total_offers": 912,
+        "total_offers": 929,
         "territories_processed": 78,
         "errors": 0
       }
     },
     "compute_dashboards": {
       "status": "success",
-      "started_at": "2026-06-23T22:07:51.717779",
-      "completed_at": "2026-06-23T22:07:51.894095",
+      "started_at": "2026-06-24T05:27:23.250496",
+      "completed_at": "2026-06-24T05:27:23.819585",
       "stats": {
         "dashboards_computed": 78,
         "errors": 0
@@ -60,15 +53,15 @@
     },
     "compute_matches": {
       "status": "success",
-      "started_at": "2026-06-23T22:07:51.896937",
-      "completed_at": "2026-06-23T22:08:10.679853",
+      "started_at": "2026-06-24T05:27:23.827646",
+      "completed_at": "2026-06-24T05:30:04.963433",
       "stats": {
-        "total_users": 2,
-        "users_processed": 2,
-        "matches_computed": 1824,
+        "total_users": 4,
+        "users_processed": 4,
+        "matches_computed": 3716,
         "errors": 0
       }
     }
   },
-  "last_refresh": "2026-06-23T22:08:10.680283"
+  "last_refresh": "2026-06-24T05:30:04.964382"
 }
