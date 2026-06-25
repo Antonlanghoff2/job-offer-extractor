@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Iterable
 
 from src.france_travail_client import search_all_offres
+from src.domain_config import get_all_queries, get_enabled_domains
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data" / "raw"
@@ -54,6 +55,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--max-results", type=int, default=None, help="Limite optionnelle du nombre total d'offres par requête.")
     parser.add_argument("--territory-mode", action="store_true", help="Active la collecte filtrée sur les territoires prédéfinis.")
     parser.add_argument("--territories", nargs="*", default=None, help="Territoires personnalisés. Remplace la liste prédéfinie si fourni.")
+    parser.add_argument("--multi-domain", action="store_true", help="Active la collecte multi-métiers depuis config/job_domains.json.")
     return parser
 
 
@@ -72,8 +74,15 @@ def main() -> None:
     elif args.territory_mode:
         territories = TERRITOIRES
 
+    if args.multi_domain:
+        queries = get_all_queries()
+        print(f"Collecte multi-métiers activée: {len(queries)} requêtes depuis {len(get_enabled_domains())} domaines")
+    else:
+        queries = REQUETES
+        print(f"Collecte IA/Data: {len(queries)} requêtes")
+
     result = search_all_offres(
-        REQUETES,
+        queries,
         page_size=args.page_size,
         max_pages=args.max_pages,
         max_results=args.max_results,

@@ -30,11 +30,14 @@ logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
-def run_import_offers() -> Dict[str, Any]:
+def run_import_offers(multi_domain: bool = True) -> Dict[str, Any]:
     """Importe les nouvelles offres depuis France Travail.
 
     Si l'import échoue (pas de credentials, API indisponible),
     la tâche continue avec les données existantes.
+
+    Args:
+        multi_domain: Si True, utilise la collecte multi-métiers.
 
     Returns:
         Statistiques de l'import.
@@ -48,7 +51,7 @@ def run_import_offers() -> Dict[str, Any]:
     )
     
     try:
-        stats = import_latest_offers()
+        stats = import_latest_offers(multi_domain=multi_domain)
         
         task_status.update_task(
             "import_offers",
@@ -249,8 +252,12 @@ def run_compute_matches() -> Dict[str, Any]:
         raise
 
 
-def refresh_all() -> Dict[str, Any]:
+def refresh_all(multi_domain: bool = True) -> Dict[str, Any]:
     """Exécute toutes les étapes de rafraîchissement.
+
+    Args:
+        multi_domain: Si True, utilise la collecte multi-métiers (défaut).
+                     Si False, utilise la collecte IA/Data uniquement.
 
     Returns:
         Statistiques globales.
@@ -267,7 +274,8 @@ def refresh_all() -> Dict[str, Any]:
     
     try:
         start_time = time.time()
-        logger.info("Démarrage du rafraîchissement complet")
+        mode_label = "multi-métiers" if multi_domain else "IA/Data"
+        logger.info(f"Démarrage du rafraîchissement complet (mode {mode_label})")
         
         stats = {
             "started_at": datetime.now().isoformat(),
@@ -277,7 +285,7 @@ def refresh_all() -> Dict[str, Any]:
         # Étape 1: Import
         logger.info("Étape 1/6: Import des offres")
         step_start = time.time()
-        stats["steps"]["import"] = run_import_offers()
+        stats["steps"]["import"] = run_import_offers(multi_domain=multi_domain)
         stats["steps"]["import"]["duration"] = time.time() - step_start
         
         # Étape 2: Normalisation

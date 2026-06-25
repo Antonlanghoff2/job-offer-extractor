@@ -20,14 +20,19 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW_OFFERS_PATH = PROJECT_ROOT / "data" / "raw" / "offres_france_travail.json"
 
 
-def import_latest_offers() -> Dict[str, Any]:
+def import_latest_offers(multi_domain: bool = True) -> Dict[str, Any]:
     """Importe les dernières offres depuis France Travail.
+
+    Args:
+        multi_domain: Si True, utilise la collecte multi-métiers depuis config/job_domains.json.
+                     Si False, utilise les requêtes IA/Data par défaut.
 
     Returns:
         Statistiques de l'import.
     """
     from src.france_travail_client import search_all_offres
     from src.import_offres import REQUETES, TERRITOIRES
+    from src.domain_config import get_all_queries, get_enabled_domains
     
     stats = {
         "total_offers": 0,
@@ -49,9 +54,18 @@ def import_latest_offers() -> Dict[str, Any]:
                 RAW_OFFERS_PATH.rename(backup)
                 logger.info("Fichier corrompu deplace vers %s", backup)
         
+        # Choisir les requêtes selon le mode
+        if multi_domain:
+            queries = get_all_queries()
+            domains_count = len(get_enabled_domains())
+            logger.info(f"Collecte multi-métiers: {len(queries)} requêtes depuis {domains_count} domaines")
+        else:
+            queries = REQUETES
+            logger.info(f"Collecte IA/Data: {len(queries)} requêtes")
+        
         # Importer les nouvelles offres
         result = search_all_offres(
-            REQUETES,
+            queries,
             page_size=150,
             max_pages=10,
             territoires=TERRITOIRES,

@@ -1,0 +1,278 @@
+[
+  {
+    "id": "informatique",
+    "name": "Informatique",
+    "enabled": true,
+    "queries": [
+      "développeur",
+      "développeuse",
+      "technicien informatique",
+      "administrateur système",
+      "ingénieur logiciel",
+      "chef de projet informatique",
+      "analyste programmeur"
+    ],
+    "rome_codes": ["M1805", "M1810", "H2502"],
+    "priority": 1
+  },
+  {
+    "id": "data-ia",
+    "name": "Data et Intelligence Artificielle",
+    "enabled": true,
+    "queries": [
+      "data scientist",
+      "data engineer",
+      "data analyst",
+      "ingénieur IA",
+      "machine learning",
+      "deep learning",
+      "intelligence artificielle"
+    ],
+    "rome_codes": ["M1805"],
+    "priority": 2
+  },
+  {
+    "id": "batiment",
+    "name": "Bâtiment",
+    "enabled": true,
+    "queries": [
+      "électricien",
+      "électricienne",
+      "plombier",
+      "plombière",
+      "maçon",
+      "maçonne",
+      "conducteur de travaux",
+      "conductrice de travaux",
+      "charpentier",
+      "charpentière",
+      "couvreur",
+      "couvreuse"
+    ],
+    "rome_codes": ["F1601", "F1602", "F1603", "F1101"],
+    "priority": 3
+  },
+  {
+    "id": "sante",
+    "name": "Santé",
+    "enabled": true,
+    "queries": [
+      "infirmier",
+      "infirmière",
+      "aide-soignant",
+      "aide-soignante",
+      "médecin",
+      "chirurgien-dentiste",
+      "pharmacien",
+      "pharmacienne",
+      "kinésithérapeute"
+    ],
+    "rome_codes": ["J1501", "J1502", "J1101", "J1103"],
+    "priority": 4
+  },
+  {
+    "id": "commerce",
+    "name": "Commerce",
+    "enabled": true,
+    "queries": [
+      "vendeur",
+      "vendeuse",
+      "conseiller de vente",
+      "caissier",
+      "caissière",
+      "chef de rayon",
+      "responsable de magasin",
+      "commercial",
+      "commerciale"
+    ],
+    "rome_codes": ["D1211", "D1212", "D1101"],
+    "priority": 5
+  },
+  {
+    "id": "industrie",
+    "name": "Industrie",
+    "enabled": true,
+    "queries": [
+      "opérateur de production",
+      "opératrice de production",
+      "technicien de maintenance",
+      "technicienne de maintenance",
+      "conducteur de ligne",
+      "conductrice de ligne",
+      "soudeur",
+      "soudeuse",
+      "ajusteur-monteur",
+      "ajusteuse-monteuse"
+    ],
+    "rome_codes": ["H2501", "H2502", "H2901"],
+    "priority": 6
+  },
+  {
+    "id": "transport-logistique",
+    "name": "Transport et Logistique",
+    "enabled": true,
+    "queries": [
+      "conducteur routier",
+      "conductrice routière",
+      "livreur",
+      "livreuse",
+      "préparateur de commandes",
+      "préparatrice de commandes",
+      "cariste",
+      "magasinier",
+      "magasinière"
+    ],
+    "rome_codes": ["N1201", "N1202", "D1101"],
+    "priority": 7
+  },
+  {
+    "id": "hotellerie-restauration",
+    "name": "Hôtellerie-Restauration",
+    "enabled": true,
+    "queries": [
+      "cuisinier",
+      "cuisinière",
+      "chef de cuisine",
+      "serveur",
+      "serveuse",
+      "réceptionniste",
+      "gouvernant",
+      "gouvernante"
+    ],
+    "rome_codes": ["G1601", "G1602", "G1801"],
+    "priority": 8
+  },
+  {
+    "id": "administration",
+    "name": "Administration",
+    "enabled": true,
+    "queries": [
+      "assistant administratif",
+      "assistante administrative",
+      "secrétaire",
+      "gestionnaire administratif",
+      "gestionnaire administrative",
+      "comptable",
+      "assistant comptable"
+    ],
+    "rome_codes": ["M1607", "M1604"],
+    "priority": 9
+  },
+  {
+    "id": "education-formation",
+    "name": "Éducation et Formation",
+    "enabled": true,
+    "queries": [
+      "enseignant",
+      "enseignante",
+      "professeur",
+      "professeure",
+      "formateur",
+      "formatrice",
+      "éducateur",
+      "éducatrice"
+    ],
+    "rome_codes": ["K2101", "K2102", "K2108"],
+    "priority": 10
+  },
+  {
+    "id": "agriculture",
+    "name": "Agriculture",
+    "enabled": true,
+    "queries": [
+      "agriculteur",
+      "agricultrice",
+      "ouvrier agricole",
+      "ouvrière agricole",
+      "maraîcher",
+      "maraîchère",
+      "viticulteur",
+      "viticultrice"
+    ],
+    "rome_codes": ["A1101", "A1201"],
+    "priority": 11
+  },
+  {
+    "id": "securite",
+    "name": "Sécurité",
+    "enabled": true,
+    "queries": [
+      "agent de sécurité",
+      "gardien",
+      "gardienne",
+      "agent de surveillance",
+      "pompier",
+      "pompier volontaire"
+    ],
+    "rome_codes": ["K2501", "K2502"],
+    "priority": 12
+  },
+  {
+    "id": "maintenance",
+    "name": "Maintenance",
+    "enabled": true,
+    "queries": [
+      "technicien de maintenance",
+      "technicienne de maintenance",
+      "agent de maintenance",
+      "agent de maintenance industrielle",
+      "électricien de maintenance"
+    ],
+    "rome_codes": ["I1301", "I1302"],
+    "priority": 13
+  },
+  {
+    "id": "artisanat",
+    "name": "Artisanat",
+    "enabled": true,
+    "queries": [
+      "menuisier",
+      "menuisière",
+      "couturier",
+      "couturière",
+      "boulanger",
+      "boulangère",
+      "pâtissier",
+      "pâtissière",
+      "coiffeur",
+      "coiffeuse"
+    ],
+    "rome_codes": ["H1301", "D1102", "D1103"],
+    "priority": 14
+  },
+  {
+    "id": "audiovisuel-spectacle",
+    "name": "Audiovisuel et Spectacle",
+    "enabled": true,
+    "queries": [
+      "régisseur son",
+      "régisseuse son",
+      "régisseur lumière",
+      "régisseuse lumière",
+      "technicien son",
+      "technicienne son",
+      "technicien lumière",
+      "technicienne lumière",
+      "animateur",
+      "animatrice"
+    ],
+    "rome_codes": ["L1501", "L1502"],
+    "priority": 15
+  },
+  {
+    "id": "services",
+    "name": "Services à la personne",
+    "enabled": true,
+    "queries": [
+      "aide à domicile",
+      "auxiliaire de vie",
+      "garde d'enfants",
+      "assistant ménager",
+      "assistante ménagère",
+      "jardinier",
+      "jardinière"
+    ],
+    "rome_codes": ["K1301", "K1302"],
+    "priority": 16
+  }
+]
