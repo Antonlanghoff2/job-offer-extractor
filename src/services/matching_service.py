@@ -49,18 +49,40 @@ def _component_value(component: ScoreComponent) -> Optional[float]:
 
 
 def compute_skill_score(profile_skills: List[Dict[str, Any]], offer_skills: List[str]) -> ScoreComponent:
+    """Calcule le score de compétences entre le profil et l'offre.
+    
+    Si aucune compétence n'est commune, retourne 0.
+    """
     profile_map = {
         normalize_skill_name(item.get("normalized_name") or item.get("name") or item.get("nom")): item
         for item in profile_skills
         if item
     }
     offer_map = {normalize_skill_name(skill): skill for skill in offer_skills if normalize_skill_name(skill)}
+    
+    # Si pas de compétences dans le profil ou l'offre, score = 0
     if not profile_map or not offer_map:
-        return ScoreComponent(100.0, False, {"matching_skills": [], "missing_skills": [], "coverage": None})
+        return ScoreComponent(0.0, True, {
+            "matching_skills": [], 
+            "missing_skills": list(offer_map.keys()) if offer_map else [],
+            "coverage": 0.0,
+            "reason": "aucune compétence commune" if profile_map else "profil sans compétences"
+        })
+    
     matched = sorted(
         {profile_map[key].get("normalized_name") or key for key in profile_map.keys() & offer_map.keys()}
     )
     missing = sorted({normalize_skill_name(key) or key for key in offer_map.keys() if key not in profile_map})
+    
+    # Si aucune compétence commune, score = 0
+    if not matched:
+        return ScoreComponent(0.0, True, {
+            "matching_skills": [],
+            "missing_skills": missing,
+            "coverage": 0.0,
+            "reason": "aucune compétence commune"
+        })
+    
     coverage = len(matched) / max(len(offer_map), 1)
     total = _scale(coverage * 85.0)
     return ScoreComponent(total, True, {"matching_skills": matched, "missing_skills": missing, "coverage": round(coverage, 3)})
@@ -106,36 +128,93 @@ def _years_from_profile(profile_experiences: List[Dict[str, Any]]) -> Optional[f
 
 
 def compute_experience_score(profile_experiences: List[Dict[str, Any]], offer_experience: object) -> ScoreComponent:
+    """Calcule le score d'expérience entre le profil et l'offre.
+    
+    Si l'expérience est absente ou non compatible, retourne 0.
+    """
+    # Si aucune expérience requise dans l'offre, on ne peut pas évaluer
     if not offer_experience:
-        return ScoreComponent(100.0, False, {"required": None, "profile_years": _years_from_profile(profile_experiences)})
+        return ScoreComponent(0.0, True, {
+            "required": None, 
+            "profile_years": _years_from_profile(profile_experiences),
+            "reason": "expérience non renseignée dans l'offre"
+        })
+    
     profile_years = _years_from_profile(profile_experiences)
+    
+    # Si aucune expérience dans le profil, score = 0
     if profile_years is None:
-        return ScoreComponent(100.0, False, {"required": str(offer_experience), "profile_years": None})
+        return ScoreComponent(0.0, True, {
+            "required": str(offer_experience), 
+            "profile_years": None,
+            "reason": "aucune expérience compatible"
+        })
+    
     requirement = normalize_text(offer_experience)
     required_years = None
     match = re.search(r"(\d+(?:[.,]\d+)?)\s*(?:ans|annees|années)", requirement)
     if match:
         required_years = float(match.group(1).replace(",", "."))
+    
+    # Si on ne peut pas extraire les années requises, on ne peut pas évaluer
     if required_years is None:
-        return ScoreComponent(100.0, False, {"required": str(offer_experience), "profile_years": profile_years})
+        return ScoreComponent(0.0, True, {
+            "required": str(offer_experience), 
+            "profile_years": profile_years,
+            "reason": "expérience requise non exploitable"
+        })
+    
+    # Calcul du score basé sur le ratio
     if profile_years >= required_years:
         score = 100.0
     else:
         score = _scale((profile_years / required_years) * 100.0)
-    return ScoreComponent(score, True, {"required_years": required_years, "profile_years": round(profile_years, 2)})
+    
+    return ScoreComponent(score, True, {
+        "required_years": required_years, 
+        "profile_years": round(profile_years, 2),
+        "reason": f"{profile_years:.1f} ans vs {required_years:.1f} ans requis"
+    })
 
 
 def compute_diploma_score(profile_diplomas: List[Dict[str, Any]], offer_diplomas: List[str]) -> ScoreComponent:
+    """Calcule le score de diplôme entre le profil et l'offre.
+    
+    Si aucun diplôme n'est commun ou si les données sont absentes, retourne 0.
+    """
     profile_titles = {normalize_text(item.get("title") or item.get("intitule")) for item in profile_diplomas if item}
     required_titles = {normalize_text(item) for item in offer_diplomas if item}
     profile_titles.discard("")
     required_titles.discard("")
+    
+    # Si pas de diplômes dans le profil ou l'offre, score = 0
     if not profile_titles or not required_titles:
-        return ScoreComponent(100.0, False, {"matching_diplomas": [], "missing_diplomas": [], "coverage": None})
+        return ScoreComponent(0.0, True, {
+            "matching_diplomas": [], 
+            "missing_diplomas": list(required_titles) if required_titles else [],
+            "coverage": 0.0,
+            "reason": "aucun diplôme compatible" if profile_titles else "profil sans diplôme"
+        })
+    
     matched = sorted(profile_titles & required_titles)
     missing = sorted(required_titles - profile_titles)
+    
+    # Si aucun diplôme commun, score = 0
+    if not matched:
+        return ScoreComponent(0.0, True, {
+            "matching_diplomas": [],
+            "missing_diplomas": missing,
+            "coverage": 0.0,
+            "reason": "aucun diplôme compatible"
+        })
+    
     coverage = len(matched) / len(required_titles)
-    return ScoreComponent(_scale(coverage * 100.0), True, {"matching_diplomas": matched, "missing_diplomas": missing, "coverage": round(coverage, 3)})
+    return ScoreComponent(_scale(coverage * 100.0), True, {
+        "matching_diplomas": matched, 
+        "missing_diplomas": missing, 
+        "coverage": round(coverage, 3),
+        "reason": f"{len(matched)} diplôme(s) commun(s) sur {len(required_titles)} requis"
+    })
 
 
 def _extract_department_from_text(text: str) -> Optional[str]:
@@ -236,13 +315,31 @@ def compute_salary_score(profile_salary: Optional[object], offer: Dict[str, Any]
 
 
 def compute_contract_score(profile_contract: Optional[str], offer_contract: Optional[str]) -> ScoreComponent:
+    """Calcule le score de contrat entre le profil et l'offre.
+    
+    Si le contrat est absent ou ne correspond pas, retourne 0.
+    """
+    # Si pas de préférence de contrat ou pas de contrat dans l'offre, score = 0
     if not profile_contract or not offer_contract:
-        return ScoreComponent(100.0, False, {"reason": "absence de préférence ou de contrat"})
+        return ScoreComponent(0.0, True, {
+            "reason": "contrat non renseigné" if not profile_contract else "offre sans contrat",
+            "profile": profile_contract,
+            "offer": offer_contract
+        })
+    
     profile_norm = normalize_text(profile_contract)
     offer_norm = normalize_text(offer_contract)
+    
+    # Si les contrats correspondent, score = 100
     if profile_norm == offer_norm:
         return ScoreComponent(100.0, True, {"reason": "contrat identique"})
-    return ScoreComponent(0.0, True, {"reason": "contrat différent", "profile": profile_contract, "offer": offer_contract})
+    
+    # Si les contrats ne correspondent pas, score = 0
+    return ScoreComponent(0.0, True, {
+        "reason": "contrat différent",
+        "profile": profile_contract,
+        "offer": offer_contract
+    })
 
 
 def compute_remote_score(profile_remote: Optional[str], offer_remote: Optional[str]) -> ScoreComponent:
