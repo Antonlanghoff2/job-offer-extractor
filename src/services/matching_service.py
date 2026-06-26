@@ -1,7 +1,13 @@
 # Copyright Anton Langhoff
 # SPDX-License-Identifier: MIT
 
-"""Deterministic scoring and explanation logic for user-to-offer matching."""
+"""Logique métier de scoring déterministe pour le matching candidat-offre.
+
+Ce module centralise le calcul des sous-scores utilisés par la page
+« Mes offres », par l'API de matching et par les exports persistés en base.
+Il doit rester la source de vérité pour éviter qu'un même critère soit
+affiché différemment selon le point d'entrée.
+"""
 
 from __future__ import annotations
 
@@ -26,7 +32,14 @@ def _tokenize(value: object) -> set[str]:
 
 
 def normalize_skill_name(name: object) -> str:
-    """Retourne le nom canonique d'une compétence."""
+    """Retourne le nom canonique d'une compétence.
+
+    Args:
+        name: Libellé brut de la compétence, provenant du CV ou de l'offre.
+
+    Returns:
+        Nom normalisé utilisé pour comparer les compétences.
+    """
 
     return canonicalize_skill_name(name)
 
@@ -50,8 +63,17 @@ def _component_value(component: ScoreComponent) -> Optional[float]:
 
 def compute_skill_score(profile_skills: List[Dict[str, Any]], offer_skills: List[str]) -> ScoreComponent:
     """Calcule le score de compétences entre le profil et l'offre.
-    
-    Si aucune compétence n'est commune, retourne 0.
+
+    Le score reflète les compétences réellement partagées entre le
+    profil utilisateur et l'offre. En l'absence de correspondance, le
+    sous-score doit rester à 0 pour ne jamais masquer un écart métier.
+
+    Args:
+        profile_skills: Compétences normalisées du profil utilisateur.
+        offer_skills: Compétences attendues par l'offre.
+
+    Returns:
+        Sous-score de compétences, exprimé sur 100.
     """
     profile_map = {
         normalize_skill_name(item.get("normalized_name") or item.get("name") or item.get("nom")): item
@@ -66,7 +88,7 @@ def compute_skill_score(profile_skills: List[Dict[str, Any]], offer_skills: List
             "matching_skills": [], 
             "missing_skills": list(offer_map.keys()) if offer_map else [],
             "coverage": 0.0,
-            "reason": "aucune compétence commune" if profile_map else "profil sans compétences"
+            "reason": "aucune compétence commune"
         })
     
     matched = sorted(
@@ -84,16 +106,27 @@ def compute_skill_score(profile_skills: List[Dict[str, Any]], offer_skills: List
         })
     
     coverage = len(matched) / max(len(offer_map), 1)
-    total = _scale(coverage * 85.0)
+    total = _scale(coverage * 100.0)
     return ScoreComponent(total, True, {"matching_skills": matched, "missing_skills": missing, "coverage": round(coverage, 3)})
 
 
 def compute_job_score(profile_job_titles: List[str], profile_experience_titles: List[str], offer_title: str) -> ScoreComponent:
+    """Calcule la compatibilité métier entre le profil et l'offre.
+
+    Args:
+        profile_job_titles: Métiers recherchés par l'utilisateur.
+        profile_experience_titles: Intitulés des expériences passées.
+        offer_title: Intitulé du poste proposé.
+
+    Returns:
+        Sous-score métier sur 100. Retourne 0 quand la comparaison ne peut
+        pas être établie ou qu'aucune correspondance n'est trouvée.
+    """
     profile_titles = [_tokenize(title) for title in profile_job_titles if title]
     profile_titles += [_tokenize(title) for title in profile_experience_titles if title]
     offer_tokens = _tokenize(offer_title)
     if not offer_tokens or not profile_titles:
-        return ScoreComponent(100.0, False, {"matched_tokens": [], "coverage": None})
+        return ScoreComponent(0.0, False, {"matched_tokens": [], "coverage": None, "reason": "Métier non renseigné"})
     best = 0.0
     matched_tokens: set[str] = set()
     for candidate in profile_titles:
@@ -129,71 +162,94 @@ def _years_from_profile(profile_experiences: List[Dict[str, Any]]) -> Optional[f
 
 def compute_experience_score(profile_experiences: List[Dict[str, Any]], offer_experience: object) -> ScoreComponent:
     """Calcule le score d'expérience entre le profil et l'offre.
-    
-    Si l'expérience est absente ou non compatible, retourne 0.
+
+    Le calcul compare les années réellement exploitables dans le profil
+    avec l'exigence annoncée par l'offre. Si l'une des deux sources n'est
+    pas exploitable, le score doit rester à 0 pour éviter toute
+    surévaluation artificielle.
+
+    Args:
+        profile_experiences: Historique d'expériences du profil.
+        offer_experience: Exigence d'expérience mentionnée dans l'offre.
+
+    Returns:
+        Sous-score d'expérience, exprimé sur 100.
     """
-    # Si aucune expérience requise dans l'offre, on ne peut pas évaluer
     if not offer_experience:
         return ScoreComponent(0.0, True, {
             "required": None, 
             "profile_years": _years_from_profile(profile_experiences),
-            "reason": "expérience non renseignée dans l'offre"
+            "reason": "expérience non renseignée"
         })
-    
+
     profile_years = _years_from_profile(profile_experiences)
-    
-    # Si aucune expérience dans le profil, score = 0
+
     if profile_years is None:
         return ScoreComponent(0.0, True, {
             "required": str(offer_experience), 
             "profile_years": None,
             "reason": "aucune expérience compatible"
         })
-    
+
     requirement = normalize_text(offer_experience)
     required_years = None
     match = re.search(r"(\d+(?:[.,]\d+)?)\s*(?:ans|annees|années)", requirement)
     if match:
         required_years = float(match.group(1).replace(",", "."))
-    
-    # Si on ne peut pas extraire les années requises, on ne peut pas évaluer
+
     if required_years is None:
         return ScoreComponent(0.0, True, {
             "required": str(offer_experience), 
             "profile_years": profile_years,
-            "reason": "expérience requise non exploitable"
+            "reason": "expérience non renseignée"
         })
-    
-    # Calcul du score basé sur le ratio
+
     if profile_years >= required_years:
         score = 100.0
     else:
         score = _scale((profile_years / required_years) * 100.0)
-    
+
+    reason = f"{profile_years:.1f} ans vs {required_years:.1f} ans requis" if score > 0 else "aucune expérience compatible"
     return ScoreComponent(score, True, {
         "required_years": required_years, 
         "profile_years": round(profile_years, 2),
-        "reason": f"{profile_years:.1f} ans vs {required_years:.1f} ans requis"
+        "reason": reason
     })
 
 
 def compute_diploma_score(profile_diplomas: List[Dict[str, Any]], offer_diplomas: List[str]) -> ScoreComponent:
     """Calcule le score de diplôme entre le profil et l'offre.
-    
-    Si aucun diplôme n'est commun ou si les données sont absentes, retourne 0.
+
+    La comparaison repose sur les diplômes explicitement renseignés dans
+    le profil et dans l'offre. Sans correspondance vérifiable, le score
+    reste à 0 afin de ne pas suggérer une qualification absente.
+
+    Args:
+        profile_diplomas: Diplômes déclarés par l'utilisateur.
+        offer_diplomas: Diplômes ou niveaux exigés par l'offre.
+
+    Returns:
+        Sous-score de diplôme, exprimé sur 100.
     """
     profile_titles = {normalize_text(item.get("title") or item.get("intitule")) for item in profile_diplomas if item}
     required_titles = {normalize_text(item) for item in offer_diplomas if item}
     profile_titles.discard("")
     required_titles.discard("")
     
-    # Si pas de diplômes dans le profil ou l'offre, score = 0
-    if not profile_titles or not required_titles:
+    if not profile_titles:
         return ScoreComponent(0.0, True, {
             "matching_diplomas": [], 
             "missing_diplomas": list(required_titles) if required_titles else [],
             "coverage": 0.0,
-            "reason": "aucun diplôme compatible" if profile_titles else "profil sans diplôme"
+            "reason": "diplôme non renseigné",
+        })
+
+    if not required_titles:
+        return ScoreComponent(0.0, True, {
+            "matching_diplomas": [],
+            "missing_diplomas": [],
+            "coverage": 0.0,
+            "reason": "aucun diplôme compatible",
         })
     
     matched = sorted(profile_titles & required_titles)
@@ -230,8 +286,17 @@ def _extract_department_from_text(text: str) -> Optional[str]:
 
 
 def compute_location_score(profile: Dict[str, Any], offer: Dict[str, Any]) -> ScoreComponent:
+    """Calcule la compatibilité géographique entre le profil et l'offre.
+
+    Args:
+        profile: Données de localisation du candidat.
+        offer: Offre normalisée.
+
+    Returns:
+        Sous-score de localisation sur 100.
+    """
     if not any(profile.get(key) for key in ("city", "postal_code", "department", "search_radius_km")):
-        return ScoreComponent(100.0, False, {"reason": "profil sans contrainte locale"})
+        return ScoreComponent(0.0, False, {"reason": "localisation non renseignée"})
     offer_locations = [normalize_text(value) for value in offer.get("lieux", []) if value]
     if not offer_locations and offer.get("lieuTravail"):
         offer_locations.append(normalize_text(offer["lieuTravail"].get("libelle")))
@@ -239,7 +304,7 @@ def compute_location_score(profile: Dict[str, Any], offer: Dict[str, Any]) -> Sc
         offer_locations.append(normalize_text(offer["lieuTravail"].get("codePostal")))
     offer_locations = [item for item in offer_locations if item]
     if not offer_locations:
-        return ScoreComponent(100.0, False, {"reason": "offre sans localisation exploitable"})
+        return ScoreComponent(0.0, False, {"reason": "localisation non renseignée"})
     city = normalize_text(profile.get("city"))
     postal = normalize_text(profile.get("postal_code"))
     department = normalize_text(profile.get("department"))
@@ -264,12 +329,21 @@ def compute_location_score(profile: Dict[str, Any], offer: Dict[str, Any]) -> Sc
 
 
 def compute_salary_score(profile_salary: Optional[object], offer: Dict[str, Any]) -> ScoreComponent:
+    """Calcule la compatibilité salariale entre le profil et l'offre.
+
+    Args:
+        profile_salary: Salaire minimum attendu par le candidat.
+        offer: Offre normalisée.
+
+    Returns:
+        Sous-score salarial sur 100.
+    """
     try:
         requested_salary = float(profile_salary) if profile_salary not in (None, "") else None
     except (TypeError, ValueError):
         requested_salary = None
     if requested_salary is None:
-        return ScoreComponent(100.0, False, {"reason": "préférence salariale non renseignée"})
+        return ScoreComponent(0.0, False, {"reason": "salaire non renseigné"})
 
     offer_min = offer.get("salaire_min")
     offer_max = offer.get("salaire_max")
@@ -283,13 +357,13 @@ def compute_salary_score(profile_salary: Optional[object], offer: Dict[str, Any]
         offer_max_value = None
 
     if offer_min_value is None and offer_max_value is None:
-        return ScoreComponent(100.0, False, {"reason": "salaire non renseigné sur l'offre", "requested_salary": requested_salary})
+        return ScoreComponent(0.0, False, {"reason": "salaire non renseigné", "requested_salary": requested_salary})
     if offer_min_value is None:
         offer_min_value = offer_max_value
     if offer_max_value is None:
         offer_max_value = offer_min_value
     if offer_min_value is None or offer_max_value is None:
-        return ScoreComponent(100.0, False, {"reason": "salaire non renseigné sur l'offre", "requested_salary": requested_salary})
+        return ScoreComponent(0.0, False, {"reason": "salaire non renseigné", "requested_salary": requested_salary})
 
     if offer_max_value < requested_salary:
         ratio = offer_max_value / requested_salary if requested_salary else 0.0
@@ -316,39 +390,53 @@ def compute_salary_score(profile_salary: Optional[object], offer: Dict[str, Any]
 
 def compute_contract_score(profile_contract: Optional[str], offer_contract: Optional[str]) -> ScoreComponent:
     """Calcule le score de contrat entre le profil et l'offre.
-    
-    Si le contrat est absent ou ne correspond pas, retourne 0.
+
+    Le contrat est un critère bloquant dès lors qu'une préférence est
+    exprimée. En cas d'absence ou de différence, le score doit rester à 0.
+
+    Args:
+        profile_contract: Préférence de contrat déclarée par l'utilisateur.
+        offer_contract: Contrat proposé par l'offre.
+
+    Returns:
+        Sous-score de contrat, exprimé sur 100.
     """
-    # Si pas de préférence de contrat ou pas de contrat dans l'offre, score = 0
     if not profile_contract or not offer_contract:
         return ScoreComponent(0.0, True, {
-            "reason": "contrat non renseigné" if not profile_contract else "offre sans contrat",
+            "reason": "contrat non renseigné",
             "profile": profile_contract,
             "offer": offer_contract
         })
-    
+
     profile_norm = normalize_text(profile_contract)
     offer_norm = normalize_text(offer_contract)
-    
-    # Si les contrats correspondent, score = 100
+
     if profile_norm == offer_norm:
-        return ScoreComponent(100.0, True, {"reason": "contrat identique"})
-    
-    # Si les contrats ne correspondent pas, score = 0
+        return ScoreComponent(100.0, True, {"reason": "contrat compatible"})
+
     return ScoreComponent(0.0, True, {
-        "reason": "contrat différent",
+        "reason": "aucun contrat compatible (contrat différent)",
         "profile": profile_contract,
         "offer": offer_contract
     })
 
 
 def compute_remote_score(profile_remote: Optional[str], offer_remote: Optional[str]) -> ScoreComponent:
+    """Calcule la compatibilité télétravail entre le profil et l'offre.
+
+    Args:
+        profile_remote: Préférence télétravail de l'utilisateur.
+        offer_remote: Modalité télétravail mentionnée par l'offre.
+
+    Returns:
+        Sous-score télétravail sur 100.
+    """
     if not profile_remote or normalize_text(profile_remote) in {"indifferent", ""}:
-        return ScoreComponent(100.0, False, {"reason": "préférence télétravail neutre"})
+        return ScoreComponent(0.0, False, {"reason": "télétravail non renseigné"})
     profile_norm = normalize_text(profile_remote)
     offer_norm = normalize_text(offer_remote)
     if not offer_norm:
-        return ScoreComponent(100.0, False, {"reason": "télétravail non renseigné sur l'offre"})
+        return ScoreComponent(0.0, False, {"reason": "télétravail non renseigné"})
     if profile_norm == offer_norm:
         return ScoreComponent(100.0, True, {"reason": "préférence télétravail respectée"})
     if profile_norm == "hybride" and offer_norm in {"hybride", "teletravail", "presentiel"}:
@@ -372,6 +460,21 @@ def calculate_matching_score(
     job_offer: Dict[str, Any],
     weights: Optional[Dict[str, float]] = None,
 ) -> Dict[str, Any]:
+    """Calcule le score complet de matching pour une offre donnée.
+
+    Le résultat retourné alimente l'API, les pages HTML et les exports.
+    Les sous-scores bruts exposés ici doivent donc rester cohérents avec
+    les valeurs utilisées pour le score global pondéré.
+
+    Args:
+        user_profile: Profil utilisateur normalisé.
+        job_offer: Offre brute ou normalisée.
+        weights: Pondérations optionnelles du matching.
+
+    Returns:
+        Dictionnaire de résultat contenant le score global, les sous-scores
+        et les détails d'explication.
+    """
     offer = normalize_offer_for_matching(job_offer, source=job_offer.get("source"))
     profile_skills = _profile_skill_list(user_profile.get("skills", []))
     profile_jobs = []
@@ -400,6 +503,9 @@ def calculate_matching_score(
     salary_component = compute_salary_score(user_profile.get("minimum_salary"), offer)
     contract_component = compute_contract_score(user_profile.get("contract_preference"), offer.get("contrat"))
     remote_component = compute_remote_score(user_profile.get("remote_preference"), offer.get("teletravail"))
+
+    def _display_score(component: ScoreComponent) -> float:
+        return round(component.score, 2) if component.applicable else 0.0
 
     criterion_components = {
         "competences": skill_component,
@@ -453,14 +559,14 @@ def calculate_matching_score(
             "offer_identifier": offer.get("id"),
             "offer": offer,
             "global_score": weighted_score,
-            "skill_score": round(skill_component.score, 2),
-            "job_score": round(job_component.score, 2),
-            "experience_score": round(experience_component.score, 2),
-            "diploma_score": round(diploma_component.score, 2),
-            "location_score": round(location_component.score, 2),
-            "salary_score": round(salary_component.score, 2),
-            "contract_score": round(contract_component.score, 2),
-            "remote_score": round(remote_component.score, 2),
+            "skill_score": _display_score(skill_component),
+            "job_score": _display_score(job_component),
+            "experience_score": _display_score(experience_component),
+            "diploma_score": _display_score(diploma_component),
+            "location_score": _display_score(location_component),
+            "salary_score": _display_score(salary_component),
+            "contract_score": _display_score(contract_component),
+            "remote_score": _display_score(remote_component),
             "matching_skills": matching_skills,
             "missing_skills": missing_skills,
             "criterion_scores": criterion_scores,
@@ -479,4 +585,14 @@ def calculate_matching_score(
 
 
 def compute_match(profile: Dict[str, Any], offer_raw: Dict[str, Any], weights: Optional[Dict[str, float]] = None) -> Dict[str, Any]:
+    """Calcule le matching complet entre un profil et une offre.
+
+    Args:
+        profile: Profil utilisateur normalisé.
+        offer_raw: Offre brute ou normalisée.
+        weights: Pondérations optionnelles du matching.
+
+    Returns:
+        Résultat complet de matching prêt à être stocké ou affiché.
+    """
     return calculate_matching_score(profile, offer_raw, weights=weights)
