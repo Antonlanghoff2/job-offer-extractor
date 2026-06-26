@@ -22,7 +22,7 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Callable, Iterable, Dict, List, Optional, Tuple
 
-from flask import Blueprint, current_app, g, redirect, render_template, render_template_string, request, session, send_file, url_for
+from flask import Blueprint, current_app, g, jsonify, redirect, render_template, render_template_string, request, session, send_file, url_for
 from markupsafe import escape
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.utils import secure_filename
@@ -30,6 +30,7 @@ from werkzeug.utils import secure_filename
 from src.db import execute, fetch_all, fetch_one, init_app as init_db_teardown, init_db, transaction, utcnow_iso
 from src.offer_normalization import normalize_text
 from src.matching.weights import DEFAULT_MATCHING_WEIGHTS, MATCHING_WEIGHT_KEYS, validate_matching_weights
+from src.profile_extraction.experience_skill_extractor import extract_skills_from_experience
 from src.services.cv_parser import parse_cv_file
 from src.services.formation_recommendation import build_recommendation_context
 from src.services.matching_service import compute_match, normalize_skill_name
@@ -88,7 +89,7 @@ CONTRACT_OPTIONS = (
     ("Freelance", "Freelance"),
 )
 SKILL_LEVELS = ("debutant", "intermediaire", "avance", "expert")
-SOURCES = ("manual", "cv")
+SOURCES = ("manual", "cv", "formation", "professional_experience")
 
 BASE_TEMPLATE = """
 <!doctype html>
@@ -519,6 +520,7 @@ BASE_TEMPLATE = """
     {{ content|safe }}
   </main>
   <script src="{{ url_for('static', filename='js/matching_weights.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/profile_experiences.js') }}"></script>
 </body>
 </html>
 """
@@ -715,19 +717,7 @@ def _assemble_profile(user_id: int) -> Dict[str, Any]:
         }
         for row in fetch_all("SELECT * FROM desired_jobs WHERE user_id = ? ORDER BY created_at DESC", (user_id,))
     ]
-    skills = [
-        dict(row)
-        for row in fetch_all(
-            """
-            SELECT us.*, s.name, s.normalized_name
-            FROM user_skills us
-            JOIN skills s ON s.id = us.skill_id
-            WHERE us.user_id = ?
-            ORDER BY s.normalized_name ASC
-            """,
-            (user_id,),
-        )
-    ]
+    skills = _aggregate_profile_skills(user_id)
     diplomas = [dict(row) for row in fetch_all("SELECT * FROM diplomas WHERE user_id = ? ORDER BY graduation_year DESC, created_at DESC", (user_id,))]
     experiences = [dict(row) for row in fetch_all("SELECT * FROM experiences WHERE user_id = ? ORDER BY start_date DESC, created_at DESC", (user_id,))]
     experience_skills = defaultdict(list)
@@ -759,15 +749,32 @@ def _assemble_profile(user_id: int) -> Dict[str, Any]:
             "availability": "",
             "summary": "",
         }
+    professional_experiences = []
+    for experience in experiences:
+        experience_id = int(experience["id"])
+        skill_names = experience_skills.get(experience_id, [])
+        provenance = "cv" if (experience.get("source") or "").lower() == "cv" else "professional_experience"
+        professional_experiences.append(
+            {
+                **experience,
+                "skills": skill_names,
+                "extracted_skills": [
+                    {
+                        "name": skill_name,
+                        "source": provenance,
+                        "experience_id": str(experience_id),
+                    }
+                    for skill_name in skill_names
+                ],
+            }
+        )
     profile.update(
         {
             "desired_jobs": desired_jobs,
             "skills": skills,
             "diplomas": diplomas,
-            "experiences": [
-                {**experience, "skills": experience_skills.get(int(experience["id"]), [])}
-                for experience in experiences
-            ],
+            "experiences": professional_experiences,
+            "professional_experiences": professional_experiences,
             "cv": dict(cv_row) if cv_row else None,
         }
     )
@@ -796,7 +803,8 @@ def _format_skill_table_item(row: Dict[str, Any]) -> Dict[str, Any]:
         except Exception:
             years_display = str(years_value)
     level = payload["level"] or "Niveau non renseigné"
-    source = payload["source"] or "manual"
+    sources = row.get("sources") or []
+    source = ", ".join(sources) if isinstance(sources, list) and sources else (payload["source"] or "manual")
     return {
         **row,
         "name": name,
@@ -805,6 +813,124 @@ def _format_skill_table_item(row: Dict[str, Any]) -> Dict[str, Any]:
         "source": source,
         "normalized_name": payload["normalized_name"] or normalize_skill_name(name),
     }
+
+
+def _skill_source_sort_key(source: str) -> tuple[int, str]:
+    """Classe les provenances pour l'affichage et la fusion des compétences."""
+
+    priority = {
+        "manual": 0,
+        "professional_experience": 1,
+        "cv": 2,
+        "formation": 3,
+    }
+    return priority.get(source, 99), source
+
+
+def _aggregate_profile_skills(user_id: int) -> List[Dict[str, Any]]:
+    """Fusionne les compétences du profil en conservant leurs provenances.
+
+    Args:
+        user_id: Identifiant de l'utilisateur.
+
+    Returns:
+        Liste de compétences dédupliquées, enrichies avec leurs provenances.
+    """
+
+    aggregated: Dict[str, Dict[str, Any]] = {}
+
+    user_skill_rows = fetch_all(
+        """
+        SELECT us.id AS user_skill_id, us.level, us.years_experience, us.source, s.id AS skill_id, s.name, s.normalized_name
+        FROM user_skills us
+        JOIN skills s ON s.id = us.skill_id
+        WHERE us.user_id = ?
+        ORDER BY s.normalized_name ASC, us.source ASC
+        """,
+        (user_id,),
+    )
+    experience_skill_rows = fetch_all(
+        """
+        SELECT es.experience_id, e.source AS experience_source, s.id AS skill_id, s.name, s.normalized_name
+        FROM experience_skills es
+        JOIN experiences e ON e.id = es.experience_id
+        JOIN skills s ON s.id = es.skill_id
+        WHERE e.user_id = ?
+        ORDER BY s.normalized_name ASC, e.created_at ASC
+        """,
+        (user_id,),
+    )
+
+    def upsert_skill(*, name: str, normalized_name: str, source: str, level: object = None, years_experience: object = None, user_skill_id: Optional[int] = None, experience_id: Optional[int] = None) -> None:
+        normalized = normalize_skill_name(normalized_name or name)
+        if not normalized:
+            return
+        item = aggregated.setdefault(
+            normalized,
+            {
+                "name": name or normalized,
+                "normalized_name": normalized,
+                "level": "",
+                "years_experience": None,
+                "source": source,
+                "sources": [],
+                "user_skill_ids": [],
+                "experience_ids": [],
+            },
+        )
+        if name and (not item["name"] or item["name"] == item["normalized_name"]):
+            item["name"] = name
+        if level not in (None, "") and not item["level"]:
+            item["level"] = level
+        if years_experience not in (None, "") and item["years_experience"] is None:
+            item["years_experience"] = years_experience
+        if source not in item["sources"]:
+            item["sources"].append(source)
+            item["sources"].sort(key=_skill_source_sort_key)
+        if user_skill_id is not None and user_skill_id not in item["user_skill_ids"]:
+            item["user_skill_ids"].append(user_skill_id)
+        if experience_id is not None and experience_id not in item["experience_ids"]:
+            item["experience_ids"].append(experience_id)
+        if item["source"] != "manual" and source == "manual":
+            item["source"] = source
+        elif item["source"] == "cv" and source == "professional_experience":
+            item["source"] = source
+
+    for row in user_skill_rows:
+        upsert_skill(
+            name=str(row["name"] or ""),
+            normalized_name=str(row["normalized_name"] or ""),
+            source=str(row["source"] or "manual"),
+            level=row["level"],
+            years_experience=row["years_experience"],
+            user_skill_id=int(row["user_skill_id"]),
+        )
+
+    for row in experience_skill_rows:
+        experience_source = str(row["experience_source"] or "manual")
+        skill_source = "cv" if experience_source == "cv" else "professional_experience"
+        upsert_skill(
+            name=str(row["name"] or ""),
+            normalized_name=str(row["normalized_name"] or ""),
+            source=skill_source,
+            experience_id=int(row["experience_id"]),
+        )
+
+    result: List[Dict[str, Any]] = []
+    for item in aggregated.values():
+        result.append({
+            "name": item["name"],
+            "normalized_name": item["normalized_name"],
+            "level": item["level"],
+            "years_experience": item["years_experience"],
+            "source": item["source"],
+            "sources": item["sources"],
+            "user_skill_ids": item["user_skill_ids"],
+            "experience_ids": item["experience_ids"],
+        })
+
+    result.sort(key=lambda item: (item["name"].lower(), item["source"]))
+    return result
 
 
 def _store_skill(user_id: int, name: str, level: Optional[str], years_experience: Optional[float], source: str) -> None:
@@ -1067,7 +1193,7 @@ def _profile_summary_block(profile: Dict[str, Any]) -> str:
           <div class="profile-summary__header">
             <div>
               <h2>Mes compétences et mes formations</h2>
-              <p class="muted">Résumé en lecture seule des éléments déjà enregistrés.</p>
+              <p class="muted">Résumé en lecture seule des éléments déjà enregistrés, y compris les expériences professionnelles.</p>
             </div>
           </div>
           <div class="grid">
@@ -1098,6 +1224,30 @@ def _profile_summary_block(profile: Dict[str, Any]) -> str:
               <div class="muted">Aucune formation enregistrée.</div>
               {% endif %}
             </div>
+            <div class="profile-summary__box">
+              <h3>Expériences professionnelles</h3>
+              {% if profile.professional_experiences %}
+              <ul class="profile-summary__list">
+                {% for experience in profile.professional_experiences[:3] %}
+                <li>
+                  <strong>{{ experience.job_title }}</strong>
+                  <span class="muted">{{ experience.company or 'Entreprise non renseignée' }}{% if experience.start_date or experience.end_date %} · {{ experience.start_date or '...' }} - {{ experience.end_date or 'en cours' }}{% endif %}</span>
+                  {% if experience.extracted_skills %}
+                  <span class="muted">Compétences: {{ experience.extracted_skills | map(attribute='name') | join(', ') }}</span>
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+              <div class="actions" style="margin-top: 12px;">
+                <a class="btn secondary" href="{{ url_for('user_portal.experiences') }}">Gérer mes expériences</a>
+              </div>
+              {% else %}
+              <div class="muted">Aucune expérience enregistrée.</div>
+              <div class="actions" style="margin-top: 12px;">
+                <a class="btn secondary" href="{{ url_for('user_portal.experiences') }}">Ajouter une expérience</a>
+              </div>
+              {% endif %}
+            </div>
           </div>
         </section>
         """,
@@ -1123,12 +1273,15 @@ def _list_section(title: str, items: List[Dict[str, Any]], columns: List[Tuple[s
             </thead>
             <tbody>
               {% for item in items %}
-              <tr>
+              <tr data-item-id="{{ item['id'] }}">
                 {% for _, key in columns %}
-                <td>{{ item[key] if item.get(key) not in (None, '') else '' }}</td>
+                <td data-field="{{ key }}">{{ item[key] if item.get(key) not in (None, '') else '' }}</td>
                 {% endfor %}
                 <td class="actions">
                   <a class="btn secondary" href="{{ item['_edit_url'] }}">Modifier</a>
+                  {% if item.get('_extract_url') %}
+                  <button type="button" class="btn secondary js-extract-experience" data-extract-url="{{ item['_extract_url'] }}" data-confirm-url="{{ url_for('user_portal.api_confirm_experience_skills') }}" data-experience-id="{{ item['id'] }}">Extraire</button>
+                  {% endif %}
                   <form method="post" action="{{ item['_delete_url'] }}" onsubmit="return confirm('Supprimer cet élément ?');">
                     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                     <button class="btn danger" type="submit">Supprimer</button>
@@ -1356,30 +1509,98 @@ def _render_experience_form(experience: Optional[Dict[str, Any]] = None) -> str:
     )
 
 
-def _store_experience(user_id: int) -> None:
+def _experience_payload_from_mapping(data: Dict[str, Any]) -> Dict[str, Any]:
+    """Normalise les données d'une expérience avant persistance.
+
+    Args:
+        data: Données brutes reçues depuis un formulaire ou une requête JSON.
+
+    Returns:
+        Dictionnaire nettoyé et prêt à être enregistré.
+
+    Raises:
+        ValueError: Si aucun intitulé ni aucune description n'est fourni.
+    """
+
+    job_title = _normalize_string(data.get("job_title") or data.get("poste"))
+    description = _normalize_string(data.get("description"))
+    if not job_title and not description:
+        raise ValueError("L'intitulé ou la description de l'expérience est obligatoire.")
+    return {
+        "job_title": job_title,
+        "company": _normalize_string(data.get("company") or data.get("entreprise")),
+        "city": _normalize_string(data.get("city") or data.get("lieu")),
+        "start_date": _parse_date(data.get("start_date") or data.get("date_debut")),
+        "end_date": _parse_date(data.get("end_date") or data.get("date_fin")),
+        "is_current": 1 if data.get("is_current") or data.get("poste_actuel") else 0,
+        "description": description,
+        "source": _normalize_string(data.get("source")) or "manual",
+        "skills": _parse_multi_values(data.get("skills") or data.get("competences_associees") or data.get("confirmed_skills")),
+    }
+
+
+def _store_experience_record(user_id: int, data: Dict[str, Any], experience_id: Optional[int] = None) -> int:
+    """Crée ou met à jour une expérience professionnelle.
+
+    Args:
+        user_id: Identifiant de l'utilisateur propriétaire.
+        data: Données nettoyées de l'expérience.
+        experience_id: Identifiant existant à mettre à jour, le cas échéant.
+
+    Returns:
+        Identifiant de l'expérience créée ou mise à jour.
+    """
+
     now = utcnow_iso()
-    job_title = _normalize_string(request.form.get("job_title"))
-    if not job_title:
-        raise ValueError("Le titre du poste est obligatoire.")
-    company = _normalize_string(request.form.get("company"))
-    city = _normalize_string(request.form.get("city"))
-    start_date = _parse_date(request.form.get("start_date"))
-    end_date = _parse_date(request.form.get("end_date"))
-    is_current = 1 if request.form.get("is_current") else 0
-    description = _normalize_string(request.form.get("description"))
-    source = request.form.get("source") or "manual"
     with transaction() as conn:
-        cursor = conn.execute(
-            """
-            INSERT INTO experiences(
-                user_id, job_title, company, city, start_date, end_date, is_current, description, source, created_at, updated_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """,
-            (user_id, job_title, company, city, start_date, end_date, is_current, description, source, now, now),
-        )
-        experience_id = int(cursor.lastrowid)
-        skill_names = _parse_multi_values(request.form.get("skills"))
-        for skill_name in skill_names:
+        if experience_id is None:
+            cursor = conn.execute(
+                """
+                INSERT INTO experiences(
+                    user_id, job_title, company, city, start_date, end_date, is_current, description, source, created_at, updated_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    user_id,
+                    data["job_title"],
+                    data["company"],
+                    data["city"],
+                    data["start_date"],
+                    data["end_date"],
+                    data["is_current"],
+                    data["description"],
+                    data["source"],
+                    now,
+                    now,
+                ),
+            )
+            experience_id = int(cursor.lastrowid)
+        else:
+            updated = conn.execute(
+                """
+                UPDATE experiences
+                SET job_title = ?, company = ?, city = ?, start_date = ?, end_date = ?, is_current = ?, description = ?, source = ?, updated_at = ?
+                WHERE id = ? AND user_id = ?
+                """,
+                (
+                    data["job_title"],
+                    data["company"],
+                    data["city"],
+                    data["start_date"],
+                    data["end_date"],
+                    data["is_current"],
+                    data["description"],
+                    data["source"],
+                    now,
+                    experience_id,
+                    user_id,
+                ),
+            )
+            if updated.rowcount == 0:
+                raise ValueError("Expérience introuvable ou non autorisée.")
+            conn.execute("DELETE FROM experience_skills WHERE experience_id = ?", (experience_id,))
+
+        for skill_name in data["skills"]:
             normalized = normalize_skill_name(skill_name)
             if not normalized:
                 continue
@@ -1396,11 +1617,55 @@ def _store_experience(user_id: int) -> None:
                 "INSERT OR IGNORE INTO experience_skills(experience_id, skill_id) VALUES (?, ?)",
                 (experience_id, skill_id),
             )
+    return experience_id
+
+
+def _store_experience(user_id: int) -> None:
+    _store_experience_record(user_id, _experience_payload_from_mapping(dict(request.form)))
 
 
 def _list_view_items(user_id: int, table: str) -> List[Dict[str, Any]]:
     rows = fetch_all(f"SELECT * FROM {table} WHERE user_id = ? ORDER BY created_at DESC", (user_id,))
     return [dict(row) for row in rows]
+
+
+def _serialize_experience_item(row: Dict[str, Any], *, skill_source: Optional[str] = None) -> Dict[str, Any]:
+    """Sérialise une expérience avec ses compétences validées."""
+
+    item = dict(row)
+    experience_id = int(item["id"])
+    experience_source = skill_source or (item.get("source") or "manual")
+    effective_source = "cv" if experience_source == "cv" else "professional_experience"
+    skill_rows = fetch_all(
+        """
+        SELECT s.name, s.normalized_name
+        FROM experience_skills es
+        JOIN skills s ON s.id = es.skill_id
+        WHERE es.experience_id = ?
+        ORDER BY s.normalized_name ASC
+        """,
+        (experience_id,),
+    )
+    extracted_skills = [
+        {
+            "name": skill_row["name"],
+            "normalized_name": skill_row["normalized_name"],
+            "source": effective_source,
+            "experience_id": str(experience_id),
+        }
+        for skill_row in skill_rows
+    ]
+    item["skills"] = [skill["name"] for skill in extracted_skills]
+    item["skills_text"] = ", ".join(item["skills"])
+    item["extracted_skills"] = extracted_skills
+    return item
+
+
+def _profile_experience_items(user_id: int) -> List[Dict[str, Any]]:
+    """Retourne les expériences enregistrées avec leurs compétences."""
+
+    rows = _list_view_items(user_id, "experiences")
+    return [_serialize_experience_item(row) for row in rows]
 
 
 def _profile_skill_items(user_id: int) -> List[Dict[str, Any]]:
@@ -1511,7 +1776,8 @@ def _save_cv_confirmation(user_id: int, pending: Dict[str, Any]) -> None:
         conn.execute("DELETE FROM experiences WHERE user_id = ? AND source = ?", (user_id, "cv"))
     structured = pending.get("structured") or {}
     for skill in structured.get("competences", []):
-        _store_skill(user_id, skill.get("nom", ""), None, None, "cv")
+        source = "formation" if _normalize_string(skill.get("formation_source")) else "cv"
+        _store_skill(user_id, skill.get("nom", ""), None, None, source)
     for formation in structured.get("formations", []):
         now = utcnow_iso()
         annee = formation.get("annee")
@@ -1540,7 +1806,7 @@ def _save_cv_confirmation(user_id: int, pending: Dict[str, Any]) -> None:
     for experience in structured.get("experiences_professionnelles", []):
         now = utcnow_iso()
         with transaction() as conn:
-            conn.execute(
+            cursor = conn.execute(
                 """
                 INSERT INTO experiences(user_id, job_title, company, city, start_date, end_date, is_current, description, source, created_at, updated_at)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -1559,6 +1825,24 @@ def _save_cv_confirmation(user_id: int, pending: Dict[str, Any]) -> None:
                     now,
                 ),
             )
+            experience_id = int(cursor.lastrowid)
+            for skill_name in experience.get("competences_associees", []) or []:
+                normalized = normalize_skill_name(skill_name)
+                if not normalized:
+                    continue
+                skill_row = conn.execute("SELECT id FROM skills WHERE normalized_name = ?", (normalized,)).fetchone()
+                if skill_row:
+                    skill_id = int(skill_row["id"])
+                else:
+                    skill_cursor = conn.execute(
+                        "INSERT INTO skills(name, normalized_name, created_at, updated_at) VALUES (?, ?, ?, ?)",
+                        (_normalize_string(skill_name), normalized, now, now),
+                    )
+                    skill_id = int(skill_cursor.lastrowid)
+                conn.execute(
+                    "INSERT OR IGNORE INTO experience_skills(experience_id, skill_id) VALUES (?, ?)",
+                    (experience_id, skill_id),
+                )
     session.pop("pending_cv_import", None)
 
 
@@ -1817,6 +2101,7 @@ def _export_user_data_payload(user_id: int) -> Dict[str, Any]:
         ],
         "diplomas": [dict(item) for item in profile["diplomas"]],
         "experiences": [dict(item) for item in profile["experiences"]],
+        "professional_experiences": [dict(item) for item in profile.get("professional_experiences", profile["experiences"])],
         "cv": dict(profile["cv"]) if profile.get("cv") else None,
         "job_matches": [
             {
@@ -2546,24 +2831,29 @@ def experiences():
                 return redirect(url_for("user_portal.experiences"))
             except ValueError as exc:
                 error = str(exc)
-    items = _list_view_items(user_id, "experiences")
+    items = _profile_experience_items(user_id)
     for item in items:
         item["duration_years"] = _calculate_duration_years(item.get("start_date"), item.get("end_date"), int(item.get("is_current") or 0))
-        item["skills_text"] = ", ".join(
-            row["name"]
-            for row in fetch_all(
-                """
-                SELECT s.name
-                FROM experience_skills es
-                JOIN skills s ON s.id = es.skill_id
-                WHERE es.experience_id = ?
-                """,
-                (item["id"],),
-            )
-        )
     mapped = _item_map(items, "user_portal.edit_experience", "user_portal.delete_experience")
+    for item in mapped:
+        item["_extract_url"] = url_for("user_portal.api_extract_experience_skills", experience_id=item["id"])
     content = _render_experience_form()
-    content += _list_section("Expériences", mapped, [("Poste", "job_title"), ("Entreprise", "company"), ("Ville", "city"), ("Début", "start_date"), ("Fin", "end_date")], url_for("user_portal.experiences"), "Aucune expérience enregistrée.")
+    content += _list_section("Expériences", mapped, [("Poste", "job_title"), ("Entreprise", "company"), ("Ville", "city"), ("Début", "start_date"), ("Fin", "end_date"), ("Compétences", "skills_text")], url_for("user_portal.experiences"), "Aucune expérience enregistrée.")
+    content += render_template_string(
+        """
+        <section class="panel experience-skill-panel" id="experience-skill-panel">
+          <div class="panel__head">
+            <div>
+              <h2>Extraction des compétences</h2>
+              <p class="muted">Clique sur « Extraire » sur une expérience pour afficher les compétences proposées avant confirmation.</p>
+            </div>
+          </div>
+          <div class="experience-skill-panel__content" id="experience-skill-panel-content">
+            <div class="muted">Aucune expérience n’a encore été analysée.</div>
+          </div>
+        </section>
+        """
+    )
     return _render_page("Expériences", content, message=error)
 
 
@@ -2600,19 +2890,7 @@ def edit_experience(item_id: int):
                     ),
                 )
             return redirect(url_for("user_portal.experiences"))
-    experience = dict(row)
-    experience["skills_text"] = ", ".join(
-        row["name"]
-        for row in fetch_all(
-            """
-            SELECT s.name
-            FROM experience_skills es
-            JOIN skills s ON s.id = es.skill_id
-            WHERE es.experience_id = ?
-            """,
-            (item_id,),
-        )
-    )
+    experience = _serialize_experience_item(dict(row))
     content = _render_experience_form(experience)
     return _render_page("Modifier expérience", content)
 
@@ -2625,6 +2903,177 @@ def delete_experience(item_id: int):
     if _check_csrf():
         _delete_owned_row("experiences", item_id, user_id)
     return redirect(url_for("user_portal.experiences"))
+
+
+def _json_error(message: str, status_code: int = 400):
+    """Construit une réponse JSON d'erreur homogène."""
+
+    return jsonify({"status": "error", "error": message}), status_code
+
+
+@user_portal_bp.route("/api/profile/experiences", methods=["POST"])
+@login_required
+def api_create_experience():
+    """Crée une expérience professionnelle depuis une requête JSON."""
+
+    if not _check_csrf():
+        return _json_error("Jeton CSRF invalide ou manquant.", 403)
+    payload = request.get_json(silent=True)
+    if not isinstance(payload, dict):
+        return _json_error("Corps JSON invalide.")
+    user_id = _current_user_id()
+    assert user_id is not None
+    try:
+        data = _experience_payload_from_mapping(payload)
+        experience_id = _store_experience_record(user_id, data)
+        experience_row = fetch_one("SELECT * FROM experiences WHERE id = ?", (experience_id,))
+        response = {
+            "experience": _serialize_experience_item(dict(experience_row)) if experience_row else None,
+        }
+        if payload.get("auto_extract"):
+            existing_skills = [skill["name"] for skill in _aggregate_profile_skills(user_id)]
+            suggestions = extract_skills_from_experience(data["job_title"], data["description"], existing_skills=existing_skills)
+            response["suggested_skills"] = [
+                {
+                    **skill,
+                    "experience_id": str(experience_id),
+                }
+                for skill in suggestions
+            ]
+        return jsonify({"status": "ok", **response}), 201
+    except ValueError as exc:
+        return _json_error(str(exc))
+
+
+@user_portal_bp.route("/api/profile/experiences/<int:experience_id>", methods=["PUT"])
+@login_required
+def api_update_experience(experience_id: int):
+    """Met à jour une expérience professionnelle existante."""
+
+    if not _check_csrf():
+        return _json_error("Jeton CSRF invalide ou manquant.", 403)
+    payload = request.get_json(silent=True)
+    if not isinstance(payload, dict):
+        return _json_error("Corps JSON invalide.")
+    user_id = _current_user_id()
+    assert user_id is not None
+    row = fetch_one("SELECT * FROM experiences WHERE id = ? AND user_id = ?", (experience_id, user_id))
+    if not row:
+        return _json_error("Expérience introuvable.", 404)
+    try:
+        data = _experience_payload_from_mapping(payload)
+        _store_experience_record(user_id, data, experience_id=experience_id)
+        experience_row = fetch_one("SELECT * FROM experiences WHERE id = ? AND user_id = ?", (experience_id, user_id))
+        response = {
+            "experience": _serialize_experience_item(dict(experience_row)) if experience_row else None,
+        }
+        if payload.get("auto_extract"):
+            existing_skills = [skill["name"] for skill in _aggregate_profile_skills(user_id)]
+            suggestions = extract_skills_from_experience(data["job_title"], data["description"], existing_skills=existing_skills)
+            response["suggested_skills"] = [
+                {
+                    **skill,
+                    "experience_id": str(experience_id),
+                }
+                for skill in suggestions
+            ]
+        return jsonify({"status": "ok", **response})
+    except ValueError as exc:
+        return _json_error(str(exc))
+
+
+@user_portal_bp.route("/api/profile/experiences/<int:experience_id>", methods=["DELETE"])
+@login_required
+def api_delete_experience(experience_id: int):
+    """Supprime une expérience professionnelle et ses compétences liées."""
+
+    if not _check_csrf():
+        return _json_error("Jeton CSRF invalide ou manquant.", 403)
+    user_id = _current_user_id()
+    assert user_id is not None
+    with transaction() as conn:
+        row = conn.execute("SELECT id FROM experiences WHERE id = ? AND user_id = ?", (experience_id, user_id)).fetchone()
+        if not row:
+            return _json_error("Expérience introuvable.", 404)
+        conn.execute("DELETE FROM experiences WHERE id = ? AND user_id = ?", (experience_id, user_id))
+    return jsonify({"status": "ok", "deleted": True, "experience_id": experience_id})
+
+
+@user_portal_bp.route("/api/profile/experiences/<int:experience_id>/extract-skills", methods=["POST"])
+@login_required
+def api_extract_experience_skills(experience_id: int):
+    """Déclenche l'extraction des compétences d'une expérience."""
+
+    if not _check_csrf():
+        return _json_error("Jeton CSRF invalide ou manquant.", 403)
+    user_id = _current_user_id()
+    assert user_id is not None
+    row = fetch_one("SELECT * FROM experiences WHERE id = ? AND user_id = ?", (experience_id, user_id))
+    if not row:
+        return _json_error("Expérience introuvable.", 404)
+    experience = dict(row)
+    try:
+        suggestions = extract_skills_from_experience(
+            experience.get("job_title") or "",
+            experience.get("description") or "",
+            existing_skills=[skill["name"] for skill in _aggregate_profile_skills(user_id)],
+        )
+    except ValueError as exc:
+        return _json_error(str(exc))
+    suggestions = [
+        {
+            **skill,
+            "experience_id": str(experience_id),
+        }
+        for skill in suggestions
+    ]
+    return jsonify({"status": "ok", "experience_id": experience_id, "suggested_skills": suggestions})
+
+
+@user_portal_bp.route("/api/profile/skills/confirm", methods=["POST"])
+@login_required
+def api_confirm_experience_skills():
+    """Valide les compétences proposées pour une expérience."""
+
+    if not _check_csrf():
+        return _json_error("Jeton CSRF invalide ou manquant.", 403)
+    payload = request.get_json(silent=True)
+    if not isinstance(payload, dict):
+        return _json_error("Corps JSON invalide.")
+    user_id = _current_user_id()
+    assert user_id is not None
+    try:
+        experience_id = int(payload.get("experience_id") or 0)
+    except (TypeError, ValueError):
+        return _json_error("experience_id invalide.")
+    row = fetch_one("SELECT * FROM experiences WHERE id = ? AND user_id = ?", (experience_id, user_id))
+    if not row:
+        return _json_error("Expérience introuvable.", 404)
+    skills_payload = payload.get("skills") or []
+    if not isinstance(skills_payload, list):
+        return _json_error("Le champ skills doit être une liste.")
+    normalized_names: List[str] = []
+    for skill in skills_payload:
+        name = skill.get("name") if isinstance(skill, dict) else skill
+        normalized = normalize_skill_name(name)
+        if normalized:
+            normalized_names.append(normalized)
+    now = utcnow_iso()
+    with transaction() as conn:
+        conn.execute("DELETE FROM experience_skills WHERE experience_id = ?", (experience_id,))
+        for skill_name in normalized_names:
+            skill_row = conn.execute("SELECT id FROM skills WHERE normalized_name = ?", (skill_name,)).fetchone()
+            if skill_row:
+                skill_id = int(skill_row["id"])
+            else:
+                skill_cursor = conn.execute(
+                    "INSERT INTO skills(name, normalized_name, created_at, updated_at) VALUES (?, ?, ?, ?)",
+                    (skill_name, skill_name, now, now),
+                )
+                skill_id = int(skill_cursor.lastrowid)
+            conn.execute("INSERT OR IGNORE INTO experience_skills(experience_id, skill_id) VALUES (?, ?)", (experience_id, skill_id))
+    experience = _serialize_experience_item(dict(row))
+    return jsonify({"status": "ok", "experience": experience, "confirmed_skills": normalized_names})
 
 
 @user_portal_bp.route("/profile/cv", methods=["GET", "POST"])
