@@ -21,6 +21,7 @@ logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 ENRICHED_OFFERS_PATH = PROJECT_ROOT / "data" / "processed" / "offres_enrichies.json"
 TRENDS_PATH = PROJECT_ROOT / "data" / "processed" / "trends.json"
+CACHE_VERSION = "2.0"
 
 
 def aggregate_all_trends() -> Dict[str, Any]:
@@ -56,7 +57,7 @@ def aggregate_all_trends() -> Dict[str, Any]:
         all_trends = {}
         
         # Trends globales
-        cache_key = "trends:global"
+        cache_key = f"trends:v{CACHE_VERSION}:global"
         offers_hash = compute_hash(offers)
         
         cached = cache_store.get(cache_key)
@@ -66,12 +67,12 @@ def aggregate_all_trends() -> Dict[str, Any]:
         else:
             trends = aggregate_trends(offers, territoire=None, periode_jours=365)
             all_trends["global"] = trends
-            cache_store.set(cache_key, trends, input_hash=offers_hash)
+            cache_store.set(cache_key, trends, input_hash=offers_hash, source_version=CACHE_VERSION)
             stats["territories_processed"] += 1
         
         # Trends par territoire
         for territory in territories:
-            cache_key = f"trends:{territory}"
+            cache_key = f"trends:v{CACHE_VERSION}:{territory}"
             
             cached = cache_store.get(cache_key)
             if cached and cached.get("input_hash") == offers_hash:
@@ -80,7 +81,7 @@ def aggregate_all_trends() -> Dict[str, Any]:
             
             trends = aggregate_trends(offers, territoire=territory, periode_jours=365)
             all_trends[territory] = trends
-            cache_store.set(cache_key, trends, input_hash=offers_hash)
+            cache_store.set(cache_key, trends, input_hash=offers_hash, source_version=CACHE_VERSION)
             stats["territories_processed"] += 1
         
         # Sauvegarder

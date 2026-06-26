@@ -21,6 +21,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 ENRICHED_OFFERS_PATH = PROJECT_ROOT / "data" / "processed" / "offres_enrichies.json"
 TRENDS_PATH = PROJECT_ROOT / "data" / "processed" / "trends.json"
 DASHBOARDS_PATH = PROJECT_ROOT / "data" / "processed" / "dashboards.json"
+CACHE_VERSION = "2.0"
 
 
 def compute_all_dashboards() -> Dict[str, Any]:
@@ -51,10 +52,10 @@ def compute_all_dashboards() -> Dict[str, Any]:
         
         offers_hash = compute_hash(offers)
         trends_hash = compute_hash(trends)
-        combined_hash = compute_hash({"offers": offers_hash, "trends": trends_hash})
+        combined_hash = compute_hash({"offers": offers_hash, "trends": trends_hash, "version": CACHE_VERSION})
         
         # Vérifier le cache
-        cache_key = "dashboards:all"
+        cache_key = f"dashboards:v{CACHE_VERSION}:all"
         cached = cache_store.get(cache_key)
         
         if cached and cached.get("input_hash") == combined_hash:
@@ -97,7 +98,7 @@ def compute_all_dashboards() -> Dict[str, Any]:
             json.dump(dashboards, f, ensure_ascii=False, indent=2)
         
         # Mettre en cache
-        cache_store.set(cache_key, dashboards, input_hash=combined_hash)
+        cache_store.set(cache_key, dashboards, input_hash=combined_hash, source_version=CACHE_VERSION)
         
         logger.info(f"Dashboards calculés: {stats['dashboards_computed']}")
         

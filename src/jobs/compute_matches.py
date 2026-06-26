@@ -30,6 +30,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 ENRICHED_OFFERS_PATH = PROJECT_ROOT / "data" / "processed" / "offres_enrichies.json"
 MATCHES_PATH = PROJECT_ROOT / "data" / "processed" / "matches.json"
 DB_PATH = PROJECT_ROOT / "instance" / "trendradar.sqlite"
+MATCHES_CACHE_VERSION = "2.0"
 
 
 def _utcnow_iso() -> str:
@@ -297,6 +298,7 @@ def compute_all_matches() -> Dict[str, Any]:
     stats = {
         "total_users": 0,
         "users_processed": 0,
+        "users_from_cache": 0,
         "matches_computed": 0,
         "errors": 0,
     }
@@ -331,17 +333,21 @@ def compute_all_matches() -> Dict[str, Any]:
                     profile = _profile_snapshot(raw_profile)
                     profile_hash = compute_hash(profile)
 
-                    cache_key = f"matches:user:{user_id}"
+                    cache_key = f"matches:v{MATCHES_CACHE_VERSION}:user:{user_id}"
                     cached = cache_store.get(cache_key)
                     combined_hash = compute_hash(
-                        {"offers": offers_hash, "profile": profile_hash}
+                        {"offers": offers_hash, "profile": profile_hash, "version": MATCHES_CACHE_VERSION}
                     )
 
                     if (
                         cached
                         and cached.get("input_hash") == combined_hash
                     ):
-                        all_matches[str(user_id)] = cached["value"]
+                        cached_matches = cached.get("value") or []
+                        all_matches[str(user_id)] = cached_matches
+                        stats["users_processed"] += 1
+                        stats["users_from_cache"] += 1
+                        stats["matches_computed"] += len(cached_matches)
                         continue
 
                     user_matches = []
@@ -398,6 +404,7 @@ def compute_all_matches() -> Dict[str, Any]:
                         cache_key,
                         user_matches,
                         input_hash=combined_hash,
+                        source_version=MATCHES_CACHE_VERSION,
                     )
 
                 except Exception as e:
@@ -414,8 +421,9 @@ def compute_all_matches() -> Dict[str, Any]:
                 json.dump(all_matches, f, ensure_ascii=False, indent=2)
 
             logger.info(
-                "Matchings calculés: %s utilisateurs, %s matchings",
+                "Matchings calculés: %s utilisateurs (%s depuis cache), %s matchings",
                 stats["users_processed"],
+                stats["users_from_cache"],
                 stats["matches_computed"],
             )
 
