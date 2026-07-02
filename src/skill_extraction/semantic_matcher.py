@@ -15,7 +15,6 @@ cache pour éviter les rechargements.
 
 from __future__ import annotations
 
-import json
 import logging
 import math
 import os
@@ -23,11 +22,16 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 from .models import ExtractedSkill
+from .referential_loader import (
+    clear_referential_cache,
+    load_referential,
+    resolve_referential_path,
+)
 
 logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_REFERENTIAL_PATH = PROJECT_ROOT / "data" / "referentials" / "skills.json"
+DEFAULT_REFERENTIAL_PATH = resolve_referential_path("skills.json")
 
 SEMANTIC_SKILL_THRESHOLD = float(os.getenv("SEMANTIC_SKILL_THRESHOLD", "0.72"))
 IMPLICIT_SKILL_THRESHOLD = float(os.getenv("IMPLICIT_SKILL_THRESHOLD", "0.78"))
@@ -42,29 +46,28 @@ _model_cache: Optional[Any] = None
 _embeddings_cache: Optional[Dict[str, List[float]]] = None
 
 
+def _load_referential_result(path: Optional[Path] = None):
+    """Charge le référentiel de compétences avec validation et cache partagé."""
+
+    referential_path = path or DEFAULT_REFERENTIAL_PATH
+    return load_referential(
+        "skills.json",
+        referential_name="skills_referential",
+        required_string_fields=("canonical_name", "category", "description"),
+        required_list_fields=("aliases",),
+        optional_list_fields=("domains",),
+        path=referential_path,
+    )
+
+
 def _load_referential(path: Optional[Path] = None) -> List[Dict[str, Any]]:
     """Charge le référentiel de compétences depuis le fichier JSON."""
 
-    global _referential_cache
-    if _referential_cache is not None:
-        return _referential_cache
-
-    referential_path = path or DEFAULT_REFERENTIAL_PATH
-    if not referential_path.exists():
-        logger.warning("Référentiel introuvable: %s", referential_path)
-        _referential_cache = []
-        return _referential_cache
-
-    with referential_path.open("r", encoding="utf-8") as fh:
-        data = json.load(fh)
-
-    if not isinstance(data, list):
-        logger.error("Le référentiel doit contenir une liste JSON.")
-        _referential_cache = []
-        return _referential_cache
-
-    _referential_cache = data
-    return _referential_cache
+    result = _load_referential_result(path)
+    if not result.ok:
+        logger.warning(result.message)
+        return []
+    return [dict(entry) for entry in result.entries]
 
 
 def _tokenize(text: str) -> List[str]:
@@ -313,6 +316,7 @@ def reset_caches() -> None:
     """Réinitialise les caches internes. Utile pour les tests."""
 
     global _referential_cache, _model_cache, _embeddings_cache
+    clear_referential_cache()
     _referential_cache = None
     _model_cache = None
     _embeddings_cache = None

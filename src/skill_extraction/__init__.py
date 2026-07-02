@@ -19,6 +19,7 @@ utiliser ``extract_skills_categorized``.
 """
 
 from .implicit_extractor import ImplicitExtractionDebug, extract_implicit_skills
+from .referential_loader import clear_referential_cache
 from .models import ExtractedSkill
 from .skill_pipeline import (
     extract_skills_as_dicts,
@@ -31,6 +32,7 @@ __all__ = [
     "ExtractedSkill",
     "ImplicitExtractionDebug",
     "extract_implicit_skills",
+    "clear_referential_cache",
     "extract_skills_from_offer",
     "extract_skills_as_dicts",
     "extract_skill_names",

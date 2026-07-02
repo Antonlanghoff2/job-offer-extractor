@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import unittest
+from pathlib import Path
 from unittest.mock import patch
 
 from src.skill_extraction.semantic_matcher import (
@@ -62,6 +63,27 @@ class SemanticMatcherTest(unittest.TestCase):
         for skill in skills:
             self.assertGreaterEqual(skill.confidence, 0.0)
             self.assertLessEqual(skill.confidence, 1.0)
+
+    def test_referential_is_loaded_once(self) -> None:
+        candidates = [
+            ("développement de flux de traitement et d'alimentation de données", "Vous développerez des flux de traitement et d'alimentation de données."),
+        ]
+        from src.skill_extraction import referential_loader
+
+        read_count = {"count": 0}
+        original_read_text = Path.read_text
+
+        def counting_read_text(self, *args, **kwargs):
+            if self.name == "skills.json":
+                read_count["count"] += 1
+            return original_read_text(self, *args, **kwargs)
+
+        referential_loader.clear_referential_cache()
+        with patch.object(Path, "read_text", counting_read_text):
+            match_candidates_to_referential(candidates)
+            match_candidates_to_referential(candidates)
+
+        self.assertEqual(read_count["count"], 1)
 
 
 if __name__ == "__main__":

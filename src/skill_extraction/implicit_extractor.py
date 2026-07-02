@@ -20,22 +20,25 @@ Exemples :
 
 from __future__ import annotations
 
-import json
 import logging
-import math
 import os
 import re
 import unicodedata
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
 from .models import ExtractedSkill
+from .referential_loader import (
+    clear_referential_cache,
+    load_referential,
+    resolve_referential_path,
+)
 
 logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_IMPLICIT_REFERENTIAL_PATH = PROJECT_ROOT / "data" / "referentials" / "implicit_skills.json"
+DEFAULT_IMPLICIT_REFERENTIAL_PATH = resolve_referential_path("implicit_skills.json")
 
 IMPLICIT_SKILL_THRESHOLD = float(os.getenv("IMPLICIT_SKILL_THRESHOLD", "0.78"))
 MAX_IMPLICIT_SKILLS_PER_SENTENCE = int(os.getenv("MAX_IMPLICIT_SKILLS_PER_SENTENCE", "3"))
@@ -47,9 +50,9 @@ DEBUG_IMPLICIT_EXTRACTION = os.getenv("DEBUG_IMPLICIT_EXTRACTION", "false").lowe
 _NEGATION_PATTERNS = (
     r"aucune\s+(?:connaissance|expérience|utilisation)\s+de",
     r"pas\s+de\s+(?:connaissance|expérience|utilisation)\s+(?:en|de)",
-    r"n[''](?:utilisez|utiliserez|aurez|aurezs)\s+pas",
+    r"n['’](?:utilisez|utiliserez|aurez|auriez|devez|deviendrez)\s+pas",
     r"sans\s+(?:recours\s+à|utilisation\s+de|connaissance\s+de)",
-    r"non\s+(?:requis|requise|nécessaire|nécessaire)",
+    r"non\s+(?:requis|requise|nécessaire)",
     r"inutile\s+de",
     r"pas\s+nécessaire\s+de",
     r"ne\s+sera\s+(?:pas|point)\s+(?:utilisé|demandé|requis)",
@@ -58,16 +61,18 @@ _NEGATION_PATTERNS = (
 _MISSION_MARKERS = (
     r"vous\s+(?:serez\s+)?charg[ée]s?\s+de",
     r"vous\s+(?:serez\s+)?amen[ée]s?\s+[àa]",
-    r"vous\s+d[ée]velopperez",
-    r"vous\s+concevez",
-    r"vous\s+concevrez",
-    r"vous\s+g[ée]rerez",
-    r"vous\s+analysez",
-    r"vous\s+analyserez",
+    r"vous\s+d[ée]velopp\w*",
+    r"vous\s+d[ée]ploi\w*",
+    r"vous\s+concev\w*",
+    r"vous\s+g[ée]r\w*",
+    r"vous\s+analys\w*",
     r"vous\s+mettrez\s+en\s+place",
-    r"vous\s+assurerez",
-    r"vous\s+piloterez",
-    r"vous\s+superviserez",
+    r"vous\s+assur\w*",
+    r"vous\s+pilot\w*",
+    r"vous\s+supervis\w*",
+    r"vous\s+coordonn\w*",
+    r"vous\s+sécuris\w*",
+    r"vous\s+surveill\w*",
     r"vos\s+missions?\s+comprennent",
     r"vos\s+responsabilit[ée]s",
     r"missions?\s*:",
@@ -107,34 +112,46 @@ class ImplicitExtractionDebug:
     is_mission: bool
     is_negated: bool
     is_generic: bool
-    candidates: List[Dict[str, Any]]
-    accepted: List[Dict[str, Any]]
-    rejected: List[Dict[str, Any]]
+    candidates: List[Dict[str, Any]] = field(default_factory=list)
+    accepted: List[Dict[str, Any]] = field(default_factory=list)
+    rejected: List[Dict[str, Any]] = field(default_factory=list)
+    status: str = "evaluated"
+    canonical_name: Optional[str] = None
+    matched_text: Optional[str] = None
+    reason: Optional[str] = None
+    path: Optional[str] = None
+
+
+def _format_debug_path(path: Path) -> str:
+    """Formate un chemin pour les informations de debug publiques."""
+
+    try:
+        return str(path.relative_to(PROJECT_ROOT))
+    except ValueError:
+        return str(path)
+
+
+def _load_implicit_referential_result(path: Optional[Path] = None):
+    """Charge le référentiel implicite avec validation et cache partagé."""
+
+    referential_path = path or DEFAULT_IMPLICIT_REFERENTIAL_PATH
+    return load_referential(
+        "implicit_skills.json",
+        referential_name="implicit_referential",
+        required_string_fields=("canonical_name", "category", "description"),
+        required_list_fields=("indicators",),
+        path=referential_path,
+    )
 
 
 def _load_implicit_referential(path: Optional[Path] = None) -> List[Dict[str, Any]]:
     """Charge le référentiel de compétences implicites."""
 
-    global _referential_cache
-    if _referential_cache is not None:
-        return _referential_cache
-
-    referential_path = path or DEFAULT_IMPLICIT_REFERENTIAL_PATH
-    if not referential_path.exists():
-        logger.warning("Référentiel implicite introuvable: %s", referential_path)
-        _referential_cache = []
-        return _referential_cache
-
-    with referential_path.open("r", encoding="utf-8") as fh:
-        data = json.load(fh)
-
-    if not isinstance(data, list):
-        logger.error("Le référentiel implicite doit contenir une liste JSON.")
-        _referential_cache = []
-        return _referential_cache
-
-    _referential_cache = data
-    return _referential_cache
+    result = _load_implicit_referential_result(path)
+    if not result.ok:
+        logger.warning(result.message)
+        return []
+    return [dict(entry) for entry in result.entries]
 
 
 def _normalize_text(text: str) -> str:
@@ -339,9 +356,29 @@ def extract_implicit_skills(
     if not text or not ENABLE_IMPLICIT_SKILLS:
         return [], []
 
-    referential = _load_implicit_referential()
-    if not referential:
-        return [], []
+    referential_result = _load_implicit_referential_result()
+    if not referential_result.ok:
+        debug_infos: List[ImplicitExtractionDebug] = []
+        if debug or DEBUG_IMPLICIT_EXTRACTION:
+            debug_infos.append(
+                ImplicitExtractionDebug(
+                    sentence="",
+                    is_mission=False,
+                    is_negated=False,
+                    is_generic=False,
+                    status="configuration_error",
+                    reason=referential_result.reason or "implicit_referential_error",
+                    path=_format_debug_path(referential_result.path),
+                    rejected=[{
+                        "status": "configuration_error",
+                        "reason": referential_result.reason or "implicit_referential_error",
+                        "path": _format_debug_path(referential_result.path),
+                    }],
+                )
+            )
+        return [], debug_infos
+
+    referential = [dict(entry) for entry in referential_result.entries]
 
     explicit_skills = explicit_skills or set()
     explicit_lower = {s.lower() for s in explicit_skills}
@@ -361,16 +398,14 @@ def extract_implicit_skills(
             is_mission=is_mission,
             is_negated=is_negated,
             is_generic=is_generic,
-            candidates=[],
-            accepted=[],
-            rejected=[],
         )
 
         if is_negated:
             if debug or DEBUG_IMPLICIT_EXTRACTION:
                 debug_info.rejected.append({
+                    "status": "rejected",
                     "reason": "negation",
-                    "sentence": sentence,
+                    "matched_text": sentence,
                 })
                 debug_infos.append(debug_info)
             continue
@@ -378,8 +413,9 @@ def extract_implicit_skills(
         if not is_mission:
             if debug or DEBUG_IMPLICIT_EXTRACTION:
                 debug_info.rejected.append({
+                    "status": "rejected",
                     "reason": "not_mission",
-                    "sentence": sentence,
+                    "matched_text": sentence,
                 })
                 debug_infos.append(debug_info)
             continue
@@ -387,8 +423,9 @@ def extract_implicit_skills(
         if is_generic:
             if debug or DEBUG_IMPLICIT_EXTRACTION:
                 debug_info.rejected.append({
+                    "status": "rejected",
                     "reason": "generic_phrase",
-                    "sentence": sentence,
+                    "matched_text": sentence,
                 })
                 debug_infos.append(debug_info)
             continue
@@ -406,8 +443,10 @@ def extract_implicit_skills(
             if canonical.lower() in explicit_lower:
                 if debug or DEBUG_IMPLICIT_EXTRACTION:
                     debug_info.rejected.append({
+                        "status": "rejected",
                         "reason": "already_explicit",
-                        "skill": canonical,
+                        "canonical_name": canonical,
+                        "matched_text": sentence,
                         "score": score,
                     })
                 continue
@@ -434,15 +473,17 @@ def extract_implicit_skills(
 
             if debug or DEBUG_IMPLICIT_EXTRACTION:
                 debug_info.accepted.append({
-                    "skill": canonical,
-                    "score": score,
-                    "indicator": indicator,
+                    "status": "accepted",
+                    "canonical_name": canonical,
+                    "matched_text": indicator or sentence,
                     "reason": reason,
+                    "score": score,
                 })
                 debug_info.candidates.append({
-                    "skill": canonical,
+                    "status": "candidate",
+                    "canonical_name": canonical,
+                    "matched_text": indicator or sentence,
                     "score": score,
-                    "indicator": indicator,
                 })
 
         if debug or DEBUG_IMPLICIT_EXTRACTION:
@@ -454,7 +495,7 @@ def extract_implicit_skills(
             if info.accepted:
                 logger.info("  Phrase: %s", info.sentence[:80])
                 for acc in info.accepted:
-                    logger.info("    + %s (score=%.2f, indicateur=%s)", acc["skill"], acc["score"], acc["indicator"])
+                    logger.info("    + %s (score=%.2f, indicateur=%s)", acc["canonical_name"], acc["score"], acc["matched_text"])
 
     return results, debug_infos
 
@@ -463,6 +504,7 @@ def reset_caches() -> None:
     """Réinitialise les caches internes. Utile pour les tests."""
 
     global _referential_cache, _model_cache, _embeddings_cache
+    clear_referential_cache()
     _referential_cache = None
     _model_cache = None
     _embeddings_cache = None

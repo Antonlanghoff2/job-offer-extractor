@@ -10,6 +10,7 @@ compétences implicites depuis les descriptions de missions.
 from __future__ import annotations
 
 import pytest
+from pathlib import Path
 
 from src.skill_extraction import (
     extract_implicit_skills,
@@ -171,6 +172,70 @@ class TestDebugMode:
         skills, debug_infos = extract_implicit_skills(text, debug=True)
         assert len(debug_infos) > 0
         assert any(d.is_negated for d in debug_infos)
+
+
+class TestReferentialResolution:
+    """Tests pour la résolution et le cache des référentiels."""
+
+    def test_path_resolution_independent_of_cwd(self, monkeypatch, tmp_path):
+        """La résolution du référentiel ne dépend pas du répertoire courant."""
+        monkeypatch.chdir(tmp_path)
+        text = "Vous déploierez les modèles en production et surveillerez leur dérive."
+        skills, _ = extract_implicit_skills(text)
+        names = [s.canonical_name for s in skills]
+        assert "MLOps" in names or "Monitoring de modèles" in names
+
+    def test_referential_is_loaded_once(self, monkeypatch):
+        """Le référentiel est lu une seule fois par processus."""
+        from src.skill_extraction import referential_loader
+
+        reset_caches()
+        read_count = {"count": 0}
+        original_read_text = Path.read_text
+
+        def counting_read_text(self, *args, **kwargs):
+            if self.name in {"skills.json", "implicit_skills.json"}:
+                read_count["count"] += 1
+            return original_read_text(self, *args, **kwargs)
+
+        monkeypatch.setattr(Path, "read_text", counting_read_text)
+
+        extract_implicit_skills("Vous déploierez les modèles en production.")
+        extract_implicit_skills("Vous concevrez des flux de données.")
+
+        assert read_count["count"] == 1
+        referential_loader.clear_referential_cache()
+
+    def test_missing_referential_returns_debug_error(self, monkeypatch, tmp_path):
+        """Un référentiel absent produit une erreur de configuration en debug."""
+        from src.skill_extraction import implicit_extractor
+
+        missing_path = tmp_path / "missing_implicit_skills.json"
+        monkeypatch.setattr(implicit_extractor, "DEFAULT_IMPLICIT_REFERENTIAL_PATH", missing_path)
+        reset_caches()
+
+        skills, debug_infos = extract_implicit_skills("Vous déploierez les modèles en production.", debug=True)
+
+        assert skills == []
+        assert len(debug_infos) == 1
+        assert debug_infos[0].status == "configuration_error"
+        assert debug_infos[0].reason == "implicit_referential_missing"
+
+    def test_invalid_referential_returns_debug_error(self, monkeypatch, tmp_path):
+        """Un JSON invalide produit une erreur de configuration lisible."""
+        from src.skill_extraction import implicit_extractor
+
+        invalid_path = tmp_path / "implicit_skills.json"
+        invalid_path.write_text("not-json", encoding="utf-8")
+        monkeypatch.setattr(implicit_extractor, "DEFAULT_IMPLICIT_REFERENTIAL_PATH", invalid_path)
+        reset_caches()
+
+        skills, debug_infos = extract_implicit_skills("Vous déploierez les modèles en production.", debug=True)
+
+        assert skills == []
+        assert len(debug_infos) == 1
+        assert debug_infos[0].status == "configuration_error"
+        assert debug_infos[0].reason == "implicit_referential_invalid_json"
 
 
 class TestSkillReason:
